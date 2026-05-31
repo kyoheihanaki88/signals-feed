@@ -1,0 +1,102 @@
+{
+  "date": "2026-05-30",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "lead": true,
+      "category": "BUSINESS",
+      "source": "BLOOMBERG",
+      "headline": "The quiet reshaping of how cities fund their mornings",
+      "summary": "A slow shift in municipal financing is changing who pays for the first hour of city life.",
+      "keyTakeaways": [
+        "Private capital is filling gaps left by slower public budgets.",
+        "The change is invisible day to day but compounds over a decade.",
+        "Transit and parks are the first to feel it."
+      ],
+      "whyItMatters": "How your city wakes up — transit, parks, light — is being decided in budget rooms most people never see.",
+      "originalURL": "https://www.bloomberg.com/",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "BELLEVILLE · 7:14 AM",
+      "audioURL": null
+    },
+    {
+      "number": 2,
+      "lead": false,
+      "category": "AI",
+      "source": "THE VERGE",
+      "headline": "On-device models cross the threshold that mattered",
+      "summary": "Local inference is now good enough to change what ships in the box.",
+      "keyTakeaways": [
+        "On-device models now handle tasks that needed the cloud last year.",
+        "Latency and privacy improve as inference moves local.",
+        "Battery and memory are the remaining constraints."
+      ],
+      "whyItMatters": "When intelligence runs on the phone, the defaults of every app quietly change.",
+      "originalURL": "https://www.theverge.com/",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop",
+      "placeTime": null,
+      "audioURL": null
+    },
+    {
+      "number": 3,
+      "lead": false,
+      "category": "FINANCE",
+      "source": "FT",
+      "headline": "Why the bond market stopped flinching this week",
+      "summary": "A week of calm in rates suggests the market has repriced its fears.",
+      "keyTakeaways": [
+        "Volatility fell even as the data stayed mixed.",
+        "Investors appear to have absorbed the rate path.",
+        "Calm here ripples into mortgages and savings."
+      ],
+      "whyItMatters": "The bond market sets the weather for everyone else's money — quiet weeks are worth noticing.",
+      "originalURL": "https://www.ft.com/",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop",
+      "placeTime": null,
+      "audioURL": null
+    },
+    {
+      "number": 4,
+      "lead": false,
+      "category": "CREATOR",
+      "source": "INPUTS",
+      "headline": "The studio economy is quietly becoming the main economy",
+      "summary": "Small independent studios are taking share from the platforms that hosted them.",
+      "keyTakeaways": [
+        "Creators are building durable businesses, not just audiences.",
+        "Tools now do what teams used to.",
+        "Ownership is shifting back to the maker."
+      ],
+      "whyItMatters": "The line between a hobby, a job, and a company is dissolving for a generation of makers.",
+      "originalURL": "https://www.inputmag.com/",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": null,
+      "audioURL": null
+    },
+    {
+      "number": 5,
+      "lead": false,
+      "category": "JAPAN",
+      "source": "NHK",
+      "headline": "Tokyo's new rail line redraws the morning commute",
+      "summary": "A new connection reshapes how a slice of the city gets to work.",
+      "keyTakeaways": [
+        "The line shortens several cross-town journeys.",
+        "Neighborhoods near new stops are already shifting.",
+        "Small infrastructure changes move daily life the most."
+      ],
+      "whyItMatters": "Transit decides the shape of a morning more than almost anything else in a city.",
+      "originalURL": "https://www3.nhk.or.jp/",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": null,
+      "audioURL": null
+    }
+  ]
+}

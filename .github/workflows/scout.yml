@@ -1,0 +1,53 @@
+name: Signal Scout
+
+# Build 1 / Step D — collect candidate stories every morning into candidates.json
+# and upload it as a workflow artifact. Scout ONLY: no Ranker, no Writer, no
+# latest.json, no commit to main, no PR, no deploy.
+
+on:
+  schedule:
+    # 20:00 UTC = 05:00 JST (Kyohei's morning). GitHub cron is UTC, no DST.
+    - cron: "0 20 * * *"
+  workflow_dispatch: {}        # manual "Run workflow" button
+
+permissions:
+  contents: read               # read-only: never commits, never opens a PR
+
+concurrency:
+  group: signal-scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml        # only dependency Scout needs (stdlib does the rest)
+
+      - name: Run Signal Scout
+        run: |
+          python pipeline/scout.py \
+            --sources pipeline/sources.yaml \
+            --out pipeline/candidates.json \
+            --max-age-hours 36 \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+        # scout.py exits non-zero if zero candidates are collected, failing the run
+        # (an honest "dry morning" signal). Individual dead feeds are skipped, not fatal.
+
+      - name: Upload candidates.json artifact
+        if: always()                   # keep the artifact even if the run flagged zero candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidates-${{ github.run_id }}
+          path: pipeline/candidates.json
+          if-no-files-found: warn
+          retention-days: 14

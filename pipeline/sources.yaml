@@ -1,0 +1,66 @@
+# Signals — Scout source feeds (Build 1, Step A: verified source list)
+#
+# status:
+#   verified  = fetched OK in review, real article URLs confirmed
+#   known     = reliable open RSS, but blocked by the review env's fetch tool; verify on the runner
+#   reachable = returned 200 + RSS content-type, body not inspectable in review; verify on the runner
+#   flagged   = conditional (paywalled / endpoint unconfirmed)
+#
+# The Scout must: strip tracking params, drop homepage/non-article URLs, drop /videos/ items,
+# prefer recent items, and honor `paywalled` (the later Writer avoids paywalled bodies).
+
+sources:
+  # --- core (recommended for Scout MVP) ---
+  - name: BBC News (World)
+    url: https://feeds.bbci.co.uk/news/world/rss.xml
+    category: WORLD
+    paywalled: false
+    status: verified
+    notes: real article URLs (bbc.com/news/articles/…); strip ?at_medium=RSS; skip /videos/
+
+  - name: NPR (World)
+    url: https://feeds.npr.org/1004/rss.xml
+    category: WORLD
+    paywalled: false
+    status: verified
+    notes: real npr.org article URLs; also carries AP-sourced stories (covers AP without redirect URLs)
+
+  - name: The Guardian (World)
+    url: https://www.theguardian.com/world/rss
+    category: WORLD
+    paywalled: false
+    status: known
+    notes: blocked by the review tool; reliable open RSS — verify on the runner
+
+  - name: The Verge
+    url: https://www.theverge.com/rss/index.xml
+    category: TECH
+    paywalled: false
+    status: known
+    notes: blocked by the review tool; reliable open RSS — verify on the runner
+
+  - name: Al Jazeera
+    url: https://www.aljazeera.com/xml/rss/all.xml
+    category: WORLD
+    paywalled: false
+    status: reachable
+    notes: 200 + rss content-type; body returned as binary in review — verify on the runner
+
+  # --- flagged / conditional ---
+  - name: NHK World (Japan)
+    url: ""   # TODO: confirm the correct NHK WORLD (English) RSS endpoint on the runner
+    category: JAPAN
+    paywalled: false
+    status: flagged
+    notes: English RSS endpoint unconfirmed; if none is stable, use a Google News Japan query as fallback
+
+  - name: Financial Times
+    url: https://www.ft.com/rss/home
+    category: ECONOMY
+    paywalled: true
+    status: flagged
+    notes: paywalled — collect URLs only; the Writer cannot read the body; prefer BBC/NPR/Guardian for economy
+
+# --- excluded ---
+# Reuters via Google News RSS: returned empty in review; links are Google redirect URLs (not direct articles).
+# AP via Google News RSS: same. AP coverage is already available via NPR with real article URLs.

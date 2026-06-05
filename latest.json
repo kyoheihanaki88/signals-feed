@@ -9,11 +9,11 @@
       "category": "BUSINESS",
       "source": "BLOOMBERG",
       "headline": "The quiet reshaping of how cities fund their mornings",
-      "summary": "A slow shift in municipal financing is changing who pays for the first hour of city life.",
+      "summary": "Facing tighter budgets and rising maintenance costs, a growing number of mid-size cities are turning to private capital to fund everyday infrastructure — transit upkeep, street lighting, park maintenance. The deals are structured as long-term concessions: investors cover costs now in exchange for fees or operating rights over decades. Supporters say it keeps services running without raising taxes; critics warn it quietly shifts control of public space to private owners. The shift is largely invisible day to day, but it compounds over time.",
       "keyTakeaways": [
-        "Private capital is filling gaps left by slower public budgets.",
-        "The change is invisible day to day but compounds over a decade.",
-        "Transit and parks are the first to feel it."
+        "Cities are signing multi-decade concession deals to fund transit, lighting, and parks.",
+        "Private investors pay upfront in exchange for fees or operating rights for years.",
+        "The trade-off: no immediate tax hikes, but less public control over shared spaces."
       ],
       "whyItMatters": "How your city wakes up — transit, parks, light — is being decided in budget rooms most people never see.",
       "originalURL": "https://www.bloomberg.com/",
@@ -28,11 +28,11 @@
       "category": "AI",
       "source": "THE VERGE",
       "headline": "On-device models cross the threshold that mattered",
-      "summary": "Local inference is now good enough to change what ships in the box.",
+      "summary": "A new generation of compact AI models now runs directly on phones and laptops, handling tasks — summarizing, translating, drafting — that required a cloud connection a year ago. The shift cuts latency to near-instant and keeps personal data on the device instead of sending it to a server. Apple, Google, and several startups are racing to ship these models as system defaults. The remaining limits are battery drain and memory, which cap how large the on-device models can be.",
       "keyTakeaways": [
-        "On-device models now handle tasks that needed the cloud last year.",
-        "Latency and privacy improve as inference moves local.",
-        "Battery and memory are the remaining constraints."
+        "Compact models now run on-device for summarizing, translating, and drafting.",
+        "Local inference means near-instant responses and data that never leaves the phone.",
+        "Battery and memory still cap how large on-device models can get."
       ],
       "whyItMatters": "When intelligence runs on the phone, the defaults of every app quietly change.",
       "originalURL": "https://www.theverge.com/",
@@ -47,11 +47,11 @@
       "category": "FINANCE",
       "source": "FT",
       "headline": "Why the bond market stopped flinching this week",
-      "summary": "A week of calm in rates suggests the market has repriced its fears.",
+      "summary": "After months of sharp swings, government bond yields held steady this week even as economic data came in mixed. Analysts read the calm as a sign that investors have finally accepted the central bank's expected rate path rather than betting on surprises. Bond-market volatility, measured by widely-watched indexes, fell to its lowest in months. Because bond yields set the baseline for mortgages, savings rates, and corporate borrowing, a quieter bond market tends to ripple outward into the cost of everyday money.",
       "keyTakeaways": [
-        "Volatility fell even as the data stayed mixed.",
-        "Investors appear to have absorbed the rate path.",
-        "Calm here ripples into mortgages and savings."
+        "Bond yields stayed flat this week despite mixed economic data.",
+        "Investors appear to have priced in the central bank's expected rate path.",
+        "Calmer bonds feed into steadier mortgage, savings, and borrowing rates."
       ],
       "whyItMatters": "The bond market sets the weather for everyone else's money — quiet weeks are worth noticing.",
       "originalURL": "https://www.ft.com/",
@@ -66,11 +66,11 @@
       "category": "CREATOR",
       "source": "INPUTS",
       "headline": "The studio economy is quietly becoming the main economy",
-      "summary": "Small independent studios are taking share from the platforms that hosted them.",
+      "summary": "Independent creators are increasingly building small, durable studios — hiring a few people, owning their distribution, and selling directly — rather than chasing audience size on a single platform. Cheaper production tools now let two or three people do what once took a full team, lowering the cost of going independent. The result is a quiet shift of revenue and ownership away from the platforms that hosted creators and toward the makers themselves. For many, the line between a hobby, a job, and a company is dissolving.",
       "keyTakeaways": [
-        "Creators are building durable businesses, not just audiences.",
-        "Tools now do what teams used to.",
-        "Ownership is shifting back to the maker."
+        "Creators are forming small studios that own their distribution and sell directly.",
+        "Cheap production tools let 2–3 people do what once needed a full team.",
+        "Revenue and ownership are shifting from platforms toward the makers."
       ],
       "whyItMatters": "The line between a hobby, a job, and a company is dissolving for a generation of makers.",
       "originalURL": "https://www.inputmag.com/",
@@ -85,11 +85,11 @@
       "category": "JAPAN",
       "source": "NHK",
       "headline": "Tokyo's new rail line redraws the morning commute",
-      "summary": "A new connection reshapes how a slice of the city gets to work.",
+      "summary": "Tokyo opened a new rail connection this week that links previously separate lines, cutting several cross-town commutes by 10–15 minutes. Transit planners expect it to ease crowding on parallel routes during peak hours. Property listings and small businesses near the new stations are already responding, an early sign of how a single line reshapes which neighborhoods feel central. It's a reminder that incremental infrastructure — not headline megaprojects — tends to change daily life the most.",
       "keyTakeaways": [
-        "The line shortens several cross-town journeys.",
-        "Neighborhoods near new stops are already shifting.",
-        "Small infrastructure changes move daily life the most."
+        "A new link joins separate lines, cutting some commutes by 10–15 minutes.",
+        "Planners expect less crowding on parallel routes at peak hours.",
+        "Neighborhoods near the new stops are already shifting in value and activity."
       ],
       "whyItMatters": "Transit decides the shape of a morning more than almost anything else in a city.",
       "originalURL": "https://www3.nhk.or.jp/",

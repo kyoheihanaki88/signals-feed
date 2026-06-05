@@ -1,2 +1,7 @@
 .DS_Store
 node_modules/
+
+# Scout output is delivered as a CI artifact, not committed to main (Build 1 / Step D)
+pipeline/candidates.json
+# Local offline-test feeds only; the runner fetches live, so these stay out of the repo
+pipeline/cache/

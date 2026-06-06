@@ -10,3 +10,7 @@ pipeline/cache/
 pipeline/review.md
 pipeline/selection.yaml
 pipeline/selection.json
+
+# Writer daily working files (regenerated each morning, not source) — Writer v1
+pipeline/drafts.json
+pipeline/cache/articles/

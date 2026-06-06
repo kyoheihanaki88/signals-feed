@@ -16,7 +16,7 @@ A single artifact: **`selection.json`** — the five candidate records you appro
 
 Three small pieces, mirroring how Scout was built (prove it locally, then wire the PR):
 
-1. **`pipeline/select.py`** — reads `candidates.json`, does two jobs:
+1. **`pipeline/selection.py`** — reads `candidates.json`, does two jobs:
    - **Render a review view** (`review.md`) — a phone-readable sheet of the candidates, grouped **by cross-source cluster and importance hints** (cluster_size > 1 first), then by category. Each candidate shows a **stable short ID**, headline, **source**, **clickable real URL**, date, snippet, and `paywalled`/reliability flags. This is what you read to decide.
    - **Build + validate the selection** — reads your picks from `selection.yaml`, checks them, and writes `selection.json`.
 2. **`pipeline/selection.yaml`** — *your* input, a 5-line file you edit:
@@ -34,16 +34,16 @@ Three small pieces, mirroring how Scout was built (prove it locally, then wire t
 ## Data flow
 
 ```
-candidates.json ──select.py (render)──▶ review.md   (you read on phone)
+candidates.json ──selection.py (render)──▶ review.md   (you read on phone)
                                             │
                        you edit selection.yaml  (lead + 4 supporting IDs)
                                             │
-candidates.json + selection.yaml ──select.py (build+validate)──▶ selection.json
+candidates.json + selection.yaml ──selection.py (build+validate)──▶ selection.json
                                             │
                               (later increment: Writer → latest.json → PR → merge)
 ```
 
-## Validation rules (in `select.py`)
+## Validation rules (in `selection.py`)
 
 **Hard fail** (refuse to write `selection.json`, print the reason):
 - Not exactly **5** IDs total, or any duplicate ID.
@@ -59,8 +59,8 @@ candidates.json + selection.yaml ──select.py (build+validate)──▶ selec
 
 Local first, then the PR wiring:
 
-- **Step 1 (local):** run `select.py` on a real `candidates.json`, read `review.md`, fill `selection.yaml`, get a clean `selection.json`. Prove the surface is genuinely easy before any automation.
-- **Step 2 (PR surface):** the daily Scout run lands `candidates.json` + `review.md` on a branch and opens a **review PR**. You read `review.md` in the PR, **edit `selection.yaml` directly in the PR** (GitHub mobile lets you edit a file in a branch), a check re-runs `select.py --build` to validate and produce `selection.json`, and **your merge records the approved selection.** No merge = no selection that day; nothing is forced.
+- **Step 1 (local):** run `selection.py` on a real `candidates.json`, read `review.md`, fill `selection.yaml`, get a clean `selection.json`. Prove the surface is genuinely easy before any automation.
+- **Step 2 (PR surface):** the daily Scout run lands `candidates.json` + `review.md` on a branch and opens a **review PR**. You read `review.md` in the PR, **edit `selection.yaml` directly in the PR** (GitHub mobile lets you edit a file in a branch), a check re-runs `selection.py --build` to validate and produce `selection.json`, and **your merge records the approved selection.** No merge = no selection that day; nothing is forced.
 
 The PR is the approval record. Even here — at *selection*, before any copy exists — **merge is a human action**, and nothing downstream runs without it.
 
@@ -82,7 +82,7 @@ No Writer, no AI-drafted headline/summary/takeaways/why-it-matters, no `latest.j
 
 ## Definition of done
 
-1. `select.py` renders a clear, phone-readable `review.md` from a real `candidates.json`.
+1. `selection.py` renders a clear, phone-readable `review.md` from a real `candidates.json`.
 2. Editing a 5-line `selection.yaml` and re-running produces a valid `selection.json` (5 records, lead flagged, ordered) — or a clear error if the picks break a rule.
 3. You confirm the review surface is genuinely easy to use on a real morning's candidates.
 4. (Then, only if you approve) the PR wiring is added so selection happens in a mergeable PR.

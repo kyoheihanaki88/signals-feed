@@ -40,7 +40,7 @@ PROPER_RE = re.compile(r"\b[A-Z][a-zA-Z]{2,}\b")
 # ----------------------------------------------------------------- helpers
 def load_selection(path):
     if not os.path.exists(path):
-        sys.exit(f"ERROR: selection not found: {path} (run select.py build first).")
+        sys.exit(f"ERROR: selection not found: {path} (run selection.py build first).")
     data = json.load(open(path))
     sig = data.get("signals", [])
     if not sig:

@@ -22,7 +22,7 @@ Usage:
                              [--no-fetch] [--simulate-unavailable id1,id2] [--out drafts.json]
   python3 writer.py validate [--selection selection.json] [--drafts drafts.json]
 """
-import sys, os, re, json, argparse, datetime
+import sys, os, re, json, html, argparse, datetime
 from urllib.parse import urlsplit
 import urllib.request
 
@@ -35,6 +35,89 @@ SENT_RE = re.compile(r"(?<=[.!?])\s+")
 WORD_RE = re.compile(r"[A-Za-z0-9'$%.-]+")
 NUM_RE = re.compile(r"\d")
 PROPER_RE = re.compile(r"\b[A-Z][a-zA-Z]{2,}\b")
+
+# Website boilerplate to drop before extraction (BBC / NPR / The Verge etc.).
+BOILERPLATE = (
+    "skip to content", "skip to main", "accessibility", "hide caption", "toggle caption",
+    "image caption", "media caption", "getty images", "read more", "sign up", "sign in",
+    "log in", "subscribe", "newsletter", "follow us", "share this", "share on",
+    "advertisement", "cookie", "privacy policy", "terms of", "all rights reserved",
+    "copyright", "back to top", "more on this story", "related topics", "watch:",
+    "listen:", "play video", "click here", "download the app", "supported browser",
+    "enable javascript", "view comments", "most read", "in pictures", "tap here",
+    "bbc is not responsible", "external sites", "this video can not be played",
+    "logo", "homepage", "weekend editor", "vox media", "comments", "more from the verge",
+)
+BYLINE_RE = re.compile(r"^(by|source|photo|photograph|credit|reporting by|updated|published|"
+                       r"editor's note|getty|reuters|associated press)\b", re.I)
+# Words that signal stakes/consequence — used to pick a cautious whyItMatters from the article.
+STAKES_RE = re.compile(r"\b(could|may|might|risk|warn(?:s|ed)?|threat|expected|means?|impact|"
+                       r"because|lead(?:s)? to|consequence|raising|fears?|concerns?|"
+                       r"significant|major|first time|unprecedented|escalat\w*|ceasefire|"
+                       r"agreement|deal|sanction\w*)\b", re.I)
+
+# Affiliate/disclosure, author-or-editor bio, photo-credit endings, photo-caption scenes.
+AFFILIATE_RE = re.compile(r"(may earn (an? )?commission|if you (buy|purchase) something|"
+                          r"vox media|affiliate link|our ethics (policy|statement))", re.I)
+AUTHOR_BIO_RE = re.compile(r"\bis\s+(a|an|the)\b[^.]{0,70}\b(editor|reporter|writer|journalist|"
+                           r"correspondent|contributor|columnist|anchor|host)\b", re.I)
+CREDIT_END_RE = re.compile(r"(getty images|/\s*ap\b|/\s*afp\b|/\s*npr\b|/\s*getty|reuters|"
+                           r"associated press|\bafp\b|bloomberg|pool|handout|via getty)"
+                           r"\s*[.\)\"'”]*\s*$", re.I)
+CAPTION_SCENE_RE = re.compile(r"^(a|an|the)\s+[\w'’]+(?:\s+[\w'’,]+){0,6}?\s+"
+                              r"(holds?|carries|carry|waves?|stands?|sits?|walks?|marche?s?|"
+                              r"gathers?|wears?|raises?|displays?|protests?|cheers?|poses?|"
+                              r"attends?|hugs?|embraces?|celebrat\w+|reacts?)\b", re.I)
+
+STOPWORDS = {"the","a","an","and","or","but","of","to","in","on","for","with","from","at","by",
+             "as","is","are","was","were","be","been","that","this","it","its","his","her","their",
+             "they","we","you","has","have","had","will","would","could","said","after","over",
+             "into","out","new","news","world","daily","times","post","media","online","about"}
+
+
+def keywords(text):
+    """Significant lowercase tokens (≥4 chars, non-stopword) — for headline-relevance scoring."""
+    return {w for w in re.findall(r"[a-z0-9]{4,}", (text or "").lower()) if w not in STOPWORDS}
+
+
+def brand_key(source_name):
+    """Most distinctive word of a source name (e.g. 'verge','npr','bbc') for nav-repetition checks."""
+    toks = [t for t in re.findall(r"[a-z]{3,}", (source_name or "").lower()) if t not in STOPWORDS]
+    return max(toks, key=len) if toks else ""
+
+
+def clean_sentences(text, source_name=""):
+    """Article-body sentences only. Decodes HTML entities (&nbsp;, &#x27;, …) and drops nav, site
+    title/logo, image captions, photo credits, affiliate disclosures, author/editor bios, bylines,
+    and newsletter/footer boilerplate. NEVER invents — only filters what's already in the source."""
+    text = html.unescape(text or "").replace("\xa0", " ")
+    bkey = brand_key(source_name)
+    out, seen = [], set()
+    for raw in re.split(r"(?<=[.!?])\s+|\n+", text):
+        s = re.sub(r"\s+", " ", raw).strip()
+        if not s:
+            continue
+        low = s.lower()
+        if any(b in low for b in BOILERPLATE):
+            continue
+        if BYLINE_RE.match(s) or AUTHOR_BIO_RE.search(s) or AFFILIATE_RE.search(s):
+            continue
+        if CREDIT_END_RE.search(s) or CAPTION_SCENE_RE.match(s):    # photo credit / caption scene
+            continue
+        if bkey and low.count(bkey) >= 2:                          # site-title/logo nav repetition
+            continue
+        wc = len(s.split())
+        if wc < 6 or wc > 60:                                      # UI labels / overly long blobs
+            continue
+        if not re.search(r"[.!?][\"')”]?$", s):                # must end like a real sentence
+            continue
+        if not re.search(r"[a-z]", s):                             # drop ALL-CAPS nav labels
+            continue
+        if s in seen:
+            continue
+        seen.add(s)
+        out.append(s)
+    return out
 
 
 # ----------------------------------------------------------------- helpers
@@ -89,9 +172,14 @@ def get_source_text(item, articles_dir, allow_fetch, unavailable):
     if allow_fetch:
         try:
             req = urllib.request.Request(item["url"], headers={"User-Agent": "SignalsWriter/1.0"})
-            html = urllib.request.urlopen(req, timeout=10).read().decode("utf-8", "ignore")
-            text = re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style).*?</\1>", " ", html))
-            text = re.sub(r"\s+", " ", text).strip()
+            doc = urllib.request.urlopen(req, timeout=10).read().decode("utf-8", "ignore")
+            # remove non-content regions entirely, then turn block tags into line breaks so
+            # sentences separate cleanly (clean_sentences does the boilerplate filtering later).
+            doc = re.sub(r"(?is)<(script|style|noscript|nav|header|footer|aside|figure|figcaption|form)\b.*?</\1>", " ", doc)
+            doc = re.sub(r"(?is)<(br|/p|/div|/li|/h[1-6]|/section|/article)\s*/?>", "\n", doc)
+            text = re.sub(r"<[^>]+>", " ", doc)
+            text = html.unescape(text).replace("\xa0", " ")
+            text = re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", text)).strip()
             if word_count(text) >= 120:          # crude "did we get a real body?" gate
                 return text, "full_article"
         except Exception:
@@ -121,31 +209,50 @@ def draft_one(item, source_text, used):
         base["flags"] = ["source_unavailable", "needs_review"]
         return base
 
-    sents = sentences(source_text)
+    # Clean the source first: strip boilerplate/nav/captions/credits/bios, decode entities, keep prose.
+    clean = clean_sentences(source_text, source_name=item.get("source", ""))
     headline = item["title"]                              # the outlet's own headline (grounded)
-    if used == "full_article":
-        summary = " ".join(sents[:2])
-        takeaways = sents[2:5] if len(sents) > 2 else sents[:1]
-        confidence = "high" if word_count(source_text) >= 250 else "medium"
-        flags = ["extractive_draft"]
-    else:  # rss_snippet
-        summary = source_text                             # the outlet's RSS description (one real summary line)
-        takeaways = sents if len(sents) > 1 else []       # honestly can't split independent takeaways from 1 line
-        confidence = "low"
-        flags = ["extractive_draft", "thin_source", "rss_snippet_only"]
-        if not takeaways:
-            flags.append("keyTakeaways_needs_human")
+    flags = ["extractive_draft"]
+    if used == "rss_snippet":
+        flags += ["thin_source", "rss_snippet_only"]
 
-    # whyItMatters: conservative by design — v1 never asserts significance; the human writes it.
-    why = ""
-    flags.append("whyItMatters_needs_human")
+    if not clean:
+        # cleaning removed everything (pure boilerplate / too thin) — fall back honestly + flag.
+        summary = html.unescape(source_text).strip() if used == "rss_snippet" else ""
+        takeaways, why, confidence = [], "", "low"
+        if not summary:
+            flags.append("needs_review")
+        flags += ["keyTakeaways_needs_human", "whyItMatters_needs_human"]
+    else:
+        # Prefer sentences that share terms with the headline — this pushes any stray boilerplate
+        # (which never shares headline terms) out of the summary/takeaways.
+        hk = keywords(headline)
+        score = {s: len(keywords(s) & hk) for s in clean}
+        # summary: earliest headline-relevant sentence (never site-title/homepage — already filtered).
+        summary = next((s for s in clean if score[s] > 0), clean[0])
+        # whyItMatters: reserve a cautious, NON-fabricated stakes sentence FIRST (so it's never a
+        # duplicate of the summary) — headline-relevant stakes line, else any stakes line.
+        why = (next((s for s in clean if s != summary and STAKES_RE.search(s) and score[s] > 0), "")
+               or next((s for s in clean if s != summary and STAKES_RE.search(s)), ""))
+        # takeaways: up to 3 remaining clean body bullets, headline-relevant first, boilerplate demoted.
+        pool = [s for s in clean if s != summary and s != why]
+        pool.sort(key=lambda s: (score[s] == 0, clean.index(s)))
+        takeaways = pool[:3]
+        if not why:                                       # no stakes sentence → closing line, else a takeaway
+            why = next((s for s in reversed(clean) if s != summary and s not in takeaways),
+                       takeaways[-1] if takeaways else summary)
+        if len(takeaways) < 3:
+            flags.append("keyTakeaways_thin")
+        confidence = "low" if used == "rss_snippet" else \
+                     ("high" if (word_count(source_text) >= 250 and len(clean) >= 4) else "medium")
 
     if item.get("paywalled"):
         flags.append("paywalled")
 
-    # grounding check on generated copy (summary + takeaways) against the source text + the
-    # outlet's own headline (both authoritative). The verbatim headline isn't re-checked.
-    ung = ungrounded_tokens(" ".join([summary] + takeaways), source_text + " " + headline)
+    # grounding check on generated copy (summary + takeaways + whyItMatters) against the
+    # entity-decoded source + the outlet's own headline. Extractive ⇒ should be empty.
+    ung = ungrounded_tokens(" ".join([summary] + takeaways + [why]),
+                            html.unescape(source_text) + " " + headline)
     if ung:
         flags.append("ungrounded_tokens:" + ",".join(ung[:6]))
         flags.append("needs_review")

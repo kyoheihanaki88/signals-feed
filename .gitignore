@@ -5,3 +5,8 @@ node_modules/
 pipeline/candidates.json
 # Local offline-test feeds only; the runner fetches live, so these stay out of the repo
 pipeline/cache/
+
+# Selection-flow daily working files (regenerated each morning, not source) — Increment 1
+pipeline/review.md
+pipeline/selection.yaml
+pipeline/selection.json

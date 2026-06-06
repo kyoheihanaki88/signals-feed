@@ -14,3 +14,6 @@ pipeline/selection.json
 # Writer daily working files (regenerated each morning, not source) — Writer v1
 pipeline/drafts.json
 pipeline/cache/articles/
+
+# Builder draft output (never the live feed; regenerated, not source) — Builder v1
+pipeline/generated/

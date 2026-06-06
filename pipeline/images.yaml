@@ -1,0 +1,42 @@
+# Signals — curated DECORATIVE images for the feed (Builder v1 image strategy).
+#
+# These are atmosphere, NOT journalism. They are never scraped article photos and never
+# evidence of anything in the story — just a calm, category-appropriate mood image + a
+# time-of-day caption. The Builder maps each signal's `category` → one of these.
+# Replace the placeholder URLs with the curator's real Signals decorative asset pool.
+#
+# placeTime is an atmospheric caption (time-of-day / mood), deliberately NOT a specific
+# place claim tied to the story.
+
+default:
+  imageURL: "https://images.signalsapp.co/decorative/world-dawn.jpg"
+  placeTime: "Morning light"
+
+categories:
+  WORLD:
+    imageURL: "https://images.signalsapp.co/decorative/world-dawn.jpg"
+    placeTime: "First light"
+  BUSINESS:
+    imageURL: "https://images.signalsapp.co/decorative/business-skyline.jpg"
+    placeTime: "Early hours"
+  FINANCE:
+    imageURL: "https://images.signalsapp.co/decorative/finance-quiet.jpg"
+    placeTime: "Before the open"
+  AI:
+    imageURL: "https://images.signalsapp.co/decorative/ai-soft.jpg"
+    placeTime: "Morning"
+  TECH:
+    imageURL: "https://images.signalsapp.co/decorative/tech-soft.jpg"
+    placeTime: "Morning"
+  ECONOMY:
+    imageURL: "https://images.signalsapp.co/decorative/economy-calm.jpg"
+    placeTime: "Early hours"
+  CREATOR:
+    imageURL: "https://images.signalsapp.co/decorative/creator-studio.jpg"
+    placeTime: "Studio morning"
+  JAPAN:
+    imageURL: "https://images.signalsapp.co/decorative/japan-still.jpg"
+    placeTime: "Tokyo dawn"
+  OTHER:
+    imageURL: "https://images.signalsapp.co/decorative/world-dawn.jpg"
+    placeTime: "Morning light"

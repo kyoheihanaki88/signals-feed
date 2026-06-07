@@ -1,102 +1,107 @@
 {
-  "date": "2026-05-30",
+  "date": "2026-06-06",
   "focus": "MIXED",
   "version": 1,
   "signals": [
     {
       "number": 1,
+      "importance": 1,
       "lead": true,
-      "category": "BUSINESS",
-      "source": "BLOOMBERG",
-      "headline": "The quiet reshaping of how cities fund their mornings",
-      "summary": "Facing tighter budgets and rising maintenance costs, a growing number of mid-size cities are turning to private capital to fund everyday infrastructure — transit upkeep, street lighting, park maintenance. The deals are structured as long-term concessions: investors cover costs now in exchange for fees or operating rights over decades. Supporters say it keeps services running without raising taxes; critics warn it quietly shifts control of public space to private owners. The shift is largely invisible day to day, but it compounds over time.",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "US and Iran exchange strikes in Gulf in latest test of ceasefire",
+      "summary": "The shaky ceasefire between the US and Iran has been tested further, with American forces targeting Iranian drones and radar sites, and Iran firing missiles at US bases in the Gulf.",
       "keyTakeaways": [
-        "Cities are signing multi-decade concession deals to fund transit, lighting, and parks.",
-        "Private investors pay upfront in exchange for fees or operating rights for years.",
-        "The trade-off: no immediate tax hikes, but less public control over shared spaces."
+        "Iran retaliated by firing ballistic missiles at two US air bases in Kuwait, and US Navy facilities in Bahrain, Iran's Irib news agency reported.",
+        "Centcom said initial assessments showed that of the seven Iranian missiles fired at the two Gulf states, six were intercepted and one did not reach its target.",
+        "The United Arab Emirates and Qatar also denounced the Iranian attacks on their Gulf neighbours."
       ],
-      "whyItMatters": "How your city wakes up — transit, parks, light — is being decided in budget rooms most people never see.",
-      "originalURL": "https://www.bloomberg.com/",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "BELLEVILLE · 7:14 AM",
-      "audioURL": null
+      "whyItMatters": "Tehran called the US strikes a \"flagrant\" violation of the ceasefire agreement between the two countries.",
+      "originalURL": "https://www.bbc.com/news/articles/cvgzgyjk2weo?at_medium=RSS&at_campaign=rss",
+      "readTime": "3 min",
+      "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
+      "placeTime": "First light",
+      "audioURL": ""
     },
     {
       "number": 2,
+      "importance": 2,
       "lead": false,
-      "category": "AI",
-      "source": "THE VERGE",
-      "headline": "On-device models cross the threshold that mattered",
-      "summary": "A new generation of compact AI models now runs directly on phones and laptops, handling tasks — summarizing, translating, drafting — that required a cloud connection a year ago. The shift cuts latency to near-instant and keeps personal data on the device instead of sending it to a server. Apple, Google, and several startups are racing to ship these models as system defaults. The remaining limits are battery drain and memory, which cap how large the on-device models can be.",
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal",
+      "summary": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal The Israeli military confirmed hitting a vehicle and said the incident is being reviewed.",
       "keyTakeaways": [
-        "Compact models now run on-device for summarizing, translating, and drafting.",
-        "Local inference means near-instant responses and data that never leaves the phone.",
-        "Battery and memory still cap how large on-device models can get."
+        "Lebanon's President Joseph Aoun called the strike \"a flagrant violation to Lebanese sovereignty and international law.\"",
+        "An airstrike on a vehicle on a road linking the city of Nabatiyeh with the town of Marjayoun killed a brigadier general, a captain and another soldier, the army said, without immediately releasing their names.",
+        "\"The continued, deliberate, and repeated Israeli aggression against Lebanon, its people and its army only strengthens our resolve, faith and determination,\" the army said in its statement."
       ],
-      "whyItMatters": "When intelligence runs on the phone, the defaults of every app quietly change.",
-      "originalURL": "https://www.theverge.com/",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop",
-      "placeTime": null,
-      "audioURL": null
+      "whyItMatters": "BEIRUT — Israeli airstrikes on southern Lebanon on Saturday killed nine people including three members of the Lebanese military, the Lebanese army and state media said, days after the two sides reached a new ceasefire deal.",
+      "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5848595/israeli-airstrikes-kill-lebanese-army-officers",
+      "readTime": "4 min",
+      "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
+      "placeTime": "First light",
+      "audioURL": ""
     },
     {
       "number": 3,
+      "importance": 3,
       "lead": false,
-      "category": "FINANCE",
-      "source": "FT",
-      "headline": "Why the bond market stopped flinching this week",
-      "summary": "After months of sharp swings, government bond yields held steady this week even as economic data came in mixed. Analysts read the calm as a sign that investors have finally accepted the central bank's expected rate path rather than betting on surprises. Bond-market volatility, measured by widely-watched indexes, fell to its lowest in months. Because bond yields set the baseline for mortgages, savings rates, and corporate borrowing, a quieter bond market tends to ripple outward into the cost of everyday money.",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Ukrainian drones target St Petersburg in attack Russia calls 'unprecedented'",
+      "summary": "Russia says Ukraine has launched an \"unprecedented attack\" on and around St Petersburg, as the city hosted the final day of an economic forum.",
       "keyTakeaways": [
-        "Bond yields stayed flat this week despite mixed economic data.",
-        "Investors appear to have priced in the central bank's expected rate path.",
-        "Calmer bonds feed into steadier mortgage, savings, and borrowing rates."
+        "Ukrainian President Volodymyr Zelensky said his forces had hit Russia's arsenals and a naval base, calling it a just response to Russian attacks.",
+        "Zelensky said his country's drones had covered a distance of 1,000km (620 miles) to St Petersburg, Russia's second largest city, targeting \"the enemy navy's arsenals and a base in Kronstadt\".",
+        "According to Zelensky, an oil depot 500km (310 miles) away, in the southern Krasnodar region, was also hit as part of Ukraine's \"long-range sanctions\" - a euphemism for strikes on Russia."
       ],
-      "whyItMatters": "The bond market sets the weather for everyone else's money — quiet weeks are worth noticing.",
-      "originalURL": "https://www.ft.com/",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop",
-      "placeTime": null,
-      "audioURL": null
+      "whyItMatters": "More than 140 drones were shot down over the surrounding Leningrad region, governor Aleksandr Drozdenko said, while the city's governor, Alexander Beglov, urged residents to stay indoors for the first time since Russia's full-scale invasion of Ukraine in 2022.",
+      "originalURL": "https://www.bbc.com/news/articles/cg7498kz808o?at_medium=RSS&at_campaign=rss",
+      "readTime": "5 min",
+      "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
+      "placeTime": "First light",
+      "audioURL": ""
     },
     {
       "number": 4,
+      "importance": 4,
       "lead": false,
-      "category": "CREATOR",
-      "source": "INPUTS",
-      "headline": "The studio economy is quietly becoming the main economy",
-      "summary": "Independent creators are increasingly building small, durable studios — hiring a few people, owning their distribution, and selling directly — rather than chasing audience size on a single platform. Cheaper production tools now let two or three people do what once took a full team, lowering the cost of going independent. The result is a quiet shift of revenue and ownership away from the platforms that hosted creators and toward the makers themselves. For many, the line between a hobby, a job, and a company is dissolving.",
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Peru is set to elect its 10th president in a decade",
+      "summary": "Peru election to be tight runoff between Fujimori and Sánchez Peruvians will elect their new president Sunday with polls suggesting a polarized but tight race between hard-right candidate Keiko Fujimori and leftist Roberto Sánchez.",
       "keyTakeaways": [
-        "Creators are forming small studios that own their distribution and sell directly.",
-        "Cheap production tools let 2–3 people do what once needed a full team.",
-        "Revenue and ownership are shifting from platforms toward the makers."
+        "A supporters hols a banner of presidential candidate Keiko Fujimori during her closing campaign rally in Lima, Peru, Thursday.",
+        "LIMA, Peru — Peruvians will elect their new president Sunday with polls suggesting a polarized but tight race between perennial hard-right candidate Keiko Fujimori and leftist Roberto Sánchez.",
+        "Keiko, as she's known in Peru, is running on the legacy of her father, the late, disgraced strongman President Alberto Fujimori."
       ],
-      "whyItMatters": "The line between a hobby, a job, and a company is dissolving for a generation of makers.",
-      "originalURL": "https://www.inputmag.com/",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
-      "placeTime": null,
-      "audioURL": null
+      "whyItMatters": "Fujimori had been polling a few points ahead, with around a quarter of voters still undecided, but Reuters reports Sánchez could have narrowed the gap in the last week.",
+      "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5847845/peru-election",
+      "readTime": "4 min",
+      "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
+      "placeTime": "First light",
+      "audioURL": ""
     },
     {
       "number": 5,
+      "importance": 5,
       "lead": false,
-      "category": "JAPAN",
-      "source": "NHK",
-      "headline": "Tokyo's new rail line redraws the morning commute",
-      "summary": "Tokyo opened a new rail connection this week that links previously separate lines, cutting several cross-town commutes by 10–15 minutes. Transit planners expect it to ease crowding on parallel routes during peak hours. Property listings and small businesses near the new stations are already responding, an early sign of how a single line reshapes which neighborhoods feel central. It's a reminder that incremental infrastructure — not headline megaprojects — tends to change daily life the most.",
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+      "summary": "A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana.",
       "keyTakeaways": [
-        "A new link joins separate lines, cutting some commutes by 10–15 minutes.",
-        "Planners expect less crowding on parallel routes at peak hours.",
-        "Neighborhoods near the new stops are already shifting in value and activity."
+        "And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the “No Data Center” signs going up that, “I’ve seen a lot of these all over town, but I only see them in shitty houses,” before adding, “most of them are rentals.”",
+        "The woman speaking to him in the clip quickly pushes back, saying that they’re “working class,” and someone chimes in to add something that a mayor shouldn’t have to be told about their constituents: “it doesn’t matter whether they’re rentals, they’re still human beings.”",
+        "Residents of Shelbyville are understandably taken aback by Furgeson’s dismissive language used towards his constituents."
       ],
-      "whyItMatters": "Transit decides the shape of a morning more than almost anything else in a city.",
-      "originalURL": "https://www3.nhk.or.jp/",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
-      "placeTime": null,
-      "audioURL": null
+      "whyItMatters": "The mayor has declined to comment further, though a spokesperson for the mayor’s office released a statement saying that, “The mayor regrets that his choice of words may have caused offense.”",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
+      "readTime": "4 min",
+      "imageURL": "https://images.signalsapp.co/decorative/tech-soft.jpg",
+      "placeTime": "Morning",
+      "audioURL": ""
     }
   ]
 }

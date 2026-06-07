@@ -12,8 +12,8 @@ NO editorial copy, never assembles or touches latest.json, and never publishes.
 selection.json carries only metadata the Scout already collected.
 
 Usage:
-  python3 select.py render [--candidates candidates.json] [--review review.md]
-  python3 select.py build  [--candidates candidates.json] [--selection selection.yaml] [--out selection.json]
+  python3 selection.py render [--candidates candidates.json] [--review review.md]
+  python3 selection.py build  [--candidates candidates.json] [--selection selection.yaml] [--out selection.json]
 """
 import sys, os, re, json, argparse, hashlib
 from urllib.parse import urlsplit
@@ -80,7 +80,7 @@ def render(args):
              f"{len(multi)} cross-source cluster(s)")
     L.append("")
     L.append("**How to choose:** pick 1 Lead + 4 Supporting from below, paste their "
-             "`id`s into the template, save as `selection.yaml`, then run `python3 select.py build`.")
+             "`id`s into the template, save as `selection.yaml`, then run `python3 selection.py build`.")
     L.append("")
     L.append("## ✍️ Suggested selection template")
     L.append("_Copy this, fill in five `id`s (Lead first), paste into `selection.yaml`._")
@@ -164,14 +164,14 @@ def render(args):
         print(f"✓ wrote a blank {os.path.relpath(args.selection)} for you to fill in.")
     else:
         print(f"• kept your existing {os.path.relpath(args.selection)} (not overwritten).")
-    print("Next: open review.md, choose 1 Lead + 4 Supporting in selection.yaml, then: python3 select.py build")
+    print("Next: open review.md, choose 1 Lead + 4 Supporting in selection.yaml, then: python3 selection.py build")
 
 
 # ---------------------------------------------------------------- build
 def build(args):
     _, _, by_id = load_candidates(args.candidates)
     if not os.path.exists(args.selection):
-        sys.exit(f"ERROR: {args.selection} not found. Run `select.py render` first, then fill it in.")
+        sys.exit(f"ERROR: {args.selection} not found. Run `selection.py render` first, then fill it in.")
     sel = yaml.safe_load(open(args.selection)) or {}
 
     errors = []

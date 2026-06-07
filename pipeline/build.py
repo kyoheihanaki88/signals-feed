@@ -23,7 +23,10 @@ Usage:
 """
 import sys, os, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 import yaml
+
+TOKYO = ZoneInfo("Asia/Tokyo")   # publish timezone — feed date is "today" in Tokyo, not the host TZ
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.dirname(HERE)
@@ -132,7 +135,7 @@ def main():
         fail(errors)
 
     # --- assemble FeedSignal list (importance = number; decorative image; empty audio) ---
-    today = datetime.date.today().isoformat()
+    today = datetime.datetime.now(TOKYO).date().isoformat()   # publish day in Asia/Tokyo
     out_signals = []
     for s in sorted(signals_in, key=lambda x: x["number"]):
         dr = s["draft"]

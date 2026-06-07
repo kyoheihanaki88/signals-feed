@@ -20,6 +20,9 @@ Hard-fails (no changes made) if: draft missing/invalid JSON, not 5 signals, date
 validate_feed.py rejects it, or latest.json already has uncommitted changes.
 """
 import sys, os, json, shutil, argparse, datetime, subprocess
+from zoneinfo import ZoneInfo
+
+TOKYO = ZoneInfo("Asia/Tokyo")   # publish timezone — date checks use this, not the host's TZ
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the signals-feed repo root
@@ -47,8 +50,9 @@ def main():
                     help="actually create the publish branch + commit (default is dry-run)")
     args = ap.parse_args()
 
-    today = datetime.date.today().isoformat()
-    print(f"=== Signals Publish helper ({'APPLY' if args.apply else 'DRY-RUN'}) · {today} ===\n")
+    tokyo_today = datetime.datetime.now(TOKYO).date()
+    today = tokyo_today.isoformat()   # publish day in Asia/Tokyo (used for branch + commit)
+    print(f"=== Signals Publish helper ({'APPLY' if args.apply else 'DRY-RUN'}) · {today} (Asia/Tokyo) ===\n")
 
     # 1. draft present + valid JSON
     if not os.path.exists(args.draft):
@@ -62,8 +66,15 @@ def main():
     sigs = feed.get("signals", [])
     if len(sigs) != 5:
         fail(f"expected exactly 5 signals, draft has {len(sigs)}")
-    if feed.get("date") != today:
-        fail(f"draft date {feed.get('date')!r} is not today ({today}) — rebuild for today before publishing")
+    # date freshness: accept today OR yesterday (Asia/Tokyo); reject future or older-than-yesterday.
+    try:
+        feed_date = datetime.date.fromisoformat(feed.get("date"))
+    except (TypeError, ValueError):
+        fail(f"draft date {feed.get('date')!r} is missing or invalid")
+    if feed_date > tokyo_today:
+        fail(f"draft date {feed.get('date')} is in the future (today is {today}, Asia/Tokyo)")
+    if feed_date < tokyo_today - datetime.timedelta(days=1):
+        fail(f"draft date {feed.get('date')} is older than yesterday (today is {today}, Asia/Tokyo) — rebuild for today")
 
     # 3. validate_feed.py is the authoritative gate
     print("--- validate_feed.py (against the draft) ---")

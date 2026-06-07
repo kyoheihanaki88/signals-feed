@@ -147,11 +147,23 @@ def main():
 
     # --- assemble FeedSignal list (importance = number; decorative image; empty audio) ---
     today = datetime.datetime.now(TOKYO).date().isoformat()   # publish day in Asia/Tokyo
+
+    # Decorative-image pool (distinct, known-working URLs) for de-duping repeated categories, so
+    # several same-category signals don't all render the identical image. Order preserved.
+    image_pool, _seen_pool = [], set()
+    for c in list(img_cats.values()) + [img_default]:
+        if c.get("imageURL") and c["imageURL"] not in _seen_pool:
+            _seen_pool.add(c["imageURL"]); image_pool.append(c)
+    used_images = set()
+
     out_signals = []
     for s in sorted(signals_in, key=lambda x: x["number"]):
         dr = s["draft"]
         cat = s.get("category", "OTHER")
         img = img_cats.get(cat, img_default)
+        if img.get("imageURL") in used_images:                # avoid an identical repeat
+            img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
+        used_images.add(img.get("imageURL"))
         out_signals.append({
             "number": s["number"],
             "importance": s["number"],                     # human order = importance (Lead=1)

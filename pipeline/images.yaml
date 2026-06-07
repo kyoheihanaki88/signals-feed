@@ -1,14 +1,17 @@
-# Signals — curated DECORATIVE images for the feed (Builder image strategy).
+# Signals — editorial MOOD photography for the feed (1.0 image strategy).
 #
-# Atmosphere, NOT journalism: never scraped article photos, never evidence of anything in the
-# story — just a calm, category-appropriate mood image + a time-of-day caption.
+# Atmosphere, NOT journalism. Calm, abstract morning/editorial images — never topic-literal,
+# never implying a specific event, person, location, war, politics, or disaster. Every category
+# maps to the same small curated mood pool; build.py de-dups so signals 2–5 get distinct images.
+# (The Lead's image is overridden app-side by PhotographyPool.)
 #
-# These are known-working Unsplash CDN URLs (the same ones the original seed feed used and that
-# the app displayed correctly). `default` is the safe fallback — a warm cafe/coffee image used
-# for any category not listed below.
+# Pool — ONLY confirmed-working Unsplash CDN URLs (these shipped in the earlier deployed feed):
+#   cafe         photo-1499750310107-5fef28a66643   (coffee on wood — warm morning)
+#   desk         photo-1540959733332-eab4deabeeaf   (quiet stationery desk)
+#   city morning photo-1501339847302-ac426a4a7cbb   (soft city skyline)
 #
-# placeTime is an atmospheric caption (time-of-day / mood), deliberately NOT a specific place
-# claim tied to the story.
+# Richer themes (newspaper / window light / train / quiet street) are held back until their
+# URLs are verified with `curl -I` on the Mac — then they can be added here.
 
 default:
   imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
@@ -17,28 +20,28 @@ default:
 categories:
   WORLD:
     imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
-    placeTime: "First light"
-  BUSINESS:
-    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Early hours"
-  FINANCE:
-    imageURL: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Before the open"
-  ECONOMY:
-    imageURL: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Early hours"
-  AI:
-    imageURL: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Morning"
+    placeTime: "City morning"
   TECH:
-    imageURL: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Morning"
+    imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
+    placeTime: "At the desk"
+  AI:
+    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
+    placeTime: "Morning light"
+  FINANCE:
+    imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
+    placeTime: "At the desk"
+  ECONOMY:
+    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
+    placeTime: "City morning"
+  BUSINESS:
+    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
+    placeTime: "Morning light"
   CREATOR:
     imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Studio morning"
+    placeTime: "At the desk"
   JAPAN:
-    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Tokyo dawn"
+    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
+    placeTime: "City morning"
   OTHER:
     imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
     placeTime: "Morning light"

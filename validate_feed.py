@@ -21,6 +21,9 @@ Rejects:
 """
 import sys, json, datetime
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
+
+TOKYO = ZoneInfo("Asia/Tokyo")   # publish timezone — all date checks use this, not the host's TZ
 
 def validate(path):
     errors = []
@@ -73,10 +76,21 @@ def validate(path):
         elif p.path.strip("/") == "":
             errors.append(f"signal {s.get('number','?')} originalURL is a homepage, not an article: {url!r}")
 
-    # date must be today (the live feed only; the bundled fallback.json is exempt)
-    today = datetime.date.today().isoformat()
-    if feed.get("date") != today:
-        errors.append(f"stale date: feed date {feed.get('date')!r} is not today ({today})")
+    # date freshness (live feed only; the bundled fallback.json is exempt): the feed date must be
+    # TODAY or YESTERDAY in the publish timezone (Asia/Tokyo). This grace window tolerates a
+    # build/review that crosses local midnight, while still rejecting future dates and any feed
+    # older than yesterday (e.g. the May-30 seed).
+    tokyo_today = datetime.datetime.now(TOKYO).date()
+    raw = feed.get("date")
+    try:
+        feed_date = datetime.date.fromisoformat(raw)
+    except (TypeError, ValueError):
+        errors.append(f"invalid or missing feed date: {raw!r}")
+    else:
+        if feed_date > tokyo_today:
+            errors.append(f"future-dated feed: {raw} is ahead of today ({tokyo_today}, Asia/Tokyo)")
+        elif feed_date < tokyo_today - datetime.timedelta(days=1):
+            errors.append(f"stale date: feed date {raw} is older than yesterday ({tokyo_today}, Asia/Tokyo)")
 
     return errors
 

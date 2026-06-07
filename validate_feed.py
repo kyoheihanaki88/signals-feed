@@ -67,6 +67,13 @@ def validate(path):
         if not (isinstance(s.get("summary"), str) and s["summary"].strip()):
             errors.append(f"signal {s.get('number','?')} has an empty/missing summary")
 
+    # readTime must be an integer (the iOS FeedSignal.readTime is Int — a string like "3 min"
+    # breaks the whole feed decode and silently drops the app back to bundled fallback.json).
+    for s in signals:
+        rt = s.get("readTime")
+        if not isinstance(rt, int) or isinstance(rt, bool):
+            errors.append(f"signal {s.get('number','?')} readTime must be an integer, got {rt!r}")
+
     # article URLs: https + a real path (not a bare homepage)
     for s in signals:
         url = s.get("originalURL", "")

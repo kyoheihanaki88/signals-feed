@@ -200,7 +200,7 @@ def draft_one(item, source_text, used):
         "selectedRole": role, "category": item.get("category", "OTHER"),
         "source": item["source"], "originalURL": item["url"],
         "source_text_used": used, "confidence": "low", "flags": [],
-        "draft": {"headline": "", "summary": "", "keyTakeaways": [], "whyItMatters": "", "readTime": ""},
+        "draft": {"headline": "", "summary": "", "keyTakeaways": [], "whyItMatters": "", "readTime": 0},
     }
 
     # --- failure path: no usable source text ---
@@ -265,7 +265,7 @@ def draft_one(item, source_text, used):
         "summary": summary,
         "keyTakeaways": takeaways,
         "whyItMatters": why,
-        "readTime": f"{read_time_min(source_text)} min",
+        "readTime": read_time_min(source_text),   # integer minutes — the app appends its own "min"
     }
     return base
 

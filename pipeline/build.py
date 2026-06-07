@@ -40,6 +40,17 @@ FOCUS = "MIXED"
 VERSION = 1
 
 
+def read_time_int(v):
+    """Normalize readTime to integer minutes. Accepts 3, '3', '3 min', '' → 0.
+    iOS FeedSignal.readTime is an Int, so the feed must never carry a string here."""
+    if isinstance(v, bool):
+        return 0
+    if isinstance(v, int):
+        return v
+    digits = "".join(ch for ch in str(v) if ch.isdigit())
+    return int(digits) if digits else 0
+
+
 def fail(errors):
     print("❌ BUILD REJECTED — no draft written, production latest.json untouched:")
     for e in errors:
@@ -152,7 +163,7 @@ def main():
             "keyTakeaways": dr["keyTakeaways"],
             "whyItMatters": dr["whyItMatters"],
             "originalURL": s["originalURL"],
-            "readTime": dr.get("readTime", ""),
+            "readTime": read_time_int(dr.get("readTime")),   # always Int minutes (iOS expects Int)
             "imageURL": img.get("imageURL", ""),           # curated decorative
             "placeTime": img.get("placeTime", ""),
             "audioURL": "",                                 # empty in v1

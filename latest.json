@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-06",
+  "date": "2026-06-07",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -18,7 +18,7 @@
       ],
       "whyItMatters": "Tehran called the US strikes a \"flagrant\" violation of the ceasefire agreement between the two countries.",
       "originalURL": "https://www.bbc.com/news/articles/cvgzgyjk2weo?at_medium=RSS&at_campaign=rss",
-      "readTime": "3 min",
+      "readTime": 3,
       "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
       "placeTime": "First light",
       "audioURL": ""
@@ -38,7 +38,7 @@
       ],
       "whyItMatters": "BEIRUT — Israeli airstrikes on southern Lebanon on Saturday killed nine people including three members of the Lebanese military, the Lebanese army and state media said, days after the two sides reached a new ceasefire deal.",
       "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5848595/israeli-airstrikes-kill-lebanese-army-officers",
-      "readTime": "4 min",
+      "readTime": 4,
       "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
       "placeTime": "First light",
       "audioURL": ""
@@ -58,7 +58,7 @@
       ],
       "whyItMatters": "More than 140 drones were shot down over the surrounding Leningrad region, governor Aleksandr Drozdenko said, while the city's governor, Alexander Beglov, urged residents to stay indoors for the first time since Russia's full-scale invasion of Ukraine in 2022.",
       "originalURL": "https://www.bbc.com/news/articles/cg7498kz808o?at_medium=RSS&at_campaign=rss",
-      "readTime": "5 min",
+      "readTime": 5,
       "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
       "placeTime": "First light",
       "audioURL": ""
@@ -78,7 +78,7 @@
       ],
       "whyItMatters": "Fujimori had been polling a few points ahead, with around a quarter of voters still undecided, but Reuters reports Sánchez could have narrowed the gap in the last week.",
       "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5847845/peru-election",
-      "readTime": "4 min",
+      "readTime": 4,
       "imageURL": "https://images.signalsapp.co/decorative/world-dawn.jpg",
       "placeTime": "First light",
       "audioURL": ""
@@ -98,7 +98,7 @@
       ],
       "whyItMatters": "The mayor has declined to comment further, though a spokesperson for the mayor’s office released a statement saying that, “The mayor regrets that his choice of words may have caused offense.”",
       "originalURL": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
-      "readTime": "4 min",
+      "readTime": 4,
       "imageURL": "https://images.signalsapp.co/decorative/tech-soft.jpg",
       "placeTime": "Morning",
       "audioURL": ""

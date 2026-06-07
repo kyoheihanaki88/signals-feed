@@ -1,47 +1,81 @@
-# Signals — editorial MOOD photography for the feed (1.0 image strategy).
+# Signals — editorial MOOD photography library (1.0). ~45 calm, timeless images.
 #
-# Atmosphere, NOT journalism. Calm, abstract morning/editorial images — never topic-literal,
-# never implying a specific event, person, location, war, politics, or disaster. Every category
-# maps to the same small curated mood pool; build.py de-dups so signals 2–5 get distinct images.
-# (The Lead's image is overridden app-side by PhotographyPool.)
+# Signals is a Morning Ritual, not a news app: images create ATMOSPHERE, never illustrate the
+# story. Aesthetic: Monocle / Kinfolk / Apple Journal / editorial newspaper. Allowed themes only —
+# cafe, desk, morning light, city morning, transit, reading, architecture. STRICTLY no politicians,
+# protests, war, disasters, military, crime, charts, product shots, celebrities, or portraits-as-subject.
 #
-# Pool — ONLY confirmed-working Unsplash CDN URLs (these shipped in the earlier deployed feed):
-#   cafe         photo-1499750310107-5fef28a66643   (coffee on wood — warm morning)
-#   desk         photo-1540959733332-eab4deabeeaf   (quiet stationery desk)
-#   city morning photo-1501339847302-ac426a4a7cbb   (soft city skyline)
+# build.py rotates this pool daily (day-of-year) and assigns DISTINCT images to the 5 signals, so a
+# day never repeats and the set drifts week to week. The Lead's image is overridden by PhotographyPool.
 #
-# Richer themes (newspaper / window light / train / quiet street) are held back until their
-# URLs are verified with `curl -I` on the Mac — then they can be added here.
+# RELIABILITY: only 3 URLs are confirmed (✓, shipped before). Before publishing, run
+#   python3 pipeline/build.py --verify-images
+# on a networked machine — it HTTP-checks every URL and DROPS any that fail, so only working images
+# ship. Replace any that get dropped over time to keep the library near ~45.
 
 default:
   imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
   placeTime: "Morning light"
 
-categories:
-  WORLD:
-    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
-    placeTime: "City morning"
-  TECH:
-    imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
-    placeTime: "At the desk"
-  AI:
-    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Morning light"
-  FINANCE:
-    imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
-    placeTime: "At the desk"
-  ECONOMY:
-    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
-    placeTime: "City morning"
-  BUSINESS:
-    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Morning light"
-  CREATOR:
-    imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop"
-    placeTime: "At the desk"
-  JAPAN:
-    imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop"
-    placeTime: "City morning"
-  OTHER:
-    imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
-    placeTime: "Morning light"
+pool:
+  # ---------------- Cafe ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop", placeTime: "Morning light" }   # ✓ coffee on wood
+  - { imageURL: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop", placeTime: "Coffee first" }     # coffee cup
+  - { imageURL: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80&auto=format&fit=crop", placeTime: "Corner cafe" }
+  - { imageURL: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80&auto=format&fit=crop", placeTime: "Espresso bar" }
+  - { imageURL: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=900&q=80&auto=format&fit=crop", placeTime: "Window seat" }
+  - { imageURL: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80&auto=format&fit=crop", placeTime: "Cafe counter" }
+  - { imageURL: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet cafe" }
+  - { imageURL: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=900&q=80&auto=format&fit=crop", placeTime: "Rainy morning" }
+
+  # ---------------- Desk ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop", placeTime: "At the desk" }      # ✓ stationery desk
+  - { imageURL: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=900&q=80&auto=format&fit=crop", placeTime: "Open notebook" }
+  - { imageURL: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop", placeTime: "Still morning" }
+  - { imageURL: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&q=80&auto=format&fit=crop", placeTime: "Writing desk" }
+  - { imageURL: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=900&q=80&auto=format&fit=crop", placeTime: "Workspace" }
+  - { imageURL: "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=900&q=80&auto=format&fit=crop", placeTime: "The planner" }
+  - { imageURL: "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=900&q=80&auto=format&fit=crop", placeTime: "Tidy desk" }
+
+  # ---------------- Morning Light ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=900&q=80&auto=format&fit=crop", placeTime: "Window light" }
+  - { imageURL: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&q=80&auto=format&fit=crop", placeTime: "First light" }
+  - { imageURL: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=900&q=80&auto=format&fit=crop", placeTime: "Curtain light" }
+  - { imageURL: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=900&q=80&auto=format&fit=crop", placeTime: "Warm interior" }
+  - { imageURL: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=900&q=80&auto=format&fit=crop", placeTime: "Morning shadows" }
+  - { imageURL: "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=900&q=80&auto=format&fit=crop", placeTime: "Breakfast light" }
+  - { imageURL: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=900&q=80&auto=format&fit=crop", placeTime: "Hotel morning" }
+
+  # ---------------- City Morning ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }    # ✓ soft skyline
+  - { imageURL: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet street" }
+  - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "City dawn" }
+  - { imageURL: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=900&q=80&auto=format&fit=crop", placeTime: "Empty avenue" }
+  - { imageURL: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80&auto=format&fit=crop", placeTime: "Storefront" }
+  - { imageURL: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=80&auto=format&fit=crop", placeTime: "Morning sidewalk" }
+  - { imageURL: "https://images.unsplash.com/photo-1471919743851-c4df8b6ee133?w=900&q=80&auto=format&fit=crop", placeTime: "Bicycle street" }
+
+  # ---------------- Transit ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=900&q=80&auto=format&fit=crop", placeTime: "On the platform" }
+  - { imageURL: "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop", placeTime: "Early hours" }
+  - { imageURL: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900&q=80&auto=format&fit=crop", placeTime: "Station bench" }
+  - { imageURL: "https://images.unsplash.com/photo-1495121553079-4c61bcce1894?w=900&q=80&auto=format&fit=crop", placeTime: "Commuter train" }
+  - { imageURL: "https://images.unsplash.com/photo-1556122071-e404eaedb77f?w=900&q=80&auto=format&fit=crop", placeTime: "Tram stop" }
+  - { imageURL: "https://images.unsplash.com/photo-1532105956626-9569c03602f6?w=900&q=80&auto=format&fit=crop", placeTime: "Empty platform" }
+
+  # ---------------- Reading ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80&auto=format&fit=crop", placeTime: "Morning paper" }
+  - { imageURL: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=900&q=80&auto=format&fit=crop", placeTime: "Reading hour" }
+  - { imageURL: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80&auto=format&fit=crop", placeTime: "Between the lines" }
+  - { imageURL: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&q=80&auto=format&fit=crop", placeTime: "Open book" }
+  - { imageURL: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80&auto=format&fit=crop", placeTime: "Bookshelves" }
+  - { imageURL: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900&q=80&auto=format&fit=crop", placeTime: "Reading nook" }
+  - { imageURL: "https://images.unsplash.com/photo-1526243741027-444d633d7365?w=900&q=80&auto=format&fit=crop", placeTime: "The magazine" }
+
+  # ---------------- Architecture ----------------
+  - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
+  - { imageURL: "https://images.unsplash.com/photo-1459535653751-d571815e906b?w=900&q=80&auto=format&fit=crop", placeTime: "Hallway light" }
+  - { imageURL: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet space" }
+  - { imageURL: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80&auto=format&fit=crop", placeTime: "Staircase" }
+  - { imageURL: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&q=80&auto=format&fit=crop", placeTime: "Minimal interior" }
+  - { imageURL: "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=900&q=80&auto=format&fit=crop", placeTime: "Concrete & light" }

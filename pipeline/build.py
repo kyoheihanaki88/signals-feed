@@ -23,6 +23,7 @@ Usage:
 """
 import sys, os, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
+import urllib.request
 from zoneinfo import ZoneInfo
 import yaml
 
@@ -51,6 +52,17 @@ def read_time_int(v):
     return int(digits) if digits else 0
 
 
+def url_ok(url, timeout=8):
+    """True if the image URL is reachable (HTTP < 400). Used by --verify-images to drop dead
+    images before they can ship. Returns False on any network error (so offline = treat as bad)."""
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "SignalsBuild/1.0"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return 200 <= getattr(r, "status", r.getcode()) < 400
+    except Exception:
+        return False
+
+
 def fail(errors):
     print("❌ BUILD REJECTED — no draft written, production latest.json untouched:")
     for e in errors:
@@ -63,13 +75,16 @@ def main():
     ap.add_argument("--drafts", default=DEF_DRAFTS)
     ap.add_argument("--images", default=DEF_IMAGES)
     ap.add_argument("--out", default=DEF_OUT)
+    ap.add_argument("--verify-images", action="store_true",
+                    help="HTTP-check every pool image and drop any that fail (run on a networked machine)")
     args = ap.parse_args()
 
     if not os.path.exists(args.drafts):
         fail([f"drafts file not found: {args.drafts}"])
     drafts = json.load(open(args.drafts))
     images = yaml.safe_load(open(args.images))
-    img_cats = images.get("categories", {})
+    img_cats = images.get("categories", {})            # legacy category map (optional)
+    img_pool = images.get("pool", [])                  # editorial mood pool (preferred)
     img_default = images.get("default", {"imageURL": "", "placeTime": ""})
 
     signals_in = drafts.get("signals", [])
@@ -127,10 +142,10 @@ def main():
         else:
             seen_urls.setdefault(url, []).append(sid)
 
-        # category must have a curated image
+        # an image source must exist: either the mood pool, or a per-category map entry
         cat = s.get("category", "OTHER")
-        if cat not in img_cats:
-            errors.append(f"[{sid}] no curated image for category {cat!r} in images.yaml")
+        if not img_pool and cat not in img_cats:
+            errors.append(f"[{sid}] no curated image (no pool, and category {cat!r} not in images.yaml)")
 
     # duplicate URLs
     for url, ids in seen_urls.items():
@@ -148,21 +163,41 @@ def main():
     # --- assemble FeedSignal list (importance = number; decorative image; empty audio) ---
     today = datetime.datetime.now(TOKYO).date().isoformat()   # publish day in Asia/Tokyo
 
-    # Decorative-image pool (distinct, known-working URLs) for de-duping repeated categories, so
-    # several same-category signals don't all render the identical image. Order preserved.
+    # Build the de-dup image pool. Prefer the editorial mood `pool`; else fall back to the legacy
+    # per-category map. Distinct URLs only, order preserved.
     image_pool, _seen_pool = [], set()
-    for c in list(img_cats.values()) + [img_default]:
+    for c in (img_pool if img_pool else list(img_cats.values()) + [img_default]):
         if c.get("imageURL") and c["imageURL"] not in _seen_pool:
             _seen_pool.add(c["imageURL"]); image_pool.append(c)
+
+    # Optional: drop any image that doesn't actually load, so a dead URL can never ship.
+    if args.verify_images and image_pool:
+        live = [c for c in image_pool if url_ok(c["imageURL"])]
+        print(f"  image verify: {len(live)}/{len(image_pool)} reachable")
+        image_pool = live or [img_default]   # never end up empty
+
+    # Daily rotation so the pool feels fresh across weeks (different day-of-year → different slice).
+    if image_pool:
+        start = datetime.datetime.now(TOKYO).timetuple().tm_yday % len(image_pool)
+        image_pool = image_pool[start:] + image_pool[:start]
+
     used_images = set()
 
     out_signals = []
-    for s in sorted(signals_in, key=lambda x: x["number"]):
+    for idx, s in enumerate(sorted(signals_in, key=lambda x: x["number"])):
         dr = s["draft"]
         cat = s.get("category", "OTHER")
-        img = img_cats.get(cat, img_default)
-        if img.get("imageURL") in used_images:                # avoid an identical repeat
-            img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
+        if img_pool:
+            # stride across the pool so a single issue spans different themes (not 5 neighbours),
+            # then fall through to the next unused image if a stride pick ever collides.
+            stride = max(1, len(image_pool) // 5)
+            img = image_pool[(idx * stride) % len(image_pool)] if image_pool else img_default
+            if img.get("imageURL") in used_images:
+                img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
+        else:
+            img = img_cats.get(cat, img_default)
+            if img.get("imageURL") in used_images:            # avoid an identical repeat
+                img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
         used_images.add(img.get("imageURL"))
         out_signals.append({
             "number": s["number"],

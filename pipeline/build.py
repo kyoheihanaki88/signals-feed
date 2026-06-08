@@ -83,8 +83,11 @@ def main():
         fail([f"drafts file not found: {args.drafts}"])
     drafts = json.load(open(args.drafts))
     images = yaml.safe_load(open(args.images))
+    cat_pools = images.get("category_pools", {})       # per-category pools (preferred)
+    aliases = images.get("aliases", {})                # Scout category → pool category
+    default_pool = images.get("default_pool", [])      # fallback pool
     img_cats = images.get("categories", {})            # legacy category map (optional)
-    img_pool = images.get("pool", [])                  # editorial mood pool (preferred)
+    img_pool = images.get("pool", [])                  # legacy flat mood pool (optional)
     img_default = images.get("default", {"imageURL": "", "placeTime": ""})
 
     signals_in = drafts.get("signals", [])
@@ -142,10 +145,12 @@ def main():
         else:
             seen_urls.setdefault(url, []).append(sid)
 
-        # an image source must exist: either the mood pool, or a per-category map entry
+        # an image source must exist: a category pool (or alias), a flat pool, or a category map.
         cat = s.get("category", "OTHER")
-        if not img_pool and cat not in img_cats:
-            errors.append(f"[{sid}] no curated image (no pool, and category {cat!r} not in images.yaml)")
+        has_source = (cat_pools.get(aliases.get(cat, cat)) or cat_pools.get(cat) or default_pool
+                      or img_pool or (cat in img_cats))
+        if not has_source:
+            errors.append(f"[{sid}] no curated image for category {cat!r} (no pool/alias/default)")
 
     # duplicate URLs
     for url, ids in seen_urls.items():
@@ -163,41 +168,41 @@ def main():
     # --- assemble FeedSignal list (importance = number; decorative image; empty audio) ---
     today = datetime.datetime.now(TOKYO).date().isoformat()   # publish day in Asia/Tokyo
 
-    # Build the de-dup image pool. Prefer the editorial mood `pool`; else fall back to the legacy
-    # per-category map. Distinct URLs only, order preserved.
-    image_pool, _seen_pool = [], set()
-    for c in (img_pool if img_pool else list(img_cats.values()) + [img_default]):
-        if c.get("imageURL") and c["imageURL"] not in _seen_pool:
-            _seen_pool.add(c["imageURL"]); image_pool.append(c)
+    yday = datetime.datetime.now(TOKYO).timetuple().tm_yday   # day-of-year → daily rotation
 
-    # Optional: drop any image that doesn't actually load, so a dead URL can never ship.
-    if args.verify_images and image_pool:
-        live = [c for c in image_pool if url_ok(c["imageURL"])]
-        print(f"  image verify: {len(live)}/{len(image_pool)} reachable")
-        image_pool = live or [img_default]   # never end up empty
+    def resolve_pool(cat):
+        """The image pool for a Scout category: its own pool, else alias's, else default/flat."""
+        p = cat_pools.get(cat) or cat_pools.get(aliases.get(cat, "")) or default_pool or img_pool
+        if not p and cat in img_cats:
+            p = [img_cats[cat]]
+        return p or [img_default]
 
-    # Daily rotation so the pool feels fresh across weeks (different day-of-year → different slice).
-    if image_pool:
-        start = datetime.datetime.now(TOKYO).timetuple().tm_yday % len(image_pool)
-        image_pool = image_pool[start:] + image_pool[:start]
+    # --verify-images: drop any URL that doesn't load, per pool, so a dead image can never ship.
+    if args.verify_images:
+        all_urls = sorted({e["imageURL"] for pool in list(cat_pools.values())
+                           + [default_pool, img_pool] for e in pool if e.get("imageURL")})
+        dead = {u for u in all_urls if not url_ok(u)}
+        print(f"  image verify: {len(all_urls) - len(dead)}/{len(all_urls)} reachable"
+              + (f" — dropped {len(dead)}" if dead else ""))
+        for name, pool in list(cat_pools.items()):
+            cat_pools[name] = [e for e in pool if e["imageURL"] not in dead]
+        default_pool[:] = [e for e in default_pool if e["imageURL"] not in dead]
+        img_pool[:] = [e for e in img_pool if e["imageURL"] not in dead]
+
+    def rotated(pool):
+        return (pool[yday % len(pool):] + pool[:yday % len(pool)]) if pool else []
 
     used_images = set()
-
     out_signals = []
     for idx, s in enumerate(sorted(signals_in, key=lambda x: x["number"])):
         dr = s["draft"]
         cat = s.get("category", "OTHER")
-        if img_pool:
-            # stride across the pool so a single issue spans different themes (not 5 neighbours),
-            # then fall through to the next unused image if a stride pick ever collides.
-            stride = max(1, len(image_pool) // 5)
-            img = image_pool[(idx * stride) % len(image_pool)] if image_pool else img_default
-            if img.get("imageURL") in used_images:
-                img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
-        else:
-            img = img_cats.get(cat, img_default)
-            if img.get("imageURL") in used_images:            # avoid an identical repeat
-                img = next((p for p in image_pool if p["imageURL"] not in used_images), img)
+        pool = rotated(resolve_pool(cat))
+        # first image from THIS category's (rotated) pool not already used in the issue;
+        # if its whole pool is used, fall back to any unused image, else the default.
+        img = (next((e for e in pool if e["imageURL"] not in used_images), None)
+               or next((e for cp in cat_pools.values() for e in cp if e["imageURL"] not in used_images), None)
+               or img_default)
         used_images.add(img.get("imageURL"))
         out_signals.append({
             "number": s["number"],

@@ -1,81 +1,111 @@
-# Signals — editorial MOOD photography library (1.0). ~45 calm, timeless images.
+# Signals — CATEGORY-BASED editorial mood photography (1.0).
 #
-# Signals is a Morning Ritual, not a news app: images create ATMOSPHERE, never illustrate the
-# story. Aesthetic: Monocle / Kinfolk / Apple Journal / editorial newspaper. Allowed themes only —
-# cafe, desk, morning light, city morning, transit, reading, architecture. STRICTLY no politicians,
-# protests, war, disasters, military, crime, charts, product shots, celebrities, or portraits-as-subject.
+# Signals is a Morning Ritual, not a news app. Images provide CONTEXT, not documentation —
+# "this belongs with the story", never "this depicts the story". Aesthetic: Monocle / FT Weekend /
+# Economist 1843 / Kinfolk. STRICTLY no breaking news, war, politicians, disasters, crime, protests,
+# violence, celebrity, or literal event imagery.
 #
-# build.py rotates this pool daily (day-of-year) and assigns DISTINCT images to the 5 signals, so a
-# day never repeats and the set drifts week to week. The Lead's image is overridden by PhotographyPool.
+# Each Scout category has its own ~10-image pool. build.py picks from the SIGNAL'S category pool,
+# rotates daily (day-of-year), and never repeats an image within the same issue.
 #
-# RELIABILITY: only 3 URLs are confirmed (✓, shipped before). Before publishing, run
-#   python3 pipeline/build.py --verify-images
-# on a networked machine — it HTTP-checks every URL and DROPS any that fail, so only working images
-# ship. Replace any that get dropped over time to keep the library near ~45.
+# RELIABILITY: these URLs are curated CANDIDATES and are mostly UNVERIFIED from here. Before
+# publishing, run:  python3 pipeline/build.py --verify-images   (on a networked machine) — it
+# HTTP-checks every URL and DROPS dead ones, printing a per-pool reachable count. Backfill any
+# pool that drops below ~5. [✓ = confirmed working previously]
 
-default:
-  imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop"
-  placeTime: "Morning light"
+# Scout categories not given a dedicated pool fall back through these aliases:
+aliases:
+  FINANCE: BUSINESS
+  ECONOMY: BUSINESS
+  OTHER: WORLD
 
-pool:
-  # ---------------- Cafe ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop", placeTime: "Morning light" }   # ✓ coffee on wood
-  - { imageURL: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop", placeTime: "Coffee first" }     # coffee cup
-  - { imageURL: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80&auto=format&fit=crop", placeTime: "Corner cafe" }
-  - { imageURL: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80&auto=format&fit=crop", placeTime: "Espresso bar" }
-  - { imageURL: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=900&q=80&auto=format&fit=crop", placeTime: "Window seat" }
-  - { imageURL: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80&auto=format&fit=crop", placeTime: "Cafe counter" }
-  - { imageURL: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet cafe" }
-  - { imageURL: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=900&q=80&auto=format&fit=crop", placeTime: "Rainy morning" }
+# Used only if a category has no pool and no alias resolves:
+default_pool:
+  - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }   # ✓
+  - { imageURL: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop", placeTime: "Morning light" }   # ✓
+  - { imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop", placeTime: "At the desk" }      # ✓
 
-  # ---------------- Desk ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop", placeTime: "At the desk" }      # ✓ stationery desk
-  - { imageURL: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=900&q=80&auto=format&fit=crop", placeTime: "Open notebook" }
-  - { imageURL: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop", placeTime: "Still morning" }
-  - { imageURL: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&q=80&auto=format&fit=crop", placeTime: "Writing desk" }
-  - { imageURL: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=900&q=80&auto=format&fit=crop", placeTime: "Workspace" }
-  - { imageURL: "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=900&q=80&auto=format&fit=crop", placeTime: "The planner" }
-  - { imageURL: "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=900&q=80&auto=format&fit=crop", placeTime: "Tidy desk" }
+category_pools:
+  AI:   # servers, data centers, chips, abstract computing, research workspaces
+    - { imageURL: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80&auto=format&fit=crop", placeTime: "Server room" }
+    - { imageURL: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&auto=format&fit=crop", placeTime: "Research bench" }
+    - { imageURL: "https://images.unsplash.com/photo-1591405351990-4726e331f141?w=900&q=80&auto=format&fit=crop", placeTime: "Silicon" }
+    - { imageURL: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop", placeTime: "Circuitry" }
+    - { imageURL: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900&q=80&auto=format&fit=crop", placeTime: "Data" }
+    - { imageURL: "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=900&q=80&auto=format&fit=crop", placeTime: "Compute" }
+    - { imageURL: "https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+    - { imageURL: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80&auto=format&fit=crop", placeTime: "Hardware" }
+    - { imageURL: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80&auto=format&fit=crop", placeTime: "Abstract compute" }
+    - { imageURL: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?w=900&q=80&auto=format&fit=crop", placeTime: "The lab" }
 
-  # ---------------- Morning Light ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=900&q=80&auto=format&fit=crop", placeTime: "Window light" }
-  - { imageURL: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&q=80&auto=format&fit=crop", placeTime: "First light" }
-  - { imageURL: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=900&q=80&auto=format&fit=crop", placeTime: "Curtain light" }
-  - { imageURL: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=900&q=80&auto=format&fit=crop", placeTime: "Warm interior" }
-  - { imageURL: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=900&q=80&auto=format&fit=crop", placeTime: "Morning shadows" }
-  - { imageURL: "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=900&q=80&auto=format&fit=crop", placeTime: "Breakfast light" }
-  - { imageURL: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=900&q=80&auto=format&fit=crop", placeTime: "Hotel morning" }
+  TECH:   # desks, keyboards, devices, workstations, modern offices
+    - { imageURL: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop", placeTime: "Workstation" }
+    - { imageURL: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop", placeTime: "The editor" }
+    - { imageURL: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop", placeTime: "Devices" }
+    - { imageURL: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop", placeTime: "Keyboard" }
+    - { imageURL: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop", placeTime: "Modern office" }
+    - { imageURL: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop", placeTime: "The bench" }
+    - { imageURL: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop", placeTime: "Engineering" }
+    - { imageURL: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop", placeTime: "Software" }
+    - { imageURL: "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop", placeTime: "The studio" }
+    - { imageURL: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop", placeTime: "The team" }
 
-  # ---------------- City Morning ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }    # ✓ soft skyline
-  - { imageURL: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet street" }
-  - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "City dawn" }
-  - { imageURL: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=900&q=80&auto=format&fit=crop", placeTime: "Empty avenue" }
-  - { imageURL: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80&auto=format&fit=crop", placeTime: "Storefront" }
-  - { imageURL: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=80&auto=format&fit=crop", placeTime: "Morning sidewalk" }
-  - { imageURL: "https://images.unsplash.com/photo-1471919743851-c4df8b6ee133?w=900&q=80&auto=format&fit=crop", placeTime: "Bicycle street" }
+  BUSINESS:   # financial districts, office buildings, skylines, airports, architecture
+    - { imageURL: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop", placeTime: "The district" }
+    - { imageURL: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=900&q=80&auto=format&fit=crop", placeTime: "Towers" }
+    - { imageURL: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop", placeTime: "Glass & steel" }
+    - { imageURL: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop", placeTime: "The boardroom" }
+    - { imageURL: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80&auto=format&fit=crop", placeTime: "Conference" }
+    - { imageURL: "https://images.unsplash.com/photo-1503551723145-6c040742065b-?w=900&q=80&auto=format&fit=crop", placeTime: "Departures" }
+    - { imageURL: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80&auto=format&fit=crop", placeTime: "The meeting" }
+    - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "Skyline" }
+    - { imageURL: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900&q=80&auto=format&fit=crop", placeTime: "The office" }
+    - { imageURL: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&auto=format&fit=crop", placeTime: "Business travel" }
 
-  # ---------------- Transit ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=900&q=80&auto=format&fit=crop", placeTime: "On the platform" }
-  - { imageURL: "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop", placeTime: "Early hours" }
-  - { imageURL: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900&q=80&auto=format&fit=crop", placeTime: "Station bench" }
-  - { imageURL: "https://images.unsplash.com/photo-1495121553079-4c61bcce1894?w=900&q=80&auto=format&fit=crop", placeTime: "Commuter train" }
-  - { imageURL: "https://images.unsplash.com/photo-1556122071-e404eaedb77f?w=900&q=80&auto=format&fit=crop", placeTime: "Tram stop" }
-  - { imageURL: "https://images.unsplash.com/photo-1532105956626-9569c03602f6?w=900&q=80&auto=format&fit=crop", placeTime: "Empty platform" }
+  WORLD:   # globes, maps, ports, transport hubs, international cities, infrastructure
+    - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }   # ✓
+    - { imageURL: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop", placeTime: "From orbit" }
+    - { imageURL: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop", placeTime: "The globe" }
+    - { imageURL: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop", placeTime: "The map" }
+    - { imageURL: "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop", placeTime: "The terminal" }
+    - { imageURL: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop", placeTime: "The port" }
+    - { imageURL: "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+    - { imageURL: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop", placeTime: "International" }
+    - { imageURL: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop", placeTime: "The crossing" }
+    - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
 
-  # ---------------- Reading ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80&auto=format&fit=crop", placeTime: "Morning paper" }
-  - { imageURL: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=900&q=80&auto=format&fit=crop", placeTime: "Reading hour" }
-  - { imageURL: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80&auto=format&fit=crop", placeTime: "Between the lines" }
-  - { imageURL: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&q=80&auto=format&fit=crop", placeTime: "Open book" }
-  - { imageURL: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80&auto=format&fit=crop", placeTime: "Bookshelves" }
-  - { imageURL: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900&q=80&auto=format&fit=crop", placeTime: "Reading nook" }
-  - { imageURL: "https://images.unsplash.com/photo-1526243741027-444d633d7365?w=900&q=80&auto=format&fit=crop", placeTime: "The magazine" }
+  JAPAN:   # Tokyo streets, stations, neighborhoods, cafes, shrines, design
+    - { imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet desk" }     # ✓
+    - { imageURL: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=900&q=80&auto=format&fit=crop", placeTime: "Tokyo street" }
+    - { imageURL: "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=900&q=80&auto=format&fit=crop", placeTime: "The station" }
+    - { imageURL: "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=900&q=80&auto=format&fit=crop", placeTime: "City dusk" }
+    - { imageURL: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop", placeTime: "The shrine" }
+    - { imageURL: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=900&q=80&auto=format&fit=crop", placeTime: "Neon evening" }
+    - { imageURL: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=900&q=80&auto=format&fit=crop", placeTime: "Lantern light" }
+    - { imageURL: "https://images.unsplash.com/photo-1554797589-7241bb691973?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet block" }
+    - { imageURL: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop", placeTime: "Morning commute" }
+    - { imageURL: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop", placeTime: "Japanese design" }
 
-  # ---------------- Architecture ----------------
-  - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
-  - { imageURL: "https://images.unsplash.com/photo-1459535653751-d571815e906b?w=900&q=80&auto=format&fit=crop", placeTime: "Hallway light" }
-  - { imageURL: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet space" }
-  - { imageURL: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80&auto=format&fit=crop", placeTime: "Staircase" }
-  - { imageURL: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&q=80&auto=format&fit=crop", placeTime: "Minimal interior" }
-  - { imageURL: "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=900&q=80&auto=format&fit=crop", placeTime: "Concrete & light" }
+  CREATOR:   # cameras, notebooks, studios, editing desks, microphones, gear
+    - { imageURL: "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=900&q=80&auto=format&fit=crop", placeTime: "The camera" }
+    - { imageURL: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=900&q=80&auto=format&fit=crop", placeTime: "The mic" }
+    - { imageURL: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=900&q=80&auto=format&fit=crop", placeTime: "Editing desk" }
+    - { imageURL: "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=900&q=80&auto=format&fit=crop", placeTime: "The lens" }
+    - { imageURL: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=900&q=80&auto=format&fit=crop", placeTime: "Sketchbook" }
+    - { imageURL: "https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?w=900&q=80&auto=format&fit=crop", placeTime: "The studio" }
+    - { imageURL: "https://images.unsplash.com/photo-1607968565043-36af90dde238?w=900&q=80&auto=format&fit=crop", placeTime: "Makerspace" }
+    - { imageURL: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&q=80&auto=format&fit=crop", placeTime: "Production" }
+    - { imageURL: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80&auto=format&fit=crop", placeTime: "The workspace" }
+    - { imageURL: "https://images.unsplash.com/photo-1499540633125-484965b60031?w=900&q=80&auto=format&fit=crop", placeTime: "Gear" }
+
+  SCIENCE:   # laboratories, observatories, telescopes, instruments, space
+    - { imageURL: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop", placeTime: "The lab" }
+    - { imageURL: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop", placeTime: "Experiment" }
+    - { imageURL: "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop", placeTime: "The observatory" }
+    - { imageURL: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop", placeTime: "Night sky" }
+    - { imageURL: "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop", placeTime: "The instrument" }
+    - { imageURL: "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop", placeTime: "Microscope" }
+    - { imageURL: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop", placeTime: "Exploration" }
+    - { imageURL: "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop", placeTime: "Deep field" }
+    - { imageURL: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop", placeTime: "Research" }
+    - { imageURL: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop", placeTime: "The academy" }

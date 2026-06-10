@@ -1,8 +1,10 @@
 name: validate-feed
 
-# Publish gate: on every PR to main, validate the live feed with validate_feed.py.
-# It ONLY validates latest.json when the PR actually changes it (the feed's date==today
-# rule would otherwise fail unrelated PRs). Read-only: never writes, merges, or deploys.
+# Publish gate: on every PR to main, validate the date-keyed feed with validate_feed.py.
+# It validates any latest.json / editions/*.json the PR changes, then runs the repo-level
+# --consistency invariant (latest.json == newest edition, no stale regression). It only acts
+# when the PR actually touches feed files, so unrelated PRs pass untouched. Timezone-agnostic:
+# no TZ is set — the validator does not pin Asia/Tokyo (see ADR-0001). Read-only.
 
 on:
   pull_request:
@@ -15,11 +17,6 @@ jobs:
   validate-feed:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    env:
-      # Match the Builder's date (set on the Mac in JST). validate_feed.py uses
-      # date.today(), which is UTC on the runner; without this the JST feed date
-      # would read as "tomorrow" and fail. Adjust if the publishing timezone changes.
-      TZ: Asia/Tokyo
     steps:
       - name: Checkout (full history for diff)
         uses: actions/checkout@v4
@@ -31,21 +28,34 @@ jobs:
         with:
           python-version: "3.12"   # validate_feed.py is stdlib-only — no pip install needed
 
-      - name: Detect whether latest.json changed in this PR
+      - name: Detect changed feed files (latest.json / editions/*.json)
         id: changed
         run: |
-          if git diff --name-only \
+          files="$(git diff --name-only \
               "${{ github.event.pull_request.base.sha }}" \
-              "${{ github.event.pull_request.head.sha }}" | grep -qx 'latest.json'; then
-            echo "changed=true"  >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
+              "${{ github.event.pull_request.head.sha }}" \
+              | grep -E '^(latest\.json|editions/.*\.json)$' || true)"
+          {
+            echo "files<<EOF"
+            echo "$files"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          if [ -n "$files" ]; then echo "any=true" >> "$GITHUB_OUTPUT"; else echo "any=false" >> "$GITHUB_OUTPUT"; fi
 
-      - name: Validate latest.json (only when the feed changed)
-        if: steps.changed.outputs.changed == 'true'
-        run: python3 validate_feed.py latest.json   # non-zero exit fails the check → PR unmergeable
+      - name: Validate changed feed files + repo consistency
+        if: steps.changed.outputs.any == 'true'
+        run: |
+          set -e
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            echo "::group::validate $f"
+            python3 validate_feed.py "$f"
+            echo "::endgroup::"
+          done <<< "${{ steps.changed.outputs.files }}"
+          echo "::group::consistency (latest.json == newest edition)"
+          python3 validate_feed.py --consistency .
+          echo "::endgroup::"
 
-      - name: Feed not modified — validation skipped
-        if: steps.changed.outputs.changed != 'true'
-        run: echo "latest.json was not modified in this PR — feed validation skipped (pass)."
+      - name: No feed change — validation skipped
+        if: steps.changed.outputs.any != 'true'
+        run: echo "No latest.json / editions changes in this PR — feed validation skipped (pass)."

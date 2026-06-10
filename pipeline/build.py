@@ -24,10 +24,7 @@ Usage:
 import sys, os, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
 import urllib.request
-from zoneinfo import ZoneInfo
 import yaml
-
-TOKYO = ZoneInfo("Asia/Tokyo")   # publish timezone — feed date is "today" in Tokyo, not the host TZ
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.dirname(HERE)
@@ -77,6 +74,8 @@ def main():
     ap.add_argument("--out", default=DEF_OUT)
     ap.add_argument("--verify-images", action="store_true",
                     help="HTTP-check every pool image and drop any that fail (run on a networked machine)")
+    ap.add_argument("--date", default=None,
+                    help="edition date YYYY-MM-DD — the morning it serves (default: tomorrow UTC)")
     args = ap.parse_args()
 
     if not os.path.exists(args.drafts):
@@ -166,9 +165,19 @@ def main():
         fail(errors)
 
     # --- assemble FeedSignal list (importance = number; decorative image; empty audio) ---
-    today = datetime.datetime.now(TOKYO).date().isoformat()   # publish day in Asia/Tokyo
-
-    yday = datetime.datetime.now(TOKYO).timetuple().tm_yday   # day-of-year → daily rotation
+    # Edition date = the morning this edition serves. Default: tomorrow in UTC. The scheduled build
+    # runs in the evening-UTC window, so "tomorrow UTC" names the upcoming morning (and equals
+    # "today in Tokyo" at that moment). Override with --date. No timezone is pinned — the client
+    # decides whose "today" it is (see ADR-0001).
+    if args.date:
+        try:
+            edition = datetime.date.fromisoformat(args.date)
+        except ValueError:
+            fail([f"--date must be YYYY-MM-DD, got {args.date!r}"])
+    else:
+        edition = datetime.datetime.now(datetime.timezone.utc).date() + datetime.timedelta(days=1)
+    today = edition.isoformat()             # the edition's date label
+    yday = edition.timetuple().tm_yday      # day-of-year → deterministic daily image rotation
 
     def resolve_pool(cat):
         """The image pool for a Scout category: its own pool, else alias's, else default/flat."""

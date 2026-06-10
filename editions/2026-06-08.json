@@ -1,0 +1,107 @@
+{
+  "date": "2026-06-08",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "US and Iran exchange strikes in Gulf in latest test of ceasefire",
+      "summary": "The shaky ceasefire between the US and Iran has been tested further, with American forces targeting Iranian drones and radar sites, and Iran firing missiles at US bases in the Gulf.",
+      "keyTakeaways": [
+        "Iran retaliated by firing ballistic missiles at two US air bases in Kuwait, and US Navy facilities in Bahrain, Iran's Irib news agency reported.",
+        "Centcom said initial assessments showed that of the seven Iranian missiles fired at the two Gulf states, six were intercepted and one did not reach its target.",
+        "The United Arab Emirates and Qatar also denounced the Iranian attacks on their Gulf neighbours."
+      ],
+      "whyItMatters": "Tehran called the US strikes a \"flagrant\" violation of the ceasefire agreement between the two countries.",
+      "originalURL": "https://www.bbc.com/news/articles/cvgzgyjk2weo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": ""
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal",
+      "summary": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal The Israeli military confirmed hitting a vehicle and said the incident is being reviewed.",
+      "keyTakeaways": [
+        "Lebanon's President Joseph Aoun called the strike \"a flagrant violation to Lebanese sovereignty and international law.\"",
+        "An airstrike on a vehicle on a road linking the city of Nabatiyeh with the town of Marjayoun killed a brigadier general, a captain and another soldier, the army said, without immediately releasing their names.",
+        "\"The continued, deliberate, and repeated Israeli aggression against Lebanon, its people and its army only strengthens our resolve, faith and determination,\" the army said in its statement."
+      ],
+      "whyItMatters": "BEIRUT — Israeli airstrikes on southern Lebanon on Saturday killed nine people including three members of the Lebanese military, the Lebanese army and state media said, days after the two sides reached a new ceasefire deal.",
+      "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5848595/israeli-airstrikes-kill-lebanese-army-officers",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Ukrainian drones target St Petersburg in attack Russia calls 'unprecedented'",
+      "summary": "Russia says Ukraine has launched an \"unprecedented attack\" on and around St Petersburg, as the city hosted the final day of an economic forum.",
+      "keyTakeaways": [
+        "Ukrainian President Volodymyr Zelensky said his forces had hit Russia's arsenals and a naval base, calling it a just response to Russian attacks.",
+        "Zelensky said his country's drones had covered a distance of 1,000km (620 miles) to St Petersburg, Russia's second largest city, targeting \"the enemy navy's arsenals and a base in Kronstadt\".",
+        "According to Zelensky, an oil depot 500km (310 miles) away, in the southern Krasnodar region, was also hit as part of Ukraine's \"long-range sanctions\" - a euphemism for strikes on Russia."
+      ],
+      "whyItMatters": "More than 140 drones were shot down over the surrounding Leningrad region, governor Aleksandr Drozdenko said, while the city's governor, Alexander Beglov, urged residents to stay indoors for the first time since Russia's full-scale invasion of Ukraine in 2022.",
+      "originalURL": "https://www.bbc.com/news/articles/cg7498kz808o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": ""
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Peru is set to elect its 10th president in a decade",
+      "summary": "Peru election to be tight runoff between Fujimori and Sánchez Peruvians will elect their new president Sunday with polls suggesting a polarized but tight race between hard-right candidate Keiko Fujimori and leftist Roberto Sánchez.",
+      "keyTakeaways": [
+        "A supporters hols a banner of presidential candidate Keiko Fujimori during her closing campaign rally in Lima, Peru, Thursday.",
+        "LIMA, Peru — Peruvians will elect their new president Sunday with polls suggesting a polarized but tight race between perennial hard-right candidate Keiko Fujimori and leftist Roberto Sánchez.",
+        "Keiko, as she's known in Peru, is running on the legacy of her father, the late, disgraced strongman President Alberto Fujimori."
+      ],
+      "whyItMatters": "Fujimori had been polling a few points ahead, with around a quarter of voters still undecided, but Reuters reports Sánchez could have narrowed the gap in the last week.",
+      "originalURL": "https://www.npr.org/2026/06/06/nx-s1-5847845/peru-election",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+      "summary": "A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana.",
+      "keyTakeaways": [
+        "And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the “No Data Center” signs going up that, “I’ve seen a lot of these all over town, but I only see them in shitty houses,” before adding, “most of them are rentals.”",
+        "The woman speaking to him in the clip quickly pushes back, saying that they’re “working class,” and someone chimes in to add something that a mayor shouldn’t have to be told about their constituents: “it doesn’t matter whether they’re rentals, they’re still human beings.”",
+        "Residents of Shelbyville are understandably taken aback by Furgeson’s dismissive language used towards his constituents."
+      ],
+      "whyItMatters": "The mayor has declined to comment further, though a spokesperson for the mayor’s office released a statement saying that, “The mayor regrets that his choice of words may have caused offense.”",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": ""
+    }
+  ]
+}

@@ -14,7 +14,7 @@ Usage:
   python3 scout.py --cache-dir cache    # parse pre-saved <slug>.xml files (offline/testing)
   python3 scout.py --max-age-hours 36 --out candidates.json
 """
-import sys, os, re, json, argparse, html, datetime
+import sys, os, re, json, argparse, html, datetime, hashlib
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
@@ -33,6 +33,12 @@ def canonical_url(url):
     keep = [(k, v) for k, v in parse_qsl(p.query)
             if not any(k.lower().startswith(t) for t in TRACKING_PREFIXES)]
     return urlunsplit((p.scheme, p.netloc.lower(), p.path.rstrip("/") or "/", urlencode(keep), ""))
+
+def stable_id(url):
+    """Deterministic 6-char candidate id from the (canonical) article URL — stable across Scout
+    re-runs. Identical formula to selection.py's short_id, so candidates.json, review.md, and the
+    selection/build step all agree on the same id (e.g. 7ddbf6)."""
+    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:6]
 
 def is_homepage(url):
     return urlsplit(url).path.strip("/") == ""
@@ -145,6 +151,7 @@ def main():
                 skipped["dup"] += 1; continue
             seen.add(cu)
             candidates.append({
+                "id": stable_id(cu or url),       # stable, canonical-URL-based id (selection.py needs c["id"])
                 "title": clean_text(it["title"]),
                 "source": src["name"],
                 "category": src.get("category", "OTHER"),

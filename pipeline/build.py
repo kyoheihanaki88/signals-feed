@@ -21,7 +21,7 @@ Usage:
   python3 build.py [--drafts pipeline/drafts.json] [--images pipeline/images.yaml]
                    [--out pipeline/generated/latest.draft.json]
 """
-import sys, os, json, argparse, datetime, subprocess
+import sys, os, re, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
 import urllib.request
 import yaml
@@ -67,6 +67,72 @@ def fail(errors):
     sys.exit(1)
 
 
+# ── Topic-aware image selection (1.1) ────────────────────────────────────────────────────────
+def build_topic_matchers(topic_keywords):
+    """topic -> list of compiled whole-word regexes for its keywords (case-insensitive)."""
+    matchers = {}
+    for topic, kws in (topic_keywords or {}).items():
+        matchers[topic] = [re.compile(r"\b" + re.escape(str(k).lower()) + r"\b") for k in (kws or [])]
+    return matchers
+
+
+def match_topic(headline, summary, matchers):
+    """Best topic for a story. Keyword hits in the HEADLINE count double (it carries the story's
+    essence); summary hits count once. Deterministic: highest score wins, ties broken by topic
+    name. Returns (topic, score) or (None, 0)."""
+    h = (headline or "").lower()
+    s = (summary or "").lower()
+    scores = {}
+    for topic, pats in matchers.items():
+        score = 2 * sum(1 for p in pats if p.search(h)) + sum(1 for p in pats if p.search(s))
+        if score > 0:
+            scores[topic] = score
+    if not scores:
+        return None, 0
+    topic, score = sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))[0]
+    return topic, score
+
+
+def assign_images(items, cat_pools, aliases, default_pool, topic_pools, matchers, yday,
+                  img_pool=None, img_cats=None, img_default=None):
+    """One image per item (uses headline/summary/category): topic pool first, else the category
+    pool. Deterministic (rotated by day-of-year `yday`) and never repeats an image within the set.
+    Returns a list of {imageURL, placeTime, topic, reason} aligned to `items`."""
+    img_pool = img_pool or []
+    img_cats = img_cats or {}
+    img_default = img_default or {"imageURL": "", "placeTime": ""}
+
+    def resolve_cat_pool(cat):
+        p = cat_pools.get(cat) or cat_pools.get(aliases.get(cat, "")) or default_pool or img_pool
+        if not p and cat in img_cats:
+            p = [img_cats[cat]]
+        return p or [img_default]
+
+    def rotated(pool):
+        return (pool[yday % len(pool):] + pool[:yday % len(pool)]) if pool else []
+
+    used, out = set(), []
+    for it in items:
+        cat = it.get("category", "OTHER")
+        topic, score = match_topic(it.get("headline"), it.get("summary"), matchers)
+        img, reason = None, None
+        if topic and topic_pools.get(topic):
+            img = next((e for e in rotated(topic_pools[topic]) if e.get("imageURL") not in used), None)
+            if img:
+                reason = f"topic '{topic}' (score {score})"
+        if img is None:   # no topic match, or the topic pool was already used up this issue
+            pool = rotated(resolve_cat_pool(cat))
+            img = (next((e for e in pool if e.get("imageURL") not in used), None)
+                   or next((e for cp in cat_pools.values() for e in cp if e.get("imageURL") not in used), None)
+                   or img_default)
+            reason = (f"category '{cat}' (no topic match)" if topic is None
+                      else f"category '{cat}' (topic '{topic}' pool exhausted)")
+        used.add(img.get("imageURL"))
+        out.append({"imageURL": img.get("imageURL", ""), "placeTime": img.get("placeTime", ""),
+                    "topic": topic, "reason": reason})
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description="Signals Builder v1 (approved drafts → draft feed).")
     ap.add_argument("--drafts", default=DEF_DRAFTS)
@@ -82,9 +148,11 @@ def main():
         fail([f"drafts file not found: {args.drafts}"])
     drafts = json.load(open(args.drafts))
     images = yaml.safe_load(open(args.images))
-    cat_pools = images.get("category_pools", {})       # per-category pools (preferred)
+    cat_pools = images.get("category_pools", {})       # per-category pools (fallback tier)
     aliases = images.get("aliases", {})                # Scout category → pool category
     default_pool = images.get("default_pool", [])      # fallback pool
+    topic_pools = images.get("topic_pools", {})        # story-aware pools (preferred, 1.1)
+    topic_matchers = build_topic_matchers(images.get("topic_keywords", {}))
     img_cats = images.get("categories", {})            # legacy category map (optional)
     img_pool = images.get("pool", [])                  # legacy flat mood pool (optional)
     img_default = images.get("default", {"imageURL": "", "placeTime": ""})
@@ -179,45 +247,40 @@ def main():
     today = edition.isoformat()             # the edition's date label
     yday = edition.timetuple().tm_yday      # day-of-year → deterministic daily image rotation
 
-    def resolve_pool(cat):
-        """The image pool for a Scout category: its own pool, else alias's, else default/flat."""
-        p = cat_pools.get(cat) or cat_pools.get(aliases.get(cat, "")) or default_pool or img_pool
-        if not p and cat in img_cats:
-            p = [img_cats[cat]]
-        return p or [img_default]
-
     # --verify-images: drop any URL that doesn't load, per pool, so a dead image can never ship.
     if args.verify_images:
-        all_urls = sorted({e["imageURL"] for pool in list(cat_pools.values())
+        all_urls = sorted({e["imageURL"]
+                           for pool in list(cat_pools.values()) + list(topic_pools.values())
                            + [default_pool, img_pool] for e in pool if e.get("imageURL")})
         dead = {u for u in all_urls if not url_ok(u)}
         print(f"  image verify: {len(all_urls) - len(dead)}/{len(all_urls)} reachable"
               + (f" — dropped {len(dead)}" if dead else ""))
         for name, pool in list(cat_pools.items()):
             cat_pools[name] = [e for e in pool if e["imageURL"] not in dead]
+        for name, pool in list(topic_pools.items()):
+            topic_pools[name] = [e for e in pool if e["imageURL"] not in dead]
         default_pool[:] = [e for e in default_pool if e["imageURL"] not in dead]
         img_pool[:] = [e for e in img_pool if e["imageURL"] not in dead]
 
-    def rotated(pool):
-        return (pool[yday % len(pool):] + pool[:yday % len(pool)]) if pool else []
+    # Story-aware image assignment (topic pool first, category fallback) — deterministic, no repeats.
+    ordered = sorted(signals_in, key=lambda x: x["number"])
+    img_items = [{"headline": s["draft"].get("headline", ""), "summary": s["draft"].get("summary", ""),
+                  "category": s.get("category", "OTHER")} for s in ordered]
+    picks = assign_images(img_items, cat_pools, aliases, default_pool, topic_pools, topic_matchers,
+                          yday, img_pool=img_pool, img_cats=img_cats, img_default=img_default)
 
-    used_images = set()
+    print("  image assignment:")
     out_signals = []
-    for idx, s in enumerate(sorted(signals_in, key=lambda x: x["number"])):
+    for idx, s in enumerate(ordered):
         dr = s["draft"]
-        cat = s.get("category", "OTHER")
-        pool = rotated(resolve_pool(cat))
-        # first image from THIS category's (rotated) pool not already used in the issue;
-        # if its whole pool is used, fall back to any unused image, else the default.
-        img = (next((e for e in pool if e["imageURL"] not in used_images), None)
-               or next((e for cp in cat_pools.values() for e in cp if e["imageURL"] not in used_images), None)
-               or img_default)
-        used_images.add(img.get("imageURL"))
+        pick = picks[idx]
+        print(f"    #{s['number']} [{s.get('category','?'):8}] {dr['headline'][:42]:42} "
+              f"→ {pick['reason']:38} → {pick['placeTime']!r}")
         out_signals.append({
             "number": s["number"],
             "importance": s["number"],                     # human order = importance (Lead=1)
             "lead": s.get("selectedRole") == "lead",
-            "category": cat,
+            "category": s.get("category", "OTHER"),
             "source": s["source"],
             "headline": dr["headline"],
             "summary": dr["summary"],
@@ -225,8 +288,8 @@ def main():
             "whyItMatters": dr["whyItMatters"],
             "originalURL": s["originalURL"],
             "readTime": read_time_int(dr.get("readTime")),   # always Int minutes (iOS expects Int)
-            "imageURL": img.get("imageURL", ""),           # curated decorative
-            "placeTime": img.get("placeTime", ""),
+            "imageURL": pick["imageURL"],                  # story-aware decorative (topic → category)
+            "placeTime": pick["placeTime"],
             "audioURL": "",                                 # empty in v1
         })
 

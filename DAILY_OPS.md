@@ -158,3 +158,27 @@ Because every step is a hard gate and the PR is the last step, a failure leaves 
 3. If it stopped at **Writer/validate** → a source body couldn't be extracted cleanly. Re-run, or hand-edit the flagged draft, then continue.
 4. If it stopped at **feed/consistency** → fix the offending field and rebuild; never bypass the validator.
 5. Never merge a PR you haven't read — confirm the Lead is right and the five are today's.
+
+---
+
+## Image selection (story-aware)
+
+Signals is photography-first: images give **context, never documentation** ("this belongs with the story", not "this depicts the story"). `build.py` assigns each story an image in two tiers:
+
+1. **Topic (preferred).** The headline + summary are scored against `topic_keywords` in `pipeline/images.yaml` — **headline matches count double** (they carry the story's essence). The winning topic's pool (`topic_pools`) supplies the image. So five same-category stories (e.g. all `WORLD`, but about a strike, a protest, a SpaceX lawsuit, and an election) get visually distinct, symbolically fitting images instead of the same generic placeholder.
+2. **Category (fallback).** No keyword match → the story's `category_pools` image, exactly as before.
+
+Selection is **deterministic** (rotated by the edition's day-of-year) and **never repeats** an image within an edition. The build logs each pick:
+
+```
+image assignment:
+  #1 [WORLD   ] Trump says US will hit Iran 'hard' again  → topic 'conflict' (score 4)        → 'City morning'
+  #3 [WORLD   ] Police use water cannon against rioters    → topic 'protest' (score 3)         → 'Quiet block'
+  #5 [WORLD   ] A conservative California county is trying  → category 'WORLD' (no topic match) → 'The port'
+```
+
+**Safety:** every pool is composed only from the curated calm/symbolic image set — strictly **no war, violence, disaster, protest, crime, or literal event imagery**, even for the `conflict` topic (which deliberately uses quiet night-city / horizon symbolism).
+
+**Add / adjust:** edit `topic_keywords` (the matching) and `topic_pools` (the images) in `pipeline/images.yaml`. After changing any image URL, run `python3 pipeline/build.py --verify-images` on a networked machine — it HTTP-checks every URL (category **and** topic pools) and drops dead ones; a topic pool that empties simply falls back to the category pool, so a broken URL is never worse than today's behavior.
+
+**Limitations:** the topic comes from keywords, not understanding — an incidental keyword can mislead, so the **human PR review is the backstop**; category labels still come from the source feed; and pools currently reuse the existing curated images, so very specific symbols (ballot box, courthouse, rocket) are represented by adjacent symbolic stand-ins rather than literal objects (by design — context, not documentation).

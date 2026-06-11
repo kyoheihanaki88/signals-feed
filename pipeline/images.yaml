@@ -109,3 +109,128 @@ category_pools:
     - { imageURL: "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop", placeTime: "Deep field" }
     - { imageURL: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop", placeTime: "Research" }
     - { imageURL: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop", placeTime: "The academy" }
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────
+# TOPIC layer (1.1) — story-aware selection ABOVE the broad category pools.
+#
+# build.py scores each story's headline + summary against `topic_keywords` (whole-word match) and,
+# if a topic wins, draws its image from that topic's pool — so two WORLD stories about very
+# different subjects (a strike vs. a port, a court ruling vs. an election) get visually distinct,
+# symbolically fitting images instead of the same generic category placeholder. No keyword match →
+# falls back to the category pool (unchanged behavior).
+#
+# STILL context, never documentation. Pools are composed only from the curated images above
+# (calm / symbolic — Monocle / FT Weekend), so there is STRICTLY no war, violence, disaster, crime,
+# protest, or literal event imagery — even for `conflict`, which deliberately uses quiet
+# night-city / horizon symbolism, never military or graphic content.
+
+# Story keywords → topic. Whole-word, case-insensitive. Highest match count wins (ties: topic name).
+topic_keywords:
+  conflict:   [war, strike, strikes, airstrike, "air strike", missile, missiles, attack, attacks, military, troops, soldiers, offensive, nuclear, warhead, shelling, invasion, frontline, combat, militants]
+  diplomacy:  [diplomat, diplomacy, talks, summit, negotiation, negotiations, ceasefire, truce, treaty, accord, sanctions, embassy, ambassador, "foreign minister", "peace talks", alliance, nato, "united nations"]
+  government: [government, parliament, congress, senate, minister, president, "prime minister", policy, capitol, administration, cabinet, lawmakers, "white house", official, regime]
+  election:   [election, elections, vote, votes, voting, ballot, ballots, poll, polls, "mail-in", referendum, candidate, campaign, primary, electoral, turnout]
+  protest:    [protest, protests, demonstration, rally, march, unrest, riot, crowd, picket, walkout]
+  drones:     [drone, drones, uav, unmanned, robot, robots, robotics, autonomous, quadcopter]
+  technology: [technology, tech, device, devices, gadget, hardware, software, app, apps, platform, smartphone, computing, internet]
+  ai:         [ai, "artificial intelligence", "machine learning", neural, model, models, chatbot, chatgpt, openai, anthropic, llm, gpu, chip, chips, semiconductor, nvidia, inference]
+  cyber:      [cyber, cyberattack, hack, hacking, hacked, breach, ransomware, malware, phishing, "data breach", exploit, vulnerability]
+  economy:    [economy, economic, inflation, gdp, recession, growth, tariff, tariffs, trade, exports, imports, jobs, unemployment, wages, fed, "federal reserve", "interest rate", rates, "cost of living", "supply chain"]
+  markets:    [market, markets, stocks, stock, shares, equities, "wall street", nasdaq, dow, index, bonds, yields, volatility, selloff, "sell-off", rally, ipo, earnings, investors, trading]
+  business:   [company, companies, business, ceo, merger, acquisition, startup, startups, layoffs, profit, revenue, deal, firm, corporate, bankruptcy, valuation]
+  energy:     [energy, oil, gas, crude, opec, barrel, "power grid", electricity, grid, pipeline, renewable, renewables, solar, "wind power", reactor, refinery, fuel]
+  climate:    [climate, weather, storm, flood, flooding, wildfire, heatwave, drought, emissions, carbon, warming, hurricane, typhoon, temperatures, environment]
+  space:      [space, rocket, launch, spacex, nasa, satellite, satellites, orbit, orbital, mars, moon, lunar, astronaut, spacecraft, telescope]
+  courts:     [court, "supreme court", judge, trial, lawsuit, ruling, verdict, charges, indictment, indicted, prosecutor, prosecution, appeal, legal, sentenced]
+  japan:      [japan, japanese, tokyo, kyoto, osaka, yen, nikkei, ldp, nhk, ishiba]
+
+# Topic → image pool (composed only from the curated images above; calm + symbolic).
+topic_pools:
+  conflict:   # quiet night-city / horizon / distance — NEVER military or graphic
+    - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
+    - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }
+    - { imageURL: "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=900&q=80&auto=format&fit=crop", placeTime: "City dusk" }
+    - { imageURL: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop", placeTime: "The crossing" }
+    - { imageURL: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop", placeTime: "From orbit" }
+  diplomacy:  # international / institutional
+    - { imageURL: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop", placeTime: "International" }
+    - { imageURL: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop", placeTime: "The boardroom" }
+    - { imageURL: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop", placeTime: "The map" }
+    - { imageURL: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80&auto=format&fit=crop", placeTime: "Conference" }
+  government:  # institutional architecture
+    - { imageURL: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop", placeTime: "Glass & steel" }
+    - { imageURL: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=900&q=80&auto=format&fit=crop", placeTime: "Towers" }
+    - { imageURL: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop", placeTime: "The district" }
+    - { imageURL: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop", placeTime: "The academy" }
+  election:   # civic / institutional
+    - { imageURL: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop", placeTime: "The map" }
+    - { imageURL: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80&auto=format&fit=crop", placeTime: "The meeting" }
+    - { imageURL: "https://images.unsplash.com/photo-1554797589-7241bb691973?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet block" }
+    - { imageURL: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop", placeTime: "International" }
+  protest:    # urban calm / evening — non-graphic
+    - { imageURL: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=900&q=80&auto=format&fit=crop", placeTime: "Neon evening" }
+    - { imageURL: "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=900&q=80&auto=format&fit=crop", placeTime: "City dusk" }
+    - { imageURL: "https://images.unsplash.com/photo-1554797589-7241bb691973?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet block" }
+    - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }
+  drones:     # machine / abstract technology
+    - { imageURL: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80&auto=format&fit=crop", placeTime: "Abstract compute" }
+    - { imageURL: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop", placeTime: "Engineering" }
+    - { imageURL: "https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+    - { imageURL: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop", placeTime: "Devices" }
+  technology:
+    - { imageURL: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop", placeTime: "Workstation" }
+    - { imageURL: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop", placeTime: "Devices" }
+    - { imageURL: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop", placeTime: "Software" }
+    - { imageURL: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop", placeTime: "Modern office" }
+    - { imageURL: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop", placeTime: "The bench" }
+  ai:
+    - { imageURL: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80&auto=format&fit=crop", placeTime: "Server room" }
+    - { imageURL: "https://images.unsplash.com/photo-1591405351990-4726e331f141?w=900&q=80&auto=format&fit=crop", placeTime: "Silicon" }
+    - { imageURL: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop", placeTime: "Circuitry" }
+    - { imageURL: "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=900&q=80&auto=format&fit=crop", placeTime: "Compute" }
+    - { imageURL: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900&q=80&auto=format&fit=crop", placeTime: "Data" }
+  cyber:
+    - { imageURL: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop", placeTime: "Circuitry" }
+    - { imageURL: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80&auto=format&fit=crop", placeTime: "Server room" }
+    - { imageURL: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80&auto=format&fit=crop", placeTime: "Abstract compute" }
+    - { imageURL: "https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+  economy:    # trade / ports / industry
+    - { imageURL: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop", placeTime: "The port" }
+    - { imageURL: "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop", placeTime: "The terminal" }
+    - { imageURL: "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+    - { imageURL: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&auto=format&fit=crop", placeTime: "Business travel" }
+  markets:    # financial district
+    - { imageURL: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=900&q=80&auto=format&fit=crop", placeTime: "Towers" }
+    - { imageURL: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop", placeTime: "Glass & steel" }
+    - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "Skyline" }
+    - { imageURL: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop", placeTime: "The district" }
+  business:
+    - { imageURL: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop", placeTime: "The boardroom" }
+    - { imageURL: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80&auto=format&fit=crop", placeTime: "The meeting" }
+    - { imageURL: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80&auto=format&fit=crop", placeTime: "Conference" }
+    - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "Skyline" }
+  energy:     # infrastructure / industrial
+    - { imageURL: "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+    - { imageURL: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop", placeTime: "The port" }
+    - { imageURL: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop", placeTime: "Glass & steel" }
+    - { imageURL: "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop", placeTime: "The instrument" }
+  climate:    # sky / landscape — calm, non-disaster
+    - { imageURL: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop", placeTime: "Night sky" }
+    - { imageURL: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop", placeTime: "From orbit" }
+    - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
+    - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }
+  space:
+    - { imageURL: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop", placeTime: "From orbit" }
+    - { imageURL: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop", placeTime: "Night sky" }
+    - { imageURL: "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop", placeTime: "Deep field" }
+    - { imageURL: "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop", placeTime: "The observatory" }
+  courts:     # institutional / civic
+    - { imageURL: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop", placeTime: "Glass & steel" }
+    - { imageURL: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop", placeTime: "The academy" }
+    - { imageURL: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop", placeTime: "The district" }
+    - { imageURL: "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop", placeTime: "Infrastructure" }
+  japan:
+    - { imageURL: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=900&q=80&auto=format&fit=crop", placeTime: "Tokyo street" }
+    - { imageURL: "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=900&q=80&auto=format&fit=crop", placeTime: "The station" }
+    - { imageURL: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop", placeTime: "The shrine" }
+    - { imageURL: "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=900&q=80&auto=format&fit=crop", placeTime: "City dusk" }

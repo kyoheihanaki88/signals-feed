@@ -1,0 +1,135 @@
+name: Daily Auto Edition
+
+# Daily Auto Edition pipeline v1 (see DAILY_OPS.md → "Daily Auto Edition").
+#
+# Every morning this builds the next edition end-to-end and opens a PR for human review — it
+# NEVER merges or deploys. Each step is a hard gate: if any gate fails the job stops BEFORE the
+# PR step, so latest.json and existing editions are never touched on a weak/stale/failed morning.
+#
+# Timing: editions serve the user's local morning; we commit to Tokyo (UTC+9) as the earliest.
+# 5:30 AM Tokyo = 20:30 UTC the day before, so this runs at 17:00 UTC and builds the edition dated
+# "tomorrow UTC" (the morning it serves), leaving a buffer for review + merge before the deadline.
+
+on:
+  schedule:
+    - cron: "0 17 * * *"        # 17:00 UTC — before the 20:30 UTC Tokyo-5:30 deadline, with buffer
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write               # create the publish/<date> branch
+  pull-requests: write          # open the PR (never merges)
+
+concurrency:
+  group: daily-auto-edition
+  cancel-in-progress: false
+
+jobs:
+  auto-edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml        # scout/build read yaml; ranker/validators are stdlib-only
+
+      - name: Resolve edition date (tomorrow UTC unless overridden)
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            EDITION_DATE="${{ github.event.inputs.date }}"
+          else
+            EDITION_DATE="$(date -u -d '+1 day' +%Y-%m-%d)"
+          fi
+          echo "EDITION_DATE=$EDITION_DATE" >> "$GITHUB_ENV"
+          echo "edition_date=$EDITION_DATE" >> "$GITHUB_OUTPUT"
+          echo "## Daily Auto Edition — $EDITION_DATE" >> "$GITHUB_STEP_SUMMARY"
+          echo "Built $(date -u +%FT%TZ)" >> "$GITHUB_STEP_SUMMARY"
+
+      # 1) Scout — collect today's candidates from live RSS. Exits non-zero on zero candidates.
+      - name: Scout (live RSS)
+        run: |
+          python pipeline/scout.py \
+            --sources pipeline/sources.yaml \
+            --out pipeline/candidates.json \
+            --max-age-hours 36 \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      # 2) Ranker — deterministic auto-selection → selection.yaml. HARD GATES: stops (exit 1) on
+      #    <20 candidates, <5 real URLs, no lead-quality story, or <4 supporting → job fails, no PR.
+      - name: Ranker (auto-select 5)
+        run: |
+          python pipeline/ranker.py \
+            --candidates pipeline/candidates.json \
+            --out pipeline/selection.yaml \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      # 3) Approval gate — only auto-approved selections proceed.
+      - name: Gate — selection approved
+        run: |
+          grep -qx 'approved: true' pipeline/selection.yaml
+
+      # 4) Selection — validate picks + assemble selection.json (metadata only, no copy).
+      - name: Build selection.json
+        run: python pipeline/selection.py build
+
+      # 5) Writer — extractive drafts grounded in real source text only (never invents).
+      - name: Writer (draft)
+        run: python pipeline/writer.py draft
+
+      # 6) Validate drafts — blocking flags (needs_review / source_unavailable / thin_source) fail.
+      - name: Validate drafts
+        run: python pipeline/writer.py validate
+
+      # 7) Build the draft feed for the edition date (build.py runs validate_feed.py on the draft).
+      - name: Build draft feed
+        run: python pipeline/build.py --date "$EDITION_DATE"
+
+      # 8) Gate — the built edition date must match the date we intended (never mis-stamp).
+      - name: Gate — edition date matches target
+        run: |
+          GOT="$(python -c "import json;print(json.load(open('pipeline/generated/latest.draft.json'))['date'])")"
+          echo "draft date=$GOT target=$EDITION_DATE"
+          test "$GOT" = "$EDITION_DATE"
+
+      # 9) Promote into the date-keyed model (writes editions/<date>.json + latest.json, runs the
+      #    --consistency check + stale-date regression guard). No git here — the PR step commits.
+      - name: Publish (write files only)
+        run: python pipeline/publish.py --write
+
+      # 10) Open a review PR. NEVER auto-merges. Only reached if every gate above passed.
+      - name: Open review PR (no auto-merge)
+        uses: peter-evans/create-pull-request@v6
+        with:
+          base: main
+          branch: "publish/${{ steps.date.outputs.edition_date }}"
+          add-paths: |
+            editions/
+            latest.json
+          commit-message: "Publish Signals edition ${{ steps.date.outputs.edition_date }} (auto)"
+          title: "Publish Signals edition ${{ steps.date.outputs.edition_date }} (auto)"
+          labels: edition, auto
+          delete-branch: false
+          body: |
+            Automated **Daily Auto Edition** for **${{ steps.date.outputs.edition_date }}**.
+
+            Pipeline: Scout → Ranker (deterministic auto-select) → selection → Writer (extractive)
+            → draft validation → feed validation → consistency check. All safety gates passed.
+
+            - `editions/${{ steps.date.outputs.edition_date }}.json` — immutable edition
+            - `latest.json` — updated pointer to the newest edition
+
+            **Review the five (especially the Lead) before merging** — the Ranker is rule-based v1
+            and category labels come from the source feed, so a human still confirms editorial fit.
+            Not auto-merged: a human merge is required, then Vercel deploys.

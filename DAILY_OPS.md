@@ -98,3 +98,63 @@ The push triggers Vercel's auto-deploy. The `&& … || abort` means a failing fe
 ## Why this stays true to the product
 
 Five finite stories, curated by a person, verified for honesty, and stable for the day — published once at dawn and then set down. That is **"Read it all. Put it down."** as an operation: the reader can trust today's Signals are today's, read all five, and be done. The validator guarantees the honesty; the 10-minute ceiling guarantees the ritual is sustainable for the one person who keeps it. A briefing you can't maintain daily isn't a ritual — so the workflow's real job is to make *showing up every morning* effortless.
+
+---
+
+## Daily Auto Edition (v1)
+
+A GitHub Actions pipeline that does the 10-minute flow automatically and **opens a PR for you to review** — it never merges or deploys, and it produces nothing at all on a weak/failed morning. Workflow: `.github/workflows/daily-auto-edition.yml`.
+
+### How it works
+
+Runs at **17:00 UTC** daily (before the 20:30 UTC Tokyo-5:30 deadline, with buffer) and builds the edition dated **tomorrow-UTC** (the morning it serves):
+
+```
+Scout (live RSS)   →  candidates.json
+Ranker             →  selection.yaml   (deterministic, rule-based — 1 Lead + 4 Supporting)
+selection.py build →  selection.json   (validates picks, metadata only)
+writer.py draft    →  drafts.json      (extractive — copies real source text, never invents)
+writer.py validate →  drafts gate
+build.py --date    →  generated/latest.draft.json  (+ validate_feed.py on the draft)
+publish.py --write →  editions/<date>.json + latest.json  (+ --consistency, regression guard)
+create-pull-request→  review PR  (NOT merged)
+```
+
+The **Ranker** (`pipeline/ranker.py`) is deterministic — no LLM. It prefers cross-source clusters (importance), reliable outlets (BBC, NPR, Guardian, FT, The Verge, Al Jazeera), and recent stories; it requires real article URLs (no homepages/videos), avoids live blogs unless nothing better exists, takes one story per cluster, and spreads categories so the five aren't all the same kind. The Lead prefers global-urgency categories (WORLD → economy → major tech → institutional). Category labels come from the *source feed*, so a human still confirms the Lead's editorial fit in the PR.
+
+### Run it manually
+
+Trigger the whole pipeline from the Actions tab → **Daily Auto Edition** → *Run workflow* (optional `date` input). Or run the stages locally:
+
+```
+python3 pipeline/scout.py  --sources pipeline/sources.yaml --out pipeline/candidates.json --max-age-hours 36
+python3 pipeline/ranker.py --candidates pipeline/candidates.json --out pipeline/selection.yaml
+python3 pipeline/selection.py build
+python3 pipeline/writer.py draft        # add --no-fetch when offline (uses RSS snippets)
+python3 pipeline/writer.py validate
+python3 pipeline/build.py   --date $(date -u -d '+1 day' +%F)
+python3 pipeline/publish.py              # DRY-RUN; --apply for a local branch+commit, --write for files only
+```
+
+(`build-edition.yml` is the older **manual-only** helper that builds from committed drafts; the scheduled automation is now `daily-auto-edition.yml`.)
+
+### Safety gates
+
+The job **stops before the PR step** (and touches nothing) if any of these fail:
+
+- fewer than **20** candidates, or fewer than **5** real article URLs *(Ranker)*
+- **no lead-quality story** found, or fewer than 4 eligible supporting stories *(Ranker)*
+- a selected story has **no real article URL**, or **duplicate URLs** *(Ranker / selection.py)*
+- drafts fail validation — `needs_review` / `source_unavailable` / `thin_source` *(writer.py validate)*
+- the built **edition date doesn't match** the target *(date-match gate)*
+- **draft or feed validation fails** *(build.py / validate_feed.py)*, or the consistency/regression guard trips *(publish.py)*
+
+Because every step is a hard gate and the PR is the last step, a failure leaves `latest.json` and existing editions untouched. A weak morning simply produces no PR — never a stale or fabricated edition.
+
+### What to do when it fails
+
+1. Open the failed run → read the step summary (candidate count, the chosen Lead/Supporting, or the **skip reason**).
+2. If it stopped at the **Ranker** (thin Scout / no lead-quality story) → it's an honest quiet/dry morning. Either let it skip (the app keeps the last valid edition) or curate by hand: fill `pipeline/selection.yaml` yourself and run `selection.py build → writer → build → publish.py --apply`, then open the PR.
+3. If it stopped at **Writer/validate** → a source body couldn't be extracted cleanly. Re-run, or hand-edit the flagged draft, then continue.
+4. If it stopped at **feed/consistency** → fix the offending field and rebuild; never bypass the validator.
+5. Never merge a PR you haven't read — confirm the Lead is right and the five are today's.

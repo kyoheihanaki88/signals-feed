@@ -9,11 +9,13 @@ name: Build Edition
 #
 # This NEVER merges or deploys: it only opens a PR. A human reviews and merges; Vercel deploys.
 # The edition date is "tomorrow in UTC" (the morning it serves) — no timezone is pinned in code.
+#
+# MANUAL-ONLY: this builds from the committed selection/drafts (the manual flow). The SCHEDULED
+# morning automation now lives in daily-auto-edition.yml (Scout → Ranker → … → PR). The cron here
+# is intentionally removed so the two workflows don't both open a PR at 17:00 UTC.
 
 on:
-  schedule:
-    - cron: "0 17 * * *"        # 17:00 UTC daily — before the 20:30 UTC Tokyo-5:30 deadline, with buffer
-  workflow_dispatch:            # manual "Run workflow" button
+  workflow_dispatch:            # manual "Run workflow" button only (no schedule)
     inputs:
       date:
         description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"

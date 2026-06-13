@@ -1,0 +1,214 @@
+name: Daily Auto Publish
+
+# Daily Auto Edition — AUTO-PUBLISH via PR + AUTO-MERGE (see DAILY_OPS.md → "Auto Publish mode").
+#
+# Fully automatic, no human merge: every morning it runs the full pipeline and, ONLY if every
+# safety gate passes, opens a PR with the two edition files and turns ON auto-merge — GitHub then
+# merges it (immediately, or once required checks pass), and Vercel deploys. Trust over freshness:
+# any weak/stale/uncertain morning FAILS CLOSED before the PR step, so the previous good latest.json
+# and all existing editions are left untouched, and no PR is opened.
+#
+# Why PR + auto-merge instead of a direct push: it works whether or not `main` has branch
+# protection (a protected `main` that blocks direct pushes still merges an auto-merge PR once its
+# required checks pass), and it keeps validate-feed as a gate. See the branch-protection /
+# required-settings notes in DAILY_OPS.md.
+#
+# Timing: editions serve the user's local morning; Tokyo (UTC+9) is the earliest. 5:30 AM Tokyo =
+# 20:30 UTC the day before, so this runs at 17:00 UTC and builds the edition dated "tomorrow UTC".
+#
+# Manual fallbacks (no schedule): daily-auto-edition.yml (review PR, no auto-merge) and
+# build-edition.yml (build from committed drafts → review PR).
+
+on:
+  schedule:
+    - cron: "0 17 * * *"        # 17:00 UTC — before the 20:30 UTC Tokyo-5:30 deadline, with buffer
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write               # create the publish/<date> branch
+  pull-requests: write          # open the PR + enable auto-merge
+
+concurrency:
+  group: daily-auto-publish
+  cancel-in-progress: false
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml    # scout/build read yaml; ranker/validators are stdlib-only
+
+      - name: Resolve edition date (tomorrow UTC unless overridden)
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            EDITION_DATE="${{ github.event.inputs.date }}"
+          else
+            EDITION_DATE="$(date -u -d '+1 day' +%Y-%m-%d)"
+          fi
+          echo "EDITION_DATE=$EDITION_DATE" >> "$GITHUB_ENV"
+          echo "edition_date=$EDITION_DATE" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Daily Auto Publish — $EDITION_DATE"
+            echo "Built $(date -u +%FT%TZ) · mode: PR + auto-merge"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # GATE A — never overwrite an existing edition (immutability).
+      - name: Gate — target edition does not already exist
+        run: |
+          if [ -f "editions/${EDITION_DATE}.json" ]; then
+            echo "::error::editions/${EDITION_DATE}.json already exists — refusing to overwrite a published edition."
+            echo "- SKIPPED: editions/${EDITION_DATE}.json already exists" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      # GATE B — never move latest.json backwards (or republish the same date).
+      - name: Gate — target is newer than current latest.json
+        run: |
+          PREV="$(python -c "import json,os;print(json.load(open('latest.json'))['date'] if os.path.exists('latest.json') else '')")"
+          echo "current latest=$PREV · target=$EDITION_DATE"
+          # ISO YYYY-MM-DD compares correctly lexicographically. Require target strictly newer.
+          if [ -n "$PREV" ] && ! [[ "$EDITION_DATE" > "$PREV" ]]; then
+            echo "::error::target $EDITION_DATE is not newer than current latest.json ($PREV) — refusing to move backwards or republish."
+            echo "- SKIPPED: target not newer than latest ($PREV)" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      # 1) Scout — live RSS → candidates.json. Exits non-zero on zero candidates.
+      - name: Scout (live RSS)
+        run: |
+          python pipeline/scout.py \
+            --sources pipeline/sources.yaml \
+            --out pipeline/candidates.json \
+            --max-age-hours 36 \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      # 2) Ranker — deterministic auto-select. HARD GATES (exit 1 → fail closed): <20 candidates,
+      #    <5 real URLs, no lead-quality story, <4 supporting, dup URLs, missing real URL.
+      - name: Ranker (auto-select 5)
+        run: |
+          python pipeline/ranker.py \
+            --candidates pipeline/candidates.json \
+            --out pipeline/selection.yaml \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      # 3) Approval gate — only auto-approved selections proceed.
+      - name: Gate — selection approved
+        run: |
+          grep -qx 'approved: true' pipeline/selection.yaml
+
+      # 4) Selection — validate picks (exactly 1 lead + 4 supporting, real URLs, no dupes).
+      - name: Build selection.json
+        run: python pipeline/selection.py build
+
+      # 5) Writer — extractive drafts grounded in real source text only (never invents).
+      - name: Writer (draft)
+        run: python pipeline/writer.py draft
+
+      # 6) Validate drafts — blocking flags (needs_review / source_unavailable / thin_source) fail.
+      - name: Validate drafts
+        run: python pipeline/writer.py validate
+
+      # 7) Build the draft feed (build.py runs validate_feed.py on the draft).
+      - name: Build draft feed
+        run: python pipeline/build.py --date "$EDITION_DATE"
+
+      # 8) Gate — built edition date must match the target (never mis-stamp).
+      - name: Gate — draft date matches target
+        run: |
+          GOT="$(python -c "import json;print(json.load(open('pipeline/generated/latest.draft.json'))['date'])")"
+          echo "draft date=$GOT · target=$EDITION_DATE"
+          test "$GOT" = "$EDITION_DATE"
+
+      # 9) Promote into the date-keyed model: writes editions/<date>.json + latest.json, runs the
+      #    --consistency check + stale-date regression guard. No git here — the PR step commits.
+      - name: Publish (write files only)
+        run: python pipeline/publish.py --write
+
+      # 10) Gate — latest.json now carries the target date.
+      - name: Gate — latest.json date matches target
+        run: |
+          GOT="$(python -c "import json;print(json.load(open('latest.json'))['date'])")"
+          echo "latest.json date=$GOT · target=$EDITION_DATE"
+          test "$GOT" = "$EDITION_DATE"
+
+      # 11) PRE-PUSH GUARD — the working tree may contain ONLY the two expected files.
+      - name: Pre-push guard — only the two expected files changed
+        run: |
+          ED="editions/${EDITION_DATE}.json"
+          CHANGED="$(git status --porcelain)"
+          echo "working-tree changes:"; echo "$CHANGED"
+          ok=1
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            p="${line:3}"
+            if [ "$p" != "$ED" ] && [ "$p" != "latest.json" ]; then
+              echo "::error::unexpected change outside the two publish files: $p"; ok=0
+            fi
+          done <<< "$CHANGED"
+          echo "$CHANGED" | grep -qF "$ED"          || { echo "::error::missing new file $ED"; ok=0; }
+          echo "$CHANGED" | grep -qF "latest.json"  || { echo "::error::latest.json not updated"; ok=0; }
+          [ "$ok" = 1 ] || { echo "- SKIPPED: pre-push guard failed" >> "$GITHUB_STEP_SUMMARY"; exit 1; }
+
+      # 12) Open the PR with ONLY the two files. Uses SIGNALS_PAT if set (so the PR triggers
+      #     validate-feed, letting auto-merge gate on it); else the built-in token (gates already
+      #     ran in this job). Only reached if every gate above passed.
+      - name: Open publish PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SIGNALS_PAT || github.token }}
+          base: main
+          branch: "publish/${{ steps.date.outputs.edition_date }}"
+          add-paths: |
+            editions/
+            latest.json
+          commit-message: "Publish Signals edition ${{ steps.date.outputs.edition_date }}"
+          title: "Publish Signals edition ${{ steps.date.outputs.edition_date }}"
+          labels: edition, auto
+          delete-branch: true
+          body: |
+            Automated **Daily Auto Publish** for **${{ steps.date.outputs.edition_date }}** — opened
+            with auto-merge ON. All pipeline safety gates passed in the build job; `validate-feed`
+            re-checks the two files here.
+
+            - `editions/${{ steps.date.outputs.edition_date }}.json` — immutable edition
+            - `latest.json` — pointer to the newest edition
+
+      # 13) Turn ON auto-merge so no human merge is needed. Tries auto-merge (waits for required
+      #     checks), then an immediate squash merge, then warns — leaving the PR open for a manual
+      #     merge if repo settings block both. Never force-merges past branch protection.
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.SIGNALS_PAT || github.token }}
+        run: |
+          PR="${{ steps.cpr.outputs.pull-request-number }}"
+          if gh pr merge "$PR" --squash --auto; then
+            echo "Auto-merge enabled on PR #$PR (merges when checks pass)."
+            echo "### Auto-merge enabled ✅ — PR #$PR (${EDITION_DATE})" >> "$GITHUB_STEP_SUMMARY"
+          elif gh pr merge "$PR" --squash; then
+            echo "Merged PR #$PR immediately."
+            echo "### Merged ✅ — PR #$PR (${EDITION_DATE})" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::warning::Could not auto-merge PR #$PR. Enable 'Allow auto-merge' (Settings → General) and make validate-feed a required check on main, or merge the PR manually."
+            echo "### PR #$PR opened — auto-merge unavailable, merge manually" >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -161,6 +161,62 @@ Because every step is a hard gate and the PR is the last step, a failure leaves 
 
 ---
 
+## Auto Publish mode
+
+The morning run now **publishes automatically with no human merge** (`.github/workflows/daily-auto-publish.yml`) — the same pipeline as the review-PR flow, but on success it opens a PR with the two edition files and turns **auto-merge ON**, so GitHub merges it (immediately, or once required checks pass) and Vercel deploys. **Trust over freshness:** it publishes only when the edition is valid, fresh, complete, and safe, and **fails closed** otherwise — no PR is opened and the previous good `latest.json` is left untouched.
+
+**Why PR + auto-merge (not a direct push):** it works whether or not `main` is protected — a protected `main` that blocks direct pushes still merges an auto-merge PR once its required checks pass — and it keeps `validate-feed` as a gate. No morning click required.
+
+### What it does
+
+Runs **17:00 UTC** daily (+ manual `workflow_dispatch`), builds the edition dated **tomorrow-UTC**, then:
+
+```
+Scout → Ranker → approved gate → selection.py build → Writer draft → Writer validate
+→ build.py (+ validate_feed on the draft) → draft-date gate → publish.py --write
+  (+ --consistency, stale-date regression guard) → latest-date gate → pre-push guard
+→ open PR (editions/YYYY-MM-DD.json + latest.json) → enable auto-merge → GitHub merges → Vercel deploys
+```
+
+PR title / commit: `Publish Signals edition YYYY-MM-DD`. The step summary logs the target date, candidate count, the chosen Lead + Supporting, validation result, the files changed, or the **skip reason**.
+
+### Safety gates (any failure ⇒ no PR, no merge, `latest.json` untouched)
+
+- target edition file **already exists** (never overwrite a published edition)
+- target **not newer** than current `latest.json` (no backwards move, no same-date re-publish)
+- fewer than **20** candidates, or fewer than **5** real article URLs *(Ranker)*
+- **no lead-quality story**, or fewer than 4 supporting, or duplicate / missing article URLs *(Ranker / selection.py)*
+- **writer validation** fails — `needs_review` / `source_unavailable` / `thin_source`
+- **build / feed validation** fails, or the **consistency / regression** guard trips *(build.py / validate_feed.py / publish.py)*
+- built **draft date ≠ target**, or **`latest.json` date ≠ target**
+- **pre-push guard:** any working-tree change other than `editions/YYYY-MM-DD.json` + `latest.json`
+
+### Failure behavior
+
+Every step is a hard gate and **opening the PR is the last step**, so a failure anywhere aborts before any PR exists; the runner's local writes are discarded. A weak/dry/failed morning publishes **nothing** — never a stale, partial, or fabricated edition. The app keeps serving the last good edition.
+
+### Required settings (one-time, for fully-automatic merge)
+
+Auto-merge needs the repo configured once:
+
+1. **Settings → General → Pull Requests → enable "Allow auto-merge."** (Without it the PR is still opened and validated, but you'd merge it by hand.)
+2. *(Recommended, makes it safe under branch protection)* In **Settings → Branches**, protect `main` and mark **`validate-feed`** a **required status check**. Auto-merge then waits for `validate-feed` (which re-checks the two files + consistency) and merges only when it's green.
+3. *(Needed only if step 2 is on)* Add a repo secret **`SIGNALS_PAT`** — a fine-grained PAT with `contents: write` + `pull requests: write`. The workflow uses it to open the PR so that `validate-feed` actually runs on it (PRs opened by the built-in `GITHUB_TOKEN` don't trigger other workflows). Without `SIGNALS_PAT`, the in-job gates still ran, but the PR's own `validate-feed` check won't fire.
+
+If auto-merge can't be enabled (setting off, or a rule blocks it), the workflow **leaves the PR open** and prints a warning — nothing is lost, you just merge it manually that day.
+
+### Manual fallback
+
+- **Review-PR:** run **Daily Auto Edition (manual PR fallback)** (`daily-auto-edition.yml`) from the Actions tab — identical pipeline, opens a PR without auto-merge.
+- **Hand-built:** **Build Edition** (`build-edition.yml`) builds from committed drafts → PR.
+- **Local:** run the stages by hand (see *Run it manually*), then `python3 pipeline/publish.py --apply` for a local `publish/<date>` branch + commit, push, and open a PR.
+
+### How to disable auto-publish
+
+Remove or comment out the `schedule:` block in `daily-auto-publish.yml` (keep `workflow_dispatch` for manual runs), or disable the workflow in the **Actions** tab. To pause merging but keep building, turn off "Allow auto-merge" (PRs still open for manual review).
+
+---
+
 ## Image selection (story-aware)
 
 Signals is photography-first: images give **context, never documentation** ("this belongs with the story", not "this depicts the story"). `build.py` assigns each story an image in two tiers:

@@ -1,19 +1,17 @@
-name: Daily Auto Edition
+name: Daily Auto Edition (manual PR fallback)
 
-# Daily Auto Edition pipeline v1 (see DAILY_OPS.md → "Daily Auto Edition").
+# Daily Auto Edition — REVIEW-PR mode (manual fallback; see DAILY_OPS.md → "Manual fallback").
 #
-# Every morning this builds the next edition end-to-end and opens a PR for human review — it
-# NEVER merges or deploys. Each step is a hard gate: if any gate fails the job stops BEFORE the
-# PR step, so latest.json and existing editions are never touched on a weak/stale/failed morning.
+# Same pipeline as Daily Auto Publish, but it opens a PR for human review instead of pushing to
+# main. The scheduled morning run is now daily-auto-publish.yml (auto-publish); this workflow is
+# MANUAL-ONLY (workflow_dispatch) — use it to review-before-publish, or if auto-publish is
+# disabled / blocked by branch protection. It NEVER merges or deploys.
 #
-# Timing: editions serve the user's local morning; we commit to Tokyo (UTC+9) as the earliest.
-# 5:30 AM Tokyo = 20:30 UTC the day before, so this runs at 17:00 UTC and builds the edition dated
-# "tomorrow UTC" (the morning it serves), leaving a buffer for review + merge before the deadline.
+# Each step is a hard gate: a failure stops BEFORE the PR step, so latest.json and existing
+# editions are never touched on a weak/stale/failed run.
 
 on:
-  schedule:
-    - cron: "0 17 * * *"        # 17:00 UTC — before the 20:30 UTC Tokyo-5:30 deadline, with buffer
-  workflow_dispatch:
+  workflow_dispatch:            # manual "Run workflow" only — no schedule (auto-publish owns the cron)
     inputs:
       date:
         description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"

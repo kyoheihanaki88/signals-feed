@@ -48,6 +48,29 @@ LIVE_TITLE_RE = re.compile(r"\b(live|as it happened|live blog|liveblog)\b", re.I
 LIVE_URL_RE = re.compile(r"/live(/|-|$)", re.I)
 VIDEO_RE = re.compile(r"/(videos?|watch|av)/", re.I)
 
+# Editorial-quality exclusions (Daily Auto Publish). What Matters Today is civic / geopolitical /
+# economic / tech / climate / science / institutional — NOT shopping deals, buying guides, or
+# low-impact personal first-person essays. These keep that content out of the top five.
+# Price/shopping cues only (NOT the bare word "deal", which appears in "trade/nuclear/peace deal").
+DEAL_RE = re.compile(
+    r"(\$\s?\d[\d,]*\s*off\b|\b\d+%\s*off\b|\bon sale\b|\bon clearance\b|\bsave \$\d|\bcoupon\b|"
+    r"\bprime day\b|\bblack friday\b|\bcyber monday\b|\blowest price\b|\bbest price\b|"
+    r"\bprice (drop|cut)\b|\bdrops? to \$|\bunder \$\d|\bbuying guide\b|\bgift guide\b|"
+    r"\bdiscounted\b|\bdeal of the (day|week)\b)", re.I)
+# Personal first-person essays — specific cues only (NOT a bare leading "I"/"My", which appears in
+# quoted news headlines like "I have the right papers").
+ESSAY_RE = re.compile(
+    r"\bi (made|built|tried|spent|created|wrote|learned|quit|turned|gave up|switched|reviewed)\b|"
+    r"\bhow i\b|\bwhy i\b|\bmy (year|life|journey|story|experience|app|kid|dog|cat|yard|garden|"
+    r"house|apartment|family|routine|setup|desk)\b", re.I)
+REVIEW_RE = re.compile(r"\breview:\s|\bhands[- ]on\b|\bunboxing\b", re.I)
+
+# Title cues that signal civic/institutional importance — a light positive nudge.
+IMPORTANCE_RE = re.compile(
+    r"\b(government|parliament|congress|senate|election|vote|court|ruling|lawsuit|sanction\w*|"
+    r"treaty|ceasefire|war|military|nuclear|economy|inflation|tariff|climate|emissions|"
+    r"president|minister|policy|regulat\w*|central bank|interest rate|geopolit\w*)\b", re.I)
+
 # Per-category cap among the final five, to avoid "all 5 the same kind of story" when possible.
 CATEGORY_CAP = 2
 
@@ -132,6 +155,34 @@ def source_risk(c):
     return r
 
 
+def editorial_kind(c):
+    """If the story reads as non-core for What Matters Today, name it ('deal' / 'personal essay' /
+    'review'); else ''. Matched on headline + snippet. Used to keep shopping/buying/personal content
+    out of the top five (unless nothing better exists)."""
+    title = (c.get("title") or "")   # judge on the HEADLINE only — snippets contain "deal" etc. in news
+    if DEAL_RE.search(title):
+        return "deal"
+    if ESSAY_RE.search(title):
+        return "personal essay"
+    if REVIEW_RE.search(title):
+        return "review/buying guide"
+    return ""
+
+
+def editorial_junk(c):
+    return bool(editorial_kind(c))
+
+
+def editorial_penalty(c):
+    """Score penalty for non-core content (so even in a thin-day fallback it sinks to the bottom)."""
+    return 6.0 if editorial_junk(c) else 0.0
+
+
+def importance_bonus(c):
+    """Small positive nudge for civic/geopolitical/economic/institutional headline cues."""
+    return 1.0 if IMPORTANCE_RE.search((c.get("title") or "")) else 0.0
+
+
 def why_selected(c):
     """Short human reason a candidate ranked well (logging)."""
     bits = []
@@ -143,6 +194,8 @@ def why_selected(c):
         bits.append("rich-snippet")
     if not c.get("paywalled"):
         bits.append("non-paywalled")
+    if importance_bonus(c):
+        bits.append("civic/important")
     return ", ".join(bits) or "eligible"
 
 
@@ -184,6 +237,9 @@ def base_score(c, now, fresh_hours):
     # Prefer richer / non-paywalled / reliable sources — so within a cross-source cluster the
     # fetchable version (e.g. BBC/Guardian) outranks a paywalled/thin one (e.g. Financial Times).
     s -= 0.6 * source_risk(c)
+    # Editorial quality: deals / personal essays / reviews sink; civic/institutional cues float up.
+    s -= editorial_penalty(c)
+    s += importance_bonus(c)
     return s
 
 
@@ -308,12 +364,24 @@ def main():
              f"sources today; they would become thin drafts. Failing closed before the Writer.",
              args.summary_file)
 
-    # Eligible (real URL + not stale + resolvable + likely-complete), strict (no live blogs) first.
-    elig_strict = [c for c in cands if eligible(c, now, args.stale_hours) and not is_live_blog(c)]
-    elig_loose = [c for c in cands if eligible(c, now, args.stale_hours)]
-    pool = dedup_by_cluster(elig_strict, now, args.fresh_hours)
-    if len(pool) < 5:   # not enough non-live stories — allow live blogs as a last resort
-        pool = dedup_by_cluster(elig_loose, now, args.fresh_hours)
+    # Editorial-quality skip: keep deals / personal essays / reviews out of the top five.
+    skipped_editorial = [c for c in cands if eligible(c, now, args.stale_hours) and editorial_junk(c)]
+    if skipped_editorial:
+        print(f"skipped {len(skipped_editorial)} candidate(s) for editorial quality (non-core):")
+        for c in sorted(skipped_editorial, key=lambda x: short_id(x))[:12]:
+            print(f"    skip [{editorial_kind(c):20}] [{c.get('source','?')}] {c.get('title','')[:48]}")
+
+    # Pool tiers, best first: (1) complete + non-live + non-junk → (2) allow editorial junk →
+    # (3) allow live blogs. Each fallback only triggers if the cleaner tier can't fill five, so
+    # deals/essays/live-blogs appear only when there is truly nothing better.
+    base = [c for c in cands if eligible(c, now, args.stale_hours)]
+    quality = [c for c in base if not is_live_blog(c) and not editorial_junk(c)]
+    no_live = [c for c in base if not is_live_blog(c)]
+    pool = dedup_by_cluster(quality, now, args.fresh_hours)
+    if len(pool) < 5:
+        pool = dedup_by_cluster(no_live, now, args.fresh_hours)      # allow editorial junk
+    if len(pool) < 5:
+        pool = dedup_by_cluster(base, now, args.fresh_hours)         # allow live blogs (last resort)
 
     # GATE 3 — a lead-quality story (serious category, corroborated cross-source OR reliable source)
     lead_pool = [c for c in pool if cat_weight(c) > 0 and (int(c.get("cluster_size") or 1) >= 2 or is_reliable(c))]

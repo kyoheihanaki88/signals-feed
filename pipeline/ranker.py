@@ -53,10 +53,25 @@ CATEGORY_CAP = 2
 
 
 def short_id(c):
-    """The candidate's stable id (matches Scout / selection.py.short_id)."""
-    if c.get("id"):
-        return c["id"]
-    return hashlib.sha1((c.get("canonical_url") or c.get("url") or "").encode("utf-8")).hexdigest()[:6]
+    """The id the Ranker EMITS — the candidate's own `id` field from candidates.json, used directly
+    (never recomputed from url/cluster/title). Falls back to selection.py's formula only if a
+    candidate somehow lacks an `id`, so the fallback still resolves."""
+    return c.get("id") or selection_id(c)
+
+
+def selection_id(c):
+    """EXACTLY what selection.py.short_id computes — sha1 of the canonical URL, 6 hex. This is the
+    key selection.py will look the story up by when it builds `by_id`. We use it only to (a) keep
+    the selectable pool to candidates selection.py can actually resolve, and (b) self-check the
+    final five before writing selection.yaml — never as the emitted id."""
+    return hashlib.sha1((c.get("canonical_url") or "").encode("utf-8")).hexdigest()[:6]
+
+
+def resolvable(c):
+    """True only when the id we'd EMIT for this candidate equals the id selection.py will look it
+    up by — i.e. selection.py.build can find it. Candidates whose stored `id` diverges from
+    sha1(canonical_url) are unselectable (that exact divergence is the bug this guards against)."""
+    return short_id(c) == selection_id(c)
 
 
 def has_real_url(url):
@@ -124,7 +139,8 @@ def is_stale(c, now, stale_hours):
 
 
 def eligible(c, now, stale_hours):
-    return has_real_url(c.get("url", "")) and not is_stale(c, now, stale_hours)
+    # `resolvable` keeps the selectable pool to candidates selection.py can find by the emitted id.
+    return has_real_url(c.get("url", "")) and not is_stale(c, now, stale_hours) and resolvable(c)
 
 
 def dedup_by_cluster(cands, now, fresh_hours):
@@ -247,6 +263,21 @@ def main():
         fail("a selected story has no real article URL", args.summary_file)
     if len(set(urls)) != 5:
         fail("duplicate article URLs in the selection", args.summary_file)
+
+    # GATE 6 — the FIX: every emitted id must exist in candidates.json *as selection.py will look
+    # it up* (sha1 of canonical_url). This guarantees `selection.py build` can resolve all five —
+    # the "id X is not in candidates.json" failure can no longer reach the workflow.
+    valid_lookup = {selection_id(c) for c in cands}          # the exact set selection.py builds
+    print("verify: selected ids exist in candidates.json (selection.py lookup set)")
+    for label, c in [("lead", lead)] + [("supporting", s) for s in supporting]:
+        sid = short_id(c)
+        present = sid in valid_lookup
+        print(f"  {label:10} id={sid}  {'✓ in candidates.json' if present else '✗ MISSING'}  "
+              f"| {c.get('source','?')} | {c.get('title','')[:48]}")
+        if not present:
+            fail(f"selected id {sid} ({label}) is not in candidates.json — selection.py would "
+                 f"reject it. source={c.get('source')!r} title={c.get('title','')[:60]!r}",
+                 args.summary_file)
 
     # Write selection.yaml (selection.py reads lead/supporting; the rest is provenance it ignores).
     out_lines = [

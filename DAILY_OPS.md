@@ -172,11 +172,13 @@ The morning run now **publishes automatically with no human merge** (`.github/wo
 Runs **17:00 UTC** daily (+ manual `workflow_dispatch`), builds the edition dated **tomorrow-UTC**, then:
 
 ```
-Scout → Ranker → approved gate → selection.py build → Writer draft → Writer validate
-→ build.py (+ validate_feed on the draft) → draft-date gate → publish.py --write
-  (+ --consistency, stale-date regression guard) → latest-date gate → pre-push guard
-→ open PR (editions/YYYY-MM-DD.json + latest.json) → enable auto-merge → GitHub merges → Vercel deploys
+Scout → Ranker → approved gate → selection.py build → Writer draft
+→ Writer validate --strict → auto-approve drafts.json → build.py (+ validate_feed on the draft)
+→ draft-date gate → publish.py --write (+ --consistency, regression guard) → latest-date gate
+→ pre-push guard → open PR (editions/YYYY-MM-DD.json + latest.json) → auto-merge → Vercel deploys
 ```
+
+**Strict draft validation + auto-approval.** Auto mode runs `writer.py validate --strict`, which (unlike the lenient manual run) **hard-fails** on any draft that still carries `thin_source` / `whyItMatters_needs_human`, **low confidence**, a **missing keyTakeaway**, or **missing whyItMatters**. Only after that passes does a workflow step stamp `drafts.json` with `approved: true` (+ `approved_by` / `approved_note`) — the approval `build.py` requires. So a thin or incomplete morning stops at validation: no approval, no build, no publish. `build.py`'s own per-signal gates are unchanged and re-check everything independently.
 
 PR title / commit: `Publish Signals edition YYYY-MM-DD`. The step summary logs the target date, candidate count, the chosen Lead + Supporting, validation result, the files changed, or the **skip reason**.
 

@@ -123,11 +123,28 @@ jobs:
       - name: Writer (draft)
         run: python pipeline/writer.py draft
 
-      # 6) Validate drafts — blocking flags (needs_review / source_unavailable / thin_source) fail.
-      - name: Validate drafts
-        run: python pipeline/writer.py validate
+      # 6) Validate drafts — STRICT: hard-fail on thin_source / whyItMatters_needs_human / low
+      #    confidence / missing keyTakeaways or whyItMatters. Stops here (no approval, no build) if
+      #    the 5 drafts aren't complete — so thin/incomplete content can never auto-publish.
+      - name: Validate drafts (strict)
+        run: python pipeline/writer.py validate --strict
 
-      # 7) Build the draft feed (build.py runs validate_feed.py on the draft).
+      # 6b) Auto-approve — ONLY reached after strict validation passes. Adds the top-level approval
+      #     build.py requires. (build.py still re-checks every per-signal gate independently.)
+      - name: Auto-approve drafts
+        run: |
+          python - <<'PY'
+          import json
+          p = "pipeline/drafts.json"
+          d = json.load(open(p))
+          d["approved"] = True
+          d["approved_by"] = "Daily Auto Publish"
+          d["approved_note"] = "Auto-approved after passing draft validation gates."
+          json.dump(d, open(p, "w"), ensure_ascii=False, indent=2)
+          print("drafts.json -> approved: true (Daily Auto Publish)")
+          PY
+
+      # 7) Build the draft feed (build.py re-checks approval + per-signal gates + validate_feed).
       - name: Build draft feed
         run: python pipeline/build.py --date "$EDITION_DATE"
 

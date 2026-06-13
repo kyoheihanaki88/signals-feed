@@ -301,6 +301,47 @@ def cmd_draft(args):
 # or a missing keyTakeaway / whyItMatters) must NOT auto-publish.
 STRICT_BLOCKING_FLAGS = {"needs_review", "source_unavailable", "thin_source", "whyItMatters_needs_human"}
 
+# Editorial quality (auto-publish strict). Catches broken extraction the user reported: summaries
+# that begin mid-sentence / are headline fragments / are cut off, and whyItMatters that is a bare
+# quote, a fragment, or a line copied verbatim from the summary (not an editorial explanation).
+_ENDS_OK = re.compile(r"[.!?][\"')\]”’]?\s*$")
+_DANGLING_END = {"the", "a", "an", "of", "to", "and", "or", "that", "with", "for", "in", "on", "at",
+                 "by", "from", "as", "but", "said", "its", "his", "her", "their", "this", "than"}
+
+
+def summary_quality_issues(summary):
+    s = (summary or "").strip()
+    words = re.findall(r"[A-Za-z0-9']+", s)
+    issues = []
+    if len(words) < 12:
+        issues.append("summary too short (<12 words)")
+    if s and not s[:1].isupper():
+        issues.append("summary begins mid-sentence (not capitalized)")
+    if s and not _ENDS_OK.search(s):
+        issues.append("summary is a headline fragment (no sentence-ending punctuation)")
+    if words and words[-1].lower() in _DANGLING_END:
+        issues.append("summary ends mid-clause (cut off)")
+    return issues
+
+
+def why_quality_issues(why, summary):
+    w = (why or "").strip()
+    s = (summary or "").strip().lower()
+    if not w:
+        return ["whyItMatters empty"]
+    issues = []
+    if w[:1] in ('"', "“", "'", "‘"):
+        issues.append("whyItMatters is a quote, not an explanation")
+    if len(re.findall(r"[A-Za-z0-9']+", w)) < 6:
+        issues.append("whyItMatters too short (<6 words)")
+    if not w[:1].isupper():
+        issues.append("whyItMatters begins mid-sentence")
+    if not _ENDS_OK.search(w):
+        issues.append("whyItMatters is a fragment (no sentence end)")
+    if w.lower() in s:
+        issues.append("whyItMatters is copied verbatim from the summary")
+    return issues
+
 
 def _validate(selection_path, drafts_obj, source="", strict=False):
     _, sig = load_selection(selection_path)
@@ -370,6 +411,13 @@ def _validate(selection_path, drafts_obj, source="", strict=False):
                 hard.append(f"[{d['id']}] needs at least one keyTakeaway to auto-publish.")
             if not (isinstance(dr.get("whyItMatters"), str) and dr.get("whyItMatters", "").strip()):
                 hard.append(f"[{d['id']}] missing whyItMatters — required to auto-publish.")
+            # Editorial quality of the drafted copy (broken summaries / non-editorial whyItMatters).
+            if dr.get("summary"):
+                for issue in summary_quality_issues(dr.get("summary")):
+                    hard.append(f"[{d['id']}] {issue}.")
+            if dr.get("whyItMatters"):
+                for issue in why_quality_issues(dr.get("whyItMatters"), dr.get("summary")):
+                    hard.append(f"[{d['id']}] {issue}.")
 
     print(f"=== validate_drafts {source}{' [STRICT]' if strict else ''} ===")
     if hard:

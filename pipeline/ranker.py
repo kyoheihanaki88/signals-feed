@@ -88,6 +88,64 @@ def is_reliable(c):
     return any(r in s for r in RELIABLE)
 
 
+# Thin-source avoidance (Daily Auto Publish reliability) ─────────────────────────────────────────
+# The Writer flags thin_source / low confidence / missing takeaways when it can't get the full
+# article body and falls back to the RSS snippet — which happens for PAYWALLED sources (the fetch
+# is blocked). Reliable outlets fetch dependably even when their RSS blurb is short, so we gate on
+# fetchability (paywalled), not snippet length alone.
+MIN_SNIPPET = 140   # chars — an UNKNOWN (non-reliable) source needs at least this much RSS text to
+                    # be a safe fallback. Reliable outlets bypass it (they fetch full bodies fine).
+
+
+def snippet_len(c):
+    return len((c.get("snippet") or "").strip())
+
+
+def likely_complete(c):
+    """Will this likely produce a COMPLETE draft (full body → real keyTakeaways + whyItMatters),
+    not a thin snippet-only one? Paywalled → live fetch blocked → snippet-only → thin, so out.
+    Reliable outlet + non-paywalled → fetches dependably (even with a short RSS blurb). Unknown
+    source → trust only when the RSS text is already substantial (>= MIN_SNIPPET)."""
+    if c.get("paywalled"):
+        return False
+    if is_reliable(c):
+        return True
+    return snippet_len(c) >= MIN_SNIPPET
+
+
+def source_risk(c):
+    """0..N thin-source risk — for logging + a tie-breaking score penalty (higher = more likely thin)."""
+    r = 0
+    if c.get("paywalled"):
+        r += 5
+    if not is_reliable(c):
+        r += 1
+    if (c.get("source_reliability") or "").lower() == "low":
+        r += 1
+    sl = snippet_len(c)
+    if sl < 60:
+        r += 3
+    elif sl < 120:
+        r += 2
+    elif sl < MIN_SNIPPET:
+        r += 1
+    return r
+
+
+def why_selected(c):
+    """Short human reason a candidate ranked well (logging)."""
+    bits = []
+    if is_reliable(c):
+        bits.append("reliable")
+    if int(c.get("cluster_size") or 1) >= 2:
+        bits.append(f"cluster×{c.get('cluster_size')}")
+    if snippet_len(c) >= MIN_SNIPPET:
+        bits.append("rich-snippet")
+    if not c.get("paywalled"):
+        bits.append("non-paywalled")
+    return ", ".join(bits) or "eligible"
+
+
 def hours_old(c, now):
     raw = c.get("published_at")
     if not raw:
@@ -119,12 +177,13 @@ def base_score(c, now, fresh_hours):
     s += 2.0 * (1 if is_reliable(c) else 0)
     s += 2.0 * recency01(c, now, fresh_hours)
     s += 1.5 * cat_weight(c)
-    if c.get("paywalled"):
-        s -= 1.0
     if hours_old(c, now) is None:
         s -= 0.5
     if is_live_blog(c):
         s -= 4.0
+    # Prefer richer / non-paywalled / reliable sources — so within a cross-source cluster the
+    # fetchable version (e.g. BBC/Guardian) outranks a paywalled/thin one (e.g. Financial Times).
+    s -= 0.6 * source_risk(c)
     return s
 
 
@@ -139,8 +198,10 @@ def is_stale(c, now, stale_hours):
 
 
 def eligible(c, now, stale_hours):
-    # `resolvable` keeps the selectable pool to candidates selection.py can find by the emitted id.
-    return has_real_url(c.get("url", "")) and not is_stale(c, now, stale_hours) and resolvable(c)
+    # resolvable: selection.py can find it by the emitted id.
+    # likely_complete: won't become a thin draft (skip paywalled/thin sources before the Writer).
+    return (has_real_url(c.get("url", "")) and not is_stale(c, now, stale_hours)
+            and resolvable(c) and likely_complete(c))
 
 
 def dedup_by_cluster(cands, now, fresh_hours):
@@ -230,7 +291,24 @@ def main():
     if valid_url_count < 5:
         fail(f"too few real article URLs ({valid_url_count} < 5)", args.summary_file)
 
-    # Eligible (real URL + not stale), strict (no live blogs) then with live blogs as a fallback.
+    # GATE 2b — enough COMPLETE-draft candidates. Skip thin/paywalled stories the Writer can't fully
+    # draft (they'd fail writer.py validate --strict), and log what we skip so the morning is auditable.
+    complete = [c for c in cands if eligible(c, now, args.stale_hours)]
+    skipped_thin = [c for c in cands
+                    if has_real_url(c.get("url", "")) and not is_stale(c, now, args.stale_hours)
+                    and resolvable(c) and not likely_complete(c)]
+    if skipped_thin:
+        print(f"skipped {len(skipped_thin)} candidate(s) for thin-source risk (paywalled / too thin):")
+        for c in sorted(skipped_thin, key=lambda x: -source_risk(x))[:12]:
+            tag = "paywalled" if c.get("paywalled") else f"snippet={snippet_len(c)}"
+            print(f"    skip risk={source_risk(c)} {tag:13} [{c.get('source','?')}] {c.get('title','')[:44]}")
+    print(f"complete-draft candidates: {len(complete)}/{total}")
+    if len(complete) < 5:
+        fail(f"fewer than 5 complete-draft candidates ({len(complete)}) — too many thin/paywalled "
+             f"sources today; they would become thin drafts. Failing closed before the Writer.",
+             args.summary_file)
+
+    # Eligible (real URL + not stale + resolvable + likely-complete), strict (no live blogs) first.
     elig_strict = [c for c in cands if eligible(c, now, args.stale_hours) and not is_live_blog(c)]
     elig_loose = [c for c in cands if eligible(c, now, args.stale_hours)]
     pool = dedup_by_cluster(elig_strict, now, args.fresh_hours)
@@ -293,12 +371,12 @@ def main():
         f.write("\n".join(out_lines) + "\n")
 
     print(f"✓ wrote {os.path.relpath(args.out)} (approved: true)")
-    print(f"  Lead    : {lead['title'][:64]}  [{lead['source']}]  ({ids[0]}, "
-          f"cluster_size={lead.get('cluster_size')}, {lead.get('category')})")
-    for c in supporting:
-        print(f"  Support : {c['title'][:64]}  [{c['source']}]  ({short_id(c)}, {c.get('category')})")
+    for label, c in [("Lead", lead)] + [("Support", s) for s in supporting]:
+        print(f"  {label:7}: id={short_id(c)} risk={source_risk(c)} [{c.get('source','?')}] "
+              f"{c.get('title','')[:46]}")
+        print(f"           {c.get('category','?')} · why: {why_selected(c)}")
     cats = [(c.get('category') or 'OTHER') for c in five]
-    print(f"  categories: {', '.join(cats)}")
+    print(f"  categories: {', '.join(cats)}  | max source-risk: {max(source_risk(c) for c in five)}")
     _summary(args.summary_file, lead, supporting, total) if args.summary_file else None
 
 

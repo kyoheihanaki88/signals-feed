@@ -297,7 +297,12 @@ def cmd_draft(args):
 
 
 # ----------------------------------------------------------------- validate
-def _validate(selection_path, drafts_obj, source=""):
+# Auto-publish hard-blockers (mirror build.py): a draft carrying any of these (or low confidence,
+# or a missing keyTakeaway / whyItMatters) must NOT auto-publish.
+STRICT_BLOCKING_FLAGS = {"needs_review", "source_unavailable", "thin_source", "whyItMatters_needs_human"}
+
+
+def _validate(selection_path, drafts_obj, source="", strict=False):
     _, sig = load_selection(selection_path)
     by_id = {s["id"]: s for s in sig}
     drafts = drafts_obj["signals"]
@@ -352,7 +357,21 @@ def _validate(selection_path, drafts_obj, source=""):
         if "paywalled" in d["flags"]:
             warn.append(f"[{d['id']}] paywalled source.")
 
-    print(f"=== validate_drafts {source} ===")
+        # STRICT (auto-publish): the same conditions build.py blocks become HARD here, so the
+        # "Validate drafts" gate stops the workflow BEFORE build.py and BEFORE any auto-approval.
+        # Manual mode keeps these as warns (a human may hand-fill flagged drafts).
+        if strict:
+            bad = sorted(set(d.get("flags", [])) & STRICT_BLOCKING_FLAGS)
+            if bad:
+                hard.append(f"[{d['id']}] unresolved blocking flag(s): {', '.join(bad)} — too thin/uncertain to auto-publish.")
+            if d.get("confidence") == "low":
+                hard.append(f"[{d['id']}] low confidence — too uncertain to auto-publish.")
+            if not (isinstance(dr.get("keyTakeaways"), list) and len(dr.get("keyTakeaways") or []) >= 1):
+                hard.append(f"[{d['id']}] needs at least one keyTakeaway to auto-publish.")
+            if not (isinstance(dr.get("whyItMatters"), str) and dr.get("whyItMatters", "").strip()):
+                hard.append(f"[{d['id']}] missing whyItMatters — required to auto-publish.")
+
+    print(f"=== validate_drafts {source}{' [STRICT]' if strict else ''} ===")
     if hard:
         print("✗ HARD FAIL:")
         for h in hard:
@@ -370,7 +389,8 @@ def _validate(selection_path, drafts_obj, source=""):
 def cmd_validate(args):
     if not os.path.exists(args.drafts):
         sys.exit(f"ERROR: {args.drafts} not found. Run `writer.py draft` first.")
-    sys.exit(_validate(args.selection, json.load(open(args.drafts)), source=os.path.basename(args.drafts)))
+    sys.exit(_validate(args.selection, json.load(open(args.drafts)),
+                       source=os.path.basename(args.drafts), strict=getattr(args, "strict", False)))
 
 
 def main():
@@ -385,6 +405,8 @@ def main():
     v = sub.add_parser("validate")
     v.add_argument("--selection", default=DEF_SEL)
     v.add_argument("--drafts", default=DEF_OUT)
+    v.add_argument("--strict", action="store_true",
+                   help="auto-publish mode: hard-fail on thin/incomplete/low-confidence drafts (no hand-fill)")
     args = ap.parse_args()
     (cmd_draft if args.cmd == "draft" else cmd_validate)(args)
 

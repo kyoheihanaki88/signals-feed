@@ -110,6 +110,15 @@ jobs:
       - name: Build draft feed
         run: python pipeline/build.py --date "$EDITION_DATE"
 
+      # 7b) Localize (Japanese) — optional localized.ja from the FINAL English fields. Best-effort:
+      #     per-signal failures skip (English-only) and no ANTHROPIC_API_KEY leaves the edition
+      #     English-only. Never fails the run; the JA rides into the edition via publish.py below.
+      - name: Localize Japanese (optional)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SIGNALS_JA_MODEL: ${{ vars.SIGNALS_JA_MODEL }}
+        run: python pipeline/localize.py pipeline/generated/latest.draft.json
+
       # 8) Gate — the built edition date must match the date we intended (never mis-stamp).
       - name: Gate — edition date matches target
         run: |

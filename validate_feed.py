@@ -32,6 +32,36 @@ FUTURE_SANITY_DAYS = 2
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})\.json$")
 
 
+def localized_errors(s):
+    """Optional `localized` content (Increment F). ABSENT = fine — English-only editions, including
+    every edition published before this, stay valid. This only catches a present-but-MALFORMED block
+    so the iOS optional `localized.ja` decoder never chokes; it never requires Japanese to exist and
+    never weakens an existing check.
+
+    Shape (all fields optional): localized.ja.{ headline:str, summary:str,
+                                                keyTakeaways:[str], whyItMatters:str }"""
+    num = s.get("number", "?")
+    loc = s.get("localized")
+    if loc is None:
+        return []                                   # no localization → nothing to check
+    if not isinstance(loc, dict):
+        return [f"signal {num} `localized` must be an object"]
+    ja = loc.get("ja")
+    if ja is None:
+        return []                                   # `localized` present but no `ja` yet → allowed
+    if not isinstance(ja, dict):
+        return [f"signal {num} `localized.ja` must be an object"]
+    errs = []
+    for k in ("headline", "summary", "whyItMatters"):
+        if k in ja and not (isinstance(ja[k], str) and ja[k].strip()):
+            errs.append(f"signal {num} localized.ja.{k} must be a non-empty string")
+    if "keyTakeaways" in ja:
+        kt = ja["keyTakeaways"]
+        if not (isinstance(kt, list) and kt and all(isinstance(x, str) and x.strip() for x in kt)):
+            errs.append(f"signal {num} localized.ja.keyTakeaways must be a non-empty list of strings")
+    return errs
+
+
 def structural_errors(feed):
     """Lead Signal Rule + content checks — independent of any clock."""
     errors = []
@@ -79,6 +109,10 @@ def structural_errors(feed):
             errors.append(f"signal {s.get('number','?')} originalURL not https: {url!r}")
         elif p.path.strip("/") == "":
             errors.append(f"signal {s.get('number','?')} originalURL is a homepage, not an article: {url!r}")
+
+    # Optional localized content (Increment F) — only flagged if present-but-malformed.
+    for s in signals:
+        errors += localized_errors(s)
 
     return errors
 

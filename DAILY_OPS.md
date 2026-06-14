@@ -242,3 +242,35 @@ image assignment:
 **Add / adjust:** edit `topic_keywords` (the matching) and `topic_pools` (the images) in `pipeline/images.yaml`. After changing any image URL, run `python3 pipeline/build.py --verify-images` on a networked machine — it HTTP-checks every URL (category **and** topic pools) and drops dead ones; a topic pool that empties simply falls back to the category pool, so a broken URL is never worse than today's behavior.
 
 **Limitations:** the topic comes from keywords, not understanding — an incidental keyword can mislead, so the **human PR review is the backstop**; category labels still come from the source feed; and pools currently reuse the existing curated images, so very specific symbols (ballot box, courthouse, rocket) are represented by adjacent symbolic stand-ins rather than literal objects (by design — context, not documentation).
+
+## Japanese localization (`localized.ja`)
+
+Each signal may carry an **optional** Japanese block, generated from that signal's **final English fields** (English stays the source of truth; Japanese is purely additive). iOS shows an EN / 日本語 toggle and falls back to English whenever `localized.ja` is absent, so this layer is always safe to skip.
+
+**Schema** (every field optional; absence is valid):
+
+```json
+"localized": {
+  "ja": {
+    "headline": "都市が朝を支える仕組み、静かな転換",
+    "summary": "財政の逼迫を背景に、中規模の都市が日常インフラの資金を民間に頼り始めている。…",
+    "keyTakeaways": ["…", "…", "…"],
+    "whyItMatters": "街の朝のかたちが、人目につかない予算の場で決まりつつある。"
+  }
+}
+```
+
+`keyTakeaways` is 2–3 short bullets; `whyItMatters` is one sentence. Japanese is calm, concise, editorial (常体) — not literal machine translation — and never invents facts beyond the English.
+
+**Where it runs.** `pipeline/localize.py` runs in the daily workflows **between `build.py` and `publish.py`**, on the gitignored build draft (`pipeline/generated/latest.draft.json`). It never edits `latest.json` or `editions/` directly — the Japanese rides into the edition through the normal `publish.py` promotion, so the pre-push guard still sees only the two expected files.
+
+```bash
+# local test on one signal (needs ANTHROPIC_API_KEY):
+python3 pipeline/build.py --date 2026-06-15
+ANTHROPIC_API_KEY=sk-... python3 pipeline/localize.py pipeline/generated/latest.draft.json --limit 1
+python3 validate_feed.py pipeline/generated/latest.draft.json
+```
+
+**Config.** `ANTHROPIC_API_KEY` (repo secret) enables generation; `SIGNALS_JA_MODEL` (repo variable) overrides the model. With no key, editions ship **English-only** — nothing breaks.
+
+**Failure behavior.** Best-effort by default: if a signal can't be generated or its JSON fails the shape check, `localized.ja` is **omitted for that signal only** and the edition still publishes (English-only for that one). `--strict` makes any failure fatal (not used in the daily workflows). The publish-time validator (`validate_feed.py`) accepts a missing or well-formed `localized.ja` and **rejects only a present-but-malformed** block, so existing editions without it remain valid.

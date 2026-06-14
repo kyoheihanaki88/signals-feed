@@ -192,6 +192,58 @@ def get_source_text(item, articles_dir, allow_fetch, unavailable):
     return "", "none"
 
 
+# ----------------------------------------------------------------- summary/why composition
+# These build copy that satisfies the SAME strict editorial checks the validator enforces
+# (summary_quality_issues / why_quality_issues, defined below). Repairing extraction here — rather
+# than weakening the gate — is what keeps a too-short or mid-sentence summary from ever reaching
+# `writer.py validate --strict`. Still grounded: they only ever SELECT or JOIN real source sentences,
+# never invent text. If no quality summary can be formed, the caller flags the draft → fail-closed.
+
+def _compose_quality_summary(clean, headline):
+    """A summary that passes summary_quality_issues, drawn from clean body sentences. Prefer a single
+    headline-relevant, well-formed sentence; else JOIN consecutive sentences (from a capitalized
+    start) until the bar is met (fixes 'too short'). Returns '' if no quality summary is possible."""
+    if not clean:
+        return ""
+    hk = keywords(headline)
+    score = {s: len(keywords(s) & hk) for s in clean}
+    order = sorted(range(len(clean)), key=lambda i: (score[clean[i]] == 0, i))  # headline-relevant first
+    # 1) a single already-well-formed sentence (starts uppercase, ends clean, >=12 words, no dangling)
+    for i in order:
+        if not summary_quality_issues(clean[i]):
+            return clean[i]
+    # 2) combine consecutive sentences, beginning at a real (capitalized) sentence start
+    for start in order:
+        if not clean[start][:1].isupper():       # never begin a summary mid-sentence
+            continue
+        combo, j = clean[start], start + 1
+        while summary_quality_issues(combo) and j < len(clean):
+            combo = (combo + " " + clean[j]).strip()
+            j += 1
+        if not summary_quality_issues(combo):
+            return combo
+    return ""
+
+
+def _compose_quality_why(clean, headline, summary):
+    """A whyItMatters that passes why_quality_issues and is NOT part of the summary. Prefer a
+    headline-relevant stakes sentence, then any stakes sentence, then any clean sentence. '' if none."""
+    sl = summary.lower()
+    hk = keywords(headline)
+    score = {s: len(keywords(s) & hk) for s in clean}
+
+    def usable(s):
+        return s.lower() not in sl and not why_quality_issues(s, summary)
+
+    for pred in (lambda s: STAKES_RE.search(s) and score[s] > 0,
+                 lambda s: STAKES_RE.search(s),
+                 lambda s: True):
+        for s in clean:
+            if usable(s) and pred(s):
+                return s
+    return ""
+
+
 # ----------------------------------------------------------------- draft
 def draft_one(item, source_text, used):
     role = "lead" if item.get("lead") else "supporting"
@@ -217,34 +269,48 @@ def draft_one(item, source_text, used):
         flags += ["thin_source", "rss_snippet_only"]
 
     if not clean:
-        # cleaning removed everything (pure boilerplate / too thin) — fall back honestly + flag.
-        summary = html.unescape(source_text).strip() if used == "rss_snippet" else ""
+        # Cleaning removed everything (pure boilerplate / too thin). Use the raw snippet ONLY if it is
+        # itself a quality summary; otherwise emit NO summary (never ship a fragment) and flag. Either
+        # way this draft fails closed via the flags below — we just never emit malformed copy.
+        raw = html.unescape(source_text).strip() if used == "rss_snippet" else ""
+        summary = raw if (raw and not summary_quality_issues(raw)) else ""
         takeaways, why, confidence = [], "", "low"
         if not summary:
-            flags.append("needs_review")
+            flags += ["summary_needs_human", "needs_review"]
         flags += ["keyTakeaways_needs_human", "whyItMatters_needs_human"]
     else:
         # Prefer sentences that share terms with the headline — this pushes any stray boilerplate
         # (which never shares headline terms) out of the summary/takeaways.
         hk = keywords(headline)
         score = {s: len(keywords(s) & hk) for s in clean}
-        # summary: earliest headline-relevant sentence (never site-title/homepage — already filtered).
-        summary = next((s for s in clean if score[s] > 0), clean[0])
-        # whyItMatters: reserve a cautious, NON-fabricated stakes sentence FIRST (so it's never a
-        # duplicate of the summary) — headline-relevant stakes line, else any stakes line.
-        why = (next((s for s in clean if s != summary and STAKES_RE.search(s) and score[s] > 0), "")
-               or next((s for s in clean if s != summary and STAKES_RE.search(s)), ""))
-        # takeaways: up to 3 remaining clean body bullets, headline-relevant first, boilerplate demoted.
-        pool = [s for s in clean if s != summary and s != why]
-        pool.sort(key=lambda s: (score[s] == 0, clean.index(s)))
-        takeaways = pool[:3]
-        if not why:                                       # no stakes sentence → closing line, else a takeaway
-            why = next((s for s in reversed(clean) if s != summary and s not in takeaways),
-                       takeaways[-1] if takeaways else summary)
-        if len(takeaways) < 3:
-            flags.append("keyTakeaways_thin")
-        confidence = "low" if used == "rss_snippet" else \
-                     ("high" if (word_count(source_text) >= 250 and len(clean) >= 4) else "medium")
+        # summary: an editorially well-formed line (repairs 'too short' / 'mid-sentence' by selecting
+        # a capitalized, full, >=12-word sentence — joining consecutive sentences when needed).
+        summary = _compose_quality_summary(clean, headline)
+        if not summary:
+            # The source has prose but none of it can form a quality summary — DON'T ship a fragment.
+            # Flag for fail-closed: strict validation + build.py will reject (no PR), per requirement 7.
+            takeaways, why, confidence = [], "", "low"
+            flags += ["summary_needs_human", "needs_review",
+                      "keyTakeaways_needs_human", "whyItMatters_needs_human"]
+        else:
+            # Sentences consumed by the (possibly multi-sentence) summary — excluded from why/takeaways
+            # so whyItMatters is never a verbatim slice of the summary.
+            consumed = {s for s in clean if s in summary}
+            # whyItMatters: a cautious, NON-fabricated stakes sentence, quality-checked + de-duped.
+            why = _compose_quality_why(clean, headline, summary)
+            # takeaways: up to 3 remaining clean body bullets, headline-relevant first.
+            pool = [s for s in clean if s not in consumed and s != why]
+            pool.sort(key=lambda s: (score[s] == 0, clean.index(s)))
+            takeaways = pool[:3]
+            if not why:                                   # no quality stakes line → closing line / takeaway
+                why = next((s for s in reversed(clean) if s not in consumed and s not in takeaways),
+                           takeaways[-1] if takeaways else summary)
+            if why_quality_issues(why, summary):          # even the fallback isn't editorial → fail-closed
+                flags.append("whyItMatters_needs_human")
+            if len(takeaways) < 3:
+                flags.append("keyTakeaways_thin")
+            confidence = "low" if used == "rss_snippet" else \
+                         ("high" if (word_count(source_text) >= 250 and len(clean) >= 4) else "medium")
 
     if item.get("paywalled"):
         flags.append("paywalled")

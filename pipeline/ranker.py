@@ -65,11 +65,33 @@ ESSAY_RE = re.compile(
     r"house|apartment|family|routine|setup|desk)\b", re.I)
 REVIEW_RE = re.compile(r"\breview:\s|\bhands[- ]on\b|\bunboxing\b", re.I)
 
-# Title cues that signal civic/institutional importance — a light positive nudge.
+# Low-signal content for a "What Matters Today" morning brief — EXCLUDED, not just demoted (Increment
+# G). Judged on the HEADLINE only (snippets legitimately mention these words in real news).
+PODCAST_RE = re.compile(r"\b(podcast|this week'?s episode|on the latest episode|episode \d+|"
+                        r"listen to (this|the) episode|our (weekly )?show)\b", re.I)
+ENTERTAINMENT_RE = re.compile(
+    r"\b(x-men|masters of the universe|star wars|marvel|dc (comics|universe)|"
+    r"trailer|recap|season (finale|premiere)|box office|spoilers?|"
+    r"netflix|disney\+?|hbo max|prime video|anime|comic[- ]con|"
+    r"cinematic universe|reboot|spin[- ]?off|fan(dom| service)|"
+    r"\bmovie\b|\btv show\b|\bsitcom\b|streaming series|video game review)\b", re.I)
+NOSTALGIA_RE = re.compile(r"\b(nostalgia|throwback|remember when|growing up with|an ode to|"
+                          r"in praise of|the magic of|why i still love|a love letter to)\b", re.I)
+PRODUCT_RE = re.compile(
+    r"(\breview:|\bhands[- ]on\b|\bunboxing\b|buying guide|gift guide|"
+    r"\b\d+ best\b|\bbest \w+ (of|for|to buy|under)\b|our favorite|"
+    r"\bdeal[s]?:|\bon sale\b|\bdiscount\b|prime day|black friday|cyber monday|"
+    r"universal remote|\bearbuds?\b|\bheadphones?\b|smartwatch|\bgadget\b|\bgizmo\b)", re.I)
+
+# Title cues that signal civic/institutional importance — a positive nudge toward "what matters".
 IMPORTANCE_RE = re.compile(
     r"\b(government|parliament|congress|senate|election|vote|court|ruling|lawsuit|sanction\w*|"
-    r"treaty|ceasefire|war|military|nuclear|economy|inflation|tariff|climate|emissions|"
-    r"president|minister|policy|regulat\w*|central bank|interest rate|geopolit\w*)\b", re.I)
+    r"treaty|ceasefire|war|peace|diplomacy|summit|military|nuclear|economy|inflation|tariff|"
+    r"climate|emissions|environment|wildfire|flood|drought|outbreak|disease|health|pandemic|"
+    r"president|minister|policy|regulat\w*|central bank|interest rate|geopolit\w*|"
+    r"infrastructure|energy|grid|labor|labour|layoffs|unemployment|wages|strike|gdp|recession|"
+    r"trade|supply chain|semiconductor|data breach|cyberattack|surveillance|privacy|"
+    r"supreme court|indict\w*|charged|aid|famine|refugee|humanitarian)\b", re.I)
 
 # Per-category cap among the final five, to avoid "all 5 the same kind of story" when possible.
 CATEGORY_CAP = 2
@@ -156,12 +178,19 @@ def source_risk(c):
 
 
 def editorial_kind(c):
-    """If the story reads as non-core for What Matters Today, name it ('deal' / 'personal essay' /
-    'review'); else ''. Matched on headline + snippet. Used to keep shopping/buying/personal content
-    out of the top five (unless nothing better exists)."""
-    title = (c.get("title") or "")   # judge on the HEADLINE only — snippets contain "deal" etc. in news
-    if DEAL_RE.search(title):
-        return "deal"
+    """If the story reads as non-core for What Matters Today, name it; else ''. Judged on the HEADLINE
+    only (snippets contain 'deal'/'review' etc. in real news). These kinds are EXCLUDED from
+    eligibility (Increment G) so the morning five stay civic/timely — fail closed over filling with
+    podcasts, franchise entertainment, nostalgia essays, or product/shopping content."""
+    title = (c.get("title") or "")
+    if DEAL_RE.search(title) or PRODUCT_RE.search(title):
+        return "product/deal"
+    if PODCAST_RE.search(title):
+        return "podcast"
+    if ENTERTAINMENT_RE.search(title):
+        return "entertainment/franchise"
+    if NOSTALGIA_RE.search(title):
+        return "nostalgia essay"
     if ESSAY_RE.search(title):
         return "personal essay"
     if REVIEW_RE.search(title):
@@ -179,8 +208,9 @@ def editorial_penalty(c):
 
 
 def importance_bonus(c):
-    """Small positive nudge for civic/geopolitical/economic/institutional headline cues."""
-    return 1.0 if IMPORTANCE_RE.search((c.get("title") or "")) else 0.0
+    """Positive nudge for civic/geopolitical/economic/infrastructure/climate/health headline cues —
+    so 'what matters today' stories float above merely-available ones. (Increment G: strengthened.)"""
+    return 2.0 if IMPORTANCE_RE.search((c.get("title") or "")) else 0.0
 
 
 def why_selected(c):
@@ -256,8 +286,10 @@ def is_stale(c, now, stale_hours):
 def eligible(c, now, stale_hours):
     # resolvable: selection.py can find it by the emitted id.
     # likely_complete: won't become a thin draft (skip paywalled/thin sources before the Writer).
+    # not editorial_junk: podcasts/franchise-entertainment/nostalgia/product-deal/review/essay are
+    #   EXCLUDED (Increment G) — we fail closed rather than fill the five with low-signal content.
     return (has_real_url(c.get("url", "")) and not is_stale(c, now, stale_hours)
-            and resolvable(c) and likely_complete(c))
+            and resolvable(c) and likely_complete(c) and not editorial_junk(c))
 
 
 def dedup_by_cluster(cands, now, fresh_hours):
@@ -364,22 +396,23 @@ def main():
              f"sources today; they would become thin drafts. Failing closed before the Writer.",
              args.summary_file)
 
-    # Editorial-quality skip: keep deals / personal essays / reviews out of the top five.
-    skipped_editorial = [c for c in cands if eligible(c, now, args.stale_hours) and editorial_junk(c)]
+    # Editorial-quality skip log (Increment G): podcasts / franchise entertainment / nostalgia /
+    # product-deal / review / personal essay are EXCLUDED from eligibility — list them with reasons
+    # so the morning is auditable (req 5). These never enter the five; we fail closed instead.
+    skipped_editorial = [c for c in cands
+                         if has_real_url(c.get("url", "")) and not is_stale(c, now, args.stale_hours)
+                         and resolvable(c) and likely_complete(c) and editorial_junk(c)]
     if skipped_editorial:
-        print(f"skipped {len(skipped_editorial)} candidate(s) for editorial quality (non-core):")
+        print(f"excluded {len(skipped_editorial)} candidate(s) for editorial quality (non-core):")
         for c in sorted(skipped_editorial, key=lambda x: short_id(x))[:12]:
-            print(f"    skip [{editorial_kind(c):20}] [{c.get('source','?')}] {c.get('title','')[:48]}")
+            print(f"    exclude [{editorial_kind(c):22}] [{c.get('source','?')}] {c.get('title','')[:48]}")
 
-    # Pool tiers, best first: (1) complete + non-live + non-junk → (2) allow editorial junk →
-    # (3) allow live blogs. Each fallback only triggers if the cleaner tier can't fill five, so
-    # deals/essays/live-blogs appear only when there is truly nothing better.
+    # Pool tiers, best first: (1) complete + non-live → (2) allow live blogs (last resort). Editorial
+    # junk is already removed by `eligible`, so it can NEVER enter the five — a thin morning fails
+    # closed (GATE 4 below) rather than filling with low-signal content.
     base = [c for c in cands if eligible(c, now, args.stale_hours)]
-    quality = [c for c in base if not is_live_blog(c) and not editorial_junk(c)]
-    no_live = [c for c in base if not is_live_blog(c)]
+    quality = [c for c in base if not is_live_blog(c)]
     pool = dedup_by_cluster(quality, now, args.fresh_hours)
-    if len(pool) < 5:
-        pool = dedup_by_cluster(no_live, now, args.fresh_hours)      # allow editorial junk
     if len(pool) < 5:
         pool = dedup_by_cluster(base, now, args.fresh_hours)         # allow live blogs (last resort)
 

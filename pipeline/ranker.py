@@ -29,6 +29,7 @@ Usage:
 """
 import sys, os, re, json, argparse, hashlib, datetime
 from urllib.parse import urlsplit
+from editorial import topic_fingerprint, topics_overlap   # v2.1: duplicate-topic detection
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEF_CAND = os.path.join(HERE, "candidates.json")
@@ -82,6 +83,25 @@ PRODUCT_RE = re.compile(
     r"\b\d+ best\b|\bbest \w+ (of|for|to buy|under)\b|our favorite|"
     r"\bdeal[s]?:|\bon sale\b|\bdiscount\b|prime day|black friday|cyber monday|"
     r"universal remote|\bearbuds?\b|\bheadphones?\b|smartwatch|\bgadget\b|\bgizmo\b)", re.I)
+# Music / film / TV / arts reviews + celebrity — low-impact for a morning brief (v2.1). NOT a ban on
+# all culture: a culturally significant story still passes via HIGH_IMPACT_RE / IMPORTANCE_RE below.
+ARTS_REVIEW_RE = re.compile(
+    r"\b(album review|music review|ep review|track review|single review|concert review|"
+    r"new album|new single|debut album|on tour|tour dates|"
+    r"film review|movie review|tv review|series review|book review|art review|"
+    r"gallery review|exhibition review|restaurant review|"
+    r"celebrity|red carpet|grammys?|oscars?|golden globes?|met gala)\b", re.I)
+# HIGH-IMPACT tech / government / business policy — ALWAYS eligible (v2.1, req 5). Never misclassified
+# as junk even when it names a company. Requires a POLICY/IMPACT cue (or a serious AI lab), so generic
+# shopping like "Amazon Prime Day deals" is NOT swept in.
+HIGH_IMPACT_RE = re.compile(
+    r"\b(antitrust|monopoly|white house|executive order|national security|export controls?|"
+    r"sanction\w*|regulat\w*|oversight|supreme court|federal (probe|investigation|lawsuit|trade)|"
+    r"data center|semiconductor|chip (ban|export|act|war)|"
+    r"anthropic|openai|deepmind|\bai (policy|regulation|safety|act|bill|rules?|oversight|deal|"
+    r"partnership|infrastructure)\b|"
+    r"government (contract|deal|partnership|funding)|cloud (deal|contract|partnership)|"
+    r"acquisition|merger|\bbillion\b)\b", re.I)
 
 # Title cues that signal civic/institutional importance — a positive nudge toward "what matters".
 IMPORTANCE_RE = re.compile(
@@ -183,6 +203,12 @@ def editorial_kind(c):
     eligibility (Increment G) so the morning five stay civic/timely — fail closed over filling with
     podcasts, franchise entertainment, nostalgia essays, or product/shopping content."""
     title = (c.get("title") or "")
+    # High-impact tech/government/business policy is ALWAYS eligible — checked FIRST so a serious
+    # story (Amazon/Anthropic/White House, antitrust, AI policy…) is never misclassified as junk.
+    if HIGH_IMPACT_RE.search(title):
+        return ""
+    if ARTS_REVIEW_RE.search(title):
+        return "arts/entertainment review"
     if DEAL_RE.search(title) or PRODUCT_RE.search(title):
         return "product/deal"
     if PODCAST_RE.search(title):
@@ -303,20 +329,37 @@ def dedup_by_cluster(cands, now, fresh_hours):
     return sorted(best.values(), key=lambda c: (-base_score(c, now, fresh_hours), short_id(c)))
 
 
+def _fp(c):
+    return topic_fingerprint(c.get("title", ""), c.get("snippet", ""))
+
+
 def pick_supporting(pool, lead, now, fresh_hours, need=4):
     """Pick `need` supporting from pool (already excludes the lead's cluster), preferring category
-    diversity (<= CATEGORY_CAP per category incl. the lead), relaxing the cap only if needed."""
+    diversity (<= CATEGORY_CAP per category incl. the lead), relaxing the cap only if needed.
+
+    v2.1 duplicate-topic gate: a candidate whose topic fingerprint overlaps the lead's or an
+    already-chosen supporting's is SKIPPED — so the stronger (higher-ranked, picked first) story is
+    kept and the weaker duplicate is replaced by the next distinct one. Never fills with a duplicate;
+    if not enough distinct topics exist, returns fewer (the caller's 5-distinct gate then fails closed)."""
     ranked = sorted(pool, key=lambda c: (-base_score(c, now, fresh_hours), short_id(c)))
+    lead_fp = _fp(lead)
+    best = []
     for cap in (CATEGORY_CAP, CATEGORY_CAP + 1, 999):
-        chosen, counts = [], {(lead.get("category") or "OTHER").upper(): 1}
+        chosen, counts, fps = [], {(lead.get("category") or "OTHER").upper(): 1}, [lead_fp]
         for c in ranked:
+            fp = _fp(c)
+            if any(topics_overlap(fp, f) for f in fps):     # same/near-identical topic → skip
+                continue
             cat = (c.get("category") or "OTHER").upper()
             if counts.get(cat, 0) < cap:
                 chosen.append(c)
                 counts[cat] = counts.get(cat, 0) + 1
+                fps.append(fp)
             if len(chosen) == need:
                 return chosen
-    return ranked[:need]   # fallback (won't reach diversity, but fills the five)
+        if len(chosen) > len(best):
+            best = chosen
+    return best   # fewer than `need` only when distinct topics run out → caller fails closed
 
 
 def fail(reason, summary_path=None):

@@ -70,12 +70,16 @@ REVIEW_RE = re.compile(r"\breview:\s|\bhands[- ]on\b|\bunboxing\b", re.I)
 # G). Judged on the HEADLINE only (snippets legitimately mention these words in real news).
 PODCAST_RE = re.compile(r"\b(podcast|this week'?s episode|on the latest episode|episode \d+|"
                         r"listen to (this|the) episode|our (weekly )?show)\b", re.I)
+# LOOSE entertainment/franchise words. v2.2: these alone no longer reject — only when there is NO
+# civic/public-impact context (see CIVIC_OVERRIDE_RE). So "Backlash over Trump's use of anime" stays
+# eligible, while "New anime series announced" does not.
 ENTERTAINMENT_RE = re.compile(
     r"\b(x-men|masters of the universe|star wars|marvel|dc (comics|universe)|"
-    r"trailer|recap|season (finale|premiere)|box office|spoilers?|"
+    r"trailer|season (finale|premiere)|box office|spoilers?|"
     r"netflix|disney\+?|hbo max|prime video|anime|comic[- ]con|"
     r"cinematic universe|reboot|spin[- ]?off|fan(dom| service)|"
-    r"\bmovie\b|\btv show\b|\bsitcom\b|streaming series|video game review)\b", re.I)
+    r"\bmovie\b|\btv show\b|\bsitcom\b|streaming series|"
+    r"celebrity|red carpet|grammys?|oscars?|golden globes?|met gala)\b", re.I)
 NOSTALGIA_RE = re.compile(r"\b(nostalgia|throwback|remember when|growing up with|an ode to|"
                           r"in praise of|the magic of|why i still love|a love letter to)\b", re.I)
 PRODUCT_RE = re.compile(
@@ -83,14 +87,23 @@ PRODUCT_RE = re.compile(
     r"\b\d+ best\b|\bbest \w+ (of|for|to buy|under)\b|our favorite|"
     r"\bdeal[s]?:|\bon sale\b|\bdiscount\b|prime day|black friday|cyber monday|"
     r"universal remote|\bearbuds?\b|\bheadphones?\b|smartwatch|\bgadget\b|\bgizmo\b)", re.I)
-# Music / film / TV / arts reviews + celebrity — low-impact for a morning brief (v2.1). NOT a ban on
-# all culture: a culturally significant story still passes via HIGH_IMPACT_RE / IMPORTANCE_RE below.
+# Explicit low-signal FORMATS — a review / recap / profile / album-drop is low-signal regardless of
+# subject, so these ALWAYS reject (v2.2: format-only; bare 'celebrity'/awards moved to the loose tier
+# above so a civic story can override them). NOT a ban on all culture.
 ARTS_REVIEW_RE = re.compile(
-    r"\b(album review|music review|ep review|track review|single review|concert review|"
-    r"new album|new single|debut album|on tour|tour dates|"
-    r"film review|movie review|tv review|series review|book review|art review|"
-    r"gallery review|exhibition review|restaurant review|"
-    r"celebrity|red carpet|grammys?|oscars?|golden globes?|met gala)\b", re.I)
+    r"\b(album review|music review|ep review|track review|single review|song review|"
+    r"film review|movie review|tv review|television review|series review|game review|"
+    r"book review|art review|gallery review|exhibition review|restaurant review|concert review|"
+    r"celebrity profile|\brecaps?\b|best songs|new album|new single|debut album|"
+    r"track[- ]by[- ]track)\b", re.I)
+# Public-impact context — if any of these is present, a LOOSE entertainment/nostalgia/essay word must
+# NOT auto-reject the story (v2.2 civic override). Reviews/recaps/profiles/shopping still reject.
+CIVIC_OVERRIDE_RE = re.compile(
+    r"\b(backlash|protest\w*|boycott|controvers\w*|government|president|white house|\btrump\b|"
+    r"\bbiden\b|election|politic\w*|policy|policies|police|\blaw\b|laws|lawsuit|legislation|"
+    r"regulat\w*|antitrust|court|ruling|diplomat\w*|embassy|military|defen[cs]e|security|"
+    r"sanction\w*|labor|labour|union|strike|layoffs?|\bai\b|artificial intelligence|platform|"
+    r"moderation|copyright|business|market\w*|econom\w*|\bsafety\b|privacy|\bdata\b|deepfake)\b", re.I)
 # HIGH-IMPACT tech / government / business policy — ALWAYS eligible (v2.1, req 5). Never misclassified
 # as junk even when it names a company. Requires a POLICY/IMPACT cue (or a serious AI lab), so generic
 # shopping like "Amazon Prime Day deals" is NOT swept in.
@@ -203,24 +216,31 @@ def editorial_kind(c):
     eligibility (Increment G) so the morning five stay civic/timely — fail closed over filling with
     podcasts, franchise entertainment, nostalgia essays, or product/shopping content."""
     title = (c.get("title") or "")
-    # High-impact tech/government/business policy is ALWAYS eligible — checked FIRST so a serious
-    # story (Amazon/Anthropic/White House, antitrust, AI policy…) is never misclassified as junk.
+    # 1) High-impact tech/government/business policy is ALWAYS eligible — checked FIRST so a serious
+    #    story (Amazon/Anthropic/White House, antitrust, AI policy…) is never misclassified as junk.
     if HIGH_IMPACT_RE.search(title):
         return ""
+    # 2) Explicit low-signal FORMATS (review / recap / profile / album-drop, shopping, podcast,
+    #    hands-on) — always rejected regardless of subject; a review is a review.
     if ARTS_REVIEW_RE.search(title):
         return "arts/entertainment review"
     if DEAL_RE.search(title) or PRODUCT_RE.search(title):
         return "product/deal"
     if PODCAST_RE.search(title):
         return "podcast"
+    if REVIEW_RE.search(title):
+        return "review/buying guide"
+    # 3) Loose entertainment / nostalgia / personal-essay words reject ONLY without civic context.
+    #    v2.2: a public-impact angle (backlash, Trump, policy, labor, AI, platform, business…) keeps
+    #    the story eligible — so "Backlash over Trump's use of anime" is NOT entertainment junk.
+    if CIVIC_OVERRIDE_RE.search(title):
+        return ""
     if ENTERTAINMENT_RE.search(title):
         return "entertainment/franchise"
     if NOSTALGIA_RE.search(title):
         return "nostalgia essay"
     if ESSAY_RE.search(title):
         return "personal essay"
-    if REVIEW_RE.search(title):
-        return "review/buying guide"
     return ""
 
 

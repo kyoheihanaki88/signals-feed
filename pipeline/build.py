@@ -24,7 +24,10 @@ Usage:
 import sys, os, re, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
 import urllib.request
-import yaml
+from editorial import topic_fingerprint, first_duplicate_pair          # v2.1: duplicate-topic gate
+from writer import summary_quality_issues, why_quality_issues          # v2.1: broken-text gate
+# NOTE: `yaml` is imported lazily inside main() (only the build run needs it), so this module stays
+# importable for the composition-gate helpers/tests without requiring PyYAML.
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.dirname(HERE)
@@ -65,6 +68,31 @@ def fail(errors):
     for e in errors:
         print(f"  - {e}")
     sys.exit(1)
+
+
+def composition_errors(signals):
+    """Final set-level editorial gate (Signals Feed v2.1) — run on the assembled five BEFORE writing
+    the draft, so the daily edition feels like 'What Matters Today'. Catches anything that slipped
+    selection/drafting: wrong count, two signals on the same topic, or a broken/truncated summary or
+    whyItMatters. Returns human-readable errors (empty = OK). Fail-closed: any error rejects the build."""
+    errors = []
+    if len(signals) != 5:
+        errors.append(f"expected exactly 5 signals, got {len(signals)}")
+    # Distinct topics — the five must not double-cover one story (e.g. two US/Iran peace-deal items).
+    fps = [(f"signal {s.get('number','?')}",
+            topic_fingerprint(s.get("headline", ""), s.get("summary", ""))) for s in signals]
+    dup = first_duplicate_pair(fps)
+    if dup:
+        errors.append(f"duplicate topic between {dup[0]} and {dup[1]} — the five must cover distinct stories")
+    # Clean, complete summary + whyItMatters per signal (reuses the writer's strict checks).
+    for s in signals:
+        num = s.get("number", "?")
+        for issue in summary_quality_issues(s.get("summary", "")):
+            errors.append(f"signal {num}: {issue}")
+        for issue in why_quality_issues(s.get("whyItMatters", ""), s.get("summary", ""),
+                                        s.get("headline", "")):
+            errors.append(f"signal {num}: {issue}")
+    return errors
 
 
 # ── Topic-aware image selection (1.1) ────────────────────────────────────────────────────────
@@ -134,6 +162,7 @@ def assign_images(items, cat_pools, aliases, default_pool, topic_pools, matchers
 
 
 def main():
+    import yaml   # lazy: only the build run needs it (keeps the module importable for tests)
     ap = argparse.ArgumentParser(description="Signals Builder v1 (approved drafts → draft feed).")
     ap.add_argument("--drafts", default=DEF_DRAFTS)
     ap.add_argument("--images", default=DEF_IMAGES)
@@ -292,6 +321,13 @@ def main():
             "placeTime": pick["placeTime"],
             "audioURL": "",                                 # empty in v1
         })
+
+    # v2.1 FINAL COMPOSITION GATE — distinct topics + clean summary/whyItMatters across the five.
+    # Runs before anything is written; on any problem the build is rejected (fail-closed).
+    comp = composition_errors(out_signals)
+    if comp:
+        fail(["final composition gate (v2.1) — the five are not publish-clean:"] + comp)
+    print("  ✓ composition gate: 5 distinct topics, clean summaries + whyItMatters\n")
 
     feed = {"date": today, "focus": FOCUS, "version": VERSION, "signals": out_signals}
 

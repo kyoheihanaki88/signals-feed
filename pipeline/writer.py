@@ -438,8 +438,29 @@ STRICT_BLOCKING_FLAGS = {"needs_review", "source_unavailable", "thin_source", "w
 # that begin mid-sentence / are headline fragments / are cut off, and whyItMatters that is a bare
 # quote, a fragment, or a line copied verbatim from the summary (not an editorial explanation).
 _ENDS_OK = re.compile(r"[.!?][\"')\]”’]?\s*$")
-_DANGLING_END = {"the", "a", "an", "of", "to", "and", "or", "that", "with", "for", "in", "on", "at",
-                 "by", "from", "as", "but", "said", "its", "his", "her", "their", "this", "than"}
+# Single-word endings that mean a sentence was cut off — bare articles, coordinating/subordinating
+# conjunctions, and object-requiring prepositions. Phrasal particles that DO validly end a sentence
+# ("drags on", "not over", "moved in", "carry on") are deliberately excluded to avoid false positives.
+_DANGLING_END = {"the", "a", "an", "of", "to", "and", "or", "that", "this", "with", "for", "from",
+                 "as", "but", "said", "its", "his", "her", "their", "than",
+                 "between", "among", "amongst", "amid", "while", "because", "after", "before",
+                 "against", "despite", "since", "although", "though", "unless", "whereas",
+                 "toward", "towards", "without", "within", "whether", "nor"}
+# A compound preposition left with ONE capitalized object at the very end = truncated, e.g.
+# "negotiations between the U.S." (no "… and Iran" follows). v2.1 broken-text gate.
+_COMPOUND_DANGLE = re.compile(
+    r"\b(between|among|amongst|amid)\s+(the\s+)?[A-Z][\w.&'’-]*\.?[\"')\]”’]?\s*$")
+
+
+def _unbalanced_issue(s):
+    """Reason string if quotes/brackets are unmatched (scrape garbage), else None."""
+    t = s or ""
+    if t.count('"') % 2 or t.count("“") != t.count("”") or t.count("‘") != t.count("’"):
+        return "unmatched quotation marks"
+    for o, c in (("(", ")"), ("[", "]"), ("{", "}")):
+        if t.count(o) != t.count(c):
+            return "unmatched brackets/parentheses"
+    return None
 
 
 def summary_quality_issues(summary):
@@ -456,6 +477,10 @@ def summary_quality_issues(summary):
         issues.append("summary is cut off (ends in an ellipsis)")
     if words and words[-1].lower() in _DANGLING_END:
         issues.append("summary ends mid-clause (cut off)")
+    if _COMPOUND_DANGLE.search(s):
+        issues.append("summary ends with a dangling phrase (e.g. 'between the U.S.')")
+    if _unbalanced_issue(s):
+        issues.append("summary has " + _unbalanced_issue(s))
     if looks_like_caption(s):
         issues.append("summary is a photo caption / scene description")
     return issues
@@ -477,6 +502,12 @@ def why_quality_issues(why, summary, headline=""):
         issues.append("whyItMatters is a fragment (no sentence end)")
     if ELLIPSIS_END_RE.search(w):
         issues.append("whyItMatters is cut off (ends in an ellipsis)")
+    if re.findall(r"[A-Za-z0-9']+", w) and re.findall(r"[A-Za-z0-9']+", w)[-1].lower() in _DANGLING_END:
+        issues.append("whyItMatters ends mid-clause (cut off)")
+    if _COMPOUND_DANGLE.search(w):
+        issues.append("whyItMatters ends with a dangling phrase (e.g. 'between the U.S.')")
+    if _unbalanced_issue(w):
+        issues.append("whyItMatters has " + _unbalanced_issue(w))
     if w.lower() in s:
         issues.append("whyItMatters is copied verbatim from the summary")
     if looks_like_caption(w):

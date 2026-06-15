@@ -69,6 +69,29 @@ CAPTION_SCENE_RE = re.compile(r"^(a|an|the)\s+[\w'’]+(?:\s+[\w'’,]+){0,6}?\s
                               r"gathers?|wears?|raises?|displays?|protests?|cheers?|poses?|"
                               r"attends?|hugs?|embraces?|celebrat\w+|reacts?)\b", re.I)
 
+# Broader photo-caption / credit detection (issue: captions becoming the summary). Captions usually
+# carry a file/credit marker, a "pictured/seen here" cue, or a subject doing a visual action —
+# regardless of whether they start with a/an/the.
+CAPTION_LEAD_RE = re.compile(
+    r"^\s*(file ?photo|file ?-|pictured|photo|photograph|image|illustration|video|graphic|caption)\b"
+    r"\s*[:\-—]", re.I)
+CAPTION_CUE_RE = re.compile(
+    r"\b(pictured (above|below|here|right|left)|seen (here|above|below)|from left( to right)?|"
+    r"left to right|is seen|are seen|looks on|gestures|holds up|poses for|walk(s)? past|"
+    r"during a (rally|protest|ceremony|match|game|parade|news conference|press conference))\b", re.I)
+CAPTION_VERB_RE = re.compile(
+    r"^\s*[\w'’.,\- ]{0,55}?\b(holds?|carries|carry|waves?|stands?|sits?|walks?|marche?s?|gathers?|"
+    r"wears?|raises?|displays?|protests?|cheers?|poses?|attends?|hugs?|embraces?|celebrat\w+|"
+    r"reacts?|gestures?|looks on)\b", re.I)
+# RSS/snippet truncation: a sentence ending in an ellipsis is CUT OFF (issue: whyItMatters cut off).
+ELLIPSIS_END_RE = re.compile(r"(\.\.\.|…|…)\s*$")
+
+
+def looks_like_caption(s):
+    """A photo caption / credit line, not article prose — must never become summary/takeaway/why."""
+    return bool(CAPTION_LEAD_RE.search(s) or CAPTION_CUE_RE.search(s)
+                or CAPTION_SCENE_RE.match(s) or CAPTION_VERB_RE.match(s))
+
 STOPWORDS = {"the","a","an","and","or","but","of","to","in","on","for","with","from","at","by",
              "as","is","are","was","were","be","been","that","this","it","its","his","her","their",
              "they","we","you","has","have","had","will","would","could","said","after","over",
@@ -102,7 +125,9 @@ def clean_sentences(text, source_name=""):
             continue
         if BYLINE_RE.match(s) or AUTHOR_BIO_RE.search(s) or AFFILIATE_RE.search(s):
             continue
-        if CREDIT_END_RE.search(s) or CAPTION_SCENE_RE.match(s):    # photo credit / caption scene
+        if CREDIT_END_RE.search(s) or looks_like_caption(s):        # photo credit / caption / scene
+            continue
+        if ELLIPSIS_END_RE.search(s):                               # snippet cut off mid-thought
             continue
         if bkey and low.count(bkey) >= 2:                          # site-title/logo nav repetition
             continue
@@ -233,7 +258,7 @@ def _compose_quality_why(clean, headline, summary):
     score = {s: len(keywords(s) & hk) for s in clean}
 
     def usable(s):
-        return s.lower() not in sl and not why_quality_issues(s, summary)
+        return s.lower() not in sl and not why_quality_issues(s, summary, headline)
 
     for pred in (lambda s: STAKES_RE.search(s) and score[s] > 0,
                  lambda s: STAKES_RE.search(s),
@@ -242,6 +267,47 @@ def _compose_quality_why(clean, headline, summary):
             if usable(s) and pred(s):
                 return s
     return ""
+
+
+def _overlap(a, b):
+    """Jaccard token overlap of two keyword sets (0..1). Used to drop near-duplicate takeaways."""
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _well_formed_bullet(s):
+    """A takeaway must read as ONE complete, standalone sentence — not a fragment, caption, bare
+    quote, or an overlong blob. (Issue: keyTakeaways fragments/duplicates/captions.)"""
+    words = re.findall(r"[A-Za-z0-9']+", s)
+    if not (7 <= len(words) <= 40):                 # too short (fragment) or too long
+        return False
+    if not s[:1].isupper():                         # begins mid-sentence
+        return False
+    if s[:1] in ('"', "“", "'", "‘"):               # bare quote without context
+        return False
+    if not _ENDS_OK.search(s) or ELLIPSIS_END_RE.search(s):   # no clean end / cut off
+        return False
+    if words[-1].lower() in _DANGLING_END:          # ends mid-clause
+        return False
+    if looks_like_caption(s):                       # photo caption / scene
+        return False
+    return True
+
+
+def _dedupe_takeaways(cands, against, limit=3):
+    """Up to `limit` distinct bullets: drop any that overlap (Jaccard ≥ 0.6) the summary/why in
+    `against` OR an already-chosen bullet — so takeaways never duplicate each other or the summary."""
+    chosen, used = [], [keywords(a) for a in against if a]
+    for s in cands:
+        t = keywords(s)
+        if not t or any(_overlap(t, u) >= 0.6 for u in used):
+            continue
+        chosen.append(s)
+        used.append(t)
+        if len(chosen) == limit:
+            break
+    return chosen
 
 
 # ----------------------------------------------------------------- draft
@@ -298,14 +364,15 @@ def draft_one(item, source_text, used):
             consumed = {s for s in clean if s in summary}
             # whyItMatters: a cautious, NON-fabricated stakes sentence, quality-checked + de-duped.
             why = _compose_quality_why(clean, headline, summary)
-            # takeaways: up to 3 remaining clean body bullets, headline-relevant first.
-            pool = [s for s in clean if s not in consumed and s != why]
+            # takeaways: well-formed standalone sentences, headline-relevant first, de-duplicated
+            # against the summary + why and each other (no fragments, captions, or repeats).
+            pool = [s for s in clean if s not in consumed and s != why and _well_formed_bullet(s)]
             pool.sort(key=lambda s: (score[s] == 0, clean.index(s)))
-            takeaways = pool[:3]
+            takeaways = _dedupe_takeaways(pool, against=[summary, why])
             if not why:                                   # no quality stakes line → closing line / takeaway
                 why = next((s for s in reversed(clean) if s not in consumed and s not in takeaways),
                            takeaways[-1] if takeaways else summary)
-            if why_quality_issues(why, summary):          # even the fallback isn't editorial → fail-closed
+            if why_quality_issues(why, summary, headline):   # even the fallback isn't editorial → fail-closed
                 flags.append("whyItMatters_needs_human")
             if len(takeaways) < 3:
                 flags.append("keyTakeaways_thin")
@@ -385,12 +452,16 @@ def summary_quality_issues(summary):
         issues.append("summary begins mid-sentence (not capitalized)")
     if s and not _ENDS_OK.search(s):
         issues.append("summary is a headline fragment (no sentence-ending punctuation)")
+    if ELLIPSIS_END_RE.search(s):
+        issues.append("summary is cut off (ends in an ellipsis)")
     if words and words[-1].lower() in _DANGLING_END:
         issues.append("summary ends mid-clause (cut off)")
+    if looks_like_caption(s):
+        issues.append("summary is a photo caption / scene description")
     return issues
 
 
-def why_quality_issues(why, summary):
+def why_quality_issues(why, summary, headline=""):
     w = (why or "").strip()
     s = (summary or "").strip().lower()
     if not w:
@@ -404,8 +475,16 @@ def why_quality_issues(why, summary):
         issues.append("whyItMatters begins mid-sentence")
     if not _ENDS_OK.search(w):
         issues.append("whyItMatters is a fragment (no sentence end)")
+    if ELLIPSIS_END_RE.search(w):
+        issues.append("whyItMatters is cut off (ends in an ellipsis)")
     if w.lower() in s:
         issues.append("whyItMatters is copied verbatim from the summary")
+    if looks_like_caption(w):
+        issues.append("whyItMatters is a photo caption, not an explanation")
+    if headline:
+        ht, wt = keywords(headline), keywords(w)
+        if wt and len(wt & ht) / len(wt) >= 0.85:
+            issues.append("whyItMatters just repeats the headline")
     return issues
 
 
@@ -482,7 +561,7 @@ def _validate(selection_path, drafts_obj, source="", strict=False):
                 for issue in summary_quality_issues(dr.get("summary")):
                     hard.append(f"[{d['id']}] {issue}.")
             if dr.get("whyItMatters"):
-                for issue in why_quality_issues(dr.get("whyItMatters"), dr.get("summary")):
+                for issue in why_quality_issues(dr.get("whyItMatters"), dr.get("summary"), dr.get("headline", "")):
                     hard.append(f"[{d['id']}] {issue}.")
 
     print(f"=== validate_drafts {source}{' [STRICT]' if strict else ''} ===")

@@ -64,9 +64,49 @@ check("no fragment emitted (empty summary)", sum_c == "", f"got {sum_c!r}")
 check("flagged needs_review (fail-closed)", "needs_review" in d_c["flags"], str(d_c["flags"]))
 
 
+# ── Case D: a photo caption sharing headline words must NOT become the summary (Increment G) ──
+print("\nCase D — photo caption is not chosen as the summary:")
+src_d = ("Protesters hold banners during a rally in the city center on Tuesday. "
+         "The city council approved a long-term concession that hands operating rights for transit "
+         "and lighting to private investors over several decades, avoiding an immediate tax increase.")
+d_d = writer.draft_one(item("City hands transit to private investors"), src_d, "full_article")
+sum_d = d_d["draft"]["summary"]
+check("summary is not a photo caption", not writer.looks_like_caption(sum_d), f"{sum_d!r}")
+check("summary passes strict quality checks", writer.summary_quality_issues(sum_d) == [],
+      f"{writer.summary_quality_issues(sum_d)} :: {sum_d!r}")
+
+
+# ── Case E: keyTakeaways are well-formed, de-duplicated, no fragments/captions (Increment G) ──
+print("\nCase E — keyTakeaways: no fragments, no duplicates, no captions:")
+src_e = ("The council approved a long-term concession with private investors covering upfront transit "
+         "and lighting costs for decades. The council approved a long-term concession with private "
+         "investors covering upfront transit costs for decades. Critics warn the deal quietly shifts "
+         "control of public space away from residents and toward private owners over time. "
+         "A worker stands near the new station. Officials expect the arrangement to ease pressure on "
+         "the city budget without raising taxes in the near term.")
+d_e = writer.draft_one(item("City approves private transit concession"), src_e, "full_article")
+tks = d_e["draft"]["keyTakeaways"]
+check("every takeaway is well-formed (no fragments/captions/quotes)",
+      all(writer._well_formed_bullet(t) for t in tks), f"{tks}")
+check("no near-duplicate takeaways",
+      all(writer._overlap(writer.keywords(a), writer.keywords(b)) < 0.6
+          for i, a in enumerate(tks) for b in tks[i + 1:]), f"{tks}")
+check("no caption-like takeaway", not any(writer.looks_like_caption(t) for t in tks), f"{tks}")
+
+
+# ── Case F: a whyItMatters ending in an ellipsis (cut off) is rejected by the quality gate ──
+print("\nCase F — cut-off (ellipsis) whyItMatters is caught by the gate:")
+check("ellipsis why flagged as cut off",
+      any("cut off" in i for i in writer.why_quality_issues("This matters because the council...", "x")),
+      str(writer.why_quality_issues("This matters because the council...", "x")))
+check("caption why flagged",
+      writer.why_quality_issues("A worker stands near the new station.", "x") != [],
+      str(writer.why_quality_issues("A worker stands near the new station.", "x")))
+
+
 # ── Invariant: a draft that is NOT flagged must always carry a strict-valid summary ──
 print("\nInvariant — unflagged draft ⇒ strict-valid summary (no bad summary can pass):")
-for label, d in (("A", d_a), ("B", d_b), ("C", d_c)):
+for label, d in (("A", d_a), ("B", d_b), ("C", d_c), ("D", d_d), ("E", d_e)):
     flagged = any(f in d["flags"] for f in
                   ("needs_review", "source_unavailable", "thin_source",
                    "summary_needs_human", "whyItMatters_needs_human"))

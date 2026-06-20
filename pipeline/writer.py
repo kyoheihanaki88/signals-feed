@@ -453,9 +453,14 @@ _COMPOUND_DANGLE = re.compile(
 
 
 def _unbalanced_issue(s):
-    """Reason string if quotes/brackets are unmatched (scrape garbage), else None."""
+    """Reason string if quotes/brackets are unmatched (scrape garbage), else None.
+
+    v2.3: single quotes / apostrophes (straight ' and curly ‘ ’) are NOT pair-checked — they appear
+    in possessives, contractions, names, and years ("Iran's", "Mattel's", "X-Men ’97"), so balancing
+    them produced false "unmatched quotation marks" on ordinary text. Only DOUBLE quotes (straight "
+    and curly “ ”) and brackets are balanced — those signal real scrape garbage."""
     t = s or ""
-    if t.count('"') % 2 or t.count("“") != t.count("”") or t.count("‘") != t.count("’"):
+    if t.count('"') % 2 or t.count("“") != t.count("”"):
         return "unmatched quotation marks"
     for o, c in (("(", ")"), ("[", "]"), ("{", "}")):
         if t.count(o) != t.count(c):

@@ -92,6 +92,38 @@ def looks_like_caption(s):
     return bool(CAPTION_LEAD_RE.search(s) or CAPTION_CUE_RE.search(s)
                 or CAPTION_SCENE_RE.match(s) or CAPTION_VERB_RE.match(s))
 
+
+# v2.5 — author/reporter bios + publication metadata that scrapers leave in the body.
+METADATA_BIO_RE = re.compile(
+    r"(\bwork has (also )?appeared\b|"
+    r"\bstarted out at\b|"
+    r"\b(beat reporter|staff (writer|reporter)|senior (writer|reporter|editor)|"
+    r"freelance (writer|journalist)|contributing (writer|editor|reporter))\b|"
+    r"\b(reporter|writer|editor|journalist|correspondent|columnist|contributor)s?\s+"
+    r"for\s+(more than|over|nearly|almost)\b|"
+    r"\bcovers\s+[\w\s,'-]{1,40}\s+for\s+[A-Z]|"
+    r"\bwrites about\s+[\w\s,'-]{1,40}\s+for\s+[A-Z]|"
+    r"\b(is|was)\s+(a|an)\s+[\w\s,'’-]{0,40}?\b"
+    r"(reporter|writer|editor|journalist|correspondent|columnist|contributor|critic|blogger|anchor|host)\s+"
+    r"(for|at|covering|based|who|with)\b|"
+    r"\bfollow (her|him|them|us) on\b|"
+    r"\byou can (reach|email|follow) (her|him|them)\b)", re.I)
+
+METADATA_CAPTION_RE = re.compile(
+    r"(\b(photo|image|picture) (by|credit)\b|\bgetty images\b|\bap photo\b|\bvia getty\b|"
+    r"\breuters\s*/|/\s*afp\b|\bpool photo\b|"
+    r"\barrives (to|for|at)\b|\bspeaks (during|at|to)\b|\bstands? near\b|\bsits? (in|near|beside)\b|"
+    r"\bwalks? (past|through|along)\b|\battends? (a|an|the)\b|\bis seen\b|\bare seen\b|\bpictured\b|"
+    r"\bduring a (round table|round-table|meeting|summit|session|hearing|signing))\b", re.I)
+
+STITCHED_QUOTE_RE = re.compile(
+    r"[\w’'][\s]+[\"“][^\"”]{1,180}[,.\!?][\"”]\s+\w+\s+(said|says|told|added|noted|argued|wrote)\b", re.I)
+
+def looks_like_metadata(s):
+    """Author/reporter bio, publication metadata, photo credit/caption, or stitched quote."""
+    return bool(METADATA_BIO_RE.search(s) or METADATA_CAPTION_RE.search(s)
+                or STITCHED_QUOTE_RE.search(s))
+
 STOPWORDS = {"the","a","an","and","or","but","of","to","in","on","for","with","from","at","by",
              "as","is","are","was","were","be","been","that","this","it","its","his","her","their",
              "they","we","you","has","have","had","will","would","could","said","after","over",
@@ -126,6 +158,8 @@ def clean_sentences(text, source_name=""):
         if BYLINE_RE.match(s) or AUTHOR_BIO_RE.search(s) or AFFILIATE_RE.search(s):
             continue
         if CREDIT_END_RE.search(s) or looks_like_caption(s):        # photo credit / caption / scene
+            continue
+        if looks_like_metadata(s):                                  # author bio / metadata / stitched quote
             continue
         if ELLIPSIS_END_RE.search(s):                               # snippet cut off mid-thought
             continue
@@ -291,6 +325,8 @@ def _well_formed_bullet(s):
     if words[-1].lower() in _DANGLING_END:          # ends mid-clause
         return False
     if looks_like_caption(s):                       # photo caption / scene
+        return False
+    if looks_like_metadata(s):                      # author bio / metadata / stitched quote (v2.5)
         return False
     return True
 
@@ -488,6 +524,8 @@ def summary_quality_issues(summary):
         issues.append("summary has " + _unbalanced_issue(s))
     if looks_like_caption(s):
         issues.append("summary is a photo caption / scene description")
+    if looks_like_metadata(s):
+        issues.append("summary is author bio / publication metadata / stitched-quote text")
     return issues
 
 
@@ -517,6 +555,8 @@ def why_quality_issues(why, summary, headline=""):
         issues.append("whyItMatters is copied verbatim from the summary")
     if looks_like_caption(w):
         issues.append("whyItMatters is a photo caption, not an explanation")
+    if looks_like_metadata(w):
+        issues.append("whyItMatters is author bio / publication metadata, not an explanation")
     if headline:
         ht, wt = keywords(headline), keywords(w)
         if wt and len(wt & ht) / len(wt) >= 0.85:

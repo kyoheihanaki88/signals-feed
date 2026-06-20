@@ -17,3 +17,7 @@ pipeline/cache/articles/
 
 # Builder draft output (never the live feed; regenerated, not source) — Builder v1
 pipeline/generated/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,12 @@
+{
+  "_comment": "Known/available R2 audio object keys per edition date. Only list keys whose files ACTUALLY exist on R2 — publish.py injects these as localized.ja.audioURL; missing entries leave audioURL empty so iOS falls back to on-device TTS. Values are R2 object keys under the public base (https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/<key>). Japanese only for now. 2026-06-25 uses the original root-level keys (already uploaded + confirmed working). New dates MUST use date-scoped keys: audio/YYYY-MM-DD/signal-0N-ja.mp3.",
+  "editions": {
+    "2026-06-25": {
+      "1": { "ja": "signal-01-ja-v2.mp3" },
+      "2": { "ja": "signal-02-ja.mp3" },
+      "3": { "ja": "signal-03-ja.mp3" },
+      "4": { "ja": "signal-04-ja.mp3" },
+      "5": { "ja": "signal-05-ja.mp3" }
+    }
+  }
+}

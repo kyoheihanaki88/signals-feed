@@ -22,6 +22,8 @@ REGRESSES behind the current latest.json, or validate_feed.py rejects it.
 """
 import sys, os, json, shutil, argparse, datetime, subprocess
 
+from audio import inject_ja_audio, load_manifest   # JA audioURL injection (best-effort; never raises)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the signals-feed repo root
 DRAFT = os.path.join(HERE, "generated", "latest.draft.json")
@@ -102,6 +104,15 @@ def main():
     if subprocess.run([sys.executable, VALIDATOR, args.draft]).returncode != 0:
         fail("draft failed validation (see above) — fix and rebuild; nothing promoted")
     print()
+
+    # 4b. Inject Japanese audioURL from the manifest (best-effort; JA only). Sets
+    #     localized.ja.audioURL for signals whose audio is known/available for this date; preserves
+    #     any existing non-empty value; leaves the rest empty so iOS falls back to TTS. English
+    #     audioURL and all article text are untouched. Done AFTER validation and BEFORE write, so
+    #     both editions/<date>.json and latest.json carry identical injected URLs.
+    feed, astats = inject_ja_audio(feed, date, load_manifest())
+    print(f"--- audio (JA): injected={astats['injected']} preserved={astats['preserved']} "
+          f"none={astats['no_manifest']} no-ja={astats['no_ja']} ---\n")
 
     edition_rel = os.path.relpath(os.path.join(EDITIONS, f"{date}.json"), ROOT)
     print(f"plan: write {edition_rel}  +  latest.json   (edition date {date})")

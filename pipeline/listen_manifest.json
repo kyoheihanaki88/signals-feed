@@ -1,0 +1,32 @@
+{
+  "_comment": "Conversational ('dialogue') Listen data per edition date → signal number → language. publish.py injects this as the optional top-level signal.listen block (see LISTEN_DIALOGUE_SCHEMA.md). Absent entry → no signal.listen injected → unchanged feed. `key` is an R2 object key under the public base (https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/<key>); a full https URL is also accepted. Injection is best-effort: an incomplete/malformed track is skipped, never breaking publish. 2026-06-25 signal 1 is the EN prototype (root-level key). Future: add `ja` and date-scoped keys audio/YYYY-MM-DD/signal-0N-dialogue-<lang>.mp3.",
+  "editions": {
+    "2026-06-25": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            { "speaker": "listener",  "text": "So there's real news on Iran this morning?", "duration": 2.168163 },
+            { "speaker": "explainer", "text": "Yeah. The U.S. and Iran reached an early peace deal.", "duration": 3.004082 },
+            { "speaker": "explainer", "text": "And U.N. nuclear inspectors are going to visit Iran's sites.", "duration": 2.925714 },
+            { "speaker": "listener",  "text": "Inspectors actually going in — that's a real step?", "duration": 2.821224 },
+            { "speaker": "explainer", "text": "It is. They'll check the nuclear material in person, not just take Iran's word for it.", "duration": 5.198367 },
+            { "speaker": "explainer", "text": "Part of the deal is that the most dangerous uranium gets watered down, with inspectors watching.", "duration": 5.015510 },
+            { "speaker": "listener",  "text": "Is Iran fully on board?", "duration": 1.619592 },
+            { "speaker": "explainer", "text": "Mostly. They say full access to the damaged sites comes later, in a final deal.", "duration": 4.022857 },
+            { "speaker": "explainer", "text": "And the U.S. says it won't sign anything that puts its allies at risk.", "duration": 3.578776 },
+            { "speaker": "listener",  "text": "So why would someone far from the region care?", "duration": 2.821224 },
+            { "speaker": "explainer", "text": "One big reason — the Strait of Hormuz reopens.", "duration": 2.690612 },
+            { "speaker": "explainer", "text": "That's the narrow stretch of sea where a huge share of the world's oil ships through.", "duration": 4.022857 },
+            { "speaker": "listener",  "text": "So this could reach everyday fuel prices.", "duration": 2.351020 },
+            { "speaker": "explainer", "text": "Right. Calmer waters there usually means steadier energy costs everywhere.", "duration": 4.597551 },
+            { "speaker": "listener",  "text": "A quieter region, and maybe a quieter day at the gas pump.", "duration": 3.422041 },
+            { "speaker": "explainer", "text": "That's the hope. It's early — but it's a real move.", "duration": 3.160816 }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -23,6 +23,7 @@ REGRESSES behind the current latest.json, or validate_feed.py rejects it.
 import sys, os, json, shutil, argparse, datetime, subprocess
 
 from audio import inject_ja_audio, load_manifest   # JA audioURL injection (best-effort; never raises)
+from listen import inject_listen, load_listen_manifest   # conversational `listen` injection (best-effort)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the signals-feed repo root
@@ -113,6 +114,12 @@ def main():
     feed, astats = inject_ja_audio(feed, date, load_manifest())
     print(f"--- audio (JA): injected={astats['injected']} preserved={astats['preserved']} "
           f"none={astats['no_manifest']} no-ja={astats['no_ja']} ---\n")
+
+    # 4c. Inject conversational `listen` blocks from the dialogue manifest (best-effort; optional).
+    #     No entry → no signal.listen → feed unchanged. Never touches audioURL/localized/article text.
+    feed, lstats = inject_listen(feed, date, load_listen_manifest())
+    print(f"--- listen (dialogue): injected={lstats['injected']} preserved={lstats['preserved']} "
+          f"skipped={lstats['skipped']} none={lstats['no_entry']} ---\n")
 
     edition_rel = os.path.relpath(os.path.join(EDITIONS, f"{date}.json"), ROOT)
     print(f"plan: write {edition_rel}  +  latest.json   (edition date {date})")

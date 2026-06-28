@@ -62,6 +62,70 @@ def localized_errors(s):
     return errs
 
 
+# Known dialogue languages. Unknown language keys are TOLERATED (forward-compat) but, if they are
+# objects, still shape-checked so a malformed track can't ship.
+LISTEN_LANG_KEYS = ("en", "ja")
+
+
+def _listen_track_errors(num, lang, track):
+    """Validate one `listen.<lang>` track (audioURL / gap / captions). All fields optional."""
+    if not isinstance(track, dict):
+        return [f"signal {num} listen.{lang} must be an object"]
+    errs = []
+    if "audioURL" in track and not (isinstance(track["audioURL"], str) and track["audioURL"].strip()):
+        errs.append(f"signal {num} listen.{lang}.audioURL must be a non-empty string")
+    if "gap" in track:
+        g = track["gap"]
+        if isinstance(g, bool) or not isinstance(g, (int, float)) or g < 0:
+            errs.append(f"signal {num} listen.{lang}.gap must be a number >= 0")
+    if "captions" in track:
+        caps = track["captions"]
+        if not isinstance(caps, list):
+            errs.append(f"signal {num} listen.{lang}.captions must be a list")
+        else:
+            for j, c in enumerate(caps):
+                where = f"signal {num} listen.{lang}.captions[{j}]"
+                if not isinstance(c, dict):
+                    errs.append(f"{where} must be an object")
+                    continue
+                if not (isinstance(c.get("speaker"), str) and c["speaker"].strip()):
+                    errs.append(f"{where}.speaker must be a non-empty string")
+                if not (isinstance(c.get("text"), str) and c["text"].strip()):
+                    errs.append(f"{where}.text must be a non-empty string")
+                d = c.get("duration")
+                if isinstance(d, bool) or not isinstance(d, (int, float)) or d <= 0:
+                    errs.append(f"{where}.duration must be a number > 0")
+    return errs
+
+
+def listen_errors(s):
+    """Optional conversational `listen` block (Phase 1). ABSENT = fine — every existing edition stays
+    valid and the iOS optional decoder is unaffected. This only catches a present-but-MALFORMED block;
+    it is never required and never weakens an existing check. Unknown extra fields are tolerated.
+
+    Shape (all optional): listen.{ format:str,
+                                   <lang>:{ audioURL:str, gap:number>=0,
+                                            captions:[{ speaker:str, text:str, duration:number>0 }] } }"""
+    num = s.get("number", "?")
+    listen = s.get("listen")
+    if listen is None:
+        return []                                   # no conversational data → nothing to check
+    if not isinstance(listen, dict):
+        return [f"signal {num} `listen` must be an object"]
+    errs = []
+    if "format" in listen and not isinstance(listen["format"], str):
+        errs.append(f"signal {num} listen.format must be a string")
+    for k, v in listen.items():
+        if k == "format":
+            continue
+        if k in LISTEN_LANG_KEYS:
+            errs += _listen_track_errors(num, k, v)            # known language → must be a valid track
+        elif isinstance(v, dict):
+            errs += _listen_track_errors(num, k, v)            # unknown language → tolerated, but shape-checked
+        # non-dict unknown extra fields → tolerated (ignored) for forward compatibility
+    return errs
+
+
 def structural_errors(feed):
     """Lead Signal Rule + content checks — independent of any clock."""
     errors = []
@@ -113,6 +177,10 @@ def structural_errors(feed):
     # Optional localized content (Increment F) — only flagged if present-but-malformed.
     for s in signals:
         errors += localized_errors(s)
+
+    # Optional conversational `listen` block (Phase 1) — only flagged if present-but-malformed.
+    for s in signals:
+        errors += listen_errors(s)
 
     return errors
 

@@ -11,27 +11,27 @@
             {
               "speaker": "listener",
               "text": "So there's real news on Iran this morning?",
-              "duration": 2.168163
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
               "text": "Yeah. The U.S. and Iran reached an early peace deal.",
-              "duration": 3.004082
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
               "text": "And U.N. nuclear inspectors are going to visit Iran's sites.",
-              "duration": 2.925714
+              "duration": 2.821224
             },
             {
               "speaker": "listener",
               "text": "Inspectors actually going in — that's a real step?",
-              "duration": 2.821224
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
               "text": "It is. They'll check the nuclear material in person, not just take Iran's word for it.",
-              "duration": 5.198367
+              "duration": 5.093878
             },
             {
               "speaker": "explainer",
@@ -46,47 +46,47 @@
             {
               "speaker": "explainer",
               "text": "Mostly. They say full access to the damaged sites comes later, in a final deal.",
-              "duration": 4.022857
+              "duration": 4.179592
             },
             {
               "speaker": "explainer",
               "text": "And the U.S. says it won't sign anything that puts its allies at risk.",
-              "duration": 3.578776
+              "duration": 3.761633
             },
             {
               "speaker": "listener",
               "text": "So why would someone far from the region care?",
-              "duration": 2.821224
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
               "text": "One big reason — the Strait of Hormuz reopens.",
-              "duration": 2.690612
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
               "text": "That's the narrow stretch of sea where a huge share of the world's oil ships through.",
-              "duration": 4.022857
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
               "text": "So this could reach everyday fuel prices.",
-              "duration": 2.35102
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
               "text": "Right. Calmer waters there usually means steadier energy costs everywhere.",
-              "duration": 4.597551
+              "duration": 4.493061
             },
             {
               "speaker": "listener",
               "text": "A quieter region, and maybe a quieter day at the gas pump.",
-              "duration": 3.422041
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
               "text": "That's the hope. It's early — but it's a real move.",
-              "duration": 3.160816
+              "duration": 3.239184
             }
           ]
         }

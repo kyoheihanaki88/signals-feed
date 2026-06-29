@@ -33,6 +33,60 @@
           ],
           "whyItMatters": "今回の応酬により、恒久的な停戦に向けた交渉は危うい局面を迎えている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-06-30/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I thought the U.S. and Iran were de-escalating?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "They were. But overnight, the two sides exchanged strikes again.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's Revolutionary Guard says it launched drones and missiles at Bahrain and Kuwait.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a serious step up.",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is — the biggest escalation since the recent ceasefire.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "listener",
+              "text": "Is anyone trying to cool it down?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Iran's parliament speaker called an urgent meeting of a new conflict-control group with the U.S.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "So where does that leave the ceasefire?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Shakier. This puts the talks for a lasting truce in real jeopardy.",
+              "duration": 4.127347
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +118,65 @@
             "警察は男に対し、殺人、死因隠蔽を目的とした遺体遺棄、わいせつ目的による未成年者誘拐の三つの罪状を適用した。"
           ],
           "whyItMatters": "タイのメディア「タイラット」によれば、報酬をめぐる口論が事件の発端となった可能性が報じられている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-06-30/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There's a difficult crime story today.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "An Australian man has been charged with murder in Thailand.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "A seventeen-year-old girl was found dead in a suitcase in Pattaya.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "How was he caught?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was arrested at Bangkok's airport after the girl went missing.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police then found her body near railway tracks and identified her.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "listener",
+              "text": "What are the charges?",
+              "duration": 1.201633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Three — murder, concealing the body, and abducting a minor.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "listener",
+              "text": "A heavy case.",
+              "duration": 1.253878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. It's now moving through the Thai courts.",
+              "duration": 2.533878
+            }
+          ]
         }
       }
     },
@@ -97,6 +210,65 @@
           ],
           "whyItMatters": "先週にはモスクワ南東部の製油所でもウクライナの攻撃による大規模火災が発生し、首都郊外に黒煙が立ち込めた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-06-30/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Any shift in the Russia–Ukraine war?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Putin admitted Russia has, in his words, a certain shortage of fuel.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "It follows repeated Ukrainian strikes on Russian energy sites.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that working for Ukraine?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Kyiv calls it fair payback for years of attacks on its own infrastructure.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Russia now says its priorities are air defense and fuel, especially for Crimea.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "Crimea specifically?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah — it declared an emergency over fuel shortages and power cuts.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "So the strikes are really biting.",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are. One recent hit set a refinery near Moscow on fire.",
+              "duration": 3.526531
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +301,60 @@
           ],
           "whyItMatters": "物語はやがて静かに加速し、現実の本質、主人公の正気、そして「キューブとは何か」という問いそのものへと踏み込んでいく。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-06-30/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Something lighter to end on?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sort of. There's a piece on a strange Jim Henson film called The Cube.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "Henson — like the Muppets?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Same creator, but no Muppets here. It's eerie and grown-up.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "A man wakes in a plain white cube, with no idea how he got there.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "listener",
+              "text": "And then?",
+              "duration": 0.966531
+            },
+            {
+              "speaker": "explainer",
+              "text": "Things slowly unravel — his grip on reality, and what the cube even is.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like early Black Mirror.",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly the comparison people are making. A quiet, mind-bending oddity.",
+              "duration": 4.310204
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +386,65 @@
             "この進展は米国政府にとって懸念材料であり、MythosやFableといった高性能モデルおよびその学習に必要なハードウェアへの中国のアクセスを制限する動きが続いている。"
           ],
           "whyItMatters": "OpenAIが公開したGPT-5.6もまた悪用リスクへの懸念からアクセスが制限されており、高性能AIの管理をめぐる問題は広がりを見せている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-06-30/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's new in AI?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "A Chinese lab, Z.ai, released an open model called GLM-5.2.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Researchers say it now rivals top systems at finding security bugs.",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "listener",
+              "text": "Across the board?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite — it still trails the leading U.S. models on general tasks.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "But the gap on cybersecurity has clearly narrowed.",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that matter?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "The U.S. has been restricting China's access to the most powerful models and chips.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "And this suggests the lead is shrinking.",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right — which is exactly what worries regulators.",
+              "duration": 3.160816
+            }
+          ]
         }
       }
     }

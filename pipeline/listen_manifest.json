@@ -8,22 +8,322 @@
           "key": "signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
-            { "speaker": "listener",  "text": "So there's real news on Iran this morning?", "duration": 2.168163 },
-            { "speaker": "explainer", "text": "Yeah. The U.S. and Iran reached an early peace deal.", "duration": 3.004082 },
-            { "speaker": "explainer", "text": "And U.N. nuclear inspectors are going to visit Iran's sites.", "duration": 2.925714 },
-            { "speaker": "listener",  "text": "Inspectors actually going in — that's a real step?", "duration": 2.821224 },
-            { "speaker": "explainer", "text": "It is. They'll check the nuclear material in person, not just take Iran's word for it.", "duration": 5.198367 },
-            { "speaker": "explainer", "text": "Part of the deal is that the most dangerous uranium gets watered down, with inspectors watching.", "duration": 5.015510 },
-            { "speaker": "listener",  "text": "Is Iran fully on board?", "duration": 1.619592 },
-            { "speaker": "explainer", "text": "Mostly. They say full access to the damaged sites comes later, in a final deal.", "duration": 4.022857 },
-            { "speaker": "explainer", "text": "And the U.S. says it won't sign anything that puts its allies at risk.", "duration": 3.578776 },
-            { "speaker": "listener",  "text": "So why would someone far from the region care?", "duration": 2.821224 },
-            { "speaker": "explainer", "text": "One big reason — the Strait of Hormuz reopens.", "duration": 2.690612 },
-            { "speaker": "explainer", "text": "That's the narrow stretch of sea where a huge share of the world's oil ships through.", "duration": 4.022857 },
-            { "speaker": "listener",  "text": "So this could reach everyday fuel prices.", "duration": 2.351020 },
-            { "speaker": "explainer", "text": "Right. Calmer waters there usually means steadier energy costs everywhere.", "duration": 4.597551 },
-            { "speaker": "listener",  "text": "A quieter region, and maybe a quieter day at the gas pump.", "duration": 3.422041 },
-            { "speaker": "explainer", "text": "That's the hope. It's early — but it's a real move.", "duration": 3.160816 }
+            {
+              "speaker": "listener",
+              "text": "So there's real news on Iran this morning?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah. The U.S. and Iran reached an early peace deal.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "And U.N. nuclear inspectors are going to visit Iran's sites.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "listener",
+              "text": "Inspectors actually going in — that's a real step?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. They'll check the nuclear material in person, not just take Iran's word for it.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "explainer",
+              "text": "Part of the deal is that the most dangerous uranium gets watered down, with inspectors watching.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "Is Iran fully on board?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly. They say full access to the damaged sites comes later, in a final deal.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "And the U.S. says it won't sign anything that puts its allies at risk.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "listener",
+              "text": "So why would someone far from the region care?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "One big reason — the Strait of Hormuz reopens.",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the narrow stretch of sea where a huge share of the world's oil ships through.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could reach everyday fuel prices.",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. Calmer waters there usually means steadier energy costs everywhere.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "A quieter region, and maybe a quieter day at the gas pump.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the hope. It's early — but it's a real move.",
+              "duration": 3.160816
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's the big political story today?",
+              "duration": 2.74
+            },
+            {
+              "speaker": "explainer",
+              "text": "Colombia's election is settled. The left's candidate, Ivan Cepeda, conceded.",
+              "duration": 5.63
+            },
+            {
+              "speaker": "explainer",
+              "text": "So a hard-right populist, Abelardo de la Espriella, won the run-off.",
+              "duration": 5.04
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it close?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very. About two hundred fifty thousand votes.",
+              "duration": 3.33
+            },
+            {
+              "speaker": "listener",
+              "text": "I heard there were fraud claims?",
+              "duration": 2.37
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah. President Petro alleged fraud and foreign interference, before and after.",
+              "duration": 5.85
+            },
+            {
+              "speaker": "explainer",
+              "text": "But the national registry reported high accuracy in the recent counts.",
+              "duration": 5.19
+            },
+            {
+              "speaker": "listener",
+              "text": "So the result stands?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Cepeda accepted it this morning.",
+              "duration": 3.04
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There's a hard but important story out of Pakistan.",
+              "duration": 3.78
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police rescued a French woman and her five children.",
+              "duration": 3.85
+            },
+            {
+              "speaker": "explainer",
+              "text": "She says her husband held her captive for over twelve years.",
+              "duration": 4.44
+            },
+            {
+              "speaker": "listener",
+              "text": "Twelve years?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — with years of domestic abuse, in the country's north-west.",
+              "duration": 4.74
+            },
+            {
+              "speaker": "listener",
+              "text": "How did they get out?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "One of her sons slipped out and reached a police station.",
+              "duration": 4.22
+            },
+            {
+              "speaker": "explainer",
+              "text": "The husband has been arrested, and there's an investigation.",
+              "duration": 4.44
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this part of a bigger pattern?",
+              "duration": 2.44
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sadly yes. Domestic violence is still a serious problem there.",
+              "duration": 4.59
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Something wild happened in tech and politics.",
+              "duration": 3.33
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two AI giants poured money into one local primary.",
+              "duration": 3.7
+            },
+            {
+              "speaker": "explainer",
+              "text": "Anthropic and OpenAI — about twenty-seven million dollars combined.",
+              "duration": 4.96
+            },
+            {
+              "speaker": "listener",
+              "text": "On a single primary?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah, in New York's twelfth district, over a candidate named Alex Bores.",
+              "duration": 5.33
+            },
+            {
+              "speaker": "listener",
+              "text": "Why him?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "A pro-AI super PAC targeted him, which only made him more popular.",
+              "duration": 4.89
+            },
+            {
+              "speaker": "explainer",
+              "text": "Then Anthropic-linked PACs spent millions to defend him.",
+              "duration": 4.15
+            },
+            {
+              "speaker": "listener",
+              "text": "And the result?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "He narrowly lost. People saw it as a test for the AI regulation fights ahead.",
+              "duration": 5.7
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Any consumer tech news worth knowing?",
+              "duration": 2.74
+            },
+            {
+              "speaker": "explainer",
+              "text": "Google is opening the Play Store to outside payments.",
+              "duration": 3.93
+            },
+            {
+              "speaker": "listener",
+              "text": "Meaning?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "The thirty percent app store cut is going away.",
+              "duration": 3.48
+            },
+            {
+              "speaker": "explainer",
+              "text": "So you might pay developers directly for Android apps.",
+              "duration": 4.0
+            },
+            {
+              "speaker": "listener",
+              "text": "What's driving it?",
+              "duration": 1.8
+            },
+            {
+              "speaker": "explainer",
+              "text": "It comes out of Google's long court fight with Epic.",
+              "duration": 3.85
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're back in court on July sixteenth.",
+              "duration": 2.96
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could still change?",
+              "duration": 2.0
+            },
+            {
+              "speaker": "explainer",
+              "text": "It could. But the direction is clearly toward more open payments.",
+              "duration": 4.81
+            }
           ]
         }
       }

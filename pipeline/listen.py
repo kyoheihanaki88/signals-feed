@@ -111,7 +111,10 @@ def inject_listen(feed, date, manifest=None, base_url=R2_BASE):
     try:
         if manifest is None:
             manifest = load_listen_manifest()
-        per_date = manifest.get(date, {}) if isinstance(manifest, dict) else {}
+        if isinstance(manifest, dict) and isinstance(manifest.get("editions"), dict):
+            per_date = manifest.get("editions", {}).get(date, {})
+        else:
+            per_date = manifest.get(date, {}) if isinstance(manifest, dict) else {}
 
         for sig in feed.get("signals", []):
             if isinstance(sig.get("listen"), dict):

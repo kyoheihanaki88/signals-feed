@@ -225,22 +225,68 @@ jobs:
             - `editions/${{ steps.date.outputs.edition_date }}.json` — immutable edition
             - `latest.json` — pointer to the newest edition
 
-      # 13) Turn ON auto-merge so no human merge is needed. Tries auto-merge (waits for required
-      #     checks), then an immediate squash merge, then warns — leaving the PR open for a manual
-      #     merge if repo settings block both. Never force-merges past branch protection.
-      - name: Enable auto-merge
+      # 13) Merge the publish PR RELIABLY, or FAIL LOUDLY. Tries an immediate squash merge (all
+      #     safety gates already ran in this job); if branch protection blocks that, enables
+      #     auto-merge so it lands when required checks pass. Then it VERIFIES the outcome: if the PR
+      #     is neither merged nor set to auto-merge, the job FAILS (no silent "opened, merge manually").
+      - name: Merge publish PR (or fail loudly)
         if: steps.cpr.outputs.pull-request-number
         env:
           GH_TOKEN: ${{ secrets.SIGNALS_PAT || github.token }}
+          PR: ${{ steps.cpr.outputs.pull-request-number }}
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
         run: |
-          PR="${{ steps.cpr.outputs.pull-request-number }}"
-          if gh pr merge "$PR" --squash --auto; then
-            echo "Auto-merge enabled on PR #$PR (merges when checks pass)."
-            echo "### Auto-merge enabled ✅ — PR #$PR (${EDITION_DATE})" >> "$GITHUB_STEP_SUMMARY"
-          elif gh pr merge "$PR" --squash; then
-            echo "Merged PR #$PR immediately."
-            echo "### Merged ✅ — PR #$PR (${EDITION_DATE})" >> "$GITHUB_STEP_SUMMARY"
+          set -uo pipefail
+          echo "Merging publish PR #$PR for $EDITION_DATE"
+          how=""
+          if gh pr merge "$PR" --squash --delete-branch; then
+            how="immediate-squash"
+          elif gh pr merge "$PR" --squash --auto --delete-branch; then
+            how="auto-merge-enabled"
           else
-            echo "::warning::Could not auto-merge PR #$PR. Enable 'Allow auto-merge' (Settings → General) and make validate-feed a required check on main, or merge the PR manually."
-            echo "### PR #$PR opened — auto-merge unavailable, merge manually" >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::both immediate-merge and auto-merge-enable calls failed for PR #$PR"
           fi
+          merged=$(gh pr view "$PR" --json merged -q .merged 2>/dev/null || echo unknown)
+          automq=$(gh pr view "$PR" --json autoMergeRequest -q '.autoMergeRequest != null' 2>/dev/null || echo false)
+          state=$(gh pr view "$PR" --json state,mergeStateStatus -q '.state + " / " + (.mergeStateStatus // "n/a")' 2>/dev/null || echo unknown)
+          echo "PR #$PR — attempt=${how:-none} merged=$merged autoMerge=$automq state=$state"
+          if [ "$merged" = "true" ]; then
+            echo "### Merged ✅ PR #$PR ($EDITION_DATE) via ${how}" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$automq" = "true" ]; then
+            echo "### Auto-merge enabled ✅ PR #$PR ($EDITION_DATE) — merges when checks pass" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::PR #$PR for $EDITION_DATE is NOT merged and auto-merge is NOT enabled (state=$state). Enable 'Allow auto-merge' (repo Settings → General), make validate-feed a required check on main, and ensure SIGNALS_PAT has repo + PR write. Failing loudly."
+            echo "### FAILED ❌ PR #$PR ($EDITION_DATE) — not merged, auto-merge not enabled" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      # 14) Close STALE open publish PRs older than the edition we just published, so a late merge can
+      #     never move latest.json backwards. Only touches publish/<YYYY-MM-DD> branches with an OLDER
+      #     date (lexical = chronological); never the current PR. Best-effort (won't fail the run).
+      - name: Close stale publish PRs
+        if: always() && steps.date.outputs.edition_date
+        env:
+          GH_TOKEN: ${{ secrets.SIGNALS_PAT || github.token }}
+          NEWEST: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -uo pipefail
+          echo "Newest edition = $NEWEST — scanning open publish PRs for older dates"
+          gh pr list --state open --base main --json number,headRefName \
+            --jq '.[] | [.number, .headRefName] | @tsv' | while IFS=$'\t' read -r num branch; do
+            case "$branch" in
+              publish/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])
+                d="${branch#publish/}"
+                if [[ "$d" < "$NEWEST" ]]; then
+                  echo "Closing stale PR #$num ($branch): $d < $NEWEST"
+                  if gh pr close "$num" --delete-branch \
+                       --comment "Superseded by edition $NEWEST — closing to avoid a latest.json regression (stale edition $d)."; then
+                    echo "### Closed stale PR #$num ($d) — older than $NEWEST" >> "$GITHUB_STEP_SUMMARY"
+                  else
+                    echo "::warning::failed to close stale PR #$num"
+                  fi
+                else
+                  echo "Keeping PR #$num ($branch): $d >= $NEWEST"
+                fi ;;
+              *) echo "Skipping non-publish branch: $branch" ;;
+            esac
+          done

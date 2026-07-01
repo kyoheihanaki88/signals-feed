@@ -66,6 +66,10 @@ category_pools:
     - { imageURL: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop", placeTime: "Software" }
     - { imageURL: "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop", placeTime: "The studio" }
     - { imageURL: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop", placeTime: "The team" }
+    # ── Pexels curation starter set (branch: feed-image-curation-starter-set) ──
+    - { imageURL: "https://images.pexels.com/photos/5480781/pexels-photo-5480781.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Server room", source: "pexels", license: "Pexels License", credit: "Brett Sayles — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/5203849/pexels-photo-5203849.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The racks", source: "pexels", license: "Pexels License", credit: "Brett Sayles — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/4597280/pexels-photo-4597280.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Data floor", source: "pexels", license: "Pexels License", credit: "Brett Sayles — Pexels" }
 
   BUSINESS:   # financial districts, office buildings, skylines, airports, architecture
     - { imageURL: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop", placeTime: "The district" }
@@ -78,6 +82,11 @@ category_pools:
     - { imageURL: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=80&auto=format&fit=crop", placeTime: "Skyline" }
     - { imageURL: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900&q=80&auto=format&fit=crop", placeTime: "The office" }
     - { imageURL: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&auto=format&fit=crop", placeTime: "Business travel" }
+    # ── Pexels curation starter set (branch: feed-image-curation-starter-set) — logistics / supply chain / retail ──
+    - { imageURL: "https://images.pexels.com/photos/30625283/pexels-photo-30625283.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The warehouse", source: "pexels", license: "Pexels License", credit: "Masi — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/30625278/pexels-photo-30625278.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Logistics", source: "pexels", license: "Pexels License", credit: "Masi — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/30625282/pexels-photo-30625282.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The stockroom", source: "pexels", license: "Pexels License", credit: "Masi — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/20578062/pexels-photo-20578062.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Market corridor", source: "pexels", license: "Pexels License", credit: "Kacper Szprengiel — Pexels" }
 
   WORLD:   # globes, maps, ports, transport hubs, international cities, infrastructure
     - { imageURL: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop", placeTime: "City morning" }   # ✓
@@ -90,6 +99,12 @@ category_pools:
     - { imageURL: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop", placeTime: "International" }
     - { imageURL: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop", placeTime: "The crossing" }
     - { imageURL: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop", placeTime: "Soft light" }
+    # ── Pexels curation starter set (branch: feed-image-curation-starter-set) — verified: stable images.pexels.com URLs, Pexels License, photographer credited ──
+    - { imageURL: "https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "City at night", source: "pexels", license: "Pexels License", credit: "Maxime Francis — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/4461192/pexels-photo-4461192.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The terminal", source: "pexels", license: "Pexels License", credit: "Mochammad Algi — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/16572406/pexels-photo-16572406.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The dome", source: "pexels", license: "Pexels License", credit: "Niklas Jeromin — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/7825553/pexels-photo-7825553.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Quiet passage", source: "pexels", license: "Pexels License", credit: "Takehiro Yokozeki — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/30322587/pexels-photo-30322587.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Summit station", source: "pexels", license: "Pexels License", credit: "Diogo Miranda — Pexels" }
 
   JAPAN:   # Tokyo streets, stations, neighborhoods, cafes, shrines, design
     - { imageURL: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop", placeTime: "Quiet desk" }     # ✓
@@ -126,6 +141,22 @@ category_pools:
     - { imageURL: "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop", placeTime: "Deep field" }
     - { imageURL: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop", placeTime: "Research" }
     - { imageURL: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop", placeTime: "The academy" }
+    # ── Pexels curation starter set (branch: feed-image-curation-starter-set) — observatories / astronomy ──
+    - { imageURL: "https://images.pexels.com/photos/11825646/pexels-photo-11825646.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The observatory", source: "pexels", license: "Pexels License", credit: "ricardo cristian — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/11825644/pexels-photo-11825644.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Mountain domes", source: "pexels", license: "Pexels License", credit: "ricardo cristian — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/11827209/pexels-photo-11827209.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "By the sea", source: "pexels", license: "Pexels License", credit: "Michael Goddard — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/11827212/pexels-photo-11827212.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "On the hill", source: "pexels", license: "Pexels License", credit: "Michael Goddard — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/8356705/pexels-photo-8356705.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The summit", source: "pexels", license: "Pexels License", credit: "Mikhail Nilov — Pexels" }
+
+  # NEW POOL — CULTURE (cinema, museum, books, music, stage, gallery, design, architecture, quiet street culture).
+  # Staged for when Scout emits a CULTURE category (or via alias); all entries verified Pexels (License + credit).
+  CULTURE:
+    - { imageURL: "https://images.pexels.com/photos/26424632/pexels-photo-26424632.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The museum", source: "pexels", license: "Pexels License", credit: "Laura Paredis — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/26424630/pexels-photo-26424630.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The gallery", source: "pexels", license: "Pexels License", credit: "Laura Paredis — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/19968227/pexels-photo-19968227.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The exhibition", source: "pexels", license: "Pexels License", credit: "Filipp Romanovski — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/31376442/pexels-photo-31376442.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Reading room", source: "pexels", license: "Pexels License", credit: "Michael D Beckwith — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/29282993/pexels-photo-29282993.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "The library", source: "pexels", license: "Pexels License", credit: "Paul Groom — Pexels" }
+    - { imageURL: "https://images.pexels.com/photos/21823083/pexels-photo-21823083.jpeg?auto=compress&cs=tinysrgb&w=900", placeTime: "Grand hall", source: "pexels", license: "Pexels License", credit: "David Montanari — Pexels" }
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────
 # TOPIC layer (1.1) — story-aware selection ABOVE the broad category pools.

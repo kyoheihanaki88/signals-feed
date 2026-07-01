@@ -177,6 +177,16 @@ jobs:
           echo "latest.json date=$GOT · target=$EDITION_DATE"
           test "$GOT" = "$EDITION_DATE"
 
+      # 10c) Image-variety check (WARN-ONLY): report if this edition reuses an imageURL from the last
+      #      90 editions (the reuse cooldown). build.py already avoids reuse; this never fails the run.
+      - name: Image reuse check (warn-only, 90-edition cooldown)
+        run: |
+          if python validate_feed.py --image-reuse .; then
+            echo "image reuse: OK (no imageURL reused within the 90-edition cooldown)"
+          else
+            echo "::warning::this edition reuses an imageURL within the 90-edition cooldown (pools may be too small — add verified images). Publishing continues."
+          fi
+
       # 11) PRE-PUSH GUARD — the working tree may contain ONLY the two expected files.
       - name: Clean Python cache before guard
         run: |

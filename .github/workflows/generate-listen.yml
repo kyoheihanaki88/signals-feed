@@ -1,0 +1,98 @@
+name: Generate Listen (manual)
+
+# Phase 1 — manually generate EN Listen dialogue (audio + captions) for one edition DATE, upload the
+# MP3s to R2 (date-scoped), inject listen.en into editions/<DATE>.json + latest.json, validate, and
+# open a PR. Independent of Daily Auto Publish, so it can be tested in isolation. MP3s go to R2 only
+# (never committed). If anything fails, no feed change is committed and no PR is opened.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date to generate Listen for (YYYY-MM-DD). Must already exist in editions/."
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install tools (ffmpeg for ffprobe, wrangler for R2)
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          npm install -g wrangler
+          pip install pyyaml
+
+      - name: Gate — edition exists and matches DATE
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          test -f "editions/${DATE}.json" || { echo "::error::editions/${DATE}.json not found"; exit 1; }
+          python -c "import json,sys; d=json.load(open('editions/${DATE}.json')); sys.exit(0 if d.get('date')=='${DATE}' and len(d.get('signals',[]))==5 else 1)" \
+            || { echo "::error::edition date/signal-count mismatch"; exit 1; }
+
+      - name: Gate — latest points to DATE
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          python -c "import json,sys; d=json.load(open('latest.json')); sys.exit(0 if d.get('date')=='${DATE}' else 1)" \
+            || { echo "::error::latest.json does not point to ${DATE}; this manual workflow is only for the current published edition"; exit 1; }
+
+      - name: Generate dialogue + upload to R2 + write manifest
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EXPLAINER_VOICE: ${{ secrets.EXPLAINER_VOICE }}
+          LISTENER_VOICE: ${{ secrets.LISTENER_VOICE }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python pipeline/listen_generate.py "${{ github.event.inputs.date }}"
+
+      - name: Inject listen.en into edition + latest, validate
+        run: python pipeline/listen_inject_edition.py "${{ github.event.inputs.date }}"
+
+      - name: Guard — only feed metadata files changed (no MP3s, no stray files)
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          CHANGED="$(git status --porcelain)"
+          echo "$CHANGED"
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            p="${line:3}"
+            case "$p" in
+              "editions/${DATE}.json"|latest.json|pipeline/listen_manifest.json) ;;
+              *) echo "::error::unexpected change: $p"; exit 1;;
+            esac
+          done <<< "$CHANGED"
+
+      - name: Open Listen PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SIGNALS_PAT || github.token }}
+          base: main
+          branch: "listen/${{ github.event.inputs.date }}"
+          add-paths: |
+            editions/${{ github.event.inputs.date }}.json
+            latest.json
+            pipeline/listen_manifest.json
+          commit-message: "Add EN Listen dialogue for ${{ github.event.inputs.date }} (signals 1–5)"
+          title: "Listen dialogue — ${{ github.event.inputs.date }}"
+          labels: listen, auto
+          delete-branch: true
+          body: |
+            Automated **Generate Listen** for **${{ github.event.inputs.date }}**.
+            - Fresh EN two-speaker dialogue (LLM, grounded in this edition's stories)
+            - MP3s uploaded to R2: `audio/${{ github.event.inputs.date }}/signal-0N-dialogue-en.mp3`
+            - `listen.en` injected into `editions/${{ github.event.inputs.date }}.json` + `latest.json`
+            - All 5 clips returned HTTP 200; `validate_feed` + consistency passed.

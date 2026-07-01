@@ -614,6 +614,298 @@
           ]
         }
       }
+    },
+    "2026-07-01": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-01/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's the big US story today?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Supreme Court ruled against Trump's order to end birthright citizenship.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "So people born in the U.S. still get citizenship?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The court said his order ran counter to the Constitution.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was a six-to-three decision — a major blow to his immigration plans.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the order try to do?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Deny citizenship to babies born to undocumented parents or those on temporary status.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The opinion said the administration's legal case simply wasn't strong enough.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's settled for now?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, yes — the longstanding rule stands.",
+              "duration": 2.507755
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-01/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There's an unusual crime story out of Monaco.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "A Ukrainian-born tycoon and his family were injured by a bomb.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "listener",
+              "text": "In Monaco? That's rare there.",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very. Officials called it an unprecedented attack on the principality.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "A man left a package in an apartment lobby, then walked away.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they treating it as terrorism?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. Prosecutors opened an attempted-murder investigation.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "listener",
+              "text": "And the search?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "An international manhunt is under way for the suspect.",
+              "duration": 2.690612
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-01/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Another Supreme Court ruling today?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — it struck down limits on political party campaign spending.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "listener",
+              "text": "Meaning more money in elections?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. One of the last caps on party spending is now gone.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "The court treats campaign spending as protected free speech.",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this a new direction?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really — it follows Citizens United and years of loosening limits.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Those rulings gave rise to Super PACs spending without limit.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "listener",
+              "text": "So today extends that trend.",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — fewer guardrails on money in politics.",
+              "duration": 4.075102
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-01/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's happening in games?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "IO Interactive, makers of 007 First Light, is laying off staff.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "Even after a hit?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah — the game sold three million copies since May.",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say they're committed to supporting affected employees.",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "listener",
+              "text": "What about future projects?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "They insist their next franchise, Project Fantasy, will continue.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Though they did lose an external partner on it.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "listener",
+              "text": "So cuts despite success.",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "A familiar story in the industry right now.",
+              "duration": 2.168163
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-01/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Any labor news in tech?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Rockstar workers are pushing to unionize before GTA Six launches.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "The Grand Theft Auto studio?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. They've asked for their union to be voluntarily recognized.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "It follows Rockstar firing over thirty staff last year.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "listener",
+              "text": "Was that controversial?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very — critics called it union busting.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "A tribunal over those firings starts in September.",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "listener",
+              "text": "Right before the game's launch?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — GTA Six is planned for November nineteenth.",
+              "duration": 3.291429
+            }
+          ]
+        }
+      }
     }
   }
 }

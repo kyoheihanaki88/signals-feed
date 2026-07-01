@@ -272,16 +272,50 @@ def consistency_errors(root):
     return errors
 
 
+def image_reuse_errors(root, window=90):
+    """Opt-in image-variety check: the NEWEST edition must not reuse an imageURL from the previous
+    `window` editions (the reuse COOLDOWN; default 90). Reuse OUTSIDE the window is fine — this is a
+    cooldown, not a blacklist. Kept SEPARATE from the default gates so it never breaks existing history;
+    it is a forward-looking guard for freshly built editions (build.py already avoids reuse at build)."""
+    edir = os.path.join(root, "editions")
+    dated = []
+    for f in glob.glob(os.path.join(edir, "*.json")):
+        m = DATE_RE.search(os.path.basename(f))
+        if not m:
+            continue
+        try:
+            dated.append((m.group(1), json.load(open(f))))
+        except Exception as e:
+            return [f"{os.path.basename(f)} is not valid JSON: {e}"]
+    if len(dated) < 2:
+        return []                                   # nothing to compare against yet
+    dated.sort(key=lambda t: t[0])
+    newest_date, newest = dated[-1]
+    prior = dated[-(window + 1):-1]                 # up to `window` editions before the newest
+    recent = {s["imageURL"] for _, d in prior for s in d.get("signals", []) if s.get("imageURL")}
+    errs = []
+    for s in newest.get("signals", []):
+        u = s.get("imageURL")
+        if u and u in recent:
+            errs.append(f"[{newest_date}] signal {s.get('number','?')} reuses an imageURL from the "
+                        f"last {window} editions: {u}")
+    return errs
+
+
 if __name__ == "__main__":
     if len(sys.argv) == 3 and sys.argv[1] == "--consistency":
         errs = consistency_errors(sys.argv[2])
         label = "repo consistency"
+    elif len(sys.argv) == 3 and sys.argv[1] == "--image-reuse":
+        errs = image_reuse_errors(sys.argv[2])
+        label = "image reuse (newest edition vs last 90 — cooldown)"
     elif len(sys.argv) == 2 and not sys.argv[1].startswith("--"):
         errs = validate(sys.argv[1])
         label = sys.argv[1]
     else:
         print("usage: python3 validate_feed.py <feed.json>")
         print("       python3 validate_feed.py --consistency <repo-root>")
+        print("       python3 validate_feed.py --image-reuse <repo-root>")
         sys.exit(2)
 
     if errs:

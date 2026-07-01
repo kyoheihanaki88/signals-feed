@@ -121,14 +121,53 @@ def match_topic(headline, summary, matchers):
     return topic, score
 
 
+def recent_image_urls(editions_dir, exclude_date, window=90):
+    """Set of imageURLs used by the most recent `window` editions (by date), excluding `exclude_date`.
+    This is a COOLDOWN, not a blacklist: an image outside the window may be reused. If fewer than
+    `window` editions exist, all available history is used. Missing dir → empty set."""
+    import glob
+    dated = []
+    for f in glob.glob(os.path.join(editions_dir, "*.json")):
+        m = re.search(r"(\d{4}-\d{2}-\d{2})\.json$", os.path.basename(f))
+        if m and m.group(1) != exclude_date:
+            dated.append((m.group(1), f))
+    urls = set()
+    for _, f in sorted(dated)[-window:]:
+        try:
+            for s in json.load(open(f)).get("signals", []):
+                if s.get("imageURL"):
+                    urls.add(s["imageURL"])
+        except Exception:
+            pass
+    return urls
+
+
+def _short_img(u):
+    """Compact id for logs, e.g. photo-1501339847302 (drops query/host noise)."""
+    return (u or "").split("/")[-1].split("?")[0][:28]
+
+
 def assign_images(items, cat_pools, aliases, default_pool, topic_pools, matchers, yday,
-                  img_pool=None, img_cats=None, img_default=None):
-    """One image per item (uses headline/summary/category): topic pool first, else the category
-    pool. Deterministic (rotated by day-of-year `yday`) and never repeats an image within the set.
-    Returns a list of {imageURL, placeTime, topic, reason} aligned to `items`."""
+                  img_pool=None, img_cats=None, img_default=None, avoid=None, lead_index=None,
+                  seen_ever=None, log=print):
+    """One image per item (uses headline/summary/category): topic pool first, else the category pool.
+    Deterministic (rotated by day-of-year `yday`), never repeats within the set, and AVOIDS any URL in
+    `avoid` (imageURLs inside the reuse COOLDOWN window) when a fresh candidate exists. The LEAD is
+    assigned FIRST so it gets the strongest/freshest topic image.
+
+    This is a cooldown, NOT a blacklist: before ever reusing an in-cooldown image, it first tries every
+    verified pool for an image that is outside the cooldown. Only if none exists does it reuse an
+    in-cooldown image (logged), rather than shipping a blank. When it picks an image that was used
+    before but is now OUTSIDE the cooldown, that reuse is logged as allowed. Returns dicts aligned to
+    `items`, each carrying internal provenance (source/license/credit) the caller keeps OUT of the feed.
+
+    TODO (curation): as verified Pexels/Wikimedia entries are added to images.yaml with `source`,
+    `license`, and `credit`, this selection automatically diversifies across sources — no code change."""
     img_pool = img_pool or []
     img_cats = img_cats or {}
     img_default = img_default or {"imageURL": "", "placeTime": ""}
+    avoid = set(avoid or ())            # imageURLs inside the cooldown window (avoid when possible)
+    seen_ever = set(seen_ever or ())    # every imageURL ever used (for cooldown-expiry logging)
 
     def resolve_cat_pool(cat):
         p = cat_pools.get(cat) or cat_pools.get(aliases.get(cat, "")) or default_pool or img_pool
@@ -139,25 +178,72 @@ def assign_images(items, cat_pools, aliases, default_pool, topic_pools, matchers
     def rotated(pool):
         return (pool[yday % len(pool):] + pool[:yday % len(pool)]) if pool else []
 
-    used, out = set(), []
-    for it in items:
+    def pick(pool, used, *, allow_recent):
+        """First entry not already used this issue and (unless allow_recent) not recently used."""
+        for e in rotated(pool):
+            u = e.get("imageURL")
+            if not u or u in used:
+                continue
+            if not allow_recent and u in avoid:
+                log(f"      · skip recently-used image {_short_img(u)}")
+                continue
+            return e
+        return None
+
+    # Assign the LEAD first (freshest topic image), then the rest in their given order.
+    order = list(range(len(items)))
+    if lead_index is not None and 0 <= lead_index < len(items):
+        order = [lead_index] + [i for i in order if i != lead_index]
+
+    used, out = set(), [None] * len(items)
+    for i in order:
+        it = items[i]
         cat = it.get("category", "OTHER")
         topic, score = match_topic(it.get("headline"), it.get("summary"), matchers)
         img, reason = None, None
+        # 1) topic pool (most specific) → 2) category pool → 3) any category pool — all recent-avoiding.
         if topic and topic_pools.get(topic):
-            img = next((e for e in rotated(topic_pools[topic]) if e.get("imageURL") not in used), None)
+            img = pick(topic_pools[topic], used, allow_recent=False)
             if img:
                 reason = f"topic '{topic}' (score {score})"
-        if img is None:   # no topic match, or the topic pool was already used up this issue
-            pool = rotated(resolve_cat_pool(cat))
-            img = (next((e for e in pool if e.get("imageURL") not in used), None)
-                   or next((e for cp in cat_pools.values() for e in cp if e.get("imageURL") not in used), None)
+        if img is None:
+            img = pick(resolve_cat_pool(cat), used, allow_recent=False)
+            if img:
+                reason = (f"category '{cat}' (no topic match)" if topic is None
+                          else f"category '{cat}' (topic '{topic}' pool exhausted)")
+        # 3) ANY verified pool (category + topic + default), still cooldown-avoiding — prefer a
+        #    different image over reusing one inside the cooldown.
+        if img is None:
+            all_pools = list(cat_pools.values()) + list(topic_pools.values())
+            if default_pool:
+                all_pools.append(default_pool)
+            for cp in all_pools:
+                img = pick(cp, used, allow_recent=False)
+                if img:
+                    reason = f"cross-pool '{cat}' (cooldown-avoided)"
+                    break
+        # 4) cooldown exhausted → only now reuse an in-cooldown image (never blank), and log it.
+        if img is None:
+            img = (pick(resolve_cat_pool(cat), used, allow_recent=True)
+                   or next((e for cp in (list(cat_pools.values()) + list(topic_pools.values())
+                                         + ([default_pool] if default_pool else []))
+                            for e in rotated(cp)
+                            if e.get("imageURL") and e.get("imageURL") not in used), None)
                    or img_default)
-            reason = (f"category '{cat}' (no topic match)" if topic is None
-                      else f"category '{cat}' (topic '{topic}' pool exhausted)")
-        used.add(img.get("imageURL"))
-        out.append({"imageURL": img.get("imageURL", ""), "placeTime": img.get("placeTime", ""),
-                    "topic": topic, "reason": reason})
+            reason = f"category '{cat}' — cooldown exhausted, reused an in-window image"
+            log(f"    ⚠ #{items[i].get('number', i + 1)}: no image outside cooldown; reusing "
+                f"{_short_img(img.get('imageURL'))}")
+        # Cooldown-expiry note: chosen image was used before but is now outside the window → allowed.
+        chosen = img.get("imageURL")
+        if chosen and chosen in seen_ever and chosen not in avoid:
+            log(f"      · reuse allowed (outside {_short_img(chosen)}'s cooldown)")
+        used.add(chosen)
+        out[i] = {"imageURL": img.get("imageURL", ""), "placeTime": img.get("placeTime", ""),
+                  "topic": topic, "reason": reason,
+                  # internal provenance — NOT written to the public feed (schema unchanged):
+                  "source": img.get("source", "unsplash"),
+                  "license": img.get("license"), "credit": img.get("credit"),
+                  "isLead": (i == lead_index)}
     return out
 
 
@@ -292,11 +378,21 @@ def main():
         img_pool[:] = [e for e in img_pool if e["imageURL"] not in dead]
 
     # Story-aware image assignment (topic pool first, category fallback) — deterministic, no repeats.
+    # Also avoids any imageURL used by the last 30 editions, and assigns the LEAD first (freshest pick).
     ordered = sorted(signals_in, key=lambda x: x["number"])
-    img_items = [{"headline": s["draft"].get("headline", ""), "summary": s["draft"].get("summary", ""),
+    img_items = [{"number": s["number"],
+                  "headline": s["draft"].get("headline", ""), "summary": s["draft"].get("summary", ""),
                   "category": s.get("category", "OTHER")} for s in ordered]
+    editions_dir = os.path.join(os.path.dirname(HERE), "editions")
+    REUSE_WINDOW = 90                                   # cooldown length (editions); configurable
+    recent_urls = recent_image_urls(editions_dir, today, window=REUSE_WINDOW)
+    seen_ever = recent_image_urls(editions_dir, today, window=10**9)   # all history (for cooldown-expiry logs)
+    lead_index = next((i for i, s in enumerate(ordered) if s.get("selectedRole") == "lead"), 0)
+    print(f"  image reuse guard: cooldown={REUSE_WINDOW} editions; avoiding {len(recent_urls)} recent "
+          f"imageURLs ({len(seen_ever)} seen ever); lead = #{ordered[lead_index]['number']}")
     picks = assign_images(img_items, cat_pools, aliases, default_pool, topic_pools, topic_matchers,
-                          yday, img_pool=img_pool, img_cats=img_cats, img_default=img_default)
+                          yday, img_pool=img_pool, img_cats=img_cats, img_default=img_default,
+                          avoid=recent_urls, lead_index=lead_index, seen_ever=seen_ever)
 
     print("  image assignment:")
     out_signals = []
@@ -304,7 +400,8 @@ def main():
         dr = s["draft"]
         pick = picks[idx]
         print(f"    #{s['number']} [{s.get('category','?'):8}] {dr['headline'][:42]:42} "
-              f"→ {pick['reason']:38} → {pick['placeTime']!r}")
+              f"→ {pick['reason']:38} → {pick['placeTime']!r} [{pick.get('source','unsplash')}"
+              f"{' · LEAD' if pick.get('isLead') else ''}]")
         out_signals.append({
             "number": s["number"],
             "importance": s["number"],                     # human order = importance (Lead=1)

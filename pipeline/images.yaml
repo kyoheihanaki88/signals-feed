@@ -13,6 +13,23 @@
 # HTTP-checks every URL and DROPS dead ones, printing a per-pool reachable count. Backfill any
 # pool that drops below ~5. [✓ = confirmed working previously]
 
+# ── MULTI-SOURCE POOLS (variety) ───────────────────────────────────────────────────────────────
+# Each pool entry may carry OPTIONAL provenance fields, read by build.py but kept OUT of the public
+# feed (imageURL schema is unchanged). Defaults when omitted: source=unsplash, no license/credit.
+#   - { imageURL: "https://…", placeTime: "…", source: "wikimedia",
+#       license: "CC BY-SA 4.0", credit: "Author — Wikimedia Commons" }
+# Intended sources: unsplash (calm editorial atmosphere), pexels (lifestyle / city / street texture),
+# wikimedia (real places, institutions, courts, landmarks, science, geography; public-domain/CC).
+# build.py already: avoids reusing any imageURL from the last 30 editions, logs recent-reuse skips,
+# and gives the LEAD the freshest topic image.
+#
+# TODO — CURATION (do NOT fabricate URLs; verify each before adding, then run --verify-images):
+#   * PEXELS starter set   → stable images.pexels.com/photos/<id>/…  · source: pexels · license: "Pexels License"
+#   * WIKIMEDIA starter set → stable upload.wikimedia.org/…/thumb/…   · capture license + author/credit
+#                             from the file's Commons page into `license` / `credit`
+#   * Only add images with clear, permissive licenses. Keep the calm editorial look (no loud
+#     thumbnails, no literal event imagery). Avoid over-used generic frames (office laptop, etc.).
+
 # Scout categories not given a dedicated pool fall back through these aliases:
 aliases:
   FINANCE: BUSINESS

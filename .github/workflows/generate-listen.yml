@@ -53,6 +53,9 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Anthropic model for the dialogue script — set as a repo secret so model retirements
+          # are fixed by rotating the secret, not editing code. Empty/unset → the script's default.
+          SIGNALS_LISTEN_MODEL: ${{ secrets.SIGNALS_LISTEN_MODEL }}
           EXPLAINER_VOICE: ${{ secrets.EXPLAINER_VOICE }}
           LISTENER_VOICE: ${{ secrets.LISTENER_VOICE }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

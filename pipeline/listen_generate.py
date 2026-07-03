@@ -39,7 +39,9 @@ LISTENER_SETTINGS = {"stability": 0.38, "similarity_boost": 0.85, "style": 0.12}
 
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
-SCRIPT_MODEL = os.environ.get("SIGNALS_LISTEN_MODEL", "claude-3-5-sonnet-20241022")
+# `or` (not the .get default) so an EMPTY env var — e.g. the workflow passing an unset
+# repo secret — still falls back instead of calling the API with model="".
+SCRIPT_MODEL = os.environ.get("SIGNALS_LISTEN_MODEL") or "claude-3-5-sonnet-20241022"
 SCRIPT_SYSTEM = (
     "You write a short, calm two-person Listen dialogue for a morning news app. Two speakers: "
     "'listener' (curious, asks what a regular person would ask) and 'explainer' (calm, concise, "

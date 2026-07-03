@@ -32,7 +32,10 @@ DRIFT_THRESHOLD = 0.25
 
 EL_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice}"
 EL_MODEL = "eleven_multilingual_v2"
-EXPLAINER_VOICE = os.environ.get("EXPLAINER_VOICE", "DXFkLCBUTmvXpp2QwZjA")
+# .strip() + `or`: a secret pasted with a trailing newline/space, or set-but-empty, must
+# never reach the URL — whitespace in EL_URL.format(voice=…) makes http.client reject the
+# request at putrequest with a cryptic traceback before any network call.
+EXPLAINER_VOICE = os.environ.get("EXPLAINER_VOICE", "").strip() or "DXFkLCBUTmvXpp2QwZjA"
 LISTENER_VOICE = os.environ.get("LISTENER_VOICE", "").strip()
 EXPLAINER_SETTINGS = {"stability": 0.50, "similarity_boost": 0.85, "style": 0.12}
 LISTENER_SETTINGS = {"stability": 0.38, "similarity_boost": 0.85, "style": 0.12}
@@ -195,6 +198,13 @@ def main():
         sys.exit("❌ ELEVENLABS_API_KEY and ANTHROPIC_API_KEY are required")
     if not LISTENER_VOICE:
         sys.exit("❌ LISTENER_VOICE required (EXPLAINER_VOICE defaults to %s)" % EXPLAINER_VOICE)
+    # Fail with a READABLE message on malformed voice IDs (ElevenLabs IDs are alphanumeric).
+    # Without this, a bad character reaches the request URL and http.client dies in
+    # putrequest with an opaque traceback.
+    for name, v in (("LISTENER_VOICE", LISTENER_VOICE), ("EXPLAINER_VOICE", EXPLAINER_VOICE)):
+        if not v.isalnum():
+            sys.exit(f"❌ {name} is not a valid ElevenLabs voice ID ({v!r}) — "
+                     "re-paste the repo secret without spaces/newlines/quotes")
     generate(date, el_key=el, an_key=an, listener_voice=LISTENER_VOICE, explainer_voice=EXPLAINER_VOICE)
     print("Next: python3 pipeline/listen_inject_edition.py", date)
 

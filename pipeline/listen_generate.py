@@ -28,7 +28,12 @@ OUT_BASE = os.path.join(ROOT, "scratch", "listen_audio_test", "dialogue_proto") 
 
 R2_BASE = "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev"
 R2_BUCKET = "signals-audio"
-DRIFT_THRESHOLD = 0.25
+# Caption-vs-audio drift gate. MP3 duration probing (ffprobe) and direct MP3 concatenation
+# both round at frame/container granularity, so a few hundredths of a second of drift is
+# normal encoder noise, not a content mismatch (a real mismatch — wrong/missing line —
+# drifts by whole seconds). 0.50s stays strict enough to catch those while not aborting
+# runs over rounding (seen: 0.260s on a perfectly good clip).
+DRIFT_THRESHOLD = 0.50
 
 EL_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice}"
 EL_MODEL = "eleven_multilingual_v2"

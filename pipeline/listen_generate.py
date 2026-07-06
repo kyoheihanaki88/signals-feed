@@ -94,10 +94,18 @@ def r2_upload(local_path, key):
                     "--file", local_path, "--content-type", "audio/mpeg", "--remote"], check=True)
 
 
-def _status(url, method="GET", headers=None):
-    req = urllib.request.Request(url, method=method, headers=headers or {})
+# Cloudflare fronts r2.dev and can 403 "bot-looking" requests (python-urllib UA) while
+# serving browsers fine — send a browser-ish UA on verification requests only.
+_VERIFY_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Signals-ListenVerify/1.0"
+
+
+def _status(url, method="GET", headers=None, read_byte=False):
+    h = {"User-Agent": _VERIFY_UA, **(headers or {})}
+    req = urllib.request.Request(url, method=method, headers=h)
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
+            if read_byte:
+                r.read(1)          # urllib streams lazily — 1 byte proves the body serves
             return r.status
     except urllib.error.HTTPError as e:
         return e.code
@@ -106,19 +114,26 @@ def _status(url, method="GET", headers=None):
 def verify_public(url):
     """Is the uploaded object publicly retrievable?
 
-    R2 public (r2.dev) endpoints can return 403 to HEAD while serving GET perfectly
-    (browser-confirmed) — HEAD-only verification rejects valid objects. So: try HEAD
-    first (cheap); on any non-200, retry as a GET with `Range: bytes=0-0` (one byte,
-    not the whole MP3). 200 or 206 on either attempt = success. Fail-closed otherwise.
+    R2 public (r2.dev) endpoints can 403 both HEAD and Range GETs while serving a plain
+    browser GET perfectly (browser-confirmed). Ladder, cheapest first:
+      1. HEAD                     → 200 = success
+      2. GET with Range: bytes=0-0 → 200/206 = success
+      3. plain GET, read 1 byte    → 200 = success (urllib streams lazily, so reading a
+         single byte verifies the body without downloading the whole MP3)
+    Fail-closed if all three fail.
 
-    Returns (ok: bool, detail: str) — detail carries both statuses for readable logs.
+    Returns (ok: bool, detail: str) — detail carries every attempted status for the logs,
+    e.g. "HEAD 403 → GET/range 403 → GET 200".
     """
     head = _status(url, method="HEAD")
     if head == 200:
         return True, "HEAD 200"
-    get = _status(url, method="GET", headers={"Range": "bytes=0-0"})
-    ok = get in (200, 206)
-    return ok, f"HEAD {head} → GET/range {get}"
+    ranged = _status(url, method="GET", headers={"Range": "bytes=0-0"})
+    if ranged in (200, 206):
+        return True, f"HEAD {head} → GET/range {ranged}"
+    plain = _status(url, method="GET", read_byte=True)
+    ok = plain == 200
+    return ok, f"HEAD {head} → GET/range {ranged} → GET {plain}"
 
 
 # ── pure helpers ────────────────────────────────────────────────────────────────────────────────

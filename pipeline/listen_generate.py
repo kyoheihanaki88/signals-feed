@@ -94,13 +94,31 @@ def r2_upload(local_path, key):
                     "--file", local_path, "--content-type", "audio/mpeg", "--remote"], check=True)
 
 
-def http_status(url):
-    req = urllib.request.Request(url, method="HEAD")
+def _status(url, method="GET", headers=None):
+    req = urllib.request.Request(url, method=method, headers=headers or {})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status
     except urllib.error.HTTPError as e:
         return e.code
+
+
+def verify_public(url):
+    """Is the uploaded object publicly retrievable?
+
+    R2 public (r2.dev) endpoints can return 403 to HEAD while serving GET perfectly
+    (browser-confirmed) — HEAD-only verification rejects valid objects. So: try HEAD
+    first (cheap); on any non-200, retry as a GET with `Range: bytes=0-0` (one byte,
+    not the whole MP3). 200 or 206 on either attempt = success. Fail-closed otherwise.
+
+    Returns (ok: bool, detail: str) — detail carries both statuses for readable logs.
+    """
+    head = _status(url, method="HEAD")
+    if head == 200:
+        return True, "HEAD 200"
+    get = _status(url, method="GET", headers={"Range": "bytes=0-0"})
+    ok = get in (200, 206)
+    return ok, f"HEAD {head} → GET/range {get}"
 
 
 # ── pure helpers ────────────────────────────────────────────────────────────────────────────────
@@ -132,7 +150,7 @@ def key_for(date, number):
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
 def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
-             upload_fn=r2_upload, status_fn=http_status, log=print):
+             upload_fn=r2_upload, verify_fn=verify_public, log=print):
     """Generate+upload all 5 dialogue clips for `date`, then write the manifest. Raises on any failure
     BEFORE writing the manifest (atomic). Returns the manifest entry dict."""
     edition = os.path.join(ROOT, "editions", f"{date}.json")
@@ -173,15 +191,17 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
         to_upload.append((final, key_for(date, num)))
         log(f"  signal {num}: {len(caps)} lines, drift {drift:.3f}s OK")
 
-    # 2) upload all, then require HTTP 200 for all (fail-closed).
+    # 2) upload all, then require every object to be publicly retrievable (fail-closed).
+    #    HEAD 200, or GET/range 200/206 when HEAD is refused (r2.dev quirk) — see verify_public.
     for final, key in to_upload:
         upload_fn(final, key)
     for _, key in to_upload:
         url = f"{R2_BASE}/{key}"
-        st = status_fn(url)
-        if st != 200:
-            raise RuntimeError(f"R2 object not 200 ({st}): {url} — aborting, manifest unchanged")
-        log(f"  200 OK {url}")
+        ok, detail = verify_fn(url)
+        if not ok:
+            raise RuntimeError(f"R2 object not publicly retrievable ({detail}): {url} — "
+                               "aborting, manifest unchanged")
+        log(f"  OK ({detail}) {url}")
 
     # 3) only now write the manifest entry.
     data = json.load(open(MANIFEST, encoding="utf-8"))

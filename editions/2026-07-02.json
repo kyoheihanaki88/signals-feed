@@ -33,6 +33,55 @@
           ],
           "whyItMatters": "RSFが包囲を続けるなか、エル・ファシェルの市民が直面している惨状は、すでに国際社会に警告されていた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-02/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Amnesty International released a report about Sudan. What happened?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've alleged that Sudan's paramilitary group, the Rapid Support Forces, committed crimes against humanity during their campaign to capture the city of El Fasher.",
+              "duration": 7.941224
+            },
+            {
+              "speaker": "listener",
+              "text": "Where is El Fasher exactly?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's in North Darfur state. It was the last stronghold held by Sudan's armed forces in the Darfur region before the RSF captured it in October after an eighteen-month siege.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "What specifically is Amnesty accusing them of?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "The report alleges ethnic cleansing and that the RSF deliberately targeted children during attacks in the city. A UN fact-finding mission said earlier this year the seizure showed hallmarks of genocide against non-Arab communities.",
+              "duration": 11.598367
+            },
+            {
+              "speaker": "listener",
+              "text": "This sounds like it was unfolding for a long time.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Amnesty noted the world was warned about the horrors civilians faced as the siege continued. The eighteen months gave a long window to see what was happening.",
+              "duration": 8.620408
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +113,65 @@
             "歓声と熱狂に包まれたファンの興奮とは対照的に、近くの路上では救急隊員が倒れた人々に対応する様子がSNSで拡散された。"
           ],
           "whyItMatters": "死亡事故が起きたのは独立記念塔付近で、メキシコがエクアドルに2対0で勝利した試合の後、数千人のファンが集まっていた場所だ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-02/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something tragic happened in Mexico City during World Cup celebrations?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Four people died as thousands of fans crowded the streets celebrating Mexico's victory over Ecuador. Three of those deaths were from suffocation.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "Where exactly did this happen?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Near the Angel of Independence landmark. The city had closed the main boulevard and surrounding streets for the celebrations.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "How did it get so dangerous?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Thousands of people gathered in a concentrated area. The health secretariat reported the deaths in the early hours of Wednesday morning.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the city saying about this?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "The mayor, Clara Brugada, expressed condolences to the families and urged people to always celebrate with responsibility, care, and empathy.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "That's heartbreaking during what should have been a joyful moment.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Social media showed the contrast—fans cheering and chanting, while emergency responders were tending to distressed people on nearby streets.",
+              "duration": 8.85551
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,55 @@
           ],
           "whyItMatters": "中央刑事裁判所の陪審は水曜日、52歳のリアド・ブシャケル被告に対し、保育士リアン・フリンへの傷害、および別の子ども2人と10代の少年への暴行についても有罪と認定した。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-02/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a guilty verdict in Dublin. What happened?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "A man named Riad Bouchaker was found guilty of attempting to murder three children in a stabbing attack in Dublin in November 2023.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "That's awful. Where did this happen?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was in Parnell Square in the city center. The children were coming out of a creche when Bouchaker attacked them with a 12-inch kitchen knife.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "How are the children?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "One girl, who was five at the time, was stabbed in the heart. The court also found him guilty of assault causing serious harm to a childcare worker named Leanne Flynn, and assaulting two other children and a teenager.",
+              "duration": 10.814694
+            },
+            {
+              "speaker": "listener",
+              "text": "I remember this triggered something bigger in the city?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The attack horrified Ireland and triggered a riot in Dublin. The verdict came from a jury at the central criminal court on Wednesday.",
+              "duration": 7.000816
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +286,65 @@
           ],
           "whyItMatters": "主要な競合サービスと異なり、ピーコックは米国内でしか利用できないことも、成長の足かせとなっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-02/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Comcast is splitting from NBCUniversal? What does that mean for Peacock?",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It means Peacock will have to prove it can survive on its own, without being bundled with Comcast's other services.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, it was bundled before?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Since its launch in 2020, Peacock was often treated as an accessory to an Xfinity subscription—kind of a bonus.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "But it has sports, right? Like the Olympics?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Peacock streams the Olympics, Sunday Night Football, and Big Ten games. But even with that, it still trails behind rival streamers.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is it struggling compared to the others?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Part of it is availability. Unlike other major streamers, Peacock is only available in the US.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "So this split is really a test for whether it can stand on its own.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. NBCUniversal executives are about to find out whether Peacock will sink or swim.",
+              "duration": 4.545306
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +376,65 @@
             "Google Home Speakerは同社にとって6年ぶりの新作スマートスピーカーであり、「Gemini対応」を掲げた初の製品だ。長年の停滞を経て、Googleはスマートホームに本腰を入れ始めたようにみえる。"
           ],
           "whyItMatters": "同じ99.99ドルという価格帯にある旧世代のNest Audioと並べると、Home Speakerの音質は一歩及ばない。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-02/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google just released a new smart speaker?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's called the Google Home Speaker. It's their first new smart speaker in six years.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Six years? That's a long time. What makes this one different?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's the first one built specifically for Gemini, which is Google's AI assistant. The company seems to be taking the smart home more seriously again.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "How does it compare to their older speaker?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, when compared side by side with the Nest Audio, which was their previous speaker at the same price, this new one doesn't sound as good.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a step backward. Is the Gemini assistant at least better?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the catch. The headline suggests Gemini isn't quite ready for it yet. Google built good hardware, but the AI side still needs work.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're trying to catch up with Amazon?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Amazon launched new hardware with a revamped Alexa last fall. Smart speakers have been looking for their next big purpose, and both companies are betting on better AI.",
+              "duration": 8.594286
+            }
+          ]
         }
       }
     }

@@ -65,6 +65,12 @@ jobs:
       - name: Inject listen.en into edition + latest, validate
         run: python pipeline/listen_inject_edition.py "${{ github.event.inputs.date }}"
 
+      # scratch/ is temporary synthesis working data (per-line MP3s etc.) — gitignored
+      # locally but untracked on a fresh runner, so it must be removed before the guard
+      # or it trips "unexpected change". Never committed either way.
+      - name: Clean generated scratch audio
+        run: rm -rf scratch
+
       - name: Guard — only feed metadata files changed (no MP3s, no stray files)
         run: |
           DATE="${{ github.event.inputs.date }}"

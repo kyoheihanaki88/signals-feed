@@ -14,7 +14,7 @@ on:
   workflow_dispatch:            # manual "Run workflow" only — no schedule (auto-publish owns the cron)
     inputs:
       date:
-        description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"
+        description: "Edition date YYYY-MM-DD (default: today in America/New_York)"
         required: false
         default: ""
 
@@ -42,18 +42,31 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml        # scout/build read yaml; ranker/validators are stdlib-only
 
-      - name: Resolve edition date (tomorrow UTC unless overridden)
+      - name: Resolve edition date (today in America/New_York unless overridden)
         id: date
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
             EDITION_DATE="${{ github.event.inputs.date }}"
           else
-            EDITION_DATE="$(date -u -d '+1 day' +%Y-%m-%d)"
+            # ET-morning model — same default as Daily Auto Publish. (The old tomorrow-UTC
+            # default here produced the accidental future-dated PR #68.)
+            EDITION_DATE="$(TZ=America/New_York date +%Y-%m-%d)"
           fi
           echo "EDITION_DATE=$EDITION_DATE" >> "$GITHUB_ENV"
           echo "edition_date=$EDITION_DATE" >> "$GITHUB_OUTPUT"
           echo "## Daily Auto Edition — $EDITION_DATE" >> "$GITHUB_STEP_SUMMARY"
           echo "Built $(date -u +%FT%TZ)" >> "$GITHUB_STEP_SUMMARY"
+
+      # GATE C — same future-date guard as Daily Auto Publish: never build more than
+      # 1 day ahead of the East Coast calendar.
+      - name: Gate — target is not more than 1 day ahead of America/New_York
+        run: |
+          MAX="$(TZ=America/New_York date -d '+1 day' +%Y-%m-%d)"
+          echo "target=$EDITION_DATE · max allowed=$MAX (tomorrow ET)"
+          if [[ "$EDITION_DATE" > "$MAX" ]]; then
+            echo "::error::target $EDITION_DATE is more than 1 day ahead of the ET calendar (max $MAX) — refusing."
+            exit 1
+          fi
 
       # 1) Scout — collect today's candidates from live RSS. Exits non-zero on zero candidates.
       - name: Scout (live RSS)

@@ -906,6 +906,570 @@
           ]
         }
       }
+    },
+    "2026-07-02": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-02/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Amnesty International released a report about Sudan. What happened?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've alleged that Sudan's paramilitary group, the Rapid Support Forces, committed crimes against humanity during their campaign to capture the city of El Fasher.",
+              "duration": 7.941224
+            },
+            {
+              "speaker": "listener",
+              "text": "Where is El Fasher exactly?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's in North Darfur state. It was the last stronghold held by Sudan's armed forces in the Darfur region before the RSF captured it in October after an eighteen-month siege.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "What specifically is Amnesty accusing them of?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "The report alleges ethnic cleansing and that the RSF deliberately targeted children during attacks in the city. A UN fact-finding mission said earlier this year the seizure showed hallmarks of genocide against non-Arab communities.",
+              "duration": 11.598367
+            },
+            {
+              "speaker": "listener",
+              "text": "This sounds like it was unfolding for a long time.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Amnesty noted the world was warned about the horrors civilians faced as the siege continued. The eighteen months gave a long window to see what was happening.",
+              "duration": 8.620408
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-02/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something tragic happened in Mexico City during World Cup celebrations?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Four people died as thousands of fans crowded the streets celebrating Mexico's victory over Ecuador. Three of those deaths were from suffocation.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "Where exactly did this happen?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Near the Angel of Independence landmark. The city had closed the main boulevard and surrounding streets for the celebrations.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "How did it get so dangerous?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Thousands of people gathered in a concentrated area. The health secretariat reported the deaths in the early hours of Wednesday morning.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the city saying about this?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "The mayor, Clara Brugada, expressed condolences to the families and urged people to always celebrate with responsibility, care, and empathy.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "That's heartbreaking during what should have been a joyful moment.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Social media showed the contrast—fans cheering and chanting, while emergency responders were tending to distressed people on nearby streets.",
+              "duration": 8.85551
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-02/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a guilty verdict in Dublin. What happened?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "A man named Riad Bouchaker was found guilty of attempting to murder three children in a stabbing attack in Dublin in November 2023.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "That's awful. Where did this happen?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was in Parnell Square in the city center. The children were coming out of a creche when Bouchaker attacked them with a 12-inch kitchen knife.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "How are the children?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "One girl, who was five at the time, was stabbed in the heart. The court also found him guilty of assault causing serious harm to a childcare worker named Leanne Flynn, and assaulting two other children and a teenager.",
+              "duration": 10.814694
+            },
+            {
+              "speaker": "listener",
+              "text": "I remember this triggered something bigger in the city?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The attack horrified Ireland and triggered a riot in Dublin. The verdict came from a jury at the central criminal court on Wednesday.",
+              "duration": 7.000816
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-02/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Comcast is splitting from NBCUniversal? What does that mean for Peacock?",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It means Peacock will have to prove it can survive on its own, without being bundled with Comcast's other services.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, it was bundled before?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Since its launch in 2020, Peacock was often treated as an accessory to an Xfinity subscription—kind of a bonus.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "But it has sports, right? Like the Olympics?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Peacock streams the Olympics, Sunday Night Football, and Big Ten games. But even with that, it still trails behind rival streamers.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is it struggling compared to the others?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Part of it is availability. Unlike other major streamers, Peacock is only available in the US.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "So this split is really a test for whether it can stand on its own.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. NBCUniversal executives are about to find out whether Peacock will sink or swim.",
+              "duration": 4.545306
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-02/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google just released a new smart speaker?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's called the Google Home Speaker. It's their first new smart speaker in six years.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Six years? That's a long time. What makes this one different?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's the first one built specifically for Gemini, which is Google's AI assistant. The company seems to be taking the smart home more seriously again.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "How does it compare to their older speaker?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, when compared side by side with the Nest Audio, which was their previous speaker at the same price, this new one doesn't sound as good.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a step backward. Is the Gemini assistant at least better?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the catch. The headline suggests Gemini isn't quite ready for it yet. Google built good hardware, but the AI side still needs work.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're trying to catch up with Amazon?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Amazon launched new hardware with a revamped Alexa last fall. Smart speakers have been looking for their next big purpose, and both companies are betting on better AI.",
+              "duration": 8.594286
+            }
+          ]
+        }
+      }
+    },
+    "2026-07-03": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-03/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about a massive funeral procession in Iran. What happened?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's supreme leader, Ali Khamenei, was assassinated. On Monday, millions of people gathered in Tehran for his funeral procession.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "Millions? That's an enormous turnout.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Mourners wore black, carried flags with the slogan 'We will rise,' and held pictures of Khamenei. The Tehran metro was packed with people trying to join the march.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know how he died?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The details aren't fully clear from this report. Some are connecting it to broader tensions—many say this reflects a war launched on Iran by Donald Trump back in February.",
+              "duration": 9.090612
+            },
+            {
+              "speaker": "listener",
+              "text": "And Iranian officials have said anything about his absence before this?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "They did. Officials had said Khamenei's absence wasn't due to wounds from an Israeli attack on the presidential building, but rather concerns for his safety.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "So there was already an attack before the assassination.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It appears so. Israel had struck the presidential building, but Iranian officials maintained Khamenei wasn't injured in that incident.",
+              "duration": 6.582857
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-03/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a Syrian official convicted in Austria. What happened?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "An Austrian court found a former Syrian intelligence chief guilty of torture and sexual abuse. He worked in the city of Raqqa under Bashar al-Assad's government.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "So this trial happened in Vienna, not Syria?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in Vienna. The man is identified only as Khaled al-H. He's from the Druze minority.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "Was he the only one on trial?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. A second Syrian official was also convicted—the former police chief in Raqqa. Both were found guilty of abusing political opponents.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter now?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of ongoing efforts to hold former Syrian officials accountable for crimes committed during the conflict, even years later and in other countries.",
+              "duration": 7.836735
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-03/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So China just tested a missile in the South Pacific?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A Chinese navy statement said a nuclear submarine launched what they called a strategic missile with a training warhead on Monday. They say it landed accurately in a designated sea area.",
+              "duration": 10.579592
+            },
+            {
+              "speaker": "listener",
+              "text": "How are other countries reacting?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Australia's foreign minister, Penny Wong, called it destabilising to the region. New Zealand's Winston Peters described it as deeply concerning.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the timing significant here?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does stand out. The test happened just hours after Australia and Fiji signed a major defence agreement, where each country commits to help the other if attacked.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what kind of missile it was?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "China's defence ministry didn't confirm whether it was an intercontinental ballistic missile. They just said it was a strategic missile with a training simulation warhead.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter for the region?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's seen as a show of military capability in an area where tensions are already high, especially with new defence partnerships forming.",
+              "duration": 6.687347
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-03/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a whole agency business now for online creators?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. UTA, one of the big talent agencies, represents creators just like they represent traditional actors or authors.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that actually look like day to day?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're helping creators launch their own products now, not just make content. It's a shift from making media to building brands.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That's interesting. Are creators worried about anything right now?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "AI and platform changes seem to be the big concerns. Both could really shake up how creators work and earn.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "How did this agent get into representing creators?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "They started at another agency, then moved to UTA and worked on the traditional literary side before getting into the creator space.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is all becoming a real industry.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's big business now, with the same kind of representation you'd see in film or publishing.",
+              "duration": 4.91102
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-03/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Nintendo's stopping sales of the original Switch in Europe?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, starting mid-February 2027. That includes the standard Switch, the Lite, and the OLED model.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "That's almost ten years after it first launched. Why now?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It ties to new European battery regulations. Nintendo's updating the Switch 2 to have a replaceable battery there.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "Just the Switch 2, or other things too?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Controllers as well — Joy-Con 2, the Pro Controller, even the N64 and GameCube controllers will get user-replaceable batteries.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "When does that updated Switch 2 arrive?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Expected to start rolling out in the fall.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "listener",
+              "text": "So Europe gets a different version than the rest of the world?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, yes — at least to meet those specific battery rules.",
+              "duration": 3.369796
+            }
+          ]
+        }
+      }
     }
   }
 }

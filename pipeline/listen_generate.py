@@ -94,13 +94,46 @@ def r2_upload(local_path, key):
                     "--file", local_path, "--content-type", "audio/mpeg", "--remote"], check=True)
 
 
-def http_status(url):
-    req = urllib.request.Request(url, method="HEAD")
+# Cloudflare fronts r2.dev and can 403 "bot-looking" requests (python-urllib UA) while
+# serving browsers fine — send a browser-ish UA on verification requests only.
+_VERIFY_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Signals-ListenVerify/1.0"
+
+
+def _status(url, method="GET", headers=None, read_byte=False):
+    h = {"User-Agent": _VERIFY_UA, **(headers or {})}
+    req = urllib.request.Request(url, method=method, headers=h)
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
+            if read_byte:
+                r.read(1)          # urllib streams lazily — 1 byte proves the body serves
             return r.status
     except urllib.error.HTTPError as e:
         return e.code
+
+
+def verify_public(url):
+    """Is the uploaded object publicly retrievable?
+
+    R2 public (r2.dev) endpoints can 403 both HEAD and Range GETs while serving a plain
+    browser GET perfectly (browser-confirmed). Ladder, cheapest first:
+      1. HEAD                     → 200 = success
+      2. GET with Range: bytes=0-0 → 200/206 = success
+      3. plain GET, read 1 byte    → 200 = success (urllib streams lazily, so reading a
+         single byte verifies the body without downloading the whole MP3)
+    Fail-closed if all three fail.
+
+    Returns (ok: bool, detail: str) — detail carries every attempted status for the logs,
+    e.g. "HEAD 403 → GET/range 403 → GET 200".
+    """
+    head = _status(url, method="HEAD")
+    if head == 200:
+        return True, "HEAD 200"
+    ranged = _status(url, method="GET", headers={"Range": "bytes=0-0"})
+    if ranged in (200, 206):
+        return True, f"HEAD {head} → GET/range {ranged}"
+    plain = _status(url, method="GET", read_byte=True)
+    ok = plain == 200
+    return ok, f"HEAD {head} → GET/range {ranged} → GET {plain}"
 
 
 # ── pure helpers ────────────────────────────────────────────────────────────────────────────────
@@ -132,7 +165,7 @@ def key_for(date, number):
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
 def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
-             upload_fn=r2_upload, status_fn=http_status, log=print):
+             upload_fn=r2_upload, verify_fn=verify_public, log=print):
     """Generate+upload all 5 dialogue clips for `date`, then write the manifest. Raises on any failure
     BEFORE writing the manifest (atomic). Returns the manifest entry dict."""
     edition = os.path.join(ROOT, "editions", f"{date}.json")
@@ -173,15 +206,17 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
         to_upload.append((final, key_for(date, num)))
         log(f"  signal {num}: {len(caps)} lines, drift {drift:.3f}s OK")
 
-    # 2) upload all, then require HTTP 200 for all (fail-closed).
+    # 2) upload all, then require every object to be publicly retrievable (fail-closed).
+    #    HEAD 200, or GET/range 200/206 when HEAD is refused (r2.dev quirk) — see verify_public.
     for final, key in to_upload:
         upload_fn(final, key)
     for _, key in to_upload:
         url = f"{R2_BASE}/{key}"
-        st = status_fn(url)
-        if st != 200:
-            raise RuntimeError(f"R2 object not 200 ({st}): {url} — aborting, manifest unchanged")
-        log(f"  200 OK {url}")
+        ok, detail = verify_fn(url)
+        if not ok:
+            raise RuntimeError(f"R2 object not publicly retrievable ({detail}): {url} — "
+                               "aborting, manifest unchanged")
+        log(f"  OK ({detail}) {url}")
 
     # 3) only now write the manifest entry.
     data = json.load(open(MANIFEST, encoding="utf-8"))

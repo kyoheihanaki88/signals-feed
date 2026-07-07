@@ -1,0 +1,452 @@
+{
+  "date": "2026-07-03",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Millions join funeral procession for Iran’s supreme leader Ali Khamenei",
+      "summary": "A crowd of “millions” assembled on Monday for the funeral procession of Iran’s assassinated supreme leader, Ali Khamenei .",
+      "keyTakeaways": [
+        "Many will say the assembly was a monument to a misconceived war launched on Iran by Donald Trump in February.",
+        "The mourners wore black clothing and carried flags bearing the slogan “We will rise”; others held aloft the flag of Iran and pictures of Khamenei.",
+        "The Tehran metro was packed as people attempted to join the march."
+      ],
+      "whyItMatters": "Iranian officials said Khamenei’s absence was not due to wounds sustained in Israel’s attack on the presidential building but to concerns for his safety.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/06/ali-khamenei-funeral-procession-iran-supreme-leader",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Neon evening",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ハメネイ師の葬列に数百万人",
+          "summary": "暗殺されたイランの最高指導者アリー・ハメネイ師の葬儀行列が月曜日に執り行われ、数百万人ともいわれる群衆が集まった。",
+          "keyTakeaways": [
+            "この集会は、トランプ政権が二月に始めたイランへの戦争への批判として語られることになるだろう",
+            "参列者たちは黒い衣服をまとい、「我々は立ち上がる」と記された旗やイランの国旗、ハメネイ師の肖像を掲げた",
+            "テヘランの地下鉄は行列に加わろうとする人々で混雑した"
+          ],
+          "whyItMatters": "イラン当局は、ハメネイ師の不在はイスラエルによる大統領府への攻撃で負った傷によるものではなく、身の安全への懸念からだと説明した。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-03/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about a massive funeral procession in Iran. What happened?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's supreme leader, Ali Khamenei, was assassinated. On Monday, millions of people gathered in Tehran for his funeral procession.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "Millions? That's an enormous turnout.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Mourners wore black, carried flags with the slogan 'We will rise,' and held pictures of Khamenei. The Tehran metro was packed with people trying to join the march.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know how he died?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The details aren't fully clear from this report. Some are connecting it to broader tensions—many say this reflects a war launched on Iran by Donald Trump back in February.",
+              "duration": 9.090612
+            },
+            {
+              "speaker": "listener",
+              "text": "And Iranian officials have said anything about his absence before this?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "They did. Officials had said Khamenei's absence wasn't due to wounds from an Israeli attack on the presidential building, but rather concerns for his safety.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "So there was already an attack before the assassination.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It appears so. Israel had struck the presidential building, but Iranian officials maintained Khamenei wasn't injured in that incident.",
+              "duration": 6.582857
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Ex-Syrian intelligence chief found guilty of torture and sexual abuse by Austrian court",
+      "summary": "A former Syrian intelligence chief in the ​city of Raqqa has been found guilty of torture and sexual abuse of opponents of the former Syrian leader Bashar al-Assad, at a court in Vienna, Austria.",
+      "keyTakeaways": [
+        "A second Syrian official, the former police chief in Raqqa, was also found guilty of abusing political opponents.",
+        "The former intelligence chief, named only as Khaled al-H.",
+        "Khaled al-H., a member of the Druze ethno-religious minority, was found guilty of committing torture."
+      ],
+      "whyItMatters": "The Austrian Press Agency says the agreement was overseen by an Austrian official, Martin Weiss, the former head of the (BVT).",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cy8ddd1m3mpo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Glass & steel",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "元シリア情報機関幹部に有罪判決――ウィーンの法廷で",
+          "summary": "オーストリアの首都ウィーンの裁判所が、シリアのラッカ市を管轄していた元情報機関幹部に有罪判決を下した。アサド前政権への反対派に対する拷問と性的虐待が認定された。",
+          "keyTakeaways": [
+            "ラッカの元警察署長も同様に、政治的反対派への虐待で有罪とされた。",
+            "有罪となった元情報機関幹部は、「ハーレド・アル＝H」とのみ公表されている。",
+            "ドゥルーズ派の出身であるハーレド・アル＝H は、拷問の実行について有罪認定を受けた。"
+          ],
+          "whyItMatters": "オーストリア通信によれば、この合意はオーストリアの当局者マルティン・ヴァイス元BVT長官の監督のもとで結ばれたという。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-03/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a Syrian official convicted in Austria. What happened?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "An Austrian court found a former Syrian intelligence chief guilty of torture and sexual abuse. He worked in the city of Raqqa under Bashar al-Assad's government.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "So this trial happened in Vienna, not Syria?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in Vienna. The man is identified only as Khaled al-H. He's from the Druze minority.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "Was he the only one on trial?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. A second Syrian official was also convicted—the former police chief in Raqqa. Both were found guilty of abusing political opponents.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter now?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of ongoing efforts to hold former Syrian officials accountable for crimes committed during the conflict, even years later and in other countries.",
+              "duration": 7.836735
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "China tests long-range missile in South Pacific in move Australia condemns as ‘destabilising to region’",
+      "summary": "China has conducted a long-range missile test in the South Pacific just hours after Australia signed a defence agreement with Fiji, sparking condemnation from Canberra and regional leaders.",
+      "keyTakeaways": [
+        "The Australian foreign minister, Penny Wong , said the missile test was “destabilising” to the region, while her New Zealand counterpart, Winston Peters, described it as “deeply concerning”.",
+        "A Chinese navy statement said a nuclear submarine launched a “strategic missile carrying a training simulation warhead” on Monday, adding it had “accurately land(ed) in the designated sea area”.",
+        "China’s defence ministry did not confirm whether an intercontinental ballistic missile (ICBM) was used in Monday’s test."
+      ],
+      "whyItMatters": "The ⁠test came just hours after Australia and Fiji signed a major defence alliance , committing each country to come ⁠to the other’s aid in the event of an attack.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/06/china-missile-test-south-pacific",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "中国が南太平洋で長距離ミサイル実験　豪州は「地域の不安定化」と非難",
+          "summary": "豪州がフィジーと防衛協定を締結した数時間後、中国が南太平洋で長距離ミサイル実験を実施した。キャンベラや太平洋地域の指導者たちから強い批判の声が上がっている。",
+          "keyTakeaways": [
+            "豪州のウォン外相は今回の実験を「地域を不安定化させる行為」と批判。ニュージーランドのピーターズ外相も「深刻な懸念」を示した。",
+            "中国海軍の発表によれば、月曜日に核潜水艦が「訓練用模擬弾頭を搭載した戦略ミサイル」を発射し、「指定海域に正確に着弾した」という。",
+            "中国国防省は、今回の実験に大陸間弾道ミサイル（ICBM）が使用されたかどうかについて明言を避けた。"
+          ],
+          "whyItMatters": "実験が行われたのは、豪州とフィジーが相互防衛を約束する重要な防衛同盟を締結した、わずか数時間後のことだった。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-03/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So China just tested a missile in the South Pacific?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A Chinese navy statement said a nuclear submarine launched what they called a strategic missile with a training warhead on Monday. They say it landed accurately in a designated sea area.",
+              "duration": 10.579592
+            },
+            {
+              "speaker": "listener",
+              "text": "How are other countries reacting?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Australia's foreign minister, Penny Wong, called it destabilising to the region. New Zealand's Winston Peters described it as deeply concerning.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the timing significant here?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does stand out. The test happened just hours after Australia and Fiji signed a major defence agreement, where each country commits to help the other if attacked.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what kind of missile it was?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "China's defence ministry didn't confirm whether it was an intercontinental ballistic missile. They just said it was a strategic missile with a training simulation warhead.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter for the region?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's seen as a show of military capability in an area where tensions are already high, especially with new defence partnerships forming.",
+              "duration": 6.687347
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Inside the big business of the creator economy, with the agents making it happen",
+      "summary": "Half the people you’ve ever heard speak or perform or who show up anywhere have UTA agents representing them.",
+      "keyTakeaways": [
+        "Here, UTA is helping creators literally launch products — and it’s fascinating that the stars of today are going from making media to making products of their own.",
+        "Of course, we also talked about AI, and platforms, both of which seem like destabilizing forces for the entire creator ecosystem.",
+        "I started my career at another agency, then after a few years, moved over to UTA in a very Jerry McGuire meets Entourage -esque moment and worked on the more traditional literary side of the business."
+      ],
+      "whyItMatters": "Which means I paid them money, making this a reverse conflict of interest.",
+      "originalURL": "https://www.theverge.com/podcast/961603/raina-penchansky-ali-berman-dba-uta-influencer-cliff-marketing",
+      "readTime": 61,
+      "imageURL": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Hardware",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "クリエイター経済を動かすエージェントたちの仕事",
+          "summary": "あなたがこれまで耳にしたことのある語り手や表現者の多くは、UTAというエージェンシーに代理されている。クリエイター経済の裏側で、何が起きているのか。",
+          "keyTakeaways": [
+            "UTAはいまやクリエイターの商品開発まで手がける——メディアをつくる存在が、自らのブランドをつくる時代への移行が興味深い",
+            "AIとプラットフォームの台頭は、クリエイター全体のエコシステムを揺るがす力として議論に上った",
+            "語り手自身は別のエージェンシーでキャリアを始め、数年後にUTAへ移籍。出版畑の仕事を担ってきた"
+          ],
+          "whyItMatters": "語り手はUTAに報酬を支払う立場にあり、いわば逆の利益相反が生じている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-03/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a whole agency business now for online creators?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. UTA, one of the big talent agencies, represents creators just like they represent traditional actors or authors.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that actually look like day to day?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're helping creators launch their own products now, not just make content. It's a shift from making media to building brands.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That's interesting. Are creators worried about anything right now?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "AI and platform changes seem to be the big concerns. Both could really shake up how creators work and earn.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "How did this agent get into representing creators?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "They started at another agency, then moved to UTA and worked on the traditional literary side before getting into the creator space.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is all becoming a real industry.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's big business now, with the same kind of representation you'd see in film or publishing.",
+              "duration": 4.91102
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Nintendo will stop selling the original Switch in Europe next year",
+      "summary": "The decision comes alongside an update to the Switch 2 to coincide with European battery regulations.",
+      "keyTakeaways": [
+        "Nintendo is making a new version of the Switch 2 with a replaceable battery in Europe — but its predecessor has a very different future.",
+        "As part of an updated FAQ about revisions to Nintendo hardware in Europe, the company confirmed that it will stop selling all iterations of the original Switch on the continent starting next year.",
+        "From mid-February 2027, almost ten years after Nintendo Switch launched in March 2017, Nintendo will no longer sell to retailers hardware in the Nintendo Switch family of systems — specifically Nintendo Switch, Nintendo Switch Lite, and Nintendo Switch – OLED Model."
+      ],
+      "whyItMatters": "The Switch 2 is the most notable product being updated — the new version is expected to start rolling out in the fall — but there will also be versions of the Joy-Con controllers, Joy-Con 2, Switch 2 Pro Controller, and N64 and GameCube Switch controllers with user-replaceable batteries.",
+      "originalURL": "https://www.theverge.com/games/961632/nintendo-switch-europe-discontinued",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Abstract compute",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "任天堂、初代Switchの欧州販売を来年終了へ",
+          "summary": "欧州のバッテリー規制への対応として、任天堂はSwitch 2の新仕様を発表した。それと同時に、初代Switchシリーズの販売終了も明らかになった。",
+          "keyTakeaways": [
+            "欧州向けSwitch 2はバッテリーを交換可能な仕様に刷新される一方、初代Switchシリーズは異なる道をたどる。",
+            "任天堂は欧州向けハードウェアの改訂に関するFAQの中で、初代Switchの全モデルについて来年以降の販売終了を正式に認めた。",
+            "2027年2月中旬以降、Nintendo Switch・Switch Lite・Switch OLEDモデルの三機種は欧州の小売店への出荷が停止される。Switch発売から、ほぼ10年の節目にあたる。"
+          ],
+          "whyItMatters": "今回の規制対応はSwitch 2にとどまらず、Joy-Con 2やSwitch 2 Proコントローラー、N64・ゲームキューブ対応コントローラーなど複数の周辺機器にも、ユーザーが自分で交換できるバッテリーが採用される予定だ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-03/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Nintendo's stopping sales of the original Switch in Europe?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, starting mid-February 2027. That includes the standard Switch, the Lite, and the OLED model.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "That's almost ten years after it first launched. Why now?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It ties to new European battery regulations. Nintendo's updating the Switch 2 to have a replaceable battery there.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "Just the Switch 2, or other things too?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Controllers as well — Joy-Con 2, the Pro Controller, even the N64 and GameCube controllers will get user-replaceable batteries.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "When does that updated Switch 2 arrive?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Expected to start rolling out in the fall.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "listener",
+              "text": "So Europe gets a different version than the rest of the world?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, yes — at least to meet those specific battery rules.",
+              "duration": 3.369796
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+name: Auto Generate Listen
+
+# Daily automatic Listen audio — the companion to Daily Auto Publish (09:00 UTC,
+# targeting the user's East Coast morning: news ~5:00 AM ET, audio ~5:45 AM ET).
+#
+# DESIGN (why this is separate from Daily Auto Publish):
+#   • The edition lands on main via PR + auto-merge, so "publish job succeeded" ≠ "merged".
+#     This workflow reads MERGED main state only (latest.json), so it can never race the
+#     edition PR — it simply does nothing until the edition has actually landed.
+#   • Listen has three external dependencies (Anthropic, ElevenLabs, R2). Keeping it out
+#     of the publish job means a flaky audio API can never block or dirty the news.
+#   • IDEMPOTENT by design: the probe job skips cleanly when latest.json already carries
+#     listen.en audioURLs for all 5 signals. That one check also covers the "publish not
+#     merged yet" case (yesterday's latest already has yesterday's Listen) and makes the
+#     catch-up schedule + manual dispatch harmless.
+#   • Loop-safe: triggered ONLY by schedule/dispatch (never push/PR), so merging the
+#     Listen PR cannot retrigger anything.
+#
+# The generation steps below mirror generate-listen.yml (the manual workflow, kept as-is
+# for date-explicit fallback) — same scripts, same gates, same fail-closed order:
+# generate (atomic manifest) → inject+validate → scratch clean → metadata-only guard → PR.
+
+on:
+  schedule:
+    - cron: "45 9 * * *"    # 09:45 UTC (~5:45 AM EDT) — ~45 min after Daily Auto Publish
+    - cron: "45 10 * * *"   # 10:45 UTC (~6:45 AM EDT) — catch-up; skips if already generated
+  workflow_dispatch: {}      # manual fallback — always generates for the CURRENT latest date
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-generate-listen
+  cancel-in-progress: false
+
+jobs:
+  # ── 1) Probe merged main: which date, and does it already have Listen? ─────────────
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      date: ${{ steps.check.outputs.date }}
+      needed: ${{ steps.check.outputs.needed }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Read latest.json — date + listen.en coverage
+        id: check
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          d = json.load(open("latest.json"))
+          date = d.get("date", "")
+          sigs = d.get("signals", [])
+          have = sum(1 for s in sigs
+                     if ((s.get("listen") or {}).get("en") or {}).get("audioURL"))
+          complete = (len(sigs) == 5 and have == 5)
+          print(f"date={date}")
+          print(f"needed={'false' if complete else 'true'}")
+          import sys
+          print(f"latest={date} · signals={len(sigs)} · listen.en audioURLs={have} · "
+                f"{'COMPLETE — skip' if complete else 'MISSING — generate'}", file=sys.stderr)
+          PY
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check.outputs.needed }}" = "true" ]; then
+            echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: Listen missing → generating" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: listen.en already complete (or today's edition not merged yet) → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  # ── 2) Generate — only when Listen is missing for the merged latest date ───────────
+  listen:
+    needs: probe
+    if: needs.probe.outputs.needed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DATE: ${{ needs.probe.outputs.date }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install tools (ffmpeg for ffprobe, wrangler for R2)
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          npm install -g wrangler
+          pip install pyyaml
+
+      # Same gates as the manual workflow — the edition must exist, match DATE, and be
+      # what latest points at (true by construction here, but re-checked: fail-closed).
+      - name: Gate — edition exists and matches DATE
+        run: |
+          test -f "editions/${DATE}.json" || { echo "::error::editions/${DATE}.json not found"; exit 1; }
+          python -c "import json,sys; d=json.load(open('editions/${DATE}.json')); sys.exit(0 if d.get('date')=='${DATE}' and len(d.get('signals',[]))==5 else 1)" \
+            || { echo "::error::edition date/signal-count mismatch"; exit 1; }
+
+      - name: Gate — latest points to DATE
+        run: |
+          python -c "import json,sys; d=json.load(open('latest.json')); sys.exit(0 if d.get('date')=='${DATE}' else 1)" \
+            || { echo "::error::latest.json no longer points to ${DATE} — aborting"; exit 1; }
+
+      # Fail-closed chain: listen_generate writes the manifest ONLY after all 5 clips
+      # generate, pass drift, upload to R2, and verify publicly.
+      - name: Generate dialogue + upload to R2 + write manifest
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SIGNALS_LISTEN_MODEL: ${{ secrets.SIGNALS_LISTEN_MODEL }}
+          EXPLAINER_VOICE: ${{ secrets.EXPLAINER_VOICE }}
+          LISTENER_VOICE: ${{ secrets.LISTENER_VOICE }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python pipeline/listen_generate.py "$DATE"
+
+      - name: Inject listen.en into edition + latest, validate
+        run: python pipeline/listen_inject_edition.py "$DATE"
+
+      # scratch/ is temporary synthesis working data — never committed; must be removed
+      # before the guard or it trips "unexpected change".
+      - name: Clean generated scratch audio
+        run: rm -rf scratch
+
+      - name: Guard — only feed metadata files changed (no MP3s, no stray files)
+        run: |
+          CHANGED="$(git status --porcelain)"
+          echo "$CHANGED"
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            p="${line:3}"
+            case "$p" in
+              "editions/${DATE}.json"|latest.json|pipeline/listen_manifest.json) ;;
+              *) echo "::error::unexpected change: $p"; exit 1;;
+            esac
+          done <<< "$CHANGED"
+
+      - name: Open Listen PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SIGNALS_PAT || github.token }}
+          base: main
+          branch: "listen/${{ needs.probe.outputs.date }}"
+          add-paths: |
+            editions/${{ needs.probe.outputs.date }}.json
+            latest.json
+            pipeline/listen_manifest.json
+          commit-message: "Add EN Listen dialogue for ${{ needs.probe.outputs.date }} (signals 1–5)"
+          title: "Listen dialogue — ${{ needs.probe.outputs.date }} (auto)"
+          labels: listen, auto
+          delete-branch: true
+          body: |
+            Automated **Auto Generate Listen** for **${{ needs.probe.outputs.date }}** — opened
+            with auto-merge ON after Daily Auto Publish landed the edition.
+            - Fresh EN two-speaker dialogue (LLM, grounded in this edition's stories)
+            - MP3s uploaded to R2: `audio/${{ needs.probe.outputs.date }}/signal-0N-dialogue-en.mp3`
+            - `listen.en` injected into `editions/${{ needs.probe.outputs.date }}.json` + `latest.json`
+            - All 5 clips publicly verified; `validate_feed` + consistency passed.
+
+      # Merge RELIABLY or FAIL LOUDLY — same policy as Daily Auto Publish: a silently
+      # unmerged PR is how editions went missing before. Immediate squash first; if branch
+      # protection blocks it, enable auto-merge; if neither sticks, fail the run.
+      - name: Merge Listen PR (or fail loudly)
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.SIGNALS_PAT || github.token }}
+          PR: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          set -uo pipefail
+          echo "Merging Listen PR #$PR for $DATE"
+          how=""
+          if gh pr merge "$PR" --squash --delete-branch; then
+            how="immediate-squash"
+          elif gh pr merge "$PR" --squash --auto --delete-branch; then
+            how="auto-merge-enabled"
+          else
+            echo "::warning::both immediate-merge and auto-merge-enable calls failed for PR #$PR"
+          fi
+          merged=$(gh pr view "$PR" --json merged -q .merged 2>/dev/null || echo unknown)
+          automq=$(gh pr view "$PR" --json autoMergeRequest -q '.autoMergeRequest != null' 2>/dev/null || echo false)
+          echo "PR #$PR — attempt=${how:-none} merged=$merged autoMerge=$automq"
+          if [ "$merged" = "true" ]; then
+            echo "### Merged ✅ Listen PR #$PR ($DATE) via ${how}" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$automq" = "true" ]; then
+            echo "### Auto-merge enabled ✅ Listen PR #$PR ($DATE) — merges when checks pass" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::Listen PR #$PR ($DATE) is NOT merged and auto-merge is NOT enabled. Check SIGNALS_PAT / 'Allow auto-merge' repo setting. Failing loudly."
+            exit 1
+          fi

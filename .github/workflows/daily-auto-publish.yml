@@ -30,6 +30,10 @@ on:
         description: "Edition date YYYY-MM-DD (default: today in America/New_York)"
         required: false
         default: ""
+      force:
+        description: "Bypass the 'target must be newer than latest' gate (Gate B) — manual recovery only"
+        required: false
+        default: "false"
 
 permissions:
   contents: write               # create the publish/<date> branch
@@ -75,6 +79,19 @@ jobs:
             echo "Built $(date -u +%FT%TZ) · mode: PR + auto-merge"
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # GATE C — never publish more than 1 day ahead of the East Coast calendar. This is
+      # what makes a stray future-dated run (the old tomorrow-UTC default, a typo'd manual
+      # date) fail closed instead of pinning latest.json to a date that hasn't happened.
+      - name: Gate — target is not more than 1 day ahead of America/New_York
+        run: |
+          MAX="$(TZ=America/New_York date -d '+1 day' +%Y-%m-%d)"
+          echo "target=$EDITION_DATE · max allowed=$MAX (tomorrow ET)"
+          if [[ "$EDITION_DATE" > "$MAX" ]]; then
+            echo "::error::target $EDITION_DATE is more than 1 day ahead of the ET calendar (max $MAX) — refusing."
+            echo "- SKIPPED: target too far in the future ($EDITION_DATE > $MAX)" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
       # GATE A — never overwrite an existing edition (immutability).
       - name: Gate — target edition does not already exist
         run: |
@@ -85,8 +102,15 @@ jobs:
           fi
 
       # GATE B — never move latest.json backwards (or republish the same date).
+      # `force: true` (manual dispatch only) bypasses THIS gate for recovery scenarios;
+      # Gates A and C always apply.
       - name: Gate — target is newer than current latest.json
         run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            echo "::warning::Gate B BYPASSED via force=true (manual dispatch) — target $EDITION_DATE may not be newer than latest."
+            echo "- Gate B bypassed via force=true" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
           PREV="$(python -c "import json,os;print(json.load(open('latest.json'))['date'] if os.path.exists('latest.json') else '')")"
           echo "current latest=$PREV · target=$EDITION_DATE"
           # ISO YYYY-MM-DD compares correctly lexicographically. Require target strictly newer.
@@ -190,6 +214,48 @@ jobs:
           else
             echo "::warning::this edition reuses an imageURL within the 90-edition cooldown (pools may be too small — add verified images). Publishing continues."
           fi
+
+      # 10d) SYNC WITH LATEST MAIN — the anti-conflict step. The job checked out main at
+      #      start; anything that merged since (a Listen PR, a backfill, a manual fix)
+      #      moves latest.json on main and would leave this PR stuck "conflicted" —
+      #      GitHub auto-merge cannot resolve even trivial conflicts (that is exactly how
+      #      PR #60 got stuck). So: keep the two freshly built artifacts, hard-reset onto
+      #      CURRENT origin/main, re-run the safety gates against that fresh base, put the
+      #      artifacts back (the publish branch's latest.json wins BY CONSTRUCTION — the
+      #      PR's purpose is to point latest at this date), and re-validate. The PR then
+      #      opens zero commits behind main and merges cleanly seconds later.
+      - name: Sync with latest main (publish artifacts win latest.json)
+        run: |
+          set -euo pipefail
+          cp "editions/${EDITION_DATE}.json" /tmp/publish-edition.json
+          cp latest.json /tmp/publish-latest.json
+          git fetch origin main
+          BEFORE="$(git rev-parse HEAD)"; AFTER="$(git rev-parse origin/main)"
+          if [ "$BEFORE" = "$AFTER" ]; then
+            echo "main unchanged since checkout ($BEFORE) — no sync needed"
+          else
+            echo "main moved: $BEFORE → $AFTER — re-basing publish artifacts onto fresh main"
+            git reset --hard origin/main
+            # Re-run Gate A on the FRESH base: the edition may have been published meanwhile.
+            if [ -f "editions/${EDITION_DATE}.json" ]; then
+              echo "::error::editions/${EDITION_DATE}.json appeared on main during this run — refusing to overwrite."
+              exit 1
+            fi
+            # Re-run Gate B on the FRESH base (unless force): latest may have advanced past target.
+            if [ "${{ github.event.inputs.force }}" != "true" ]; then
+              PREV="$(python -c "import json,os;print(json.load(open('latest.json'))['date'] if os.path.exists('latest.json') else '')")"
+              if [ -n "$PREV" ] && ! [[ "$EDITION_DATE" > "$PREV" ]]; then
+                echo "::error::fresh main's latest.json ($PREV) is already >= target $EDITION_DATE — refusing to move backwards."
+                exit 1
+              fi
+            fi
+            cp /tmp/publish-edition.json "editions/${EDITION_DATE}.json"
+            cp /tmp/publish-latest.json latest.json
+          fi
+          # Validation AFTER any resolution — the artifacts must still be a coherent repo state.
+          python validate_feed.py latest.json
+          python validate_feed.py --consistency .
+          echo "- Synced with latest main; validation re-passed on fresh base" >> "$GITHUB_STEP_SUMMARY"
 
       # 11) PRE-PUSH GUARD — the working tree may contain ONLY the two expected files.
       - name: Clean Python cache before guard

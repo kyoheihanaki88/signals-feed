@@ -1470,6 +1470,293 @@
           ]
         }
       }
+    },
+    "2026-07-07": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-07/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a Syrian official being convicted in Austria. What happened?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "A former Syrian intelligence chief from the city of Raqqa was found guilty by a court in Vienna. He was convicted of torture and sexual abuse of people who opposed Bashar al-Assad.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, how did an Austrian court end up trying someone for crimes in Syria?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's a good question. Some countries have laws allowing them to prosecute serious human rights crimes regardless of where they happened. Austria appears to be using that authority here.",
+              "duration": 10.109388
+            },
+            {
+              "speaker": "listener",
+              "text": "Was he the only one on trial?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. A second Syrian official was also found guilty—the former police chief in Raqqa. He was convicted of abusing political opponents as well.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know anything about the intelligence chief?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's identified only as Khaled al-H. He's a member of the Druze ethno-religious minority and was convicted specifically of committing torture.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "This must be part of a broader effort to hold people accountable for what happened in Syria.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does seem that way. Courts in Europe have been increasingly willing to pursue these cases as victims and former officials have ended up in their countries.",
+              "duration": 8.594286
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-07/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about a huge funeral procession in Iran. What happened?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's supreme leader, Ali Khamenei, was assassinated. On Monday, a massive crowd—officials say millions—gathered in Tehran for his funeral procession.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "Millions? That's enormous. What was the scene like?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mourners wore black and carried flags with the slogan 'We will rise.' Many also held Iranian flags and pictures of Khamenei. The Tehran metro was packed with people trying to join the march.",
+              "duration": 10.579592
+            },
+            {
+              "speaker": "listener",
+              "text": "How is this being interpreted politically?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some observers are calling the turnout a response to what they see as a misguided war launched on Iran by Donald Trump back in February.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know more about how Khamenei died?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iranian officials say his absence before this wasn't due to wounds from an Israeli attack on the presidential building, but rather concerns for his safety. The details around his assassination are still emerging.",
+              "duration": 11.52
+            },
+            {
+              "speaker": "listener",
+              "text": "This feels like a major turning point for the region.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Iran is now without its supreme leader, and the scale of this procession shows just how significant and uncertain this moment is.",
+              "duration": 7.78449
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-07/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about Mohamed Salah and Egypt's football history. What's going on there?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an interesting tension. Salah led Egypt to two World Cups — 2018 and 2026 — which is a big deal. But for some Egyptian fans, that doesn't quite make up for something from the past.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they still upset about?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "There was a generation of players, called the 'golden generation,' who never made it to the World Cups in 2006, 2010, or 2014. For those fans, that's a lasting disappointment.",
+              "duration": 10.814694
+            },
+            {
+              "speaker": "listener",
+              "text": "So even though Salah got them there, it's not enough?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. And it's complicated by the fact that Egypt was eliminated first in 2018. Plus, the national team hasn't won the Africa Cup of Nations since 2010, and Salah's shouldered a lot of blame for that drought.",
+              "duration": 12.982857
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems harsh, given he's one of the best players in the Premier League.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. But that's the weight of expectation. He's the captain and leader now, so frustrations tend to land on him, fairly or not.",
+              "duration": 7.418776
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-07/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's this whole world of agents representing online creators now?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. UTA, one of the big talent agencies, is deeply involved in the creator economy — representing people who built their careers online.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that actually look like? What are these agents doing?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're helping creators launch their own products. So it's not just about making videos or podcasts anymore — these stars are creating physical goods and brands.",
+              "duration": 7.967347
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a big shift from just making content.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And the conversation also touched on AI and social media platforms — both seen as potentially destabilizing forces for creators right now.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Destabilizing how?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "The piece doesn't spell it out, but those technologies are changing how content gets made and distributed, which affects how creators build careers and earn money.",
+              "duration": 8.620408
+            },
+            {
+              "speaker": "listener",
+              "text": "And this story came from someone who actually worked at UTA?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. They started at another agency, then moved to UTA and worked on the traditional literary side before getting into this world.",
+              "duration": 6.765714
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-07/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Nintendo's stopping sales of the original Switch in Europe?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, starting mid-February next year. That includes the regular Switch, the Lite, and the OLED model.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "That's almost ten years since it first launched, right?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The Switch came out in March 2017, so it'll be just shy of a decade.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "Why now though? Is this just about the Switch 2?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Partly. There's a bigger reason — new European battery regulations. Nintendo's making a version of the Switch 2 with a replaceable battery to comply.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "Oh, so users can swap the battery themselves?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. That updated Switch 2 is expected to roll out in the fall. They're also updating Joy-Con controllers and some other accessories the same way.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "And the original Switch just doesn't meet those rules?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems Nintendo decided it's simpler to phase it out rather than redesign older hardware. The focus is clearly on the new generation now.",
+              "duration": 7.836735
+            }
+          ]
+        }
+      }
     }
   }
 }

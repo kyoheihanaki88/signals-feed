@@ -13,19 +13,21 @@ name: Daily Auto Publish
 # required checks pass), and it keeps validate-feed as a gate. See the branch-protection /
 # required-settings notes in DAILY_OPS.md.
 #
-# Timing: editions serve the user's local morning; Tokyo (UTC+9) is the earliest. 5:30 AM Tokyo =
-# 20:30 UTC the day before, so this runs at 17:00 UTC and builds the edition dated "tomorrow UTC".
+# Timing: editions serve the user's EAST COAST morning (America/New_York). The brief should
+# be ready around 5:00 AM ET, so this runs at 09:00 UTC (= 5:00 AM EDT; 4:00 AM EST in
+# winter — still comfortably before the morning) and builds the edition dated TODAY in
+# America/New_York.
 #
 # Manual fallbacks (no schedule): daily-auto-edition.yml (review PR, no auto-merge) and
 # build-edition.yml (build from committed drafts → review PR).
 
 on:
   schedule:
-    - cron: "0 17 * * *"        # 17:00 UTC — before the 20:30 UTC Tokyo-5:30 deadline, with buffer
+    - cron: "0 9 * * *"         # 09:00 UTC — 5:00 AM ET (EDT); publishes today's ET edition
   workflow_dispatch:
     inputs:
       date:
-        description: "Edition date YYYY-MM-DD (default: tomorrow UTC)"
+        description: "Edition date YYYY-MM-DD (default: today in America/New_York)"
         required: false
         default: ""
 
@@ -56,13 +58,15 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml    # scout/build read yaml; ranker/validators are stdlib-only
 
-      - name: Resolve edition date (tomorrow UTC unless overridden)
+      - name: Resolve edition date (today in America/New_York unless overridden)
         id: date
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
             EDITION_DATE="${{ github.event.inputs.date }}"
           else
-            EDITION_DATE="$(date -u -d '+1 day' +%Y-%m-%d)"
+            # ET-morning schedule: the edition IS today's date on the East Coast.
+            # (TZ, not "+1 day" — that belonged to the old Tokyo-morning schedule.)
+            EDITION_DATE="$(TZ=America/New_York date +%Y-%m-%d)"
           fi
           echo "EDITION_DATE=$EDITION_DATE" >> "$GITHUB_ENV"
           echo "edition_date=$EDITION_DATE" >> "$GITHUB_OUTPUT"

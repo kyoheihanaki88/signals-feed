@@ -33,6 +33,55 @@
           ],
           "whyItMatters": "米国による攻撃と制裁免除の撤回を受け、両国が署名した停戦合意は崩壊寸前の状態にある。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-08/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the ceasefire between the US and Iran... it sounds like it's falling apart?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Both sides are accusing each other of breaking the agreement that was signed on June 17th.",
+              "duration": 5.877551
+            },
+            {
+              "speaker": "listener",
+              "text": "What actually happened?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "The US launched strikes around the strait of Hormuz and also revoked a temporary waiver that let Iran export oil. Iran then hit back at US bases in Bahrain and Kuwait.",
+              "duration": 9.848163
+            },
+            {
+              "speaker": "listener",
+              "text": "And Trump thinks the ceasefire is over?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "He said he thought it was over. He also said the US attacked what he called very dangerous people affiliated with Iran.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter so much?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "It shows how fragile the agreement is. The strikes and the decision to cancel the oil waiver have brought things right to the edge of unraveling completely.",
+              "duration": 7.967347
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +113,65 @@
             "K2航空は当局と連携しながら捜索に協力している"
           ],
           "whyItMatters": "フライトレーダー24のデータによると、機齢27年のこの貨物機はアラブ首長国連邦のシャルジャを出発後、急激な高度変化を繰り返したのち、カラチ南西の海上に墜落した可能性がある。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-08/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing news about a cargo plane that's gone missing off Pakistan's coast?",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A Boeing 737 cargo plane operated by K2 Airways disappeared after flying from Sharjah in the United Arab Emirates. Search efforts are now under way.",
+              "duration": 10.527347
+            },
+            {
+              "speaker": "listener",
+              "text": "Do they know what happened to it?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Flight tracking data shows the plane went through some very unusual altitude changes — it dropped about five thousand feet in less than a minute, then climbed back six thousand feet in thirty seconds, before a steep final descent from over thirty-six thousand feet.",
+              "duration": 14.759184
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds alarming. Where did this happen?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Southwest of Karachi. The tracking data suggests it may have gone down into the sea there.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "How old was this plane?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Twenty-seven years old. It's part of Boeing's older 737 family — two generations older than the MAX version that's been in the news for safety issues.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "What's K2 Airways saying?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've said they're cooperating with Pakistan's Civil Aviation Authority and other government agencies. Boeing hasn't commented yet.",
+              "duration": 6.922449
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,55 @@
           ],
           "whyItMatters": "トランプ大統領の公の要請を受けてFIFAがバログンの退場処分を取り消したことで、大会における審判の公正性への懸念はいっそう深まっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-08/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the World Cup quarterfinals are all set?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Eight teams made it through—France, Morocco, Norway, England, Spain, Belgium, Argentina, and Switzerland. The matches will be played across the United States.",
+              "duration": 9.978776
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds exciting. But I'm hearing there's some controversy too?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "There is. Egypt has alleged officiating bias after losing to Argentina. They're disputing how the match was handled.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "And there's something about the US team and President Trump?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. FIFA rescinded a red-card suspension for a player named Balogun after Trump publicly requested it. That decision has drawn a lot of scrutiny.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "So people are worried about officiating integrity overall?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. These incidents have raised broader concerns about fairness and how decisions are being made at this tournament.",
+              "duration": 6.269388
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +286,65 @@
           ],
           "whyItMatters": "プライバシーへの懸念は個人にとどまらず、一部の公共施設ではデバイスの持ち込み禁止を検討する動きも出ている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-08/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Meta's doing something new with their smart glasses?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. They're rolling out an update that will disable the camera if someone tampers with the privacy light.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "The privacy light — that's the little LED that shows when you're recording?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It lets people nearby know the camera is on. But some users have been tampering with it, even physically drilling into it.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "Why would someone do that?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Presumably to record without others knowing. Meta's tried to discourage this before, but now they're taking a harder line.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "So if the light's been messed with, the camera just won't work?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The glasses will detect the tampering and shut the camera off entirely.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "I guess privacy concerns have been pretty serious with these devices.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "They have. Some public venues are even considering banning the glasses altogether because of those worries.",
+              "duration": 5.198367
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +376,65 @@
             "この認定があることで、同番組は候補者に平等な放送時間を義務付ける「イコール・タイム・ルール」の適用外となっている"
           ],
           "whyItMatters": "ABCは火曜日にFCCへ送った書簡の中で、今回の調査は「現政権に批判的とみなされた番組」を標的にするものであり、報道の独立性を脅かすと主張している。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-08/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw ABC is pushing back against the FCC. What's this about?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The FCC opened an investigation into The View — specifically whether it should still count as a real news program.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that classification matter?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "News programs are exempt from the equal time rule, which says if you give one political candidate airtime, you have to offer the same to their opponents.",
+              "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "So what triggered the investigation?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "The View interviewed Representative James Talarico, a Democrat from Texas who's running for Senate. The FCC Chair, Brendan Carr, is now reexamining whether The View qualifies for that news exemption.",
+              "duration": 11.702857
+            },
+            {
+              "speaker": "listener",
+              "text": "And ABC isn't happy about this.",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. In a letter to the FCC, ABC argues the agency is targeting programs it sees as unfriendly to the current administration — and that this threatens editorial independence.",
+              "duration": 11.180408
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's really about who gets to decide what counts as news.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. ABC is telling the government to stay out of its newsrooms.",
+              "duration": 4.362449
+            }
+          ]
         }
       }
     }

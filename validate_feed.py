@@ -126,6 +126,42 @@ def listen_errors(s):
     return errs
 
 
+# Expected shape of a generated EN Listen clip URL: an .mp3 under the edition's OWN date folder,
+# e.g. https://<r2-host>/audio/2026-07-09/signal-03-dialogue-en.mp3
+def listen_ready_errors(feed, date=None):
+    """FAIL-CLOSED promotion gate. A *promoted* pointer (latest.json — the edition the app actually
+    serves) must carry a structurally valid `listen.en.audioURL` for ALL 5 signals, in this edition's
+    own `/audio/<date>/` folder. This is intentionally STRICTER than the optional `listen_errors`
+    shape check: individual editions/<date>.json may be transiently audio-less ("pending" — built by
+    Daily Auto Publish, awaiting Auto Generate Listen), but latest.json must NEVER be served audio-less.
+
+    Structural only — non-empty, https, `.mp3`, correct date folder. Network reachability is verified
+    UPSTREAM at generation time (listen_generate publicly verifies every clip before its PR), so it is
+    deliberately NOT re-checked here: that keeps this a fast, offline, non-flaky required CI gate."""
+    errs = []
+    d = date if date is not None else feed.get("date")
+    sigs = feed.get("signals", [])
+    if len(sigs) != 5:
+        errs.append(f"a promoted pointer must have 5 signals, found {len(sigs)}")
+    for s in sigs:
+        num = s.get("number", "?")
+        en = ((s.get("listen") or {}).get("en") or {})
+        url = en.get("audioURL")
+        if not (isinstance(url, str) and url.strip()):
+            errs.append(f"signal {num} is missing listen.en.audioURL — latest.json must have EN "
+                        f"Listen audio for all 5 signals before it is served (fail-closed)")
+            continue
+        p = urlparse(url)
+        if p.scheme != "https" or not p.netloc:
+            errs.append(f"signal {num} listen.en.audioURL is not https: {url!r}")
+        if not url.endswith(".mp3"):
+            errs.append(f"signal {num} listen.en.audioURL is not an .mp3: {url!r}")
+        if d and f"/audio/{d}/" not in url:
+            errs.append(f"signal {num} listen.en.audioURL is not in this edition's audio folder "
+                        f"(/audio/{d}/): {url!r}")
+    return errs
+
+
 def structural_errors(feed):
     """Lead Signal Rule + content checks — independent of any clock."""
     errors = []
@@ -222,8 +258,19 @@ def validate(path):
     return errors
 
 
+def _is_listen_complete(data, date):
+    """True iff this edition carries valid EN Listen audio for all 5 signals (i.e. promotable)."""
+    return not listen_ready_errors(data, date)
+
+
 def consistency_errors(root):
-    """Repo-level invariants for the date-keyed editions model."""
+    """Repo-level invariants for the date-keyed editions model — FAIL-CLOSED on Listen.
+
+    latest.json (the pointer the app serves) must equal the NEWEST edition that is Listen-complete
+    (EN audio for all 5). Editions that are newer but still awaiting audio ("pending") are allowed
+    to EXIST — Daily Auto Publish writes them and Auto Generate Listen fills the audio — but they
+    must NEVER be what latest.json points at. This is what guarantees the app is never served an
+    audio-less edition (no TTS-as-default)."""
     errors = []
     edir = os.path.join(root, "editions")
     files = sorted(glob.glob(os.path.join(edir, "*.json")))
@@ -248,8 +295,6 @@ def consistency_errors(root):
     if not dated:
         return errors or ["no valid editions found"]
 
-    newest_date, newest_path, newest_data = max(dated, key=lambda t: t[0])
-
     latest_path = os.path.join(root, "latest.json")
     if not os.path.exists(latest_path):
         errors.append("latest.json is missing")
@@ -259,15 +304,27 @@ def consistency_errors(root):
     except Exception as e:
         return errors + [f"latest.json is not valid JSON: {e}"]
 
+    # (1) The served pointer must ITSELF be Listen-complete (fail-closed).
+    errors += [f"latest.json: {e}" for e in listen_ready_errors(latest, latest.get("date"))]
+
+    # (2) latest.json must equal the NEWEST Listen-complete edition. Newer pending (audio-less)
+    #     editions are permitted to exist and are skipped for the pointer comparison.
+    complete = [(dt, f, data) for (dt, f, data) in dated if _is_listen_complete(data, dt)]
+    if not complete:
+        errors.append("no Listen-complete edition exists yet (every edition is awaiting EN audio) "
+                      "— latest.json cannot be validated")
+        return errors
+    newest_date, newest_path, newest_data = max(complete, key=lambda t: t[0])
+
     if latest.get("date") != newest_date:
         errors.append(
-            f"latest.json date {latest.get('date')!r} != newest edition {newest_date} "
-            f"({os.path.basename(newest_path)}) — latest.json must point at the newest edition "
-            f"(stale-date regression)")
+            f"latest.json date {latest.get('date')!r} != newest Listen-complete edition {newest_date} "
+            f"({os.path.basename(newest_path)}) — latest.json must point at the newest edition that "
+            f"has EN Listen for all 5 (an audio-less edition must not be promoted; stale-date regression)")
     elif latest != newest_data:
         errors.append(
             f"latest.json content differs from editions/{newest_date}.json — "
-            f"latest.json must be an exact copy of the newest edition")
+            f"latest.json must be an exact copy of the newest Listen-complete edition")
 
     return errors
 
@@ -309,6 +366,15 @@ if __name__ == "__main__":
     elif len(sys.argv) == 3 and sys.argv[1] == "--image-reuse":
         errs = image_reuse_errors(sys.argv[2])
         label = "image reuse (newest edition vs last 90 — cooldown)"
+    elif len(sys.argv) == 3 and sys.argv[1] == "--listen-ready":
+        # Fail-closed promotion gate: a pointer file (latest.json) must carry EN Listen audio for
+        # all 5 signals in its own date folder before it may be served.
+        try:
+            data = json.load(open(sys.argv[2]))
+            errs = listen_ready_errors(data, data.get("date"))
+        except Exception as e:
+            errs = [f"{sys.argv[2]} is not valid JSON: {e}"]
+        label = f"listen-ready ({sys.argv[2]})"
     elif len(sys.argv) == 2 and not sys.argv[1].startswith("--"):
         errs = validate(sys.argv[1])
         label = sys.argv[1]
@@ -316,6 +382,7 @@ if __name__ == "__main__":
         print("usage: python3 validate_feed.py <feed.json>")
         print("       python3 validate_feed.py --consistency <repo-root>")
         print("       python3 validate_feed.py --image-reuse <repo-root>")
+        print("       python3 validate_feed.py --listen-ready <pointer.json>")
         sys.exit(2)
 
     if errs:

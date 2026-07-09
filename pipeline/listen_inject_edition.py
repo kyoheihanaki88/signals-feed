@@ -5,8 +5,10 @@ Run AFTER listen_generate.py has produced + uploaded the date-scoped MP3s and wr
     python3 pipeline/listen_inject_edition.py 2026-06-30
 
 Safety: only adds signal.listen (never touches article text / audioURL / localized.ja); writes
-editions/<date>.json and (if it currently points at <date>) latest.json byte-identically; validates
-the edition + repo consistency and exits non-zero (no usable change) on failure. Does NOT commit.
+editions/<date>.json and PROMOTES latest.json to it byte-identically (only forward — never moves the
+served pointer to an older date). This is the sole place latest.json advances to a new date, so the
+served pointer is never audio-less. Validates the edition + repo consistency and exits non-zero (no
+usable change) on failure. Does NOT commit.
 """
 import sys, os, json, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,10 +37,19 @@ def main():
     text = json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
     open(edition, "w", encoding="utf-8").write(text)
     wrote = [os.path.relpath(edition, ROOT)]
+
+    # PROMOTE latest.json to this now-Listen-complete edition. This is the ONLY place the served
+    # pointer advances to a new date (Daily Auto Publish deliberately leaves latest.json alone —
+    # fail-closed). Write latest.json only when this date is >= the current latest date, so the
+    # pointer is never moved BACKWARDS. Because `text` already contains the injected EN audio, the
+    # promoted latest.json is never audio-less.
     latest = os.path.join(ROOT, "latest.json")
-    if os.path.exists(latest) and json.load(open(latest, encoding="utf-8")).get("date") == date:
+    cur = json.load(open(latest, encoding="utf-8")).get("date") if os.path.exists(latest) else None
+    if cur is None or date >= cur:
         open(latest, "w", encoding="utf-8").write(text)
         wrote.append("latest.json")
+    else:
+        print(f"latest.json stays at {cur} (newer than {date}) — not moving the pointer backwards")
     print("wrote:", ", ".join(wrote))
 
     v = os.path.join(ROOT, "validate_feed.py")

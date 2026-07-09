@@ -52,7 +52,15 @@ jobs:
             python3 validate_feed.py "$f"
             echo "::endgroup::"
           done <<< "${{ steps.changed.outputs.files }}"
-          echo "::group::consistency (latest.json == newest edition)"
+          # FAIL-CLOSED promotion gate: if this PR changes latest.json (the served pointer), it must
+          # carry EN Listen audio for all 5 signals in its own date folder — latest.json is never
+          # served audio-less. (Individual editions/*.json may be transiently "pending" audio.)
+          if printf '%s\n' "${{ steps.changed.outputs.files }}" | grep -qx 'latest.json'; then
+            echo "::group::listen-ready (latest.json must have EN audio for all 5)"
+            python3 validate_feed.py --listen-ready latest.json
+            echo "::endgroup::"
+          fi
+          echo "::group::consistency (latest.json == newest Listen-complete edition)"
           python3 validate_feed.py --consistency .
           echo "::endgroup::"
 

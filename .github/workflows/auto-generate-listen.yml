@@ -48,21 +48,34 @@ jobs:
         with:
           ref: main
 
-      - name: Read latest.json — date + listen.en coverage
+      - name: Read newest edition — date + listen.en coverage
         id: check
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json
-          d = json.load(open("latest.json"))
-          date = d.get("date", "")
+          import json, glob, os, re, sys
+          # Target the NEWEST editions/<date>.json, NOT latest.json. Under fail-closed publishing the
+          # edition lands first and latest.json is only advanced by THIS workflow once EN audio exists.
+          # So we must generate for the newest edition that still lacks Listen — reading latest.json
+          # would wrongly report "complete" (it still points at yesterday) and never generate.
+          eds = []
+          for f in glob.glob("editions/*.json"):
+              m = re.search(r"(\d{4}-\d{2}-\d{2})\.json$", os.path.basename(f))
+              if m:
+                  eds.append((m.group(1), f))
+          if not eds:
+              print("date=")
+              print("needed=false")
+              print("no editions found — nothing to do", file=sys.stderr)
+              sys.exit(0)
+          date, path = max(eds)
+          d = json.load(open(path))
           sigs = d.get("signals", [])
           have = sum(1 for s in sigs
                      if ((s.get("listen") or {}).get("en") or {}).get("audioURL"))
           complete = (len(sigs) == 5 and have == 5)
           print(f"date={date}")
           print(f"needed={'false' if complete else 'true'}")
-          import sys
-          print(f"latest={date} · signals={len(sigs)} · listen.en audioURLs={have} · "
+          print(f"newest edition={date} · signals={len(sigs)} · listen.en audioURLs={have} · "
                 f"{'COMPLETE — skip' if complete else 'MISSING — generate'}", file=sys.stderr)
           PY
 
@@ -71,7 +84,7 @@ jobs:
           if [ "${{ steps.check.outputs.needed }}" = "true" ]; then
             echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: Listen missing → generating" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: listen.en already complete (or today's edition not merged yet) → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY"
+            echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: newest edition already has EN Listen for all 5 → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY"
           fi
 
   # ── 2) Generate — only when Listen is missing for the merged latest date ───────────
@@ -107,10 +120,13 @@ jobs:
           python -c "import json,sys; d=json.load(open('editions/${DATE}.json')); sys.exit(0 if d.get('date')=='${DATE}' and len(d.get('signals',[]))==5 else 1)" \
             || { echo "::error::edition date/signal-count mismatch"; exit 1; }
 
-      - name: Gate — latest points to DATE
+      # We are about to PROMOTE latest.json forward to DATE (this workflow owns that promotion).
+      # Guard only against moving the served pointer BACKWARDS: latest.json must not already be
+      # ahead of DATE. (During the normal window latest.json still points at the previous day.)
+      - name: Gate — latest.json is not ahead of DATE (promote forward, never back)
         run: |
-          python -c "import json,sys; d=json.load(open('latest.json')); sys.exit(0 if d.get('date')=='${DATE}' else 1)" \
-            || { echo "::error::latest.json no longer points to ${DATE} — aborting"; exit 1; }
+          python -c "import json,sys; l=json.load(open('latest.json')).get('date'); sys.exit(0 if (l is None or l <= '${DATE}') else 1)" \
+            || { echo "::error::latest.json is ahead of ${DATE} — aborting to avoid moving the served pointer backwards"; exit 1; }
 
       # Fail-closed chain: listen_generate writes the manifest ONLY after all 5 clips
       # generate, pass drift, upload to R2, and verify publicly.

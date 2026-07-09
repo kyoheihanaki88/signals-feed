@@ -45,15 +45,22 @@ def git(*args, check=False):
     return r
 
 
-def write_edition(feed, date):
-    """Write editions/<date>.json + latest.json (an exact copy of it). Returns the edition path."""
+def write_edition(feed, date, promote_latest=False):
+    """Write editions/<date>.json (always). Write latest.json — the served pointer — ONLY when
+    promote_latest is True.
+
+    FAIL-CLOSED default (promote_latest=False): the daily pipeline writes the immutable edition here
+    but does NOT advance latest.json. Auto Generate Listen promotes latest.json once EN Listen audio
+    exists for all 5 signals, so the app is never served an audio-less edition. Promotion is opt-in
+    (`--promote-latest`) for manual recovery only. Returns the edition path."""
     os.makedirs(EDITIONS, exist_ok=True)
     edition_path = os.path.join(EDITIONS, f"{date}.json")
     text = json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
     with open(edition_path, "w") as f:
         f.write(text)
-    with open(LIVE, "w") as f:
-        f.write(text)
+    if promote_latest:
+        with open(LIVE, "w") as f:
+            f.write(text)
     return edition_path
 
 
@@ -64,7 +71,11 @@ def main():
     mode.add_argument("--apply", action="store_true",
                       help="create the publish/<DATE> branch + commit both files (no push/PR)")
     mode.add_argument("--write", action="store_true",
-                      help="write both files in place, no git (CI opens the PR)")
+                      help="write the edition file in place, no git (CI opens the PR)")
+    ap.add_argument("--promote-latest", action="store_true",
+                    help="ALSO write latest.json now (advance the served pointer). Default OFF — "
+                         "fail-closed: Auto Generate Listen promotes latest.json once EN audio "
+                         "exists for all 5. Manual recovery only.")
     args = ap.parse_args()
 
     label = "APPLY" if args.apply else ("WRITE" if args.write else "DRY-RUN")
@@ -122,10 +133,15 @@ def main():
           f"skipped={lstats['skipped']} none={lstats['no_entry']} ---\n")
 
     edition_rel = os.path.relpath(os.path.join(EDITIONS, f"{date}.json"), ROOT)
-    print(f"plan: write {edition_rel}  +  latest.json   (edition date {date})")
+    promote = args.promote_latest
+    target = f"{edition_rel}  +  latest.json (promote)" if promote else f"{edition_rel}  (edition only)"
+    print(f"plan: write {target}   (edition date {date})")
     old = json.load(open(LIVE)) if os.path.exists(LIVE) else {"date": "(none)", "signals": []}
     new_lead = next((s for s in sigs if s.get("lead")), None)
-    print(f"  latest.json date : {old.get('date')}  →  {date}")
+    if promote:
+        print(f"  latest.json date : {old.get('date')}  →  {date}  (promoted now)")
+    else:
+        print(f"  latest.json date : {old.get('date')}  (unchanged — Auto Generate Listen promotes to {date} once EN audio exists)")
     print(f"  lead             : {(new_lead or {}).get('headline','(none)')[:60]!r}")
 
     # 5. DRY-RUN stops here
@@ -139,28 +155,38 @@ def main():
     if args.apply:
         if not os.path.isdir(os.path.join(ROOT, ".git")):
             fail("not a git repository — cannot prepare a publish branch safely")
-        if git("status", "--porcelain", "latest.json").stdout.strip():
+        if promote and git("status", "--porcelain", "latest.json").stdout.strip():
             fail("latest.json already has uncommitted changes — commit/stash them first")
         branch = f"publish/{date}"
         if git("rev-parse", "--verify", branch).returncode == 0:
             fail(f"branch {branch} already exists — delete it or publish from it manually")
         git("checkout", "-b", branch, check=True)
-        edition_path = write_edition(feed, date)
+        edition_path = write_edition(feed, date, promote_latest=promote)
         run_consistency()
-        git("add", os.path.relpath(edition_path, ROOT), "latest.json", check=True)
+        add_paths = [os.path.relpath(edition_path, ROOT)]
+        if promote:
+            add_paths.append("latest.json")
+        git("add", *add_paths, check=True)
         git("commit", "-m", f"Publish Signals edition {date}", check=True)
         head = git("rev-parse", "--short", "HEAD").stdout.strip()
-        print(f"\n✓ wrote {edition_rel} + latest.json, committed on {branch} ({head})")
+        wrote = f"{edition_rel}" + (" + latest.json" if promote else " (edition only)")
+        print(f"\n✓ wrote {wrote}, committed on {branch} ({head})")
         print("  (NOT pushed, NO PR opened, production main NOT changed yet.)")
+        if not promote:
+            print("  (latest.json NOT advanced — Auto Generate Listen promotes it once EN audio exists.)")
         print("\nNext (you do these manually):")
         print(f"  git push -u origin {branch}")
         print(f"  open a PR {branch} → main  (validate-feed must go green) → review → MERGE → deploy")
         return
 
-    # 6b. WRITE: write both files only, no git. CI creates the branch + PR.
-    write_edition(feed, date)
+    # 6b. WRITE: write the edition (and latest.json only if --promote-latest), no git. CI opens the PR.
+    write_edition(feed, date, promote_latest=promote)
     run_consistency()
-    print(f"\n✓ wrote {edition_rel} + latest.json (no git). CI will open the PR.")
+    if promote:
+        print(f"\n✓ wrote {edition_rel} + latest.json (promoted; no git). CI will open the PR.")
+    else:
+        print(f"\n✓ wrote {edition_rel} (edition only; latest.json promoted later by Auto Generate "
+              f"Listen). CI will open the PR.")
 
 
 def run_consistency():

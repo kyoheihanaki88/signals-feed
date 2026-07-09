@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "今回の応酬は、6月17日に両国が停戦延長と恒久的な和平交渉の余地を設けることを目的とした覚書に署名して以来、最大規模の衝突となった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the ceasefire between the US and Iran—it's still holding, right?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's under serious strain. Overnight Thursday, the US launched airstrikes in Iran that killed at least fourteen people. Iran then responded by striking targets in Gulf countries.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like more than just a strain. Are we talking about a full breakdown?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet, but these were the most intense strikes since the ceasefire was extended last month. The president posted videos of the explosions and issued new threats afterward.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait—he'd said something different earlier, hadn't he?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Hours before the strikes, he promised they'd be very fast and wouldn't lead to long-term fighting.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they actually disagreeing about at this point?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Significant gaps remain—mainly over Iran's control of the Strait of Hormuz and inspections of nuclear facilities. Those issues haven't been resolved in negotiations.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "So the ceasefire agreement from June is still technically in place?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Technically, yes. That memorandum was meant to give space for talks toward a permanent truce, but Thursday's strikes show how fragile that space really is.",
+              "duration": 8.306939
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "共和党のスーザン・コリンズ議員への対抗馬が「透明かつ民主的な」方法で選ばれると確認できた時点で、正式に撤退届を提出するとしている。"
           ],
           "whyItMatters": "6月には、プラトナーが既婚中に他の女性と性的なメッセージをやり取りしていたとニューヨーク・タイムズが報じており、妻もその疑惑をあらかじめ選挙陣営に伝えていたという。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Graham Platner suspended his Senate campaign in Maine. What happened?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "A woman accused him of sexual assault. In the days after that, Democrats called on him to drop out of the race.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "This was considered an important race, right?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Democrats see it as pivotal to their chances of gaining control of the Senate. He's running against Republican Susan Collins.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "Did he say why he's suspending now?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "In a video, he said it's not an admission of guilt, but that Democrats threatened to cut off his campaign support.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "Is he officially out of the race?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. He says he'll withdraw once he's assured his replacement is selected in a transparent and democratic way.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "Were there other issues before this?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. In June, the New York Times reported he'd exchanged sexual messages with other women while married, and his wife had warned his campaign about it.",
+              "duration": 8.85551
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,65 @@
           ],
           "whyItMatters": "国際航空運送協会は先週、ポルトガル・スペイン・イタリア・ベルギーでも遅延や乗り継ぎ失敗が相次いでいると指摘しており、混乱はギリシャにとどまらない。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I heard there's some kind of problem with border checks in Greece?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The boss of 14 Greek airports is calling for an overhaul of the EU's new border checks. They've had to put up gazebos outside because passengers are queuing in the sun waiting to be processed.",
+              "duration": 11.964082
+            },
+            {
+              "speaker": "listener",
+              "text": "Gazebos? That sounds pretty chaotic.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. They're also prioritizing vulnerable people through security to keep them safe. The airport boss described the situation as unpleasant and dangerous.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this just happening in Greece?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. An airline industry group reported delays and missed connections last week in Portugal, Spain, Italy, and Belgium. Ryanair warned of queue chaos at popular destinations like Alicante, Málaga, and Palma.",
+              "duration": 12.90449
+            },
+            {
+              "speaker": "listener",
+              "text": "Are UK travelers affected by this?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "UK passengers make up most of the non-EU tourists at these Greek airports, which include Corfu, Rhodes, Mykonos, and Crete. Greek authorities have indicated police won't check UK passengers, though there's no official legal exemption from the biometric tests.",
+              "duration": 15.072653
+            },
+            {
+              "speaker": "listener",
+              "text": "So the new system just isn't working smoothly yet.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what it looks like. The calls for an overhaul suggest these aren't just temporary teething problems.",
+              "duration": 5.32898
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +306,65 @@
           ],
           "whyItMatters": "登録に特段のデメリットはなく、購入を少しでも検討しているなら、フォームに記入しておく価値はある。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Samsung is offering some kind of credit for their new phones. What's going on?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Samsung has new foldable Galaxy phones coming soon, and they're offering a thirty dollar store credit if you register your interest ahead of time.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "So the phones haven't even been announced yet?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. They're expected to be updated versions of the Galaxy Z Fold phones, but Samsung is letting people sign up early.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "How does the credit actually work?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "You register now, then when the phones are officially announced, you'd preorder one and get the thirty dollar credit applied at checkout.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "Do I have to use that credit right away?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, you have to use it when you preorder the phone. It's not something you can save for later.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there any catch to registering?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "No downside. You're just filling out a form to show interest. So if you're even thinking about buying one, it's worth doing.",
+              "duration": 6.948571
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +396,65 @@
             "実際にはデータそのものではなくメタデータをサーバーに送信する方式で、プライバシーへの影響を抑えられると主張する声もある"
           ],
           "whyItMatters": "常時稼働型AIウェアラブルの実用化に、メタが踏み込もうとしている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Meta is working on smart glasses that record all the time?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, they're developing prototype glasses they call 'super sensing.' According to the Financial Times, these would continuously record audio and snap photos every few seconds.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "Every few seconds? What would happen to all that footage?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "The idea is you could ask Meta AI about what you've captured—like searching through your day by voice.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a lot of data being sent to Meta's servers.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Actually, they say the full audio and images wouldn't be uploaded. Instead, metadata would be extracted and sent to the server for the AI to query.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's supposed to be more private?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what proponents argue—that using metadata instead of raw recordings would have fewer privacy implications.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "Still, always-on recording feels like a big step.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. If this moves forward, Meta would be joining the race to make always-on AI wearables.",
+              "duration": 5.668571
+            }
+          ]
         }
       }
     }

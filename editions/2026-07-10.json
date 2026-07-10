@@ -1,0 +1,166 @@
+{
+  "date": "2026-07-10",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "One of Spain's deadliest wildfires has killed at least 11 people",
+      "summary": "One of Spain's deadliest wildfires has killed at least 11 people A wildfire in southern Spain has killed at least 11 people, making it one of the country's deadliest on record, as soaring temperatures grip much of the country.",
+      "keyTakeaways": [
+        "This image made from video provided by INFOCA shows firefighters battling a wildfire near Los Gallardos, Almeria, Spain, on Thursday, July 9, 2026.",
+        "Six others have been injured in the blaze, which 150 firefighters and 220 soldiers from Spain's military emergency unit were battling Friday.",
+        "Spanish authorities reported earlier that 12 people had died, but revised the death toll Friday morning."
+      ],
+      "whyItMatters": "Scientists warn that climate change caused in part by the burning of fuels like gasoline, oil and coal is exacerbating the frequency and intensity of heat and dryness, making certain regions more vulnerable to wildfires.",
+      "originalURL": "https://www.npr.org/2026/07/10/nx-s1-5888160/one-of-spains-deadliest-wildfires-has-killed-at-least-11-people",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "スペイン南部の山火事、少なくとも11人が死亡",
+          "summary": "記録的な猛暑が続くスペイン南部で大規模な山火事が発生し、少なくとも11人が死亡した。同国の山火事による死者数としては、過去最悪の水準に迫る被害となっている。",
+          "keyTakeaways": [
+            "火災はアルメリア県ロス・ガジャルドス近郊で発生し、消防士150人と軍の緊急部隊から220人が消火活動にあたった。",
+            "負傷者は6人。当局は当初12人の死亡を発表していたが、金曜朝に死者数を修正した。",
+            "現場の映像には、炎と煙の中で懸命に作業する消防隊員の姿が記録されている。"
+          ],
+          "whyItMatters": "気候変動が熱波や乾燥の深刻化をもたらし、山火事のリスクを高めていると科学者たちは警告している。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "U.S.-Iran fighting appears to pause. And, life inside Gaza's expanding military zones",
+      "summary": "And, a look at what life is like inside Israel's expanding zone of control in Gaza.",
+      "keyTakeaways": [
+        "Up First briefing: Iran-US; TPS; Election Assistance Commission; Gaza Fighting between the U.S.",
+        "After two days of intense strikes , fighting between the U.S.",
+        "The fighting coincided with a weeklong funeral for former Supreme Leader Ayatollah Ali Khamenei and four of his family members killed on the first day of the conflict."
+      ],
+      "whyItMatters": "The deal called for an Israeli withdrawal from Gaza, new governance in Gaza and Hamas's disarmament.",
+      "originalURL": "https://www.npr.org/2026/07/10/g-s1-132943/up-first-newsletter-iran-us-tps-haitians-syrians-eac-gaza-israel-hamas",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Japanese design",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米・イランの衝突、いったん沈静化へ――拡大するガザの軍事支配地域",
+          "summary": "激しい攻撃が続いた数日間を経て、米国とイランの戦闘はひとまず落ち着きを見せている。一方、イスラエルが支配地域を広げるガザでは、住民たちの生活が刻々と変わりつつある。",
+          "keyTakeaways": [
+            "二日間にわたる激しい攻撃の後、米・イラン間の戦闘は一時停止の様相を呈している",
+            "戦闘は、最高指導者ハメネイ師と紛争初日に亡くなった家族四人の、一週間にわたる葬儀と重なった",
+            "ガザ内部では、イスラエルの管理区域の拡大とともに、人々の日常が大きく塗り替えられている"
+          ],
+          "whyItMatters": "合意にはイスラエルのガザ撤退、新たな統治体制の構築、そしてハマスの武装解除が盛り込まれている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "EU accuses Meta of failing to tackle mental health risks of ‘addictive design’",
+      "summary": "EU regulators have accused Meta, the company behind Facebook and Instagram , of failing to tackle the risks of its “addictive design” on the physical and mental health of users.",
+      "keyTakeaways": [
+        "The commission said the addictive design of Facebook and Instagram was a breach of the EU’s Digital Services Act, which aims to protect users from a wide range of internet harms, including shopping scams, disinformation and illegal content.",
+        "A Meta spokesperson said: “We disagree with these preliminary findings, which don’t accurately take into account the significant steps we’ve taken to protect teens.",
+        "The findings are part of a wide-ranging investigation into Meta launched in May 2024 ."
+      ],
+      "whyItMatters": "In a significant finding, as the EU considers a social media ban for minors , the commission said Meta had disregarded available information about the time children spend on Instagram and Facebook at night, and how features, such as reels and stories, could lead to “excessive or even compulsive use of its services”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/jul/10/eu-accuses-meta-failing-tackle-mental-health-risks-addictive-design",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The mic",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "EUがMetaを批判――依存性を招くデザインへの対応不足",
+          "summary": "EUの規制当局は、FacebookとInstagramを運営するMetaが、プラットフォームの「依存性を誘うデザイン」がユーザーの心身に与えるリスクに適切に対処していないと指摘した。",
+          "keyTakeaways": [
+            "FacebookとInstagramの設計はEUのデジタルサービス法に違反するとされた。同法は詐欺や偽情報、違法コンテンツなど幅広いネット上の害からユーザーを守ることを目的としている。",
+            "Metaの広報担当者は「この予備的な調査結果には同意しない。未成年者保護のために講じてきた重要な措置が正確に反映されていない」と反論した。",
+            "今回の指摘は、2024年5月に始まったMetaへの広範な調査の一環だ。"
+          ],
+          "whyItMatters": "EUが未成年者へのソーシャルメディア利用制限を検討するなか、欧州委員会はMetaが子どもたちの深夜利用の実態や、リールやストーリーズといった機能が「過度あるいは強迫的な使用」につながりうるという情報を軽視していたと指摘しており、その意味は重い。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report .",
+      "keyTakeaways": [
+        "Several years ago, Microsoft set itself a goal to be carbon negative by 2030 , meaning it will need to remove more carbon emissions than it produces.",
+        "This year’s report admits that, “While AI infrastructure is driving demand for energy, water, land, and materials, sustainability solutions are not scaling fast enough to meet demand.”",
+        "Google similarly reported a 25 percent spike in its supply chain emissions in its 2026 sustainability report , with Amazon reporting a slightly lower 16 percent increase."
+      ],
+      "whyItMatters": "This isn’t the first time Microsoft has faced setbacks toward accomplishing that goal, as its 2024 sustainability report showed a similar rise in climate pollution.",
+      "originalURL": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Editing desk",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "マイクロソフトの炭素排出量、昨年比25%増",
+          "summary": "マイクロソフトが公表した2026年版サステナビリティ報告書によると、同社は自ら掲げた気候目標の達成に再び苦しんでいる可能性がある。",
+          "keyTakeaways": [
+            "同社は数年前、2030年までに「カーボンネガティブ」——排出量を上回る炭素除去——を実現するという目標を設定した。",
+            "今年の報告書は「AIインフラがエネルギーや水、土地、資源への需要を押し上げる一方、サステナビリティ面の対策はその速度に追いついていない」と率直に認めている。",
+            "グーグルも同年の報告書でサプライチェーン排出量が25%増加したと報告しており、アマゾンも16%増とやや低いながら同様の傾向を示した。"
+          ],
+          "whyItMatters": "こうした後退はマイクロソフトにとって初めてではなく、2024年版報告書でもすでに気候汚染の増加が記録されていた。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "The ChatGPT browser is already dead",
+      "summary": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it.",
+      "keyTakeaways": [
+        "In recent months, OpenAI has also shut down the video generation app Sora and paused plans for a ChatGPT “adult mode.”",
+        "He joined The Verge in 2019 after nearly two years at Techmeme.",
+        "The shutdown follows OpenAI’s push to reduce “side quests” and catch up with Anthropic on productivity features ."
+      ],
+      "whyItMatters": "Less than a year after launch, Atlas is being shut down.",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lens",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "OpenAIのブラウザ「Atlas」、わずか1年足らずで終了へ",
+          "summary": "OpenAIは、ユーザーに代わってウェブ上のタスクをこなすブラウザ「ChatGPT Atlas」を、リリースから1年も経たないうちに終了させる。",
+          "keyTakeaways": [
+            "近月、動画生成アプリ「Sora」の終了や、ChatGPTの「アダルトモード」計画の凍結も相次いだ。",
+            "今回の終了は、OpenAIが「本筋以外の取り組み」を絞り込み、生産性機能でAnthropicに追いつこうとする動きの一環だ。"
+          ],
+          "whyItMatters": "Atlasはリリースから1年も経たないまま、静かに幕を閉じる。"
+        }
+      }
+    }
+  ]
+}

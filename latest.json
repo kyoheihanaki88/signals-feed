@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,87 +8,77 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "US and Iran trade most intense strikes since ceasefire was extended",
-      "summary": "The US launched airstrikes against Iran overnight on Thursday, killing at least 14 people, while Tehran responded by hitting Gulf countries in the most intense exchange of fire since a shaky ceasefire was extended last month.",
+      "source": "NPR (World)",
+      "headline": "One of Spain's deadliest wildfires has killed at least 11 people",
+      "summary": "One of Spain's deadliest wildfires has killed at least 11 people A wildfire in southern Spain has killed at least 11 people, making it one of the country's deadliest on record, as soaring temperatures grip much of the country.",
       "keyTakeaways": [
-        "After the strikes, the US president posted videos of explosions in Iran and threatened the country once again.",
-        "Hours before, he had promised that strikes would not lead to long term fighting but would be “very-fast”.",
-        "Significant gaps remain between the two countries over issues such as Iran’s control over the strait of Hormuz, as well as inspections of nuclear facilities."
+        "This image made from video provided by INFOCA shows firefighters battling a wildfire near Los Gallardos, Almeria, Spain, on Thursday, July 9, 2026.",
+        "Six others have been injured in the blaze, which 150 firefighters and 220 soldiers from Spain's military emergency unit were battling Friday.",
+        "Spanish authorities reported earlier that 12 people had died, but revised the death toll Friday morning."
       ],
-      "whyItMatters": "The tit-for-tat strikes on Thursday were the largest since Tehran and Washington signed a memorandum of understanding on 17 June aimed at extending the ceasefire and giving space for negotiations for a permanent truce.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/09/iran-trade-strikes-ceasefire-extended-donald-trump",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Quiet desk",
+      "whyItMatters": "Scientists warn that climate change caused in part by the burning of fuels like gasoline, oil and coal is exacerbating the frequency and intensity of heat and dryness, making certain regions more vulnerable to wildfires.",
+      "originalURL": "https://www.npr.org/2026/07/10/nx-s1-5888160/one-of-spains-deadliest-wildfires-has-killed-at-least-11-people",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米とイランが停戦延長後、最大規模の応酬",
-          "summary": "米軍は木曜日の夜、イランへの空爆を実施し、少なくとも14人が死亡した。イランも湾岸諸国への攻撃で応じ、先月延長された不安定な停戦以降、最も激しい交戦となった。",
+          "headline": "スペイン南部の山火事、少なくとも11人が死亡",
+          "summary": "記録的な猛暑が続くスペイン南部で大規模な山火事が発生し、少なくとも11人が死亡した。同国の山火事による死者数としては、過去最悪の水準に迫る被害となっている。",
           "keyTakeaways": [
-            "空爆後、米大統領はイランの爆発映像を投稿し、改めて強硬な姿勢を示した。",
-            "数時間前には「長期的な戦闘にはならず、非常に短期間で終わる」と述べていた。",
-            "ホルムズ海峡の管理権や核施設の査察など、両国間には依然として大きな隔たりがある。"
+            "火災はアルメリア県ロス・ガジャルドス近郊で発生し、消防士150人と軍の緊急部隊から220人が消火活動にあたった。",
+            "負傷者は6人。当局は当初12人の死亡を発表していたが、金曜朝に死者数を修正した。",
+            "現場の映像には、炎と煙の中で懸命に作業する消防隊員の姿が記録されている。"
           ],
-          "whyItMatters": "今回の応酬は、6月17日に両国が停戦延長と恒久的な和平交渉の余地を設けることを目的とした覚書に署名して以来、最大規模の衝突となった。"
+          "whyItMatters": "気候変動が熱波や乾燥の深刻化をもたらし、山火事のリスクを高めていると科学者たちは警告している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-10/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the ceasefire between the US and Iran—it's still holding, right?",
-              "duration": 3.94449
+              "text": "I saw there's been a terrible wildfire in Spain. What happened?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "It's under serious strain. Overnight Thursday, the US launched airstrikes in Iran that killed at least fourteen people. Iran then responded by striking targets in Gulf countries.",
-              "duration": 10.161633
+              "text": "A wildfire in southern Spain has killed at least eleven people. It's one of the deadliest fires the country has seen.",
+              "duration": 7.340408
             },
             {
               "speaker": "listener",
-              "text": "That sounds like more than just a strain. Are we talking about a full breakdown?",
-              "duration": 4.075102
+              "text": "That's awful. Where exactly is this happening?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Not yet, but these were the most intense strikes since the ceasefire was extended last month. The president posted videos of the explosions and issued new threats afterward.",
-              "duration": 8.359184
+              "text": "Near Los Gallardos, in the Almeria region of southern Spain. The area has been dealing with very high temperatures.",
+              "duration": 6.086531
             },
             {
               "speaker": "listener",
-              "text": "Wait—he'd said something different earlier, hadn't he?",
-              "duration": 2.821224
+              "text": "Are they able to fight it?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Hours before the strikes, he promised they'd be very fast and wouldn't lead to long-term fighting.",
-              "duration": 5.746939
+              "text": "Yes. About 150 firefighters and 220 soldiers from Spain's military emergency unit are working to contain the blaze. Six others have been injured.",
+              "duration": 8.672653
             },
             {
               "speaker": "listener",
-              "text": "What are they actually disagreeing about at this point?",
-              "duration": 3.056327
+              "text": "What's making these fires so bad?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Significant gaps remain—mainly over Iran's control of the Strait of Hormuz and inspections of nuclear facilities. Those issues haven't been resolved in negotiations.",
-              "duration": 9.691429
-            },
-            {
-              "speaker": "listener",
-              "text": "So the ceasefire agreement from June is still technically in place?",
-              "duration": 4.075102
-            },
-            {
-              "speaker": "explainer",
-              "text": "Technically, yes. That memorandum was meant to give space for talks toward a permanent truce, but Thursday's strikes show how fragile that space really is.",
-              "duration": 8.306939
+              "text": "Scientists say climate change is making heat and dryness worse in certain regions, which makes them more vulnerable to wildfires like this one.",
+              "duration": 8.019592
             }
           ]
         }
@@ -99,87 +89,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Democrat Graham Platner suspends campaign for key US Senate race after assault allegation",
-      "summary": "Democrat Graham Platner has suspended his campaign for US Senate in Maine, following a series of scandals that included a woman accusing him of sexual assault.",
+      "source": "NPR (World)",
+      "headline": "U.S.-Iran fighting appears to pause. And, life inside Gaza's expanding military zones",
+      "summary": "And, a look at what life is like inside Israel's expanding zone of control in Gaza.",
       "keyTakeaways": [
-        "In the days since the accusation was made, Democrats have called on him to drop out of the race considered pivotal to their chances of gaining control of the US Senate.",
-        "In a video posted online, Platner said his decision was not an admission of guilt but due to Democrats' threats to cut off campaign support.",
-        "He said he would officially file to withdraw from the race once he's assured his replacement in the race against Republican Susan Collins is selected in a \"transparent and democratic\" way."
+        "Up First briefing: Iran-US; TPS; Election Assistance Commission; Gaza Fighting between the U.S.",
+        "After two days of intense strikes , fighting between the U.S.",
+        "The fighting coincided with a weeklong funeral for former Supreme Leader Ayatollah Ali Khamenei and four of his family members killed on the first day of the conflict."
       ],
-      "whyItMatters": "In June, the New York Times (NYT) reported that Platner had exchanged sexual messages with other women while married, and his wife had warned his campaign of the potential scandal.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c9v229434p2o?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "The deal called for an Israeli withdrawal from Gaza, new governance in Gaza and Hamas's disarmament.",
+      "originalURL": "https://www.npr.org/2026/07/10/g-s1-132943/up-first-newsletter-iran-us-tps-haitians-syrians-eac-gaza-israel-hamas",
       "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Tokyo street",
+      "imageURL": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Japanese design",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "性的暴行疑惑を受け、民主党上院候補が選挙戦を停止",
-          "summary": "メイン州の民主党上院議員候補グラハム・プラトナーが、女性から性的暴行を告発されたことを含む一連の疑惑を受け、選挙活動の停止を表明した。",
+          "headline": "米・イランの衝突、いったん沈静化へ――拡大するガザの軍事支配地域",
+          "summary": "激しい攻撃が続いた数日間を経て、米国とイランの戦闘はひとまず落ち着きを見せている。一方、イスラエルが支配地域を広げるガザでは、住民たちの生活が刻々と変わりつつある。",
           "keyTakeaways": [
-            "告発を受けた数日のうちに、民主党内からも撤退を求める声が相次いだ。上院の過半数奪還を左右する重要な選挙区だけに、党の危機感は強い。",
-            "プラトナーは動画の中で、今回の決断は有罪を認めるものではなく、党から支援を打ち切ると脅されたためだと説明した。",
-            "共和党のスーザン・コリンズ議員への対抗馬が「透明かつ民主的な」方法で選ばれると確認できた時点で、正式に撤退届を提出するとしている。"
+            "二日間にわたる激しい攻撃の後、米・イラン間の戦闘は一時停止の様相を呈している",
+            "戦闘は、最高指導者ハメネイ師と紛争初日に亡くなった家族四人の、一週間にわたる葬儀と重なった",
+            "ガザ内部では、イスラエルの管理区域の拡大とともに、人々の日常が大きく塗り替えられている"
           ],
-          "whyItMatters": "6月には、プラトナーが既婚中に他の女性と性的なメッセージをやり取りしていたとニューヨーク・タイムズが報じており、妻もその疑惑をあらかじめ選挙陣営に伝えていたという。"
+          "whyItMatters": "合意にはイスラエルのガザ撤退、新たな統治体制の構築、そしてハマスの武装解除が盛り込まれている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-10/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Graham Platner suspended his Senate campaign in Maine. What happened?",
-              "duration": 4.623673
+              "text": "So it sounds like things have calmed down between the U.S. and Iran?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "A woman accused him of sexual assault. In the days after that, Democrats called on him to drop out of the race.",
-              "duration": 6.112653
+              "text": "Yes, after two days of intense strikes, the fighting appears to have paused.",
+              "duration": 3.84
             },
             {
               "speaker": "listener",
-              "text": "This was considered an important race, right?",
-              "duration": 2.220408
+              "text": "Was there something specific happening in Iran during all this?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Democrats see it as pivotal to their chances of gaining control of the Senate. He's running against Republican Susan Collins.",
-              "duration": 7.549388
+              "text": "There was. A weeklong funeral was underway for former Supreme Leader Ayatollah Ali Khamenei and four of his family members, who were killed on the first day of the conflict.",
+              "duration": 10.396735
             },
             {
               "speaker": "listener",
-              "text": "Did he say why he's suspending now?",
-              "duration": 2.220408
+              "text": "That's a lot happening at once. What about Gaza—what's changing there?",
+              "duration": 4.257959
             },
             {
               "speaker": "explainer",
-              "text": "In a video, he said it's not an admission of guilt, but that Democrats threatened to cut off his campaign support.",
-              "duration": 6.269388
+              "text": "Israel's zone of control inside Gaza is expanding, and people are living under those conditions now.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "Is he officially out of the race?",
-              "duration": 2.168163
+              "text": "Is there any plan for what happens next in Gaza?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "Not yet. He says he'll withdraw once he's assured his replacement is selected in a transparent and democratic way.",
-              "duration": 6.034286
+              "text": "There's a deal being discussed that calls for an Israeli withdrawal from Gaza, new governance there, and Hamas's disarmament.",
+              "duration": 6.164898
             },
             {
               "speaker": "listener",
-              "text": "Were there other issues before this?",
-              "duration": 2.115918
+              "text": "So still a lot of uncertainty for people on the ground.",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Yes. In June, the New York Times reported he'd exchanged sexual messages with other women while married, and his wife had warned his campaign about it.",
-              "duration": 8.85551
+              "text": "Exactly. The situation remains very difficult for those living there.",
+              "duration": 3.709388
             }
           ]
         }
@@ -191,86 +181,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "EU’s ‘unpleasant and dangerous’ border checks need overhaul, says Greek airports boss",
-      "summary": "The boss of 14 Greek airports has called for a serious overhaul of the EU’s new border checks after having to erect gazebos for passengers queuing outside.",
+      "headline": "EU accuses Meta of failing to tackle mental health risks of ‘addictive design’",
+      "summary": "EU regulators have accused Meta, the company behind Facebook and Instagram , of failing to tackle the risks of its “addictive design” on the physical and mental health of users.",
       "keyTakeaways": [
-        "Zinell’s airports have had to use gazebos to shield queuing passengers from the sun as they wait to be processed, while vulnerable people have been prioritised through security to ensure their safety.",
-        "Greek authorities have indicated that police will not check UK passengers, although there is no blanket legal exemption from the biometric tests.",
-        "Visitors from the UK make up the bulk of non-EU tourists passing through Zinell’s airports, which include Corfu, Rhodes, Mykonos and Crete."
+        "The commission said the addictive design of Facebook and Instagram was a breach of the EU’s Digital Services Act, which aims to protect users from a wide range of internet harms, including shopping scams, disinformation and illegal content.",
+        "A Meta spokesperson said: “We disagree with these preliminary findings, which don’t accurately take into account the significant steps we’ve taken to protect teens.",
+        "The findings are part of a wide-ranging investigation into Meta launched in May 2024 ."
       ],
-      "whyItMatters": "Iata said last week that passengers were also experiencing “delays and missed connections” in Portugal, Spain, Italy and Belgium, while Ryanair warned of “queue chaos” in airports including at popular holiday destinations such as Alicante, Málaga and Palma.",
-      "originalURL": "https://www.theguardian.com/business/2026/jul/09/eu-unpleasant-and-dangerous-border-checks-need-overhaul-says-greek-airports-boss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The station",
+      "whyItMatters": "In a significant finding, as the EU considers a social media ban for minors , the commission said Meta had disregarded available information about the time children spend on Instagram and Facebook at night, and how features, such as reels and stories, could lead to “excessive or even compulsive use of its services”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/jul/10/eu-accuses-meta-failing-tackle-mental-health-risks-addictive-design",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The mic",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "EUの新たな入国審査、ギリシャ空港トップが見直しを訴える",
-          "summary": "ギリシャの14空港を運営するトップが、EUの新しい入国審査制度の抜本的な見直しを求めた。審査待ちの旅客が屋外に列をなす事態を受け、空港側はテントを設置して対応を余儀なくされている。",
+          "headline": "EUがMetaを批判――依存性を招くデザインへの対応不足",
+          "summary": "EUの規制当局は、FacebookとInstagramを運営するMetaが、プラットフォームの「依存性を誘うデザイン」がユーザーの心身に与えるリスクに適切に対処していないと指摘した。",
           "keyTakeaways": [
-            "審査待ちの列が屋外に延び、日差しを避けるためのテントを設置。体の弱い旅客は安全確保のため優先的に通過させている。",
-            "ギリシャ当局は英国人旅客への生体認証検査を実施しない方針を示しているが、法的な免除規定は存在しない。",
-            "コルフ島やロードス島、ミコノス島、クレタ島などを抱えるこれらの空港では、EU域外からの旅客の大半を英国人が占める。"
+            "FacebookとInstagramの設計はEUのデジタルサービス法に違反するとされた。同法は詐欺や偽情報、違法コンテンツなど幅広いネット上の害からユーザーを守ることを目的としている。",
+            "Metaの広報担当者は「この予備的な調査結果には同意しない。未成年者保護のために講じてきた重要な措置が正確に反映されていない」と反論した。",
+            "今回の指摘は、2024年5月に始まったMetaへの広範な調査の一環だ。"
           ],
-          "whyItMatters": "国際航空運送協会は先週、ポルトガル・スペイン・イタリア・ベルギーでも遅延や乗り継ぎ失敗が相次いでいると指摘しており、混乱はギリシャにとどまらない。"
+          "whyItMatters": "EUが未成年者へのソーシャルメディア利用制限を検討するなか、欧州委員会はMetaが子どもたちの深夜利用の実態や、リールやストーリーズといった機能が「過度あるいは強迫的な使用」につながりうるという情報を軽視していたと指摘しており、その意味は重い。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-10/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I heard there's some kind of problem with border checks in Greece?",
-              "duration": 3.160816
+              "text": "I saw the EU is going after Meta about addictive design. What's happening there?",
+              "duration": 4.675918
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The boss of 14 Greek airports is calling for an overhaul of the EU's new border checks. They've had to put up gazebos outside because passengers are queuing in the sun waiting to be processed.",
-              "duration": 11.964082
+              "text": "EU regulators are accusing Meta of failing to address how Facebook and Instagram's design affects users' physical and mental health, especially children.",
+              "duration": 8.594286
             },
             {
               "speaker": "listener",
-              "text": "Gazebos? That sounds pretty chaotic.",
+              "text": "What specifically are they concerned about?",
               "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "It is. They're also prioritizing vulnerable people through security to keep them safe. The airport boss described the situation as unpleasant and dangerous.",
-              "duration": 8.803265
+              "text": "The commission says Meta ignored information about how much time kids spend on these apps at night, and how features like reels and stories can lead to excessive or even compulsive use.",
+              "duration": 10.213878
             },
             {
               "speaker": "listener",
-              "text": "Is this just happening in Greece?",
-              "duration": 2.220408
+              "text": "Is this breaking any rules?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "No. An airline industry group reported delays and missed connections last week in Portugal, Spain, Italy, and Belgium. Ryanair warned of queue chaos at popular destinations like Alicante, Málaga, and Palma.",
-              "duration": 12.90449
+              "text": "Yes. The EU says it violates the Digital Services Act, which is meant to protect users from various online harms.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "Are UK travelers affected by this?",
-              "duration": 2.324898
+              "text": "What does Meta say about all this?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "UK passengers make up most of the non-EU tourists at these Greek airports, which include Corfu, Rhodes, Mykonos, and Crete. Greek authorities have indicated police won't check UK passengers, though there's no official legal exemption from the biometric tests.",
-              "duration": 15.072653
+              "text": "A spokesperson said they disagree with the preliminary findings and believe the EU hasn't properly considered the steps they've taken to protect teens.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "So the new system just isn't working smoothly yet.",
-              "duration": 3.422041
+              "text": "Why does this matter now?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "That's what it looks like. The calls for an overhaul suggest these aren't just temporary teething problems.",
-              "duration": 5.32898
+              "text": "It's part of an investigation that started in May last year, and it comes as the EU is actually considering a social media ban for minors.",
+              "duration": 7.523265
             }
           ]
         }
@@ -282,86 +272,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Get a $30 credit when you reserve Samsung’s upcoming Galaxy phones",
-      "summary": "Samsung is announcing new foldables soon, and you can save $30 if you register your interest ahead of time.",
+      "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report .",
       "keyTakeaways": [
-        "Even though they haven’t been officially announced yet, Samsung is giving you a chance to save some cash when you preorder what we’re expecting to be the brand’s updated Galaxy Z Fold phones.",
-        "If you register your interest ahead of time and end up preordering one of the new phones shortly after they’re announced, Samsung will give you a $30 store credit at checkout.",
-        "You have to use the credit when you preorder the phone."
+        "Several years ago, Microsoft set itself a goal to be carbon negative by 2030 , meaning it will need to remove more carbon emissions than it produces.",
+        "This year’s report admits that, “While AI infrastructure is driving demand for energy, water, land, and materials, sustainability solutions are not scaling fast enough to meet demand.”",
+        "Google similarly reported a 25 percent spike in its supply chain emissions in its 2026 sustainability report , with Amazon reporting a slightly lower 16 percent increase."
       ],
-      "whyItMatters": "There are no downsides to registering your interest, so if you think you might be interested in buying one of the upcoming phones, it’s worth filling out the form .",
-      "originalURL": "https://www.theverge.com/gadgets/962999/samsung-unpacked-z-fold-flip-wide-reserve-credit-preorder",
+      "whyItMatters": "This isn’t the first time Microsoft has faced setbacks toward accomplishing that goal, as its 2024 sustainability report showed a similar rise in climate pollution.",
+      "originalURL": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The shrine",
+      "imageURL": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Editing desk",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サムスンの新型Galaxyを事前登録すると30ドルのクレジットがもらえる",
-          "summary": "サムスンが近く新しい折りたたみスマートフォンを発表する見通しだ。正式発表前に関心登録をしておくと、予約購入時に30ドル分のストアクレジットを受け取れる。",
+          "headline": "マイクロソフトの炭素排出量、昨年比25%増",
+          "summary": "マイクロソフトが公表した2026年版サステナビリティ報告書によると、同社は自ら掲げた気候目標の達成に再び苦しんでいる可能性がある。",
           "keyTakeaways": [
-            "正式発表前でも、Galaxy Z Foldシリーズの新モデルとみられる端末の予約割引に備えられる。",
-            "事前に関心登録を済ませ、発表後に予約注文すると、購入時に30ドルのストアクレジットが適用される。",
-            "クレジットは予約注文の際に使用する必要がある。"
+            "同社は数年前、2030年までに「カーボンネガティブ」——排出量を上回る炭素除去——を実現するという目標を設定した。",
+            "今年の報告書は「AIインフラがエネルギーや水、土地、資源への需要を押し上げる一方、サステナビリティ面の対策はその速度に追いついていない」と率直に認めている。",
+            "グーグルも同年の報告書でサプライチェーン排出量が25%増加したと報告しており、アマゾンも16%増とやや低いながら同様の傾向を示した。"
           ],
-          "whyItMatters": "登録に特段のデメリットはなく、購入を少しでも検討しているなら、フォームに記入しておく価値はある。"
+          "whyItMatters": "こうした後退はマイクロソフトにとって初めてではなく、2024年版報告書でもすでに気候汚染の増加が記録されていた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-10/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Samsung is offering some kind of credit for their new phones. What's going on?",
-              "duration": 4.362449
+              "text": "I saw Microsoft's emissions went up quite a bit. What happened?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "Samsung has new foldable Galaxy phones coming soon, and they're offering a thirty dollar store credit if you register your interest ahead of time.",
-              "duration": 7.340408
+              "text": "Their carbon emissions rose 25 percent last year. It's a setback for their goal to be carbon negative by 2030.",
+              "duration": 6.687347
             },
             {
               "speaker": "listener",
-              "text": "So the phones haven't even been announced yet?",
-              "duration": 2.272653
+              "text": "Carbon negative—that means removing more than they produce, right?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "Right. They're expected to be updated versions of the Galaxy Z Fold phones, but Samsung is letting people sign up early.",
-              "duration": 7.105306
+              "text": "Exactly. They set that target several years ago, but they're moving in the wrong direction right now.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "How does the credit actually work?",
-              "duration": 1.750204
+              "text": "What's causing the increase?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "You register now, then when the phones are officially announced, you'd preorder one and get the thirty dollar credit applied at checkout.",
-              "duration": 6.269388
+              "text": "Their report points to AI infrastructure driving up demand for energy, water, land, and materials. And sustainability solutions aren't scaling fast enough to keep up.",
+              "duration": 9.273469
             },
             {
               "speaker": "listener",
-              "text": "Do I have to use that credit right away?",
-              "duration": 2.115918
+              "text": "Is Microsoft the only tech company dealing with this?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "Yes, you have to use it when you preorder the phone. It's not something you can save for later.",
-              "duration": 4.440816
+              "text": "No. Google reported a 25 percent spike in supply chain emissions too. Amazon's increase was a bit lower, at 16 percent.",
+              "duration": 7.967347
             },
             {
               "speaker": "listener",
-              "text": "Is there any catch to registering?",
-              "duration": 2.115918
+              "text": "So this is part of a broader pattern with AI growth.",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "No downside. You're just filling out a form to show interest. So if you're even thinking about buying one, it's worth doing.",
-              "duration": 6.948571
+              "text": "It seems that way. And for Microsoft, it's not the first time—their 2024 report showed a similar rise.",
+              "duration": 6.687347
             }
           ]
         }
@@ -373,86 +363,75 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Meta is reportedly working on smart glasses that would be recording all the time",
-      "summary": "The ‘super sensing’ glasses could continuously record audio and frequently snap photos.",
+      "headline": "The ChatGPT browser is already dead",
+      "summary": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it.",
       "keyTakeaways": [
-        "The company is working on prototype “super sensing” always-aware smart glasses that could continuously record audio and snap photos “every few seconds,” according to the Financial Times .",
-        "The wearer could then ask Meta AI about the captured audio and images.",
-        "Instead, the metadata from that audio and images would be extracted and uploaded to the server for Meta’s AI to query, which proponents argue would have fewer privacy implications."
+        "In recent months, OpenAI has also shut down the video generation app Sora and paused plans for a ChatGPT “adult mode.”",
+        "He joined The Verge in 2019 after nearly two years at Techmeme.",
+        "The shutdown follows OpenAI’s push to reduce “side quests” and catch up with Anthropic on productivity features ."
       ],
-      "whyItMatters": "Meta might be the next company to make an always-on AI wearable.",
-      "originalURL": "https://www.theverge.com/tech/963138/meta-smart-glasses-recording-super-sensing-ai",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Lantern light",
+      "whyItMatters": "Less than a year after launch, Atlas is being shut down.",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lens",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "メタ、常時録音・撮影するスマートグラスを開発中か",
-          "summary": "メタが「超感知」型スマートグラスの試作に取り組んでいると報じられた。音声を継続的に録音し、数秒おきに写真を撮影する機能を備える可能性があるという。",
+          "headline": "OpenAIのブラウザ「Atlas」、わずか1年足らずで終了へ",
+          "summary": "OpenAIは、ユーザーに代わってウェブ上のタスクをこなすブラウザ「ChatGPT Atlas」を、リリースから1年も経たないうちに終了させる。",
           "keyTakeaways": [
-            "フィナンシャル・タイムズによると、常時周囲を認識し、音声録音と写真撮影を数秒間隔で行うプロトタイプを開発中",
-            "収集した音声や画像をもとに、装着者がメタのAIに問い合わせることができる仕組み",
-            "実際にはデータそのものではなくメタデータをサーバーに送信する方式で、プライバシーへの影響を抑えられると主張する声もある"
+            "近月、動画生成アプリ「Sora」の終了や、ChatGPTの「アダルトモード」計画の凍結も相次いだ。",
+            "今回の終了は、OpenAIが「本筋以外の取り組み」を絞り込み、生産性機能でAnthropicに追いつこうとする動きの一環だ。"
           ],
-          "whyItMatters": "常時稼働型AIウェアラブルの実用化に、メタが踏み込もうとしている。"
+          "whyItMatters": "Atlasはリリースから1年も経たないまま、静かに幕を閉じる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-09/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-10/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Meta is working on smart glasses that record all the time?",
-              "duration": 3.108571
+              "text": "So OpenAI is shutting down that browser they just launched?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Yes, they're developing prototype glasses they call 'super sensing.' According to the Financial Times, these would continuously record audio and snap photos every few seconds.",
-              "duration": 10.161633
+              "text": "Yes, ChatGPT Atlas. It was a browser that could do tasks for you automatically, but it's being shut down less than a year after launch.",
+              "duration": 7.653878
             },
             {
               "speaker": "listener",
-              "text": "Every few seconds? What would happen to all that footage?",
-              "duration": 3.160816
+              "text": "That's pretty quick. Is this part of a bigger pattern?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "The idea is you could ask Meta AI about what you've captured—like searching through your day by voice.",
-              "duration": 5.250612
+              "text": "It seems so. In recent months, OpenAI has also shut down their video generation app Sora and paused plans for something called ChatGPT adult mode.",
+              "duration": 9.430204
             },
             {
               "speaker": "listener",
-              "text": "That sounds like a lot of data being sent to Meta's servers.",
-              "duration": 3.004082
+              "text": "What's driving all these shutdowns?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Actually, they say the full audio and images wouldn't be uploaded. Instead, metadata would be extracted and sent to the server for the AI to query.",
-              "duration": 8.306939
+              "text": "OpenAI is apparently trying to reduce what they call side quests and focus on catching up with a competitor, Anthropic, on productivity features.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "And that's supposed to be more private?",
-              "duration": 1.985306
+              "text": "So they're narrowing their focus.",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "That's what proponents argue—that using metadata instead of raw recordings would have fewer privacy implications.",
-              "duration": 6.530612
-            },
-            {
-              "speaker": "listener",
-              "text": "Still, always-on recording feels like a big step.",
-              "duration": 3.291429
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. If this moves forward, Meta would be joining the race to make always-on AI wearables.",
-              "duration": 5.668571
+              "text": "Exactly. It looks like they're pulling back from some experiments to concentrate on core products.",
+              "duration": 5.01551
             }
           ]
         }

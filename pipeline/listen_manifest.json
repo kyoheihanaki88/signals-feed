@@ -2331,6 +2331,283 @@
           ]
         }
       }
+    },
+    "2026-07-10": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-10/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw there's been a terrible wildfire in Spain. What happened?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "A wildfire in southern Spain has killed at least eleven people. It's one of the deadliest fires the country has seen.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "That's awful. Where exactly is this happening?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Near Los Gallardos, in the Almeria region of southern Spain. The area has been dealing with very high temperatures.",
+              "duration": 6.086531
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they able to fight it?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. About 150 firefighters and 220 soldiers from Spain's military emergency unit are working to contain the blaze. Six others have been injured.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "What's making these fires so bad?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Scientists say climate change is making heat and dryness worse in certain regions, which makes them more vulnerable to wildfires like this one.",
+              "duration": 8.019592
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-10/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So it sounds like things have calmed down between the U.S. and Iran?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, after two days of intense strikes, the fighting appears to have paused.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there something specific happening in Iran during all this?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "There was. A weeklong funeral was underway for former Supreme Leader Ayatollah Ali Khamenei and four of his family members, who were killed on the first day of the conflict.",
+              "duration": 10.396735
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot happening at once. What about Gaza—what's changing there?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Israel's zone of control inside Gaza is expanding, and people are living under those conditions now.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there any plan for what happens next in Gaza?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a deal being discussed that calls for an Israeli withdrawal from Gaza, new governance there, and Hamas's disarmament.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "So still a lot of uncertainty for people on the ground.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The situation remains very difficult for those living there.",
+              "duration": 3.709388
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-10/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw the EU is going after Meta about addictive design. What's happening there?",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "explainer",
+              "text": "EU regulators are accusing Meta of failing to address how Facebook and Instagram's design affects users' physical and mental health, especially children.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "What specifically are they concerned about?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "The commission says Meta ignored information about how much time kids spend on these apps at night, and how features like reels and stories can lead to excessive or even compulsive use.",
+              "duration": 10.213878
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this breaking any rules?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The EU says it violates the Digital Services Act, which is meant to protect users from various online harms.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What does Meta say about all this?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "A spokesperson said they disagree with the preliminary findings and believe the EU hasn't properly considered the steps they've taken to protect teens.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter now?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of an investigation that started in May last year, and it comes as the EU is actually considering a social media ban for minors.",
+              "duration": 7.523265
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-10/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Microsoft's emissions went up quite a bit. What happened?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their carbon emissions rose 25 percent last year. It's a setback for their goal to be carbon negative by 2030.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "Carbon negative—that means removing more than they produce, right?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They set that target several years ago, but they're moving in the wrong direction right now.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "What's causing the increase?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their report points to AI infrastructure driving up demand for energy, water, land, and materials. And sustainability solutions aren't scaling fast enough to keep up.",
+              "duration": 9.273469
+            },
+            {
+              "speaker": "listener",
+              "text": "Is Microsoft the only tech company dealing with this?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Google reported a 25 percent spike in supply chain emissions too. Amazon's increase was a bit lower, at 16 percent.",
+              "duration": 7.967347
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is part of a broader pattern with AI growth.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems that way. And for Microsoft, it's not the first time—their 2024 report showed a similar rise.",
+              "duration": 6.687347
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-10/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So OpenAI is shutting down that browser they just launched?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, ChatGPT Atlas. It was a browser that could do tasks for you automatically, but it's being shut down less than a year after launch.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "That's pretty quick. Is this part of a bigger pattern?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems so. In recent months, OpenAI has also shut down their video generation app Sora and paused plans for something called ChatGPT adult mode.",
+              "duration": 9.430204
+            },
+            {
+              "speaker": "listener",
+              "text": "What's driving all these shutdowns?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "OpenAI is apparently trying to reduce what they call side quests and focus on catching up with a competitor, Anthropic, on productivity features.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're narrowing their focus.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It looks like they're pulling back from some experiments to concentrate on core products.",
+              "duration": 5.01551
+            }
+          ]
+        }
+      }
     }
   }
 }

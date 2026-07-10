@@ -221,8 +221,90 @@ def structural_errors(feed):
     return errors
 
 
+# ---------------------------------------------------------------------------
+# Editorial gate (v2.6) — defense in depth behind pipeline/writer.py.
+#
+# The writer already refuses to DRAFT fragments, captions, bios, roundup lines, and
+# headline-glued summaries; these checks re-detect the same failure classes at the final
+# validate step, so a writer regression (or a hand-edited edition) can never publish
+# broken prose. DELIBERATELY self-contained (no import of pipeline.writer): an
+# independent implementation can't share the writer's bugs.
+# Scope: summary / keyTakeaways / whyItMatters only. Does NOT touch listen-ready,
+# consistency, or any promotion/fail-closed logic.
+
+# "…between the U.S." — a compound whose second half never arrives.
+_ED_DANGLE_RE = re.compile(
+    r"\b(between|among|amongst|amid)\s+(the\s+)?[A-Z][\w.&'’-]*\.?[\"')\]”’]?\s*$")
+# Sentence ending at a TITLE-style abbreviation (…said Dr.) → split fragment. Initialisms
+# (U.S., E.U.) may legitimately end a sentence; their fragment case is _ED_DANGLE_RE's job.
+_ED_ABBREV_END_RE = re.compile(
+    r"\b(?:Mr|Mrs|Ms|Dr|Prof|Gen|Sen|Rep|Gov|St|vs|No)\.[\"')\]”’]?\s*$")
+# Media-credit caption as prose ("This image made from video provided by INFOCA shows…").
+_ED_CAPTION_RE = re.compile(
+    r"\b(image|photo|photograph|picture|video|footage)\s+"
+    r"(made|taken|provided|obtained|released|distributed|courtesy)\b", re.I)
+# Career-history author bio ("He joined The Verge in 2019 …" / "…years at Techmeme.").
+_ED_BIO_RE = re.compile(
+    r"^\s*(he|she|they)\s+joined\s+[A-Z][\w.&'’-]*(?:\s+[A-Z][\w.&'’-]*){0,4}\s+in\s+(19|20)\d\d\b",
+    re.I)
+_ED_BIO_TAIL_RE = re.compile(r"\byears?\s+at\s+[A-Z][\w.&'’-]+\s*[.\"'”’]*\s*$")
+# Context-free connective opener ("And, a look at…").
+_ED_CONNECTIVE_RE = re.compile(r"^\s*(And|But|Also|Meanwhile|However)\b[\s,]", re.I)
+# Newsletter/roundup table-of-contents line ("Up First briefing: Iran-US; TPS; …").
+_ED_ROUNDUP_RE = re.compile(r"^[^.!?]{0,60}\b(briefing|newsletter|roundup|rundown)\b[^.!?]{0,40}:", re.I)
+# Scrape artifact: whitespace before punctuation ("strikes , fighting" / "the form .").
+_ED_SPACE_PUNCT_RE = re.compile(r"\s[,.;:!?]")
+
+
+def _editorial_issues(text):
+    """Failure-class labels for one prose field ('' / non-str → no issues)."""
+    s = (text or "").strip() if isinstance(text, str) else ""
+    if not s:
+        return []
+    issues = []
+    if _ED_DANGLE_RE.search(s):
+        issues.append("dangling compound ending (e.g. 'between the U.S.')")
+    if _ED_ABBREV_END_RE.search(s):
+        issues.append("ends at an abbreviation (split fragment)")
+    if _ED_CAPTION_RE.search(s):
+        issues.append("photo/video credit caption text")
+    if _ED_BIO_RE.search(s) or _ED_BIO_TAIL_RE.search(s):
+        issues.append("author-bio text")
+    if _ED_CONNECTIVE_RE.search(s):
+        issues.append("starts with a context-free connective (e.g. 'And,')")
+    if _ED_ROUNDUP_RE.search(s) or s.count(";") >= 2:
+        issues.append("newsletter/roundup table-of-contents line")
+    if _ED_SPACE_PUNCT_RE.search(s):
+        issues.append("whitespace before punctuation (scrape artifact)")
+    return issues
+
+
+def _norm_alnum(text):
+    return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
+
+
+def editorial_errors(feed):
+    """Prose-quality errors for every signal's summary / keyTakeaways / whyItMatters."""
+    errors = []
+    for s in feed.get("signals", []):
+        num = s.get("number", "?")
+        fields = [("summary", s.get("summary")), ("whyItMatters", s.get("whyItMatters"))]
+        kts = s.get("keyTakeaways")
+        if isinstance(kts, list):
+            fields += [(f"keyTakeaways[{i}]", t) for i, t in enumerate(kts)]
+        for name, value in fields:
+            for issue in _editorial_issues(value):
+                errors.append(f"signal {num} {name}: {issue}")
+        # Headline glue: the summary must not begin with the (normalized) headline and keep going.
+        h, sm = _norm_alnum(s.get("headline")), _norm_alnum(s.get("summary"))
+        if h and sm and sm != h and sm.startswith(h + " "):
+            errors.append(f"signal {num} summary: begins with the headline glued to body text")
+    return errors
+
+
 def validate(path):
-    """Single-file validation: structure + a valid date (+ filename match + loose future guard)."""
+    """Single-file validation: structure + editorial quality + a valid date
+    (+ filename match + loose future guard)."""
     errors = []
     try:
         feed = json.load(open(path))
@@ -230,6 +312,7 @@ def validate(path):
         return [f"feed is not valid JSON: {e}"]
 
     errors += structural_errors(feed)
+    errors += editorial_errors(feed)   # v2.6 prose-quality gate (defense in depth behind writer)
 
     # date must be a valid YYYY-MM-DD label (timezone-agnostic — it names the morning it serves).
     raw = feed.get("date")

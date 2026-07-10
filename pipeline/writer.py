@@ -86,11 +86,18 @@ CAPTION_VERB_RE = re.compile(
 # RSS/snippet truncation: a sentence ending in an ellipsis is CUT OFF (issue: whyItMatters cut off).
 ELLIPSIS_END_RE = re.compile(r"(\.\.\.|…|…)\s*$")
 
+# v2.6 — media-credit captions written as prose ("This image made from video provided by INFOCA
+# shows…", "Video released by…"): media noun + provenance verb is caption DNA, not article text.
+CAPTION_MEDIA_RE = re.compile(
+    r"\b(image|photo|photograph|picture|video|footage)\s+"
+    r"(made|taken|provided|obtained|released|distributed|courtesy)\b", re.I)
+
 
 def looks_like_caption(s):
     """A photo caption / credit line, not article prose — must never become summary/takeaway/why."""
     return bool(CAPTION_LEAD_RE.search(s) or CAPTION_CUE_RE.search(s)
-                or CAPTION_SCENE_RE.match(s) or CAPTION_VERB_RE.match(s))
+                or CAPTION_SCENE_RE.match(s) or CAPTION_VERB_RE.match(s)
+                or CAPTION_MEDIA_RE.search(s))
 
 
 # v2.5 — author/reporter bios + publication metadata that scrapers leave in the body.
@@ -119,10 +126,89 @@ METADATA_CAPTION_RE = re.compile(
 STITCHED_QUOTE_RE = re.compile(
     r"[\w’'][\s]+[\"“][^\"”]{1,180}[,.\!?][\"”]\s+\w+\s+(said|says|told|added|noted|argued|wrote)\b", re.I)
 
+# v2.6 — career-history author bios ("He joined The Verge in 2019 after nearly two years at
+# Techmeme."). Pronoun-anchored so real news prose ("Sweden joined NATO in 2024") never matches.
+BIO_JOINED_RE = re.compile(
+    r"^\s*(he|she|they)\s+joined\s+[A-Z][\w.&'’-]*(?:\s+[A-Z][\w.&'’-]*){0,4}\s+in\s+(19|20)\d\d\b",
+    re.I)
+# "…years at <Publication>." as a sentence TAIL is a bio credential, not reporting.
+BIO_YEARS_AT_RE = re.compile(r"\byears?\s+at\s+[A-Z][\w.&'’-]+\s*[.\"'”’]*\s*$")
+
+
 def looks_like_metadata(s):
     """Author/reporter bio, publication metadata, photo credit/caption, or stitched quote."""
     return bool(METADATA_BIO_RE.search(s) or METADATA_CAPTION_RE.search(s)
-                or STITCHED_QUOTE_RE.search(s))
+                or STITCHED_QUOTE_RE.search(s)
+                or BIO_JOINED_RE.search(s) or BIO_YEARS_AT_RE.search(s))
+
+# ----------------------------------------------------------------- v2.6 editorial gates
+# Abbreviations whose trailing period must NOT split a sentence (and must not "end" a bullet):
+# dotted initialisms (U.S., U.K., E.U., U.N., U.S.A., a.m., p.m.) + common dotted titles.
+_ABBREV_BODY = r"(?:[A-Za-z]\.){2,}|(?:Mr|Mrs|Ms|Dr|Prof|Gen|Sen|Rep|Gov|St|Jr|Sr|vs|No|Inc|Ltd|Co|Corp)\."
+_ABBREV_RE = re.compile(r"\b(?:%s)" % _ABBREV_BODY)
+_ABBREV_MASK = "\ue000"   # private-use char: stands in for the '.' of an abbreviation during split
+
+# A "sentence" ending at a TITLE-style abbreviation (…said Dr. / …met with Gen.) is always a
+# split fragment — those grammatically require a following name. Initialisms (U.S., E.U.) may
+# legitimately end a sentence ("Sales rose in the U.S." — locked in test_editorial_v21); their
+# FRAGMENT case ("between the U.S.") is caught by _COMPOUND_DANGLE instead.
+_ABBREV_END_RE = re.compile(
+    r"\b(?:Mr|Mrs|Ms|Dr|Prof|Gen|Sen|Rep|Gov|St|vs|No)\.[\"')\]”’]?\s*$")
+
+# Context-free connective openers: a bullet/summary starting mid-argument ("And, a look at…").
+_CONNECTIVE_OPEN_RE = re.compile(r"^\s*(And|But|Also|Meanwhile|However)\b[\s,]", re.I)
+
+# Newsletter/roundup table-of-contents lines ("Up First briefing: Iran-US; TPS; …").
+_ROUNDUP_RE = re.compile(r"^[^.!?]{0,60}\b(briefing|newsletter|roundup|rundown)\b[^.!?]{0,40}:", re.I)
+
+# Scrape artifact: whitespace before punctuation ("strikes , fighting" / "the form .").
+_SPACE_PUNCT_RE = re.compile(r"\s+([,.;:!?])")
+
+
+def _mask_abbrevs(text):
+    """Protect abbreviation periods from the sentence splitter (U.S. → U<mask>S<mask>)."""
+    return _ABBREV_RE.sub(lambda m: m.group(0).replace(".", _ABBREV_MASK), text)
+
+
+def _unmask_abbrevs(text):
+    return text.replace(_ABBREV_MASK, ".")
+
+
+def _ends_with_abbrev(s):
+    """True if the sentence 'ends' at an abbreviation — a splitter/truncation fragment."""
+    return bool(_ABBREV_END_RE.search(s or ""))
+
+
+def _is_roundup_line(s):
+    """Newsletter TOC / roundup deck: a 'briefing:' style lead-in, or a semicolon topic list."""
+    return bool(_ROUNDUP_RE.search(s or "")) or (s or "").count(";") >= 2
+
+
+def _norm_tokens(text):
+    return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).split()
+
+
+def _strip_headline_glue(s, headline):
+    """Scrapers sometimes glue the page H1 onto the first paragraph with no period ("…11 people A
+    wildfire…"). If `s` begins with the (normalized) headline and continues past it, strip the
+    headline prefix and return the remainder — but only when the remainder still reads like a
+    sentence (capitalized, ≥6 words). Otherwise return '' so the caller drops the glue blob.
+    Returns `s` unchanged when there is no glue."""
+    ht, st = _norm_tokens(headline), _norm_tokens(s)
+    if not ht or len(st) <= len(ht) or st[:len(ht)] != ht:
+        return s
+    # Walk the original string consuming the headline's tokens case-insensitively.
+    idx = 0
+    for tok in ht:
+        m = re.compile(re.escape(tok), re.I).search(s, idx)
+        if not m:
+            return s
+        idx = m.end()
+    rest = s[idx:].lstrip(" \t-–—:;,.\"'“”’")
+    if len(rest.split()) >= 6 and rest[:1].isupper():
+        return rest
+    return ""
+
 
 STOPWORDS = {"the","a","an","and","or","but","of","to","in","on","for","with","from","at","by",
              "as","is","are","was","were","be","been","that","this","it","its","his","her","their",
@@ -148,8 +234,11 @@ def clean_sentences(text, source_name=""):
     text = html.unescape(text or "").replace("\xa0", " ")
     bkey = brand_key(source_name)
     out, seen = [], set()
-    for raw in re.split(r"(?<=[.!?])\s+|\n+", text):
-        s = re.sub(r"\s+", " ", raw).strip()
+    # v2.6: protect abbreviation periods (U.S., Mr., …) so the splitter can't create fragments
+    # like "…between the U.S." — masked before the split, restored per sentence right after.
+    for raw in re.split(r"(?<=[.!?])\s+|\n+", _mask_abbrevs(text)):
+        s = re.sub(r"\s+", " ", _unmask_abbrevs(raw)).strip()
+        s = _SPACE_PUNCT_RE.sub(r"\1", s)          # v2.6: "strikes ," / "the form ." → normalized
         if not s:
             continue
         low = s.lower()
@@ -324,6 +413,14 @@ def _well_formed_bullet(s):
         return False
     if words[-1].lower() in _DANGLING_END:          # ends mid-clause
         return False
+    if _COMPOUND_DANGLE.search(s):                  # "…between the U.S." (v2.6 — was summary/why only)
+        return False
+    if _ends_with_abbrev(s):                        # ends AT an abbreviation → split fragment (v2.6)
+        return False
+    if _CONNECTIVE_OPEN_RE.search(s):               # "And, …" — context-free opener (v2.6)
+        return False
+    if _is_roundup_line(s):                         # newsletter TOC / semicolon topic list (v2.6)
+        return False
     if looks_like_caption(s):                       # photo caption / scene
         return False
     if looks_like_metadata(s):                      # author bio / metadata / stitched quote (v2.5)
@@ -366,6 +463,10 @@ def draft_one(item, source_text, used):
     # Clean the source first: strip boilerplate/nav/captions/credits/bios, decode entities, keep prose.
     clean = clean_sentences(source_text, source_name=item.get("source", ""))
     headline = item["title"]                              # the outlet's own headline (grounded)
+    # v2.6: scrapers can glue the page H1 onto the first paragraph with no period. Strip the
+    # headline prefix (or drop the blob when the remainder isn't a sentence) BEFORE composing,
+    # so neither the summary nor any takeaway can start with a duplicated headline.
+    clean = [c for c in (_strip_headline_glue(s, headline) for s in clean) if c]
     flags = ["extractive_draft"]
     if used == "rss_snippet":
         flags += ["thin_source", "rss_snippet_only"]
@@ -374,7 +475,10 @@ def draft_one(item, source_text, used):
         # Cleaning removed everything (pure boilerplate / too thin). Use the raw snippet ONLY if it is
         # itself a quality summary; otherwise emit NO summary (never ship a fragment) and flag. Either
         # way this draft fails closed via the flags below — we just never emit malformed copy.
-        raw = html.unescape(source_text).strip() if used == "rss_snippet" else ""
+        # v2.6: normalize the raw snippet the same way clean_sentences does (whitespace before
+        # punctuation), so a snippet-sourced summary can never diverge from the validator's gate.
+        raw = _SPACE_PUNCT_RE.sub(r"\1", re.sub(r"\s+", " ", html.unescape(source_text).strip())) \
+              if used == "rss_snippet" else ""
         summary = raw if (raw and not summary_quality_issues(raw)) else ""
         takeaways, why, confidence = [], "", "low"
         if not summary:
@@ -520,6 +624,12 @@ def summary_quality_issues(summary):
         issues.append("summary ends mid-clause (cut off)")
     if _COMPOUND_DANGLE.search(s):
         issues.append("summary ends with a dangling phrase (e.g. 'between the U.S.')")
+    if _ends_with_abbrev(s):
+        issues.append("summary ends at an abbreviation (split fragment)")
+    if _CONNECTIVE_OPEN_RE.search(s):
+        issues.append("summary starts with a context-free connective (e.g. 'And,')")
+    if _is_roundup_line(s):
+        issues.append("summary is a newsletter/roundup table-of-contents line")
     if _unbalanced_issue(s):
         issues.append("summary has " + _unbalanced_issue(s))
     if looks_like_caption(s):
@@ -549,6 +659,10 @@ def why_quality_issues(why, summary, headline=""):
         issues.append("whyItMatters ends mid-clause (cut off)")
     if _COMPOUND_DANGLE.search(w):
         issues.append("whyItMatters ends with a dangling phrase (e.g. 'between the U.S.')")
+    if _ends_with_abbrev(w):
+        issues.append("whyItMatters ends at an abbreviation (split fragment)")
+    if _CONNECTIVE_OPEN_RE.search(w):
+        issues.append("whyItMatters starts with a context-free connective (e.g. 'And,')")
     if _unbalanced_issue(w):
         issues.append("whyItMatters has " + _unbalanced_issue(w))
     if w.lower() in s:

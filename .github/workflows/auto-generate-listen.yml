@@ -24,6 +24,10 @@ on:
   schedule:
     - cron: "45 9 * * *"    # 09:45 UTC (~5:45 AM EDT) — ~45 min after Daily Auto Publish
     - cron: "45 10 * * *"   # 10:45 UTC (~6:45 AM EDT) — catch-up; skips if already generated
+    - cron: "45 11 * * *"   # 11:45 UTC — extended catch-up (publish crons observed 2–3 h late)
+    - cron: "45 12 * * *"   # 12:45 UTC — extended catch-up
+    - cron: "45 13 * * *"   # 13:45 UTC — extended catch-up
+    - cron: "45 14 * * *"   # 14:45 UTC — final probe; covers publishes merged by 14:45 UTC
   workflow_dispatch: {}      # manual fallback — always generates for the CURRENT latest date
 
 permissions:

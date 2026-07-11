@@ -126,5 +126,31 @@ CLEAN_FEED = {"date": "2026-07-10", "focus": "MIXED", "version": 1,
               "signals": [sig(i) for i in range(1, 6)]}
 check("validator: clean feed has no editorial errors", validate_feed.editorial_errors(CLEAN_FEED) == [])
 
+# ---------------------------------------------------------------- v2.6.1 date-scoped gate
+# The editorial gate applies only to editions dated >= EDITORIAL_GATE_SINCE. A legacy
+# edition with broken prose must still validate (structurally), or every workflow that
+# re-validates the CURRENT latest.json fails on yesterday's content (2026-07-11 run #49).
+import json, tempfile
+
+def _validate_dated(feed, date):
+    f = dict(feed); f["date"] = date
+    p = os.path.join(tempfile.gettempdir(), f"{date}.json")
+    json.dump(f, open(p, "w"), ensure_ascii=False)
+    try:
+        return validate_feed.validate(p)
+    finally:
+        os.remove(p)
+
+check("cutoff constant is a valid date string",
+      isinstance(validate_feed.EDITORIAL_GATE_SINCE, str) and len(validate_feed.EDITORIAL_GATE_SINCE) == 10)
+old_errs = _validate_dated(BROKEN_FEED, "2026-07-10")
+new_errs = _validate_dated(BROKEN_FEED, "2026-07-11")
+check("legacy edition (pre-cutoff): broken prose passes validate()", old_errs == [])
+check("new edition (post-cutoff): broken prose rejected by validate()",
+      any("editorial" not in e and ":" in e for e in new_errs) or len(new_errs) > 0)
+check("new edition rejection includes editorial classes",
+      any("author-bio" in e or "headline" in e or "dangling" in e for e in new_errs))
+check("clean feed passes validate() even post-cutoff", _validate_dated(CLEAN_FEED, "2026-07-11") == [])
+
 print("ALL PASS" if failures == 0 else f"{failures} CHECK(S) FAILED")
 sys.exit(1 if failures else 0)

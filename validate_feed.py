@@ -255,6 +255,14 @@ _ED_ROUNDUP_RE = re.compile(r"^[^.!?]{0,60}\b(briefing|newsletter|roundup|rundow
 # Scrape artifact: whitespace before punctuation ("strikes , fighting" / "the form .").
 _ED_SPACE_PUNCT_RE = re.compile(r"\s[,.;:!?]")
 
+# v2.6.1 — the editorial prose gate applies only to editions dated on/after its introduction.
+# Legacy editions (and latest.json while it still points at one) predate the v2.6 writer fixes;
+# re-validating them editorially breaks every workflow that re-checks the CURRENT pointer —
+# Daily Auto Publish's "Sync with latest main" step failed exactly this way on 2026-07-11
+# (run #49: "❌ REJECTED (latest.json)" against the 2026-07-10 content) and blocked the day's
+# publish. Editions dated >= this cutoff are produced by the v2.6 writer and get the full gate.
+EDITORIAL_GATE_SINCE = "2026-07-11"
+
 
 def _editorial_issues(text):
     """Failure-class labels for one prose field ('' / non-str → no issues)."""
@@ -312,7 +320,10 @@ def validate(path):
         return [f"feed is not valid JSON: {e}"]
 
     errors += structural_errors(feed)
-    errors += editorial_errors(feed)   # v2.6 prose-quality gate (defense in depth behind writer)
+    # v2.6 prose-quality gate (defense in depth behind writer) — v2.6.1: only for editions
+    # dated on/after EDITORIAL_GATE_SINCE, so re-validating yesterday's pointer can't fail.
+    if isinstance(feed.get("date"), str) and feed["date"] >= EDITORIAL_GATE_SINCE:
+        errors += editorial_errors(feed)
 
     # date must be a valid YYYY-MM-DD label (timezone-agnostic — it names the morning it serves).
     raw = feed.get("date")

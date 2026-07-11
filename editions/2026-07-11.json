@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "ニューヨーク・タイムズが匿名の情報源をもとに大統領専用機の安全性への懸念を報じたことが、今回の対立の発端となっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-11/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the Trump administration subpoenaed New York Times journalists?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. It's over their reporting on Air Force One and security concerns about the plane.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the Times report exactly?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "They said Trump flew to a NATO summit in Turkey on a new plane that Qatar had gifted, but the Secret Service advised him to switch to an older plane for the trip home.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "Why the switch?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The reporting suggested the Qatari plane wasn't secure enough. A former official told CBS there hadn't been enough time or money to update it with the required security features.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "And the subpoenas are about the sources for that story?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be the case. The Times used unnamed sources. The paper's top newsroom lawyer called the subpoenas a brazen attempt to intimidate journalists and prevent the public from knowing what's happening.",
+              "duration": 11.467755
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a pretty strong response.",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Press freedom advocates tend to view subpoenas of journalists as a serious issue, especially when reporting involves government accountability.",
+              "duration": 8.176327
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,55 @@
             "カンナ議員らは米大使館とイスラエル警察に連絡を取り、最終的に移動を続けることができた"
           ],
           "whyItMatters": "占領地の実態が、同盟国の議員の目にも直接触れたという事実は重い。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-11/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a US congressman being detained in the West Bank. What happened?",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Congressman Ro Khanna says he was detained by armed Israeli settlers during a recent visit to the occupied West Bank.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "Detained by settlers? How did that happen?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says settlers carrying US-made M4 rifles surrounded their van. An aide who was there said Israeli forces showed up to back the settlers, not the congressman.",
+              "duration": 9.743673
+            },
+            {
+              "speaker": "listener",
+              "text": "That's surprising. How did they get out of the situation?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "They contacted the US embassy and Israeli police, and were eventually able to continue traveling.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the congressman say about the experience?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "He described it as a first-hand view of the realities faced by Palestinians living under occupation.",
+              "duration": 5.146122
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,60 @@
           ],
           "whyItMatters": "アダムスは2023年アフリカネイションズカップでチームをベスト4に導いた一員であり、ワールドカップでは南アフリカ史上初の決勝トーナメント進出という歴史的な瞬間をともに刻んだ選手だった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-11/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I just saw that South African footballer Jayden Adams has died. He was so young.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he was only 25. He'd just played for South Africa at the World Cup a few weeks ago.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "What happened?",
+              "duration": 0.966531
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police in South Africa say they found a 25-year-old man's body at a house in Cape Town on Saturday morning. They've opened an investigation.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "That's awful. How did he do at the World Cup?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He played in all three group matches. South Africa actually made history by reaching the knockout stages for the first time, though they lost to Canada in the round of 32.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "I remember reading something about him playing through difficult circumstances.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. He started in their opening match against the Czech Republic just hours after learning his grandmother had passed away.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "That must have taken incredible strength.",
+              "duration": 2.089796
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +291,65 @@
           ],
           "whyItMatters": "フロック社はもともと監視技術や法執行機関との協力関係をめぐって批判を受けており、今回の文書拡散がさらなる反発の波を呼んだ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-11/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Wait, what's this about a surveillance company threatening people?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "So, photos of what looked like cease and desist letters from Flock Safety went viral. They appeared to demand a lecture series in Newport Beach stop discussing Flock's surveillance technology.",
+              "duration": 9.926531
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty aggressive. Did they actually send those letters?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Flock says they didn't send them — that the letters didn't come from anyone at the company.",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "listener",
+              "text": "So someone faked them?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "The company is saying the letters aren't real, though we don't know yet who created them or why.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "Why would this blow up so much?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Flock has already faced significant backlash over its surveillance technology and work with law enforcement. So when these letters appeared, it triggered another wave of criticism.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "Even though they say they didn't send them.",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The fake letters still fed into existing concerns people have about the company.",
+              "duration": 4.493061
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +381,55 @@
             "「コードビルダー」と呼ばれる一オクターブ鍵盤、12ボタンの「トーナルセレクター」、そして「エクステンションズダイヤル」の三つが、キーと和音のヴォイシングを決定する"
           ],
           "whyItMatters": "開発チームはMusicRadarの編集部を訪れて詳細を初公開し、数か月以内に約550ポンドで発売予定であることを明らかにした。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-11/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a synth called Nopia that's been in the works for a while. What's the story there?",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "explainer",
+              "text": "After years of teasing, the creators say Nopia is basically finished. They recently brought it in for a first look and announced it'll launch in a couple of months for around £550.",
+              "duration": 10.34449
+            },
+            {
+              "speaker": "listener",
+              "text": "So what makes this synth different from others?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's built around harmonic interplay in a unique way. Instead of just a few knobs and a keyboard controlling one synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance.",
+              "duration": 13.217959
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty different. How do you actually play it?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial. Together, these control the key and voicing of the chords you're creating.",
+              "duration": 10.396735
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's more like building a whole arrangement than just playing one sound?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They compare it to a drumless groovebox — you're layering and shaping multiple parts at once rather than focusing on a single melody line.",
+              "duration": 7.523265
+            }
+          ]
         }
       }
     }

@@ -24,6 +24,11 @@ name: Daily Auto Publish
 on:
   schedule:
     - cron: "0 9 * * *"         # 09:00 UTC — 5:00 AM ET (EDT); publishes today's ET edition
+    - cron: "0 10 * * *"        # 10:00 UTC — catch-up probe; skips green if already published
+    - cron: "0 11 * * *"        # 11:00 UTC — catch-up (GitHub cron delays observed at 1–3 h)
+    - cron: "0 12 * * *"        # 12:00 UTC — catch-up
+    - cron: "0 13 * * *"        # 13:00 UTC — catch-up
+    - cron: "0 14 * * *"        # 14:00 UTC — final catch-up (Listen probes run through 14:45)
   workflow_dispatch:
     inputs:
       date:
@@ -44,7 +49,52 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ── 0) Catch-up probe (SCHEDULED runs only) ────────────────────────────────────────────
+  # With hourly catch-up crons, most runs of a healthy day arrive AFTER the edition already
+  # published — those must skip GREEN, not fail red on Gate A. This probe only decides
+  # "is there anything left to do today?"; every safety gate (A/B/C, strict validation,
+  # sync, pre-push guard) still runs unchanged inside auto-publish itself.
+  # Manual dispatches BYPASS this probe entirely: recovery stays direct and unchanged.
+  # The check never exits non-zero (fail-open to publishing — Gate A backstops overwrites;
+  # a transient probe failure just defers to the next hourly cron).
+  probe:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      needed: ${{ steps.check.outputs.needed }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check — is today's ET edition already published or in progress?
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DATE="$(TZ=America/New_York date +%Y-%m-%d)"
+          if [ -f "editions/${DATE}.json" ]; then
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+            echo "## Daily Auto Publish — ${DATE}: already published ✅ (editions/${DATE}.json is on main) → skip" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          OPEN_PR="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head "publish/${DATE}" --json number --jq 'length' 2>/dev/null || echo 0)"
+          if [ "${OPEN_PR:-0}" -ge 1 ]; then
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+            echo "## Daily Auto Publish — ${DATE}: publish already in progress ✅ (open publish/${DATE} PR) → skip" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "needed=true" >> "$GITHUB_OUTPUT"
+          echo "## Daily Auto Publish — ${DATE}: no edition on main and no open publish PR → publishing" >> "$GITHUB_STEP_SUMMARY"
+
   auto-publish:
+    needs: probe
+    # Runs when: manual dispatch (probe skipped — recovery path unchanged), or a scheduled
+    # run whose probe found work to do. `!cancelled()` lets this run despite the probe job
+    # being skipped on workflow_dispatch.
+    if: ${{ !cancelled() && (github.event_name != 'schedule' || needs.probe.outputs.needed == 'true') }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

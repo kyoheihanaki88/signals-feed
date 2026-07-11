@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-11",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Trump administration subpoenas New York Times journalists over Air Force One reporting",
+      "summary": "The paper had published stories alleging that the Qatari-gifted plane was not secure enough, and the Secret Service urged Trump to switch planes on his way home from a Nato summit in Turkey.",
+      "keyTakeaways": [
+        "David McCraw, the Times's top newsroom lawyer, called the summons a \"brazen act\" and \"nothing more than an attempt to prevent the public from knowing what is happening in their country by intimidating journalists from doing their jobs\".",
+        "The Times reported on Wednesday that while Trump flew to the Nato summit in Turkey on the new Air Force One, he left the summit on an older plane on the advice of the Secret Service.",
+        "A former US government official told CBS that there was not enough time or money for the plane to be updated with the security requirements to serve as Air Force One."
+      ],
+      "whyItMatters": "The New York Times reported on security concerns about the president's plane citing unnamed sources.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cpd3g8q51g7o?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Sketchbook",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ政権、エアフォースワン報道めぐりニューヨーク・タイムズ記者に召喚状",
+          "summary": "ニューヨーク・タイムズは、カタールから贈られた航空機のセキュリティに問題があると報じていた。トルコでのNATO首脳会議からの帰路、シークレットサービスがトランプ大統領に別の機体への変更を促したという。",
+          "keyTakeaways": [
+            "同紙の法務責任者デイビッド・マクロー氏は、今回の召喚状を「厚顔な行為」と批判し、「記者を脅して取材を妨げ、国民が知るべきことを隠そうとする試みにすぎない」と述べた。",
+            "タイムズの報道によれば、トランプ大統領はNATO首脳会議へは新型のエアフォースワンで向かったが、帰路はシークレットサービスの助言を受け、旧型の機体に乗り換えた。",
+            "元米政府高官はCBSに対し、当該機をエアフォースワンとして運用するために必要なセキュリティ要件を満たす時間も資金も不足していたと語った。"
+          ],
+          "whyItMatters": "ニューヨーク・タイムズが匿名の情報源をもとに大統領専用機の安全性への懸念を報じたことが、今回の対立の発端となっている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US congressman says he was detained by armed Israeli settlers in occupied West Bank",
+      "summary": "The US congressman Ro Khanna says armed Israeli settlers detained him during a visit to the Israel -occupied West Bank recently, describing the experience as a first-hand view of the realities faced by Palestinians living under occupation.",
+      "keyTakeaways": [
+        "Khanna recounted how settlers carrying US-made M4 rifles surrounded the group’s van.",
+        "Khanna aide Cameron Kasky wrote on X that he was there when the congressman’s group was detained, saying: “The IDF showed up to back up the settlers, not the US congressman.”",
+        "Khanna said he and his group were ultimately able to continue traveling after contacting the US embassy and Israeli police."
+      ],
+      "whyItMatters": "In May, he released a video criticizing the Democratic National Committee’s incomplete postmortem report on the defeat that the party suffered at the hands of Donald Trump in the 2024 presidential election.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/11/ro-khanna-congressman-detained-israel-settlers-west-bank",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米国会議員、ヨルダン川西岸でイスラエル入植者に拘束される",
+          "summary": "米国会議員ロー・カンナは先ごろ、イスラエルが占領するヨルダン川西岸を訪問した際、武装したイスラエル入植者に拘束されたと語った。占領下で暮らすパレスチナ人が直面する現実を、自ら体験することになったと述べている。",
+          "keyTakeaways": [
+            "米国製M4ライフルを携えた入植者たちが、一行の乗るバンを取り囲んだ",
+            "同行した補佐官キャメロン・カスキーはXへの投稿で、イスラエル国防軍が現場に駆けつけたのは議員側ではなく入植者側についてのことだったと記した",
+            "カンナ議員らは米大使館とイスラエル警察に連絡を取り、最終的に移動を続けることができた"
+          ],
+          "whyItMatters": "占領地の実態が、同盟国の議員の目にも直接触れたという事実は重い。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "South Africa World Cup midfielder Adams dies aged 25",
+      "summary": "South Africa and Mamelodi Sundowns midfielder Jayden Adams has died at the age of 25, just weeks after featuring for his country at the World Cup.",
+      "keyTakeaways": [
+        "Adams featured in all three of South Africa's group games at the tournament, where they reached the knockout stages before losing to co-hosts Canada in the round of 32.",
+        "Police in South Africa said they had opened an investigation after the body of a 25-year-old man was found at a house in Schotschekloof, a suburb in central Cape Town, on Saturday morning.",
+        "Adams started in the 1-1 draw against the Czech Republic in Group A despite learning that his grandmother had passed away only hours before kick-off."
+      ],
+      "whyItMatters": "He was part of the South Africa squad that reached the 2023 Africa Cup of Nations semi-finals before being called up to Hugo Broos' squad for the World Cup, where the team made history in reaching the knockout stages of the competition for the first time.",
+      "originalURL": "https://www.bbc.co.uk/sport/football/articles/cr47y5nvrqlo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1607968565043-36af90dde238?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Makerspace",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "南アフリカ代表MFアダムス、25歳で急逝",
+          "summary": "南アフリカ代表およびマメロディ・サンダウンズに所属するMFジェイデン・アダムスが25歳で亡くなった。ワールドカップで母国のユニフォームを着てからわずか数週間後のことだった。",
+          "keyTakeaways": [
+            "アダムスは南アフリカのグループステージ全3試合に出場。チームは決勝トーナメントに進出したが、ラウンド32で共催国カナダに敗れた。",
+            "土曜の朝、ケープタウン中心部の住宅街スコッチェスクルーフの一軒家で25歳の男性の遺体が発見され、警察が捜査を開始した。",
+            "グループAのチェコ戦では、キックオフ直前に祖母の訃報を受けながらも先発出場し、1対1の引き分けに貢献した。"
+          ],
+          "whyItMatters": "アダムスは2023年アフリカネイションズカップでチームをベスト4に導いた一員であり、ワールドカップでは南アフリカ史上初の決勝トーナメント進出という歴史的な瞬間をともに刻んだ選手だった。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "No, Flock isn’t threatening people for debating surveillance",
+      "summary": "Photos of purported cease and desist letters from the company have gone viral, but Flock says it didn’t send them.",
+      "keyTakeaways": [
+        "On Thursday, the Instagram account for a lecture series in Newport Beach, CA posted a photo of what appeared to be a cease and desist letter from the surveillance technology company Flock Safety.",
+        "The text of the letter demands that the group stop hosting conversations about Flock’s surveillance technology.",
+        "To be clear: these letters did not come from me or from anyone at Flock."
+      ],
+      "whyItMatters": "Flock has received significant backlash over its technology and work with law enforcement agencies, and this letter kicked off yet another wave of criticism against the company for allegedly trying to shut down discussions of its work.",
+      "originalURL": "https://www.theverge.com/tech/964425/flock-safety-cease-and-desist-letter",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Production",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "フロック社、監視技術をめぐる議論を封じようとしたのか――拡散した文書の真偽",
+          "summary": "監視技術企業フロック・セーフティから送られたとされる停止要求書の写真がSNSで拡散した。しかし同社は、そのような文書を送った事実はないと否定している。",
+          "keyTakeaways": [
+            "カリフォルニア州ニューポートビーチの講演シリーズを運営するインスタグラムアカウントが、フロック・セーフティからの停止要求書とみられる文書の写真を投稿した。",
+            "その文書には、同社の監視技術に関する議論の場を設けることをやめるよう求める内容が記されていた。",
+            "フロック社は「この文書は私からも、社内の誰からも送られていない」と明確に否定した。"
+          ],
+          "whyItMatters": "フロック社はもともと監視技術や法執行機関との協力関係をめぐって批判を受けており、今回の文書拡散がさらなる反発の波を呼んだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "After years of teasing, the viral Nopia synth is ‘basically finished’",
+      "summary": "He’s covered the tech industry for over 18 years and knows a thing or two about synths.",
+      "keyTakeaways": [
+        "Nopia is built around harmonic interplay in a unique way.",
+        "Rather than a few knobs and a keyboard controlling a single synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance, not unlike a drumless groovebox.",
+        "There’s a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial that dictate the key and voicing of the chords."
+      ],
+      "whyItMatters": "The duo brought it to the MusicRadar offices for an in-depth first look and revealed that it will be launching in “a couple of months” for around £550.",
+      "originalURL": "https://www.theverge.com/gadgets/964499/nopia-viral-synth-finished-price-release-demo",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The workspace",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "話題のシンセ「Nopia」、ついに完成間近",
+          "summary": "長年にわたって断片的な情報が公開されてきたシンセサイザー「Nopia」が、ほぼ完成の域に達した。開発者は18年以上にわたりテクノロジー業界を取材してきた人物で、シンセにも深い造詣を持つ。",
+          "keyTakeaways": [
+            "和声の絡み合いを独自の形で中心に据えた設計",
+            "単一のパッチをつまみと鍵盤で操作する従来の発想とは異なり、鍵盤・ベース・アルペジオ・パッドといった複数のモジュールをひとつのパフォーマンスへと統合する、ドラムレスのグルーヴボックスに近い楽器",
+            "「コードビルダー」と呼ばれる一オクターブ鍵盤、12ボタンの「トーナルセレクター」、そして「エクステンションズダイヤル」の三つが、キーと和音のヴォイシングを決定する"
+          ],
+          "whyItMatters": "開発チームはMusicRadarの編集部を訪れて詳細を初公開し、数か月以内に約550ポンドで発売予定であることを明らかにした。"
+        }
+      }
+    }
+  ]
+}

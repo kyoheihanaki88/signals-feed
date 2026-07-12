@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-12",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Lindsey Graham, key ally of Donald Trump, has died after sudden illness, his office says",
+      "summary": "Lindsey Graham, a longtime US senator and key ally of Donald Trump, has died from a sudden illness, his office said on Sunday.",
+      "keyTakeaways": [
+        "Citing police scanner audio, the Washington Post newspaper reported that emergency medical services had received a call at about 8.30pm on Saturday regarding a person suffering chest pains at Graham’s home on Capitol Hill.",
+        "The Ukrainian president, Volodymyr Zelenskyy, wrote on social media on Friday: “I’m grateful to Lindsey for recognizing our warriors.” Graham was scheduled to appear as a guest on NBC’s Meet the Press on Sunday.",
+        "His death is a personal blow to Trump, for whom he was a political cheerleader and frequent golf partner."
+      ],
+      "whyItMatters": "There had been no known concerns over the health of Graham, whose birthday was last Thursday and who visited Ukraine last week.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/12/lindsey-graham-key-ally-of-donald-trump-has-died-after-sudden-illness-his-office-says",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1499540633125-484965b60031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Gear",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "リンジー・グラハム上院議員、急病により死去",
+          "summary": "長年にわたりドナルド・トランプの盟友として知られた米上院議員リンジー・グラハムが、急病のため死去した。同議員の事務所が日曜日に明らかにした。",
+          "keyTakeaways": [
+            "警察の無線音声をもとにワシントン・ポスト紙が報じたところによると、土曜日の午後8時半ごろ、キャピトル・ヒルにあるグラハムの自宅から胸の痛みを訴える人がいるとして救急に通報があった。",
+            "ウクライナのゼレンスキー大統領は金曜日、「わが国の兵士たちを認めてくれたリンジーに感謝する」とSNSに投稿していた。グラハムは日曜日にNBCの番組への出演も予定していた。",
+            "トランプにとって、グラハムは政治的な支持者であり、ゴルフをともにする親しい友人でもあった。その死は個人的な痛手となる。"
+          ],
+          "whyItMatters": "グラハムは先週ウクライナを訪問したばかりで、木曜日には誕生日を迎えたばかり。健康上の懸念は、これまで知られていなかった。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US and Iran exchange strikes as Tehran again says strait of Hormuz is closed",
+      "summary": "Iran and the US exchanged fresh strikes early on Sunday over what Tehran said was unauthorised use of the strait of Hormuz by a container ship, raising further doubts about the prospects of talks to agree a way forward for the vital waterway.",
+      "keyTakeaways": [
+        "The latest flare-up began when the ⁠Islamic Revolutionary Guard Corps said it had struck a vessel travelling on an unapproved route and then closed the strait, warning that any retaliation would be met with a “severe response”.",
+        "A short time later, US Central Command said its forces had carried out a round of strikes against Iran, attacking at least 140 targets.",
+        "The strait, the IRGC said, was now closed “until further notice” and at least until “the end of US interference in this region”."
+      ],
+      "whyItMatters": "The Australian government urged Iran to uphold the ceasefire agreement, including allowing safe passage through the strait of Hormuz.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/12/us-and-iran-exchange-strikes-as-tehran-again-says-strait-of-hormuz-is-closed",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The camera",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホルムズ海峡をめぐり、米国とイランが相互攻撃",
+          "summary": "日曜日未明、イランと米国が再び攻撃を応酬した。イランは、コンテナ船がホルムズ海峡を無許可で航行したと主張。この重要な海上交通路の行方をめぐる協議は、さらに不透明さを増している。",
+          "keyTakeaways": [
+            "イラン革命防衛隊が未承認ルートを航行する船舶を攻撃し、海峡を封鎖。報復には「厳しい対応」をとると警告した",
+            "その後まもなく、米中央軍はイランへの攻撃を実施。少なくとも140か所を標的にしたと発表した",
+            "革命防衛隊は、海峡を「追って通知があるまで」、少なくとも「米国がこの地域への干渉をやめるまで」閉鎖すると宣言した"
+          ],
+          "whyItMatters": "オーストラリア政府はイランに対し、ホルムズ海峡の安全な航行確保を含む停戦合意の遵守を求めた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies: Reactions",
+      "summary": "The Qatari government has announced the death of former Emir Sheikh Hamad bin Khalifa Al Thani, who ruled the country from 1995 until his abdication in 2013.",
+      "keyTakeaways": [
+        "Sheikh Hamad is widely regarded as one of the key architects of modern Qatar.",
+        "Egyptian President Abdel Fattah el-Sisi expressed his deepest condolences and sympathy to Qatar’s leaders and people.",
+        "We ask God to envelop him in His vast mercy and to perpetuate security and stability upon Qatar and its people."
+      ],
+      "whyItMatters": "May God have mercy on the late Emir and inspire his family and the Qatari people with patience and solace.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/12/former-emir-of-qatar-sheikh-hamad-bin-khalifa-al-thani-dies-reactions?traffic_source=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Microscope",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "カタール前首長ハマド・ビン・ハリーファ氏が死去",
+          "summary": "カタール政府は、1995年から2013年の退位まで同国を統治した前首長ハマド・ビン・ハリーファ・アール・サーニー氏の死去を発表した。",
+          "keyTakeaways": [
+            "現代カタールの礎を築いた指導者として広く知られる",
+            "エジプトのシーシー大統領はカタールの指導者と国民に深い哀悼の意を表した",
+            "神が故人を広大な慈悲で包み、カタールに安寧と安定がもたらされることを祈る"
+          ],
+          "whyItMatters": "神が故首長に慈悲を与え、その家族とカタール国民に忍耐と慰めをもたらされるよう願う。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "No, Flock isn’t threatening people for debating surveillance",
+      "summary": "Photos of purported cease and desist letters from the company have gone viral, but Flock says it didn’t send them.",
+      "keyTakeaways": [
+        "On Thursday, the Instagram account for a lecture series in Newport Beach, CA posted a photo of what appeared to be a cease and desist letter from the surveillance technology company Flock Safety.",
+        "The text of the letter demands that the group stop hosting conversations about Flock’s surveillance technology.",
+        "To be clear: these letters did not come from me or from anyone at Flock."
+      ],
+      "whyItMatters": "Flock has received significant backlash over its technology and work with law enforcement agencies, and this letter kicked off yet another wave of criticism against the company for allegedly trying to shut down discussions of its work.",
+      "originalURL": "https://www.theverge.com/tech/964425/flock-safety-cease-and-desist-letter",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "監視技術企業フロック、抗議文書の送付を否定",
+          "summary": "監視技術企業フロック・セーフティが、自社の技術をめぐる議論を封じようとしているとの疑惑が広まった。発端は、同社名義の停止要求書とされる文書の写真がSNSで拡散したことだ。しかしフロック側は、そのような文書を送った事実はないと明確に否定している。",
+          "keyTakeaways": [
+            "カリフォルニア州ニューポートビーチのある講演シリーズのインスタグラムアカウントが、フロック・セーフティからの停止要求書とされる文書の写真を投稿した",
+            "その文書には、同社の監視技術に関する議論の場を設けることをやめるよう求める内容が記されていた",
+            "フロックの関係者は「この文書は私からも、社内の誰からも送られていない」と明言した"
+          ],
+          "whyItMatters": "フロックはもともと法執行機関との連携をめぐって批判を受けており、今回の文書拡散がさらなる反発の波を呼んだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "After years of teasing, the viral Nopia synth is ‘basically finished’",
+      "summary": "He’s covered the tech industry for over 18 years and knows a thing or two about synths.",
+      "keyTakeaways": [
+        "Nopia is built around harmonic interplay in a unique way.",
+        "Rather than a few knobs and a keyboard controlling a single synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance, not unlike a drumless groovebox.",
+        "There’s a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial that dictate the key and voicing of the chords."
+      ],
+      "whyItMatters": "The duo brought it to the MusicRadar offices for an in-depth first look and revealed that it will be launching in “a couple of months” for around £550.",
+      "originalURL": "https://www.theverge.com/gadgets/964499/nopia-viral-synth-finished-price-release-demo",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "話題のシンセ「Nopia」、ついに完成間近",
+          "summary": "長年にわたって注目を集めてきたシンセサイザー「Nopia」が、ほぼ完成の域に達した。開発者は18年以上にわたりテクノロジー業界を取材してきた人物で、シンセにも深い造詣を持つ。",
+          "keyTakeaways": [
+            "和声の絡み合いを独自の形で中心に据えた設計",
+            "単一のパッチをつまみと鍵盤で操作する従来の形式とは異なり、鍵盤・ベース・アルペジオ・パッドといった複数のモジュールを一体化し、ドラムレスのグルーブボックスに近い演奏体験を実現",
+            "「コードビルダー」と呼ばれる一オクターブ鍵盤、12ボタンの「トーナルセレクター」、そして「エクステンションズダイアル」の三つが、キーとボイシングを決定する"
+          ],
+          "whyItMatters": "開発デュオはMusicRadarの編集部を訪れて詳細を初公開し、数か月以内に約550ポンドで発売予定であることを明かした。"
+        }
+      }
+    }
+  ]
+}

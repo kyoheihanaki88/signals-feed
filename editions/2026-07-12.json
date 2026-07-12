@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "グラハムは先週ウクライナを訪問したばかりで、木曜日には誕生日を迎えたばかり。健康上の懸念は、これまで知られていなかった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I just saw that Senator Lindsey Graham has died. What happened?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "His office announced on Sunday that he died from a sudden illness. There had been no known health concerns before this.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "That's shocking. When did this happen?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to the Washington Post, emergency services received a call Saturday evening around eight-thirty about someone with chest pains at his home on Capitol Hill.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Wasn't he just active recently?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. His birthday was last Thursday, and he visited Ukraine last week. He was even scheduled to appear on Meet the Press on Sunday.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "He was close to Donald Trump, wasn't he?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very close. He was a key political ally and frequent golf partner. His office described this as a personal blow to Trump.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "What was he doing in Ukraine?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "President Zelenskyy thanked him on Friday for recognizing Ukrainian warriors. Graham was a longtime senator and had been involved in various international issues.",
+              "duration": 8.907755
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,55 @@
             "革命防衛隊は、海峡を「追って通知があるまで」、少なくとも「米国がこの地域への干渉をやめるまで」閉鎖すると宣言した"
           ],
           "whyItMatters": "オーストラリア政府はイランに対し、ホルムズ海峡の安全な航行確保を含む停戦合意の遵守を求めた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about new strikes between the US and Iran. What happened?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Early Sunday, Iran's Revolutionary Guard said it struck a container ship that was using what they called an unauthorised route through the Strait of Hormuz. Then US Central Command responded with strikes against at least 140 targets in Iran.",
+              "duration": 12.852245
+            },
+            {
+              "speaker": "listener",
+              "text": "And Iran closed the strait again?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The Revolutionary Guard said the strait is closed until further notice — at least until what they called the end of US interference in the region. They warned any retaliation would bring a severe response.",
+              "duration": 12.068571
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this waterway matter so much?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Strait of Hormuz is a vital shipping route. That's why the Australian government is urging Iran to uphold the ceasefire agreement and allow safe passage through it.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "Does this mean talks about the waterway are in trouble?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "It raises doubts, yes. There were hopes for talks to agree on a way forward, but this latest flare-up makes that harder.",
+              "duration": 6.582857
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,65 @@
           ],
           "whyItMatters": "神が故首長に慈悲を与え、その家族とカタール国民に忍耐と慰めをもたらされるよう願う。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing news from Qatar this morning. What happened?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Qatari government announced that former Emir Sheikh Hamad bin Khalifa Al Thani has died.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "Former emir... so he wasn't currently leading the country?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. He ruled Qatar from 1995 until 2013, when he stepped down.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "What's he known for?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's widely regarded as one of the key architects of modern Qatar.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "listener",
+              "text": "Have there been reactions from other leaders?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Egyptian President Abdel Fattah el-Sisi expressed his deepest condolences to Qatar's leaders and people.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like he had a significant impact on the region.",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. The statements from leaders emphasize prayers for mercy and wishes for Qatar's continued stability.",
+              "duration": 6.29551
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +296,65 @@
           ],
           "whyItMatters": "フロックはもともと法執行機関との連携をめぐって批判を受けており、今回の文書拡散がさらなる反発の波を呼んだ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a surveillance company and fake legal letters going around?",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. So photos of what looked like cease and desist letters from Flock Safety went viral this week.",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the letters say?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "They demanded that a lecture series in Newport Beach stop hosting conversations about Flock's surveillance technology.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty aggressive. Did Flock actually send them?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Flock says the letters didn't come from them or anyone at the company.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "So someone faked legal threats in their name?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It appears so. But the damage was done — Flock already faces criticism over its work with law enforcement, and this triggered another wave of backlash.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "Even though they didn't actually send it.",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The company is now dealing with fallout from something they say they never did.",
+              "duration": 4.623673
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +386,55 @@
             "「コードビルダー」と呼ばれる一オクターブ鍵盤、12ボタンの「トーナルセレクター」、そして「エクステンションズダイアル」の三つが、キーとボイシングを決定する"
           ],
           "whyItMatters": "開発デュオはMusicRadarの編集部を訪れて詳細を初公開し、数か月以内に約550ポンドで発売予定であることを明かした。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's this Nopia synth I keep hearing about?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a synthesizer that's been teased for years and is now basically finished. The creators say it'll launch in a couple of months for around £550.",
+              "duration": 9.430204
+            },
+            {
+              "speaker": "listener",
+              "text": "What makes it different from other synths?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's built around harmonic interplay in a unique way. Instead of just controlling one synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance.",
+              "duration": 11.781224
+            },
+            {
+              "speaker": "listener",
+              "text": "Like playing several instruments at once?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They compare it to a drumless groovebox. You've got a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial that all work together to shape the key and voicing of your chords.",
+              "duration": 12.068571
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty hands-on.",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The creators recently brought it to MusicRadar's offices for an in-depth first look, so people are finally getting to see how it actually works.",
+              "duration": 8.359184
+            }
+          ]
         }
       }
     }

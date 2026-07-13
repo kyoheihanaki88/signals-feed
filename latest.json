@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,87 +8,77 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Lindsey Graham, key ally of Donald Trump, has died after sudden illness, his office says",
-      "summary": "Lindsey Graham, a longtime US senator and key ally of Donald Trump, has died from a sudden illness, his office said on Sunday.",
+      "source": "Al Jazeera",
+      "headline": "New Iran strikes on Gulf as US attacks escalate: What we know",
+      "summary": "Iran’s Islamic Revolutionary Guard Corps (IRGC) has targeted US military facilities in Bahrain, claimed it has destroyed radar systems in Oman and hit Jordan and Kuwait in its latest round of overnight retaliatory strikes against the United States.",
       "keyTakeaways": [
-        "Citing police scanner audio, the Washington Post newspaper reported that emergency medical services had received a call at about 8.30pm on Saturday regarding a person suffering chest pains at Graham’s home on Capitol Hill.",
-        "The Ukrainian president, Volodymyr Zelenskyy, wrote on social media on Friday: “I’m grateful to Lindsey for recognizing our warriors.” Graham was scheduled to appear as a guest on NBC’s Meet the Press on Sunday.",
-        "His death is a personal blow to Trump, for whom he was a political cheerleader and frequent golf partner."
+        "Bahrain: The IRGC also said it launched missile and drone attacks targeting “installations and infrastructure of the aggressive US army” in Juffair, Bahrain.",
+        "It said any explosions heard were the result of air defence systems intercepting the attacks and urged the public to follow safety and security instructions.",
+        "The US military’s Central Command (CENTCOM) earlier said it hit “dozens of targets at multiple locations with precision munitions to degrade Iran’s ability to continue attacking international shipping flowing through the Strait of Hormuz”."
       ],
-      "whyItMatters": "There had been no known concerns over the health of Graham, whose birthday was last Thursday and who visited Ukraine last week.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/12/lindsey-graham-key-ally-of-donald-trump-has-died-after-sudden-illness-his-office-says",
+      "whyItMatters": "Tehran’s attacks on Monday came as a response to Washington’s escalating strikes as prospects of peace between the two countries recede.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/13/new-iran-strikes-on-gulf-as-us-attacks-escalate-what-we-know?traffic_source=rss",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1499540633125-484965b60031?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Gear",
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "リンジー・グラハム上院議員、急病により死去",
-          "summary": "長年にわたりドナルド・トランプの盟友として知られた米上院議員リンジー・グラハムが、急病のため死去した。同議員の事務所が日曜日に明らかにした。",
+          "headline": "イランが湾岸地域への攻撃を拡大、米軍施設も標的に",
+          "summary": "イラン革命防衛隊（IRGC）は、バーレーンの米軍施設を攻撃したと発表。オマーンのレーダーシステムを破壊し、ヨルダンとクウェートにも攻撃を加えたと主張した。一連の報復攻撃は夜間にかけて行われた。",
           "keyTakeaways": [
-            "警察の無線音声をもとにワシントン・ポスト紙が報じたところによると、土曜日の午後8時半ごろ、キャピトル・ヒルにあるグラハムの自宅から胸の痛みを訴える人がいるとして救急に通報があった。",
-            "ウクライナのゼレンスキー大統領は金曜日、「わが国の兵士たちを認めてくれたリンジーに感謝する」とSNSに投稿していた。グラハムは日曜日にNBCの番組への出演も予定していた。",
-            "トランプにとって、グラハムは政治的な支持者であり、ゴルフをともにする親しい友人でもあった。その死は個人的な痛手となる。"
+            "バーレーンのジュファイルにある米軍の施設・インフラに対し、ミサイルおよびドローンによる攻撃を実施したとIRGCは述べた。",
+            "現地で聞こえた爆発音は迎撃システムによるものだとし、市民に安全指示への従順を呼びかけた。",
+            "米中央軍（CENTCOM）はこれに先立ち、ホルムズ海峡の航行を脅かすイランの能力を低下させるため、複数拠点の数十の目標を精密兵器で攻撃したと発表していた。"
           ],
-          "whyItMatters": "グラハムは先週ウクライナを訪問したばかりで、木曜日には誕生日を迎えたばかり。健康上の懸念は、これまで知られていなかった。"
+          "whyItMatters": "イランの攻撃は米国の軍事行動の激化に対する報復であり、両国間の和平の見通しはさらに遠のいている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I just saw that Senator Lindsey Graham has died. What happened?",
-              "duration": 3.291429
+              "text": "So Iran launched more strikes overnight?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "His office announced on Sunday that he died from a sudden illness. There had been no known health concerns before this.",
-              "duration": 6.164898
+              "text": "Yes. Iran's Revolutionary Guard says it targeted US military facilities in Bahrain, and also hit sites in Oman, Jordan, and Kuwait.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "That's shocking. When did this happen?",
-              "duration": 2.272653
+              "text": "What exactly did they hit in Bahrain?",
+              "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "According to the Washington Post, emergency services received a call Saturday evening around eight-thirty about someone with chest pains at his home on Capitol Hill.",
-              "duration": 8.359184
+              "text": "They claim they launched missiles and drones at US military installations in an area called Juffair. Bahrain's government said explosions people heard were from air defense systems intercepting the attacks.",
+              "duration": 10.762449
             },
             {
               "speaker": "listener",
-              "text": "Wasn't he just active recently?",
-              "duration": 1.750204
+              "text": "And this is all in response to US strikes?",
+              "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "Yes. His birthday was last Thursday, and he visited Ukraine last week. He was even scheduled to appear on Meet the Press on Sunday.",
-              "duration": 7.47102
+              "text": "Right. The US military had just hit dozens of Iranian targets, saying they wanted to stop Iran from attacking ships passing through the Strait of Hormuz.",
+              "duration": 8.202449
             },
             {
               "speaker": "listener",
-              "text": "He was close to Donald Trump, wasn't he?",
-              "duration": 1.985306
+              "text": "So both sides are escalating?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "Very close. He was a key political ally and frequent golf partner. His office described this as a personal blow to Trump.",
-              "duration": 7.47102
-            },
-            {
-              "speaker": "listener",
-              "text": "What was he doing in Ukraine?",
-              "duration": 1.854694
-            },
-            {
-              "speaker": "explainer",
-              "text": "President Zelenskyy thanked him on Friday for recognizing Ukrainian warriors. Graham was a longtime senator and had been involved in various international issues.",
-              "duration": 8.907755
+              "text": "That's the concern. These latest Iranian strikes came as a direct response to Washington's attacks, and prospects for peace between the two countries are fading.",
+              "duration": 8.803265
             }
           ]
         }
@@ -99,77 +89,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "US and Iran exchange strikes as Tehran again says strait of Hormuz is closed",
-      "summary": "Iran and the US exchanged fresh strikes early on Sunday over what Tehran said was unauthorised use of the strait of Hormuz by a container ship, raising further doubts about the prospects of talks to agree a way forward for the vital waterway.",
+      "source": "Al Jazeera",
+      "headline": "How former Emir Sheikh Hamad bin Khalifa Al Thani built Qatar’s economy",
+      "summary": "Qatar’s Father Emir Sheikh Hamad Bin Khalifa Al Thani has died at the age of 74.",
       "keyTakeaways": [
-        "The latest flare-up began when the ⁠Islamic Revolutionary Guard Corps said it had struck a vessel travelling on an unapproved route and then closed the strait, warning that any retaliation would be met with a “severe response”.",
-        "A short time later, US Central Command said its forces had carried out a round of strikes against Iran, attacking at least 140 targets.",
-        "The strait, the IRGC said, was now closed “until further notice” and at least until “the end of US interference in this region”."
+        "During his 18-year rule, Sheikh Hamad reshaped the energy-rich country’s domestic and global footprint.",
+        "When he assumed power in 1995, Qatar’s economy was limited in size and relied mainly on oil, while the vast gas wealth of the North Field site was still in the early stages of development.",
+        "In less than two decades, Qatar became the world’s largest exporter of liquefied natural gas (LNG), the owner of one of the largest sovereign wealth funds and one of the countries with the highest per capita incomes."
       ],
-      "whyItMatters": "The Australian government urged Iran to uphold the ceasefire agreement, including allowing safe passage through the strait of Hormuz.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/12/us-and-iran-exchange-strikes-as-tehran-again-says-strait-of-hormuz-is-closed",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The camera",
+      "whyItMatters": "Here, we take a look at Sheikh Hamad’s economic legacy that helped transform Qatar from a small Gulf economy to a major and influential player in global energy and investment markets.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/13/how-former-emir-sheikh-hamad-bin-khalifa-al-thani-built-qatar-economy?traffic_source=rss",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ホルムズ海峡をめぐり、米国とイランが相互攻撃",
-          "summary": "日曜日未明、イランと米国が再び攻撃を応酬した。イランは、コンテナ船がホルムズ海峡を無許可で航行したと主張。この重要な海上交通路の行方をめぐる協議は、さらに不透明さを増している。",
+          "headline": "カタールを世界的エネルギー大国へ導いた前首長の遺産",
+          "summary": "カタールの前首長、ハマド・ビン・ハリーファ・アール・サーニー氏が74歳で死去した。18年にわたる統治のなかで、同氏はこの小さな湾岸国を世界の舞台へと押し上げた。",
           "keyTakeaways": [
-            "イラン革命防衛隊が未承認ルートを航行する船舶を攻撃し、海峡を封鎖。報復には「厳しい対応」をとると警告した",
-            "その後まもなく、米中央軍はイランへの攻撃を実施。少なくとも140か所を標的にしたと発表した",
-            "革命防衛隊は、海峡を「追って通知があるまで」、少なくとも「米国がこの地域への干渉をやめるまで」閉鎖すると宣言した"
+            "1995年の就任当時、カタール経済は石油依存の小規模なものにとどまり、北部ガス田の開発もまだ緒についたばかりだった。",
+            "その後20年足らずで、カタールは液化天然ガスの世界最大輸出国へと成長した。",
+            "政府系ファンドの規模と国民一人あたりの所得は、世界有数の水準に達した。"
           ],
-          "whyItMatters": "オーストラリア政府はイランに対し、ホルムズ海峡の安全な航行確保を含む停戦合意の遵守を求めた。"
+          "whyItMatters": "ハマド前首長の経済的遺産を振り返ることは、カタールがいかにして湾岸の小国からエネルギーと投資の世界的な中心地へと変貌したかを理解することでもある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing reports about new strikes between the US and Iran. What happened?",
-              "duration": 4.179592
+              "text": "I saw that Qatar's former leader passed away. Sheikh Hamad, I think?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "Early Sunday, Iran's Revolutionary Guard said it struck a container ship that was using what they called an unauthorised route through the Strait of Hormuz. Then US Central Command responded with strikes against at least 140 targets in Iran.",
-              "duration": 12.852245
+              "text": "Yes, Sheikh Hamad bin Khalifa Al Thani. He died at seventy-four. He ruled Qatar for eighteen years.",
+              "duration": 6.687347
             },
             {
               "speaker": "listener",
-              "text": "And Iran closed the strait again?",
-              "duration": 2.089796
+              "text": "What did he do during that time?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The Revolutionary Guard said the strait is closed until further notice — at least until what they called the end of US interference in the region. They warned any retaliation would bring a severe response.",
-              "duration": 12.068571
+              "text": "He really transformed the country's economy. When he came to power in 1995, Qatar was small and relied mainly on oil.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "Why does this waterway matter so much?",
-              "duration": 2.220408
+              "text": "And he changed that?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "The Strait of Hormuz is a vital shipping route. That's why the Australian government is urging Iran to uphold the ceasefire agreement and allow safe passage through it.",
-              "duration": 9.325714
+              "text": "He did. Qatar had this huge natural gas field that wasn't fully developed yet. Under his leadership, the country became the world's largest exporter of liquefied natural gas.",
+              "duration": 10.03102
             },
             {
               "speaker": "listener",
-              "text": "Does this mean talks about the waterway are in trouble?",
-              "duration": 2.690612
+              "text": "That's a big shift.",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "It raises doubts, yes. There were hopes for talks to agree on a way forward, but this latest flare-up makes that harder.",
-              "duration": 6.582857
+              "text": "It was. In less than twenty years, Qatar also built one of the largest sovereign wealth funds and became one of the highest per capita income countries in the world.",
+              "duration": 9.273469
+            },
+            {
+              "speaker": "listener",
+              "text": "So he turned Qatar into a major energy player.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. From a small Gulf economy to a major force in global energy and investment markets.",
+              "duration": 5.146122
             }
           ]
         }
@@ -180,87 +180,77 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies: Reactions",
-      "summary": "The Qatari government has announced the death of former Emir Sheikh Hamad bin Khalifa Al Thani, who ruled the country from 1995 until his abdication in 2013.",
+      "source": "The Guardian (World)",
+      "headline": "Ann Widdecombe death: counter-terrorism police take over investigation",
+      "summary": "The force initially said counter-terrorism partners had reviewed the case and had ruled out a terrorist motive.",
       "keyTakeaways": [
-        "Sheikh Hamad is widely regarded as one of the key architects of modern Qatar.",
-        "Egyptian President Abdel Fattah el-Sisi expressed his deepest condolences and sympathy to Qatar’s leaders and people.",
-        "We ask God to envelop him in His vast mercy and to perpetuate security and stability upon Qatar and its people."
+        "A statement from CTP said “new information and evidence has come to light during what has been a dynamic and complex investigation and as a result, counter-terrorism policing south east is now leading the investigation”.",
+        "The man in custody has since been rearrested on suspicion of commission, preparation or instigation of acts of terrorism.",
+        "The head of national counter-terrorism policing, Laurence Taylor, said: “Building on the progress made by our colleagues in Devon and Cornwall police, we now have new information and evidence that means counter-terrorism policing is now leading the investigation."
       ],
-      "whyItMatters": "May God have mercy on the late Emir and inspire his family and the Qatari people with patience and solace.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/12/former-emir-of-qatar-sheikh-hamad-bin-khalifa-al-thani-dies-reactions?traffic_source=rss",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Microscope",
+      "whyItMatters": "A 28-year-old white British man from Rotherham, South Yorkshire, was arrested on suspicion of murder on Saturday.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/jul/13/ann-widdecombe-counter-terrorism-police-investigation",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "カタール前首長ハマド・ビン・ハリーファ氏が死去",
-          "summary": "カタール政府は、1995年から2013年の退位まで同国を統治した前首長ハマド・ビン・ハリーファ・アール・サーニー氏の死去を発表した。",
+          "headline": "ウィデコム氏死亡事件、対テロ警察が捜査を引き継ぐ",
+          "summary": "当初、地元警察は対テロ部門が事件を検討した結果、テロの動機は否定されたと発表していた。しかしその後、新たな情報と証拠が浮上し、対テロ警察南東部が捜査の主導権を握ることになった。",
           "keyTakeaways": [
-            "現代カタールの礎を築いた指導者として広く知られる",
-            "エジプトのシーシー大統領はカタールの指導者と国民に深い哀悼の意を表した",
-            "神が故人を広大な慈悲で包み、カタールに安寧と安定がもたらされることを祈る"
+            "対テロ警察南東部は声明で、「捜査が進む中で新たな情報と証拠が明らかになった」として、正式に捜査を引き継いだと発表した。",
+            "身柄を拘束されていた男は、テロ行為の実行・準備・扇動の疑いで再逮捕された。",
+            "国家対テロ警察責任者のローレンス・テイラー氏は、デボン・コーンウォール警察の捜査を引き継ぐ形で、新たな情報と証拠に基づき対テロ部門が主導すると述べた。"
           ],
-          "whyItMatters": "神が故首長に慈悲を与え、その家族とカタール国民に忍耐と慰めをもたらされるよう願う。"
+          "whyItMatters": "事件をめぐっては、サウスヨークシャー州ロザラム出身の28歳の白人英国人男性が、土曜日に殺人の疑いで逮捕されている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing news from Qatar this morning. What happened?",
-              "duration": 3.186939
+              "text": "I saw counter-terrorism police have taken over the Ann Widdecombe case. What changed?",
+              "duration": 4.597551
             },
             {
               "speaker": "explainer",
-              "text": "The Qatari government announced that former Emir Sheikh Hamad bin Khalifa Al Thani has died.",
-              "duration": 5.250612
+              "text": "Initially, they reviewed it and ruled out a terrorist motive. But now they say new information and evidence came to light during the investigation.",
+              "duration": 7.549388
             },
             {
               "speaker": "listener",
-              "text": "Former emir... so he wasn't currently leading the country?",
-              "duration": 3.186939
+              "text": "So they've changed their assessment?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Right. He ruled Qatar from 1995 until 2013, when he stepped down.",
-              "duration": 4.179592
+              "text": "Yes. Counter-terrorism policing south east is now leading what they're calling a dynamic and complex investigation.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "What's he known for?",
-              "duration": 1.28
+              "text": "What about the person in custody?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "He's widely regarded as one of the key architects of modern Qatar.",
-              "duration": 3.291429
+              "text": "A 28-year-old man from Rotherham was arrested on suspicion of murder on Saturday. He's since been rearrested on suspicion of terrorism-related offences.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "Have there been reactions from other leaders?",
-              "duration": 2.45551
+              "text": "That's quite a shift in the investigation.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Egyptian President Abdel Fattah el-Sisi expressed his deepest condolences to Qatar's leaders and people.",
-              "duration": 6.765714
-            },
-            {
-              "speaker": "listener",
-              "text": "It sounds like he had a significant impact on the region.",
-              "duration": 3.056327
-            },
-            {
-              "speaker": "explainer",
-              "text": "He did. The statements from leaders emphasize prayers for mercy and wishes for Qatar's continued stability.",
-              "duration": 6.29551
+              "text": "It is. The head of national counter-terrorism policing said they're building on the earlier work and following where the new evidence leads.",
+              "duration": 7.131429
             }
           ]
         }
@@ -272,86 +262,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "No, Flock isn’t threatening people for debating surveillance",
-      "summary": "Photos of purported cease and desist letters from the company have gone viral, but Flock says it didn’t send them.",
+      "headline": "How Philips Hue got the smart home right",
+      "summary": "The state of the smart home can be frustrating, because it is just so obvious how things ought to work.",
       "keyTakeaways": [
-        "On Thursday, the Instagram account for a lecture series in Newport Beach, CA posted a photo of what appeared to be a cease and desist letter from the surveillance technology company Flock Safety.",
-        "The text of the letter demands that the group stop hosting conversations about Flock’s surveillance technology.",
-        "To be clear: these letters did not come from me or from anyone at Flock."
+        "Making your home smart shouldn’t require renovating, and the smarts should be mostly invisible.",
+        "Until now, maybe no product has come closer to nailing the smart home than Philips Hue.",
+        "The Verge ’s David Pierce and Jennifer Pattison Tuohy are joined by smart home journalist and expert Richard Gunther to discuss Hue’s origins, which have an awful lot to do with the rise of the smartphone."
       ],
-      "whyItMatters": "Flock has received significant backlash over its technology and work with law enforcement agencies, and this letter kicked off yet another wave of criticism against the company for allegedly trying to shut down discussions of its work.",
-      "originalURL": "https://www.theverge.com/tech/964425/flock-safety-cease-and-desist-letter",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Research",
+      "whyItMatters": "Shall We Go On Sinning So That Grace May Increase?",
+      "originalURL": "https://www.theverge.com/podcast/964515/philips-hue-smart-lights-version-history",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "監視技術企業フロック、抗議文書の送付を否定",
-          "summary": "監視技術企業フロック・セーフティが、自社の技術をめぐる議論を封じようとしているとの疑惑が広まった。発端は、同社名義の停止要求書とされる文書の写真がSNSで拡散したことだ。しかしフロック側は、そのような文書を送った事実はないと明確に否定している。",
+          "headline": "スマートホームの理想形——Philips Hueが示したもの",
+          "summary": "スマートホームの現状には、もどかしさを感じることが多い。どうあるべきかは、誰の目にも明らかなのに、と。",
           "keyTakeaways": [
-            "カリフォルニア州ニューポートビーチのある講演シリーズのインスタグラムアカウントが、フロック・セーフティからの停止要求書とされる文書の写真を投稿した",
-            "その文書には、同社の監視技術に関する議論の場を設けることをやめるよう求める内容が記されていた",
-            "フロックの関係者は「この文書は私からも、社内の誰からも送られていない」と明言した"
+            "家をスマート化するために、大がかりな工事は必要ない。技術は、できる限り目立たないほうがいい。",
+            "これまでのところ、その理想にもっとも近づいた製品がPhilips Hueだといえる。",
+            "The VergeのDavid PierceとJennifer Pattison Tuohyが、スマートホーム専門家のRichard Gunterを迎え、Hueの誕生とスマートフォンの台頭との深い関係を語る。"
           ],
-          "whyItMatters": "フロックはもともと法執行機関との連携をめぐって批判を受けており、今回の文書拡散がさらなる反発の波を呼んだ。"
+          "whyItMatters": "恵みを増やすために、罪の中にとどまり続けるべきなのだろうか。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a surveillance company and fake legal letters going around?",
-              "duration": 4.493061
+              "text": "So Philips Hue... that's the smart light bulb system, right?",
+              "duration": 3.657143
             },
             {
               "speaker": "explainer",
-              "text": "Right. So photos of what looked like cease and desist letters from Flock Safety went viral this week.",
-              "duration": 4.91102
+              "text": "Exactly. And apparently it's one of the few smart home products that's actually gotten things right.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "What did the letters say?",
+              "text": "What does that mean, getting it right?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, the idea is that making your home smart shouldn't require tearing down walls or renovating. The technology should just blend in.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "And Hue does that?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to this piece, it comes closer than maybe any other product so far. You just screw in a bulb.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "How did it get started?",
               "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "They demanded that a lecture series in Newport Beach stop hosting conversations about Flock's surveillance technology.",
-              "duration": 5.799184
+              "text": "Interestingly, its origins are tied to the rise of smartphones. The Verge brought in a smart home expert to talk about how it all came together.",
+              "duration": 7.235918
             },
             {
               "speaker": "listener",
-              "text": "That sounds pretty aggressive. Did Flock actually send them?",
-              "duration": 3.474286
+              "text": "So smartphones made smart lights possible?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "No. Flock says the letters didn't come from them or anyone at the company.",
-              "duration": 4.205714
-            },
-            {
-              "speaker": "listener",
-              "text": "So someone faked legal threats in their name?",
-              "duration": 2.45551
-            },
-            {
-              "speaker": "explainer",
-              "text": "It appears so. But the damage was done — Flock already faces criticism over its work with law enforcement, and this triggered another wave of backlash.",
-              "duration": 8.724898
-            },
-            {
-              "speaker": "listener",
-              "text": "Even though they didn't actually send it.",
-              "duration": 2.037551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly. The company is now dealing with fallout from something they say they never did.",
-              "duration": 4.623673
+              "text": "Pretty much. Once everyone had a powerful computer in their pocket, controlling your lights from an app started to make sense.",
+              "duration": 6.112653
             }
           ]
         }
@@ -363,76 +353,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "After years of teasing, the viral Nopia synth is ‘basically finished’",
-      "summary": "He’s covered the tech industry for over 18 years and knows a thing or two about synths.",
+      "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "summary": "Apple’s self-driving car program never really got off the ground, but it may have been what made the company’s chips the powerful AI performers they are.",
       "keyTakeaways": [
-        "Nopia is built around harmonic interplay in a unique way.",
-        "Rather than a few knobs and a keyboard controlling a single synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance, not unlike a drumless groovebox.",
-        "There’s a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial that dictate the key and voicing of the chords."
+        "Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing.",
+        "While Apple’s AI software efforts have lagged behind the rest of the industry, its hardware has been impressive.",
+        "It’s also what has allowed Apple to tout its privacy features, since less data is sent to the cloud."
       ],
-      "whyItMatters": "The duo brought it to the MusicRadar offices for an in-depth first look and revealed that it will be launching in “a couple of months” for around £550.",
-      "originalURL": "https://www.theverge.com/gadgets/964499/nopia-viral-synth-finished-price-release-demo",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The lab",
+      "whyItMatters": "The M7 Ultra is expected to be the basis for a new server product from Apple as well, with support for up to 1.5TB of RAM.",
+      "originalURL": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "話題のシンセ「Nopia」、ついに完成間近",
-          "summary": "長年にわたって注目を集めてきたシンセサイザー「Nopia」が、ほぼ完成の域に達した。開発者は18年以上にわたりテクノロジー業界を取材してきた人物で、シンセにも深い造詣を持つ。",
+          "headline": "幻に終わった自動運転が、Appleのチップを育てた",
+          "summary": "Appleの自動運転プロジェクトは日の目を見ることなく幕を閉じた。しかしその過程が、同社チップを強力なAI処理の担い手へと鍛え上げた可能性がある。",
           "keyTakeaways": [
-            "和声の絡み合いを独自の形で中心に据えた設計",
-            "単一のパッチをつまみと鍵盤で操作する従来の形式とは異なり、鍵盤・ベース・アルペジオ・パッドといった複数のモジュールを一体化し、ドラムレスのグルーブボックスに近い演奏体験を実現",
-            "「コードビルダー」と呼ばれる一オクターブ鍵盤、12ボタンの「トーナルセレクター」、そして「エクステンションズダイアル」の三つが、キーとボイシングを決定する"
+            "自動運転の開発初期、Appleはデバイス上での高度なAI処理の必要性に気づいていた",
+            "AIソフトウェアでは業界に後れを取る一方、ハードウェアの完成度は際立っている",
+            "処理をデバイス内で完結させる設計は、プライバシー保護の訴求にもつながっている"
           ],
-          "whyItMatters": "開発デュオはMusicRadarの編集部を訪れて詳細を初公開し、数か月以内に約550ポンドで発売予定であることを明かした。"
+          "whyItMatters": "M7 Ultraは最大1.5TBのメモリに対応し、Appleの新たなサーバー製品の基盤になるとも見られている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-12/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what's this Nopia synth I keep hearing about?",
-              "duration": 2.925714
+              "text": "So Apple tried to make a self-driving car?",
+              "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "It's a synthesizer that's been teased for years and is now basically finished. The creators say it'll launch in a couple of months for around £550.",
-              "duration": 9.430204
+              "text": "They did, yeah. The program never really got off the ground, but there's an interesting side effect.",
+              "duration": 5.146122
             },
             {
               "speaker": "listener",
-              "text": "What makes it different from other synths?",
-              "duration": 1.985306
+              "text": "What came out of it?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "It's built around harmonic interplay in a unique way. Instead of just controlling one synth patch, it blends multiple modules — keys, bass, arp, and pad — into a single performance.",
-              "duration": 11.781224
+              "text": "Early on, Apple realized they'd need really powerful chips to handle AI processing right on the device. That pushed their chip development forward.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "Like playing several instruments at once?",
-              "duration": 2.220408
+              "text": "So the car project actually helped their other products?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. They compare it to a drumless groovebox. You've got a one-octave keyboard called the Chord Builder, a 12-button Tonal Selector, and an Extensions Dial that all work together to shape the key and voicing of your chords.",
-              "duration": 12.068571
+              "text": "Exactly. While their AI software has lagged behind competitors, the hardware itself has been impressive. Those chips are now in their computers and phones.",
+              "duration": 9.613061
             },
             {
               "speaker": "listener",
-              "text": "That sounds pretty hands-on.",
-              "duration": 1.48898
+              "text": "Does that affect how we use Apple devices?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "It is. The creators recently brought it to MusicRadar's offices for an in-depth first look, so people are finally getting to see how it actually works.",
-              "duration": 8.359184
+              "text": "It does. Because the chips can handle more on the device itself, less of your data needs to be sent to the cloud. That's become a big privacy selling point for Apple.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "Interesting how a failed project can still leave something valuable behind.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. And they're now planning a new server product based on that chip technology, with support for up to one and a half terabytes of memory.",
+              "duration": 8.071837
             }
           ]
         }

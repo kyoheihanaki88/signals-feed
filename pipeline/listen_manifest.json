@@ -3157,6 +3157,283 @@
           ]
         }
       }
+    },
+    "2026-07-13": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-13/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Iran launched more strikes overnight?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Iran's Revolutionary Guard says it targeted US military facilities in Bahrain, and also hit sites in Oman, Jordan, and Kuwait.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "What exactly did they hit in Bahrain?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "They claim they launched missiles and drones at US military installations in an area called Juffair. Bahrain's government said explosions people heard were from air defense systems intercepting the attacks.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "And this is all in response to US strikes?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The US military had just hit dozens of Iranian targets, saying they wanted to stop Iran from attacking ships passing through the Strait of Hormuz.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "So both sides are escalating?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the concern. These latest Iranian strikes came as a direct response to Washington's attacks, and prospects for peace between the two countries are fading.",
+              "duration": 8.803265
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-13/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw that Qatar's former leader passed away. Sheikh Hamad, I think?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Sheikh Hamad bin Khalifa Al Thani. He died at seventy-four. He ruled Qatar for eighteen years.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "What did he do during that time?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "He really transformed the country's economy. When he came to power in 1995, Qatar was small and relied mainly on oil.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "And he changed that?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. Qatar had this huge natural gas field that wasn't fully developed yet. Under his leadership, the country became the world's largest exporter of liquefied natural gas.",
+              "duration": 10.03102
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a big shift.",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was. In less than twenty years, Qatar also built one of the largest sovereign wealth funds and became one of the highest per capita income countries in the world.",
+              "duration": 9.273469
+            },
+            {
+              "speaker": "listener",
+              "text": "So he turned Qatar into a major energy player.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. From a small Gulf economy to a major force in global energy and investment markets.",
+              "duration": 5.146122
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-13/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw counter-terrorism police have taken over the Ann Widdecombe case. What changed?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Initially, they reviewed it and ruled out a terrorist motive. But now they say new information and evidence came to light during the investigation.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "So they've changed their assessment?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Counter-terrorism policing south east is now leading what they're calling a dynamic and complex investigation.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "What about the person in custody?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "A 28-year-old man from Rotherham was arrested on suspicion of murder on Saturday. He's since been rearrested on suspicion of terrorism-related offences.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "That's quite a shift in the investigation.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The head of national counter-terrorism policing said they're building on the earlier work and following where the new evidence leads.",
+              "duration": 7.131429
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-13/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Philips Hue... that's the smart light bulb system, right?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And apparently it's one of the few smart home products that's actually gotten things right.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that mean, getting it right?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, the idea is that making your home smart shouldn't require tearing down walls or renovating. The technology should just blend in.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "And Hue does that?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to this piece, it comes closer than maybe any other product so far. You just screw in a bulb.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "How did it get started?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "Interestingly, its origins are tied to the rise of smartphones. The Verge brought in a smart home expert to talk about how it all came together.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "So smartphones made smart lights possible?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Pretty much. Once everyone had a powerful computer in their pocket, controlling your lights from an app started to make sense.",
+              "duration": 6.112653
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-13/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Apple tried to make a self-driving car?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "They did, yeah. The program never really got off the ground, but there's an interesting side effect.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "What came out of it?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Early on, Apple realized they'd need really powerful chips to handle AI processing right on the device. That pushed their chip development forward.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "So the car project actually helped their other products?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. While their AI software has lagged behind competitors, the hardware itself has been impressive. Those chips are now in their computers and phones.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "Does that affect how we use Apple devices?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Because the chips can handle more on the device itself, less of your data needs to be sent to the cloud. That's become a big privacy selling point for Apple.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "Interesting how a failed project can still leave something valuable behind.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. And they're now planning a new server product based on that chip technology, with support for up to one and a half terabytes of memory.",
+              "duration": 8.071837
+            }
+          ]
+        }
+      }
     }
   }
 }

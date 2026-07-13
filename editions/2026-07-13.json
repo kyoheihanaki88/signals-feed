@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-13",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "New Iran strikes on Gulf as US attacks escalate: What we know",
+      "summary": "Iran’s Islamic Revolutionary Guard Corps (IRGC) has targeted US military facilities in Bahrain, claimed it has destroyed radar systems in Oman and hit Jordan and Kuwait in its latest round of overnight retaliatory strikes against the United States.",
+      "keyTakeaways": [
+        "Bahrain: The IRGC also said it launched missile and drone attacks targeting “installations and infrastructure of the aggressive US army” in Juffair, Bahrain.",
+        "It said any explosions heard were the result of air defence systems intercepting the attacks and urged the public to follow safety and security instructions.",
+        "The US military’s Central Command (CENTCOM) earlier said it hit “dozens of targets at multiple locations with precision munitions to degrade Iran’s ability to continue attacking international shipping flowing through the Strait of Hormuz”."
+      ],
+      "whyItMatters": "Tehran’s attacks on Monday came as a response to Washington’s escalating strikes as prospects of peace between the two countries recede.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/13/new-iran-strikes-on-gulf-as-us-attacks-escalate-what-we-know?traffic_source=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "イランが湾岸地域への攻撃を拡大、米軍施設も標的に",
+          "summary": "イラン革命防衛隊（IRGC）は、バーレーンの米軍施設を攻撃したと発表。オマーンのレーダーシステムを破壊し、ヨルダンとクウェートにも攻撃を加えたと主張した。一連の報復攻撃は夜間にかけて行われた。",
+          "keyTakeaways": [
+            "バーレーンのジュファイルにある米軍の施設・インフラに対し、ミサイルおよびドローンによる攻撃を実施したとIRGCは述べた。",
+            "現地で聞こえた爆発音は迎撃システムによるものだとし、市民に安全指示への従順を呼びかけた。",
+            "米中央軍（CENTCOM）はこれに先立ち、ホルムズ海峡の航行を脅かすイランの能力を低下させるため、複数拠点の数十の目標を精密兵器で攻撃したと発表していた。"
+          ],
+          "whyItMatters": "イランの攻撃は米国の軍事行動の激化に対する報復であり、両国間の和平の見通しはさらに遠のいている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "How former Emir Sheikh Hamad bin Khalifa Al Thani built Qatar’s economy",
+      "summary": "Qatar’s Father Emir Sheikh Hamad Bin Khalifa Al Thani has died at the age of 74.",
+      "keyTakeaways": [
+        "During his 18-year rule, Sheikh Hamad reshaped the energy-rich country’s domestic and global footprint.",
+        "When he assumed power in 1995, Qatar’s economy was limited in size and relied mainly on oil, while the vast gas wealth of the North Field site was still in the early stages of development.",
+        "In less than two decades, Qatar became the world’s largest exporter of liquefied natural gas (LNG), the owner of one of the largest sovereign wealth funds and one of the countries with the highest per capita incomes."
+      ],
+      "whyItMatters": "Here, we take a look at Sheikh Hamad’s economic legacy that helped transform Qatar from a small Gulf economy to a major and influential player in global energy and investment markets.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/13/how-former-emir-sheikh-hamad-bin-khalifa-al-thani-built-qatar-economy?traffic_source=rss",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "カタールを世界的エネルギー大国へ導いた前首長の遺産",
+          "summary": "カタールの前首長、ハマド・ビン・ハリーファ・アール・サーニー氏が74歳で死去した。18年にわたる統治のなかで、同氏はこの小さな湾岸国を世界の舞台へと押し上げた。",
+          "keyTakeaways": [
+            "1995年の就任当時、カタール経済は石油依存の小規模なものにとどまり、北部ガス田の開発もまだ緒についたばかりだった。",
+            "その後20年足らずで、カタールは液化天然ガスの世界最大輸出国へと成長した。",
+            "政府系ファンドの規模と国民一人あたりの所得は、世界有数の水準に達した。"
+          ],
+          "whyItMatters": "ハマド前首長の経済的遺産を振り返ることは、カタールがいかにして湾岸の小国からエネルギーと投資の世界的な中心地へと変貌したかを理解することでもある。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Ann Widdecombe death: counter-terrorism police take over investigation",
+      "summary": "The force initially said counter-terrorism partners had reviewed the case and had ruled out a terrorist motive.",
+      "keyTakeaways": [
+        "A statement from CTP said “new information and evidence has come to light during what has been a dynamic and complex investigation and as a result, counter-terrorism policing south east is now leading the investigation”.",
+        "The man in custody has since been rearrested on suspicion of commission, preparation or instigation of acts of terrorism.",
+        "The head of national counter-terrorism policing, Laurence Taylor, said: “Building on the progress made by our colleagues in Devon and Cornwall police, we now have new information and evidence that means counter-terrorism policing is now leading the investigation."
+      ],
+      "whyItMatters": "A 28-year-old white British man from Rotherham, South Yorkshire, was arrested on suspicion of murder on Saturday.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/jul/13/ann-widdecombe-counter-terrorism-police-investigation",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ウィデコム氏死亡事件、対テロ警察が捜査を引き継ぐ",
+          "summary": "当初、地元警察は対テロ部門が事件を検討した結果、テロの動機は否定されたと発表していた。しかしその後、新たな情報と証拠が浮上し、対テロ警察南東部が捜査の主導権を握ることになった。",
+          "keyTakeaways": [
+            "対テロ警察南東部は声明で、「捜査が進む中で新たな情報と証拠が明らかになった」として、正式に捜査を引き継いだと発表した。",
+            "身柄を拘束されていた男は、テロ行為の実行・準備・扇動の疑いで再逮捕された。",
+            "国家対テロ警察責任者のローレンス・テイラー氏は、デボン・コーンウォール警察の捜査を引き継ぐ形で、新たな情報と証拠に基づき対テロ部門が主導すると述べた。"
+          ],
+          "whyItMatters": "事件をめぐっては、サウスヨークシャー州ロザラム出身の28歳の白人英国人男性が、土曜日に殺人の疑いで逮捕されている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "How Philips Hue got the smart home right",
+      "summary": "The state of the smart home can be frustrating, because it is just so obvious how things ought to work.",
+      "keyTakeaways": [
+        "Making your home smart shouldn’t require renovating, and the smarts should be mostly invisible.",
+        "Until now, maybe no product has come closer to nailing the smart home than Philips Hue.",
+        "The Verge ’s David Pierce and Jennifer Pattison Tuohy are joined by smart home journalist and expert Richard Gunther to discuss Hue’s origins, which have an awful lot to do with the rise of the smartphone."
+      ],
+      "whyItMatters": "Shall We Go On Sinning So That Grace May Increase?",
+      "originalURL": "https://www.theverge.com/podcast/964515/philips-hue-smart-lights-version-history",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "スマートホームの理想形——Philips Hueが示したもの",
+          "summary": "スマートホームの現状には、もどかしさを感じることが多い。どうあるべきかは、誰の目にも明らかなのに、と。",
+          "keyTakeaways": [
+            "家をスマート化するために、大がかりな工事は必要ない。技術は、できる限り目立たないほうがいい。",
+            "これまでのところ、その理想にもっとも近づいた製品がPhilips Hueだといえる。",
+            "The VergeのDavid PierceとJennifer Pattison Tuohyが、スマートホーム専門家のRichard Gunterを迎え、Hueの誕生とスマートフォンの台頭との深い関係を語る。"
+          ],
+          "whyItMatters": "恵みを増やすために、罪の中にとどまり続けるべきなのだろうか。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "summary": "Apple’s self-driving car program never really got off the ground, but it may have been what made the company’s chips the powerful AI performers they are.",
+      "keyTakeaways": [
+        "Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing.",
+        "While Apple’s AI software efforts have lagged behind the rest of the industry, its hardware has been impressive.",
+        "It’s also what has allowed Apple to tout its privacy features, since less data is sent to the cloud."
+      ],
+      "whyItMatters": "The M7 Ultra is expected to be the basis for a new server product from Apple as well, with support for up to 1.5TB of RAM.",
+      "originalURL": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "幻に終わった自動運転が、Appleのチップを育てた",
+          "summary": "Appleの自動運転プロジェクトは日の目を見ることなく幕を閉じた。しかしその過程が、同社チップを強力なAI処理の担い手へと鍛え上げた可能性がある。",
+          "keyTakeaways": [
+            "自動運転の開発初期、Appleはデバイス上での高度なAI処理の必要性に気づいていた",
+            "AIソフトウェアでは業界に後れを取る一方、ハードウェアの完成度は際立っている",
+            "処理をデバイス内で完結させる設計は、プライバシー保護の訴求にもつながっている"
+          ],
+          "whyItMatters": "M7 Ultraは最大1.5TBのメモリに対応し、Appleの新たなサーバー製品の基盤になるとも見られている。"
+        }
+      }
+    }
+  ]
+}

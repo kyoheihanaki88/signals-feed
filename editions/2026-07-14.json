@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-14",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "First Thing: Trump threatens to impose US tolls on Hormuz shipping as strikes on Iran continue",
+      "summary": "The US has launched its third consecutive night of strikes on Iran, hours after Donald Trump said Washington would reinstate a maritime blockade on the country and charge ships for safe passage.",
+      "keyTakeaways": [
+        "The UAE said two ⁠national tankers ⁠were ​targeted by two Iranian cruise missiles in ⁠the southern lane of the strait ⁠of Hormuz in Omani territorial ​waters, ‌killing one ‌Indian crew member and wounding ‌eight others, including four seriously.",
+        "In reality, that deal has devolved into a series of attacks over the strait of Hormuz, resulting in the near-total collapse of an interim ceasefire and worrying world leaders that the conflict could fully resume.",
+        "How has Trump changed his position on tolls?"
+      ],
+      "whyItMatters": "Iran and the US are in theory nearly halfway through the 60-day period of an interim deal that was supposed to set up talks for a permanent end to the war, which began in February with the assassination of Iran’s supreme leader, Ali Khamenei.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/14/first-thing-trump-us-tolls-hormuz-iran",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホルムズ海峡に通行料——米国、イランへの攻撃を三夜連続で継続",
+          "summary": "米国がイランへの攻撃を三夜連続で実施した。トランプ大統領がホルムズ海峡を通過する船舶に通行料を課す方針を示した直後のことだ。",
+          "keyTakeaways": [
+            "アラブ首長国連邦は、オマーン領海内のホルムズ海峡南航路で自国タンカー二隻がイランの巡航ミサイルに攻撃されたと発表。インド人乗組員一名が死亡し、八名が負傷、うち四名は重傷。",
+            "海峡をめぐる一連の攻撃により、暫定停戦は事実上崩壊に近い状態となり、戦闘の全面再開を懸念する声が各国首脳の間で高まっている。",
+            "通行料をめぐるトランプ氏の立場の変遷。"
+          ],
+          "whyItMatters": "イランと米国は、アリー・ハーメネイー最高指導者の暗殺を発端に二月に始まったこの戦争の恒久的終結に向けた協議を想定した六十日間の暫定合意の、理論上はほぼ折り返し地点にある。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Bangkok bar fire: death toll reaches 30 as police say negligence is ‘primary theory’",
+      "summary": "The Bangkok pub that became the scene of the city’s deadliest blaze in 17 years has said it will cooperate with an investigation into alleged negligence, as the death toll rose to 30.",
+      "keyTakeaways": [
+        "The local district office said on Tuesday that three more people had died after the devastating fire that broke out in the early hours of Monday.",
+        "An initial assessment by disaster officials found an electrical short ‌circuit in an air conditioner located in the ‌ceiling had caused the fire.",
+        "The national police chief, Kitrat Phanphet, told reporters on Monday: “At this time, police have established negligence as the primary theory guiding their investigation.”"
+      ],
+      "whyItMatters": "Access to another exit near the kitchen might also have been narrowed by shelving units and lockers, according to the police chief who visited the scene on Monday.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/14/bangkok-bar-pub-fire-death-toll-thailand",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "バンコクのバー火災、死者30人に――警察は過失を主因と見る",
+          "summary": "バンコクで17年ぶりとなる大規模な火災が発生したパブは、過失の疑いをめぐる調査に協力する意向を示した。死者数は30人に達している。",
+          "keyTakeaways": [
+            "火曜日、地区当局は月曜未明の火災後にさらに3人が死亡したと発表した。",
+            "当局の初期調査では、天井に設置されたエアコンの電気系統のショートが出火原因とされている。",
+            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失を捜査の主要な方針として位置づけている」と述べた。"
+          ],
+          "whyItMatters": "警察長官が現場を視察したところ、厨房近くの別の非常口が棚やロッカーによって狭められていた可能性もあるという。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "China’s monthly car ‌exports top 1m for first time as overall trade soars",
+      "summary": "China’s monthly car ‌exports topped 1m for the first time in June as overall overseas shipments from the world’s second biggest economy rose 27%.",
+      "keyTakeaways": [
+        "Exports to the EU increased 12.7% year on year, pushing the surplus to 1.225tn yuan (£135bn).",
+        "Exports of electric vehicles and hybrid cars, which escaped the EU’s 2024 tariffs on Chinese EVs, have put the European industry under huge pressure, with recent warnings of a collapse in employment in the sector.",
+        "Rafael Jimenez Buendía, a trade expert who analysed the figures for Merics, said the export surge into the EU beat its own forecast of record sales."
+      ],
+      "whyItMatters": "Official Chinese customs data showed that a stronger-than-expected trade performance kept China on track to match or beat last year’s record trade surplus of $1tn (£748bn), achieved despite Donald Trump’s curtailed tariff war.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/14/china-car-exports-june-trade-us-eu-trump-tariffs",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "中国の月間自動車輸出、初めて100万台を突破",
+          "summary": "中国の6月の自動車輸出が月間で初めて100万台を超えた。全体の輸出額も前年比27%増と大幅に伸び、世界第2位の経済大国の対外貿易は勢いを増している。",
+          "keyTakeaways": [
+            "対EU輸出は前年比12.7%増となり、貿易黒字は1兆2250億元に拡大した。",
+            "EUの関税対象外となった電気自動車やハイブリッド車の流入が続き、欧州の自動車産業では雇用崩壊への懸念が高まっている。",
+            "欧州中国研究機関メリクスの貿易専門家ラファエル・ヒメネス・ブエンディア氏は、対EU輸出の急増が自身の予測をも上回ったと分析した。"
+          ],
+          "whyItMatters": "中国税関の公式データは、予想を超える貿易の好調ぶりを示しており、昨年記録した約1兆ドルの貿易黒字に並ぶか、それを上回る水準に達する可能性が現実味を帯びてきた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "The first sunlight reflecting space mirror has been cleared for launch",
+      "summary": "Reflect Orbital has been given the green light to launch its first space mirror that aims to redirect sunlight down to Earth at night.",
+      "keyTakeaways": [
+        "The satellite, named Eärendil-1 in reference to a Tolkien character, will attempt to redirect sunlight to specific areas on Earth after dark using a 59-foot (18-meter) reflective surface.",
+        "If successful, Reflect Orbital plans to launch and operate a constellation of 50,000 satellites by 2035, with enough reflected light to illuminate areas up to 3 miles (5 kilometers) on the ground.",
+        "Reflect Orbital’s plans are already facing objections that the space mirrors could make astronomical observations more difficult."
+      ],
+      "whyItMatters": "The growing number of satellite constellations orbiting Earth are driving concerns regarding space junk and light pollution.",
+      "originalURL": "https://www.theverge.com/science/965263/reflect-orbital-space-mirror-launch-fcc-clearance",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "夜の地上に太陽光を届ける「宇宙鏡」、打ち上げ承認へ",
+          "summary": "米企業リフレクト・オービタルが開発した宇宙用反射鏡の初号機が、打ち上げの許可を得た。夜間の地上に太陽光を反射して届けることを目的としたプロジェクトだ。",
+          "keyTakeaways": [
+            "初号機はトールキン作品の登場人物にちなみ「イアレンディル1号」と命名。全長約18メートルの反射面を用いて、夜間の特定地域に太陽光を送ることを目指す。",
+            "計画が成功した場合、2035年までに5万機の衛星群を展開し、地上で最大約5キロメートルの範囲を照らすことを想定している。",
+            "一方で、反射光が天体観測の妨げになるとして、すでに反発の声も上がっている。"
+          ],
+          "whyItMatters": "衛星コンステレーションの増加は、スペースデブリと光害をめぐる懸念をいっそう深めている。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Apple’s public betas for iOS 27 and more are out now",
+      "summary": "The betas let you try the new Siri before Apple’s wider launch this fall.",
+      "keyTakeaways": [
+        "Other betas available now include iPadOS 27, watchOS 27, and macOS 27 Golden Gate.",
+        "At the top of your screen, you should see a section for “Beta Updates.” Tap that, and then select the iOS 27 public beta.",
+        "For other Apple products, the steps to get set up on the beta are generally similar."
+      ],
+      "whyItMatters": "Apple has just released public betas for iOS 27 and other major OS updates that are set to publicly launch this fall.",
+      "originalURL": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "iOS 27などのパブリックベータ版が公開された",
+          "summary": "Appleは今秋の正式リリースに先立ち、iOS 27のパブリックベータ版を公開した。新しいSiriをいち早く試せる機会となっている。",
+          "keyTakeaways": [
+            "iPadOS 27、watchOS 27、macOS 27 Golden Gateのベータ版も同時に公開されている。",
+            "iPhoneでは、画面上部に表示される「ベータアップデート」の項目からiOS 27パブリックベータを選択できる。",
+            "他のApple製品でも、導入手順はおおむね同様だ。"
+          ],
+          "whyItMatters": "Appleは今秋に正式公開を予定するiOS 27をはじめ、主要OSのパブリックベータ版を一斉に公開した。"
+        }
+      }
+    }
+  ]
+}

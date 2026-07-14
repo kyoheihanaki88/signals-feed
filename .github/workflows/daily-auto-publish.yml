@@ -13,21 +13,26 @@ name: Daily Auto Publish
 # required checks pass), and it keeps validate-feed as a gate. See the branch-protection /
 # required-settings notes in DAILY_OPS.md.
 #
-# Timing: editions serve the user's EAST COAST morning (America/New_York). The brief should
-# be ready around 5:00 AM ET, so this runs at 09:00 UTC (= 5:00 AM EDT; 4:00 AM EST in
-# winter — still comfortably before the morning) and builds the edition dated TODAY in
-# America/New_York.
+# Timing — MORNING DELIVERY SLO: the COMPLETE edition (5 signals + 5 EN audio) should be
+# LIVE by 7:00 AM ET (= 11:00 UTC in EDT; 12:00 UTC in EST — even more slack in winter),
+# so it's ready for wake-up → coffee → commute. GitHub cron regularly fires 1–3 h late,
+# so the first attempt runs at 06:00 UTC (2:00 AM EDT) and hourly catch-up probes follow;
+# even a worst-observed delay leaves the Listen chain time to finish before the commute.
+# The edition is dated TODAY in America/New_York.
 #
 # Manual fallbacks (no schedule): daily-auto-edition.yml (review PR, no auto-merge) and
 # build-edition.yml (build from committed drafts → review PR).
 
 on:
   schedule:
-    - cron: "0 9 * * *"         # 09:00 UTC — 5:00 AM ET (EDT); publishes today's ET edition
-    - cron: "0 10 * * *"        # 10:00 UTC — catch-up probe; skips green if already published
-    - cron: "0 11 * * *"        # 11:00 UTC — catch-up (GitHub cron delays observed at 1–3 h)
-    - cron: "0 12 * * *"        # 12:00 UTC — catch-up
-    - cron: "0 13 * * *"        # 13:00 UTC — catch-up
+    - cron: "0 6 * * *"         # 06:00 UTC — 2:00 AM EDT; first attempt (Morning Delivery SLO: live by 7:00 AM ET)
+    - cron: "0 7 * * *"         # 07:00 UTC — catch-up probe; skips green if already published
+    - cron: "0 8 * * *"         # 08:00 UTC — catch-up (GitHub cron delays observed at 1–3 h)
+    - cron: "0 9 * * *"         # 09:00 UTC — catch-up
+    - cron: "0 10 * * *"        # 10:00 UTC — catch-up; last start that can still beat the 11:00 UTC SLO
+    - cron: "0 11 * * *"        # 11:00 UTC — SLO boundary (EDT); late safety net from here on
+    - cron: "0 12 * * *"        # 12:00 UTC — late safety net
+    - cron: "0 13 * * *"        # 13:00 UTC — late safety net
     - cron: "0 14 * * *"        # 14:00 UTC — final catch-up (Listen probes run through 14:45)
   workflow_dispatch:
     inputs:

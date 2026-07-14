@@ -1,7 +1,9 @@
 name: Auto Generate Listen
 
-# Daily automatic Listen audio — the companion to Daily Auto Publish (09:00 UTC,
-# targeting the user's East Coast morning: news ~5:00 AM ET, audio ~5:45 AM ET).
+# Daily automatic Listen audio — the companion to Daily Auto Publish (first attempt
+# 06:00 UTC). MORNING DELIVERY SLO: the complete edition with all 5 EN audio files
+# should be LIVE by 7:00 AM ET (11:00 UTC in EDT) — on an on-time day news lands
+# ~2:00 AM EDT and audio ~2:45 AM EDT; the hourly probes absorb GitHub cron delays.
 #
 # DESIGN (why this is separate from Daily Auto Publish):
 #   • The edition lands on main via PR + auto-merge, so "publish job succeeded" ≠ "merged".
@@ -22,11 +24,14 @@ name: Auto Generate Listen
 
 on:
   schedule:
-    - cron: "45 9 * * *"    # 09:45 UTC (~5:45 AM EDT) — ~45 min after Daily Auto Publish
-    - cron: "45 10 * * *"   # 10:45 UTC (~6:45 AM EDT) — catch-up; skips if already generated
-    - cron: "45 11 * * *"   # 11:45 UTC — extended catch-up (publish crons observed 2–3 h late)
-    - cron: "45 12 * * *"   # 12:45 UTC — extended catch-up
-    - cron: "45 13 * * *"   # 13:45 UTC — extended catch-up
+    - cron: "45 6 * * *"    # 06:45 UTC (~2:45 AM EDT) — ~45 min after the first publish attempt
+    - cron: "45 7 * * *"    # 07:45 UTC — catch-up; skips if already generated
+    - cron: "45 8 * * *"    # 08:45 UTC — catch-up
+    - cron: "45 9 * * *"    # 09:45 UTC — catch-up
+    - cron: "45 10 * * *"   # 10:45 UTC — last probe that can finish before the 11:00 UTC (7 AM EDT) SLO
+    - cron: "45 11 * * *"   # 11:45 UTC — late safety net
+    - cron: "45 12 * * *"   # 12:45 UTC — late safety net
+    - cron: "45 13 * * *"   # 13:45 UTC — late safety net
     - cron: "45 14 * * *"   # 14:45 UTC — final probe; covers publishes merged by 14:45 UTC
   workflow_dispatch: {}      # manual fallback — always generates for the CURRENT latest date
 

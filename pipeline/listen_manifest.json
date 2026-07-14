@@ -3434,6 +3434,293 @@
           ]
         }
       }
+    },
+    "2026-07-14": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-14/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the US has been striking Iran for three nights now?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, this is the third consecutive night. And it's happening even though the US and Iran are supposed to be in a 60-day interim deal that was meant to lead to talks about ending the war.",
+              "duration": 10.266122
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, there's a war? When did that start?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "It began in February with the assassination of Iran's supreme leader, Ali Khamenei. The current deal was supposed to set up a path toward peace, but it's falling apart.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "And now Trump is talking about charging ships?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. He's threatening to reinstate a maritime blockade and charge ships for safe passage through the Strait of Hormuz. It's a major shift in his position on tolls.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "That strait keeps coming up in the news. What happened there?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two UAE tankers were hit by Iranian cruise missiles in the southern lane, in Omani waters. One Indian crew member was killed and eight others were wounded, four of them seriously.",
+              "duration": 9.874286
+            },
+            {
+              "speaker": "listener",
+              "text": "So the ceasefire isn't really holding.",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. There's been a series of attacks over the strait, and the interim ceasefire has nearly collapsed. World leaders are worried the conflict could fully resume.",
+              "duration": 8.254694
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-14/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a terrible fire in Bangkok. What happened?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "A pub fire early Monday morning has now killed thirty people. It's the deadliest blaze the city has seen in seventeen years.",
+              "duration": 7.523265
+            },
+            {
+              "speaker": "listener",
+              "text": "That's awful. Do they know what caused it?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Disaster officials believe an electrical short circuit in an air conditioner in the ceiling started the fire.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "And police are investigating negligence?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The national police chief said negligence is the primary theory they're working with right now.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of negligence are they looking at?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "One concern is that an exit near the kitchen may have been narrowed by shelving units and lockers, which could have made escape harder.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the pub cooperating?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've said they will cooperate with the investigation.",
+              "duration": 2.76898
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-14/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw China hit a big milestone with car exports. What happened?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "For the first time ever, China exported more than one million cars in a single month — that was in June. Overall exports from China jumped 27 percent.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "Where are all these cars going?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "A lot are heading to the EU. Exports there rose nearly 13 percent compared to last year, and China's trade surplus with Europe reached about 135 billion pounds.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "Are we talking about regular cars or electric ones?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Many are electric vehicles and hybrids. Interestingly, these avoided EU tariffs that were put on Chinese EVs in 2024, so they've been flowing in steadily.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "That must be affecting European carmakers.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The European auto industry is under serious pressure, with recent warnings about potential job losses in the sector.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "And this fits into China's bigger trade picture?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. China's on track to match or even beat last year's record trade surplus of one trillion dollars, despite ongoing trade tensions.",
+              "duration": 8.176327
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-14/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a company that wants to bounce sunlight back to Earth at night?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Reflect Orbital just got approval to launch their first space mirror. It's called Eärendil-1, and it has an 18-meter reflective surface designed to redirect sunlight to specific spots on the ground after dark.",
+              "duration": 13.322449
+            },
+            {
+              "speaker": "listener",
+              "text": "How much light are we talking about?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "If it works, they say it could illuminate areas up to 5 kilometers wide. And this is just the first one — they're planning a constellation of 50,000 satellites by 2035.",
+              "duration": 9.508571
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of satellites. Are people worried about that?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are. Astronomers have already raised concerns that these mirrors could interfere with observations. And more broadly, there's growing worry about space junk and light pollution from all these satellite constellations.",
+              "duration": 11.833469
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's not just about whether it works, but whether we should do it.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The technology might be possible, but the environmental and scientific trade-offs are real.",
+              "duration": 5.459592
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-14/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Apple just dropped some new software betas?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, public betas for iOS 27 and several other operating systems are available now.",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the main draw here?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "You can try out the new Siri before the wider launch this fall.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "listener",
+              "text": "What other systems got betas?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "iPadOS 27, watchOS 27, and macOS 27 Golden Gate are all available too.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "How do I actually get it on my phone?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Look for a section called Beta Updates at the top of your screen, tap that, then select the iOS 27 public beta.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "And it's similar for the other devices?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, the setup steps are generally the same across Apple products.",
+              "duration": 3.526531
+            }
+          ]
+        }
+      }
     }
   }
 }

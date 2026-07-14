@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,77 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "New Iran strikes on Gulf as US attacks escalate: What we know",
-      "summary": "Iran’s Islamic Revolutionary Guard Corps (IRGC) has targeted US military facilities in Bahrain, claimed it has destroyed radar systems in Oman and hit Jordan and Kuwait in its latest round of overnight retaliatory strikes against the United States.",
+      "source": "The Guardian (World)",
+      "headline": "First Thing: Trump threatens to impose US tolls on Hormuz shipping as strikes on Iran continue",
+      "summary": "The US has launched its third consecutive night of strikes on Iran, hours after Donald Trump said Washington would reinstate a maritime blockade on the country and charge ships for safe passage.",
       "keyTakeaways": [
-        "Bahrain: The IRGC also said it launched missile and drone attacks targeting “installations and infrastructure of the aggressive US army” in Juffair, Bahrain.",
-        "It said any explosions heard were the result of air defence systems intercepting the attacks and urged the public to follow safety and security instructions.",
-        "The US military’s Central Command (CENTCOM) earlier said it hit “dozens of targets at multiple locations with precision munitions to degrade Iran’s ability to continue attacking international shipping flowing through the Strait of Hormuz”."
+        "The UAE said two ⁠national tankers ⁠were ​targeted by two Iranian cruise missiles in ⁠the southern lane of the strait ⁠of Hormuz in Omani territorial ​waters, ‌killing one ‌Indian crew member and wounding ‌eight others, including four seriously.",
+        "In reality, that deal has devolved into a series of attacks over the strait of Hormuz, resulting in the near-total collapse of an interim ceasefire and worrying world leaders that the conflict could fully resume.",
+        "How has Trump changed his position on tolls?"
       ],
-      "whyItMatters": "Tehran’s attacks on Monday came as a response to Washington’s escalating strikes as prospects of peace between the two countries recede.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/13/new-iran-strikes-on-gulf-as-us-attacks-escalate-what-we-know?traffic_source=rss",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Experiment",
+      "whyItMatters": "Iran and the US are in theory nearly halfway through the 60-day period of an interim deal that was supposed to set up talks for a permanent end to the war, which began in February with the assassination of Iran’s supreme leader, Ali Khamenei.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/14/first-thing-trump-us-tolls-hormuz-iran",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "イランが湾岸地域への攻撃を拡大、米軍施設も標的に",
-          "summary": "イラン革命防衛隊（IRGC）は、バーレーンの米軍施設を攻撃したと発表。オマーンのレーダーシステムを破壊し、ヨルダンとクウェートにも攻撃を加えたと主張した。一連の報復攻撃は夜間にかけて行われた。",
+          "headline": "ホルムズ海峡に通行料——米国、イランへの攻撃を三夜連続で継続",
+          "summary": "米国がイランへの攻撃を三夜連続で実施した。トランプ大統領がホルムズ海峡を通過する船舶に通行料を課す方針を示した直後のことだ。",
           "keyTakeaways": [
-            "バーレーンのジュファイルにある米軍の施設・インフラに対し、ミサイルおよびドローンによる攻撃を実施したとIRGCは述べた。",
-            "現地で聞こえた爆発音は迎撃システムによるものだとし、市民に安全指示への従順を呼びかけた。",
-            "米中央軍（CENTCOM）はこれに先立ち、ホルムズ海峡の航行を脅かすイランの能力を低下させるため、複数拠点の数十の目標を精密兵器で攻撃したと発表していた。"
+            "アラブ首長国連邦は、オマーン領海内のホルムズ海峡南航路で自国タンカー二隻がイランの巡航ミサイルに攻撃されたと発表。インド人乗組員一名が死亡し、八名が負傷、うち四名は重傷。",
+            "海峡をめぐる一連の攻撃により、暫定停戦は事実上崩壊に近い状態となり、戦闘の全面再開を懸念する声が各国首脳の間で高まっている。",
+            "通行料をめぐるトランプ氏の立場の変遷。"
           ],
-          "whyItMatters": "イランの攻撃は米国の軍事行動の激化に対する報復であり、両国間の和平の見通しはさらに遠のいている。"
+          "whyItMatters": "イランと米国は、アリー・ハーメネイー最高指導者の暗殺を発端に二月に始まったこの戦争の恒久的終結に向けた協議を想定した六十日間の暫定合意の、理論上はほぼ折り返し地点にある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Iran launched more strikes overnight?",
-              "duration": 2.690612
+              "text": "So the US has been striking Iran for three nights now?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Iran's Revolutionary Guard says it targeted US military facilities in Bahrain, and also hit sites in Oman, Jordan, and Kuwait.",
-              "duration": 8.542041
+              "text": "Yes, this is the third consecutive night. And it's happening even though the US and Iran are supposed to be in a 60-day interim deal that was meant to lead to talks about ending the war.",
+              "duration": 10.266122
             },
             {
               "speaker": "listener",
-              "text": "What exactly did they hit in Bahrain?",
+              "text": "Wait, there's a war? When did that start?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "It began in February with the assassination of Iran's supreme leader, Ali Khamenei. The current deal was supposed to set up a path toward peace, but it's falling apart.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "And now Trump is talking about charging ships?",
               "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "They claim they launched missiles and drones at US military installations in an area called Juffair. Bahrain's government said explosions people heard were from air defense systems intercepting the attacks.",
-              "duration": 10.762449
+              "text": "Right. He's threatening to reinstate a maritime blockade and charge ships for safe passage through the Strait of Hormuz. It's a major shift in his position on tolls.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "And this is all in response to US strikes?",
-              "duration": 2.507755
+              "text": "That strait keeps coming up in the news. What happened there?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Right. The US military had just hit dozens of Iranian targets, saying they wanted to stop Iran from attacking ships passing through the Strait of Hormuz.",
-              "duration": 8.202449
+              "text": "Two UAE tankers were hit by Iranian cruise missiles in the southern lane, in Omani waters. One Indian crew member was killed and eight others were wounded, four of them seriously.",
+              "duration": 9.874286
             },
             {
               "speaker": "listener",
-              "text": "So both sides are escalating?",
-              "duration": 1.619592
+              "text": "So the ceasefire isn't really holding.",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "That's the concern. These latest Iranian strikes came as a direct response to Washington's attacks, and prospects for peace between the two countries are fading.",
-              "duration": 8.803265
+              "text": "No. There's been a series of attacks over the strait, and the interim ceasefire has nearly collapsed. World leaders are worried the conflict could fully resume.",
+              "duration": 8.254694
             }
           ]
         }
@@ -89,87 +99,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "How former Emir Sheikh Hamad bin Khalifa Al Thani built Qatar’s economy",
-      "summary": "Qatar’s Father Emir Sheikh Hamad Bin Khalifa Al Thani has died at the age of 74.",
+      "source": "The Guardian (World)",
+      "headline": "Bangkok bar fire: death toll reaches 30 as police say negligence is ‘primary theory’",
+      "summary": "The Bangkok pub that became the scene of the city’s deadliest blaze in 17 years has said it will cooperate with an investigation into alleged negligence, as the death toll rose to 30.",
       "keyTakeaways": [
-        "During his 18-year rule, Sheikh Hamad reshaped the energy-rich country’s domestic and global footprint.",
-        "When he assumed power in 1995, Qatar’s economy was limited in size and relied mainly on oil, while the vast gas wealth of the North Field site was still in the early stages of development.",
-        "In less than two decades, Qatar became the world’s largest exporter of liquefied natural gas (LNG), the owner of one of the largest sovereign wealth funds and one of the countries with the highest per capita incomes."
+        "The local district office said on Tuesday that three more people had died after the devastating fire that broke out in the early hours of Monday.",
+        "An initial assessment by disaster officials found an electrical short ‌circuit in an air conditioner located in the ‌ceiling had caused the fire.",
+        "The national police chief, Kitrat Phanphet, told reporters on Monday: “At this time, police have established negligence as the primary theory guiding their investigation.”"
       ],
-      "whyItMatters": "Here, we take a look at Sheikh Hamad’s economic legacy that helped transform Qatar from a small Gulf economy to a major and influential player in global energy and investment markets.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/13/how-former-emir-sheikh-hamad-bin-khalifa-al-thani-built-qatar-economy?traffic_source=rss",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The observatory",
+      "whyItMatters": "Access to another exit near the kitchen might also have been narrowed by shelving units and lockers, according to the police chief who visited the scene on Monday.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/14/bangkok-bar-pub-fire-death-toll-thailand",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "カタールを世界的エネルギー大国へ導いた前首長の遺産",
-          "summary": "カタールの前首長、ハマド・ビン・ハリーファ・アール・サーニー氏が74歳で死去した。18年にわたる統治のなかで、同氏はこの小さな湾岸国を世界の舞台へと押し上げた。",
+          "headline": "バンコクのバー火災、死者30人に――警察は過失を主因と見る",
+          "summary": "バンコクで17年ぶりとなる大規模な火災が発生したパブは、過失の疑いをめぐる調査に協力する意向を示した。死者数は30人に達している。",
           "keyTakeaways": [
-            "1995年の就任当時、カタール経済は石油依存の小規模なものにとどまり、北部ガス田の開発もまだ緒についたばかりだった。",
-            "その後20年足らずで、カタールは液化天然ガスの世界最大輸出国へと成長した。",
-            "政府系ファンドの規模と国民一人あたりの所得は、世界有数の水準に達した。"
+            "火曜日、地区当局は月曜未明の火災後にさらに3人が死亡したと発表した。",
+            "当局の初期調査では、天井に設置されたエアコンの電気系統のショートが出火原因とされている。",
+            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失を捜査の主要な方針として位置づけている」と述べた。"
           ],
-          "whyItMatters": "ハマド前首長の経済的遺産を振り返ることは、カタールがいかにして湾岸の小国からエネルギーと投資の世界的な中心地へと変貌したかを理解することでもある。"
+          "whyItMatters": "警察長官が現場を視察したところ、厨房近くの別の非常口が棚やロッカーによって狭められていた可能性もあるという。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw that Qatar's former leader passed away. Sheikh Hamad, I think?",
-              "duration": 4.205714
+              "text": "I saw something about a terrible fire in Bangkok. What happened?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Sheikh Hamad bin Khalifa Al Thani. He died at seventy-four. He ruled Qatar for eighteen years.",
-              "duration": 6.687347
+              "text": "A pub fire early Monday morning has now killed thirty people. It's the deadliest blaze the city has seen in seventeen years.",
+              "duration": 7.523265
             },
             {
               "speaker": "listener",
-              "text": "What did he do during that time?",
-              "duration": 1.697959
+              "text": "That's awful. Do they know what caused it?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "He really transformed the country's economy. When he came to power in 1995, Qatar was small and relied mainly on oil.",
-              "duration": 7.47102
+              "text": "Disaster officials believe an electrical short circuit in an air conditioner in the ceiling started the fire.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "And he changed that?",
-              "duration": 1.436735
+              "text": "And police are investigating negligence?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "He did. Qatar had this huge natural gas field that wasn't fully developed yet. Under his leadership, the country became the world's largest exporter of liquefied natural gas.",
-              "duration": 10.03102
+              "text": "Yes. The national police chief said negligence is the primary theory they're working with right now.",
+              "duration": 5.564082
             },
             {
               "speaker": "listener",
-              "text": "That's a big shift.",
-              "duration": 1.332245
+              "text": "What kind of negligence are they looking at?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It was. In less than twenty years, Qatar also built one of the largest sovereign wealth funds and became one of the highest per capita income countries in the world.",
-              "duration": 9.273469
+              "text": "One concern is that an exit near the kitchen may have been narrowed by shelving units and lockers, which could have made escape harder.",
+              "duration": 7.105306
             },
             {
               "speaker": "listener",
-              "text": "So he turned Qatar into a major energy player.",
-              "duration": 3.108571
+              "text": "Is the pub cooperating?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. From a small Gulf economy to a major force in global energy and investment markets.",
-              "duration": 5.146122
+              "text": "They've said they will cooperate with the investigation.",
+              "duration": 2.76898
             }
           ]
         }
@@ -181,76 +191,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Ann Widdecombe death: counter-terrorism police take over investigation",
-      "summary": "The force initially said counter-terrorism partners had reviewed the case and had ruled out a terrorist motive.",
+      "headline": "China’s monthly car ‌exports top 1m for first time as overall trade soars",
+      "summary": "China’s monthly car ‌exports topped 1m for the first time in June as overall overseas shipments from the world’s second biggest economy rose 27%.",
       "keyTakeaways": [
-        "A statement from CTP said “new information and evidence has come to light during what has been a dynamic and complex investigation and as a result, counter-terrorism policing south east is now leading the investigation”.",
-        "The man in custody has since been rearrested on suspicion of commission, preparation or instigation of acts of terrorism.",
-        "The head of national counter-terrorism policing, Laurence Taylor, said: “Building on the progress made by our colleagues in Devon and Cornwall police, we now have new information and evidence that means counter-terrorism policing is now leading the investigation."
+        "Exports to the EU increased 12.7% year on year, pushing the surplus to 1.225tn yuan (£135bn).",
+        "Exports of electric vehicles and hybrid cars, which escaped the EU’s 2024 tariffs on Chinese EVs, have put the European industry under huge pressure, with recent warnings of a collapse in employment in the sector.",
+        "Rafael Jimenez Buendía, a trade expert who analysed the figures for Merics, said the export surge into the EU beat its own forecast of record sales."
       ],
-      "whyItMatters": "A 28-year-old white British man from Rotherham, South Yorkshire, was arrested on suspicion of murder on Saturday.",
-      "originalURL": "https://www.theguardian.com/uk-news/2026/jul/13/ann-widdecombe-counter-terrorism-police-investigation",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Morning light",
+      "whyItMatters": "Official Chinese customs data showed that a stronger-than-expected trade performance kept China on track to match or beat last year’s record trade surplus of $1tn (£748bn), achieved despite Donald Trump’s curtailed tariff war.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/14/china-car-exports-june-trade-us-eu-trump-tariffs",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ウィデコム氏死亡事件、対テロ警察が捜査を引き継ぐ",
-          "summary": "当初、地元警察は対テロ部門が事件を検討した結果、テロの動機は否定されたと発表していた。しかしその後、新たな情報と証拠が浮上し、対テロ警察南東部が捜査の主導権を握ることになった。",
+          "headline": "中国の月間自動車輸出、初めて100万台を突破",
+          "summary": "中国の6月の自動車輸出が月間で初めて100万台を超えた。全体の輸出額も前年比27%増と大幅に伸び、世界第2位の経済大国の対外貿易は勢いを増している。",
           "keyTakeaways": [
-            "対テロ警察南東部は声明で、「捜査が進む中で新たな情報と証拠が明らかになった」として、正式に捜査を引き継いだと発表した。",
-            "身柄を拘束されていた男は、テロ行為の実行・準備・扇動の疑いで再逮捕された。",
-            "国家対テロ警察責任者のローレンス・テイラー氏は、デボン・コーンウォール警察の捜査を引き継ぐ形で、新たな情報と証拠に基づき対テロ部門が主導すると述べた。"
+            "対EU輸出は前年比12.7%増となり、貿易黒字は1兆2250億元に拡大した。",
+            "EUの関税対象外となった電気自動車やハイブリッド車の流入が続き、欧州の自動車産業では雇用崩壊への懸念が高まっている。",
+            "欧州中国研究機関メリクスの貿易専門家ラファエル・ヒメネス・ブエンディア氏は、対EU輸出の急増が自身の予測をも上回ったと分析した。"
           ],
-          "whyItMatters": "事件をめぐっては、サウスヨークシャー州ロザラム出身の28歳の白人英国人男性が、土曜日に殺人の疑いで逮捕されている。"
+          "whyItMatters": "中国税関の公式データは、予想を超える貿易の好調ぶりを示しており、昨年記録した約1兆ドルの貿易黒字に並ぶか、それを上回る水準に達する可能性が現実味を帯びてきた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw counter-terrorism police have taken over the Ann Widdecombe case. What changed?",
-              "duration": 4.597551
+              "text": "I saw China hit a big milestone with car exports. What happened?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "Initially, they reviewed it and ruled out a terrorist motive. But now they say new information and evidence came to light during the investigation.",
-              "duration": 7.549388
+              "text": "For the first time ever, China exported more than one million cars in a single month — that was in June. Overall exports from China jumped 27 percent.",
+              "duration": 9.377959
             },
             {
               "speaker": "listener",
-              "text": "So they've changed their assessment?",
-              "duration": 2.220408
+              "text": "Where are all these cars going?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Counter-terrorism policing south east is now leading what they're calling a dynamic and complex investigation.",
-              "duration": 6.452245
+              "text": "A lot are heading to the EU. Exports there rose nearly 13 percent compared to last year, and China's trade surplus with Europe reached about 135 billion pounds.",
+              "duration": 10.292245
             },
             {
               "speaker": "listener",
-              "text": "What about the person in custody?",
-              "duration": 1.619592
+              "text": "Are we talking about regular cars or electric ones?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "A 28-year-old man from Rotherham was arrested on suspicion of murder on Saturday. He's since been rearrested on suspicion of terrorism-related offences.",
-              "duration": 8.359184
+              "text": "Many are electric vehicles and hybrids. Interestingly, these avoided EU tariffs that were put on Chinese EVs in 2024, so they've been flowing in steadily.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "That's quite a shift in the investigation.",
-              "duration": 2.115918
+              "text": "That must be affecting European carmakers.",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "It is. The head of national counter-terrorism policing said they're building on the earlier work and following where the new evidence leads.",
-              "duration": 7.131429
+              "text": "It is. The European auto industry is under serious pressure, with recent warnings about potential job losses in the sector.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "And this fits into China's bigger trade picture?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. China's on track to match or even beat last year's record trade surplus of one trillion dollars, despite ongoing trade tensions.",
+              "duration": 8.176327
             }
           ]
         }
@@ -262,86 +282,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "How Philips Hue got the smart home right",
-      "summary": "The state of the smart home can be frustrating, because it is just so obvious how things ought to work.",
+      "headline": "The first sunlight reflecting space mirror has been cleared for launch",
+      "summary": "Reflect Orbital has been given the green light to launch its first space mirror that aims to redirect sunlight down to Earth at night.",
       "keyTakeaways": [
-        "Making your home smart shouldn’t require renovating, and the smarts should be mostly invisible.",
-        "Until now, maybe no product has come closer to nailing the smart home than Philips Hue.",
-        "The Verge ’s David Pierce and Jennifer Pattison Tuohy are joined by smart home journalist and expert Richard Gunther to discuss Hue’s origins, which have an awful lot to do with the rise of the smartphone."
+        "The satellite, named Eärendil-1 in reference to a Tolkien character, will attempt to redirect sunlight to specific areas on Earth after dark using a 59-foot (18-meter) reflective surface.",
+        "If successful, Reflect Orbital plans to launch and operate a constellation of 50,000 satellites by 2035, with enough reflected light to illuminate areas up to 3 miles (5 kilometers) on the ground.",
+        "Reflect Orbital’s plans are already facing objections that the space mirrors could make astronomical observations more difficult."
       ],
-      "whyItMatters": "Shall We Go On Sinning So That Grace May Increase?",
-      "originalURL": "https://www.theverge.com/podcast/964515/philips-hue-smart-lights-version-history",
+      "whyItMatters": "The growing number of satellite constellations orbiting Earth are driving concerns regarding space junk and light pollution.",
+      "originalURL": "https://www.theverge.com/science/965263/reflect-orbital-space-mirror-launch-fcc-clearance",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "スマートホームの理想形——Philips Hueが示したもの",
-          "summary": "スマートホームの現状には、もどかしさを感じることが多い。どうあるべきかは、誰の目にも明らかなのに、と。",
+          "headline": "夜の地上に太陽光を届ける「宇宙鏡」、打ち上げ承認へ",
+          "summary": "米企業リフレクト・オービタルが開発した宇宙用反射鏡の初号機が、打ち上げの許可を得た。夜間の地上に太陽光を反射して届けることを目的としたプロジェクトだ。",
           "keyTakeaways": [
-            "家をスマート化するために、大がかりな工事は必要ない。技術は、できる限り目立たないほうがいい。",
-            "これまでのところ、その理想にもっとも近づいた製品がPhilips Hueだといえる。",
-            "The VergeのDavid PierceとJennifer Pattison Tuohyが、スマートホーム専門家のRichard Gunterを迎え、Hueの誕生とスマートフォンの台頭との深い関係を語る。"
+            "初号機はトールキン作品の登場人物にちなみ「イアレンディル1号」と命名。全長約18メートルの反射面を用いて、夜間の特定地域に太陽光を送ることを目指す。",
+            "計画が成功した場合、2035年までに5万機の衛星群を展開し、地上で最大約5キロメートルの範囲を照らすことを想定している。",
+            "一方で、反射光が天体観測の妨げになるとして、すでに反発の声も上がっている。"
           ],
-          "whyItMatters": "恵みを増やすために、罪の中にとどまり続けるべきなのだろうか。"
+          "whyItMatters": "衛星コンステレーションの増加は、スペースデブリと光害をめぐる懸念をいっそう深めている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Philips Hue... that's the smart light bulb system, right?",
-              "duration": 3.657143
+              "text": "So there's a company that wants to bounce sunlight back to Earth at night?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. And apparently it's one of the few smart home products that's actually gotten things right.",
-              "duration": 5.276735
+              "text": "Yes. Reflect Orbital just got approval to launch their first space mirror. It's called Eärendil-1, and it has an 18-meter reflective surface designed to redirect sunlight to specific spots on the ground after dark.",
+              "duration": 13.322449
             },
             {
               "speaker": "listener",
-              "text": "What does that mean, getting it right?",
-              "duration": 2.272653
+              "text": "How much light are we talking about?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "Well, the idea is that making your home smart shouldn't require tearing down walls or renovating. The technology should just blend in.",
-              "duration": 7.549388
+              "text": "If it works, they say it could illuminate areas up to 5 kilometers wide. And this is just the first one — they're planning a constellation of 50,000 satellites by 2035.",
+              "duration": 9.508571
             },
             {
               "speaker": "listener",
-              "text": "And Hue does that?",
-              "duration": 1.332245
+              "text": "That's a lot of satellites. Are people worried about that?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "According to this piece, it comes closer than maybe any other product so far. You just screw in a bulb.",
-              "duration": 5.694694
+              "text": "They are. Astronomers have already raised concerns that these mirrors could interfere with observations. And more broadly, there's growing worry about space junk and light pollution from all these satellite constellations.",
+              "duration": 11.833469
             },
             {
               "speaker": "listener",
-              "text": "How did it get started?",
-              "duration": 1.28
+              "text": "So it's not just about whether it works, but whether we should do it.",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "Interestingly, its origins are tied to the rise of smartphones. The Verge brought in a smart home expert to talk about how it all came together.",
-              "duration": 7.235918
-            },
-            {
-              "speaker": "listener",
-              "text": "So smartphones made smart lights possible?",
-              "duration": 2.272653
-            },
-            {
-              "speaker": "explainer",
-              "text": "Pretty much. Once everyone had a powerful computer in their pocket, controlling your lights from an app started to make sense.",
-              "duration": 6.112653
+              "text": "Exactly. The technology might be possible, but the environmental and scientific trade-offs are real.",
+              "duration": 5.459592
             }
           ]
         }
@@ -353,86 +363,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
-      "summary": "Apple’s self-driving car program never really got off the ground, but it may have been what made the company’s chips the powerful AI performers they are.",
+      "headline": "Apple’s public betas for iOS 27 and more are out now",
+      "summary": "The betas let you try the new Siri before Apple’s wider launch this fall.",
       "keyTakeaways": [
-        "Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing.",
-        "While Apple’s AI software efforts have lagged behind the rest of the industry, its hardware has been impressive.",
-        "It’s also what has allowed Apple to tout its privacy features, since less data is sent to the cloud."
+        "Other betas available now include iPadOS 27, watchOS 27, and macOS 27 Golden Gate.",
+        "At the top of your screen, you should see a section for “Beta Updates.” Tap that, and then select the iOS 27 public beta.",
+        "For other Apple products, the steps to get set up on the beta are generally similar."
       ],
-      "whyItMatters": "The M7 Ultra is expected to be the basis for a new server product from Apple as well, with support for up to 1.5TB of RAM.",
-      "originalURL": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "whyItMatters": "Apple has just released public betas for iOS 27 and other major OS updates that are set to publicly launch this fall.",
+      "originalURL": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "幻に終わった自動運転が、Appleのチップを育てた",
-          "summary": "Appleの自動運転プロジェクトは日の目を見ることなく幕を閉じた。しかしその過程が、同社チップを強力なAI処理の担い手へと鍛え上げた可能性がある。",
+          "headline": "iOS 27などのパブリックベータ版が公開された",
+          "summary": "Appleは今秋の正式リリースに先立ち、iOS 27のパブリックベータ版を公開した。新しいSiriをいち早く試せる機会となっている。",
           "keyTakeaways": [
-            "自動運転の開発初期、Appleはデバイス上での高度なAI処理の必要性に気づいていた",
-            "AIソフトウェアでは業界に後れを取る一方、ハードウェアの完成度は際立っている",
-            "処理をデバイス内で完結させる設計は、プライバシー保護の訴求にもつながっている"
+            "iPadOS 27、watchOS 27、macOS 27 Golden Gateのベータ版も同時に公開されている。",
+            "iPhoneでは、画面上部に表示される「ベータアップデート」の項目からiOS 27パブリックベータを選択できる。",
+            "他のApple製品でも、導入手順はおおむね同様だ。"
           ],
-          "whyItMatters": "M7 Ultraは最大1.5TBのメモリに対応し、Appleの新たなサーバー製品の基盤になるとも見られている。"
+          "whyItMatters": "Appleは今秋に正式公開を予定するiOS 27をはじめ、主要OSのパブリックベータ版を一斉に公開した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-13/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Apple tried to make a self-driving car?",
-              "duration": 2.507755
+              "text": "So Apple just dropped some new software betas?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "They did, yeah. The program never really got off the ground, but there's an interesting side effect.",
-              "duration": 5.146122
+              "text": "Yes, public betas for iOS 27 and several other operating systems are available now.",
+              "duration": 4.91102
             },
             {
               "speaker": "listener",
-              "text": "What came out of it?",
-              "duration": 1.697959
+              "text": "What's the main draw here?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Early on, Apple realized they'd need really powerful chips to handle AI processing right on the device. That pushed their chip development forward.",
-              "duration": 7.706122
-            },
-            {
-              "speaker": "listener",
-              "text": "So the car project actually helped their other products?",
+              "text": "You can try out the new Siri before the wider launch this fall.",
               "duration": 3.108571
             },
             {
+              "speaker": "listener",
+              "text": "What other systems got betas?",
+              "duration": 1.671837
+            },
+            {
               "speaker": "explainer",
-              "text": "Exactly. While their AI software has lagged behind competitors, the hardware itself has been impressive. Those chips are now in their computers and phones.",
-              "duration": 9.613061
+              "text": "iPadOS 27, watchOS 27, and macOS 27 Golden Gate are all available too.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Does that affect how we use Apple devices?",
-              "duration": 2.324898
+              "text": "How do I actually get it on my phone?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "It does. Because the chips can handle more on the device itself, less of your data needs to be sent to the cloud. That's become a big privacy selling point for Apple.",
-              "duration": 10.161633
+              "text": "Look for a section called Beta Updates at the top of your screen, tap that, then select the iOS 27 public beta.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "Interesting how a failed project can still leave something valuable behind.",
-              "duration": 4.257959
+              "text": "And it's similar for the other devices?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Right. And they're now planning a new server product based on that chip technology, with support for up to one and a half terabytes of memory.",
-              "duration": 8.071837
+              "text": "Right, the setup steps are generally the same across Apple products.",
+              "duration": 3.526531
             }
           ]
         }

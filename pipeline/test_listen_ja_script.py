@@ -78,6 +78,66 @@ check("full-width digits ground correctly",
       lg.ja_quality_issues([{"speaker": "listener", "text": "対象は３０人ですか。"},
                             {"speaker": "explainer", "text": "はい、30人です。"}] + GOOD_JA[2:], SIGNAL) == [])
 
+# ---------------------------------------------------------------- v2: conversation structure
+# The failure mode from the first real generation: a narrator reading the news with a
+# listener that only nods. Every one of these must now be rejected.
+
+NARRATOR_STYLE = [
+    {"speaker": "listener", "text": "今日のニュースを教えてください。"},
+    {"speaker": "explainer", "text": "Appleは火曜日、OpenAIと従業員30人を提訴しました。"},
+    {"speaker": "listener", "text": "なるほど。"},
+    {"speaker": "explainer", "text": "訴訟はカリフォルニア州で提起されています。"},
+    {"speaker": "listener", "text": "そうですね。"},
+    {"speaker": "explainer", "text": "AI業界の採用に影響する可能性があります。"},
+]
+_narr = lg.ja_quality_issues(NARRATOR_STYLE, SIGNAL)
+check("narrator+aizuchi style rejected", any("aizuchi" in i for i in _narr))
+check("narrator style fails question minimum", any("question" in i for i in _narr))
+
+summarizing = [dict(l) for l in GOOD_JA]
+summarizing[2] = {"speaker": "listener", "text": "AppleがOpenAIと30人を火曜日に提訴したんですよね。"}
+check("listener summarizing article facts rejected",
+      any("summarizes instead of asking" in i for i in lg.ja_quality_issues(summarizing, SIGNAL)))
+
+one_question = [
+    {"speaker": "listener", "text": "AppleがOpenAIを訴えたって本当ですか。"},
+    {"speaker": "explainer", "text": "本当です。火曜日に訴訟を起こしました。"},
+    {"speaker": "listener", "text": "続きが気になる話ですね。"},
+    {"speaker": "explainer", "text": "ええ、また動きがあれば話しましょう。"},
+    {"speaker": "listener", "text": "朝から勉強になりました。"},
+    {"speaker": "explainer", "text": "こちらこそ。良い一日を。"},
+]
+check("only one question rejected",
+      any("question" in i for i in lg.ja_quality_issues(one_question, SIGNAL)))
+
+SIGNAL_PASTE = dict(SIGNAL)
+SIGNAL_PASTE["localized"] = {"ja": {
+    "headline": "AppleがOpenAIを提訴",
+    "summary": "30人の従業員が企業秘密を持ち出した疑いで提訴の対象になっています。"}}
+pasted = [dict(l) for l in GOOD_JA]
+pasted[1] = {"speaker": "explainer",
+             "text": "はい。30人の従業員が企業秘密を持ち出した疑いで提訴の対象になっています。"}
+check("article text pasted into dialogue rejected",
+      any("pasted into dialogue" in i for i in lg.ja_quality_issues(pasted, SIGNAL_PASTE)))
+
+hosting = [dict(l) for l in GOOD_JA]
+hosting[0] = {"speaker": "listener", "text": "今日はAppleの訴訟についてお話しします。"}
+check("presenter-style hosting rejected",
+      any("forbidden phrase" in i for i in lg.ja_quality_issues(hosting, SIGNAL)))
+
+closing = [dict(l) for l in GOOD_JA]
+closing[7] = {"speaker": "explainer", "text": "以上、今日のSignalsでした。また次回。"}
+check("presenter-style closing rejected",
+      any("forbidden phrase" in i for i in lg.ja_quality_issues(closing, SIGNAL)))
+
+anchor = [dict(l) for l in GOOD_JA]
+anchor[1] = {"speaker": "explainer", "text": "はい。Appleから訴訟が発表されました。"}
+anchor[3] = {"speaker": "explainer", "text": "同じ日に人事も発表されました。"}
+check("repeated 発表されました rejected",
+      any("news-anchor cadence" in i for i in lg.ja_quality_issues(anchor, SIGNAL)))
+
+check("good conversation still passes v2 gates", lg.ja_quality_issues(GOOD_JA, SIGNAL) == [])
+
 # ---------------------------------------------------------------- parse_dialogue (shared, unchanged)
 try:
     lg.parse_dialogue("not json at all")

@@ -66,20 +66,31 @@ SCRIPT_SYSTEM = (
     "N'. Output ONLY a JSON array of objects: [{\"speaker\":\"listener|explainer\",\"text\":\"...\"}]."
 )
 
-# Japanese narration (--lang ja). NOT a translation prompt: the model speaks naturally in
-# Japanese, grounded in the English fields plus the edition's own localized.ja text
-# (japanese_reference) so terminology matches what JP-mode readers see in the app.
+# Japanese narration (--lang ja) v2 — a REAL two-person conversation, not narration.
+# NOT a translation prompt: the model speaks naturally in Japanese, grounded in the English
+# fields plus the edition's own localized.ja text (japanese_reference) so terminology matches
+# what JP-mode readers see in the app. The conversation target: two intelligent friends
+# discussing the morning's news (Apple-Podcast morning-briefing feel), never an AI anchor.
 SCRIPT_SYSTEM_JA = (
-    "あなたは朝のニュースアプリ「Signals」のための、落ち着いた日本語の2人対話を書きます。"
-    "話者は 'listener'(素朴な疑問を尋ねる聞き手)と 'explainer'(静かに要点を説明する解説役)。"
-    "翻訳ではなく、日本語として自然に話される会話を書いてください。ですます調で、1文は短く"
-    "(目安35文字以内)、通勤中に聞いて理解できる平易な言葉を使うこと。8〜12行。"
-    "固有名詞(企業名・人名・地名)は提供された表記のまま使い、英語名は英語のまま"
-    "(例: Apple, OpenAI)。数字・日付・金額は正確に保持する。提供されたstory fields"
-    "(英語原文と japanese_reference)にある事実だけを使い、事実・名前・数字を発明しない。"
-    "深刻な話題(暴力・死)は淡々と扱い、生々しい描写をしない。煽り・感嘆・ドラマ化・冗談・"
-    "「速報」的な言い回しは禁止。直訳調(例:「〜についての発表をしました」)を避け、"
-    "見出しや「シグナルN」などのラベルは書かない。"
+    "あなたは朝のニュースアプリ「Signals」のための、日本語の朝の会話番組の台本作家です。"
+    "知的な友人2人が今日のニュースを一緒に話す、本物の会話を書きます。ニュース番組の"
+    "アナウンサー原稿ではありません。"
+    "役割 — listener: まだ記事を読んでいない、好奇心のある聞き手。会話を進める側。"
+    "「なぜ重要?」「私たちの生活にどう関係する?」という自然な疑問を投げる。"
+    "記事の事実を自分から要約したり読み上げたりしない。相槌だけの行(「なるほど」単体など)は禁止。"
+    "explainer: 質問に答える側。記事や japanese_reference の文をそのまま貼らず、"
+    "友人に説明するように自分の言葉で話す。1回の発言は1〜2文まで。"
+    "構造(この流れに従う): ①listenerが好奇心のある質問で切り出す → ②explainerが核心を短く答える"
+    " → ③listenerが踏み込んだ質問か身近な視点の質問で返す → ④explainerが背景や「なぜ重要か」を足す"
+    " → ⑤(任意)短い自然な締めの往復。listenerの発言は最低2回、そのうち少なくとも2回は質問にする。"
+    "8〜12行。ですます調で、1文は短く(目安35文字以内)、通勤中に聞いて理解できる平易な言葉。"
+    "固有名詞(企業名・人名・地名)は提供された表記のまま、英語名は英語のまま(例: Apple, OpenAI)。"
+    "数字・日付・金額は正確に保持。提供されたstory fields(英語原文と japanese_reference)にある"
+    "事実だけを使い、事実・名前・数字を発明しない。深刻な話題(暴力・死)は淡々と扱う。"
+    "禁止: 一人語り/explainerの長い段落/記事文の貼り付け/「今日は〜についてお話しします」型の司会進行/"
+    "「〜が発表されました」の繰り返し/「今日のSignalsでした」「お届けしました」「また次回」などの"
+    "番組風の締め(会話は友人同士の自然な一言で終える)/煽り・感嘆・ドラマ化・冗談・「速報」的言い回し/"
+    "直訳調(例:「〜についての発表をしました」)/見出しや「シグナルN」などのラベル。"
     "出力はJSON配列のみ: [{\"speaker\":\"listener|explainer\",\"text\":\"...\"}]"
 )
 
@@ -203,8 +214,38 @@ _JA_FORBIDDEN = (
     "することが可能です",
     "であるということです",
     "速報", "衝撃", "驚愕", "必見", "！！",
+    # presenter-style hosting / closing (v2 — this is a conversation, not a program)
+    "についてお話しします", "お伝えします", "お届けします", "お届けしました",
+    "今日のSignalsでした", "また次回", "ご清聴", "お相手は",
 )
 _JA_MAX_LINE_CHARS = 90
+# v2 conversation-structure knobs
+_JA_QUESTION_RE = re.compile(r"[？?]|か(?:ね|な)?[。」]?\s*$")   # spoken-question detection
+_JA_MIN_LISTENER_TURNS = 2
+_JA_MIN_QUESTIONS = 2
+_JA_PASTE_MIN = 15            # shared-substring length that marks article text pasted into a line
+_JA_AIZUCHI_MAX = 9           # a non-question listener line this short is a bare aizuchi
+_JA_LISTENER_STMT_MAX = 40    # non-question listener lines must stay short (reactions, not summaries)
+_REPEAT_ANNOUNCE = "発表されました"
+
+
+def _ja_source_strings(signal):
+    """All localized.ja strings of the signal (headline/summary/takeaways/why) as one blob —
+    the reference text a pasted-not-spoken line would share long substrings with."""
+    ja = (signal.get("localized") or {}).get("ja") or {}
+    parts = []
+    for v in ja.values():
+        if isinstance(v, str):
+            parts.append(v)
+        elif isinstance(v, list):
+            parts += [x for x in v if isinstance(x, str)]
+    return "\n".join(parts)
+
+
+def _shares_long_substring(text, source, n=_JA_PASTE_MIN):
+    if len(text) < n or len(source) < n:
+        return False
+    return any(text[i:i + n] in source for i in range(len(text) - n + 1))
 _FW_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
 
 
@@ -219,17 +260,51 @@ def _digit_runs(text):
 
 def ja_quality_issues(lines, signal):
     """Issue strings for a JA dialogue (empty list = clean). Checks are JA-only by design:
-    format/speakers/line-count are already enforced by parse_dialogue for both languages."""
+    format/speakers/line-count are already enforced by parse_dialogue for both languages.
+
+    v2 adds CONVERSATION-STRUCTURE checks: this must read as two intelligent friends
+    discussing the news — a curious listener who has NOT read the article driving with
+    questions, an explainer answering in their own words — never a narrator with aizuchi,
+    never article text chopped into turns, never a presenter-style closing."""
     issues = []
     src = json.dumps({k: signal.get(k) for k in
                       ("headline", "summary", "keyTakeaways", "whyItMatters", "localized")},
                      ensure_ascii=False).translate(_FW_DIGITS)
     src_lower = src.lower()
     src_digits = set(_digit_runs(src))
+    ja_src = _ja_source_strings(signal)
+
+    # ── conversation shape (v2) ──────────────────────────────────────────────
+    turns = []
+    for line in lines:
+        if not turns or turns[-1] != line["speaker"]:
+            turns.append(line["speaker"])
+    if turns.count("listener") < _JA_MIN_LISTENER_TURNS:
+        issues.append(f"only {turns.count('listener')} listener turn(s) — a conversation needs ≥{_JA_MIN_LISTENER_TURNS}")
+    if turns.count("explainer") < 2:
+        issues.append(f"only {turns.count('explainer')} explainer turn(s) — a conversation needs ≥2")
+    questions = sum(1 for l in lines
+                    if l["speaker"] == "listener" and _JA_QUESTION_RE.search(l["text"]))
+    if questions < _JA_MIN_QUESTIONS:
+        issues.append(f"listener asks only {questions} question(s) — needs ≥{_JA_MIN_QUESTIONS} (curiosity drives the talk)")
+    announce = sum(l["text"].count(_REPEAT_ANNOUNCE) for l in lines)
+    if announce >= 2:
+        issues.append(f"'{_REPEAT_ANNOUNCE}' repeated {announce}× — news-anchor cadence, not conversation")
 
     run_speaker, run_len = None, 0
     for i, line in enumerate(lines, 1):
         text = line["text"]
+        # ── per-line conversation checks (v2) ────────────────────────────────
+        is_q = bool(_JA_QUESTION_RE.search(text))
+        if line["speaker"] == "listener" and not is_q:
+            # The listener hasn't read the article: reactions stay short and fact-free.
+            if len(text) <= _JA_AIZUCHI_MAX:
+                issues.append(f"line {i}: bare aizuchi listener line ({text!r})")
+            elif (len(text) > _JA_LISTENER_STMT_MAX or _digit_runs(text)
+                  or len(_latin_tokens(text)) >= 2):
+                issues.append(f"line {i}: listener states article facts / summarizes instead of asking ({text[:30]!r})")
+        if _shares_long_substring(text, ja_src):
+            issues.append(f"line {i}: article text pasted into dialogue (≥{_JA_PASTE_MIN}-char overlap with localized.ja)")
         # natural Japanese, not English passthrough
         if not _JA_CHARS_RE.search(text):
             issues.append(f"line {i}: no Japanese characters ({text[:30]!r})")

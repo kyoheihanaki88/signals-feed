@@ -16,10 +16,17 @@ Audio is written under scratch/ (gitignored) and pushed to R2 remote-only — ne
 
 Env: ELEVENLABS_API_KEY, ANTHROPIC_API_KEY (required); EXPLAINER_VOICE, LISTENER_VOICE;
      SIGNALS_LISTEN_MODEL (optional). R2 upload uses `wrangler` (CLOUDFLARE_API_TOKEN in CI).
+     Japanese (--lang ja) additionally requires EXPLAINER_VOICE_JA, LISTENER_VOICE_JA.
 
-Usage: python3 pipeline/listen_generate.py 2026-06-30
+Usage: python3 pipeline/listen_generate.py 2026-06-30 [--lang en|ja]
+
+LANGUAGES: `--lang en` (default) is the production path and is behavior-identical to the
+historical EN-only script. `--lang ja` generates natural Japanese narration (NOT literal
+translation — see SCRIPT_SYSTEM_JA) into audio/<date>/signal-0N-dialogue-ja.mp3 and MERGES
+a `ja` track into the existing manifest entry, never touching `en`. JA is optional
+everywhere downstream: promotion (listen-ready) remains EN-only.
 """
-import os, sys, json, subprocess, urllib.request, urllib.error
+import os, re, sys, json, subprocess, urllib.request, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -59,11 +66,34 @@ SCRIPT_SYSTEM = (
     "N'. Output ONLY a JSON array of objects: [{\"speaker\":\"listener|explainer\",\"text\":\"...\"}]."
 )
 
+# Japanese narration (--lang ja). NOT a translation prompt: the model speaks naturally in
+# Japanese, grounded in the English fields plus the edition's own localized.ja text
+# (japanese_reference) so terminology matches what JP-mode readers see in the app.
+SCRIPT_SYSTEM_JA = (
+    "あなたは朝のニュースアプリ「Signals」のための、落ち着いた日本語の2人対話を書きます。"
+    "話者は 'listener'(素朴な疑問を尋ねる聞き手)と 'explainer'(静かに要点を説明する解説役)。"
+    "翻訳ではなく、日本語として自然に話される会話を書いてください。ですます調で、1文は短く"
+    "(目安35文字以内)、通勤中に聞いて理解できる平易な言葉を使うこと。8〜12行。"
+    "固有名詞(企業名・人名・地名)は提供された表記のまま使い、英語名は英語のまま"
+    "(例: Apple, OpenAI)。数字・日付・金額は正確に保持する。提供されたstory fields"
+    "(英語原文と japanese_reference)にある事実だけを使い、事実・名前・数字を発明しない。"
+    "深刻な話題(暴力・死)は淡々と扱い、生々しい描写をしない。煽り・感嘆・ドラマ化・冗談・"
+    "「速報」的な言い回しは禁止。直訳調(例:「〜についての発表をしました」)を避け、"
+    "見出しや「シグナルN」などのラベルは書かない。"
+    "出力はJSON配列のみ: [{\"speaker\":\"listener|explainer\",\"text\":\"...\"}]"
+)
+
 
 # ── external calls (injectable for tests) ───────────────────────────────────────────────────────
-def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL):
+def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
     fields = {k: signal.get(k) for k in ("headline", "summary", "keyTakeaways", "whyItMatters") if signal.get(k)}
-    body = json.dumps({"model": model, "max_tokens": 900, "temperature": 0.5, "system": SCRIPT_SYSTEM,
+    if lang == "ja":
+        ja_ref = (signal.get("localized") or {}).get("ja")
+        if ja_ref:
+            fields["japanese_reference"] = ja_ref     # ground JA terminology in the app's own JP text
+    system = SCRIPT_SYSTEM_JA if lang == "ja" else SCRIPT_SYSTEM
+    body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
+                       "temperature": 0.5, "system": system,
                        "messages": [{"role": "user", "content": json.dumps(fields, ensure_ascii=False)}]}).encode()
     req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
         "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION, "content-type": "application/json"})
@@ -158,16 +188,86 @@ def parse_dialogue(text):
     return out
 
 
-def key_for(date, number):
-    return f"audio/{date}/signal-{int(number):02d}-dialogue-en.mp3"
+def key_for(date, number, lang="en"):
+    return f"audio/{date}/signal-{int(number):02d}-dialogue-{lang}.mp3"
+
+
+# ── JA quality gate (isolated: never runs on the EN path) ───────────────────────────────────────
+# Fail-closed like everything else here: any issue raises upstream → no upload, no manifest.
+
+_JA_CHARS_RE = re.compile(r"[぀-ゟ゠-ヿ一-鿿]")   # hiragana/katakana/kanji
+_JA_FORBIDDEN = (
+    "についての発表をしました",   # literal-translation tell
+    "についての報告をしました",
+    "による発表によると",
+    "することが可能です",
+    "であるということです",
+    "速報", "衝撃", "驚愕", "必見", "！！",
+)
+_JA_MAX_LINE_CHARS = 90
+_FW_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
+
+
+def _latin_tokens(text):
+    """Proper-noun-ish latin tokens (Apple, OpenAI, iOS…) that must exist in the source."""
+    return re.findall(r"[A-Za-z][A-Za-z0-9.&'\-]{2,}", text)
+
+
+def _digit_runs(text):
+    return re.findall(r"\d+", text.translate(_FW_DIGITS))
+
+
+def ja_quality_issues(lines, signal):
+    """Issue strings for a JA dialogue (empty list = clean). Checks are JA-only by design:
+    format/speakers/line-count are already enforced by parse_dialogue for both languages."""
+    issues = []
+    src = json.dumps({k: signal.get(k) for k in
+                      ("headline", "summary", "keyTakeaways", "whyItMatters", "localized")},
+                     ensure_ascii=False).translate(_FW_DIGITS)
+    src_lower = src.lower()
+    src_digits = set(_digit_runs(src))
+
+    run_speaker, run_len = None, 0
+    for i, line in enumerate(lines, 1):
+        text = line["text"]
+        # natural Japanese, not English passthrough
+        if not _JA_CHARS_RE.search(text):
+            issues.append(f"line {i}: no Japanese characters ({text[:30]!r})")
+        # spoken-length ceiling (short sentences, listenable while commuting)
+        if len(text) > _JA_MAX_LINE_CHARS:
+            issues.append(f"line {i}: too long ({len(text)} chars > {_JA_MAX_LINE_CHARS})")
+        # literal-translation / sensational tells
+        for pat in _JA_FORBIDDEN:
+            if pat in text:
+                issues.append(f"line {i}: forbidden phrase {pat!r}")
+        # grounding — numbers must exist in the source fields
+        for d in _digit_runs(text):
+            if d not in src_digits:
+                issues.append(f"line {i}: ungrounded number {d!r}")
+        # grounding — latin proper nouns must exist in the source fields
+        for tok in _latin_tokens(text):
+            if tok.lower() not in src_lower:
+                issues.append(f"line {i}: ungrounded name {tok!r}")
+        # speaker alternation — never the same voice three times in a row
+        if line["speaker"] == run_speaker:
+            run_len += 1
+            if run_len >= 3:
+                issues.append(f"line {i}: speaker {run_speaker!r} three times in a row")
+        else:
+            run_speaker, run_len = line["speaker"], 1
+    return issues
 
 
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
-def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
+def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en",
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
              upload_fn=r2_upload, verify_fn=verify_public, log=print):
     """Generate+upload all 5 dialogue clips for `date`, then write the manifest. Raises on any failure
-    BEFORE writing the manifest (atomic). Returns the manifest entry dict."""
+    BEFORE writing the manifest (atomic). Returns the manifest entry dict.
+
+    lang="en" (default) is byte-for-byte the historical behavior (same filenames, same manifest
+    replace-write). lang="ja" adds the JA quality gate and MERGES `ja` tracks into the existing
+    manifest entry so a previously generated `en` is never touched."""
     edition = os.path.join(ROOT, "editions", f"{date}.json")
     feed = json.load(open(edition, encoding="utf-8"))
     if feed.get("date") != date:
@@ -183,16 +283,21 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
     # 1) scripts + audio + drift — all must pass before any upload.
     for sig in signals:
         num = sig["number"]
-        lines = llm_fn(sig, api_key=an_key)
+        lines = llm_fn(sig, api_key=an_key, lang=lang) if lang != "en" else llm_fn(sig, api_key=an_key)
+        if lang == "ja":
+            issues = ja_quality_issues(lines, sig)
+            if issues:
+                raise ValueError(f"signal {num} JA quality gate failed:\n  " + "\n  ".join(issues))
         parts, durs = [], []
         for i, c in enumerate(lines, 1):
             voice = explainer_voice if c["speaker"] == "explainer" else listener_voice
             settings = EXPLAINER_SETTINGS if c["speaker"] == "explainer" else LISTENER_SETTINGS
-            p = os.path.join(outdir, f"sig{num}-line-{i:02d}.mp3")
+            line_name = f"sig{num}-line-{i:02d}.mp3" if lang == "en" else f"sig{num}-line-{i:02d}-{lang}.mp3"
+            p = os.path.join(outdir, line_name)
             open(p, "wb").write(synth_fn(c["text"], voice, settings, el_key))
             durs.append(dur_fn(p))
             parts.append(p)
-        final = os.path.join(outdir, f"signal-{int(num):02d}-dialogue-en.mp3")
+        final = os.path.join(outdir, f"signal-{int(num):02d}-dialogue-{lang}.mp3")
         with open(final, "wb") as o:
             for p in parts:
                 o.write(open(p, "rb").read())
@@ -202,9 +307,9 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
         caps = [{"speaker": c["speaker"], "text": c["text"], "duration": round(d, 6)}
                 for c, d in zip(lines, durs)]
         entry[str(num)] = {"format": "dialogue",
-                           "en": {"key": key_for(date, num), "gap": 0.0, "captions": caps}}
-        to_upload.append((final, key_for(date, num)))
-        log(f"  signal {num}: {len(caps)} lines, drift {drift:.3f}s OK")
+                           lang: {"key": key_for(date, num, lang), "gap": 0.0, "captions": caps}}
+        to_upload.append((final, key_for(date, num, lang)))
+        log(f"  signal {num} [{lang}]: {len(caps)} lines, drift {drift:.3f}s OK")
 
     # 2) upload all, then require every object to be publicly retrievable (fail-closed).
     #    HEAD 200, or GET/range 200/206 when HEAD is refused (r2.dev quirk) — see verify_public.
@@ -219,34 +324,70 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice,
         log(f"  OK ({detail}) {url}")
 
     # 3) only now write the manifest entry.
+    #    en: replace the whole date entry — byte-identical to the historical behavior.
+    #    ja (any non-en): MERGE per-signal tracks into the existing entry so `en` (already
+    #    generated, uploaded, and possibly injected/promoted) is never modified or lost.
     data = json.load(open(MANIFEST, encoding="utf-8"))
-    data.setdefault("editions", {})[date] = entry
+    editions = data.setdefault("editions", {})
+    if lang == "en" or not isinstance(editions.get(date), dict):
+        editions[date] = entry
+    else:
+        existing = editions[date]
+        for num, tracks in entry.items():
+            cur = existing.get(num)
+            if not isinstance(cur, dict):
+                existing[num] = tracks
+                continue
+            for k, v in tracks.items():
+                if k != "format":
+                    cur[k] = v          # add/refresh this language only; en untouched
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    log(f"✓ wrote listen_manifest.json entry for {date} (5 signals)")
+    log(f"✓ wrote listen_manifest.json entry for {date} (5 signals, lang={lang})")
     return entry
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.exit("usage: python3 pipeline/listen_generate.py <YYYY-MM-DD>")
-    date = sys.argv[1]
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    lang = "en"
+    if "--lang" in sys.argv:
+        i = sys.argv.index("--lang")
+        lang = sys.argv[i + 1] if i + 1 < len(sys.argv) else ""
+        args = [a for a in args if a != lang]
+    if len(args) != 1 or lang not in ("en", "ja"):
+        sys.exit("usage: python3 pipeline/listen_generate.py <YYYY-MM-DD> [--lang en|ja]")
+    date = args[0]
     el = os.environ.get("ELEVENLABS_API_KEY", "").strip()
     an = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not el or not an:
         sys.exit("❌ ELEVENLABS_API_KEY and ANTHROPIC_API_KEY are required")
-    if not LISTENER_VOICE:
-        sys.exit("❌ LISTENER_VOICE required (EXPLAINER_VOICE defaults to %s)" % EXPLAINER_VOICE)
+
+    if lang == "ja":
+        # JA voices come ONLY from env — no hardcoded fallbacks (fail loudly if unset).
+        explainer = os.environ.get("EXPLAINER_VOICE_JA", "").strip()
+        listener = os.environ.get("LISTENER_VOICE_JA", "").strip()
+        if not explainer or not listener:
+            sys.exit("❌ EXPLAINER_VOICE_JA and LISTENER_VOICE_JA are required for --lang ja")
+        checks = (("LISTENER_VOICE_JA", listener), ("EXPLAINER_VOICE_JA", explainer))
+    else:
+        explainer, listener = EXPLAINER_VOICE, LISTENER_VOICE
+        if not listener:
+            sys.exit("❌ LISTENER_VOICE required (EXPLAINER_VOICE defaults to %s)" % EXPLAINER_VOICE)
+        checks = (("LISTENER_VOICE", listener), ("EXPLAINER_VOICE", explainer))
     # Fail with a READABLE message on malformed voice IDs (ElevenLabs IDs are alphanumeric).
     # Without this, a bad character reaches the request URL and http.client dies in
     # putrequest with an opaque traceback.
-    for name, v in (("LISTENER_VOICE", LISTENER_VOICE), ("EXPLAINER_VOICE", EXPLAINER_VOICE)):
+    for name, v in checks:
         if not v.isalnum():
             sys.exit(f"❌ {name} is not a valid ElevenLabs voice ID ({v!r}) — "
                      "re-paste the repo secret without spaces/newlines/quotes")
-    generate(date, el_key=el, an_key=an, listener_voice=LISTENER_VOICE, explainer_voice=EXPLAINER_VOICE)
-    print("Next: python3 pipeline/listen_inject_edition.py", date)
+    generate(date, el_key=el, an_key=an, listener_voice=listener, explainer_voice=explainer, lang=lang)
+    if lang == "en":
+        print("Next: python3 pipeline/listen_inject_edition.py", date)
+    else:
+        print(f"JA clips uploaded + manifest merged for {date}. "
+              "(Injection of listen.ja into editions comes in a later phase — evaluate audio quality first.)")
 
 
 if __name__ == "__main__":

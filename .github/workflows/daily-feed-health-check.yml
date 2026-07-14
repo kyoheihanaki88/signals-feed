@@ -1,0 +1,169 @@
+name: Daily Feed Health Check
+
+# READ-ONLY end-of-chain verification — the last word of the day, not a repair tool.
+#
+# By 16:00 UTC every publish probe (09:00–14:00) and Listen probe (09:45–14:45) has had
+# its chance. This workflow only asks: did today's feed fully arrive? It checks merged
+# main AND the live public endpoints, and FAILS LOUDLY if anything is missing. It never
+# generates, commits, pushes, PRs, dispatches, retries, uploads, or touches latest.json —
+# fail-closed days are *supposed* to leave latest.json on yesterday; this check is how a
+# missed day becomes visible instead of silent.
+#
+# What "healthy" means for today (America/New_York):
+#   1. editions/<today>.json exists on main, parses, and carries 5 signals
+#   2. latest.json on main has date == today (promotion happened) with 5 signals
+#   3. all 5 signals carry listen.en.audioURL, dated today
+#   4. the LIVE https://signals-feed.vercel.app/latest.json also serves today
+#   5. all 5 EN audio files are publicly reachable on R2
+#      (HEAD → ranged GET → GET fallback — r2.dev can 403 HEAD while GET works;
+#       same tolerance as pipeline/listen_generate.py's public verification)
+
+on:
+  schedule:
+    - cron: "0 16 * * *"    # 16:00 UTC — 12:00 PM EDT; after all catch-up probes
+  workflow_dispatch: {}      # read-only diagnostics on demand
+
+permissions:
+  contents: read             # checkout only — this workflow can never write
+
+concurrency:
+  group: daily-feed-health-check
+  cancel-in-progress: false
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main (read-only)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Resolve today (America/New_York)
+        id: today
+        run: echo "date=$(TZ=America/New_York date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Verify today's published feed (read-only)
+        env:
+          TODAY: ${{ steps.today.outputs.date }}
+          LIVE_LATEST_URL: https://signals-feed.vercel.app/latest.json
+        run: |
+          python - <<'PY'
+          import json, os, sys, urllib.request
+
+          TODAY = os.environ["TODAY"]
+          LIVE = os.environ["LIVE_LATEST_URL"]
+          UA = {"User-Agent": "SignalsHealthCheck/1.0"}
+          problems = []
+          notes = []
+
+          def status(url, method="GET", extra=None):
+              headers = dict(UA)
+              if extra:
+                  headers.update(extra)
+              req = urllib.request.Request(url, method=method, headers=headers)
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status
+              except urllib.error.HTTPError as e:
+                  return e.code
+              except Exception:
+                  return 0
+
+          def reachable(url):
+              # Mirror listen_generate.py: r2.dev may 403 HEAD while GET serves fine.
+              head = status(url, method="HEAD")
+              if head == 200:
+                  return True, "HEAD 200"
+              ranged = status(url, extra={"Range": "bytes=0-0"})
+              if ranged in (200, 206):
+                  return True, f"HEAD {head} → GET/range {ranged}"
+              plain = status(url)
+              return plain == 200, f"HEAD {head} → GET/range {ranged} → GET {plain}"
+
+          # 1) Today's edition exists on merged main
+          edition_path = f"editions/{TODAY}.json"
+          edition = None
+          if not os.path.exists(edition_path):
+              problems.append(f"{edition_path} does not exist on main — no edition published today")
+          else:
+              try:
+                  edition = json.load(open(edition_path))
+                  n = len(edition.get("signals", []))
+                  if n != 5:
+                      problems.append(f"{edition_path} has {n} signals (expected 5)")
+                  else:
+                      notes.append(f"edition {TODAY}: present, 5 signals")
+              except Exception as e:
+                  problems.append(f"{edition_path} failed to parse: {e}")
+
+          # 2–3) latest.json on main: promoted to today, 5 signals, full EN Listen
+          audio_urls = []
+          try:
+              latest = json.load(open("latest.json"))
+              ldate = latest.get("date")
+              if ldate != TODAY:
+                  problems.append(f"latest.json on main is dated {ldate!r} — promotion to {TODAY} has not happened")
+              sigs = latest.get("signals", [])
+              if len(sigs) != 5:
+                  problems.append(f"latest.json has {len(sigs)} signals (expected 5)")
+              for i, s in enumerate(sigs, 1):
+                  url = ((s.get("listen") or {}).get("en") or {}).get("audioURL")
+                  if not url:
+                      problems.append(f"signal {i}: missing listen.en.audioURL in latest.json")
+                  else:
+                      audio_urls.append((i, url))
+                      if ldate == TODAY and f"/{TODAY}/" not in url:
+                          problems.append(f"signal {i}: audioURL not dated {TODAY}: {url}")
+              if ldate == TODAY and len(audio_urls) == 5:
+                  notes.append("latest.json on main: promoted to today, 5/5 listen.en audioURLs")
+          except Exception as e:
+              problems.append(f"latest.json on main failed to parse: {e}")
+
+          # 4) Live public latest.json serves today
+          try:
+              req = urllib.request.Request(LIVE, headers=UA)
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  live = json.load(r)
+              live_date = live.get("date")
+              if live_date != TODAY:
+                  problems.append(f"LIVE {LIVE} is dated {live_date!r} (expected {TODAY}) — app is not serving today")
+              else:
+                  notes.append("live latest.json: serving today")
+          except Exception as e:
+              problems.append(f"LIVE {LIVE} unreachable/unparseable: {e}")
+
+          # 5) All 5 EN audio files publicly reachable
+          for i, url in audio_urls:
+              ok, detail = reachable(url)
+              if ok:
+                  notes.append(f"audio {i}/5 reachable ({detail})")
+              else:
+                  problems.append(f"signal {i}: audio NOT publicly reachable ({detail}): {url}")
+
+          # ── Verdict ────────────────────────────────────────────────────────
+          summary = [f"## Daily Feed Health Check — {TODAY}", ""]
+          if problems:
+              summary.append(f"### ❌ INCOMPLETE — {len(problems)} problem(s)")
+              summary += [f"- {p}" for p in problems]
+          else:
+              summary.append("### ✅ Healthy — edition, promotion, live feed, and all 5 audio files verified")
+          if notes:
+              summary += ["", "<details><summary>Checks passed</summary>", ""]
+              summary += [f"- {n}" for n in notes]
+              summary += ["", "</details>"]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(summary) + "\n")
+
+          for n in notes:
+              print("ok:", n)
+          for p in problems:
+              print("PROBLEM:", p, file=sys.stderr)
+          if problems:
+              print(f"\nDaily feed for {TODAY} is INCOMPLETE — {len(problems)} problem(s). "
+                    "This check is read-only: investigate via the publish/Listen workflow runs.",
+                    file=sys.stderr)
+              sys.exit(1)
+          print(f"\nDaily feed for {TODAY} is fully published and publicly reachable.")
+          PY

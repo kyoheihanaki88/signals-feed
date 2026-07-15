@@ -31,8 +31,15 @@ def main():
 
     feed, stats = inject_listen(feed, date, load_listen_manifest())
     print("inject stats:", stats)
-    if stats["injected"] != 5:
-        sys.exit(f"❌ expected 5 listen injections, got {stats['injected']} — aborting (no write).")
+    # All 5 signals must end listen-present (freshly injected, merged, or already-preserved) and this
+    # run must have CHANGED something (a fresh EN inject → injected==5; a later JA pass → merged==5).
+    # A no-op run (nothing new) aborts without writing. EN's fail-closed guarantee is still enforced
+    # downstream by validate_feed (listen_ready = listen.en for all 5) after the write.
+    covered = stats["injected"] + stats["merged"] + stats["preserved"]
+    changed = stats["injected"] + stats["merged"]
+    if covered != 5 or changed == 0:
+        sys.exit(f"❌ expected all 5 signals listen-present with a change this run "
+                 f"(injected+merged+preserved==5 and injected+merged>0); got {stats} — aborting (no write).")
 
     text = json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
     open(edition, "w", encoding="utf-8").write(text)

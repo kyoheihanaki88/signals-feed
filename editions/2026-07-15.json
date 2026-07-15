@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "警察長官が現場を視察したところ、厨房付近の別の非常口も棚やロッカーによって狭められていた可能性があるという。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw there was a terrible fire in Bangkok. What happened?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "A fire broke out early Monday morning at a pub in Bangkok. The death toll has now reached 30, making it the city's deadliest blaze in 17 years.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "Do they know what caused it?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Disaster officials say their initial assessment points to an electrical short circuit in an air conditioner located in the ceiling.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "And what are police saying about it?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The national police chief said negligence is the primary theory guiding their investigation right now.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there something that made it harder for people to escape?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Possibly. The police chief who visited the scene said access to an exit near the kitchen might have been narrowed by shelving units and lockers.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "What's happening with the pub now?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The pub has said it will cooperate with the investigation into alleged negligence.",
+              "duration": 4.127347
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,55 @@
             "閣僚側の代理人法律事務所からのコメントは得られていない"
           ],
           "whyItMatters": "ブルームバーグの編集者は宣誓供述書の中で、読者が訂正通知を確認できるようペイウォールを解除したと述べている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Singapore's court ordered Bloomberg to pay a pretty large sum to government ministers. What happened?",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Bloomberg News and one of its reporters were found to have defamed two Singapore government ministers in an article. The high court ordered them to pay about 356,000 dollars in damages.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a significant amount. How did Bloomberg respond?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their editor-in-chief said he was disappointed by the ruling, but that the company stands by its reporter and newsroom. He didn't say whether they plan to appeal.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "Did Bloomberg do anything after publishing the article?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to an affidavit, a Bloomberg editor said the company lifted the paywall on the article so readers could see a correction notice.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "And what about the ministers' side?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The law firm representing the ministers didn't immediately respond to requests for comment about the ruling.",
+              "duration": 4.91102
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,65 @@
           ],
           "whyItMatters": "この停戦は、イランが支援するフーシ派とイエメン政府を支持するサウジアラビア主導の連合軍との内戦終結を目的としたものだった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing news about the U.S. and Iran in the Strait of Hormuz. What's happening there?",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a serious standoff. The U.S. has reimposed a maritime blockade of Iranian ports in the strait, and Iran is now threatening to block all oil exporting routes in the region.",
+              "duration": 10.34449
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds tense. Has there been any actual fighting?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. There were strikes overnight as the blockade went into effect. Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain, and Jordan.",
+              "duration": 10.03102
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is the U.S. doing this blockade?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Brad Cooper, who commands U.S. Central Command, has accused Iran of attacking seven commercial ships and launching missiles against Gulf countries.",
+              "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this connected to anything else going on in the region?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of broader tensions. There was a ceasefire aimed at ending the civil war between Iran-backed Houthi rebels and a Saudi-led coalition in Yemen.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could affect oil shipments?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Potentially, yes. The Strait of Hormuz is a major oil exporting route, which is why Iran's threat to block it is significant.",
+              "duration": 7.941224
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +296,55 @@
           ],
           "whyItMatters": "更新の一時停止期間が最長35日間に延長され、さらに繰り返し延長することも可能になった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Microsoft just put out a huge update for Windows 11?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, their biggest patch Tuesday ever. They fixed at least 570 security holes — nearly triple what they patched last month.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of vulnerabilities. Why so many all at once?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Microsoft says they're using AI now to identify security issues, so they're finding and fixing more problems. They expect future releases to be larger too.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "I saw something about pausing updates — what's that about?",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "You can now pause updates for up to 35 days and keep extending that deadline. It gives you more control over when your computer restarts.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this part of some bigger effort to improve Windows?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Microsoft's focusing on addressing user complaints and improving performance. Last month they previewed several features that are now arriving in this build.",
+              "duration": 9.038367
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +376,65 @@
             "Googleはこの判決に抵抗し続け、最終的にEpicと世界規模で法的紛争を解決。その過程で8億ドルにのぼる非公開の合意も交わされていた。"
           ],
           "whyItMatters": "Microsoftがこの機を捉え、XboxのゲームストアをAndroid上に展開する可能性も浮かび上がる。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google's about to start carrying rival app stores inside its own Play Store?",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Starting next Wednesday, July twenty-second, Google says it's ready to let third-party app stores be distributed through Google Play.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "How did we get here? This seems like a big shift.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It comes from a lawsuit with Epic Games that changed how Android app stores work in the United States. Google fought the ruling for a while.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, but Epic and Google were fighting each other, right?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "They were. But they actually settled their legal disputes worldwide and made an eight hundred million dollar deal. Then they tried to undo the original lawsuit ruling together.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "And now they've withdrawn that attempt?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They just jointly withdrew it, which means the original ruling stands and Google has to open up.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "So could we see something like an Xbox game store on Android now?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the question people are asking. The door is now open for companies like Microsoft to launch their own stores on Android.",
+              "duration": 6.687347
+            }
+          ]
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -7,97 +7,6 @@
       "number": 1,
       "importance": 1,
       "lead": true,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "First Thing: Trump threatens to impose US tolls on Hormuz shipping as strikes on Iran continue",
-      "summary": "The US has launched its third consecutive night of strikes on Iran, hours after Donald Trump said Washington would reinstate a maritime blockade on the country and charge ships for safe passage.",
-      "keyTakeaways": [
-        "The UAE said two ⁠national tankers ⁠were ​targeted by two Iranian cruise missiles in ⁠the southern lane of the strait ⁠of Hormuz in Omani territorial ​waters, ‌killing one ‌Indian crew member and wounding ‌eight others, including four seriously.",
-        "In reality, that deal has devolved into a series of attacks over the strait of Hormuz, resulting in the near-total collapse of an interim ceasefire and worrying world leaders that the conflict could fully resume.",
-        "How has Trump changed his position on tolls?"
-      ],
-      "whyItMatters": "Iran and the US are in theory nearly halfway through the 60-day period of an interim deal that was supposed to set up talks for a permanent end to the war, which began in February with the assassination of Iran’s supreme leader, Ali Khamenei.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/14/first-thing-trump-us-tolls-hormuz-iran",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
-      "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "ホルムズ海峡に通行料——米国、イランへの攻撃を三夜連続で継続",
-          "summary": "米国がイランへの攻撃を三夜連続で実施した。トランプ大統領がホルムズ海峡を通過する船舶に通行料を課す方針を示した直後のことだ。",
-          "keyTakeaways": [
-            "アラブ首長国連邦は、オマーン領海内のホルムズ海峡南航路で自国タンカー二隻がイランの巡航ミサイルに攻撃されたと発表。インド人乗組員一名が死亡し、八名が負傷、うち四名は重傷。",
-            "海峡をめぐる一連の攻撃により、暫定停戦は事実上崩壊に近い状態となり、戦闘の全面再開を懸念する声が各国首脳の間で高まっている。",
-            "通行料をめぐるトランプ氏の立場の変遷。"
-          ],
-          "whyItMatters": "イランと米国は、アリー・ハーメネイー最高指導者の暗殺を発端に二月に始まったこの戦争の恒久的終結に向けた協議を想定した六十日間の暫定合意の、理論上はほぼ折り返し地点にある。"
-        }
-      },
-      "listen": {
-        "format": "dialogue",
-        "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-01-dialogue-en.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "listener",
-              "text": "So the US has been striking Iran for three nights now?",
-              "duration": 3.239184
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, this is the third consecutive night. And it's happening even though the US and Iran are supposed to be in a 60-day interim deal that was meant to lead to talks about ending the war.",
-              "duration": 10.266122
-            },
-            {
-              "speaker": "listener",
-              "text": "Wait, there's a war? When did that start?",
-              "duration": 2.403265
-            },
-            {
-              "speaker": "explainer",
-              "text": "It began in February with the assassination of Iran's supreme leader, Ali Khamenei. The current deal was supposed to set up a path toward peace, but it's falling apart.",
-              "duration": 9.012245
-            },
-            {
-              "speaker": "listener",
-              "text": "And now Trump is talking about charging ships?",
-              "duration": 2.507755
-            },
-            {
-              "speaker": "explainer",
-              "text": "Right. He's threatening to reinstate a maritime blockade and charge ships for safe passage through the Strait of Hormuz. It's a major shift in his position on tolls.",
-              "duration": 9.142857
-            },
-            {
-              "speaker": "listener",
-              "text": "That strait keeps coming up in the news. What happened there?",
-              "duration": 3.343673
-            },
-            {
-              "speaker": "explainer",
-              "text": "Two UAE tankers were hit by Iranian cruise missiles in the southern lane, in Omani waters. One Indian crew member was killed and eight others were wounded, four of them seriously.",
-              "duration": 9.874286
-            },
-            {
-              "speaker": "listener",
-              "text": "So the ceasefire isn't really holding.",
-              "duration": 2.089796
-            },
-            {
-              "speaker": "explainer",
-              "text": "No. There's been a series of attacks over the strait, and the interim ceasefire has nearly collapsed. World leaders are worried the conflict could fully resume.",
-              "duration": 8.254694
-            }
-          ]
-        }
-      }
-    },
-    {
-      "number": 2,
-      "importance": 2,
-      "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
       "headline": "Bangkok bar fire: death toll reaches 30 as police say negligence is ‘primary theory’",
@@ -109,77 +18,158 @@
       ],
       "whyItMatters": "Access to another exit near the kitchen might also have been narrowed by shelving units and lockers, according to the police chief who visited the scene on Monday.",
       "originalURL": "https://www.theguardian.com/world/2026/jul/14/bangkok-bar-pub-fire-death-toll-thailand",
-      "readTime": 4,
+      "readTime": 5,
       "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "バンコクのバー火災、死者30人に――警察は過失を主因と見る",
-          "summary": "バンコクで17年ぶりとなる大規模な火災が発生したパブは、過失の疑いをめぐる調査に協力する意向を示した。死者数は30人に達している。",
+          "headline": "バンコクのバー火災、死者30人に――警察は過失を主な原因と見る",
+          "summary": "バンコクで17年ぶりとなる大規模な火災が起きたバーは、過失をめぐる調査に協力する意向を示した。死者数は30人に達している。",
           "keyTakeaways": [
             "火曜日、地区当局は月曜未明の火災後にさらに3人が死亡したと発表した。",
             "当局の初期調査では、天井に設置されたエアコンの電気系統のショートが出火原因とされている。",
-            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失を捜査の主要な方針として位置づけている」と述べた。"
+            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失が捜査の主な方向性だ」と述べた。"
           ],
-          "whyItMatters": "警察長官が現場を視察したところ、厨房近くの別の非常口が棚やロッカーによって狭められていた可能性もあるという。"
+          "whyItMatters": "警察長官が現場を視察したところ、厨房付近の別の非常口も棚やロッカーによって狭められていた可能性があるという。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a terrible fire in Bangkok. What happened?",
-              "duration": 3.474286
+              "text": "I saw there was a terrible fire in Bangkok. What happened?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "A pub fire early Monday morning has now killed thirty people. It's the deadliest blaze the city has seen in seventeen years.",
-              "duration": 7.523265
+              "text": "A fire broke out early Monday morning at a pub in Bangkok. The death toll has now reached 30, making it the city's deadliest blaze in 17 years.",
+              "duration": 8.124082
             },
             {
               "speaker": "listener",
-              "text": "That's awful. Do they know what caused it?",
-              "duration": 2.403265
+              "text": "Do they know what caused it?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Disaster officials believe an electrical short circuit in an air conditioner in the ceiling started the fire.",
-              "duration": 5.276735
+              "text": "Disaster officials say their initial assessment points to an electrical short circuit in an air conditioner located in the ceiling.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "And police are investigating negligence?",
-              "duration": 2.272653
+              "text": "And what are police saying about it?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The national police chief said negligence is the primary theory they're working with right now.",
-              "duration": 5.564082
+              "text": "The national police chief said negligence is the primary theory guiding their investigation right now.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "What kind of negligence are they looking at?",
-              "duration": 2.272653
+              "text": "Was there something that made it harder for people to escape?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "One concern is that an exit near the kitchen may have been narrowed by shelving units and lockers, which could have made escape harder.",
-              "duration": 7.105306
+              "text": "Possibly. The police chief who visited the scene said access to an exit near the kitchen might have been narrowed by shelving units and lockers.",
+              "duration": 8.124082
             },
             {
               "speaker": "listener",
-              "text": "Is the pub cooperating?",
+              "text": "What's happening with the pub now?",
               "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "They've said they will cooperate with the investigation.",
-              "duration": 2.76898
+              "text": "The pub has said it will cooperate with the investigation into alleged negligence.",
+              "duration": 4.127347
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Singapore court orders Bloomberg to pay ministers $356,000 in defamation case",
+      "summary": "Bloomberg News and one of its reporters have been ordered to pay S$460,000 (US$355,734) in damages after an article it published was found to have defamed two Singapore government ministers, the city-state’s high court said in a judgment released on Tuesday.",
+      "keyTakeaways": [
+        "Bloomberg’s editor-in-chief, John Micklethwait, said he was disappointed by the ruling and that the company continued to stand by its reporter and the newsroom.",
+        "He ‌did not say whether Bloomberg planned an ‌appeal.",
+        "The law firm that represented the ministers did not immediately respond to a request for comment."
+      ],
+      "whyItMatters": "A Bloomberg editor said in an affidavit that the company had lifted ⁠the paywall so that readers could see the correction notice.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/15/bloomberg-singapore-defamation-case",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ブルームバーグに約3億円の賠償命令――シンガポール名誉毀損訴訟",
+          "summary": "シンガポール高等裁判所は、ブルームバーグ・ニュースと同社記者に対し、46万シンガポールドル（約35万6000米ドル）の損害賠償を命じた。同社が掲載した記事が、シンガポール政府の閣僚2人の名誉を毀損したと認定された。",
+          "keyTakeaways": [
+            "ブルームバーグの編集長ジョン・ミクルスウェイトは判決への失望を表明し、記者と編集部を引き続き支持すると述べた",
+            "控訴の有無については言及しなかった",
+            "閣僚側の代理人法律事務所からのコメントは得られていない"
+          ],
+          "whyItMatters": "ブルームバーグの編集者は宣誓供述書の中で、読者が訂正通知を確認できるようペイウォールを解除したと述べている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Singapore's court ordered Bloomberg to pay a pretty large sum to government ministers. What happened?",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Bloomberg News and one of its reporters were found to have defamed two Singapore government ministers in an article. The high court ordered them to pay about 356,000 dollars in damages.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a significant amount. How did Bloomberg respond?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their editor-in-chief said he was disappointed by the ruling, but that the company stands by its reporter and newsroom. He didn't say whether they plan to appeal.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "Did Bloomberg do anything after publishing the article?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to an affidavit, a Bloomberg editor said the company lifted the paywall on the article so readers could see a correction notice.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "And what about the ministers' side?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The law firm representing the ministers didn't immediately respond to requests for comment about the ruling.",
+              "duration": 4.91102
             }
           ]
         }
@@ -190,87 +180,87 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "China’s monthly car ‌exports top 1m for first time as overall trade soars",
-      "summary": "China’s monthly car ‌exports topped 1m for the first time in June as overall overseas shipments from the world’s second biggest economy rose 27%.",
+      "source": "NPR (World)",
+      "headline": "U.S. and Iran standoff over the Strait of Hormuz intensifies",
+      "summary": "Iran threatened to block all oil exporting routes in the region on Wednesday in response to the U.S. maritime blockade of Iranian ports in the Strait of Hormuz.",
       "keyTakeaways": [
-        "Exports to the EU increased 12.7% year on year, pushing the surplus to 1.225tn yuan (£135bn).",
-        "Exports of electric vehicles and hybrid cars, which escaped the EU’s 2024 tariffs on Chinese EVs, have put the European industry under huge pressure, with recent warnings of a collapse in employment in the sector.",
-        "Rafael Jimenez Buendía, a trade expert who analysed the figures for Merics, said the export surge into the EU beat its own forecast of record sales."
+        "This latest round followed back and forth strikes overnight as the U.S. military reimposed the blockade of Iranian vessels in the strait.",
+        "Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain and Jordan.",
+        "Brad Cooper, who commands the U.S. Central Command, accused Iran of attacking seven commercial ships and launching missiles against Gulf countries."
       ],
-      "whyItMatters": "Official Chinese customs data showed that a stronger-than-expected trade performance kept China on track to match or beat last year’s record trade surplus of $1tn (£748bn), achieved despite Donald Trump’s curtailed tariff war.",
-      "originalURL": "https://www.theguardian.com/business/2026/jul/14/china-car-exports-june-trade-us-eu-trump-tariffs",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "That ceasefire was aimed at ending the civil war between the Iran-backed Houthi rebels and a Saudi-led coalition supporting the Yemeni government.",
+      "originalURL": "https://www.npr.org/2026/07/15/nx-s1-5894582/us-iran-updates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "中国の月間自動車輸出、初めて100万台を突破",
-          "summary": "中国の6月の自動車輸出が月間で初めて100万台を超えた。全体の輸出額も前年比27%増と大幅に伸び、世界第2位の経済大国の対外貿易は勢いを増している。",
+          "headline": "ホルムズ海峡をめぐる米・イランの緊張が高まる",
+          "summary": "米軍がホルムズ海峡でイランの船舶を封鎖したことを受け、イランは水曜日、域内の石油輸出ルートすべてを遮断すると警告した。",
           "keyTakeaways": [
-            "対EU輸出は前年比12.7%増となり、貿易黒字は1兆2250億元に拡大した。",
-            "EUの関税対象外となった電気自動車やハイブリッド車の流入が続き、欧州の自動車産業では雇用崩壊への懸念が高まっている。",
-            "欧州中国研究機関メリクスの貿易専門家ラファエル・ヒメネス・ブエンディア氏は、対EU輸出の急増が自身の予測をも上回ったと分析した。"
+            "前夜の相互攻撃に続き、米軍が海峡での封鎖を再開したことが今回の事態の発端となった。",
+            "イランはクウェート、バーレーン、ヨルダンの米軍基地を標的に報復攻撃を実施した。",
+            "米中央軍のブラッド・クーパー司令官は、イランが商船七隻を攻撃し、湾岸諸国に向けてミサイルを発射したと非難した。"
           ],
-          "whyItMatters": "中国税関の公式データは、予想を超える貿易の好調ぶりを示しており、昨年記録した約1兆ドルの貿易黒字に並ぶか、それを上回る水準に達する可能性が現実味を帯びてきた。"
+          "whyItMatters": "この停戦は、イランが支援するフーシ派とイエメン政府を支持するサウジアラビア主導の連合軍との内戦終結を目的としたものだった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw China hit a big milestone with car exports. What happened?",
-              "duration": 3.578776
+              "text": "I'm seeing news about the U.S. and Iran in the Strait of Hormuz. What's happening there?",
+              "duration": 4.728163
             },
             {
               "speaker": "explainer",
-              "text": "For the first time ever, China exported more than one million cars in a single month — that was in June. Overall exports from China jumped 27 percent.",
-              "duration": 9.377959
+              "text": "There's a serious standoff. The U.S. has reimposed a maritime blockade of Iranian ports in the strait, and Iran is now threatening to block all oil exporting routes in the region.",
+              "duration": 10.34449
             },
             {
               "speaker": "listener",
-              "text": "Where are all these cars going?",
-              "duration": 1.671837
+              "text": "That sounds tense. Has there been any actual fighting?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "A lot are heading to the EU. Exports there rose nearly 13 percent compared to last year, and China's trade surplus with Europe reached about 135 billion pounds.",
-              "duration": 10.292245
+              "text": "Yes. There were strikes overnight as the blockade went into effect. Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain, and Jordan.",
+              "duration": 10.03102
             },
             {
               "speaker": "listener",
-              "text": "Are we talking about regular cars or electric ones?",
-              "duration": 2.690612
+              "text": "Why is the U.S. doing this blockade?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Many are electric vehicles and hybrids. Interestingly, these avoided EU tariffs that were put on Chinese EVs in 2024, so they've been flowing in steadily.",
-              "duration": 9.142857
-            },
-            {
-              "speaker": "listener",
-              "text": "That must be affecting European carmakers.",
-              "duration": 2.403265
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. The European auto industry is under serious pressure, with recent warnings about potential job losses in the sector.",
-              "duration": 6.817959
-            },
-            {
-              "speaker": "listener",
-              "text": "And this fits into China's bigger trade picture?",
-              "duration": 3.108571
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly. China's on track to match or even beat last year's record trade surplus of one trillion dollars, despite ongoing trade tensions.",
+              "text": "Brad Cooper, who commands U.S. Central Command, has accused Iran of attacking seven commercial ships and launching missiles against Gulf countries.",
               "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this connected to anything else going on in the region?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of broader tensions. There was a ceasefire aimed at ending the civil war between Iran-backed Houthi rebels and a Saudi-led coalition in Yemen.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could affect oil shipments?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Potentially, yes. The Strait of Hormuz is a major oil exporting route, which is why Iran's threat to block it is significant.",
+              "duration": 7.941224
             }
           ]
         }
@@ -282,76 +272,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "The first sunlight reflecting space mirror has been cleared for launch",
-      "summary": "Reflect Orbital has been given the green light to launch its first space mirror that aims to redirect sunlight down to Earth at night.",
+      "headline": "Microsoft’s biggest ever patch Tuesday lets you hold off updating for longer",
+      "summary": "Microsoft just released a long list of improvements for Windows 11 as part of its bigger patch Tuesdays, patching at least 570 security holes, almost triple the number fixed in last month’s record-breaking release, according to Krebs on Security.",
       "keyTakeaways": [
-        "The satellite, named Eärendil-1 in reference to a Tolkien character, will attempt to redirect sunlight to specific areas on Earth after dark using a 59-foot (18-meter) reflective surface.",
-        "If successful, Reflect Orbital plans to launch and operate a constellation of 50,000 satellites by 2035, with enough reflected light to illuminate areas up to 3 miles (5 kilometers) on the ground.",
-        "Reflect Orbital’s plans are already facing objections that the space mirrors could make astronomical observations more difficult."
+        "It comes as part of Microsoft’s plan to revitalize Windows 11 with updates focused on addressing user complaints and improving performance.",
+        "Microsoft patched a bunch of security issues with this update as well, which the company said we can expect to see more of in future releases as it uses AI to identify vulnerabilities.",
+        "Last month, Microsoft previewed several other features arriving in this build (KB5101650) in an optional June update."
       ],
-      "whyItMatters": "The growing number of satellite constellations orbiting Earth are driving concerns regarding space junk and light pollution.",
-      "originalURL": "https://www.theverge.com/science/965263/reflect-orbital-space-mirror-launch-fcc-clearance",
+      "whyItMatters": "You can now pause updates for up to 35 days and continue extending the deadline.",
+      "originalURL": "https://www.theverge.com/tech/965643/microsoft-windows-11-july-2026-patch-tuesday-updates",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "夜の地上に太陽光を届ける「宇宙鏡」、打ち上げ承認へ",
-          "summary": "米企業リフレクト・オービタルが開発した宇宙用反射鏡の初号機が、打ち上げの許可を得た。夜間の地上に太陽光を反射して届けることを目的としたプロジェクトだ。",
+          "headline": "マイクロソフト、過去最大規模のセキュリティ更新を配信",
+          "summary": "マイクロソフトがWindows 11向けに大規模な更新プログラムを公開した。今回のパッチで修正されたセキュリティ上の脆弱性は少なくとも570件にのぼり、先月の記録的な件数のほぼ3倍に達したと、セキュリティ情報サイト「Krebs on Security」が伝えている。",
           "keyTakeaways": [
-            "初号機はトールキン作品の登場人物にちなみ「イアレンディル1号」と命名。全長約18メートルの反射面を用いて、夜間の特定地域に太陽光を送ることを目指す。",
-            "計画が成功した場合、2035年までに5万機の衛星群を展開し、地上で最大約5キロメートルの範囲を照らすことを想定している。",
-            "一方で、反射光が天体観測の妨げになるとして、すでに反発の声も上がっている。"
+            "ユーザーからの不満に応え、パフォーマンス改善を図るWindows 11刷新計画の一環。",
+            "AIを活用して脆弱性を検出する取り組みが進んでおり、今後の更新でもセキュリティ修正が増える見通し。",
+            "先月の任意更新では、今回のビルド（KB5101650）に含まれる複数の新機能がすでに予告されていた。"
           ],
-          "whyItMatters": "衛星コンステレーションの増加は、スペースデブリと光害をめぐる懸念をいっそう深めている。"
+          "whyItMatters": "更新の一時停止期間が最長35日間に延長され、さらに繰り返し延長することも可能になった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a company that wants to bounce sunlight back to Earth at night?",
-              "duration": 3.578776
+              "text": "So Microsoft just put out a huge update for Windows 11?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Reflect Orbital just got approval to launch their first space mirror. It's called Eärendil-1, and it has an 18-meter reflective surface designed to redirect sunlight to specific spots on the ground after dark.",
-              "duration": 13.322449
+              "text": "Yes, their biggest patch Tuesday ever. They fixed at least 570 security holes — nearly triple what they patched last month.",
+              "duration": 7.758367
             },
             {
               "speaker": "listener",
-              "text": "How much light are we talking about?",
-              "duration": 1.802449
+              "text": "That's a lot of vulnerabilities. Why so many all at once?",
+              "duration": 3.657143
             },
             {
               "speaker": "explainer",
-              "text": "If it works, they say it could illuminate areas up to 5 kilometers wide. And this is just the first one — they're planning a constellation of 50,000 satellites by 2035.",
-              "duration": 9.508571
+              "text": "Microsoft says they're using AI now to identify security issues, so they're finding and fixing more problems. They expect future releases to be larger too.",
+              "duration": 9.012245
             },
             {
               "speaker": "listener",
-              "text": "That's a lot of satellites. Are people worried about that?",
-              "duration": 2.821224
+              "text": "I saw something about pausing updates — what's that about?",
+              "duration": 4.022857
             },
             {
               "speaker": "explainer",
-              "text": "They are. Astronomers have already raised concerns that these mirrors could interfere with observations. And more broadly, there's growing worry about space junk and light pollution from all these satellite constellations.",
-              "duration": 11.833469
+              "text": "You can now pause updates for up to 35 days and keep extending that deadline. It gives you more control over when your computer restarts.",
+              "duration": 8.019592
             },
             {
               "speaker": "listener",
-              "text": "So it's not just about whether it works, but whether we should do it.",
-              "duration": 3.186939
+              "text": "Is this part of some bigger effort to improve Windows?",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. The technology might be possible, but the environmental and scientific trade-offs are real.",
-              "duration": 5.459592
+              "text": "It is. Microsoft's focusing on addressing user complaints and improving performance. Last month they previewed several features that are now arriving in this build.",
+              "duration": 9.038367
             }
           ]
         }
@@ -363,86 +353,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Apple’s public betas for iOS 27 and more are out now",
-      "summary": "The betas let you try the new Siri before Apple’s wider launch this fall.",
+      "headline": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+      "summary": "Epic Games and Google have just jointly withdrawn their attempt to retroactively settle the lawsuit that’s changing how Android app stores work in the United States — and that means Google will be forced to carry rival app stores inside of its own.",
       "keyTakeaways": [
-        "Other betas available now include iPadOS 27, watchOS 27, and macOS 27 Golden Gate.",
-        "At the top of your screen, you should see a section for “Beta Updates.” Tap that, and then select the iOS 27 public beta.",
-        "For other Apple products, the steps to get set up on the beta are generally similar."
+        "Get ready for rival app stores inside of Google Play.",
+        "In fact, Google tells the court, it’s ready to begin carrying third-party app stores on Wednesday, July 22nd.",
+        "Google has been fighting that ever since, and eventually convinced Epic to join in, by settling all their legal disputes around the world and making a secret $800 million deal along the way."
       ],
-      "whyItMatters": "Apple has just released public betas for iOS 27 and other major OS updates that are set to publicly launch this fall.",
-      "originalURL": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "whyItMatters": "Does that mean it’s time for Microsoft to launch an Xbox game store on Android?",
+      "originalURL": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "iOS 27などのパブリックベータ版が公開された",
-          "summary": "Appleは今秋の正式リリースに先立ち、iOS 27のパブリックベータ版を公開した。新しいSiriをいち早く試せる機会となっている。",
+          "headline": "Androidにライバルのアプリストアがやってくる",
+          "summary": "EpicゲームズとGoogleは、米国におけるAndroidアプリ配信のあり方を変える訴訟の和解申請を共同で取り下げた。これにより、GoogleはGoogle Play内でサードパーティのアプリストアを提供することを余儀なくされる。",
           "keyTakeaways": [
-            "iPadOS 27、watchOS 27、macOS 27 Golden Gateのベータ版も同時に公開されている。",
-            "iPhoneでは、画面上部に表示される「ベータアップデート」の項目からiOS 27パブリックベータを選択できる。",
-            "他のApple製品でも、導入手順はおおむね同様だ。"
+            "Google Play内にライバルのアプリストアが登場する見通し。",
+            "Googleは7月22日水曜日からサードパーティストアの受け入れを開始できると裁判所に伝えた。",
+            "Googleはこの判決に抵抗し続け、最終的にEpicと世界規模で法的紛争を解決。その過程で8億ドルにのぼる非公開の合意も交わされていた。"
           ],
-          "whyItMatters": "Appleは今秋に正式公開を予定するiOS 27をはじめ、主要OSのパブリックベータ版を一斉に公開した。"
+          "whyItMatters": "Microsoftがこの機を捉え、XboxのゲームストアをAndroid上に展開する可能性も浮かび上がる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-14/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Apple just dropped some new software betas?",
-              "duration": 2.690612
+              "text": "So Google's about to start carrying rival app stores inside its own Play Store?",
+              "duration": 4.493061
             },
             {
               "speaker": "explainer",
-              "text": "Yes, public betas for iOS 27 and several other operating systems are available now.",
-              "duration": 4.91102
+              "text": "Yes. Starting next Wednesday, July twenty-second, Google says it's ready to let third-party app stores be distributed through Google Play.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "What's the main draw here?",
-              "duration": 1.38449
+              "text": "How did we get here? This seems like a big shift.",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "You can try out the new Siri before the wider launch this fall.",
-              "duration": 3.108571
+              "text": "It comes from a lawsuit with Epic Games that changed how Android app stores work in the United States. Google fought the ruling for a while.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "What other systems got betas?",
-              "duration": 1.671837
+              "text": "Wait, but Epic and Google were fighting each other, right?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "iPadOS 27, watchOS 27, and macOS 27 Golden Gate are all available too.",
-              "duration": 5.041633
+              "text": "They were. But they actually settled their legal disputes worldwide and made an eight hundred million dollar deal. Then they tried to undo the original lawsuit ruling together.",
+              "duration": 9.325714
             },
             {
               "speaker": "listener",
-              "text": "How do I actually get it on my phone?",
-              "duration": 1.985306
+              "text": "And now they've withdrawn that attempt?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Look for a section called Beta Updates at the top of your screen, tap that, then select the iOS 27 public beta.",
-              "duration": 7.183673
+              "text": "Exactly. They just jointly withdrew it, which means the original ruling stands and Google has to open up.",
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "And it's similar for the other devices?",
-              "duration": 2.220408
+              "text": "So could we see something like an Xbox game store on Android now?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Right, the setup steps are generally the same across Apple products.",
-              "duration": 3.526531
+              "text": "That's the question people are asking. The door is now open for companies like Microsoft to launch their own stores on Android.",
+              "duration": 6.687347
             }
           ]
         }

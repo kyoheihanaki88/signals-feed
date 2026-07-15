@@ -106,8 +106,14 @@ def _build_listen_block(entry, base_url):
 
 def inject_listen(feed, date, manifest=None, base_url=R2_BASE):
     """Inject `signal.listen` from the dialogue manifest where present. Mutates + returns `feed`.
-    Returns (feed, stats). Never raises — on any problem it leaves the feed unchanged."""
-    stats = {"injected": 0, "preserved": 0, "skipped": 0, "no_entry": 0}
+    Returns (feed, stats). Never raises — on any problem it leaves the feed unchanged.
+
+    A signal with NO `listen` block yet gets the full block (`injected`). A signal that ALREADY has
+    a `listen` block is MERGED: any language track in the manifest that is not already present is
+    ADDED, while existing tracks and `format` are left byte-for-byte untouched (`merged`). This lets
+    JA be added after an EN-only block was injected, without ever modifying EN. A block with nothing
+    new to add is `preserved`."""
+    stats = {"injected": 0, "merged": 0, "preserved": 0, "skipped": 0, "no_entry": 0}
     try:
         if manifest is None:
             manifest = load_listen_manifest()
@@ -117,10 +123,21 @@ def inject_listen(feed, date, manifest=None, base_url=R2_BASE):
             per_date = manifest.get(date, {}) if isinstance(manifest, dict) else {}
 
         for sig in feed.get("signals", []):
-            if isinstance(sig.get("listen"), dict):
-                stats["preserved"] += 1                  # never overwrite an existing block
-                continue
+            existing = sig.get("listen")
             entry = per_date.get(str(sig.get("number"))) if isinstance(per_date, dict) else None
+
+            if isinstance(existing, dict):
+                # MERGE new languages into the existing block; never touch existing tracks / format.
+                block = _build_listen_block(entry, base_url) if entry is not None else None
+                added = 0
+                if block:
+                    for lang, track in block.items():
+                        if lang != "format" and lang not in existing:
+                            existing[lang] = track
+                            added += 1
+                stats["merged" if added else "preserved"] += 1
+                continue
+
             if entry is None:
                 stats["no_entry"] += 1                    # no dialogue for this signal → unchanged
                 continue

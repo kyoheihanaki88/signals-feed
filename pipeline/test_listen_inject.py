@@ -119,6 +119,51 @@ check("existing listen preserved", f["signals"][0]["listen"]["en"]["audioURL"] =
 check("stats preserved>=1", st["preserved"] >= 1, str(st))
 
 
+# ── merge JA into an already-injected EN block (add language, never touch EN) ──
+GOOD_ENTRY_JA = {
+    "format": "dialogue",
+    "en": GOOD_ENTRY["en"],
+    "ja": {
+        "key": "audio/2026-06-25/signal-01-dialogue-ja.mp3",
+        "gap": 0.0,
+        "captions": [
+            {"speaker": "listener",  "text": "今朝はイランの大きなニュースがあるんですか?", "duration": 2.17},
+            {"speaker": "explainer", "text": "はい。米国とイランが早期の和平合意に達しました。", "duration": 3.00},
+        ],
+    },
+}
+MANIFEST_JA = {"2026-06-25": {"1": GOOD_ENTRY_JA}}
+
+print("\n+2) JA merges into an existing EN block (EN untouched):")
+f = feed5()
+f, _ = L.inject_listen(f, "2026-06-25", MANIFEST, BASE)                 # EN-only block first
+en_before = json.dumps(f["signals"][0]["listen"]["en"], sort_keys=True)
+f, st = L.inject_listen(f, "2026-06-25", MANIFEST_JA, BASE)             # then a JA-carrying manifest
+lb = f["signals"][0]["listen"]
+check("JA track merged in", "ja" in lb and lb["ja"]["audioURL"].endswith("signal-01-dialogue-ja.mp3"))
+check("JA captions built", len(lb["ja"].get("captions", [])) == 2)
+check("EN track byte-identical after JA merge", json.dumps(lb["en"], sort_keys=True) == en_before)
+check("format unchanged", lb.get("format") == "dialogue")
+check("stats merged>=1", st["merged"] >= 1, str(st))
+check("merged feed validates (ja track ok)", V.listen_errors(f["signals"][0]) == [],
+      str(V.listen_errors(f["signals"][0])))
+
+print("\n+3) merge is idempotent (nothing new → preserved, no change):")
+snap = json.dumps(f["signals"][0]["listen"], sort_keys=True)
+f, st = L.inject_listen(f, "2026-06-25", MANIFEST_JA, BASE)
+check("second merge changes nothing", json.dumps(f["signals"][0]["listen"], sort_keys=True) == snap)
+check("stats: no merge, preserved", st["merged"] == 0 and st["preserved"] >= 1, str(st))
+
+print("\n+4) fresh inject with an EN+JA manifest injects both at once:")
+f = feed5()
+f, st = L.inject_listen(f, "2026-06-25", MANIFEST_JA, BASE)
+lb = f["signals"][0].get("listen", {})
+check("both en and ja injected fresh", "en" in lb and "ja" in lb)
+check("stats injected==1, merged==0", st["injected"] == 1 and st["merged"] == 0, str(st))
+check("fresh en+ja feed validates", V.listen_errors(f["signals"][0]) == [],
+      str(V.listen_errors(f["signals"][0])))
+
+
 # ── 5) existing JA audio injection behavior unchanged ──
 print("\n5) JA audio injection unchanged:")
 ja_manifest = {"2026-06-25": {"1": {"ja": "signal-01-ja-v2.mp3"}}}

@@ -138,6 +138,37 @@ check("repeated 発表されました rejected",
 
 check("good conversation still passes v2 gates", lg.ja_quality_issues(GOOD_JA, SIGNAL) == [])
 
+# ---------------------------------------------------------------- v3: prompt directives + question-only style
+# v3 changes the PROMPT only (listener: every line ends in a question; explainer: full
+# paraphrase, never article wording). Gates are unchanged — these tests pin (a) the prompt
+# carries the directives and (b) the stricter v3 style passes the existing gates cleanly.
+
+check("prompt: listener must end every line with a question",
+      "すべて質問で終える" in lg.SCRIPT_SYSTEM_JA)
+check("prompt: explainer must fully paraphrase (no partial reuse)",
+      "そのままでも部分的にも" in lg.SCRIPT_SYSTEM_JA and "完全に自分の言葉" in lg.SCRIPT_SYSTEM_JA)
+check("prompt: question-form closing example present",
+      "追ったほうがいい話ですか" in lg.SCRIPT_SYSTEM_JA)
+
+GOOD_JA_V3 = [
+    {"speaker": "listener", "text": "AppleがOpenAIを訴えたって本当ですか?"},
+    {"speaker": "explainer", "text": "本当です。火曜日に裁判を起こしました。相手は30人の元社員も含みます。"},
+    {"speaker": "listener", "text": "30人も。転職しただけで訴えられるものなんですか?"},
+    {"speaker": "explainer", "text": "転職自体ではなく、秘密情報を持ち出した疑いが問題になっています。"},
+    {"speaker": "listener", "text": "これ、AI業界全体には何か影響がありますか?"},
+    {"speaker": "explainer", "text": "採用のやり方が変わるかもしれません。ライバルからの引き抜きに慎重になりそうです。"},
+    {"speaker": "listener", "text": "今後も追ったほうがいい話ですか?"},
+    {"speaker": "explainer", "text": "ええ。動きがあればまた話しましょう。"},
+]
+check("question-only v3 conversation passes existing gates",
+      lg.ja_quality_issues(GOOD_JA_V3, SIGNAL) == [])
+check("v3 fixture: every listener line is a question",
+      all(lg._JA_QUESTION_RE.search(l["text"]) for l in GOOD_JA_V3 if l["speaker"] == "listener"))
+
+# gates are UNCHANGED: the v2-style short non-question listener reaction must still pass
+check("gates unchanged: v2-style closing reaction still accepted",
+      lg.ja_quality_issues(GOOD_JA, SIGNAL) == [])
+
 # ---------------------------------------------------------------- parse_dialogue (shared, unchanged)
 try:
     lg.parse_dialogue("not json at all")

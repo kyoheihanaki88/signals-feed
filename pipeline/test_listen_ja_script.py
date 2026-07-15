@@ -193,6 +193,51 @@ pasted[1] = {"speaker": "explainer",
 check("article text pasted into dialogue rejected",
       any("pasted into dialogue" in i for i in lg.ja_quality_issues(pasted, SIGNAL_PASTE)))
 
+# ---- paste detector: one unavoidable fact phrase must PASS; a copied sentence must FAIL ----
+# Regression for the 2026-07-14 signal-1 false positive: an explainer paraphrase sharing the
+# single entity/event phrase 「…隻がイランの巡航ミサイルに攻撃され…」 (17ch) with localized.ja was
+# wrongly rejected. Detector now fails only on structural copies (dominant single run, or ≥2
+# independent runs), not on one unavoidable fact phrase inside a genuine paraphrase.
+PASTE_SIG = {
+    "number": 1,
+    "headline": "Trump threatens US tolls on Hormuz shipping as strikes on Iran continue",
+    "summary": "The US launched its third consecutive night of strikes on Iran.",
+    "keyTakeaways": ["Two national tankers were hit by two Iranian cruise missiles, "
+                     "killing one Indian crew member and wounding eight."],
+    "whyItMatters": "They are nearly halfway through the 60-day interim deal.",
+    "localized": {"ja": {
+        "headline": "ホルムズ海峡に通行料——米国、イランへの攻撃を三夜連続で継続",
+        "summary": "米国がイランへの攻撃を三夜連続で実施した。トランプ大統領がホルムズ海峡を通過する船舶に通行料を課す方針を示した直後のことだ。",
+        "keyTakeaways": [
+            "アラブ首長国連邦は、オマーン領海内のホルムズ海峡南航路で自国タンカー二隻がイランの巡航ミサイルに攻撃されたと発表。"
+            "インド人乗組員一名が死亡し、八名が負傷、うち四名は重傷。"],
+        "whyItMatters": "二月に始まったこの戦争の、六十日間の暫定合意のほぼ折り返し地点にある。",
+    }},
+}
+_paste_src = lg._ja_source_strings(PASTE_SIG)
+
+# PASS: genuine paraphrase carrying the unavoidable fact phrase (the exact confirmed line)
+_para = "UAEのタンカー2隻がイランの巡航ミサイルに攻撃されて、インド人乗組員1人が亡くなっています。"
+check("paraphrase with a single unavoidable fact phrase passes paste gate",
+      not lg._is_article_paste(_para, _paste_src))
+check("...and it carries a real ≥15-char overlap (so the gate is genuinely tested, not vacuous)",
+      len(lg._paste_overlaps(_para, _paste_src)) == 1 and
+      len(lg._paste_overlaps(_para, _paste_src)[0]) >= lg._JA_PASTE_MIN)
+_para_full = [dict(l) for l in GOOD_JA]
+_para_full[3] = {"speaker": "explainer", "text": _para}
+check("paraphrase line not flagged inside a full dialogue run",
+      not any("pasted into dialogue" in i for i in lg.ja_quality_issues(_para_full, PASTE_SIG)))
+
+# FAIL: a localized.ja sentence copied with only cosmetic punctuation changes (dominant run)
+_copied = "米国がイランへの攻撃を三夜連続で実施した!"   # summary sentence 1, 。→!
+check("copied localized.ja sentence with minor punctuation change is rejected",
+      lg._is_article_paste(_copied, _paste_src))
+
+# FAIL: two independent long article runs stitched together (multiple-overlap branch)
+_stitched = "米国がイランへの攻撃を三夜連続で実施した、そしてホルムズ海峡を通過する船舶に通行料を課す。"
+check("two independent long article overlaps stitched together are rejected",
+      len(lg._paste_overlaps(_stitched, _paste_src)) >= 2 and lg._is_article_paste(_stitched, _paste_src))
+
 hosting = [dict(l) for l in GOOD_JA]
 hosting[0] = {"speaker": "listener", "text": "今日はAppleの訴訟についてお話しします。"}
 check("presenter-style hosting rejected",

@@ -264,6 +264,69 @@ def _digit_runs(text):
     return re.findall(r"\d+", text.translate(_FW_DIGITS))
 
 
+# ── numeric grounding across notation systems ────────────────────────────────────────────────────
+# The source states figures in mixed notations: ASCII/full-width digits ("60-day"), English
+# number words ("two tankers", "third night"), and Japanese kanji numerals ("二隻", "八名",
+# "六十日間"). The JA dialogue naturally verbalizes the SAME figures in Arabic digits ("2隻",
+# "8名", "60日"). Comparing only ASCII digit runs made the grounded set collapse to whatever the
+# source happened to spell with digits (often just one value), so correctly-grounded Arabic digits
+# in the narration were wrongly flagged "ungrounded". We fix that by normalizing the source's own
+# number words / kanji to canonical Arabic strings and ADDING them to the grounded set — the
+# fail-closed rule (a spoken number must appear in the source set) is unchanged, so invented
+# numbers are still caught. Support is intentionally narrow + auditable: fixed word/kanji
+# dictionaries and a small kanji unit-combiner, NOT a general natural-language number parser.
+_EN_NUM_WORDS = {
+    "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
+    "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
+    "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17,
+    "eighteen": 18, "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40,
+    "fifty": 50, "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90, "hundred": 100,
+    # ordinals that name a count in headlines/takeaways ("third consecutive night")
+    "first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5, "sixth": 6,
+    "seventh": 7, "eighth": 8, "ninth": 9, "tenth": 10,
+}
+_KANJI_DIGIT = {"〇": 0, "零": 0, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5,
+                "六": 6, "七": 7, "八": 8, "九": 9}
+_KANJI_UNIT = {"十": 10, "百": 100, "千": 1000}
+_KANJI_NUM_RE = re.compile(r"[〇零一二三四五六七八九十百千]+")
+
+
+def _kanji_numbers(text):
+    """Canonical Arabic strings for kanji numerals in `text`. Handles single digits
+    (二→'2', 八→'8') and unit compounds (十八→'18', 六十→'60', 二百→'200') by combining
+    unit chars — so a compound grounds only its combined value, never its parts (六十→'60'
+    only, not '6'/'10'). A bare multi-character digit run with no unit (e.g. 二〇二六) is
+    positional and outside the observed source formats, so it is skipped rather than
+    mis-valued."""
+    out = set()
+    for span in _KANJI_NUM_RE.findall(text):
+        if not any(ch in _KANJI_UNIT for ch in span) and len(span) > 1:
+            continue
+        total, cur = 0, 0
+        for ch in span:
+            if ch in _KANJI_DIGIT:
+                cur = _KANJI_DIGIT[ch]
+            else:  # a unit char (十/百/千) — every span char is digit-or-unit by the regex
+                total += (cur or 1) * _KANJI_UNIT[ch]
+                cur = 0
+        total += cur
+        if total:
+            out.add(str(total))
+    return out
+
+
+def _grounded_source_numbers(src):
+    """Every number the source expresses, in canonical Arabic-digit form, across ASCII/
+    full-width digits, simple English number words, and kanji numerals. A superset of the
+    old digit-only set — never smaller — so numeric grounding stays fail-closed."""
+    g = set(_digit_runs(src))
+    low = src.lower()
+    for word, val in _EN_NUM_WORDS.items():
+        if re.search(rf"\b{word}\b", low):
+            g.add(str(val))
+    return g | _kanji_numbers(src)
+
+
 def ja_quality_issues(lines, signal):
     """Issue strings for a JA dialogue (empty list = clean). Checks are JA-only by design:
     format/speakers/line-count are already enforced by parse_dialogue for both languages.
@@ -277,7 +340,7 @@ def ja_quality_issues(lines, signal):
                       ("headline", "summary", "keyTakeaways", "whyItMatters", "localized")},
                      ensure_ascii=False).translate(_FW_DIGITS)
     src_lower = src.lower()
-    src_digits = set(_digit_runs(src))
+    src_digits = _grounded_source_numbers(src)   # digits + English words + kanji numerals
     ja_src = _ja_source_strings(signal)
 
     # ── conversation shape (v2) ──────────────────────────────────────────────

@@ -78,6 +78,79 @@ check("full-width digits ground correctly",
       lg.ja_quality_issues([{"speaker": "listener", "text": "対象は３０人ですか。"},
                             {"speaker": "explainer", "text": "はい、30人です。"}] + GOOD_JA[2:], SIGNAL) == [])
 
+# ---------------------------------------------------------------- numeric grounding across notations
+# Regression for the 2026-07-14 signal-1 false positive: the source stated every figure as
+# English words ("two", "eight", "third") and kanji numerals ("二隻", "八名", "六十日間"), so the
+# old digit-only grounded set was essentially just {"60"} and correctly-spoken Arabic digits
+# (2隻 / 8名 / 2月) were wrongly flagged "ungrounded". Grounding must now normalize source
+# words/kanji to Arabic — while STILL rejecting numbers the source never states.
+
+# English number words in source → Arabic
+check("english words ground to Arabic (two/one/eight/four/third → 2/1/8/4/3)",
+      {"2", "1", "8", "4", "3"} <= lg._grounded_source_numbers(
+          "two national tankers, one crew member, eight others, four seriously, third night"))
+
+# kanji numerals → Arabic (single digits and unit compounds)
+check("kanji 二隻/一名/八名/四名/三夜 ground 2/1/8/4/3",
+      {"2", "1", "8", "4", "3"} <= (lg._kanji_numbers("二隻") | lg._kanji_numbers("一名")
+       | lg._kanji_numbers("八名") | lg._kanji_numbers("四名") | lg._kanji_numbers("三夜")))
+check("kanji 二月 grounds 2", "2" in lg._kanji_numbers("二月に始まった"))
+check("kanji 六十日間 grounds 60", lg._kanji_numbers("六十日間") == {"60"})
+check("kanji 六十 does not independently ground 6 or 10",
+      "6" not in lg._kanji_numbers("六十") and "10" not in lg._kanji_numbers("六十"))
+check("kanji 十八 grounds 18 only (not 1/8/10)", lg._kanji_numbers("十八") == {"18"})
+check("bare positional kanji run is not mis-valued (二〇二六 skipped)",
+      lg._kanji_numbers("二〇二六年") == set())
+
+# whole-signal grounded set for a 2026-07-14-style Hormuz signal (English words + kanji localized)
+HORMUZ_SIGNAL = {
+    "number": 1,
+    "headline": "Trump threatens US tolls on Hormuz shipping as strikes on Iran continue",
+    "summary": "The US launched its third consecutive night of strikes on Iran.",
+    "keyTakeaways": [
+        "Two national tankers were targeted by two Iranian cruise missiles, killing one "
+        "Indian crew member and wounding eight others, including four seriously.",
+        "The interim ceasefire is near total collapse.",
+    ],
+    "whyItMatters": "They are nearly halfway through the 60-day interim deal, in a war that began in February.",
+    "localized": {"ja": {
+        "headline": "ホルムズ海峡に通行料——米国、イランへの攻撃を三夜連続で継続",
+        "summary": "米国がイランへの攻撃を三夜連続で実施した。",
+        "keyTakeaways": [
+            "自国タンカー二隻がイランの巡航ミサイルに攻撃され、インド人乗組員一名が死亡し、八名が負傷、うち四名は重傷。",
+            "暫定停戦は事実上崩壊に近い状態となっている。",
+        ],
+        "whyItMatters": "二月に始まったこの戦争の、六十日間の暫定合意のほぼ折り返し地点にある。",
+    }},
+}
+_hz_src = json.dumps({k: HORMUZ_SIGNAL.get(k) for k in
+                     ("headline", "summary", "keyTakeaways", "whyItMatters", "localized")},
+                     ensure_ascii=False).translate(lg._FW_DIGITS)
+_hz = lg._grounded_source_numbers(_hz_src)
+check("Hormuz source grounds the real facts 1,2,3,4,8,60", {"1", "2", "3", "4", "8", "60"} <= _hz)
+check("Hormuz grounding still rejects invented 7/9/30/45/100",
+      all(bad not in _hz for bad in ("7", "9", "30", "45", "100")))
+
+# a valid JA dialogue stating those facts in Arabic digits must pass the number gate cleanly
+HORMUZ_JA = [
+    {"speaker": "listener", "text": "ホルムズ海峡で何が起きているんですか?"},
+    {"speaker": "explainer", "text": "米国がイランへの攻撃を3夜続けています。通行料の話も出ています。"},
+    {"speaker": "listener", "text": "船が狙われたというのは本当ですか?"},
+    {"speaker": "explainer", "text": "タンカー2隻がミサイルで攻撃されました。1名が亡くなり、8名が負傷しています。"},
+    {"speaker": "listener", "text": "重傷の人もいるんですか?"},
+    {"speaker": "explainer", "text": "4名が重傷と伝えられています。"},
+    {"speaker": "listener", "text": "戦争はいつからなんですか?"},
+    {"speaker": "explainer", "text": "2月に始まりました。60日間の暫定合意の途中です。"},
+]
+check("valid JA dialogue using 2,1,8,4,3,60 passes (no ungrounded-number issue)",
+      not any("ungrounded number" in i for i in lg.ja_quality_issues(HORMUZ_JA, HORMUZ_SIGNAL)))
+
+# fail-closed preserved end-to-end: an invented casualty number is still caught
+_hz_bad = [dict(l) for l in HORMUZ_JA]
+_hz_bad[3] = {"speaker": "explainer", "text": "タンカー2隻が攻撃され、45名が負傷しました。"}
+check("invented number in JA dialogue still rejected (fail-closed intact)",
+      any("ungrounded number '45'" in i for i in lg.ja_quality_issues(_hz_bad, HORMUZ_SIGNAL)))
+
 # ---------------------------------------------------------------- v2: conversation structure
 # The failure mode from the first real generation: a narrator reading the news with a
 # listener that only nods. Every one of these must now be rejected.

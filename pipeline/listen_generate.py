@@ -257,7 +257,9 @@ _JA_MAX_LINE_CHARS = 90
 _JA_QUESTION_RE = re.compile(r"[？?]|か(?:ね|な)?[。」]?\s*$")   # spoken-question detection
 _JA_MIN_LISTENER_TURNS = 2
 _JA_MIN_QUESTIONS = 2
-_JA_PASTE_MIN = 15            # shared-substring length that marks article text pasted into a line
+_JA_PASTE_MIN = 15            # min verbatim run (chars) shared with localized.ja to count as a copy
+_JA_PASTE_MAX_COVER = 0.60    # a SINGLE long run only fails if it covers ≥ this fraction of the line
+                             # (a structural copy). One unavoidable fact phrase covers far less.
 _JA_AIZUCHI_MAX = 9           # a non-question listener line this short is a bare aizuchi
 _JA_LISTENER_STMT_MAX = 40    # non-question listener lines must stay short (reactions, not summaries)
 _REPEAT_ANNOUNCE = "発表されました"
@@ -276,10 +278,38 @@ def _ja_source_strings(signal):
     return "\n".join(parts)
 
 
-def _shares_long_substring(text, source, n=_JA_PASTE_MIN):
+def _paste_overlaps(text, source, n=_JA_PASTE_MIN):
+    """Maximal, NON-overlapping runs of `text` (≥ n chars) that appear verbatim in `source`.
+    Each entry is one independent stretch copied from localized.ja."""
+    out, i, L = [], 0, len(text)
+    while i <= L - n:
+        if text[i:i + n] in source:
+            j = i + n
+            while j <= L and text[i:j] in source:
+                j += 1
+            out.append(text[i:j - 1])
+            i = j - 1                 # resume after this maximal run → runs stay independent
+        else:
+            i += 1
+    return out
+
+
+def _is_article_paste(text, source, n=_JA_PASTE_MIN):
+    """True when a line is copied from localized.ja rather than paraphrased.
+
+    A single unavoidable factual phrase (entity + event, e.g. 「…イランの巡航ミサイルに攻撃され…」)
+    naturally recurs verbatim in a good paraphrase and must NOT trip the gate. We flag a paste
+    only when the copy is STRUCTURAL — either the line stitches together two or more independent
+    long article runs, or one long run dominates the line (≥ _JA_PASTE_MAX_COVER of its
+    characters, i.e. a source sentence reproduced with at most cosmetic edits)."""
     if len(text) < n or len(source) < n:
         return False
-    return any(text[i:i + n] in source for i in range(len(text) - n + 1))
+    overlaps = _paste_overlaps(text, source, n)
+    if not overlaps:
+        return False
+    if len(overlaps) >= 2:                                  # stitched from ≥2 article fragments
+        return True
+    return sum(len(s) for s in overlaps) / len(text) >= _JA_PASTE_MAX_COVER  # copied sentence
 _FW_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
 
 
@@ -400,8 +430,9 @@ def ja_quality_issues(lines, signal):
             elif (len(text) > _JA_LISTENER_STMT_MAX or _digit_runs(text)
                   or len(_latin_tokens(text)) >= 2):
                 issues.append(f"line {i}: listener states article facts / summarizes instead of asking ({text[:30]!r})")
-        if _shares_long_substring(text, ja_src):
-            issues.append(f"line {i}: article text pasted into dialogue (≥{_JA_PASTE_MIN}-char overlap with localized.ja)")
+        if _is_article_paste(text, ja_src):
+            issues.append(f"line {i}: article text pasted into dialogue "
+                          f"(structural copy of localized.ja, not a single fact phrase)")
         # natural Japanese, not English passthrough
         if not _JA_CHARS_RE.search(text):
             issues.append(f"line {i}: no Japanese characters ({text[:30]!r})")

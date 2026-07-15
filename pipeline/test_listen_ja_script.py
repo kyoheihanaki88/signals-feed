@@ -268,6 +268,17 @@ check("prompt: explainer must fully paraphrase (no partial reuse)",
 check("prompt: question-form closing example present",
       "追ったほうがいい話ですか" in lg.SCRIPT_SYSTEM_JA)
 
+# v3.1: keep each utterance concise for audio; don't compress multiple independent facts into one
+# over-long line (regression for signal-4 「line 4: too long (93 chars > 90)」). Prompt-only change.
+check("prompt: each utterance stays concise / within the line limit",
+      "音声で自然に聞こえるよう簡潔" in lg.SCRIPT_SYSTEM_JA and "90文字以内" in lg.SCRIPT_SYSTEM_JA)
+check("prompt: do not compress multiple independent facts into one line",
+      "複数の独立した事実を1つの発話に詰め込まない" in lg.SCRIPT_SYSTEM_JA)
+check("prompt: split facts across sentences or a listener follow-up",
+      "文を分ける" in lg.SCRIPT_SYSTEM_JA and "listenerの短い追加質問を挟んで" in lg.SCRIPT_SYSTEM_JA)
+check("prompt: preserve facts — do not drop them to satisfy length",
+      "文字数のために事実" in lg.SCRIPT_SYSTEM_JA and "省かない" in lg.SCRIPT_SYSTEM_JA)
+
 GOOD_JA_V3 = [
     {"speaker": "listener", "text": "AppleがOpenAIを訴えたって本当ですか?"},
     {"speaker": "explainer", "text": "本当です。火曜日に裁判を起こしました。相手は30人の元社員も含みます。"},

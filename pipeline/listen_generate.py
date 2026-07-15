@@ -462,6 +462,49 @@ def ja_quality_issues(lines, signal):
 
 
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
+def _dump_failed_ja(date, num, signal, lines, issues):
+    """DEBUG-ONLY: best-effort snapshot of a rejected JA dialogue to scratch/ (gitignored) so a
+    non-deterministic gate failure can be inspected after the fact. Writes
+    scratch/failed_ja_dialogue_<date>_signal<num>.json with the signal id, generated lines +
+    speakers, the gate issues, and per-line verbatim-overlap details against localized.ja.
+
+    NEVER raises and changes NO pipeline behavior: it runs only on a failure path that already
+    aborts, writes only under scratch/, and swallows any error so it can't mask or alter the
+    gate's own ValueError. Returns the path written, or None."""
+    try:
+        ja_src = _ja_source_strings(signal)
+        recs = []
+        for i, ln in enumerate(lines, 1):
+            text = ln.get("text", "") if isinstance(ln, dict) else ""
+            ovs = _paste_overlaps(text, ja_src) if ja_src else []
+            covered = sum(len(s) for s in ovs)
+            recs.append({
+                "index": i,
+                "speaker": ln.get("speaker") if isinstance(ln, dict) else None,
+                "text": text,
+                "overlaps": [{"substring": s, "chars": len(s)} for s in ovs],
+                "overlap_runs": len(ovs),
+                "overlap_coverage": round(covered / len(text), 4) if text else 0.0,
+            })
+        artifact = {
+            "date": date,
+            "signal": num,
+            "lang": "ja",
+            "issues": issues,
+            "localized_ja": (signal.get("localized") or {}).get("ja"),
+            "lines": recs,
+        }
+        scratch = os.path.join(ROOT, "scratch")
+        os.makedirs(scratch, exist_ok=True)
+        path = os.path.join(scratch, f"failed_ja_dialogue_{date}_signal{num}.json")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(artifact, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        return path
+    except Exception:
+        return None   # debug aid must never break the pipeline
+
+
 def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en",
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
              final_dur_fn=decoded_duration,
@@ -491,6 +534,7 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
         if lang == "ja":
             issues = ja_quality_issues(lines, sig)
             if issues:
+                _dump_failed_ja(date, num, sig, lines, issues)   # debug-only; never alters the gate
                 raise ValueError(f"signal {num} JA quality gate failed:\n  " + "\n  ".join(issues))
         parts, durs = [], []
         for i, c in enumerate(lines, 1):

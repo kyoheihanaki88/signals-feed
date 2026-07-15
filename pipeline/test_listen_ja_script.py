@@ -394,5 +394,17 @@ m3 = json.load(open(manifest_path))
 check("manifest unchanged after JA gate failure",
       json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
 
+# debug-only failure artifact: a rejected JA dialogue is snapshotted to scratch/ (gitignored)
+_art = os.path.join(lg.ROOT, "scratch", f"failed_ja_dialogue_{DATE}_signal1.json")
+check("gate failure writes a debug artifact under scratch/", os.path.exists(_art))
+if os.path.exists(_art):
+    _a = json.load(open(_art, encoding="utf-8"))
+    check("artifact records signal id, issues, and all lines with speakers",
+          _a.get("signal") == 1 and _a.get("issues") and
+          len(_a.get("lines", [])) == len(GOOD_JA) and
+          all("speaker" in ln and "text" in ln and "overlap_coverage" in ln for ln in _a["lines"]))
+check("debug artifact did not change the abort/upload/manifest behavior",
+      uploaded == [] and json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
+
 print("ALL PASS" if failures == 0 else f"{failures} CHECK(S) FAILED")
 sys.exit(1 if failures else 0)

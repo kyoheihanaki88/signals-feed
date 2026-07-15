@@ -262,8 +262,9 @@ _JA_QUESTION_RE = re.compile(r"[？?]|か(?:ね|な)?[。」]?\s*$")   # spoken-
 _JA_MIN_LISTENER_TURNS = 2
 _JA_MIN_QUESTIONS = 2
 _JA_PASTE_MIN = 15            # min verbatim run (chars) shared with localized.ja to count as a copy
-_JA_PASTE_MAX_COVER = 0.60    # a SINGLE long run only fails if it covers ≥ this fraction of the line
-                             # (a structural copy). One unavoidable fact phrase covers far less.
+_JA_SENT_COPY_RATIO = 0.80    # a SINGLE long run fails only if it reproduces ≥ this fraction of a
+                             # localized.ja SENTENCE (a full-sentence copy). A short factual summary
+                             # quotes only a sub-phrase of a long sentence, so its ratio stays low.
 _JA_AIZUCHI_MAX = 9           # a non-question listener line this short is a bare aizuchi
 _JA_LISTENER_STMT_MAX = 40    # non-question listener lines must stay short (reactions, not summaries)
 _REPEAT_ANNOUNCE = "発表されました"
@@ -298,14 +299,20 @@ def _paste_overlaps(text, source, n=_JA_PASTE_MIN):
     return out
 
 
+def _ja_sentences(source):
+    """localized.ja split into individual sentences — the unit a structural copy reproduces.
+    Split on Japanese/ASCII sentence terminators and newlines; keep only substantial ones."""
+    return [p for p in (s.strip() for s in re.split(r"[。．！？!?\n]", source)) if len(p) >= _JA_PASTE_MIN]
+
+
 def _is_article_paste(text, source, n=_JA_PASTE_MIN):
     """True when a line is copied from localized.ja rather than paraphrased.
 
-    A single unavoidable factual phrase (entity + event, e.g. 「…イランの巡航ミサイルに攻撃され…」)
-    naturally recurs verbatim in a good paraphrase and must NOT trip the gate. We flag a paste
-    only when the copy is STRUCTURAL — either the line stitches together two or more independent
-    long article runs, or one long run dominates the line (≥ _JA_PASTE_MAX_COVER of its
-    characters, i.e. a source sentence reproduced with at most cosmetic edits)."""
+    A single unavoidable factual phrase or a short factual summary quotes only a SUB-PHRASE of a
+    localized.ja sentence and must NOT trip the gate — even when that phrase fills much of a short
+    line. We flag a paste only when the copy is STRUCTURAL: either the line stitches together two
+    or more independent long article runs, or a single run reproduces most of one source SENTENCE
+    (≥ _JA_SENT_COPY_RATIO of it — a full sentence copied with at most cosmetic edits)."""
     if len(text) < n or len(source) < n:
         return False
     overlaps = _paste_overlaps(text, source, n)
@@ -313,7 +320,11 @@ def _is_article_paste(text, source, n=_JA_PASTE_MIN):
         return False
     if len(overlaps) >= 2:                                  # stitched from ≥2 article fragments
         return True
-    return sum(len(s) for s in overlaps) / len(text) >= _JA_PASTE_MAX_COVER  # copied sentence
+    run = overlaps[0].strip("。．！？!?\n 　")               # one run: paste only if it ≈ a full sentence
+    if len(run) < n:                                       # left with only punctuation/space → not a copy
+        return False
+    best = max((len(run) / len(s) for s in _ja_sentences(source) if run in s), default=0.0)
+    return best >= _JA_SENT_COPY_RATIO
 _FW_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
 
 

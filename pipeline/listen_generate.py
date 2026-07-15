@@ -136,6 +136,34 @@ def ffprobe_duration(path):
     return round(float(out), 6)
 
 
+def decoded_duration(path):
+    """Duration of the ACTUAL decoded audio of `path`, from the decoded PCM sample
+    count — independent of container size/bitrate estimation.
+
+    The Listen final clip is a RAW byte concatenation of per-line MP3s, each of which
+    keeps its own ID3v2 tag + LAME/"Info" header frame. ffprobe's format=duration on
+    that blob is a size*8/bitrate ESTIMATE that counts those embedded header bytes as
+    audio and OVER-reports (the historical false-positive drift). Decoding to signed
+    16-bit mono PCM and dividing the byte count by (sample_rate * 2) yields the true
+    audio length, which matches the sum of the per-line durations.
+
+    Fail-closed: raises if ffmpeg cannot decode the file, so the drift gate aborts
+    rather than silently skipping the check."""
+    try:
+        proc = subprocess.run(
+            ["ffmpeg", "-nostdin", "-v", "error", "-i", path, "-map", "0:a:0",
+             "-ac", "1", "-ar", "44100", "-f", "s16le", "pipe:1"],
+            capture_output=True, check=True)
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        detail = getattr(e, "stderr", b"") or b""
+        raise RuntimeError(f"decoded-duration probe failed for {path}: "
+                           f"{detail.decode('utf-8', 'replace')[:200]}") from e
+    nbytes = len(proc.stdout)
+    if nbytes == 0:
+        raise RuntimeError(f"decoded-duration probe produced no audio for {path}")
+    return round(nbytes / (44100 * 2), 6)   # mono s16le → 2 bytes/sample
+
+
 def r2_upload(local_path, key):
     subprocess.run(["wrangler", "r2", "object", "put", f"{R2_BUCKET}/{key}",
                     "--file", local_path, "--content-type", "audio/mpeg", "--remote"], check=True)
@@ -405,6 +433,7 @@ def ja_quality_issues(lines, signal):
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
 def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en",
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
+             final_dur_fn=decoded_duration,
              upload_fn=r2_upload, verify_fn=verify_public, log=print):
     """Generate+upload all 5 dialogue clips for `date`, then write the manifest. Raises on any failure
     BEFORE writing the manifest (atomic). Returns the manifest entry dict.
@@ -445,7 +474,11 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
         with open(final, "wb") as o:
             for p in parts:
                 o.write(open(p, "rb").read())
-        drift = abs(dur_fn(final) - sum(durs))
+        # Measure the concatenated clip by DECODED audio (sample count), not ffprobe's
+        # size/bitrate estimate: the raw concat embeds each segment's ID3/Info header
+        # mid-stream, which inflates the estimate but not the real audio. Sum of per-line
+        # durations stays the reference; final_dur_fn raises on decode failure (fail-closed).
+        drift = abs(final_dur_fn(final) - sum(durs))
         if drift > DRIFT_THRESHOLD:
             raise ValueError(f"signal {num} drift {drift:.3f}s > {DRIFT_THRESHOLD}s — aborting")
         caps = [{"speaker": c["speaker"], "text": c["text"], "duration": round(d, 6)}

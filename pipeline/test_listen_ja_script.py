@@ -288,6 +288,10 @@ def synth_stub(text, voice, settings, key):
     return b"x"
 
 def dur_stub(path):
+    # per-line files -> 1.0s each; the concatenated final -> its byte size, which equals
+    # the line count (each stub line is 1 byte), so decoded-final == sum(per-line) -> drift 0.
+    # Passed as BOTH dur_fn and final_dur_fn so the real ffmpeg decoded_duration() (which
+    # would choke on the 1-byte stub audio) is never invoked in this stubbed e2e.
     name = os.path.basename(path)
     return 1.0 if "line-" in name else float(os.path.getsize(path))
 
@@ -301,6 +305,7 @@ def verify_stub(url):
 # EN run — legacy call shape (no lang argument at all)
 entry_en = lg.generate(DATE, el_key="k", an_key="k", listener_voice="L", explainer_voice="E",
                        llm_fn=llm_stub_en, synth_fn=synth_stub, dur_fn=dur_stub,
+                       final_dur_fn=dur_stub,
                        upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
 m = json.load(open(manifest_path))
 check("EN entry shape unchanged", set(m["editions"][DATE]["1"].keys()) == {"format", "en"})
@@ -314,6 +319,7 @@ en_snapshot = json.dumps(m["editions"][DATE]["1"]["en"], sort_keys=True)
 uploaded.clear()
 entry_ja = lg.generate(DATE, el_key="k", an_key="k", listener_voice="LJ", explainer_voice="EJ",
                        lang="ja", llm_fn=llm_stub_ja, synth_fn=synth_stub, dur_fn=dur_stub,
+                       final_dur_fn=dur_stub,
                        upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
 m2 = json.load(open(manifest_path))
 sig1 = m2["editions"][DATE]["1"]
@@ -333,6 +339,7 @@ def llm_stub_ja_bad(sig, *, api_key, model=None, lang="en"):
 try:
     lg.generate(DATE, el_key="k", an_key="k", listener_voice="LJ", explainer_voice="EJ",
                 lang="ja", llm_fn=llm_stub_ja_bad, synth_fn=synth_stub, dur_fn=dur_stub,
+                final_dur_fn=dur_stub,
                 upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
     check("bad JA script aborts generate()", False)
 except ValueError as e:

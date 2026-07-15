@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-15",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Bangkok bar fire: death toll reaches 30 as police say negligence is ‘primary theory’",
+      "summary": "The Bangkok pub that became the scene of the city’s deadliest blaze in 17 years has said it will cooperate with an investigation into alleged negligence, as the death toll rose to 30.",
+      "keyTakeaways": [
+        "The local district office said on Tuesday that three more people had died after the devastating fire that broke out in the early hours of Monday.",
+        "An initial assessment by disaster officials found an electrical short ‌circuit in an air conditioner located in the ‌ceiling had caused the fire.",
+        "The national police chief, Kitrat Phanphet, told reporters on Monday: “At this time, police have established negligence as the primary theory guiding their investigation.”"
+      ],
+      "whyItMatters": "Access to another exit near the kitchen might also have been narrowed by shelving units and lockers, according to the police chief who visited the scene on Monday.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/14/bangkok-bar-pub-fire-death-toll-thailand",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "バンコクのバー火災、死者30人に――警察は過失を主な原因と見る",
+          "summary": "バンコクで17年ぶりとなる大規模な火災が起きたバーは、過失をめぐる調査に協力する意向を示した。死者数は30人に達している。",
+          "keyTakeaways": [
+            "火曜日、地区当局は月曜未明の火災後にさらに3人が死亡したと発表した。",
+            "当局の初期調査では、天井に設置されたエアコンの電気系統のショートが出火原因とされている。",
+            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失が捜査の主な方向性だ」と述べた。"
+          ],
+          "whyItMatters": "警察長官が現場を視察したところ、厨房付近の別の非常口も棚やロッカーによって狭められていた可能性があるという。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Singapore court orders Bloomberg to pay ministers $356,000 in defamation case",
+      "summary": "Bloomberg News and one of its reporters have been ordered to pay S$460,000 (US$355,734) in damages after an article it published was found to have defamed two Singapore government ministers, the city-state’s high court said in a judgment released on Tuesday.",
+      "keyTakeaways": [
+        "Bloomberg’s editor-in-chief, John Micklethwait, said he was disappointed by the ruling and that the company continued to stand by its reporter and the newsroom.",
+        "He ‌did not say whether Bloomberg planned an ‌appeal.",
+        "The law firm that represented the ministers did not immediately respond to a request for comment."
+      ],
+      "whyItMatters": "A Bloomberg editor said in an affidavit that the company had lifted ⁠the paywall so that readers could see the correction notice.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/15/bloomberg-singapore-defamation-case",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ブルームバーグに約3億円の賠償命令――シンガポール名誉毀損訴訟",
+          "summary": "シンガポール高等裁判所は、ブルームバーグ・ニュースと同社記者に対し、46万シンガポールドル（約35万6000米ドル）の損害賠償を命じた。同社が掲載した記事が、シンガポール政府の閣僚2人の名誉を毀損したと認定された。",
+          "keyTakeaways": [
+            "ブルームバーグの編集長ジョン・ミクルスウェイトは判決への失望を表明し、記者と編集部を引き続き支持すると述べた",
+            "控訴の有無については言及しなかった",
+            "閣僚側の代理人法律事務所からのコメントは得られていない"
+          ],
+          "whyItMatters": "ブルームバーグの編集者は宣誓供述書の中で、読者が訂正通知を確認できるようペイウォールを解除したと述べている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "U.S. and Iran standoff over the Strait of Hormuz intensifies",
+      "summary": "Iran threatened to block all oil exporting routes in the region on Wednesday in response to the U.S. maritime blockade of Iranian ports in the Strait of Hormuz.",
+      "keyTakeaways": [
+        "This latest round followed back and forth strikes overnight as the U.S. military reimposed the blockade of Iranian vessels in the strait.",
+        "Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain and Jordan.",
+        "Brad Cooper, who commands the U.S. Central Command, accused Iran of attacking seven commercial ships and launching missiles against Gulf countries."
+      ],
+      "whyItMatters": "That ceasefire was aimed at ending the civil war between the Iran-backed Houthi rebels and a Saudi-led coalition supporting the Yemeni government.",
+      "originalURL": "https://www.npr.org/2026/07/15/nx-s1-5894582/us-iran-updates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホルムズ海峡をめぐる米・イランの緊張が高まる",
+          "summary": "米軍がホルムズ海峡でイランの船舶を封鎖したことを受け、イランは水曜日、域内の石油輸出ルートすべてを遮断すると警告した。",
+          "keyTakeaways": [
+            "前夜の相互攻撃に続き、米軍が海峡での封鎖を再開したことが今回の事態の発端となった。",
+            "イランはクウェート、バーレーン、ヨルダンの米軍基地を標的に報復攻撃を実施した。",
+            "米中央軍のブラッド・クーパー司令官は、イランが商船七隻を攻撃し、湾岸諸国に向けてミサイルを発射したと非難した。"
+          ],
+          "whyItMatters": "この停戦は、イランが支援するフーシ派とイエメン政府を支持するサウジアラビア主導の連合軍との内戦終結を目的としたものだった。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Microsoft’s biggest ever patch Tuesday lets you hold off updating for longer",
+      "summary": "Microsoft just released a long list of improvements for Windows 11 as part of its bigger patch Tuesdays, patching at least 570 security holes, almost triple the number fixed in last month’s record-breaking release, according to Krebs on Security.",
+      "keyTakeaways": [
+        "It comes as part of Microsoft’s plan to revitalize Windows 11 with updates focused on addressing user complaints and improving performance.",
+        "Microsoft patched a bunch of security issues with this update as well, which the company said we can expect to see more of in future releases as it uses AI to identify vulnerabilities.",
+        "Last month, Microsoft previewed several other features arriving in this build (KB5101650) in an optional June update."
+      ],
+      "whyItMatters": "You can now pause updates for up to 35 days and continue extending the deadline.",
+      "originalURL": "https://www.theverge.com/tech/965643/microsoft-windows-11-july-2026-patch-tuesday-updates",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "マイクロソフト、過去最大規模のセキュリティ更新を配信",
+          "summary": "マイクロソフトがWindows 11向けに大規模な更新プログラムを公開した。今回のパッチで修正されたセキュリティ上の脆弱性は少なくとも570件にのぼり、先月の記録的な件数のほぼ3倍に達したと、セキュリティ情報サイト「Krebs on Security」が伝えている。",
+          "keyTakeaways": [
+            "ユーザーからの不満に応え、パフォーマンス改善を図るWindows 11刷新計画の一環。",
+            "AIを活用して脆弱性を検出する取り組みが進んでおり、今後の更新でもセキュリティ修正が増える見通し。",
+            "先月の任意更新では、今回のビルド（KB5101650）に含まれる複数の新機能がすでに予告されていた。"
+          ],
+          "whyItMatters": "更新の一時停止期間が最長35日間に延長され、さらに繰り返し延長することも可能になった。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+      "summary": "Epic Games and Google have just jointly withdrawn their attempt to retroactively settle the lawsuit that’s changing how Android app stores work in the United States — and that means Google will be forced to carry rival app stores inside of its own.",
+      "keyTakeaways": [
+        "Get ready for rival app stores inside of Google Play.",
+        "In fact, Google tells the court, it’s ready to begin carrying third-party app stores on Wednesday, July 22nd.",
+        "Google has been fighting that ever since, and eventually convinced Epic to join in, by settling all their legal disputes around the world and making a secret $800 million deal along the way."
+      ],
+      "whyItMatters": "Does that mean it’s time for Microsoft to launch an Xbox game store on Android?",
+      "originalURL": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "Androidにライバルのアプリストアがやってくる",
+          "summary": "EpicゲームズとGoogleは、米国におけるAndroidアプリ配信のあり方を変える訴訟の和解申請を共同で取り下げた。これにより、GoogleはGoogle Play内でサードパーティのアプリストアを提供することを余儀なくされる。",
+          "keyTakeaways": [
+            "Google Play内にライバルのアプリストアが登場する見通し。",
+            "Googleは7月22日水曜日からサードパーティストアの受け入れを開始できると裁判所に伝えた。",
+            "Googleはこの判決に抵抗し続け、最終的にEpicと世界規模で法的紛争を解決。その過程で8億ドルにのぼる非公開の合意も交わされていた。"
+          ],
+          "whyItMatters": "Microsoftがこの機を捉え、XboxのゲームストアをAndroid上に展開する可能性も浮かび上がる。"
+        }
+      }
+    }
+  ]
+}

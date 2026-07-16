@@ -21,6 +21,8 @@ Env: ELEVENLABS_API_KEY, ANTHROPIC_API_KEY (required); EXPLAINER_VOICE, LISTENER
      explainer; override via LISTENER_VOICE_JA / EXPLAINER_VOICE_JA). No ElevenLabs key needed.
      Azure rate-limit tuning (optional): AZURE_TTS_DELAY (seconds between requests, default 2.0 —
      F0-friendly pacing) and AZURE_TTS_MAX_RETRIES (429 retries per line, default 5).
+     JA runs resume per signal: passed signals checkpoint to scratch/ and are reused (after
+     gate+drift re-verification) on rerun; LISTEN_JA_RESUME=0 forces full regeneration.
 
 Usage: python3 pipeline/listen_generate.py 2026-06-30 [--lang en|ja]
 
@@ -616,6 +618,67 @@ def _dump_failed_ja(date, num, signal, lines, issues):
         return None   # debug aid must never break the pipeline
 
 
+# ── JA per-signal resume checkpoints (scratch-only, gitignored — never committed) ────────────────
+# Why: a run is atomic (nothing uploads until 5/5 pass), so one gate-failed signal used to force
+# regenerating four perfectly good signals — wasted LLM+TTS calls and more F0 429 exposure.
+# A checkpoint snapshots a signal that FULLY passed (gate + synthesis + drift). Reuse is
+# fail-closed: every original gate is re-verified at load time, and any doubt → regenerate.
+def _ja_resume_enabled():
+    return os.environ.get("LISTEN_JA_RESUME", "").strip().lower() not in ("0", "false", "off")
+
+
+def _ckpt_path(outdir, num, lang):
+    return os.path.join(outdir, f"signal-{int(num):02d}-{lang}.checkpoint.json")
+
+
+def _save_ja_checkpoint(outdir, num, lang, lines, durs, final):
+    """Best-effort atomic snapshot after a signal fully passes. Failure to save never
+    breaks the run (it only costs a future regeneration)."""
+    try:
+        path = _ckpt_path(outdir, num, lang)
+        tmp = path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump({"lines": [{"speaker": l["speaker"], "text": l["text"]} for l in lines],
+                       "durs": [float(d) for d in durs], "final": os.path.basename(final)},
+                      f, ensure_ascii=False)
+        os.replace(tmp, path)
+    except Exception:
+        pass
+
+
+def _load_ja_checkpoint(outdir, num, lang, sig, final_dur_fn):
+    """Return (lines, durs, final_path) for an already-passed signal, or None to regenerate.
+
+    Fail-closed re-verification on every load:
+      • shape: speaker/text lines, one duration per line;
+      • the saved dialogue must STILL pass ja_quality_issues against the CURRENT signal
+        fields (a checkpoint from an edited edition regenerates instead of shipping stale);
+      • the concatenated MP3 must exist and still pass the drift gate via final_dur_fn.
+    Any missing/corrupt/failing condition → None. Never raises."""
+    try:
+        path = _ckpt_path(outdir, num, lang)
+        if not os.path.exists(path):
+            return None
+        d = json.load(open(path, encoding="utf-8"))
+        lines, durs = d.get("lines"), d.get("durs")
+        if not (isinstance(lines, list) and isinstance(durs, list) and lines
+                and len(lines) == len(durs)
+                and all(isinstance(l, dict) and l.get("speaker") in ("listener", "explainer")
+                        and isinstance(l.get("text"), str) and l["text"] for l in lines)):
+            return None
+        if ja_quality_issues(lines, sig):
+            return None
+        final = os.path.join(outdir, os.path.basename(str(d.get("final", ""))))
+        if not os.path.isfile(final):
+            return None
+        durs = [float(x) for x in durs]
+        if abs(final_dur_fn(final) - sum(durs)) > DRIFT_THRESHOLD:
+            return None
+        return lines, durs, final
+    except Exception:
+        return None
+
+
 def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en",
              llm_fn=llm_dialogue, synth_fn=synth_line, dur_fn=ffprobe_duration,
              final_dur_fn=decoded_duration,
@@ -625,7 +688,15 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
 
     lang="en" (default) is byte-for-byte the historical behavior (same filenames, same manifest
     replace-write). lang="ja" adds the JA quality gate and MERGES `ja` tracks into the existing
-    manifest entry so a previously generated `en` is never touched."""
+    manifest entry so a previously generated `en` is never touched.
+
+    JA PER-SIGNAL RESUME: each JA signal that fully passes (gate + synthesis + drift) writes a
+    scratch checkpoint. If one signal later fails its gate, rerunning the SAME command reuses the
+    passed signals' checkpoints (after re-verifying gate + drift at load time) and calls the
+    LLM/TTS only for the missing signal — then uploads and writes the manifest for all five as
+    usual. Atomicity is unchanged: nothing uploads and no manifest is written until 5/5 pass in
+    one run. Set LISTEN_JA_RESUME=0 to force full regeneration. EN never reads or writes
+    checkpoints."""
     edition = os.path.join(ROOT, "editions", f"{date}.json")
     feed = json.load(open(edition, encoding="utf-8"))
     if feed.get("date") != date:
@@ -641,6 +712,18 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
     # 1) scripts + audio + drift — all must pass before any upload.
     for sig in signals:
         num = sig["number"]
+        if lang == "ja" and _ja_resume_enabled():
+            reused = _load_ja_checkpoint(outdir, num, lang, sig, final_dur_fn)
+            if reused:
+                lines, durs, final = reused
+                caps = [{"speaker": c["speaker"], "text": c["text"], "duration": round(d, 6)}
+                        for c, d in zip(lines, durs)]
+                entry[str(num)] = {"format": "dialogue",
+                                   lang: {"key": key_for(date, num, lang), "gap": 0.0, "captions": caps}}
+                to_upload.append((final, key_for(date, num, lang)))
+                log(f"  signal {num} [{lang}]: reused checkpoint ({len(caps)} lines, "
+                    f"gate+drift re-verified) — no LLM/TTS calls")
+                continue
         lines = llm_fn(sig, api_key=an_key, lang=lang) if lang != "en" else llm_fn(sig, api_key=an_key)
         if lang == "ja":
             issues = ja_quality_issues(lines, sig)
@@ -667,6 +750,8 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
         drift = abs(final_dur_fn(final) - sum(durs))
         if drift > DRIFT_THRESHOLD:
             raise ValueError(f"signal {num} drift {drift:.3f}s > {DRIFT_THRESHOLD}s — aborting")
+        if lang == "ja":
+            _save_ja_checkpoint(outdir, num, lang, lines, durs, final)
         caps = [{"speaker": c["speaker"], "text": c["text"], "duration": round(d, 6)}
                 for c, d in zip(lines, durs)]
         entry[str(num)] = {"format": "dialogue",

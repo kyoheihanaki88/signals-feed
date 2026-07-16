@@ -359,6 +359,10 @@ json.dump({"editions": {}}, open(manifest_path, "w"))
 
 # monkeypatch module paths (kept local to this test process)
 lg.ROOT, lg.MANIFEST, lg.OUT_BASE = tmp, manifest_path, os.path.join(tmp, "scratch")
+# These sections deliberately regenerate the SAME date repeatedly (good run → bad run →
+# mapping run) to assert gate wiring; disable per-signal resume here so each generate()
+# call is a genuinely fresh run. Resume itself is tested explicitly in its own section.
+os.environ["LISTEN_JA_RESUME"] = "0"
 
 EN_LINES = [{"speaker": "listener", "text": "What happened with Apple and OpenAI?"},
             {"speaker": "explainer", "text": "Apple filed a lawsuit naming 30 employees."}] * 4
@@ -572,6 +576,112 @@ for _k, _v in _env_backup.items():
     else:
         os.environ[_k] = _v
 lg._azure_last_request_ts = None
+
+# ---------------------------------------------------------------- JA per-signal resume
+# 2026-07-15 production run: signals 1–4 passed, signal 5 failed its gate, and the whole
+# date had to regenerate. A rerun must now reuse passed signals from checkpoints (with
+# gate + drift re-verified) and call the LLM/TTS only for the failed signal — while a
+# fresh-tree run, EN runs, and tampered/stale checkpoints keep the old behavior.
+os.environ.pop("LISTEN_JA_RESUME", None)   # resume ON (the production default)
+
+RDATE = "2099-02-02"
+json.dump({"date": RDATE, "signals": [dict(SIGNAL, number=n) for n in range(1, 6)]},
+          open(os.path.join(tmp, "editions", f"{RDATE}.json"), "w", encoding="utf-8"),
+          ensure_ascii=False)
+
+llm_calls, synth_calls = [], []
+def synth_count(text, voice, settings, key):
+    synth_calls.append(voice)
+    return b"x"
+
+def llm_fail5(sig, *, api_key, model=None, lang="en"):
+    llm_calls.append(sig["number"])
+    if sig["number"] == 5:
+        bad = [dict(l) for l in GOOD_JA]
+        bad[1] = {"speaker": "explainer", "text": "はい。対象は45人の従業員です。"}
+        return bad
+    return [dict(l) for l in GOOD_JA]
+
+def llm_good(sig, *, api_key, model=None, lang="en"):
+    llm_calls.append(sig["number"])
+    return [dict(l) for l in GOOD_JA]
+
+def _run(llm):
+    return lg.generate(RDATE, el_key="k", an_key="k",
+                       listener_voice=lg.AZURE_VOICE_JA_LISTENER,
+                       explainer_voice=lg.AZURE_VOICE_JA_EXPLAINER,
+                       lang="ja", llm_fn=llm, synth_fn=synth_count, dur_fn=dur_stub,
+                       final_dur_fn=dur_stub, upload_fn=upload_stub, verify_fn=verify_stub,
+                       log=lambda *a: None)
+
+_ck = lambda n: os.path.join(lg.OUT_BASE, RDATE, f"signal-{n:02d}-ja.checkpoint.json")
+
+# run 1 — signal 5 gate-fails; 1–4 checkpoint, nothing uploads
+uploaded.clear()
+try:
+    _run(llm_fail5)
+    check("resume run 1: signal 5 gate failure still aborts", False)
+except ValueError as e:
+    check("resume run 1: signal 5 gate failure still aborts", "signal 5 JA quality gate failed" in str(e))
+check("resume run 1: nothing uploaded, all 5 LLM calls made",
+      uploaded == [] and llm_calls == [1, 2, 3, 4, 5])
+check("resume run 1: checkpoints written for passed 1-4 only",
+      all(os.path.exists(_ck(n)) for n in (1, 2, 3, 4)) and not os.path.exists(_ck(5)))
+
+# run 2 — same command: 1–4 reused, ONLY signal 5 regenerated, then full upload+manifest
+llm_calls.clear(); synth_calls.clear(); uploaded.clear()
+entry_r = _run(llm_good)
+check("resume run 2: LLM called ONLY for the failed signal 5", llm_calls == [5])
+check("resume run 2: TTS synthesized only signal 5's lines", len(synth_calls) == len(GOOD_JA))
+check("resume run 2: still uploads all five signals",
+      len(uploaded) == 5 and all(k.endswith("-ja.mp3") for k in uploaded))
+m_r = json.load(open(manifest_path))
+check("resume run 2: manifest carries ja for all five",
+      all("ja" in m_r["editions"][RDATE][str(n)] for n in range(1, 6)))
+check("resume run 2: reused captions match the checkpointed script",
+      [c["text"] for c in entry_r["1"]["ja"]["captions"]] == [l["text"] for l in GOOD_JA])
+
+# tampered checkpoint (ungrounded number injected) → that signal regenerates, run still succeeds
+_t = json.load(open(_ck(3), encoding="utf-8"))
+_t["lines"][1]["text"] = "はい。対象は45人の従業員です。"
+json.dump(_t, open(_ck(3), "w", encoding="utf-8"), ensure_ascii=False)
+llm_calls.clear(); uploaded.clear()
+_run(llm_good)
+check("tampered checkpoint fails gate re-verify → only that signal regenerates",
+      llm_calls == [3] and len(uploaded) == 5)
+
+# missing final mp3 → that signal regenerates
+os.remove(os.path.join(lg.OUT_BASE, RDATE, "signal-04-dialogue-ja.mp3"))
+llm_calls.clear()
+_run(llm_good)
+check("missing final mp3 → only that signal regenerates", llm_calls == [4])
+
+# corrupt checkpoint JSON → regenerates, never raises
+open(_ck(2), "w").write("{not json")
+llm_calls.clear()
+_run(llm_good)
+check("corrupt checkpoint json → only that signal regenerates", llm_calls == [2])
+
+# kill switch: LISTEN_JA_RESUME=0 forces full regeneration
+os.environ["LISTEN_JA_RESUME"] = "0"
+llm_calls.clear()
+_run(llm_good)
+check("LISTEN_JA_RESUME=0 regenerates all five", llm_calls == [1, 2, 3, 4, 5])
+os.environ.pop("LISTEN_JA_RESUME", None)
+
+# EN stays checkpoint-free: an EN run neither reads nor writes checkpoints
+def llm_en_count(sig, *, api_key, model=None):       # legacy EN signature — no lang kwarg
+    llm_calls.append(sig["number"])
+    return [dict(l) for l in EN_LINES]
+llm_calls.clear(); uploaded.clear()
+lg.generate(RDATE, el_key="k", an_key="k", listener_voice="L", explainer_voice="E",
+            llm_fn=llm_en_count, synth_fn=synth_stub, dur_fn=dur_stub, final_dur_fn=dur_stub,
+            upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
+check("EN run ignores existing ja checkpoints (LLM called for all five)",
+      llm_calls == [1, 2, 3, 4, 5])
+check("EN run writes no checkpoints",
+      not any(f.endswith("-en.checkpoint.json")
+              for f in os.listdir(os.path.join(lg.OUT_BASE, RDATE))))
 
 print("ALL PASS" if failures == 0 else f"{failures} CHECK(S) FAILED")
 sys.exit(1 if failures else 0)

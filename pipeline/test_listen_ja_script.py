@@ -316,6 +316,42 @@ check("v3 fixture: every listener line is a question",
 check("gates unchanged: v2-style closing reaction still accepted",
       lg.ja_quality_issues(GOOD_JA, SIGNAL) == [])
 
+# ---------------------------------------------------------------- counter-wording prompt rule
+# 2026-07-15 signal 5 failed twice on 「2社」 (Epic and Google — two named entities the source
+# never states as a number). The fix is PROMPT-LEVEL ONLY: prefer 両社/両者/双方 or the names
+# themselves; numeric counters (2社/2者/2つ) only when the number is grounded in the source.
+# The numeric grounding gate itself is intentionally UNCHANGED.
+check("prompt: prefers 両社/両者/双方 and name pairing for two named parties",
+      all(w in lg.SCRIPT_SYSTEM_JA for w in ("両社", "両者", "双方", "EpicとGoogle")))
+check("prompt: forbids ungrounded numeric counters 2社/2者/2つ",
+      all(w in lg.SCRIPT_SYSTEM_JA for w in ("「2社」", "「2者」", "「2つ」"))
+      and "記事に明記されている場合を除いて使わない" in lg.SCRIPT_SYSTEM_JA)
+
+# gate behavior around counters is unchanged: a two-party signal whose source never says "2"
+TWOPARTY_SIGNAL = {
+    "number": 5,
+    "headline": "Google and Epic give up fighting over Android app stores",
+    "summary": "Epic Games and Google have jointly withdrawn their settlement attempt.",
+    "keyTakeaways": ["Rival app stores are coming to Google Play."],
+    "whyItMatters": "Third-party stores may reach Android users soon.",
+    "localized": {"ja": {"headline": "Androidにライバルのアプリストアがやってくる",
+                         "summary": "EpicとGoogleが和解申請を共同で取り下げた。"}},
+}
+TWOPARTY_JA = [
+    {"speaker": "listener", "text": "EpicとGoogleの争いはどうなったんですか?"},
+    {"speaker": "explainer", "text": "両社が和解の申請を取り下げ、元の判決が効力を持つことになりました。"},
+    {"speaker": "listener", "text": "それで何が変わるんですか?"},
+    {"speaker": "explainer", "text": "Google Playの中に、他社のアプリストアが並ぶ見通しです。"},
+    {"speaker": "listener", "text": "私たちのスマホにも影響はありますか?"},
+    {"speaker": "explainer", "text": "Androidで他のストアを使いやすくなる可能性があります。"},
+]
+check("両社 wording passes the unchanged number gate (no digits introduced)",
+      not any("ungrounded number" in i for i in lg.ja_quality_issues(TWOPARTY_JA, TWOPARTY_SIGNAL)))
+_tp_bad = [dict(l) for l in TWOPARTY_JA]
+_tp_bad[1] = {"speaker": "explainer", "text": "2社が和解の申請を取り下げました。"}
+check("gate unchanged: ungrounded 「2社」 is still rejected",
+      any("ungrounded number '2'" in i for i in lg.ja_quality_issues(_tp_bad, TWOPARTY_SIGNAL)))
+
 # ---------------------------------------------------------------- Azure JA synthesis backend
 check("confirmed voice constants", lg.AZURE_VOICE_JA_LISTENER == "ja-JP-NanamiNeural"
       and lg.AZURE_VOICE_JA_EXPLAINER == "ja-JP-KeitaNeural")

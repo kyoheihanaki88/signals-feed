@@ -19,6 +19,8 @@ Env: ELEVENLABS_API_KEY, ANTHROPIC_API_KEY (required); EXPLAINER_VOICE, LISTENER
      Japanese (--lang ja) uses AZURE SPEECH instead of ElevenLabs: requires AZURE_SPEECH_KEY,
      AZURE_SPEECH_REGION (voices default to ja-JP-NanamiNeural listener / ja-JP-KeitaNeural
      explainer; override via LISTENER_VOICE_JA / EXPLAINER_VOICE_JA). No ElevenLabs key needed.
+     Azure rate-limit tuning (optional): AZURE_TTS_DELAY (seconds between requests, default 2.0 —
+     F0-friendly pacing) and AZURE_TTS_MAX_RETRIES (429 retries per line, default 5).
 
 Usage: python3 pipeline/listen_generate.py 2026-06-30 [--lang en|ja]
 
@@ -28,7 +30,7 @@ translation — see SCRIPT_SYSTEM_JA) into audio/<date>/signal-0N-dialogue-ja.mp
 a `ja` track into the existing manifest entry, never touching `en`. JA is optional
 everywhere downstream: promotion (listen-ready) remains EN-only.
 """
-import os, re, sys, json, subprocess, urllib.request, urllib.error
+import os, re, sys, json, time, subprocess, urllib.request, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -142,21 +144,80 @@ def _azure_ssml(text, voice):
             f"<voice name='{voice}'>{esc}</voice></speak>")
 
 
-def synth_line_azure(text, voice, settings, api_key):
+# Rate-limit resilience (JA/Azure ONLY — the F0 free tier throttles bursts of per-line requests).
+# Tuning knobs are env vars so production behavior is adjustable without code changes; invalid or
+# unset values fall back to the defaults below. EN/ElevenLabs synthesis is intentionally untouched.
+AZURE_TTS_DELAY_DEFAULT = 2.0        # seconds between consecutive Azure requests (AZURE_TTS_DELAY)
+AZURE_TTS_MAX_RETRIES_DEFAULT = 5    # extra attempts after a 429, per line (AZURE_TTS_MAX_RETRIES)
+AZURE_TTS_BACKOFF_BASE = 2.0         # backoff when no Retry-After header: 2s, 4s, 8s, 16s, 32s …
+AZURE_TTS_BACKOFF_CAP = 60.0         # … capped here
+_azure_last_request_ts = None        # module state for inter-request pacing
+
+
+def _env_num(name, default, cast=float):
+    raw = os.environ.get(name, "").strip()
+    if not raw:
+        return default
+    try:
+        v = cast(raw)
+    except ValueError:
+        return default
+    return v if v >= 0 else default
+
+
+def synth_line_azure(text, voice, settings, api_key,
+                     _urlopen=urllib.request.urlopen, _sleep=time.sleep, _clock=time.monotonic):
     """Azure Speech REST TTS → MP3 bytes. `settings` is accepted for signature parity with
-    synth_line but unused (Azure neural voices need no stability/similarity knobs)."""
+    synth_line but unused (Azure neural voices need no stability/similarity knobs).
+
+    F0 rate-limit resilience (this backend only):
+      • paces requests ≥ AZURE_TTS_DELAY seconds apart (default 2.0; 0 disables);
+      • on HTTP 429 waits per the Retry-After header when present, else bounded exponential
+        backoff (2s·2^attempt, capped 60s), for at most AZURE_TTS_MAX_RETRIES retries;
+      • after the final attempt fails clearly with a RuntimeError naming the attempt count;
+      • any non-429 HTTPError raises IMMEDIATELY (unchanged fail-closed behavior).
+    The trailing _urlopen/_sleep/_clock parameters are test seams only — never passed in
+    production, so positional signature parity with synth_line is preserved."""
+    global _azure_last_request_ts
     region = os.environ.get("AZURE_SPEECH_REGION", "").strip()
     if not region:
         raise RuntimeError("AZURE_SPEECH_REGION is required for Azure synthesis")
     url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
-    req = urllib.request.Request(url, data=_azure_ssml(text, voice).encode("utf-8"),
-                                 method="POST", headers={
-        "Ocp-Apim-Subscription-Key": api_key,
-        "Content-Type": "application/ssml+xml",
-        "X-Microsoft-OutputFormat": AZURE_TTS_FORMAT,
-        "User-Agent": "SignalsListen/1.0"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return r.read()
+    delay = _env_num("AZURE_TTS_DELAY", AZURE_TTS_DELAY_DEFAULT)
+    max_retries = _env_num("AZURE_TTS_MAX_RETRIES", AZURE_TTS_MAX_RETRIES_DEFAULT, cast=int)
+
+    for attempt in range(max_retries + 1):
+        if delay > 0 and _azure_last_request_ts is not None:
+            gap = delay - (_clock() - _azure_last_request_ts)
+            if gap > 0:
+                _sleep(gap)
+        req = urllib.request.Request(url, data=_azure_ssml(text, voice).encode("utf-8"),
+                                     method="POST", headers={
+            "Ocp-Apim-Subscription-Key": api_key,
+            "Content-Type": "application/ssml+xml",
+            "X-Microsoft-OutputFormat": AZURE_TTS_FORMAT,
+            "User-Agent": "SignalsListen/1.0"})
+        try:
+            _azure_last_request_ts = _clock()
+            with _urlopen(req, timeout=180) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                raise                                   # non-429 → fail immediately, unchanged
+            if attempt == max_retries:
+                raise RuntimeError(
+                    f"Azure TTS rate limit (HTTP 429) persisted after {max_retries + 1} attempts — "
+                    f"aborting (raise AZURE_TTS_DELAY / wait for the F0 quota window)") from e
+            retry_after = (e.headers.get("Retry-After") or "").strip() if e.headers else ""
+            try:
+                wait = float(retry_after)
+            except ValueError:
+                wait = 0.0
+            if wait <= 0:
+                wait = min(AZURE_TTS_BACKOFF_CAP, AZURE_TTS_BACKOFF_BASE * (2 ** attempt))
+            print(f"    Azure TTS 429 — retrying in {wait:.0f}s "
+                  f"(attempt {attempt + 1}/{max_retries + 1})", file=sys.stderr)
+            _sleep(wait)
 
 
 def synth_line(text, voice, settings, api_key):

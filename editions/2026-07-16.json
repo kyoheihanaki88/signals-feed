@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-16",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Protests in Ukraine's cities against Zelensky's removal of defence minister",
+      "summary": "Zelensky has not yet explained his decision, which is causing significant upset among commentators and the military as well as parts of civil society.",
+      "keyTakeaways": [
+        "Fedorov, 35, was appointed only in January but has been credited with energising the ministry, heading a drive against corruption and using data to analyse and try to improve performance on the front line.",
+        "MPs were due to vote on Thursday on the proposed replacement as defence minister, Ihor Klymenko, who currently heads the interior ministry.",
+        "As part of Zelensky's reshuffle, parliament approved the appointment of state oil and gas boss Serhiy Koretsky as prime minister, after Yuliia Svyrydenko resigned earlier this week."
+      ],
+      "whyItMatters": "His ministry also played a significant part in Ukraine's recent attacks on the Moscow-occupied Crimean peninsula, which last month Fedorov vowed to \"cut off\" from Russia entirely, with the use of mid-range drone strikes.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ゼレンスキー大統領の国防相更迭に、各地で抗議の声",
+          "summary": "ゼレンスキー大統領が国防相の交代を決めたが、その理由はいまだ説明されていない。軍や論評家、市民社会の一部から強い反発が上がっている。",
+          "keyTakeaways": [
+            "フェドロフ国防相（35歳）は今年1月に就任したばかりだが、省内の刷新や汚職対策、データを活用した前線の戦況分析などで高い評価を得ていた。",
+            "後任候補として内務大臣イホル・クリメンコ氏が挙げられており、木曜日に議会で承認投票が行われる予定だった。",
+            "今回の内閣改造では、スヴィリデンコ前首相の辞任を受け、国営石油ガス会社トップのセルヒー・コレツキー氏が首相に承認された。"
+          ],
+          "whyItMatters": "フェドロフ氏が率いた国防省はロシア占領下のクリミア半島への攻撃にも深く関与しており、同氏は先月、中距離ドローン攻撃によってクリミアをロシアから「切り離す」と宣言していた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "US military to start screening for testosterone deficiency, Hegseth says",
+      "summary": "US Defence Secretary Pete Hegseth has announced that military personnel aged 30 and older will undergo testing for testosterone deficiency as part of annual health screenings.",
+      "keyTakeaways": [
+        "In a video posted on X, captioned \"High-T Department\", Hegseth said he was authorising the screening programme for troops to ensure \"you have the right testosterone levels to operate at your absolute best\".",
+        "Troops with low testosterone levels will be offered voluntary hormone replacement therapy.",
+        "Chief Pentagon Spokesman Sean Parnell said: \"All Active Duty and Reserve Component personnel aged 30 and older will undergo mandatory screening for testosterone deficiency during their Periodic Health Assessment.\""
+      ],
+      "whyItMatters": "Dr Mohit Khera, who led a US Food and Drug Administration (FDA) expert panel last year on screening and testosterone utilisation in the military, told the BBC that all men over 30 should get screened because it is the top marker of a person's overall current and future health.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cn0nlx18rz0o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米軍、30歳以上の兵士にテストステロン検査を義務化へ",
+          "summary": "米国防長官ピート・ヘグセスは、30歳以上の軍人を対象に、テストステロン欠乏症の検査を年次健康診断に組み込むと発表した。",
+          "keyTakeaways": [
+            "ヘグセス長官はX上に「High-T Department」と題した動画を投稿し、兵士が「最高のパフォーマンスを発揮できるよう、適切なテストステロン値を確保するため」このプログラムを承認したと説明した。",
+            "検査で低値が確認された兵士には、任意でホルモン補充療法が提供される。",
+            "国防総省報道官ショーン・パーネルは、現役・予備役を問わず30歳以上の全軍人に対し、定期健康診断でのテストステロン欠乏症スクリーニングが義務付けられると述べた。"
+          ],
+          "whyItMatters": "昨年、FDAの専門家委員会でテストステロン検査の活用について議論を主導したモヒット・ケラ博士は、30歳を超えたすべての男性が検査を受けるべきだとBBCに語っており、その理由として、テストステロン値が現在と将来の健康状態を示す最重要指標であることを挙げた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Uganda calls for travel restrictions to be lifted after last Ebola patient discharged",
+      "summary": "Uganda has started lobbying countries to lift Ebola-related travel restrictions after discharging its last confirmed Ebola patient from hospital.",
+      "keyTakeaways": [
+        "Fifteen countries continue to maintain either partial or full travel restrictions on Uganda after the outbreak, measures the government said have crippled tourism, trade and business, despite the country’s relatively successful response.",
+        "Baryomunsi said the country was not yet Ebola-free – under WHO guidelines, countries must complete two consecutive 21-day incubation periods without recording a new case before an outbreak can officially be declared over.",
+        "Uganda’s outbreak has been markedly different from previous Ebola emergencies in the region, with only two deaths and 20 confirmed infections including 15 Congolese nationals, four health workers and one driver."
+      ],
+      "whyItMatters": "Despite Uganda’s progress, authorities said the threat remains across the border.",
+      "originalURL": "https://www.theguardian.com/global-development/2026/jul/16/uganda-travel-restrictions-last-ebola-patient-discharged",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "最後の患者が退院――ウガンダ、渡航制限の解除を各国に求める",
+          "summary": "ウガンダ政府は、最後のエボラ出血熱感染者が退院したことを受け、各国に対して渡航制限の解除を働きかけ始めた。",
+          "keyTakeaways": [
+            "15か国が現在もウガンダへの渡航制限を維持しており、観光・貿易・ビジネスへの打撃は深刻だと政府は訴える。",
+            "WHOの基準では、新たな感染者が確認されない状態で21日間の潜伏期間を2回連続で完了するまで、終息宣言は出せない。ウガンダはまだその段階に達していない。",
+            "今回の感染拡大は過去の事例と様相が異なり、死者2名・感染確認20名にとどまった。感染者にはコンゴ国籍者15名、医療従事者4名、運転手1名が含まれる。"
+          ],
+          "whyItMatters": "ウガンダ国内での封じ込めは進んでいるが、当局は国境を越えた脅威がなお続いていると警戒を崩していない。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "HP’s OLED-equipped 2-in-1 laptop is a solid back-to-school deal",
+      "summary": "Given the state of hardware prices, this discounted convertible HP laptop could be the deal you’ve been waiting on.",
+      "keyTakeaways": [
+        "The star of the show is the 1920 x 1200 OLED touchscreen, an uncommon perk at this price point.",
+        "One other perk is that the OLED screen has a 16:10 aspect ratio, so you’ll be able to see more content at once.",
+        "He’s contributed to sites like Digital Trends, Business Insider, and WIRED."
+      ],
+      "whyItMatters": "With storage and memory prices still at an all-time high, we’re happy to tell you about a solid deal on a good laptop when we find one, rare as they are.",
+      "originalURL": "https://www.theverge.com/gadgets/966209/hp-omnibook-x-flip-oled-laptop-windows-11-deal-sale",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "OLEDスクリーン搭載の2in1ノートPC、今が買い時か",
+          "summary": "HPの2in1コンバーチブルノートPCが値引きされている。ハードウェア価格が高止まりする昨今、見逃しにくい一台だ。",
+          "keyTakeaways": [
+            "この価格帯では珍しい、1920×1200のOLEDタッチスクリーンを搭載",
+            "アスペクト比16:10の画面により、一度に表示できる情報量が多い",
+            "Digital TrendsやBusiness Insider、WIREDなどへの寄稿実績を持つライターが紹介"
+          ],
+          "whyItMatters": "ストレージやメモリの価格が依然として高水準にある中、質の良いノートPCをお得に手に入れられる機会は貴重だ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "COMPUTER COPS: Inside the big business of selling AI to the police",
+      "summary": "From data gathering to decision making, there’s a gold mine in police funding.",
+      "keyTakeaways": [
+        "The promise of AI at this year’s International Association of Chiefs of Police (IACP) Technology Conference focused on automating routine parts of the job, which also happen to be critical steps in the legal process.",
+        "As the country has reckoned with law enforcement becoming detached from actual, human police presence in neighborhoods, the industry is continuing to embrace automation.",
+        "The decision-making process itself in police departments is increasingly being handed over to algorithms."
+      ],
+      "whyItMatters": "Many public safety advocacy groups and legal experts, however, warn that an influx of black box algorithms into law enforcement will erode transparency and accountability at a time when much of the public’s trust of the police is already dangerously frayed.",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
+      "readTime": 19,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "警察とAIビジネス——自動化が進む治安維持の現場",
+          "summary": "データ収集から意思決定まで、警察関連の予算はいまやAI企業にとって巨大な市場となっている。",
+          "keyTakeaways": [
+            "今年の国際警察署長協会技術会議では、法的手続きの要となる業務の自動化がAIの主要な売り文句として打ち出された。",
+            "地域における人間的な警察の存在感が薄れるなか、業界は自動化の流れをさらに加速させている。",
+            "警察内部の意思決定そのものが、アルゴリズムへと委ねられつつある。"
+          ],
+          "whyItMatters": "公共安全の擁護団体や法律の専門家たちは、不透明なアルゴリズムの導入が、すでに揺らいでいる警察への信頼をさらに損なうと警鐘を鳴らしている。"
+        }
+      }
+    }
+  ]
+}

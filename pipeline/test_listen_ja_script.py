@@ -316,6 +316,17 @@ check("v3 fixture: every listener line is a question",
 check("gates unchanged: v2-style closing reaction still accepted",
       lg.ja_quality_issues(GOOD_JA, SIGNAL) == [])
 
+# ---------------------------------------------------------------- Azure JA synthesis backend
+check("confirmed voice constants", lg.AZURE_VOICE_JA_LISTENER == "ja-JP-NanamiNeural"
+      and lg.AZURE_VOICE_JA_EXPLAINER == "ja-JP-KeitaNeural")
+_ssml = lg._azure_ssml("30人が対象です <&> テスト", "ja-JP-KeitaNeural")
+check("SSML carries the voice name", "name='ja-JP-KeitaNeural'" in _ssml)
+check("SSML escapes XML specials", "&lt;&amp;&gt;" in _ssml and "<&>" not in _ssml)
+check("SSML is ja-JP single-voice", _ssml.startswith("<speak version='1.0' xml:lang='ja-JP'>")
+      and _ssml.count("<voice") == 1)
+check("azure synth has synth_line signature parity",
+      lg.synth_line_azure.__code__.co_varnames[:4] == lg.synth_line.__code__.co_varnames[:4])
+
 # ---------------------------------------------------------------- parse_dialogue (shared, unchanged)
 try:
     lg.parse_dialogue("not json at all")
@@ -422,6 +433,30 @@ check("no uploads after JA gate failure", uploaded == [])
 m3 = json.load(open(manifest_path))
 check("manifest unchanged after JA gate failure",
       json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
+
+# ---------------------------------------------------------------- speaker → Azure voice mapping
+# Prove that in a JA run every listener line synthesizes with Nanami and every explainer
+# line with Keita — no third voice, no crossover.
+voice_by_speaker = {}
+def synth_capture(text, voice, settings, key):
+    for l in GOOD_JA:
+        if l["text"] == text:
+            voice_by_speaker.setdefault(l["speaker"], set()).add(voice)
+    return b"x"
+
+lg.generate(DATE, el_key="azure-key", an_key="k",
+            listener_voice=lg.AZURE_VOICE_JA_LISTENER,
+            explainer_voice=lg.AZURE_VOICE_JA_EXPLAINER,
+            lang="ja", llm_fn=llm_stub_ja, synth_fn=synth_capture, dur_fn=dur_stub,
+            final_dur_fn=dur_stub,
+            upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
+check("listener lines all synthesize with Nanami",
+      voice_by_speaker.get("listener") == {"ja-JP-NanamiNeural"})
+check("explainer lines all synthesize with Keita",
+      voice_by_speaker.get("explainer") == {"ja-JP-KeitaNeural"})
+check("exactly two voices used (no third voice)",
+      len(set().union(*voice_by_speaker.values())) == 2)
+uploaded.clear()   # restore the post-gate-failure state the next section asserts on
 
 # debug-only failure artifact: a rejected JA dialogue is snapshotted to scratch/ (gitignored)
 _art = os.path.join(lg.ROOT, "scratch", f"failed_ja_dialogue_{DATE}_signal1.json")

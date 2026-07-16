@@ -91,6 +91,67 @@
               "duration": 8.176327
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "ウクライナで国防相が突然交代させられたって聞いたんですが、何がそんなに問題になってるんですか?",
+              "duration": 8.064
+            },
+            {
+              "speaker": "explainer",
+              "text": "ゼレンスキー大統領が理由を一切説明していないんです。それが軍や市民の間で大きな反発を招いています。",
+              "duration": 8.904
+            },
+            {
+              "speaker": "listener",
+              "text": "説明なしで交代って、フェドロフさんはそんなに重要な人物だったんですか?",
+              "duration": 6.408
+            },
+            {
+              "speaker": "explainer",
+              "text": "今年1月に就任したばかりなんですが、汚職対策やデータで前線の状況を分析する取り組みで高く評価されていました。",
+              "duration": 8.952
+            },
+            {
+              "speaker": "listener",
+              "text": "35歳で就任して半年ちょっとで交代ですか。クリミアへの攻撃とも関係があるって聞きましたが、どういうことですか?",
+              "duration": 10.608
+            },
+            {
+              "speaker": "explainer",
+              "text": "彼が率いた国防省は、ロシアが占領するクリミアへの中距離ドローン攻撃に深く関わっていました。",
+              "duration": 7.392
+            },
+            {
+              "speaker": "explainer",
+              "text": "フェドロフ氏は先月、ドローン攻撃でクリミアをロシアから「切り離す」とまで宣言していたんです。",
+              "duration": 7.272
+            },
+            {
+              "speaker": "listener",
+              "text": "そのタイミングでの更迭となると、後任は誰になるんですか?",
+              "duration": 5.256
+            },
+            {
+              "speaker": "explainer",
+              "text": "内務大臣のイホル・クリメンコ氏が後任候補で、木曜日に議会で承認投票が行われる予定です。",
+              "duration": 7.68
+            },
+            {
+              "speaker": "explainer",
+              "text": "同じ改造で首相も替わっていて、国営石油ガス会社トップのセルヒー・コレツキー氏が就任しました。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "listener",
+              "text": "これ、ウクライナの戦況にも影響しそうですか?",
+              "duration": 4.344
+            }
+          ]
         }
       }
     },
@@ -182,6 +243,62 @@
               "duration": 7.78449
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "アメリカ軍がテストステロンの検査を義務にするって聞いたんですが、これってどういう話ですか?",
+              "duration": 7.392
+            },
+            {
+              "speaker": "explainer",
+              "text": "国防長官のヘグセスが、30歳以上の軍人全員に毎年の健康診断でテストステロン値を測らせると決めたんです。",
+              "duration": 8.88
+            },
+            {
+              "speaker": "listener",
+              "text": "30歳以上が全員対象なんですね。検査して数値が低かったら、どうなるんですか?",
+              "duration": 8.016
+            },
+            {
+              "speaker": "explainer",
+              "text": "ホルモン補充療法を受けられます。ただし強制ではなく、本人が希望する場合だけです。",
+              "duration": 7.536
+            },
+            {
+              "speaker": "listener",
+              "text": "軍が率先してやるのは珍しい気がするんですが、なぜ今これが重要視されているんでしょう?",
+              "duration": 7.2
+            },
+            {
+              "speaker": "explainer",
+              "text": "FDAの専門家委員会を率いたモヒット・ケラ博士が、テストステロン値は今の健康と将来の健康を示す最重要指標だと言っています。",
+              "duration": 10.32
+            },
+            {
+              "speaker": "listener",
+              "text": "軍だけじゃなく、一般の人にも関係してくる話なんでしょうか?",
+              "duration": 5.256
+            },
+            {
+              "speaker": "explainer",
+              "text": "ケラ博士は30歳を超えた男性は全員検査すべきだとBBCに話していて、軍に限った話ではないという見方をしています。",
+              "duration": 9.696
+            },
+            {
+              "speaker": "listener",
+              "text": "これ、今後も動きを追ったほうがいい話ですか?",
+              "duration": 4.44
+            },
+            {
+              "speaker": "explainer",
+              "text": "ホルモン療法が軍の標準になるかどうか、一般医療にも広がるかどうか、注目しておく価値はあると思います。",
+              "duration": 8.568
+            }
+          ]
         }
       }
     },
@@ -263,6 +380,72 @@
               "duration": 7.000816
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "ウガンダがエボラの渡航制限を解除してほしいと訴えているそうですが、今どんな状況なんですか?",
+              "duration": 7.776
+            },
+            {
+              "speaker": "explainer",
+              "text": "最後の感染者が病院を退院して、政府が各国に制限解除を求め始めたところです。",
+              "duration": 7.128
+            },
+            {
+              "speaker": "listener",
+              "text": "それって、もうエボラは終わったということですか?",
+              "duration": 4.296
+            },
+            {
+              "speaker": "explainer",
+              "text": "まだ正式な終息宣言は出せていません。WHOのルールで、新たな感染者ゼロの状態で21日間を2回クリアしないといけないんです。",
+              "duration": 11.28
+            },
+            {
+              "speaker": "listener",
+              "text": "そうなんですね。それでも制限が続いているのは、実際どのくらいの国が対象なんですか?",
+              "duration": 8.112
+            },
+            {
+              "speaker": "explainer",
+              "text": "15か国が今もウガンダへの渡航制限を維持しています。",
+              "duration": 4.368
+            },
+            {
+              "speaker": "explainer",
+              "text": "政府は観光や貿易、ビジネスへの打撃が深刻だと訴えています。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "listener",
+              "text": "今回の流行って、過去のエボラと比べてどうだったんでしょう?",
+              "duration": 5.136
+            },
+            {
+              "speaker": "explainer",
+              "text": "死者2人、感染確認20人にとどまっていて、規模は小さかったです。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "explainer",
+              "text": "感染者の内訳はコンゴ国籍者が15人、医療従事者が4人、運転手が1人でした。",
+              "duration": 7.152
+            },
+            {
+              "speaker": "listener",
+              "text": "コンゴ国籍者が多いのは気になりますね。国境の向こうのリスクはまだ残っているということですか?",
+              "duration": 8.448
+            },
+            {
+              "speaker": "explainer",
+              "text": "そうなんです。ウガンダ国内は抑えられていますが、当局は国境を越えた感染の脅威はまだ続いていると見ています。",
+              "duration": 9.192
+            }
+          ]
         }
       }
     },
@@ -342,6 +525,72 @@
               "speaker": "explainer",
               "text": "Storage and memory prices are still at all-time highs, so good laptop deals are rare right now. That's why this discount is getting attention.",
               "duration": 8.594286
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "最近ノートPC、値段が高くて手が出ないんですけど、何かお得な選択肢ってあるんですか?",
+              "duration": 7.848
+            },
+            {
+              "speaker": "explainer",
+              "text": "HPの2in1ノートPCが今値引きされていて、ちょっと注目されています。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "listener",
+              "text": "2in1って画面を折り返してタブレットにもなるやつですよね、画質とかはどうなんですか?",
+              "duration": 6.912
+            },
+            {
+              "speaker": "explainer",
+              "text": "OLEDのタッチスクリーンが付いていて、解像度は1920×1200あります。",
+              "duration": 6.744
+            },
+            {
+              "speaker": "listener",
+              "text": "OLEDってこの価格帯では珍しいんですか?",
+              "duration": 4.128
+            },
+            {
+              "speaker": "explainer",
+              "text": "そうなんです、この値段でOLEDはなかなか見かけません。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "listener",
+              "text": "画面の比率が16:10って書いてあったんですが、それって普通と何が違うんですか?",
+              "duration": 7.2
+            },
+            {
+              "speaker": "explainer",
+              "text": "縦方向が少し広いので、一画面に表示できる情報が増えます。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "listener",
+              "text": "そもそもなんでPC全体の値段が高止まりしてるんですか?",
+              "duration": 5.064
+            },
+            {
+              "speaker": "explainer",
+              "text": "ストレージやメモリの価格がずっと高い水準のままで、なかなか下がっていないんです。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "listener",
+              "text": "じゃあこういう値引きって、今後も期待できるものなんですか?",
+              "duration": 5.016
+            },
+            {
+              "speaker": "explainer",
+              "text": "価格が高い時期だからこそ、こういう機会は珍しいと思って見ておいたほうがいいですね。",
+              "duration": 6.432
             }
           ]
         }
@@ -433,6 +682,72 @@
               "speaker": "explainer",
               "text": "Exactly. That's why this matters—public trust is already frayed, and these tools could make it harder to understand how policing decisions are being made.",
               "duration": 8.542041
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "警察がAIを積極的に取り入れているって聞いたんですが、具体的にどんな場面で使われているんですか?",
+              "duration": 8.136
+            },
+            {
+              "speaker": "explainer",
+              "text": "データ集めから判断まで、警察の仕事のかなりの部分をアルゴリズムに任せる動きが広がっています。",
+              "duration": 7.512
+            },
+            {
+              "speaker": "listener",
+              "text": "判断までアルゴリズムに？それって逮捕するかどうかも機械が決めるということですか?",
+              "duration": 7.56
+            },
+            {
+              "speaker": "explainer",
+              "text": "そこまで踏み込んだ話も出てきていて、今年のIACPという警察署長の技術会議でも自動化が大きな売り文句でした。",
+              "duration": 8.808
+            },
+            {
+              "speaker": "explainer",
+              "text": "しかもその自動化の対象が、法的手続きの核心にある作業なんです。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "listener",
+              "text": "法的手続きの核心というのが気になるんですが、それが自動化されると何が問題になるんですか?",
+              "duration": 7.728
+            },
+            {
+              "speaker": "explainer",
+              "text": "中身が見えないアルゴリズムが増えると、なぜその判断が下されたかを後から検証できなくなります。",
+              "duration": 7.152
+            },
+            {
+              "speaker": "explainer",
+              "text": "専門家や市民団体は、警察への信頼がすでに揺らいでいる今、透明性がさらに失われると警告しています。",
+              "duration": 8.664
+            },
+            {
+              "speaker": "listener",
+              "text": "これって警察側にとっては都合がいいビジネスでもあるんですか?",
+              "duration": 5.184
+            },
+            {
+              "speaker": "explainer",
+              "text": "警察の予算はAI企業にとって巨大な市場で、参入する企業が増え続けています。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "listener",
+              "text": "今後この流れは止まりそうにないですか?",
+              "duration": 3.696
+            },
+            {
+              "speaker": "explainer",
+              "text": "地域での人間的な警察の存在感が薄れるほど、自動化への依存は強まる傾向があるので、注目し続ける価値はあると思います。",
+              "duration": 10.08
             }
           ]
         }

@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "フェドロフ氏が率いた国防省はロシア占領下のクリミア半島への攻撃にも深く関与しており、同氏は先月、中距離ドローン攻撃によってクリミアをロシアから「切り離す」と宣言していた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There are protests happening in Ukraine right now?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in several cities. People are upset that President Zelensky removed the defence minister.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Who was removed, and why are people so concerned?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "His name is Fedorov. He's only 35 and was appointed just in January, but he's been credited with fighting corruption in the ministry and using data to improve performance at the front.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "Has Zelensky said why he made this decision?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. That silence is part of what's causing the upset among military commentators and parts of civil society.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "What else was Fedorov working on?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "His ministry played a significant role in Ukraine's recent attacks on Crimea. Last month, Fedorov said they'd work to cut it off from Russia entirely using mid-range drone strikes.",
+              "duration": 10.631837
+            },
+            {
+              "speaker": "listener",
+              "text": "Is parliament voting on a replacement?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "They were due to vote Thursday on Ihor Klymenko, who currently heads the interior ministry. This is all part of a broader government reshuffle.",
+              "duration": 8.176327
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "国防総省報道官ショーン・パーネルは、現役・予備役を問わず30歳以上の全軍人に対し、定期健康診断でのテストステロン欠乏症スクリーニングが義務付けられると述べた。"
           ],
           "whyItMatters": "昨年、FDAの専門家委員会でテストステロン検査の活用について議論を主導したモヒット・ケラ博士は、30歳を超えたすべての男性が検査を受けるべきだとBBCに語っており、その理由として、テストステロン値が現在と将来の健康状態を示す最重要指標であることを挙げた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the US military is going to start testing for testosterone levels?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Defence Secretary Pete Hegseth announced that military personnel aged 30 and older will be screened for testosterone deficiency as part of their annual health checks.",
+              "duration": 10.057143
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the reason behind this?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hegseth said it's to make sure troops have the right testosterone levels to operate at their absolute best. He posted about it in a video he captioned 'High-T Department.'",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "And what happens if someone's levels are low?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "They'll be offered voluntary hormone replacement therapy. The screening itself is mandatory, but the treatment would be optional.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there a medical reason this matters?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "A doctor who led an FDA panel on this topic last year told the BBC that testosterone is a top marker of a person's overall current and future health. He believes all men over 30 should get screened.",
+              "duration": 11.128163
+            },
+            {
+              "speaker": "listener",
+              "text": "So this applies to all active duty troops over 30?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, both active duty and reserve personnel aged 30 and older will undergo the mandatory screening during their regular health assessments.",
+              "duration": 7.78449
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,55 @@
           ],
           "whyItMatters": "ウガンダ国内での封じ込めは進んでいるが、当局は国境を越えた脅威がなお続いていると警戒を崩していない。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Uganda's asking countries to lift travel restrictions after Ebola. Does that mean the outbreak is over?",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite yet. They've discharged their last confirmed patient from hospital, which is a big step. But under World Health Organization guidelines, they need two full 21-day periods without a new case before it's officially declared over.",
+              "duration": 12.773878
+            },
+            {
+              "speaker": "listener",
+              "text": "So why push to lift restrictions now?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Fifteen countries still have partial or full travel restrictions in place. Uganda says those measures have really hurt tourism, trade, and business—even though their response has been relatively successful.",
+              "duration": 11.180408
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad was this outbreak compared to others we've heard about?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Much smaller. There were 20 confirmed infections and two deaths. Most of those infected were Congolese nationals, plus four health workers and one driver.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there still concern about the virus spreading?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Authorities say the threat remains across the border, so they're staying vigilant even as they work to restore normal travel and trade.",
+              "duration": 7.000816
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +296,55 @@
           ],
           "whyItMatters": "ストレージやメモリの価格が依然として高水準にある中、質の良いノートPCをお得に手に入れられる機会は貴重だ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about an HP laptop deal. What makes this one worth paying attention to?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a two-in-one convertible with an OLED touchscreen, which is pretty uncommon at this price point. Given that hardware prices are still high right now, it's being called a solid option.",
+              "duration": 9.848163
+            },
+            {
+              "speaker": "listener",
+              "text": "What's special about the screen exactly?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two things. It's OLED, so you get richer colors and contrast. And it has a sixteen to ten aspect ratio instead of the usual sixteen to nine, which means you can see more content vertically.",
+              "duration": 11.546122
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the resolution decent?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's nineteen twenty by twelve hundred, and it's a touchscreen. For a back-to-school laptop, that's pretty solid.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are they making a point about hardware prices?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Storage and memory prices are still at all-time highs, so good laptop deals are rare right now. That's why this discount is getting attention.",
+              "duration": 8.594286
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +376,65 @@
             "警察内部の意思決定そのものが、アルゴリズムへと委ねられつつある。"
           ],
           "whyItMatters": "公共安全の擁護団体や法律の専門家たちは、不透明なアルゴリズムの導入が、すでに揺らいでいる警察への信頼をさらに損なうと警鐘を鳴らしている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about AI being sold to police departments. What's going on there?",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a big push right now to sell artificial intelligence tools to law enforcement. At a recent police technology conference, companies were showcasing AI that can automate routine parts of police work.",
+              "duration": 11.363265
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of routine work are we talking about?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Things like data gathering and even some decision-making processes. These happen to be critical steps in the legal process.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "Decision-making by algorithms? That sounds like a big shift.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The industry is moving toward more automation, even as there's been concern about law enforcement becoming detached from actual human presence in neighborhoods.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "Are people worried about this?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Public safety groups and legal experts warn that these algorithms often work like black boxes—you can't see how they make decisions. They say this could erode transparency and accountability.",
+              "duration": 11.833469
+            },
+            {
+              "speaker": "listener",
+              "text": "At a time when trust in police is already an issue.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. That's why this matters—public trust is already frayed, and these tools could make it harder to understand how policing decisions are being made.",
+              "duration": 8.542041
+            }
+          ]
         }
       }
     }

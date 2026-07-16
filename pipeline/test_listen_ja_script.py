@@ -352,6 +352,112 @@ _tp_bad[1] = {"speaker": "explainer", "text": "2社が和解の申請を取り�
 check("gate unchanged: ungrounded 「2社」 is still rejected",
       any("ungrounded number '2'" in i for i in lg.ja_quality_issues(_tp_bad, TWOPARTY_SIGNAL)))
 
+# ================================================================ JA v4: SOLO narration (PRODUCTION)
+# A/B decision 2026-07-16: production JA is a single-host Nanami narration (案内 style,
+# rate +8%). EN stays two-person. The two-person JA gate/prompt above are LEGACY-only.
+GOOD_SOLO_TEXTS = [
+    "Appleが火曜日に訴訟を起こしました。",
+    "相手はOpenAIで、対象には30人の従業員が含まれます。",
+    "争点は企業秘密の持ち出しです。",
+    "裁判はカリフォルニアで争われます。",
+    "採用のやり方が変わる可能性があります。",
+    "続報が入り次第、また取り上げます。",
+]
+GOOD_SOLO = [{"speaker": "narrator", "text": t} for t in GOOD_SOLO_TEXTS]
+
+# solo prompt carries the format rules
+check("solo prompt: single host, no fake Q&A",
+      "一人語り" in lg.SCRIPT_SYSTEM_JA_SOLO and "役割は一人だけ" in lg.SCRIPT_SYSTEM_JA_SOLO
+      and "偽の質問" in lg.SCRIPT_SYSTEM_JA_SOLO)
+check("solo prompt: 6-10 sentences, 35-50 target, 60 hard cap, one idea per sentence",
+      all(w in lg.SCRIPT_SYSTEM_JA_SOLO for w in
+          ("6〜10文", "35〜50文字", "絶対に60文字", "1文に入れる内容は1つだけ", "必ず2文に分ける")))
+check("solo prompt: paraphrase from meaning, spoken not written-news Japanese",
+      all(w in lg.SCRIPT_SYSTEM_JA_SOLO for w in
+          ("文の構造ごと写すのも禁止", "意味だけを頭に置いて", "話し言葉")))
+check("solo prompt: counter rule (両社/双方) preserved",
+      all(w in lg.SCRIPT_SYSTEM_JA_SOLO for w in ("両社", "双方", "「2社」")))
+check("llm_dialogue ja now uses the SOLO system prompt",
+      "SCRIPT_SYSTEM_JA_SOLO if lang" in open(lg.__file__, encoding="utf-8").read())
+
+# solo gate — clean narration passes
+check("valid solo narration passes", lg.ja_solo_quality_issues(GOOD_SOLO, SIGNAL) == [])
+
+# shape: only 'narrator' is allowed (no role switching)
+_ns = [dict(l) for l in GOOD_SOLO]
+_ns[2] = {"speaker": "explainer", "text": _ns[2]["text"]}
+check("solo gate rejects any non-narrator speaker",
+      any("allows only 'narrator'" in i for i in lg.ja_solo_quality_issues(_ns, SIGNAL)))
+
+# shape: fake Q&A rejected (2 questions), one rhetorical question tolerated
+_q2 = [dict(l) for l in GOOD_SOLO]
+_q2[2] = {"speaker": "narrator", "text": "争点は何でしょうか?"}
+_q2[3] = {"speaker": "narrator", "text": "今後どうなるのでしょうか?"}
+check("solo gate rejects fake Q&A (2 questions)",
+      any("fake a Q&A" in i for i in lg.ja_solo_quality_issues(_q2, SIGNAL)))
+_q1 = [dict(l) for l in GOOD_SOLO]
+_q1[4] = {"speaker": "narrator", "text": "採用はどう変わるのでしょうか。答えはまだ出ていません。"}
+check("solo gate tolerates a single rhetorical question",
+      not any("fake a Q&A" in i for i in lg.ja_solo_quality_issues(_q1, SIGNAL)))
+
+# shape: sentence-count bounds
+check("solo gate rejects <6 sentences",
+      any("needs 6–10" in i for i in lg.ja_solo_quality_issues(GOOD_SOLO[:4], SIGNAL)))
+check("solo gate rejects >10 sentences",
+      any("needs 6–10" in i for i in lg.ja_solo_quality_issues(GOOD_SOLO * 2, SIGNAL)))
+
+# content gates: same fail-closed checks as the dialogue gate
+_sb = [dict(l) for l in GOOD_SOLO]; _sb[1] = {"speaker": "narrator", "text": "相手はOpenAIで、対象には45人の従業員が含まれます。"}
+check("solo gate rejects ungrounded number", any("ungrounded number '45'" in i for i in lg.ja_solo_quality_issues(_sb, SIGNAL)))
+_sn = [dict(l) for l in GOOD_SOLO]; _sn[2] = {"speaker": "narrator", "text": "Anthropicも関係しています。"}
+check("solo gate rejects ungrounded name", any("ungrounded name" in i for i in lg.ja_solo_quality_issues(_sn, SIGNAL)))
+_sl = [dict(l) for l in GOOD_SOLO]; _sl[3] = {"speaker": "narrator", "text": "この裁判は" + "とても" * 20 + "重要です。"}
+check("solo gate rejects >60-char sentence", any("too long" in i for i in lg.ja_solo_quality_issues(_sl, SIGNAL)))
+_se = [dict(l) for l in GOOD_SOLO]; _se[2] = {"speaker": "narrator", "text": "The case is about trade secrets."}
+check("solo gate rejects English passthrough", any("no Japanese characters" in i for i in lg.ja_solo_quality_issues(_se, SIGNAL)))
+_sf = [dict(l) for l in GOOD_SOLO]; _sf[1] = {"speaker": "narrator", "text": "Appleは訴訟についての発表をしました。"}
+check("solo gate rejects literal-translation phrase", any("forbidden phrase" in i for i in lg.ja_solo_quality_issues(_sf, SIGNAL)))
+
+# deterministic length repair (split at natural 、 boundaries)
+_long77 = ("ウクライナの複数の都市では政府の決定に反対する抗議活動がきのうの夜からずっと続いて"
+           "いますが、政府側は決定を撤回する考えを今のところまったく示していません。")
+_fr = lg._split_long_sentence(_long77)
+check("77-char sentence splits into <=60-char clean sentences",
+      len(_fr) == 2 and all(len(f) <= 60 for f in _fr)
+      and _fr[0].endswith("います。") and not _fr[0].endswith("が。"))
+check("short sentence passes through unsplit", lg._split_long_sentence("短い文です。") == ["短い文です。"])
+_nocomma = "あ" * 70 + "。"
+check("over-limit sentence with no 、 is left for the gate to reject",
+      lg._split_long_sentence(_nocomma) == [_nocomma])
+
+# parse_solo_lines: strings → narrator lines, split applied, 6–10 enforced
+_pl = lg.parse_solo_lines(json.dumps(GOOD_SOLO_TEXTS, ensure_ascii=False))
+check("parse_solo_lines yields narrator lines with exact caption text",
+      [l["speaker"] for l in _pl] == ["narrator"] * 6
+      and [l["text"] for l in _pl] == GOOD_SOLO_TEXTS)
+_pl2 = lg.parse_solo_lines(json.dumps(GOOD_SOLO_TEXTS[:5] + [_long77], ensure_ascii=False))
+check("parse_solo_lines auto-splits over-limit sentences",
+      len(_pl2) == 7 and all(len(l["text"]) <= 60 for l in _pl2))
+try:
+    lg.parse_solo_lines(json.dumps(GOOD_SOLO_TEXTS[:3], ensure_ascii=False))
+    check("parse_solo_lines rejects <6 sentences", False)
+except ValueError:
+    check("parse_solo_lines rejects <6 sentences", True)
+try:
+    lg.parse_solo_lines(json.dumps([{"speaker": "listener", "text": "x"}] * 8))
+    check("parse_solo_lines rejects non-string items (dialogue shape)", False)
+except (ValueError, TypeError):
+    check("parse_solo_lines rejects non-string items (dialogue shape)", True)
+
+# EN parser still refuses narrator — the EN path CANNOT become solo
+try:
+    lg.parse_dialogue(json.dumps([{"speaker": "narrator", "text": "x"}] * 8))
+    check("EN parse_dialogue still rejects 'narrator' (EN stays two-person)", False)
+except ValueError:
+    check("EN parse_dialogue still rejects 'narrator' (EN stays two-person)", True)
+check("EN prompt untouched (two-person dialogue wording intact)",
+      "two-person Listen dialogue" in lg.SCRIPT_SYSTEM and "'listener'" in lg.SCRIPT_SYSTEM)
+
 # ---------------------------------------------------------------- Azure JA synthesis backend
 check("confirmed voice constants", lg.AZURE_VOICE_JA_LISTENER == "ja-JP-NanamiNeural"
       and lg.AZURE_VOICE_JA_EXPLAINER == "ja-JP-KeitaNeural")
@@ -393,8 +499,14 @@ lg.synth_line_azure("質問です", lg.AZURE_VOICE_JA_LISTENER, {}, "k", _urlope
 lg.synth_line_azure("答えです", lg.AZURE_VOICE_JA_EXPLAINER, {}, "k", _urlopen=_cap_urlopen)
 check("Listener request SSML includes rate=\"+8%\"",
       "ja-JP-NanamiNeural" in _bodies[0] and "<prosody rate='+8%'>質問です</prosody>" in _bodies[0])
+check("Narrator request SSML includes the 案内 style (customerservice)",
+      "<mstts:express-as style='customerservice'>" in _bodies[0]
+      and "xmlns:mstts" in _bodies[0] and lg.AZURE_TTS_STYLE_JA_NARRATOR == "customerservice")
 check("Explainer request SSML has default rate (no prosody)",
       "ja-JP-KeitaNeural" in _bodies[1] and "<prosody" not in _bodies[1] and "答えです" in _bodies[1])
+check("non-narrator voice gets NO style", "express-as" not in _bodies[1])
+check("SSML pitch is never set (v6 keeps Azure default pitch)",
+      "pitch" not in _bodies[0] and "pitch" not in _bodies[1])
 
 # the +8% follows the CONFIGURED listener voice (LISTENER_VOICE_JA override)
 _bodies.clear()
@@ -454,8 +566,8 @@ EN_LINES = [{"speaker": "listener", "text": "What happened with Apple and OpenAI
 def llm_stub_en(sig, *, api_key, model=None):            # legacy signature — no lang kwarg
     return [dict(l) for l in EN_LINES]
 
-def llm_stub_ja(sig, *, api_key, model=None, lang="en"):
-    return [dict(l) for l in GOOD_JA]
+def llm_stub_ja(sig, *, api_key, model=None, lang="en"):   # production JA = SOLO narration
+    return [dict(l) for l in GOOD_SOLO]
 
 def synth_stub(text, voice, settings, key):
     return b"x"
@@ -506,8 +618,8 @@ check("all 5 signals carry ja", all("ja" in m2["editions"][DATE][str(n)] for n i
 # JA gate wired into generate(): a bad JA script must abort before any upload
 uploaded.clear()
 def llm_stub_ja_bad(sig, *, api_key, model=None, lang="en"):
-    bad = [dict(l) for l in GOOD_JA]
-    bad[1] = {"speaker": "explainer", "text": "はい。対象は45人の従業員です。"}
+    bad = [dict(l) for l in GOOD_SOLO]
+    bad[1] = {"speaker": "narrator", "text": "対象は45人の従業員です。"}
     return bad
 try:
     lg.generate(DATE, el_key="k", an_key="k", listener_voice="LJ", explainer_voice="EJ",
@@ -522,28 +634,33 @@ m3 = json.load(open(manifest_path))
 check("manifest unchanged after JA gate failure",
       json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
 
-# ---------------------------------------------------------------- speaker → Azure voice mapping
-# Prove that in a JA run every listener line synthesizes with Nanami and every explainer
-# line with Keita — no third voice, no crossover.
-voice_by_speaker = {}
+# ---------------------------------------------------------------- JA solo → single-voice proof
+# Prove that a production JA run synthesizes EVERY line with Nanami and nothing else —
+# one narrator, no Keita, no second voice. (EN two-voice behavior is proven separately:
+# the EN e2e above and parse_dialogue's rejection of 'narrator'.)
+voices_used, texts_synth = set(), []
 def synth_capture(text, voice, settings, key):
-    for l in GOOD_JA:
-        if l["text"] == text:
-            voice_by_speaker.setdefault(l["speaker"], set()).add(voice)
+    voices_used.add(voice)
+    texts_synth.append(text)
     return b"x"
 
-lg.generate(DATE, el_key="azure-key", an_key="k",
-            listener_voice=lg.AZURE_VOICE_JA_LISTENER,
-            explainer_voice=lg.AZURE_VOICE_JA_EXPLAINER,
-            lang="ja", llm_fn=llm_stub_ja, synth_fn=synth_capture, dur_fn=dur_stub,
-            final_dur_fn=dur_stub,
-            upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
-check("listener lines all synthesize with Nanami",
-      voice_by_speaker.get("listener") == {"ja-JP-NanamiNeural"})
-check("explainer lines all synthesize with Keita",
-      voice_by_speaker.get("explainer") == {"ja-JP-KeitaNeural"})
-check("exactly two voices used (no third voice)",
-      len(set().union(*voice_by_speaker.values())) == 2)
+entry_solo = lg.generate(DATE, el_key="azure-key", an_key="k",
+                         listener_voice=lg.AZURE_VOICE_JA_LISTENER,
+                         explainer_voice=lg.AZURE_VOICE_JA_EXPLAINER,
+                         lang="ja", llm_fn=llm_stub_ja, synth_fn=synth_capture, dur_fn=dur_stub,
+                         final_dur_fn=dur_stub,
+                         upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
+check("JA solo: every line synthesizes with Nanami and ONLY Nanami",
+      voices_used == {"ja-JP-NanamiNeural"})
+check("JA solo: all narration sentences synthesized in order",
+      texts_synth[:len(GOOD_SOLO_TEXTS)] == GOOD_SOLO_TEXTS)
+check("JA solo: captions are byte-identical to the narration text",
+      [c["text"] for c in entry_solo["1"]["ja"]["captions"]] == GOOD_SOLO_TEXTS
+      and all(c["speaker"] == "narrator" for c in entry_solo["1"]["ja"]["captions"]))
+check("JA solo: manifest schema unchanged (format/key/gap/captions)",
+      entry_solo["1"]["format"] == "dialogue"
+      and entry_solo["1"]["ja"]["key"].endswith("-dialogue-ja.mp3")
+      and entry_solo["1"]["ja"]["gap"] == 0.0)
 uploaded.clear()   # restore the post-gate-failure state the next section asserts on
 
 # debug-only failure artifact: a rejected JA dialogue is snapshotted to scratch/ (gitignored)
@@ -553,7 +670,7 @@ if os.path.exists(_art):
     _a = json.load(open(_art, encoding="utf-8"))
     check("artifact records signal id, issues, and all lines with speakers",
           _a.get("signal") == 1 and _a.get("issues") and
-          len(_a.get("lines", [])) == len(GOOD_JA) and
+          len(_a.get("lines", [])) == len(GOOD_SOLO) and
           all("speaker" in ln and "text" in ln and "overlap_coverage" in ln for ln in _a["lines"]))
 check("debug artifact did not change the abort/upload/manifest behavior",
       uploaded == [] and json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
@@ -681,14 +798,14 @@ def synth_count(text, voice, settings, key):
 def llm_fail5(sig, *, api_key, model=None, lang="en"):
     llm_calls.append(sig["number"])
     if sig["number"] == 5:
-        bad = [dict(l) for l in GOOD_JA]
-        bad[1] = {"speaker": "explainer", "text": "はい。対象は45人の従業員です。"}
+        bad = [dict(l) for l in GOOD_SOLO]
+        bad[1] = {"speaker": "narrator", "text": "対象は45人の従業員です。"}
         return bad
-    return [dict(l) for l in GOOD_JA]
+    return [dict(l) for l in GOOD_SOLO]
 
 def llm_good(sig, *, api_key, model=None, lang="en"):
     llm_calls.append(sig["number"])
-    return [dict(l) for l in GOOD_JA]
+    return [dict(l) for l in GOOD_SOLO]
 
 def _run(llm):
     return lg.generate(RDATE, el_key="k", an_key="k",
@@ -716,18 +833,18 @@ check("resume run 1: checkpoints written for passed 1-4 only",
 llm_calls.clear(); synth_calls.clear(); uploaded.clear()
 entry_r = _run(llm_good)
 check("resume run 2: LLM called ONLY for the failed signal 5", llm_calls == [5])
-check("resume run 2: TTS synthesized only signal 5's lines", len(synth_calls) == len(GOOD_JA))
+check("resume run 2: TTS synthesized only signal 5's lines", len(synth_calls) == len(GOOD_SOLO))
 check("resume run 2: still uploads all five signals",
       len(uploaded) == 5 and all(k.endswith("-ja.mp3") for k in uploaded))
 m_r = json.load(open(manifest_path))
 check("resume run 2: manifest carries ja for all five",
       all("ja" in m_r["editions"][RDATE][str(n)] for n in range(1, 6)))
 check("resume run 2: reused captions match the checkpointed script",
-      [c["text"] for c in entry_r["1"]["ja"]["captions"]] == [l["text"] for l in GOOD_JA])
+      [c["text"] for c in entry_r["1"]["ja"]["captions"]] == [l["text"] for l in GOOD_SOLO])
 
 # tampered checkpoint (ungrounded number injected) → that signal regenerates, run still succeeds
 _t = json.load(open(_ck(3), encoding="utf-8"))
-_t["lines"][1]["text"] = "はい。対象は45人の従業員です。"
+_t["lines"][1]["text"] = "対象は45人の従業員です。"
 json.dump(_t, open(_ck(3), "w", encoding="utf-8"), ensure_ascii=False)
 llm_calls.clear(); uploaded.clear()
 _run(llm_good)
@@ -745,6 +862,19 @@ open(_ck(2), "w").write("{not json")
 llm_calls.clear()
 _run(llm_good)
 check("corrupt checkpoint json → only that signal regenerates", llm_calls == [2])
+
+# LEGACY two-person checkpoint (pre-solo scratch state) → rejected by the solo gate at
+# load time and regenerated as solo — the format migration is self-healing, no manual cleanup
+_legacy = json.load(open(_ck(1), encoding="utf-8"))
+_legacy["lines"] = [{"speaker": l["speaker"], "text": l["text"]} for l in GOOD_JA]
+_legacy["durs"] = [1.0] * len(GOOD_JA)
+json.dump(_legacy, open(_ck(1), "w", encoding="utf-8"), ensure_ascii=False)
+llm_calls.clear(); uploaded.clear()
+entry_mig = _run(llm_good)
+check("legacy TWO-PERSON checkpoint is rejected and regenerated as solo",
+      llm_calls == [1] and len(uploaded) == 5)
+check("regenerated signal 1 is narrator-only solo",
+      all(c["speaker"] == "narrator" for c in entry_mig["1"]["ja"]["captions"]))
 
 # kill switch: LISTEN_JA_RESUME=0 forces full regeneration
 os.environ["LISTEN_JA_RESUME"] = "0"

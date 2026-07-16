@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,87 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Bangkok bar fire: death toll reaches 30 as police say negligence is ‘primary theory’",
-      "summary": "The Bangkok pub that became the scene of the city’s deadliest blaze in 17 years has said it will cooperate with an investigation into alleged negligence, as the death toll rose to 30.",
+      "source": "BBC News (World)",
+      "headline": "Protests in Ukraine's cities against Zelensky's removal of defence minister",
+      "summary": "Zelensky has not yet explained his decision, which is causing significant upset among commentators and the military as well as parts of civil society.",
       "keyTakeaways": [
-        "The local district office said on Tuesday that three more people had died after the devastating fire that broke out in the early hours of Monday.",
-        "An initial assessment by disaster officials found an electrical short ‌circuit in an air conditioner located in the ‌ceiling had caused the fire.",
-        "The national police chief, Kitrat Phanphet, told reporters on Monday: “At this time, police have established negligence as the primary theory guiding their investigation.”"
+        "Fedorov, 35, was appointed only in January but has been credited with energising the ministry, heading a drive against corruption and using data to analyse and try to improve performance on the front line.",
+        "MPs were due to vote on Thursday on the proposed replacement as defence minister, Ihor Klymenko, who currently heads the interior ministry.",
+        "As part of Zelensky's reshuffle, parliament approved the appointment of state oil and gas boss Serhiy Koretsky as prime minister, after Yuliia Svyrydenko resigned earlier this week."
       ],
-      "whyItMatters": "Access to another exit near the kitchen might also have been narrowed by shelving units and lockers, according to the police chief who visited the scene on Monday.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/14/bangkok-bar-pub-fire-death-toll-thailand",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "His ministry also played a significant part in Ukraine's recent attacks on the Moscow-occupied Crimean peninsula, which last month Fedorov vowed to \"cut off\" from Russia entirely, with the use of mid-range drone strikes.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "バンコクのバー火災、死者30人に――警察は過失を主な原因と見る",
-          "summary": "バンコクで17年ぶりとなる大規模な火災が起きたバーは、過失をめぐる調査に協力する意向を示した。死者数は30人に達している。",
+          "headline": "ゼレンスキー大統領の国防相更迭に、各地で抗議の声",
+          "summary": "ゼレンスキー大統領が国防相の交代を決めたが、その理由はいまだ説明されていない。軍や論評家、市民社会の一部から強い反発が上がっている。",
           "keyTakeaways": [
-            "火曜日、地区当局は月曜未明の火災後にさらに3人が死亡したと発表した。",
-            "当局の初期調査では、天井に設置されたエアコンの電気系統のショートが出火原因とされている。",
-            "警察長官のキットラット・パンペット氏は月曜日、「現時点では、過失が捜査の主な方向性だ」と述べた。"
+            "フェドロフ国防相（35歳）は今年1月に就任したばかりだが、省内の刷新や汚職対策、データを活用した前線の戦況分析などで高い評価を得ていた。",
+            "後任候補として内務大臣イホル・クリメンコ氏が挙げられており、木曜日に議会で承認投票が行われる予定だった。",
+            "今回の内閣改造では、スヴィリデンコ前首相の辞任を受け、国営石油ガス会社トップのセルヒー・コレツキー氏が首相に承認された。"
           ],
-          "whyItMatters": "警察長官が現場を視察したところ、厨房付近の別の非常口も棚やロッカーによって狭められていた可能性があるという。"
+          "whyItMatters": "フェドロフ氏が率いた国防省はロシア占領下のクリミア半島への攻撃にも深く関与しており、同氏は先月、中距離ドローン攻撃によってクリミアをロシアから「切り離す」と宣言していた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw there was a terrible fire in Bangkok. What happened?",
-              "duration": 3.343673
+              "text": "There are protests happening in Ukraine right now?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "A fire broke out early Monday morning at a pub in Bangkok. The death toll has now reached 30, making it the city's deadliest blaze in 17 years.",
-              "duration": 8.124082
+              "text": "Yes, in several cities. People are upset that President Zelensky removed the defence minister.",
+              "duration": 5.146122
             },
             {
               "speaker": "listener",
-              "text": "Do they know what caused it?",
-              "duration": 1.48898
+              "text": "Who was removed, and why are people so concerned?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Disaster officials say their initial assessment points to an electrical short circuit in an air conditioner located in the ceiling.",
-              "duration": 6.452245
+              "text": "His name is Fedorov. He's only 35 and was appointed just in January, but he's been credited with fighting corruption in the ministry and using data to improve performance at the front.",
+              "duration": 9.377959
             },
             {
               "speaker": "listener",
-              "text": "And what are police saying about it?",
-              "duration": 1.985306
+              "text": "Has Zelensky said why he made this decision?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "The national police chief said negligence is the primary theory guiding their investigation right now.",
-              "duration": 5.041633
+              "text": "Not yet. That silence is part of what's causing the upset among military commentators and parts of civil society.",
+              "duration": 6.948571
             },
             {
               "speaker": "listener",
-              "text": "Was there something that made it harder for people to escape?",
-              "duration": 3.160816
+              "text": "What else was Fedorov working on?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Possibly. The police chief who visited the scene said access to an exit near the kitchen might have been narrowed by shelving units and lockers.",
-              "duration": 8.124082
+              "text": "His ministry played a significant role in Ukraine's recent attacks on Crimea. Last month, Fedorov said they'd work to cut it off from Russia entirely using mid-range drone strikes.",
+              "duration": 10.631837
             },
             {
               "speaker": "listener",
-              "text": "What's happening with the pub now?",
-              "duration": 1.515102
+              "text": "Is parliament voting on a replacement?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "The pub has said it will cooperate with the investigation into alleged negligence.",
-              "duration": 4.127347
+              "text": "They were due to vote Thursday on Ihor Klymenko, who currently heads the interior ministry. This is all part of a broader government reshuffle.",
+              "duration": 8.176327
             }
           ]
         }
@@ -99,77 +99,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Singapore court orders Bloomberg to pay ministers $356,000 in defamation case",
-      "summary": "Bloomberg News and one of its reporters have been ordered to pay S$460,000 (US$355,734) in damages after an article it published was found to have defamed two Singapore government ministers, the city-state’s high court said in a judgment released on Tuesday.",
+      "source": "BBC News (World)",
+      "headline": "US military to start screening for testosterone deficiency, Hegseth says",
+      "summary": "US Defence Secretary Pete Hegseth has announced that military personnel aged 30 and older will undergo testing for testosterone deficiency as part of annual health screenings.",
       "keyTakeaways": [
-        "Bloomberg’s editor-in-chief, John Micklethwait, said he was disappointed by the ruling and that the company continued to stand by its reporter and the newsroom.",
-        "He ‌did not say whether Bloomberg planned an ‌appeal.",
-        "The law firm that represented the ministers did not immediately respond to a request for comment."
+        "In a video posted on X, captioned \"High-T Department\", Hegseth said he was authorising the screening programme for troops to ensure \"you have the right testosterone levels to operate at your absolute best\".",
+        "Troops with low testosterone levels will be offered voluntary hormone replacement therapy.",
+        "Chief Pentagon Spokesman Sean Parnell said: \"All Active Duty and Reserve Component personnel aged 30 and older will undergo mandatory screening for testosterone deficiency during their Periodic Health Assessment.\""
       ],
-      "whyItMatters": "A Bloomberg editor said in an affidavit that the company had lifted ⁠the paywall so that readers could see the correction notice.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/15/bloomberg-singapore-defamation-case",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "Dr Mohit Khera, who led a US Food and Drug Administration (FDA) expert panel last year on screening and testosterone utilisation in the military, told the BBC that all men over 30 should get screened because it is the top marker of a person's overall current and future health.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cn0nlx18rz0o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ブルームバーグに約3億円の賠償命令――シンガポール名誉毀損訴訟",
-          "summary": "シンガポール高等裁判所は、ブルームバーグ・ニュースと同社記者に対し、46万シンガポールドル（約35万6000米ドル）の損害賠償を命じた。同社が掲載した記事が、シンガポール政府の閣僚2人の名誉を毀損したと認定された。",
+          "headline": "米軍、30歳以上の兵士にテストステロン検査を義務化へ",
+          "summary": "米国防長官ピート・ヘグセスは、30歳以上の軍人を対象に、テストステロン欠乏症の検査を年次健康診断に組み込むと発表した。",
           "keyTakeaways": [
-            "ブルームバーグの編集長ジョン・ミクルスウェイトは判決への失望を表明し、記者と編集部を引き続き支持すると述べた",
-            "控訴の有無については言及しなかった",
-            "閣僚側の代理人法律事務所からのコメントは得られていない"
+            "ヘグセス長官はX上に「High-T Department」と題した動画を投稿し、兵士が「最高のパフォーマンスを発揮できるよう、適切なテストステロン値を確保するため」このプログラムを承認したと説明した。",
+            "検査で低値が確認された兵士には、任意でホルモン補充療法が提供される。",
+            "国防総省報道官ショーン・パーネルは、現役・予備役を問わず30歳以上の全軍人に対し、定期健康診断でのテストステロン欠乏症スクリーニングが義務付けられると述べた。"
           ],
-          "whyItMatters": "ブルームバーグの編集者は宣誓供述書の中で、読者が訂正通知を確認できるようペイウォールを解除したと述べている。"
+          "whyItMatters": "昨年、FDAの専門家委員会でテストステロン検査の活用について議論を主導したモヒット・ケラ博士は、30歳を超えたすべての男性が検査を受けるべきだとBBCに語っており、その理由として、テストステロン値が現在と将来の健康状態を示す最重要指標であることを挙げた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Singapore's court ordered Bloomberg to pay a pretty large sum to government ministers. What happened?",
-              "duration": 5.616327
+              "text": "So the US military is going to start testing for testosterone levels?",
+              "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "Bloomberg News and one of its reporters were found to have defamed two Singapore government ministers in an article. The high court ordered them to pay about 356,000 dollars in damages.",
-              "duration": 10.893061
+              "text": "Yes. Defence Secretary Pete Hegseth announced that military personnel aged 30 and older will be screened for testosterone deficiency as part of their annual health checks.",
+              "duration": 10.057143
             },
             {
               "speaker": "listener",
-              "text": "That's a significant amount. How did Bloomberg respond?",
-              "duration": 3.369796
+              "text": "What's the reason behind this?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Their editor-in-chief said he was disappointed by the ruling, but that the company stands by its reporter and newsroom. He didn't say whether they plan to appeal.",
-              "duration": 8.306939
+              "text": "Hegseth said it's to make sure troops have the right testosterone levels to operate at their absolute best. He posted about it in a video he captioned 'High-T Department.'",
+              "duration": 9.221224
             },
             {
               "speaker": "listener",
-              "text": "Did Bloomberg do anything after publishing the article?",
-              "duration": 2.638367
+              "text": "And what happens if someone's levels are low?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "According to an affidavit, a Bloomberg editor said the company lifted the paywall on the article so readers could see a correction notice.",
-              "duration": 6.713469
+              "text": "They'll be offered voluntary hormone replacement therapy. The screening itself is mandatory, but the treatment would be optional.",
+              "duration": 6.50449
             },
             {
               "speaker": "listener",
-              "text": "And what about the ministers' side?",
-              "duration": 1.802449
+              "text": "Is there a medical reason this matters?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "The law firm representing the ministers didn't immediately respond to requests for comment about the ruling.",
-              "duration": 4.91102
+              "text": "A doctor who led an FDA panel on this topic last year told the BBC that testosterone is a top marker of a person's overall current and future health. He believes all men over 30 should get screened.",
+              "duration": 11.128163
+            },
+            {
+              "speaker": "listener",
+              "text": "So this applies to all active duty troops over 30?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, both active duty and reserve personnel aged 30 and older will undergo the mandatory screening during their regular health assessments.",
+              "duration": 7.78449
             }
           ]
         }
@@ -180,87 +190,77 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "U.S. and Iran standoff over the Strait of Hormuz intensifies",
-      "summary": "Iran threatened to block all oil exporting routes in the region on Wednesday in response to the U.S. maritime blockade of Iranian ports in the Strait of Hormuz.",
+      "source": "The Guardian (World)",
+      "headline": "Uganda calls for travel restrictions to be lifted after last Ebola patient discharged",
+      "summary": "Uganda has started lobbying countries to lift Ebola-related travel restrictions after discharging its last confirmed Ebola patient from hospital.",
       "keyTakeaways": [
-        "This latest round followed back and forth strikes overnight as the U.S. military reimposed the blockade of Iranian vessels in the strait.",
-        "Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain and Jordan.",
-        "Brad Cooper, who commands the U.S. Central Command, accused Iran of attacking seven commercial ships and launching missiles against Gulf countries."
+        "Fifteen countries continue to maintain either partial or full travel restrictions on Uganda after the outbreak, measures the government said have crippled tourism, trade and business, despite the country’s relatively successful response.",
+        "Baryomunsi said the country was not yet Ebola-free – under WHO guidelines, countries must complete two consecutive 21-day incubation periods without recording a new case before an outbreak can officially be declared over.",
+        "Uganda’s outbreak has been markedly different from previous Ebola emergencies in the region, with only two deaths and 20 confirmed infections including 15 Congolese nationals, four health workers and one driver."
       ],
-      "whyItMatters": "That ceasefire was aimed at ending the civil war between the Iran-backed Houthi rebels and a Saudi-led coalition supporting the Yemeni government.",
-      "originalURL": "https://www.npr.org/2026/07/15/nx-s1-5894582/us-iran-updates",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "Despite Uganda’s progress, authorities said the threat remains across the border.",
+      "originalURL": "https://www.theguardian.com/global-development/2026/jul/16/uganda-travel-restrictions-last-ebola-patient-discharged",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ホルムズ海峡をめぐる米・イランの緊張が高まる",
-          "summary": "米軍がホルムズ海峡でイランの船舶を封鎖したことを受け、イランは水曜日、域内の石油輸出ルートすべてを遮断すると警告した。",
+          "headline": "最後の患者が退院――ウガンダ、渡航制限の解除を各国に求める",
+          "summary": "ウガンダ政府は、最後のエボラ出血熱感染者が退院したことを受け、各国に対して渡航制限の解除を働きかけ始めた。",
           "keyTakeaways": [
-            "前夜の相互攻撃に続き、米軍が海峡での封鎖を再開したことが今回の事態の発端となった。",
-            "イランはクウェート、バーレーン、ヨルダンの米軍基地を標的に報復攻撃を実施した。",
-            "米中央軍のブラッド・クーパー司令官は、イランが商船七隻を攻撃し、湾岸諸国に向けてミサイルを発射したと非難した。"
+            "15か国が現在もウガンダへの渡航制限を維持しており、観光・貿易・ビジネスへの打撃は深刻だと政府は訴える。",
+            "WHOの基準では、新たな感染者が確認されない状態で21日間の潜伏期間を2回連続で完了するまで、終息宣言は出せない。ウガンダはまだその段階に達していない。",
+            "今回の感染拡大は過去の事例と様相が異なり、死者2名・感染確認20名にとどまった。感染者にはコンゴ国籍者15名、医療従事者4名、運転手1名が含まれる。"
           ],
-          "whyItMatters": "この停戦は、イランが支援するフーシ派とイエメン政府を支持するサウジアラビア主導の連合軍との内戦終結を目的としたものだった。"
+          "whyItMatters": "ウガンダ国内での封じ込めは進んでいるが、当局は国境を越えた脅威がなお続いていると警戒を崩していない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing news about the U.S. and Iran in the Strait of Hormuz. What's happening there?",
-              "duration": 4.728163
+              "text": "I saw Uganda's asking countries to lift travel restrictions after Ebola. Does that mean the outbreak is over?",
+              "duration": 6.687347
             },
             {
               "speaker": "explainer",
-              "text": "There's a serious standoff. The U.S. has reimposed a maritime blockade of Iranian ports in the strait, and Iran is now threatening to block all oil exporting routes in the region.",
-              "duration": 10.34449
+              "text": "Not quite yet. They've discharged their last confirmed patient from hospital, which is a big step. But under World Health Organization guidelines, they need two full 21-day periods without a new case before it's officially declared over.",
+              "duration": 12.773878
             },
             {
               "speaker": "listener",
-              "text": "That sounds tense. Has there been any actual fighting?",
-              "duration": 3.004082
+              "text": "So why push to lift restrictions now?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Yes. There were strikes overnight as the blockade went into effect. Iran responded with retaliatory strikes targeting U.S. military bases in Kuwait, Bahrain, and Jordan.",
-              "duration": 10.03102
+              "text": "Fifteen countries still have partial or full travel restrictions in place. Uganda says those measures have really hurt tourism, trade, and business—even though their response has been relatively successful.",
+              "duration": 11.180408
             },
             {
               "speaker": "listener",
-              "text": "Why is the U.S. doing this blockade?",
-              "duration": 2.76898
+              "text": "How bad was this outbreak compared to others we've heard about?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "Brad Cooper, who commands U.S. Central Command, has accused Iran of attacking seven commercial ships and launching missiles against Gulf countries.",
-              "duration": 8.176327
+              "text": "Much smaller. There were 20 confirmed infections and two deaths. Most of those infected were Congolese nationals, plus four health workers and one driver.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "Is this connected to anything else going on in the region?",
-              "duration": 3.004082
+              "text": "Is there still concern about the virus spreading?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "It's part of broader tensions. There was a ceasefire aimed at ending the civil war between Iran-backed Houthi rebels and a Saudi-led coalition in Yemen.",
-              "duration": 8.803265
-            },
-            {
-              "speaker": "listener",
-              "text": "So this could affect oil shipments?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "Potentially, yes. The Strait of Hormuz is a major oil exporting route, which is why Iran's threat to block it is significant.",
-              "duration": 7.941224
+              "text": "Authorities say the threat remains across the border, so they're staying vigilant even as they work to restore normal travel and trade.",
+              "duration": 7.000816
             }
           ]
         }
@@ -272,76 +272,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Microsoft’s biggest ever patch Tuesday lets you hold off updating for longer",
-      "summary": "Microsoft just released a long list of improvements for Windows 11 as part of its bigger patch Tuesdays, patching at least 570 security holes, almost triple the number fixed in last month’s record-breaking release, according to Krebs on Security.",
+      "headline": "HP’s OLED-equipped 2-in-1 laptop is a solid back-to-school deal",
+      "summary": "Given the state of hardware prices, this discounted convertible HP laptop could be the deal you’ve been waiting on.",
       "keyTakeaways": [
-        "It comes as part of Microsoft’s plan to revitalize Windows 11 with updates focused on addressing user complaints and improving performance.",
-        "Microsoft patched a bunch of security issues with this update as well, which the company said we can expect to see more of in future releases as it uses AI to identify vulnerabilities.",
-        "Last month, Microsoft previewed several other features arriving in this build (KB5101650) in an optional June update."
+        "The star of the show is the 1920 x 1200 OLED touchscreen, an uncommon perk at this price point.",
+        "One other perk is that the OLED screen has a 16:10 aspect ratio, so you’ll be able to see more content at once.",
+        "He’s contributed to sites like Digital Trends, Business Insider, and WIRED."
       ],
-      "whyItMatters": "You can now pause updates for up to 35 days and continue extending the deadline.",
-      "originalURL": "https://www.theverge.com/tech/965643/microsoft-windows-11-july-2026-patch-tuesday-updates",
+      "whyItMatters": "With storage and memory prices still at an all-time high, we’re happy to tell you about a solid deal on a good laptop when we find one, rare as they are.",
+      "originalURL": "https://www.theverge.com/gadgets/966209/hp-omnibook-x-flip-oled-laptop-windows-11-deal-sale",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "マイクロソフト、過去最大規模のセキュリティ更新を配信",
-          "summary": "マイクロソフトがWindows 11向けに大規模な更新プログラムを公開した。今回のパッチで修正されたセキュリティ上の脆弱性は少なくとも570件にのぼり、先月の記録的な件数のほぼ3倍に達したと、セキュリティ情報サイト「Krebs on Security」が伝えている。",
+          "headline": "OLEDスクリーン搭載の2in1ノートPC、今が買い時か",
+          "summary": "HPの2in1コンバーチブルノートPCが値引きされている。ハードウェア価格が高止まりする昨今、見逃しにくい一台だ。",
           "keyTakeaways": [
-            "ユーザーからの不満に応え、パフォーマンス改善を図るWindows 11刷新計画の一環。",
-            "AIを活用して脆弱性を検出する取り組みが進んでおり、今後の更新でもセキュリティ修正が増える見通し。",
-            "先月の任意更新では、今回のビルド（KB5101650）に含まれる複数の新機能がすでに予告されていた。"
+            "この価格帯では珍しい、1920×1200のOLEDタッチスクリーンを搭載",
+            "アスペクト比16:10の画面により、一度に表示できる情報量が多い",
+            "Digital TrendsやBusiness Insider、WIREDなどへの寄稿実績を持つライターが紹介"
           ],
-          "whyItMatters": "更新の一時停止期間が最長35日間に延長され、さらに繰り返し延長することも可能になった。"
+          "whyItMatters": "ストレージやメモリの価格が依然として高水準にある中、質の良いノートPCをお得に手に入れられる機会は貴重だ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Microsoft just put out a huge update for Windows 11?",
-              "duration": 3.056327
+              "text": "I saw something about an HP laptop deal. What makes this one worth paying attention to?",
+              "duration": 4.780408
             },
             {
               "speaker": "explainer",
-              "text": "Yes, their biggest patch Tuesday ever. They fixed at least 570 security holes — nearly triple what they patched last month.",
-              "duration": 7.758367
+              "text": "It's a two-in-one convertible with an OLED touchscreen, which is pretty uncommon at this price point. Given that hardware prices are still high right now, it's being called a solid option.",
+              "duration": 9.848163
             },
             {
               "speaker": "listener",
-              "text": "That's a lot of vulnerabilities. Why so many all at once?",
-              "duration": 3.657143
+              "text": "What's special about the screen exactly?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Microsoft says they're using AI now to identify security issues, so they're finding and fixing more problems. They expect future releases to be larger too.",
-              "duration": 9.012245
+              "text": "Two things. It's OLED, so you get richer colors and contrast. And it has a sixteen to ten aspect ratio instead of the usual sixteen to nine, which means you can see more content vertically.",
+              "duration": 11.546122
             },
             {
               "speaker": "listener",
-              "text": "I saw something about pausing updates — what's that about?",
-              "duration": 4.022857
+              "text": "Is the resolution decent?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "You can now pause updates for up to 35 days and keep extending that deadline. It gives you more control over when your computer restarts.",
-              "duration": 8.019592
+              "text": "Yes, it's nineteen twenty by twelve hundred, and it's a touchscreen. For a back-to-school laptop, that's pretty solid.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "Is this part of some bigger effort to improve Windows?",
-              "duration": 2.873469
+              "text": "Why are they making a point about hardware prices?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "It is. Microsoft's focusing on addressing user complaints and improving performance. Last month they previewed several features that are now arriving in this build.",
-              "duration": 9.038367
+              "text": "Storage and memory prices are still at all-time highs, so good laptop deals are rare right now. That's why this discount is getting attention.",
+              "duration": 8.594286
             }
           ]
         }
@@ -353,86 +353,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Google and Epic give up fighting — third-party Android app stores are coming next week",
-      "summary": "Epic Games and Google have just jointly withdrawn their attempt to retroactively settle the lawsuit that’s changing how Android app stores work in the United States — and that means Google will be forced to carry rival app stores inside of its own.",
+      "headline": "COMPUTER COPS: Inside the big business of selling AI to the police",
+      "summary": "From data gathering to decision making, there’s a gold mine in police funding.",
       "keyTakeaways": [
-        "Get ready for rival app stores inside of Google Play.",
-        "In fact, Google tells the court, it’s ready to begin carrying third-party app stores on Wednesday, July 22nd.",
-        "Google has been fighting that ever since, and eventually convinced Epic to join in, by settling all their legal disputes around the world and making a secret $800 million deal along the way."
+        "The promise of AI at this year’s International Association of Chiefs of Police (IACP) Technology Conference focused on automating routine parts of the job, which also happen to be critical steps in the legal process.",
+        "As the country has reckoned with law enforcement becoming detached from actual, human police presence in neighborhoods, the industry is continuing to embrace automation.",
+        "The decision-making process itself in police departments is increasingly being handed over to algorithms."
       ],
-      "whyItMatters": "Does that mean it’s time for Microsoft to launch an Xbox game store on Android?",
-      "originalURL": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "whyItMatters": "Many public safety advocacy groups and legal experts, however, warn that an influx of black box algorithms into law enforcement will erode transparency and accountability at a time when much of the public’s trust of the police is already dangerously frayed.",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
+      "readTime": 19,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "Androidにライバルのアプリストアがやってくる",
-          "summary": "EpicゲームズとGoogleは、米国におけるAndroidアプリ配信のあり方を変える訴訟の和解申請を共同で取り下げた。これにより、GoogleはGoogle Play内でサードパーティのアプリストアを提供することを余儀なくされる。",
+          "headline": "警察とAIビジネス——自動化が進む治安維持の現場",
+          "summary": "データ収集から意思決定まで、警察関連の予算はいまやAI企業にとって巨大な市場となっている。",
           "keyTakeaways": [
-            "Google Play内にライバルのアプリストアが登場する見通し。",
-            "Googleは7月22日水曜日からサードパーティストアの受け入れを開始できると裁判所に伝えた。",
-            "Googleはこの判決に抵抗し続け、最終的にEpicと世界規模で法的紛争を解決。その過程で8億ドルにのぼる非公開の合意も交わされていた。"
+            "今年の国際警察署長協会技術会議では、法的手続きの要となる業務の自動化がAIの主要な売り文句として打ち出された。",
+            "地域における人間的な警察の存在感が薄れるなか、業界は自動化の流れをさらに加速させている。",
+            "警察内部の意思決定そのものが、アルゴリズムへと委ねられつつある。"
           ],
-          "whyItMatters": "Microsoftがこの機を捉え、XboxのゲームストアをAndroid上に展開する可能性も浮かび上がる。"
+          "whyItMatters": "公共安全の擁護団体や法律の専門家たちは、不透明なアルゴリズムの導入が、すでに揺らいでいる警察への信頼をさらに損なうと警鐘を鳴らしている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-15/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-16/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Google's about to start carrying rival app stores inside its own Play Store?",
-              "duration": 4.493061
+              "text": "I saw something about AI being sold to police departments. What's going on there?",
+              "duration": 4.728163
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Starting next Wednesday, July twenty-second, Google says it's ready to let third-party app stores be distributed through Google Play.",
-              "duration": 7.47102
+              "text": "There's a big push right now to sell artificial intelligence tools to law enforcement. At a recent police technology conference, companies were showcasing AI that can automate routine parts of police work.",
+              "duration": 11.363265
             },
             {
               "speaker": "listener",
-              "text": "How did we get here? This seems like a big shift.",
-              "duration": 2.76898
+              "text": "What kind of routine work are we talking about?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "It comes from a lawsuit with Epic Games that changed how Android app stores work in the United States. Google fought the ruling for a while.",
-              "duration": 7.78449
+              "text": "Things like data gathering and even some decision-making processes. These happen to be critical steps in the legal process.",
+              "duration": 6.713469
             },
             {
               "speaker": "listener",
-              "text": "Wait, but Epic and Google were fighting each other, right?",
-              "duration": 2.821224
+              "text": "Decision-making by algorithms? That sounds like a big shift.",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "They were. But they actually settled their legal disputes worldwide and made an eight hundred million dollar deal. Then they tried to undo the original lawsuit ruling together.",
-              "duration": 9.325714
+              "text": "It is. The industry is moving toward more automation, even as there's been concern about law enforcement becoming detached from actual human presence in neighborhoods.",
+              "duration": 8.907755
             },
             {
               "speaker": "listener",
-              "text": "And now they've withdrawn that attempt?",
-              "duration": 2.324898
+              "text": "Are people worried about this?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. They just jointly withdrew it, which means the original ruling stands and Google has to open up.",
-              "duration": 5.982041
+              "text": "Yes. Public safety groups and legal experts warn that these algorithms often work like black boxes—you can't see how they make decisions. They say this could erode transparency and accountability.",
+              "duration": 11.833469
             },
             {
               "speaker": "listener",
-              "text": "So could we see something like an Xbox game store on Android now?",
-              "duration": 3.343673
+              "text": "At a time when trust in police is already an issue.",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "That's the question people are asking. The door is now open for companies like Microsoft to launch their own stores on Android.",
-              "duration": 6.687347
+              "text": "Exactly. That's why this matters—public trust is already frayed, and these tools could make it harder to understand how policing decisions are being made.",
+              "duration": 8.542041
             }
           ]
         }

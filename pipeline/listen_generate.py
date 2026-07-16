@@ -16,7 +16,9 @@ Audio is written under scratch/ (gitignored) and pushed to R2 remote-only — ne
 
 Env: ELEVENLABS_API_KEY, ANTHROPIC_API_KEY (required); EXPLAINER_VOICE, LISTENER_VOICE;
      SIGNALS_LISTEN_MODEL (optional). R2 upload uses `wrangler` (CLOUDFLARE_API_TOKEN in CI).
-     Japanese (--lang ja) additionally requires EXPLAINER_VOICE_JA, LISTENER_VOICE_JA.
+     Japanese (--lang ja) uses AZURE SPEECH instead of ElevenLabs: requires AZURE_SPEECH_KEY,
+     AZURE_SPEECH_REGION (voices default to ja-JP-NanamiNeural listener / ja-JP-KeitaNeural
+     explainer; override via LISTENER_VOICE_JA / EXPLAINER_VOICE_JA). No ElevenLabs key needed.
 
 Usage: python3 pipeline/listen_generate.py 2026-06-30 [--lang en|ja]
 
@@ -122,6 +124,39 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
         data = json.loads(r.read().decode())
     text = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
     return parse_dialogue(text)
+
+
+# ── Azure Speech backend (JA only) ───────────────────────────────────────────────────────────────
+# Confirmed voices: listener = ja-JP-NanamiNeural, explainer = ja-JP-KeitaNeural. Same signature
+# as synth_line (ElevenLabs) so generate() stays backend-agnostic — the ONLY difference for a JA
+# run is which synth_fn main() passes in. EN keeps ElevenLabs untouched.
+AZURE_TTS_FORMAT = "audio-24khz-96kbitrate-mono-mp3"
+AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"    # curious listener — calm morning tone
+AZURE_VOICE_JA_EXPLAINER = "ja-JP-KeitaNeural"    # calm explainer
+
+
+def _azure_ssml(text, voice):
+    """Minimal SSML for one dialogue line — XML-escaped, single voice, ja-JP."""
+    esc = (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    return (f"<speak version='1.0' xml:lang='ja-JP'>"
+            f"<voice name='{voice}'>{esc}</voice></speak>")
+
+
+def synth_line_azure(text, voice, settings, api_key):
+    """Azure Speech REST TTS → MP3 bytes. `settings` is accepted for signature parity with
+    synth_line but unused (Azure neural voices need no stability/similarity knobs)."""
+    region = os.environ.get("AZURE_SPEECH_REGION", "").strip()
+    if not region:
+        raise RuntimeError("AZURE_SPEECH_REGION is required for Azure synthesis")
+    url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
+    req = urllib.request.Request(url, data=_azure_ssml(text, voice).encode("utf-8"),
+                                 method="POST", headers={
+        "Ocp-Apim-Subscription-Key": api_key,
+        "Content-Type": "application/ssml+xml",
+        "X-Microsoft-OutputFormat": AZURE_TTS_FORMAT,
+        "User-Agent": "SignalsListen/1.0"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        return r.read()
 
 
 def synth_line(text, voice, settings, api_key):
@@ -625,31 +660,41 @@ def main():
     if len(args) != 1 or lang not in ("en", "ja"):
         sys.exit("usage: python3 pipeline/listen_generate.py <YYYY-MM-DD> [--lang en|ja]")
     date = args[0]
-    el = os.environ.get("ELEVENLABS_API_KEY", "").strip()
     an = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    if not el or not an:
-        sys.exit("❌ ELEVENLABS_API_KEY and ANTHROPIC_API_KEY are required")
+    if not an:
+        sys.exit("❌ ANTHROPIC_API_KEY is required")
 
     if lang == "ja":
-        # JA voices come ONLY from env — no hardcoded fallbacks (fail loudly if unset).
-        explainer = os.environ.get("EXPLAINER_VOICE_JA", "").strip()
-        listener = os.environ.get("LISTENER_VOICE_JA", "").strip()
-        if not explainer or not listener:
-            sys.exit("❌ EXPLAINER_VOICE_JA and LISTENER_VOICE_JA are required for --lang ja")
-        checks = (("LISTENER_VOICE_JA", listener), ("EXPLAINER_VOICE_JA", explainer))
+        # JA synthesis = Azure Speech (Nanami = listener, Keita = explainer). ElevenLabs is
+        # NOT used or required for JA. Voices default to the confirmed pair and may be
+        # overridden via env; Azure names are letters/digits/hyphens (ja-JP-NanamiNeural).
+        az_key = os.environ.get("AZURE_SPEECH_KEY", "").strip()
+        az_region = os.environ.get("AZURE_SPEECH_REGION", "").strip()
+        if not az_key or not az_region:
+            sys.exit("❌ AZURE_SPEECH_KEY and AZURE_SPEECH_REGION are required for --lang ja")
+        listener = os.environ.get("LISTENER_VOICE_JA", "").strip() or AZURE_VOICE_JA_LISTENER
+        explainer = os.environ.get("EXPLAINER_VOICE_JA", "").strip() or AZURE_VOICE_JA_EXPLAINER
+        for name, v in (("LISTENER_VOICE_JA", listener), ("EXPLAINER_VOICE_JA", explainer)):
+            if not re.fullmatch(r"[A-Za-z][A-Za-z0-9-]*", v):
+                sys.exit(f"❌ {name} is not a valid Azure voice name ({v!r}) — "
+                         "e.g. ja-JP-NanamiNeural, without spaces/quotes")
+        generate(date, el_key=az_key, an_key=an, listener_voice=listener,
+                 explainer_voice=explainer, lang="ja", synth_fn=synth_line_azure)
     else:
+        el = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+        if not el:
+            sys.exit("❌ ELEVENLABS_API_KEY is required")
         explainer, listener = EXPLAINER_VOICE, LISTENER_VOICE
         if not listener:
             sys.exit("❌ LISTENER_VOICE required (EXPLAINER_VOICE defaults to %s)" % EXPLAINER_VOICE)
-        checks = (("LISTENER_VOICE", listener), ("EXPLAINER_VOICE", explainer))
-    # Fail with a READABLE message on malformed voice IDs (ElevenLabs IDs are alphanumeric).
-    # Without this, a bad character reaches the request URL and http.client dies in
-    # putrequest with an opaque traceback.
-    for name, v in checks:
-        if not v.isalnum():
-            sys.exit(f"❌ {name} is not a valid ElevenLabs voice ID ({v!r}) — "
-                     "re-paste the repo secret without spaces/newlines/quotes")
-    generate(date, el_key=el, an_key=an, listener_voice=listener, explainer_voice=explainer, lang=lang)
+        # Fail with a READABLE message on malformed voice IDs (ElevenLabs IDs are alphanumeric).
+        # Without this, a bad character reaches the request URL and http.client dies in
+        # putrequest with an opaque traceback.
+        for name, v in (("LISTENER_VOICE", listener), ("EXPLAINER_VOICE", explainer)):
+            if not v.isalnum():
+                sys.exit(f"❌ {name} is not a valid ElevenLabs voice ID ({v!r}) — "
+                         "re-paste the repo secret without spaces/newlines/quotes")
+        generate(date, el_key=el, an_key=an, listener_voice=listener, explainer_voice=explainer, lang="en")
     if lang == "en":
         print("Next: python3 pipeline/listen_inject_edition.py", date)
     else:

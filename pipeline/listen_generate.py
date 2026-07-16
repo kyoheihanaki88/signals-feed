@@ -27,10 +27,13 @@ Env: ELEVENLABS_API_KEY, ANTHROPIC_API_KEY (required); EXPLAINER_VOICE, LISTENER
 Usage: python3 pipeline/listen_generate.py 2026-06-30 [--lang en|ja]
 
 LANGUAGES: `--lang en` (default) is the production path and is behavior-identical to the
-historical EN-only script. `--lang ja` generates natural Japanese narration (NOT literal
-translation — see SCRIPT_SYSTEM_JA) into audio/<date>/signal-0N-dialogue-ja.mp3 and MERGES
-a `ja` track into the existing manifest entry, never touching `en`. JA is optional
-everywhere downstream: promotion (listen-ready) remains EN-only.
+historical EN-only script: a TWO-PERSON dialogue via ElevenLabs. `--lang ja` generates a
+SINGLE-HOST Japanese narration (natural spoken paraphrase, NOT literal translation — see
+SCRIPT_SYSTEM_JA_SOLO; A/B chosen 2026-07-16) voiced by Nanami in Azure's 案内
+"customerservice" style at +8%, into audio/<date>/signal-0N-dialogue-ja.mp3, and MERGES
+a `ja` track into the existing manifest entry, never touching `en`. Historical two-person
+ja editions remain valid and untouched. JA is optional everywhere downstream: promotion
+(listen-ready) remains EN-only.
 """
 import os, re, sys, json, time, subprocess, urllib.request, urllib.error
 
@@ -114,6 +117,40 @@ SCRIPT_SYSTEM_JA = (
     "出力はJSON配列のみ: [{\"speaker\":\"listener|explainer\",\"text\":\"...\"}]"
 )
 
+# JA v4 (PRODUCTION) — single-host narration. A/B tested against the two-person dialogue on
+# 2026-07-16 (scratch/ab_prototype): solo Nanami in the 案内 style won as the more natural
+# Japanese and the better fit for the "morning ritual, not a news app" identity. One calm
+# host, no fake Q&A, spoken (not written-news) Japanese, hard sentence-length ceiling.
+# SCRIPT_SYSTEM_JA (two-person) is kept above for legacy verification and one-revert rollback.
+SCRIPT_SYSTEM_JA_SOLO = (
+    "あなたは朝のニュースアプリ「Signals」のための、日本語の一人語りナレーション台本作家です。"
+    "知的で穏やかな一人のホストが、朝の聞き手に静かに語りかけます。ニュースアナウンサーの"
+    "原稿ではなく、落ち着いた朝の案内の語りです。"
+    "役割は一人だけ。質問役はいません。偽の質問・自問自答・呼びかけの乱用は禁止"
+    "(疑問形はゼロが基本、多くても1回まで)。"
+    "構成: ①事実から自然に話を切り出す(「今日は〜についてお話しします」型の司会進行は禁止)"
+    " → ②核心を短く → ③背景と「なぜ重要か」 → ④聞き手の生活への意味や今後の見通し"
+    " → ⑤自然な一言で静かに終える(「今日のSignalsでした」「また次回」などの番組風の締めは禁止)。"
+    "文の長さ(最重要・厳守): 6〜10文。1文は35〜50文字を目安に、どの文も絶対に60文字を"
+    "超えない。1文に入れる内容は1つだけ。説明が長くなりそうなときは、必ず2文に分ける"
+    "(例: 背景で1文、影響で1文)。長い連体修飾や「〜し、〜して、〜となりました」のような"
+    "文のつなぎ込みをしない。"
+    "言い換え(厳守): 記事や japanese_reference の文・言い回しを、そのままでも部分的にも"
+    "使わない。文の構造ごと写すのも禁止 — 元の文を見ずに、意味だけを頭に置いて、"
+    "完全に自分の話し言葉で書き直す(事実・名前・数字だけを保ち、文はゼロから作る)。"
+    "「〜が明らかになった」「〜とみられる」の連続のような書き言葉のニュース構文ではなく、"
+    "朝の語りかけに合う平易な話し言葉を使う。ですます調。"
+    "固有名詞(企業名・人名・地名)は提供された表記のまま、英語名は英語のまま(例: Apple, OpenAI)。"
+    "数字・日付・金額は正確に保持。提供されたstory fields(英語原文と japanese_reference)にある"
+    "事実だけを使い、事実・名前・数字を発明しない。"
+    "2つの企業・当事者・団体に触れるときは「両社」「両者」「双方」または名前の併記"
+    "(例:「EpicとGoogle」)で表現する。「2社」「2者」「2つ」のような数を使った言い方は、"
+    "その数字が記事に明記されている場合を除いて使わない。"
+    "深刻な話題(暴力・死)は淡々と扱う。煽り・感嘆・ドラマ化・冗談・「速報」的な言い回し・"
+    "直訳調(例:「〜についての発表をしました」)・見出しや「シグナルN」などのラベルは禁止。"
+    "出力はJSON配列のみ(各要素が1文の文字列): [\"文1\", \"文2\", ...]"
+)
+
 
 # ── external calls (injectable for tests) ───────────────────────────────────────────────────────
 def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
@@ -122,7 +159,7 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
         ja_ref = (signal.get("localized") or {}).get("ja")
         if ja_ref:
             fields["japanese_reference"] = ja_ref     # ground JA terminology in the app's own JP text
-    system = SCRIPT_SYSTEM_JA if lang == "ja" else SCRIPT_SYSTEM
+    system = SCRIPT_SYSTEM_JA_SOLO if lang == "ja" else SCRIPT_SYSTEM
     body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
                        "temperature": 0.5, "system": system,
                        "messages": [{"role": "user", "content": json.dumps(fields, ensure_ascii=False)}]}).encode()
@@ -131,7 +168,7 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
     with urllib.request.urlopen(req, timeout=90) as r:
         data = json.loads(r.read().decode())
     text = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
-    return parse_dialogue(text)
+    return parse_solo_lines(text) if lang == "ja" else parse_dialogue(text)
 
 
 # ── Azure Speech backend (JA only) ───────────────────────────────────────────────────────────────
@@ -141,22 +178,31 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
 AZURE_TTS_FORMAT = "audio-24khz-96kbitrate-mono-mp3"
 AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"    # curious listener — calm morning tone
 AZURE_VOICE_JA_EXPLAINER = "ja-JP-KeitaNeural"    # calm explainer
-# Nanami felt slightly slow in production (2026-07-16 device test) — speed up the LISTENER
-# voice only, via SSML prosody. Keyed to whichever voice is configured as the JA listener,
-# so the explainer (Keita) always keeps Azure's default rate. SSML-only: script, captions,
-# timing logic, and drift gate are untouched (durations are measured from the actual audio).
+# v6 reference preset (Kyohei-approved via 2026-07-16 voice_tune A/B — the ONDOKU
+# ななみ(案内) equivalent): Nanami + Azure "customerservice" (案内/guidance) style,
+# rate +8%, pitch default. Applied ONLY to the configured JA narrator voice (Nanami by
+# default; follows a LISTENER_VOICE_JA override). SSML-only: script, captions, timing
+# logic, and drift gate are untouched (durations are measured from the actual audio).
 AZURE_TTS_RATE_JA_LISTENER = "+8%"
+AZURE_TTS_STYLE_JA_NARRATOR = "customerservice"
 
 
 def _azure_listener_voice():
     return os.environ.get("LISTENER_VOICE_JA", "").strip() or AZURE_VOICE_JA_LISTENER
 
 
-def _azure_ssml(text, voice, rate=None):
-    """Minimal SSML for one dialogue line — XML-escaped, single voice, ja-JP.
-    `rate` (e.g. "+8%") wraps the text in <prosody>; None keeps Azure's default rate."""
+def _azure_ssml(text, voice, rate=None, style=None):
+    """Minimal SSML for one spoken line — XML-escaped, single voice, ja-JP.
+    `rate` (e.g. "+8%") wraps the text in <prosody>; `style` (e.g. "customerservice")
+    wraps it in <mstts:express-as>. With neither, output is byte-identical to the
+    original minimal form."""
     esc = (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
     inner = f"<prosody rate='{rate}'>{esc}</prosody>" if rate else esc
+    if style:
+        return (f"<speak version='1.0' xmlns:mstts='https://www.w3.org/2001/mstts' "
+                f"xml:lang='ja-JP'><voice name='{voice}'>"
+                f"<mstts:express-as style='{style}'>{inner}</mstts:express-as>"
+                f"</voice></speak>")
     return (f"<speak version='1.0' xml:lang='ja-JP'>"
             f"<voice name='{voice}'>{inner}</voice></speak>")
 
@@ -202,16 +248,19 @@ def synth_line_azure(text, voice, settings, api_key,
     url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
     delay = _env_num("AZURE_TTS_DELAY", AZURE_TTS_DELAY_DEFAULT)
     max_retries = _env_num("AZURE_TTS_MAX_RETRIES", AZURE_TTS_MAX_RETRIES_DEFAULT, cast=int)
-    # Listener-only prosody: Nanami (or the configured listener voice) speaks +8%; the
-    # explainer voice stays at Azure's default rate.
-    rate = AZURE_TTS_RATE_JA_LISTENER if voice == _azure_listener_voice() else None
+    # v6 preset for the narrator voice only: Nanami (or the configured LISTENER_VOICE_JA
+    # override) speaks in the 案内 "customerservice" style at +8%; any other voice keeps
+    # Azure defaults (no style, no prosody).
+    is_narrator = voice == _azure_listener_voice()
+    rate = AZURE_TTS_RATE_JA_LISTENER if is_narrator else None
+    style = AZURE_TTS_STYLE_JA_NARRATOR if is_narrator else None
 
     for attempt in range(max_retries + 1):
         if delay > 0 and _azure_last_request_ts is not None:
             gap = delay - (_clock() - _azure_last_request_ts)
             if gap > 0:
                 _sleep(gap)
-        req = urllib.request.Request(url, data=_azure_ssml(text, voice, rate).encode("utf-8"),
+        req = urllib.request.Request(url, data=_azure_ssml(text, voice, rate, style).encode("utf-8"),
                                      method="POST", headers={
             "Ocp-Apim-Subscription-Key": api_key,
             "Content-Type": "application/ssml+xml",
@@ -351,6 +400,55 @@ def parse_dialogue(text):
     if not (6 <= len(out) <= 14):
         raise ValueError(f"unexpected line count {len(out)}")
     return out
+
+
+# ── JA solo narration parsing (production JA format; EN parse_dialogue untouched) ───────────────
+_JA_SOLO_MAX_CHARS = 60          # absolute per-sentence ceiling (prompt targets 35–50)
+# Deterministic length repair: LLMs reliably land 60–80 chars on dense stories no matter how
+# hard the prompt pushes (A/B prototype observed 63/64/65/67/68/71/78). Over-limit sentences
+# are split at a natural 、 boundary — preferring conjunctive clause endings where a sentence
+# break sounds natural in speech — instead of burning a whole regeneration. Same words,
+# shorter breaths; every gate still runs on the RESULT.
+_JA_SPLIT_PREF = ("ですが、", "ますが、", "たが、", "ので、", "ため、", "一方、", "そのため、",
+                  "また、", "さらに、", "では、", "については、")
+
+
+def _split_long_sentence(s, hard=_JA_SOLO_MAX_CHARS):
+    if len(s) <= hard:
+        return [s]
+    cuts = [i + 1 for i, ch in enumerate(s) if ch == "、"]
+    if not cuts:
+        return [s]                       # nothing natural to cut at — the gate will reject it
+    mid = len(s) / 2
+    pref = [c for c in cuts if any(s[:c].endswith(p) for p in _JA_SPLIT_PREF)]
+    best = min(pref or cuts, key=lambda c: abs(c - mid))
+    p1 = s[:best].rstrip("、")
+    if p1.endswith(("ですが", "ますが", "たが")):
+        p1 = p1[:-1]                     # drop the dangling contrastive が → clean sentence end
+    p1 += "。"
+    return _split_long_sentence(p1, hard) + _split_long_sentence(s[best:], hard)
+
+
+def parse_solo_lines(text):
+    """Parse solo-narration LLM output (JSON array of sentence strings) into validated
+    [{speaker:'narrator', text}] lines, or raise. Captions are these exact sentences —
+    what is displayed is byte-identical to what is synthesized."""
+    s = text.strip()
+    if s.startswith("```"):
+        s = s.split("```", 2)[1].lstrip("json").strip() if "```" in s else s
+    start, end = s.find("["), s.rfind("]")
+    if start < 0 or end < 0:
+        raise ValueError("no JSON array in LLM output")
+    arr = json.loads(s[start:end + 1])
+    if not (isinstance(arr, list) and arr
+            and all(isinstance(x, str) and x.strip() for x in arr)):
+        raise ValueError(f"solo narration must be a non-empty array of sentence strings: {text[:120]!r}")
+    sents = []
+    for x in arr:
+        sents.extend(_split_long_sentence(x.strip()))
+    if not (6 <= len(sents) <= 10):
+        raise ValueError(f"unexpected solo sentence count {len(sents)} (need 6–10)")
+    return [{"speaker": "narrator", "text": t} for t in sents]
 
 
 def key_for(date, number, lang="en"):
@@ -592,6 +690,55 @@ def ja_quality_issues(lines, signal):
     return issues
 
 
+def ja_solo_quality_issues(lines, signal):
+    """Issue strings for the PRODUCTION JA solo narration (empty list = clean).
+
+    CONTENT rules are the same fail-closed checks as the dialogue gate — grounding of
+    numbers (digits + English words + kanji) and latin names, article-paste detection,
+    forbidden literal-translation/presenter phrases, Japanese-only text — via the SAME
+    helper functions, so nothing is weakened. SHAPE rules enforce one calm narrator:
+    every line speaker=='narrator' (no role switching), at most 1 question sentence
+    (no fake Q&A), 6–10 sentences, ≤60 chars per sentence.
+
+    ja_quality_issues (two-person, above) is intentionally kept for legacy verification
+    and a one-revert rollback; it no longer runs on the production path."""
+    issues = []
+    src = json.dumps({k: signal.get(k) for k in
+                      ("headline", "summary", "keyTakeaways", "whyItMatters", "localized")},
+                     ensure_ascii=False).translate(_FW_DIGITS)
+    src_lower = src.lower()
+    src_digits = _grounded_source_numbers(src)
+    ja_src = _ja_source_strings(signal)
+    if not (6 <= len(lines) <= 10):
+        issues.append(f"{len(lines)} sentences — solo narration needs 6–10")
+    questions = 0
+    for i, line in enumerate(lines, 1):
+        if line.get("speaker") != "narrator":
+            issues.append(f"line {i}: speaker {line.get('speaker')!r} — solo narration allows only 'narrator'")
+        text = line["text"]
+        if _JA_QUESTION_RE.search(text):
+            questions += 1
+        if _is_article_paste(text, ja_src):
+            issues.append(f"line {i}: article text pasted into narration "
+                          f"(structural copy of localized.ja, not a single fact phrase)")
+        if not _JA_CHARS_RE.search(text):
+            issues.append(f"line {i}: no Japanese characters ({text[:30]!r})")
+        if len(text) > _JA_SOLO_MAX_CHARS:
+            issues.append(f"line {i}: too long ({len(text)} chars > {_JA_SOLO_MAX_CHARS})")
+        for pat in _JA_FORBIDDEN:
+            if pat in text:
+                issues.append(f"line {i}: forbidden phrase {pat!r}")
+        for d in _digit_runs(text):
+            if d not in src_digits:
+                issues.append(f"line {i}: ungrounded number {d!r}")
+        for tok in _latin_tokens(text):
+            if tok.lower() not in src_lower:
+                issues.append(f"line {i}: ungrounded name {tok!r}")
+    if questions > 1:
+        issues.append(f"{questions} question sentences — a single host must not fake a Q&A (max 1)")
+    return issues
+
+
 # ── orchestration ───────────────────────────────────────────────────────────────────────────────
 def _dump_failed_ja(date, num, signal, lines, issues):
     """DEBUG-ONLY: best-effort snapshot of a rejected JA dialogue to scratch/ (gitignored) so a
@@ -681,10 +828,13 @@ def _load_ja_checkpoint(outdir, num, lang, sig, final_dur_fn):
         lines, durs = d.get("lines"), d.get("durs")
         if not (isinstance(lines, list) and isinstance(durs, list) and lines
                 and len(lines) == len(durs)
-                and all(isinstance(l, dict) and l.get("speaker") in ("listener", "explainer")
+                and all(isinstance(l, dict)
+                        and l.get("speaker") in ("narrator", "listener", "explainer")
                         and isinstance(l.get("text"), str) and l["text"] for l in lines)):
             return None
-        if ja_quality_issues(lines, sig):
+        # PRODUCTION solo gate: also naturally invalidates legacy TWO-PERSON checkpoints
+        # (listener/explainer speakers are rejected) so old scratch state regenerates as solo.
+        if ja_solo_quality_issues(lines, sig):
             return None
         final = os.path.join(outdir, os.path.basename(str(d.get("final", ""))))
         if not os.path.isfile(final):
@@ -744,7 +894,7 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
                 continue
         lines = llm_fn(sig, api_key=an_key, lang=lang) if lang != "en" else llm_fn(sig, api_key=an_key)
         if lang == "ja":
-            issues = ja_quality_issues(lines, sig)
+            issues = ja_solo_quality_issues(lines, sig)
             if issues:
                 _dump_failed_ja(date, num, sig, lines, issues)   # debug-only; never alters the gate
                 raise ValueError(f"signal {num} JA quality gate failed:\n  " + "\n  ".join(issues))

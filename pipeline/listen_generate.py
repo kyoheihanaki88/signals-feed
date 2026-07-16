@@ -141,13 +141,24 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
 AZURE_TTS_FORMAT = "audio-24khz-96kbitrate-mono-mp3"
 AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"    # curious listener — calm morning tone
 AZURE_VOICE_JA_EXPLAINER = "ja-JP-KeitaNeural"    # calm explainer
+# Nanami felt slightly slow in production (2026-07-16 device test) — speed up the LISTENER
+# voice only, via SSML prosody. Keyed to whichever voice is configured as the JA listener,
+# so the explainer (Keita) always keeps Azure's default rate. SSML-only: script, captions,
+# timing logic, and drift gate are untouched (durations are measured from the actual audio).
+AZURE_TTS_RATE_JA_LISTENER = "+8%"
 
 
-def _azure_ssml(text, voice):
-    """Minimal SSML for one dialogue line — XML-escaped, single voice, ja-JP."""
+def _azure_listener_voice():
+    return os.environ.get("LISTENER_VOICE_JA", "").strip() or AZURE_VOICE_JA_LISTENER
+
+
+def _azure_ssml(text, voice, rate=None):
+    """Minimal SSML for one dialogue line — XML-escaped, single voice, ja-JP.
+    `rate` (e.g. "+8%") wraps the text in <prosody>; None keeps Azure's default rate."""
     esc = (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    inner = f"<prosody rate='{rate}'>{esc}</prosody>" if rate else esc
     return (f"<speak version='1.0' xml:lang='ja-JP'>"
-            f"<voice name='{voice}'>{esc}</voice></speak>")
+            f"<voice name='{voice}'>{inner}</voice></speak>")
 
 
 # Rate-limit resilience (JA/Azure ONLY — the F0 free tier throttles bursts of per-line requests).
@@ -191,13 +202,16 @@ def synth_line_azure(text, voice, settings, api_key,
     url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
     delay = _env_num("AZURE_TTS_DELAY", AZURE_TTS_DELAY_DEFAULT)
     max_retries = _env_num("AZURE_TTS_MAX_RETRIES", AZURE_TTS_MAX_RETRIES_DEFAULT, cast=int)
+    # Listener-only prosody: Nanami (or the configured listener voice) speaks +8%; the
+    # explainer voice stays at Azure's default rate.
+    rate = AZURE_TTS_RATE_JA_LISTENER if voice == _azure_listener_voice() else None
 
     for attempt in range(max_retries + 1):
         if delay > 0 and _azure_last_request_ts is not None:
             gap = delay - (_clock() - _azure_last_request_ts)
             if gap > 0:
                 _sleep(gap)
-        req = urllib.request.Request(url, data=_azure_ssml(text, voice).encode("utf-8"),
+        req = urllib.request.Request(url, data=_azure_ssml(text, voice, rate).encode("utf-8"),
                                      method="POST", headers={
             "Ocp-Apim-Subscription-Key": api_key,
             "Content-Type": "application/ssml+xml",

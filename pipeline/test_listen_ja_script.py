@@ -363,6 +363,54 @@ check("SSML is ja-JP single-voice", _ssml.startswith("<speak version='1.0' xml:l
 check("azure synth has synth_line signature parity",
       lg.synth_line_azure.__code__.co_varnames[:4] == lg.synth_line.__code__.co_varnames[:4])
 
+# ---------------------------------------------------------------- listener +8% speech rate (SSML only)
+# 2026-07-16 device test: Nanami (listener) felt slightly slow. Rate is applied purely in the
+# Azure SSML request — script, captions, timing logic, drift gate all untouched.
+check("rate constant is +8% for the listener", lg.AZURE_TTS_RATE_JA_LISTENER == "+8%")
+_sr = lg._azure_ssml("おはようございます", "ja-JP-NanamiNeural", rate="+8%")
+check("SSML with rate wraps text in prosody +8%",
+      "<prosody rate='+8%'>おはようございます</prosody>" in _sr and _sr.count("<voice") == 1)
+check("SSML without rate has NO prosody element", "<prosody" not in lg._azure_ssml("おはよう", "ja-JP-KeitaNeural"))
+
+# end-to-end through synth_line_azure: capture the actual request bodies per voice
+import email.message as _em
+_rate_env = {k: os.environ.get(k) for k in ("AZURE_SPEECH_REGION", "AZURE_TTS_DELAY", "LISTENER_VOICE_JA")}
+os.environ["AZURE_SPEECH_REGION"] = "eastus"
+os.environ["AZURE_TTS_DELAY"] = "0"
+os.environ.pop("LISTENER_VOICE_JA", None)
+
+class _RResp:
+    def read(self): return b"x"
+    def __enter__(self): return self
+    def __exit__(self, *a): return False
+
+_bodies = []
+def _cap_urlopen(req, timeout=None):
+    _bodies.append(req.data.decode("utf-8"))
+    return _RResp()
+
+lg.synth_line_azure("質問です", lg.AZURE_VOICE_JA_LISTENER, {}, "k", _urlopen=_cap_urlopen)
+lg.synth_line_azure("答えです", lg.AZURE_VOICE_JA_EXPLAINER, {}, "k", _urlopen=_cap_urlopen)
+check("Listener request SSML includes rate=\"+8%\"",
+      "ja-JP-NanamiNeural" in _bodies[0] and "<prosody rate='+8%'>質問です</prosody>" in _bodies[0])
+check("Explainer request SSML has default rate (no prosody)",
+      "ja-JP-KeitaNeural" in _bodies[1] and "<prosody" not in _bodies[1] and "答えです" in _bodies[1])
+
+# the +8% follows the CONFIGURED listener voice (LISTENER_VOICE_JA override)
+_bodies.clear()
+os.environ["LISTENER_VOICE_JA"] = "ja-JP-MayuNeural"
+lg.synth_line_azure("x", "ja-JP-MayuNeural", {}, "k", _urlopen=_cap_urlopen)      # overridden listener
+lg.synth_line_azure("y", lg.AZURE_VOICE_JA_LISTENER, {}, "k", _urlopen=_cap_urlopen)  # Nanami now explaining? no rate
+check("rate follows the configured listener voice under LISTENER_VOICE_JA override",
+      "<prosody rate='+8%'>" in _bodies[0] and "<prosody" not in _bodies[1])
+
+for _k, _v in _rate_env.items():
+    if _v is None:
+        os.environ.pop(_k, None)
+    else:
+        os.environ[_k] = _v
+lg._azure_last_request_ts = None
+
 # ---------------------------------------------------------------- parse_dialogue (shared, unchanged)
 try:
     lg.parse_dialogue("not json at all")

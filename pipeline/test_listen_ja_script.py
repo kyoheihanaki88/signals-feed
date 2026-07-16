@@ -470,5 +470,108 @@ if os.path.exists(_art):
 check("debug artifact did not change the abort/upload/manifest behavior",
       uploaded == [] and json.dumps(m3["editions"][DATE]["1"], sort_keys=True) == json.dumps(sig1, sort_keys=True))
 
+# ---------------------------------------------------------------- Azure 429 resilience (JA backend only)
+# The F0 free tier throttles bursts; synth_line_azure must retry 429s (honoring Retry-After,
+# else bounded exponential backoff), pace consecutive requests, fail clearly when retries are
+# exhausted, raise non-429 errors immediately — and EN synth_line must stay retry-free.
+import urllib.error, email.message
+
+_env_backup = {k: os.environ.get(k) for k in
+               ("AZURE_SPEECH_REGION", "AZURE_TTS_DELAY", "AZURE_TTS_MAX_RETRIES")}
+os.environ["AZURE_SPEECH_REGION"] = "eastus"
+os.environ["AZURE_TTS_DELAY"] = "0"            # pacing off here; tested on its own below
+os.environ["AZURE_TTS_MAX_RETRIES"] = "3"
+
+def _http_err(code, retry_after=None):
+    hdrs = email.message.Message()
+    if retry_after is not None:
+        hdrs["Retry-After"] = retry_after
+    return urllib.error.HTTPError("https://tts.test", code, "err", hdrs, None)
+
+class _Resp:
+    def __init__(self, data): self._d = data
+    def read(self): return self._d
+    def __enter__(self): return self
+    def __exit__(self, *a): return False
+
+def _fake_urlopen(script):
+    """script items: HTTPError instances (raised) or bytes (returned as the response body)."""
+    def fn(req, timeout=None):
+        fn.calls += 1
+        step = script.pop(0)
+        if isinstance(step, bytes):
+            return _Resp(step)
+        raise step
+    fn.calls = 0
+    return fn
+
+sleeps = []
+def _sleep(s): sleeps.append(round(s, 3))
+
+# 1) 429 followed by success — Retry-After honored exactly
+sleeps.clear()
+fn = _fake_urlopen([_http_err(429, "3"), b"AUDIO"])
+out = lg.synth_line_azure("こんにちは", "ja-JP-NanamiNeural", {}, "k", _urlopen=fn, _sleep=_sleep)
+check("429 then success returns the audio", out == b"AUDIO" and fn.calls == 2)
+check("Retry-After header honored (slept exactly 3s)", sleeps == [3.0])
+
+# 2) 429 without Retry-After — bounded exponential backoff (2s, 4s, ...)
+sleeps.clear()
+fn = _fake_urlopen([_http_err(429), _http_err(429), b"AUDIO"])
+out = lg.synth_line_azure("x", "v", {}, "k", _urlopen=fn, _sleep=_sleep)
+check("no Retry-After → exponential backoff 2s then 4s", out == b"AUDIO" and sleeps == [2.0, 4.0])
+
+# 3) retry exhaustion — clear failure after the final attempt
+sleeps.clear()
+fn = _fake_urlopen([_http_err(429)] * 10)
+try:
+    lg.synth_line_azure("x", "v", {}, "k", _urlopen=fn, _sleep=_sleep)
+    check("exhausted retries fail clearly", False)
+except RuntimeError as e:
+    check("exhausted retries fail clearly", "429" in str(e) and "4 attempts" in str(e))
+check("exhaustion made exactly max_retries+1 requests", fn.calls == 4 and len(sleeps) == 3)
+
+# 4) non-429 HTTP errors still fail IMMEDIATELY — no retry, no sleep
+sleeps.clear()
+fn = _fake_urlopen([_http_err(401)])
+try:
+    lg.synth_line_azure("x", "v", {}, "k", _urlopen=fn, _sleep=_sleep)
+    check("non-429 raises immediately", False)
+except urllib.error.HTTPError as e:
+    check("non-429 raises immediately", e.code == 401)
+check("non-429: single request, zero sleeps", fn.calls == 1 and sleeps == [])
+
+# 5) inter-request pacing — a second call inside the delay window sleeps the remainder
+os.environ["AZURE_TTS_DELAY"] = "5"
+lg._azure_last_request_ts = None
+tick = {"t": 100.0}
+def _clk(): return tick["t"]
+sleeps.clear()
+fn = _fake_urlopen([b"A", b"B"])
+lg.synth_line_azure("x", "v", {}, "k", _urlopen=fn, _sleep=_sleep, _clock=_clk)
+tick["t"] = 102.0   # only 2s of the required 5s gap have passed
+lg.synth_line_azure("x", "v", {}, "k", _urlopen=fn, _sleep=_sleep, _clock=_clk)
+check("pacing: first call never sleeps, second sleeps the remaining gap", sleeps == [3.0])
+
+# 6) EN remains untouched — synth_line gets NO retry behavior (429 raises straight through)
+_orig_urlopen = lg.urllib.request.urlopen
+def _urlopen_429(req, timeout=None): raise _http_err(429)
+lg.urllib.request.urlopen = _urlopen_429
+try:
+    lg.synth_line("hello", "voice", {"stability": 0.5, "similarity_boost": 0.5}, "k")
+    check("EN synth_line: 429 still raises immediately (no retry added)", False)
+except urllib.error.HTTPError as e:
+    check("EN synth_line: 429 still raises immediately (no retry added)", e.code == 429)
+finally:
+    lg.urllib.request.urlopen = _orig_urlopen
+
+# restore env + module pacing state
+for _k, _v in _env_backup.items():
+    if _v is None:
+        os.environ.pop(_k, None)
+    else:
+        os.environ[_k] = _v
+lg._azure_last_request_ts = None
+
 print("ALL PASS" if failures == 0 else f"{failures} CHECK(S) FAILED")
 sys.exit(1 if failures else 0)

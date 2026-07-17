@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-17",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "‘Brazen corruption’: critics denounce Trump Media plan to sell priority access to Truth Social posts",
+      "summary": "Donald Trump’s media company is planning to charge for special high-speed access to Truth Social posts, including possibly his own, affecting national security and financial markets.",
+      "keyTakeaways": [
+        "Called Truth PSI, the new service comes amid a flurry of other deals by Trump and his family company that critics say are exploiting the presidency for profit.",
+        "It follows similar offers of paid access on rival platforms, although with one key difference: the most popular Truth Social poster is the president himself, and, as the biggest shareholder of the publicly traded parent company, he would benefit directly.",
+        "Followers of Trump can already choose to get push notifications alerting them when new posts have been published."
+      ],
+      "whyItMatters": "The move announced on Thursday would allow Wall Street trading firms and other institutions to get news first from top Truth Social contributors so they could profit off subsequent moves in stocks, bonds and interest rates.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/16/trump-media-truth-social-posts",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ氏のSNSが投稿への優先アクセス権を有料販売へ――批判の声相次ぐ",
+          "summary": "トランプ前大統領が率いるメディア企業が、トゥルース・ソーシャルの投稿をいち早く受け取れる有料サービスの導入を計画している。大統領自身の投稿も対象となる可能性があり、国家安全保障や金融市場への影響を懸念する声が上がっている。",
+          "keyTakeaways": [
+            "「トゥルースPSI」と名付けられたこのサービスは、トランプ一家による利益誘導だと批判される一連の取引と時を同じくして浮上した。",
+            "他のプラットフォームにも類似の有料サービスは存在するが、決定的な違いがある。トゥルース・ソーシャル最大の発信者は現職大統領であり、上場親会社の筆頭株主でもある彼が直接利益を得る構図だ。",
+            "トランプ氏の支持者はすでに、新規投稿を知らせるプッシュ通知を受け取る設定が可能だ。"
+          ],
+          "whyItMatters": "このサービスが実現すれば、ウォール街の取引会社などが主要投稿者の情報をいち早く入手し、株式・債券・金利の動きを先読みして利益を得られる状況が生まれる。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "China ‘strongly dissatisfied’ with nationalisation of British Steel",
+      "summary": "China’s government has said it is “strongly dissatisfied” with the decision to nationalise British Steel this week, 15 months after the UK government intervened to prevent the closure of its steelworks in Scunthorpe and the loss of 4,000 jobs.",
+      "keyTakeaways": [
+        "On Thursday, British Steel was brought under public ownership to protect “the future of steel production”, the government announced.",
+        "The Department for Business and Trade said the move was essential to maintain steel production at the company’s site in Scunthorpe, Lincolnshire, to protect the company’s future and UK supply chains.",
+        "British Steel was previously owned by the Chinese company Jingye."
+      ],
+      "whyItMatters": "Last year the government finalised a £38bn deal to back Britain’s biggest nuclear project, Sizewell C, after easing out China General Nuclear, which had held a 20% stake, in 2021 over security fears.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/17/british-steel-nationalisation-china-strongly-dissatisfied",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国製鉄会社の国有化に中国が強い不満",
+          "summary": "英国政府が製鉄会社ブリティッシュ・スチールを国有化したことを受け、中国政府は「強い不満」を表明した。スカンソープの製鉄所閉鎖と約四千人の雇用喪失を防ぐため英国政府が介入してから、およそ一年三か月が経過していた。",
+          "keyTakeaways": [
+            "鉄鋼生産の将来を守るため、ブリティッシュ・スチールは公的管理下に置かれた。",
+            "リンカンシャー州スカンソープの拠点における生産継続と、英国のサプライチェーン保護が国有化の主な理由とされている。",
+            "同社はもともと、中国企業の京業（ジンイェ）が所有していた。"
+          ],
+          "whyItMatters": "英国政府は昨年、安全保障上の懸念から二〇二一年に中国広核集団の出資を外した経緯もあり、原子力発電所サイズウェルCへの大型支援策を決定している。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump makes unverified claims of China ‘election meddling’ as critics fear ploy to challenge midterm results",
+      "summary": "Donald Trump accused China of interfering with the 2020 election in a primetime televised address that laid bare his continuing obsession with his defeat to Joe Biden, but which opponents warned was a smokescreen for him to meddle in the forthcoming congressional midterms.",
+      "keyTakeaways": [
+        "Mark Warner, a Democratic senator from Virginia and vice-chair of the Senate intelligence committee, said he spent years working to strengthen the country’s defenses against foreign meddling in US elections.",
+        "He added: “China is a serious strategic competitor, and it absolutely seeks to advance its interests at America’s expense.",
+        "As a prelude to his claims of interference by China, Trump on Thursday said he was announcing the “immediate declassification and release of critical intelligence, revealing shocking vulnerabilities in our election infrastructure”."
+      ],
+      "whyItMatters": "Democrats warned that Trump was trying to sow confusion, spread misinformation and lay the groundwork to challenge the results of the midterm elections, which polls suggest could deliver significant losses for the president’s party.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/16/trump-tv-address-thursday",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ氏、中国の「選挙介入」を主張――中間選挙への布石との見方も",
+          "summary": "トランプ前大統領はプライムタイムのテレビ演説で、2020年大統領選への中国の介入を主張した。バイデン氏への敗北に今なおこだわる姿勢が改めて浮き彫りになった一方、批判派はこの主張が来たる中間選挙の結果に異議を唱えるための地ならしだと警戒している。",
+          "keyTakeaways": [
+            "上院情報委員会副委員長のマーク・ワーナー議員（民主党、バージニア州）は、外国による選挙介入への防衛強化に長年取り組んできたと述べた。",
+            "同議員は「中国は深刻な戦略的競争相手であり、米国の利益を犠牲にして自国の利益を追求しようとしていることは間違いない」とも語った。",
+            "トランプ氏は木曜日、中国による介入の主張に先立ち、「選挙インフラの重大な脆弱性を明らかにする機密情報を即時に機密解除・公開する」と宣言した。"
+          ],
+          "whyItMatters": "民主党は、トランプ氏が混乱を意図的に生み出し、中間選挙の結果に異議を唱える土台を築こうとしていると警告している。世論調査では、与党共和党にとって厳しい結果が予想されている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Google is better than Apple at playing the AI regulations game",
+      "summary": "Google scored a grace period to bring Android in line with EU rules, while Apple must make Siri AI compliant before launch.",
+      "keyTakeaways": [
+        "Today, the European Union ordered Google to give its AI rivals greater access to Android, the open-source operating system that powers billions of devices worldwide.",
+        "It’s also a sign that Google may have outmaneuvered Apple by playing Brussels’ regulatory game far more shrewdly.",
+        "Crucially, Google has until July 2027 to make those changes, giving it roughly a year to continue expanding Gemini, negotiate technical details with the EU, and shape how its rivals will eventually plug into Android."
+      ],
+      "whyItMatters": "It may look like a defeat on paper for Google, which has spent years resisting exactly this kind of access, but it is a regulatory win.",
+      "originalURL": "https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AI規制をめぐる駆け引き、グーグルがアップルより巧みな理由",
+          "summary": "EUはグーグルに対し、AndroidをAI競合他社に開放するよう命じた。ただしグーグルには猶予期間が与えられた一方、アップルはSiriのAI機能をリリース前に規制へ準拠させなければならない。",
+          "keyTakeaways": [
+            "EUは本日、世界数十億台の端末を支えるAndroidについて、AI競合他社へのアクセス拡大をグーグルに義務づけた。",
+            "グーグルはブリュッセルの規制の論理を巧みに読み、アップルより有利な立場を確保した可能性がある。",
+            "対応期限は2027年7月。それまでの約一年、グーグルはGeminiの拡張を続けながら、EUと技術的な詳細を交渉し、競合他社のAndroid接続方式を自ら形づくる時間を得た。"
+          ],
+          "whyItMatters": "表向きは敗北に見えるこの決定も、実質的にはグーグルにとって規制上の勝利といえる。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "New York governor says she’s using AI to analyze ‘every single rule’ in the state",
+      "summary": "New York Governor Kathy Hochul might have just signed a moratorium on new AI data centers in the state, but she’s not against using the technology herself.",
+      "keyTakeaways": [
+        "During an interview with Bloomberg ’s Odd Lots podcast, Hochul said that her team is using “AI to analyze every single rule, regulation, [and] policy” to check for outdated legislation.",
+        "Earlier this week, New York became the first state to put a pause on new hyperscale data centers for up to a year.",
+        "Some of the antiquated laws mentioned by Hochul in the interview include a $25 fee required to take a dog hunting, or a stipulation that pregnant people need a permit to work after midnight."
+      ],
+      "whyItMatters": "In the meantime, state lawmakers plan to come up with regulations to protect residents from the rising utility costs and the threat to natural resources posed by massive data centers.",
+      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ニューヨーク州知事、AIで州の法規制を総点検",
+          "summary": "ニューヨーク州のキャシー・ホークル知事は、大規模データセンターの新設に最長一年の一時停止措置を講じた一方で、AI自体の活用には積極的な姿勢を見せている。",
+          "keyTakeaways": [
+            "ブルームバーグのポッドキャストでホークル知事は、時代遅れの法律や規制を洗い出すため、AIを使って州のあらゆる規則を精査していると語った。",
+            "今週、ニューヨーク州は大規模データセンターの新設を最長一年間停止する措置を取り、全米初の事例となった。",
+            "点検の対象となる旧弊な法律には、猟犬の登録に二十五ドルの手数料を課す規定や、妊娠中の人が深夜以降に働くには許可が必要とする条項なども含まれる。"
+          ],
+          "whyItMatters": "州議会は今後、巨大データセンターがもたらす光熱費の高騰や自然資源への影響から住民を守るための規制づくりを進める方針だ。"
+        }
+      }
+    }
+  ]
+}

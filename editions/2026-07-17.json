@@ -91,6 +91,52 @@
               "duration": 10.109388
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Truth Social が、投稿への優先アクセス権を有料で販売する計画を発表しました。",
+              "duration": 6.744
+            },
+            {
+              "speaker": "narrator",
+              "text": "サービスの名称は「Truth PSI」で、木曜日に明らかになりました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウォール街の取引会社などが、主要な投稿者の情報をいち早く受け取れる仕組みです。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "株式や債券、金利の動きを先読みして利益を得ることが目的とみられています。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "Truth Social で最も影響力のある投稿者は、現職大統領のトランプ氏本人です。",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は上場親会社の筆頭株主でもあり、このサービスから直接利益を得る立場にあります。",
+              "duration": 7.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "批判派はこれを、大統領の地位を私的な利益のために使う行為だと強く非難しています。",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "国家安全保障や金融市場への影響を懸念する声も、すでに上がっています。",
+              "duration": 6.312
+            }
+          ]
         }
       }
     },
@@ -182,6 +228,62 @@
               "duration": 8.176327
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "英国の製鉄会社ブリティッシュ・スチールが、今週公的管理下に入りました。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "これに対し、中国政府は強い不満を示す声明を出しています。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "国有化の背景には、リンカンシャー州スカンソープの製鉄所を守る必要がありました。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "操業が止まれば、約4,000人の雇用が失われる恐れがあったのです。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "ブリティッシュ・スチールはもともと、中国の京業（ジンイェ）が所有していました。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "英国政府にとって、鉄鋼の国内生産とサプライチェーンの維持は重要な課題です。",
+              "duration": 6.648
+            },
+            {
+              "speaker": "narrator",
+              "text": "英中関係という点では、こうした動きは今に始まったことではありません。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "2021年には安全保障上の懸念から、原発プロジェクトへの中国広核集団の出資が外されています。",
+              "duration": 8.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "昨年には、そのサイズウェルCに対して380億ポンドの支援が決まりました。",
+              "duration": 6.36
+            },
+            {
+              "speaker": "narrator",
+              "text": "英国が自国の基幹産業や重要インフラをどう守るか、その姿勢が改めて問われています。",
+              "duration": 7.248
+            }
+          ]
         }
       }
     },
@@ -261,6 +363,57 @@
               "speaker": "explainer",
               "text": "That's the concern, yes. Critics say he may be spreading confusion and misinformation as a way to contest results if they don't go his way.",
               "duration": 7.653878
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "トランプ前大統領が、2020年大統領選に中国が介入したと主張する演説を行いました。",
+              "duration": 7.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "プライムタイムのテレビ放送という場を選んだことで、この発言は広く注目を集めています。",
+              "duration": 6.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "演説の中でトランプ氏は、選挙インフラに関わる機密情報を即時に公開すると宣言しました。",
+              "duration": 7.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただし、中国の介入を裏付ける具体的な証拠は、現時点では示されていません。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "民主党側は、この主張が来たる中間選挙の結果に異議を唱えるための準備だと見ています。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "上院情報委員会副委員長のマーク・ワーナー議員は、外国による選挙介入への対策に長年携わってきた人物です。",
+              "duration": 9.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "同議員は、中国が米国の利益を犠牲にして自国の目標を追う姿勢は明らかだと述べています。",
+              "duration": 7.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "世論調査では、中間選挙で共和党が苦しい結果を迎える可能性が示されています。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "混乱を意図的に広げることで、選挙結果への不信感を植え付けようとしているという懸念は根強くあります。",
+              "duration": 7.608
             }
           ]
         }
@@ -344,6 +497,52 @@
               "duration": 11.964082
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "EUがGoogleに対し、AndroidをAI競合他社へ開放するよう正式に命じました。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "世界で数十億台の端末を支えるAndroidが、対象となっています。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただしGoogleには、対応期限として2027年7月までの猶予が与えられました。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "この約一年の間に、GeminiをさらにAndroidへ根付かせることができます。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "EUとの技術的な交渉も、Googleが主導する形で進められる見通しです。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方のAppleは、Siriの新しいAI機能をリリース前に規制へ準拠させる必要があります。",
+              "duration": 7.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "表面上はGoogleへの制裁に見えますが、実態は有利な条件を引き出した結果です。",
+              "duration": 6.648
+            },
+            {
+              "speaker": "narrator",
+              "text": "規制の場でどう立ち回るかが、企業の競争力を左右する時代になっています。",
+              "duration": 5.976
+            }
+          ]
         }
       }
     },
@@ -423,6 +622,52 @@
               "speaker": "explainer",
               "text": "Exactly. They want to protect residents before allowing more massive data centers to be built.",
               "duration": 4.675918
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ニューヨーク州のキャシー・ホークル知事が、AIを使って州の法規制を丸ごと見直す取り組みを進めています。",
+              "duration": 8.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "ブルームバーグのポッドキャストで知事は、古くなった規則を洗い出すためにAIを活用していると話しました。",
+              "duration": 7.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "その中には、猟犬を連れて狩りをする際に25ドルの費用がかかるという規定も含まれています。",
+              "duration": 7.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "妊娠中の人が深夜以降に働くには許可が必要、という条項も残っているそうです。",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方でホークル知事は今週、大規模なデータセンターの新設を最長一年間停止する措置にも署名しました。",
+              "duration": 8.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは全米で初めての対応で、光熱費の上昇や自然環境への負荷を懸念する声が背景にあります。",
+              "duration": 8.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "州議会は今後、住民を守るための新たな規制の整備を進める方針です。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "法律を見直す道具としてAIを使いながら、AIそのものの影響には慎重に向き合う、そんな姿勢がこの動きには表れています。",
+              "duration": 9.768
             }
           ]
         }

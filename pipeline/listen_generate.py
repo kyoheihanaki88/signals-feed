@@ -30,7 +30,7 @@ LANGUAGES: `--lang en` (default) is the production path and is behavior-identica
 historical EN-only script: a TWO-PERSON dialogue via ElevenLabs. `--lang ja` generates a
 SINGLE-HOST Japanese narration (natural spoken paraphrase, NOT literal translation — see
 SCRIPT_SYSTEM_JA_SOLO; A/B chosen 2026-07-16) voiced by Nanami in Azure's 案内
-"customerservice" style at +8%, into audio/<date>/signal-0N-dialogue-ja.mp3, and MERGES
+"customerservice" style at +12%, into audio/<date>/signal-0N-dialogue-ja.mp3, and MERGES
 a `ja` track into the existing manifest entry, never touching `en`. Historical two-person
 ja editions remain valid and untouched. JA is optional everywhere downstream: promotion
 (listen-ready) remains EN-only.
@@ -180,10 +180,11 @@ AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"    # curious listener — calm mo
 AZURE_VOICE_JA_EXPLAINER = "ja-JP-KeitaNeural"    # calm explainer
 # v6 reference preset (Kyohei-approved via 2026-07-16 voice_tune A/B — the ONDOKU
 # ななみ(案内) equivalent): Nanami + Azure "customerservice" (案内/guidance) style,
-# rate +8%, pitch default. Applied ONLY to the configured JA narrator voice (Nanami by
+# rate +12%, pitch default (bumped from +8% after the 2026-07-17 device review).
+# Applied ONLY to the configured JA narrator voice (Nanami by
 # default; follows a LISTENER_VOICE_JA override). SSML-only: script, captions, timing
 # logic, and drift gate are untouched (durations are measured from the actual audio).
-AZURE_TTS_RATE_JA_LISTENER = "+8%"
+AZURE_TTS_RATE_JA_LISTENER = "+12%"
 AZURE_TTS_STYLE_JA_NARRATOR = "customerservice"
 
 
@@ -193,7 +194,7 @@ def _azure_listener_voice():
 
 def _azure_ssml(text, voice, rate=None, style=None):
     """Minimal SSML for one spoken line — XML-escaped, single voice, ja-JP.
-    `rate` (e.g. "+8%") wraps the text in <prosody>; `style` (e.g. "customerservice")
+    `rate` (e.g. "+12%") wraps the text in <prosody>; `style` (e.g. "customerservice")
     wraps it in <mstts:express-as>. With neither, output is byte-identical to the
     original minimal form."""
     esc = (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
@@ -249,7 +250,7 @@ def synth_line_azure(text, voice, settings, api_key,
     delay = _env_num("AZURE_TTS_DELAY", AZURE_TTS_DELAY_DEFAULT)
     max_retries = _env_num("AZURE_TTS_MAX_RETRIES", AZURE_TTS_MAX_RETRIES_DEFAULT, cast=int)
     # v6 preset for the narrator voice only: Nanami (or the configured LISTENER_VOICE_JA
-    # override) speaks in the 案内 "customerservice" style at +8%; any other voice keeps
+    # override) speaks in the 案内 "customerservice" style at +12%; any other voice keeps
     # Azure defaults (no style, no prosody).
     is_narrator = voice == _azure_listener_voice()
     rate = AZURE_TTS_RATE_JA_LISTENER if is_narrator else None

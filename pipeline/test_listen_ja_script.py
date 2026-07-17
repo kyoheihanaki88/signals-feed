@@ -395,7 +395,7 @@ check("gate unchanged: ungrounded 「2社」 is still rejected",
 
 # ================================================================ JA v4: SOLO narration (PRODUCTION)
 # A/B decision 2026-07-16: production JA is a single-host Nanami narration (案内 style,
-# rate +8%). EN stays two-person. The two-person JA gate/prompt above are LEGACY-only.
+# rate +12%). EN stays two-person. The two-person JA gate/prompt above are LEGACY-only.
 GOOD_SOLO_TEXTS = [
     "Appleが火曜日に訴訟を起こしました。",
     "相手はOpenAIで、対象には30人の従業員が含まれます。",
@@ -510,13 +510,13 @@ check("SSML is ja-JP single-voice", _ssml.startswith("<speak version='1.0' xml:l
 check("azure synth has synth_line signature parity",
       lg.synth_line_azure.__code__.co_varnames[:4] == lg.synth_line.__code__.co_varnames[:4])
 
-# ---------------------------------------------------------------- listener +8% speech rate (SSML only)
+# ---------------------------------------------------------------- listener +12% speech rate (SSML only)
 # 2026-07-16 device test: Nanami (listener) felt slightly slow. Rate is applied purely in the
 # Azure SSML request — script, captions, timing logic, drift gate all untouched.
-check("rate constant is +8% for the listener", lg.AZURE_TTS_RATE_JA_LISTENER == "+8%")
-_sr = lg._azure_ssml("おはようございます", "ja-JP-NanamiNeural", rate="+8%")
-check("SSML with rate wraps text in prosody +8%",
-      "<prosody rate='+8%'>おはようございます</prosody>" in _sr and _sr.count("<voice") == 1)
+check("JA solo production rate is +12%", lg.AZURE_TTS_RATE_JA_LISTENER == "+12%")
+_sr = lg._azure_ssml("おはようございます", "ja-JP-NanamiNeural", rate="+12%")
+check("SSML with rate wraps text in prosody +12%",
+      "<prosody rate='+12%'>おはようございます</prosody>" in _sr and _sr.count("<voice") == 1)
 check("SSML without rate has NO prosody element", "<prosody" not in lg._azure_ssml("おはよう", "ja-JP-KeitaNeural"))
 
 # end-to-end through synth_line_azure: capture the actual request bodies per voice
@@ -538,8 +538,8 @@ def _cap_urlopen(req, timeout=None):
 
 lg.synth_line_azure("質問です", lg.AZURE_VOICE_JA_LISTENER, {}, "k", _urlopen=_cap_urlopen)
 lg.synth_line_azure("答えです", lg.AZURE_VOICE_JA_EXPLAINER, {}, "k", _urlopen=_cap_urlopen)
-check("Listener request SSML includes rate=\"+8%\"",
-      "ja-JP-NanamiNeural" in _bodies[0] and "<prosody rate='+8%'>質問です</prosody>" in _bodies[0])
+check("Listener request SSML includes rate=\"+12%\"",
+      "ja-JP-NanamiNeural" in _bodies[0] and "<prosody rate='+12%'>質問です</prosody>" in _bodies[0])
 check("Narrator request SSML includes the 案内 style (customerservice)",
       "<mstts:express-as style='customerservice'>" in _bodies[0]
       and "xmlns:mstts" in _bodies[0] and lg.AZURE_TTS_STYLE_JA_NARRATOR == "customerservice")
@@ -549,13 +549,13 @@ check("non-narrator voice gets NO style", "express-as" not in _bodies[1])
 check("SSML pitch is never set (v6 keeps Azure default pitch)",
       "pitch" not in _bodies[0] and "pitch" not in _bodies[1])
 
-# the +8% follows the CONFIGURED listener voice (LISTENER_VOICE_JA override)
+# the +12% follows the CONFIGURED listener voice (LISTENER_VOICE_JA override)
 _bodies.clear()
 os.environ["LISTENER_VOICE_JA"] = "ja-JP-MayuNeural"
 lg.synth_line_azure("x", "ja-JP-MayuNeural", {}, "k", _urlopen=_cap_urlopen)      # overridden listener
 lg.synth_line_azure("y", lg.AZURE_VOICE_JA_LISTENER, {}, "k", _urlopen=_cap_urlopen)  # Nanami now explaining? no rate
 check("rate follows the configured listener voice under LISTENER_VOICE_JA override",
-      "<prosody rate='+8%'>" in _bodies[0] and "<prosody" not in _bodies[1])
+      "<prosody rate='+12%'>" in _bodies[0] and "<prosody" not in _bodies[1])
 
 for _k, _v in _rate_env.items():
     if _v is None:

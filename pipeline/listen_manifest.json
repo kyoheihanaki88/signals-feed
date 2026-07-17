@@ -4590,6 +4590,273 @@
           ]
         }
       }
+    },
+    "2026-07-17": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-17/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about Trump's company selling faster access to Truth Social posts. What's going on there?",
+              "duration": 6.4
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trump Media announced a new service called Truth PSI that would let institutions pay for high-speed access to posts on Truth Social—basically getting them faster than regular users.",
+              "duration": 10.44898
+            },
+            {
+              "speaker": "listener",
+              "text": "So who would want that?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mainly Wall Street firms. They could use early access to posts from top contributors to make quick trades in stocks, bonds, or interest rates before everyone else sees the information.",
+              "duration": 9.978776
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait—Trump posts on Truth Social all the time. Would this include his posts too?",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Possibly. He's the most popular poster on the platform, and as the biggest shareholder in the parent company, he'd benefit directly from this service.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a conflict of interest.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Critics are calling it brazen corruption—saying it exploits the presidency for profit, especially since his posts can affect national security and financial markets.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Don't other platforms do something similar though?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, rival platforms have offered paid access. But the key difference here is that the president himself is both the top poster and a major shareholder who profits from the service.",
+              "duration": 10.109388
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-17/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Britain just nationalised a steel company? That seems like a big move.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, British Steel was brought under public ownership on Thursday. The government said it's to protect the future of steel production.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Why did they feel they needed to step in?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "About 15 months ago, the government intervened to prevent the closure of the steelworks in Scunthorpe and the loss of 4,000 jobs. Now they say nationalisation is essential to maintain production there and protect UK supply chains.",
+              "duration": 13.400816
+            },
+            {
+              "speaker": "listener",
+              "text": "And China's upset about this?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "China's government says it's strongly dissatisfied. British Steel was previously owned by a Chinese company called Jingye.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this part of a pattern with Chinese ownership?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does follow other moves. Last year, the government backed Britain's biggest nuclear project, Sizewell C, after easing out China General Nuclear, which had held a 20% stake. That was over security fears back in 2021.",
+              "duration": 13.374694
+            },
+            {
+              "speaker": "listener",
+              "text": "So there's a broader tension around Chinese investment in critical infrastructure.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Steel production and nuclear energy are both seen as strategically important, and the government appears to be taking a more cautious approach.",
+              "duration": 8.176327
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-17/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Trump made some claims about China and elections. What's this about?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "In a televised address, Trump accused China of interfering with the 2020 election. He announced he was declassifying intelligence about what he called vulnerabilities in election infrastructure.",
+              "duration": 10.684082
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there evidence backing this up?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The headline describes his claims as unverified. Democratic Senator Mark Warner, who's vice-chair of the Senate intelligence committee, has worked on election security and acknowledges China as a serious competitor, but he didn't confirm Trump's specific allegations.",
+              "duration": 14.889796
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are people concerned about this now?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Democrats are warning that Trump may be trying to lay groundwork to challenge the upcoming midterm election results. Polls suggest his party could face significant losses.",
+              "duration": 9.195102
+            },
+            {
+              "speaker": "listener",
+              "text": "So they think it's more about the midterms than 2020?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the concern, yes. Critics say he may be spreading confusion and misinformation as a way to contest results if they don't go his way.",
+              "duration": 7.653878
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-17/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the EU just told Google to open up Android to other AI companies. That sounds like bad news for Google, no?",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "explainer",
+              "text": "On the surface, yes. But Google actually got something really valuable: time. They have until July 2027 to make those changes.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "And that matters because...?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "It gives them roughly a year to keep expanding Gemini without competition, and to help shape exactly how rivals will plug into Android down the road.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, how does this compare to what Apple has to do?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Apple has to make Siri compliant with EU rules before launch. No grace period. So Google may have played the regulatory game more shrewdly.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "Played it how?",
+              "duration": 1.07102
+            },
+            {
+              "speaker": "explainer",
+              "text": "By engaging with Brussels early and strategically. What looks like a defeat on paper is actually a win — they resisted this kind of access for years, and now they get to ease into it on their own timeline.",
+              "duration": 11.964082
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-17/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So New York just paused new AI data centers, but the governor is using AI herself?",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. Governor Kathy Hochul says her team is using AI to review every rule and regulation in the state to find outdated laws.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of outdated laws are we talking about?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Things like a twenty-five dollar fee to take a dog hunting, or requiring pregnant people to get a permit to work after midnight.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "That's pretty specific. Why did they pause the data centers then?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "New York became the first state to put a hold on new hyperscale data centers for up to a year. Lawmakers are concerned about rising utility costs and threats to natural resources.",
+              "duration": 9.430204
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're trying to figure out regulations while the pause is in effect?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They want to protect residents before allowing more massive data centers to be built.",
+              "duration": 4.675918
+            }
+          ]
+        }
+      }
     }
   }
 }

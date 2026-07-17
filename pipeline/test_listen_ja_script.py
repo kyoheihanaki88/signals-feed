@@ -102,6 +102,47 @@ check("kanji 十八 grounds 18 only (not 1/8/10)", lg._kanji_numbers("十八") =
 check("bare positional kanji run is not mis-valued (二〇二六 skipped)",
       lg._kanji_numbers("二〇二六年") == set())
 
+# ---------------------------------------------------------------- magnitude-scaled grounding
+# 2026-07-17 signal 2: the source says "£38bn"; the correct Japanese is 「380億ポンド」
+# (38×10^9 = 380×10^8) — the model produced it repeatedly and the gate wrongly rejected
+# '380'. Grounding must accept arithmetic-exact magnitude conversions (bn→億 ×10,
+# million→万 ×100 / 億 ÷100, trillion→兆/億) while inventing NOTHING new.
+_bn = lg._grounded_source_numbers("the government finalised a £38bn deal")
+check("£38bn grounds 380 (億) alongside 38", {"38", "380"} <= _bn)
+check("£38bn does NOT ground unrelated values", all(x not in _bn for x in ("39", "400", "3800000")))
+check("500 million grounds 5 (億) and 50000 (万)",
+      {"5", "50000"} <= lg._grounded_source_numbers("a 500 million dollar plan"))
+check("3.5bn grounds 35 (億)", "35" in lg._grounded_source_numbers("worth 3.5bn yen"))
+check("1.2 trillion grounds 12000 (億)", "12000" in lg._grounded_source_numbers("a 1.2 trillion package"))
+check("magnitude words alone ground nothing (no free allowance)",
+      lg._grounded_source_numbers("billions were discussed") == set())
+check("free-standing numbers gain no variants (45 stays just 45)",
+      "450" not in lg._grounded_source_numbers("45 employees"))
+
+BSTEEL_SIGNAL = {
+    "number": 2,
+    "headline": "China 'strongly dissatisfied' with nationalisation of British Steel",
+    "summary": "The UK government intervened to prevent the closure of its steelworks in Scunthorpe.",
+    "keyTakeaways": ["British Steel was previously owned by the Chinese company Jingye."],
+    "whyItMatters": "Last year the government finalised a £38bn deal to back Sizewell C.",
+    "localized": {"ja": {"headline": "英国製鉄会社の国有化に中国が強い不満",
+                         "summary": "英国政府がブリティッシュ・スチールを国有化した。"}},
+}
+BSTEEL_SOLO = [{"speaker": "narrator", "text": t} for t in [
+    "英国政府がBritish Steelを国有化しました。",
+    "中国政府はこの決定に強い不満を示しています。",
+    "同社はもともと中国企業のJingyeが所有していました。",
+    "背景にはスカンソープの生産拠点を守る狙いがあります。",
+    "英国政府は昨年、総額380億ポンドの支援を決定しています。",
+    "産業の基盤をどの国と共有するかが問われています。",
+]]
+check("solo line with correct 380億 conversion now passes the gate",
+      not any("ungrounded number" in i for i in lg.ja_solo_quality_issues(BSTEEL_SOLO, BSTEEL_SIGNAL)))
+_bs_bad = [dict(l) for l in BSTEEL_SOLO]
+_bs_bad[4] = {"speaker": "narrator", "text": "英国政府は昨年、総額400億ポンドの支援を決定しています。"}
+check("wrong conversion 400億 is still rejected (gate not weakened)",
+      any("ungrounded number '400'" in i for i in lg.ja_solo_quality_issues(_bs_bad, BSTEEL_SIGNAL)))
+
 # whole-signal grounded set for a 2026-07-14-style Hormuz signal (English words + kanji localized)
 HORMUZ_SIGNAL = {
     "number": 1,

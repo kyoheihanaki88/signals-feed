@@ -611,6 +611,24 @@ def _grounded_source_numbers(src):
     for word, val in _EN_NUM_WORDS.items():
         if re.search(rf"\b{word}\b", low):
             g.add(str(val))
+    # Magnitude-scaled variants — NARROW, arithmetic-exact unit conversions only.
+    # Japanese numerals regroup by 万(10^4)/億(10^8)/兆(10^12), so an amount the source
+    # writes with an English magnitude suffix is legitimately spoken with DIFFERENT digits:
+    # £38bn → 380億 (2026-07-17 signal 2 — repeatedly and CORRECTLY generated, wrongly
+    # rejected), 500 million → 5億, 3.5bn → 35億, 1.2 trillion → 1兆2000億. Each variant is
+    # derived only from a number the source states DIRECTLY NEXT TO a magnitude word;
+    # free-standing numbers gain nothing, so invented values still fail the gate.
+    for m in re.finditer(r"(\d+(?:\.\d+)?)\s*(?:(bn|billions?)|(mn|millions?)|(tn|trillions?))\b", low):
+        v = float(m.group(1))
+        if m.group(2):                       # ×10^9 → 億 is ×10; very large → 兆 is ÷1000
+            variants = (v * 10, v / 1000)
+        elif m.group(3):                     # ×10^6 → 万 is ×100; 億 is ÷100
+            variants = (v * 100, v / 100)
+        else:                                # ×10^12 → 兆 keeps digits; 億 is ×10000
+            variants = (v, v * 10000)
+        for x in variants:
+            if x >= 1 and abs(x - round(x)) < 1e-9:
+                g.add(str(int(round(x))))
     return g | _kanji_numbers(src)
 
 

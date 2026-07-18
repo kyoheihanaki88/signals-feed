@@ -5102,6 +5102,313 @@
           ]
         }
       }
+    },
+    "2026-07-18": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-18/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about police taking an activist to hospital in India. What happened?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "A prominent activist was forcibly removed from a protest site in New Delhi and hospitalized. He'd been on a hunger strike for twenty days.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "What was he protesting?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Alleged corruption in India's exam system. It's become a major issue there.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "How serious is this exam corruption?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very. About two point two million aspiring doctors had to retake the medical entrance exam last month after questions from the original May test were leaked.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "That's enormous. So why did police take him to hospital?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "They said his health was deteriorating. A High Court ordered it based on doctors' advice. The activist began his hunger strike on June twenty-eighth.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "Is he stopping the strike now that he's hospitalized?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "His wife says he plans to continue it, even from the hospital.",
+              "duration": 3.186939
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-18/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a banner at the World Cup semi-final. What happened?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "After Argentina beat England 2-1 in Atlanta on Wednesday, some Argentine players held up a banner that said 'Las Malvinas son Argentinas' — that's Argentina's name for the Falkland Islands, claiming them as their territory.",
+              "duration": 13.609796
+            },
+            {
+              "speaker": "listener",
+              "text": "And the White House actually weighed in on this?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A White House official said they believe in first amendment rights in the United States, and that Argentina's players have the opportunity to make statements while they're here.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "How did Britain respond?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Keir Starmer supported calls for FIFA to investigate the incident on Friday. He also appeared to back Spain ahead of the World Cup final against Argentina.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter beyond just a sports moment?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "The White House backing Argentina on this could prove awkward for Andy Burnham, who's set to become British prime minister on Monday. It touches on a longstanding territorial dispute between Britain and Argentina.",
+              "duration": 10.997551
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's really about more than football.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's where sports, politics, and international relations all collide.",
+              "duration": 4.310204
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-18/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this conflict between the US and Iran is still going?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The US launched a seventh consecutive night of strikes on Iran on Friday night.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the stated aim of these strikes?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "US Central Command said they're designed to continue degrading Iranian military capabilities.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "Where exactly did these strikes happen?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iranian media reported explosions or strikes in the cities of Sirik, Ahvaz, and Yazd.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "And has Iran responded?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. On Saturday, Iran said it targeted a US air base in Bahrain and an intelligence data center there.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter so much right now?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "This is the seventh day of fighting, and it's undermining an interim deal that was meant to keep the Strait of Hormuz open and allow space for negotiations.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "So the situation is getting worse, not better.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. The fighting is escalating despite efforts to reach a permanent truce.",
+              "duration": 3.892245
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-18/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about lettuce being pulled from stores. What's going on?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Taylor Farms is voluntarily removing iceberg lettuce from the U.S. market after a cyclosporiasis outbreak.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "What is cyclosporiasis?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an intestinal illness caused by a parasite. The FDA traced the outbreak to lettuce from central Mexico.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "How much lettuce are we talking about here?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Taylor Farms is pulling all iceberg lettuce from that region, even though the FDA identified one specific farm representing less than one percent of U.S. supply.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a lot more than necessary.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're being cautious. Taylor Farms is huge—they sell over seven billion dollars in produce yearly and make two out of every five salad kits in grocery stores.",
+              "duration": 9.978776
+            },
+            {
+              "speaker": "listener",
+              "text": "Have people gotten sick from other places, not just Taco Bell?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, not all reported cases have been linked to Taco Bell. The outbreak appears broader than one restaurant chain.",
+              "duration": 6.269388
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-18/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Pebble smartwatches are back?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The founder, Eric Migicovsky, revived the brand early last year after the original company shut down in 2016.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "That's cool. But I'm seeing something about a really short warranty?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The new watches come with just a 30-day warranty, which has some people concerned.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "Thirty days? That seems... really short.",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The Pebble Time 2's battery lasts about that long on a charge, so the warranty could expire before you even need to plug it in.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "What's Migicovsky saying about this?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says it's about trust. He wants buyers to know what they're signing up for and to trust that Pebble will make things right if issues come up.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "Are people actually buying them despite the short coverage?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some are. Orders are going out, though the warranty question is definitely on people's minds.",
+              "duration": 4.362449
+            }
+          ]
+        }
+      }
     }
   }
 }

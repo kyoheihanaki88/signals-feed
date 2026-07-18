@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,133 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "‘Brazen corruption’: critics denounce Trump Media plan to sell priority access to Truth Social posts",
-      "summary": "Donald Trump’s media company is planning to charge for special high-speed access to Truth Social posts, including possibly his own, affecting national security and financial markets.",
+      "source": "Al Jazeera",
+      "headline": "Indian police forcibly hospitalise activist after 20-day hunger strike",
+      "summary": "Police have forcibly removed a prominent activist from a protest site in New Delhi and taken him to hospital, saying his health was deteriorating from a hunger strike over alleged corruption in India’s exam system.",
       "keyTakeaways": [
-        "Called Truth PSI, the new service comes amid a flurry of other deals by Trump and his family company that critics say are exploiting the presidency for profit.",
-        "It follows similar offers of paid access on rival platforms, although with one key difference: the most popular Truth Social poster is the president himself, and, as the biggest shareholder of the publicly traded parent company, he would benefit directly.",
-        "Followers of Trump can already choose to get push notifications alerting them when new posts have been published."
+        "Initially it mainly involved satirical online memes, but hundreds of students and activists have gathered at the Jantar Mantar since Wangchuk began his hunger strike on June 28.",
+        "Wangchuk was “shifted to hospital for essential medical care” on the orders of the High Court following expert advice from doctors, a New Delhi police deputy commissioner said in a statement.",
+        "Wangchuk’s wife Gitanjali J Angmo said in a post on X that she was with her husband at Safdarjung Hospital and insisted he would continue his hunger strike."
       ],
-      "whyItMatters": "The move announced on Thursday would allow Wall Street trading firms and other institutions to get news first from top Truth Social contributors so they could profit off subsequent moves in stocks, bonds and interest rates.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/16/trump-media-truth-social-posts",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "About 2.2 million aspiring doctors had to retake India’s annual medical entrance exam under heavy security last month after the original test in May was cancelled after the questions were leaked.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/18/indian-police-forcibly-hospitalise-activist-after-20-day-hunger-strike?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "トランプ氏のSNSが投稿への優先アクセス権を有料販売へ――批判の声相次ぐ",
-          "summary": "トランプ前大統領が率いるメディア企業が、トゥルース・ソーシャルの投稿をいち早く受け取れる有料サービスの導入を計画している。大統領自身の投稿も対象となる可能性があり、国家安全保障や金融市場への影響を懸念する声が上がっている。",
+          "headline": "ハンガーストライキ中の活動家、警察が強制入院させる",
+          "summary": "インドの試験制度をめぐる汚職疑惑に抗議し、20日間にわたってハンガーストライキを続けていた著名な活動家が、ニューデリーの抗議現場から警察に強制的に連行され、病院へ搬送された。健康状態の悪化が理由とされている。",
           "keyTakeaways": [
-            "「トゥルースPSI」と名付けられたこのサービスは、トランプ一家による利益誘導だと批判される一連の取引と時を同じくして浮上した。",
-            "他のプラットフォームにも類似の有料サービスは存在するが、決定的な違いがある。トゥルース・ソーシャル最大の発信者は現職大統領であり、上場親会社の筆頭株主でもある彼が直接利益を得る構図だ。",
-            "トランプ氏の支持者はすでに、新規投稿を知らせるプッシュ通知を受け取る設定が可能だ。"
+            "当初はネット上の風刺ミームが中心だったが、ワンチュク氏が6月28日にストライキを開始して以降、数百人の学生や活動家がジャンタル・マンタルに集まるようになった。",
+            "ニューデリー警察の副長官は声明で、高等裁判所の命令と医師団の助言を受け、ワンチュク氏を「必要な医療処置のため病院へ移送した」と述べた。",
+            "妻のギタンジャリ・J・アンモ氏はXへの投稿で、サフダルジャン病院で夫に付き添っていると明かし、ハンガーストライキは続けると強調した。"
           ],
-          "whyItMatters": "このサービスが実現すれば、ウォール街の取引会社などが主要投稿者の情報をいち早く入手し、株式・債券・金利の動きを先読みして利益を得られる状況が生まれる。"
+          "whyItMatters": "5月に実施された試験で問題が流出したとして中止となり、約220万人の医学部志望者が先月、厳重な警備のもとで再試験を受けることを余儀なくされた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about Trump's company selling faster access to Truth Social posts. What's going on there?",
-              "duration": 6.4
+              "text": "I saw something about police taking an activist to hospital in India. What happened?",
+              "duration": 4.440816
             },
             {
               "speaker": "explainer",
-              "text": "Trump Media announced a new service called Truth PSI that would let institutions pay for high-speed access to posts on Truth Social—basically getting them faster than regular users.",
-              "duration": 10.44898
+              "text": "A prominent activist was forcibly removed from a protest site in New Delhi and hospitalized. He'd been on a hunger strike for twenty days.",
+              "duration": 7.366531
             },
             {
               "speaker": "listener",
-              "text": "So who would want that?",
-              "duration": 1.515102
+              "text": "What was he protesting?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Mainly Wall Street firms. They could use early access to posts from top contributors to make quick trades in stocks, bonds, or interest rates before everyone else sees the information.",
-              "duration": 9.978776
+              "text": "Alleged corruption in India's exam system. It's become a major issue there.",
+              "duration": 4.597551
             },
             {
               "speaker": "listener",
-              "text": "Wait—Trump posts on Truth Social all the time. Would this include his posts too?",
-              "duration": 5.276735
+              "text": "How serious is this exam corruption?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Possibly. He's the most popular poster on the platform, and as the biggest shareholder in the parent company, he'd benefit directly from this service.",
-              "duration": 7.88898
+              "text": "Very. About two point two million aspiring doctors had to retake the medical entrance exam last month after questions from the original May test were leaked.",
+              "duration": 8.019592
             },
             {
               "speaker": "listener",
-              "text": "That seems like a conflict of interest.",
-              "duration": 2.272653
+              "text": "That's enormous. So why did police take him to hospital?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "Critics are calling it brazen corruption—saying it exploits the presidency for profit, especially since his posts can affect national security and financial markets.",
-              "duration": 8.672653
+              "text": "They said his health was deteriorating. A High Court ordered it based on doctors' advice. The activist began his hunger strike on June twenty-eighth.",
+              "duration": 8.594286
             },
             {
               "speaker": "listener",
-              "text": "Don't other platforms do something similar though?",
-              "duration": 3.160816
+              "text": "Is he stopping the strike now that he's hospitalized?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Yes, rival platforms have offered paid access. But the key difference here is that the president himself is both the top poster and a major shareholder who profits from the service.",
-              "duration": 10.109388
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Truth Social が、投稿への優先アクセス権を有料で販売する計画を発表しました。",
-              "duration": 6.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "サービスの名称は「Truth PSI」で、木曜日に明らかになりました。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "ウォール街の取引会社などが、主要な投稿者の情報をいち早く受け取れる仕組みです。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "株式や債券、金利の動きを先読みして利益を得ることが目的とみられています。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "Truth Social で最も影響力のある投稿者は、現職大統領のトランプ氏本人です。",
-              "duration": 6.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は上場親会社の筆頭株主でもあり、このサービスから直接利益を得る立場にあります。",
-              "duration": 7.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "批判派はこれを、大統領の地位を私的な利益のために使う行為だと強く非難しています。",
-              "duration": 6.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "国家安全保障や金融市場への影響を懸念する声も、すでに上がっています。",
-              "duration": 6.312
+              "text": "His wife says he plans to continue it, even from the hospital.",
+              "duration": 3.186939
             }
           ]
         }
@@ -146,142 +100,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "China ‘strongly dissatisfied’ with nationalisation of British Steel",
-      "summary": "China’s government has said it is “strongly dissatisfied” with the decision to nationalise British Steel this week, 15 months after the UK government intervened to prevent the closure of its steelworks in Scunthorpe and the loss of 4,000 jobs.",
+      "headline": "White House backs Argentina players over Falklands banner in World Cup semi-final",
+      "summary": "The White House has backed Argentina’s footballers who displayed a banner supporting their country’s claim to the Falklands Islands after their World Cup semi-final victory against England.",
       "keyTakeaways": [
-        "On Thursday, British Steel was brought under public ownership to protect “the future of steel production”, the government announced.",
-        "The Department for Business and Trade said the move was essential to maintain steel production at the company’s site in Scunthorpe, Lincolnshire, to protect the company’s future and UK supply chains.",
-        "British Steel was previously owned by the Chinese company Jingye."
+        "In a fractious match in Atlanta on Wednesday, some players held up a banner after Argentina’s 2-1 win that said: “ Las Malvinas son Argentinas ” – using the country’s term for the South Atlantic islands.",
+        "Keir Starmer supported calls for Fifa to investigate the incident on Friday and appeared to back Spain ahead of the World Cup final against Argentina.",
+        "Giuliani said: “We believe in our first amendment rights here in the United States of America.” He added that Argentina’s players would have the “opportunity to be able to make statements” in the US."
       ],
-      "whyItMatters": "Last year the government finalised a £38bn deal to back Britain’s biggest nuclear project, Sizewell C, after easing out China General Nuclear, which had held a 20% stake, in 2021 over security fears.",
-      "originalURL": "https://www.theguardian.com/business/2026/jul/17/british-steel-nationalisation-china-strongly-dissatisfied",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "The intervention may prove awkward for Andy Burnham as he prepares to take over as British prime minister on Monday.",
+      "originalURL": "https://www.theguardian.com/football/2026/jul/18/white-house-backs-argentina-team-falklands-banner-world-cup-semi-final",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英国製鉄会社の国有化に中国が強い不満",
-          "summary": "英国政府が製鉄会社ブリティッシュ・スチールを国有化したことを受け、中国政府は「強い不満」を表明した。スカンソープの製鉄所閉鎖と約四千人の雇用喪失を防ぐため英国政府が介入してから、およそ一年三か月が経過していた。",
+          "headline": "フォークランド旗幕問題、ホワイトハウスがアルゼンチン選手を支持",
+          "summary": "ワールドカップ準決勝でアルゼンチンがイングランドを下した後、一部の選手が「マルビナス諸島はアルゼンチンのものだ」と記した横断幕を掲げた。この行為をめぐり、ホワイトハウスがアルゼンチン側への支持を表明した。",
           "keyTakeaways": [
-            "鉄鋼生産の将来を守るため、ブリティッシュ・スチールは公的管理下に置かれた。",
-            "リンカンシャー州スカンソープの拠点における生産継続と、英国のサプライチェーン保護が国有化の主な理由とされている。",
-            "同社はもともと、中国企業の京業（ジンイェ）が所有していた。"
+            "アトランタで行われた激しい試合の後、アルゼンチンの選手たちは2対1の勝利を収め、南大西洋の島々をめぐる自国の主張を示す横断幕を披露した。",
+            "スターマー英首相はFIFAに調査を求める声を支持し、決勝戦ではアルゼンチンの対戦相手スペインへの肩入れをにじませた。",
+            "ジュリアーニ氏は「米国には表現の自由がある」と述べ、アルゼンチン選手たちが米国内で意思表示をする権利を擁護した。"
           ],
-          "whyItMatters": "英国政府は昨年、安全保障上の懸念から二〇二一年に中国広核集団の出資を外した経緯もあり、原子力発電所サイズウェルCへの大型支援策を決定している。"
+          "whyItMatters": "月曜日に英国首相に就任するアンディ・バーナム氏にとって、このホワイトハウスの介入は出鼻をくじく形となりかねない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Britain just nationalised a steel company? That seems like a big move.",
-              "duration": 4.127347
+              "text": "I saw something about a banner at the World Cup semi-final. What happened?",
+              "duration": 3.526531
             },
             {
               "speaker": "explainer",
-              "text": "Yes, British Steel was brought under public ownership on Thursday. The government said it's to protect the future of steel production.",
-              "duration": 6.922449
+              "text": "After Argentina beat England 2-1 in Atlanta on Wednesday, some Argentine players held up a banner that said 'Las Malvinas son Argentinas' — that's Argentina's name for the Falkland Islands, claiming them as their territory.",
+              "duration": 13.609796
             },
             {
               "speaker": "listener",
-              "text": "Why did they feel they needed to step in?",
-              "duration": 2.533878
+              "text": "And the White House actually weighed in on this?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "About 15 months ago, the government intervened to prevent the closure of the steelworks in Scunthorpe and the loss of 4,000 jobs. Now they say nationalisation is essential to maintain production there and protect UK supply chains.",
-              "duration": 13.400816
+              "text": "Yes. A White House official said they believe in first amendment rights in the United States, and that Argentina's players have the opportunity to make statements while they're here.",
+              "duration": 9.325714
             },
             {
               "speaker": "listener",
-              "text": "And China's upset about this?",
-              "duration": 1.697959
+              "text": "How did Britain respond?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "China's government says it's strongly dissatisfied. British Steel was previously owned by a Chinese company called Jingye.",
-              "duration": 6.948571
+              "text": "Keir Starmer supported calls for FIFA to investigate the incident on Friday. He also appeared to back Spain ahead of the World Cup final against Argentina.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "Is this part of a pattern with Chinese ownership?",
-              "duration": 3.239184
+              "text": "Why does this matter beyond just a sports moment?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "It does follow other moves. Last year, the government backed Britain's biggest nuclear project, Sizewell C, after easing out China General Nuclear, which had held a 20% stake. That was over security fears back in 2021.",
-              "duration": 13.374694
+              "text": "The White House backing Argentina on this could prove awkward for Andy Burnham, who's set to become British prime minister on Monday. It touches on a longstanding territorial dispute between Britain and Argentina.",
+              "duration": 10.997551
             },
             {
               "speaker": "listener",
-              "text": "So there's a broader tension around Chinese investment in critical infrastructure.",
-              "duration": 4.597551
+              "text": "So it's really about more than football.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Steel production and nuclear energy are both seen as strategically important, and the government appears to be taking a more cautious approach.",
-              "duration": 8.176327
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "英国の製鉄会社ブリティッシュ・スチールが、今週公的管理下に入りました。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "これに対し、中国政府は強い不満を示す声明を出しています。",
-              "duration": 5.328
-            },
-            {
-              "speaker": "narrator",
-              "text": "国有化の背景には、リンカンシャー州スカンソープの製鉄所を守る必要がありました。",
-              "duration": 6.432
-            },
-            {
-              "speaker": "narrator",
-              "text": "操業が止まれば、約4,000人の雇用が失われる恐れがあったのです。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "ブリティッシュ・スチールはもともと、中国の京業（ジンイェ）が所有していました。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "英国政府にとって、鉄鋼の国内生産とサプライチェーンの維持は重要な課題です。",
-              "duration": 6.648
-            },
-            {
-              "speaker": "narrator",
-              "text": "英中関係という点では、こうした動きは今に始まったことではありません。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "2021年には安全保障上の懸念から、原発プロジェクトへの中国広核集団の出資が外されています。",
-              "duration": 8.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "昨年には、そのサイズウェルCに対して380億ポンドの支援が決まりました。",
-              "duration": 6.36
-            },
-            {
-              "speaker": "narrator",
-              "text": "英国が自国の基幹産業や重要インフラをどう守るか、その姿勢が改めて問われています。",
-              "duration": 7.248
+              "text": "Exactly. It's where sports, politics, and international relations all collide.",
+              "duration": 4.310204
             }
           ]
         }
@@ -293,127 +191,96 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Trump makes unverified claims of China ‘election meddling’ as critics fear ploy to challenge midterm results",
-      "summary": "Donald Trump accused China of interfering with the 2020 election in a primetime televised address that laid bare his continuing obsession with his defeat to Joe Biden, but which opponents warned was a smokescreen for him to meddle in the forthcoming congressional midterms.",
+      "headline": "US launches seventh night of Iran strikes as Hormuz conflict escalates",
+      "summary": "The US military said it had launched a seventh consecutive night of strikes on Iran on Friday night as fighting escalated over the strait of Hormuz.",
       "keyTakeaways": [
-        "Mark Warner, a Democratic senator from Virginia and vice-chair of the Senate intelligence committee, said he spent years working to strengthen the country’s defenses against foreign meddling in US elections.",
-        "He added: “China is a serious strategic competitor, and it absolutely seeks to advance its interests at America’s expense.",
-        "As a prelude to his claims of interference by China, Trump on Thursday said he was announcing the “immediate declassification and release of critical intelligence, revealing shocking vulnerabilities in our election infrastructure”."
+        "US Central Command, in a post on X, said the strikes, which began at 7pm GMT, were designed to “continue degrading Iranian military capabilities”.",
+        "Iranian media reported explosions heard or strikes carried out in the cities of Sirik, Ahvaz and Yazd.",
+        "The conflict continued on Saturday, with the IRCC saying it targeted ⁠a ⁠site where ​US combat aircraft ⁠were gathered at Sheikh Isa ⁠air base ​and ‌an ‌intelligence datacentre ‌in Bahrain known as Batelco, according to Iran’s state media."
       ],
-      "whyItMatters": "Democrats warned that Trump was trying to sow confusion, spread misinformation and lay the groundwork to challenge the results of the midterm elections, which polls suggest could deliver significant losses for the president’s party.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/16/trump-tv-address-thursday",
-      "readTime": 8,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "The current round of fighting has entered its seventh day and further undermined the interim deal between Iran and the US, which was meant to keep the strait open and give room for negotiations to lead to a permanent truce.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/17/us-launches-seventh-night-of-iran-strikes-as-hormuz-conflict-escalates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "トランプ氏、中国の「選挙介入」を主張――中間選挙への布石との見方も",
-          "summary": "トランプ前大統領はプライムタイムのテレビ演説で、2020年大統領選への中国の介入を主張した。バイデン氏への敗北に今なおこだわる姿勢が改めて浮き彫りになった一方、批判派はこの主張が来たる中間選挙の結果に異議を唱えるための地ならしだと警戒している。",
+          "headline": "米軍、イラン攻撃が7夜連続に——ホルムズ海峡をめぐる緊張が拡大",
+          "summary": "米軍は金曜夜、イランへの攻撃を7夜連続で実施したと発表した。ホルムズ海峡をめぐる戦闘は激化の一途をたどっている。",
           "keyTakeaways": [
-            "上院情報委員会副委員長のマーク・ワーナー議員（民主党、バージニア州）は、外国による選挙介入への防衛強化に長年取り組んできたと述べた。",
-            "同議員は「中国は深刻な戦略的競争相手であり、米国の利益を犠牲にして自国の利益を追求しようとしていることは間違いない」とも語った。",
-            "トランプ氏は木曜日、中国による介入の主張に先立ち、「選挙インフラの重大な脆弱性を明らかにする機密情報を即時に機密解除・公開する」と宣言した。"
+            "米中央軍はXへの投稿で、日本時間深夜に開始した今回の攻撃は「イランの軍事力の無力化を継続するもの」だと説明した。",
+            "イランメディアは、シリク、アフワーズ、ヤズドの各都市で爆発音や攻撃が確認されたと伝えた。",
+            "土曜日も戦闘は続き、イラン革命防衛隊はバーレーンのシェイク・イーサ空軍基地と、同国内の情報データセンターを標的にしたとイラン国営メディアが報じた。"
           ],
-          "whyItMatters": "民主党は、トランプ氏が混乱を意図的に生み出し、中間選挙の結果に異議を唱える土台を築こうとしていると警告している。世論調査では、与党共和党にとって厳しい結果が予想されている。"
+          "whyItMatters": "戦闘は7日目に突入し、海峡の航行維持と停戦交渉の余地を確保するために結ばれた米・イラン間の暫定合意は、さらに揺らいでいる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Trump made some claims about China and elections. What's this about?",
-              "duration": 4.362449
+              "text": "So this conflict between the US and Iran is still going?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "In a televised address, Trump accused China of interfering with the 2020 election. He announced he was declassifying intelligence about what he called vulnerabilities in election infrastructure.",
-              "duration": 10.684082
+              "text": "Yes. The US launched a seventh consecutive night of strikes on Iran on Friday night.",
+              "duration": 4.832653
             },
             {
               "speaker": "listener",
-              "text": "Is there evidence backing this up?",
-              "duration": 1.985306
+              "text": "What's the stated aim of these strikes?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "The headline describes his claims as unverified. Democratic Senator Mark Warner, who's vice-chair of the Senate intelligence committee, has worked on election security and acknowledges China as a serious competitor, but he didn't confirm Trump's specific allegations.",
-              "duration": 14.889796
+              "text": "US Central Command said they're designed to continue degrading Iranian military capabilities.",
+              "duration": 4.675918
             },
             {
               "speaker": "listener",
-              "text": "Why are people concerned about this now?",
-              "duration": 2.089796
+              "text": "Where exactly did these strikes happen?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Democrats are warning that Trump may be trying to lay groundwork to challenge the upcoming midterm election results. Polls suggest his party could face significant losses.",
-              "duration": 9.195102
+              "text": "Iranian media reported explosions or strikes in the cities of Sirik, Ahvaz, and Yazd.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "So they think it's more about the midterms than 2020?",
-              "duration": 3.004082
+              "text": "And has Iran responded?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "That's the concern, yes. Critics say he may be spreading confusion and misinformation as a way to contest results if they don't go his way.",
-              "duration": 7.653878
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "トランプ前大統領が、2020年大統領選に中国が介入したと主張する演説を行いました。",
-              "duration": 7.968
+              "text": "Yes. On Saturday, Iran said it targeted a US air base in Bahrain and an intelligence data center there.",
+              "duration": 6.452245
             },
             {
-              "speaker": "narrator",
-              "text": "プライムタイムのテレビ放送という場を選んだことで、この発言は広く注目を集めています。",
-              "duration": 6.792
+              "speaker": "listener",
+              "text": "Why does this matter so much right now?",
+              "duration": 2.037551
             },
             {
-              "speaker": "narrator",
-              "text": "演説の中でトランプ氏は、選挙インフラに関わる機密情報を即時に公開すると宣言しました。",
-              "duration": 7.632
+              "speaker": "explainer",
+              "text": "This is the seventh day of fighting, and it's undermining an interim deal that was meant to keep the Strait of Hormuz open and allow space for negotiations.",
+              "duration": 8.594286
             },
             {
-              "speaker": "narrator",
-              "text": "ただし、中国の介入を裏付ける具体的な証拠は、現時点では示されていません。",
-              "duration": 6.6
+              "speaker": "listener",
+              "text": "So the situation is getting worse, not better.",
+              "duration": 2.533878
             },
             {
-              "speaker": "narrator",
-              "text": "民主党側は、この主張が来たる中間選挙の結果に異議を唱えるための準備だと見ています。",
-              "duration": 6.96
-            },
-            {
-              "speaker": "narrator",
-              "text": "上院情報委員会副委員長のマーク・ワーナー議員は、外国による選挙介入への対策に長年携わってきた人物です。",
-              "duration": 9.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "同議員は、中国が米国の利益を犠牲にして自国の目標を追う姿勢は明らかだと述べています。",
-              "duration": 7.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "世論調査では、中間選挙で共和党が苦しい結果を迎える可能性が示されています。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "混乱を意図的に広げることで、選挙結果への不信感を植え付けようとしているという懸念は根強くあります。",
-              "duration": 7.608
+              "speaker": "explainer",
+              "text": "That's right. The fighting is escalating despite efforts to reach a permanent truce.",
+              "duration": 3.892245
             }
           ]
         }
@@ -425,122 +292,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Google is better than Apple at playing the AI regulations game",
-      "summary": "Google scored a grace period to bring Android in line with EU rules, while Apple must make Siri AI compliant before launch.",
+      "headline": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+      "summary": "As The Verge reported this week, not all of the reported cases have been linked to Taco Bell, and Taylor Farms is a giant, which has said it sells more than $7 billion in produce every year and makes two out of every five of the salad kits sold in grocery stores.",
       "keyTakeaways": [
-        "Today, the European Union ordered Google to give its AI rivals greater access to Android, the open-source operating system that powers billions of devices worldwide.",
-        "It’s also a sign that Google may have outmaneuvered Apple by playing Brussels’ regulatory game far more shrewdly.",
-        "Crucially, Google has until July 2027 to make those changes, giving it roughly a year to continue expanding Gemini, negotiate technical details with the EU, and shape how its rivals will eventually plug into Android."
+        "Everything we know so far about the cyclosporiasis outbreak.",
+        "Based on information provided yesterday by the FDA, Taylor Farms de Mexico is voluntarily removing all iceberg lettuce sourced from central Mexico from the U.S. market.",
+        "While the FDA traceback is indicating a specific independent farm that represents less than 1% of the U.S.’s iceberg lettuce supply as the potential source of the outbreak, we have removed all iceberg lettuce from the region indefinitely."
       ],
-      "whyItMatters": "It may look like a defeat on paper for Google, which has spent years resisting exactly this kind of access, but it is a regulatory win.",
-      "originalURL": "https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "Its requirement for standardized record-keeping about goods and shipments could’ve made finding the “specific independent farm” tied to the outbreak easier and faster.",
+      "originalURL": "https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AI規制をめぐる駆け引き、グーグルがアップルより巧みな理由",
-          "summary": "EUはグーグルに対し、AndroidをAI競合他社に開放するよう命じた。ただしグーグルには猶予期間が与えられた一方、アップルはSiriのAI機能をリリース前に規制へ準拠させなければならない。",
+          "headline": "集団感染を受け、テイラー・ファームズが米国市場からアイスバーグレタスを自主回収",
+          "summary": "今回の集団感染は、タコベルとの関連が確認されていない事例も含まれている。テイラー・ファームズは年間70億ドル超の青果物を販売し、スーパーで売られるサラダキットの5袋に2袋を手がけるとされる大手企業だ。",
           "keyTakeaways": [
-            "EUは本日、世界数十億台の端末を支えるAndroidについて、AI競合他社へのアクセス拡大をグーグルに義務づけた。",
-            "グーグルはブリュッセルの規制の論理を巧みに読み、アップルより有利な立場を確保した可能性がある。",
-            "対応期限は2027年7月。それまでの約一年、グーグルはGeminiの拡張を続けながら、EUと技術的な詳細を交渉し、競合他社のAndroid接続方式を自ら形づくる時間を得た。"
+            "サイクロスポーラ症の集団感染について、現時点で判明していること。",
+            "FDAの情報を受け、テイラー・ファームズ・デ・メキシコはメキシコ中部産のアイスバーグレタスを米国市場から自主的に全量回収すると発表した。",
+            "FDAの追跡調査は、米国のアイスバーグレタス供給量の1%未満を占める特定の独立農場を感染源として示唆しているが、同社は当該地域のアイスバーグレタスを無期限で取り扱い停止とした。"
           ],
-          "whyItMatters": "表向きは敗北に見えるこの決定も、実質的にはグーグルにとって規制上の勝利といえる。"
+          "whyItMatters": "物品と出荷記録の標準化が徹底されていれば、感染源とされる農場の特定はより迅速に行えた可能性がある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the EU just told Google to open up Android to other AI companies. That sounds like bad news for Google, no?",
-              "duration": 6.817959
+              "text": "I saw something about lettuce being pulled from stores. What's going on?",
+              "duration": 3.657143
             },
             {
               "speaker": "explainer",
-              "text": "On the surface, yes. But Google actually got something really valuable: time. They have until July 2027 to make those changes.",
-              "duration": 8.359184
+              "text": "Taylor Farms is voluntarily removing iceberg lettuce from the U.S. market after a cyclosporiasis outbreak.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "And that matters because...?",
-              "duration": 1.750204
+              "text": "What is cyclosporiasis?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "It gives them roughly a year to keep expanding Gemini without competition, and to help shape exactly how rivals will plug into Android down the road.",
-              "duration": 8.385306
+              "text": "It's an intestinal illness caused by a parasite. The FDA traced the outbreak to lettuce from central Mexico.",
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "Wait, how does this compare to what Apple has to do?",
-              "duration": 3.004082
+              "text": "How much lettuce are we talking about here?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Apple has to make Siri compliant with EU rules before launch. No grace period. So Google may have played the regulatory game more shrewdly.",
-              "duration": 8.437551
+              "text": "Taylor Farms is pulling all iceberg lettuce from that region, even though the FDA identified one specific farm representing less than one percent of U.S. supply.",
+              "duration": 8.907755
             },
             {
               "speaker": "listener",
-              "text": "Played it how?",
-              "duration": 1.07102
+              "text": "That seems like a lot more than necessary.",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "By engaging with Brussels early and strategically. What looks like a defeat on paper is actually a win — they resisted this kind of access for years, and now they get to ease into it on their own timeline.",
-              "duration": 11.964082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "EUがGoogleに対し、AndroidをAI競合他社へ開放するよう正式に命じました。",
-              "duration": 6.768
+              "text": "They're being cautious. Taylor Farms is huge—they sell over seven billion dollars in produce yearly and make two out of every five salad kits in grocery stores.",
+              "duration": 9.978776
             },
             {
-              "speaker": "narrator",
-              "text": "世界で数十億台の端末を支えるAndroidが、対象となっています。",
-              "duration": 5.664
+              "speaker": "listener",
+              "text": "Have people gotten sick from other places, not just Taco Bell?",
+              "duration": 3.369796
             },
             {
-              "speaker": "narrator",
-              "text": "ただしGoogleには、対応期限として2027年7月までの猶予が与えられました。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "この約一年の間に、GeminiをさらにAndroidへ根付かせることができます。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "EUとの技術的な交渉も、Googleが主導する形で進められる見通しです。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方のAppleは、Siriの新しいAI機能をリリース前に規制へ準拠させる必要があります。",
-              "duration": 7.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "表面上はGoogleへの制裁に見えますが、実態は有利な条件を引き出した結果です。",
-              "duration": 6.648
-            },
-            {
-              "speaker": "narrator",
-              "text": "規制の場でどう立ち回るかが、企業の競争力を左右する時代になっています。",
-              "duration": 5.976
+              "speaker": "explainer",
+              "text": "Yes, not all reported cases have been linked to Taco Bell. The outbreak appears broader than one restaurant chain.",
+              "duration": 6.269388
             }
           ]
         }
@@ -552,122 +383,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "New York governor says she’s using AI to analyze ‘every single rule’ in the state",
-      "summary": "New York Governor Kathy Hochul might have just signed a moratorium on new AI data centers in the state, but she’s not against using the technology herself.",
+      "headline": "Pebble founder Eric Migicovsky says his 30-day warranty is all about trust",
+      "summary": "Pebble founder Eric Migicovsky says buyers of its new e-paper smartwatches should know what they’re signing up for and trust Pebble to make things right if they run into issues, despite the short warranty.",
       "keyTakeaways": [
-        "During an interview with Bloomberg ’s Odd Lots podcast, Hochul said that her team is using “AI to analyze every single rule, regulation, [and] policy” to check for outdated legislation.",
-        "Earlier this week, New York became the first state to put a pause on new hyperscale data centers for up to a year.",
-        "Some of the antiquated laws mentioned by Hochul in the interview include a $25 fee required to take a dog hunting, or a stipulation that pregnant people need a permit to work after midnight."
+        "Migicovsky revived Pebble early last year, after the original company shut down in 2016.",
+        "I was excited about Pebble’s return after missing out on the originals, but hesitated after noticing their 30-day warranty.",
+        "While I ended up ordering a Pebble Round 2 that I’m still waiting for, others have also raised concerns about the watches’ warranty."
       ],
-      "whyItMatters": "In the meantime, state lawmakers plan to come up with regulations to protect residents from the rising utility costs and the threat to natural resources posed by massive data centers.",
-      "originalURL": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "That’s about as long as the Pebble Time 2’s battery life, so you might not even need to charge it before it’s no longer covered.",
+      "originalURL": "https://www.theverge.com/gadgets/967471/pebble-smartwatch-warranty-repairs-migicovsky-interview",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ニューヨーク州知事、AIで州の法規制を総点検",
-          "summary": "ニューヨーク州のキャシー・ホークル知事は、大規模データセンターの新設に最長一年の一時停止措置を講じた一方で、AI自体の活用には積極的な姿勢を見せている。",
+          "headline": "30日保証の真意——Pebble創業者が語る「信頼」という選択",
+          "summary": "Pebbleの創業者エリック・ミギコフスキーは、新しい電子ペーパースマートウォッチの保証期間がわずか30日であることについて、購入者には条件を十分に理解したうえで買ってほしいと語る。問題が起きた際には誠実に対応するという姿勢を、彼は「信頼」という言葉で表現した。",
           "keyTakeaways": [
-            "ブルームバーグのポッドキャストでホークル知事は、時代遅れの法律や規制を洗い出すため、AIを使って州のあらゆる規則を精査していると語った。",
-            "今週、ニューヨーク州は大規模データセンターの新設を最長一年間停止する措置を取り、全米初の事例となった。",
-            "点検の対象となる旧弊な法律には、猟犬の登録に二十五ドルの手数料を課す規定や、妊娠中の人が深夜以降に働くには許可が必要とする条項なども含まれる。"
+            "ミギコフスキーは2016年に一度幕を閉じたPebbleを、昨年初めに復活させた。",
+            "初代を逃した身としてPebble復活には胸が躍ったが、30日という保証期間の短さに購入をためらった。",
+            "結局Pebble Round 2を注文し、今も届くのを待っている。保証期間への懸念は、ほかのユーザーからも上がっている。"
           ],
-          "whyItMatters": "州議会は今後、巨大データセンターがもたらす光熱費の高騰や自然資源への影響から住民を守るための規制づくりを進める方針だ。"
+          "whyItMatters": "30日はPebble Time 2のバッテリー持続時間とほぼ同じ長さ——つまり、一度も充電しないうちに保証が切れる可能性もある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So New York just paused new AI data centers, but the governor is using AI herself?",
-              "duration": 5.01551
+              "text": "So Pebble smartwatches are back?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "Right. Governor Kathy Hochul says her team is using AI to review every rule and regulation in the state to find outdated laws.",
-              "duration": 7.366531
+              "text": "Yes. The founder, Eric Migicovsky, revived the brand early last year after the original company shut down in 2016.",
+              "duration": 7.340408
             },
             {
               "speaker": "listener",
-              "text": "What kind of outdated laws are we talking about?",
-              "duration": 2.951837
+              "text": "That's cool. But I'm seeing something about a really short warranty?",
+              "duration": 3.369796
             },
             {
               "speaker": "explainer",
-              "text": "Things like a twenty-five dollar fee to take a dog hunting, or requiring pregnant people to get a permit to work after midnight.",
-              "duration": 6.4
+              "text": "Right. The new watches come with just a 30-day warranty, which has some people concerned.",
+              "duration": 4.597551
             },
             {
               "speaker": "listener",
-              "text": "That's pretty specific. Why did they pause the data centers then?",
-              "duration": 3.84
+              "text": "Thirty days? That seems... really short.",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "New York became the first state to put a hold on new hyperscale data centers for up to a year. Lawmakers are concerned about rising utility costs and threats to natural resources.",
-              "duration": 9.430204
+              "text": "It is. The Pebble Time 2's battery lasts about that long on a charge, so the warranty could expire before you even need to plug it in.",
+              "duration": 7.88898
             },
             {
               "speaker": "listener",
-              "text": "So they're trying to figure out regulations while the pause is in effect?",
-              "duration": 4.075102
+              "text": "What's Migicovsky saying about this?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. They want to protect residents before allowing more massive data centers to be built.",
-              "duration": 4.675918
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-17/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ニューヨーク州のキャシー・ホークル知事が、AIを使って州の法規制を丸ごと見直す取り組みを進めています。",
-              "duration": 8.208
+              "text": "He says it's about trust. He wants buyers to know what they're signing up for and to trust that Pebble will make things right if issues come up.",
+              "duration": 7.000816
             },
             {
-              "speaker": "narrator",
-              "text": "ブルームバーグのポッドキャストで知事は、古くなった規則を洗い出すためにAIを活用していると話しました。",
-              "duration": 7.656
+              "speaker": "listener",
+              "text": "Are people actually buying them despite the short coverage?",
+              "duration": 3.186939
             },
             {
-              "speaker": "narrator",
-              "text": "その中には、猟犬を連れて狩りをする際に25ドルの費用がかかるという規定も含まれています。",
-              "duration": 7.368
-            },
-            {
-              "speaker": "narrator",
-              "text": "妊娠中の人が深夜以降に働くには許可が必要、という条項も残っているそうです。",
-              "duration": 6.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方でホークル知事は今週、大規模なデータセンターの新設を最長一年間停止する措置にも署名しました。",
-              "duration": 8.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "これは全米で初めての対応で、光熱費の上昇や自然環境への負荷を懸念する声が背景にあります。",
-              "duration": 8.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "州議会は今後、住民を守るための新たな規制の整備を進める方針です。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "法律を見直す道具としてAIを使いながら、AIそのものの影響には慎重に向き合う、そんな姿勢がこの動きには表れています。",
-              "duration": 9.768
+              "speaker": "explainer",
+              "text": "Some are. Orders are going out, though the warranty question is definitely on people's minds.",
+              "duration": 4.362449
             }
           ]
         }

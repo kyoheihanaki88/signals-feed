@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-18",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Indian police forcibly hospitalise activist after 20-day hunger strike",
+      "summary": "Police have forcibly removed a prominent activist from a protest site in New Delhi and taken him to hospital, saying his health was deteriorating from a hunger strike over alleged corruption in India’s exam system.",
+      "keyTakeaways": [
+        "Initially it mainly involved satirical online memes, but hundreds of students and activists have gathered at the Jantar Mantar since Wangchuk began his hunger strike on June 28.",
+        "Wangchuk was “shifted to hospital for essential medical care” on the orders of the High Court following expert advice from doctors, a New Delhi police deputy commissioner said in a statement.",
+        "Wangchuk’s wife Gitanjali J Angmo said in a post on X that she was with her husband at Safdarjung Hospital and insisted he would continue his hunger strike."
+      ],
+      "whyItMatters": "About 2.2 million aspiring doctors had to retake India’s annual medical entrance exam under heavy security last month after the original test in May was cancelled after the questions were leaked.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/18/indian-police-forcibly-hospitalise-activist-after-20-day-hunger-strike?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ハンガーストライキ中の活動家、警察が強制入院させる",
+          "summary": "インドの試験制度をめぐる汚職疑惑に抗議し、20日間にわたってハンガーストライキを続けていた著名な活動家が、ニューデリーの抗議現場から警察に強制的に連行され、病院へ搬送された。健康状態の悪化が理由とされている。",
+          "keyTakeaways": [
+            "当初はネット上の風刺ミームが中心だったが、ワンチュク氏が6月28日にストライキを開始して以降、数百人の学生や活動家がジャンタル・マンタルに集まるようになった。",
+            "ニューデリー警察の副長官は声明で、高等裁判所の命令と医師団の助言を受け、ワンチュク氏を「必要な医療処置のため病院へ移送した」と述べた。",
+            "妻のギタンジャリ・J・アンモ氏はXへの投稿で、サフダルジャン病院で夫に付き添っていると明かし、ハンガーストライキは続けると強調した。"
+          ],
+          "whyItMatters": "5月に実施された試験で問題が流出したとして中止となり、約220万人の医学部志望者が先月、厳重な警備のもとで再試験を受けることを余儀なくされた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "White House backs Argentina players over Falklands banner in World Cup semi-final",
+      "summary": "The White House has backed Argentina’s footballers who displayed a banner supporting their country’s claim to the Falklands Islands after their World Cup semi-final victory against England.",
+      "keyTakeaways": [
+        "In a fractious match in Atlanta on Wednesday, some players held up a banner after Argentina’s 2-1 win that said: “ Las Malvinas son Argentinas ” – using the country’s term for the South Atlantic islands.",
+        "Keir Starmer supported calls for Fifa to investigate the incident on Friday and appeared to back Spain ahead of the World Cup final against Argentina.",
+        "Giuliani said: “We believe in our first amendment rights here in the United States of America.” He added that Argentina’s players would have the “opportunity to be able to make statements” in the US."
+      ],
+      "whyItMatters": "The intervention may prove awkward for Andy Burnham as he prepares to take over as British prime minister on Monday.",
+      "originalURL": "https://www.theguardian.com/football/2026/jul/18/white-house-backs-argentina-team-falklands-banner-world-cup-semi-final",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "フォークランド旗幕問題、ホワイトハウスがアルゼンチン選手を支持",
+          "summary": "ワールドカップ準決勝でアルゼンチンがイングランドを下した後、一部の選手が「マルビナス諸島はアルゼンチンのものだ」と記した横断幕を掲げた。この行為をめぐり、ホワイトハウスがアルゼンチン側への支持を表明した。",
+          "keyTakeaways": [
+            "アトランタで行われた激しい試合の後、アルゼンチンの選手たちは2対1の勝利を収め、南大西洋の島々をめぐる自国の主張を示す横断幕を披露した。",
+            "スターマー英首相はFIFAに調査を求める声を支持し、決勝戦ではアルゼンチンの対戦相手スペインへの肩入れをにじませた。",
+            "ジュリアーニ氏は「米国には表現の自由がある」と述べ、アルゼンチン選手たちが米国内で意思表示をする権利を擁護した。"
+          ],
+          "whyItMatters": "月曜日に英国首相に就任するアンディ・バーナム氏にとって、このホワイトハウスの介入は出鼻をくじく形となりかねない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US launches seventh night of Iran strikes as Hormuz conflict escalates",
+      "summary": "The US military said it had launched a seventh consecutive night of strikes on Iran on Friday night as fighting escalated over the strait of Hormuz.",
+      "keyTakeaways": [
+        "US Central Command, in a post on X, said the strikes, which began at 7pm GMT, were designed to “continue degrading Iranian military capabilities”.",
+        "Iranian media reported explosions heard or strikes carried out in the cities of Sirik, Ahvaz and Yazd.",
+        "The conflict continued on Saturday, with the IRCC saying it targeted ⁠a ⁠site where ​US combat aircraft ⁠were gathered at Sheikh Isa ⁠air base ​and ‌an ‌intelligence datacentre ‌in Bahrain known as Batelco, according to Iran’s state media."
+      ],
+      "whyItMatters": "The current round of fighting has entered its seventh day and further undermined the interim deal between Iran and the US, which was meant to keep the strait open and give room for negotiations to lead to a permanent truce.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/17/us-launches-seventh-night-of-iran-strikes-as-hormuz-conflict-escalates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米軍、イラン攻撃が7夜連続に——ホルムズ海峡をめぐる緊張が拡大",
+          "summary": "米軍は金曜夜、イランへの攻撃を7夜連続で実施したと発表した。ホルムズ海峡をめぐる戦闘は激化の一途をたどっている。",
+          "keyTakeaways": [
+            "米中央軍はXへの投稿で、日本時間深夜に開始した今回の攻撃は「イランの軍事力の無力化を継続するもの」だと説明した。",
+            "イランメディアは、シリク、アフワーズ、ヤズドの各都市で爆発音や攻撃が確認されたと伝えた。",
+            "土曜日も戦闘は続き、イラン革命防衛隊はバーレーンのシェイク・イーサ空軍基地と、同国内の情報データセンターを標的にしたとイラン国営メディアが報じた。"
+          ],
+          "whyItMatters": "戦闘は7日目に突入し、海峡の航行維持と停戦交渉の余地を確保するために結ばれた米・イラン間の暫定合意は、さらに揺らいでいる。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+      "summary": "As The Verge reported this week, not all of the reported cases have been linked to Taco Bell, and Taylor Farms is a giant, which has said it sells more than $7 billion in produce every year and makes two out of every five of the salad kits sold in grocery stores.",
+      "keyTakeaways": [
+        "Everything we know so far about the cyclosporiasis outbreak.",
+        "Based on information provided yesterday by the FDA, Taylor Farms de Mexico is voluntarily removing all iceberg lettuce sourced from central Mexico from the U.S. market.",
+        "While the FDA traceback is indicating a specific independent farm that represents less than 1% of the U.S.’s iceberg lettuce supply as the potential source of the outbreak, we have removed all iceberg lettuce from the region indefinitely."
+      ],
+      "whyItMatters": "Its requirement for standardized record-keeping about goods and shipments could’ve made finding the “specific independent farm” tied to the outbreak easier and faster.",
+      "originalURL": "https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "集団感染を受け、テイラー・ファームズが米国市場からアイスバーグレタスを自主回収",
+          "summary": "今回の集団感染は、タコベルとの関連が確認されていない事例も含まれている。テイラー・ファームズは年間70億ドル超の青果物を販売し、スーパーで売られるサラダキットの5袋に2袋を手がけるとされる大手企業だ。",
+          "keyTakeaways": [
+            "サイクロスポーラ症の集団感染について、現時点で判明していること。",
+            "FDAの情報を受け、テイラー・ファームズ・デ・メキシコはメキシコ中部産のアイスバーグレタスを米国市場から自主的に全量回収すると発表した。",
+            "FDAの追跡調査は、米国のアイスバーグレタス供給量の1%未満を占める特定の独立農場を感染源として示唆しているが、同社は当該地域のアイスバーグレタスを無期限で取り扱い停止とした。"
+          ],
+          "whyItMatters": "物品と出荷記録の標準化が徹底されていれば、感染源とされる農場の特定はより迅速に行えた可能性がある。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Pebble founder Eric Migicovsky says his 30-day warranty is all about trust",
+      "summary": "Pebble founder Eric Migicovsky says buyers of its new e-paper smartwatches should know what they’re signing up for and trust Pebble to make things right if they run into issues, despite the short warranty.",
+      "keyTakeaways": [
+        "Migicovsky revived Pebble early last year, after the original company shut down in 2016.",
+        "I was excited about Pebble’s return after missing out on the originals, but hesitated after noticing their 30-day warranty.",
+        "While I ended up ordering a Pebble Round 2 that I’m still waiting for, others have also raised concerns about the watches’ warranty."
+      ],
+      "whyItMatters": "That’s about as long as the Pebble Time 2’s battery life, so you might not even need to charge it before it’s no longer covered.",
+      "originalURL": "https://www.theverge.com/gadgets/967471/pebble-smartwatch-warranty-repairs-migicovsky-interview",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "30日保証の真意——Pebble創業者が語る「信頼」という選択",
+          "summary": "Pebbleの創業者エリック・ミギコフスキーは、新しい電子ペーパースマートウォッチの保証期間がわずか30日であることについて、購入者には条件を十分に理解したうえで買ってほしいと語る。問題が起きた際には誠実に対応するという姿勢を、彼は「信頼」という言葉で表現した。",
+          "keyTakeaways": [
+            "ミギコフスキーは2016年に一度幕を閉じたPebbleを、昨年初めに復活させた。",
+            "初代を逃した身としてPebble復活には胸が躍ったが、30日という保証期間の短さに購入をためらった。",
+            "結局Pebble Round 2を注文し、今も届くのを待っている。保証期間への懸念は、ほかのユーザーからも上がっている。"
+          ],
+          "whyItMatters": "30日はPebble Time 2のバッテリー持続時間とほぼ同じ長さ——つまり、一度も充電しないうちに保証が切れる可能性もある。"
+        }
+      }
+    }
+  ]
+}

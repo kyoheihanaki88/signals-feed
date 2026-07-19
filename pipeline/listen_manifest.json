@@ -5458,6 +5458,52 @@
               "duration": 5.982041
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-19/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "日曜日の夜明け前、キーウに大量の弾道ミサイルが降り注ぎました。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウクライナ外相によると、開戦以来で最も多い数が一度に撃ち込まれました。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "この攻撃で1人が亡くなり、少なくとも16人が負傷しています。",
+              "duration": 5.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "住宅や事務所、工場、寮など、街の各所で火災が起きました。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "外相のシビハ氏は、首都への残虐なテロ行為だと強く非難しました。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウクライナは今、戦争5年目に入ってもほぼ毎日攻撃を受け続けています。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "弾道ミサイルを迎撃できるパトリオットの在庫が不足しており、防衛の余地が狭まっています。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "首都への圧力がさらに高まるなか、ウクライナにとって厳しい局面が続きます。",
+              "duration": 5.856
+            }
+          ]
         }
       },
       "2": {
@@ -5515,6 +5561,57 @@
               "speaker": "explainer",
               "text": "Two very accomplished teams. Spain chasing their second World Cup, Argentina going for their fourth.",
               "duration": 5.564082
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-19/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "日曜日、2026年ワールドカップの決勝戦が幕を開けます。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペインとアルゼンチンが、世界の頂点をかけて対峙します。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "アルゼンチンは4度目の優勝を、スペインは2度目の栄冠を狙っています。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペインはここまで大会通じてわずか1失点という、堅固な守備を誇ります。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "ボールを握り続け、高い位置で奪い返すスタイルが、その安定感を支えています。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "大会5得点のオジャルサバルに対し、アルゼンチンはロメロとリサンドロ・マルティネスが立ちはだかります。",
+              "duration": 7.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "右サイドではヤマルとタリアフィコの一対一が、試合の流れを決める場面になりそうです。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヤマルは負傷の影響で出遅れましたが、徐々に本来の鋭さを取り戻しています。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "対照的な哲学を持つ両チームが、どう噛み合うかが見どころです。",
+              "duration": 4.992
             }
           ]
         }
@@ -5576,6 +5673,62 @@
               "duration": 6.112653
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-19/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ヨルダンの米軍基地で、アメリカ兵2名が攻撃を受けて死亡しました。",
+              "duration": 5.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "米中央軍はイラン革命防衛隊の関与を断定し、関連施設への報復攻撃に踏み切りました。",
+              "duration": 7.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "なお、もう1名の行方はまだ確認されていません。",
+              "duration": 4.2
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けてイランは。",
+              "duration": 2.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "クウェートにある米軍のキャンプ・ウダイリとアリ・アルサレム空軍基地に自爆型ドローンを飛ばしたと主張しました。",
+              "duration": 7.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "米国とイランの間では、ここ数日で攻撃の応酬が急速にエスカレートしています。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "重要インフラへの攻撃も双方から指摘されており、緊張は一段と高まっています。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "土曜日の夜、イランのハメネイ最高指導者は書面で声明を出しました。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "その中で、米国の度重なる合意違反が「米大統領の署名には信頼性がない」という事実を示したと述べました。",
+              "duration": 8.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東の情勢は、当面は予断を許さない状況が続きそうです。",
+              "duration": 5.16
+            }
+          ]
         }
       },
       "4": {
@@ -5635,6 +5788,52 @@
               "duration": 5.093878
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-19/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "玄関のドアが、顔を向けるだけで開く時代になってきました。",
+              "duration": 4.608
+            },
+            {
+              "speaker": "narrator",
+              "text": "顔認証を使ったスマートロックが、実用的な選択肢として注目されています。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "4つの製品を実際に試したところ、どれも日常的に使えるレベルの精度がありました。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "鍵もスマートフォンも取り出さずに解錠できる体験は、思った以上に快適です。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "UWBを使ったハンズフリー解錠と比べると、速度や精度では一歩譲る部分もあります。",
+              "duration": 6.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、スマートフォンへの依存をなくしたい場合には、顔認証の方が向いています。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "デバイスを持ち歩かなくても、素早く手軽に帰宅できる点が大きな魅力です。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "玄関まわりの体験を静かに変えてくれる、そんな技術が手の届くところに来ています。",
+              "duration": 6.096
+            }
+          ]
         }
       },
       "5": {
@@ -5682,6 +5881,52 @@
               "speaker": "explainer",
               "text": "It seems that way. The focus is on what readers find helpful in their setups, whether for reading or related creative work.",
               "duration": 6.870204
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-19/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Appleのデバイスをまたいで使える文章作成アプリが、いま改めて注目を集めています。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "どのデバイスで開いても書き心地が変わらない点が、長く支持される理由のひとつです。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方、Mac向けの写真編集アプリにも新しい動きがあります。",
+              "duration": 5.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "Adobeのツールは近年、価格の上昇が続いていました。",
+              "duration": 4.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "その代替として設計されたこのアプリは、速度と機能の両面で高い評価を得ています。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "また数週間前、読者のみなさんに読書環境を教えてほしいと呼びかけました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "ガジェットやアプリだけでなく、しおりやマーカーの色まで、幅広い声が届きました。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "道具や環境が整うと、読む時間の質がすこし変わってくるものです。",
+              "duration": 5.328
             }
           ]
         }

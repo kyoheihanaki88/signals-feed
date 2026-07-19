@@ -1,0 +1,276 @@
+name: Auto Generate Listen JA
+
+# Daily Japanese solo-narration audio — the JA companion to Auto Generate Listen (EN).
+#
+# DESIGN (why this is a separate workflow, not a step in the EN one):
+#   • JA is OPTIONAL everywhere downstream: the listen-ready promotion gate is EN-only
+#     and this workflow never changes that. A JA failure is a red run here and nothing
+#     else — it can never block, delay, or dirty the EN feed.
+#   • Runs strictly AFTER EN Listen has landed: the probe requires listen.en 5/5 on the
+#     merged edition, and a hard gate requires latest.json to already point at DATE.
+#     JA therefore NEVER promotes the served pointer — that stays owned by the EN flow.
+#   • IDEMPOTENT: green-skips when the target edition already carries listen.ja for all
+#     5 signals, so repeated dispatches are harmless.
+#   • RESUMABLE across runs: listen_generate.py writes per-signal checkpoints under
+#     scratch/ (gate+drift re-verified on load, fail-closed). Runners are ephemeral, so
+#     scratch is persisted via actions/cache keyed by date — a rerun after a content-gate
+#     failure regenerates only the failed signal(s).
+#   • DISPATCH-ONLY for now (no cron): validate the flow with manual runs first; the
+#     schedule is a deliberate later step.
+#
+# Generation itself is the exact production path used manually since 2026-07-17:
+# solo Nanami narration (v6 preset: ja-JP-NanamiNeural, customerservice style, rate from
+# code — currently +12%, pitch default), full JA quality gates, decoded-duration drift
+# check, R2 upload + public verify, then the atomic manifest write. Same fail-closed
+# order as EN: generate (atomic manifest) → inject+validate → scratch clean →
+# metadata-only guard → PR → merge-or-fail-loudly.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date (YYYY-MM-DD). Leave blank to use the newest edition on main."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-generate-listen-ja
+  cancel-in-progress: false
+
+jobs:
+  # ── 1) Probe merged main: which date, is EN in, and is JA already done? ────────────
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      date: ${{ steps.check.outputs.date }}
+      needed: ${{ steps.check.outputs.needed }}
+      reason: ${{ steps.check.outputs.reason }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Resolve date — JA coverage + EN precondition
+        id: check
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, glob, os, re, sys
+          want = (os.environ.get("INPUT_DATE") or "").strip()
+          eds = []
+          for f in glob.glob("editions/*.json"):
+              m = re.search(r"(\d{4}-\d{2}-\d{2})\.json$", os.path.basename(f))
+              if m:
+                  eds.append((m.group(1), f))
+          if not eds:
+              print("date=")
+              print("needed=false")
+              print("reason=no_editions")
+              print("no editions found — nothing to do", file=sys.stderr)
+              sys.exit(0)
+          if want:
+              if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", want):
+                  print(f"::error::invalid date input: {want!r} (expected YYYY-MM-DD)", file=sys.stderr)
+                  sys.exit(1)
+              match = [e for e in eds if e[0] == want]
+              if not match:
+                  print(f"::error::editions/{want}.json not found on main", file=sys.stderr)
+                  sys.exit(1)
+              date, path = match[0]
+          else:
+              date, path = max(eds)
+          d = json.load(open(path))
+          sigs = d.get("signals", [])
+          en = sum(1 for s in sigs
+                   if ((s.get("listen") or {}).get("en") or {}).get("audioURL"))
+          ja = sum(1 for s in sigs
+                   if ((s.get("listen") or {}).get("ja") or {}).get("audioURL"))
+          print(f"date={date}")
+          if len(sigs) == 5 and ja == 5:
+              # Idempotent green skip — repeated dispatches are harmless.
+              print("needed=false")
+              print("reason=complete")
+              print(f"{date}: listen.ja already complete (5/5) — nothing to do", file=sys.stderr)
+          elif len(sigs) != 5 or en < 5:
+              # JA runs only AFTER EN Listen has landed on the merged edition. This is
+              # what guarantees JA can never promote latest.json ahead of EN audio —
+              # the EN-only fail-closed promotion stays owned by Auto Generate Listen.
+              print("needed=false")
+              print("reason=en_pending")
+              print(f"::warning::{date}: listen.en incomplete ({en}/5) — JA runs only after EN Listen lands. Skipping (green).", file=sys.stderr)
+          else:
+              print("needed=true")
+              print("reason=generate")
+              print(f"{date}: EN complete, listen.ja {ja}/5 → generating", file=sys.stderr)
+          PY
+
+      - name: Summary
+        run: |
+          case "${{ steps.check.outputs.reason }}" in
+            complete)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: listen.ja already 5/5 → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY";;
+            en_pending) echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: EN Listen not landed yet → skipped (JA never runs ahead of EN) ⏳" >> "$GITHUB_STEP_SUMMARY";;
+            generate)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: JA missing → generating 🎙" >> "$GITHUB_STEP_SUMMARY";;
+            *)          echo "## Auto Generate Listen JA — no editions found → nothing to do" >> "$GITHUB_STEP_SUMMARY";;
+          esac
+
+  # ── 2) Generate — only when EN is in and JA is missing ─────────────────────────────
+  listen-ja:
+    needs: probe
+    if: needs.probe.outputs.needed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      DATE: ${{ needs.probe.outputs.date }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install tools (ffmpeg for decoded-duration drift, wrangler for R2)
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          npm install -g wrangler
+
+      - name: Gate — edition exists, matches DATE, EN Listen complete
+        run: |
+          test -f "editions/${DATE}.json" || { echo "::error::editions/${DATE}.json not found"; exit 1; }
+          python - <<'PY'
+          import json, os, sys
+          date = os.environ["DATE"]
+          d = json.load(open(f"editions/{date}.json"))
+          sigs = d.get("signals", [])
+          en = sum(1 for s in sigs
+                   if ((s.get("listen") or {}).get("en") or {}).get("audioURL"))
+          if d.get("date") != date or len(sigs) != 5 or en != 5:
+              print(f"::error::edition gate failed — date={d.get('date')!r} signals={len(sigs)} listen.en={en}/5")
+              sys.exit(1)
+          PY
+
+      # JA must NEVER move the served pointer. By requiring latest.json to already point
+      # at DATE, injection below is a pure ja-merge (merged: 5) — promotion remains the
+      # EN workflow's job, and the EN-only listen-ready gate is untouched.
+      - name: Gate — latest.json already points at DATE (JA never promotes)
+        run: |
+          python -c "import json,os,sys; l=json.load(open('latest.json')).get('date'); sys.exit(0 if l==os.environ['DATE'] else 1)" \
+            || { echo "::error::latest.json does not point at ${DATE} — EN Listen must promote first; JA never moves the pointer."; exit 1; }
+
+      # Runners are ephemeral, so per-signal resume checkpoints (scratch/) are persisted
+      # via cache. Restore the newest cache for this DATE; each run saves its own
+      # immutable cache below (even on gate failure — that is exactly when it matters).
+      - name: Restore JA scratch checkpoints (per-date resume)
+        uses: actions/cache/restore@v4
+        with:
+          path: scratch
+          key: listen-ja-scratch-${{ needs.probe.outputs.date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            listen-ja-scratch-${{ needs.probe.outputs.date }}-
+
+      # Fail-closed chain (unchanged from the manual runs): all 5 signals must pass the
+      # JA content gates + drift before anything uploads; the manifest is written only
+      # after all 5 clips are publicly verified on R2.
+      - name: Generate JA solo narration + upload to R2 + write manifest
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SIGNALS_LISTEN_MODEL: ${{ secrets.SIGNALS_LISTEN_MODEL }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python pipeline/listen_generate.py "$DATE" --lang ja
+
+      - name: Save JA scratch checkpoints (runs even when a content gate fails)
+        if: ${{ always() && (steps.gen.outcome == 'success' || steps.gen.outcome == 'failure') }}
+        uses: actions/cache/save@v4
+        with:
+          path: scratch
+          key: listen-ja-scratch-${{ needs.probe.outputs.date }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Inject listen.ja into edition + latest, validate
+        run: python pipeline/listen_inject_edition.py "$DATE"
+
+      # scratch/ is synthesis working data — cached above, never committed; must be
+      # removed before the guard or it trips "unexpected change".
+      - name: Clean generated scratch audio
+        run: rm -rf scratch
+
+      - name: Guard — only feed metadata files changed (no MP3s, no stray files)
+        run: |
+          CHANGED="$(git status --porcelain)"
+          echo "$CHANGED"
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            p="${line:3}"
+            case "$p" in
+              "editions/${DATE}.json"|latest.json|pipeline/listen_manifest.json) ;;
+              *) echo "::error::unexpected change: $p"; exit 1;;
+            esac
+          done <<< "$CHANGED"
+
+      - name: Open JA Listen PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SIGNALS_PAT || github.token }}
+          base: main
+          branch: "listen/ja-${{ needs.probe.outputs.date }}"
+          add-paths: |
+            editions/${{ needs.probe.outputs.date }}.json
+            latest.json
+            pipeline/listen_manifest.json
+          commit-message: "Add JA solo Listen for ${{ needs.probe.outputs.date }}"
+          title: "JA solo Listen — ${{ needs.probe.outputs.date }} (auto)"
+          labels: listen, auto
+          delete-branch: true
+          body: |
+            Automated **Auto Generate Listen JA** for **${{ needs.probe.outputs.date }}** —
+            runs only after EN Listen landed and `latest.json` already points at this date.
+            - Solo Nanami narration (customerservice style, production rate from code), `speaker="narrator"` captions
+            - MP3s uploaded to R2: `audio/${{ needs.probe.outputs.date }}/signal-0N-dialogue-ja.mp3`
+            - `listen.ja` merged into `editions/${{ needs.probe.outputs.date }}.json` + `latest.json` — EN blocks byte-identical
+            - All 5 clips publicly verified; `validate_feed` + consistency passed
+            - EN-only listen-ready promotion gate unchanged; a JA failure never blocks the EN feed.
+
+      # Merge RELIABLY or FAIL LOUDLY — same policy as the EN workflow: a silently
+      # unmerged PR is a stalled day. Immediate squash first; if branch protection
+      # blocks it, enable auto-merge; if neither sticks, fail the run.
+      - name: Merge JA Listen PR (or fail loudly)
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.SIGNALS_PAT || github.token }}
+          PR: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          set -uo pipefail
+          echo "Merging JA Listen PR #$PR for $DATE"
+          how=""
+          if gh pr merge "$PR" --squash --delete-branch; then
+            how="immediate-squash"
+          elif gh pr merge "$PR" --squash --auto --delete-branch; then
+            how="auto-merge-enabled"
+          else
+            echo "::warning::both immediate-merge and auto-merge-enable calls failed for PR #$PR"
+          fi
+          merged=$(gh pr view "$PR" --json merged -q .merged 2>/dev/null || echo unknown)
+          automq=$(gh pr view "$PR" --json autoMergeRequest -q '.autoMergeRequest != null' 2>/dev/null || echo false)
+          echo "PR #$PR — attempt=${how:-none} merged=$merged autoMerge=$automq"
+          if [ "$merged" = "true" ]; then
+            echo "### Merged ✅ JA Listen PR #$PR ($DATE) via ${how}" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$automq" = "true" ]; then
+            echo "### Auto-merge enabled ✅ JA Listen PR #$PR ($DATE) — merges when checks pass" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::JA Listen PR #$PR ($DATE) is NOT merged and auto-merge is NOT enabled. Check SIGNALS_PAT / 'Allow auto-merge' repo setting. Failing loudly."
+            exit 1
+          fi

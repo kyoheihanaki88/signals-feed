@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,86 +9,76 @@
       "lead": true,
       "category": "WORLD",
       "source": "Al Jazeera",
-      "headline": "Indian police forcibly hospitalise activist after 20-day hunger strike",
-      "summary": "Police have forcibly removed a prominent activist from a protest site in New Delhi and taken him to hospital, saying his health was deteriorating from a hunger strike over alleged corruption in India’s exam system.",
+      "headline": "Russia launches largest ballistic missile attack on Kyiv since start of war",
+      "summary": "Russia has unleashed another night of powerful air attacks on Kyiv, firing its largest number of ballistic missiles since the start of the war, according to Ukraine’s foreign minister.",
       "keyTakeaways": [
-        "Initially it mainly involved satirical online memes, but hundreds of students and activists have gathered at the Jantar Mantar since Wangchuk began his hunger strike on June 28.",
-        "Wangchuk was “shifted to hospital for essential medical care” on the orders of the High Court following expert advice from doctors, a New Delhi police deputy commissioner said in a statement.",
-        "Wangchuk’s wife Gitanjali J Angmo said in a post on X that she was with her husband at Safdarjung Hospital and insisted he would continue his hunger strike."
+        "The latest bombardment highlights mounting challenges for Ukraine in its fifth year of war as it weathers almost daily Russian attacks with a shortage of Patriot air defence missiles, which are its best chance of downing ballistic missiles.",
+        "Russia’s strikes on Sunday sparked fires across Kyiv, damaging residential buildings, offices, industrial sites, a dormitory and vehicles, according to the State Emergency Service.",
+        "Foreign Minister Andrii Sybiha called the ballistic missile barrage “a brutal terrorist attack on the Ukrainian capital” that demanded a firm response."
       ],
-      "whyItMatters": "About 2.2 million aspiring doctors had to retake India’s annual medical entrance exam under heavy security last month after the original test in May was cancelled after the questions were leaked.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/18/indian-police-forcibly-hospitalise-activist-after-20-day-hunger-strike?traffic_source=rss",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "The hours-long attacks on Kyiv early on Sunday killed one person and wounded at least 16, according to Ukrainian officials.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/19/russia-launches-largest-ballistic-missile-attack-on-kyiv-since-start-of-war?traffic_source=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ハンガーストライキ中の活動家、警察が強制入院させる",
-          "summary": "インドの試験制度をめぐる汚職疑惑に抗議し、20日間にわたってハンガーストライキを続けていた著名な活動家が、ニューデリーの抗議現場から警察に強制的に連行され、病院へ搬送された。健康状態の悪化が理由とされている。",
+          "headline": "ロシア、開戦以来最大規模の弾道ミサイル攻撃をキーウに実施",
+          "summary": "ロシアが再びキーウへの大規模な夜間攻撃を行った。ウクライナ外相によれば、開戦後最多となる数の弾道ミサイルが発射されたという。",
           "keyTakeaways": [
-            "当初はネット上の風刺ミームが中心だったが、ワンチュク氏が6月28日にストライキを開始して以降、数百人の学生や活動家がジャンタル・マンタルに集まるようになった。",
-            "ニューデリー警察の副長官は声明で、高等裁判所の命令と医師団の助言を受け、ワンチュク氏を「必要な医療処置のため病院へ移送した」と述べた。",
-            "妻のギタンジャリ・J・アンモ氏はXへの投稿で、サフダルジャン病院で夫に付き添っていると明かし、ハンガーストライキは続けると強調した。"
+            "今回の攻撃は、戦争5年目を迎えたウクライナの苦境を改めて浮き彫りにした。弾道ミサイル迎撃に不可欠なパトリオットの在庫不足が続くなか、ほぼ毎日のように攻撃にさらされている。",
+            "日曜日の攻撃でキーウ各地に火災が発生し、住宅や事務所、工場、寮、車両などが被害を受けたと国家緊急事態庁が発表した。",
+            "シビハ外相は今回の弾道ミサイル攻撃を「ウクライナの首都への残虐なテロ攻撃」と断じ、断固たる対応を求めた。"
           ],
-          "whyItMatters": "5月に実施された試験で問題が流出したとして中止となり、約220万人の医学部志望者が先月、厳重な警備のもとで再試験を受けることを余儀なくされた。"
+          "whyItMatters": "ウクライナ当局によれば、日曜日早朝に数時間にわたって続いた攻撃で1人が死亡し、少なくとも16人が負傷した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about police taking an activist to hospital in India. What happened?",
-              "duration": 4.440816
+              "text": "I saw Russia attacked Kyiv overnight. What happened?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "A prominent activist was forcibly removed from a protest site in New Delhi and hospitalized. He'd been on a hunger strike for twenty days.",
-              "duration": 7.366531
+              "text": "Ukraine says Russia fired its largest number of ballistic missiles at Kyiv since the war began. The attack lasted hours and hit early Sunday morning.",
+              "duration": 8.620408
             },
             {
               "speaker": "listener",
-              "text": "What was he protesting?",
+              "text": "How bad was the damage?",
               "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Alleged corruption in India's exam system. It's become a major issue there.",
-              "duration": 4.597551
+              "text": "One person was killed and at least sixteen were wounded. Fires broke out across the city, damaging homes, offices, industrial sites, and a dormitory.",
+              "duration": 8.724898
             },
             {
               "speaker": "listener",
-              "text": "How serious is this exam corruption?",
-              "duration": 2.45551
+              "text": "This is the fifth year of the war. Why is this attack significant now?",
+              "duration": 4.728163
             },
             {
               "speaker": "explainer",
-              "text": "Very. About two point two million aspiring doctors had to retake the medical entrance exam last month after questions from the original May test were leaked.",
-              "duration": 8.019592
+              "text": "Ukraine is facing a shortage of Patriot air defence missiles, which are its best tool for stopping ballistic missiles. That makes these almost daily Russian attacks harder to defend against.",
+              "duration": 10.057143
             },
             {
               "speaker": "listener",
-              "text": "That's enormous. So why did police take him to hospital?",
-              "duration": 3.056327
+              "text": "What's Ukraine saying about it?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "They said his health was deteriorating. A High Court ordered it based on doctors' advice. The activist began his hunger strike on June twenty-eighth.",
-              "duration": 8.594286
-            },
-            {
-              "speaker": "listener",
-              "text": "Is he stopping the strike now that he's hospitalized?",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "His wife says he plans to continue it, even from the hospital.",
-              "duration": 3.186939
+              "text": "Their foreign minister called it a brutal terrorist attack on the capital and said it demands a firm response.",
+              "duration": 5.982041
             }
           ]
         }
@@ -99,87 +89,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "White House backs Argentina players over Falklands banner in World Cup semi-final",
-      "summary": "The White House has backed Argentina’s footballers who displayed a banner supporting their country’s claim to the Falklands Islands after their World Cup semi-final victory against England.",
+      "source": "Al Jazeera",
+      "headline": "Spain vs Argentina: How each team can win World Cup final 2026",
+      "summary": "Reigning European champions Spain face defending world champions Argentina in the 2026 World Cup final on Sunday, with the Copa America holders chasing a fourth star and La Roja hunting a second.",
       "keyTakeaways": [
-        "In a fractious match in Atlanta on Wednesday, some players held up a banner after Argentina’s 2-1 win that said: “ Las Malvinas son Argentinas ” – using the country’s term for the South Atlantic islands.",
-        "Keir Starmer supported calls for Fifa to investigate the incident on Friday and appeared to back Spain ahead of the World Cup final against Argentina.",
-        "Giuliani said: “We believe in our first amendment rights here in the United States of America.” He added that Argentina’s players would have the “opportunity to be able to make statements” in the US."
+        "Mikel Oyarzabal, Spain’s five-goal top scorer, will do battle with the combative centre-backs Cristian Romero and Lisandro Martinez.",
+        "The final pits two contrasting footballing philosophies against one another.",
+        "Spain have built their run through relentless control, conceding just once all tournament while suffocating opponents with possession and a well-drilled counter press that wins the ball back high up the pitch."
       ],
-      "whyItMatters": "The intervention may prove awkward for Andy Burnham as he prepares to take over as British prime minister on Monday.",
-      "originalURL": "https://www.theguardian.com/football/2026/jul/18/white-house-backs-argentina-team-falklands-banner-world-cup-semi-final",
+      "whyItMatters": "Lamine Yamal against Nicolas Tagliafico on Spain’s right flank is likely to be a key duel, with Argentina’s left-back needing to contain a player who has had a slow start to the tournament following an injury but is getting close to reaching his full threat potential.",
+      "originalURL": "https://www.aljazeera.com/sports/2026/7/19/spain-vs-argentina-five-key-factors-2026-world-cup-final?traffic_source=rss",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "フォークランド旗幕問題、ホワイトハウスがアルゼンチン選手を支持",
-          "summary": "ワールドカップ準決勝でアルゼンチンがイングランドを下した後、一部の選手が「マルビナス諸島はアルゼンチンのものだ」と記した横断幕を掲げた。この行為をめぐり、ホワイトハウスがアルゼンチン側への支持を表明した。",
+          "headline": "スペイン対アルゼンチン――2026年W杯決勝の行方",
+          "summary": "欧州王者スペインと世界王者アルゼンチンが、2026年ワールドカップ決勝で激突する。アルゼンチンは4度目の世界制覇を狙い、スペインは2度目の栄冠を目指す。",
           "keyTakeaways": [
-            "アトランタで行われた激しい試合の後、アルゼンチンの選手たちは2対1の勝利を収め、南大西洋の島々をめぐる自国の主張を示す横断幕を披露した。",
-            "スターマー英首相はFIFAに調査を求める声を支持し、決勝戦ではアルゼンチンの対戦相手スペインへの肩入れをにじませた。",
-            "ジュリアーニ氏は「米国には表現の自由がある」と述べ、アルゼンチン選手たちが米国内で意思表示をする権利を擁護した。"
+            "大会最多5得点のオジャルサバルと、堅守の要ロメロ、リサンドロ・マルティネスとの対決が焦点となる。",
+            "両チームは対照的なサッカー哲学を体現しており、決勝はその真っ向勝負となる。",
+            "スペインはポゼッションと高い位置でのプレスを軸に、大会通じてわずか1失点という盤石な戦いを続けてきた。"
           ],
-          "whyItMatters": "月曜日に英国首相に就任するアンディ・バーナム氏にとって、このホワイトハウスの介入は出鼻をくじく形となりかねない。"
+          "whyItMatters": "負傷明けで本調子に戻りつつあるヤマルを、アルゼンチンの左サイドバック、タリアフィコがいかに封じるか――右サイドのこの一騎打ちが、試合の行方を左右する可能性が高い。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a banner at the World Cup semi-final. What happened?",
-              "duration": 3.526531
+              "text": "So Spain and Argentina are meeting in the World Cup final on Sunday?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "After Argentina beat England 2-1 in Atlanta on Wednesday, some Argentine players held up a banner that said 'Las Malvinas son Argentinas' — that's Argentina's name for the Falkland Islands, claiming them as their territory.",
-              "duration": 13.609796
+              "text": "That's right. It's the reigning European champions against the defending world champions.",
+              "duration": 4.127347
             },
             {
               "speaker": "listener",
-              "text": "And the White House actually weighed in on this?",
-              "duration": 2.403265
+              "text": "What makes this matchup interesting?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Yes. A White House official said they believe in first amendment rights in the United States, and that Argentina's players have the opportunity to make statements while they're here.",
-              "duration": 9.325714
+              "text": "It's really two different styles. Spain have controlled games all tournament, keeping possession and pressing high. They've only conceded one goal.",
+              "duration": 8.306939
             },
             {
               "speaker": "listener",
-              "text": "How did Britain respond?",
-              "duration": 1.48898
+              "text": "And Argentina plays differently?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Keir Starmer supported calls for FIFA to investigate the incident on Friday. He also appeared to back Spain ahead of the World Cup final against Argentina.",
-              "duration": 8.542041
+              "text": "The article describes them as contrasting philosophies, yes. One key battle will be Spain's top scorer Mikel Oyarzabal against Argentina's tough centre-backs Romero and Martinez.",
+              "duration": 10.292245
             },
             {
               "speaker": "listener",
-              "text": "Why does this matter beyond just a sports moment?",
-              "duration": 3.108571
+              "text": "Any other matchups to watch?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "The White House backing Argentina on this could prove awkward for Andy Burnham, who's set to become British prime minister on Monday. It touches on a longstanding territorial dispute between Britain and Argentina.",
-              "duration": 10.997551
+              "text": "Lamine Yamal on Spain's right wing against Argentina's left-back Tagliafico. Yamal's been recovering from injury but he's getting closer to full strength.",
+              "duration": 8.672653
             },
             {
               "speaker": "listener",
-              "text": "So it's really about more than football.",
-              "duration": 2.115918
+              "text": "Should be a good one then.",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. It's where sports, politics, and international relations all collide.",
-              "duration": 4.310204
+              "text": "Two very accomplished teams. Spain chasing their second World Cup, Argentina going for their fourth.",
+              "duration": 5.564082
             }
           ]
         }
@@ -190,97 +180,87 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "US launches seventh night of Iran strikes as Hormuz conflict escalates",
-      "summary": "The US military said it had launched a seventh consecutive night of strikes on Iran on Friday night as fighting escalated over the strait of Hormuz.",
+      "source": "BBC News (World)",
+      "headline": "US and Iran exchange strikes after two US soldiers killed in Jordan",
+      "summary": "Centcom said it also targeted Iran's Revolutionary Guards (IRGC) responsible for the attack that killed two US troops in Jordan on Friday, where another service member remains missing.",
       "keyTakeaways": [
-        "US Central Command, in a post on X, said the strikes, which began at 7pm GMT, were designed to “continue degrading Iranian military capabilities”.",
-        "Iranian media reported explosions heard or strikes carried out in the cities of Sirik, Ahvaz and Yazd.",
-        "The conflict continued on Saturday, with the IRCC saying it targeted ⁠a ⁠site where ​US combat aircraft ⁠were gathered at Sheikh Isa ⁠air base ​and ‌an ‌intelligence datacentre ‌in Bahrain known as Batelco, according to Iran’s state media."
+        "In response to the latest strikes, Iran's army said it carried out drone attacks on two US bases in Kuwait, according to state media.",
+        "The US and Iran have ramped up attacks against each other in recent days, with both sides accused of striking critical infrastructure.",
+        "On Saturday, Iran said it carried out \"large-scale attacks with kamikaze drones\" against an American military \"depot at Camp Udairi\" and another at \"Ali Al Salem Air Base in Kuwait\", according to the IRGC-affiliated Tasnim news agency."
       ],
-      "whyItMatters": "The current round of fighting has entered its seventh day and further undermined the interim deal between Iran and the US, which was meant to keep the strait open and give room for negotiations to lead to a permanent truce.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/17/us-launches-seventh-night-of-iran-strikes-as-hormuz-conflict-escalates",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "whyItMatters": "Late on Saturday, Iran's Supreme Leader Mojtaba Khamenei said in a written statement that America's \"repeated breaches\" of the agreement had \"laid bare a fundamental truth: the signature of the US president is utterly worthless and devoid of credibility\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米軍、イラン攻撃が7夜連続に——ホルムズ海峡をめぐる緊張が拡大",
-          "summary": "米軍は金曜夜、イランへの攻撃を7夜連続で実施したと発表した。ホルムズ海峡をめぐる戦闘は激化の一途をたどっている。",
+          "headline": "米軍とイランが相互攻撃、ヨルダンでの米兵死亡を受け緊張が拡大",
+          "summary": "米中央軍は、ヨルダンで米兵2名を死亡させた攻撃の責任がイラン革命防衛隊にあるとして、同組織の関連施設を標的にしたと発表した。なお、もう1名の行方がいまだ確認されていない。",
           "keyTakeaways": [
-            "米中央軍はXへの投稿で、日本時間深夜に開始した今回の攻撃は「イランの軍事力の無力化を継続するもの」だと説明した。",
-            "イランメディアは、シリク、アフワーズ、ヤズドの各都市で爆発音や攻撃が確認されたと伝えた。",
-            "土曜日も戦闘は続き、イラン革命防衛隊はバーレーンのシェイク・イーサ空軍基地と、同国内の情報データセンターを標的にしたとイラン国営メディアが報じた。"
+            "イランはクウェートの米軍基地2か所にドローン攻撃を実施したと、国営メディアが伝えた。",
+            "米・イラン双方による攻撃の応酬が続いており、重要インフラへの攻撃も双方から指摘されている。",
+            "イランは革命防衛隊系メディアを通じ、クウェートのキャンプ・ウダイリとアリ・アルサレム空軍基地に対して「自爆型ドローンによる大規模攻撃」を行ったと主張した。"
           ],
-          "whyItMatters": "戦闘は7日目に突入し、海峡の航行維持と停戦交渉の余地を確保するために結ばれた米・イラン間の暫定合意は、さらに揺らいでいる。"
+          "whyItMatters": "イランの最高指導者ハメネイ師は声明の中で、米国の「度重なる合意違反」が「米大統領の署名にはいかなる信頼性もない」という根本的な事実を露わにしたと述べた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this conflict between the US and Iran is still going?",
-              "duration": 3.056327
+              "text": "I'm seeing reports about US and Iran exchanging strikes. What happened?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The US launched a seventh consecutive night of strikes on Iran on Friday night.",
-              "duration": 4.832653
+              "text": "Two US soldiers were killed in Jordan on Friday, and another service member is still missing. The US says Iran's Revolutionary Guards were responsible for that attack.",
+              "duration": 9.195102
             },
             {
               "speaker": "listener",
-              "text": "What's the stated aim of these strikes?",
-              "duration": 2.220408
+              "text": "And the US responded?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "US Central Command said they're designed to continue degrading Iranian military capabilities.",
-              "duration": 4.675918
+              "text": "Yes. US Central Command said it targeted the Revolutionary Guards unit responsible. Then Iran said it carried out drone attacks on two US bases in Kuwait.",
+              "duration": 8.620408
             },
             {
               "speaker": "listener",
-              "text": "Where exactly did these strikes happen?",
-              "duration": 2.272653
+              "text": "So this is escalating between them?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Iranian media reported explosions or strikes in the cities of Sirik, Ahvaz, and Yazd.",
-              "duration": 4.963265
+              "text": "It does appear to be ramping up. Both sides have been accused of striking critical infrastructure in recent days.",
+              "duration": 5.694694
             },
             {
               "speaker": "listener",
-              "text": "And has Iran responded?",
-              "duration": 1.802449
+              "text": "What did Iran say about all this?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes. On Saturday, Iran said it targeted a US air base in Bahrain and an intelligence data center there.",
-              "duration": 6.452245
+              "text": "Iran's Supreme Leader released a statement on Saturday saying America's repeated breaches of agreements show that a US president's signature is worthless and without credibility.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "Why does this matter so much right now?",
-              "duration": 2.037551
+              "text": "That sounds pretty serious.",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "This is the seventh day of fighting, and it's undermining an interim deal that was meant to keep the Strait of Hormuz open and allow space for negotiations.",
-              "duration": 8.594286
-            },
-            {
-              "speaker": "listener",
-              "text": "So the situation is getting worse, not better.",
-              "duration": 2.533878
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's right. The fighting is escalating despite efforts to reach a permanent truce.",
-              "duration": 3.892245
+              "text": "It is. The tension between the two countries is clearly growing, and the situation remains very fluid.",
+              "duration": 6.112653
             }
           ]
         }
@@ -292,86 +272,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
-      "summary": "As The Verge reported this week, not all of the reported cases have been linked to Taco Bell, and Taylor Farms is a giant, which has said it sells more than $7 billion in produce every year and makes two out of every five of the salad kits sold in grocery stores.",
+      "headline": "Surprise! Facial recognition smart locks are actually good",
+      "summary": "I tested four locks that unlock with a look, and while hands-free with UWB is better, if you want a sci-fi experience for your front door, facial recognition is worth considering.",
       "keyTakeaways": [
-        "Everything we know so far about the cyclosporiasis outbreak.",
-        "Based on information provided yesterday by the FDA, Taylor Farms de Mexico is voluntarily removing all iceberg lettuce sourced from central Mexico from the U.S. market.",
-        "While the FDA traceback is indicating a specific independent farm that represents less than 1% of the U.S.’s iceberg lettuce supply as the potential source of the outbreak, we have removed all iceberg lettuce from the region indefinitely."
+        "She covers smart home, IoT, and connected tech, and has written previously for Wirecutter, Wired, Dwell, BBC, and US News.",
+        "Hands-free unlocking is the future of smart locks.",
+        "One way to achieve this nirvana is through facial recognition."
       ],
-      "whyItMatters": "Its requirement for standardized record-keeping about goods and shipments could’ve made finding the “specific independent farm” tied to the outbreak easier and faster.",
-      "originalURL": "https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "If you’re like him and don’t want an unlocking experience tied to a device, but want the speed and convenience of hands-free unlocking, facial unlocking may be for you.",
+      "originalURL": "https://www.theverge.com/tech/967183/best-facial-recognition-smart-locks-review",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "集団感染を受け、テイラー・ファームズが米国市場からアイスバーグレタスを自主回収",
-          "summary": "今回の集団感染は、タコベルとの関連が確認されていない事例も含まれている。テイラー・ファームズは年間70億ドル超の青果物を販売し、スーパーで売られるサラダキットの5袋に2袋を手がけるとされる大手企業だ。",
+          "headline": "顔認証スマートロック、意外と使える",
+          "summary": "顔をかざすだけで解錠できるスマートロックを4製品試した。UWBによるハンズフリー解錠のほうが優れているとはいえ、玄関をSF的な体験に変えたいなら、顔認証は十分に検討に値する。",
           "keyTakeaways": [
-            "サイクロスポーラ症の集団感染について、現時点で判明していること。",
-            "FDAの情報を受け、テイラー・ファームズ・デ・メキシコはメキシコ中部産のアイスバーグレタスを米国市場から自主的に全量回収すると発表した。",
-            "FDAの追跡調査は、米国のアイスバーグレタス供給量の1%未満を占める特定の独立農場を感染源として示唆しているが、同社は当該地域のアイスバーグレタスを無期限で取り扱い停止とした。"
+            "スマートホームやIoT、コネクテッド技術を専門に取材し、Wirecutter、Wired、Dwell、BBC、US Newsなどに寄稿してきた書き手によるレポート。",
+            "ハンズフリー解錠は、スマートロックの向かう先だ。",
+            "その理想を実現する手段のひとつが、顔認証である。"
           ],
-          "whyItMatters": "物品と出荷記録の標準化が徹底されていれば、感染源とされる農場の特定はより迅速に行えた可能性がある。"
+          "whyItMatters": "デバイスに依存せず、それでいて素早く手軽に解錠したいと思うなら、顔認証という選択肢が自分に合っているかもしれない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about lettuce being pulled from stores. What's going on?",
-              "duration": 3.657143
+              "text": "So, facial recognition for your front door? That sounds very sci-fi.",
+              "duration": 5.041633
             },
             {
               "speaker": "explainer",
-              "text": "Taylor Farms is voluntarily removing iceberg lettuce from the U.S. market after a cyclosporiasis outbreak.",
-              "duration": 5.851429
+              "text": "It is. A tech writer tested four smart locks that unlock just by looking at them, and she was actually impressed.",
+              "duration": 6.948571
             },
             {
               "speaker": "listener",
-              "text": "What is cyclosporiasis?",
-              "duration": 1.697959
+              "text": "Really? I thought those would be gimmicky or unreliable.",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "It's an intestinal illness caused by a parasite. The FDA traced the outbreak to lettuce from central Mexico.",
-              "duration": 5.982041
+              "text": "That was the surprise. She found that if you want hands-free unlocking without relying on a device, facial recognition is worth considering.",
+              "duration": 7.053061
             },
             {
               "speaker": "listener",
-              "text": "How much lettuce are we talking about here?",
-              "duration": 2.168163
+              "text": "What's the appeal of not using a device?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Taylor Farms is pulling all iceberg lettuce from that region, even though the FDA identified one specific farm representing less than one percent of U.S. supply.",
-              "duration": 8.907755
+              "text": "Well, you don't need to pull out your phone or wear a smartwatch. You just walk up, and the door recognizes you and unlocks.",
+              "duration": 6.582857
             },
             {
               "speaker": "listener",
-              "text": "That seems like a lot more than necessary.",
-              "duration": 2.220408
+              "text": "Is facial recognition the best option for hands-free?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "They're being cautious. Taylor Farms is huge—they sell over seven billion dollars in produce yearly and make two out of every five salad kits in grocery stores.",
-              "duration": 9.978776
+              "text": "She says hands-free with something called UWB is actually better, but facial recognition still gives you that futuristic, convenient experience.",
+              "duration": 8.019592
             },
             {
               "speaker": "listener",
-              "text": "Have people gotten sick from other places, not just Taco Bell?",
-              "duration": 3.369796
+              "text": "So it's a real option now, not just a novelty.",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, not all reported cases have been linked to Taco Bell. The outbreak appears broader than one restaurant chain.",
-              "duration": 6.269388
+              "text": "Exactly. It's becoming a legitimate choice for people who want speed and convenience at their front door.",
+              "duration": 5.093878
             }
           ]
         }
@@ -383,86 +363,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Pebble founder Eric Migicovsky says his 30-day warranty is all about trust",
-      "summary": "Pebble founder Eric Migicovsky says buyers of its new e-paper smartwatches should know what they’re signing up for and trust Pebble to make things right if they run into issues, despite the short warranty.",
+      "headline": "The apps, gadgets, and tools every reader needs",
+      "summary": "Hot director bites off too big a story, not even Christopher Nolan can hit every time, right?",
       "keyTakeaways": [
-        "Migicovsky revived Pebble early last year, after the original company shut down in 2016.",
-        "I was excited about Pebble’s return after missing out on the originals, but hesitated after noticing their 30-day warranty.",
-        "While I ended up ordering a Pebble Round 2 that I’m still waiting for, others have also raised concerns about the watches’ warranty."
+        "So clever, so useful, still one of the best apps to write in across Apple devices.",
+        "I’ve been hearing good things about this new Mac-based photo editor, which is fast and powerful and aimed directly at replacing the ever-rising price of Adobe’s tools.",
+        "A couple of weeks ago, I asked you all to share your reading setups — the gadgets, the apps, the bookstores, the bookmark brands, the highlighter colors, everything."
       ],
-      "whyItMatters": "That’s about as long as the Pebble Time 2’s battery life, so you might not even need to charge it before it’s no longer covered.",
-      "originalURL": "https://www.theverge.com/gadgets/967471/pebble-smartwatch-warranty-repairs-migicovsky-interview",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "whyItMatters": "I’ll be honest: I expected this movie to not be great.",
+      "originalURL": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "30日保証の真意——Pebble創業者が語る「信頼」という選択",
-          "summary": "Pebbleの創業者エリック・ミギコフスキーは、新しい電子ペーパースマートウォッチの保証期間がわずか30日であることについて、購入者には条件を十分に理解したうえで買ってほしいと語る。問題が起きた際には誠実に対応するという姿勢を、彼は「信頼」という言葉で表現した。",
+          "headline": "読書と創作を支える、いま注目のアプリとツール",
+          "summary": "期待の監督が大きすぎる題材に挑んだ結果、作品はやや空回りした印象だ。クリストファー・ノーランでさえ、常に傑作を生み出せるわけではない。",
           "keyTakeaways": [
-            "ミギコフスキーは2016年に一度幕を閉じたPebbleを、昨年初めに復活させた。",
-            "初代を逃した身としてPebble復活には胸が躍ったが、30日という保証期間の短さに購入をためらった。",
-            "結局Pebble Round 2を注文し、今も届くのを待っている。保証期間への懸念は、ほかのユーザーからも上がっている。"
+            "Appleデバイスをまたいで使える文章作成アプリとして、いまも第一線に立つ完成度",
+            "高速かつ高機能で、値上がりが続くAdobeツールの代替を狙ったMac向け写真編集アプリが話題を集めている",
+            "数週間前に読者へ呼びかけた「あなたの読書環境を教えて」企画——アプリ、ガジェット、書店、しおり、マーカーの色まで、さまざまな声が届いた"
           ],
-          "whyItMatters": "30日はPebble Time 2のバッテリー持続時間とほぼ同じ長さ——つまり、一度も充電しないうちに保証が切れる可能性もある。"
+          "whyItMatters": "正直に言えば、あまり期待せずに観た作品だった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-18/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Pebble smartwatches are back?",
-              "duration": 1.802449
+              "text": "So this is about reading setups? The headline mentions apps and gadgets for readers.",
+              "duration": 5.093878
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The founder, Eric Migicovsky, revived the brand early last year after the original company shut down in 2016.",
-              "duration": 7.340408
+              "text": "Yes, exactly. A couple of weeks ago, someone asked readers to share their reading setups — everything from gadgets and apps to bookstores, bookmark brands, and highlighter colors.",
+              "duration": 9.978776
             },
             {
               "speaker": "listener",
-              "text": "That's cool. But I'm seeing something about a really short warranty?",
-              "duration": 3.369796
+              "text": "What kind of tools did people recommend?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Right. The new watches come with just a 30-day warranty, which has some people concerned.",
-              "duration": 4.597551
+              "text": "One standout is an app for writing across Apple devices — described as clever, useful, and still one of the best.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "Thirty days? That seems... really short.",
-              "duration": 2.638367
+              "text": "Anything else?",
+              "duration": 1.097143
             },
             {
               "speaker": "explainer",
-              "text": "It is. The Pebble Time 2's battery lasts about that long on a charge, so the warranty could expire before you even need to plug it in.",
-              "duration": 7.88898
+              "text": "There's also a new Mac-based photo editor that's been getting good reviews. It's fast, powerful, and aimed at replacing Adobe's tools, which keep getting more expensive.",
+              "duration": 9.691429
             },
             {
               "speaker": "listener",
-              "text": "What's Migicovsky saying about this?",
-              "duration": 2.220408
+              "text": "So it's a mix of reading and creative tools?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "He says it's about trust. He wants buyers to know what they're signing up for and to trust that Pebble will make things right if issues come up.",
-              "duration": 7.000816
-            },
-            {
-              "speaker": "listener",
-              "text": "Are people actually buying them despite the short coverage?",
-              "duration": 3.186939
-            },
-            {
-              "speaker": "explainer",
-              "text": "Some are. Orders are going out, though the warranty question is definitely on people's minds.",
-              "duration": 4.362449
+              "text": "It seems that way. The focus is on what readers find helpful in their setups, whether for reading or related creative work.",
+              "duration": 6.870204
             }
           ]
         }

@@ -5409,6 +5409,283 @@
           ]
         }
       }
+    },
+    "2026-07-19": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-19/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Russia attacked Kyiv overnight. What happened?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ukraine says Russia fired its largest number of ballistic missiles at Kyiv since the war began. The attack lasted hours and hit early Sunday morning.",
+              "duration": 8.620408
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad was the damage?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "One person was killed and at least sixteen were wounded. Fires broke out across the city, damaging homes, offices, industrial sites, and a dormitory.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "This is the fifth year of the war. Why is this attack significant now?",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ukraine is facing a shortage of Patriot air defence missiles, which are its best tool for stopping ballistic missiles. That makes these almost daily Russian attacks harder to defend against.",
+              "duration": 10.057143
+            },
+            {
+              "speaker": "listener",
+              "text": "What's Ukraine saying about it?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their foreign minister called it a brutal terrorist attack on the capital and said it demands a firm response.",
+              "duration": 5.982041
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-19/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Spain and Argentina are meeting in the World Cup final on Sunday?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. It's the reigning European champions against the defending world champions.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "What makes this matchup interesting?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's really two different styles. Spain have controlled games all tournament, keeping possession and pressing high. They've only conceded one goal.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "And Argentina plays differently?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The article describes them as contrasting philosophies, yes. One key battle will be Spain's top scorer Mikel Oyarzabal against Argentina's tough centre-backs Romero and Martinez.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "Any other matchups to watch?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Lamine Yamal on Spain's right wing against Argentina's left-back Tagliafico. Yamal's been recovering from injury but he's getting closer to full strength.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Should be a good one then.",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two very accomplished teams. Spain chasing their second World Cup, Argentina going for their fourth.",
+              "duration": 5.564082
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-19/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about US and Iran exchanging strikes. What happened?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two US soldiers were killed in Jordan on Friday, and another service member is still missing. The US says Iran's Revolutionary Guards were responsible for that attack.",
+              "duration": 9.195102
+            },
+            {
+              "speaker": "listener",
+              "text": "And the US responded?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. US Central Command said it targeted the Revolutionary Guards unit responsible. Then Iran said it carried out drone attacks on two US bases in Kuwait.",
+              "duration": 8.620408
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is escalating between them?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does appear to be ramping up. Both sides have been accused of striking critical infrastructure in recent days.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "What did Iran say about all this?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's Supreme Leader released a statement on Saturday saying America's repeated breaches of agreements show that a US president's signature is worthless and without credibility.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty serious.",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The tension between the two countries is clearly growing, and the situation remains very fluid.",
+              "duration": 6.112653
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-19/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So, facial recognition for your front door? That sounds very sci-fi.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. A tech writer tested four smart locks that unlock just by looking at them, and she was actually impressed.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "Really? I thought those would be gimmicky or unreliable.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "That was the surprise. She found that if you want hands-free unlocking without relying on a device, facial recognition is worth considering.",
+              "duration": 7.053061
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the appeal of not using a device?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, you don't need to pull out your phone or wear a smartwatch. You just walk up, and the door recognizes you and unlocks.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "Is facial recognition the best option for hands-free?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "She says hands-free with something called UWB is actually better, but facial recognition still gives you that futuristic, convenient experience.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's a real option now, not just a novelty.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's becoming a legitimate choice for people who want speed and convenience at their front door.",
+              "duration": 5.093878
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-19/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this is about reading setups? The headline mentions apps and gadgets for readers.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, exactly. A couple of weeks ago, someone asked readers to share their reading setups — everything from gadgets and apps to bookstores, bookmark brands, and highlighter colors.",
+              "duration": 9.978776
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of tools did people recommend?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "One standout is an app for writing across Apple devices — described as clever, useful, and still one of the best.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything else?",
+              "duration": 1.097143
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's also a new Mac-based photo editor that's been getting good reviews. It's fast, powerful, and aimed at replacing Adobe's tools, which keep getting more expensive.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's a mix of reading and creative tools?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems that way. The focus is on what readers find helpful in their setups, whether for reading or related creative work.",
+              "duration": 6.870204
+            }
+          ]
+        }
+      }
     }
   }
 }

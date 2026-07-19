@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-19",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Russia launches largest ballistic missile attack on Kyiv since start of war",
+      "summary": "Russia has unleashed another night of powerful air attacks on Kyiv, firing its largest number of ballistic missiles since the start of the war, according to Ukraine’s foreign minister.",
+      "keyTakeaways": [
+        "The latest bombardment highlights mounting challenges for Ukraine in its fifth year of war as it weathers almost daily Russian attacks with a shortage of Patriot air defence missiles, which are its best chance of downing ballistic missiles.",
+        "Russia’s strikes on Sunday sparked fires across Kyiv, damaging residential buildings, offices, industrial sites, a dormitory and vehicles, according to the State Emergency Service.",
+        "Foreign Minister Andrii Sybiha called the ballistic missile barrage “a brutal terrorist attack on the Ukrainian capital” that demanded a firm response."
+      ],
+      "whyItMatters": "The hours-long attacks on Kyiv early on Sunday killed one person and wounded at least 16, according to Ukrainian officials.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/19/russia-launches-largest-ballistic-missile-attack-on-kyiv-since-start-of-war?traffic_source=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ロシア、開戦以来最大規模の弾道ミサイル攻撃をキーウに実施",
+          "summary": "ロシアが再びキーウへの大規模な夜間攻撃を行った。ウクライナ外相によれば、開戦後最多となる数の弾道ミサイルが発射されたという。",
+          "keyTakeaways": [
+            "今回の攻撃は、戦争5年目を迎えたウクライナの苦境を改めて浮き彫りにした。弾道ミサイル迎撃に不可欠なパトリオットの在庫不足が続くなか、ほぼ毎日のように攻撃にさらされている。",
+            "日曜日の攻撃でキーウ各地に火災が発生し、住宅や事務所、工場、寮、車両などが被害を受けたと国家緊急事態庁が発表した。",
+            "シビハ外相は今回の弾道ミサイル攻撃を「ウクライナの首都への残虐なテロ攻撃」と断じ、断固たる対応を求めた。"
+          ],
+          "whyItMatters": "ウクライナ当局によれば、日曜日早朝に数時間にわたって続いた攻撃で1人が死亡し、少なくとも16人が負傷した。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Spain vs Argentina: How each team can win World Cup final 2026",
+      "summary": "Reigning European champions Spain face defending world champions Argentina in the 2026 World Cup final on Sunday, with the Copa America holders chasing a fourth star and La Roja hunting a second.",
+      "keyTakeaways": [
+        "Mikel Oyarzabal, Spain’s five-goal top scorer, will do battle with the combative centre-backs Cristian Romero and Lisandro Martinez.",
+        "The final pits two contrasting footballing philosophies against one another.",
+        "Spain have built their run through relentless control, conceding just once all tournament while suffocating opponents with possession and a well-drilled counter press that wins the ball back high up the pitch."
+      ],
+      "whyItMatters": "Lamine Yamal against Nicolas Tagliafico on Spain’s right flank is likely to be a key duel, with Argentina’s left-back needing to contain a player who has had a slow start to the tournament following an injury but is getting close to reaching his full threat potential.",
+      "originalURL": "https://www.aljazeera.com/sports/2026/7/19/spain-vs-argentina-five-key-factors-2026-world-cup-final?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "スペイン対アルゼンチン――2026年W杯決勝の行方",
+          "summary": "欧州王者スペインと世界王者アルゼンチンが、2026年ワールドカップ決勝で激突する。アルゼンチンは4度目の世界制覇を狙い、スペインは2度目の栄冠を目指す。",
+          "keyTakeaways": [
+            "大会最多5得点のオジャルサバルと、堅守の要ロメロ、リサンドロ・マルティネスとの対決が焦点となる。",
+            "両チームは対照的なサッカー哲学を体現しており、決勝はその真っ向勝負となる。",
+            "スペインはポゼッションと高い位置でのプレスを軸に、大会通じてわずか1失点という盤石な戦いを続けてきた。"
+          ],
+          "whyItMatters": "負傷明けで本調子に戻りつつあるヤマルを、アルゼンチンの左サイドバック、タリアフィコがいかに封じるか――右サイドのこの一騎打ちが、試合の行方を左右する可能性が高い。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "US and Iran exchange strikes after two US soldiers killed in Jordan",
+      "summary": "Centcom said it also targeted Iran's Revolutionary Guards (IRGC) responsible for the attack that killed two US troops in Jordan on Friday, where another service member remains missing.",
+      "keyTakeaways": [
+        "In response to the latest strikes, Iran's army said it carried out drone attacks on two US bases in Kuwait, according to state media.",
+        "The US and Iran have ramped up attacks against each other in recent days, with both sides accused of striking critical infrastructure.",
+        "On Saturday, Iran said it carried out \"large-scale attacks with kamikaze drones\" against an American military \"depot at Camp Udairi\" and another at \"Ali Al Salem Air Base in Kuwait\", according to the IRGC-affiliated Tasnim news agency."
+      ],
+      "whyItMatters": "Late on Saturday, Iran's Supreme Leader Mojtaba Khamenei said in a written statement that America's \"repeated breaches\" of the agreement had \"laid bare a fundamental truth: the signature of the US president is utterly worthless and devoid of credibility\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米軍とイランが相互攻撃、ヨルダンでの米兵死亡を受け緊張が拡大",
+          "summary": "米中央軍は、ヨルダンで米兵2名を死亡させた攻撃の責任がイラン革命防衛隊にあるとして、同組織の関連施設を標的にしたと発表した。なお、もう1名の行方がいまだ確認されていない。",
+          "keyTakeaways": [
+            "イランはクウェートの米軍基地2か所にドローン攻撃を実施したと、国営メディアが伝えた。",
+            "米・イラン双方による攻撃の応酬が続いており、重要インフラへの攻撃も双方から指摘されている。",
+            "イランは革命防衛隊系メディアを通じ、クウェートのキャンプ・ウダイリとアリ・アルサレム空軍基地に対して「自爆型ドローンによる大規模攻撃」を行ったと主張した。"
+          ],
+          "whyItMatters": "イランの最高指導者ハメネイ師は声明の中で、米国の「度重なる合意違反」が「米大統領の署名にはいかなる信頼性もない」という根本的な事実を露わにしたと述べた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Surprise! Facial recognition smart locks are actually good",
+      "summary": "I tested four locks that unlock with a look, and while hands-free with UWB is better, if you want a sci-fi experience for your front door, facial recognition is worth considering.",
+      "keyTakeaways": [
+        "She covers smart home, IoT, and connected tech, and has written previously for Wirecutter, Wired, Dwell, BBC, and US News.",
+        "Hands-free unlocking is the future of smart locks.",
+        "One way to achieve this nirvana is through facial recognition."
+      ],
+      "whyItMatters": "If you’re like him and don’t want an unlocking experience tied to a device, but want the speed and convenience of hands-free unlocking, facial unlocking may be for you.",
+      "originalURL": "https://www.theverge.com/tech/967183/best-facial-recognition-smart-locks-review",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "顔認証スマートロック、意外と使える",
+          "summary": "顔をかざすだけで解錠できるスマートロックを4製品試した。UWBによるハンズフリー解錠のほうが優れているとはいえ、玄関をSF的な体験に変えたいなら、顔認証は十分に検討に値する。",
+          "keyTakeaways": [
+            "スマートホームやIoT、コネクテッド技術を専門に取材し、Wirecutter、Wired、Dwell、BBC、US Newsなどに寄稿してきた書き手によるレポート。",
+            "ハンズフリー解錠は、スマートロックの向かう先だ。",
+            "その理想を実現する手段のひとつが、顔認証である。"
+          ],
+          "whyItMatters": "デバイスに依存せず、それでいて素早く手軽に解錠したいと思うなら、顔認証という選択肢が自分に合っているかもしれない。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "The apps, gadgets, and tools every reader needs",
+      "summary": "Hot director bites off too big a story, not even Christopher Nolan can hit every time, right?",
+      "keyTakeaways": [
+        "So clever, so useful, still one of the best apps to write in across Apple devices.",
+        "I’ve been hearing good things about this new Mac-based photo editor, which is fast and powerful and aimed directly at replacing the ever-rising price of Adobe’s tools.",
+        "A couple of weeks ago, I asked you all to share your reading setups — the gadgets, the apps, the bookstores, the bookmark brands, the highlighter colors, everything."
+      ],
+      "whyItMatters": "I’ll be honest: I expected this movie to not be great.",
+      "originalURL": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "読書と創作を支える、いま注目のアプリとツール",
+          "summary": "期待の監督が大きすぎる題材に挑んだ結果、作品はやや空回りした印象だ。クリストファー・ノーランでさえ、常に傑作を生み出せるわけではない。",
+          "keyTakeaways": [
+            "Appleデバイスをまたいで使える文章作成アプリとして、いまも第一線に立つ完成度",
+            "高速かつ高機能で、値上がりが続くAdobeツールの代替を狙ったMac向け写真編集アプリが話題を集めている",
+            "数週間前に読者へ呼びかけた「あなたの読書環境を教えて」企画——アプリ、ガジェット、書店、しおり、マーカーの色まで、さまざまな声が届いた"
+          ],
+          "whyItMatters": "正直に言えば、あまり期待せずに観た作品だった。"
+        }
+      }
+    }
+  ]
+}

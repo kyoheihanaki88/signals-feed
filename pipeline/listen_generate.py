@@ -187,6 +187,26 @@ AZURE_VOICE_JA_EXPLAINER = "ja-JP-KeitaNeural"    # calm explainer
 AZURE_TTS_RATE_JA_LISTENER = "+12%"
 AZURE_TTS_STYLE_JA_NARRATOR = "customerservice"
 
+# ── JA TTS pronunciation dictionary ────────────────────────────────────────────────────
+# Fixes ACTUAL misreadings reported from production listening. Applied ONLY to the text
+# sent to Azure TTS — captions, manifest, quality gates, and numeric grounding all keep
+# the original written form, so nothing the reader SEES changes. Entries are literal
+# phrases (applied in order; keep them narrow and phrase-scoped so common words like 金
+# in 金曜/金融/お金 are never touched). Grow this list one confirmed report at a time.
+#
+# 2026-07-20 signal 2: 「赤と金の旗」 (Spain's red-and-gold flags) was read あかと*かね*
+# — correct reading is あかと*きん*.
+JA_TTS_PRONUNCIATIONS = [
+    ("赤と金の", "赤ときんの"),
+]
+
+
+def apply_ja_tts_pronunciations(text):
+    """TTS-only reading correction for one JA caption line (captions stay unchanged)."""
+    for surface, reading in JA_TTS_PRONUNCIATIONS:
+        text = text.replace(surface, reading)
+    return text
+
 
 def _azure_listener_voice():
     return os.environ.get("LISTENER_VOICE_JA", "").strip() or AZURE_VOICE_JA_LISTENER
@@ -923,7 +943,9 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
             settings = EXPLAINER_SETTINGS if c["speaker"] == "explainer" else LISTENER_SETTINGS
             line_name = f"sig{num}-line-{i:02d}.mp3" if lang == "en" else f"sig{num}-line-{i:02d}-{lang}.mp3"
             p = os.path.join(outdir, line_name)
-            open(p, "wb").write(synth_fn(c["text"], voice, settings, el_key))
+            # ja: send the reading-corrected form to TTS; the caption keeps c["text"].
+            tts_text = apply_ja_tts_pronunciations(c["text"]) if lang == "ja" else c["text"]
+            open(p, "wb").write(synth_fn(tts_text, voice, settings, el_key))
             durs.append(dur_fn(p))
             parts.append(p)
         final = os.path.join(outdir, f"signal-{int(num):02d}-dialogue-{lang}.mp3")

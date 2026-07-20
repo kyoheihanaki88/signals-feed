@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "スターマー前首相が国王に辞表を提出した直後、バーナム氏は労働党党首の座を引き継ぎ、首相就任を受け入れた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So we have a new prime minister this morning?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Andy Burnham met King Charles at Buckingham Palace and formally became prime minister.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "That's the fourth PM in less than four years, right?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And the sixth in a decade. It's been a turbulent period.",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "listener",
+              "text": "How did Burnham become leader so quickly?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "No one else in the Labour party competed for the role, so he became leader without a contest.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "Wasn't he the mayor of Greater Manchester?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was. He left parliament in 2017 for that job and only returned to parliament a month ago.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "So he's been out of Westminster for years?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, though he was an MP and cabinet minister before. He took over from Keir Starmer, who resigned to the King just before Burnham's appointment.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "What happens now?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "He'll head to Downing Street to make a statement and announce his cabinet.",
+              "duration": 3.343673
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,65 @@
             "アルゼンチン代表主将は現在もカステルデフェルスに専用グラウンド付きの豪邸を所有しており、その資産価値は約800万ドルと伝えられる"
           ],
           "whyItMatters": "メッシの影響力ゆえに、アルゼンチンを応援するファンは少なくない。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Spain just won the World Cup?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, they beat Argentina one-nil in the final on Sunday. It's their second World Cup title.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "How are people celebrating?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Fans have been filling the streets with Spanish flags, setting off fireworks, celebrating into the early hours. It's happening in towns and cities across the country.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "Who scored the winning goal?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ferran Torres, in extra time.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "listener",
+              "text": "I imagine a lot of people were rooting for Argentina too, because of Messi.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Absolutely. Many fans were wearing his number ten shirt during the match. He still has ties to Spain—he owns property in Castelldefels.",
+              "duration": 7.131429
+            },
+            {
+              "speaker": "listener",
+              "text": "So it must have been bittersweet for some Spanish fans.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "In a way, yes. But for La Roja supporters, it's pure joy.",
+              "duration": 3.709388
+            }
+          ]
         }
       }
     },
@@ -97,6 +225,65 @@
           ],
           "whyItMatters": "衣料品の行商で定期的にポート・カイトゥマを訪れていたルーリーン・シンは、「少し泳げる」とカーリタに告げ、同じ救命胴衣にしがみつくことで生還した。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing news about a ferry that sank off Guyana. What happened?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Late Saturday night, a passenger ferry called the MV Barima sank off the coast of Guyana. Officials are calling it one of the country's worst maritime disasters.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "Where was this ferry going?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "It left Georgetown, the capital, Saturday afternoon around 3:15, heading to Port Kaituma in the Essequibo region near the Venezuelan border.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "How did rescuers find out?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "A distress call came in shortly after 11 p.m. That triggered a big response—the coast guard, air corps, private aircraft, fishing boats, and civilian volunteers all joined the search.",
+              "duration": 10.710204
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what caused it?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Authorities have launched a criminal investigation. A government official said the captain and a crew member allegedly tested positive for marijuana, and the passenger manifest was inaccurate.",
+              "duration": 10.527347
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds serious. Are there survivors?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, there are survivors. One woman who regularly travels that route to sell clothing survived by sharing a lifejacket with another passenger.",
+              "duration": 8.176327
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +316,55 @@
           ],
           "whyItMatters": "WingdingsはBandcampのほか、Apple Music・Spotify・Deezer・Qobuzなど主要なストリーミングサービスで聴くことができる。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about Four Tet releasing music under a name that's basically impossible to say out loud?",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Kieran Hebden, who makes music as Four Tet, has this side project where even the artist name is just a series of symbols and glyphs — totally unpronounceable.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, so how do people even refer to it?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Most people are just calling the album Wingdings, like the old computer font. Hebden's kept this alias pretty quiet for years.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "That's kind of playful. Is it hard to find?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at all. It's on Bandcamp and all the major streaming services — Apple Music, Spotify, Deezer, Qobuz.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "So he's not trying to hide it anymore.",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Seems like it. It's out there for anyone curious enough to track it down.",
+              "duration": 4.022857
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +396,65 @@
             "ミッドナイトブラックもバニラホワイトも、カラーアクセントが添えられ、使い捨てカメラより少し洒落た印象"
           ],
           "whyItMatters": "フィルム写真の再興は続いており、その裾野はさらに広がりつつある。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a new Kodak film camera that's really cheap?",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's called the EC35. It's a 35mm film camera that costs just under thirty-five dollars.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "Wow, that is cheap. Who's making it?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "A company called Reto Project. They previously released a Kodak-branded camera for ninety-nine dollars, and this one's even more affordable.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the idea behind it?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's designed to be really simple—a point-and-shoot that requires almost no thought to use. Just pick it up and take pictures.",
+              "duration": 7.131429
+            },
+            {
+              "speaker": "listener",
+              "text": "Does it at least look nice, or is it just super basic?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has some nice touches. The lens covers are a slightly darker shade than the body, which gives a subtle contrast. Even the black and white versions have different colored accents.",
+              "duration": 9.743673
+            },
+            {
+              "speaker": "listener",
+              "text": "So a bit more stylish than those old disposable cameras.",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It fits into this ongoing film photography revival, making it more accessible for people who want to try shooting film without spending much.",
+              "duration": 8.489796
+            }
+          ]
         }
       }
     }

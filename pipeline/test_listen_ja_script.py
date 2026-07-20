@@ -938,5 +938,60 @@ check("EN run writes no checkpoints",
       not any(f.endswith("-en.checkpoint.json")
               for f in os.listdir(os.path.join(lg.OUT_BASE, RDATE))))
 
+# ---------------------------------------------------------------- JA TTS pronunciation dictionary
+# First production misreading (2026-07-20 signal 2): 「赤と金の旗」 was read あかと*かね*.
+# The dictionary corrects ONLY the text sent to TTS; the written caption never changes.
+os.environ["LISTEN_JA_RESUME"] = "0"   # force fresh generation for this isolated section
+
+check("pron dict: 赤と金の → 赤ときんの (TTS text)",
+      lg.apply_ja_tts_pronunciations("広場は赤と金の旗で埋まりました。")
+      == "広場は赤ときんの旗で埋まりました。")
+check("pron dict: unrelated 金 contexts untouched (金曜/お金/金融)",
+      lg.apply_ja_tts_pronunciations("金曜日にお金と金融の話をしました。")
+      == "金曜日にお金と金融の話をしました。")
+check("pron dict: entries are narrow phrase pairs (no single-kanji surfaces)",
+      bool(lg.JA_TTS_PRONUNCIATIONS) and
+      all(isinstance(s, str) and isinstance(r, str) and len(s) >= 2
+          for s, r in lg.JA_TTS_PRONUNCIATIONS))
+
+_pron = [dict(l) for l in GOOD_SOLO]
+_pron[5] = {"speaker": "narrator", "text": "街では赤と金の旗を掲げる人が相次ぎました。"}
+texts_pron = []
+def synth_capture_pron(text, voice, settings, key):
+    texts_pron.append(text)
+    return b"x"
+def llm_stub_pron(sig, *, api_key, model=None, lang="en"):
+    return [dict(l) for l in _pron]
+entry_pron = lg.generate(DATE, el_key="azure-key", an_key="k",
+                         listener_voice=lg.AZURE_VOICE_JA_LISTENER,
+                         explainer_voice=lg.AZURE_VOICE_JA_EXPLAINER,
+                         lang="ja", llm_fn=llm_stub_pron, synth_fn=synth_capture_pron,
+                         dur_fn=dur_stub, final_dur_fn=dur_stub,
+                         upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
+check("pron e2e: TTS receives the corrected reading",
+      any("赤ときんの旗" in t for t in texts_pron)
+      and not any("赤と金の旗" in t for t in texts_pron))
+check("pron e2e: caption keeps the WRITTEN form",
+      any("赤と金の旗" in c["text"] for c in entry_pron["1"]["ja"]["captions"])
+      and not any("赤ときんの" in c["text"] for c in entry_pron["1"]["ja"]["captions"]))
+
+texts_en_pron = []
+def synth_capture_en_pron(text, voice, settings, key):
+    texts_en_pron.append(text)
+    return b"x"
+def llm_stub_en_pron(sig, *, api_key, model=None):        # legacy EN signature — no lang kwarg
+    lines = [dict(l) for l in EN_LINES]
+    lines[1] = {"speaker": "explainer", "text": "Fans waved 赤と金の flags after the final."}
+    return lines
+lg.generate(DATE, el_key="k", an_key="k", listener_voice="L", explainer_voice="E",
+            llm_fn=llm_stub_en_pron, synth_fn=synth_capture_en_pron, dur_fn=dur_stub,
+            final_dur_fn=dur_stub,
+            upload_fn=upload_stub, verify_fn=verify_stub, log=lambda *a: None)
+check("pron dict is JA-only: EN synth text is untouched",
+      any("赤と金の" in t for t in texts_en_pron)
+      and not any("赤ときんの" in t for t in texts_en_pron))
+
+os.environ.pop("LISTEN_JA_RESUME", None)
+
 print("ALL PASS" if failures == 0 else f"{failures} CHECK(S) FAILED")
 sys.exit(1 if failures else 0)

@@ -101,6 +101,52 @@
               "duration": 3.343673
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスでアンディ・バーナム氏が新しい首相に就きました。",
+              "duration": 4.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "バッキンガム宮殿でチャールズ国王と会い、正式に任命を受けています。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "これで4年足らずのあいだに4人目の首相です。",
+              "duration": 3.744
+            },
+            {
+              "speaker": "narrator",
+              "text": "バーナム氏は労働党の党首になったばかりで、党内に対抗する人がいなかったため選挙なしで首相の座に就きました。",
+              "duration": 8.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼は以前、国会議員や閣僚を務めていましたが、2017年にグレーター・マンチェスター市長になるため議会を離れていました。",
+              "duration": 9.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "議会に戻ってきたのはわずか1か月前のことです。",
+              "duration": 4.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "スターマー前首相が国王に辞表を出した直後、バーナム氏が後を継ぎました。",
+              "duration": 5.784
+            },
+            {
+              "speaker": "narrator",
+              "text": "これからダウニング街で声明を出し、新しい内閣を発表する予定です。",
+              "duration": 5.592
+            }
+          ]
         }
       }
     },
@@ -190,6 +236,52 @@
               "speaker": "explainer",
               "text": "In a way, yes. But for La Roja supporters, it's pure joy.",
               "duration": 3.709388
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "スペインがワールドカップでアルゼンチンを1対0で破り、2度目の優勝を果たしました。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "決勝点は延長戦、フェラン・トーレスが決めたものでした。",
+              "duration": 4.752
+            },
+            {
+              "speaker": "narrator",
+              "text": "試合後、カステルデフェルスをはじめ各地で赤と金の旗を手にした人々が街に繰り出しました。",
+              "duration": 7.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "花火が夜空を彩り、歓声は月曜の明け方まで続いたそうです。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "興味深いのは、会場にアルゼンチンの10番を着た人が多くいたことです。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "メッシの影響で、対戦相手を応援する人も少なくありませんでした。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼は今もこの町に専用グラウンド付きの邸宅を持っています。",
+              "duration": 4.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペインの勝利は、ある意味で地元の英雄への複雑な思いも映し出しているのかもしれません。",
+              "duration": 6.384
             }
           ]
         }
@@ -283,6 +375,47 @@
               "duration": 8.176327
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "南米ガイアナの沖で、乗客を乗せたフェリーが土曜の夜に沈みました。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "現地当局は、国内で起きた最悪級の海難事故だとしています。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "フェリーは首都から石油が豊かな地域の港へ向かう途中でした。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "夜11時過ぎに救難信号が入り、軍や民間の船が出動しました。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "船長と乗組員から大麻の陽性反応が出たとされ、乗客名簿にも誤りがあったため、刑事捜査が始まっています。",
+              "duration": 8.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "生存者の一人は、別の乗客と同じ救命胴衣につかまって助かりました。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "捜索活動は今も続いています。",
+              "duration": 3.264
+            }
+          ]
         }
       }
     },
@@ -362,6 +495,47 @@
               "speaker": "explainer",
               "text": "Seems like it. It's out there for anyone curious enough to track it down.",
               "duration": 4.022857
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "電子音楽家のKieran Hebdenが、長年隠してきた別の名義で作品を発表していたことがわかりました。",
+              "duration": 7.536
+            },
+            {
+              "speaker": "narrator",
+              "text": "その名義は記号だけで構成されていて、声に出して読むことができません。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "Four Tetという名前なら聞いたことがある人も多いでしょう。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "実は同じ人物が、誰にも読めない記号の羅列を名前にした別のプロジェクトを続けていたのです。",
+              "duration": 6.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "このアルバムはWingdingsと呼ばれ、BandcampやApple Music、Spotifyで聴けます。",
+              "duration": 6.744
+            },
+            {
+              "speaker": "narrator",
+              "text": "音楽家が複数の名義を使うこと自体は珍しくありませんが、ここまで徹底して隠すのは異例です。",
+              "duration": 7.32
+            },
+            {
+              "speaker": "narrator",
+              "text": "表現の幅を広げたいのか、それとも作品そのものだけを聴いてほしいのか、意図は明かされていません。",
+              "duration": 7.224
             }
           ]
         }
@@ -453,6 +627,47 @@
               "speaker": "explainer",
               "text": "Exactly. It fits into this ongoing film photography revival, making it more accessible for people who want to try shooting film without spending much.",
               "duration": 8.489796
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "フィルムで撮る楽しみが、また少し身近になりました。",
+              "duration": 4.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "Reto Projectが、コダックの名を冠した新しいカメラを出します。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "EC35という名前で、値段は35ドル弱です。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "35ミリのフィルムを使う、手のひらサイズのカメラです。",
+              "duration": 4.416
+            },
+            {
+              "speaker": "narrator",
+              "text": "操作はほとんど考えなくていい作りで、レンズの蓋には軽い色の違いがあります。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "黒も白も、小さな色のアクセントがついていて、使い捨てよりは少し洒落ています。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "フィルムを使う人が静かに増えている流れの中で、こうした選択肢が広がっています。",
+              "duration": 6.072
             }
           ]
         }

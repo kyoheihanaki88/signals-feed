@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-20",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Andy Burnham becomes UK prime minister after meeting King Charles",
+      "summary": "Andy Burnham has formally become the UK prime minister after meeting King Charles at Buckingham Palace, the fourth person to hold the role in less than four years and the sixth within a decade.",
+      "keyTakeaways": [
+        "With no one else in the party competing to become leader, Burnham has been made prime minister without any contest and with limited scrutiny.",
+        "While Burnham has been an MP and cabinet minister before, he left parliament in 2017 to take the Greater Manchester role.",
+        "The former Greater Manchester mayor, who only returned to parliament a month ago, will now head to Downing Street, where he will make a statement to the assembled media before announcing his cabinet."
+      ],
+      "whyItMatters": "Burnham, who took over from Keir Starmer as leader of the Labour party on Friday, accepted the appointment as prime minister shortly after Starmer had gone to the palace to resign to the monarch.",
+      "originalURL": "https://www.theguardian.com/politics/2026/jul/20/andy-burnham-uk-prime-minister-meeting-king-charles",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "バーナム氏、英国首相に就任",
+          "summary": "アンディ・バーナム氏がバッキンガム宮殿でチャールズ国王と会見し、正式に英国首相に就任した。4年足らずで4人目、10年間では6人目の首相となる。",
+          "keyTakeaways": [
+            "党内に対抗馬がなく、選挙戦も実質的な審判もないまま首相の座に就いた",
+            "かつて国会議員・閣僚を務めたが、2017年にグレーター・マンチェスター市長に転じ、議会を離れていた",
+            "わずか1か月前に議会へ復帰したばかりの前市長は、ダウニング街に入り、声明を発表したのち組閣を進める"
+          ],
+          "whyItMatters": "スターマー前首相が国王に辞表を提出した直後、バーナム氏は労働党党首の座を引き継ぎ、首相就任を受け入れた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Jubilation in Spain as La Roja beat Argentina to win second World Cup title",
+      "summary": "Castelldefels, Spain – Fans waving the red and gold Spanish flag have filled the streets, shot fireworks into the night sky and hugged each other into the early hours of Monday after Spain beat Argentina 1-0 in the World Cup final.",
+      "keyTakeaways": [
+        "The jubilation on the streets was echoed in towns and cities across Spain as La Roja won the title on Sunday for the second time with a goal by Ferran Torres in extra time.",
+        "Many Argentina or neutral fans walked around during the match on Sunday sporting his famous #10 shirt.",
+        "The Argentina captain still owns a luxury complex in Castelldefels, replete with its own football pitch, which is reported to be worth $8m."
+      ],
+      "whyItMatters": "Many support Argentina, precisely because of the influence of Messi.",
+      "originalURL": "https://www.aljazeera.com/sports/2026/7/20/jubilation-in-spain-as-la-roja-beat-argentina-to-win-second-world-cup-title?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "スペイン、劇的な延長戦でアルゼンチンを下し二度目の世界制覇",
+          "summary": "スペイン代表「ラ・ロハ」がワールドカップ決勝でアルゼンチンを1対0で破り、カステルデフェルスをはじめスペイン各地の街頭は赤と金の国旗を手にした人々で埋め尽くされた。花火が夜空に打ち上げられ、歓喜の声は月曜の早朝まで続いた。",
+          "keyTakeaways": [
+            "フェラン・トーレスが延長戦に決勝点を挙げ、スペインは二度目の世界王者に輝いた",
+            "試合中、アルゼンチンの10番シャツを着た中立のサポーターの姿も会場に多く見られた",
+            "アルゼンチン代表主将は現在もカステルデフェルスに専用グラウンド付きの豪邸を所有しており、その資産価値は約800万ドルと伝えられる"
+          ],
+          "whyItMatters": "メッシの影響力ゆえに、アルゼンチンを応援するファンは少なくない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Huge search operation after passenger ferry sinks off coast of Guyana",
+      "summary": "A massive search-and-rescue operation is under way after a ferry sank ⁠off the coast of Guyana in South America ⁠late on Saturday, in what has been described by officials as one of the country’s worst maritime disasters.",
+      "keyTakeaways": [
+        "Authorities launched a criminal investigation after a government official said the captain and a crew member of the ferry allegedly tested positive for marijuana and the vessel’s passenger manifest was found to be inaccurate.",
+        "The ferry MV Barima left Georgetown, the capital of the English-speaking South American country, on Saturday at about 3.15pm for Port Kaituma, located in the oil-rich Essequibo region and just off the border with Venezuela.",
+        "A distress call was received shortly after 11pm, prompting an emergency response involving the Guyana Defence Force Coast Guard and Air Corps, private aircraft, fishing vessels and civilian volunteers."
+      ],
+      "whyItMatters": "Another survivor, Loureen Singh, a trader who regularly travels to Port Kaituma to sell clothing, survived by holding on to the same lifejacket as Carlita after telling her she could swim “a little”.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/19/dozens-missing-after-passenger-ferry-sinks-off-coast-of-guyana",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ガイアナ沖でフェリー沈没、大規模な捜索活動が続く",
+          "summary": "南米ガイアナの沖合で土曜日の夜遅く、フェリーが沈没した。当局はこの事故を、同国史上最悪級の海難災害のひとつと表現しており、現在も大規模な捜索・救助活動が続いている。",
+          "keyTakeaways": [
+            "船長と乗組員の一人が大麻の陽性反応を示したとされ、乗客名簿にも不備が判明したことから、当局は刑事捜査を開始した。",
+            "フェリー「MVバリマ」は土曜日の午後3時15分ごろ、首都ジョージタウンを出港し、ベネズエラ国境近くの石油資源が豊富なエセキボ地域にあるポート・カイトゥマへ向かっていた。",
+            "午後11時過ぎに遭難信号が受信され、ガイアナ国防軍沿岸警備隊や航空部隊、民間航空機、漁船、市民ボランティアが一斉に救助活動に当たった。"
+          ],
+          "whyItMatters": "衣料品の行商で定期的にポート・カイトゥマを訪れていたルーリーン・シンは、「少し泳げる」とカーリタに告げ、同じ救命胴衣にしがみつくことで生還した。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "This unpronounceable series of glyphs is an incredible side project from Kieran Hebden (aka Four Tet)",
+      "summary": "My apologies to Kieran Hebden for disregarding his intent, but I’ve got readers to consider.",
+      "keyTakeaways": [
+        "Even the artist name ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ is an unpronounceable series of glyphs that would make Prince shake his head.",
+        "So, from here on out, I’m just going to refer to ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ by his more well-known alias, Four Tet, and the album as Wingdings.",
+        "For years, Hebden has kept this alias somewhat of a secret."
+      ],
+      "whyItMatters": "Four Tet’s Wingdings is available on Bandcamp and most major streaming services, including Apple Music, Spotify, Deezer, and Qobuz.",
+      "originalURL": "https://www.theverge.com/entertainment/967696/four-tet-wingdings-album-review",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "発音不能な記号の羅列——Four Tetの知られざる別名義",
+          "summary": "アーティスト名もアルバム名も、文字通り読むことができない記号の連なりだ。Kieran Hebdenの意図には申し訳ないが、ここでは便宜上、よく知られた名義であるFour Tet、そしてアルバムを「Wingdings」と呼ぶことにする。",
+          "keyTakeaways": [
+            "アーティスト名⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლは、発音はおろか読み方すら定かでない記号の集合体",
+            "混乱を避けるため、以降はFour Tet、アルバムはWingdingsと表記する",
+            "Hebdenはこの別名義を、長年ひっそりと秘めてきた"
+          ],
+          "whyItMatters": "WingdingsはBandcampのほか、Apple Music・Spotify・Deezer・Qobuzなど主要なストリーミングサービスで聴くことができる。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Kodak EC35 is a dirt-cheap point-and-shoot film camera",
+      "summary": "Following the success of its $99 Kodak-branded Snapic A1, Reto Project is releasing the Kodak EC35, an even more affordable 35mm film camera for just $34.99.",
+      "keyTakeaways": [
+        "The EC35 is designed to require almost no thought to use.",
+        "The lens covers are a slightly darker shade than the rest of the camera body, giving them some nice subtle contrast.",
+        "Even the midnight black and vanilla white feature different colored accents, making them slightly more stylish than a disposable camera."
+      ],
+      "whyItMatters": "The film photography renaissance continues and gets more affordable.",
+      "originalURL": "https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "フィルムカメラがさらに手軽に——コダック EC35、約35ドルで登場",
+          "summary": "Reto Projectが新たなコダックブランドのカメラ「EC35」を発売する。99ドルの「Snapic A1」に続く製品で、価格はわずか34.99ドル。35mmフィルムを使うコンパクトカメラとして、これまで以上に手の届きやすい一台だ。",
+          "keyTakeaways": [
+            "操作に迷わない、考えずに使えるシンプルな設計",
+            "レンズカバーはボディより少し濃いトーンで、さりげないコントラストが効いている",
+            "ミッドナイトブラックもバニラホワイトも、カラーアクセントが添えられ、使い捨てカメラより少し洒落た印象"
+          ],
+          "whyItMatters": "フィルム写真の再興は続いており、その裾野はさらに広がりつつある。"
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-19",
+  "date": "2026-07-20",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,123 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Russia launches largest ballistic missile attack on Kyiv since start of war",
-      "summary": "Russia has unleashed another night of powerful air attacks on Kyiv, firing its largest number of ballistic missiles since the start of the war, according to Ukraine’s foreign minister.",
+      "source": "The Guardian (World)",
+      "headline": "Andy Burnham becomes UK prime minister after meeting King Charles",
+      "summary": "Andy Burnham has formally become the UK prime minister after meeting King Charles at Buckingham Palace, the fourth person to hold the role in less than four years and the sixth within a decade.",
       "keyTakeaways": [
-        "The latest bombardment highlights mounting challenges for Ukraine in its fifth year of war as it weathers almost daily Russian attacks with a shortage of Patriot air defence missiles, which are its best chance of downing ballistic missiles.",
-        "Russia’s strikes on Sunday sparked fires across Kyiv, damaging residential buildings, offices, industrial sites, a dormitory and vehicles, according to the State Emergency Service.",
-        "Foreign Minister Andrii Sybiha called the ballistic missile barrage “a brutal terrorist attack on the Ukrainian capital” that demanded a firm response."
+        "With no one else in the party competing to become leader, Burnham has been made prime minister without any contest and with limited scrutiny.",
+        "While Burnham has been an MP and cabinet minister before, he left parliament in 2017 to take the Greater Manchester role.",
+        "The former Greater Manchester mayor, who only returned to parliament a month ago, will now head to Downing Street, where he will make a statement to the assembled media before announcing his cabinet."
       ],
-      "whyItMatters": "The hours-long attacks on Kyiv early on Sunday killed one person and wounded at least 16, according to Ukrainian officials.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/19/russia-launches-largest-ballistic-missile-attack-on-kyiv-since-start-of-war?traffic_source=rss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "Burnham, who took over from Keir Starmer as leader of the Labour party on Friday, accepted the appointment as prime minister shortly after Starmer had gone to the palace to resign to the monarch.",
+      "originalURL": "https://www.theguardian.com/politics/2026/jul/20/andy-burnham-uk-prime-minister-meeting-king-charles",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ロシア、開戦以来最大規模の弾道ミサイル攻撃をキーウに実施",
-          "summary": "ロシアが再びキーウへの大規模な夜間攻撃を行った。ウクライナ外相によれば、開戦後最多となる数の弾道ミサイルが発射されたという。",
+          "headline": "バーナム氏、英国首相に就任",
+          "summary": "アンディ・バーナム氏がバッキンガム宮殿でチャールズ国王と会見し、正式に英国首相に就任した。4年足らずで4人目、10年間では6人目の首相となる。",
           "keyTakeaways": [
-            "今回の攻撃は、戦争5年目を迎えたウクライナの苦境を改めて浮き彫りにした。弾道ミサイル迎撃に不可欠なパトリオットの在庫不足が続くなか、ほぼ毎日のように攻撃にさらされている。",
-            "日曜日の攻撃でキーウ各地に火災が発生し、住宅や事務所、工場、寮、車両などが被害を受けたと国家緊急事態庁が発表した。",
-            "シビハ外相は今回の弾道ミサイル攻撃を「ウクライナの首都への残虐なテロ攻撃」と断じ、断固たる対応を求めた。"
+            "党内に対抗馬がなく、選挙戦も実質的な審判もないまま首相の座に就いた",
+            "かつて国会議員・閣僚を務めたが、2017年にグレーター・マンチェスター市長に転じ、議会を離れていた",
+            "わずか1か月前に議会へ復帰したばかりの前市長は、ダウニング街に入り、声明を発表したのち組閣を進める"
           ],
-          "whyItMatters": "ウクライナ当局によれば、日曜日早朝に数時間にわたって続いた攻撃で1人が死亡し、少なくとも16人が負傷した。"
+          "whyItMatters": "スターマー前首相が国王に辞表を提出した直後、バーナム氏は労働党党首の座を引き継ぎ、首相就任を受け入れた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Russia attacked Kyiv overnight. What happened?",
-              "duration": 3.578776
+              "text": "So we have a new prime minister this morning?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Ukraine says Russia fired its largest number of ballistic missiles at Kyiv since the war began. The attack lasted hours and hit early Sunday morning.",
-              "duration": 8.620408
+              "text": "Yes. Andy Burnham met King Charles at Buckingham Palace and formally became prime minister.",
+              "duration": 5.381224
             },
             {
               "speaker": "listener",
-              "text": "How bad was the damage?",
-              "duration": 1.48898
+              "text": "That's the fourth PM in less than four years, right?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "One person was killed and at least sixteen were wounded. Fires broke out across the city, damaging homes, offices, industrial sites, and a dormitory.",
-              "duration": 8.724898
+              "text": "Exactly. And the sixth in a decade. It's been a turbulent period.",
+              "duration": 3.604898
             },
             {
               "speaker": "listener",
-              "text": "This is the fifth year of the war. Why is this attack significant now?",
-              "duration": 4.728163
+              "text": "How did Burnham become leader so quickly?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Ukraine is facing a shortage of Patriot air defence missiles, which are its best tool for stopping ballistic missiles. That makes these almost daily Russian attacks harder to defend against.",
-              "duration": 10.057143
+              "text": "No one else in the Labour party competed for the role, so he became leader without a contest.",
+              "duration": 4.675918
             },
             {
               "speaker": "listener",
-              "text": "What's Ukraine saying about it?",
-              "duration": 1.697959
+              "text": "Wasn't he the mayor of Greater Manchester?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "Their foreign minister called it a brutal terrorist attack on the capital and said it demands a firm response.",
-              "duration": 5.982041
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "日曜日の夜明け前、キーウに大量の弾道ミサイルが降り注ぎました。",
-              "duration": 5.376
+              "text": "He was. He left parliament in 2017 for that job and only returned to parliament a month ago.",
+              "duration": 5.616327
             },
             {
-              "speaker": "narrator",
-              "text": "ウクライナ外相によると、開戦以来で最も多い数が一度に撃ち込まれました。",
-              "duration": 5.904
+              "speaker": "listener",
+              "text": "So he's been out of Westminster for years?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "この攻撃で1人が亡くなり、少なくとも16人が負傷しています。",
-              "duration": 5.064
+              "speaker": "explainer",
+              "text": "Yes, though he was an MP and cabinet minister before. He took over from Keir Starmer, who resigned to the King just before Burnham's appointment.",
+              "duration": 8.124082
             },
             {
-              "speaker": "narrator",
-              "text": "住宅や事務所、工場、寮など、街の各所で火災が起きました。",
-              "duration": 5.64
+              "speaker": "listener",
+              "text": "What happens now?",
+              "duration": 1.28
             },
             {
-              "speaker": "narrator",
-              "text": "外相のシビハ氏は、首都への残虐なテロ行為だと強く非難しました。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "ウクライナは今、戦争5年目に入ってもほぼ毎日攻撃を受け続けています。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "弾道ミサイルを迎撃できるパトリオットの在庫が不足しており、防衛の余地が狭まっています。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "首都への圧力がさらに高まるなか、ウクライナにとって厳しい局面が続きます。",
-              "duration": 5.856
+              "speaker": "explainer",
+              "text": "He'll head to Downing Street to make a statement and announce his cabinet.",
+              "duration": 3.343673
             }
           ]
         }
@@ -136,137 +110,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "Al Jazeera",
-      "headline": "Spain vs Argentina: How each team can win World Cup final 2026",
-      "summary": "Reigning European champions Spain face defending world champions Argentina in the 2026 World Cup final on Sunday, with the Copa America holders chasing a fourth star and La Roja hunting a second.",
+      "headline": "Jubilation in Spain as La Roja beat Argentina to win second World Cup title",
+      "summary": "Castelldefels, Spain – Fans waving the red and gold Spanish flag have filled the streets, shot fireworks into the night sky and hugged each other into the early hours of Monday after Spain beat Argentina 1-0 in the World Cup final.",
       "keyTakeaways": [
-        "Mikel Oyarzabal, Spain’s five-goal top scorer, will do battle with the combative centre-backs Cristian Romero and Lisandro Martinez.",
-        "The final pits two contrasting footballing philosophies against one another.",
-        "Spain have built their run through relentless control, conceding just once all tournament while suffocating opponents with possession and a well-drilled counter press that wins the ball back high up the pitch."
+        "The jubilation on the streets was echoed in towns and cities across Spain as La Roja won the title on Sunday for the second time with a goal by Ferran Torres in extra time.",
+        "Many Argentina or neutral fans walked around during the match on Sunday sporting his famous #10 shirt.",
+        "The Argentina captain still owns a luxury complex in Castelldefels, replete with its own football pitch, which is reported to be worth $8m."
       ],
-      "whyItMatters": "Lamine Yamal against Nicolas Tagliafico on Spain’s right flank is likely to be a key duel, with Argentina’s left-back needing to contain a player who has had a slow start to the tournament following an injury but is getting close to reaching his full threat potential.",
-      "originalURL": "https://www.aljazeera.com/sports/2026/7/19/spain-vs-argentina-five-key-factors-2026-world-cup-final?traffic_source=rss",
+      "whyItMatters": "Many support Argentina, precisely because of the influence of Messi.",
+      "originalURL": "https://www.aljazeera.com/sports/2026/7/20/jubilation-in-spain-as-la-roja-beat-argentina-to-win-second-world-cup-title?traffic_source=rss",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "スペイン対アルゼンチン――2026年W杯決勝の行方",
-          "summary": "欧州王者スペインと世界王者アルゼンチンが、2026年ワールドカップ決勝で激突する。アルゼンチンは4度目の世界制覇を狙い、スペインは2度目の栄冠を目指す。",
+          "headline": "スペイン、劇的な延長戦でアルゼンチンを下し二度目の世界制覇",
+          "summary": "スペイン代表「ラ・ロハ」がワールドカップ決勝でアルゼンチンを1対0で破り、カステルデフェルスをはじめスペイン各地の街頭は赤と金の国旗を手にした人々で埋め尽くされた。花火が夜空に打ち上げられ、歓喜の声は月曜の早朝まで続いた。",
           "keyTakeaways": [
-            "大会最多5得点のオジャルサバルと、堅守の要ロメロ、リサンドロ・マルティネスとの対決が焦点となる。",
-            "両チームは対照的なサッカー哲学を体現しており、決勝はその真っ向勝負となる。",
-            "スペインはポゼッションと高い位置でのプレスを軸に、大会通じてわずか1失点という盤石な戦いを続けてきた。"
+            "フェラン・トーレスが延長戦に決勝点を挙げ、スペインは二度目の世界王者に輝いた",
+            "試合中、アルゼンチンの10番シャツを着た中立のサポーターの姿も会場に多く見られた",
+            "アルゼンチン代表主将は現在もカステルデフェルスに専用グラウンド付きの豪邸を所有しており、その資産価値は約800万ドルと伝えられる"
           ],
-          "whyItMatters": "負傷明けで本調子に戻りつつあるヤマルを、アルゼンチンの左サイドバック、タリアフィコがいかに封じるか――右サイドのこの一騎打ちが、試合の行方を左右する可能性が高い。"
+          "whyItMatters": "メッシの影響力ゆえに、アルゼンチンを応援するファンは少なくない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Spain and Argentina are meeting in the World Cup final on Sunday?",
-              "duration": 4.205714
+              "text": "Spain just won the World Cup?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "That's right. It's the reigning European champions against the defending world champions.",
-              "duration": 4.127347
+              "text": "Yes, they beat Argentina one-nil in the final on Sunday. It's their second World Cup title.",
+              "duration": 5.381224
             },
             {
               "speaker": "listener",
-              "text": "What makes this matchup interesting?",
-              "duration": 1.906939
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's really two different styles. Spain have controlled games all tournament, keeping possession and pressing high. They've only conceded one goal.",
-              "duration": 8.306939
-            },
-            {
-              "speaker": "listener",
-              "text": "And Argentina plays differently?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "The article describes them as contrasting philosophies, yes. One key battle will be Spain's top scorer Mikel Oyarzabal against Argentina's tough centre-backs Romero and Martinez.",
-              "duration": 10.292245
-            },
-            {
-              "speaker": "listener",
-              "text": "Any other matchups to watch?",
-              "duration": 1.38449
-            },
-            {
-              "speaker": "explainer",
-              "text": "Lamine Yamal on Spain's right wing against Argentina's left-back Tagliafico. Yamal's been recovering from injury but he's getting closer to full strength.",
-              "duration": 8.672653
-            },
-            {
-              "speaker": "listener",
-              "text": "Should be a good one then.",
+              "text": "How are people celebrating?",
               "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Two very accomplished teams. Spain chasing their second World Cup, Argentina going for their fourth.",
-              "duration": 5.564082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "日曜日、2026年ワールドカップの決勝戦が幕を開けます。",
-              "duration": 5.328
+              "text": "Fans have been filling the streets with Spanish flags, setting off fireworks, celebrating into the early hours. It's happening in towns and cities across the country.",
+              "duration": 8.071837
             },
             {
-              "speaker": "narrator",
-              "text": "スペインとアルゼンチンが、世界の頂点をかけて対峙します。",
-              "duration": 4.656
+              "speaker": "listener",
+              "text": "Who scored the winning goal?",
+              "duration": 1.436735
             },
             {
-              "speaker": "narrator",
-              "text": "アルゼンチンは4度目の優勝を、スペインは2度目の栄冠を狙っています。",
-              "duration": 5.28
+              "speaker": "explainer",
+              "text": "Ferran Torres, in extra time.",
+              "duration": 1.933061
             },
             {
-              "speaker": "narrator",
-              "text": "スペインはここまで大会通じてわずか1失点という、堅固な守備を誇ります。",
-              "duration": 5.928
+              "speaker": "listener",
+              "text": "I imagine a lot of people were rooting for Argentina too, because of Messi.",
+              "duration": 3.94449
             },
             {
-              "speaker": "narrator",
-              "text": "ボールを握り続け、高い位置で奪い返すスタイルが、その安定感を支えています。",
-              "duration": 6.312
+              "speaker": "explainer",
+              "text": "Absolutely. Many fans were wearing his number ten shirt during the match. He still has ties to Spain—he owns property in Castelldefels.",
+              "duration": 7.131429
             },
             {
-              "speaker": "narrator",
-              "text": "大会5得点のオジャルサバルに対し、アルゼンチンはロメロとリサンドロ・マルティネスが立ちはだかります。",
-              "duration": 7.08
+              "speaker": "listener",
+              "text": "So it must have been bittersweet for some Spanish fans.",
+              "duration": 3.004082
             },
             {
-              "speaker": "narrator",
-              "text": "右サイドではヤマルとタリアフィコの一対一が、試合の流れを決める場面になりそうです。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "ヤマルは負傷の影響で出遅れましたが、徐々に本来の鋭さを取り戻しています。",
-              "duration": 6.024
-            },
-            {
-              "speaker": "narrator",
-              "text": "対照的な哲学を持つ両チームが、どう噛み合うかが見どころです。",
-              "duration": 4.992
+              "speaker": "explainer",
+              "text": "In a way, yes. But for La Roja supporters, it's pure joy.",
+              "duration": 3.709388
             }
           ]
         }
@@ -277,143 +200,87 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "US and Iran exchange strikes after two US soldiers killed in Jordan",
-      "summary": "Centcom said it also targeted Iran's Revolutionary Guards (IRGC) responsible for the attack that killed two US troops in Jordan on Friday, where another service member remains missing.",
+      "source": "The Guardian (World)",
+      "headline": "Huge search operation after passenger ferry sinks off coast of Guyana",
+      "summary": "A massive search-and-rescue operation is under way after a ferry sank ⁠off the coast of Guyana in South America ⁠late on Saturday, in what has been described by officials as one of the country’s worst maritime disasters.",
       "keyTakeaways": [
-        "In response to the latest strikes, Iran's army said it carried out drone attacks on two US bases in Kuwait, according to state media.",
-        "The US and Iran have ramped up attacks against each other in recent days, with both sides accused of striking critical infrastructure.",
-        "On Saturday, Iran said it carried out \"large-scale attacks with kamikaze drones\" against an American military \"depot at Camp Udairi\" and another at \"Ali Al Salem Air Base in Kuwait\", according to the IRGC-affiliated Tasnim news agency."
+        "Authorities launched a criminal investigation after a government official said the captain and a crew member of the ferry allegedly tested positive for marijuana and the vessel’s passenger manifest was found to be inaccurate.",
+        "The ferry MV Barima left Georgetown, the capital of the English-speaking South American country, on Saturday at about 3.15pm for Port Kaituma, located in the oil-rich Essequibo region and just off the border with Venezuela.",
+        "A distress call was received shortly after 11pm, prompting an emergency response involving the Guyana Defence Force Coast Guard and Air Corps, private aircraft, fishing vessels and civilian volunteers."
       ],
-      "whyItMatters": "Late on Saturday, Iran's Supreme Leader Mojtaba Khamenei said in a written statement that America's \"repeated breaches\" of the agreement had \"laid bare a fundamental truth: the signature of the US president is utterly worthless and devoid of credibility\".",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "whyItMatters": "Another survivor, Loureen Singh, a trader who regularly travels to Port Kaituma to sell clothing, survived by holding on to the same lifejacket as Carlita after telling her she could swim “a little”.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/19/dozens-missing-after-passenger-ferry-sinks-off-coast-of-guyana",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米軍とイランが相互攻撃、ヨルダンでの米兵死亡を受け緊張が拡大",
-          "summary": "米中央軍は、ヨルダンで米兵2名を死亡させた攻撃の責任がイラン革命防衛隊にあるとして、同組織の関連施設を標的にしたと発表した。なお、もう1名の行方がいまだ確認されていない。",
+          "headline": "ガイアナ沖でフェリー沈没、大規模な捜索活動が続く",
+          "summary": "南米ガイアナの沖合で土曜日の夜遅く、フェリーが沈没した。当局はこの事故を、同国史上最悪級の海難災害のひとつと表現しており、現在も大規模な捜索・救助活動が続いている。",
           "keyTakeaways": [
-            "イランはクウェートの米軍基地2か所にドローン攻撃を実施したと、国営メディアが伝えた。",
-            "米・イラン双方による攻撃の応酬が続いており、重要インフラへの攻撃も双方から指摘されている。",
-            "イランは革命防衛隊系メディアを通じ、クウェートのキャンプ・ウダイリとアリ・アルサレム空軍基地に対して「自爆型ドローンによる大規模攻撃」を行ったと主張した。"
+            "船長と乗組員の一人が大麻の陽性反応を示したとされ、乗客名簿にも不備が判明したことから、当局は刑事捜査を開始した。",
+            "フェリー「MVバリマ」は土曜日の午後3時15分ごろ、首都ジョージタウンを出港し、ベネズエラ国境近くの石油資源が豊富なエセキボ地域にあるポート・カイトゥマへ向かっていた。",
+            "午後11時過ぎに遭難信号が受信され、ガイアナ国防軍沿岸警備隊や航空部隊、民間航空機、漁船、市民ボランティアが一斉に救助活動に当たった。"
           ],
-          "whyItMatters": "イランの最高指導者ハメネイ師は声明の中で、米国の「度重なる合意違反」が「米大統領の署名にはいかなる信頼性もない」という根本的な事実を露わにしたと述べた。"
+          "whyItMatters": "衣料品の行商で定期的にポート・カイトゥマを訪れていたルーリーン・シンは、「少し泳げる」とカーリタに告げ、同じ救命胴衣にしがみつくことで生還した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing reports about US and Iran exchanging strikes. What happened?",
-              "duration": 4.205714
+              "text": "I'm seeing news about a ferry that sank off Guyana. What happened?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Two US soldiers were killed in Jordan on Friday, and another service member is still missing. The US says Iran's Revolutionary Guards were responsible for that attack.",
-              "duration": 9.195102
-            },
-            {
-              "speaker": "listener",
-              "text": "And the US responded?",
-              "duration": 1.697959
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. US Central Command said it targeted the Revolutionary Guards unit responsible. Then Iran said it carried out drone attacks on two US bases in Kuwait.",
-              "duration": 8.620408
-            },
-            {
-              "speaker": "listener",
-              "text": "So this is escalating between them?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "It does appear to be ramping up. Both sides have been accused of striking critical infrastructure in recent days.",
-              "duration": 5.694694
-            },
-            {
-              "speaker": "listener",
-              "text": "What did Iran say about all this?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "Iran's Supreme Leader released a statement on Saturday saying America's repeated breaches of agreements show that a US president's signature is worthless and without credibility.",
+              "text": "Late Saturday night, a passenger ferry called the MV Barima sank off the coast of Guyana. Officials are calling it one of the country's worst maritime disasters.",
               "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "That sounds pretty serious.",
+              "text": "Where was this ferry going?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "It left Georgetown, the capital, Saturday afternoon around 3:15, heading to Port Kaituma in the Essequibo region near the Venezuelan border.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "How did rescuers find out?",
               "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "It is. The tension between the two countries is clearly growing, and the situation remains very fluid.",
-              "duration": 6.112653
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ヨルダンの米軍基地で、アメリカ兵2名が攻撃を受けて死亡しました。",
-              "duration": 5.208
+              "text": "A distress call came in shortly after 11 p.m. That triggered a big response—the coast guard, air corps, private aircraft, fishing boats, and civilian volunteers all joined the search.",
+              "duration": 10.710204
             },
             {
-              "speaker": "narrator",
-              "text": "米中央軍はイラン革命防衛隊の関与を断定し、関連施設への報復攻撃に踏み切りました。",
-              "duration": 7.368
+              "speaker": "listener",
+              "text": "Do we know what caused it?",
+              "duration": 1.38449
             },
             {
-              "speaker": "narrator",
-              "text": "なお、もう1名の行方はまだ確認されていません。",
-              "duration": 4.2
+              "speaker": "explainer",
+              "text": "Authorities have launched a criminal investigation. A government official said the captain and a crew member allegedly tested positive for marijuana, and the passenger manifest was inaccurate.",
+              "duration": 10.527347
             },
             {
-              "speaker": "narrator",
-              "text": "これを受けてイランは。",
-              "duration": 2.064
+              "speaker": "listener",
+              "text": "That sounds serious. Are there survivors?",
+              "duration": 2.324898
             },
             {
-              "speaker": "narrator",
-              "text": "クウェートにある米軍のキャンプ・ウダイリとアリ・アルサレム空軍基地に自爆型ドローンを飛ばしたと主張しました。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "米国とイランの間では、ここ数日で攻撃の応酬が急速にエスカレートしています。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "重要インフラへの攻撃も双方から指摘されており、緊張は一段と高まっています。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "土曜日の夜、イランのハメネイ最高指導者は書面で声明を出しました。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "その中で、米国の度重なる合意違反が「米大統領の署名には信頼性がない」という事実を示したと述べました。",
-              "duration": 8.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "中東の情勢は、当面は予断を許さない状況が続きそうです。",
-              "duration": 5.16
+              "speaker": "explainer",
+              "text": "Yes, there are survivors. One woman who regularly travels that route to sell clothing survived by sharing a lifejacket with another passenger.",
+              "duration": 8.176327
             }
           ]
         }
@@ -425,132 +292,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Surprise! Facial recognition smart locks are actually good",
-      "summary": "I tested four locks that unlock with a look, and while hands-free with UWB is better, if you want a sci-fi experience for your front door, facial recognition is worth considering.",
+      "headline": "This unpronounceable series of glyphs is an incredible side project from Kieran Hebden (aka Four Tet)",
+      "summary": "My apologies to Kieran Hebden for disregarding his intent, but I’ve got readers to consider.",
       "keyTakeaways": [
-        "She covers smart home, IoT, and connected tech, and has written previously for Wirecutter, Wired, Dwell, BBC, and US News.",
-        "Hands-free unlocking is the future of smart locks.",
-        "One way to achieve this nirvana is through facial recognition."
+        "Even the artist name ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ is an unpronounceable series of glyphs that would make Prince shake his head.",
+        "So, from here on out, I’m just going to refer to ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ by his more well-known alias, Four Tet, and the album as Wingdings.",
+        "For years, Hebden has kept this alias somewhat of a secret."
       ],
-      "whyItMatters": "If you’re like him and don’t want an unlocking experience tied to a device, but want the speed and convenience of hands-free unlocking, facial unlocking may be for you.",
-      "originalURL": "https://www.theverge.com/tech/967183/best-facial-recognition-smart-locks-review",
-      "readTime": 12,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "whyItMatters": "Four Tet’s Wingdings is available on Bandcamp and most major streaming services, including Apple Music, Spotify, Deezer, and Qobuz.",
+      "originalURL": "https://www.theverge.com/entertainment/967696/four-tet-wingdings-album-review",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "顔認証スマートロック、意外と使える",
-          "summary": "顔をかざすだけで解錠できるスマートロックを4製品試した。UWBによるハンズフリー解錠のほうが優れているとはいえ、玄関をSF的な体験に変えたいなら、顔認証は十分に検討に値する。",
+          "headline": "発音不能な記号の羅列——Four Tetの知られざる別名義",
+          "summary": "アーティスト名もアルバム名も、文字通り読むことができない記号の連なりだ。Kieran Hebdenの意図には申し訳ないが、ここでは便宜上、よく知られた名義であるFour Tet、そしてアルバムを「Wingdings」と呼ぶことにする。",
           "keyTakeaways": [
-            "スマートホームやIoT、コネクテッド技術を専門に取材し、Wirecutter、Wired、Dwell、BBC、US Newsなどに寄稿してきた書き手によるレポート。",
-            "ハンズフリー解錠は、スマートロックの向かう先だ。",
-            "その理想を実現する手段のひとつが、顔認証である。"
+            "アーティスト名⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლは、発音はおろか読み方すら定かでない記号の集合体",
+            "混乱を避けるため、以降はFour Tet、アルバムはWingdingsと表記する",
+            "Hebdenはこの別名義を、長年ひっそりと秘めてきた"
           ],
-          "whyItMatters": "デバイスに依存せず、それでいて素早く手軽に解錠したいと思うなら、顔認証という選択肢が自分に合っているかもしれない。"
+          "whyItMatters": "WingdingsはBandcampのほか、Apple Music・Spotify・Deezer・Qobuzなど主要なストリーミングサービスで聴くことができる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So, facial recognition for your front door? That sounds very sci-fi.",
-              "duration": 5.041633
+              "text": "I saw something about Four Tet releasing music under a name that's basically impossible to say out loud?",
+              "duration": 5.459592
             },
             {
               "speaker": "explainer",
-              "text": "It is. A tech writer tested four smart locks that unlock just by looking at them, and she was actually impressed.",
-              "duration": 6.948571
+              "text": "Yes, Kieran Hebden, who makes music as Four Tet, has this side project where even the artist name is just a series of symbols and glyphs — totally unpronounceable.",
+              "duration": 8.907755
             },
             {
               "speaker": "listener",
-              "text": "Really? I thought those would be gimmicky or unreliable.",
-              "duration": 3.422041
+              "text": "Wait, so how do people even refer to it?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "That was the surprise. She found that if you want hands-free unlocking without relying on a device, facial recognition is worth considering.",
-              "duration": 7.053061
+              "text": "Most people are just calling the album Wingdings, like the old computer font. Hebden's kept this alias pretty quiet for years.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "What's the appeal of not using a device?",
-              "duration": 2.324898
+              "text": "That's kind of playful. Is it hard to find?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Well, you don't need to pull out your phone or wear a smartwatch. You just walk up, and the door recognizes you and unlocks.",
+              "text": "Not at all. It's on Bandcamp and all the major streaming services — Apple Music, Spotify, Deezer, Qobuz.",
               "duration": 6.582857
             },
             {
               "speaker": "listener",
-              "text": "Is facial recognition the best option for hands-free?",
-              "duration": 3.056327
+              "text": "So he's not trying to hide it anymore.",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "She says hands-free with something called UWB is actually better, but facial recognition still gives you that futuristic, convenient experience.",
-              "duration": 8.019592
-            },
-            {
-              "speaker": "listener",
-              "text": "So it's a real option now, not just a novelty.",
-              "duration": 2.76898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly. It's becoming a legitimate choice for people who want speed and convenience at their front door.",
-              "duration": 5.093878
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "玄関のドアが、顔を向けるだけで開く時代になってきました。",
-              "duration": 4.608
-            },
-            {
-              "speaker": "narrator",
-              "text": "顔認証を使ったスマートロックが、実用的な選択肢として注目されています。",
-              "duration": 6.12
-            },
-            {
-              "speaker": "narrator",
-              "text": "4つの製品を実際に試したところ、どれも日常的に使えるレベルの精度がありました。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "鍵もスマートフォンも取り出さずに解錠できる体験は、思った以上に快適です。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "UWBを使ったハンズフリー解錠と比べると、速度や精度では一歩譲る部分もあります。",
-              "duration": 6.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、スマートフォンへの依存をなくしたい場合には、顔認証の方が向いています。",
-              "duration": 5.976
-            },
-            {
-              "speaker": "narrator",
-              "text": "デバイスを持ち歩かなくても、素早く手軽に帰宅できる点が大きな魅力です。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "玄関まわりの体験を静かに変えてくれる、そんな技術が手の届くところに来ています。",
-              "duration": 6.096
+              "text": "Seems like it. It's out there for anyone curious enough to track it down.",
+              "duration": 4.022857
             }
           ]
         }
@@ -562,122 +373,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "The apps, gadgets, and tools every reader needs",
-      "summary": "Hot director bites off too big a story, not even Christopher Nolan can hit every time, right?",
+      "headline": "Kodak EC35 is a dirt-cheap point-and-shoot film camera",
+      "summary": "Following the success of its $99 Kodak-branded Snapic A1, Reto Project is releasing the Kodak EC35, an even more affordable 35mm film camera for just $34.99.",
       "keyTakeaways": [
-        "So clever, so useful, still one of the best apps to write in across Apple devices.",
-        "I’ve been hearing good things about this new Mac-based photo editor, which is fast and powerful and aimed directly at replacing the ever-rising price of Adobe’s tools.",
-        "A couple of weeks ago, I asked you all to share your reading setups — the gadgets, the apps, the bookstores, the bookmark brands, the highlighter colors, everything."
+        "The EC35 is designed to require almost no thought to use.",
+        "The lens covers are a slightly darker shade than the rest of the camera body, giving them some nice subtle contrast.",
+        "Even the midnight black and vanilla white feature different colored accents, making them slightly more stylish than a disposable camera."
       ],
-      "whyItMatters": "I’ll be honest: I expected this movie to not be great.",
-      "originalURL": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
-      "readTime": 12,
-      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The editor",
+      "whyItMatters": "The film photography renaissance continues and gets more affordable.",
+      "originalURL": "https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "読書と創作を支える、いま注目のアプリとツール",
-          "summary": "期待の監督が大きすぎる題材に挑んだ結果、作品はやや空回りした印象だ。クリストファー・ノーランでさえ、常に傑作を生み出せるわけではない。",
+          "headline": "フィルムカメラがさらに手軽に——コダック EC35、約35ドルで登場",
+          "summary": "Reto Projectが新たなコダックブランドのカメラ「EC35」を発売する。99ドルの「Snapic A1」に続く製品で、価格はわずか34.99ドル。35mmフィルムを使うコンパクトカメラとして、これまで以上に手の届きやすい一台だ。",
           "keyTakeaways": [
-            "Appleデバイスをまたいで使える文章作成アプリとして、いまも第一線に立つ完成度",
-            "高速かつ高機能で、値上がりが続くAdobeツールの代替を狙ったMac向け写真編集アプリが話題を集めている",
-            "数週間前に読者へ呼びかけた「あなたの読書環境を教えて」企画——アプリ、ガジェット、書店、しおり、マーカーの色まで、さまざまな声が届いた"
+            "操作に迷わない、考えずに使えるシンプルな設計",
+            "レンズカバーはボディより少し濃いトーンで、さりげないコントラストが効いている",
+            "ミッドナイトブラックもバニラホワイトも、カラーアクセントが添えられ、使い捨てカメラより少し洒落た印象"
           ],
-          "whyItMatters": "正直に言えば、あまり期待せずに観た作品だった。"
+          "whyItMatters": "フィルム写真の再興は続いており、その裾野はさらに広がりつつある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this is about reading setups? The headline mentions apps and gadgets for readers.",
-              "duration": 5.093878
+              "text": "I saw something about a new Kodak film camera that's really cheap?",
+              "duration": 3.787755
             },
             {
               "speaker": "explainer",
-              "text": "Yes, exactly. A couple of weeks ago, someone asked readers to share their reading setups — everything from gadgets and apps to bookstores, bookmark brands, and highlighter colors.",
-              "duration": 9.978776
+              "text": "Yes, it's called the EC35. It's a 35mm film camera that costs just under thirty-five dollars.",
+              "duration": 6.582857
             },
             {
               "speaker": "listener",
-              "text": "What kind of tools did people recommend?",
-              "duration": 2.168163
+              "text": "Wow, that is cheap. Who's making it?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "One standout is an app for writing across Apple devices — described as clever, useful, and still one of the best.",
-              "duration": 6.870204
+              "text": "A company called Reto Project. They previously released a Kodak-branded camera for ninety-nine dollars, and this one's even more affordable.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "Anything else?",
-              "duration": 1.097143
+              "text": "What's the idea behind it?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "There's also a new Mac-based photo editor that's been getting good reviews. It's fast, powerful, and aimed at replacing Adobe's tools, which keep getting more expensive.",
-              "duration": 9.691429
+              "text": "It's designed to be really simple—a point-and-shoot that requires almost no thought to use. Just pick it up and take pictures.",
+              "duration": 7.131429
             },
             {
               "speaker": "listener",
-              "text": "So it's a mix of reading and creative tools?",
-              "duration": 2.35102
+              "text": "Does it at least look nice, or is it just super basic?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "It seems that way. The focus is on what readers find helpful in their setups, whether for reading or related creative work.",
-              "duration": 6.870204
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-19/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Appleのデバイスをまたいで使える文章作成アプリが、いま改めて注目を集めています。",
-              "duration": 6.504
+              "text": "It has some nice touches. The lens covers are a slightly darker shade than the body, which gives a subtle contrast. Even the black and white versions have different colored accents.",
+              "duration": 9.743673
             },
             {
-              "speaker": "narrator",
-              "text": "どのデバイスで開いても書き心地が変わらない点が、長く支持される理由のひとつです。",
-              "duration": 6.144
+              "speaker": "listener",
+              "text": "So a bit more stylish than those old disposable cameras.",
+              "duration": 3.657143
             },
             {
-              "speaker": "narrator",
-              "text": "一方、Mac向けの写真編集アプリにも新しい動きがあります。",
-              "duration": 5.208
-            },
-            {
-              "speaker": "narrator",
-              "text": "Adobeのツールは近年、価格の上昇が続いていました。",
-              "duration": 4.368
-            },
-            {
-              "speaker": "narrator",
-              "text": "その代替として設計されたこのアプリは、速度と機能の両面で高い評価を得ています。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "また数週間前、読者のみなさんに読書環境を教えてほしいと呼びかけました。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "ガジェットやアプリだけでなく、しおりやマーカーの色まで、幅広い声が届きました。",
-              "duration": 6.216
-            },
-            {
-              "speaker": "narrator",
-              "text": "道具や環境が整うと、読む時間の質がすこし変わってくるものです。",
-              "duration": 5.328
+              "speaker": "explainer",
+              "text": "Exactly. It fits into this ongoing film photography revival, making it more accessible for people who want to try shooting film without spending much.",
+              "duration": 8.489796
             }
           ]
         }

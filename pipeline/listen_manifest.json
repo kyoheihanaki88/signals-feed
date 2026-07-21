@@ -6502,6 +6502,47 @@
               "duration": 6.269388
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-21/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカのトランプ大統領が、カナダからの輸入品に50%の関税をかけました。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "理由は、自動車や乳製品、酒類の扱いが不公平だというものです。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "これに対し、カナダのカーニー首相は、今後数週間で交渉を強める考えを示しています。",
+              "duration": 7.008
+            },
+            {
+              "speaker": "narrator",
+              "text": "関税とは、海外から商品を運び込む企業が政府に納める税金のことです。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ大統領は今年1月に就任して以来、世界各地に向けて関税を広げてきました。",
+              "duration": 7.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の措置は、隣り合う二つの国の間で、貿易の対立が新たな段階に入ったことを意味します。",
+              "duration": 7.464
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝の買い物や仕事に使う製品の値段にも、影響が出る可能性があります。",
+              "duration": 6.0
+            }
+          ]
         }
       },
       "2": {
@@ -6549,6 +6590,52 @@
               "speaker": "explainer",
               "text": "He was on a hunger strike supporting the movement. Police moved him to hospital on the twenty-first day. On Monday, he asked doctors to discharge him so he could join the march, but wasn't allowed.",
               "duration": 10.057143
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-21/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "インドの首都デリーで、教育と雇用の改革を求める若者たちが国会に向かって行進しようとしました。",
+              "duration": 7.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "警察は催涙ガスと警棒を使い、数千人の群衆を強制的に解散させています。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "この運動は「コックローチ・ジャンタ党」と名乗っています。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "名前の由来は、最高裁の長官が法廷で失業中の若者を「ゴキブリ」に例えた発言です。",
+              "duration": 7.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "週末には、活動家のソナム・ワンチュクがハンガーストライキの21日目に強制入院させられました。",
+              "duration": 7.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "これをきっかけに、運動への支持がさらに広がっています。",
+              "duration": 4.32
+            },
+            {
+              "speaker": "narrator",
+              "text": "ワンチュクは行進に加わるため退院を求めましたが、認められていません。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "若者の不満が、こうした形で表に出ている状況です。",
+              "duration": 4.896
             }
           ]
         }
@@ -6610,6 +6697,42 @@
               "duration": 5.198367
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-21/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ペンタゴンが、この2週間で米軍兵士およそ100人が負傷していたと発表しました。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "イランが連日続けている攻撃への報復として、クウェートやバーレーン、ヨルダンといった米国の同盟国にも攻撃が及んでいます。",
+              "duration": 9.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "各国は防衛システムを作動させて迎撃にあたりました。",
+              "duration": 4.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "負傷者の大半は軽い脳震盪で、96%はすでに任務に戻っているとペンタゴンは説明しています。",
+              "duration": 8.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "この発表は、負傷の情報が公にされていなかったという報道を受けたものです。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東での緊張が続く中、原油の価格も上がり始めています。",
+              "duration": 5.376
+            }
+          ]
         }
       },
       "4": {
@@ -6669,6 +6792,47 @@
               "duration": 8.254694
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-21/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "フォードが、3万ドルで買える電動トラックを作ります。",
+              "duration": 4.32
+            },
+            {
+              "speaker": "narrator",
+              "text": "同社の人気モデルFシリーズの電動版は、期待ほど売れませんでした。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "そこで設計を一から見直し、新しい共通の電動基盤を使うことにしたのです。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "この新しいトラックは、効率と利益の両立を最優先に開発されています。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "2027年に姿を見せる予定で、ケンタッキーの工場では低価格の電動車を次々と作る計画です。",
+              "duration": 8.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "サイズは既存のマーベリックより小さくなるかもしれません。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "手の届く価格の電動トラックが、選択肢として現実味を帯びてきました。",
+              "duration": 5.64
+            }
+          ]
         }
       },
       "5": {
@@ -6716,6 +6880,47 @@
               "speaker": "explainer",
               "text": "Exactly. All the games work on Windows, and some also support MacOS and SteamOS.",
               "duration": 4.728163
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-21/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "PCゲームの配信サイトHumbleで、15本のゲームを15ドルで買えるバンドルが販売されています。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "2Kという会社が2010年代に出した代表作が揃っています。",
+              "duration": 5.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "BioShock InfiniteやBorderlands 3。",
+              "duration": 3.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "XCOM: Enemy Unknownといった人気作が含まれています。",
+              "duration": 4.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "すべてWindowsで遊べて、一部はMacOSやSteamOSにも対応しています。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "販売は8月7日までですが、一部のタイトルはすでにキーの在庫が少なくなっているようです。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "まとめ買いでゲームを増やしたい人には、手頃な機会かもしれません。",
+              "duration": 4.848
             }
           ]
         }

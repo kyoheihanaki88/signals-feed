@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "北米の隣国同士の貿易摩擦が、大きな局面を迎えた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Trump just put a fifty percent tariff on Canadian goods?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on a wide range of imports from Canada. He says it's retaliation for what he calls unequal treatment of US cars, dairy, and alcohol.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a huge tariff. How did Canada respond?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Prime Minister Mark Carney said Canada is ready to intensify trade talks with the US in the coming weeks.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "Has this been building for a while?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has. These tensions have been simmering since Trump returned to office in January and started a wide-ranging global tariff program.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "Just to be clear, what exactly is a tariff?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a tax on imported goods. Companies bringing in foreign products pay it to the government.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "And why does this matter so much between these two countries?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It marks a major escalation in trade tensions between the North American neighbors. They're deeply connected economically.",
+              "duration": 6.269388
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,55 @@
             "運動の名称は、最高裁長官が法廷で失業中の若者を「ゴキブリ」に例えた発言への批判から生まれた。"
           ],
           "whyItMatters": "月曜日、ワンチュクは行進に加わるため退院を求めたが、認められなかった。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about protesters being called cockroaches in India. What's happening there?",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Thousands of protesters tried to march on parliament in Delhi, demanding the education minister resign. Police used tear gas and canes to stop them.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are they called the cockroach protesters?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "The movement is called the Cockroach Janta Party. The name comes from a comment India's chief justice made during a court hearing, comparing unemployed young people to cockroaches.",
+              "duration": 10.03102
+            },
+            {
+              "speaker": "listener",
+              "text": "That's pretty harsh. What are they actually asking for?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're a youth-led group seeking education and employment reforms. The protests grew after police forcibly hospitalized an activist named Sonam Wangchuk.",
+              "duration": 8.85551
+            },
+            {
+              "speaker": "listener",
+              "text": "What happened with him?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was on a hunger strike supporting the movement. Police moved him to hospital on the twenty-first day. On Monday, he asked doctors to discharge him so he could join the march, but wasn't allowed.",
+              "duration": 10.057143
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,65 @@
           ],
           "whyItMatters": "この緊張の高まりを背景に、原油価格はここ数週間で上昇している。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about US troops being injured in the Middle East. What's happening?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Pentagon confirmed that nearly 100 service members have been injured over the last two weeks during escalating strikes involving Iran.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot. How serious are the injuries?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to Pentagon spokesperson Sean Parnell, most experienced minor concussions, and 96% have already returned to work.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "So Iran is striking back at US facilities?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Tehran launched reprisals following ten consecutive nights of attacks. Kuwait, Bahrain, and Jordan all activated defenses to repel those strikes.",
+              "duration": 9.795918
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are we only hearing about this now?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Parnell was responding to a New York Times report suggesting the Pentagon withheld information about troop injuries from Iranian strikes.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this affecting anything beyond the region?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The escalation has pushed oil prices higher in recent weeks, so it's having broader economic impact.",
+              "duration": 5.198367
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +296,65 @@
           ],
           "whyItMatters": "この3万ドルトラックは、マーベリックより小さくなる可能性がある。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Ford is starting over with electric trucks?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "In a way, yes. They're ending production of the F-150 Lightning and shifting to a completely new approach with what they're calling a Universal Electric Vehicle Platform.",
+              "duration": 9.926531
+            },
+            {
+              "speaker": "listener",
+              "text": "What went wrong with the Lightning?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ford says it didn't capture the market the way they hoped. So now they're focusing on something different — efficiency and profitability.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "And this new truck is going to be cheaper?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Much cheaper. They're targeting a thirty thousand dollar price point, which is significantly lower than the Lightning.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "When can people actually buy one?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "It'll be revealed in 2027. Ford plans to build it at their Kentucky assembly plant, along with a whole family of low-cost electric vehicles.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "How small are we talking here?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ford suggests it could be smaller than their Maverick, which is already their compact truck. So this is really about rethinking what an electric truck can be.",
+              "duration": 8.254694
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +386,55 @@
             "「Risk of Rain 2」もバンドルに収録されている。"
           ],
           "whyItMatters": "「BioShock Infinite」「Borderlands 3」「XCOM: Enemy Unknown」など、2Kが2010年代に送り出した主要タイトルが一堂に揃う。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a big game bundle deal. What's going on?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Humble is selling what they're calling the 2K Megahits 2026 Bundle — 15 Steam games for $15.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "Fifteen dollars for fifteen games? What's in it?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a collection of 2K's biggest games from the 2010s. Think BioShock Infinite, Borderlands 3, XCOM: Enemy Unknown, and Risk of Rain 2.",
+              "duration": 8.85551
+            },
+            {
+              "speaker": "listener",
+              "text": "Those are pretty well-known titles. How long is this available?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Until August 7th. Though the bundle page says keys for some games are already running low.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "So if someone's interested, they shouldn't wait too long.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. All the games work on Windows, and some also support MacOS and SteamOS.",
+              "duration": 4.728163
+            }
+          ]
         }
       }
     }

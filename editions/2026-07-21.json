@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-21",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
+      "summary": "US President Donald Trump has imposed a 50% tariff on a wide range of goods imported from Canada, in retaliation for what he called \"unequal treatment\" of US cars, dairy and alcohol.",
+      "keyTakeaways": [
+        "Prime Minister Mark Carney responded by saying Canada stood ready to \"intensify\" trade talks with the US in the coming weeks.",
+        "These tensions have been simmering since Trump returned to office in January 2025 and unleashed a wide-ranging global programme of tariffs.",
+        "Tariffs are taxes on imported goods that are paid to the government by companies bringing in the foreign products."
+      ],
+      "whyItMatters": "It marks a major escalation in trade tensions between the North American neighbours.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米、カナダ産品に50%関税　両国の通商交渉に緊張高まる",
+          "summary": "トランプ米大統領は、自動車・乳製品・酒類をめぐる「不平等な扱い」を理由に、カナダからの幅広い輸入品に50%の関税を課した。",
+          "keyTakeaways": [
+            "カーニー首相は、今後数週間で米国との通商交渉を「強化」する姿勢を示した。",
+            "両国間の緊張は、トランプ大統領が2025年1月に就任して以来、広範な関税政策とともに高まり続けてきた。",
+            "関税とは、外国製品を輸入する企業が政府に納める輸入税のことだ。"
+          ],
+          "whyItMatters": "北米の隣国同士の貿易摩擦が、大きな局面を迎えた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Police block thousands of 'cockroach' protesters marching on India's parliament",
+      "summary": "Thousands of supporters of the Cockroach Janta Party (CJP), a youth-led protest movement seeking education and employment reforms, defied a police ban and tried to march on parliament to demand India's education minister resign.",
+      "keyTakeaways": [
+        "Police wielding canes used tear gas to disperse crowds in central Delhi.",
+        "It gathered fresh momentum over the weekend after police forcibly moved activist Sonam Wangchuk into hospital on the 21st day of a hunger strike in support of the movement.",
+        "The movement takes its name from a remark by India's chief justice, who drew criticism after comparing sections of unemployed young people to \"cockroaches\" during a court hearing."
+      ],
+      "whyItMatters": "On Monday, Wangchuk appealed to doctors to discharge him so he could join the march but was not allowed.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「ゴキブリ」を名乗る若者たちが国会へ行進、警察が阻止",
+          "summary": "教育・雇用改革を求める若者主導の抗議運動「コックローチ・ジャンタ党（CJP）」の支持者数千人が、警察の禁止令を無視してインド国会への行進を試みた。教育相の辞任を求めるデモは、当局によって阻まれた。",
+          "keyTakeaways": [
+            "警察は催涙ガスと警棒でデリー中心部の群衆を解散させた。",
+            "活動家ソナム・ワンチュクがハンガーストライキ21日目に警察によって強制入院させられたことで、運動は週末に勢いを増した。",
+            "運動の名称は、最高裁長官が法廷で失業中の若者を「ゴキブリ」に例えた発言への批判から生まれた。"
+          ],
+          "whyItMatters": "月曜日、ワンチュクは行進に加わるため退院を求めたが、認められなかった。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Almost 100 troops injured in recent weeks, Pentagon admits, as Iran launches reprisals on US allies",
+      "summary": "Nearly 100 US service members have been injured over the last two weeks of escalating strikes on Iran, the Pentagon has said, as Tehran launched a wave of reprisals to the tenth consecutive night of attacks.",
+      "keyTakeaways": [
+        "Kuwait, Bahrain and Jordan all said they had activated defences to repel the attacks, but the scale of US injuries at facilities across the region over recent week is likely to bring greater scrutiny to Iran’s reprisal attacks.",
+        "Pentagon spokesperson Sean Parnell said the vast majority of those injured only experienced “minor concussions” and 96% had since returned to work.",
+        "Parnell was responding to a New York Times report that the Pentagon has withheld information about troop injuries from Iranian strikes."
+      ],
+      "whyItMatters": "The escalation has pushed oil prices higher in recent weeks.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/21/us-troops-injured-killed-iran-war-attacks-pentagon",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米兵約100人が負傷——ペンタゴンが認める",
+          "summary": "イランによる報復攻撃が続くなか、ペンタゴンは過去2週間で米兵約100人が負傷したと明らかにした。テヘランは10夜連続となる攻撃への報復として、クウェート、バーレーン、ヨルダンなど米国の同盟国にも攻撃を仕掛けた。",
+          "keyTakeaways": [
+            "クウェート、バーレーン、ヨルダンはいずれも防衛システムを起動して攻撃を迎撃。中東各地の施設での負傷者数は、イランの報復攻撃への scrutinyをさらに高めそうだ。",
+            "ペンタゴン報道官のショーン・パーネルは、負傷者の大半は「軽度の脳震盪」にとどまり、96%がすでに職務に復帰していると述べた。",
+            "パーネルの発言は、ペンタゴンがイランの攻撃による負傷情報を公表していなかったとするニューヨーク・タイムズの報道を受けたものだ。"
+          ],
+          "whyItMatters": "この緊張の高まりを背景に、原油価格はここ数週間で上昇している。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Ford’s $30,000 electric truck: all the news about the company’s big EV re-do",
+      "summary": "The end of the Ford F-150 Lightning was also the start of a new era for the automaker.",
+      "keyTakeaways": [
+        "After failing to capture the market with the electric version of its popular F-Series truck, Ford is going back to the drawing board with its Universal Electric Vehicle Platform.",
+        "The first offering will be a $30,000 electric truck, engineered for efficiency and also — perhaps most importantly — profitability.",
+        "The truck will be revealed in 2027, but Ford plans on building a whole family of low-cost electric vehicles at its Kentucky assembly plant."
+      ],
+      "whyItMatters": "Ford’s $30K electric truck could be smaller than a Maverick.",
+      "originalURL": "https://www.theverge.com/transportation/968205/ford-electric-truck-uev-30000-affordable",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "フォード、3万ドルの電動トラックで再出発",
+          "summary": "F-150ライトニングの終売は、フォードにとって終わりではなく転換点だった。同社は新たな共通電動プラットフォームを軸に、EVの刷新へと踏み出している。",
+          "keyTakeaways": [
+            "人気のFシリーズ電動版が市場で振るわず、フォードは設計を根本から見直す方針に転じた",
+            "最初の一台は3万ドルの電動トラック——効率性と収益性を両立させることが開発の核心にある",
+            "2027年に発表予定で、ケンタッキーの組立工場では低価格EVのラインアップ展開を計画"
+          ],
+          "whyItMatters": "この3万ドルトラックは、マーベリックより小さくなる可能性がある。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Get Borderlands 3, Risk of Rain 2 and 13 other great PC games for $15",
+      "summary": "The aptly-named “2K Megahits 2026 Bundle” from Humble includes 15 Steam games for $15.",
+      "keyTakeaways": [
+        "The bundle will be available until August 7th, though the bundle page notes that keys for some games are already starting to run low.",
+        "All of the games work on Windows, while some support MacOS and SteamOS.",
+        "One of my personal favorite games, Risk of Rain 2, is included in the bundle."
+      ],
+      "whyItMatters": "It’s a smattering of the publisher 2K’s biggest games of the 2010s, including BioShock Infinite, Risk of Rain 2, Borderlands 3, and XCOM: Enemy Unknown.",
+      "originalURL": "https://www.theverge.com/gadgets/968191/humble-2k-megahits-bundle-xcom-borderlands-duke-nukem-deal-sale",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "人気PCゲーム15本が約2200円のバンドルに",
+          "summary": "Humbleが販売する「2K Megahits 2026 Bundle」では、Steamゲーム15本をまとめて15ドルで入手できる。",
+          "keyTakeaways": [
+            "販売期限は8月7日。一部タイトルのキーはすでに残り少なくなっている。",
+            "全タイトルがWindowsに対応。MacOSおよびSteamOSをサポートするものも含まれる。",
+            "「Risk of Rain 2」もバンドルに収録されている。"
+          ],
+          "whyItMatters": "「BioShock Infinite」「Borderlands 3」「XCOM: Enemy Unknown」など、2Kが2010年代に送り出した主要タイトルが一堂に揃う。"
+        }
+      }
+    }
+  ]
+}

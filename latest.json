@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,143 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Andy Burnham becomes UK prime minister after meeting King Charles",
-      "summary": "Andy Burnham has formally become the UK prime minister after meeting King Charles at Buckingham Palace, the fourth person to hold the role in less than four years and the sixth within a decade.",
+      "source": "BBC News (World)",
+      "headline": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
+      "summary": "US President Donald Trump has imposed a 50% tariff on a wide range of goods imported from Canada, in retaliation for what he called \"unequal treatment\" of US cars, dairy and alcohol.",
       "keyTakeaways": [
-        "With no one else in the party competing to become leader, Burnham has been made prime minister without any contest and with limited scrutiny.",
-        "While Burnham has been an MP and cabinet minister before, he left parliament in 2017 to take the Greater Manchester role.",
-        "The former Greater Manchester mayor, who only returned to parliament a month ago, will now head to Downing Street, where he will make a statement to the assembled media before announcing his cabinet."
+        "Prime Minister Mark Carney responded by saying Canada stood ready to \"intensify\" trade talks with the US in the coming weeks.",
+        "These tensions have been simmering since Trump returned to office in January 2025 and unleashed a wide-ranging global programme of tariffs.",
+        "Tariffs are taxes on imported goods that are paid to the government by companies bringing in the foreign products."
       ],
-      "whyItMatters": "Burnham, who took over from Keir Starmer as leader of the Labour party on Friday, accepted the appointment as prime minister shortly after Starmer had gone to the palace to resign to the monarch.",
-      "originalURL": "https://www.theguardian.com/politics/2026/jul/20/andy-burnham-uk-prime-minister-meeting-king-charles",
-      "readTime": 1,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "whyItMatters": "It marks a major escalation in trade tensions between the North American neighbours.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "バーナム氏、英国首相に就任",
-          "summary": "アンディ・バーナム氏がバッキンガム宮殿でチャールズ国王と会見し、正式に英国首相に就任した。4年足らずで4人目、10年間では6人目の首相となる。",
+          "headline": "米、カナダ産品に50%関税　両国の通商交渉に緊張高まる",
+          "summary": "トランプ米大統領は、自動車・乳製品・酒類をめぐる「不平等な扱い」を理由に、カナダからの幅広い輸入品に50%の関税を課した。",
           "keyTakeaways": [
-            "党内に対抗馬がなく、選挙戦も実質的な審判もないまま首相の座に就いた",
-            "かつて国会議員・閣僚を務めたが、2017年にグレーター・マンチェスター市長に転じ、議会を離れていた",
-            "わずか1か月前に議会へ復帰したばかりの前市長は、ダウニング街に入り、声明を発表したのち組閣を進める"
+            "カーニー首相は、今後数週間で米国との通商交渉を「強化」する姿勢を示した。",
+            "両国間の緊張は、トランプ大統領が2025年1月に就任して以来、広範な関税政策とともに高まり続けてきた。",
+            "関税とは、外国製品を輸入する企業が政府に納める輸入税のことだ。"
           ],
-          "whyItMatters": "スターマー前首相が国王に辞表を提出した直後、バーナム氏は労働党党首の座を引き継ぎ、首相就任を受け入れた。"
+          "whyItMatters": "北米の隣国同士の貿易摩擦が、大きな局面を迎えた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So we have a new prime minister this morning?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Andy Burnham met King Charles at Buckingham Palace and formally became prime minister.",
-              "duration": 5.381224
-            },
-            {
-              "speaker": "listener",
-              "text": "That's the fourth PM in less than four years, right?",
+              "text": "So Trump just put a fifty percent tariff on Canadian goods?",
               "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. And the sixth in a decade. It's been a turbulent period.",
-              "duration": 3.604898
+              "text": "Yes, on a wide range of imports from Canada. He says it's retaliation for what he calls unequal treatment of US cars, dairy, and alcohol.",
+              "duration": 7.88898
             },
             {
               "speaker": "listener",
-              "text": "How did Burnham become leader so quickly?",
-              "duration": 2.220408
+              "text": "That's a huge tariff. How did Canada respond?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "No one else in the Labour party competed for the role, so he became leader without a contest.",
-              "duration": 4.675918
+              "text": "Prime Minister Mark Carney said Canada is ready to intensify trade talks with the US in the coming weeks.",
+              "duration": 5.32898
             },
             {
               "speaker": "listener",
-              "text": "Wasn't he the mayor of Greater Manchester?",
-              "duration": 2.35102
+              "text": "Has this been building for a while?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "He was. He left parliament in 2017 for that job and only returned to parliament a month ago.",
-              "duration": 5.616327
+              "text": "It has. These tensions have been simmering since Trump returned to office in January and started a wide-ranging global tariff program.",
+              "duration": 8.071837
             },
             {
               "speaker": "listener",
-              "text": "So he's been out of Westminster for years?",
-              "duration": 2.220408
+              "text": "Just to be clear, what exactly is a tariff?",
+              "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "Yes, though he was an MP and cabinet minister before. He took over from Keir Starmer, who resigned to the King just before Burnham's appointment.",
-              "duration": 8.124082
+              "text": "It's a tax on imported goods. Companies bringing in foreign products pay it to the government.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "What happens now?",
-              "duration": 1.28
+              "text": "And why does this matter so much between these two countries?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "He'll head to Downing Street to make a statement and announce his cabinet.",
-              "duration": 3.343673
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスでアンディ・バーナム氏が新しい首相に就きました。",
-              "duration": 4.392
-            },
-            {
-              "speaker": "narrator",
-              "text": "バッキンガム宮殿でチャールズ国王と会い、正式に任命を受けています。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "これで4年足らずのあいだに4人目の首相です。",
-              "duration": 3.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "バーナム氏は労働党の党首になったばかりで、党内に対抗する人がいなかったため選挙なしで首相の座に就きました。",
-              "duration": 8.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "彼は以前、国会議員や閣僚を務めていましたが、2017年にグレーター・マンチェスター市長になるため議会を離れていました。",
-              "duration": 9.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "議会に戻ってきたのはわずか1か月前のことです。",
-              "duration": 4.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "スターマー前首相が国王に辞表を出した直後、バーナム氏が後を継ぎました。",
-              "duration": 5.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "これからダウニング街で声明を出し、新しい内閣を発表する予定です。",
-              "duration": 5.592
+              "text": "It marks a major escalation in trade tensions between the North American neighbors. They're deeply connected economically.",
+              "duration": 6.269388
             }
           ]
         }
@@ -155,133 +99,77 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Jubilation in Spain as La Roja beat Argentina to win second World Cup title",
-      "summary": "Castelldefels, Spain – Fans waving the red and gold Spanish flag have filled the streets, shot fireworks into the night sky and hugged each other into the early hours of Monday after Spain beat Argentina 1-0 in the World Cup final.",
+      "source": "BBC News (World)",
+      "headline": "Police block thousands of 'cockroach' protesters marching on India's parliament",
+      "summary": "Thousands of supporters of the Cockroach Janta Party (CJP), a youth-led protest movement seeking education and employment reforms, defied a police ban and tried to march on parliament to demand India's education minister resign.",
       "keyTakeaways": [
-        "The jubilation on the streets was echoed in towns and cities across Spain as La Roja won the title on Sunday for the second time with a goal by Ferran Torres in extra time.",
-        "Many Argentina or neutral fans walked around during the match on Sunday sporting his famous #10 shirt.",
-        "The Argentina captain still owns a luxury complex in Castelldefels, replete with its own football pitch, which is reported to be worth $8m."
+        "Police wielding canes used tear gas to disperse crowds in central Delhi.",
+        "It gathered fresh momentum over the weekend after police forcibly moved activist Sonam Wangchuk into hospital on the 21st day of a hunger strike in support of the movement.",
+        "The movement takes its name from a remark by India's chief justice, who drew criticism after comparing sections of unemployed young people to \"cockroaches\" during a court hearing."
       ],
-      "whyItMatters": "Many support Argentina, precisely because of the influence of Messi.",
-      "originalURL": "https://www.aljazeera.com/sports/2026/7/20/jubilation-in-spain-as-la-roja-beat-argentina-to-win-second-world-cup-title?traffic_source=rss",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "whyItMatters": "On Monday, Wangchuk appealed to doctors to discharge him so he could join the march but was not allowed.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "スペイン、劇的な延長戦でアルゼンチンを下し二度目の世界制覇",
-          "summary": "スペイン代表「ラ・ロハ」がワールドカップ決勝でアルゼンチンを1対0で破り、カステルデフェルスをはじめスペイン各地の街頭は赤と金の国旗を手にした人々で埋め尽くされた。花火が夜空に打ち上げられ、歓喜の声は月曜の早朝まで続いた。",
+          "headline": "「ゴキブリ」を名乗る若者たちが国会へ行進、警察が阻止",
+          "summary": "教育・雇用改革を求める若者主導の抗議運動「コックローチ・ジャンタ党（CJP）」の支持者数千人が、警察の禁止令を無視してインド国会への行進を試みた。教育相の辞任を求めるデモは、当局によって阻まれた。",
           "keyTakeaways": [
-            "フェラン・トーレスが延長戦に決勝点を挙げ、スペインは二度目の世界王者に輝いた",
-            "試合中、アルゼンチンの10番シャツを着た中立のサポーターの姿も会場に多く見られた",
-            "アルゼンチン代表主将は現在もカステルデフェルスに専用グラウンド付きの豪邸を所有しており、その資産価値は約800万ドルと伝えられる"
+            "警察は催涙ガスと警棒でデリー中心部の群衆を解散させた。",
+            "活動家ソナム・ワンチュクがハンガーストライキ21日目に警察によって強制入院させられたことで、運動は週末に勢いを増した。",
+            "運動の名称は、最高裁長官が法廷で失業中の若者を「ゴキブリ」に例えた発言への批判から生まれた。"
           ],
-          "whyItMatters": "メッシの影響力ゆえに、アルゼンチンを応援するファンは少なくない。"
+          "whyItMatters": "月曜日、ワンチュクは行進に加わるため退院を求めたが、認められなかった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Spain just won the World Cup?",
-              "duration": 1.802449
+              "text": "I saw something about protesters being called cockroaches in India. What's happening there?",
+              "duration": 5.01551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, they beat Argentina one-nil in the final on Sunday. It's their second World Cup title.",
-              "duration": 5.381224
+              "text": "Thousands of protesters tried to march on parliament in Delhi, demanding the education minister resign. Police used tear gas and canes to stop them.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "How are people celebrating?",
-              "duration": 1.515102
+              "text": "Why are they called the cockroach protesters?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "Fans have been filling the streets with Spanish flags, setting off fireworks, celebrating into the early hours. It's happening in towns and cities across the country.",
-              "duration": 8.071837
+              "text": "The movement is called the Cockroach Janta Party. The name comes from a comment India's chief justice made during a court hearing, comparing unemployed young people to cockroaches.",
+              "duration": 10.03102
             },
             {
               "speaker": "listener",
-              "text": "Who scored the winning goal?",
-              "duration": 1.436735
+              "text": "That's pretty harsh. What are they actually asking for?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "Ferran Torres, in extra time.",
-              "duration": 1.933061
+              "text": "They're a youth-led group seeking education and employment reforms. The protests grew after police forcibly hospitalized an activist named Sonam Wangchuk.",
+              "duration": 8.85551
             },
             {
               "speaker": "listener",
-              "text": "I imagine a lot of people were rooting for Argentina too, because of Messi.",
-              "duration": 3.94449
+              "text": "What happened with him?",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "Absolutely. Many fans were wearing his number ten shirt during the match. He still has ties to Spain—he owns property in Castelldefels.",
-              "duration": 7.131429
-            },
-            {
-              "speaker": "listener",
-              "text": "So it must have been bittersweet for some Spanish fans.",
-              "duration": 3.004082
-            },
-            {
-              "speaker": "explainer",
-              "text": "In a way, yes. But for La Roja supporters, it's pure joy.",
-              "duration": 3.709388
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "スペインがワールドカップでアルゼンチンを1対0で破り、2度目の優勝を果たしました。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "決勝点は延長戦、フェラン・トーレスが決めたものでした。",
-              "duration": 4.752
-            },
-            {
-              "speaker": "narrator",
-              "text": "試合後、カステルデフェルスをはじめ各地で赤と金の旗を手にした人々が街に繰り出しました。",
-              "duration": 7.08
-            },
-            {
-              "speaker": "narrator",
-              "text": "花火が夜空を彩り、歓声は月曜の明け方まで続いたそうです。",
-              "duration": 5.328
-            },
-            {
-              "speaker": "narrator",
-              "text": "興味深いのは、会場にアルゼンチンの10番を着た人が多くいたことです。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "メッシの影響で、対戦相手を応援する人も少なくありませんでした。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "彼は今もこの町に専用グラウンド付きの邸宅を持っています。",
-              "duration": 4.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "スペインの勝利は、ある意味で地元の英雄への複雑な思いも映し出しているのかもしれません。",
-              "duration": 6.384
+              "text": "He was on a hunger strike supporting the movement. Police moved him to hospital on the twenty-first day. On Monday, he asked doctors to discharge him so he could join the march, but wasn't allowed.",
+              "duration": 10.057143
             }
           ]
         }
@@ -293,127 +181,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Huge search operation after passenger ferry sinks off coast of Guyana",
-      "summary": "A massive search-and-rescue operation is under way after a ferry sank ⁠off the coast of Guyana in South America ⁠late on Saturday, in what has been described by officials as one of the country’s worst maritime disasters.",
+      "headline": "Almost 100 troops injured in recent weeks, Pentagon admits, as Iran launches reprisals on US allies",
+      "summary": "Nearly 100 US service members have been injured over the last two weeks of escalating strikes on Iran, the Pentagon has said, as Tehran launched a wave of reprisals to the tenth consecutive night of attacks.",
       "keyTakeaways": [
-        "Authorities launched a criminal investigation after a government official said the captain and a crew member of the ferry allegedly tested positive for marijuana and the vessel’s passenger manifest was found to be inaccurate.",
-        "The ferry MV Barima left Georgetown, the capital of the English-speaking South American country, on Saturday at about 3.15pm for Port Kaituma, located in the oil-rich Essequibo region and just off the border with Venezuela.",
-        "A distress call was received shortly after 11pm, prompting an emergency response involving the Guyana Defence Force Coast Guard and Air Corps, private aircraft, fishing vessels and civilian volunteers."
+        "Kuwait, Bahrain and Jordan all said they had activated defences to repel the attacks, but the scale of US injuries at facilities across the region over recent week is likely to bring greater scrutiny to Iran’s reprisal attacks.",
+        "Pentagon spokesperson Sean Parnell said the vast majority of those injured only experienced “minor concussions” and 96% had since returned to work.",
+        "Parnell was responding to a New York Times report that the Pentagon has withheld information about troop injuries from Iranian strikes."
       ],
-      "whyItMatters": "Another survivor, Loureen Singh, a trader who regularly travels to Port Kaituma to sell clothing, survived by holding on to the same lifejacket as Carlita after telling her she could swim “a little”.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/19/dozens-missing-after-passenger-ferry-sinks-off-coast-of-guyana",
+      "whyItMatters": "The escalation has pushed oil prices higher in recent weeks.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/21/us-troops-injured-killed-iran-war-attacks-pentagon",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ガイアナ沖でフェリー沈没、大規模な捜索活動が続く",
-          "summary": "南米ガイアナの沖合で土曜日の夜遅く、フェリーが沈没した。当局はこの事故を、同国史上最悪級の海難災害のひとつと表現しており、現在も大規模な捜索・救助活動が続いている。",
+          "headline": "米兵約100人が負傷——ペンタゴンが認める",
+          "summary": "イランによる報復攻撃が続くなか、ペンタゴンは過去2週間で米兵約100人が負傷したと明らかにした。テヘランは10夜連続となる攻撃への報復として、クウェート、バーレーン、ヨルダンなど米国の同盟国にも攻撃を仕掛けた。",
           "keyTakeaways": [
-            "船長と乗組員の一人が大麻の陽性反応を示したとされ、乗客名簿にも不備が判明したことから、当局は刑事捜査を開始した。",
-            "フェリー「MVバリマ」は土曜日の午後3時15分ごろ、首都ジョージタウンを出港し、ベネズエラ国境近くの石油資源が豊富なエセキボ地域にあるポート・カイトゥマへ向かっていた。",
-            "午後11時過ぎに遭難信号が受信され、ガイアナ国防軍沿岸警備隊や航空部隊、民間航空機、漁船、市民ボランティアが一斉に救助活動に当たった。"
+            "クウェート、バーレーン、ヨルダンはいずれも防衛システムを起動して攻撃を迎撃。中東各地の施設での負傷者数は、イランの報復攻撃への scrutinyをさらに高めそうだ。",
+            "ペンタゴン報道官のショーン・パーネルは、負傷者の大半は「軽度の脳震盪」にとどまり、96%がすでに職務に復帰していると述べた。",
+            "パーネルの発言は、ペンタゴンがイランの攻撃による負傷情報を公表していなかったとするニューヨーク・タイムズの報道を受けたものだ。"
           ],
-          "whyItMatters": "衣料品の行商で定期的にポート・カイトゥマを訪れていたルーリーン・シンは、「少し泳げる」とカーリタに告げ、同じ救命胴衣にしがみつくことで生還した。"
+          "whyItMatters": "この緊張の高まりを背景に、原油価格はここ数週間で上昇している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing news about a ferry that sank off Guyana. What happened?",
-              "duration": 3.604898
+              "text": "I saw something about US troops being injured in the Middle East. What's happening?",
+              "duration": 4.310204
             },
             {
               "speaker": "explainer",
-              "text": "Late Saturday night, a passenger ferry called the MV Barima sank off the coast of Guyana. Officials are calling it one of the country's worst maritime disasters.",
-              "duration": 9.142857
+              "text": "The Pentagon confirmed that nearly 100 service members have been injured over the last two weeks during escalating strikes involving Iran.",
+              "duration": 6.687347
             },
             {
               "speaker": "listener",
-              "text": "Where was this ferry going?",
-              "duration": 1.619592
+              "text": "That's a lot. How serious are the injuries?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "It left Georgetown, the capital, Saturday afternoon around 3:15, heading to Port Kaituma in the Essequibo region near the Venezuelan border.",
-              "duration": 8.907755
+              "text": "According to Pentagon spokesperson Sean Parnell, most experienced minor concussions, and 96% have already returned to work.",
+              "duration": 7.235918
             },
             {
               "speaker": "listener",
-              "text": "How did rescuers find out?",
-              "duration": 1.671837
+              "text": "So Iran is striking back at US facilities?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "A distress call came in shortly after 11 p.m. That triggered a big response—the coast guard, air corps, private aircraft, fishing boats, and civilian volunteers all joined the search.",
-              "duration": 10.710204
+              "text": "Yes. Tehran launched reprisals following ten consecutive nights of attacks. Kuwait, Bahrain, and Jordan all activated defenses to repel those strikes.",
+              "duration": 9.795918
             },
             {
               "speaker": "listener",
-              "text": "Do we know what caused it?",
-              "duration": 1.38449
+              "text": "Why are we only hearing about this now?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Authorities have launched a criminal investigation. A government official said the captain and a crew member allegedly tested positive for marijuana, and the passenger manifest was inaccurate.",
-              "duration": 10.527347
+              "text": "Parnell was responding to a New York Times report suggesting the Pentagon withheld information about troop injuries from Iranian strikes.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "That sounds serious. Are there survivors?",
+              "text": "Is this affecting anything beyond the region?",
               "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, there are survivors. One woman who regularly travels that route to sell clothing survived by sharing a lifejacket with another passenger.",
-              "duration": 8.176327
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "南米ガイアナの沖で、乗客を乗せたフェリーが土曜の夜に沈みました。",
-              "duration": 5.304
-            },
-            {
-              "speaker": "narrator",
-              "text": "現地当局は、国内で起きた最悪級の海難事故だとしています。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "フェリーは首都から石油が豊かな地域の港へ向かう途中でした。",
-              "duration": 4.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "夜11時過ぎに救難信号が入り、軍や民間の船が出動しました。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "船長と乗組員から大麻の陽性反応が出たとされ、乗客名簿にも誤りがあったため、刑事捜査が始まっています。",
-              "duration": 8.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "生存者の一人は、別の乗客と同じ救命胴衣につかまって助かりました。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "捜索活動は今も続いています。",
-              "duration": 3.264
+              "text": "The escalation has pushed oil prices higher in recent weeks, so it's having broader economic impact.",
+              "duration": 5.198367
             }
           ]
         }
@@ -425,117 +272,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "This unpronounceable series of glyphs is an incredible side project from Kieran Hebden (aka Four Tet)",
-      "summary": "My apologies to Kieran Hebden for disregarding his intent, but I’ve got readers to consider.",
+      "headline": "Ford’s $30,000 electric truck: all the news about the company’s big EV re-do",
+      "summary": "The end of the Ford F-150 Lightning was also the start of a new era for the automaker.",
       "keyTakeaways": [
-        "Even the artist name ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ is an unpronounceable series of glyphs that would make Prince shake his head.",
-        "So, from here on out, I’m just going to refer to ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ by his more well-known alias, Four Tet, and the album as Wingdings.",
-        "For years, Hebden has kept this alias somewhat of a secret."
+        "After failing to capture the market with the electric version of its popular F-Series truck, Ford is going back to the drawing board with its Universal Electric Vehicle Platform.",
+        "The first offering will be a $30,000 electric truck, engineered for efficiency and also — perhaps most importantly — profitability.",
+        "The truck will be revealed in 2027, but Ford plans on building a whole family of low-cost electric vehicles at its Kentucky assembly plant."
       ],
-      "whyItMatters": "Four Tet’s Wingdings is available on Bandcamp and most major streaming services, including Apple Music, Spotify, Deezer, and Qobuz.",
-      "originalURL": "https://www.theverge.com/entertainment/967696/four-tet-wingdings-album-review",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The editor",
+      "whyItMatters": "Ford’s $30K electric truck could be smaller than a Maverick.",
+      "originalURL": "https://www.theverge.com/transportation/968205/ford-electric-truck-uev-30000-affordable",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "発音不能な記号の羅列——Four Tetの知られざる別名義",
-          "summary": "アーティスト名もアルバム名も、文字通り読むことができない記号の連なりだ。Kieran Hebdenの意図には申し訳ないが、ここでは便宜上、よく知られた名義であるFour Tet、そしてアルバムを「Wingdings」と呼ぶことにする。",
+          "headline": "フォード、3万ドルの電動トラックで再出発",
+          "summary": "F-150ライトニングの終売は、フォードにとって終わりではなく転換点だった。同社は新たな共通電動プラットフォームを軸に、EVの刷新へと踏み出している。",
           "keyTakeaways": [
-            "アーティスト名⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლは、発音はおろか読み方すら定かでない記号の集合体",
-            "混乱を避けるため、以降はFour Tet、アルバムはWingdingsと表記する",
-            "Hebdenはこの別名義を、長年ひっそりと秘めてきた"
+            "人気のFシリーズ電動版が市場で振るわず、フォードは設計を根本から見直す方針に転じた",
+            "最初の一台は3万ドルの電動トラック——効率性と収益性を両立させることが開発の核心にある",
+            "2027年に発表予定で、ケンタッキーの組立工場では低価格EVのラインアップ展開を計画"
           ],
-          "whyItMatters": "WingdingsはBandcampのほか、Apple Music・Spotify・Deezer・Qobuzなど主要なストリーミングサービスで聴くことができる。"
+          "whyItMatters": "この3万ドルトラックは、マーベリックより小さくなる可能性がある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about Four Tet releasing music under a name that's basically impossible to say out loud?",
-              "duration": 5.459592
+              "text": "So Ford is starting over with electric trucks?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Kieran Hebden, who makes music as Four Tet, has this side project where even the artist name is just a series of symbols and glyphs — totally unpronounceable.",
-              "duration": 8.907755
+              "text": "In a way, yes. They're ending production of the F-150 Lightning and shifting to a completely new approach with what they're calling a Universal Electric Vehicle Platform.",
+              "duration": 9.926531
             },
             {
               "speaker": "listener",
-              "text": "Wait, so how do people even refer to it?",
-              "duration": 2.403265
-            },
-            {
-              "speaker": "explainer",
-              "text": "Most people are just calling the album Wingdings, like the old computer font. Hebden's kept this alias pretty quiet for years.",
-              "duration": 7.47102
-            },
-            {
-              "speaker": "listener",
-              "text": "That's kind of playful. Is it hard to find?",
-              "duration": 2.533878
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not at all. It's on Bandcamp and all the major streaming services — Apple Music, Spotify, Deezer, Qobuz.",
-              "duration": 6.582857
-            },
-            {
-              "speaker": "listener",
-              "text": "So he's not trying to hide it anymore.",
+              "text": "What went wrong with the Lightning?",
               "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Seems like it. It's out there for anyone curious enough to track it down.",
-              "duration": 4.022857
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "電子音楽家のKieran Hebdenが、長年隠してきた別の名義で作品を発表していたことがわかりました。",
-              "duration": 7.536
+              "text": "Ford says it didn't capture the market the way they hoped. So now they're focusing on something different — efficiency and profitability.",
+              "duration": 7.418776
             },
             {
-              "speaker": "narrator",
-              "text": "その名義は記号だけで構成されていて、声に出して読むことができません。",
-              "duration": 5.376
+              "speaker": "listener",
+              "text": "And this new truck is going to be cheaper?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "Four Tetという名前なら聞いたことがある人も多いでしょう。",
-              "duration": 4.224
+              "speaker": "explainer",
+              "text": "Much cheaper. They're targeting a thirty thousand dollar price point, which is significantly lower than the Lightning.",
+              "duration": 5.694694
             },
             {
-              "speaker": "narrator",
-              "text": "実は同じ人物が、誰にも読めない記号の羅列を名前にした別のプロジェクトを続けていたのです。",
-              "duration": 6.792
+              "speaker": "listener",
+              "text": "When can people actually buy one?",
+              "duration": 1.750204
             },
             {
-              "speaker": "narrator",
-              "text": "このアルバムはWingdingsと呼ばれ、BandcampやApple Music、Spotifyで聴けます。",
-              "duration": 6.744
+              "speaker": "explainer",
+              "text": "It'll be revealed in 2027. Ford plans to build it at their Kentucky assembly plant, along with a whole family of low-cost electric vehicles.",
+              "duration": 8.019592
             },
             {
-              "speaker": "narrator",
-              "text": "音楽家が複数の名義を使うこと自体は珍しくありませんが、ここまで徹底して隠すのは異例です。",
-              "duration": 7.32
+              "speaker": "listener",
+              "text": "How small are we talking here?",
+              "duration": 2.037551
             },
             {
-              "speaker": "narrator",
-              "text": "表現の幅を広げたいのか、それとも作品そのものだけを聴いてほしいのか、意図は明かされていません。",
-              "duration": 7.224
+              "speaker": "explainer",
+              "text": "Ford suggests it could be smaller than their Maverick, which is already their compact truck. So this is really about rethinking what an electric truck can be.",
+              "duration": 8.254694
             }
           ]
         }
@@ -547,127 +363,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Kodak EC35 is a dirt-cheap point-and-shoot film camera",
-      "summary": "Following the success of its $99 Kodak-branded Snapic A1, Reto Project is releasing the Kodak EC35, an even more affordable 35mm film camera for just $34.99.",
+      "headline": "Get Borderlands 3, Risk of Rain 2 and 13 other great PC games for $15",
+      "summary": "The aptly-named “2K Megahits 2026 Bundle” from Humble includes 15 Steam games for $15.",
       "keyTakeaways": [
-        "The EC35 is designed to require almost no thought to use.",
-        "The lens covers are a slightly darker shade than the rest of the camera body, giving them some nice subtle contrast.",
-        "Even the midnight black and vanilla white feature different colored accents, making them slightly more stylish than a disposable camera."
+        "The bundle will be available until August 7th, though the bundle page notes that keys for some games are already starting to run low.",
+        "All of the games work on Windows, while some support MacOS and SteamOS.",
+        "One of my personal favorite games, Risk of Rain 2, is included in the bundle."
       ],
-      "whyItMatters": "The film photography renaissance continues and gets more affordable.",
-      "originalURL": "https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Devices",
+      "whyItMatters": "It’s a smattering of the publisher 2K’s biggest games of the 2010s, including BioShock Infinite, Risk of Rain 2, Borderlands 3, and XCOM: Enemy Unknown.",
+      "originalURL": "https://www.theverge.com/gadgets/968191/humble-2k-megahits-bundle-xcom-borderlands-duke-nukem-deal-sale",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "フィルムカメラがさらに手軽に——コダック EC35、約35ドルで登場",
-          "summary": "Reto Projectが新たなコダックブランドのカメラ「EC35」を発売する。99ドルの「Snapic A1」に続く製品で、価格はわずか34.99ドル。35mmフィルムを使うコンパクトカメラとして、これまで以上に手の届きやすい一台だ。",
+          "headline": "人気PCゲーム15本が約2200円のバンドルに",
+          "summary": "Humbleが販売する「2K Megahits 2026 Bundle」では、Steamゲーム15本をまとめて15ドルで入手できる。",
           "keyTakeaways": [
-            "操作に迷わない、考えずに使えるシンプルな設計",
-            "レンズカバーはボディより少し濃いトーンで、さりげないコントラストが効いている",
-            "ミッドナイトブラックもバニラホワイトも、カラーアクセントが添えられ、使い捨てカメラより少し洒落た印象"
+            "販売期限は8月7日。一部タイトルのキーはすでに残り少なくなっている。",
+            "全タイトルがWindowsに対応。MacOSおよびSteamOSをサポートするものも含まれる。",
+            "「Risk of Rain 2」もバンドルに収録されている。"
           ],
-          "whyItMatters": "フィルム写真の再興は続いており、その裾野はさらに広がりつつある。"
+          "whyItMatters": "「BioShock Infinite」「Borderlands 3」「XCOM: Enemy Unknown」など、2Kが2010年代に送り出した主要タイトルが一堂に揃う。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a new Kodak film camera that's really cheap?",
-              "duration": 3.787755
+              "text": "I saw something about a big game bundle deal. What's going on?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it's called the EC35. It's a 35mm film camera that costs just under thirty-five dollars.",
-              "duration": 6.582857
+              "text": "Humble is selling what they're calling the 2K Megahits 2026 Bundle — 15 Steam games for $15.",
+              "duration": 6.530612
             },
             {
               "speaker": "listener",
-              "text": "Wow, that is cheap. Who's making it?",
-              "duration": 2.324898
+              "text": "Fifteen dollars for fifteen games? What's in it?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "A company called Reto Project. They previously released a Kodak-branded camera for ninety-nine dollars, and this one's even more affordable.",
-              "duration": 7.706122
+              "text": "It's a collection of 2K's biggest games from the 2010s. Think BioShock Infinite, Borderlands 3, XCOM: Enemy Unknown, and Risk of Rain 2.",
+              "duration": 8.85551
             },
             {
               "speaker": "listener",
-              "text": "What's the idea behind it?",
-              "duration": 1.515102
+              "text": "Those are pretty well-known titles. How long is this available?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "It's designed to be really simple—a point-and-shoot that requires almost no thought to use. Just pick it up and take pictures.",
-              "duration": 7.131429
+              "text": "Until August 7th. Though the bundle page says keys for some games are already running low.",
+              "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "Does it at least look nice, or is it just super basic?",
-              "duration": 3.239184
+              "text": "So if someone's interested, they shouldn't wait too long.",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "It has some nice touches. The lens covers are a slightly darker shade than the body, which gives a subtle contrast. Even the black and white versions have different colored accents.",
-              "duration": 9.743673
-            },
-            {
-              "speaker": "listener",
-              "text": "So a bit more stylish than those old disposable cameras.",
-              "duration": 3.657143
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly. It fits into this ongoing film photography revival, making it more accessible for people who want to try shooting film without spending much.",
-              "duration": 8.489796
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-20/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "フィルムで撮る楽しみが、また少し身近になりました。",
-              "duration": 4.08
-            },
-            {
-              "speaker": "narrator",
-              "text": "Reto Projectが、コダックの名を冠した新しいカメラを出します。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "EC35という名前で、値段は35ドル弱です。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "35ミリのフィルムを使う、手のひらサイズのカメラです。",
-              "duration": 4.416
-            },
-            {
-              "speaker": "narrator",
-              "text": "操作はほとんど考えなくていい作りで、レンズの蓋には軽い色の違いがあります。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "黒も白も、小さな色のアクセントがついていて、使い捨てよりは少し洒落ています。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "フィルムを使う人が静かに増えている流れの中で、こうした選択肢が広がっています。",
-              "duration": 6.072
+              "text": "Exactly. All the games work on Windows, and some also support MacOS and SteamOS.",
+              "duration": 4.728163
             }
           ]
         }

@@ -10,26 +10,34 @@ name: Auto Generate Listen JA
 #     merged edition, and a hard gate requires latest.json to already point at DATE.
 #     JA therefore NEVER promotes the served pointer — that stays owned by the EN flow.
 #   • IDEMPOTENT: green-skips when the target edition already carries listen.ja for all
-#     5 signals, so repeated dispatches are harmless.
+#     5 signals, so repeated triggers are harmless.
 #   • RESUMABLE across runs: listen_generate.py writes per-signal checkpoints under
 #     scratch/ (gate+drift re-verified on load, fail-closed). Runners are ephemeral, so
 #     scratch is persisted via actions/cache keyed by date — a rerun after a content-gate
 #     failure regenerates only the failed signal(s).
-#   • DISPATCH-ONLY for now (no cron): validate the flow with manual runs first; the
-#     schedule is a deliberate later step.
+#   • TRIGGERS: `workflow_run` on the EN Listen workflow (success only) makes JA start
+#     within minutes of the EN chain finishing — the EN probes fire several times a day
+#     and every extra trigger lands on the idempotent green-skip. A single 15:15 UTC
+#     backstop cron covers a missed workflow_run event, and workflow_dispatch stays for
+#     manual recovery (optional explicit date, validated against editions/).
 #
 # Generation itself is the exact production path used manually since 2026-07-17:
 # solo Nanami narration (v6 preset: ja-JP-NanamiNeural, customerservice style, rate from
 # code — currently +12%, pitch default), full JA quality gates, decoded-duration drift
 # check, R2 upload + public verify, then the atomic manifest write. Same fail-closed
-# order as EN: generate (atomic manifest) → inject+validate → scratch clean →
-# metadata-only guard → PR → merge-or-fail-loudly.
+# order as EN: generate (atomic manifest) → inject+validate → verify injection →
+# scratch clean → metadata-only guard → PR → merge-or-fail-loudly.
 
 on:
+  workflow_run:
+    workflows: ["Auto Generate Listen"]
+    types: [completed]
+  schedule:
+    - cron: "15 15 * * *"   # 15:15 UTC backstop — covers a missed workflow_run event
   workflow_dispatch:
     inputs:
       date:
-        description: "Edition date (YYYY-MM-DD). Leave blank to use the newest edition on main."
+        description: "Edition date (YYYY-MM-DD). Leave blank to use latest.json's date."
         required: false
         default: ""
 
@@ -44,6 +52,9 @@ concurrency:
 jobs:
   # ── 1) Probe merged main: which date, is EN in, and is JA already done? ────────────
   probe:
+    # workflow_run fires on every EN Listen completion; only proceed when that run
+    # actually SUCCEEDED. Cron and manual dispatch pass this guard unconditionally.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
@@ -56,36 +67,44 @@ jobs:
         with:
           ref: main
 
-      - name: Resolve date — JA coverage + EN precondition
+      - name: Resolve date from latest.json — JA coverage + EN precondition
         id: check
         env:
           INPUT_DATE: ${{ inputs.date }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, glob, os, re, sys
+          import json, os, re, sys
           want = (os.environ.get("INPUT_DATE") or "").strip()
-          eds = []
-          for f in glob.glob("editions/*.json"):
-              m = re.search(r"(\d{4}-\d{2}-\d{2})\.json$", os.path.basename(f))
-              if m:
-                  eds.append((m.group(1), f))
-          if not eds:
-              print("date=")
-              print("needed=false")
-              print("reason=no_editions")
-              print("no editions found — nothing to do", file=sys.stderr)
-              sys.exit(0)
+          # latest.json is the SOURCE OF TRUTH for the target date — never the system
+          # clock, never directory scanning. JA follows exactly the edition being served,
+          # so yesterday's complete edition green-skips and a not-yet-promoted today is
+          # simply "EN pending". An explicit dispatch date is allowed for recovery and
+          # must name an existing edition.
+          try:
+              latest = json.load(open("latest.json"))
+          except Exception:
+              latest = {}
+          live = (latest.get("date") or "").strip()
           if want:
               if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", want):
                   print(f"::error::invalid date input: {want!r} (expected YYYY-MM-DD)", file=sys.stderr)
                   sys.exit(1)
-              match = [e for e in eds if e[0] == want]
-              if not match:
+              if not os.path.exists(f"editions/{want}.json"):
                   print(f"::error::editions/{want}.json not found on main", file=sys.stderr)
                   sys.exit(1)
-              date, path = match[0]
+              date = want
           else:
-              date, path = max(eds)
+              if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", live):
+                  print("date=")
+                  print("needed=false")
+                  print("reason=no_latest")
+                  print("latest.json has no valid date — nothing to do", file=sys.stderr)
+                  sys.exit(0)
+              date = live
+          path = f"editions/{date}.json"
+          if not os.path.exists(path):
+              print(f"::error::latest.json points at {date} but editions/{date}.json is missing", file=sys.stderr)
+              sys.exit(1)
           d = json.load(open(path))
           sigs = d.get("signals", [])
           en = sum(1 for s in sigs
@@ -94,7 +113,8 @@ jobs:
                    if ((s.get("listen") or {}).get("ja") or {}).get("audioURL"))
           print(f"date={date}")
           if len(sigs) == 5 and ja == 5:
-              # Idempotent green skip — repeated dispatches are harmless.
+              # Idempotent green skip — repeated triggers are harmless, and a completed
+              # historical date is NEVER regenerated automatically.
               print("needed=false")
               print("reason=complete")
               print(f"{date}: listen.ja already complete (5/5) — nothing to do", file=sys.stderr)
@@ -117,7 +137,7 @@ jobs:
             complete)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: listen.ja already 5/5 → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY";;
             en_pending) echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: EN Listen not landed yet → skipped (JA never runs ahead of EN) ⏳" >> "$GITHUB_STEP_SUMMARY";;
             generate)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: JA missing → generating 🎙" >> "$GITHUB_STEP_SUMMARY";;
-            *)          echo "## Auto Generate Listen JA — no editions found → nothing to do" >> "$GITHUB_STEP_SUMMARY";;
+            *)          echo "## Auto Generate Listen JA — latest.json has no valid date → nothing to do" >> "$GITHUB_STEP_SUMMARY";;
           esac
 
   # ── 2) Generate — only when EN is in and JA is missing ─────────────────────────────
@@ -202,6 +222,42 @@ jobs:
       - name: Inject listen.ja into edition + latest, validate
         run: python pipeline/listen_inject_edition.py "$DATE"
 
+      # Explicit post-injection assertions — belt-and-braces on top of validate_feed:
+      # JA 5/5, narrator-only captions, EN blocks byte-identical to the pre-injection
+      # HEAD snapshot, manifest==edition captions, and NO other date touched anywhere.
+      - name: Verify injection — JA 5/5, narrator-only, EN byte-identical, no other date touched
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          date = os.environ["DATE"]
+          def load(p):
+              return json.load(open(p))
+          def head(p):
+              out = subprocess.run(["git", "show", f"HEAD:{p}"], capture_output=True, text=True, check=True)
+              return json.loads(out.stdout)
+          ed, lt = load(f"editions/{date}.json"), load("latest.json")
+          ed0, lt0 = head(f"editions/{date}.json"), head("latest.json")
+          assert ed.get("date") == date and lt.get("date") == date, "date mismatch after injection"
+          for name, feed in (("edition", ed), ("latest", lt)):
+              ja = [((s.get("listen") or {}).get("ja") or {}).get("audioURL") for s in feed["signals"]]
+              assert len(feed["signals"]) == 5 and all(ja), f"{name}: JA coverage is not 5/5"
+              spk = {c.get("speaker") for s in feed["signals"] for c in s["listen"]["ja"]["captions"]}
+              assert spk == {"narrator"}, f"{name}: non-narrator caption speakers {spk}"
+          for name, now, was in (("edition", ed, ed0), ("latest", lt, lt0)):
+              en_now = [{k: s.get("listen", {}).get(k) for k in ("format", "en")} for s in now["signals"]]
+              en_was = [{k: s.get("listen", {}).get(k) for k in ("format", "en")} for s in was["signals"]]
+              assert json.dumps(en_now, sort_keys=True) == json.dumps(en_was, sort_keys=True), \
+                  f"{name}: EN blocks changed by injection"
+          man = load("pipeline/listen_manifest.json")["editions"]
+          man0 = head("pipeline/listen_manifest.json")["editions"]
+          assert all(man.get(d) == man0.get(d) for d in man0 if d != date), \
+              "manifest: another date changed"
+          for n in range(1, 6):
+              assert man[date][str(n)]["ja"]["captions"] == ed["signals"][n-1]["listen"]["ja"]["captions"], \
+                  f"signal {n}: manifest/edition ja captions differ"
+          print(f"verified: {date} JA 5/5 · narrator-only · EN byte-identical · manifest==edition · no other date touched")
+          PY
+
       # scratch/ is synthesis working data — cached above, never committed; must be
       # removed before the guard or it trips "unexpected change".
       - name: Clean generated scratch audio
@@ -274,3 +330,27 @@ jobs:
             echo "::error::JA Listen PR #$PR ($DATE) is NOT merged and auto-merge is NOT enabled. Check SIGNALS_PAT / 'Allow auto-merge' repo setting. Failing loudly."
             exit 1
           fi
+
+      # On any failure above, preserve the evidence: the rejected-dialogue artifacts that
+      # the JA gate dumps under scratch/ (script lines + gate issues + overlap details).
+      # These contain ONLY generated text and gate diagnostics — no secrets, no env.
+      - name: Upload JA failure artifacts (rejected scripts / gate logs)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ja-failure-${{ needs.probe.outputs.date }}-run${{ github.run_id }}
+          path: scratch/failed_ja_dialogue_*.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Failure summary
+        if: failure()
+        run: |
+          {
+            echo "## ❌ Auto Generate Listen JA failed — ${DATE}"
+            echo ""
+            echo "- **Failed stage:** the first red step above (gates → generation → injection → verify → PR → merge)."
+            echo "- **Content-gate failure?** The rejected script is attached as run artifact \`ja-failure-${DATE}-…\` — read the gate issues there."
+            echo "- **Recovery:** re-run this workflow (Run workflow, date blank). Passed signals resume from the checkpoint cache; only failed signals regenerate."
+            echo "- **Feed safety:** fail-closed held — the EN edition stays live and untouched, and no partial JA was injected or committed."
+          } >> "$GITHUB_STEP_SUMMARY"

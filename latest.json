@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,127 +9,86 @@
       "lead": true,
       "category": "WORLD",
       "source": "BBC News (World)",
-      "headline": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
-      "summary": "US President Donald Trump has imposed a 50% tariff on a wide range of goods imported from Canada, in retaliation for what he called \"unequal treatment\" of US cars, dairy and alcohol.",
+      "headline": "US signs landmark nuclear deal with Saudi Arabia",
+      "summary": "The US and Saudi Arabia have signed a landmark deal that will reportedly allow the Gulf kingdom to develop a civilian nuclear programme.",
       "keyTakeaways": [
-        "Prime Minister Mark Carney responded by saying Canada stood ready to \"intensify\" trade talks with the US in the coming weeks.",
-        "These tensions have been simmering since Trump returned to office in January 2025 and unleashed a wide-ranging global programme of tariffs.",
-        "Tariffs are taxes on imported goods that are paid to the government by companies bringing in the foreign products."
+        "This could be worth billions of dollars to the US, whose companies could be involved in building a facility to produce enriched uranium, which can be used as fuel for power plants but also to make nuclear bombs.",
+        "According to Wednesday's statement, the deal will \"advance US and regional security by upholding high standards of nuclear safety, security, and nonproliferation and strengthening the United States' competitive edge in civil nuclear technology\".",
+        "Nuclear experts and former officials in Israel - the US's top ally in the Middle East - voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon."
       ],
-      "whyItMatters": "It marks a major escalation in trade tensions between the North American neighbours.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "whyItMatters": "The deal is described as a \"peaceful nuclear co-operation agreement\" that will provide \"great access for American companies in the Saudi nuclear energy program\", according to a statement from the US energy secretary.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米、カナダ産品に50%関税　両国の通商交渉に緊張高まる",
-          "summary": "トランプ米大統領は、自動車・乳製品・酒類をめぐる「不平等な扱い」を理由に、カナダからの幅広い輸入品に50%の関税を課した。",
+          "headline": "米国とサウジアラビア、民間核開発で歴史的合意",
+          "summary": "米国とサウジアラビアは、サウジが民間の核開発プログラムを進めることを認める歴史的な協定に署名した。",
           "keyTakeaways": [
-            "カーニー首相は、今後数週間で米国との通商交渉を「強化」する姿勢を示した。",
-            "両国間の緊張は、トランプ大統領が2025年1月に就任して以来、広範な関税政策とともに高まり続けてきた。",
-            "関税とは、外国製品を輸入する企業が政府に納める輸入税のことだ。"
+            "米企業がウラン濃縮施設の建設に関与する可能性があり、協定は数十億ドル規模の経済効果をもたらすとみられる。",
+            "声明によれば、協定は核の安全・不拡散の高い基準を維持しつつ、米国の民間核技術における競争力を強化するとしている。",
+            "中東における米国の最重要同盟国であるイスラエルの核専門家や元当局者からは、サウジが将来的に核兵器開発に至る可能性があるとの懸念が上がっている。"
           ],
-          "whyItMatters": "北米の隣国同士の貿易摩擦が、大きな局面を迎えた。"
+          "whyItMatters": "米エネルギー長官の声明によれば、この協定は「平和的な原子力協力協定」と位置づけられ、サウジの核エネルギー計画への米企業の参入を広く認めるものだという。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Trump just put a fifty percent tariff on Canadian goods?",
-              "duration": 3.186939
+              "text": "So the US just signed a nuclear deal with Saudi Arabia?",
+              "duration": 3.369796
             },
             {
               "speaker": "explainer",
-              "text": "Yes, on a wide range of imports from Canada. He says it's retaliation for what he calls unequal treatment of US cars, dairy, and alcohol.",
-              "duration": 7.88898
+              "text": "Yes, it's described as a peaceful nuclear cooperation agreement. It allows Saudi Arabia to develop a civilian nuclear programme.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "That's a huge tariff. How did Canada respond?",
-              "duration": 2.821224
+              "text": "What does that actually mean for the US?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Prime Minister Mark Carney said Canada is ready to intensify trade talks with the US in the coming weeks.",
-              "duration": 5.32898
+              "text": "It could be worth billions of dollars. American companies would get access to help build facilities, including ones that produce enriched uranium for power plants.",
+              "duration": 8.489796
             },
             {
               "speaker": "listener",
-              "text": "Has this been building for a while?",
-              "duration": 1.854694
+              "text": "Wait, enriched uranium... isn't that also used for weapons?",
+              "duration": 3.84
             },
             {
               "speaker": "explainer",
-              "text": "It has. These tensions have been simmering since Trump returned to office in January and started a wide-ranging global tariff program.",
-              "duration": 8.071837
+              "text": "It can be. The US says the deal upholds high standards of nuclear safety and nonproliferation, and strengthens American competitive edge in civil nuclear technology.",
+              "duration": 9.456327
             },
             {
               "speaker": "listener",
-              "text": "Just to be clear, what exactly is a tariff?",
-              "duration": 2.507755
+              "text": "Are people worried about that weapons possibility?",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "It's a tax on imported goods. Companies bringing in foreign products pay it to the government.",
-              "duration": 4.963265
+              "text": "Some are. Nuclear experts and former officials in Israel have voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon.",
+              "duration": 9.221224
             },
             {
               "speaker": "listener",
-              "text": "And why does this matter so much between these two countries?",
-              "duration": 3.108571
+              "text": "So there's a tension between the business opportunity and the security risk.",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "It marks a major escalation in trade tensions between the North American neighbors. They're deeply connected economically.",
-              "duration": 6.269388
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカのトランプ大統領が、カナダからの輸入品に50%の関税をかけました。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "理由は、自動車や乳製品、酒類の扱いが不公平だというものです。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "これに対し、カナダのカーニー首相は、今後数週間で交渉を強める考えを示しています。",
-              "duration": 7.008
-            },
-            {
-              "speaker": "narrator",
-              "text": "関税とは、海外から商品を運び込む企業が政府に納める税金のことです。",
-              "duration": 6.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ大統領は今年1月に就任して以来、世界各地に向けて関税を広げてきました。",
-              "duration": 7.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の措置は、隣り合う二つの国の間で、貿易の対立が新たな段階に入ったことを意味します。",
-              "duration": 7.464
-            },
-            {
-              "speaker": "narrator",
-              "text": "朝の買い物や仕事に使う製品の値段にも、影響が出る可能性があります。",
-              "duration": 6.0
+              "text": "Exactly. The US is emphasizing regional security and nonproliferation standards, but the concern remains.",
+              "duration": 5.694694
             }
           ]
         }
@@ -140,123 +99,87 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Police block thousands of 'cockroach' protesters marching on India's parliament",
-      "summary": "Thousands of supporters of the Cockroach Janta Party (CJP), a youth-led protest movement seeking education and employment reforms, defied a police ban and tried to march on parliament to demand India's education minister resign.",
+      "source": "NPR (World)",
+      "headline": "Ukraine's Zelenskyy fires top military commander amid ongoing protests",
+      "summary": "Ukraine's President Volodymyr Zelenskyy fires the country's army chief, just days after he dismissed the defense minister.",
       "keyTakeaways": [
-        "Police wielding canes used tear gas to disperse crowds in central Delhi.",
-        "It gathered fresh momentum over the weekend after police forcibly moved activist Sonam Wangchuk into hospital on the 21st day of a hunger strike in support of the movement.",
-        "The movement takes its name from a remark by India's chief justice, who drew criticism after comparing sections of unemployed young people to \"cockroaches\" during a court hearing."
+        "LEILA FADEL, HOST: Ukraine's president, Volodymyr Zelenskyy, has now fired the country's top military commander.",
+        "Just a few days ago, Zelenskyy fired the country's defense minister.",
+        "FADEL: So in less than a week, President Zelenskyy fired the two top figures leading Ukraine's war against Russia."
       ],
-      "whyItMatters": "On Monday, Wangchuk appealed to doctors to discharge him so he could join the march but was not allowed.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "Together, it's one of the most significant military shakeups in the past four years of Ukraine's war with Russia.",
+      "originalURL": "https://www.npr.org/2026/07/22/nx-s1-5902279/ukraines-zelenskyy-fires-top-military-commander-amid-ongoing-protests",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "「ゴキブリ」を名乗る若者たちが国会へ行進、警察が阻止",
-          "summary": "教育・雇用改革を求める若者主導の抗議運動「コックローチ・ジャンタ党（CJP）」の支持者数千人が、警察の禁止令を無視してインド国会への行進を試みた。教育相の辞任を求めるデモは、当局によって阻まれた。",
+          "headline": "ゼレンスキー大統領、軍トップを相次いで更迭",
+          "summary": "ウクライナのゼレンスキー大統領が、国軍の総司令官を解任した。国防相の更迭からわずか数日後のことだ。",
           "keyTakeaways": [
-            "警察は催涙ガスと警棒でデリー中心部の群衆を解散させた。",
-            "活動家ソナム・ワンチュクがハンガーストライキ21日目に警察によって強制入院させられたことで、運動は週末に勢いを増した。",
-            "運動の名称は、最高裁長官が法廷で失業中の若者を「ゴキブリ」に例えた発言への批判から生まれた。"
+            "ゼレンスキー大統領が、ウクライナ軍の最高司令官を解任した。",
+            "その数日前には、国防相もすでに更迭されていた。",
+            "1週間も経たないうちに、戦時下の軍を率いる二人の最高幹部が相次いで交代することになった。"
           ],
-          "whyItMatters": "月曜日、ワンチュクは行進に加わるため退院を求めたが、認められなかった。"
+          "whyItMatters": "ロシアとの戦争が続く4年間で、これほど大規模な軍の指導部刷新は前例がない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about protesters being called cockroaches in India. What's happening there?",
-              "duration": 5.01551
+              "text": "I saw that Ukraine's president just fired his top military commander. What's happening there?",
+              "duration": 5.093878
             },
             {
               "speaker": "explainer",
-              "text": "Thousands of protesters tried to march on parliament in Delhi, demanding the education minister resign. Police used tear gas and canes to stop them.",
-              "duration": 9.142857
+              "text": "President Zelenskyy removed the country's army chief from his position. This comes just days after he also dismissed the defense minister.",
+              "duration": 7.418776
             },
             {
               "speaker": "listener",
-              "text": "Why are they called the cockroach protesters?",
-              "duration": 2.742857
+              "text": "So both the top military leaders are out in less than a week?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "The movement is called the Cockroach Janta Party. The name comes from a comment India's chief justice made during a court hearing, comparing unemployed young people to cockroaches.",
-              "duration": 10.03102
+              "text": "Yes. These were the two top figures leading Ukraine's war effort against Russia.",
+              "duration": 4.414694
             },
             {
               "speaker": "listener",
-              "text": "That's pretty harsh. What are they actually asking for?",
-              "duration": 2.821224
+              "text": "That seems like a pretty big deal during an ongoing war.",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "They're a youth-led group seeking education and employment reforms. The protests grew after police forcibly hospitalized an activist named Sonam Wangchuk.",
-              "duration": 8.85551
+              "text": "It is. This is being called one of the most significant military shakeups in the past four years of the war.",
+              "duration": 6.530612
             },
             {
               "speaker": "listener",
-              "text": "What happened with him?",
-              "duration": 1.332245
+              "text": "Do we know why he made these changes now?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "He was on a hunger strike supporting the movement. Police moved him to hospital on the twenty-first day. On Monday, he asked doctors to discharge him so he could join the march, but wasn't allowed.",
-              "duration": 10.057143
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "インドの首都デリーで、教育と雇用の改革を求める若者たちが国会に向かって行進しようとしました。",
-              "duration": 7.392
+              "text": "The reporting doesn't specify the reasons behind the dismissals. What we know is the timing and that protests are ongoing in the country.",
+              "duration": 7.288163
             },
             {
-              "speaker": "narrator",
-              "text": "警察は催涙ガスと警棒を使い、数千人の群衆を強制的に解散させています。",
-              "duration": 6.888
+              "speaker": "listener",
+              "text": "That's a lot of uncertainty at a critical moment.",
+              "duration": 2.324898
             },
             {
-              "speaker": "narrator",
-              "text": "この運動は「コックローチ・ジャンタ党」と名乗っています。",
-              "duration": 4.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "名前の由来は、最高裁の長官が法廷で失業中の若者を「ゴキブリ」に例えた発言です。",
-              "duration": 7.584
-            },
-            {
-              "speaker": "narrator",
-              "text": "週末には、活動家のソナム・ワンチュクがハンガーストライキの21日目に強制入院させられました。",
-              "duration": 7.584
-            },
-            {
-              "speaker": "narrator",
-              "text": "これをきっかけに、運動への支持がさらに広がっています。",
-              "duration": 4.32
-            },
-            {
-              "speaker": "narrator",
-              "text": "ワンチュクは行進に加わるため退院を求めましたが、認められていません。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "若者の不満が、こうした形で表に出ている状況です。",
-              "duration": 4.896
+              "speaker": "explainer",
+              "text": "It is. Leadership changes like this during wartime always raise questions about strategy and direction going forward.",
+              "duration": 6.4
             }
           ]
         }
@@ -268,122 +191,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Almost 100 troops injured in recent weeks, Pentagon admits, as Iran launches reprisals on US allies",
-      "summary": "Nearly 100 US service members have been injured over the last two weeks of escalating strikes on Iran, the Pentagon has said, as Tehran launched a wave of reprisals to the tenth consecutive night of attacks.",
+      "headline": "British woman jailed in Hong Kong for blackmail after accusing banker of rape",
+      "summary": "A British woman who reported being raped to police in Hong Kong has been sentenced to six years in prison for blackmail and perverting the course of public justice.",
       "keyTakeaways": [
-        "Kuwait, Bahrain and Jordan all said they had activated defences to repel the attacks, but the scale of US injuries at facilities across the region over recent week is likely to bring greater scrutiny to Iran’s reprisal attacks.",
-        "Pentagon spokesperson Sean Parnell said the vast majority of those injured only experienced “minor concussions” and 96% had since returned to work.",
-        "Parnell was responding to a New York Times report that the Pentagon has withheld information about troop injuries from Iranian strikes."
+        "Isabel Rose, 26, from south-east London, travelled to Hong Kong in early 2024 to visit a British banker she had met while travelling in south-east Asia.",
+        "The Hong Kong district judge Adriana Noelle Tse Ching said Rose had “not shown an iota of remorse” before handing down the sentence, and called the allegation “completely fabricated”.",
+        "Rose travelled to Hong Kong in January 2024 after meeting the banker on holiday in Thailand."
       ],
-      "whyItMatters": "The escalation has pushed oil prices higher in recent weeks.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/21/us-troops-injured-killed-iran-war-attacks-pentagon",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "The judge said the escalating demands amounted to blackmail.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/22/british-woman-jailed-hong-kong-false-allegations",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米兵約100人が負傷——ペンタゴンが認める",
-          "summary": "イランによる報復攻撃が続くなか、ペンタゴンは過去2週間で米兵約100人が負傷したと明らかにした。テヘランは10夜連続となる攻撃への報復として、クウェート、バーレーン、ヨルダンなど米国の同盟国にも攻撃を仕掛けた。",
+          "headline": "レイプ被害を訴えた英国人女性、香港で恐喝罪により実刑判決",
+          "summary": "香港警察にレイプ被害を申告した英国人女性が、恐喝および司法妨害の罪で懲役6年の実刑判決を受けた。",
           "keyTakeaways": [
-            "クウェート、バーレーン、ヨルダンはいずれも防衛システムを起動して攻撃を迎撃。中東各地の施設での負傷者数は、イランの報復攻撃への scrutinyをさらに高めそうだ。",
-            "ペンタゴン報道官のショーン・パーネルは、負傷者の大半は「軽度の脳震盪」にとどまり、96%がすでに職務に復帰していると述べた。",
-            "パーネルの発言は、ペンタゴンがイランの攻撃による負傷情報を公表していなかったとするニューヨーク・タイムズの報道を受けたものだ。"
+            "ロンドン南東部出身のイザベル・ローズ（26歳）は、東南アジア旅行中に知り合った英国人銀行家を訪ねて2024年初頭に香港へ渡った。",
+            "香港地方裁判所のアドリアナ・ノエル・謝靖裁判官は、ローズが「一切の反省を示さなかった」と述べ、申告内容を「完全な虚偽」と断じたうえで量刑を言い渡した。",
+            "ローズはタイでの休暇中にその銀行家と出会い、2024年1月に香港を訪れていた。"
           ],
-          "whyItMatters": "この緊張の高まりを背景に、原油価格はここ数週間で上昇している。"
+          "whyItMatters": "裁判官は、金銭要求がエスカレートしていった経緯が恐喝にあたると判断した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about US troops being injured in the Middle East. What's happening?",
-              "duration": 4.310204
+              "text": "There's a troubling case out of Hong Kong involving a British woman. What happened?",
+              "duration": 4.127347
             },
             {
               "speaker": "explainer",
-              "text": "The Pentagon confirmed that nearly 100 service members have been injured over the last two weeks during escalating strikes involving Iran.",
-              "duration": 6.687347
+              "text": "A 26-year-old woman from south-east London, Isabel Rose, has been sentenced to six years in prison there.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "That's a lot. How serious are the injuries?",
-              "duration": 2.35102
+              "text": "What was she convicted of?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "According to Pentagon spokesperson Sean Parnell, most experienced minor concussions, and 96% have already returned to work.",
-              "duration": 7.235918
+              "text": "Blackmail and perverting the course of public justice. She had accused a British banker of rape after travelling to Hong Kong to visit him.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "So Iran is striking back at US facilities?",
-              "duration": 2.76898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Tehran launched reprisals following ten consecutive nights of attacks. Kuwait, Bahrain, and Jordan all activated defenses to repel those strikes.",
-              "duration": 9.795918
-            },
-            {
-              "speaker": "listener",
-              "text": "Why are we only hearing about this now?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "Parnell was responding to a New York Times report suggesting the Pentagon withheld information about troop injuries from Iranian strikes.",
-              "duration": 6.922449
-            },
-            {
-              "speaker": "listener",
-              "text": "Is this affecting anything beyond the region?",
+              "text": "So the court didn't believe her accusation?",
               "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "The escalation has pushed oil prices higher in recent weeks, so it's having broader economic impact.",
-              "duration": 5.198367
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ペンタゴンが、この2週間で米軍兵士およそ100人が負傷していたと発表しました。",
-              "duration": 6.432
+              "text": "The judge called the allegation completely fabricated. She said Rose had not shown any remorse.",
+              "duration": 5.616327
             },
             {
-              "speaker": "narrator",
-              "text": "イランが連日続けている攻撃への報復として、クウェートやバーレーン、ヨルダンといった米国の同盟国にも攻撃が及んでいます。",
-              "duration": 9.072
+              "speaker": "listener",
+              "text": "How did they know each other?",
+              "duration": 1.436735
             },
             {
-              "speaker": "narrator",
-              "text": "各国は防衛システムを作動させて迎撃にあたりました。",
-              "duration": 4.392
+              "speaker": "explainer",
+              "text": "They'd met while travelling in south-east Asia — she was on holiday in Thailand. She travelled to Hong Kong in January 2024 to visit him.",
+              "duration": 7.78449
             },
             {
-              "speaker": "narrator",
-              "text": "負傷者の大半は軽い脳震盪で、96%はすでに任務に戻っているとペンタゴンは説明しています。",
-              "duration": 8.376
+              "speaker": "listener",
+              "text": "What led to the blackmail charge?",
+              "duration": 2.089796
             },
             {
-              "speaker": "narrator",
-              "text": "この発表は、負傷の情報が公にされていなかったという報道を受けたものです。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "中東での緊張が続く中、原油の価格も上がり始めています。",
-              "duration": 5.376
+              "speaker": "explainer",
+              "text": "The judge said Rose made escalating demands, which amounted to blackmail.",
+              "duration": 3.84
             }
           ]
         }
@@ -395,127 +282,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Ford’s $30,000 electric truck: all the news about the company’s big EV re-do",
-      "summary": "The end of the Ford F-150 Lightning was also the start of a new era for the automaker.",
+      "headline": "Price-hiked iPads are a little cheaper right now",
+      "summary": "This model sports 1TB of storage, an optional 5G cellular connection, and it’s marked down to $749, a $500 discount from the suggested retail price.",
       "keyTakeaways": [
-        "After failing to capture the market with the electric version of its popular F-Series truck, Ford is going back to the drawing board with its Universal Electric Vehicle Platform.",
-        "The first offering will be a $30,000 electric truck, engineered for efficiency and also — perhaps most importantly — profitability.",
-        "The truck will be revealed in 2027, but Ford plans on building a whole family of low-cost electric vehicles at its Kentucky assembly plant."
+        "Sony is selling refurbished Playstation 5 Slim consoles for $499, a $100 break from the usual price.",
+        "Normally $99.99, a four pack of the second-generation Apple AirTags are on sale for $89.99 at Amazon, matching their lowest price ever.",
+        "Amazon has the Razer Viper V3 Pro wireless gaming mouse listed for $99.99, about $30 lower than its usual price."
       ],
-      "whyItMatters": "Ford’s $30K electric truck could be smaller than a Maverick.",
-      "originalURL": "https://www.theverge.com/transportation/968205/ford-electric-truck-uev-30000-affordable",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Devices",
+      "whyItMatters": "They may have some minor cosmetic imperfections, but are tested and certified by Sony to perform just as well as a new console.",
+      "originalURL": "https://www.theverge.com/gadgets/969003/apple-ipad-air-pro-airtag-deal-sale",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "フォード、3万ドルの電動トラックで再出発",
-          "summary": "F-150ライトニングの終売は、フォードにとって終わりではなく転換点だった。同社は新たな共通電動プラットフォームを軸に、EVの刷新へと踏み出している。",
+          "headline": "値上がりしたiPadが、いま少し手に届きやすい価格に",
+          "summary": "1TBストレージと5G接続オプションを備えたこのモデルが、希望小売価格から500ドル引きの749ドルで販売されている。",
           "keyTakeaways": [
-            "人気のFシリーズ電動版が市場で振るわず、フォードは設計を根本から見直す方針に転じた",
-            "最初の一台は3万ドルの電動トラック——効率性と収益性を両立させることが開発の核心にある",
-            "2027年に発表予定で、ケンタッキーの組立工場では低価格EVのラインアップ展開を計画"
+            "ソニーが整備済みのPlayStation 5 Slimを499ドルで販売中。通常より100ドル安い。",
+            "第2世代AirTag 4個パックがAmazonで89.99ドルに。過去最安値に並ぶ水準だ。",
+            "Razer Viper V3 ProワイヤレスゲーミングマウスがAmazonで99.99ドル。通常より約30ドル低い。"
           ],
-          "whyItMatters": "この3万ドルトラックは、マーベリックより小さくなる可能性がある。"
+          "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Ford is starting over with electric trucks?",
-              "duration": 2.76898
+              "text": "I saw something about iPads being on sale. What's the deal?",
+              "duration": 3.369796
             },
             {
               "speaker": "explainer",
-              "text": "In a way, yes. They're ending production of the F-150 Lightning and shifting to a completely new approach with what they're calling a Universal Electric Vehicle Platform.",
-              "duration": 9.926531
+              "text": "There's a model with a terabyte of storage and optional 5G that's marked down to seven forty-nine. That's five hundred dollars off the suggested retail price.",
+              "duration": 8.385306
             },
             {
               "speaker": "listener",
-              "text": "What went wrong with the Lightning?",
-              "duration": 1.985306
+              "text": "Five hundred off? That's a big discount. Are there other tech deals happening right now?",
+              "duration": 4.597551
             },
             {
               "speaker": "explainer",
-              "text": "Ford says it didn't capture the market the way they hoped. So now they're focusing on something different — efficiency and profitability.",
-              "duration": 7.418776
+              "text": "Yes, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
+              "duration": 7.653878
             },
             {
               "speaker": "listener",
-              "text": "And this new truck is going to be cheaper?",
-              "duration": 2.220408
+              "text": "Refurbished though—does that mean there's something wrong with them?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Much cheaper. They're targeting a thirty thousand dollar price point, which is significantly lower than the Lightning.",
-              "duration": 5.694694
+              "text": "They may have minor cosmetic imperfections, but Sony tests and certifies them to perform just as well as new consoles.",
+              "duration": 6.530612
             },
             {
               "speaker": "listener",
-              "text": "When can people actually buy one?",
-              "duration": 1.750204
+              "text": "Got it. What else is discounted?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "It'll be revealed in 2027. Ford plans to build it at their Kentucky assembly plant, along with a whole family of low-cost electric vehicles.",
-              "duration": 8.019592
-            },
-            {
-              "speaker": "listener",
-              "text": "How small are we talking here?",
-              "duration": 2.037551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Ford suggests it could be smaller than their Maverick, which is already their compact truck. So this is really about rethinking what an electric truck can be.",
-              "duration": 8.254694
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "フォードが、3万ドルで買える電動トラックを作ります。",
-              "duration": 4.32
-            },
-            {
-              "speaker": "narrator",
-              "text": "同社の人気モデルFシリーズの電動版は、期待ほど売れませんでした。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "そこで設計を一から見直し、新しい共通の電動基盤を使うことにしたのです。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "この新しいトラックは、効率と利益の両立を最優先に開発されています。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "2027年に姿を見せる予定で、ケンタッキーの工場では低価格の電動車を次々と作る計画です。",
-              "duration": 8.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "サイズは既存のマーベリックより小さくなるかもしれません。",
-              "duration": 4.224
-            },
-            {
-              "speaker": "narrator",
-              "text": "手の届く価格の電動トラックが、選択肢として現実味を帯びてきました。",
-              "duration": 5.64
+              "text": "Apple AirTags are on sale—a four pack of the second generation is eighty-nine ninety-nine at Amazon, matching their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
+              "duration": 11.232653
             }
           ]
         }
@@ -527,117 +363,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Get Borderlands 3, Risk of Rain 2 and 13 other great PC games for $15",
-      "summary": "The aptly-named “2K Megahits 2026 Bundle” from Humble includes 15 Steam games for $15.",
+      "headline": "Tesla’s revenues are bouncing back, but profits are still weak",
+      "summary": "Tesla is in negative free cash flow territory, as it increases its expenditures on major projects like AI infrastructure and robotics.",
       "keyTakeaways": [
-        "The bundle will be available until August 7th, though the bundle page notes that keys for some games are already starting to run low.",
-        "All of the games work on Windows, while some support MacOS and SteamOS.",
-        "One of my personal favorite games, Risk of Rain 2, is included in the bundle."
+        "After a dismal two years of weakening demand, falling sales, and damage to its brand by Elon Musk’s political activities, Tesla’s road to recovery continues apace.",
+        "Despite that mission, Tesla remains a car company.",
+        "Tesla certainly did a good job shrinking its inventory, which is good for the balance sheet."
       ],
-      "whyItMatters": "It’s a smattering of the publisher 2K’s biggest games of the 2010s, including BioShock Infinite, Risk of Rain 2, Borderlands 3, and XCOM: Enemy Unknown.",
-      "originalURL": "https://www.theverge.com/gadgets/968191/humble-2k-megahits-bundle-xcom-borderlands-duke-nukem-deal-sale",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Keyboard",
+      "whyItMatters": "In a shareholder deck, Tesla said it “generated over $100B in revenue on a trailing twelve-month basis for the first time.” It also touted Cybercab production at its Gigafactory in Texas, and said Tesla Semi production “remains on track” at its Nevada facility later this year.",
+      "originalURL": "https://www.theverge.com/transportation/969311/tesla-q2-2026-earnings-revenue-profit-sales",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "人気PCゲーム15本が約2200円のバンドルに",
-          "summary": "Humbleが販売する「2K Megahits 2026 Bundle」では、Steamゲーム15本をまとめて15ドルで入手できる。",
+          "headline": "テスラ、売上は回復基調も利益は依然低迷",
+          "summary": "テスラはAIインフラやロボティクスといった大型プロジェクトへの投資を拡大しており、フリーキャッシュフローはマイナスの状態が続いている。",
           "keyTakeaways": [
-            "販売期限は8月7日。一部タイトルのキーはすでに残り少なくなっている。",
-            "全タイトルがWindowsに対応。MacOSおよびSteamOSをサポートするものも含まれる。",
-            "「Risk of Rain 2」もバンドルに収録されている。"
+            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランドへのダメージと、苦難の2年間を経て、テスラの回復は着実に進んでいる。",
+            "とはいえ、テスラの本業はあくまで自動車メーカーだ。",
+            "在庫の圧縮は順調に進んでおり、財務体質の改善に寄与している。"
           ],
-          "whyItMatters": "「BioShock Infinite」「Borderlands 3」「XCOM: Enemy Unknown」など、2Kが2010年代に送り出した主要タイトルが一堂に揃う。"
+          "whyItMatters": "テスラは株主向け資料の中で、直近12か月の累計売上高が初めて1000億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産やネバダ州でのテスラ・セミの生産計画が順調に進んでいることも強調した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a big game bundle deal. What's going on?",
-              "duration": 3.291429
+              "text": "So Tesla's doing better than it was?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Humble is selling what they're calling the 2K Megahits 2026 Bundle — 15 Steam games for $15.",
-              "duration": 6.530612
+              "text": "Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just passed a hundred billion dollars in revenue over the last twelve months for the first time.",
+              "duration": 10.109388
             },
             {
               "speaker": "listener",
-              "text": "Fifteen dollars for fifteen games? What's in it?",
-              "duration": 2.638367
+              "text": "That sounds good. But the headline says profits are still weak?",
+              "duration": 3.657143
             },
             {
               "speaker": "explainer",
-              "text": "It's a collection of 2K's biggest games from the 2010s. Think BioShock Infinite, Borderlands 3, XCOM: Enemy Unknown, and Risk of Rain 2.",
-              "duration": 8.85551
+              "text": "Right. They're actually in negative free cash flow right now because they're spending heavily on big projects like AI infrastructure and robotics.",
+              "duration": 7.523265
             },
             {
               "speaker": "listener",
-              "text": "Those are pretty well-known titles. How long is this available?",
-              "duration": 3.422041
+              "text": "So they're making more money but spending even more?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Until August 7th. Though the bundle page says keys for some games are already running low.",
-              "duration": 4.780408
+              "text": "Exactly. They've also been working on reducing inventory, which helps their balance sheet. And they're moving ahead with production plans for the Cybercab in Texas and the Semi truck in Nevada later this year.",
+              "duration": 10.893061
             },
             {
               "speaker": "listener",
-              "text": "So if someone's interested, they shouldn't wait too long.",
-              "duration": 3.160816
+              "text": "Is Tesla still mainly a car company despite all these other projects?",
+              "duration": 3.996735
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. All the games work on Windows, and some also support MacOS and SteamOS.",
-              "duration": 4.728163
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-21/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "PCゲームの配信サイトHumbleで、15本のゲームを15ドルで買えるバンドルが販売されています。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "2Kという会社が2010年代に出した代表作が揃っています。",
-              "duration": 5.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "BioShock InfiniteやBorderlands 3。",
-              "duration": 3.528
-            },
-            {
-              "speaker": "narrator",
-              "text": "XCOM: Enemy Unknownといった人気作が含まれています。",
-              "duration": 4.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "すべてWindowsで遊べて、一部はMacOSやSteamOSにも対応しています。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "販売は8月7日までですが、一部のタイトルはすでにキーの在庫が少なくなっているようです。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "まとめ買いでゲームを増やしたい人には、手頃な機会かもしれません。",
-              "duration": 4.848
+              "text": "Yes, despite everything else, Tesla remains a car company at its core.",
+              "duration": 3.94449
             }
           ]
         }

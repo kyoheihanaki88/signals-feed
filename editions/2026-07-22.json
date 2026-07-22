@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "米エネルギー長官の声明によれば、この協定は「平和的な原子力協力協定」と位置づけられ、サウジの核エネルギー計画への米企業の参入を広く認めるものだという。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the US just signed a nuclear deal with Saudi Arabia?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's described as a peaceful nuclear cooperation agreement. It allows Saudi Arabia to develop a civilian nuclear programme.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that actually mean for the US?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "It could be worth billions of dollars. American companies would get access to help build facilities, including ones that produce enriched uranium for power plants.",
+              "duration": 8.489796
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, enriched uranium... isn't that also used for weapons?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "It can be. The US says the deal upholds high standards of nuclear safety and nonproliferation, and strengthens American competitive edge in civil nuclear technology.",
+              "duration": 9.456327
+            },
+            {
+              "speaker": "listener",
+              "text": "Are people worried about that weapons possibility?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some are. Nuclear experts and former officials in Israel have voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "So there's a tension between the business opportunity and the security risk.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The US is emphasizing regional security and nonproliferation standards, but the concern remains.",
+              "duration": 5.694694
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "1週間も経たないうちに、戦時下の軍を率いる二人の最高幹部が相次いで交代することになった。"
           ],
           "whyItMatters": "ロシアとの戦争が続く4年間で、これほど大規模な軍の指導部刷新は前例がない。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw that Ukraine's president just fired his top military commander. What's happening there?",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "explainer",
+              "text": "President Zelenskyy removed the country's army chief from his position. This comes just days after he also dismissed the defense minister.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "So both the top military leaders are out in less than a week?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. These were the two top figures leading Ukraine's war effort against Russia.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a pretty big deal during an ongoing war.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. This is being called one of the most significant military shakeups in the past four years of the war.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know why he made these changes now?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The reporting doesn't specify the reasons behind the dismissals. What we know is the timing and that protests are ongoing in the country.",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of uncertainty at a critical moment.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Leadership changes like this during wartime always raise questions about strategy and direction going forward.",
+              "duration": 6.4
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,65 @@
           ],
           "whyItMatters": "裁判官は、金銭要求がエスカレートしていった経緯が恐喝にあたると判断した。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There's a troubling case out of Hong Kong involving a British woman. What happened?",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "explainer",
+              "text": "A 26-year-old woman from south-east London, Isabel Rose, has been sentenced to six years in prison there.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "What was she convicted of?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Blackmail and perverting the course of public justice. She had accused a British banker of rape after travelling to Hong Kong to visit him.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "So the court didn't believe her accusation?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The judge called the allegation completely fabricated. She said Rose had not shown any remorse.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "How did they know each other?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "They'd met while travelling in south-east Asia — she was on holiday in Thailand. She travelled to Hong Kong in January 2024 to visit him.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "What led to the blackmail charge?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "The judge said Rose made escalating demands, which amounted to blackmail.",
+              "duration": 3.84
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +306,55 @@
           ],
           "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about iPads being on sale. What's the deal?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a model with a terabyte of storage and optional 5G that's marked down to seven forty-nine. That's five hundred dollars off the suggested retail price.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "Five hundred off? That's a big discount. Are there other tech deals happening right now?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "Refurbished though—does that mean there's something wrong with them?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They may have minor cosmetic imperfections, but Sony tests and certifies them to perform just as well as new consoles.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "Got it. What else is discounted?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Apple AirTags are on sale—a four pack of the second generation is eighty-nine ninety-nine at Amazon, matching their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
+              "duration": 11.232653
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +386,55 @@
             "在庫の圧縮は順調に進んでおり、財務体質の改善に寄与している。"
           ],
           "whyItMatters": "テスラは株主向け資料の中で、直近12か月の累計売上高が初めて1000億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産やネバダ州でのテスラ・セミの生産計画が順調に進んでいることも強調した。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Tesla's doing better than it was?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just passed a hundred billion dollars in revenue over the last twelve months for the first time.",
+              "duration": 10.109388
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds good. But the headline says profits are still weak?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. They're actually in negative free cash flow right now because they're spending heavily on big projects like AI infrastructure and robotics.",
+              "duration": 7.523265
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're making more money but spending even more?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They've also been working on reducing inventory, which helps their balance sheet. And they're moving ahead with production plans for the Cybercab in Texas and the Semi truck in Nevada later this year.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "Is Tesla still mainly a car company despite all these other projects?",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, despite everything else, Tesla remains a car company at its core.",
+              "duration": 3.94449
+            }
+          ]
         }
       }
     }

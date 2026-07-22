@@ -6984,6 +6984,52 @@
               "duration": 5.694694
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-22/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカとサウジアラビアが、サウジの民間向け原子力開発を認める協定に署名しました。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "この協定で、アメリカ企業がサウジ国内のウラン濃縮施設の建設に関わる道が開かれます。",
+              "duration": 7.128
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウラン濃縮は発電所の燃料として使われますが、核兵器の材料にもなり得る技術です。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "アメリカ政府は、この協定が核の安全と不拡散の高い基準を守りながら、自国の民間原子力技術の競争力を高めると説明しています。",
+              "duration": 10.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で、イスラエルの専門家や元政府関係者からは懸念の声が上がっています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "将来サウジが核兵器を持つ可能性につながるのではないか、という見方です。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "協定の規模は数十億ドルに達するとみられ、アメリカ企業にとって大きな商機となります。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東の安全保障の構図が、静かに変わり始めているのかもしれません。",
+              "duration": 5.52
+            }
+          ]
         }
       },
       "2": {
@@ -7041,6 +7087,42 @@
               "speaker": "explainer",
               "text": "It is. Leadership changes like this during wartime always raise questions about strategy and direction going forward.",
               "duration": 6.4
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-22/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ウクライナのゼレンスキー大統領が、軍の総司令官を解任しました。",
+              "duration": 5.232
+            },
+            {
+              "speaker": "narrator",
+              "text": "その数日前には国防相も更迭されていて、1週間足らずで軍の最高幹部2人が職を失ったことになります。",
+              "duration": 8.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "ロシアとの戦争が始まって4年になりますが、これほど大きな軍の指導部の入れ替えは初めてです。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "戦時下で軍を率いる立場の人事が短期間に動くのは、異例のことです。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には国内での抗議活動も続いていて、政権への圧力が高まっている様子がうかがえます。",
+              "duration": 7.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後、新しい指導部がどのように戦況に向き合うのか、注目されます。",
+              "duration": 5.568
             }
           ]
         }
@@ -7102,6 +7184,42 @@
               "duration": 3.84
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-22/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "香港で、英国人女性が懲役6年の判決を受けました。",
+              "duration": 5.136
+            },
+            {
+              "speaker": "narrator",
+              "text": "女性は警察にレイプ被害を訴えていましたが、裁判所は恐喝と司法妨害の罪を認定しました。",
+              "duration": 7.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "26歳のイザベル・ローズは、タイ旅行中に知り合った英国人銀行家を訪ねて香港へ渡っていました。",
+              "duration": 7.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "裁判官は、彼女の訴えを完全な虚偽と判断し、金銭要求が段階的に高まった点を恐喝と認めました。",
+              "duration": 8.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "ローズは一切の反省を示さなかったと、判決の場で指摘されています。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "虚偽の申告が重い刑罰につながった事例として、記録に残ることになります。",
+              "duration": 5.832
+            }
+          ]
         }
       },
       "4": {
@@ -7151,6 +7269,47 @@
               "duration": 11.232653
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-22/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Appleの大容量iPadが、いま通常より大幅に安く買えるようになっています。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "1テラバイトの保存容量と5G通信に対応したモデルが、定価から500ドル引きの749ドルです。",
+              "duration": 8.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "ソニーは整備済みのプレイステーション5スリムを499ドルで出していて、これは通常より100ドル安い価格です。",
+              "duration": 8.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "見た目に小さな傷があることもありますが、ソニーが検査して性能を保証しています。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "アップルのエアタグ第2世代の4個セットは、アマゾンで89.99ドルに下がっていて、これまでで最も安い水準です。",
+              "duration": 9.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "レイザーのワイヤレスゲーミングマウス、ヴァイパーV3プロも、通常より30ドルほど安い99.99ドルで手に入ります。",
+              "duration": 9.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "値上げが続くなかで、こうした割引は買い替えを考えている人にとって貴重な機会になりそうです。",
+              "duration": 7.056
+            }
+          ]
         }
       },
       "5": {
@@ -7198,6 +7357,47 @@
               "speaker": "explainer",
               "text": "Yes, despite everything else, Tesla remains a car company at its core.",
               "duration": 3.94449
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-22/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Teslaの売上が、ここ2年ほどの落ち込みから持ち直してきました。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "直近12か月の合計で、初めて1000億ドルを超えたそうです。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、利益の面ではまだ弱さが残っています。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、AIやロボット開発への大きな投資があります。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのため、自由に使える現金の流れはマイナスが続いています。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "テキサスやネバダの工場では、新しい車の生産が進んでいるとのことです。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "売上の回復は見えても、収益力が戻るかは今後の課題になりそうです。",
+              "duration": 5.808
             }
           ]
         }

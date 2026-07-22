@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-22",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "US signs landmark nuclear deal with Saudi Arabia",
+      "summary": "The US and Saudi Arabia have signed a landmark deal that will reportedly allow the Gulf kingdom to develop a civilian nuclear programme.",
+      "keyTakeaways": [
+        "This could be worth billions of dollars to the US, whose companies could be involved in building a facility to produce enriched uranium, which can be used as fuel for power plants but also to make nuclear bombs.",
+        "According to Wednesday's statement, the deal will \"advance US and regional security by upholding high standards of nuclear safety, security, and nonproliferation and strengthening the United States' competitive edge in civil nuclear technology\".",
+        "Nuclear experts and former officials in Israel - the US's top ally in the Middle East - voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon."
+      ],
+      "whyItMatters": "The deal is described as a \"peaceful nuclear co-operation agreement\" that will provide \"great access for American companies in the Saudi nuclear energy program\", according to a statement from the US energy secretary.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米国とサウジアラビア、民間核開発で歴史的合意",
+          "summary": "米国とサウジアラビアは、サウジが民間の核開発プログラムを進めることを認める歴史的な協定に署名した。",
+          "keyTakeaways": [
+            "米企業がウラン濃縮施設の建設に関与する可能性があり、協定は数十億ドル規模の経済効果をもたらすとみられる。",
+            "声明によれば、協定は核の安全・不拡散の高い基準を維持しつつ、米国の民間核技術における競争力を強化するとしている。",
+            "中東における米国の最重要同盟国であるイスラエルの核専門家や元当局者からは、サウジが将来的に核兵器開発に至る可能性があるとの懸念が上がっている。"
+          ],
+          "whyItMatters": "米エネルギー長官の声明によれば、この協定は「平和的な原子力協力協定」と位置づけられ、サウジの核エネルギー計画への米企業の参入を広く認めるものだという。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Ukraine's Zelenskyy fires top military commander amid ongoing protests",
+      "summary": "Ukraine's President Volodymyr Zelenskyy fires the country's army chief, just days after he dismissed the defense minister.",
+      "keyTakeaways": [
+        "LEILA FADEL, HOST: Ukraine's president, Volodymyr Zelenskyy, has now fired the country's top military commander.",
+        "Just a few days ago, Zelenskyy fired the country's defense minister.",
+        "FADEL: So in less than a week, President Zelenskyy fired the two top figures leading Ukraine's war against Russia."
+      ],
+      "whyItMatters": "Together, it's one of the most significant military shakeups in the past four years of Ukraine's war with Russia.",
+      "originalURL": "https://www.npr.org/2026/07/22/nx-s1-5902279/ukraines-zelenskyy-fires-top-military-commander-amid-ongoing-protests",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ゼレンスキー大統領、軍トップを相次いで更迭",
+          "summary": "ウクライナのゼレンスキー大統領が、国軍の総司令官を解任した。国防相の更迭からわずか数日後のことだ。",
+          "keyTakeaways": [
+            "ゼレンスキー大統領が、ウクライナ軍の最高司令官を解任した。",
+            "その数日前には、国防相もすでに更迭されていた。",
+            "1週間も経たないうちに、戦時下の軍を率いる二人の最高幹部が相次いで交代することになった。"
+          ],
+          "whyItMatters": "ロシアとの戦争が続く4年間で、これほど大規模な軍の指導部刷新は前例がない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "British woman jailed in Hong Kong for blackmail after accusing banker of rape",
+      "summary": "A British woman who reported being raped to police in Hong Kong has been sentenced to six years in prison for blackmail and perverting the course of public justice.",
+      "keyTakeaways": [
+        "Isabel Rose, 26, from south-east London, travelled to Hong Kong in early 2024 to visit a British banker she had met while travelling in south-east Asia.",
+        "The Hong Kong district judge Adriana Noelle Tse Ching said Rose had “not shown an iota of remorse” before handing down the sentence, and called the allegation “completely fabricated”.",
+        "Rose travelled to Hong Kong in January 2024 after meeting the banker on holiday in Thailand."
+      ],
+      "whyItMatters": "The judge said the escalating demands amounted to blackmail.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/22/british-woman-jailed-hong-kong-false-allegations",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "レイプ被害を訴えた英国人女性、香港で恐喝罪により実刑判決",
+          "summary": "香港警察にレイプ被害を申告した英国人女性が、恐喝および司法妨害の罪で懲役6年の実刑判決を受けた。",
+          "keyTakeaways": [
+            "ロンドン南東部出身のイザベル・ローズ（26歳）は、東南アジア旅行中に知り合った英国人銀行家を訪ねて2024年初頭に香港へ渡った。",
+            "香港地方裁判所のアドリアナ・ノエル・謝靖裁判官は、ローズが「一切の反省を示さなかった」と述べ、申告内容を「完全な虚偽」と断じたうえで量刑を言い渡した。",
+            "ローズはタイでの休暇中にその銀行家と出会い、2024年1月に香港を訪れていた。"
+          ],
+          "whyItMatters": "裁判官は、金銭要求がエスカレートしていった経緯が恐喝にあたると判断した。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Price-hiked iPads are a little cheaper right now",
+      "summary": "This model sports 1TB of storage, an optional 5G cellular connection, and it’s marked down to $749, a $500 discount from the suggested retail price.",
+      "keyTakeaways": [
+        "Sony is selling refurbished Playstation 5 Slim consoles for $499, a $100 break from the usual price.",
+        "Normally $99.99, a four pack of the second-generation Apple AirTags are on sale for $89.99 at Amazon, matching their lowest price ever.",
+        "Amazon has the Razer Viper V3 Pro wireless gaming mouse listed for $99.99, about $30 lower than its usual price."
+      ],
+      "whyItMatters": "They may have some minor cosmetic imperfections, but are tested and certified by Sony to perform just as well as a new console.",
+      "originalURL": "https://www.theverge.com/gadgets/969003/apple-ipad-air-pro-airtag-deal-sale",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "値上がりしたiPadが、いま少し手に届きやすい価格に",
+          "summary": "1TBストレージと5G接続オプションを備えたこのモデルが、希望小売価格から500ドル引きの749ドルで販売されている。",
+          "keyTakeaways": [
+            "ソニーが整備済みのPlayStation 5 Slimを499ドルで販売中。通常より100ドル安い。",
+            "第2世代AirTag 4個パックがAmazonで89.99ドルに。過去最安値に並ぶ水準だ。",
+            "Razer Viper V3 ProワイヤレスゲーミングマウスがAmazonで99.99ドル。通常より約30ドル低い。"
+          ],
+          "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Tesla’s revenues are bouncing back, but profits are still weak",
+      "summary": "Tesla is in negative free cash flow territory, as it increases its expenditures on major projects like AI infrastructure and robotics.",
+      "keyTakeaways": [
+        "After a dismal two years of weakening demand, falling sales, and damage to its brand by Elon Musk’s political activities, Tesla’s road to recovery continues apace.",
+        "Despite that mission, Tesla remains a car company.",
+        "Tesla certainly did a good job shrinking its inventory, which is good for the balance sheet."
+      ],
+      "whyItMatters": "In a shareholder deck, Tesla said it “generated over $100B in revenue on a trailing twelve-month basis for the first time.” It also touted Cybercab production at its Gigafactory in Texas, and said Tesla Semi production “remains on track” at its Nevada facility later this year.",
+      "originalURL": "https://www.theverge.com/transportation/969311/tesla-q2-2026-earnings-revenue-profit-sales",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "テスラ、売上は回復基調も利益は依然低迷",
+          "summary": "テスラはAIインフラやロボティクスといった大型プロジェクトへの投資を拡大しており、フリーキャッシュフローはマイナスの状態が続いている。",
+          "keyTakeaways": [
+            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランドへのダメージと、苦難の2年間を経て、テスラの回復は着実に進んでいる。",
+            "とはいえ、テスラの本業はあくまで自動車メーカーだ。",
+            "在庫の圧縮は順調に進んでおり、財務体質の改善に寄与している。"
+          ],
+          "whyItMatters": "テスラは株主向け資料の中で、直近12か月の累計売上高が初めて1000億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産やネバダ州でのテスラ・セミの生産計画が順調に進んでいることも強調した。"
+        }
+      }
+    }
+  ]
+}

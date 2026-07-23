@@ -153,7 +153,12 @@ jobs:
               if d == "proceed":
                   # Sync this checkout to the state just verified, so the resolve step
                   # below (and every downstream gate) reads post-merge reality.
-                  subprocess.run(["git", "reset", "--hard", "origin/main"], check=True)
+                  # capture_output: this heredoc's stdout IS $GITHUB_OUTPUT — git's
+                  # "HEAD is now at …" line must never leak into it (2026-07-23: that
+                  # leak failed the probe as malformed output right after a correct
+                  # proceed decision).
+                  subprocess.run(["git", "reset", "--hard", "origin/main"],
+                                 check=True, capture_output=True, text=True)
                   print("decision=proceed")
                   break
               if d == "stale":

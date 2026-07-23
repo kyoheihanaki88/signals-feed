@@ -22,6 +22,7 @@ of the contract via the text checks).
 import os
 import re
 import sys
+import textwrap
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -59,6 +60,83 @@ check("latest.json.date is the source of truth (no dir scan, no clock)",
       'latest.get("date")' in ja and "max(eds)" not in ja and "glob.glob" not in ja)
 check("explicit date input is validated + must exist on main",
       "invalid date input" in ja and "not found on main" in ja)
+
+# ── workflow_run merge-race wait (Fix 2) ────────────────────────────────────────────
+check("wait step exists and is gated to workflow_run ONLY",
+      "Wait for EN merge propagation (workflow_run only)" in ja
+      and "if: github.event_name == 'workflow_run'" in ja)
+check("wait loop: at most 10 checks", "MAX_ATTEMPTS = 10" in ja)
+check("wait loop: 60 seconds between checks", "SLEEP_SECONDS = 60" in ja)
+check("every attempt logs 'JA probe attempt N/10: expected=… latest=…'",
+      "JA probe attempt {attempt}/{MAX_ATTEMPTS}: expected={expected} latest={observed}" in ja)
+check("expected date is bound to the TRIGGERING EN run's edition-date artifact",
+      "github.event.workflow_run.id" in ja
+      and '"edition-date"' in ja
+      and 'payload.get("edition_date")' in ja
+      and "actions/runs/{run_id}/artifacts" in ja)
+check("expected is resolved ONCE before the loop and is immutable while polling",
+      "resolved ONCE before the loop" in ja and "immutable during polling" in ja)
+check("expected is NEVER derived from main's newest edition or the stale checkout",
+      "ls-tree" not in ja and "origin_state" not in ja)
+check("missing/invalid artifact → RED failure, no silent fallback",
+      "failing instead of guessing" in ja and "NO silent fallback" in ja)
+check("latest.json re-fetched from origin/main on EVERY check",
+      '"git", "fetch", "--quiet", "origin", "main"' in ja
+      and 'git", "show", "origin/main:latest.json' in ja)
+# The polling loop itself must not reassign `expected` — extract the for-block and prove it.
+_loop = re.search(r"for attempt in range\(1, MAX_ATTEMPTS \+ 1\):(.*?)\n\s*else:", ja, re.S)
+check("polling loop extractable", _loop is not None)
+check("polling loop never reassigns expected (cannot move mid-wait)",
+      _loop is not None
+      and re.search(r"^\s+expected\s*=[^=]", _loop.group(1), re.M) is None)
+check("older latest → retry (explicitly NOT complete / NOT stale)",
+      "still older than expected" in ja and "merge not propagated yet" in ja)
+check("equal → proceed into the existing generation path (checkout synced first)",
+      "decision=proceed" in ja and '"git", "reset", "--hard", "origin/main"' in ja)
+check("newer → green-skip with reason=stale_workflow_run",
+      "decision=stale" in ja and "reason=stale_workflow_run" in ja
+      and "a newer edition is already served" in ja)
+check("stale run never consumes the newer edition (skip happens before any gate/generation)",
+      "must never consume it" in ja)
+check("timeout emits the merge-propagation error and fails RED (nonzero), never green-skips",
+      "merge-propagation timeout" in ja
+      and "the EN PR may not have merged" in ja
+      and re.search(r"merge-propagation timeout[^\n]*\n\s*sys\.exit\(1\)", ja) is not None)
+check("summary reports event + expected/observed/checks/decision",
+      "steps.wait.outputs.decision" in ja and "steps.wait.outputs.attempts" in ja
+      and "event: \\`${{ github.event_name }}\\`" in ja)
+check("stale_workflow_run has its own summary line", "stale workflow_run: a newer edition" in ja)
+
+# Script-level unit test of the pure decision core, extracted from the workflow heredoc —
+# the three terminal semantics are exercised as CODE, not just as YAML text.
+_m = re.search(r"def decide\(latest_date, expected_date\):.*?return \"wait\"", ja, re.S)
+check("decide() extractable for unit testing", _m is not None)
+if _m:
+    _ns = {}
+    exec(textwrap.dedent(_m.group(0)), _ns)
+    _d = _ns["decide"]
+    check("unit: latest == expected → proceed", _d("2026-07-22", "2026-07-22") == "proceed")
+    check("unit: latest NEWER than expected → stale (green-skip)", _d("2026-07-23", "2026-07-22") == "stale")
+    check("unit: latest OLDER than expected → wait (retry, not complete/stale)",
+          _d("2026-07-21", "2026-07-22") == "wait")
+    # Review fixture: triggering EN run processed 07-22; Daily Auto Publish then merged
+    # editions/2026-07-23.json and EN promoted latest to 07-23 before this old event's
+    # probe ran. Expected stays bound to the TRIGGERING run (07-22, from its artifact),
+    # so the old run green-skips as stale — it can NEVER generate or consume 07-23.
+    check("fixture: old run (expected=07-22) vs newest-edition world (latest=07-23) → stale_workflow_run, never generation",
+          _d("2026-07-23", "2026-07-22") == "stale")
+
+# The JA TTS preset and audio architecture are untouched by this workflow change.
+_lg = open(os.path.join(HERE, "listen_generate.py"), encoding="utf-8").read()
+check("TTS preset unchanged: narrator ja-JP-NanamiNeural",
+      'AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"' in _lg)
+check("TTS preset unchanged: customerservice style",
+      'AZURE_TTS_STYLE_JA_NARRATOR = "customerservice"' in _lg)
+check("TTS preset unchanged: rate +12%", 'AZURE_TTS_RATE_JA_LISTENER = "+12%"' in _lg)
+check("audio architecture unchanged: per-line SSML + raw per-line concatenation",
+      "def _azure_ssml" in _lg and "RAW byte concatenation of per-line MP3s" in _lg)
+check("pronunciation dictionary unchanged",
+      '("赤と金の", "赤ときんの")' in _lg)
 
 # ── Idempotence + EN precondition ───────────────────────────────────────────────────
 check("green skip when listen.ja already 5/5", "reason=complete" in ja and "ja == 5" in ja)
@@ -141,9 +219,18 @@ check("commit message matches manual convention",
       'commit-message: "Add JA solo Listen for ${{ needs.probe.outputs.date }}"' in ja)
 check("merge-or-fail-loudly step present",
       "gh pr merge" in ja and "Failing loudly" in ja)
-check("permissions are contents+PR write only",
-      "contents: write" in ja and "pull-requests: write" in ja
+check("permissions are contents+PR write + actions:read (artifact of the triggering run)",
+      "contents: write" in ja and "pull-requests: write" in ja and "actions: read" in ja
       and "packages:" not in ja and "id-token:" not in ja)
+
+# ── EN side of the binding: the EN probe exposes its edition date ───────────────────
+check("EN probe uploads the edition-date artifact (both generate and green-skip runs)",
+      "Upload edition-date artifact" in en and "name: edition-date" in en
+      and "every probe outcome" in en)
+check("EN artifact payload is the date ONLY (no secrets, no env)",
+      '\'{"edition_date": "%s"}\\n\'' in en
+      and "secrets." not in en.split("edition-date artifact payload")[1].split("Upload edition-date")[0])
+check("EN artifact has a short retention", re.search(r"name: edition-date\n\s+path: edition-date\.json\n\s+retention-days: 3", en) is not None)
 
 # ── Structural checks (when PyYAML is available) ────────────────────────────────────
 try:
@@ -170,6 +257,16 @@ else:
           and "needed == 'true'" in wf["jobs"]["listen-ja"]["if"])
     check("concurrency block structurally correct",
           wf["concurrency"] == {"group": "auto-generate-listen-ja", "cancel-in-progress": False})
+    check("probe timeout-minutes covers the ~10-minute wait window",
+          wf["jobs"]["probe"]["timeout-minutes"] == 15)
+    _steps = wf["jobs"]["probe"]["steps"]
+    _wait = [s for s in _steps if s.get("id") == "wait"]
+    check("wait step structurally gated to workflow_run only",
+          bool(_wait) and _wait[0].get("if") == "github.event_name == 'workflow_run'")
+    _names = [s.get("name", "") for s in _steps]
+    check("wait runs after checkout and before the resolve step",
+          _names.index("Wait for EN merge propagation (workflow_run only)")
+          < _names.index("Resolve date from latest.json — JA coverage + EN precondition"))
     en_wf = yaml.safe_load(en)
     check("EN concurrency group differs from JA",
           en_wf["concurrency"]["group"] != wf["concurrency"]["group"])

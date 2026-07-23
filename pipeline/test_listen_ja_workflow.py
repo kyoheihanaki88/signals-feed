@@ -69,12 +69,26 @@ check("wait loop: at most 10 checks", "MAX_ATTEMPTS = 10" in ja)
 check("wait loop: 60 seconds between checks", "SLEEP_SECONDS = 60" in ja)
 check("every attempt logs 'JA probe attempt N/10: expected=… latest=…'",
       "JA probe attempt {attempt}/{MAX_ATTEMPTS}: expected={expected} latest={observed}" in ja)
-check("expected date comes from origin/main editions (never the stale checkout latest.json)",
-      "ls-tree" in ja and "origin_state" in ja
-      and "fixed on the FIRST fetch" in ja)
+check("expected date is bound to the TRIGGERING EN run's edition-date artifact",
+      "github.event.workflow_run.id" in ja
+      and '"edition-date"' in ja
+      and 'payload.get("edition_date")' in ja
+      and "actions/runs/{run_id}/artifacts" in ja)
+check("expected is resolved ONCE before the loop and is immutable while polling",
+      "resolved ONCE before the loop" in ja and "immutable during polling" in ja)
+check("expected is NEVER derived from main's newest edition or the stale checkout",
+      "ls-tree" not in ja and "origin_state" not in ja)
+check("missing/invalid artifact → RED failure, no silent fallback",
+      "failing instead of guessing" in ja and "NO silent fallback" in ja)
 check("latest.json re-fetched from origin/main on EVERY check",
       '"git", "fetch", "--quiet", "origin", "main"' in ja
       and 'git", "show", "origin/main:latest.json' in ja)
+# The polling loop itself must not reassign `expected` — extract the for-block and prove it.
+_loop = re.search(r"for attempt in range\(1, MAX_ATTEMPTS \+ 1\):(.*?)\n\s*else:", ja, re.S)
+check("polling loop extractable", _loop is not None)
+check("polling loop never reassigns expected (cannot move mid-wait)",
+      _loop is not None
+      and re.search(r"^\s+expected\s*=[^=]", _loop.group(1), re.M) is None)
 check("older latest → retry (explicitly NOT complete / NOT stale)",
       "still older than expected" in ja and "merge not propagated yet" in ja)
 check("equal → proceed into the existing generation path (checkout synced first)",
@@ -105,6 +119,12 @@ if _m:
     check("unit: latest NEWER than expected → stale (green-skip)", _d("2026-07-23", "2026-07-22") == "stale")
     check("unit: latest OLDER than expected → wait (retry, not complete/stale)",
           _d("2026-07-21", "2026-07-22") == "wait")
+    # Review fixture: triggering EN run processed 07-22; Daily Auto Publish then merged
+    # editions/2026-07-23.json and EN promoted latest to 07-23 before this old event's
+    # probe ran. Expected stays bound to the TRIGGERING run (07-22, from its artifact),
+    # so the old run green-skips as stale — it can NEVER generate or consume 07-23.
+    check("fixture: old run (expected=07-22) vs newest-edition world (latest=07-23) → stale_workflow_run, never generation",
+          _d("2026-07-23", "2026-07-22") == "stale")
 
 # The JA TTS preset and audio architecture are untouched by this workflow change.
 _lg = open(os.path.join(HERE, "listen_generate.py"), encoding="utf-8").read()
@@ -199,9 +219,18 @@ check("commit message matches manual convention",
       'commit-message: "Add JA solo Listen for ${{ needs.probe.outputs.date }}"' in ja)
 check("merge-or-fail-loudly step present",
       "gh pr merge" in ja and "Failing loudly" in ja)
-check("permissions are contents+PR write only",
-      "contents: write" in ja and "pull-requests: write" in ja
+check("permissions are contents+PR write + actions:read (artifact of the triggering run)",
+      "contents: write" in ja and "pull-requests: write" in ja and "actions: read" in ja
       and "packages:" not in ja and "id-token:" not in ja)
+
+# ── EN side of the binding: the EN probe exposes its edition date ───────────────────
+check("EN probe uploads the edition-date artifact (both generate and green-skip runs)",
+      "Upload edition-date artifact" in en and "name: edition-date" in en
+      and "every probe outcome" in en)
+check("EN artifact payload is the date ONLY (no secrets, no env)",
+      '\'{"edition_date": "%s"}\\n\'' in en
+      and "secrets." not in en.split("edition-date artifact payload")[1].split("Upload edition-date")[0])
+check("EN artifact has a short retention", re.search(r"name: edition-date\n\s+path: edition-date\.json\n\s+retention-days: 3", en) is not None)
 
 # ── Structural checks (when PyYAML is available) ────────────────────────────────────
 try:

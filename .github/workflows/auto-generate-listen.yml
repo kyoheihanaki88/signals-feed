@@ -91,6 +91,23 @@ jobs:
             echo "## Auto Generate Listen — ${{ steps.check.outputs.date }}: newest edition already has EN Listen for all 5 → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY"
           fi
 
+      # Expose THIS run's resolved edition date to downstream workflow_run consumers.
+      # Auto Generate Listen JA binds its merge-propagation wait to the triggering EN
+      # run via this tiny artifact (date only — no secrets, no content). Uploaded for
+      # every probe outcome (generate AND green-skip) so any successful EN run is
+      # bindable. Publishing, gates, audio, and the PR flow are untouched.
+      - name: Write edition-date artifact payload
+        if: steps.check.outputs.date != ''
+        run: |
+          printf '{"edition_date": "%s"}\n' "${{ steps.check.outputs.date }}" > edition-date.json
+      - name: Upload edition-date artifact
+        if: steps.check.outputs.date != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: edition-date
+          path: edition-date.json
+          retention-days: 3
+
   # ── 2) Generate — only when Listen is missing for the merged latest date ───────────
   listen:
     needs: probe

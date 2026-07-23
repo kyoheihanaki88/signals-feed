@@ -44,6 +44,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: read     # read the TRIGGERING EN run's edition-date artifact (workflow_run wait)
 
 concurrency:
   group: auto-generate-listen-ja
@@ -73,20 +74,25 @@ jobs:
       # "complete" for the PREVIOUS date (observed 2026-07-22: JA run #18 skipped in 10s
       # while EN PR #133 merged minutes later; manual redispatch was needed).
       #
-      # So, for workflow_run ONLY: resolve the EXPECTED edition date from origin/main's
-      # editions/ tree — the same authority the EN probe itself targets (its probe picks
-      # the newest editions/<date>.json). That is safe here because the edition file
-      # merged hours earlier in Daily Auto Publish (it is never mid-flight during a
-      # Listen run), and the just-succeeded EN run generated audio for exactly that
-      # newest edition. The stale checked-out latest.json is NEVER used for this.
-      # Then poll origin/main's latest.json (fresh fetch every check) until the EN merge
-      # lands. Cron backstop and manual dispatch keep their existing immediate behavior.
+      # So, for workflow_run ONLY: resolve the EXPECTED edition date from the TRIGGERING
+      # EN run's own `edition-date` artifact (uploaded by the EN probe — date only, no
+      # secrets). That is the only binding that survives a NEWER edition merging between
+      # the EN run and this probe: deriving expected from main's newest edition could
+      # re-point an old workflow_run at tomorrow's edition, which the downstream
+      # latest==DATE gate could not detect. Expected is resolved ONCE, before the loop,
+      # and never moves during polling; if the triggering run exposed no artifact this
+      # probe FAILS RED rather than guessing. Then poll origin/main's latest.json
+      # (fresh fetch every check) until the EN merge lands. Cron backstop and manual
+      # dispatch keep their existing immediate behavior.
       - name: Wait for EN merge propagation (workflow_run only)
         id: wait
         if: github.event_name == 'workflow_run'
+        env:
+          TRIGGERING_RUN_ID: ${{ github.event.workflow_run.id }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, re, subprocess, sys, time
+          import json, os, re, subprocess, sys, time, zipfile
 
           MAX_ATTEMPTS = 10     # checks
           SLEEP_SECONDS = 60    # between checks → ≈10 minutes maximum total wait
@@ -107,23 +113,41 @@ jobs:
                   return "stale"
               return "wait"
 
-          def origin_state():
+          def latest_on_origin():
               sh("git", "fetch", "--quiet", "origin", "main")
-              names = sh("git", "ls-tree", "-r", "--name-only", "origin/main", "editions/").split()
-              dates = sorted(m.group(1) for n in names
-                             if (m := re.search(r"(\d{4}-\d{2}-\d{2})\.json$", n)))
               latest = json.loads(sh("git", "show", "origin/main:latest.json"))
-              return (dates[-1] if dates else ""), (latest.get("date") or "").strip()
+              return (latest.get("date") or "").strip()
 
+          # EXPECTED = the triggering EN run's edition — resolved ONCE before the loop
+          # from that run's `edition-date` artifact; it is immutable during polling.
+          run_id = os.environ["TRIGGERING_RUN_ID"]
+          repo = os.environ["GITHUB_REPOSITORY"]
           expected = ""
+          try:
+              arts = json.loads(sh("gh", "api", f"repos/{repo}/actions/runs/{run_id}/artifacts"))
+              art = next((a for a in arts.get("artifacts", []) if a.get("name") == "edition-date"), None)
+              if art:
+                  raw = subprocess.run(["gh", "api", f"repos/{repo}/actions/artifacts/{art['id']}/zip"],
+                                       check=True, capture_output=True).stdout
+                  with open("/tmp/edition-date.zip", "wb") as f:
+                      f.write(raw)
+                  with zipfile.ZipFile("/tmp/edition-date.zip") as z:
+                      payload = json.loads(z.read("edition-date.json"))
+                  expected = (payload.get("edition_date") or "").strip()
+          except Exception as e:
+              print(f"::error::could not read the edition-date artifact from triggering EN run {run_id}: {e}", file=sys.stderr)
+              sys.exit(1)
+          if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", expected or ""):
+              # NO silent fallback (e.g. to main's newest edition): an unbound wait could
+              # let an OLD workflow_run consume a NEWER edition. Fail red instead of
+              # guessing — the 15:15 UTC backstop cron and manual dispatch still cover
+              # generation for the day.
+              print(f"::error::triggering EN run {run_id} exposed no valid edition-date artifact (got {expected!r}) — cannot bind this workflow_run to an edition; failing instead of guessing", file=sys.stderr)
+              sys.exit(1)
+
           observed = ""
           for attempt in range(1, MAX_ATTEMPTS + 1):
-              newest_edition, observed = origin_state()
-              if not expected:
-                  expected = newest_edition   # fixed on the FIRST fetch — never moves mid-wait
-              if not expected:
-                  print("::error::origin/main has no editions — nothing for JA to target", file=sys.stderr)
-                  sys.exit(1)
+              observed = latest_on_origin()
               print(f"JA probe attempt {attempt}/{MAX_ATTEMPTS}: expected={expected} latest={observed}", file=sys.stderr)
               d = decide(observed, expected)
               if d == "proceed":

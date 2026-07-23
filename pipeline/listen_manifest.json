@@ -7461,6 +7461,52 @@
               "duration": 7.706122
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-23/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカがサウジアラビアで原子力発電所を建設し運営する合意が結ばれました。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "この決定に対し、イスラエルは強い懸念を示しています。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "サウジアラビアは世界でも有数の産油国ですが、近年はエネルギー源を多様化する動きを進めてきました。",
+              "duration": 8.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "原子力を使えば、国内での石油消費を減らし、輸出に回せる量を増やせるという利点があります。",
+              "duration": 7.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "この計画は数十年にわたり、総額は数十億ドルに達する見込みです。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "イスラエルにとっては、アメリカとの安全保障の方針にずれが生じているように映ります。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "ペルシャ湾ではアメリカとイランの緊張が続いており、この合意はその中で発表されました。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東の力関係に新たな要素が加わる形です。",
+              "duration": 4.416
+            }
+          ]
         }
       },
       "2": {
@@ -7508,6 +7554,47 @@
               "speaker": "explainer",
               "text": "Exactly. It's a tense situation with strikes and retaliation happening across several key waterways and countries in the region.",
               "duration": 6.217143
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-23/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ホルムズ海峡で、タンカーが爆発して炎に包まれました。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "イランの革命防衛隊によると、オマーン沖の航路を通ろうとした船が被害を受けたといいます。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方アメリカは、イランへの爆撃を12夜続けています。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "イランも応じる形で、クウェートやヨルダンなど湾岸の複数の場所を攻撃しました。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "紅海では、フーシ派がサウジアラビアのタンカー2隻を狙ったと発表しています。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "石油を運ぶ船への攻撃が重なり、エネルギーの流れに影響が出る恐れがあります。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "緊張が続けば、燃料の価格や供給にも変化が及ぶかもしれません。",
+              "duration": 5.736
             }
           ]
         }
@@ -7569,6 +7656,47 @@
               "duration": 7.967347
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-23/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "インドでは今、試験問題の漏洩をめぐって若者たちが街に出ています。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "モディ首相は、関与した官僚を迅速に裁く特別な裁判所を設けると約束しました。",
+              "duration": 6.744
+            },
+            {
+              "speaker": "narrator",
+              "text": "デリーでは「ゴキブリ運動」と呼ばれる抗議が続き、政権への大きな圧力になっています。",
+              "duration": 6.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "首相は初めて公の場で「若者の未来を傷つける者は許さない」と述べました。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "ムンバイでは三日連続でデモがあり、他の都市でも連帯の動きが広がっています。",
+              "duration": 5.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "野党議員は、問題の大臣がなぜ更迭されないのか誰も理解できないと指摘しました。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "若者の怒りが政治を動かし始めている様子が見えます。",
+              "duration": 4.44
+            }
+          ]
         }
       },
       "4": {
@@ -7618,6 +7746,42 @@
               "duration": 11.52
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-23/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Appleは最近iPadの価格を引き上げましたが、いまは一部のモデルが割引されています。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "1TBのストレージを持つモデルが、通常より500ドル安い749ドルで手に入ります。",
+              "duration": 7.32
+            },
+            {
+              "speaker": "narrator",
+              "text": "5G接続にも対応しているため、外出先でも使いやすい仕様です。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "ほかにも、ソニーが整備済みのPlayStation 5 Slimを499ドルで売り出しています。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "外観に小さな傷があることもありますが、ソニーが性能を確認しているので新品と変わらず使えます。",
+              "duration": 7.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝の買い物リストに加えるなら、いまが良いタイミングかもしれません。",
+              "duration": 4.968
+            }
+          ]
         }
       },
       "5": {
@@ -7665,6 +7829,52 @@
               "speaker": "explainer",
               "text": "They say Cybercab production is happening at their Texas factory, and Semi production at the Nevada facility is still on track for later this year.",
               "duration": 7.967347
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-23/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "テスラの売上が戻りつつあります。",
+              "duration": 2.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "直近の一年間で、初めて千億ドルを超えました。",
+              "duration": 4.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、利益の面ではまだ厳しい状況が続いています。",
+              "duration": 4.536
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIやロボット開発への投資が膨らみ、手元に残る現金は減っています。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "過去二年は需要の落ち込みや販売不振に苦しみましたが、回復の兆しは見えてきました。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "在庫も減らすことができ、財務の改善にはつながっています。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "テキサスとネバダの工場では、新しい車両の生産も予定通り進んでいます。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "収益の中心は今も自動車であり、その柱がどこまで安定するかが鍵になります。",
+              "duration": 6.48
             }
           ]
         }

@@ -305,17 +305,24 @@ def ungrounded_tokens(draft_text, source_text):
     return sorted(set(hits))
 
 
-def get_source_text(item, articles_dir, allow_fetch, unavailable):
-    """Return (text, source_text_used). Honors the priority chain; never fabricates."""
+def get_source_text(item, articles_dir, allow_fetch, unavailable, force_refetch=frozenset()):
+    """Return (text, source_text_used). Honors the priority chain; never fabricates.
+
+    `force_refetch` (recovery A): for these ids the cached article is BYPASSED for this
+    invocation — the draft must come from a fresh live fetch (or the normal non-cache
+    fallbacks: RSS snippet → none, both of which fail strict validation closed via the
+    thin-source flags). The stale cached body is never silently reused, and the cache
+    file itself is left untouched."""
     cid = item["id"]
     if cid in unavailable:
         return "", "none"
-    # 1. cached full article
-    p = os.path.join(articles_dir, f"{cid}.txt")
-    if os.path.exists(p):
-        t = open(p, encoding="utf-8").read().strip()
-        if t:
-            return t, "full_article"
+    # 1. cached full article — skipped when this id is being force-refetched
+    if cid not in force_refetch:
+        p = os.path.join(articles_dir, f"{cid}.txt")
+        if os.path.exists(p):
+            t = open(p, encoding="utf-8").read().strip()
+            if t:
+                return t, "full_article"
     # 2. live fetch (runner only)
     if allow_fetch:
         try:
@@ -546,9 +553,13 @@ def draft_one(item, source_text, used):
 def cmd_draft(args):
     _, sig = load_selection(args.selection)
     unavailable = set(x.strip() for x in (args.simulate_unavailable or "").split(",") if x.strip())
+    force = frozenset(x.strip() for x in (getattr(args, "force_refetch", "") or "").split(",") if x.strip())
+    if force:
+        print(f"force-refetch (cache bypassed this run): {', '.join(sorted(force))}")
     drafts = []
     for item in sig:
-        text, used = get_source_text(item, args.articles, allow_fetch=not args.no_fetch, unavailable=unavailable)
+        text, used = get_source_text(item, args.articles, allow_fetch=not args.no_fetch,
+                                     unavailable=unavailable, force_refetch=force)
         drafts.append(draft_one(item, text, used))
 
     out = {
@@ -678,7 +689,7 @@ def why_quality_issues(why, summary, headline=""):
     return issues
 
 
-def _validate(selection_path, drafts_obj, source="", strict=False):
+def _validate(selection_path, drafts_obj, source="", strict=False, report_path=""):
     _, sig = load_selection(selection_path)
     by_id = {s["id"]: s for s in sig}
     drafts = drafts_obj["signals"]
@@ -766,6 +777,36 @@ def _validate(selection_path, drafts_obj, source="", strict=False):
         for w in warn:
             print(f"   - {w}")
     print("\nDRAFTS ONLY — nothing here is approved, assembled into latest.json, or published.")
+
+    # Machine-readable report (publish recovery / audit). Purely ADDITIVE: validation rules,
+    # human-readable output, and the return code above are untouched. The report is written on
+    # pass AND fail. Per-story buckets come from the existing "[id] …" message prefixes;
+    # selection-level failures (no id prefix) appear only in the top-level `hard` list, which
+    # recovery treats as unrecoverable. Contains messages + ids only — no article bodies,
+    # no source text, no secrets.
+    if report_path:
+        ids_in = [d["id"] for d in drafts]
+        def _for(msgs, did):
+            return [m for m in msgs if m.startswith(f"[{did}]")]
+        failed_ids = sorted({did for did in ids_in if _for(hard, did)})
+        report = {
+            "result": "fail" if hard else "pass",
+            "hard": hard,
+            "warnings": warn,
+            "failed_ids": failed_ids,
+            "stories": [{"id": did, "hard": _for(hard, did), "warnings": _for(warn, did)}
+                        for did in ids_in],
+        }
+        try:
+            parent = os.path.dirname(report_path)
+            if parent:
+                os.makedirs(parent, exist_ok=True)
+            with open(report_path, "w", encoding="utf-8") as f:
+                json.dump(report, f, ensure_ascii=False, indent=2)
+            print(f"validation report → {os.path.relpath(report_path)}")
+        except OSError as e:
+            sys.exit(f"ERROR: cannot write validation report to {report_path!r}: {e}")
+
     return 1 if hard else 0
 
 
@@ -773,7 +814,8 @@ def cmd_validate(args):
     if not os.path.exists(args.drafts):
         sys.exit(f"ERROR: {args.drafts} not found. Run `writer.py draft` first.")
     sys.exit(_validate(args.selection, json.load(open(args.drafts)),
-                       source=os.path.basename(args.drafts), strict=getattr(args, "strict", False)))
+                       source=os.path.basename(args.drafts), strict=getattr(args, "strict", False),
+                       report_path=getattr(args, "report", "") or ""))
 
 
 def main():
@@ -784,12 +826,20 @@ def main():
     d.add_argument("--articles", default=DEF_ART)
     d.add_argument("--no-fetch", action="store_true", help="disable live fetch (sandbox/offline)")
     d.add_argument("--simulate-unavailable", default="", help="comma ids to force the failure path")
+    d.add_argument("--force-refetch", dest="force_refetch", default="",
+                   help="comma ids: bypass the cached article for these ids THIS run and draft "
+                        "from a fresh live fetch (publish recovery A). Never reuses the stale "
+                        "cached body; a failed fetch falls to the normal non-cache fallbacks, "
+                        "which strict validation still fails closed. Cache files are untouched.")
     d.add_argument("--out", default=DEF_OUT)
     v = sub.add_parser("validate")
     v.add_argument("--selection", default=DEF_SEL)
     v.add_argument("--drafts", default=DEF_OUT)
     v.add_argument("--strict", action="store_true",
                    help="auto-publish mode: hard-fail on thin/incomplete/low-confidence drafts (no hand-fill)")
+    v.add_argument("--report", default="",
+                   help="also write a machine-readable JSON validation report to this path "
+                        "(written on pass AND fail; validation rules and exit codes unchanged)")
     args = ap.parse_args()
     (cmd_draft if args.cmd == "draft" else cmd_validate)(args)
 

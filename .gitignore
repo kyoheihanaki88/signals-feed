@@ -18,6 +18,10 @@ pipeline/cache/articles/
 # Builder draft output (never the live feed; regenerated, not source) — Builder v1
 pipeline/generated/
 
+# Publish-recovery working files (attempts audit + per-attempt validation reports) —
+# delivered as a CI artifact, never committed (and kept out of the pre-push guard)
+pipeline/out/
+
 # Python cache
 __pycache__/
 *.pyc

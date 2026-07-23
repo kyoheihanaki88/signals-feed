@@ -7402,6 +7402,273 @@
           ]
         }
       }
+    },
+    "2026-07-23": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-23/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw the U.S. just made a nuclear deal with Saudi Arabia. What's this about?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia. The program is expected to last decades and be worth billions of dollars.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, Saudi Arabia has all that oil. Why do they need nuclear power?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're trying to pivot to other energy sources. Nuclear power would let them use less petroleum at home and sell more oil abroad.",
+              "duration": 7.131429
+            },
+            {
+              "speaker": "listener",
+              "text": "So why is Israel upset about this?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's concern in Israel that this shows a growing gap between their priorities and the Trump administration's approach to the region, especially on security issues.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the timing significant here?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. This is happening while the U.S. and Iran have been trading strikes in the Persian Gulf, which adds to the tension.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That does seem like a complicated moment for this kind of deal.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Israel sees itself as a major American ally, so any shift in how the U.S. engages with Saudi Arabia gets close attention there.",
+              "duration": 7.706122
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-23/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There's a lot happening in the Gulf region right now. Can you walk me through what's going on?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The US has been conducting strikes against Iran for twelve consecutive nights now, and early Thursday that continued. Iran has been responding by striking targets across the Gulf.",
+              "duration": 11.650612
+            },
+            {
+              "speaker": "listener",
+              "text": "Where specifically has Iran been targeting?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Particularly in Kuwait and Jordan, according to reports. And Iran's Revolutionary Guard also said a tanker caught fire in the Strait of Hormuz on Thursday after an explosion.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a critical shipping route. What about the Houthis—are they involved too?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are. The Houthis claimed responsibility for a major operation against two Saudi oil tankers in the Red Sea—vessels called the Encelia and the Layla.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "So we're seeing attacks on shipping from multiple directions.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's a tense situation with strikes and retaliation happening across several key waterways and countries in the region.",
+              "duration": 6.217143
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-23/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about protests in India called 'cockroach' protests. What's happening there?",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's been a youth-led protest movement in Delhi over examination paper leaks. Students are upset because officials allegedly leaked exam papers, which undermines the fairness of the system.",
+              "duration": 10.475102
+            },
+            {
+              "speaker": "listener",
+              "text": "And Modi just responded to this?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in his first public remarks on the movement. He posted that nothing is more important than the welfare and future of young people, and promised those who harm their future won't be spared.",
+              "duration": 10.527347
+            },
+            {
+              "speaker": "listener",
+              "text": "What's he actually doing about it?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's vowed to set up fast-track courts to speed up punishment for officials accused of leaking the papers. It seems the government may be softening its stance after facing this challenge.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this just happening in Delhi?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, young people across India have joined in. There've been three consecutive days of demonstrations in Mumbai, plus solidarity protests in Chennai, Indore, Hyderabad, and Patiala.",
+              "duration": 10.34449
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is this such a big deal for Modi's government?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's being described as one of the biggest challenges to his government. The scale and persistence of the youth movement has really put pressure on leadership to respond.",
+              "duration": 7.967347
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-23/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about iPads being cheaper right now. What's the deal?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a model with a terabyte of storage and optional 5G that's marked down to seven forty-nine. That's five hundred dollars off the suggested retail price.",
+              "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "Five hundred off? That's a big discount. Are there other tech deals happening too?",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yeah, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "Refurbished though—does that mean they're not as good?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "They may have minor cosmetic imperfections, but Sony tests and certifies them to perform just as well as new consoles.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "Got it. Anything else on sale?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Apple AirTags are discounted. A four-pack of the second generation is eighty-nine ninety-nine at Amazon—that matches their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
+              "duration": 11.52
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-23/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Tesla's revenues are improving. Does that mean the company's doing well again?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a mixed picture. Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just crossed a hundred billion dollars over the past twelve months for the first time.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty good. What's the problem then?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Profits are still weak, and the company's actually in negative free cash flow right now. They're spending heavily on things like AI infrastructure and robotics.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "Right, but Tesla's more than just cars now, isn't it?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Despite all those other projects, Tesla remains fundamentally a car company. They did manage to shrink their inventory though, which helps their balance sheet.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they making progress on those newer vehicles?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say Cybercab production is happening at their Texas factory, and Semi production at the Nevada facility is still on track for later this year.",
+              "duration": 7.967347
+            }
+          ]
+        }
+      }
     }
   }
 }

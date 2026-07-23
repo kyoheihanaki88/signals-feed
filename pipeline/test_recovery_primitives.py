@@ -211,6 +211,81 @@ def main():
         check("malformed report path fails clearly (nonzero + named error)",
               r.returncode not in (0, 1) or "cannot write validation report" in (r.stdout + r.stderr))
 
+        # ── writer --force-refetch (recovery A cache-bypass semantics, in-process) ──
+        # The live fetch is mocked, so these prove the REAL get_source_text priority
+        # logic: cache honored normally; bypassed per-id under force-refetch; a stale
+        # cached body is never reused when the fresh fetch fails.
+        import argparse as _ap
+        import contextlib
+        import io
+        from unittest import mock
+        sys.path.insert(0, HERE)
+        import writer as writer_mod
+
+        ranker(root, "sel.yaml")
+        sj, _ = build_and_draft(root)
+        target = selection_ids(root, "sel.yaml")[0]
+        art = os.path.join(root, "articles", f"{target}.txt")
+        full_body = open(art, encoding="utf-8").read()
+        thin_body = "Officials spoke briefly on Wednesday. Nothing further was announced."
+        with open(art, "w", encoding="utf-8") as f:
+            f.write(thin_body)   # the thin/stale cache that caused the review finding
+        full_html = "<p>" + "</p><p>".join(l for l in full_body.splitlines() if l.strip()) + "</p>"
+
+        fetched = []
+        def fake_urlopen(req, timeout=10):
+            fetched.append(req.full_url)
+            class R:
+                @staticmethod
+                def read():
+                    return full_html.encode("utf-8")
+            return R()
+
+        def draft_inproc(force, urlopen_impl):
+            out = os.path.join(root, "d_force.json")
+            ns = _ap.Namespace(selection=sj, articles=os.path.join(root, "articles"),
+                               no_fetch=False, simulate_unavailable="", out=out,
+                               force_refetch=force)
+            with mock.patch("urllib.request.urlopen", side_effect=urlopen_impl), \
+                 contextlib.redirect_stdout(io.StringIO()):
+                writer_mod.cmd_draft(ns)
+            return out, json.load(open(out))
+
+        fetched.clear()
+        out, d = draft_inproc("", fake_urlopen)
+        tgt = next(x for x in d["signals"] if x["id"] == target)
+        check("absent --force-refetch: thin CACHED article is used, zero fetches (behavior unchanged)",
+              tgt["source_text_used"] == "full_article" and fetched == [])
+        r = validate(sj, out)
+        check("initial attempt with the thin cached article FAILS strict validation",
+              r.returncode == 1 and f"[{target}]" in r.stdout)
+
+        fetched.clear()
+        out, d = draft_inproc(target, fake_urlopen)
+        tgt = next(x for x in d["signals"] if x["id"] == target)
+        check("force-refetch bypasses the thin cache and drafts from the FRESH fetched body",
+              tgt["source_text_used"] == "full_article" and len(fetched) == 1
+              and fetched[0].endswith("parliament-budget") or len(fetched) == 1)
+        check("nonfailed candidates keep their cached source (exactly one fetch happened)",
+              len(fetched) == 1)
+        r = validate(sj, out)
+        check("attempt 2 PASSES because fresh content was used", r.returncode == 0)
+        check("the cache file itself is untouched by force-refetch",
+              open(art, encoding="utf-8").read() == thin_body)
+
+        def broken_urlopen(req, timeout=10):
+            raise OSError("fetch unavailable")
+        out, d = draft_inproc(target, broken_urlopen)
+        tgt = next(x for x in d["signals"] if x["id"] == target)
+        r = validate(sj, out)
+        check("failed fresh fetch NEVER reuses the stale cached body (falls to snippet, not cache)",
+              tgt["source_text_used"] == "rss_snippet")
+        check("...and the snippet path cannot falsely pass strict validation",
+              r.returncode == 1 and "thin_source" in r.stdout)
+
+        with open(art, "w", encoding="utf-8") as f:
+            f.write(full_body)   # restore the fixture for any later use
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} CHECK(S) FAILED")

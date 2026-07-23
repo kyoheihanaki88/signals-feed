@@ -75,6 +75,12 @@ def main():
               and a["excluded"] == [])
         check("2b: refetch round records the refetched id",
               a["rounds"][1]["refetched"] == [lead])
+        check("2c: offline harness logs that the cache bypass is skipped (no-fetch only)",
+              "skipping --force-refetch cache bypass" in r.stdout)
+        src = open(os.path.join(HERE, "publish_recovery.py"), encoding="utf-8").read()
+        check("2d: in PRODUCTION mode attempt 2 passes --force-refetch with the failed ids",
+              '"--force-refetch", ",".join(sorted(force_refetch))' in src
+              and "if args.no_fetch:" in src.split('"--force-refetch"')[0].rsplit("def draft", 1)[1])
 
         # 3) refetch still fails → deterministic replacement passes
         r, a = run_recovery(root, {"1": [lead], "2": [lead]})

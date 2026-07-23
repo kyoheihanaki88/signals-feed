@@ -305,17 +305,24 @@ def ungrounded_tokens(draft_text, source_text):
     return sorted(set(hits))
 
 
-def get_source_text(item, articles_dir, allow_fetch, unavailable):
-    """Return (text, source_text_used). Honors the priority chain; never fabricates."""
+def get_source_text(item, articles_dir, allow_fetch, unavailable, force_refetch=frozenset()):
+    """Return (text, source_text_used). Honors the priority chain; never fabricates.
+
+    `force_refetch` (recovery A): for these ids the cached article is BYPASSED for this
+    invocation — the draft must come from a fresh live fetch (or the normal non-cache
+    fallbacks: RSS snippet → none, both of which fail strict validation closed via the
+    thin-source flags). The stale cached body is never silently reused, and the cache
+    file itself is left untouched."""
     cid = item["id"]
     if cid in unavailable:
         return "", "none"
-    # 1. cached full article
-    p = os.path.join(articles_dir, f"{cid}.txt")
-    if os.path.exists(p):
-        t = open(p, encoding="utf-8").read().strip()
-        if t:
-            return t, "full_article"
+    # 1. cached full article — skipped when this id is being force-refetched
+    if cid not in force_refetch:
+        p = os.path.join(articles_dir, f"{cid}.txt")
+        if os.path.exists(p):
+            t = open(p, encoding="utf-8").read().strip()
+            if t:
+                return t, "full_article"
     # 2. live fetch (runner only)
     if allow_fetch:
         try:
@@ -546,9 +553,13 @@ def draft_one(item, source_text, used):
 def cmd_draft(args):
     _, sig = load_selection(args.selection)
     unavailable = set(x.strip() for x in (args.simulate_unavailable or "").split(",") if x.strip())
+    force = frozenset(x.strip() for x in (getattr(args, "force_refetch", "") or "").split(",") if x.strip())
+    if force:
+        print(f"force-refetch (cache bypassed this run): {', '.join(sorted(force))}")
     drafts = []
     for item in sig:
-        text, used = get_source_text(item, args.articles, allow_fetch=not args.no_fetch, unavailable=unavailable)
+        text, used = get_source_text(item, args.articles, allow_fetch=not args.no_fetch,
+                                     unavailable=unavailable, force_refetch=force)
         drafts.append(draft_one(item, text, used))
 
     out = {
@@ -815,6 +826,11 @@ def main():
     d.add_argument("--articles", default=DEF_ART)
     d.add_argument("--no-fetch", action="store_true", help="disable live fetch (sandbox/offline)")
     d.add_argument("--simulate-unavailable", default="", help="comma ids to force the failure path")
+    d.add_argument("--force-refetch", dest="force_refetch", default="",
+                   help="comma ids: bypass the cached article for these ids THIS run and draft "
+                        "from a fresh live fetch (publish recovery A). Never reuses the stale "
+                        "cached body; a failed fetch falls to the normal non-cache fallbacks, "
+                        "which strict validation still fails closed. Cache files are untouched.")
     d.add_argument("--out", default=DEF_OUT)
     v = sub.add_parser("validate")
     v.add_argument("--selection", default=DEF_SEL)

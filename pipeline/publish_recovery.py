@@ -9,7 +9,9 @@ story must not block the whole edition when another valid candidate exists.
 
 Control flow (max FIVE strict validations total):
   attempt 1  initial      ranker → selection.py build → writer draft → validate
-  attempt 2  refetch      same selection, redraft (fresh fetch), validate
+  attempt 2  refetch      same selection; the FAILED ids bypass their cached article
+                          (writer --force-refetch) and draft from a fresh fetch — the
+                          other four keep their cached source; full set revalidated
   attempts 3–5  replacement (≤3 rounds)
              ranker --exclude <cumulative failed ids> → rebuild the full five with the
              EXISTING ranking/diversity/lead/eligibility rules → draft → validate
@@ -106,11 +108,28 @@ def main():
         return run([sys.executable, SELECTION, "build", "--candidates", args.candidates,
                     "--selection", args.selection_yaml, "--out", args.selection_json]) == 0
 
-    def draft(attempt):
+    def draft(attempt, force_refetch=None):
         cmd = [sys.executable, WRITER, "draft", "--selection", args.selection_json,
                "--articles", args.articles, "--out", args.drafts]
         if args.no_fetch:
             cmd += ["--no-fetch"]
+        if force_refetch:
+            # Recovery A: ONLY the failed ids bypass their cached article and draft from a
+            # fresh fetch; the other four keep their normal cached source. writer.py still
+            # regenerates the whole drafts.json (same selection, deterministic for the
+            # unchanged four), and the full set is revalidated.
+            #
+            # --no-fetch is the OFFLINE TEST HARNESS mode (never used by the workflow):
+            # a forced refetch is impossible offline, so bypassing the cache there would
+            # guarantee failure and make recovery A untestable. Offline, we log and skip
+            # the bypass (cache retry only); PRODUCTION always live-fetches, so the
+            # bypass is always active there. The real cache-bypass semantics are proven
+            # in-process by test_recovery_primitives.py with a mocked fetch.
+            if args.no_fetch:
+                print("no-fetch (offline harness): skipping --force-refetch cache bypass — "
+                      "production always live-fetches with the bypass active")
+            else:
+                cmd += ["--force-refetch", ",".join(sorted(force_refetch))]
         sim = fail_plan.get(str(attempt)) or []
         if sim:
             cmd += ["--simulate-unavailable", ",".join(sim)]
@@ -174,9 +193,11 @@ def main():
             print("::error::strict validation failed at the selection level (no per-story ids) — unrecoverable, failing closed")
             return
 
-        # ── attempt 2: same-candidate refetch (redraft; failed stories get a fresh fetch) ──
-        print(f"recovery A: refetching + redrafting failed candidate(s): {', '.join(failed)}")
-        if not draft(2):
+        # ── attempt 2: same-candidate refetch — the failed ids bypass their cached article
+        #    (writer --force-refetch) so the retry is a REAL fresh fetch, never a reuse of a
+        #    thin/stale cached body. Same five-story selection; full set revalidated. ─────────
+        print(f"recovery A: force-refetching + redrafting failed candidate(s): {', '.join(failed)}")
+        if not draft(2, force_refetch=failed):
             print("::error::writer draft failed during refetch — failing closed")
             record(2, "refetch", sel, failed, None, [{"id": i, "action": "rejected"} for i in failed])
             return

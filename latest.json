@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,133 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "US signs landmark nuclear deal with Saudi Arabia",
-      "summary": "The US and Saudi Arabia have signed a landmark deal that will reportedly allow the Gulf kingdom to develop a civilian nuclear programme.",
+      "source": "NPR (World)",
+      "headline": "U.S. nuclear power deal with Saudi Arabia faces criticism in Israel",
+      "summary": "The nuclear power deal between the U.S. and Saudi Arabia was met with alarm in Israel as it deepened concerns that Israel, a major American ally, and Trump are increasingly diverging on foreign policy and security.",
       "keyTakeaways": [
-        "This could be worth billions of dollars to the US, whose companies could be involved in building a facility to produce enriched uranium, which can be used as fuel for power plants but also to make nuclear bombs.",
-        "According to Wednesday's statement, the deal will \"advance US and regional security by upholding high standards of nuclear safety, security, and nonproliferation and strengthening the United States' competitive edge in civil nuclear technology\".",
-        "Nuclear experts and former officials in Israel - the US's top ally in the Middle East - voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon."
+        "Saudi Arabia is one of the world's largest oil producers, but the Gulf state has been trying to pivot to other energy sources.",
+        "Its nuclear energy program is expected to last decades and be worth billions of dollars, according to the Department of Energy.",
+        "Nuclear power would allow Saudi Arabia to use less petroleum energy domestically and maximize exports as well, Matthew Bunn, a nuclear proliferation expert at Harvard University told NPR's All Things Considered."
       ],
-      "whyItMatters": "The deal is described as a \"peaceful nuclear co-operation agreement\" that will provide \"great access for American companies in the Saudi nuclear energy program\", according to a statement from the US energy secretary.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "whyItMatters": "TEL AVIV — An agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia was met with alarm in Israel on Thursday, as the U.S. and Iran continued to trade strikes in the latest escalation engulfing the Persian Gulf.",
+      "originalURL": "https://www.npr.org/2026/07/23/nx-s1-5904327/us-saudi-arabia-iran",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米国とサウジアラビア、民間核開発で歴史的合意",
-          "summary": "米国とサウジアラビアは、サウジが民間の核開発プログラムを進めることを認める歴史的な協定に署名した。",
+          "headline": "米サウジ原子力協定、イスラエルに波紋",
+          "summary": "米国とサウジアラビアの原子力協定が、イスラエルに強い懸念をもたらしている。米国の重要な同盟国であるイスラエルとトランプ政権の間で、外交・安全保障をめぐる方針の乖離が深まっているとの見方が広がっている。",
           "keyTakeaways": [
-            "米企業がウラン濃縮施設の建設に関与する可能性があり、協定は数十億ドル規模の経済効果をもたらすとみられる。",
-            "声明によれば、協定は核の安全・不拡散の高い基準を維持しつつ、米国の民間核技術における競争力を強化するとしている。",
-            "中東における米国の最重要同盟国であるイスラエルの核専門家や元当局者からは、サウジが将来的に核兵器開発に至る可能性があるとの懸念が上がっている。"
+            "サウジアラビアは世界有数の産油国だが、近年はエネルギー源の多角化を模索してきた。",
+            "エネルギー省によれば、同国の原子力開発計画は数十年規模に及び、総額は数十億ドルに上る見通しだ。",
+            "ハーバード大学の核不拡散専門家マシュー・バン氏は、原子力の活用により国内の石油消費を抑え、輸出を最大化できると指摘する。"
           ],
-          "whyItMatters": "米エネルギー長官の声明によれば、この協定は「平和的な原子力協力協定」と位置づけられ、サウジの核エネルギー計画への米企業の参入を広く認めるものだという。"
+          "whyItMatters": "米企業によるサウジアラビアへの原子力発電所建設・運営合意が伝わったテルアビブでは、米国とイランの応酬が続くペルシャ湾の緊張を背景に、イスラエル側の警戒感が一段と高まっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the US just signed a nuclear deal with Saudi Arabia?",
-              "duration": 3.369796
+              "text": "I saw the U.S. just made a nuclear deal with Saudi Arabia. What's this about?",
+              "duration": 4.597551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it's described as a peaceful nuclear cooperation agreement. It allows Saudi Arabia to develop a civilian nuclear programme.",
-              "duration": 7.183673
+              "text": "It's an agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia. The program is expected to last decades and be worth billions of dollars.",
+              "duration": 8.724898
             },
             {
               "speaker": "listener",
-              "text": "What does that actually mean for the US?",
-              "duration": 2.168163
+              "text": "Wait, Saudi Arabia has all that oil. Why do they need nuclear power?",
+              "duration": 3.892245
             },
             {
               "speaker": "explainer",
-              "text": "It could be worth billions of dollars. American companies would get access to help build facilities, including ones that produce enriched uranium for power plants.",
-              "duration": 8.489796
+              "text": "They're trying to pivot to other energy sources. Nuclear power would let them use less petroleum at home and sell more oil abroad.",
+              "duration": 7.131429
             },
             {
               "speaker": "listener",
-              "text": "Wait, enriched uranium... isn't that also used for weapons?",
-              "duration": 3.84
+              "text": "So why is Israel upset about this?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "It can be. The US says the deal upholds high standards of nuclear safety and nonproliferation, and strengthens American competitive edge in civil nuclear technology.",
-              "duration": 9.456327
+              "text": "There's concern in Israel that this shows a growing gap between their priorities and the Trump administration's approach to the region, especially on security issues.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "Are people worried about that weapons possibility?",
-              "duration": 2.873469
+              "text": "Is the timing significant here?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "Some are. Nuclear experts and former officials in Israel have voiced concern the plan could ultimately lead to Saudi Arabia being able to develop a nuclear weapon.",
-              "duration": 9.221224
+              "text": "Yes. This is happening while the U.S. and Iran have been trading strikes in the Persian Gulf, which adds to the tension.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "So there's a tension between the business opportunity and the security risk.",
-              "duration": 4.362449
+              "text": "That does seem like a complicated moment for this kind of deal.",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. The US is emphasizing regional security and nonproliferation standards, but the concern remains.",
-              "duration": 5.694694
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカとサウジアラビアが、サウジの民間向け原子力開発を認める協定に署名しました。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "この協定で、アメリカ企業がサウジ国内のウラン濃縮施設の建設に関わる道が開かれます。",
-              "duration": 7.128
-            },
-            {
-              "speaker": "narrator",
-              "text": "ウラン濃縮は発電所の燃料として使われますが、核兵器の材料にもなり得る技術です。",
-              "duration": 6.624
-            },
-            {
-              "speaker": "narrator",
-              "text": "アメリカ政府は、この協定が核の安全と不拡散の高い基準を守りながら、自国の民間原子力技術の競争力を高めると説明しています。",
-              "duration": 10.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で、イスラエルの専門家や元政府関係者からは懸念の声が上がっています。",
-              "duration": 6.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "将来サウジが核兵器を持つ可能性につながるのではないか、という見方です。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "協定の規模は数十億ドルに達するとみられ、アメリカ企業にとって大きな商機となります。",
-              "duration": 6.696
-            },
-            {
-              "speaker": "narrator",
-              "text": "中東の安全保障の構図が、静かに変わり始めているのかもしれません。",
-              "duration": 5.52
+              "text": "It is. Israel sees itself as a major American ally, so any shift in how the U.S. engages with Saudi Arabia gets close attention there.",
+              "duration": 7.706122
             }
           ]
         }
@@ -145,123 +99,77 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Ukraine's Zelenskyy fires top military commander amid ongoing protests",
-      "summary": "Ukraine's President Volodymyr Zelenskyy fires the country's army chief, just days after he dismissed the defense minister.",
+      "source": "Al Jazeera",
+      "headline": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
+      "summary": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
       "keyTakeaways": [
-        "LEILA FADEL, HOST: Ukraine's president, Volodymyr Zelenskyy, has now fired the country's top military commander.",
-        "Just a few days ago, Zelenskyy fired the country's defense minister.",
-        "FADEL: So in less than a week, President Zelenskyy fired the two top figures leading Ukraine's war against Russia."
+        "The United States continued to hit Iran for a 12th consecutive night early on Thursday, and Iran retaliated, striking targets across the Gulf, particularly in Kuwait and Jordan.",
+        "Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday that an explosion set a tanker ablaze in the Strait of Hormuz after it attempted to navigate the southern route off the coast of Oman.",
+        "Here is a recap of what happened on Wednesday night and Thursday."
       ],
-      "whyItMatters": "Together, it's one of the most significant military shakeups in the past four years of Ukraine's war with Russia.",
-      "originalURL": "https://www.npr.org/2026/07/22/nx-s1-5902279/ukraines-zelenskyy-fires-top-military-commander-amid-ongoing-protests",
+      "whyItMatters": "The Houthis, meanwhile, claimed a major operation against two Saudi oil tankers in the Red Sea, called the Encelia and the Layla.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/23/iran-houthis-strike-tankers-as-us-bombing-continues-whats-the-latest?traffic_source=rss",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ゼレンスキー大統領、軍トップを相次いで更迭",
-          "summary": "ウクライナのゼレンスキー大統領が、国軍の総司令官を解任した。国防相の更迭からわずか数日後のことだ。",
+          "headline": "ホルムズ海峡でタンカー炎上、米軍の爆撃も続く",
+          "summary": "米軍によるイランへの爆撃が12夜連続で続くなか、イランは湾岸各地の目標に報復攻撃を行った。クウェートやヨルダンにも影響が及んでいる。水曜夜から木曜にかけての動きをまとめた。",
           "keyTakeaways": [
-            "ゼレンスキー大統領が、ウクライナ軍の最高司令官を解任した。",
-            "その数日前には、国防相もすでに更迭されていた。",
-            "1週間も経たないうちに、戦時下の軍を率いる二人の最高幹部が相次いで交代することになった。"
+            "米軍は木曜未明、12夜連続となるイランへの攻撃を実施。イランも湾岸各地に報復した",
+            "イラン革命防衛隊は、オマーン沖の南回り航路を航行しようとしたタンカーがホルムズ海峡で爆発・炎上したと発表した",
+            "水曜夜から木曜にかけての主な出来事を振り返る"
           ],
-          "whyItMatters": "ロシアとの戦争が続く4年間で、これほど大規模な軍の指導部刷新は前例がない。"
+          "whyItMatters": "フーシ派も紅海で「エンセリア」「レイラ」と呼ばれるサウジアラビアのタンカー2隻への大規模攻撃を実施したと主張しており、海上の緊張はさらに高まっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw that Ukraine's president just fired his top military commander. What's happening there?",
-              "duration": 5.093878
+              "text": "There's a lot happening in the Gulf region right now. Can you walk me through what's going on?",
+              "duration": 4.963265
             },
             {
               "speaker": "explainer",
-              "text": "President Zelenskyy removed the country's army chief from his position. This comes just days after he also dismissed the defense minister.",
-              "duration": 7.418776
+              "text": "Yes. The US has been conducting strikes against Iran for twelve consecutive nights now, and early Thursday that continued. Iran has been responding by striking targets across the Gulf.",
+              "duration": 11.650612
             },
             {
               "speaker": "listener",
-              "text": "So both the top military leaders are out in less than a week?",
-              "duration": 3.056327
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. These were the two top figures leading Ukraine's war effort against Russia.",
-              "duration": 4.414694
-            },
-            {
-              "speaker": "listener",
-              "text": "That seems like a pretty big deal during an ongoing war.",
-              "duration": 3.239184
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. This is being called one of the most significant military shakeups in the past four years of the war.",
-              "duration": 6.530612
-            },
-            {
-              "speaker": "listener",
-              "text": "Do we know why he made these changes now?",
+              "text": "Where specifically has Iran been targeting?",
               "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "The reporting doesn't specify the reasons behind the dismissals. What we know is the timing and that protests are ongoing in the country.",
-              "duration": 7.288163
+              "text": "Particularly in Kuwait and Jordan, according to reports. And Iran's Revolutionary Guard also said a tanker caught fire in the Strait of Hormuz on Thursday after an explosion.",
+              "duration": 9.613061
             },
             {
               "speaker": "listener",
-              "text": "That's a lot of uncertainty at a critical moment.",
-              "duration": 2.324898
+              "text": "That's a critical shipping route. What about the Houthis—are they involved too?",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "It is. Leadership changes like this during wartime always raise questions about strategy and direction going forward.",
-              "duration": 6.4
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ウクライナのゼレンスキー大統領が、軍の総司令官を解任しました。",
-              "duration": 5.232
+              "text": "They are. The Houthis claimed responsibility for a major operation against two Saudi oil tankers in the Red Sea—vessels called the Encelia and the Layla.",
+              "duration": 9.639184
             },
             {
-              "speaker": "narrator",
-              "text": "その数日前には国防相も更迭されていて、1週間足らずで軍の最高幹部2人が職を失ったことになります。",
-              "duration": 8.472
+              "speaker": "listener",
+              "text": "So we're seeing attacks on shipping from multiple directions.",
+              "duration": 3.108571
             },
             {
-              "speaker": "narrator",
-              "text": "ロシアとの戦争が始まって4年になりますが、これほど大きな軍の指導部の入れ替えは初めてです。",
-              "duration": 6.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "戦時下で軍を率いる立場の人事が短期間に動くのは、異例のことです。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には国内での抗議活動も続いていて、政権への圧力が高まっている様子がうかがえます。",
-              "duration": 7.08
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後、新しい指導部がどのように戦況に向き合うのか、注目されます。",
-              "duration": 5.568
+              "speaker": "explainer",
+              "text": "Exactly. It's a tense situation with strikes and retaliation happening across several key waterways and countries in the region.",
+              "duration": 6.217143
             }
           ]
         }
@@ -273,122 +181,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "British woman jailed in Hong Kong for blackmail after accusing banker of rape",
-      "summary": "A British woman who reported being raped to police in Hong Kong has been sentenced to six years in prison for blackmail and perverting the course of public justice.",
+      "headline": "‘Cockroach’ protests: India’s Modi promises to punish officials over exam leaks",
+      "summary": "Narendra Modi has vowed to set up “fast-track courts” to speed up the punishment of officials accused of leaking examination papers, as the Indian prime minister seeks to quell a youth-led “cockroach” protest movement that has rocked Delhi and posed one of the biggest challenges to his government.",
       "keyTakeaways": [
-        "Isabel Rose, 26, from south-east London, travelled to Hong Kong in early 2024 to visit a British banker she had met while travelling in south-east Asia.",
-        "The Hong Kong district judge Adriana Noelle Tse Ching said Rose had “not shown an iota of remorse” before handing down the sentence, and called the allegation “completely fabricated”.",
-        "Rose travelled to Hong Kong in January 2024 after meeting the banker on holiday in Thailand."
+        "In his first public remarks on the movement, Modi posted on X: “Nothing is more important than the welfare and future of our youth … Those who try to harm the future of our youth will not be spared.”",
+        "Modi’s statement follows signs the government may be softening its stance.",
+        "Young people across India have also rallied behind the CJP’s demands, with three consecutive days of demonstrations in Mumbai and solidarity protests in Chennai, Indore, Hyderabad and Patiala."
       ],
-      "whyItMatters": "The judge said the escalating demands amounted to blackmail.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/22/british-woman-jailed-hong-kong-false-allegations",
+      "whyItMatters": "Renuka Chowdhury, an opposition MP with the Congress party, told the news channel India Today that no one could fathom why Modi would not sack Pradhan.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/23/cockroach-janta-party-protest-cjp-india-modi-corrupt-officials",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "レイプ被害を訴えた英国人女性、香港で恐喝罪により実刑判決",
-          "summary": "香港警察にレイプ被害を申告した英国人女性が、恐喝および司法妨害の罪で懲役6年の実刑判決を受けた。",
+          "headline": "試験問題漏洩に揺れるインド――モディ首相が厳正対処を約束",
+          "summary": "インドのモディ首相は、試験問題の漏洩に関与した官僚を迅速に裁くため「ファストトラック裁判所」を設置すると表明した。若者たちが主導する抗議運動「ゴキブリ運動」がデリーを揺るがし、政権にとって最大級の試練となるなか、首相は事態の沈静化を図っている。",
           "keyTakeaways": [
-            "ロンドン南東部出身のイザベル・ローズ（26歳）は、東南アジア旅行中に知り合った英国人銀行家を訪ねて2024年初頭に香港へ渡った。",
-            "香港地方裁判所のアドリアナ・ノエル・謝靖裁判官は、ローズが「一切の反省を示さなかった」と述べ、申告内容を「完全な虚偽」と断じたうえで量刑を言い渡した。",
-            "ローズはタイでの休暇中にその銀行家と出会い、2024年1月に香港を訪れていた。"
+            "モディ首相はXへの投稿で初めて公式に言及し、「若者の未来を傷つけようとする者は決して許さない」と述べた。",
+            "政府の姿勢が軟化しつつある兆しを受けての発言とみられる。",
+            "抗議行動はムンバイで三日連続、チェンナイやハイデラバードなど各地でも連帯デモが広がっている。"
           ],
-          "whyItMatters": "裁判官は、金銭要求がエスカレートしていった経緯が恐喝にあたると判断した。"
+          "whyItMatters": "野党・国民会議派のレヌカ・チョードリー議員は、モディ首相がなぜプラダン大臣を更迭しないのか、誰にも理解できないと語った。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "There's a troubling case out of Hong Kong involving a British woman. What happened?",
-              "duration": 4.127347
+              "text": "I saw something about protests in India called 'cockroach' protests. What's happening there?",
+              "duration": 5.198367
             },
             {
               "speaker": "explainer",
-              "text": "A 26-year-old woman from south-east London, Isabel Rose, has been sentenced to six years in prison there.",
-              "duration": 5.250612
+              "text": "There's been a youth-led protest movement in Delhi over examination paper leaks. Students are upset because officials allegedly leaked exam papers, which undermines the fairness of the system.",
+              "duration": 10.475102
             },
             {
               "speaker": "listener",
-              "text": "What was she convicted of?",
-              "duration": 1.515102
+              "text": "And Modi just responded to this?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Blackmail and perverting the course of public justice. She had accused a British banker of rape after travelling to Hong Kong to visit him.",
-              "duration": 7.47102
+              "text": "Yes, in his first public remarks on the movement. He posted that nothing is more important than the welfare and future of young people, and promised those who harm their future won't be spared.",
+              "duration": 10.527347
             },
             {
               "speaker": "listener",
-              "text": "So the court didn't believe her accusation?",
-              "duration": 2.324898
+              "text": "What's he actually doing about it?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "The judge called the allegation completely fabricated. She said Rose had not shown any remorse.",
-              "duration": 5.616327
+              "text": "He's vowed to set up fast-track courts to speed up punishment for officials accused of leaking the papers. It seems the government may be softening its stance after facing this challenge.",
+              "duration": 9.221224
             },
             {
               "speaker": "listener",
-              "text": "How did they know each other?",
-              "duration": 1.436735
+              "text": "Is this just happening in Delhi?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "They'd met while travelling in south-east Asia — she was on holiday in Thailand. She travelled to Hong Kong in January 2024 to visit him.",
-              "duration": 7.78449
+              "text": "No, young people across India have joined in. There've been three consecutive days of demonstrations in Mumbai, plus solidarity protests in Chennai, Indore, Hyderabad, and Patiala.",
+              "duration": 10.34449
             },
             {
               "speaker": "listener",
-              "text": "What led to the blackmail charge?",
-              "duration": 2.089796
+              "text": "Why is this such a big deal for Modi's government?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "The judge said Rose made escalating demands, which amounted to blackmail.",
-              "duration": 3.84
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "香港で、英国人女性が懲役6年の判決を受けました。",
-              "duration": 5.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "女性は警察にレイプ被害を訴えていましたが、裁判所は恐喝と司法妨害の罪を認定しました。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "26歳のイザベル・ローズは、タイ旅行中に知り合った英国人銀行家を訪ねて香港へ渡っていました。",
-              "duration": 7.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "裁判官は、彼女の訴えを完全な虚偽と判断し、金銭要求が段階的に高まった点を恐喝と認めました。",
-              "duration": 8.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "ローズは一切の反省を示さなかったと、判決の場で指摘されています。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "虚偽の申告が重い刑罰につながった事例として、記録に残ることになります。",
-              "duration": 5.832
+              "text": "It's being described as one of the biggest challenges to his government. The scale and persistence of the youth movement has really put pressure on leadership to respond.",
+              "duration": 7.967347
             }
           ]
         }
@@ -410,17 +282,17 @@
       "whyItMatters": "They may have some minor cosmetic imperfections, but are tested and certified by Sony to perform just as well as a new console.",
       "originalURL": "https://www.theverge.com/gadgets/969003/apple-ipad-air-pro-airtag-deal-sale",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Keyboard",
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "値上がりしたiPadが、いま少し手に届きやすい価格に",
-          "summary": "1TBストレージと5G接続オプションを備えたこのモデルが、希望小売価格から500ドル引きの749ドルで販売されている。",
+          "headline": "値上がりしたiPadが、いま少し手に届きやすくなっている",
+          "summary": "対象モデルはストレージ1TB、オプションで5G接続にも対応。希望小売価格から500ドル引きとなる749ドルで販売されている。",
           "keyTakeaways": [
-            "ソニーが整備済みのPlayStation 5 Slimを499ドルで販売中。通常より100ドル安い。",
-            "第2世代AirTag 4個パックがAmazonで89.99ドルに。過去最安値に並ぶ水準だ。",
-            "Razer Viper V3 ProワイヤレスゲーミングマウスがAmazonで99.99ドル。通常より約30ドル低い。"
+            "ソニーがPlayStation 5 Slimのリファービッシュ品を499ドルで販売中。通常価格より100ドル安い。",
+            "第2世代AirTag 4個セットがAmazonで89.99ドルに。通常99.99ドルのところ、過去最安値に並ぶ価格だ。",
+            "AmazonでRazer Viper V3 Proワイヤレスゲーミングマウスが99.99ドルに。通常より約30ドル低い。"
           ],
           "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
         }
@@ -428,89 +300,48 @@
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about iPads being on sale. What's the deal?",
-              "duration": 3.369796
+              "text": "I saw something about iPads being cheaper right now. What's the deal?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
               "text": "There's a model with a terabyte of storage and optional 5G that's marked down to seven forty-nine. That's five hundred dollars off the suggested retail price.",
-              "duration": 8.385306
+              "duration": 8.176327
             },
             {
               "speaker": "listener",
-              "text": "Five hundred off? That's a big discount. Are there other tech deals happening right now?",
-              "duration": 4.597551
+              "text": "Five hundred off? That's a big discount. Are there other tech deals happening too?",
+              "duration": 5.01551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
+              "text": "Yeah, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
               "duration": 7.653878
             },
             {
               "speaker": "listener",
-              "text": "Refurbished though—does that mean there's something wrong with them?",
-              "duration": 3.604898
+              "text": "Refurbished though—does that mean they're not as good?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
               "text": "They may have minor cosmetic imperfections, but Sony tests and certifies them to perform just as well as new consoles.",
-              "duration": 6.530612
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "Got it. What else is discounted?",
-              "duration": 1.906939
+              "text": "Got it. Anything else on sale?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Apple AirTags are on sale—a four pack of the second generation is eighty-nine ninety-nine at Amazon, matching their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
-              "duration": 11.232653
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Appleの大容量iPadが、いま通常より大幅に安く買えるようになっています。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "1テラバイトの保存容量と5G通信に対応したモデルが、定価から500ドル引きの749ドルです。",
-              "duration": 8.304
-            },
-            {
-              "speaker": "narrator",
-              "text": "ソニーは整備済みのプレイステーション5スリムを499ドルで出していて、これは通常より100ドル安い価格です。",
-              "duration": 8.328
-            },
-            {
-              "speaker": "narrator",
-              "text": "見た目に小さな傷があることもありますが、ソニーが検査して性能を保証しています。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "アップルのエアタグ第2世代の4個セットは、アマゾンで89.99ドルに下がっていて、これまでで最も安い水準です。",
-              "duration": 9.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "レイザーのワイヤレスゲーミングマウス、ヴァイパーV3プロも、通常より30ドルほど安い99.99ドルで手に入ります。",
-              "duration": 9.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "値上げが続くなかで、こうした割引は買い替えを考えている人にとって貴重な機会になりそうです。",
-              "duration": 7.056
+              "text": "Apple AirTags are discounted. A four-pack of the second generation is eighty-nine ninety-nine at Amazon—that matches their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
+              "duration": 11.52
             }
           ]
         }
@@ -532,107 +363,66 @@
       "whyItMatters": "In a shareholder deck, Tesla said it “generated over $100B in revenue on a trailing twelve-month basis for the first time.” It also touted Cybercab production at its Gigafactory in Texas, and said Tesla Semi production “remains on track” at its Nevada facility later this year.",
       "originalURL": "https://www.theverge.com/transportation/969311/tesla-q2-2026-earnings-revenue-profit-sales",
       "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "テスラ、売上は回復基調も利益は依然低迷",
-          "summary": "テスラはAIインフラやロボティクスといった大型プロジェクトへの投資を拡大しており、フリーキャッシュフローはマイナスの状態が続いている。",
+          "headline": "テスラ、売上は回復基調も利益は依然として薄い",
+          "summary": "テスラがAIインフラやロボティクスといった大型プロジェクトへの投資を拡大するなか、フリーキャッシュフローはマイナス圏に沈んでいる。",
           "keyTakeaways": [
-            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランドへのダメージと、苦難の2年間を経て、テスラの回復は着実に進んでいる。",
-            "とはいえ、テスラの本業はあくまで自動車メーカーだ。",
-            "在庫の圧縮は順調に進んでおり、財務体質の改善に寄与している。"
+            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランド毀損と、苦難の二年間を経たテスラだが、回復への歩みは着実に続いている。",
+            "大きな野心を掲げながらも、テスラの収益の軸は依然として自動車にある。",
+            "在庫の圧縮は順調に進んでおり、財務体質の改善という点では評価できる。"
           ],
-          "whyItMatters": "テスラは株主向け資料の中で、直近12か月の累計売上高が初めて1000億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産やネバダ州でのテスラ・セミの生産計画が順調に進んでいることも強調した。"
+          "whyItMatters": "テスラは株主向け資料のなかで、直近十二か月の累計売上高が初めて一千億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産や、ネバダ工場でのテスラ・セミの年内生産開始が予定通り進んでいることも強調した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Tesla's doing better than it was?",
-              "duration": 2.089796
+              "text": "So Tesla's revenues are improving. Does that mean the company's doing well again?",
+              "duration": 4.440816
             },
             {
               "speaker": "explainer",
-              "text": "Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just passed a hundred billion dollars in revenue over the last twelve months for the first time.",
-              "duration": 10.109388
+              "text": "It's a mixed picture. Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just crossed a hundred billion dollars over the past twelve months for the first time.",
+              "duration": 10.762449
             },
             {
               "speaker": "listener",
-              "text": "That sounds good. But the headline says profits are still weak?",
-              "duration": 3.657143
+              "text": "That sounds pretty good. What's the problem then?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Right. They're actually in negative free cash flow right now because they're spending heavily on big projects like AI infrastructure and robotics.",
-              "duration": 7.523265
+              "text": "Profits are still weak, and the company's actually in negative free cash flow right now. They're spending heavily on things like AI infrastructure and robotics.",
+              "duration": 8.724898
             },
             {
               "speaker": "listener",
-              "text": "So they're making more money but spending even more?",
-              "duration": 2.586122
+              "text": "Right, but Tesla's more than just cars now, isn't it?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. They've also been working on reducing inventory, which helps their balance sheet. And they're moving ahead with production plans for the Cybercab in Texas and the Semi truck in Nevada later this year.",
-              "duration": 10.893061
+              "text": "Despite all those other projects, Tesla remains fundamentally a car company. They did manage to shrink their inventory though, which helps their balance sheet.",
+              "duration": 8.202449
             },
             {
               "speaker": "listener",
-              "text": "Is Tesla still mainly a car company despite all these other projects?",
-              "duration": 3.996735
+              "text": "Are they making progress on those newer vehicles?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, despite everything else, Tesla remains a car company at its core.",
-              "duration": 3.94449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-22/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Teslaの売上が、ここ2年ほどの落ち込みから持ち直してきました。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "直近12か月の合計で、初めて1000億ドルを超えたそうです。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、利益の面ではまだ弱さが残っています。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、AIやロボット開発への大きな投資があります。",
-              "duration": 4.896
-            },
-            {
-              "speaker": "narrator",
-              "text": "そのため、自由に使える現金の流れはマイナスが続いています。",
-              "duration": 4.92
-            },
-            {
-              "speaker": "narrator",
-              "text": "テキサスやネバダの工場では、新しい車の生産が進んでいるとのことです。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "売上の回復は見えても、収益力が戻るかは今後の課題になりそうです。",
-              "duration": 5.808
+              "text": "They say Cybercab production is happening at their Texas factory, and Semi production at the Nevada facility is still on track for later this year.",
+              "duration": 7.967347
             }
           ]
         }

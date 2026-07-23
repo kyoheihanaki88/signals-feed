@@ -179,33 +179,40 @@ jobs:
             --max-age-hours 36 \
             --summary-file "$GITHUB_STEP_SUMMARY"
 
-      # 2) Ranker — deterministic auto-select. HARD GATES (exit 1 → fail closed): <20 candidates,
-      #    <5 real URLs, no lead-quality story, <4 supporting, dup URLs, missing real URL.
-      - name: Ranker (auto-select 5)
+      # 2–6) Ranker → selection → Writer draft → STRICT validation, orchestrated WITH
+      #    AUTOMATIC RECOVERY (Fix 1). Identical components, identical gates, identical
+      #    strictness — validation rules are unchanged and still fail-closed. When one
+      #    extracted draft fails strict validation (the 2026-07-22 incident: six runs
+      #    blocked by "[0ebcac] missing ['keyTakeaways']"), recovery A refetches +
+      #    redrafts the failed story once; recovery B then deterministically re-ranks
+      #    WITHOUT the still-failing candidate id(s) (ranker --exclude) for at most 3
+      #    replacement rounds — at most 5 strict validations in total. Ranking authority,
+      #    diversity, lead selection, and every eligibility gate stay with ranker.py /
+      #    selection.py. Pool exhaustion or a selection-level failure fails closed —
+      #    never a partial or 4-story edition. Every attempted candidate is recorded in
+      #    pipeline/out/drafts.json (uploaded below, if: always()).
+      - name: Rank, draft, validate (with automatic recovery)
         run: |
-          python pipeline/ranker.py \
-            --candidates pipeline/candidates.json \
-            --out pipeline/selection.yaml \
+          python pipeline/publish_recovery.py \
+            --date "$EDITION_DATE" \
             --summary-file "$GITHUB_STEP_SUMMARY"
 
-      # 3) Approval gate — only auto-approved selections proceed.
+      # Attempts audit — uploaded on success AND failure (no silent drops; ids/titles/
+      # URLs and validator messages only — no article bodies, no secrets).
+      - name: Upload publish attempts artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-attempts-${{ env.EDITION_DATE }}
+          path: pipeline/out/drafts.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      # 3) Approval gate — only auto-approved selections proceed (unchanged; the recovery
+      #    step's final selection.yaml is what gets checked).
       - name: Gate — selection approved
         run: |
           grep -qx 'approved: true' pipeline/selection.yaml
-
-      # 4) Selection — validate picks (exactly 1 lead + 4 supporting, real URLs, no dupes).
-      - name: Build selection.json
-        run: python pipeline/selection.py build
-
-      # 5) Writer — extractive drafts grounded in real source text only (never invents).
-      - name: Writer (draft)
-        run: python pipeline/writer.py draft
-
-      # 6) Validate drafts — STRICT: hard-fail on thin_source / whyItMatters_needs_human / low
-      #    confidence / missing keyTakeaways or whyItMatters. Stops here (no approval, no build) if
-      #    the 5 drafts aren't complete — so thin/incomplete content can never auto-publish.
-      - name: Validate drafts (strict)
-        run: python pipeline/writer.py validate --strict
 
       # 6b) Auto-approve — ONLY reached after strict validation passes. Adds the top-level approval
       #     build.py requires. (build.py still re-checks every per-signal gate independently.)

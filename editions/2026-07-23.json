@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-23",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "U.S. nuclear power deal with Saudi Arabia faces criticism in Israel",
+      "summary": "The nuclear power deal between the U.S. and Saudi Arabia was met with alarm in Israel as it deepened concerns that Israel, a major American ally, and Trump are increasingly diverging on foreign policy and security.",
+      "keyTakeaways": [
+        "Saudi Arabia is one of the world's largest oil producers, but the Gulf state has been trying to pivot to other energy sources.",
+        "Its nuclear energy program is expected to last decades and be worth billions of dollars, according to the Department of Energy.",
+        "Nuclear power would allow Saudi Arabia to use less petroleum energy domestically and maximize exports as well, Matthew Bunn, a nuclear proliferation expert at Harvard University told NPR's All Things Considered."
+      ],
+      "whyItMatters": "TEL AVIV — An agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia was met with alarm in Israel on Thursday, as the U.S. and Iran continued to trade strikes in the latest escalation engulfing the Persian Gulf.",
+      "originalURL": "https://www.npr.org/2026/07/23/nx-s1-5904327/us-saudi-arabia-iran",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米サウジ原子力協定、イスラエルに波紋",
+          "summary": "米国とサウジアラビアの原子力協定が、イスラエルに強い懸念をもたらしている。米国の重要な同盟国であるイスラエルとトランプ政権の間で、外交・安全保障をめぐる方針の乖離が深まっているとの見方が広がっている。",
+          "keyTakeaways": [
+            "サウジアラビアは世界有数の産油国だが、近年はエネルギー源の多角化を模索してきた。",
+            "エネルギー省によれば、同国の原子力開発計画は数十年規模に及び、総額は数十億ドルに上る見通しだ。",
+            "ハーバード大学の核不拡散専門家マシュー・バン氏は、原子力の活用により国内の石油消費を抑え、輸出を最大化できると指摘する。"
+          ],
+          "whyItMatters": "米企業によるサウジアラビアへの原子力発電所建設・運営合意が伝わったテルアビブでは、米国とイランの応酬が続くペルシャ湾の緊張を背景に、イスラエル側の警戒感が一段と高まっている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
+      "summary": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
+      "keyTakeaways": [
+        "The United States continued to hit Iran for a 12th consecutive night early on Thursday, and Iran retaliated, striking targets across the Gulf, particularly in Kuwait and Jordan.",
+        "Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday that an explosion set a tanker ablaze in the Strait of Hormuz after it attempted to navigate the southern route off the coast of Oman.",
+        "Here is a recap of what happened on Wednesday night and Thursday."
+      ],
+      "whyItMatters": "The Houthis, meanwhile, claimed a major operation against two Saudi oil tankers in the Red Sea, called the Encelia and the Layla.",
+      "originalURL": "https://www.aljazeera.com/news/2026/7/23/iran-houthis-strike-tankers-as-us-bombing-continues-whats-the-latest?traffic_source=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホルムズ海峡でタンカー炎上、米軍の爆撃も続く",
+          "summary": "米軍によるイランへの爆撃が12夜連続で続くなか、イランは湾岸各地の目標に報復攻撃を行った。クウェートやヨルダンにも影響が及んでいる。水曜夜から木曜にかけての動きをまとめた。",
+          "keyTakeaways": [
+            "米軍は木曜未明、12夜連続となるイランへの攻撃を実施。イランも湾岸各地に報復した",
+            "イラン革命防衛隊は、オマーン沖の南回り航路を航行しようとしたタンカーがホルムズ海峡で爆発・炎上したと発表した",
+            "水曜夜から木曜にかけての主な出来事を振り返る"
+          ],
+          "whyItMatters": "フーシ派も紅海で「エンセリア」「レイラ」と呼ばれるサウジアラビアのタンカー2隻への大規模攻撃を実施したと主張しており、海上の緊張はさらに高まっている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "‘Cockroach’ protests: India’s Modi promises to punish officials over exam leaks",
+      "summary": "Narendra Modi has vowed to set up “fast-track courts” to speed up the punishment of officials accused of leaking examination papers, as the Indian prime minister seeks to quell a youth-led “cockroach” protest movement that has rocked Delhi and posed one of the biggest challenges to his government.",
+      "keyTakeaways": [
+        "In his first public remarks on the movement, Modi posted on X: “Nothing is more important than the welfare and future of our youth … Those who try to harm the future of our youth will not be spared.”",
+        "Modi’s statement follows signs the government may be softening its stance.",
+        "Young people across India have also rallied behind the CJP’s demands, with three consecutive days of demonstrations in Mumbai and solidarity protests in Chennai, Indore, Hyderabad and Patiala."
+      ],
+      "whyItMatters": "Renuka Chowdhury, an opposition MP with the Congress party, told the news channel India Today that no one could fathom why Modi would not sack Pradhan.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/23/cockroach-janta-party-protest-cjp-india-modi-corrupt-officials",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "試験問題漏洩に揺れるインド――モディ首相が厳正対処を約束",
+          "summary": "インドのモディ首相は、試験問題の漏洩に関与した官僚を迅速に裁くため「ファストトラック裁判所」を設置すると表明した。若者たちが主導する抗議運動「ゴキブリ運動」がデリーを揺るがし、政権にとって最大級の試練となるなか、首相は事態の沈静化を図っている。",
+          "keyTakeaways": [
+            "モディ首相はXへの投稿で初めて公式に言及し、「若者の未来を傷つけようとする者は決して許さない」と述べた。",
+            "政府の姿勢が軟化しつつある兆しを受けての発言とみられる。",
+            "抗議行動はムンバイで三日連続、チェンナイやハイデラバードなど各地でも連帯デモが広がっている。"
+          ],
+          "whyItMatters": "野党・国民会議派のレヌカ・チョードリー議員は、モディ首相がなぜプラダン大臣を更迭しないのか、誰にも理解できないと語った。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Price-hiked iPads are a little cheaper right now",
+      "summary": "This model sports 1TB of storage, an optional 5G cellular connection, and it’s marked down to $749, a $500 discount from the suggested retail price.",
+      "keyTakeaways": [
+        "Sony is selling refurbished Playstation 5 Slim consoles for $499, a $100 break from the usual price.",
+        "Normally $99.99, a four pack of the second-generation Apple AirTags are on sale for $89.99 at Amazon, matching their lowest price ever.",
+        "Amazon has the Razer Viper V3 Pro wireless gaming mouse listed for $99.99, about $30 lower than its usual price."
+      ],
+      "whyItMatters": "They may have some minor cosmetic imperfections, but are tested and certified by Sony to perform just as well as a new console.",
+      "originalURL": "https://www.theverge.com/gadgets/969003/apple-ipad-air-pro-airtag-deal-sale",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "値上がりしたiPadが、いま少し手に届きやすくなっている",
+          "summary": "対象モデルはストレージ1TB、オプションで5G接続にも対応。希望小売価格から500ドル引きとなる749ドルで販売されている。",
+          "keyTakeaways": [
+            "ソニーがPlayStation 5 Slimのリファービッシュ品を499ドルで販売中。通常価格より100ドル安い。",
+            "第2世代AirTag 4個セットがAmazonで89.99ドルに。通常99.99ドルのところ、過去最安値に並ぶ価格だ。",
+            "AmazonでRazer Viper V3 Proワイヤレスゲーミングマウスが99.99ドルに。通常より約30ドル低い。"
+          ],
+          "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Tesla’s revenues are bouncing back, but profits are still weak",
+      "summary": "Tesla is in negative free cash flow territory, as it increases its expenditures on major projects like AI infrastructure and robotics.",
+      "keyTakeaways": [
+        "After a dismal two years of weakening demand, falling sales, and damage to its brand by Elon Musk’s political activities, Tesla’s road to recovery continues apace.",
+        "Despite that mission, Tesla remains a car company.",
+        "Tesla certainly did a good job shrinking its inventory, which is good for the balance sheet."
+      ],
+      "whyItMatters": "In a shareholder deck, Tesla said it “generated over $100B in revenue on a trailing twelve-month basis for the first time.” It also touted Cybercab production at its Gigafactory in Texas, and said Tesla Semi production “remains on track” at its Nevada facility later this year.",
+      "originalURL": "https://www.theverge.com/transportation/969311/tesla-q2-2026-earnings-revenue-profit-sales",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "テスラ、売上は回復基調も利益は依然として薄い",
+          "summary": "テスラがAIインフラやロボティクスといった大型プロジェクトへの投資を拡大するなか、フリーキャッシュフローはマイナス圏に沈んでいる。",
+          "keyTakeaways": [
+            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランド毀損と、苦難の二年間を経たテスラだが、回復への歩みは着実に続いている。",
+            "大きな野心を掲げながらも、テスラの収益の軸は依然として自動車にある。",
+            "在庫の圧縮は順調に進んでおり、財務体質の改善という点では評価できる。"
+          ],
+          "whyItMatters": "テスラは株主向け資料のなかで、直近十二か月の累計売上高が初めて一千億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産や、ネバダ工場でのテスラ・セミの年内生産開始が予定通り進んでいることも強調した。"
+        }
+      }
+    }
+  ]
+}

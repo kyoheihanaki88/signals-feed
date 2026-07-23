@@ -678,7 +678,7 @@ def why_quality_issues(why, summary, headline=""):
     return issues
 
 
-def _validate(selection_path, drafts_obj, source="", strict=False):
+def _validate(selection_path, drafts_obj, source="", strict=False, report_path=""):
     _, sig = load_selection(selection_path)
     by_id = {s["id"]: s for s in sig}
     drafts = drafts_obj["signals"]
@@ -766,6 +766,36 @@ def _validate(selection_path, drafts_obj, source="", strict=False):
         for w in warn:
             print(f"   - {w}")
     print("\nDRAFTS ONLY — nothing here is approved, assembled into latest.json, or published.")
+
+    # Machine-readable report (publish recovery / audit). Purely ADDITIVE: validation rules,
+    # human-readable output, and the return code above are untouched. The report is written on
+    # pass AND fail. Per-story buckets come from the existing "[id] …" message prefixes;
+    # selection-level failures (no id prefix) appear only in the top-level `hard` list, which
+    # recovery treats as unrecoverable. Contains messages + ids only — no article bodies,
+    # no source text, no secrets.
+    if report_path:
+        ids_in = [d["id"] for d in drafts]
+        def _for(msgs, did):
+            return [m for m in msgs if m.startswith(f"[{did}]")]
+        failed_ids = sorted({did for did in ids_in if _for(hard, did)})
+        report = {
+            "result": "fail" if hard else "pass",
+            "hard": hard,
+            "warnings": warn,
+            "failed_ids": failed_ids,
+            "stories": [{"id": did, "hard": _for(hard, did), "warnings": _for(warn, did)}
+                        for did in ids_in],
+        }
+        try:
+            parent = os.path.dirname(report_path)
+            if parent:
+                os.makedirs(parent, exist_ok=True)
+            with open(report_path, "w", encoding="utf-8") as f:
+                json.dump(report, f, ensure_ascii=False, indent=2)
+            print(f"validation report → {os.path.relpath(report_path)}")
+        except OSError as e:
+            sys.exit(f"ERROR: cannot write validation report to {report_path!r}: {e}")
+
     return 1 if hard else 0
 
 
@@ -773,7 +803,8 @@ def cmd_validate(args):
     if not os.path.exists(args.drafts):
         sys.exit(f"ERROR: {args.drafts} not found. Run `writer.py draft` first.")
     sys.exit(_validate(args.selection, json.load(open(args.drafts)),
-                       source=os.path.basename(args.drafts), strict=getattr(args, "strict", False)))
+                       source=os.path.basename(args.drafts), strict=getattr(args, "strict", False),
+                       report_path=getattr(args, "report", "") or ""))
 
 
 def main():
@@ -790,6 +821,9 @@ def main():
     v.add_argument("--drafts", default=DEF_OUT)
     v.add_argument("--strict", action="store_true",
                    help="auto-publish mode: hard-fail on thin/incomplete/low-confidence drafts (no hand-fill)")
+    v.add_argument("--report", default="",
+                   help="also write a machine-readable JSON validation report to this path "
+                        "(written on pass AND fail; validation rules and exit codes unchanged)")
     args = ap.parse_args()
     (cmd_draft if args.cmd == "draft" else cmd_validate)(args)
 

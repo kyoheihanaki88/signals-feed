@@ -416,6 +416,10 @@ def main():
     ap.add_argument("--fresh-hours", type=int, default=36)
     ap.add_argument("--summary-file", default=None)
     ap.add_argument("--now", default=None, help="override 'now' ISO8601 (testing/determinism)")
+    ap.add_argument("--exclude", default="",
+                    help="comma-separated candidate ids to EXCLUDE before selection (publish "
+                         "recovery: candidates whose drafts failed strict validation). Empty = "
+                         "current behavior, byte-identical output.")
     args = ap.parse_args()
 
     now = (datetime.datetime.fromisoformat(args.now.replace("Z", "+00:00"))
@@ -429,6 +433,20 @@ def main():
         fail(f"candidates.json is not valid JSON: {e}", args.summary_file)
 
     cands = data.get("candidates", [])
+
+    # Publish-recovery exclusion (Fix 1): drop the named ids BEFORE any gate or ranking, so an
+    # excluded candidate can never reappear as lead, supporting, or fallback. Matching covers both
+    # the candidate's own `id` and the selection.py lookup id (sha1 of canonical_url) — they are
+    # verified equal by GATE 6, but matching both keeps the exclusion robust. Every exclusion is
+    # logged (auditable, never silent). All existing gates then apply unchanged to the reduced pool.
+    excl = {x.strip() for x in (args.exclude or "").split(",") if x.strip()}
+    if excl:
+        dropped = [c for c in cands if short_id(c) in excl or selection_id(c) in excl]
+        cands = [c for c in cands if short_id(c) not in excl and selection_id(c) not in excl]
+        print(f"ranker: excluding {len(dropped)} candidate(s) by id: {', '.join(sorted(excl))}")
+        for c in sorted(dropped, key=short_id):
+            print(f"    excluded [{short_id(c)}] [{c.get('source','?')}] {c.get('title','')[:48]}")
+
     total = len(cands)
     print(f"ranker: {total} candidates from {os.path.basename(args.candidates)}")
 

@@ -83,6 +83,20 @@ check("missing/invalid artifact → RED failure, no silent fallback",
 check("latest.json re-fetched from origin/main on EVERY check",
       '"git", "fetch", "--quiet", "origin", "main"' in ja
       and 'git", "show", "origin/main:latest.json' in ja)
+# REGRESSION (2026-07-23): the wait heredoc's stdout is redirected into $GITHUB_OUTPUT,
+# so every subprocess run inside it that could emit stdout MUST capture/redirect it —
+# the uncaptured `git reset` printed "HEAD is now at …" into GITHUB_OUTPUT and failed
+# the probe as malformed output immediately after a correct proceed decision.
+check("reset is captured (git stdout can never leak into GITHUB_OUTPUT)",
+      re.search(r'subprocess\.run\(\["git", "reset", "--hard", "origin/main"\],\s*\n\s*'
+                r'check=True, capture_output=True, text=True\)', ja) is not None)
+_wait_block = re.search(r"Wait for EN merge propagation \(workflow_run only\)(.*?)- name: Resolve date", ja, re.S)
+check("wait heredoc extractable", _wait_block is not None)
+if _wait_block:
+    _calls = re.findall(r"subprocess\.run\((?:[^()]|\([^()]*\))*\)", _wait_block.group(1))
+    check("EVERY subprocess call inside the wait heredoc captures its output",
+          len(_calls) >= 2 and all("capture_output=True" in c for c in _calls))
+
 # The polling loop itself must not reassign `expected` — extract the for-block and prove it.
 _loop = re.search(r"for attempt in range\(1, MAX_ATTEMPTS \+ 1\):(.*?)\n\s*else:", ja, re.S)
 check("polling loop extractable", _loop is not None)

@@ -56,7 +56,7 @@ jobs:
     # actually SUCCEEDED. Cron and manual dispatch pass this guard unconditionally.
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15   # covers the bounded workflow_run merge-propagation wait (~10 min) below
     outputs:
       date: ${{ steps.check.outputs.date }}
       needed: ${{ steps.check.outputs.needed }}
@@ -67,13 +67,104 @@ jobs:
         with:
           ref: main
 
+      # MERGE-RACE FIX: workflow_run fires the moment the EN WORKFLOW completes, but the
+      # EN Listen PR auto-merges a minute or two later — and latest.json only advances at
+      # that merge. Without waiting, this probe reads pre-merge state and green-skips as
+      # "complete" for the PREVIOUS date (observed 2026-07-22: JA run #18 skipped in 10s
+      # while EN PR #133 merged minutes later; manual redispatch was needed).
+      #
+      # So, for workflow_run ONLY: resolve the EXPECTED edition date from origin/main's
+      # editions/ tree — the same authority the EN probe itself targets (its probe picks
+      # the newest editions/<date>.json). That is safe here because the edition file
+      # merged hours earlier in Daily Auto Publish (it is never mid-flight during a
+      # Listen run), and the just-succeeded EN run generated audio for exactly that
+      # newest edition. The stale checked-out latest.json is NEVER used for this.
+      # Then poll origin/main's latest.json (fresh fetch every check) until the EN merge
+      # lands. Cron backstop and manual dispatch keep their existing immediate behavior.
+      - name: Wait for EN merge propagation (workflow_run only)
+        id: wait
+        if: github.event_name == 'workflow_run'
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, re, subprocess, sys, time
+
+          MAX_ATTEMPTS = 10     # checks
+          SLEEP_SECONDS = 60    # between checks → ≈10 minutes maximum total wait
+
+          def sh(*args):
+              return subprocess.run(args, check=True, capture_output=True, text=True).stdout
+
+          def decide(latest_date, expected_date):
+              """Pure decision core (unit-tested in test_listen_ja_workflow.py):
+              proceed = the EN merge landed (latest now serves the expected edition);
+              stale   = latest is already NEWER than expected (an old event — a newer
+                        edition is being served; green-skip, never regress);
+              wait    = latest is older (merge not propagated yet — retry, this is
+                        neither "complete" nor "stale")."""
+              if latest_date == expected_date:
+                  return "proceed"
+              if latest_date > expected_date:
+                  return "stale"
+              return "wait"
+
+          def origin_state():
+              sh("git", "fetch", "--quiet", "origin", "main")
+              names = sh("git", "ls-tree", "-r", "--name-only", "origin/main", "editions/").split()
+              dates = sorted(m.group(1) for n in names
+                             if (m := re.search(r"(\d{4}-\d{2}-\d{2})\.json$", n)))
+              latest = json.loads(sh("git", "show", "origin/main:latest.json"))
+              return (dates[-1] if dates else ""), (latest.get("date") or "").strip()
+
+          expected = ""
+          observed = ""
+          for attempt in range(1, MAX_ATTEMPTS + 1):
+              newest_edition, observed = origin_state()
+              if not expected:
+                  expected = newest_edition   # fixed on the FIRST fetch — never moves mid-wait
+              if not expected:
+                  print("::error::origin/main has no editions — nothing for JA to target", file=sys.stderr)
+                  sys.exit(1)
+              print(f"JA probe attempt {attempt}/{MAX_ATTEMPTS}: expected={expected} latest={observed}", file=sys.stderr)
+              d = decide(observed, expected)
+              if d == "proceed":
+                  # Sync this checkout to the state just verified, so the resolve step
+                  # below (and every downstream gate) reads post-merge reality.
+                  subprocess.run(["git", "reset", "--hard", "origin/main"], check=True)
+                  print("decision=proceed")
+                  break
+              if d == "stale":
+                  print(f"stale workflow_run: latest {observed} is already NEWER than expected {expected} — a newer edition is being served; skipping (green)", file=sys.stderr)
+                  print("decision=stale")
+                  break
+              if attempt < MAX_ATTEMPTS:
+                  print(f"latest {observed} still older than expected {expected} — merge not propagated yet; sleeping {SLEEP_SECONDS}s", file=sys.stderr)
+                  time.sleep(SLEEP_SECONDS)
+          else:
+              print(f"::error::merge-propagation timeout: expected {expected}, latest remained {observed} after 10 minutes; the EN PR may not have merged", file=sys.stderr)
+              sys.exit(1)
+          print(f"expected={expected}")
+          print(f"observed={observed}")
+          print(f"attempts={attempt}")
+          PY
+
       - name: Resolve date from latest.json — JA coverage + EN precondition
         id: check
         env:
           INPUT_DATE: ${{ inputs.date }}
+          WAIT_DECISION: ${{ steps.wait.outputs.decision }}
+          WAIT_OBSERVED: ${{ steps.wait.outputs.observed }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, re, sys
+          # workflow_run only: the wait step already classified an old event whose
+          # expected edition has been SUPERSEDED by a newer served one — green-skip
+          # without touching the newer edition (a stale run must never consume it).
+          if (os.environ.get("WAIT_DECISION") or "").strip() == "stale":
+              print(f"date={(os.environ.get('WAIT_OBSERVED') or '').strip()}")
+              print("needed=false")
+              print("reason=stale_workflow_run")
+              print("stale workflow_run — a newer edition is already served; skipping (green)", file=sys.stderr)
+              sys.exit(0)
           want = (os.environ.get("INPUT_DATE") or "").strip()
           # latest.json is the SOURCE OF TRUTH for the target date — never the system
           # clock, never directory scanning. JA follows exactly the edition being served,
@@ -137,8 +228,13 @@ jobs:
             complete)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: listen.ja already 5/5 → nothing to do ✅" >> "$GITHUB_STEP_SUMMARY";;
             en_pending) echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: EN Listen not landed yet → skipped (JA never runs ahead of EN) ⏳" >> "$GITHUB_STEP_SUMMARY";;
             generate)   echo "## Auto Generate Listen JA — ${{ steps.check.outputs.date }}: JA missing → generating 🎙" >> "$GITHUB_STEP_SUMMARY";;
+            stale_workflow_run) echo "## Auto Generate Listen JA — stale workflow_run: a newer edition (${{ steps.check.outputs.date }}) is already served → skipped ✅" >> "$GITHUB_STEP_SUMMARY";;
             *)          echo "## Auto Generate Listen JA — latest.json has no valid date → nothing to do" >> "$GITHUB_STEP_SUMMARY";;
           esac
+          echo "event: \`${{ github.event_name }}\`" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            echo "workflow_run wait — decision=${{ steps.wait.outputs.decision }} expected=${{ steps.wait.outputs.expected }} observed=${{ steps.wait.outputs.observed }} checks=${{ steps.wait.outputs.attempts }}" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
   # ── 2) Generate — only when EN is in and JA is missing ─────────────────────────────
   listen-ja:

@@ -22,6 +22,7 @@ of the contract via the text checks).
 import os
 import re
 import sys
+import textwrap
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -59,6 +60,63 @@ check("latest.json.date is the source of truth (no dir scan, no clock)",
       'latest.get("date")' in ja and "max(eds)" not in ja and "glob.glob" not in ja)
 check("explicit date input is validated + must exist on main",
       "invalid date input" in ja and "not found on main" in ja)
+
+# ── workflow_run merge-race wait (Fix 2) ────────────────────────────────────────────
+check("wait step exists and is gated to workflow_run ONLY",
+      "Wait for EN merge propagation (workflow_run only)" in ja
+      and "if: github.event_name == 'workflow_run'" in ja)
+check("wait loop: at most 10 checks", "MAX_ATTEMPTS = 10" in ja)
+check("wait loop: 60 seconds between checks", "SLEEP_SECONDS = 60" in ja)
+check("every attempt logs 'JA probe attempt N/10: expected=… latest=…'",
+      "JA probe attempt {attempt}/{MAX_ATTEMPTS}: expected={expected} latest={observed}" in ja)
+check("expected date comes from origin/main editions (never the stale checkout latest.json)",
+      "ls-tree" in ja and "origin_state" in ja
+      and "fixed on the FIRST fetch" in ja)
+check("latest.json re-fetched from origin/main on EVERY check",
+      '"git", "fetch", "--quiet", "origin", "main"' in ja
+      and 'git", "show", "origin/main:latest.json' in ja)
+check("older latest → retry (explicitly NOT complete / NOT stale)",
+      "still older than expected" in ja and "merge not propagated yet" in ja)
+check("equal → proceed into the existing generation path (checkout synced first)",
+      "decision=proceed" in ja and '"git", "reset", "--hard", "origin/main"' in ja)
+check("newer → green-skip with reason=stale_workflow_run",
+      "decision=stale" in ja and "reason=stale_workflow_run" in ja
+      and "a newer edition is already served" in ja)
+check("stale run never consumes the newer edition (skip happens before any gate/generation)",
+      "must never consume it" in ja)
+check("timeout emits the merge-propagation error and fails RED (nonzero), never green-skips",
+      "merge-propagation timeout" in ja
+      and "the EN PR may not have merged" in ja
+      and re.search(r"merge-propagation timeout[^\n]*\n\s*sys\.exit\(1\)", ja) is not None)
+check("summary reports event + expected/observed/checks/decision",
+      "steps.wait.outputs.decision" in ja and "steps.wait.outputs.attempts" in ja
+      and "event: \\`${{ github.event_name }}\\`" in ja)
+check("stale_workflow_run has its own summary line", "stale workflow_run: a newer edition" in ja)
+
+# Script-level unit test of the pure decision core, extracted from the workflow heredoc —
+# the three terminal semantics are exercised as CODE, not just as YAML text.
+_m = re.search(r"def decide\(latest_date, expected_date\):.*?return \"wait\"", ja, re.S)
+check("decide() extractable for unit testing", _m is not None)
+if _m:
+    _ns = {}
+    exec(textwrap.dedent(_m.group(0)), _ns)
+    _d = _ns["decide"]
+    check("unit: latest == expected → proceed", _d("2026-07-22", "2026-07-22") == "proceed")
+    check("unit: latest NEWER than expected → stale (green-skip)", _d("2026-07-23", "2026-07-22") == "stale")
+    check("unit: latest OLDER than expected → wait (retry, not complete/stale)",
+          _d("2026-07-21", "2026-07-22") == "wait")
+
+# The JA TTS preset and audio architecture are untouched by this workflow change.
+_lg = open(os.path.join(HERE, "listen_generate.py"), encoding="utf-8").read()
+check("TTS preset unchanged: narrator ja-JP-NanamiNeural",
+      'AZURE_VOICE_JA_LISTENER = "ja-JP-NanamiNeural"' in _lg)
+check("TTS preset unchanged: customerservice style",
+      'AZURE_TTS_STYLE_JA_NARRATOR = "customerservice"' in _lg)
+check("TTS preset unchanged: rate +12%", 'AZURE_TTS_RATE_JA_LISTENER = "+12%"' in _lg)
+check("audio architecture unchanged: per-line SSML + raw per-line concatenation",
+      "def _azure_ssml" in _lg and "RAW byte concatenation of per-line MP3s" in _lg)
+check("pronunciation dictionary unchanged",
+      '("赤と金の", "赤ときんの")' in _lg)
 
 # ── Idempotence + EN precondition ───────────────────────────────────────────────────
 check("green skip when listen.ja already 5/5", "reason=complete" in ja and "ja == 5" in ja)
@@ -170,6 +228,16 @@ else:
           and "needed == 'true'" in wf["jobs"]["listen-ja"]["if"])
     check("concurrency block structurally correct",
           wf["concurrency"] == {"group": "auto-generate-listen-ja", "cancel-in-progress": False})
+    check("probe timeout-minutes covers the ~10-minute wait window",
+          wf["jobs"]["probe"]["timeout-minutes"] == 15)
+    _steps = wf["jobs"]["probe"]["steps"]
+    _wait = [s for s in _steps if s.get("id") == "wait"]
+    check("wait step structurally gated to workflow_run only",
+          bool(_wait) and _wait[0].get("if") == "github.event_name == 'workflow_run'")
+    _names = [s.get("name", "") for s in _steps]
+    check("wait runs after checkout and before the resolve step",
+          _names.index("Wait for EN merge propagation (workflow_run only)")
+          < _names.index("Resolve date from latest.json — JA coverage + EN precondition"))
     en_wf = yaml.safe_load(en)
     check("EN concurrency group differs from JA",
           en_wf["concurrency"]["group"] != wf["concurrency"]["group"])

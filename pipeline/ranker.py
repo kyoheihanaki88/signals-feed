@@ -491,9 +491,12 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
     or an already-chosen story's is SKIPPED (never relaxed).
 
     Category caps (the old silent 2→3→unlimited relaxation is REMOVED):
-      - WORLD: hard max 2; a 3rd only via the logged dominant-news override; NEVER more than 3.
+      - WORLD: max 2 in normal composition; a 3rd only via the logged dominant-news override.
       - other categories: CATEGORY_CAP, relaxed one explicit LOGGED step at a time only when the
-        pool can't otherwise fill the five (thin day) — exactly five is still guaranteed there.
+        pool can't otherwise fill the five (thin day).
+      - LAST RESORT, after everything above is exhausted: the emergency completion fallback
+        (see below) ignores category caps — WORLD may exceed 3 there — solely so balance
+        preferences can never fail an edition that has five credible distinct stories.
 
     Discovery slot: right after the lead, ONE supporting slot is offered to the highest-ranked
     qualifying consumer-launch/discovery story — but only a genuinely strong one
@@ -562,12 +565,42 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
                 print(f"  category cap relaxed to {CATEGORY_CAP + relax} for non-WORLD categories "
                       f"(thin pool — WORLD stays capped)")
                 continue
-            break                         # distinct topics ran out → caller fails closed
+            break                         # caps/topics exhausted → emergency completion below
         if best_tag == "world-3rd-override":
             print(f"  WORLD cap override: 3rd WORLD story allowed — id={short_id(best)} is a "
                   f"dominant multi-publisher event (cluster {best.get('cluster_size')}, "
                   f"{best.get('cluster_sources')} publishers, distinct topic)")
         take(best, best_tag or "rank", best_notes)
+
+    # ── emergency completion fallback (NOT a dominant-news override) ────────────────────
+    # Balance is a preference; it must never become the reason an edition fails. Only
+    # after the normal path, the dominant-news override, and the non-WORLD relaxations
+    # are ALL exhausted — and still fewer than five stories stand — category caps are
+    # ignored (WORLD may exceed three here) solely to complete the five-story edition.
+    # Every CONTENT gate is preserved: topic-fingerprint dedup, id and URL uniqueness,
+    # real-URL and editorial-junk checks (the pool is already eligibility-filtered), and
+    # picks stay deterministic by adjusted score, then lexically smallest id. If even
+    # this cannot reach five, the story pool is genuinely too thin and the caller's
+    # existing gate fails closed — a content-caused failure, not a balance-caused one.
+    while len(chosen) < need + 1:
+        best, best_key, best_notes = None, None, None
+        ids = {short_id(s) for s in chosen}
+        urls = {s.get("canonical_url") or s.get("url") for s in chosen}
+        for c in pool:
+            if any(s is c for s in chosen) or overlap(c):
+                continue
+            if short_id(c) in ids or (c.get("canonical_url") or c.get("url")) in urls:
+                continue
+            if not has_real_url(c.get("url", "")) or editorial_junk(c):
+                continue
+            score, notes = adjusted(c)
+            key = (-score, short_id(c))
+            if best is None or key < best_key:
+                best, best_key, best_notes = c, key, notes
+        if best is None:
+            break                         # genuinely thin pool → caller fails closed
+        print("  WORLD emergency fill: balance relaxed only to avoid a balance-caused failed edition")
+        take(best, "emergency-fill", best_notes)
     return chosen[1:]
 
 

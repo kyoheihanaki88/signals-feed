@@ -126,8 +126,12 @@ pool10 = [cand(t, cluster_size=5, cluster_sources=3) for t in
            "Volcanic eruption forces a mass evacuation of the capital",
            "Bridge collapse inquiry hears from engineers"]]
 got, log = run_pick(pool10, NEUTRAL_LEAD)
-check("10. all-WORLD pool stops at 3 WORLD total (2 supporting) — fails closed, no 4th",
-      len(got) == 2 and log.count("WORLD cap override") == 1, f"len={len(got)}")
+check("10. all-WORLD pool: normal cap + ONE override, then only the emergency completion "
+      "fallback fills the rest (edition still gets five; override never repeats)",
+      len(got) == 4 and log.count("WORLD cap override") == 1
+      and log.count("WORLD emergency fill") == 2
+      and sum(1 for c in got if c.get("_mix_tag") == "emergency-fill") == 2,
+      f"len={len(got)} overrides={log.count('WORLD cap override')} fills={log.count('WORLD emergency fill')}")
 
 # ── 11–12: discovery slot ──────────────────────────────────────────────────────────────
 pool11 = [launch] + world_pool[:2] + [other_pool[1], other_pool[2]]

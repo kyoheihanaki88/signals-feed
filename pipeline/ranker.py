@@ -29,7 +29,7 @@ Usage:
 """
 import sys, os, re, json, argparse, hashlib, datetime
 from urllib.parse import urlsplit
-from editorial import topic_fingerprint, topics_overlap   # v2.1: duplicate-topic detection
+from editorial import topic_fingerprint, topics_overlap, story_metadata   # v2.1 + Morning Mix
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEF_CAND = os.path.join(HERE, "candidates.json")
@@ -128,6 +128,122 @@ IMPORTANCE_RE = re.compile(
 
 # Per-category cap among the final five, to avoid "all 5 the same kind of story" when possible.
 CATEGORY_CAP = 2
+
+# ── Morning Mix composition (2026-07-24) ────────────────────────────────────────────────
+# The five-story edition must FEEL varied: not four WORLD stories, not three conflict
+# headlines, not the same country three days running. These are deterministic score
+# adjustments and caps applied to SUPPORTING selection only — lead selection is preserved
+# unchanged. Diversity figures are TARGETS (preferences), never fail-closed gates: a thin
+# news day still returns exactly five.
+WORLD_CAP = 2                    # hard cap; a 3rd WORLD only via the dominant-news override
+DOMINANT_CLUSTER_MIN = 4         # override needs cluster_size >= 4 AND multi-publisher
+LAUNCH_BOOST = 3.5               # real consumer product/platform launch (editorial.py gate)
+DISCOVERY_BOOST = 1.5            # science/health discovery value
+EARNINGS_PENALTY = -1.5          # routine earnings stories are rarely morning-worthy
+SAME_COUNTRY_PENALTY = -3.0      # 2nd story about a country already in the five (same family)
+CONFLICT_TONE_PENALTY = -4.0     # a THIRD conflict/crisis-toned story
+HISTORY_PENALTIES = (-2.5, -3.5, -4.5)  # (country,event_family) seen 1 / 2 / 3 consecutive recent editions
+HISTORY_MAX_DAYS = 3             # read at most the previous 3 committed edition dates
+CONFLICT_TONES = ("negative_conflict", "negative_crisis")
+DISCOVERY_SLOT_MIN_BASE = 4.0    # never force a WEAK story into the discovery slot
+
+
+def meta(c, now=None):
+    """Morning Mix metadata for a candidate, cached on the dict. Optional hints only —
+    a fully-neutral result never invalidates the candidate."""
+    if "_mm" not in c:
+        c["_mm"] = story_metadata(c.get("title", ""), c.get("snippet", ""),
+                                  reliability=c.get("source_reliability"),
+                                  published_at=c.get("published_at"), now=now)
+    return c["_mm"]
+
+
+def load_history(editions_dir, today, max_days=HISTORY_MAX_DAYS):
+    """Read-only recency memory: (country, event_family) pairs from the last committed
+    editions strictly before `today` (at most `max_days` dates). Returns
+    (pairs → [dates newest-first], [dates newest-first]). Any read problem → empty
+    history (neutral), never an error."""
+    pairs, dates = {}, []
+    try:
+        names = sorted(f for f in os.listdir(editions_dir)
+                       if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f))
+    except OSError:
+        return pairs, dates
+    dates = [n[:-5] for n in names if n[:-5] < str(today)][-max_days:][::-1]  # newest first
+    for d in dates:
+        try:
+            ed = json.load(open(os.path.join(editions_dir, d + ".json")))
+        except Exception:
+            continue
+        for s in ed.get("signals", []):
+            m = story_metadata(s.get("headline", ""), s.get("summary", ""))
+            if m["country"] and m["event_family"] != "other":
+                pairs.setdefault((m["country"], m["event_family"]), []).append(d)
+    return pairs, dates
+
+
+def history_run(c, history, now=None):
+    """(consecutive_days, matched_dates) — how many CONSECUTIVE most-recent editions
+    already carried this candidate's (country, event_family). 0 = no penalty."""
+    pairs, dates = history
+    m = meta(c, now)
+    if not m["country"] or m["event_family"] == "other":
+        return 0, []
+    hits = pairs.get((m["country"], m["event_family"]), [])
+    run = []
+    for d in dates:                     # newest first; run must start at the newest edition
+        if d in hits:
+            run.append(d)
+        else:
+            break
+    return len(run), run
+
+
+def mix_static(c, history, now=None):
+    """Chosen-set-independent Morning Mix adjustments: (delta, notes)."""
+    m = meta(c, now)
+    delta, notes = 0.0, []
+    if m["consumer_launch"]:
+        delta += LAUNCH_BOOST
+        notes.append(f"launch+{LAUNCH_BOOST}")
+    if m["discovery_value"]:
+        delta += DISCOVERY_BOOST
+        notes.append(f"discovery+{DISCOVERY_BOOST}")
+    if m["event_family"] == "earnings":
+        delta += EARNINGS_PENALTY
+        notes.append(f"earnings{EARNINGS_PENALTY}")
+    run, matched = history_run(c, history, now)
+    if run:
+        p = HISTORY_PENALTIES[min(run, len(HISTORY_PENALTIES)) - 1]
+        delta += p
+        # log the EXACT history match (which pair, which committed editions)
+        notes.append(f"history{p} ({m['country']}/{m['event_family']} in {', '.join(matched)})")
+    return delta, notes
+
+
+def mix_dynamic(c, chosen, now=None):
+    """Adjustments that depend on the stories ALREADY selected: (delta, notes)."""
+    m = meta(c, now)
+    delta, notes = 0.0, []
+    dominant = int(c.get("cluster_sources") or 1) >= 3
+    if m["country"]:
+        for s in chosen:
+            sm = meta(s, now)
+            if sm["country"] != m["country"]:
+                continue
+            if sm["event_family"] != m["event_family"]:
+                notes.append(f"country-dup waived vs {short_id(s)} (event family materially different)")
+            elif dominant:
+                notes.append(f"country-dup waived vs {short_id(s)} (dominant multi-publisher story)")
+            else:
+                delta += SAME_COUNTRY_PENALTY
+                notes.append(f"same-country{SAME_COUNTRY_PENALTY} (vs {short_id(s)})")
+            break
+    if m["tone"] in CONFLICT_TONES and \
+            sum(1 for s in chosen if meta(s, now)["tone"] in CONFLICT_TONES) >= 2:
+        delta += CONFLICT_TONE_PENALTY
+        notes.append(f"third-conflict-tone{CONFLICT_TONE_PENALTY}")
+    return delta, notes
 
 
 def short_id(c):
@@ -353,33 +469,216 @@ def _fp(c):
     return topic_fingerprint(c.get("title", ""), c.get("snippet", ""))
 
 
-def pick_supporting(pool, lead, now, fresh_hours, need=4):
-    """Pick `need` supporting from pool (already excludes the lead's cluster), preferring category
-    diversity (<= CATEGORY_CAP per category incl. the lead), relaxing the cap only if needed.
+def _cat(c):
+    return (c.get("category") or "OTHER").upper()
 
-    v2.1 duplicate-topic gate: a candidate whose topic fingerprint overlaps the lead's or an
-    already-chosen supporting's is SKIPPED — so the stronger (higher-ranked, picked first) story is
-    kept and the weaker duplicate is replaced by the next distinct one. Never fills with a duplicate;
-    if not enough distinct topics exist, returns fewer (the caller's 5-distinct gate then fails closed)."""
-    ranked = sorted(pool, key=lambda c: (-base_score(c, now, fresh_hours), short_id(c)))
-    lead_fp = _fp(lead)
-    best = []
-    for cap in (CATEGORY_CAP, CATEGORY_CAP + 1, 999):
-        chosen, counts, fps = [], {(lead.get("category") or "OTHER").upper(): 1}, [lead_fp]
-        for c in ranked:
-            fp = _fp(c)
-            if any(topics_overlap(fp, f) for f in fps):     # same/near-identical topic → skip
+
+def dominant_override(c, chosen):
+    """Deterministic dominant-news override for a THIRD WORLD story (never a fourth, never
+    unlimited): a big multi-publisher cluster (cluster_size >= DOMINANT_CLUSTER_MIN AND >= 2
+    distinct publishers) about a DIFFERENT dominant event than the WORLD stories already chosen."""
+    return (int(c.get("cluster_size") or 1) >= DOMINANT_CLUSTER_MIN
+            and int(c.get("cluster_sources") or 1) >= 2
+            and not any(topics_overlap(_fp(c), _fp(s)) for s in chosen if _cat(s) == "WORLD"))
+
+
+def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
+    """Pick `need` supporting stories with Morning Mix balance. Greedy + deterministic: at every
+    step take the highest ADJUSTED score (base + static mix + dynamic mix vs already-chosen),
+    ties broken by lexically smallest id — same inputs always yield the same five.
+
+    v2.1 duplicate-topic gate preserved: a candidate whose topic fingerprint overlaps the lead's
+    or an already-chosen story's is SKIPPED (never relaxed).
+
+    Category caps (the old silent 2→3→unlimited relaxation is REMOVED):
+      - WORLD: max 2 in normal composition; a 3rd only via the logged dominant-news override.
+      - other categories: CATEGORY_CAP, relaxed one explicit LOGGED step at a time only when the
+        pool can't otherwise fill the five (thin day).
+      - LAST RESORT, after everything above is exhausted: the emergency completion fallback
+        (see below) ignores category caps — WORLD may exceed 3 there — solely so balance
+        preferences can never fail an edition that has five credible distinct stories.
+
+    Discovery slot: right after the lead, ONE supporting slot is offered to the highest-ranked
+    qualifying consumer-launch/discovery story — but only a genuinely strong one
+    (base >= DISCOVERY_SLOT_MIN_BASE). No qualifying story → no slot, nothing forced."""
+    history = history or ({}, [])
+    chosen = [lead]                       # constraint accounting includes the lead
+    fps = [_fp(lead)]
+    picked = []                           # (candidate, tag) in pick order — audit
+    static = {short_id(c): mix_static(c, history, now) for c in pool}
+
+    def overlap(c):
+        return any(topics_overlap(_fp(c), f) for f in fps)
+
+    def allowed(c, relax):
+        cat = _cat(c)
+        n = sum(1 for s in chosen if _cat(s) == cat)
+        if cat == "WORLD":
+            if n < WORLD_CAP:
+                return True, None
+            if n == WORLD_CAP and dominant_override(c, chosen):
+                return True, "world-3rd-override"
+            return False, None            # WORLD never exceeds 3, never unlimited
+        return n < CATEGORY_CAP + relax, None
+
+    def adjusted(c):
+        d1, n1 = static[short_id(c)]
+        d2, n2 = mix_dynamic(c, chosen, now)
+        return base_score(c, now, fresh_hours) + d1 + d2, n1 + n2
+
+    def take(c, tag, notes):
+        chosen.append(c)
+        fps.append(_fp(c))
+        picked.append((c, tag))
+        c["_mix_tag"] = tag               # audit: how this story earned its slot
+        extra = f" · {'; '.join(notes)}" if notes else ""
+        print(f"  mix-pick[{tag}] id={short_id(c)} [{_cat(c)}] {c.get('title','')[:46]}{extra}")
+
+    # ── discovery slot ──
+    qual = [c for c in pool
+            if (meta(c, now)["consumer_launch"] or meta(c, now)["discovery_value"])
+            and base_score(c, now, fresh_hours) >= DISCOVERY_SLOT_MIN_BASE
+            and not overlap(c) and allowed(c, 0)[0]]
+    if qual:
+        best = sorted(qual, key=lambda c: (-adjusted(c)[0], short_id(c)))[0]
+        take(best, "discovery-slot", adjusted(best)[1])
+    else:
+        print("  discovery slot: no qualifying launch/discovery story today — not forcing one")
+
+    # ── greedy fill ──
+    relax = 0
+    while len(chosen) < need + 1:
+        best, best_key, best_notes, best_tag = None, None, None, None
+        for c in pool:
+            if any(s is c for s in chosen) or overlap(c):
                 continue
-            cat = (c.get("category") or "OTHER").upper()
-            if counts.get(cat, 0) < cap:
-                chosen.append(c)
-                counts[cat] = counts.get(cat, 0) + 1
-                fps.append(fp)
-            if len(chosen) == need:
-                return chosen
-        if len(chosen) > len(best):
-            best = chosen
-    return best   # fewer than `need` only when distinct topics run out → caller fails closed
+            ok, tag = allowed(c, relax)
+            if not ok:
+                continue
+            score, notes = adjusted(c)
+            key = (-score, short_id(c))
+            if best is None or key < best_key:
+                best, best_key, best_notes, best_tag = c, key, notes, tag
+        if best is None:
+            if relax < 2:                 # thin day: explicit, logged, non-WORLD-only relaxation
+                relax += 1
+                print(f"  category cap relaxed to {CATEGORY_CAP + relax} for non-WORLD categories "
+                      f"(thin pool — WORLD stays capped)")
+                continue
+            break                         # caps/topics exhausted → emergency completion below
+        if best_tag == "world-3rd-override":
+            print(f"  WORLD cap override: 3rd WORLD story allowed — id={short_id(best)} is a "
+                  f"dominant multi-publisher event (cluster {best.get('cluster_size')}, "
+                  f"{best.get('cluster_sources')} publishers, distinct topic)")
+        take(best, best_tag or "rank", best_notes)
+
+    # ── emergency completion fallback (NOT a dominant-news override) ────────────────────
+    # Balance is a preference; it must never become the reason an edition fails. Only
+    # after the normal path, the dominant-news override, and the non-WORLD relaxations
+    # are ALL exhausted — and still fewer than five stories stand — category caps are
+    # ignored (WORLD may exceed three here) solely to complete the five-story edition.
+    # Every CONTENT gate is preserved: topic-fingerprint dedup, id and URL uniqueness,
+    # real-URL and editorial-junk checks (the pool is already eligibility-filtered), and
+    # picks stay deterministic by adjusted score, then lexically smallest id. If even
+    # this cannot reach five, the story pool is genuinely too thin and the caller's
+    # existing gate fails closed — a content-caused failure, not a balance-caused one.
+    while len(chosen) < need + 1:
+        best, best_key, best_notes = None, None, None
+        ids = {short_id(s) for s in chosen}
+        urls = {s.get("canonical_url") or s.get("url") for s in chosen}
+        for c in pool:
+            if any(s is c for s in chosen) or overlap(c):
+                continue
+            if short_id(c) in ids or (c.get("canonical_url") or c.get("url")) in urls:
+                continue
+            if not has_real_url(c.get("url", "")) or editorial_junk(c):
+                continue
+            score, notes = adjusted(c)
+            key = (-score, short_id(c))
+            if best is None or key < best_key:
+                best, best_key, best_notes = c, key, notes
+        if best is None:
+            break                         # genuinely thin pool → caller fails closed
+        print("  WORLD emergency fill: balance relaxed only to avoid a balance-caused failed edition")
+        take(best, "emergency-fill", best_notes)
+    return chosen[1:]
+
+
+def audit_candidates(pool, lead, five, now, fresh_hours, history, limit=20):
+    """Morning Mix decision audit — one line per SERIOUS candidate (the deduped, eligible
+    pool), so every morning's selection is explainable from the run log alone:
+    base score, each mix component (launch / discovery / earnings / country / tone /
+    recent-edition history), final adjusted score, and the selected/rejected reason
+    (incl. WORLD-cap, category-cap, discovery-slot and dominant-override decisions).
+    Logs HEADLINES and scores only — never article bodies, secrets, tokens or prompts."""
+    sel = {short_id(c): c for c in five}
+    world_n = sum(1 for c in five if _cat(c) == "WORLD")
+    cat_n = {}
+    for c in five:
+        cat_n[_cat(c)] = cat_n.get(_cat(c), 0) + 1
+
+    def line(c):
+        base = base_score(c, now, fresh_hours)
+        sd, snotes = mix_static(c, history, now)
+        ctx = [s for s in five if short_id(s) != short_id(c)]
+        dd, dnotes = mix_dynamic(c, ctx, now)
+        adj = base + sd + dd
+        sid = short_id(c)
+        if sid == short_id(lead):
+            verdict = "SELECTED (lead — lead selection unchanged by the mix)"
+        elif sid in sel:
+            tag = sel[sid].get("_mix_tag") or "rank"
+            verdict = f"SELECTED ({tag})"
+            if tag == "world-3rd-override":
+                verdict += " — dominant-news override for a 3rd WORLD story"
+        else:
+            dup = next((s for s in five if topics_overlap(_fp(c), _fp(s))), None)
+            if dup is not None:
+                verdict = f"rejected: duplicate topic of selected {short_id(dup)}"
+            elif _cat(c) == "WORLD" and world_n >= WORLD_CAP:
+                verdict = (f"rejected: WORLD cap ({world_n} in the five"
+                           f"{'' if world_n < 3 else ' incl. an override'}; "
+                           f"no dominant-news override earned)")
+            elif cat_n.get(_cat(c), 0) >= CATEGORY_CAP:
+                verdict = f"rejected: category cap ({_cat(c)} already ×{cat_n[_cat(c)]})"
+            else:
+                floor = min(base_score(s, now, fresh_hours) + mix_static(s, history, now)[0]
+                            for s in five)
+                verdict = f"rejected: adjusted score below the selected five (floor {floor:+.1f})"
+        notes = "; ".join(snotes + dnotes) or "no mix adjustments (neutral metadata)"
+        print(f"  audit id={sid} [{_cat(c):7}] base={base:+.1f} mix={sd + dd:+.1f} "
+              f"adj={adj:+.1f} | {notes}")
+        print(f"        {c.get('title', '')[:78]}")
+        print(f"        → {verdict}")
+
+    print(f"── morning-mix audit ({min(len(pool), limit)} of {len(pool)} serious candidates, "
+          f"ranked by adjusted score) ──")
+    ranked = sorted(pool, key=lambda c: (-(base_score(c, now, fresh_hours)
+                                           + mix_static(c, history, now)[0]), short_id(c)))
+    audited = {short_id(c) for c in ranked[:limit]}
+    for c in ranked[:limit]:
+        line(c)
+    for c in five:                        # the five are ALWAYS audited, even below the cut
+        if short_id(c) not in audited:
+            line(c)
+
+
+def mix_report(five, now):
+    """Diversity TARGET report (preferences, informational — never fail-closed)."""
+    cats = {_cat(c) for c in five}
+    regions = {meta(c, now)["region"] for c in five if meta(c, now)["region"]}
+    countries = [meta(c, now)["country"] for c in five if meta(c, now)["country"]]
+    dup_countries = {x for x in countries if countries.count(x) > 1}
+    heavy = sum(1 for c in five if meta(c, now)["tone"] in CONFLICT_TONES)
+    forward = sum(1 for c in five if meta(c, now)["tone"] in ("forward_looking", "discovery"))
+    def t(ok):
+        return "met " if ok else "MISS"
+    print("  mix targets (preferences, not gates):")
+    print(f"    [{t(len(cats) >= 3)}] >=3 categories        ({len(cats)}: {', '.join(sorted(cats))})")
+    print(f"    [{t(len(regions) >= 3)}] >=3 regions           ({len(regions)}: {', '.join(sorted(regions)) or '-'})")
+    print(f"    [{t(not dup_countries)}] <=1 story per country ({'dups: ' + ', '.join(sorted(dup_countries)) if dup_countries else 'no dups'})")
+    print(f"    [{t(heavy <= 2)}] <=2 conflict/crisis   ({heavy})")
+    print(f"    [{t(forward >= 1)}] >=1 forward-looking   ({forward})")
 
 
 def fail(reason, summary_path=None):
@@ -416,6 +715,8 @@ def main():
     ap.add_argument("--fresh-hours", type=int, default=36)
     ap.add_argument("--summary-file", default=None)
     ap.add_argument("--now", default=None, help="override 'now' ISO8601 (testing/determinism)")
+    ap.add_argument("--editions-dir", default=os.path.join(HERE, "..", "editions"),
+                    help="committed editions dir (read-only Morning Mix history; missing = neutral)")
     ap.add_argument("--exclude", default="",
                     help="comma-separated candidate ids to EXCLUDE before selection (publish "
                          "recovery: candidates whose drafts failed strict validation). Empty = "
@@ -510,7 +811,11 @@ def main():
     if len(support_pool) < 4:
         fail(f"not enough eligible supporting stories ({len(support_pool)} < 4 after removing the "
              f"lead's cluster)", args.summary_file)
-    supporting = pick_supporting(support_pool, lead, now, args.fresh_hours, need=4)
+    # Morning Mix history: committed recent editions only, read-only, at most 3 previous dates.
+    history = load_history(args.editions_dir, now.date())
+    print(f"morning-mix history: {len(history[1])} committed edition(s) loaded "
+          f"({', '.join(history[1]) or 'none — neutral'})")
+    supporting = pick_supporting(support_pool, lead, now, args.fresh_hours, history=history, need=4)
 
     five = [lead] + supporting
     ids = [short_id(c) for c in five]
@@ -559,6 +864,8 @@ def main():
         print(f"           {c.get('category','?')} · why: {why_selected(c)}")
     cats = [(c.get('category') or 'OTHER') for c in five]
     print(f"  categories: {', '.join(cats)}  | max source-risk: {max(source_risk(c) for c in five)}")
+    mix_report(five, now)
+    audit_candidates(support_pool, lead, five, now, args.fresh_hours, history)
     _summary(args.summary_file, lead, supporting, total) if args.summary_file else None
 
 

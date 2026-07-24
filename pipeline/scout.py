@@ -28,6 +28,12 @@ VIDEO_RE = re.compile(r"/(videos?|watch|av/)", re.I)
 def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
+def publisher_key(name):
+    """Publisher identity for corroboration counting: the source name minus any section
+    suffix — "BBC News (World)" and "BBC News (Technology)" are ONE publisher. Section
+    feeds widen coverage; they must never count as independent corroboration."""
+    return re.sub(r"\s*\(.*?\)\s*$", "", name or "").strip()
+
 def canonical_url(url):
     p = urlsplit(url)
     keep = [(k, v) for k, v in parse_qsl(p.query)
@@ -94,7 +100,8 @@ def parse_feed(xml_bytes):
 def load_feed(source, cache_dir):
     """Return (xml_bytes, error). Uses cache file if cache_dir is set; else fetches."""
     if cache_dir:
-        path = os.path.join(cache_dir, slug(source["name"]) + ".xml")
+        # feed_id disambiguates multiple feeds of one publisher in offline cache mode
+        path = os.path.join(cache_dir, slug(source.get("feed_id") or source["name"]) + ".xml")
         if not os.path.exists(path):
             return None, "no-cache-file"
         return open(path, "rb").read(), None
@@ -154,6 +161,7 @@ def main():
                 "id": stable_id(cu or url),       # stable, canonical-URL-based id (selection.py needs c["id"])
                 "title": clean_text(it["title"]),
                 "source": src["name"],
+                "publisher": publisher_key(src["name"]),   # section feeds share one publisher
                 "category": src.get("category", "OTHER"),
                 "url": url,
                 "canonical_url": cu,
@@ -176,9 +184,16 @@ def main():
                 cluster_id[j] = nid
         nid += 1
     sizes = {cid: cluster_id.count(cid) for cid in set(cluster_id)}
+    # cluster_sources: DISTINCT PUBLISHERS per cluster. Corroboration must count
+    # publishers, not feed entries — three stories about one launch from three feeds of
+    # the same publisher are still ONE publisher's coverage (section-feed safety).
+    pubs_per_cluster = {}
+    for k, c in enumerate(candidates):
+        pubs_per_cluster.setdefault(cluster_id[k], set()).add(c.get("publisher") or c["source"])
     for k, c in enumerate(candidates):
         c["cluster_id"] = cluster_id[k]
         c["cluster_size"] = sizes[cluster_id[k]]
+        c["cluster_sources"] = len(pubs_per_cluster[cluster_id[k]])
 
     out = {
         "generated_at": now.isoformat(),

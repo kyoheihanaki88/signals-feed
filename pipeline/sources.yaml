@@ -46,6 +46,81 @@ sources:
     status: reachable
     notes: 200 + rss content-type; body returned as binary in review — verify on the runner
 
+  # --- section feeds (Morning Mix, 2026-07-24) ---------------------------------------
+  # Same five audited publishers as above — SECTION endpoints only, so the licensing
+  # posture from docs/app-store Appendix A2 is unchanged. Purpose: (1) widen the tiny
+  # 10-item window of The Verge's main feed (a Samsung Galaxy launch was invisible to
+  # two consecutive editions because it scrolled out of that window — it was still
+  # present in the Mobile section feed) and (2) give SCIENCE / HEALTH / CULTURE a real
+  # candidate pool so the five-story mix stops collapsing into WORLD via cap relaxation.
+  # All URLs verified live on 2026-07-24 (valid RSS, current same-day articles, distinct
+  # channels — none is an alias of an existing feed). `feed_id` disambiguates cache
+  # files; the Scout's publisher_key() collapses "(Section)" names to ONE publisher so
+  # multi-feed coverage can never inflate cross-source corroboration.
+  - name: The Verge (Mobile)
+    feed_id: verge-mobile
+    url: https://www.theverge.com/rss/mobile/index.xml
+    category: TECH
+    paywalled: false
+    status: verified
+    notes: section feed — phones/consumer devices; carries major launch coverage that falls out of the main 10-item feed
+
+  - name: The Verge (Tech)
+    feed_id: verge-tech
+    url: https://www.theverge.com/rss/tech/index.xml
+    category: TECH
+    paywalled: false
+    status: verified
+    notes: section feed — core tech news beyond the main feed's 10-item window
+
+  - name: BBC News (Technology)
+    feed_id: bbc-technology
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    category: TECH
+    paywalled: false
+    status: verified
+    notes: section feed — mainstream consumer/tech-policy coverage (21 items observed)
+
+  - name: BBC News (Science & Environment)
+    feed_id: bbc-science
+    url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+    category: SCIENCE
+    paywalled: false
+    status: verified
+    notes: section feed — science/climate discovery pool (40 items observed)
+
+  - name: BBC News (Health)
+    feed_id: bbc-health
+    url: https://feeds.bbci.co.uk/news/health/rss.xml
+    category: HEALTH
+    paywalled: false
+    status: verified
+    notes: section feed — health/medicine discovery pool (52 items observed)
+
+  - name: The Guardian (Technology)
+    feed_id: guardian-technology
+    url: https://www.theguardian.com/technology/rss
+    category: TECH
+    paywalled: false
+    status: verified
+    notes: section feed — tech with policy/business angles (36 items observed)
+
+  - name: The Guardian (Science)
+    feed_id: guardian-science
+    url: https://www.theguardian.com/science/rss
+    category: SCIENCE
+    paywalled: false
+    status: verified
+    notes: section feed — science discovery pool (28 items observed)
+
+  - name: The Guardian (Culture)
+    feed_id: guardian-culture
+    url: https://www.theguardian.com/culture/rss
+    category: CULTURE
+    paywalled: false
+    status: verified
+    notes: section feed — culture pool; the existing review/recap/profile filters still screen low-signal formats
+
   # --- flagged / conditional ---
   - name: NHK World (Japan)
     url: ""   # TODO: confirm the correct NHK WORLD (English) RSS endpoint on the runner

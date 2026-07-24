@@ -91,6 +91,47 @@
               "duration": 3.892245
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカとサウジアラビアが原子力エネルギーの協力で合意しました。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "この協定には、サウジがイスラエルと国交を結ぶことが条件になります。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ大統領が木曜日、オンラインで発表しました。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "協定の話が出たとき、イスラエル側には警戒感がありました。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "サウジとイスラエルの関係正常化は、中東の外交地図を大きく変える可能性があります。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、この条件が実際にどう働くかは、まだはっきりしていません。",
+              "duration": 5.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "サウジ大使館はコメントを出していません。",
+              "duration": 3.264
+            }
+          ]
         }
       }
     },
@@ -170,6 +211,52 @@
               "speaker": "explainer",
               "text": "It is. The exam system has been accused of failing millions of students, and the leaks have been linked to more than a dozen suicides.",
               "duration": 7.758367
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "インドで、試験問題の漏洩をめぐる抗議が広がっています。",
+              "duration": 4.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "活動家のソナム・ワンチュク氏は、26日間の断食を続けていました。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "政府の閣僚2人が立ち会い、条件を受け入れる約束を得て、断食を終えました。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "問題となった試験では、今年5月に200万人の学生が影響を受けました。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "不正と関連して、十数件の自殺も報告されています。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "ワンチュク氏は病院から、議会が試験制度の責任を審議すると伝えました。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "若者たちの抗議は、モディ政権への批判へと広がっています。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "ガンジーの最長断食が21日間だったことを考えると、今回の26日間は異例の長さです。",
+              "duration": 7.704
             }
           ]
         }
@@ -263,6 +350,57 @@
               "duration": 5.746939
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカが80を超える国に新しい関税をかけました。",
+              "duration": 4.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年2月に導入した一律10%の関税が期限を迎えたため、それに代わる措置です。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "根拠として挙げられたのは、強制労働でつくられた製品の輸入を各国が十分に取り締まっていないという理由でした。",
+              "duration": 8.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "アメリカは1974年の通商法を使い、この措置を正当化しています。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、EUをはじめ多くの国は困惑を隠せません。",
+              "duration": 4.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "去年結んだ大西洋の貿易協定を守ってきたのに、なぜ今なのかという疑問が広がっています。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "発表を受けて、アジアの株式市場は一夜で大きく値を下げました。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "貿易の先行きが見えにくくなると、市場はすぐに反応します。",
+              "duration": 4.872
+            },
+            {
+              "speaker": "narrator",
+              "text": "同盟国との信頼が揺らぐ中、世界経済の不透明感が増しています。",
+              "duration": 5.568
+            }
+          ]
         }
       }
     },
@@ -342,6 +480,42 @@
               "speaker": "explainer",
               "text": "Because their whole message is about a service that can drive anywhere, under any conditions. If regulations box them in, that vision doesn't really hold up.",
               "duration": 9.221224
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "テスラのイーロン・マスクは昨日、自動運転タクシーの進み具合について前向きな話をしました。",
+              "duration": 7.2
+            },
+            {
+              "speaker": "narrator",
+              "text": "対応する街が増え、走る距離も伸び、実際に乗る人も増えているといいます。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "AI部門の責任者によれば、無人の車はこれまでに2つの州の6つの街で約38万マイルを走ったそうです。",
+              "duration": 8.784
+            },
+            {
+              "speaker": "narrator",
+              "text": "テスラは順調だと言いたいようですが、規制の壁は思ったより高いかもしれません。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "どこでもどんな条件でも走れるという構想と、実際に許される場所との間には、まだ大きな隔たりがあります。",
+              "duration": 8.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "市場の広がりが限られれば、会社が描く将来像にも影を落とすことになります。",
+              "duration": 6.12
             }
           ]
         }
@@ -433,6 +607,47 @@
               "speaker": "explainer",
               "text": "A Pro license is ninety-nine dollars, but they're offering it for seventy-nine until August sixth.",
               "duration": 5.877551
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "パソコンやスマートフォンの性能を測る定番ツール、Geekbenchの新版が出ました。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "Primate Labsが公開したGeekbench 7は、見た目も使い方も前の版とほぼ同じです。",
+              "duration": 6.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただし内部では、処理するデータの量が大きく増え、映像や音声の変換テストも新しく追加されています。",
+              "duration": 8.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "マルチコアの測定方法も見直され、CPUとGPUにかかる負担は以前より重くなりました。",
+              "duration": 7.416
+            },
+            {
+              "speaker": "narrator",
+              "text": "Geekbenchは短時間で結果が出るため、瞬間的な処理の速さを知るには便利です。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で、長く動かしたときの発熱や性能低下までは捉えにくい面もあります。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "Pro版の価格は99ドルで、8月6日までは79ドルで購入できます。",
+              "duration": 6.36
             }
           ]
         }

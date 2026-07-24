@@ -527,6 +527,7 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
         chosen.append(c)
         fps.append(_fp(c))
         picked.append((c, tag))
+        c["_mix_tag"] = tag               # audit: how this story earned its slot
         extra = f" · {'; '.join(notes)}" if notes else ""
         print(f"  mix-pick[{tag}] id={short_id(c)} [{_cat(c)}] {c.get('title','')[:46]}{extra}")
 
@@ -568,6 +569,65 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
                   f"{best.get('cluster_sources')} publishers, distinct topic)")
         take(best, best_tag or "rank", best_notes)
     return chosen[1:]
+
+
+def audit_candidates(pool, lead, five, now, fresh_hours, history, limit=20):
+    """Morning Mix decision audit — one line per SERIOUS candidate (the deduped, eligible
+    pool), so every morning's selection is explainable from the run log alone:
+    base score, each mix component (launch / discovery / earnings / country / tone /
+    recent-edition history), final adjusted score, and the selected/rejected reason
+    (incl. WORLD-cap, category-cap, discovery-slot and dominant-override decisions).
+    Logs HEADLINES and scores only — never article bodies, secrets, tokens or prompts."""
+    sel = {short_id(c): c for c in five}
+    world_n = sum(1 for c in five if _cat(c) == "WORLD")
+    cat_n = {}
+    for c in five:
+        cat_n[_cat(c)] = cat_n.get(_cat(c), 0) + 1
+
+    def line(c):
+        base = base_score(c, now, fresh_hours)
+        sd, snotes = mix_static(c, history, now)
+        ctx = [s for s in five if short_id(s) != short_id(c)]
+        dd, dnotes = mix_dynamic(c, ctx, now)
+        adj = base + sd + dd
+        sid = short_id(c)
+        if sid == short_id(lead):
+            verdict = "SELECTED (lead — lead selection unchanged by the mix)"
+        elif sid in sel:
+            tag = sel[sid].get("_mix_tag") or "rank"
+            verdict = f"SELECTED ({tag})"
+            if tag == "world-3rd-override":
+                verdict += " — dominant-news override for a 3rd WORLD story"
+        else:
+            dup = next((s for s in five if topics_overlap(_fp(c), _fp(s))), None)
+            if dup is not None:
+                verdict = f"rejected: duplicate topic of selected {short_id(dup)}"
+            elif _cat(c) == "WORLD" and world_n >= WORLD_CAP:
+                verdict = (f"rejected: WORLD cap ({world_n} in the five"
+                           f"{'' if world_n < 3 else ' incl. an override'}; "
+                           f"no dominant-news override earned)")
+            elif cat_n.get(_cat(c), 0) >= CATEGORY_CAP:
+                verdict = f"rejected: category cap ({_cat(c)} already ×{cat_n[_cat(c)]})"
+            else:
+                floor = min(base_score(s, now, fresh_hours) + mix_static(s, history, now)[0]
+                            for s in five)
+                verdict = f"rejected: adjusted score below the selected five (floor {floor:+.1f})"
+        notes = "; ".join(snotes + dnotes) or "no mix adjustments (neutral metadata)"
+        print(f"  audit id={sid} [{_cat(c):7}] base={base:+.1f} mix={sd + dd:+.1f} "
+              f"adj={adj:+.1f} | {notes}")
+        print(f"        {c.get('title', '')[:78]}")
+        print(f"        → {verdict}")
+
+    print(f"── morning-mix audit ({min(len(pool), limit)} of {len(pool)} serious candidates, "
+          f"ranked by adjusted score) ──")
+    ranked = sorted(pool, key=lambda c: (-(base_score(c, now, fresh_hours)
+                                           + mix_static(c, history, now)[0]), short_id(c)))
+    audited = {short_id(c) for c in ranked[:limit]}
+    for c in ranked[:limit]:
+        line(c)
+    for c in five:                        # the five are ALWAYS audited, even below the cut
+        if short_id(c) not in audited:
+            line(c)
 
 
 def mix_report(five, now):
@@ -772,6 +832,7 @@ def main():
     cats = [(c.get('category') or 'OTHER') for c in five]
     print(f"  categories: {', '.join(cats)}  | max source-risk: {max(source_risk(c) for c in five)}")
     mix_report(five, now)
+    audit_candidates(support_pool, lead, five, now, args.fresh_hours, history)
     _summary(args.summary_file, lead, supporting, total) if args.summary_file else None
 
 

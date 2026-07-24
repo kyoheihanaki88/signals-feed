@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-24",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Trump says Saudi Arabia's nuclear deal hinges on the kingdom normalizing Israel ties",
+      "summary": "Trump says Saudi Arabia nuclear deal hinges on Saudi ties with Israel After a Saudi nuclear power deal raised alarm in Israel, President Trump announced online that the arrangement is subject to the kingdom normalizing relations with Israel through the Abraham Accords.",
+      "keyTakeaways": [
+        "With a photograph of himself on the wall as part of \"The Presidential Hall of Fame,\" President Trump gives Crown Prince and Prime Minister Mohammed bin Salman of Saudi Arabia a tour of the White House on Nov.",
+        "The Saudi Embassy in Washington did not respond to NPR's request for comment.",
+        "It is unclear how the new condition might affect the deal."
+      ],
+      "whyItMatters": "President Trump said on Thursday that a new nuclear energy deal with Saudi Arabia will require the Arab kingdom to normalize relations with Israel.",
+      "originalURL": "https://www.npr.org/2026/07/23/nx-s1-5904327/us-saudi-arabia-iran",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サウジへの原子力協力、イスラエルとの国交正常化が条件とトランプ氏",
+          "summary": "サウジアラビアとの原子力エネルギー協定をめぐり、トランプ大統領はオンライン上で声明を発表した。この協定はサウジアラビアがアブラハム合意を通じてイスラエルとの関係を正常化することを条件とする、と述べたものだ。協定の発表はイスラエル側に懸念を生じさせていた。",
+          "keyTakeaways": [
+            "トランプ大統領はホワイトハウスでサウジアラビアのムハンマド・ビン・サルマン皇太子兼首相を案内した",
+            "ワシントンのサウジ大使館はコメントの求めに応じていない",
+            "この新たな条件が協定にどう影響するかは、現時点では不明"
+          ],
+          "whyItMatters": "トランプ大統領は、サウジアラビアとの原子力エネルギー協定にはイスラエルとの国交正常化が必要だと明言した。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "India ‘cockroach’ activist Sonam Wangchuk ends hunger strike as protests spread",
+      "summary": "The Indian “cockroach” activist Sonam Wangchuk has ended a 26-day hunger strike over an exam paper scandal that has spiralled into a wide-ranging, youth-led wave of demonstrations against Narendra Modi’s government.",
+      "keyTakeaways": [
+        "Wangchuk posted that he had ended the hunger strike in Delhi in the presence of two of Modi’s top ministers after receiving assurances that his conditions would be met by the government.",
+        "In a video from his hospital bed, Wangchuk said he had been promised that India’s parliament would take up the issue of accountability in the examination system, which has been accused of failing millions of students.",
+        "Gandhi’s longest hunger strike was 21 days."
+      ],
+      "whyItMatters": "The CJP ​movement wants Pradhan to step down over exam paper leaks, which affected 2 million students in May and have been linked to more than a dozen suicides.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/24/india-cockroach-protest-sonam-wangchuk-ends-hunger-strike",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "インドの活動家ワンチュク氏、26日間の断食を終える",
+          "summary": "「ゴキブリ」の異名を持つインドの活動家ソナム・ワンチュク氏が、試験問題漏洩スキャンダルをめぐる26日間の断食を終えた。この問題は若者主導の広範な抗議運動へと発展し、モディ政権への批判が高まっている。",
+          "keyTakeaways": [
+            "モディ首相の閣僚2人の立会いのもと、政府が条件を受け入れると確約を得たとして、ワンチュク氏はデリーでの断食を終えた",
+            "病院のベッドから公開した動画で、試験制度の説明責任について議会が審議することを約束されたと語った。数百万人の学生が不正の被害を受けたとされる",
+            "ガンジーの最長断食記録は21日間だった"
+          ],
+          "whyItMatters": "試験問題の漏洩は今年5月に200万人の受験生に影響を与え、十数件の自殺との関連も指摘されており、CJP運動はプラダン大臣の辞任を求めている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "‘Forced labour’ rationale for Trump tariffs met with bewilderment",
+      "summary": "Donald Trump has once again inspired anger and confusion in US allies and trading partners as he imposed a wave of tariffs on more than 80 countries, replacing an expiring global duty introduced earlier this year.",
+      "keyTakeaways": [
+        "The new measures effectively replace blanket 10% tariffs that Trump imposed in February.",
+        "They are imposed under section 301 of the US Trade Act of 1974, and the Trump administration has said the new measures are due to the dozens of countries failing to enforce bans on goods produced by forced labour.",
+        "The imposition of the new tariffs led to Asian stock markets taking a hammering overnight."
+      ],
+      "whyItMatters": "Kallas said the EU would seek ​clarification from Washington, adding that the bloc had honoured commitments under a transatlantic trade agreement reached in 2025 and viewed ⁠the new tariffs as a shock.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/24/trump-tariffs-forced-labor-us-trading-partners-react",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ関税の新たな波、同盟国に困惑広がる",
+          "summary": "トランプ大統領が80カ国以上を対象とした新たな関税を発動した。今年初めに導入された包括的な関税措置の期限切れに伴う置き換えで、同盟国や貿易相手国の間に怒りと戸惑いが広がっている。",
+          "keyTakeaways": [
+            "今回の措置は、2月に導入された一律10%関税に実質的に取って代わるもの。",
+            "根拠とされたのは1974年通商法第301条で、米政府は強制労働による産品の輸入禁止を履行していないとして各国に課税した。",
+            "発動を受け、アジアの株式市場は一夜にして大幅に下落した。"
+          ],
+          "whyItMatters": "EUはワシントンに説明を求める方針で、2025年に締結した大西洋横断貿易協定の義務を履行してきたとして、今回の関税を「衝撃」と受け止めている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Tesla’s robotaxi promises are clashing with reality",
+      "summary": "In an earnings call yesterday, Tesla CEO Elon Musk did his best to paint a positive portrait of the company’s robotaxi program.",
+      "keyTakeaways": [
+        "New cities are being added, more miles are being driven, and more people are experiencing Tesla’s unsupervised vehicles.",
+        "Tesla did its best to frame the situation as headed in the right direction.",
+        "Ashok Elluswamy, the company’s head of AI, said that Tesla’s unsupervised robotaxis have driven 380,000 miles across six cities in two different states."
+      ],
+      "whyItMatters": "A more restrictive regulatory environment could limit the total addressable market for Tesla robotaxis, which would clash with the company’s message about a more generalized service that can drive anywhere, under any conditions.",
+      "originalURL": "https://www.theverge.com/transportation/970003/tesla-robotaxi-mileage-waymo-cities-earnings-musk",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "テスラの自動運転タクシー、理想と現実の間で",
+          "summary": "テスラのイーロン・マスクCEOは昨日の決算説明会で、同社のロボタクシー事業について前向きな見通しを語った。",
+          "keyTakeaways": [
+            "対応都市の拡大、走行距離の増加、無人車両の体験者も着実に増えている。",
+            "テスラは事業が正しい方向へ進んでいると強調した。",
+            "AI責任者のアショク・エルスワミー氏によれば、無人ロボタクシーは2州6都市で計約38万マイルを走行した。"
+          ],
+          "whyItMatters": "規制環境が厳しくなれば、場所や条件を問わず走れるという同社の描く構想と、実際に展開できる市場の広がりとの間に、大きな齟齬が生じかねない。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Geekbench 7 will push your computer or phone even harder for better benchmarking",
+      "summary": "It looks and acts like Geekbench 6, but under the hood are larger datasets, new audio / video tests, and more tweaks.",
+      "keyTakeaways": [
+        "Primate Labs is releasing Geekbench 7, the latest generation of its popular benchmarking tool.",
+        "Geekbench 7 features new video and audio encoding / decoding tests, a redesigned multi-core test, and larger, more demanding datasets for CPUs and GPUs to crunch through.",
+        "It otherwise looks and acts just like Geekbench 6, and a Pro license will cost the same $99 (discounted to $79 until August 6th)."
+      ],
+      "whyItMatters": "I’ve always liked how simple and fast Geekbench is to run, but its short duration also means it’s a better test of quick bursts of computing rather than sustained loads that can throttle some CPUs and GPUs.",
+      "originalURL": "https://www.theverge.com/gadgets/970012/primate-labs-geekbench-7-benchmark-test-software-update",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ベンチマークツール「Geekbench 7」登場——より高負荷な測定へ",
+          "summary": "Primate Labsが「Geekbench 7」を公開した。見た目や操作感はGeekbench 6とほぼ変わらないが、内部ではデータセットが大型化し、音声・映像のエンコード／デコードテストが新たに加わるなど、測定の精度と負荷が引き上げられている。",
+          "keyTakeaways": [
+            "人気ベンチマークツールの最新世代、Geekbench 7がリリース。",
+            "映像・音声の符号化テストを新設し、マルチコアテストを刷新。CPUとGPUに課すデータセットも大幅に拡張された。",
+            "外観や操作性はGeekbench 6を踏襲。Proライセンスは99ドルで、8月6日までは79ドルに割引される。"
+          ],
+          "whyItMatters": "手軽に素早く実行できる点がGeekbenchの魅力だが、テスト時間が短いぶん、持続的な高負荷よりも瞬発的な処理能力を測るツールとして捉えておくのが適切だ。"
+        }
+      }
+    }
+  ]
+}

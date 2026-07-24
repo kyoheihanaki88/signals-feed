@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "トランプ大統領は、サウジアラビアとの原子力エネルギー協定にはイスラエルとの国交正常化が必要だと明言した。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Trump posted something about Saudi Arabia and a nuclear deal?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. He announced that a new nuclear energy deal with Saudi Arabia will require the kingdom to normalize relations with Israel.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "So the nuclear deal depends on them making peace with Israel?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what he's saying. The arrangement would be tied to Saudi Arabia joining the Abraham Accords, which are agreements normalizing ties with Israel.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "What prompted him to say this now?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "A Saudi nuclear power deal had raised alarm in Israel, so Trump clarified this condition publicly.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Has Saudi Arabia responded to this?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. The Saudi Embassy in Washington didn't respond to requests for comment.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know if this changes the deal significantly?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's unclear at this point how the new condition might affect the deal overall.",
+              "duration": 3.892245
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,55 @@
             "ガンジーの最長断食記録は21日間だった"
           ],
           "whyItMatters": "試験問題の漏洩は今年5月に200万人の受験生に影響を与え、十数件の自殺との関連も指摘されており、CJP運動はプラダン大臣の辞任を求めている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about an activist in India ending a hunger strike. What happened?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sonam Wangchuk stopped a 26-day hunger strike in Delhi after meeting with two of Modi's top ministers. He says he got assurances the government would address his concerns.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "Twenty-six days is a long time. What was he protesting about?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "It started with an exam paper scandal. There were leaks that affected about 2 million students back in May. The protests have grown into a wider youth-led movement against the government.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of students. What exactly did he want the government to do?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "From his hospital bed, Wangchuk said he was promised India's parliament would take up accountability in the examination system. The movement also wants a government minister named Pradhan to step down over the leaks.",
+              "duration": 11.102041
+            },
+            {
+              "speaker": "listener",
+              "text": "This sounds pretty serious for students there.",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The exam system has been accused of failing millions of students, and the leaks have been linked to more than a dozen suicides.",
+              "duration": 7.758367
+            }
+          ]
         }
       }
     },
@@ -97,6 +205,65 @@
           ],
           "whyItMatters": "EUはワシントンに説明を求める方針で、2025年に締結した大西洋横断貿易協定の義務を履行してきたとして、今回の関税を「衝撃」と受け止めている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing headlines about new tariffs from Trump. What's happening now?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Donald Trump just imposed tariffs on more than eighty countries. These replace an earlier ten percent duty that was set to expire.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, what's the reason this time?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Trump administration says it's because these countries failed to enforce bans on goods made with forced labour. The tariffs are being imposed under a section of the US Trade Act from nineteen seventy-four.",
+              "duration": 11.049796
+            },
+            {
+              "speaker": "listener",
+              "text": "How are other countries reacting?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "With bewilderment and anger. The EU, for instance, says it honored commitments under a trade agreement reached in twenty twenty-five and views these tariffs as a shock. They're seeking clarification from Washington.",
+              "duration": 11.964082
+            },
+            {
+              "speaker": "listener",
+              "text": "Has this affected markets?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Asian stock markets took a hammering overnight after the announcement.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is basically replacing one set of tariffs with another?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The new measures effectively replace the blanket ten percent tariffs Trump imposed back in February.",
+              "duration": 5.746939
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +296,55 @@
           ],
           "whyItMatters": "規制環境が厳しくなれば、場所や条件を問わず走れるという同社の描く構想と、実際に展開できる市場の広がりとの間に、大きな齟齬が生じかねない。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Tesla had an earnings call yesterday about their robotaxi program?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. CEO Elon Musk tried to paint an optimistic picture of where things stand.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "What did they say exactly?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're adding new cities, driving more miles, and getting more people to try the unsupervised vehicles. Their AI head said the robotaxis have driven 380,000 miles across six cities in two states.",
+              "duration": 11.363265
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like progress. So what's the clash with reality?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, regulations could end up being more restrictive, which would limit where these robotaxis can actually operate.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's a problem for Tesla because...?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because their whole message is about a service that can drive anywhere, under any conditions. If regulations box them in, that vision doesn't really hold up.",
+              "duration": 9.221224
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +376,65 @@
             "外観や操作性はGeekbench 6を踏襲。Proライセンスは99ドルで、8月6日までは79ドルに割引される。"
           ],
           "whyItMatters": "手軽に素早く実行できる点がGeekbenchの魅力だが、テスト時間が短いぶん、持続的な高負荷よりも瞬発的な処理能力を測るツールとして捉えておくのが適切だ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a new version of Geekbench coming out?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Geekbench 7. It's the latest version of that popular benchmarking tool people use to test how fast their computers and phones are.",
+              "duration": 7.523265
+            },
+            {
+              "speaker": "listener",
+              "text": "What's actually different about it?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Under the hood, it's got larger datasets and some new tests — specifically for video and audio encoding and decoding. They also redesigned how it tests multi-core performance.",
+              "duration": 10.292245
+            },
+            {
+              "speaker": "listener",
+              "text": "Does it look totally different to use?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, it looks and acts just like Geekbench 6. So if you've used it before, it'll feel familiar.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "And I'm guessing it's harder on your device now?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the idea — bigger, more demanding workloads for both CPUs and GPUs. Though it's still designed to run quickly, so it's really testing short bursts rather than how a device handles long, sustained loads.",
+              "duration": 12.721633
+            },
+            {
+              "speaker": "listener",
+              "text": "What does it cost?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "A Pro license is ninety-nine dollars, but they're offering it for seventy-nine until August sixth.",
+              "duration": 5.877551
+            }
+          ]
         }
       }
     }

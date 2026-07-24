@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,132 +9,86 @@
       "lead": true,
       "category": "WORLD",
       "source": "NPR (World)",
-      "headline": "U.S. nuclear power deal with Saudi Arabia faces criticism in Israel",
-      "summary": "The nuclear power deal between the U.S. and Saudi Arabia was met with alarm in Israel as it deepened concerns that Israel, a major American ally, and Trump are increasingly diverging on foreign policy and security.",
+      "headline": "Trump says Saudi Arabia's nuclear deal hinges on the kingdom normalizing Israel ties",
+      "summary": "Trump says Saudi Arabia nuclear deal hinges on Saudi ties with Israel After a Saudi nuclear power deal raised alarm in Israel, President Trump announced online that the arrangement is subject to the kingdom normalizing relations with Israel through the Abraham Accords.",
       "keyTakeaways": [
-        "Saudi Arabia is one of the world's largest oil producers, but the Gulf state has been trying to pivot to other energy sources.",
-        "Its nuclear energy program is expected to last decades and be worth billions of dollars, according to the Department of Energy.",
-        "Nuclear power would allow Saudi Arabia to use less petroleum energy domestically and maximize exports as well, Matthew Bunn, a nuclear proliferation expert at Harvard University told NPR's All Things Considered."
+        "With a photograph of himself on the wall as part of \"The Presidential Hall of Fame,\" President Trump gives Crown Prince and Prime Minister Mohammed bin Salman of Saudi Arabia a tour of the White House on Nov.",
+        "The Saudi Embassy in Washington did not respond to NPR's request for comment.",
+        "It is unclear how the new condition might affect the deal."
       ],
-      "whyItMatters": "TEL AVIV — An agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia was met with alarm in Israel on Thursday, as the U.S. and Iran continued to trade strikes in the latest escalation engulfing the Persian Gulf.",
+      "whyItMatters": "President Trump said on Thursday that a new nuclear energy deal with Saudi Arabia will require the Arab kingdom to normalize relations with Israel.",
       "originalURL": "https://www.npr.org/2026/07/23/nx-s1-5904327/us-saudi-arabia-iran",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米サウジ原子力協定、イスラエルに波紋",
-          "summary": "米国とサウジアラビアの原子力協定が、イスラエルに強い懸念をもたらしている。米国の重要な同盟国であるイスラエルとトランプ政権の間で、外交・安全保障をめぐる方針の乖離が深まっているとの見方が広がっている。",
+          "headline": "サウジへの原子力協力、イスラエルとの国交正常化が条件とトランプ氏",
+          "summary": "サウジアラビアとの原子力エネルギー協定をめぐり、トランプ大統領はオンライン上で声明を発表した。この協定はサウジアラビアがアブラハム合意を通じてイスラエルとの関係を正常化することを条件とする、と述べたものだ。協定の発表はイスラエル側に懸念を生じさせていた。",
           "keyTakeaways": [
-            "サウジアラビアは世界有数の産油国だが、近年はエネルギー源の多角化を模索してきた。",
-            "エネルギー省によれば、同国の原子力開発計画は数十年規模に及び、総額は数十億ドルに上る見通しだ。",
-            "ハーバード大学の核不拡散専門家マシュー・バン氏は、原子力の活用により国内の石油消費を抑え、輸出を最大化できると指摘する。"
+            "トランプ大統領はホワイトハウスでサウジアラビアのムハンマド・ビン・サルマン皇太子兼首相を案内した",
+            "ワシントンのサウジ大使館はコメントの求めに応じていない",
+            "この新たな条件が協定にどう影響するかは、現時点では不明"
           ],
-          "whyItMatters": "米企業によるサウジアラビアへの原子力発電所建設・運営合意が伝わったテルアビブでは、米国とイランの応酬が続くペルシャ湾の緊張を背景に、イスラエル側の警戒感が一段と高まっている。"
+          "whyItMatters": "トランプ大統領は、サウジアラビアとの原子力エネルギー協定にはイスラエルとの国交正常化が必要だと明言した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw the U.S. just made a nuclear deal with Saudi Arabia. What's this about?",
-              "duration": 4.597551
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's an agreement for U.S. companies to build and run nuclear energy plants in Saudi Arabia. The program is expected to last decades and be worth billions of dollars.",
-              "duration": 8.724898
-            },
-            {
-              "speaker": "listener",
-              "text": "Wait, Saudi Arabia has all that oil. Why do they need nuclear power?",
+              "text": "I saw Trump posted something about Saudi Arabia and a nuclear deal?",
               "duration": 3.892245
             },
             {
               "speaker": "explainer",
-              "text": "They're trying to pivot to other energy sources. Nuclear power would let them use less petroleum at home and sell more oil abroad.",
-              "duration": 7.131429
+              "text": "Yes. He announced that a new nuclear energy deal with Saudi Arabia will require the kingdom to normalize relations with Israel.",
+              "duration": 6.713469
             },
             {
               "speaker": "listener",
-              "text": "So why is Israel upset about this?",
-              "duration": 2.45551
+              "text": "So the nuclear deal depends on them making peace with Israel?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "There's concern in Israel that this shows a growing gap between their priorities and the Trump administration's approach to the region, especially on security issues.",
-              "duration": 8.542041
+              "text": "That's what he's saying. The arrangement would be tied to Saudi Arabia joining the Abraham Accords, which are agreements normalizing ties with Israel.",
+              "duration": 7.366531
             },
             {
               "speaker": "listener",
-              "text": "Is the timing significant here?",
-              "duration": 1.802449
+              "text": "What prompted him to say this now?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes. This is happening while the U.S. and Iran have been trading strikes in the Persian Gulf, which adds to the tension.",
-              "duration": 6.452245
+              "text": "A Saudi nuclear power deal had raised alarm in Israel, so Trump clarified this condition publicly.",
+              "duration": 5.511837
             },
             {
               "speaker": "listener",
-              "text": "That does seem like a complicated moment for this kind of deal.",
-              "duration": 3.343673
+              "text": "Has Saudi Arabia responded to this?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It is. Israel sees itself as a major American ally, so any shift in how the U.S. engages with Saudi Arabia gets close attention there.",
-              "duration": 7.706122
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカがサウジアラビアで原子力発電所を建設し運営する合意が結ばれました。",
-              "duration": 6.024
+              "text": "Not yet. The Saudi Embassy in Washington didn't respond to requests for comment.",
+              "duration": 4.858776
             },
             {
-              "speaker": "narrator",
-              "text": "この決定に対し、イスラエルは強い懸念を示しています。",
-              "duration": 4.656
+              "speaker": "listener",
+              "text": "Do we know if this changes the deal significantly?",
+              "duration": 2.742857
             },
             {
-              "speaker": "narrator",
-              "text": "サウジアラビアは世界でも有数の産油国ですが、近年はエネルギー源を多様化する動きを進めてきました。",
-              "duration": 8.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "原子力を使えば、国内での石油消費を減らし、輸出に回せる量を増やせるという利点があります。",
-              "duration": 7.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "この計画は数十年にわたり、総額は数十億ドルに達する見込みです。",
-              "duration": 5.904
-            },
-            {
-              "speaker": "narrator",
-              "text": "イスラエルにとっては、アメリカとの安全保障の方針にずれが生じているように映ります。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "ペルシャ湾ではアメリカとイランの緊張が続いており、この合意はその中で発表されました。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "中東の力関係に新たな要素が加わる形です。",
-              "duration": 4.416
+              "speaker": "explainer",
+              "text": "It's unclear at this point how the new condition might affect the deal overall.",
+              "duration": 3.892245
             }
           ]
         }
@@ -145,118 +99,77 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
-      "summary": "Iran, Houthis strike tankers as US bombing continues: What’s the latest?",
+      "source": "The Guardian (World)",
+      "headline": "India ‘cockroach’ activist Sonam Wangchuk ends hunger strike as protests spread",
+      "summary": "The Indian “cockroach” activist Sonam Wangchuk has ended a 26-day hunger strike over an exam paper scandal that has spiralled into a wide-ranging, youth-led wave of demonstrations against Narendra Modi’s government.",
       "keyTakeaways": [
-        "The United States continued to hit Iran for a 12th consecutive night early on Thursday, and Iran retaliated, striking targets across the Gulf, particularly in Kuwait and Jordan.",
-        "Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday that an explosion set a tanker ablaze in the Strait of Hormuz after it attempted to navigate the southern route off the coast of Oman.",
-        "Here is a recap of what happened on Wednesday night and Thursday."
+        "Wangchuk posted that he had ended the hunger strike in Delhi in the presence of two of Modi’s top ministers after receiving assurances that his conditions would be met by the government.",
+        "In a video from his hospital bed, Wangchuk said he had been promised that India’s parliament would take up the issue of accountability in the examination system, which has been accused of failing millions of students.",
+        "Gandhi’s longest hunger strike was 21 days."
       ],
-      "whyItMatters": "The Houthis, meanwhile, claimed a major operation against two Saudi oil tankers in the Red Sea, called the Encelia and the Layla.",
-      "originalURL": "https://www.aljazeera.com/news/2026/7/23/iran-houthis-strike-tankers-as-us-bombing-continues-whats-the-latest?traffic_source=rss",
+      "whyItMatters": "The CJP ​movement wants Pradhan to step down over exam paper leaks, which affected 2 million students in May and have been linked to more than a dozen suicides.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/24/india-cockroach-protest-sonam-wangchuk-ends-hunger-strike",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ホルムズ海峡でタンカー炎上、米軍の爆撃も続く",
-          "summary": "米軍によるイランへの爆撃が12夜連続で続くなか、イランは湾岸各地の目標に報復攻撃を行った。クウェートやヨルダンにも影響が及んでいる。水曜夜から木曜にかけての動きをまとめた。",
+          "headline": "インドの活動家ワンチュク氏、26日間の断食を終える",
+          "summary": "「ゴキブリ」の異名を持つインドの活動家ソナム・ワンチュク氏が、試験問題漏洩スキャンダルをめぐる26日間の断食を終えた。この問題は若者主導の広範な抗議運動へと発展し、モディ政権への批判が高まっている。",
           "keyTakeaways": [
-            "米軍は木曜未明、12夜連続となるイランへの攻撃を実施。イランも湾岸各地に報復した",
-            "イラン革命防衛隊は、オマーン沖の南回り航路を航行しようとしたタンカーがホルムズ海峡で爆発・炎上したと発表した",
-            "水曜夜から木曜にかけての主な出来事を振り返る"
+            "モディ首相の閣僚2人の立会いのもと、政府が条件を受け入れると確約を得たとして、ワンチュク氏はデリーでの断食を終えた",
+            "病院のベッドから公開した動画で、試験制度の説明責任について議会が審議することを約束されたと語った。数百万人の学生が不正の被害を受けたとされる",
+            "ガンジーの最長断食記録は21日間だった"
           ],
-          "whyItMatters": "フーシ派も紅海で「エンセリア」「レイラ」と呼ばれるサウジアラビアのタンカー2隻への大規模攻撃を実施したと主張しており、海上の緊張はさらに高まっている。"
+          "whyItMatters": "試験問題の漏洩は今年5月に200万人の受験生に影響を与え、十数件の自殺との関連も指摘されており、CJP運動はプラダン大臣の辞任を求めている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "There's a lot happening in the Gulf region right now. Can you walk me through what's going on?",
-              "duration": 4.963265
+              "text": "I saw something about an activist in India ending a hunger strike. What happened?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The US has been conducting strikes against Iran for twelve consecutive nights now, and early Thursday that continued. Iran has been responding by striking targets across the Gulf.",
-              "duration": 11.650612
+              "text": "Sonam Wangchuk stopped a 26-day hunger strike in Delhi after meeting with two of Modi's top ministers. He says he got assurances the government would address his concerns.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "Where specifically has Iran been targeting?",
-              "duration": 2.45551
+              "text": "Twenty-six days is a long time. What was he protesting about?",
+              "duration": 3.526531
             },
             {
               "speaker": "explainer",
-              "text": "Particularly in Kuwait and Jordan, according to reports. And Iran's Revolutionary Guard also said a tanker caught fire in the Strait of Hormuz on Thursday after an explosion.",
-              "duration": 9.613061
+              "text": "It started with an exam paper scandal. There were leaks that affected about 2 million students back in May. The protests have grown into a wider youth-led movement against the government.",
+              "duration": 9.691429
             },
             {
               "speaker": "listener",
-              "text": "That's a critical shipping route. What about the Houthis—are they involved too?",
-              "duration": 4.545306
+              "text": "That's a lot of students. What exactly did he want the government to do?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "They are. The Houthis claimed responsibility for a major operation against two Saudi oil tankers in the Red Sea—vessels called the Encelia and the Layla.",
-              "duration": 9.639184
+              "text": "From his hospital bed, Wangchuk said he was promised India's parliament would take up accountability in the examination system. The movement also wants a government minister named Pradhan to step down over the leaks.",
+              "duration": 11.102041
             },
             {
               "speaker": "listener",
-              "text": "So we're seeing attacks on shipping from multiple directions.",
-              "duration": 3.108571
+              "text": "This sounds pretty serious for students there.",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. It's a tense situation with strikes and retaliation happening across several key waterways and countries in the region.",
-              "duration": 6.217143
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ホルムズ海峡で、タンカーが爆発して炎に包まれました。",
-              "duration": 4.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "イランの革命防衛隊によると、オマーン沖の航路を通ろうとした船が被害を受けたといいます。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方アメリカは、イランへの爆撃を12夜続けています。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "イランも応じる形で、クウェートやヨルダンなど湾岸の複数の場所を攻撃しました。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "紅海では、フーシ派がサウジアラビアのタンカー2隻を狙ったと発表しています。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "石油を運ぶ船への攻撃が重なり、エネルギーの流れに影響が出る恐れがあります。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "緊張が続けば、燃料の価格や供給にも変化が及ぶかもしれません。",
-              "duration": 5.736
+              "text": "It is. The exam system has been accused of failing millions of students, and the leaks have been linked to more than a dozen suicides.",
+              "duration": 7.758367
             }
           ]
         }
@@ -268,127 +181,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "‘Cockroach’ protests: India’s Modi promises to punish officials over exam leaks",
-      "summary": "Narendra Modi has vowed to set up “fast-track courts” to speed up the punishment of officials accused of leaking examination papers, as the Indian prime minister seeks to quell a youth-led “cockroach” protest movement that has rocked Delhi and posed one of the biggest challenges to his government.",
+      "headline": "‘Forced labour’ rationale for Trump tariffs met with bewilderment",
+      "summary": "Donald Trump has once again inspired anger and confusion in US allies and trading partners as he imposed a wave of tariffs on more than 80 countries, replacing an expiring global duty introduced earlier this year.",
       "keyTakeaways": [
-        "In his first public remarks on the movement, Modi posted on X: “Nothing is more important than the welfare and future of our youth … Those who try to harm the future of our youth will not be spared.”",
-        "Modi’s statement follows signs the government may be softening its stance.",
-        "Young people across India have also rallied behind the CJP’s demands, with three consecutive days of demonstrations in Mumbai and solidarity protests in Chennai, Indore, Hyderabad and Patiala."
+        "The new measures effectively replace blanket 10% tariffs that Trump imposed in February.",
+        "They are imposed under section 301 of the US Trade Act of 1974, and the Trump administration has said the new measures are due to the dozens of countries failing to enforce bans on goods produced by forced labour.",
+        "The imposition of the new tariffs led to Asian stock markets taking a hammering overnight."
       ],
-      "whyItMatters": "Renuka Chowdhury, an opposition MP with the Congress party, told the news channel India Today that no one could fathom why Modi would not sack Pradhan.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/23/cockroach-janta-party-protest-cjp-india-modi-corrupt-officials",
+      "whyItMatters": "Kallas said the EU would seek ​clarification from Washington, adding that the bloc had honoured commitments under a transatlantic trade agreement reached in 2025 and viewed ⁠the new tariffs as a shock.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/24/trump-tariffs-forced-labor-us-trading-partners-react",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "試験問題漏洩に揺れるインド――モディ首相が厳正対処を約束",
-          "summary": "インドのモディ首相は、試験問題の漏洩に関与した官僚を迅速に裁くため「ファストトラック裁判所」を設置すると表明した。若者たちが主導する抗議運動「ゴキブリ運動」がデリーを揺るがし、政権にとって最大級の試練となるなか、首相は事態の沈静化を図っている。",
+          "headline": "トランプ関税の新たな波、同盟国に困惑広がる",
+          "summary": "トランプ大統領が80カ国以上を対象とした新たな関税を発動した。今年初めに導入された包括的な関税措置の期限切れに伴う置き換えで、同盟国や貿易相手国の間に怒りと戸惑いが広がっている。",
           "keyTakeaways": [
-            "モディ首相はXへの投稿で初めて公式に言及し、「若者の未来を傷つけようとする者は決して許さない」と述べた。",
-            "政府の姿勢が軟化しつつある兆しを受けての発言とみられる。",
-            "抗議行動はムンバイで三日連続、チェンナイやハイデラバードなど各地でも連帯デモが広がっている。"
+            "今回の措置は、2月に導入された一律10%関税に実質的に取って代わるもの。",
+            "根拠とされたのは1974年通商法第301条で、米政府は強制労働による産品の輸入禁止を履行していないとして各国に課税した。",
+            "発動を受け、アジアの株式市場は一夜にして大幅に下落した。"
           ],
-          "whyItMatters": "野党・国民会議派のレヌカ・チョードリー議員は、モディ首相がなぜプラダン大臣を更迭しないのか、誰にも理解できないと語った。"
+          "whyItMatters": "EUはワシントンに説明を求める方針で、2025年に締結した大西洋横断貿易協定の義務を履行してきたとして、今回の関税を「衝撃」と受け止めている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about protests in India called 'cockroach' protests. What's happening there?",
-              "duration": 5.198367
+              "text": "I'm seeing headlines about new tariffs from Trump. What's happening now?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "There's been a youth-led protest movement in Delhi over examination paper leaks. Students are upset because officials allegedly leaked exam papers, which undermines the fairness of the system.",
-              "duration": 10.475102
+              "text": "Donald Trump just imposed tariffs on more than eighty countries. These replace an earlier ten percent duty that was set to expire.",
+              "duration": 7.340408
             },
             {
               "speaker": "listener",
-              "text": "And Modi just responded to this?",
+              "text": "Wait, what's the reason this time?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Trump administration says it's because these countries failed to enforce bans on goods made with forced labour. The tariffs are being imposed under a section of the US Trade Act from nineteen seventy-four.",
+              "duration": 11.049796
+            },
+            {
+              "speaker": "listener",
+              "text": "How are other countries reacting?",
               "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Yes, in his first public remarks on the movement. He posted that nothing is more important than the welfare and future of young people, and promised those who harm their future won't be spared.",
-              "duration": 10.527347
+              "text": "With bewilderment and anger. The EU, for instance, says it honored commitments under a trade agreement reached in twenty twenty-five and views these tariffs as a shock. They're seeking clarification from Washington.",
+              "duration": 11.964082
             },
             {
               "speaker": "listener",
-              "text": "What's he actually doing about it?",
-              "duration": 1.671837
+              "text": "Has this affected markets?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "He's vowed to set up fast-track courts to speed up punishment for officials accused of leaking the papers. It seems the government may be softening its stance after facing this challenge.",
-              "duration": 9.221224
+              "text": "Yes. Asian stock markets took a hammering overnight after the announcement.",
+              "duration": 4.127347
             },
             {
               "speaker": "listener",
-              "text": "Is this just happening in Delhi?",
-              "duration": 1.906939
+              "text": "So this is basically replacing one set of tariffs with another?",
+              "duration": 3.526531
             },
             {
               "speaker": "explainer",
-              "text": "No, young people across India have joined in. There've been three consecutive days of demonstrations in Mumbai, plus solidarity protests in Chennai, Indore, Hyderabad, and Patiala.",
-              "duration": 10.34449
-            },
-            {
-              "speaker": "listener",
-              "text": "Why is this such a big deal for Modi's government?",
-              "duration": 3.343673
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's being described as one of the biggest challenges to his government. The scale and persistence of the youth movement has really put pressure on leadership to respond.",
-              "duration": 7.967347
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "インドでは今、試験問題の漏洩をめぐって若者たちが街に出ています。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "モディ首相は、関与した官僚を迅速に裁く特別な裁判所を設けると約束しました。",
-              "duration": 6.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "デリーでは「ゴキブリ運動」と呼ばれる抗議が続き、政権への大きな圧力になっています。",
-              "duration": 6.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "首相は初めて公の場で「若者の未来を傷つける者は許さない」と述べました。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "ムンバイでは三日連続でデモがあり、他の都市でも連帯の動きが広がっています。",
-              "duration": 5.88
-            },
-            {
-              "speaker": "narrator",
-              "text": "野党議員は、問題の大臣がなぜ更迭されないのか誰も理解できないと指摘しました。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "若者の怒りが政治を動かし始めている様子が見えます。",
-              "duration": 4.44
+              "text": "Exactly. The new measures effectively replace the blanket ten percent tariffs Trump imposed back in February.",
+              "duration": 5.746939
             }
           ]
         }
@@ -400,112 +272,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Price-hiked iPads are a little cheaper right now",
-      "summary": "This model sports 1TB of storage, an optional 5G cellular connection, and it’s marked down to $749, a $500 discount from the suggested retail price.",
+      "headline": "Tesla’s robotaxi promises are clashing with reality",
+      "summary": "In an earnings call yesterday, Tesla CEO Elon Musk did his best to paint a positive portrait of the company’s robotaxi program.",
       "keyTakeaways": [
-        "Sony is selling refurbished Playstation 5 Slim consoles for $499, a $100 break from the usual price.",
-        "Normally $99.99, a four pack of the second-generation Apple AirTags are on sale for $89.99 at Amazon, matching their lowest price ever.",
-        "Amazon has the Razer Viper V3 Pro wireless gaming mouse listed for $99.99, about $30 lower than its usual price."
+        "New cities are being added, more miles are being driven, and more people are experiencing Tesla’s unsupervised vehicles.",
+        "Tesla did its best to frame the situation as headed in the right direction.",
+        "Ashok Elluswamy, the company’s head of AI, said that Tesla’s unsupervised robotaxis have driven 380,000 miles across six cities in two different states."
       ],
-      "whyItMatters": "They may have some minor cosmetic imperfections, but are tested and certified by Sony to perform just as well as a new console.",
-      "originalURL": "https://www.theverge.com/gadgets/969003/apple-ipad-air-pro-airtag-deal-sale",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "whyItMatters": "A more restrictive regulatory environment could limit the total addressable market for Tesla robotaxis, which would clash with the company’s message about a more generalized service that can drive anywhere, under any conditions.",
+      "originalURL": "https://www.theverge.com/transportation/970003/tesla-robotaxi-mileage-waymo-cities-earnings-musk",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "値上がりしたiPadが、いま少し手に届きやすくなっている",
-          "summary": "対象モデルはストレージ1TB、オプションで5G接続にも対応。希望小売価格から500ドル引きとなる749ドルで販売されている。",
+          "headline": "テスラの自動運転タクシー、理想と現実の間で",
+          "summary": "テスラのイーロン・マスクCEOは昨日の決算説明会で、同社のロボタクシー事業について前向きな見通しを語った。",
           "keyTakeaways": [
-            "ソニーがPlayStation 5 Slimのリファービッシュ品を499ドルで販売中。通常価格より100ドル安い。",
-            "第2世代AirTag 4個セットがAmazonで89.99ドルに。通常99.99ドルのところ、過去最安値に並ぶ価格だ。",
-            "AmazonでRazer Viper V3 Proワイヤレスゲーミングマウスが99.99ドルに。通常より約30ドル低い。"
+            "対応都市の拡大、走行距離の増加、無人車両の体験者も着実に増えている。",
+            "テスラは事業が正しい方向へ進んでいると強調した。",
+            "AI責任者のアショク・エルスワミー氏によれば、無人ロボタクシーは2州6都市で計約38万マイルを走行した。"
           ],
-          "whyItMatters": "外観に軽微な傷がある場合もあるが、ソニーが動作を検査・認定しており、新品と同等の性能が保証されている。"
+          "whyItMatters": "規制環境が厳しくなれば、場所や条件を問わず走れるという同社の描く構想と、実際に展開できる市場の広がりとの間に、大きな齟齬が生じかねない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about iPads being cheaper right now. What's the deal?",
-              "duration": 3.422041
+              "text": "So Tesla had an earnings call yesterday about their robotaxi program?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "There's a model with a terabyte of storage and optional 5G that's marked down to seven forty-nine. That's five hundred dollars off the suggested retail price.",
-              "duration": 8.176327
+              "text": "Yes. CEO Elon Musk tried to paint an optimistic picture of where things stand.",
+              "duration": 5.32898
             },
             {
               "speaker": "listener",
-              "text": "Five hundred off? That's a big discount. Are there other tech deals happening too?",
-              "duration": 5.01551
+              "text": "What did they say exactly?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Yeah, a few. Sony is selling refurbished PlayStation 5 Slim consoles for four ninety-nine, which is a hundred dollars less than usual.",
-              "duration": 7.653878
+              "text": "They're adding new cities, driving more miles, and getting more people to try the unsupervised vehicles. Their AI head said the robotaxis have driven 380,000 miles across six cities in two states.",
+              "duration": 11.363265
             },
             {
               "speaker": "listener",
-              "text": "Refurbished though—does that mean they're not as good?",
-              "duration": 2.925714
+              "text": "That sounds like progress. So what's the clash with reality?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "They may have minor cosmetic imperfections, but Sony tests and certifies them to perform just as well as new consoles.",
-              "duration": 5.982041
+              "text": "Well, regulations could end up being more restrictive, which would limit where these robotaxis can actually operate.",
+              "duration": 5.929796
             },
             {
               "speaker": "listener",
-              "text": "Got it. Anything else on sale?",
-              "duration": 1.854694
+              "text": "And that's a problem for Tesla because...?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Apple AirTags are discounted. A four-pack of the second generation is eighty-nine ninety-nine at Amazon—that matches their lowest price ever. And there's a Razer gaming mouse for about thirty dollars off.",
-              "duration": 11.52
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Appleは最近iPadの価格を引き上げましたが、いまは一部のモデルが割引されています。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "1TBのストレージを持つモデルが、通常より500ドル安い749ドルで手に入ります。",
-              "duration": 7.32
-            },
-            {
-              "speaker": "narrator",
-              "text": "5G接続にも対応しているため、外出先でも使いやすい仕様です。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "ほかにも、ソニーが整備済みのPlayStation 5 Slimを499ドルで売り出しています。",
-              "duration": 6.696
-            },
-            {
-              "speaker": "narrator",
-              "text": "外観に小さな傷があることもありますが、ソニーが性能を確認しているので新品と変わらず使えます。",
-              "duration": 7.296
-            },
-            {
-              "speaker": "narrator",
-              "text": "朝の買い物リストに加えるなら、いまが良いタイミングかもしれません。",
-              "duration": 4.968
+              "text": "Because their whole message is about a service that can drive anywhere, under any conditions. If regulations box them in, that vision doesn't really hold up.",
+              "duration": 9.221224
             }
           ]
         }
@@ -517,122 +353,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Verge",
-      "headline": "Tesla’s revenues are bouncing back, but profits are still weak",
-      "summary": "Tesla is in negative free cash flow territory, as it increases its expenditures on major projects like AI infrastructure and robotics.",
+      "headline": "Geekbench 7 will push your computer or phone even harder for better benchmarking",
+      "summary": "It looks and acts like Geekbench 6, but under the hood are larger datasets, new audio / video tests, and more tweaks.",
       "keyTakeaways": [
-        "After a dismal two years of weakening demand, falling sales, and damage to its brand by Elon Musk’s political activities, Tesla’s road to recovery continues apace.",
-        "Despite that mission, Tesla remains a car company.",
-        "Tesla certainly did a good job shrinking its inventory, which is good for the balance sheet."
+        "Primate Labs is releasing Geekbench 7, the latest generation of its popular benchmarking tool.",
+        "Geekbench 7 features new video and audio encoding / decoding tests, a redesigned multi-core test, and larger, more demanding datasets for CPUs and GPUs to crunch through.",
+        "It otherwise looks and acts just like Geekbench 6, and a Pro license will cost the same $99 (discounted to $79 until August 6th)."
       ],
-      "whyItMatters": "In a shareholder deck, Tesla said it “generated over $100B in revenue on a trailing twelve-month basis for the first time.” It also touted Cybercab production at its Gigafactory in Texas, and said Tesla Semi production “remains on track” at its Nevada facility later this year.",
-      "originalURL": "https://www.theverge.com/transportation/969311/tesla-q2-2026-earnings-revenue-profit-sales",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "I’ve always liked how simple and fast Geekbench is to run, but its short duration also means it’s a better test of quick bursts of computing rather than sustained loads that can throttle some CPUs and GPUs.",
+      "originalURL": "https://www.theverge.com/gadgets/970012/primate-labs-geekbench-7-benchmark-test-software-update",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "テスラ、売上は回復基調も利益は依然として薄い",
-          "summary": "テスラがAIインフラやロボティクスといった大型プロジェクトへの投資を拡大するなか、フリーキャッシュフローはマイナス圏に沈んでいる。",
+          "headline": "ベンチマークツール「Geekbench 7」登場——より高負荷な測定へ",
+          "summary": "Primate Labsが「Geekbench 7」を公開した。見た目や操作感はGeekbench 6とほぼ変わらないが、内部ではデータセットが大型化し、音声・映像のエンコード／デコードテストが新たに加わるなど、測定の精度と負荷が引き上げられている。",
           "keyTakeaways": [
-            "需要の低迷、販売不振、そしてイーロン・マスクの政治的言動によるブランド毀損と、苦難の二年間を経たテスラだが、回復への歩みは着実に続いている。",
-            "大きな野心を掲げながらも、テスラの収益の軸は依然として自動車にある。",
-            "在庫の圧縮は順調に進んでおり、財務体質の改善という点では評価できる。"
+            "人気ベンチマークツールの最新世代、Geekbench 7がリリース。",
+            "映像・音声の符号化テストを新設し、マルチコアテストを刷新。CPUとGPUに課すデータセットも大幅に拡張された。",
+            "外観や操作性はGeekbench 6を踏襲。Proライセンスは99ドルで、8月6日までは79ドルに割引される。"
           ],
-          "whyItMatters": "テスラは株主向け資料のなかで、直近十二か月の累計売上高が初めて一千億ドルを超えたと明らかにし、テキサスのギガファクトリーでのサイバーキャブ生産や、ネバダ工場でのテスラ・セミの年内生産開始が予定通り進んでいることも強調した。"
+          "whyItMatters": "手軽に素早く実行できる点がGeekbenchの魅力だが、テスト時間が短いぶん、持続的な高負荷よりも瞬発的な処理能力を測るツールとして捉えておくのが適切だ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Tesla's revenues are improving. Does that mean the company's doing well again?",
-              "duration": 4.440816
+              "text": "So there's a new version of Geekbench coming out?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "It's a mixed picture. Yes, revenues are bouncing back after two tough years of falling sales and weakening demand. They just crossed a hundred billion dollars over the past twelve months for the first time.",
-              "duration": 10.762449
+              "text": "Yes, Geekbench 7. It's the latest version of that popular benchmarking tool people use to test how fast their computers and phones are.",
+              "duration": 7.523265
             },
             {
               "speaker": "listener",
-              "text": "That sounds pretty good. What's the problem then?",
-              "duration": 2.533878
+              "text": "What's actually different about it?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "Profits are still weak, and the company's actually in negative free cash flow right now. They're spending heavily on things like AI infrastructure and robotics.",
-              "duration": 8.724898
+              "text": "Under the hood, it's got larger datasets and some new tests — specifically for video and audio encoding and decoding. They also redesigned how it tests multi-core performance.",
+              "duration": 10.292245
             },
             {
               "speaker": "listener",
-              "text": "Right, but Tesla's more than just cars now, isn't it?",
-              "duration": 3.004082
+              "text": "Does it look totally different to use?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Despite all those other projects, Tesla remains fundamentally a car company. They did manage to shrink their inventory though, which helps their balance sheet.",
-              "duration": 8.202449
+              "text": "No, it looks and acts just like Geekbench 6. So if you've used it before, it'll feel familiar.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "Are they making progress on those newer vehicles?",
-              "duration": 2.76898
+              "text": "And I'm guessing it's harder on your device now?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "They say Cybercab production is happening at their Texas factory, and Semi production at the Nevada facility is still on track for later this year.",
-              "duration": 7.967347
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-23/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "テスラの売上が戻りつつあります。",
-              "duration": 2.928
+              "text": "That's the idea — bigger, more demanding workloads for both CPUs and GPUs. Though it's still designed to run quickly, so it's really testing short bursts rather than how a device handles long, sustained loads.",
+              "duration": 12.721633
             },
             {
-              "speaker": "narrator",
-              "text": "直近の一年間で、初めて千億ドルを超えました。",
-              "duration": 4.296
+              "speaker": "listener",
+              "text": "What does it cost?",
+              "duration": 1.149388
             },
             {
-              "speaker": "narrator",
-              "text": "ただ、利益の面ではまだ厳しい状況が続いています。",
-              "duration": 4.536
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIやロボット開発への投資が膨らみ、手元に残る現金は減っています。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "過去二年は需要の落ち込みや販売不振に苦しみましたが、回復の兆しは見えてきました。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "在庫も減らすことができ、財務の改善にはつながっています。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "テキサスとネバダの工場では、新しい車両の生産も予定通り進んでいます。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "収益の中心は今も自動車であり、その柱がどこまで安定するかが鍵になります。",
-              "duration": 6.48
+              "speaker": "explainer",
+              "text": "A Pro license is ninety-nine dollars, but they're offering it for seventy-nine until August sixth.",
+              "duration": 5.877551
             }
           ]
         }

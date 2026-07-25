@@ -29,7 +29,8 @@ Usage:
 """
 import sys, os, re, json, argparse, hashlib, datetime
 from urllib.parse import urlsplit
-from editorial import topic_fingerprint, topics_overlap, story_metadata   # v2.1 + Morning Mix
+from editorial import (topic_fingerprint, topics_overlap, story_metadata,   # v2.1 + Morning Mix
+                       story_identity, same_underlying_story)               # underlying-story guard
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEF_CAND = os.path.join(HERE, "candidates.json")
@@ -469,6 +470,49 @@ def _fp(c):
     return topic_fingerprint(c.get("title", ""), c.get("snippet", ""))
 
 
+def _id_str(identity):
+    """Unambiguous identity for logs — every boolean the guard actually reads, spelled out.
+    `event_family` is the story-metadata CLASSIFICATION (display only); `product_story` is
+    the boolean the duplicate rules gate on. They are printed separately on purpose."""
+    if not identity:
+        return "product_story=false (no consumer-product identity)"
+    return (f"product_story={str(identity['is_product_story']).lower()} "
+            f"brand={identity['brand']} "
+            f"family={identity['product_family'] or 'none'} "
+            f"covers={'+'.join(sorted(identity['covered_families'])) or 'none'} "
+            f"launch_event={identity['event'] or 'none'} "
+            f"roundup={str(identity['is_roundup']).lower()} "
+            f"event_family={identity['event_family']}")
+
+
+def _identity(c, now=None):
+    """Underlying-story identity (brand / product family / launch event), cached. None for
+    stories that aren't recognizably consumer-product news."""
+    if "_sid" not in c:
+        c["_sid"] = story_identity(c.get("title", ""), c.get("snippet", ""), meta(c, now))
+    return c["_sid"]
+
+
+def duplicate_of(c, others, now=None):
+    """(conflicting_story, reason, matched_rule) if `c` retells a story already chosen,
+    else (None, "", "").
+
+    TWO independent gates — a story is a duplicate if EITHER fires:
+      1. topic fingerprint overlap (v2.1) — canonical entity/theme collision.
+      2. underlying-story identity (2026-07-25) — same brand + same product family or launch
+         event. This exists because the fingerprint vocabulary does not know every consumer
+         brand: an unrecognized story fingerprints to the EMPTY set, and empty never overlaps,
+         which is exactly how a Galaxy Unpacked roundup and a Z Fold hands-on both shipped."""
+    fp = _fp(c)
+    for s in others:
+        if topics_overlap(fp, _fp(s)):
+            return s, "topic fingerprint overlap", "topic-fingerprint"
+        dup, why, rule = same_underlying_story(_identity(c, now), _identity(s, now))
+        if dup:
+            return s, f"same underlying story — {why}", rule
+    return None, "", ""
+
+
 def _cat(c):
     return (c.get("category") or "OTHER").upper()
 
@@ -476,10 +520,11 @@ def _cat(c):
 def dominant_override(c, chosen):
     """Deterministic dominant-news override for a THIRD WORLD story (never a fourth, never
     unlimited): a big multi-publisher cluster (cluster_size >= DOMINANT_CLUSTER_MIN AND >= 2
-    distinct publishers) about a DIFFERENT dominant event than the WORLD stories already chosen."""
+    distinct publishers) about a DIFFERENT dominant event than the WORLD stories already
+    chosen — judged by BOTH duplicate gates, so the override can never smuggle in a retelling."""
     return (int(c.get("cluster_size") or 1) >= DOMINANT_CLUSTER_MIN
             and int(c.get("cluster_sources") or 1) >= 2
-            and not any(topics_overlap(_fp(c), _fp(s)) for s in chosen if _cat(s) == "WORLD"))
+            and duplicate_of(c, [s for s in chosen if _cat(s) == "WORLD"])[0] is None)
 
 
 def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
@@ -503,12 +548,27 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
     (base >= DISCOVERY_SLOT_MIN_BASE). No qualifying story → no slot, nothing forced."""
     history = history or ({}, [])
     chosen = [lead]                       # constraint accounting includes the lead
-    fps = [_fp(lead)]
     picked = []                           # (candidate, tag) in pick order — audit
     static = {short_id(c): mix_static(c, history, now) for c in pool}
+    logged_dups = set()                   # log each rejected duplicate once per phase
 
-    def overlap(c):
-        return any(topics_overlap(_fp(c), f) for f in fps)
+    def overlap(c, phase="selection"):
+        """True when `c` retells something already chosen (either duplicate gate). Every
+        rejection is logged once per phase with both identities and the reason."""
+        conflict, why, rule = duplicate_of(c, chosen, now)
+        if conflict is None:
+            return False
+        key = (short_id(c), short_id(conflict), phase)
+        if key not in logged_dups:
+            logged_dups.add(key)
+            print(f"  duplicate rejected: selection_phase={phase} matched_rule={rule}")
+            print(f"      candidate id={short_id(c)}: {c.get('title','')[:66]}")
+            print(f"          {_id_str(_identity(c, now))}")
+            print(f"      conflicts with selected id={short_id(conflict)}: "
+                  f"{conflict.get('title','')[:52]}")
+            print(f"          {_id_str(_identity(conflict, now))}")
+            print(f"      reason: {why}")
+        return True
 
     def allowed(c, relax):
         cat = _cat(c)
@@ -528,7 +588,6 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
 
     def take(c, tag, notes):
         chosen.append(c)
-        fps.append(_fp(c))
         picked.append((c, tag))
         c["_mix_tag"] = tag               # audit: how this story earned its slot
         extra = f" · {'; '.join(notes)}" if notes else ""
@@ -538,7 +597,7 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
     qual = [c for c in pool
             if (meta(c, now)["consumer_launch"] or meta(c, now)["discovery_value"])
             and base_score(c, now, fresh_hours) >= DISCOVERY_SLOT_MIN_BASE
-            and not overlap(c) and allowed(c, 0)[0]]
+            and not overlap(c, "discovery-slot") and allowed(c, 0)[0]]
     if qual:
         best = sorted(qual, key=lambda c: (-adjusted(c)[0], short_id(c)))[0]
         take(best, "discovery-slot", adjusted(best)[1])
@@ -550,7 +609,7 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
     while len(chosen) < need + 1:
         best, best_key, best_notes, best_tag = None, None, None, None
         for c in pool:
-            if any(s is c for s in chosen) or overlap(c):
+            if any(s is c for s in chosen) or overlap(c, "supporting"):
                 continue
             ok, tag = allowed(c, relax)
             if not ok:
@@ -587,7 +646,9 @@ def pick_supporting(pool, lead, now, fresh_hours, history=None, need=4):
         ids = {short_id(s) for s in chosen}
         urls = {s.get("canonical_url") or s.get("url") for s in chosen}
         for c in pool:
-            if any(s is c for s in chosen) or overlap(c):
+            # The duplicate guard is NEVER relaxed here: the emergency fallback may ignore
+            # CATEGORY balance, but it must never reintroduce a rejected retelling.
+            if any(s is c for s in chosen) or overlap(c, "emergency-fill"):
                 continue
             if short_id(c) in ids or (c.get("canonical_url") or c.get("url")) in urls:
                 continue
@@ -632,9 +693,9 @@ def audit_candidates(pool, lead, five, now, fresh_hours, history, limit=20):
             if tag == "world-3rd-override":
                 verdict += " — dominant-news override for a 3rd WORLD story"
         else:
-            dup = next((s for s in five if topics_overlap(_fp(c), _fp(s))), None)
+            dup, dup_why, dup_rule = duplicate_of(c, five, now)
             if dup is not None:
-                verdict = f"rejected: duplicate topic of selected {short_id(dup)}"
+                verdict = f"rejected: duplicate of selected {short_id(dup)} [{dup_rule}] ({dup_why})"
             elif _cat(c) == "WORLD" and world_n >= WORLD_CAP:
                 verdict = (f"rejected: WORLD cap ({world_n} in the five"
                            f"{'' if world_n < 3 else ' incl. an override'}; "

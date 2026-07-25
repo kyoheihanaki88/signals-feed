@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-25",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "More than 200,000 people flee or lock down as wildfires sweep France and Spain",
+      "summary": "More than 200,000 people have fled or been ordered to lock down as huge wildfires swept Spain and France on Friday, prompting Madrid to declare a national emergency and the French authorities to order the total evacuation, by land and sea, of one of the country’s best-known holiday spots.",
+      "keyTakeaways": [
+        "More than 110,000 people had been evacuated in two days to escape the Cap Ferret fire, the Gironde prefecture said, including thousands of holidaymakers in campsites and rental homes.",
+        "Scientists say climate breakdown is triggering more frequent and more extreme weather events, evaporating soils and waterways, fuelling wildfires and leading to thousands of excess deaths.",
+        "More than 600 firefighters were struggling to contain that blaze, Clavreul said.“There are a great many new fire starts ahead of the main blaze."
+      ],
+      "whyItMatters": "France’s president, ​Emmanuel Macron, said he had activated the EU’s civil protection mechanism as the country, which has endured three almost back-to-back heatwaves since May, battled numerous wildfires.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "フランスとスペインで大規模山火事、20万人超が避難または外出禁止に",
+          "summary": "金曜日、スペインとフランスを大規模な山火事が襲い、20万人以上が避難を余儀なくされるか、外出禁止措置の対象となった。マドリードは国家非常事態を宣言し、フランス当局はフランス屈指の観光地に対して陸路・海路を問わない全面避難命令を下した。",
+          "keyTakeaways": [
+            "ジロンド県によると、カプ・フェレの火災から逃れるため、キャンプ場や貸別荘の観光客を含む11万人以上が2日間で避難した。",
+            "気候変動により極端な気象現象が頻発し、土壌や水路の乾燥、山火事の激化、そして多くの死者につながっていると科学者たちは指摘する。",
+            "600人以上の消防士が火災の封じ込めに当たっているが、「主火線の前方で新たな火の手が次々と上がっている」と当局者は述べた。"
+          ],
+          "whyItMatters": "マクロン大統領はEUの市民保護メカニズムを発動したと表明した。フランスでは5月以降、熱波がほぼ連続して3度襲来しており、各地で山火事との戦いが続いている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "First person gets new experimental vaccine for Ebola",
+      "summary": "Hunt said he wanted to help after seeing news reports of the deadly Ebola outbreak in Democratic Republic of Congo.",
+      "keyTakeaways": [
+        "Hunt is the first of 50 healthy volunteers aged 18-55 being recruited for the trial.",
+        "The vaccine uses the same technology as the Oxford AstraZeneca Covid jab which was given to hundreds of millions of people during the pandemic.",
+        "What is Ebola and why is stopping the latest outbreak so difficult?"
+      ],
+      "whyItMatters": "Prof Teresa Lambe, who led the Ebola vaccine team at the University of Oxford, said they had been able to create it so quickly because of the background of decades of research.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c8jn007gmpzo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "At the desk",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "エボラ熱の新ワクチン、初の接種者が登場",
+          "summary": "コンゴ民主共和国でエボラ熱の感染拡大が続くなか、ニュースを見てこの試験への参加を決めたというハント氏が、実験的な新ワクチンの最初の接種者となった。",
+          "keyTakeaways": [
+            "ハント氏は18歳から55歳の健康な成人50人を対象とした臨床試験の、最初の参加者だ。",
+            "このワクチンは、パンデミック中に数億人が接種したオックスフォード・アストラゼネカ製コロナワクチンと同じ技術を用いている。",
+            "エボラ熱とは何か、そして今回の感染拡大の封じ込めがなぜ難しいのか——その問いが改めて注目されている。"
+          ],
+          "whyItMatters": "オックスフォード大学でエボラワクチン開発チームを率いたテレサ・ランベ教授は、数十年にわたる研究の蓄積があったからこそ、これほど迅速に開発できたと語っている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "ICC member states vote to remove chief prosecutor Karim Khan",
+      "summary": "The International Criminal Court voted to remove the global tribunal's chief prosecutor on Friday, nearly two years after sexual misconduct allegations against him first emerged, the court's oversight body announced.",
+      "keyTakeaways": [
+        "Karim Khan, Prosecutor of the International Criminal Court, looks up prior to a press conference in The Hague, Netherlands, July 3, 2023.",
+        "British barrister Karim Khan was accused of sexual misconduct with a female aide, as outlined by The Associated Press in a series of stories, allegations which he has steadfastly denied.",
+        "The court's oversight body, the Assembly of States Parties, concluded that Khan had committed \"serious misconduct and serious breach of duty,\" said Päivi Kaukoranta, the body's president."
+      ],
+      "whyItMatters": "Rubio said he will pressure member states to withdraw from the institution, sanction organizations that work with the court and ban staff from traveling to the United States.",
+      "originalURL": "https://www.npr.org/2026/07/24/g-s1-135498/icc-court-prosecutor-karim-khan-vote",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ICC検察官カリム・カーンが罷免される",
+          "summary": "国際刑事裁判所は金曜日、性的不正行為の疑いが浮上してから約2年を経て、主任検察官の解任を決議した。裁判所の監督機関がこれを発表した。",
+          "keyTakeaways": [
+            "英国人法廷弁護士のカーン検察官は、女性補佐官への性的不正行為を告発されていた。本人は一貫して否定してきた。",
+            "監督機関である締約国会議は、カーンが「重大な非行および職務上の重大な義務違反」を犯したと結論づけた。",
+            "疑惑が最初に報じられてから、解任決議まで約2年が経過した。"
+          ],
+          "whyItMatters": "ルビオ国務長官はICCへの圧力を強める姿勢を示しており、加盟国への脱退要求や、裁判所と協力する組織への制裁、職員の米国入国禁止などを示唆している。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
+          "summary": "サムスンは夏恒例の発表イベントを水曜日に開催し、新しいウォッチシリーズと折りたたみスマートフォンのラインアップを披露した。",
+          "keyTakeaways": [
+            "今年のGalaxy Unpackedで発表された主な内容は、イベントを見逃した人も後から確認できる。",
+            "新型Foldはヒンジ設計を刷新し、サムスン独自のFlex Titaniumディスプレイ技術を採用。",
+            "内側ディスプレイの折り目は完全には消えないものの、従来モデルと比べて明らかに目立ちにくくなった。"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルのZ Fold 7から大幅にデザインが刷新された。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung’s wider Z Fold 8 feels just right",
+      "summary": "A year after overhauling its Z Fold phone with a radically thinner design, Samsung has changed things up again, this time altering the shape entirely.",
+      "keyTakeaways": [
+        "The Z Fold 8 is wider than any of Samsung’s previous foldables, and shorter too, a size and shape somewhere between Samsung’s traditional Flip and Fold models.",
+        "In person, to my surprise, it feels great, and almost immediately intuitive.",
+        "If you want to get a feel for it yourself, grab your passport — the Z Fold 8 is about the same height and less than half an inch more narrow."
+      ],
+      "whyItMatters": "The Z Fold 8 may be the official follow-up to last year’s impressive Z Fold 7, but in truth the Z Fold 8 Ultra is the straightforward sequel.",
+      "originalURL": "https://www.theverge.com/tech/968663/samsung-galaxy-z-fold-8-wide-hands-on",
+      "readTime": 10,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンの新折りたたみ、形を変えた理由",
+          "summary": "昨年、大幅な薄型化で刷新されたZ Fold。サムスンは今年さらに踏み込み、本体の形状そのものを見直してきた。",
+          "keyTakeaways": [
+            "Z Fold 8は歴代モデルより幅広く、背は低い。FlipとFoldの中間を狙ったような独自のサイズ感だ。",
+            "実際に手にしてみると、驚くほど自然に馴染む。直感的に使えると感じるまで、さほど時間はかからなかった。",
+            "サイズ感を掴みたければパスポートを手元に。Z Fold 8はほぼ同じ高さで、幅はわずかに狭い程度だ。"
+          ],
+          "whyItMatters": "Z Fold 8はZ Fold 7の正統な後継機という位置づけだが、真の続編と呼べるのはZ Fold 8 Ultraのほうかもしれない。"
+        }
+      }
+    }
+  ]
+}

@@ -282,3 +282,196 @@ def story_metadata(title, snippet="", reliability=None, published_at=None, now=N
         "consumer_launch": launch,
         "discovery_value": discovery_value,
     }
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════
+# Underlying-story identity (2026-07-25 regression fix)
+#
+# WHY: `topic_fingerprint` only recognizes a fixed canon vocabulary. A story it does not
+# recognize fingerprints to the EMPTY set, and `topics_overlap` returns False whenever
+# either side is empty — so two articles about the SAME product launch passed every gate:
+#
+#   "Samsung Galaxy Unpacked 2026: The 6 biggest announcements"   (roundup)
+#   "Samsung's wider Z Fold 8 feels just right"                   (hands-on)
+#
+# Both fingerprinted to {} , and their title-token Jaccard was 0.09 (< the 0.30 clustering
+# threshold), so scout clustering ALSO kept them apart. One event took two TECH slots.
+#
+# This adds a second, independent identity for CONSUMER-PRODUCT news: brand + product
+# family + launch event. It deliberately does NOT block everything from one company —
+# a phone launch and a chip-factory or earnings story stay independent, because they are
+# different event families and only one of them is a product story.
+# ══════════════════════════════════════════════════════════════════════════════════════
+
+# Consumer-tech brands we can normalize. Unknown brands simply yield no identity (the
+# existing fingerprint gate still applies) — this list is safe to extend.
+_BRAND_RX = [
+    (re.compile(r"\bsamsung\b", re.I), "samsung"),
+    (re.compile(r"\b(apple|iphone|ipad|macbook|airpods|apple watch|vision pro)\b", re.I), "apple"),
+    (re.compile(r"\b(google|pixel|android)\b", re.I), "google"),
+    (re.compile(r"\bmicrosoft|xbox|surface\b", re.I), "microsoft"),
+    (re.compile(r"\b(meta|quest|oculus)\b", re.I), "meta"),
+    (re.compile(r"\b(sony|playstation|\bps5\b)\b", re.I), "sony"),
+    (re.compile(r"\bnintendo|switch 2\b", re.I), "nintendo"),
+    (re.compile(r"\b(openai|chatgpt)\b", re.I), "openai"),
+    (re.compile(r"\banthropic|claude\b", re.I), "anthropic"),
+    (re.compile(r"\bnothing phone\b", re.I), "nothing"),
+    (re.compile(r"\bmotorola|moto g\b", re.I), "motorola"),
+    (re.compile(r"\bxiaomi|redmi\b", re.I), "xiaomi"),
+    (re.compile(r"\boneplus\b", re.I), "oneplus"),
+    (re.compile(r"\btesla\b", re.I), "tesla"),
+]
+
+# Product families, MOST SPECIFIC FIRST. Values are space-separated hierarchies:
+# "galaxy z fold" is inside "galaxy", so a broad roundup and a specific model match by
+# prefix. Two DIFFERENT families of one brand (iphone vs mac) are materially distinct.
+_FAMILY_RX = [
+    (re.compile(r"\b(galaxy\s+)?z\s*fold\b", re.I), "galaxy z fold"),
+    (re.compile(r"\b(galaxy\s+)?z\s*flip\b", re.I), "galaxy z flip"),
+    (re.compile(r"\bgalaxy\s+s\d+\b", re.I), "galaxy s"),
+    (re.compile(r"\bgalaxy\s+watch\b", re.I), "galaxy watch"),
+    (re.compile(r"\bgalaxy\s+buds\b", re.I), "galaxy buds"),
+    (re.compile(r"\bgalaxy\b", re.I), "galaxy"),
+    (re.compile(r"\biphone\b", re.I), "iphone"),
+    (re.compile(r"\bapple\s+watch\b", re.I), "apple watch"),
+    (re.compile(r"\bairpods\b", re.I), "airpods"),
+    (re.compile(r"\bvision\s+pro\b", re.I), "vision pro"),
+    (re.compile(r"\bmac(book)?\b", re.I), "mac"),
+    (re.compile(r"\bipad\b", re.I), "ipad"),
+    (re.compile(r"\bpixel\s+watch\b", re.I), "pixel watch"),
+    (re.compile(r"\bpixel\b", re.I), "pixel"),
+    (re.compile(r"\bplaystation|\bps5\b", re.I), "playstation"),
+    (re.compile(r"\bxbox\b", re.I), "xbox"),
+    (re.compile(r"\bswitch\s*2\b", re.I), "switch"),
+    (re.compile(r"\bquest\s*\d?\b", re.I), "quest"),
+]
+
+# Named launch events — the strongest same-story signal when two articles share one.
+_LAUNCH_EVENT_RX = [
+    (re.compile(r"\bunpacked\b", re.I), "unpacked"),
+    (re.compile(r"\bwwdc\b", re.I), "wwdc"),
+    (re.compile(r"\bmade by google\b", re.I), "made by google"),
+    (re.compile(r"\bgalaxy ai\b", re.I), "galaxy ai"),
+    (re.compile(r"\b(ces|mwc|ifa)\b", re.I), "trade show"),
+    (re.compile(r"\bkeynote\b", re.I), "keynote"),
+]
+
+# Event families that are PRODUCT news (a launch, a hands-on, a roundup of one event).
+# Anything else about the same brand — earnings, markets, policy, a factory, a lawsuit —
+# is materially distinct news value and must stay independently selectable.
+_PRODUCT_EVENT_FAMILIES = {"consumer_launch", "other"}
+
+# Article formats that cover a whole event rather than one device. A roundup and a
+# hands-on from the same brand+event are the same underlying story.
+_ROUNDUP_RX = re.compile(
+    r"\b(everything|all the news|announcements?|roundup|round-up|biggest|recap|"
+    r"what was announced|highlights|liveblog|as it happened|how to watch)\b", re.I)
+
+
+def story_identity(title, snippet="", metadata=None):
+    """Deterministic identity for CONSUMER-PRODUCT news, or None when the story is not
+    recognizably about a consumer brand/product. Never raises; unknown → None (the
+    existing fingerprint gate still applies, so nothing is weakened)."""
+    blob = f"{title or ''} {snippet or ''}"
+    brand = next((b for rx, b in _BRAND_RX if rx.search(blob)), None)
+    if not brand:
+        return None
+    meta = metadata or story_metadata(title, snippet)
+    family = next((f for rx, f in _FAMILY_RX if rx.search(blob)), None)
+    event = next((e for rx, e in _LAUNCH_EVENT_RX if rx.search(blob)), None)
+    # EVERY product line named anywhere in the story. For a roundup this is its actual
+    # coverage ("…from the iPhone 18 to the new MacBook Pro" covers iphone AND mac), which
+    # is what lets a roundup absorb a specific story WITHOUT absorbing unrelated lines.
+    #
+    # Specificity pruning is essential: "Galaxy Watch 8" matches BOTH "galaxy watch" and the
+    # broad "galaxy", and keeping the broad parent would make every Samsung roundup appear to
+    # cover every Galaxy line (a Watch recap would swallow a Z Fold story). A parent is
+    # dropped whenever a more specific descendant of it was also matched.
+    matched = {f for rx, f in _FAMILY_RX if rx.search(blob)}
+    covered = {f for f in matched
+               if not any(g != f and g.startswith(f + " ") for g in matched)}
+    return {
+        "brand": brand,
+        "product_family": family,
+        "covered_families": covered,
+        "event": event,
+        "event_family": meta.get("event_family"),
+        "is_roundup": bool(_ROUNDUP_RX.search(title or "")),
+        "is_product_story": (meta.get("consumer_launch")
+                             or bool(family) or bool(event)) and
+                            meta.get("event_family") in _PRODUCT_EVENT_FAMILIES,
+    }
+
+
+def _family_related(a, b):
+    """True when two product families describe the same line — equal, or one is a
+    hierarchical prefix of the other ("galaxy" covers "galaxy z fold")."""
+    if a == b:
+        return True
+    if not a or not b:
+        return False
+    return a.startswith(b + " ") or b.startswith(a + " ")
+
+
+def same_underlying_story(id_a, id_b):
+    """(is_duplicate, reason, matched_rule) for two `story_identity` results.
+
+    RULE ORDER (first match wins). Ordering matters: the specific evidence rules run
+    BEFORE any generic roundup containment, so a roundup headline can never merge two
+    materially different product lines of one brand.
+
+      1. no-identity / different-brand      → not duplicate
+      2. not-product-story (either side)    → not duplicate  (launch vs earnings stays split)
+      3. same-launch-event                  → DUPLICATE      (strongest same-event evidence)
+      4. same-product-family                → DUPLICATE      (equal or hierarchical: galaxy ⊃ galaxy z fold)
+      5. roundup-covers-family              → DUPLICATE      (the roundup NAMES the other line)
+      6. distinct-product-families          → not duplicate  (iphone vs mac — before any generic fallback)
+      7. roundup-contains-broad             → DUPLICATE      (roundup + a side with no identified line)
+      8. brand-product-news-no-line         → DUPLICATE      (neither side names a line)
+    """
+    if not id_a or not id_b:
+        return False, "", "no-identity"
+    if id_a["brand"] != id_b["brand"]:
+        return False, "", "different-brand"
+    if not (id_a["is_product_story"] and id_b["is_product_story"]):
+        return False, "", "not-product-story"
+
+    brand = id_a["brand"]
+    fa, fb = id_a["product_family"], id_b["product_family"]
+
+    if id_a["event"] and id_a["event"] == id_b["event"]:
+        return True, f"same brand ({brand}) + same launch event ({id_a['event']})", \
+               "same-launch-event"
+
+    if (fa or fb) and _family_related(fa, fb):
+        return True, f"same brand ({brand}) + same product family ({fa or fb})", \
+               "same-product-family"
+
+    # A roundup absorbs a specific story ONLY when it actually names that product line.
+    # "Apple's iPhone 18 event: the 5 biggest announcements" does not cover a MacBook story.
+    for round_id, other_id, other_fam in ((id_a, id_b, fb), (id_b, id_a, fa)):
+        if round_id["is_roundup"] and other_fam and \
+                any(_family_related(other_fam, f) for f in round_id["covered_families"]):
+            return True, (f"same brand ({brand}) + roundup covers that product line "
+                          f"({other_fam})"), "roundup-covers-family"
+
+    if fa and fb:
+        # Both lines identified and materially unrelated — genuinely distinct news value.
+        return False, "", "distinct-product-families"
+
+    if id_a["is_roundup"] or id_b["is_roundup"]:
+        return True, (f"same brand ({brand}) + event roundup and a story with no distinct "
+                      f"product line"), "roundup-contains-broad"
+
+    if not fa and not fb:
+        return True, f"same brand ({brand}) product news with no distinguishing product line", \
+               "brand-product-news-no-line"
+
+    return False, "", "distinct-product-families"
+
+
+def duplicate_story(a_title, a_snippet, b_title, b_snippet,
+                    a_meta=None, b_meta=None):
+    """Convenience wrapper: (is_duplicate, reason, matched_rule) for two raw stories."""
+    return same_underlying_story(story_identity(a_title, a_snippet, a_meta),
+                                 story_identity(b_title, b_snippet, b_meta))

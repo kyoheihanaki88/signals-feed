@@ -24,7 +24,8 @@ Usage:
 import sys, os, re, json, argparse, datetime, subprocess
 from urllib.parse import urlparse
 import urllib.request
-from editorial import topic_fingerprint, first_duplicate_pair          # v2.1: duplicate-topic gate
+from editorial import (topic_fingerprint, first_duplicate_pair,          # v2.1: duplicate-topic gate
+                       duplicate_story)                                  # underlying-story guard
 from writer import summary_quality_issues, why_quality_issues          # v2.1: broken-text gate
 # NOTE: `yaml` is imported lazily inside main() (only the build run needs it), so this module stays
 # importable for the composition-gate helpers/tests without requiring PyYAML.
@@ -84,6 +85,18 @@ def composition_errors(signals):
     dup = first_duplicate_pair(fps)
     if dup:
         errors.append(f"duplicate topic between {dup[0]} and {dup[1]} — the five must cover distinct stories")
+    # Second, independent gate (2026-07-25): the SAME underlying product story told twice —
+    # e.g. a "Galaxy Unpacked" roundup plus a "Z Fold 8" hands-on. Those fingerprint to the
+    # empty set (the canon vocabulary has no Samsung), so the check above cannot see them.
+    for i in range(len(signals)):
+        for j in range(i + 1, len(signals)):
+            a, b = signals[i], signals[j]
+            same, why, rule = duplicate_story(a.get("headline", ""), a.get("summary", ""),
+                                              b.get("headline", ""), b.get("summary", ""))
+            if same:
+                errors.append(
+                    f"duplicate underlying story between signal {a.get('number','?')} and "
+                    f"signal {b.get('number','?')} [{rule}] ({why}) — the five must cover distinct stories")
     # Clean, complete summary + whyItMatters per signal (reuses the writer's strict checks).
     for s in signals:
         num = s.get("number", "?")

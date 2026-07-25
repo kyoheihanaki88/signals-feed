@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,128 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Trump says Saudi Arabia's nuclear deal hinges on the kingdom normalizing Israel ties",
-      "summary": "Trump says Saudi Arabia nuclear deal hinges on Saudi ties with Israel After a Saudi nuclear power deal raised alarm in Israel, President Trump announced online that the arrangement is subject to the kingdom normalizing relations with Israel through the Abraham Accords.",
+      "source": "The Guardian (World)",
+      "headline": "More than 200,000 people flee or lock down as wildfires sweep France and Spain",
+      "summary": "More than 200,000 people have fled or been ordered to lock down as huge wildfires swept Spain and France on Friday, prompting Madrid to declare a national emergency and the French authorities to order the total evacuation, by land and sea, of one of the country’s best-known holiday spots.",
       "keyTakeaways": [
-        "With a photograph of himself on the wall as part of \"The Presidential Hall of Fame,\" President Trump gives Crown Prince and Prime Minister Mohammed bin Salman of Saudi Arabia a tour of the White House on Nov.",
-        "The Saudi Embassy in Washington did not respond to NPR's request for comment.",
-        "It is unclear how the new condition might affect the deal."
+        "More than 110,000 people had been evacuated in two days to escape the Cap Ferret fire, the Gironde prefecture said, including thousands of holidaymakers in campsites and rental homes.",
+        "Scientists say climate breakdown is triggering more frequent and more extreme weather events, evaporating soils and waterways, fuelling wildfires and leading to thousands of excess deaths.",
+        "More than 600 firefighters were struggling to contain that blaze, Clavreul said.“There are a great many new fire starts ahead of the main blaze."
       ],
-      "whyItMatters": "President Trump said on Thursday that a new nuclear energy deal with Saudi Arabia will require the Arab kingdom to normalize relations with Israel.",
-      "originalURL": "https://www.npr.org/2026/07/23/nx-s1-5904327/us-saudi-arabia-iran",
-      "readTime": 9,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "France’s president, ​Emmanuel Macron, said he had activated the EU’s civil protection mechanism as the country, which has endured three almost back-to-back heatwaves since May, battled numerous wildfires.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サウジへの原子力協力、イスラエルとの国交正常化が条件とトランプ氏",
-          "summary": "サウジアラビアとの原子力エネルギー協定をめぐり、トランプ大統領はオンライン上で声明を発表した。この協定はサウジアラビアがアブラハム合意を通じてイスラエルとの関係を正常化することを条件とする、と述べたものだ。協定の発表はイスラエル側に懸念を生じさせていた。",
+          "headline": "フランスとスペインで大規模山火事、20万人超が避難または外出禁止に",
+          "summary": "金曜日、スペインとフランスを大規模な山火事が襲い、20万人以上が避難を余儀なくされるか、外出禁止措置の対象となった。マドリードは国家非常事態を宣言し、フランス当局はフランス屈指の観光地に対して陸路・海路を問わない全面避難命令を下した。",
           "keyTakeaways": [
-            "トランプ大統領はホワイトハウスでサウジアラビアのムハンマド・ビン・サルマン皇太子兼首相を案内した",
-            "ワシントンのサウジ大使館はコメントの求めに応じていない",
-            "この新たな条件が協定にどう影響するかは、現時点では不明"
+            "ジロンド県によると、カプ・フェレの火災から逃れるため、キャンプ場や貸別荘の観光客を含む11万人以上が2日間で避難した。",
+            "気候変動により極端な気象現象が頻発し、土壌や水路の乾燥、山火事の激化、そして多くの死者につながっていると科学者たちは指摘する。",
+            "600人以上の消防士が火災の封じ込めに当たっているが、「主火線の前方で新たな火の手が次々と上がっている」と当局者は述べた。"
           ],
-          "whyItMatters": "トランプ大統領は、サウジアラビアとの原子力エネルギー協定にはイスラエルとの国交正常化が必要だと明言した。"
+          "whyItMatters": "マクロン大統領はEUの市民保護メカニズムを発動したと表明した。フランスでは5月以降、熱波がほぼ連続して3度襲来しており、各地で山火事との戦いが続いている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Trump posted something about Saudi Arabia and a nuclear deal?",
-              "duration": 3.892245
+              "text": "I'm seeing news about wildfires in France and Spain. How bad is it?",
+              "duration": 4.075102
             },
             {
               "speaker": "explainer",
-              "text": "Yes. He announced that a new nuclear energy deal with Saudi Arabia will require the kingdom to normalize relations with Israel.",
-              "duration": 6.713469
+              "text": "It's serious. More than 200,000 people have either fled their homes or been told to lock down as fires spread across both countries.",
+              "duration": 8.019592
             },
             {
               "speaker": "listener",
-              "text": "So the nuclear deal depends on them making peace with Israel?",
-              "duration": 3.108571
+              "text": "That's a huge number. Where exactly is this happening?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "That's what he's saying. The arrangement would be tied to Saudi Arabia joining the Abraham Accords, which are agreements normalizing ties with Israel.",
-              "duration": 7.366531
+              "text": "In France, one of the hardest-hit areas is Cap Ferret, a well-known holiday spot. Over 110,000 people were evacuated in just two days, including thousands of vacationers from campsites and rental homes.",
+              "duration": 12.146939
             },
             {
               "speaker": "listener",
-              "text": "What prompted him to say this now?",
-              "duration": 1.985306
+              "text": "So they had to evacuate by land and sea?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "A Saudi nuclear power deal had raised alarm in Israel, so Trump clarified this condition publicly.",
-              "duration": 5.511837
+              "text": "Yes, French authorities ordered a total evacuation using both routes. Spain has also declared a national emergency in response to their fires.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "Has Saudi Arabia responded to this?",
-              "duration": 2.272653
+              "text": "Are firefighters able to control these blazes?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Not yet. The Saudi Embassy in Washington didn't respond to requests for comment.",
-              "duration": 4.858776
+              "text": "They're struggling. More than 600 firefighters are working on one fire alone, but new fires keep starting ahead of the main blaze, making containment difficult.",
+              "duration": 8.803265
             },
             {
               "speaker": "listener",
-              "text": "Do we know if this changes the deal significantly?",
-              "duration": 2.742857
+              "text": "What's causing all this?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "It's unclear at this point how the new condition might affect the deal overall.",
-              "duration": 3.892245
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカとサウジアラビアが原子力エネルギーの協力で合意しました。",
-              "duration": 4.968
+              "text": "Scientists point to climate breakdown triggering more extreme weather. France has faced three heatwaves since May, which dries out soil and waterways, fueling these fires.",
+              "duration": 9.639184
             },
             {
-              "speaker": "narrator",
-              "text": "この協定には、サウジがイスラエルと国交を結ぶことが条件になります。",
-              "duration": 5.592
+              "speaker": "listener",
+              "text": "Is France getting any outside help?",
+              "duration": 2.35102
             },
             {
-              "speaker": "narrator",
-              "text": "トランプ大統領が木曜日、オンラインで発表しました。",
-              "duration": 4.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "協定の話が出たとき、イスラエル側には警戒感がありました。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "サウジとイスラエルの関係正常化は、中東の外交地図を大きく変える可能性があります。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、この条件が実際にどう働くかは、まだはっきりしていません。",
-              "duration": 5.208
-            },
-            {
-              "speaker": "narrator",
-              "text": "サウジ大使館はコメントを出していません。",
-              "duration": 3.264
+              "speaker": "explainer",
+              "text": "Yes. President Macron activated the EU's civil protection mechanism to bring in support from other European countries.",
+              "duration": 6.452245
             }
           ]
         }
@@ -139,124 +108,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "India ‘cockroach’ activist Sonam Wangchuk ends hunger strike as protests spread",
-      "summary": "The Indian “cockroach” activist Sonam Wangchuk has ended a 26-day hunger strike over an exam paper scandal that has spiralled into a wide-ranging, youth-led wave of demonstrations against Narendra Modi’s government.",
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "First person gets new experimental vaccine for Ebola",
+      "summary": "Hunt said he wanted to help after seeing news reports of the deadly Ebola outbreak in Democratic Republic of Congo.",
       "keyTakeaways": [
-        "Wangchuk posted that he had ended the hunger strike in Delhi in the presence of two of Modi’s top ministers after receiving assurances that his conditions would be met by the government.",
-        "In a video from his hospital bed, Wangchuk said he had been promised that India’s parliament would take up the issue of accountability in the examination system, which has been accused of failing millions of students.",
-        "Gandhi’s longest hunger strike was 21 days."
+        "Hunt is the first of 50 healthy volunteers aged 18-55 being recruited for the trial.",
+        "The vaccine uses the same technology as the Oxford AstraZeneca Covid jab which was given to hundreds of millions of people during the pandemic.",
+        "What is Ebola and why is stopping the latest outbreak so difficult?"
       ],
-      "whyItMatters": "The CJP ​movement wants Pradhan to step down over exam paper leaks, which affected 2 million students in May and have been linked to more than a dozen suicides.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/24/india-cockroach-protest-sonam-wangchuk-ends-hunger-strike",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "Prof Teresa Lambe, who led the Ebola vaccine team at the University of Oxford, said they had been able to create it so quickly because of the background of decades of research.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c8jn007gmpzo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "At the desk",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "インドの活動家ワンチュク氏、26日間の断食を終える",
-          "summary": "「ゴキブリ」の異名を持つインドの活動家ソナム・ワンチュク氏が、試験問題漏洩スキャンダルをめぐる26日間の断食を終えた。この問題は若者主導の広範な抗議運動へと発展し、モディ政権への批判が高まっている。",
+          "headline": "エボラ熱の新ワクチン、初の接種者が登場",
+          "summary": "コンゴ民主共和国でエボラ熱の感染拡大が続くなか、ニュースを見てこの試験への参加を決めたというハント氏が、実験的な新ワクチンの最初の接種者となった。",
           "keyTakeaways": [
-            "モディ首相の閣僚2人の立会いのもと、政府が条件を受け入れると確約を得たとして、ワンチュク氏はデリーでの断食を終えた",
-            "病院のベッドから公開した動画で、試験制度の説明責任について議会が審議することを約束されたと語った。数百万人の学生が不正の被害を受けたとされる",
-            "ガンジーの最長断食記録は21日間だった"
+            "ハント氏は18歳から55歳の健康な成人50人を対象とした臨床試験の、最初の参加者だ。",
+            "このワクチンは、パンデミック中に数億人が接種したオックスフォード・アストラゼネカ製コロナワクチンと同じ技術を用いている。",
+            "エボラ熱とは何か、そして今回の感染拡大の封じ込めがなぜ難しいのか——その問いが改めて注目されている。"
           ],
-          "whyItMatters": "試験問題の漏洩は今年5月に200万人の受験生に影響を与え、十数件の自殺との関連も指摘されており、CJP運動はプラダン大臣の辞任を求めている。"
+          "whyItMatters": "オックスフォード大学でエボラワクチン開発チームを率いたテレサ・ランベ教授は、数十年にわたる研究の蓄積があったからこそ、これほど迅速に開発できたと語っている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about an activist in India ending a hunger strike. What happened?",
-              "duration": 4.362449
+              "text": "So someone just became the first person to get a new Ebola vaccine?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Sonam Wangchuk stopped a 26-day hunger strike in Delhi after meeting with two of Modi's top ministers. He says he got assurances the government would address his concerns.",
+              "text": "Yes. A volunteer named Hunt received it as part of a trial at the University of Oxford. He said he wanted to help after seeing news about the outbreak in Democratic Republic of Congo.",
+              "duration": 10.266122
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this a big trial, or just a few people?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're recruiting fifty healthy volunteers between eighteen and fifty-five. Hunt is the first.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "How were they able to develop this so quickly?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It uses the same technology as the Oxford AstraZeneca Covid vaccine. Professor Teresa Lambe, who led the team, says they built on decades of background research.",
               "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "Twenty-six days is a long time. What was he protesting about?",
-              "duration": 3.526531
+              "text": "That's the vaccine that went to hundreds of millions of people during the pandemic, right?",
+              "duration": 4.623673
             },
             {
               "speaker": "explainer",
-              "text": "It started with an exam paper scandal. There were leaks that affected about 2 million students back in May. The protests have grown into a wider youth-led movement against the government.",
-              "duration": 9.691429
+              "text": "Exactly. So the platform itself is well-tested, which helps speed things up.",
+              "duration": 4.127347
             },
             {
               "speaker": "listener",
-              "text": "That's a lot of students. What exactly did he want the government to do?",
-              "duration": 4.205714
+              "text": "And this is in response to what's happening in Congo right now?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "From his hospital bed, Wangchuk said he was promised India's parliament would take up accountability in the examination system. The movement also wants a government minister named Pradhan to step down over the leaks.",
-              "duration": 11.102041
-            },
-            {
-              "speaker": "listener",
-              "text": "This sounds pretty serious for students there.",
-              "duration": 2.638367
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. The exam system has been accused of failing millions of students, and the leaks have been linked to more than a dozen suicides.",
-              "duration": 7.758367
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "インドで、試験問題の漏洩をめぐる抗議が広がっています。",
-              "duration": 4.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "活動家のソナム・ワンチュク氏は、26日間の断食を続けていました。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "政府の閣僚2人が立ち会い、条件を受け入れる約束を得て、断食を終えました。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "問題となった試験では、今年5月に200万人の学生が影響を受けました。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "不正と関連して、十数件の自殺も報告されています。",
-              "duration": 4.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "ワンチュク氏は病院から、議会が試験制度の責任を審議すると伝えました。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "若者たちの抗議は、モディ政権への批判へと広がっています。",
-              "duration": 4.968
-            },
-            {
-              "speaker": "narrator",
-              "text": "ガンジーの最長断食が21日間だったことを考えると、今回の26日間は異例の長さです。",
-              "duration": 7.704
+              "text": "Yes. There's a deadly outbreak there, and stopping it has been difficult. This trial is part of the effort to develop better tools.",
+              "duration": 7.47102
             }
           ]
         }
@@ -267,138 +200,87 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "‘Forced labour’ rationale for Trump tariffs met with bewilderment",
-      "summary": "Donald Trump has once again inspired anger and confusion in US allies and trading partners as he imposed a wave of tariffs on more than 80 countries, replacing an expiring global duty introduced earlier this year.",
+      "source": "NPR (World)",
+      "headline": "ICC member states vote to remove chief prosecutor Karim Khan",
+      "summary": "The International Criminal Court voted to remove the global tribunal's chief prosecutor on Friday, nearly two years after sexual misconduct allegations against him first emerged, the court's oversight body announced.",
       "keyTakeaways": [
-        "The new measures effectively replace blanket 10% tariffs that Trump imposed in February.",
-        "They are imposed under section 301 of the US Trade Act of 1974, and the Trump administration has said the new measures are due to the dozens of countries failing to enforce bans on goods produced by forced labour.",
-        "The imposition of the new tariffs led to Asian stock markets taking a hammering overnight."
+        "Karim Khan, Prosecutor of the International Criminal Court, looks up prior to a press conference in The Hague, Netherlands, July 3, 2023.",
+        "British barrister Karim Khan was accused of sexual misconduct with a female aide, as outlined by The Associated Press in a series of stories, allegations which he has steadfastly denied.",
+        "The court's oversight body, the Assembly of States Parties, concluded that Khan had committed \"serious misconduct and serious breach of duty,\" said Päivi Kaukoranta, the body's president."
       ],
-      "whyItMatters": "Kallas said the EU would seek ​clarification from Washington, adding that the bloc had honoured commitments under a transatlantic trade agreement reached in 2025 and viewed ⁠the new tariffs as a shock.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/24/trump-tariffs-forced-labor-us-trading-partners-react",
-      "readTime": 5,
+      "whyItMatters": "Rubio said he will pressure member states to withdraw from the institution, sanction organizations that work with the court and ban staff from traveling to the United States.",
+      "originalURL": "https://www.npr.org/2026/07/24/g-s1-135498/icc-court-prosecutor-karim-khan-vote",
+      "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
       "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "トランプ関税の新たな波、同盟国に困惑広がる",
-          "summary": "トランプ大統領が80カ国以上を対象とした新たな関税を発動した。今年初めに導入された包括的な関税措置の期限切れに伴う置き換えで、同盟国や貿易相手国の間に怒りと戸惑いが広がっている。",
+          "headline": "ICC検察官カリム・カーンが罷免される",
+          "summary": "国際刑事裁判所は金曜日、性的不正行為の疑いが浮上してから約2年を経て、主任検察官の解任を決議した。裁判所の監督機関がこれを発表した。",
           "keyTakeaways": [
-            "今回の措置は、2月に導入された一律10%関税に実質的に取って代わるもの。",
-            "根拠とされたのは1974年通商法第301条で、米政府は強制労働による産品の輸入禁止を履行していないとして各国に課税した。",
-            "発動を受け、アジアの株式市場は一夜にして大幅に下落した。"
+            "英国人法廷弁護士のカーン検察官は、女性補佐官への性的不正行為を告発されていた。本人は一貫して否定してきた。",
+            "監督機関である締約国会議は、カーンが「重大な非行および職務上の重大な義務違反」を犯したと結論づけた。",
+            "疑惑が最初に報じられてから、解任決議まで約2年が経過した。"
           ],
-          "whyItMatters": "EUはワシントンに説明を求める方針で、2025年に締結した大西洋横断貿易協定の義務を履行してきたとして、今回の関税を「衝撃」と受け止めている。"
+          "whyItMatters": "ルビオ国務長官はICCへの圧力を強める姿勢を示しており、加盟国への脱退要求や、裁判所と協力する組織への制裁、職員の米国入国禁止などを示唆している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing headlines about new tariffs from Trump. What's happening now?",
-              "duration": 4.362449
+              "text": "So the International Criminal Court just removed its chief prosecutor?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Donald Trump just imposed tariffs on more than eighty countries. These replace an earlier ten percent duty that was set to expire.",
-              "duration": 7.340408
+              "text": "Yes. Member states voted to remove Karim Khan on Friday. He'd been facing sexual misconduct allegations for nearly two years.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "Wait, what's the reason this time?",
-              "duration": 1.750204
-            },
-            {
-              "speaker": "explainer",
-              "text": "The Trump administration says it's because these countries failed to enforce bans on goods made with forced labour. The tariffs are being imposed under a section of the US Trade Act from nineteen seventy-four.",
-              "duration": 11.049796
-            },
-            {
-              "speaker": "listener",
-              "text": "How are other countries reacting?",
+              "text": "What exactly did they find?",
               "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "With bewilderment and anger. The EU, for instance, says it honored commitments under a trade agreement reached in twenty twenty-five and views these tariffs as a shock. They're seeking clarification from Washington.",
-              "duration": 11.964082
+              "text": "The court's oversight body concluded he committed serious misconduct and serious breach of duty. Khan has denied the allegations throughout.",
+              "duration": 7.366531
             },
             {
               "speaker": "listener",
-              "text": "Has this affected markets?",
-              "duration": 1.515102
+              "text": "How long had he been in the role?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Asian stock markets took a hammering overnight after the announcement.",
-              "duration": 4.127347
+              "text": "The allegations first emerged nearly two years ago, so he's been under this cloud for quite some time.",
+              "duration": 5.093878
             },
             {
               "speaker": "listener",
-              "text": "So this is basically replacing one set of tariffs with another?",
-              "duration": 3.526531
+              "text": "And this is creating some political tension too?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. The new measures effectively replace the blanket ten percent tariffs Trump imposed back in February.",
-              "duration": 5.746939
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカが80を超える国に新しい関税をかけました。",
-              "duration": 4.488
+              "text": "It is. Secretary of State Rubio said he'll pressure member states to withdraw from the court, sanction organizations working with it, and ban staff from U.S. travel.",
+              "duration": 9.613061
             },
             {
-              "speaker": "narrator",
-              "text": "今年2月に導入した一律10%の関税が期限を迎えたため、それに代わる措置です。",
-              "duration": 6.912
+              "speaker": "listener",
+              "text": "So this goes beyond just one person's conduct.",
+              "duration": 2.742857
             },
             {
-              "speaker": "narrator",
-              "text": "根拠として挙げられたのは、強制労働でつくられた製品の輸入を各国が十分に取り締まっていないという理由でした。",
-              "duration": 8.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "アメリカは1974年の通商法を使い、この措置を正当化しています。",
-              "duration": 6.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、EUをはじめ多くの国は困惑を隠せません。",
-              "duration": 4.512
-            },
-            {
-              "speaker": "narrator",
-              "text": "去年結んだ大西洋の貿易協定を守ってきたのに、なぜ今なのかという疑問が広がっています。",
-              "duration": 6.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "発表を受けて、アジアの株式市場は一夜で大きく値を下げました。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "貿易の先行きが見えにくくなると、市場はすぐに反応します。",
-              "duration": 4.872
-            },
-            {
-              "speaker": "narrator",
-              "text": "同盟国との信頼が揺らぐ中、世界経済の不透明感が増しています。",
-              "duration": 5.568
+              "speaker": "explainer",
+              "text": "Right. It's becoming a flashpoint for how countries relate to the international tribunal itself.",
+              "duration": 5.381224
             }
           ]
         }
@@ -409,113 +291,87 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge",
-      "headline": "Tesla’s robotaxi promises are clashing with reality",
-      "summary": "In an earnings call yesterday, Tesla CEO Elon Musk did his best to paint a positive portrait of the company’s robotaxi program.",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
       "keyTakeaways": [
-        "New cities are being added, more miles are being driven, and more people are experiencing Tesla’s unsupervised vehicles.",
-        "Tesla did its best to frame the situation as headed in the right direction.",
-        "Ashok Elluswamy, the company’s head of AI, said that Tesla’s unsupervised robotaxis have driven 380,000 miles across six cities in two different states."
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
       ],
-      "whyItMatters": "A more restrictive regulatory environment could limit the total addressable market for Tesla robotaxis, which would clash with the company’s message about a more generalized service that can drive anywhere, under any conditions.",
-      "originalURL": "https://www.theverge.com/transportation/970003/tesla-robotaxi-mileage-waymo-cities-earnings-musk",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "テスラの自動運転タクシー、理想と現実の間で",
-          "summary": "テスラのイーロン・マスクCEOは昨日の決算説明会で、同社のロボタクシー事業について前向きな見通しを語った。",
+          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
+          "summary": "サムスンは夏恒例の発表イベントを水曜日に開催し、新しいウォッチシリーズと折りたたみスマートフォンのラインアップを披露した。",
           "keyTakeaways": [
-            "対応都市の拡大、走行距離の増加、無人車両の体験者も着実に増えている。",
-            "テスラは事業が正しい方向へ進んでいると強調した。",
-            "AI責任者のアショク・エルスワミー氏によれば、無人ロボタクシーは2州6都市で計約38万マイルを走行した。"
+            "今年のGalaxy Unpackedで発表された主な内容は、イベントを見逃した人も後から確認できる。",
+            "新型Foldはヒンジ設計を刷新し、サムスン独自のFlex Titaniumディスプレイ技術を採用。",
+            "内側ディスプレイの折り目は完全には消えないものの、従来モデルと比べて明らかに目立ちにくくなった。"
           ],
-          "whyItMatters": "規制環境が厳しくなれば、場所や条件を問わず走れるという同社の描く構想と、実際に展開できる市場の広がりとの間に、大きな齟齬が生じかねない。"
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルのZ Fold 7から大幅にデザインが刷新された。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Tesla had an earnings call yesterday about their robotaxi program?",
-              "duration": 4.205714
+              "text": "So Samsung had their big summer event yesterday?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Yes. CEO Elon Musk tried to paint an optimistic picture of where things stand.",
-              "duration": 5.32898
+              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "What did they say exactly?",
-              "duration": 1.48898
+              "text": "What was the main thing they announced?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "They're adding new cities, driving more miles, and getting more people to try the unsupervised vehicles. Their AI head said the robotaxis have driven 380,000 miles across six cities in two states.",
-              "duration": 11.363265
+              "text": "The Galaxy Z Fold 8 was the highlight. It got a major redesign compared to last year's Z Fold 7.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "That sounds like progress. So what's the clash with reality?",
-              "duration": 3.291429
+              "text": "What's different about it?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Well, regulations could end up being more restrictive, which would limit where these robotaxis can actually operate.",
-              "duration": 5.929796
+              "text": "They updated the hinge design with something called Flex Titanium display tech. It makes the crease on the inside screen significantly less noticeable than on previous foldables.",
+              "duration": 9.508571
             },
             {
               "speaker": "listener",
-              "text": "And that's a problem for Tesla because...?",
-              "duration": 2.324898
+              "text": "Does it get rid of the crease completely?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Because their whole message is about a service that can drive anywhere, under any conditions. If regulations box them in, that vision doesn't really hold up.",
-              "duration": 9.221224
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "テスラのイーロン・マスクは昨日、自動運転タクシーの進み具合について前向きな話をしました。",
-              "duration": 7.2
+              "text": "No, it's still there, but it's much less obvious than before.",
+              "duration": 3.108571
             },
             {
-              "speaker": "narrator",
-              "text": "対応する街が増え、走る距離も伸び、実際に乗る人も増えているといいます。",
-              "duration": 6.072
+              "speaker": "listener",
+              "text": "Anything else announced?",
+              "duration": 1.332245
             },
             {
-              "speaker": "narrator",
-              "text": "AI部門の責任者によれば、無人の車はこれまでに2つの州の6つの街で約38万マイルを走ったそうです。",
-              "duration": 8.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "テスラは順調だと言いたいようですが、規制の壁は思ったより高いかもしれません。",
-              "duration": 5.976
-            },
-            {
-              "speaker": "narrator",
-              "text": "どこでもどんな条件でも走れるという構想と、実際に許される場所との間には、まだ大きな隔たりがあります。",
-              "duration": 8.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "市場の広がりが限られれば、会社が描く将来像にも影を落とすことになります。",
-              "duration": 6.12
+              "speaker": "explainer",
+              "text": "They had six major announcements total, including the new watches and foldables, though the Z Fold 8 was clearly the star.",
+              "duration": 6.687347
             }
           ]
         }
@@ -526,128 +382,77 @@
       "importance": 5,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge",
-      "headline": "Geekbench 7 will push your computer or phone even harder for better benchmarking",
-      "summary": "It looks and acts like Geekbench 6, but under the hood are larger datasets, new audio / video tests, and more tweaks.",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung’s wider Z Fold 8 feels just right",
+      "summary": "A year after overhauling its Z Fold phone with a radically thinner design, Samsung has changed things up again, this time altering the shape entirely.",
       "keyTakeaways": [
-        "Primate Labs is releasing Geekbench 7, the latest generation of its popular benchmarking tool.",
-        "Geekbench 7 features new video and audio encoding / decoding tests, a redesigned multi-core test, and larger, more demanding datasets for CPUs and GPUs to crunch through.",
-        "It otherwise looks and acts just like Geekbench 6, and a Pro license will cost the same $99 (discounted to $79 until August 6th)."
+        "The Z Fold 8 is wider than any of Samsung’s previous foldables, and shorter too, a size and shape somewhere between Samsung’s traditional Flip and Fold models.",
+        "In person, to my surprise, it feels great, and almost immediately intuitive.",
+        "If you want to get a feel for it yourself, grab your passport — the Z Fold 8 is about the same height and less than half an inch more narrow."
       ],
-      "whyItMatters": "I’ve always liked how simple and fast Geekbench is to run, but its short duration also means it’s a better test of quick bursts of computing rather than sustained loads that can throttle some CPUs and GPUs.",
-      "originalURL": "https://www.theverge.com/gadgets/970012/primate-labs-geekbench-7-benchmark-test-software-update",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "whyItMatters": "The Z Fold 8 may be the official follow-up to last year’s impressive Z Fold 7, but in truth the Z Fold 8 Ultra is the straightforward sequel.",
+      "originalURL": "https://www.theverge.com/tech/968663/samsung-galaxy-z-fold-8-wide-hands-on",
+      "readTime": 10,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ベンチマークツール「Geekbench 7」登場——より高負荷な測定へ",
-          "summary": "Primate Labsが「Geekbench 7」を公開した。見た目や操作感はGeekbench 6とほぼ変わらないが、内部ではデータセットが大型化し、音声・映像のエンコード／デコードテストが新たに加わるなど、測定の精度と負荷が引き上げられている。",
+          "headline": "サムスンの新折りたたみ、形を変えた理由",
+          "summary": "昨年、大幅な薄型化で刷新されたZ Fold。サムスンは今年さらに踏み込み、本体の形状そのものを見直してきた。",
           "keyTakeaways": [
-            "人気ベンチマークツールの最新世代、Geekbench 7がリリース。",
-            "映像・音声の符号化テストを新設し、マルチコアテストを刷新。CPUとGPUに課すデータセットも大幅に拡張された。",
-            "外観や操作性はGeekbench 6を踏襲。Proライセンスは99ドルで、8月6日までは79ドルに割引される。"
+            "Z Fold 8は歴代モデルより幅広く、背は低い。FlipとFoldの中間を狙ったような独自のサイズ感だ。",
+            "実際に手にしてみると、驚くほど自然に馴染む。直感的に使えると感じるまで、さほど時間はかからなかった。",
+            "サイズ感を掴みたければパスポートを手元に。Z Fold 8はほぼ同じ高さで、幅はわずかに狭い程度だ。"
           ],
-          "whyItMatters": "手軽に素早く実行できる点がGeekbenchの魅力だが、テスト時間が短いぶん、持続的な高負荷よりも瞬発的な処理能力を測るツールとして捉えておくのが適切だ。"
+          "whyItMatters": "Z Fold 8はZ Fold 7の正統な後継機という位置づけだが、真の続編と呼べるのはZ Fold 8 Ultraのほうかもしれない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a new version of Geekbench coming out?",
-              "duration": 2.821224
+              "text": "So Samsung's changing up their foldable phone again?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Geekbench 7. It's the latest version of that popular benchmarking tool people use to test how fast their computers and phones are.",
-              "duration": 7.523265
+              "text": "Yes. Last year they made the Z Fold thinner. This time they've changed the shape entirely with the Z Fold 8.",
+              "duration": 6.530612
             },
             {
               "speaker": "listener",
-              "text": "What's actually different about it?",
-              "duration": 1.933061
+              "text": "What's different about the shape?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "Under the hood, it's got larger datasets and some new tests — specifically for video and audio encoding and decoding. They also redesigned how it tests multi-core performance.",
-              "duration": 10.292245
+              "text": "It's wider and shorter than any of their previous foldables. Kind of somewhere between their traditional Flip and Fold models.",
+              "duration": 6.713469
             },
             {
               "speaker": "listener",
-              "text": "Does it look totally different to use?",
-              "duration": 2.272653
+              "text": "How does that feel in your hand?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "No, it looks and acts just like Geekbench 6. So if you've used it before, it'll feel familiar.",
-              "duration": 4.963265
+              "text": "Surprisingly great, actually. Almost immediately intuitive. If you want a sense of the size, think of your passport — it's about that height and less than half an inch more narrow.",
+              "duration": 9.926531
             },
             {
               "speaker": "listener",
-              "text": "And I'm guessing it's harder on your device now?",
-              "duration": 2.403265
+              "text": "Is this the main follow-up to last year's model?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "That's the idea — bigger, more demanding workloads for both CPUs and GPUs. Though it's still designed to run quickly, so it's really testing short bursts rather than how a device handles long, sustained loads.",
-              "duration": 12.721633
-            },
-            {
-              "speaker": "listener",
-              "text": "What does it cost?",
-              "duration": 1.149388
-            },
-            {
-              "speaker": "explainer",
-              "text": "A Pro license is ninety-nine dollars, but they're offering it for seventy-nine until August sixth.",
-              "duration": 5.877551
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-24/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "パソコンやスマートフォンの性能を測る定番ツール、Geekbenchの新版が出ました。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "Primate Labsが公開したGeekbench 7は、見た目も使い方も前の版とほぼ同じです。",
-              "duration": 6.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただし内部では、処理するデータの量が大きく増え、映像や音声の変換テストも新しく追加されています。",
-              "duration": 8.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "マルチコアの測定方法も見直され、CPUとGPUにかかる負担は以前より重くなりました。",
-              "duration": 7.416
-            },
-            {
-              "speaker": "narrator",
-              "text": "Geekbenchは短時間で結果が出るため、瞬間的な処理の速さを知るには便利です。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で、長く動かしたときの発熱や性能低下までは捉えにくい面もあります。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "Pro版の価格は99ドルで、8月6日までは79ドルで購入できます。",
-              "duration": 6.36
+              "text": "Officially yes, but there's also a Z Fold 8 Ultra that's more of a straightforward sequel to the Z Fold 7.",
+              "duration": 5.799184
             }
           ]
         }

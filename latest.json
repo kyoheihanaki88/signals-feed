@@ -101,6 +101,47 @@
               "duration": 6.452245
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "フランスとスペインで金曜日、大規模な山火事が広がり、20万人を超える人々が避難しました。",
+              "duration": 7.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "フランスでは有名な観光地の一つが陸と海の両方から全面的に避難する事態となっています。",
+              "duration": 7.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "ジロンド県では2日間で11万人以上が避難し、キャンプ場や貸別荘にいた観光客も含まれています。",
+              "duration": 7.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "600人以上の消防士が消火活動にあたっていますが、火の手は次々と新しい場所に広がっています。",
+              "duration": 7.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "科学者たちは、気候変動が極端な気象を増やし、土壌や水を乾燥させて山火事を激しくしていると指摘しています。",
+              "duration": 8.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "フランスは5月以降、熱波が3度も続いており、マクロン大統領はEUの支援の仕組みを動かしました。",
+              "duration": 8.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "夏の観光シーズンに起きたこの災害は、気候の変化が暮らしに直接影響する現実を示しています。",
+              "duration": 7.488
+            }
+          ]
         }
       }
     },
@@ -190,6 +231,52 @@
               "speaker": "explainer",
               "text": "Yes. There's a deadly outbreak there, and stopping it has been difficult. This trial is part of the effort to develop better tools.",
               "duration": 7.47102
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "コンゴ民主共和国でエボラ熱の流行が続いています。",
+              "duration": 4.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "イギリスでは、新しいエボラワクチンの臨床試験が始まりました。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "最初に接種を受けたのは、ニュースを見て自ら志願したハントさんという方です。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "このワクチンは、コロナ禍で広く使われたオックスフォード・アストラゼネカ製ワクチンと同じ仕組みを使っています。",
+              "duration": 7.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "試験には18歳から55歳までの健康な成人50人が参加する予定です。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "開発チームを率いたテレサ・ランベ教授は、数十年の研究の積み重ねがあったからこそ、これほど早く形にできたと話しています。",
+              "duration": 9.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "エボラ熱は致死率の高い感染症で、流行を抑えるのは容易ではありません。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の試験が、将来の流行への備えを一歩進めるかもしれません。",
+              "duration": 5.352
             }
           ]
         }
@@ -283,6 +370,52 @@
               "duration": 5.381224
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "国際刑事裁判所の主任検察官が、金曜日に解任されました。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "解任されたのは、英国出身の法廷弁護士カリム・カーンです。",
+              "duration": 5.04
+            },
+            {
+              "speaker": "narrator",
+              "text": "女性の補佐官への性的な不正行為を告発されていました。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "カーン本人は、疑いを一貫して否定しています。",
+              "duration": 4.056
+            },
+            {
+              "speaker": "narrator",
+              "text": "裁判所を監督する締約国会議は、重大な非行と職務違反があったと判断しました。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "疑いが最初に報じられてから、解任まで約2年かかっています。",
+              "duration": 5.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "アメリカのルビオ国務長官は、この裁判所への圧力を強める構えです。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "加盟国に脱退を求めたり、協力する組織に制裁を科す可能性に触れています。",
+              "duration": 6.264
+            }
+          ]
         }
       }
     },
@@ -374,6 +507,42 @@
               "duration": 6.687347
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "サムスンが水曜日、夏の発表会で折りたたみスマートフォンと時計の新しいラインアップを公開しました。",
+              "duration": 7.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "中心となったのは、Galaxy Z Fold 8です。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "前の年のZ Fold 7から、デザインが大きく変わりました。",
+              "duration": 4.776
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヒンジの構造が新しくなり、Flex Titaniumという画面の技術が使われています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "内側の画面に折り目は残りますが、以前よりずっと目立ちにくくなりました。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ端末の使い心地が、また一歩改善されたことになります。",
+              "duration": 5.184
+            }
+          ]
         }
       }
     },
@@ -453,6 +622,47 @@
               "speaker": "explainer",
               "text": "Officially yes, but there's also a Z Fold 8 Ultra that's more of a straightforward sequel to the Z Fold 7.",
               "duration": 5.799184
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Samsungが折りたたみスマートフォンの形を変えました。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しいZ Fold 8は、これまでのモデルより幅が広く、高さは低くなっています。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "FlipとFoldの中間のような、独特のサイズ感です。",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "実際に触ってみると、驚くほど手に馴染みます。",
+              "duration": 3.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "パスポートとほぼ同じ高さで、幅は少しだけ狭い程度です。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "昨年は薄さで勝負しましたが、今年は形そのものを見直したわけです。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ端末の使いやすさが、また一歩前に進んだのかもしれません。",
+              "duration": 5.424
             }
           ]
         }

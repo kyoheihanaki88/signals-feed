@@ -8371,6 +8371,303 @@
           ]
         }
       }
+    },
+    "2026-07-25": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-25/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing news about wildfires in France and Spain. How bad is it?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's serious. More than 200,000 people have either fled their homes or been told to lock down as fires spread across both countries.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a huge number. Where exactly is this happening?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "In France, one of the hardest-hit areas is Cap Ferret, a well-known holiday spot. Over 110,000 people were evacuated in just two days, including thousands of vacationers from campsites and rental homes.",
+              "duration": 12.146939
+            },
+            {
+              "speaker": "listener",
+              "text": "So they had to evacuate by land and sea?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, French authorities ordered a total evacuation using both routes. Spain has also declared a national emergency in response to their fires.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "Are firefighters able to control these blazes?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're struggling. More than 600 firefighters are working on one fire alone, but new fires keep starting ahead of the main blaze, making containment difficult.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "What's causing all this?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Scientists point to climate breakdown triggering more extreme weather. France has faced three heatwaves since May, which dries out soil and waterways, fueling these fires.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "Is France getting any outside help?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. President Macron activated the EU's civil protection mechanism to bring in support from other European countries.",
+              "duration": 6.452245
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-25/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So someone just became the first person to get a new Ebola vaccine?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A volunteer named Hunt received it as part of a trial at the University of Oxford. He said he wanted to help after seeing news about the outbreak in Democratic Republic of Congo.",
+              "duration": 10.266122
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this a big trial, or just a few people?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're recruiting fifty healthy volunteers between eighteen and fifty-five. Hunt is the first.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "How were they able to develop this so quickly?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It uses the same technology as the Oxford AstraZeneca Covid vaccine. Professor Teresa Lambe, who led the team, says they built on decades of background research.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "That's the vaccine that went to hundreds of millions of people during the pandemic, right?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. So the platform itself is well-tested, which helps speed things up.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "And this is in response to what's happening in Congo right now?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. There's a deadly outbreak there, and stopping it has been difficult. This trial is part of the effort to develop better tools.",
+              "duration": 7.47102
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-25/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the International Criminal Court just removed its chief prosecutor?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Member states voted to remove Karim Khan on Friday. He'd been facing sexual misconduct allegations for nearly two years.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "What exactly did they find?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "The court's oversight body concluded he committed serious misconduct and serious breach of duty. Khan has denied the allegations throughout.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "How long had he been in the role?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The allegations first emerged nearly two years ago, so he's been under this cloud for quite some time.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "And this is creating some political tension too?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Secretary of State Rubio said he'll pressure member states to withdraw from the court, sanction organizations working with it, and ban staff from U.S. travel.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "So this goes beyond just one person's conduct.",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. It's becoming a flashpoint for how countries relate to the international tribunal itself.",
+              "duration": 5.381224
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-25/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung had their big summer event yesterday?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "What was the main thing they announced?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Galaxy Z Fold 8 was the highlight. It got a major redesign compared to last year's Z Fold 7.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "What's different about it?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "They updated the hinge design with something called Flex Titanium display tech. It makes the crease on the inside screen significantly less noticeable than on previous foldables.",
+              "duration": 9.508571
+            },
+            {
+              "speaker": "listener",
+              "text": "Does it get rid of the crease completely?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, it's still there, but it's much less obvious than before.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything else announced?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "They had six major announcements total, including the new watches and foldables, though the Z Fold 8 was clearly the star.",
+              "duration": 6.687347
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-25/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung's changing up their foldable phone again?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Last year they made the Z Fold thinner. This time they've changed the shape entirely with the Z Fold 8.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "What's different about the shape?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's wider and shorter than any of their previous foldables. Kind of somewhere between their traditional Flip and Fold models.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "How does that feel in your hand?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Surprisingly great, actually. Almost immediately intuitive. If you want a sense of the size, think of your passport — it's about that height and less than half an inch more narrow.",
+              "duration": 9.926531
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this the main follow-up to last year's model?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Officially yes, but there's also a Z Fold 8 Ultra that's more of a straightforward sequel to the Z Fold 7.",
+              "duration": 5.799184
+            }
+          ]
+        }
+      }
     }
   }
 }

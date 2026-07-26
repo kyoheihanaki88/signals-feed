@@ -8878,6 +8878,313 @@
           ]
         }
       }
+    },
+    "2026-07-26": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-26/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about huge fires in France and Spain. What's happening?",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Wildfires in both countries have forced more than 300,000 people to leave their homes. It's a massive evacuation.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "That's an enormous number. Where exactly are these fires?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "In France, the worst fires are in the southwest—the Gironde and Landes regions. Around 50,000 people were evacuated there overnight into Sunday.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "And what about Spain?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Spain's situation is serious enough that their interior minister declared a national state of emergency because of the wildfires.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "A national emergency. Are firefighters able to contain these?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're working on it, but the scale is challenging. French President Macron posted about the fires on social media Saturday, calling them devastating.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like both countries are really struggling right now.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are. With over 300,000 people displaced, it's one of the larger wildfire emergencies we've seen in that region.",
+              "duration": 6.765714
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-26/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw that RFK Junior is calling for better Alzheimer's screening. That sounds like a good thing, right?",
+              "duration": 6.4
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does on the surface. But there's a federal panel that helps figure out how to actually do that kind of screening, and it hasn't been allowed to meet for more than a year.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, what panel?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's called the US Preventive Services Task Force. They were planning to issue a recommendation on screening for cognitive decline this year, along with thirteen other health topics.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "So the administration stopped them from meeting?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The Trump administration has prevented the taskforce from meeting since March twenty twenty-five. A political appointee also fired two panel chairs, and no new members have been appointed.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this panel matter so much?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their recommendations help inform future research. They release draft recommendations for public comment, and research communities weigh in. It's part of how we figure out what works.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "And there's still no major treatment for Alzheimer's?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. Which is why the research and screening questions feel especially important.",
+              "duration": 4.075102
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-26/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung had their big summer event yesterday?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "What was the main thing they announced?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Galaxy Z Fold 8 was the highlight. It's a major redesign from last year's Z Fold 7.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "What's different about it?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has an updated hinge design with something called Flex Titanium display tech.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "Does that fix the crease issue those foldables have?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not completely, but Samsung says it makes the crease significantly less noticeable than on their previous foldables.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "How many announcements were there total?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Six major announcements came out of the event, including the new watches and the foldable lineup.",
+              "duration": 4.545306
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-26/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So I keep hearing about AI taking jobs, but this story seems to say something different is happening with small businesses?",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. While bigger companies might be cutting positions, small businesses are actually using AI to help their existing employees do more work and make fewer mistakes.",
+              "duration": 9.978776
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they actually using it for?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Last year, most were using it for pretty practical things – getting answers to questions, reviewing contracts, creating policies, rewriting emails. The everyday stuff that takes time.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this because they can't find enough workers?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. There are about seven point six million job openings right now, which is actually higher than before Covid. And most of those openings are at small businesses.",
+              "duration": 10.396735
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's not really about replacing people with robots?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at all. The physical work small businesses do – installing dishwashers, fixing heating systems, laying pipes, putting up drywall – robot technology for that is years away. And most smaller companies couldn't afford it anyway.",
+              "duration": 13.818776
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they planning to hire more people?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Small businesses are expected to hire about nine hundred seventy-four thousand recent grads this year, up from nine hundred sixty-two thousand last year.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "So AI is more like a helper than a replacement for them.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the picture here. Exhausted owners using technology so their scarce employees can serve more customers.",
+              "duration": 5.668571
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-26/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Nasa's head of science was talking about women in science. What's the story?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Dr. Nicola Fox, who leads science at Nasa, recently praised what she called the fantastic rise of women in the field.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What made her notice this change?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "She went back to the University of Surrey and was struck by how many women are now graduating in physics and engineering. That's very different from her own experience.",
+              "duration": 8.254694
+            },
+            {
+              "speaker": "listener",
+              "text": "How different was it back then?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "When she graduated with a masters in telematics and satellite engineering in 1991, she was one of only four women in a class of more than 200 students.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "That's quite a contrast. Did she say what helped her pursue science?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "She grew up unaware that a passion for science was considered unusual for girls. She went to an all-girls school in Letchworth, which she said shielded her from gender stereotypes that often discourage young women from studying science and engineering.",
+              "duration": 12.8
+            },
+            {
+              "speaker": "listener",
+              "text": "So she just followed her interests without those barriers.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And now she's seeing that shift happening more broadly, with many more women entering these fields.",
+              "duration": 5.982041
+            }
+          ]
+        }
+      }
     }
   }
 }

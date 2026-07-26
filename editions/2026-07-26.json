@@ -91,6 +91,42 @@
               "duration": 6.765714
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "フランスとスペインで大きな山火事が広がり、合わせて30万人以上が家を離れています。",
+              "duration": 6.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "フランスでは週末にかけて約5万人が避難しました。",
+              "duration": 4.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "被害が最も大きいのはフランス南西部のジロンドとランドの地域です。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペインでは政府が国家非常事態を宣言しました。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "森林火災は夏の乾燥と高温で起きやすく、今回は広い範囲に影響が出ています。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "避難した人々の多くは、いつ自宅に戻れるか見通せない状態です。",
+              "duration": 5.472
+            }
+          ]
         }
       }
     },
@@ -182,6 +218,52 @@
               "duration": 4.075102
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカでは、アルツハイマー病の早期発見を進めようという声が政府から上がっています。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "ケネディ厚生長官が、もっと積極的にスクリーニングを行うべきだと訴えているのです。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "ところが、その方法を具体的に示す役割を担う連邦の委員会が、一年以上開かれていません。",
+              "duration": 7.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "この委員会は、認知機能の検査をどう進めるかといった指針を出す予定でした。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "政権が委員長を解任し、後任も決めないまま活動を止めてしまったのです。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "この委員会の勧告案は、研究者が意見を寄せる場でもありました。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "アルツハイマー病には、まだ決定的な治療法がありません。",
+              "duration": 4.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "対策を掲げながら、それを支える仕組みが動かない状況が続いています。",
+              "duration": 5.496
+            }
+          ]
         }
       }
     },
@@ -271,6 +353,52 @@
               "speaker": "explainer",
               "text": "Six major announcements came out of the event, including the new watches and the foldable lineup.",
               "duration": 4.545306
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "サムスンが水曜日、夏の発表会を開きました。",
+              "duration": 4.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい折りたたみ式のスマートフォンと、腕時計が並びます。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "中でも注目されたのは、Galaxy Z Fold 8です。",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "去年のモデルから、見た目が大きく変わりました。",
+              "duration": 3.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヒンジの構造が新しくなり、Flex Titaniumという技術が使われています。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "画面を開いたときの折り目が、以前よりずっと目立たなくなりました。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "完全には消えませんが、使い心地は変わるかもしれません。",
+              "duration": 4.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ端末が、また一歩身近になった形です。",
+              "duration": 4.152
             }
           ]
         }
@@ -374,6 +502,52 @@
               "duration": 5.668571
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカでは大手企業がAIを使って人員削減を進める一方で、中小企業は逆に人手を守るためにAIを使い始めています。",
+              "duration": 9.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "昨年、多くの中小企業が契約書の確認やメール文の作成といった日常業務にAIを取り入れました。",
+              "duration": 8.232
+            },
+            {
+              "speaker": "narrator",
+              "text": "疲れ切った経営者たちが、少ない従業員でより多くの仕事をこなせるよう、技術に頼っているのです。",
+              "duration": 7.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "今月の求人数は約760万件で、コロナ禍前より増えており、その大半が中小企業からの募集です。",
+              "duration": 8.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "配管工事や内装作業をこなせるロボットは、費用以前に実用化まで数年かかる見通しです。",
+              "duration": 7.008
+            },
+            {
+              "speaker": "narrator",
+              "text": "人事サービスのGustoによれば。",
+              "duration": 2.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "中小企業が2026年に採用する20代前半の新卒者は約97万人と、前年から増える見込みです。",
+              "duration": 9.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "人手不足が続く中、中小企業にとってAIは人を減らす道具ではなく、人を支える道具になっています。",
+              "duration": 8.064
+            }
+          ]
         }
       }
     },
@@ -463,6 +637,42 @@
               "speaker": "explainer",
               "text": "Exactly. And now she's seeing that shift happening more broadly, with many more women entering these fields.",
               "duration": 5.982041
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "NASAで科学部門を統括するニコラ・フォックス博士が、理工系に進む女性の増加を目にして、大きな変化を感じています。",
+              "duration": 8.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "博士自身は1991年に衛星工学の修士課程を終えましたが、200人を超える学生のうち女性はわずか4人でした。",
+              "duration": 9.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼女が育った環境は少し特別で、女子校に通っていたため、科学が女性に向かないという偏見に触れずに済みました。",
+              "duration": 8.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのおかげで、科学への興味を持つことが珍しいとは思わず、自然にその道を選んだそうです。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "最近、母校のサリー大学を訪れた博士は、物理や工学を学ぶ女性が大幅に増えていることに驚きました。",
+              "duration": 8.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "この変化は、若い世代が性別にとらわれず、自分の関心を追いかけられる時代になってきた証しかもしれません。",
+              "duration": 7.896
             }
           ]
         }

@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-26",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "France and Spain fires force more than 300,000 to flee homes",
+      "summary": "In France, around 50,000 people were evacuated from their homes overnight into Sunday, according to interior minister Laurent Nuñez.",
+      "keyTakeaways": [
+        "Firefighters spray water in a burning forest near Lacanau, southwestern France, Saturday, July 25, 2026.",
+        "Devastating wildfires in Spain and France have forced more than 300,000 people to evacuate their homes.",
+        "The most devastating fires are in the Southwest, in the Gironde and Landes regions, French President Emmanuel Macron said on social media Saturday."
+      ],
+      "whyItMatters": "Interior Minister Fernando Grande-Marlaska has declared a national state of emergency because of the wildfires.",
+      "originalURL": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "仏・西で大規模山火事、30万人超が避難",
+          "summary": "フランスとスペインを襲った山火事により、30万人以上が自宅からの避難を余儀なくされた。フランスでは日曜未明にかけて約5万人が避難したと、ローラン・ニュニェス内相が明らかにした。",
+          "keyTakeaways": [
+            "フランス南西部ラカノー近郊の森林で、消防隊員が延焼する炎に放水を続けた",
+            "スペインとフランスで猛威を振るう山火事により、30万人超が避難を強いられている",
+            "最も深刻な被害はジロンドおよびランド地方に集中しているとマクロン大統領が土曜日にSNSで述べた"
+          ],
+          "whyItMatters": "スペインではフェルナンド・グランデ＝マルラスカ内相が山火事を受けて国家非常事態を宣言した。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "RFK Jr urges Alzheimer’s screening but blunts key panel that could drive research",
+      "summary": "The US health secretary, Robert F Kennedy Jr, has called for better Alzheimer’s screening – but a critical federal panel that might have helped researchers find practical ways to do that has been prevented from meeting for more than a year.",
+      "keyTakeaways": [
+        "The panel, formally called the US Preventive Services Task Force (USPSTF), had planned to issue a recommendation on screening for cognitive decline this year, alongside 13 other topics as varied as autism screening and food allergy prevention.",
+        "The Trump administration has prevented the taskforce from meeting since March 2025, a political appointee fired two panel chairs, and the administration has so far failed to appoint new members.",
+        "The USPSTF recommendations can help inform future research, said Ruiz, as their draft recommendations are open for public comment and frequently receive substantial input from research communities."
+      ],
+      "whyItMatters": "There is no major treatment for Alzheimer’s.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/26/rfk-jr-alzheimers-us-preventive-services-task-force",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "アルツハイマー対策を訴えながら、研究を支える委員会を空洞化",
+          "summary": "米国のケネディ厚生長官はアルツハイマー病の早期スクリーニング強化を訴えている。しかし、その実現に向けた具体的な指針を担うはずだった連邦諮問委員会は、一年以上にわたって開催を阻まれたままだ。",
+          "keyTakeaways": [
+            "米国予防サービス作業部会（USPSTF）は今年、認知機能低下のスクリーニングに関する勧告を、自閉症や食物アレルギー予防など十三のテーマとともに公表する予定だった。",
+            "トランプ政権は二〇二五年三月以降、同委員会の開催を停止。政治任用者が委員長二名を解任し、後任の選定も進んでいない。",
+            "USPSTFの勧告案は広く公開され、研究者コミュニティからの意見を集める場にもなっていた。その機能が失われつつある。"
+          ],
+          "whyItMatters": "アルツハイマー病には、いまだ有効な治療法がない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが折りたたみスマートフォンと新型ウォッチを発表",
+          "summary": "サムスンは夏恒例の発表イベント「Galaxy Unpacked」を水曜朝に開催し、新世代の折りたたみ端末とスマートウォッチのラインアップを公開した。",
+          "keyTakeaways": [
+            "発表内容はすべて後からまとめて確認できる",
+            "新型Foldはヒンジを刷新し、独自のFlex Titaniumディスプレイ技術を採用",
+            "内側の折り目は完全には消えないものの、従来モデルと比べて目立ちにくくなった"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前世代のZ Fold 7から大幅にデザインが刷新された。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Corporate America may be using AI to cut jobs, but small businesses are using it to keep them",
+      "summary": "Last year, most small businesses were using AI to get answers to questions, review contracts, create policies and rewrite emails.",
+      "keyTakeaways": [
+        "It is exhausted owners using technology to help scarce employees do more work, make fewer mistakes and serve more customers.",
+        "There are almost 7.6m job openings this month, an increase from pre-Covid levels and most predominantly at small businesses.",
+        "Robot technology – even if a smaller company could afford them – is years away from installing dishwashers, fixing HVAC systems, laying pipes and putting up drywall."
+      ],
+      "whyItMatters": "Gusto says that small businesses are expected to hire about 974,000 recent grads ages 20 to 24 in the 2026 season, up from 962,000 in 2025.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/26/small-businesses-ai",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "大企業がAIで雇用を削る一方、中小企業はAIで雇用を守る",
+          "summary": "昨年、多くの中小企業がAIを活用し始めた。契約書の確認、社内規定の整備、メールの文章改善など、日常業務の効率化が主な用途だ。",
+          "keyTakeaways": [
+            "疲弊した経営者たちが、限られたスタッフでより多くをこなすためにAIを頼っている",
+            "今月の求人数は約760万件と、コロナ禍以前を上回り、その多くは中小企業からの募集",
+            "食洗機の設置や配管工事、内装作業をこなせるロボットの実用化は、費用面の問題以前に、まだ数年先の話だ"
+          ],
+          "whyItMatters": "人事サービスのGustoによると、中小企業が2026年シーズンに採用する見込みの20〜24歳の新卒者は約97万4千人と、2025年の96万2千人から増加する見通しだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Nasa boss praises rise of women in science",
+      "summary": "The head of science at Nasa has praised the \"fantastic\" rise of women in science.",
+      "keyTakeaways": [
+        "The 57-year-old graduated from university with a masters in telematics and satellite engineering in 1991 and was one of only four women on the course of more than 200 students.",
+        "The scientist explained she had grown up unaware a passion for science was \"unusual\" for girls.",
+        "She had attended St Francis College, an all-girls school in Letchworth, which she said shielded her from the gender stereotypes that often discourages young women from studying science, technology, engineering and mathematics (Stem)."
+      ],
+      "whyItMatters": "Dr Nicola Fox, who grew up in Hitchin, Hertfordshire, said she had been struck by the number of women now graduating in physics and engineering when she returned to the University of Surrey.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c62vq0pg6yvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Deep field",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "NASAの科学部門トップ、理工系に進む女性の増加を歓迎",
+          "summary": "NASAの科学部門を率いる責任者が、科学分野における女性の躍進を「素晴らしい変化だ」と称えた。",
+          "keyTakeaways": [
+            "1991年、200人以上が在籍するテレマティクス・衛星工学の修士課程を修了した際、女性はわずか4人だった。",
+            "幼い頃、科学への関心が女子にとって「珍しいこと」だという意識はなく、自然にその道を歩んできた。",
+            "女子校出身だったことで、理系分野から女性を遠ざけがちな性別による固定観念とは無縁に育った。"
+          ],
+          "whyItMatters": "サリー大学を訪れた際、物理や工学を修める女性の数が大きく増えていることに深く心を動かされたという。"
+        }
+      }
+    }
+  ]
+}

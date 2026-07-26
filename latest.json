@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-25",
+  "date": "2026-07-26",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,138 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "More than 200,000 people flee or lock down as wildfires sweep France and Spain",
-      "summary": "More than 200,000 people have fled or been ordered to lock down as huge wildfires swept Spain and France on Friday, prompting Madrid to declare a national emergency and the French authorities to order the total evacuation, by land and sea, of one of the country’s best-known holiday spots.",
+      "source": "NPR (World)",
+      "headline": "France and Spain fires force more than 300,000 to flee homes",
+      "summary": "In France, around 50,000 people were evacuated from their homes overnight into Sunday, according to interior minister Laurent Nuñez.",
       "keyTakeaways": [
-        "More than 110,000 people had been evacuated in two days to escape the Cap Ferret fire, the Gironde prefecture said, including thousands of holidaymakers in campsites and rental homes.",
-        "Scientists say climate breakdown is triggering more frequent and more extreme weather events, evaporating soils and waterways, fuelling wildfires and leading to thousands of excess deaths.",
-        "More than 600 firefighters were struggling to contain that blaze, Clavreul said.“There are a great many new fire starts ahead of the main blaze."
+        "Firefighters spray water in a burning forest near Lacanau, southwestern France, Saturday, July 25, 2026.",
+        "Devastating wildfires in Spain and France have forced more than 300,000 people to evacuate their homes.",
+        "The most devastating fires are in the Southwest, in the Gironde and Landes regions, French President Emmanuel Macron said on social media Saturday."
       ],
-      "whyItMatters": "France’s president, ​Emmanuel Macron, said he had activated the EU’s civil protection mechanism as the country, which has endured three almost back-to-back heatwaves since May, battled numerous wildfires.",
-      "originalURL": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "Interior Minister Fernando Grande-Marlaska has declared a national state of emergency because of the wildfires.",
+      "originalURL": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "フランスとスペインで大規模山火事、20万人超が避難または外出禁止に",
-          "summary": "金曜日、スペインとフランスを大規模な山火事が襲い、20万人以上が避難を余儀なくされるか、外出禁止措置の対象となった。マドリードは国家非常事態を宣言し、フランス当局はフランス屈指の観光地に対して陸路・海路を問わない全面避難命令を下した。",
+          "headline": "仏・西で大規模山火事、30万人超が避難",
+          "summary": "フランスとスペインを襲った山火事により、30万人以上が自宅からの避難を余儀なくされた。フランスでは日曜未明にかけて約5万人が避難したと、ローラン・ニュニェス内相が明らかにした。",
           "keyTakeaways": [
-            "ジロンド県によると、カプ・フェレの火災から逃れるため、キャンプ場や貸別荘の観光客を含む11万人以上が2日間で避難した。",
-            "気候変動により極端な気象現象が頻発し、土壌や水路の乾燥、山火事の激化、そして多くの死者につながっていると科学者たちは指摘する。",
-            "600人以上の消防士が火災の封じ込めに当たっているが、「主火線の前方で新たな火の手が次々と上がっている」と当局者は述べた。"
+            "フランス南西部ラカノー近郊の森林で、消防隊員が延焼する炎に放水を続けた",
+            "スペインとフランスで猛威を振るう山火事により、30万人超が避難を強いられている",
+            "最も深刻な被害はジロンドおよびランド地方に集中しているとマクロン大統領が土曜日にSNSで述べた"
           ],
-          "whyItMatters": "マクロン大統領はEUの市民保護メカニズムを発動したと表明した。フランスでは5月以降、熱波がほぼ連続して3度襲来しており、各地で山火事との戦いが続いている。"
+          "whyItMatters": "スペインではフェルナンド・グランデ＝マルラスカ内相が山火事を受けて国家非常事態を宣言した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing news about wildfires in France and Spain. How bad is it?",
-              "duration": 4.075102
+              "text": "I'm seeing reports about huge fires in France and Spain. What's happening?",
+              "duration": 4.127347
             },
             {
               "speaker": "explainer",
-              "text": "It's serious. More than 200,000 people have either fled their homes or been told to lock down as fires spread across both countries.",
-              "duration": 8.019592
+              "text": "Wildfires in both countries have forced more than 300,000 people to leave their homes. It's a massive evacuation.",
+              "duration": 7.000816
             },
             {
               "speaker": "listener",
-              "text": "That's a huge number. Where exactly is this happening?",
-              "duration": 3.186939
+              "text": "That's an enormous number. Where exactly are these fires?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "In France, one of the hardest-hit areas is Cap Ferret, a well-known holiday spot. Over 110,000 people were evacuated in just two days, including thousands of vacationers from campsites and rental homes.",
-              "duration": 12.146939
+              "text": "In France, the worst fires are in the southwest—the Gironde and Landes regions. Around 50,000 people were evacuated there overnight into Sunday.",
+              "duration": 8.594286
             },
             {
               "speaker": "listener",
-              "text": "So they had to evacuate by land and sea?",
-              "duration": 2.533878
+              "text": "And what about Spain?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Yes, French authorities ordered a total evacuation using both routes. Spain has also declared a national emergency in response to their fires.",
-              "duration": 7.706122
-            },
-            {
-              "speaker": "listener",
-              "text": "Are firefighters able to control these blazes?",
-              "duration": 2.586122
-            },
-            {
-              "speaker": "explainer",
-              "text": "They're struggling. More than 600 firefighters are working on one fire alone, but new fires keep starting ahead of the main blaze, making containment difficult.",
-              "duration": 8.803265
-            },
-            {
-              "speaker": "listener",
-              "text": "What's causing all this?",
-              "duration": 1.436735
-            },
-            {
-              "speaker": "explainer",
-              "text": "Scientists point to climate breakdown triggering more extreme weather. France has faced three heatwaves since May, which dries out soil and waterways, fueling these fires.",
-              "duration": 9.639184
-            },
-            {
-              "speaker": "listener",
-              "text": "Is France getting any outside help?",
-              "duration": 2.35102
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. President Macron activated the EU's civil protection mechanism to bring in support from other European countries.",
+              "text": "Spain's situation is serious enough that their interior minister declared a national state of emergency because of the wildfires.",
               "duration": 6.452245
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "フランスとスペインで金曜日、大規模な山火事が広がり、20万人を超える人々が避難しました。",
-              "duration": 7.296
             },
             {
-              "speaker": "narrator",
-              "text": "フランスでは有名な観光地の一つが陸と海の両方から全面的に避難する事態となっています。",
-              "duration": 7.56
+              "speaker": "listener",
+              "text": "A national emergency. Are firefighters able to contain these?",
+              "duration": 3.709388
             },
             {
-              "speaker": "narrator",
-              "text": "ジロンド県では2日間で11万人以上が避難し、キャンプ場や貸別荘にいた観光客も含まれています。",
-              "duration": 7.992
+              "speaker": "explainer",
+              "text": "They're working on it, but the scale is challenging. French President Macron posted about the fires on social media Saturday, calling them devastating.",
+              "duration": 7.88898
             },
             {
-              "speaker": "narrator",
-              "text": "600人以上の消防士が消火活動にあたっていますが、火の手は次々と新しい場所に広がっています。",
-              "duration": 7.632
+              "speaker": "listener",
+              "text": "It sounds like both countries are really struggling right now.",
+              "duration": 3.160816
             },
             {
-              "speaker": "narrator",
-              "text": "科学者たちは、気候変動が極端な気象を増やし、土壌や水を乾燥させて山火事を激しくしていると指摘しています。",
-              "duration": 8.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "フランスは5月以降、熱波が3度も続いており、マクロン大統領はEUの支援の仕組みを動かしました。",
-              "duration": 8.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "夏の観光シーズンに起きたこの災害は、気候の変化が暮らしに直接影響する現実を示しています。",
-              "duration": 7.488
+              "speaker": "explainer",
+              "text": "They are. With over 300,000 people displaced, it's one of the larger wildfire emergencies we've seen in that region.",
+              "duration": 6.765714
             }
           ]
         }
@@ -149,134 +98,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "HEALTH",
-      "source": "BBC News (Health)",
-      "headline": "First person gets new experimental vaccine for Ebola",
-      "summary": "Hunt said he wanted to help after seeing news reports of the deadly Ebola outbreak in Democratic Republic of Congo.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "RFK Jr urges Alzheimer’s screening but blunts key panel that could drive research",
+      "summary": "The US health secretary, Robert F Kennedy Jr, has called for better Alzheimer’s screening – but a critical federal panel that might have helped researchers find practical ways to do that has been prevented from meeting for more than a year.",
       "keyTakeaways": [
-        "Hunt is the first of 50 healthy volunteers aged 18-55 being recruited for the trial.",
-        "The vaccine uses the same technology as the Oxford AstraZeneca Covid jab which was given to hundreds of millions of people during the pandemic.",
-        "What is Ebola and why is stopping the latest outbreak so difficult?"
+        "The panel, formally called the US Preventive Services Task Force (USPSTF), had planned to issue a recommendation on screening for cognitive decline this year, alongside 13 other topics as varied as autism screening and food allergy prevention.",
+        "The Trump administration has prevented the taskforce from meeting since March 2025, a political appointee fired two panel chairs, and the administration has so far failed to appoint new members.",
+        "The USPSTF recommendations can help inform future research, said Ruiz, as their draft recommendations are open for public comment and frequently receive substantial input from research communities."
       ],
-      "whyItMatters": "Prof Teresa Lambe, who led the Ebola vaccine team at the University of Oxford, said they had been able to create it so quickly because of the background of decades of research.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c8jn007gmpzo?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "At the desk",
+      "whyItMatters": "There is no major treatment for Alzheimer’s.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/26/rfk-jr-alzheimers-us-preventive-services-task-force",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "エボラ熱の新ワクチン、初の接種者が登場",
-          "summary": "コンゴ民主共和国でエボラ熱の感染拡大が続くなか、ニュースを見てこの試験への参加を決めたというハント氏が、実験的な新ワクチンの最初の接種者となった。",
+          "headline": "アルツハイマー対策を訴えながら、研究を支える委員会を空洞化",
+          "summary": "米国のケネディ厚生長官はアルツハイマー病の早期スクリーニング強化を訴えている。しかし、その実現に向けた具体的な指針を担うはずだった連邦諮問委員会は、一年以上にわたって開催を阻まれたままだ。",
           "keyTakeaways": [
-            "ハント氏は18歳から55歳の健康な成人50人を対象とした臨床試験の、最初の参加者だ。",
-            "このワクチンは、パンデミック中に数億人が接種したオックスフォード・アストラゼネカ製コロナワクチンと同じ技術を用いている。",
-            "エボラ熱とは何か、そして今回の感染拡大の封じ込めがなぜ難しいのか——その問いが改めて注目されている。"
+            "米国予防サービス作業部会（USPSTF）は今年、認知機能低下のスクリーニングに関する勧告を、自閉症や食物アレルギー予防など十三のテーマとともに公表する予定だった。",
+            "トランプ政権は二〇二五年三月以降、同委員会の開催を停止。政治任用者が委員長二名を解任し、後任の選定も進んでいない。",
+            "USPSTFの勧告案は広く公開され、研究者コミュニティからの意見を集める場にもなっていた。その機能が失われつつある。"
           ],
-          "whyItMatters": "オックスフォード大学でエボラワクチン開発チームを率いたテレサ・ランベ教授は、数十年にわたる研究の蓄積があったからこそ、これほど迅速に開発できたと語っている。"
+          "whyItMatters": "アルツハイマー病には、いまだ有効な治療法がない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So someone just became the first person to get a new Ebola vaccine?",
-              "duration": 3.604898
+              "text": "I saw that RFK Junior is calling for better Alzheimer's screening. That sounds like a good thing, right?",
+              "duration": 6.4
             },
             {
               "speaker": "explainer",
-              "text": "Yes. A volunteer named Hunt received it as part of a trial at the University of Oxford. He said he wanted to help after seeing news about the outbreak in Democratic Republic of Congo.",
-              "duration": 10.266122
+              "text": "It does on the surface. But there's a federal panel that helps figure out how to actually do that kind of screening, and it hasn't been allowed to meet for more than a year.",
+              "duration": 8.385306
             },
             {
               "speaker": "listener",
-              "text": "Is this a big trial, or just a few people?",
-              "duration": 2.533878
+              "text": "Wait, what panel?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "They're recruiting fifty healthy volunteers between eighteen and fifty-five. Hunt is the first.",
-              "duration": 5.250612
+              "text": "It's called the US Preventive Services Task Force. They were planning to issue a recommendation on screening for cognitive decline this year, along with thirteen other health topics.",
+              "duration": 9.377959
             },
             {
               "speaker": "listener",
-              "text": "How were they able to develop this so quickly?",
-              "duration": 2.272653
+              "text": "So the administration stopped them from meeting?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "It uses the same technology as the Oxford AstraZeneca Covid vaccine. Professor Teresa Lambe, who led the team, says they built on decades of background research.",
-              "duration": 9.142857
+              "text": "Yes. The Trump administration has prevented the taskforce from meeting since March twenty twenty-five. A political appointee also fired two panel chairs, and no new members have been appointed.",
+              "duration": 10.762449
             },
             {
               "speaker": "listener",
-              "text": "That's the vaccine that went to hundreds of millions of people during the pandemic, right?",
-              "duration": 4.623673
+              "text": "Why does this panel matter so much?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. So the platform itself is well-tested, which helps speed things up.",
-              "duration": 4.127347
+              "text": "Their recommendations help inform future research. They release draft recommendations for public comment, and research communities weigh in. It's part of how we figure out what works.",
+              "duration": 9.691429
             },
             {
               "speaker": "listener",
-              "text": "And this is in response to what's happening in Congo right now?",
-              "duration": 3.186939
+              "text": "And there's still no major treatment for Alzheimer's?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "Yes. There's a deadly outbreak there, and stopping it has been difficult. This trial is part of the effort to develop better tools.",
-              "duration": 7.47102
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "コンゴ民主共和国でエボラ熱の流行が続いています。",
-              "duration": 4.296
-            },
-            {
-              "speaker": "narrator",
-              "text": "イギリスでは、新しいエボラワクチンの臨床試験が始まりました。",
-              "duration": 5.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "最初に接種を受けたのは、ニュースを見て自ら志願したハントさんという方です。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "このワクチンは、コロナ禍で広く使われたオックスフォード・アストラゼネカ製ワクチンと同じ仕組みを使っています。",
-              "duration": 7.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "試験には18歳から55歳までの健康な成人50人が参加する予定です。",
-              "duration": 6.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "開発チームを率いたテレサ・ランベ教授は、数十年の研究の積み重ねがあったからこそ、これほど早く形にできたと話しています。",
-              "duration": 9.624
-            },
-            {
-              "speaker": "narrator",
-              "text": "エボラ熱は致死率の高い感染症で、流行を抑えるのは容易ではありません。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の試験が、将来の流行への備えを一歩進めるかもしれません。",
-              "duration": 5.352
+              "text": "That's right. Which is why the research and screening questions feel especially important.",
+              "duration": 4.075102
             }
           ]
         }
@@ -285,143 +188,6 @@
     {
       "number": 3,
       "importance": 3,
-      "lead": false,
-      "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "ICC member states vote to remove chief prosecutor Karim Khan",
-      "summary": "The International Criminal Court voted to remove the global tribunal's chief prosecutor on Friday, nearly two years after sexual misconduct allegations against him first emerged, the court's oversight body announced.",
-      "keyTakeaways": [
-        "Karim Khan, Prosecutor of the International Criminal Court, looks up prior to a press conference in The Hague, Netherlands, July 3, 2023.",
-        "British barrister Karim Khan was accused of sexual misconduct with a female aide, as outlined by The Associated Press in a series of stories, allegations which he has steadfastly denied.",
-        "The court's oversight body, the Assembly of States Parties, concluded that Khan had committed \"serious misconduct and serious breach of duty,\" said Päivi Kaukoranta, the body's president."
-      ],
-      "whyItMatters": "Rubio said he will pressure member states to withdraw from the institution, sanction organizations that work with the court and ban staff from traveling to the United States.",
-      "originalURL": "https://www.npr.org/2026/07/24/g-s1-135498/icc-court-prosecutor-karim-khan-vote",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
-      "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "ICC検察官カリム・カーンが罷免される",
-          "summary": "国際刑事裁判所は金曜日、性的不正行為の疑いが浮上してから約2年を経て、主任検察官の解任を決議した。裁判所の監督機関がこれを発表した。",
-          "keyTakeaways": [
-            "英国人法廷弁護士のカーン検察官は、女性補佐官への性的不正行為を告発されていた。本人は一貫して否定してきた。",
-            "監督機関である締約国会議は、カーンが「重大な非行および職務上の重大な義務違反」を犯したと結論づけた。",
-            "疑惑が最初に報じられてから、解任決議まで約2年が経過した。"
-          ],
-          "whyItMatters": "ルビオ国務長官はICCへの圧力を強める姿勢を示しており、加盟国への脱退要求や、裁判所と協力する組織への制裁、職員の米国入国禁止などを示唆している。"
-        }
-      },
-      "listen": {
-        "format": "dialogue",
-        "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-03-dialogue-en.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "listener",
-              "text": "So the International Criminal Court just removed its chief prosecutor?",
-              "duration": 3.604898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Member states voted to remove Karim Khan on Friday. He'd been facing sexual misconduct allegations for nearly two years.",
-              "duration": 8.542041
-            },
-            {
-              "speaker": "listener",
-              "text": "What exactly did they find?",
-              "duration": 1.854694
-            },
-            {
-              "speaker": "explainer",
-              "text": "The court's oversight body concluded he committed serious misconduct and serious breach of duty. Khan has denied the allegations throughout.",
-              "duration": 7.366531
-            },
-            {
-              "speaker": "listener",
-              "text": "How long had he been in the role?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "The allegations first emerged nearly two years ago, so he's been under this cloud for quite some time.",
-              "duration": 5.093878
-            },
-            {
-              "speaker": "listener",
-              "text": "And this is creating some political tension too?",
-              "duration": 2.638367
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. Secretary of State Rubio said he'll pressure member states to withdraw from the court, sanction organizations working with it, and ban staff from U.S. travel.",
-              "duration": 9.613061
-            },
-            {
-              "speaker": "listener",
-              "text": "So this goes beyond just one person's conduct.",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "Right. It's becoming a flashpoint for how countries relate to the international tribunal itself.",
-              "duration": 5.381224
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "国際刑事裁判所の主任検察官が、金曜日に解任されました。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "解任されたのは、英国出身の法廷弁護士カリム・カーンです。",
-              "duration": 5.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "女性の補佐官への性的な不正行為を告発されていました。",
-              "duration": 4.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "カーン本人は、疑いを一貫して否定しています。",
-              "duration": 4.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "裁判所を監督する締約国会議は、重大な非行と職務違反があったと判断しました。",
-              "duration": 6.696
-            },
-            {
-              "speaker": "narrator",
-              "text": "疑いが最初に報じられてから、解任まで約2年かかっています。",
-              "duration": 5.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "アメリカのルビオ国務長官は、この裁判所への圧力を強める構えです。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "加盟国に脱退を求めたり、協力する組織に制裁を科す可能性に触れています。",
-              "duration": 6.264
-            }
-          ]
-        }
-      }
-    },
-    {
-      "number": 4,
-      "importance": 4,
       "lead": false,
       "category": "TECH",
       "source": "The Verge (Mobile)",
@@ -435,112 +201,177 @@
       "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
       "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
       "readTime": 8,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
-          "summary": "サムスンは夏恒例の発表イベントを水曜日に開催し、新しいウォッチシリーズと折りたたみスマートフォンのラインアップを披露した。",
+          "headline": "サムスンが折りたたみスマートフォンと新型ウォッチを発表",
+          "summary": "サムスンは夏恒例の発表イベント「Galaxy Unpacked」を水曜朝に開催し、新世代の折りたたみ端末とスマートウォッチのラインアップを公開した。",
           "keyTakeaways": [
-            "今年のGalaxy Unpackedで発表された主な内容は、イベントを見逃した人も後から確認できる。",
-            "新型Foldはヒンジ設計を刷新し、サムスン独自のFlex Titaniumディスプレイ技術を採用。",
-            "内側ディスプレイの折り目は完全には消えないものの、従来モデルと比べて明らかに目立ちにくくなった。"
+            "発表内容はすべて後からまとめて確認できる",
+            "新型Foldはヒンジを刷新し、独自のFlex Titaniumディスプレイ技術を採用",
+            "内側の折り目は完全には消えないものの、従来モデルと比べて目立ちにくくなった"
           ],
-          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルのZ Fold 7から大幅にデザインが刷新された。"
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前世代のZ Fold 7から大幅にデザインが刷新された。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
               "text": "So Samsung had their big summer event yesterday?",
-              "duration": 2.76898
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
               "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
-              "duration": 5.198367
+              "duration": 5.381224
             },
             {
               "speaker": "listener",
               "text": "What was the main thing they announced?",
-              "duration": 1.933061
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "The Galaxy Z Fold 8 was the highlight. It got a major redesign compared to last year's Z Fold 7.",
-              "duration": 5.198367
+              "text": "The Galaxy Z Fold 8 was the highlight. It's a major redesign from last year's Z Fold 7.",
+              "duration": 4.728163
             },
             {
               "speaker": "listener",
               "text": "What's different about it?",
-              "duration": 1.38449
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "They updated the hinge design with something called Flex Titanium display tech. It makes the crease on the inside screen significantly less noticeable than on previous foldables.",
-              "duration": 9.508571
+              "text": "It has an updated hinge design with something called Flex Titanium display tech.",
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
-              "text": "Does it get rid of the crease completely?",
-              "duration": 2.115918
+              "text": "Does that fix the crease issue those foldables have?",
+              "duration": 3.369796
             },
             {
               "speaker": "explainer",
-              "text": "No, it's still there, but it's much less obvious than before.",
-              "duration": 3.108571
+              "text": "Not completely, but Samsung says it makes the crease significantly less noticeable than on their previous foldables.",
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "Anything else announced?",
-              "duration": 1.332245
+              "text": "How many announcements were there total?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "They had six major announcements total, including the new watches and foldables, though the Z Fold 8 was clearly the star.",
-              "duration": 6.687347
+              "text": "Six major announcements came out of the event, including the new watches and the foldable lineup.",
+              "duration": 4.545306
             }
           ]
-        },
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Corporate America may be using AI to cut jobs, but small businesses are using it to keep them",
+      "summary": "Last year, most small businesses were using AI to get answers to questions, review contracts, create policies and rewrite emails.",
+      "keyTakeaways": [
+        "It is exhausted owners using technology to help scarce employees do more work, make fewer mistakes and serve more customers.",
+        "There are almost 7.6m job openings this month, an increase from pre-Covid levels and most predominantly at small businesses.",
+        "Robot technology – even if a smaller company could afford them – is years away from installing dishwashers, fixing HVAC systems, laying pipes and putting up drywall."
+      ],
+      "whyItMatters": "Gusto says that small businesses are expected to hire about 974,000 recent grads ages 20 to 24 in the 2026 season, up from 962,000 in 2025.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/26/small-businesses-ai",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
         "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-04-dialogue-ja.mp3",
+          "headline": "大企業がAIで雇用を削る一方、中小企業はAIで雇用を守る",
+          "summary": "昨年、多くの中小企業がAIを活用し始めた。契約書の確認、社内規定の整備、メールの文章改善など、日常業務の効率化が主な用途だ。",
+          "keyTakeaways": [
+            "疲弊した経営者たちが、限られたスタッフでより多くをこなすためにAIを頼っている",
+            "今月の求人数は約760万件と、コロナ禍以前を上回り、その多くは中小企業からの募集",
+            "食洗機の設置や配管工事、内装作業をこなせるロボットの実用化は、費用面の問題以前に、まだ数年先の話だ"
+          ],
+          "whyItMatters": "人事サービスのGustoによると、中小企業が2026年シーズンに採用する見込みの20〜24歳の新卒者は約97万4千人と、2025年の96万2千人から増加する見通しだ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
-              "speaker": "narrator",
-              "text": "サムスンが水曜日、夏の発表会で折りたたみスマートフォンと時計の新しいラインアップを公開しました。",
-              "duration": 7.512
+              "speaker": "listener",
+              "text": "So I keep hearing about AI taking jobs, but this story seems to say something different is happening with small businesses?",
+              "duration": 6.870204
             },
             {
-              "speaker": "narrator",
-              "text": "中心となったのは、Galaxy Z Fold 8です。",
-              "duration": 4.224
+              "speaker": "explainer",
+              "text": "Right. While bigger companies might be cutting positions, small businesses are actually using AI to help their existing employees do more work and make fewer mistakes.",
+              "duration": 9.978776
             },
             {
-              "speaker": "narrator",
-              "text": "前の年のZ Fold 7から、デザインが大きく変わりました。",
-              "duration": 4.776
+              "speaker": "listener",
+              "text": "What are they actually using it for?",
+              "duration": 2.168163
             },
             {
-              "speaker": "narrator",
-              "text": "ヒンジの構造が新しくなり、Flex Titaniumという画面の技術が使われています。",
-              "duration": 6.288
+              "speaker": "explainer",
+              "text": "Last year, most were using it for pretty practical things – getting answers to questions, reviewing contracts, creating policies, rewriting emails. The everyday stuff that takes time.",
+              "duration": 9.639184
             },
             {
-              "speaker": "narrator",
-              "text": "内側の画面に折り目は残りますが、以前よりずっと目立ちにくくなりました。",
-              "duration": 5.544
+              "speaker": "listener",
+              "text": "Is this because they can't find enough workers?",
+              "duration": 2.35102
             },
             {
-              "speaker": "narrator",
-              "text": "折りたたみ端末の使い心地が、また一歩改善されたことになります。",
-              "duration": 5.184
+              "speaker": "explainer",
+              "text": "Exactly. There are about seven point six million job openings right now, which is actually higher than before Covid. And most of those openings are at small businesses.",
+              "duration": 10.396735
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's not really about replacing people with robots?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at all. The physical work small businesses do – installing dishwashers, fixing heating systems, laying pipes, putting up drywall – robot technology for that is years away. And most smaller companies couldn't afford it anyway.",
+              "duration": 13.818776
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they planning to hire more people?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Small businesses are expected to hire about nine hundred seventy-four thousand recent grads this year, up from nine hundred sixty-two thousand last year.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "So AI is more like a helper than a replacement for them.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the picture here. Exhausted owners using technology so their scarce employees can serve more customers.",
+              "duration": 5.668571
             }
           ]
         }
@@ -550,119 +381,88 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "TECH",
-      "source": "The Verge (Mobile)",
-      "headline": "Samsung’s wider Z Fold 8 feels just right",
-      "summary": "A year after overhauling its Z Fold phone with a radically thinner design, Samsung has changed things up again, this time altering the shape entirely.",
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Nasa boss praises rise of women in science",
+      "summary": "The head of science at Nasa has praised the \"fantastic\" rise of women in science.",
       "keyTakeaways": [
-        "The Z Fold 8 is wider than any of Samsung’s previous foldables, and shorter too, a size and shape somewhere between Samsung’s traditional Flip and Fold models.",
-        "In person, to my surprise, it feels great, and almost immediately intuitive.",
-        "If you want to get a feel for it yourself, grab your passport — the Z Fold 8 is about the same height and less than half an inch more narrow."
+        "The 57-year-old graduated from university with a masters in telematics and satellite engineering in 1991 and was one of only four women on the course of more than 200 students.",
+        "The scientist explained she had grown up unaware a passion for science was \"unusual\" for girls.",
+        "She had attended St Francis College, an all-girls school in Letchworth, which she said shielded her from the gender stereotypes that often discourages young women from studying science, technology, engineering and mathematics (Stem)."
       ],
-      "whyItMatters": "The Z Fold 8 may be the official follow-up to last year’s impressive Z Fold 7, but in truth the Z Fold 8 Ultra is the straightforward sequel.",
-      "originalURL": "https://www.theverge.com/tech/968663/samsung-galaxy-z-fold-8-wide-hands-on",
-      "readTime": 10,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "whyItMatters": "Dr Nicola Fox, who grew up in Hitchin, Hertfordshire, said she had been struck by the number of women now graduating in physics and engineering when she returned to the University of Surrey.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c62vq0pg6yvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Deep field",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サムスンの新折りたたみ、形を変えた理由",
-          "summary": "昨年、大幅な薄型化で刷新されたZ Fold。サムスンは今年さらに踏み込み、本体の形状そのものを見直してきた。",
+          "headline": "NASAの科学部門トップ、理工系に進む女性の増加を歓迎",
+          "summary": "NASAの科学部門を率いる責任者が、科学分野における女性の躍進を「素晴らしい変化だ」と称えた。",
           "keyTakeaways": [
-            "Z Fold 8は歴代モデルより幅広く、背は低い。FlipとFoldの中間を狙ったような独自のサイズ感だ。",
-            "実際に手にしてみると、驚くほど自然に馴染む。直感的に使えると感じるまで、さほど時間はかからなかった。",
-            "サイズ感を掴みたければパスポートを手元に。Z Fold 8はほぼ同じ高さで、幅はわずかに狭い程度だ。"
+            "1991年、200人以上が在籍するテレマティクス・衛星工学の修士課程を修了した際、女性はわずか4人だった。",
+            "幼い頃、科学への関心が女子にとって「珍しいこと」だという意識はなく、自然にその道を歩んできた。",
+            "女子校出身だったことで、理系分野から女性を遠ざけがちな性別による固定観念とは無縁に育った。"
           ],
-          "whyItMatters": "Z Fold 8はZ Fold 7の正統な後継機という位置づけだが、真の続編と呼べるのはZ Fold 8 Ultraのほうかもしれない。"
+          "whyItMatters": "サリー大学を訪れた際、物理や工学を修める女性の数が大きく増えていることに深く心を動かされたという。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Samsung's changing up their foldable phone again?",
-              "duration": 3.004082
+              "text": "I saw Nasa's head of science was talking about women in science. What's the story?",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Last year they made the Z Fold thinner. This time they've changed the shape entirely with the Z Fold 8.",
-              "duration": 6.530612
+              "text": "Dr. Nicola Fox, who leads science at Nasa, recently praised what she called the fantastic rise of women in the field.",
+              "duration": 7.105306
             },
             {
               "speaker": "listener",
-              "text": "What's different about the shape?",
-              "duration": 1.671837
+              "text": "What made her notice this change?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "It's wider and shorter than any of their previous foldables. Kind of somewhere between their traditional Flip and Fold models.",
-              "duration": 6.713469
+              "text": "She went back to the University of Surrey and was struck by how many women are now graduating in physics and engineering. That's very different from her own experience.",
+              "duration": 8.254694
             },
             {
               "speaker": "listener",
-              "text": "How does that feel in your hand?",
-              "duration": 1.671837
+              "text": "How different was it back then?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Surprisingly great, actually. Almost immediately intuitive. If you want a sense of the size, think of your passport — it's about that height and less than half an inch more narrow.",
-              "duration": 9.926531
+              "text": "When she graduated with a masters in telematics and satellite engineering in 1991, she was one of only four women in a class of more than 200 students.",
+              "duration": 9.639184
             },
             {
               "speaker": "listener",
-              "text": "Is this the main follow-up to last year's model?",
-              "duration": 2.742857
+              "text": "That's quite a contrast. Did she say what helped her pursue science?",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "Officially yes, but there's also a Z Fold 8 Ultra that's more of a straightforward sequel to the Z Fold 7.",
-              "duration": 5.799184
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-25/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Samsungが折りたたみスマートフォンの形を変えました。",
-              "duration": 3.888
+              "text": "She grew up unaware that a passion for science was considered unusual for girls. She went to an all-girls school in Letchworth, which she said shielded her from gender stereotypes that often discourage young women from studying science and engineering.",
+              "duration": 12.8
             },
             {
-              "speaker": "narrator",
-              "text": "新しいZ Fold 8は、これまでのモデルより幅が広く、高さは低くなっています。",
-              "duration": 6.528
+              "speaker": "listener",
+              "text": "So she just followed her interests without those barriers.",
+              "duration": 3.160816
             },
             {
-              "speaker": "narrator",
-              "text": "FlipとFoldの中間のような、独特のサイズ感です。",
-              "duration": 4.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "実際に触ってみると、驚くほど手に馴染みます。",
-              "duration": 3.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "パスポートとほぼ同じ高さで、幅は少しだけ狭い程度です。",
-              "duration": 5.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "昨年は薄さで勝負しましたが、今年は形そのものを見直したわけです。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "折りたたみ端末の使いやすさが、また一歩前に進んだのかもしれません。",
-              "duration": 5.424
+              "speaker": "explainer",
+              "text": "Exactly. And now she's seeing that shift happening more broadly, with many more women entering these fields.",
+              "duration": 5.982041
             }
           ]
         }

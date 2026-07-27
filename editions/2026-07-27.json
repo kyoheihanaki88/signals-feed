@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "開戦から約五か月が経つなか、トランプ大統領は外交と軍事の選択肢を慎重に見極めており、ネタニヤフ首相は火曜日にホワイトハウスを訪問する見通しだ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the US has paused strikes on Iran? What led to that decision?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Top military officials advised Trump to halt the bombing campaign. This is now the third night without strikes, and diplomatic negotiations are continuing to try to avoid all-out war.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "Is Iran doing anything in response?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Tehran said on Sunday it would pause what it called retaliatory attacks against US allies in the region.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like both sides stepping back. But I'm guessing not everyone's happy about the pause?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The Israeli prime minister has been vocal in criticizing Washington's negotiations with Iranian leaders. He's been pressing for the US to continue its strikes against Iran.",
+              "duration": 9.273469
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is Netanyahu pushing so hard for continued strikes?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's under considerable political pressure at home. He needs to show that his military campaigns against Iran and Hezbollah in Lebanon have yielded results before elections scheduled for October.",
+              "duration": 10.866939
+            },
+            {
+              "speaker": "listener",
+              "text": "So there's a White House meeting coming up?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Netanyahu is expected to visit the White House on Tuesday. Trump is said to be weighing both diplomatic and military options in this nearly five-month-old conflict.",
+              "duration": 10.34449
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "資金配分機関UKRIの年間予算は約100億ポンドに上るが、傘下のSTFCがコスト超過への対応として大幅な削減を迫られている。"
           ],
           "whyItMatters": "UKRIは、現行の合意が2028年3月に失効した時点で、ジョドレルバンクの国立電波天文施設を構成するe-Merlinネットワークへの資金提供を終了すると表明した。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I just saw something about Jodrell Bank Observatory. That's the one with the big telescope dish, right?",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it runs a network of radio telescopes and hosts the Grade I-listed Lovell telescope. It's facing closure because its major funder is cutting support.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, closure? Who's pulling the funding?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "UK Research and Innovation announced on Monday it's withdrawing funding for the e-Merlin network at Jodrell Bank when the current agreement ends in March 2028.",
+              "duration": 8.254694
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of work happens there?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Astronomers study galaxies, black holes, star formation, planets beyond our solar system, and the afterglow of the big bang. Scientists are calling this a real blow to UK astronomy.",
+              "duration": 11.937959
+            },
+            {
+              "speaker": "listener",
+              "text": "So observations just stop unless someone else steps in?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Unless other funding is found, observations at Jodrell Bank will end completely.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is the funder making this cut?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Science and Technology Facilities Council, which UK Research and Innovation funds, needs to make severe cuts to meet cost overruns, even though UKRI has an annual budget of nearly ten billion pounds.",
+              "duration": 11.885714
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,65 @@
           ],
           "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルから大幅にデザインが刷新された。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung just had one of their big product events?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, their annual summer Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "What was the main thing they announced?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The highlight was the Galaxy Z Fold 8. It got a major redesign compared to last year's Z Fold 7.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "What's different about it?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has an updated hinge design with something Samsung calls Flex Titanium display tech.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "Does that fix the crease problem those folding phones usually have?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "It doesn't completely eliminate the crease on the inside display, but Samsung says it makes it significantly less noticeable than on their previous foldables.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like a pretty big improvement then.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does seem to be. There were six major announcements total at the event, so the new Fold was just one piece of their updated lineup.",
+              "duration": 7.131429
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +306,65 @@
           ],
           "whyItMatters": "Haexはオンライン協力プレイに対応しており、友人とともにこの絶えず変化するサバイバルの世界を旅することができる。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's Haex? That name sounds unusual.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's pronounced 'hex,' and it's a new open-world adventure game. You're exploring this gorgeous but really unforgiving land.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "What makes it different from other survival games?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "You have this cube that fits in your palm, and a plant grows out of it. The idea is to use it to make the harsh environment a bit more hospitable.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a cool concept. Who's making it?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "A studio called Dead Astronauts, co-founded in 2024 by a developer who previously worked on Avatar: Frontiers of Pandora and Star Wars Outlaws at Ubisoft Massive.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "So they know open-world games. What's the world itself like?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's described as miraculous and malicious at the same time—beautiful, but it can feel like it's bearing down on you with cruel intensity. The space morphs and changes, which should create more fluid experiences.",
+              "duration": 11.964082
+            },
+            {
+              "speaker": "listener",
+              "text": "Can you play with other people?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's an online co-op game, so friends can join you on this ever-transforming survivalist adventure.",
+              "duration": 6.217143
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +396,65 @@
             "研究者は効果を「控えめなもの」としながらも、日常的な記憶力の向上や、注意・問題解決に関わるミスの減少が示唆されると述べた。"
           ],
           "whyItMatters": "試験の規模から知見はまだ予備的なものにとどまるが、より大規模な研究で裏付けられれば、食事時間を一定の範囲に絞り夜遅くに食べないことが、認知機能を守る一助になりうる。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about eating times affecting memory as we age. What's this about?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Researchers did a pilot study with older women living with overweight or obesity. They found hints that restricting eating to a nine-hour window might help with mental skills.",
+              "duration": 9.038367
+            },
+            {
+              "speaker": "listener",
+              "text": "Nine hours? So what does that look like in practice?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Typically between ten in the morning and six in the evening. And they also avoided food for four hours before bed.",
+              "duration": 5.877551
+            },
+            {
+              "speaker": "listener",
+              "text": "And this actually made a difference compared to eating normally?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Compared to those who spread meals over about twelve hours, yes. The researchers called the effects modest, but they saw improvements in remembering information for everyday tasks.",
+              "duration": 9.456327
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of improvements are we talking about?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Fewer mistakes linked to memory, attention, and problem solving. Though it's preliminary given the small numbers in the trial.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "So not proven yet, but worth watching?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. If larger studies confirm it, eating within a narrow window and not late at night could help protect cognitive abilities as we age.",
+              "duration": 7.053061
+            }
+          ]
         }
       }
     }

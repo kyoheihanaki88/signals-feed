@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-27",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US pauses Iran attacks after Trump advised to halt bombing",
+      "summary": "The US has paused strikes on Iran for a third night as top military officials advised Donald Trump to halt his bombing campaign, and diplomatic negotiations have continued to avoid a return to all-out war.",
+      "keyTakeaways": [
+        "The Israeli prime minister is a vocal critic of Washington’s negotiations with Iranian leaders and has pressed for the US to continue its strikes against Iran.",
+        "Netanyahu is under considerable political pressure to show that his military campaigns against Iran and Hezbollah in Lebanon have yielded results before elections scheduled for October.",
+        "Tehran said on Sunday it would pause what it called “retaliatory” attacks against US allies in the region."
+      ],
+      "whyItMatters": "Trump is said to be weighing up diplomatic and military options in the nearly five-month-old conflict, with Benjamin Netanyahu expected to visit the White House on Tuesday.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/26/us-pauses-trump-netanyahu-attacks-on-iran-talks-hormuz",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米、対イラン攻撃を一時停止――外交交渉が続く",
+          "summary": "米軍首脳の進言を受け、トランプ大統領はイランへの爆撃を三夜連続で見合わせた。全面戦争への回帰を避けるべく、外交交渉は水面下で続いている。",
+          "keyTakeaways": [
+            "イスラエルのネタニヤフ首相はワシントンの対イラン交渉に強く反発し、米国に攻撃継続を求めている。",
+            "10月の選挙を前に、ネタニヤフ首相はイランおよびレバノンのヒズボラへの軍事作戦で成果を示す必要に迫られている。",
+            "イランは日曜日、地域内の米同盟国への「報復」攻撃を一時停止すると表明した。"
+          ],
+          "whyItMatters": "開戦から約五か月が経つなか、トランプ大統領は外交と軍事の選択肢を慎重に見極めており、ネタニヤフ首相は火曜日にホワイトハウスを訪問する見通しだ。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Jodrell Bank Observatory facing closure after major funder cuts support",
+      "summary": "Jodrell Bank Observatory, which runs a world-leading network of radio telescopes, is facing closure after its major funder cut support for the facility.",
+      "keyTakeaways": [
+        "The deep space observatory, which hosts the Grade I-listed Lovell telescope, is prized by astronomers who study galaxies, black holes, star formation, planets beyond the solar system and the afterglow of the big bang.",
+        "Scientists said the decision was a blow to UK astronomy, with observations at Jodrell Bank due to end completely unless other funding is found.",
+        "The UKRI has an annual budget of nearly £10bn, but the Science and Technology Facilities Council (STFC), which it funds, needs to makes severe cuts to meet cost overruns."
+      ],
+      "whyItMatters": "The observatory’s funder, UK Research and Innovation (UKRI), said on Monday it would withdraw funding for the e-Merlin network that constitutes the UK’s national radio astronomy facility at Jodrell Bank when the current agreement lapses in March 2028.",
+      "originalURL": "https://www.theguardian.com/science/2026/jul/27/jodrell-bank-observatory-facing-closure-uk",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ジョドレルバンク天文台、資金打ち切りで閉鎖の危機",
+          "summary": "世界有数の電波望遠鏡網を運営するジョドレルバンク天文台が、主要な資金提供機関の支援打ち切りにより、閉鎖の瀬戸際に立たされている。",
+          "keyTakeaways": [
+            "グレードI指定のラヴェル望遠鏡を擁するこの天文台は、銀河・ブラックホール・星の形成・太陽系外惑星・ビッグバンの残光など、宇宙の根本を探る研究の拠点として天文学者に重用されてきた。",
+            "代替財源が見つからなければ観測活動は全面停止となり、科学者たちは英国の天文学にとって大きな打撃だと訴えている。",
+            "資金配分機関UKRIの年間予算は約100億ポンドに上るが、傘下のSTFCがコスト超過への対応として大幅な削減を迫られている。"
+          ],
+          "whyItMatters": "UKRIは、現行の合意が2028年3月に失効した時点で、ジョドレルバンクの国立電波天文施設を構成するe-Merlinネットワークへの資金提供を終了すると表明した。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが折りたたみスマートフォンと新型ウォッチを発表",
+          "summary": "サムスンは夏恒例の発表イベント「Galaxy Unpacked」を開催し、新世代の折りたたみ端末とスマートウォッチのラインアップを披露した。",
+          "keyTakeaways": [
+            "発表内容はすべて後からまとめて確認できる",
+            "新型Foldはヒンジを刷新し、独自のFlex Titaniumディスプレイ技術を採用",
+            "内側の折り目は完全には消えないが、従来モデルと比べて目立ちにくくなった"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルから大幅にデザインが刷新された。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Haex – a wilder, weirder open-world adventure",
+      "summary": "This land is gorgeous, yes, but also unforgiving, yet in Haex (pronounced “hex”) you have an unusual tool at your disposal to make it a little more hospitable: a cube that fits snugly in the palm of your hand out of which grows a plant.",
+      "keyTakeaways": [
+        "Nyman co-founded Haex’s studio Dead Astronauts (another nod to VanderMeer ), in 2024, having previously worked at Ubisoft Massive, where he helped make recent open-world blockbusters, Avatar: Frontiers of Pandora and Star Wars Outlaws.",
+        "The theory is that its morphing, geo-engineered space should foster more fluid, interesting experiences, despite Haex’s focus on somewhat familiar-feeling shooting and survival mechanics.",
+        "That feels like an apt summation of Haex’s aims: an experience that is miraculous and malicious; a setting that is beautiful yet can feel as if it is bearing down on you with cruel intensity."
+      ],
+      "whyItMatters": "That’s another of Haex’s wrinkles: it is an online co-operative game, meaning your friends may join you on this ever-transforming survivalist adventure.",
+      "originalURL": "https://www.theguardian.com/games/2026/jul/27/haex-open-world-adventure-dead-astronauts",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「Haex」——荒々しく、奇妙なオープンワールドの冒険",
+          "summary": "その土地は美しい。しかし同時に、容赦なく過酷でもある。「Haex」（「ヘックス」と読む）では、そんな世界を少しだけ生きやすくするための、風変わりな道具が手に与えられる。手のひらにすっぽりと収まる立方体——そこから、植物が育つ。",
+          "keyTakeaways": [
+            "スタジオ「Dead Astronauts」を2024年に共同設立したNymanは、以前Ubisoft Massiveに在籍し、『Avatar: Frontiers of Pandora』や『Star Wars Outlaws』といった大作オープンワールドの開発に携わった人物だ。",
+            "変容し続けるジオエンジニアリングされた空間が、シューティングやサバイバルといった馴染みある要素に、より流動的で豊かな体験をもたらすことを狙っている。",
+            "「奇跡的でありながら悪意をはらむ体験、美しくも冷酷な圧力をかけてくる世界」——それがHaexの目指すところを端的に言い表している。"
+          ],
+          "whyItMatters": "Haexはオンライン協力プレイに対応しており、友人とともにこの絶えず変化するサバイバルの世界を旅することができる。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Restricted eating hours may reduce cognitive decline in older age, researchers find",
+      "summary": "Confining mealtimes and snacks to a nine-hour window and avoiding food for four hours before bed may help stave off cognitive decline in older age, researchers say.",
+      "keyTakeaways": [
+        "A pilot study of older women living with overweight or obesity found hints of improvement in mental skills among those who ate within the restricted period compared with those who spread their meals over a longer time.",
+        "Typically, this meant eating between 10am and 6pm, while the rest of the volunteers spread their meals over about 12 hours.",
+        "Shapses called the effects “modest” but said they suggested time-restricted eating may improve people’s ability to remember information for everyday tasks and reduce mistakes linked to memory, attention and problem solving."
+      ],
+      "whyItMatters": "The finding is preliminary given the numbers in the trial, but if confirmed in larger studies, the work suggests people could help to protect their cognitive abilities by eating within a relatively narrow window and not eating late into the night.",
+      "originalURL": "https://www.theguardian.com/science/2026/jul/26/restricted-eating-hours-may-reduce-cognitive-decline-in-older-age-researchers-find",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "食事の時間帯を絞ることで、認知機能の衰えを防げるかもしれない",
+          "summary": "食事と間食を9時間以内に収め、就寝の4時間前には食べるのをやめる。そうした時間制限型の食事法が、高齢期の認知機能低下を抑える可能性があると、研究者たちが報告した。",
+          "keyTakeaways": [
+            "過体重または肥満の高齢女性を対象にした小規模研究で、食事時間を制限したグループに認知機能の改善を示す兆候が見られた。",
+            "制限グループは主に午前10時から午後6時の間に食事をとり、対照グループは約12時間にわたって食事を分散させていた。",
+            "研究者は効果を「控えめなもの」としながらも、日常的な記憶力の向上や、注意・問題解決に関わるミスの減少が示唆されると述べた。"
+          ],
+          "whyItMatters": "試験の規模から知見はまだ予備的なものにとどまるが、より大規模な研究で裏付けられれば、食事時間を一定の範囲に絞り夜遅くに食べないことが、認知機能を守る一助になりうる。"
+        }
+      }
+    }
+  ]
+}

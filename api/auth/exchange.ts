@@ -315,3 +315,18 @@ export function createAuthExchangeHandler(
     return finish(response, "ok");
   };
 }
+
+/**
+ * Vercel route entry point for POST /api/auth/exchange. (Phase 3C-2)
+ *
+ * The runtime is imported DYNAMICALLY, for two reasons: importing this module must stay
+ * free of side effects (no config read, no certificate read, no dependency construction),
+ * and `vercel-runtime` reaches back to `createAuthExchangeHandler` above — a static import
+ * here would close that cycle. Everything real happens on the first request.
+ */
+export default {
+  async fetch(request: Request): Promise<Response> {
+    const { handleExchangeRequest } = await import("../_lib/vercel-runtime.js");
+    return handleExchangeRequest(request);
+  },
+};

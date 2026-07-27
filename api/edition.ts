@@ -161,3 +161,19 @@ export function createEditionHandler(
     );
   };
 }
+
+/**
+ * Vercel route entry point for POST /api/edition. (Phase 3C-2)
+ *
+ * Dynamically imported for the same two reasons as the exchange route: this module must
+ * stay import-safe, and `vercel-runtime` depends on `createEditionHandler` above.
+ *
+ * Authentication runs for real; the response still stops at `503 selector_not_connected`.
+ * No edition, manifest or candidate pool is read, and no selector is invoked.
+ */
+export default {
+  async fetch(request: Request): Promise<Response> {
+    const { handleEditionRequest } = await import("./_lib/vercel-runtime.js");
+    return handleEditionRequest(request);
+  },
+};

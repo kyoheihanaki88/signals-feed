@@ -532,6 +532,18 @@ function sideEffectProblems(fileName: string, sourceText: string): string[] {
   const problems: string[] = [];
 
   const scan = (node: ts.Node, where: string): void => {
+    // A function body is DEFERRED — it runs when called, not when the module is imported.
+    // (An IIFE is still caught, because the CallExpression wrapping it is seen first.)
+    if (
+      ts.isFunctionExpression(node) ||
+      ts.isArrowFunction(node) ||
+      ts.isMethodDeclaration(node) ||
+      ts.isFunctionDeclaration(node) ||
+      ts.isGetAccessor(node) ||
+      ts.isSetAccessor(node)
+    ) {
+      return;
+    }
     if (ts.isCallExpression(node)) {
       problems.push(`${fileName}: top-level call in ${where}`);
       return;
@@ -561,6 +573,12 @@ function sideEffectProblems(fileName: string, sourceText: string): string[] {
       ts.isEnumDeclaration(statement) ||
       ts.isModuleDeclaration(statement)
     ) {
+      continue;
+    }
+    if (ts.isExportAssignment(statement)) {
+      // `export default <expression>` — the Vercel route entry shape. The expression is
+      // evaluated at import, so it is scanned; its method bodies are not.
+      scan(statement.expression, "export default");
       continue;
     }
     if (ts.isVariableStatement(statement)) {
@@ -603,8 +621,9 @@ test("K2. no API module reads process.env except as a call-time default argument
         continue; // prose about process.env is not a read of it
       }
       assert.ok(
-        // The one permitted shape: `(env: RawEnv = process.env)` — evaluated when CALLED.
-        /\(\s*\w+\s*:\s*RawEnv\s*=\s*process\.env\s*\)/.test(line),
+        // The one permitted shape: a parameter default `name: RawEnv = process.env`,
+        // which is evaluated when the function is CALLED, never at import.
+        /\b\w+\s*:\s*RawEnv\s*=\s*process\.env\b/.test(line),
         `${file.name}:${index + 1} reads process.env outside a default argument`,
       );
     }

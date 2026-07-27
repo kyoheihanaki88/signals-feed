@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-26",
+  "date": "2026-07-27",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,123 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "France and Spain fires force more than 300,000 to flee homes",
-      "summary": "In France, around 50,000 people were evacuated from their homes overnight into Sunday, according to interior minister Laurent Nuñez.",
+      "source": "The Guardian (World)",
+      "headline": "US pauses Iran attacks after Trump advised to halt bombing",
+      "summary": "The US has paused strikes on Iran for a third night as top military officials advised Donald Trump to halt his bombing campaign, and diplomatic negotiations have continued to avoid a return to all-out war.",
       "keyTakeaways": [
-        "Firefighters spray water in a burning forest near Lacanau, southwestern France, Saturday, July 25, 2026.",
-        "Devastating wildfires in Spain and France have forced more than 300,000 people to evacuate their homes.",
-        "The most devastating fires are in the Southwest, in the Gironde and Landes regions, French President Emmanuel Macron said on social media Saturday."
+        "The Israeli prime minister is a vocal critic of Washington’s negotiations with Iranian leaders and has pressed for the US to continue its strikes against Iran.",
+        "Netanyahu is under considerable political pressure to show that his military campaigns against Iran and Hezbollah in Lebanon have yielded results before elections scheduled for October.",
+        "Tehran said on Sunday it would pause what it called “retaliatory” attacks against US allies in the region."
       ],
-      "whyItMatters": "Interior Minister Fernando Grande-Marlaska has declared a national state of emergency because of the wildfires.",
-      "originalURL": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "Trump is said to be weighing up diplomatic and military options in the nearly five-month-old conflict, with Benjamin Netanyahu expected to visit the White House on Tuesday.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/26/us-pauses-trump-netanyahu-attacks-on-iran-talks-hormuz",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "仏・西で大規模山火事、30万人超が避難",
-          "summary": "フランスとスペインを襲った山火事により、30万人以上が自宅からの避難を余儀なくされた。フランスでは日曜未明にかけて約5万人が避難したと、ローラン・ニュニェス内相が明らかにした。",
+          "headline": "米、対イラン攻撃を一時停止――外交交渉が続く",
+          "summary": "米軍首脳の進言を受け、トランプ大統領はイランへの爆撃を三夜連続で見合わせた。全面戦争への回帰を避けるべく、外交交渉は水面下で続いている。",
           "keyTakeaways": [
-            "フランス南西部ラカノー近郊の森林で、消防隊員が延焼する炎に放水を続けた",
-            "スペインとフランスで猛威を振るう山火事により、30万人超が避難を強いられている",
-            "最も深刻な被害はジロンドおよびランド地方に集中しているとマクロン大統領が土曜日にSNSで述べた"
+            "イスラエルのネタニヤフ首相はワシントンの対イラン交渉に強く反発し、米国に攻撃継続を求めている。",
+            "10月の選挙を前に、ネタニヤフ首相はイランおよびレバノンのヒズボラへの軍事作戦で成果を示す必要に迫られている。",
+            "イランは日曜日、地域内の米同盟国への「報復」攻撃を一時停止すると表明した。"
           ],
-          "whyItMatters": "スペインではフェルナンド・グランデ＝マルラスカ内相が山火事を受けて国家非常事態を宣言した。"
+          "whyItMatters": "開戦から約五か月が経つなか、トランプ大統領は外交と軍事の選択肢を慎重に見極めており、ネタニヤフ首相は火曜日にホワイトハウスを訪問する見通しだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing reports about huge fires in France and Spain. What's happening?",
-              "duration": 4.127347
+              "text": "So the US has paused strikes on Iran? What led to that decision?",
+              "duration": 4.075102
             },
             {
               "speaker": "explainer",
-              "text": "Wildfires in both countries have forced more than 300,000 people to leave their homes. It's a massive evacuation.",
-              "duration": 7.000816
+              "text": "Top military officials advised Trump to halt the bombing campaign. This is now the third night without strikes, and diplomatic negotiations are continuing to try to avoid all-out war.",
+              "duration": 9.691429
             },
             {
               "speaker": "listener",
-              "text": "That's an enormous number. Where exactly are these fires?",
-              "duration": 3.160816
+              "text": "Is Iran doing anything in response?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "In France, the worst fires are in the southwest—the Gironde and Landes regions. Around 50,000 people were evacuated there overnight into Sunday.",
-              "duration": 8.594286
+              "text": "Yes. Tehran said on Sunday it would pause what it called retaliatory attacks against US allies in the region.",
+              "duration": 6.817959
             },
             {
               "speaker": "listener",
-              "text": "And what about Spain?",
-              "duration": 1.515102
+              "text": "That sounds like both sides stepping back. But I'm guessing not everyone's happy about the pause?",
+              "duration": 4.963265
             },
             {
               "speaker": "explainer",
-              "text": "Spain's situation is serious enough that their interior minister declared a national state of emergency because of the wildfires.",
-              "duration": 6.452245
+              "text": "Right. The Israeli prime minister has been vocal in criticizing Washington's negotiations with Iranian leaders. He's been pressing for the US to continue its strikes against Iran.",
+              "duration": 9.273469
             },
             {
               "speaker": "listener",
-              "text": "A national emergency. Are firefighters able to contain these?",
-              "duration": 3.709388
+              "text": "Why is Netanyahu pushing so hard for continued strikes?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "They're working on it, but the scale is challenging. French President Macron posted about the fires on social media Saturday, calling them devastating.",
-              "duration": 7.88898
+              "text": "He's under considerable political pressure at home. He needs to show that his military campaigns against Iran and Hezbollah in Lebanon have yielded results before elections scheduled for October.",
+              "duration": 10.866939
             },
             {
               "speaker": "listener",
-              "text": "It sounds like both countries are really struggling right now.",
-              "duration": 3.160816
+              "text": "So there's a White House meeting coming up?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "They are. With over 300,000 people displaced, it's one of the larger wildfire emergencies we've seen in that region.",
-              "duration": 6.765714
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "フランスとスペインで大きな山火事が広がり、合わせて30万人以上が家を離れています。",
-              "duration": 6.864
-            },
-            {
-              "speaker": "narrator",
-              "text": "フランスでは週末にかけて約5万人が避難しました。",
-              "duration": 4.296
-            },
-            {
-              "speaker": "narrator",
-              "text": "被害が最も大きいのはフランス南西部のジロンドとランドの地域です。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "スペインでは政府が国家非常事態を宣言しました。",
-              "duration": 4.224
-            },
-            {
-              "speaker": "narrator",
-              "text": "森林火災は夏の乾燥と高温で起きやすく、今回は広い範囲に影響が出ています。",
-              "duration": 6.84
-            },
-            {
-              "speaker": "narrator",
-              "text": "避難した人々の多くは、いつ自宅に戻れるか見通せない状態です。",
-              "duration": 5.472
+              "text": "Yes. Netanyahu is expected to visit the White House on Tuesday. Trump is said to be weighing both diplomatic and military options in this nearly five-month-old conflict.",
+              "duration": 10.34449
             }
           ]
         }
@@ -136,132 +100,86 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "RFK Jr urges Alzheimer’s screening but blunts key panel that could drive research",
-      "summary": "The US health secretary, Robert F Kennedy Jr, has called for better Alzheimer’s screening – but a critical federal panel that might have helped researchers find practical ways to do that has been prevented from meeting for more than a year.",
+      "headline": "Jodrell Bank Observatory facing closure after major funder cuts support",
+      "summary": "Jodrell Bank Observatory, which runs a world-leading network of radio telescopes, is facing closure after its major funder cut support for the facility.",
       "keyTakeaways": [
-        "The panel, formally called the US Preventive Services Task Force (USPSTF), had planned to issue a recommendation on screening for cognitive decline this year, alongside 13 other topics as varied as autism screening and food allergy prevention.",
-        "The Trump administration has prevented the taskforce from meeting since March 2025, a political appointee fired two panel chairs, and the administration has so far failed to appoint new members.",
-        "The USPSTF recommendations can help inform future research, said Ruiz, as their draft recommendations are open for public comment and frequently receive substantial input from research communities."
+        "The deep space observatory, which hosts the Grade I-listed Lovell telescope, is prized by astronomers who study galaxies, black holes, star formation, planets beyond the solar system and the afterglow of the big bang.",
+        "Scientists said the decision was a blow to UK astronomy, with observations at Jodrell Bank due to end completely unless other funding is found.",
+        "The UKRI has an annual budget of nearly £10bn, but the Science and Technology Facilities Council (STFC), which it funds, needs to makes severe cuts to meet cost overruns."
       ],
-      "whyItMatters": "There is no major treatment for Alzheimer’s.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/jul/26/rfk-jr-alzheimers-us-preventive-services-task-force",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "The observatory’s funder, UK Research and Innovation (UKRI), said on Monday it would withdraw funding for the e-Merlin network that constitutes the UK’s national radio astronomy facility at Jodrell Bank when the current agreement lapses in March 2028.",
+      "originalURL": "https://www.theguardian.com/science/2026/jul/27/jodrell-bank-observatory-facing-closure-uk",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "アルツハイマー対策を訴えながら、研究を支える委員会を空洞化",
-          "summary": "米国のケネディ厚生長官はアルツハイマー病の早期スクリーニング強化を訴えている。しかし、その実現に向けた具体的な指針を担うはずだった連邦諮問委員会は、一年以上にわたって開催を阻まれたままだ。",
+          "headline": "ジョドレルバンク天文台、資金打ち切りで閉鎖の危機",
+          "summary": "世界有数の電波望遠鏡網を運営するジョドレルバンク天文台が、主要な資金提供機関の支援打ち切りにより、閉鎖の瀬戸際に立たされている。",
           "keyTakeaways": [
-            "米国予防サービス作業部会（USPSTF）は今年、認知機能低下のスクリーニングに関する勧告を、自閉症や食物アレルギー予防など十三のテーマとともに公表する予定だった。",
-            "トランプ政権は二〇二五年三月以降、同委員会の開催を停止。政治任用者が委員長二名を解任し、後任の選定も進んでいない。",
-            "USPSTFの勧告案は広く公開され、研究者コミュニティからの意見を集める場にもなっていた。その機能が失われつつある。"
+            "グレードI指定のラヴェル望遠鏡を擁するこの天文台は、銀河・ブラックホール・星の形成・太陽系外惑星・ビッグバンの残光など、宇宙の根本を探る研究の拠点として天文学者に重用されてきた。",
+            "代替財源が見つからなければ観測活動は全面停止となり、科学者たちは英国の天文学にとって大きな打撃だと訴えている。",
+            "資金配分機関UKRIの年間予算は約100億ポンドに上るが、傘下のSTFCがコスト超過への対応として大幅な削減を迫られている。"
           ],
-          "whyItMatters": "アルツハイマー病には、いまだ有効な治療法がない。"
+          "whyItMatters": "UKRIは、現行の合意が2028年3月に失効した時点で、ジョドレルバンクの国立電波天文施設を構成するe-Merlinネットワークへの資金提供を終了すると表明した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw that RFK Junior is calling for better Alzheimer's screening. That sounds like a good thing, right?",
-              "duration": 6.4
+              "text": "I just saw something about Jodrell Bank Observatory. That's the one with the big telescope dish, right?",
+              "duration": 6.217143
             },
             {
               "speaker": "explainer",
-              "text": "It does on the surface. But there's a federal panel that helps figure out how to actually do that kind of screening, and it hasn't been allowed to meet for more than a year.",
-              "duration": 8.385306
+              "text": "Yes, it runs a network of radio telescopes and hosts the Grade I-listed Lovell telescope. It's facing closure because its major funder is cutting support.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "Wait, what panel?",
-              "duration": 1.28
+              "text": "Wait, closure? Who's pulling the funding?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "It's called the US Preventive Services Task Force. They were planning to issue a recommendation on screening for cognitive decline this year, along with thirteen other health topics.",
-              "duration": 9.377959
+              "text": "UK Research and Innovation announced on Monday it's withdrawing funding for the e-Merlin network at Jodrell Bank when the current agreement ends in March 2028.",
+              "duration": 8.254694
             },
             {
               "speaker": "listener",
-              "text": "So the administration stopped them from meeting?",
-              "duration": 2.45551
+              "text": "What kind of work happens there?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The Trump administration has prevented the taskforce from meeting since March twenty twenty-five. A political appointee also fired two panel chairs, and no new members have been appointed.",
-              "duration": 10.762449
+              "text": "Astronomers study galaxies, black holes, star formation, planets beyond our solar system, and the afterglow of the big bang. Scientists are calling this a real blow to UK astronomy.",
+              "duration": 11.937959
             },
             {
               "speaker": "listener",
-              "text": "Why does this panel matter so much?",
-              "duration": 2.089796
+              "text": "So observations just stop unless someone else steps in?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "Their recommendations help inform future research. They release draft recommendations for public comment, and research communities weigh in. It's part of how we figure out what works.",
-              "duration": 9.691429
+              "text": "Exactly. Unless other funding is found, observations at Jodrell Bank will end completely.",
+              "duration": 4.545306
             },
             {
               "speaker": "listener",
-              "text": "And there's still no major treatment for Alzheimer's?",
-              "duration": 3.291429
+              "text": "Why is the funder making this cut?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "That's right. Which is why the research and screening questions feel especially important.",
-              "duration": 4.075102
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカでは、アルツハイマー病の早期発見を進めようという声が政府から上がっています。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "ケネディ厚生長官が、もっと積極的にスクリーニングを行うべきだと訴えているのです。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "ところが、その方法を具体的に示す役割を担う連邦の委員会が、一年以上開かれていません。",
-              "duration": 7.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "この委員会は、認知機能の検査をどう進めるかといった指針を出す予定でした。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "政権が委員長を解任し、後任も決めないまま活動を止めてしまったのです。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "この委員会の勧告案は、研究者が意見を寄せる場でもありました。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "アルツハイマー病には、まだ決定的な治療法がありません。",
-              "duration": 4.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "対策を掲げながら、それを支える仕組みが動かない状況が続いています。",
-              "duration": 5.496
+              "text": "The Science and Technology Facilities Council, which UK Research and Innovation funds, needs to make severe cuts to meet cost overruns, even though UKRI has an annual budget of nearly ten billion pounds.",
+              "duration": 11.885714
             }
           ]
         }
@@ -283,36 +201,36 @@
       "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
       "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
       "readTime": 8,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
       "audioURL": "",
       "localized": {
         "ja": {
           "headline": "サムスンが折りたたみスマートフォンと新型ウォッチを発表",
-          "summary": "サムスンは夏恒例の発表イベント「Galaxy Unpacked」を水曜朝に開催し、新世代の折りたたみ端末とスマートウォッチのラインアップを公開した。",
+          "summary": "サムスンは夏恒例の発表イベント「Galaxy Unpacked」を開催し、新世代の折りたたみ端末とスマートウォッチのラインアップを披露した。",
           "keyTakeaways": [
             "発表内容はすべて後からまとめて確認できる",
             "新型Foldはヒンジを刷新し、独自のFlex Titaniumディスプレイ技術を採用",
-            "内側の折り目は完全には消えないものの、従来モデルと比べて目立ちにくくなった"
+            "内側の折り目は完全には消えないが、従来モデルと比べて目立ちにくくなった"
           ],
-          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前世代のZ Fold 7から大幅にデザインが刷新された。"
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルから大幅にデザインが刷新された。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Samsung had their big summer event yesterday?",
-              "duration": 2.533878
+              "text": "So Samsung just had one of their big product events?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
-              "duration": 5.381224
+              "text": "Yes, their annual summer Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 6.50449
             },
             {
               "speaker": "listener",
@@ -321,84 +239,38 @@
             },
             {
               "speaker": "explainer",
-              "text": "The Galaxy Z Fold 8 was the highlight. It's a major redesign from last year's Z Fold 7.",
-              "duration": 4.728163
+              "text": "The highlight was the Galaxy Z Fold 8. It got a major redesign compared to last year's Z Fold 7.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
               "text": "What's different about it?",
-              "duration": 1.28
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "It has an updated hinge design with something called Flex Titanium display tech.",
-              "duration": 4.362449
+              "text": "It has an updated hinge design with something Samsung calls Flex Titanium display tech.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "Does that fix the crease issue those foldables have?",
-              "duration": 3.369796
+              "text": "Does that fix the crease problem those folding phones usually have?",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "Not completely, but Samsung says it makes the crease significantly less noticeable than on their previous foldables.",
-              "duration": 5.982041
+              "text": "It doesn't completely eliminate the crease on the inside display, but Samsung says it makes it significantly less noticeable than on their previous foldables.",
+              "duration": 8.385306
             },
             {
               "speaker": "listener",
-              "text": "How many announcements were there total?",
-              "duration": 1.985306
+              "text": "Sounds like a pretty big improvement then.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Six major announcements came out of the event, including the new watches and the foldable lineup.",
-              "duration": 4.545306
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "サムスンが水曜日、夏の発表会を開きました。",
-              "duration": 4.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "新しい折りたたみ式のスマートフォンと、腕時計が並びます。",
-              "duration": 4.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "中でも注目されたのは、Galaxy Z Fold 8です。",
-              "duration": 4.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "去年のモデルから、見た目が大きく変わりました。",
-              "duration": 3.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "ヒンジの構造が新しくなり、Flex Titaniumという技術が使われています。",
-              "duration": 5.904
-            },
-            {
-              "speaker": "narrator",
-              "text": "画面を開いたときの折り目が、以前よりずっと目立たなくなりました。",
-              "duration": 4.92
-            },
-            {
-              "speaker": "narrator",
-              "text": "完全には消えませんが、使い心地は変わるかもしれません。",
-              "duration": 4.512
-            },
-            {
-              "speaker": "narrator",
-              "text": "折りたたみ端末が、また一歩身近になった形です。",
-              "duration": 4.152
+              "text": "It does seem to be. There were six major announcements total at the event, so the new Fold was just one piece of their updated lineup.",
+              "duration": 7.131429
             }
           ]
         }
@@ -410,142 +282,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Corporate America may be using AI to cut jobs, but small businesses are using it to keep them",
-      "summary": "Last year, most small businesses were using AI to get answers to questions, review contracts, create policies and rewrite emails.",
+      "headline": "Haex – a wilder, weirder open-world adventure",
+      "summary": "This land is gorgeous, yes, but also unforgiving, yet in Haex (pronounced “hex”) you have an unusual tool at your disposal to make it a little more hospitable: a cube that fits snugly in the palm of your hand out of which grows a plant.",
       "keyTakeaways": [
-        "It is exhausted owners using technology to help scarce employees do more work, make fewer mistakes and serve more customers.",
-        "There are almost 7.6m job openings this month, an increase from pre-Covid levels and most predominantly at small businesses.",
-        "Robot technology – even if a smaller company could afford them – is years away from installing dishwashers, fixing HVAC systems, laying pipes and putting up drywall."
+        "Nyman co-founded Haex’s studio Dead Astronauts (another nod to VanderMeer ), in 2024, having previously worked at Ubisoft Massive, where he helped make recent open-world blockbusters, Avatar: Frontiers of Pandora and Star Wars Outlaws.",
+        "The theory is that its morphing, geo-engineered space should foster more fluid, interesting experiences, despite Haex’s focus on somewhat familiar-feeling shooting and survival mechanics.",
+        "That feels like an apt summation of Haex’s aims: an experience that is miraculous and malicious; a setting that is beautiful yet can feel as if it is bearing down on you with cruel intensity."
       ],
-      "whyItMatters": "Gusto says that small businesses are expected to hire about 974,000 recent grads ages 20 to 24 in the 2026 season, up from 962,000 in 2025.",
-      "originalURL": "https://www.theguardian.com/business/2026/jul/26/small-businesses-ai",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "That’s another of Haex’s wrinkles: it is an online co-operative game, meaning your friends may join you on this ever-transforming survivalist adventure.",
+      "originalURL": "https://www.theguardian.com/games/2026/jul/27/haex-open-world-adventure-dead-astronauts",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "大企業がAIで雇用を削る一方、中小企業はAIで雇用を守る",
-          "summary": "昨年、多くの中小企業がAIを活用し始めた。契約書の確認、社内規定の整備、メールの文章改善など、日常業務の効率化が主な用途だ。",
+          "headline": "「Haex」——荒々しく、奇妙なオープンワールドの冒険",
+          "summary": "その土地は美しい。しかし同時に、容赦なく過酷でもある。「Haex」（「ヘックス」と読む）では、そんな世界を少しだけ生きやすくするための、風変わりな道具が手に与えられる。手のひらにすっぽりと収まる立方体——そこから、植物が育つ。",
           "keyTakeaways": [
-            "疲弊した経営者たちが、限られたスタッフでより多くをこなすためにAIを頼っている",
-            "今月の求人数は約760万件と、コロナ禍以前を上回り、その多くは中小企業からの募集",
-            "食洗機の設置や配管工事、内装作業をこなせるロボットの実用化は、費用面の問題以前に、まだ数年先の話だ"
+            "スタジオ「Dead Astronauts」を2024年に共同設立したNymanは、以前Ubisoft Massiveに在籍し、『Avatar: Frontiers of Pandora』や『Star Wars Outlaws』といった大作オープンワールドの開発に携わった人物だ。",
+            "変容し続けるジオエンジニアリングされた空間が、シューティングやサバイバルといった馴染みある要素に、より流動的で豊かな体験をもたらすことを狙っている。",
+            "「奇跡的でありながら悪意をはらむ体験、美しくも冷酷な圧力をかけてくる世界」——それがHaexの目指すところを端的に言い表している。"
           ],
-          "whyItMatters": "人事サービスのGustoによると、中小企業が2026年シーズンに採用する見込みの20〜24歳の新卒者は約97万4千人と、2025年の96万2千人から増加する見通しだ。"
+          "whyItMatters": "Haexはオンライン協力プレイに対応しており、友人とともにこの絶えず変化するサバイバルの世界を旅することができる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So I keep hearing about AI taking jobs, but this story seems to say something different is happening with small businesses?",
-              "duration": 6.870204
+              "text": "So what's Haex? That name sounds unusual.",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Right. While bigger companies might be cutting positions, small businesses are actually using AI to help their existing employees do more work and make fewer mistakes.",
-              "duration": 9.978776
+              "text": "It's pronounced 'hex,' and it's a new open-world adventure game. You're exploring this gorgeous but really unforgiving land.",
+              "duration": 7.601633
             },
             {
               "speaker": "listener",
-              "text": "What are they actually using it for?",
+              "text": "What makes it different from other survival games?",
               "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Last year, most were using it for pretty practical things – getting answers to questions, reviewing contracts, creating policies, rewriting emails. The everyday stuff that takes time.",
-              "duration": 9.639184
+              "text": "You have this cube that fits in your palm, and a plant grows out of it. The idea is to use it to make the harsh environment a bit more hospitable.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "Is this because they can't find enough workers?",
-              "duration": 2.35102
+              "text": "That's a cool concept. Who's making it?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. There are about seven point six million job openings right now, which is actually higher than before Covid. And most of those openings are at small businesses.",
-              "duration": 10.396735
+              "text": "A studio called Dead Astronauts, co-founded in 2024 by a developer who previously worked on Avatar: Frontiers of Pandora and Star Wars Outlaws at Ubisoft Massive.",
+              "duration": 10.161633
             },
             {
               "speaker": "listener",
-              "text": "So it's not really about replacing people with robots?",
-              "duration": 3.056327
+              "text": "So they know open-world games. What's the world itself like?",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "Not at all. The physical work small businesses do – installing dishwashers, fixing heating systems, laying pipes, putting up drywall – robot technology for that is years away. And most smaller companies couldn't afford it anyway.",
-              "duration": 13.818776
+              "text": "It's described as miraculous and malicious at the same time—beautiful, but it can feel like it's bearing down on you with cruel intensity. The space morphs and changes, which should create more fluid experiences.",
+              "duration": 11.964082
             },
             {
               "speaker": "listener",
-              "text": "Are they planning to hire more people?",
-              "duration": 2.324898
+              "text": "Can you play with other people?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Small businesses are expected to hire about nine hundred seventy-four thousand recent grads this year, up from nine hundred sixty-two thousand last year.",
-              "duration": 9.012245
-            },
-            {
-              "speaker": "listener",
-              "text": "So AI is more like a helper than a replacement for them.",
-              "duration": 3.239184
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the picture here. Exhausted owners using technology so their scarce employees can serve more customers.",
-              "duration": 5.668571
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカでは大手企業がAIを使って人員削減を進める一方で、中小企業は逆に人手を守るためにAIを使い始めています。",
-              "duration": 9.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "昨年、多くの中小企業が契約書の確認やメール文の作成といった日常業務にAIを取り入れました。",
-              "duration": 8.232
-            },
-            {
-              "speaker": "narrator",
-              "text": "疲れ切った経営者たちが、少ない従業員でより多くの仕事をこなせるよう、技術に頼っているのです。",
-              "duration": 7.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "今月の求人数は約760万件で、コロナ禍前より増えており、その大半が中小企業からの募集です。",
-              "duration": 8.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "配管工事や内装作業をこなせるロボットは、費用以前に実用化まで数年かかる見通しです。",
-              "duration": 7.008
-            },
-            {
-              "speaker": "narrator",
-              "text": "人事サービスのGustoによれば。",
-              "duration": 2.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "中小企業が2026年に採用する20代前半の新卒者は約97万人と、前年から増える見込みです。",
-              "duration": 9.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "人手不足が続く中、中小企業にとってAIは人を減らす道具ではなく、人を支える道具になっています。",
-              "duration": 8.064
+              "text": "Yes, it's an online co-op game, so friends can join you on this ever-transforming survivalist adventure.",
+              "duration": 6.217143
             }
           ]
         }
@@ -556,123 +372,87 @@
       "importance": 5,
       "lead": false,
       "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Nasa boss praises rise of women in science",
-      "summary": "The head of science at Nasa has praised the \"fantastic\" rise of women in science.",
+      "source": "The Guardian (Science)",
+      "headline": "Restricted eating hours may reduce cognitive decline in older age, researchers find",
+      "summary": "Confining mealtimes and snacks to a nine-hour window and avoiding food for four hours before bed may help stave off cognitive decline in older age, researchers say.",
       "keyTakeaways": [
-        "The 57-year-old graduated from university with a masters in telematics and satellite engineering in 1991 and was one of only four women on the course of more than 200 students.",
-        "The scientist explained she had grown up unaware a passion for science was \"unusual\" for girls.",
-        "She had attended St Francis College, an all-girls school in Letchworth, which she said shielded her from the gender stereotypes that often discourages young women from studying science, technology, engineering and mathematics (Stem)."
+        "A pilot study of older women living with overweight or obesity found hints of improvement in mental skills among those who ate within the restricted period compared with those who spread their meals over a longer time.",
+        "Typically, this meant eating between 10am and 6pm, while the rest of the volunteers spread their meals over about 12 hours.",
+        "Shapses called the effects “modest” but said they suggested time-restricted eating may improve people’s ability to remember information for everyday tasks and reduce mistakes linked to memory, attention and problem solving."
       ],
-      "whyItMatters": "Dr Nicola Fox, who grew up in Hitchin, Hertfordshire, said she had been struck by the number of women now graduating in physics and engineering when she returned to the University of Surrey.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c62vq0pg6yvo?at_medium=RSS&at_campaign=rss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Deep field",
+      "whyItMatters": "The finding is preliminary given the numbers in the trial, but if confirmed in larger studies, the work suggests people could help to protect their cognitive abilities by eating within a relatively narrow window and not eating late into the night.",
+      "originalURL": "https://www.theguardian.com/science/2026/jul/26/restricted-eating-hours-may-reduce-cognitive-decline-in-older-age-researchers-find",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "NASAの科学部門トップ、理工系に進む女性の増加を歓迎",
-          "summary": "NASAの科学部門を率いる責任者が、科学分野における女性の躍進を「素晴らしい変化だ」と称えた。",
+          "headline": "食事の時間帯を絞ることで、認知機能の衰えを防げるかもしれない",
+          "summary": "食事と間食を9時間以内に収め、就寝の4時間前には食べるのをやめる。そうした時間制限型の食事法が、高齢期の認知機能低下を抑える可能性があると、研究者たちが報告した。",
           "keyTakeaways": [
-            "1991年、200人以上が在籍するテレマティクス・衛星工学の修士課程を修了した際、女性はわずか4人だった。",
-            "幼い頃、科学への関心が女子にとって「珍しいこと」だという意識はなく、自然にその道を歩んできた。",
-            "女子校出身だったことで、理系分野から女性を遠ざけがちな性別による固定観念とは無縁に育った。"
+            "過体重または肥満の高齢女性を対象にした小規模研究で、食事時間を制限したグループに認知機能の改善を示す兆候が見られた。",
+            "制限グループは主に午前10時から午後6時の間に食事をとり、対照グループは約12時間にわたって食事を分散させていた。",
+            "研究者は効果を「控えめなもの」としながらも、日常的な記憶力の向上や、注意・問題解決に関わるミスの減少が示唆されると述べた。"
           ],
-          "whyItMatters": "サリー大学を訪れた際、物理や工学を修める女性の数が大きく増えていることに深く心を動かされたという。"
+          "whyItMatters": "試験の規模から知見はまだ予備的なものにとどまるが、より大規模な研究で裏付けられれば、食事時間を一定の範囲に絞り夜遅くに食べないことが、認知機能を守る一助になりうる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-27/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Nasa's head of science was talking about women in science. What's the story?",
-              "duration": 4.545306
+              "text": "I saw something about eating times affecting memory as we age. What's this about?",
+              "duration": 4.179592
             },
             {
               "speaker": "explainer",
-              "text": "Dr. Nicola Fox, who leads science at Nasa, recently praised what she called the fantastic rise of women in the field.",
-              "duration": 7.105306
+              "text": "Researchers did a pilot study with older women living with overweight or obesity. They found hints that restricting eating to a nine-hour window might help with mental skills.",
+              "duration": 9.038367
             },
             {
               "speaker": "listener",
-              "text": "What made her notice this change?",
-              "duration": 1.906939
+              "text": "Nine hours? So what does that look like in practice?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "She went back to the University of Surrey and was struck by how many women are now graduating in physics and engineering. That's very different from her own experience.",
-              "duration": 8.254694
+              "text": "Typically between ten in the morning and six in the evening. And they also avoided food for four hours before bed.",
+              "duration": 5.877551
             },
             {
               "speaker": "listener",
-              "text": "How different was it back then?",
-              "duration": 1.515102
-            },
-            {
-              "speaker": "explainer",
-              "text": "When she graduated with a masters in telematics and satellite engineering in 1991, she was one of only four women in a class of more than 200 students.",
-              "duration": 9.639184
-            },
-            {
-              "speaker": "listener",
-              "text": "That's quite a contrast. Did she say what helped her pursue science?",
+              "text": "And this actually made a difference compared to eating normally?",
               "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "She grew up unaware that a passion for science was considered unusual for girls. She went to an all-girls school in Letchworth, which she said shielded her from gender stereotypes that often discourage young women from studying science and engineering.",
-              "duration": 12.8
+              "text": "Compared to those who spread meals over about twelve hours, yes. The researchers called the effects modest, but they saw improvements in remembering information for everyday tasks.",
+              "duration": 9.456327
             },
             {
               "speaker": "listener",
-              "text": "So she just followed her interests without those barriers.",
-              "duration": 3.160816
+              "text": "What kind of improvements are we talking about?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. And now she's seeing that shift happening more broadly, with many more women entering these fields.",
-              "duration": 5.982041
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-26/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "NASAで科学部門を統括するニコラ・フォックス博士が、理工系に進む女性の増加を目にして、大きな変化を感じています。",
-              "duration": 8.976
+              "text": "Fewer mistakes linked to memory, attention, and problem solving. Though it's preliminary given the small numbers in the trial.",
+              "duration": 6.582857
             },
             {
-              "speaker": "narrator",
-              "text": "博士自身は1991年に衛星工学の修士課程を終えましたが、200人を超える学生のうち女性はわずか4人でした。",
-              "duration": 9.624
+              "speaker": "listener",
+              "text": "So not proven yet, but worth watching?",
+              "duration": 2.168163
             },
             {
-              "speaker": "narrator",
-              "text": "彼女が育った環境は少し特別で、女子校に通っていたため、科学が女性に向かないという偏見に触れずに済みました。",
-              "duration": 8.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "そのおかげで、科学への興味を持つことが珍しいとは思わず、自然にその道を選んだそうです。",
-              "duration": 7.032
-            },
-            {
-              "speaker": "narrator",
-              "text": "最近、母校のサリー大学を訪れた博士は、物理や工学を学ぶ女性が大幅に増えていることに驚きました。",
-              "duration": 8.352
-            },
-            {
-              "speaker": "narrator",
-              "text": "この変化は、若い世代が性別にとらわれず、自分の関心を追いかけられる時代になってきた証しかもしれません。",
-              "duration": 7.896
+              "speaker": "explainer",
+              "text": "Exactly. If larger studies confirm it, eating within a narrow window and not late at night could help protect cognitive abilities as we age.",
+              "duration": 7.053061
             }
           ]
         }

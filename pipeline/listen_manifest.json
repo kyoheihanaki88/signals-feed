@@ -9454,6 +9454,47 @@
               "duration": 10.34449
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-27/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカは三日続けて、イランへの空爆を止めています。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "軍の幹部が大統領に作戦の中断を勧めたためです。",
+              "duration": 4.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "水面下では外交の話し合いが進んでいて、戦争の拡大を防ごうとしています。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "イスラエルの首相はこの動きに不満で、攻撃を続けるよう求めています。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "10月に選挙を控え、軍事作戦の成果を示したい事情があるからです。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "イラン側も日曜日、周辺の国への攻撃を一時やめると発表しました。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "火曜日には首相がホワイトハウスを訪れる予定で、今後の方針が焦点になります。",
+              "duration": 6.312
+            }
+          ]
         }
       },
       "2": {
@@ -9511,6 +9552,57 @@
               "speaker": "explainer",
               "text": "The Science and Technology Facilities Council, which UK Research and Innovation funds, needs to make severe cuts to meet cost overruns, even though UKRI has an annual budget of nearly ten billion pounds.",
               "duration": 11.885714
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-27/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスのジョドレルバンク天文台が、主な資金提供元からの支援打ち切りで閉鎖の危機に直面しています。",
+              "duration": 7.536
+            },
+            {
+              "speaker": "narrator",
+              "text": "この天文台は世界有数の電波望遠鏡網を運営し、銀河やブラックホール、星の誕生。",
+              "duration": 7.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "太陽系外の惑星、ビッグバンの残光といった宇宙の根本を探る研究の拠点です。",
+              "duration": 6.648
+            },
+            {
+              "speaker": "narrator",
+              "text": "資金を配分する機関UKRIは、2028年3月に現在の契約が切れた時点で。",
+              "duration": 6.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "天文台の電波望遠鏡網への支援を終えると発表しました。",
+              "duration": 4.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "UKRIの年間予算は約100億ポンドですが、傘下の組織がコスト超過への対応で大幅な削減を迫られています。",
+              "duration": 8.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "代わりの資金が見つからなければ、観測は全て止まることになります。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "天文学者たちは、イギリスの天文学にとって大きな痛手だと声を上げています。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "宇宙を見つめる目が、予算の都合で閉じられようとしています。",
+              "duration": 4.656
             }
           ]
         }
@@ -9572,6 +9664,42 @@
               "duration": 7.131429
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-27/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "サムスンが水曜の朝、夏の新製品発表会を開きました。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年の主役は折りたたみ式のGalaxy Z Fold 8です。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "前の世代から大きく姿を変えました。",
+              "duration": 3.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヒンジの設計が新しくなり、Flex Titaniumという技術が画面に使われています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "折り目は完全にはなくなりませんが、以前よりずっと目立たなくなりました。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ端末と腕時計の新しいラインが並んで登場しています。",
+              "duration": 5.064
+            }
+          ]
         }
       },
       "4": {
@@ -9631,6 +9759,52 @@
               "duration": 6.217143
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-27/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "今、あるゲームスタジオが、少し変わった冒険の世界を作っています。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "「Haex」という名のこのゲームでは、美しいけれど厳しい土地を、手のひらサイズの立方体で少しずつ変えていきます。",
+              "duration": 8.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "その立方体からは植物が育ち、過酷な環境を生き延びる助けになります。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "スタジオを率いるNymanは、以前UbisoftでAvatarやStar Warsの大作を手がけた人物です。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼らが目指すのは、地形が変わり続ける世界で、シューティングやサバイバルに新しい流れを生む体験です。",
+              "duration": 7.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "奇跡と悪意が同居し、美しさと冷酷さが混ざり合う——そんな世界観を描こうとしています。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "しかも、友人と一緒にオンラインで冒険できる仕組みです。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝のゲームの話題として、少し目を引く試みかもしれません。",
+              "duration": 4.8
+            }
+          ]
         }
       },
       "5": {
@@ -9688,6 +9862,47 @@
               "speaker": "explainer",
               "text": "Exactly. If larger studies confirm it, eating within a narrow window and not late at night could help protect cognitive abilities as we age.",
               "duration": 7.053061
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-27/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "過体重や肥満のある高齢の女性を対象にした小さな研究で、興味深い傾向が見つかりました。",
+              "duration": 7.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "食事を9時間の枠に収めたグループは、12時間かけて食べたグループより認知機能が少し改善していたのです。",
+              "duration": 7.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "多くの人は午前10時から午後6時の間だけ食べ、寝る4時間前には何も口にしませんでした。",
+              "duration": 7.008
+            },
+            {
+              "speaker": "narrator",
+              "text": "研究者は効果を控えめと呼びましたが、日常の記憶や注意力に関わるミスが減る可能性を指摘しています。",
+              "duration": 7.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "この研究はまだ規模が小さく、あくまで予備的な結果です。",
+              "duration": 5.04
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ、もし大きな研究で確かめられれば。",
+              "duration": 3.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "食べる時間を絞り夜遅い食事を避けることが認知機能を守る手がかりになるかもしれません。",
+              "duration": 6.456
             }
           ]
         }

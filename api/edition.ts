@@ -9,6 +9,7 @@ import {
   validateEditionRequest,
 } from "./_lib/custom-mix-contract.js";
 import type { EditionOrchestrator } from "./_lib/edition-orchestrator.js";
+import { assembleSignalsFeed } from "./_lib/editorial-mix-feed.js";
 import type { SecurityLogger } from "./_lib/security-logging.js";
 import type { Clock } from "./_lib/signals-token.js";
 
@@ -19,13 +20,11 @@ type EditionDependencies = EditionAuthenticatorDependencies & {
   clock: Clock;
   requestId: () => string;
   /**
-   * Optional Custom Mix orchestration seam. (Phase 3D-2)
+   * The Custom Mix orchestration seam. (Phase 3D-2, connected in 3E-1)
    *
-   * When absent the route behaves exactly as before. When present it decides which path a
-   * verified-Pro request takes and returns that path for the security log. The PUBLIC
-   * response is unchanged either way: no 200 edition body is defined yet, because no
-   * candidate source exists to populate one and inventing the shape now would commit the
-   * API to a contract before the feature can ship.
+   * When absent the route answers `custom_mix_unavailable` — the same safe fallback every
+   * other non-selection path uses. When present it decides which path a verified-Pro
+   * request takes; only `custom_mix_pro` produces a 200.
    */
   orchestrator?: EditionOrchestrator;
 };
@@ -58,6 +57,20 @@ function errorResponse(
   retryAfterSeconds?: number,
 ): Response {
   return jsonResponse(status, { error: { code } }, retryAfterSeconds);
+}
+
+/**
+ * The single public failure shape for "no Custom Mix today".
+ *
+ * 503 matches the route's existing convention for temporary unavailability
+ * (`custom_mix_disabled` already uses it), and tells the client to fall back rather than
+ * to treat the request as malformed.
+ */
+function unavailableResponse(): Response {
+  return jsonResponse(503, {
+    status: "unavailable",
+    code: "custom_mix_unavailable",
+  });
 }
 
 export function createEditionHandler(
@@ -165,21 +178,34 @@ export function createEditionHandler(
 
     // Reaching this point proves the caller is server-verified Pro: a Signals token is
     // only ever issued against a live Apple entitlement check. The orchestrator decides
-    // which path that Pro request takes; the response below is identical either way until
-    // a candidate source and an agreed 200 contract exist.
-    let path = "selector_not_connected";
-    if (dependencies.orchestrator) {
-      const outcome = await dependencies.orchestrator({ contract });
-      path = outcome.path;
+    // which path that Pro request takes.
+    //
+    // FALLBACK CONTRACT. Every path except `custom_mix_pro` answers 503
+    // `custom_mix_unavailable`, and the client falls back to the static `latest.json` it
+    // already uses. That single public code covers an unconfigured store, a missing or
+    // stale key, a malformed pool, a provider refusal and an unusable selection alike:
+    // the distinctions are preserved internally, in `reasonCode`, for logs and tests — the
+    // public body never names a provider, a key, a credential or a validation failure.
+    if (!dependencies.orchestrator) {
+      return finish(unavailableResponse(), "standard_selector_unavailable");
     }
 
-    return finish(
-      jsonResponse(503, {
-        status: "not_connected",
-        code: "selector_not_connected",
-      }),
-      path,
-    );
+    const outcome = await dependencies.orchestrator({ contract });
+    if (outcome.path !== "custom_mix_pro") {
+      return finish(unavailableResponse(), outcome.path);
+    }
+
+    // The selection is exactly `storyCount` enriched stories in selector order. The adapter
+    // is pure and throws on any shape it cannot serve; a throw here falls back rather than
+    // returning a partial or malformed edition.
+    let feed;
+    try {
+      feed = assembleSignalsFeed(contract.date, outcome.selected);
+    } catch {
+      return finish(unavailableResponse(), "standard_selector_unavailable");
+    }
+
+    return finish(jsonResponse(200, feed as unknown as Record<string, unknown>), outcome.path);
   };
 }
 
@@ -189,8 +215,9 @@ export function createEditionHandler(
  * Dynamically imported for the same two reasons as the exchange route: this module must
  * stay import-safe, and `vercel-runtime` depends on `createEditionHandler` above.
  *
- * Authentication runs for real; the response still stops at `503 selector_not_connected`.
- * No edition, manifest or candidate pool is read, and no selector is invoked.
+ * Authentication runs for real. A successful Custom Mix selection returns the SignalsFeed
+ * document the iOS client already decodes; every other outcome returns
+ * `503 custom_mix_unavailable` and the client falls back to the static `latest.json`.
  */
 export default {
   async fetch(request: Request): Promise<Response> {

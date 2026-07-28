@@ -151,11 +151,40 @@ morning after step 6. Watch the first scheduled run and confirm:
 If the publish step fails, the edition is already merged and safe — the failure is loud and
 isolated, and Custom Mix is simply unavailable for that day.
 
-## 13. Only then connect `/api/edition`
+## 13. `/api/edition` is now connected (Phase 3E-1)
 
-`/api/edition` still answers `503 selector_not_connected` for every request, on purpose.
-Connecting it is a separate, explicitly approved phase, and its precondition is **at least one
-successful scheduled daily publication** — not a green test suite.
+`/api/edition` reads the published Editorial Mix Pool and returns a five-signal `SignalsFeed`
+for an eligible Pro caller. Every other outcome is `503 {"status":"unavailable","code":
+"custom_mix_unavailable"}` — one body for every cause, so the storage layer cannot be probed
+through the route.
+
+### Operational requirement — the API runtime needs the READ-ONLY variables
+
+The route builds its store from the read-only credential only:
+
+| Variable | Where it must exist | Used by |
+| --- | --- | --- |
+| `KV_REST_API_URL` | Vercel env (Production **and** Preview) | API runtime |
+| `KV_REST_API_TOKEN` | Vercel env (Production **and** Preview) | API runtime, **read-only** |
+| `KV_REST_API_WRITE_TOKEN` | GitHub Actions secret **only** | daily publisher |
+
+`KV_REST_API_WRITE_TOKEN` is never read by any API module. A test asserts the name appears
+nowhere in the executable request path.
+
+**Preview deployments.** `parseRedis` allows a Preview deployment to run without storage. When
+it does, `createProductionPoolStore` returns `null` and every Custom Mix request answers
+`custom_mix_unavailable`. This is the intended fail-safe, not a bug — but it means:
+
+> **Testing Custom Mix in Preview requires the same read-only variables the API runtime uses in
+> Production: `KV_REST_API_URL` and `KV_REST_API_TOKEN`, scoped to the Preview environment.**
+> Do not copy the write token into Preview, and do not hardcode Production credentials there.
+
+Until those are set, Custom Mix is Production-only and Preview exercises the failure path.
+
+### Date window
+
+The route serves **UTC today ± 1 calendar day** only. A date outside that window is refused
+before any storage read, so a client cannot walk the key space by varying the date.
 
 ---
 

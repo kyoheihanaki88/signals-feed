@@ -380,22 +380,13 @@ test("19. the module contains no logging of any kind", () => {
   assert.ok(!/\bprocess\.std(out|err)\b/.test(code), "the store writes to a stream");
 });
 
-test("20. no route or runtime module imports the Upstash store", () => {
-  const routes = ["edition.ts", "auth/exchange.ts"];
-  const runtime = [
-    "_lib/runtime-factory.ts",
-    "_lib/runtime-dependencies.ts",
-    "_lib/runtime-config.ts",
-    "_lib/vercel-runtime.ts",
-    "_lib/edition-orchestrator.ts",
-  ];
-  for (const relative of [...routes, ...runtime]) {
-    const text = readFileSync(resolve(HERE, "..", relative), "utf8");
-    const code = text.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
-    assert.ok(
-      !/from\s+["'][^"']*\/upstash-pool-store\.js["']/.test(code),
-      `${relative} imports the Upstash store`,
-    );
+test("20. only the runtime factory may import the Upstash store", () => {
+  // Phase 3E-1: the factory builds the read-only store. The ROUTE still must not — it has
+  // no business knowing which provider backs the pool.
+  const factory = readFileSync(resolve(HERE, "..", "_lib", "runtime-factory.ts"), "utf8");
+  assert.ok(factory.includes("upstash-pool-store.js"));
+  for (const name of ["edition.ts", "_lib/edition-orchestrator.ts"]) {
+    assert.ok(!readFileSync(resolve(HERE, "..", name), "utf8").includes("upstash-pool-store.js"), name);
   }
 });
 

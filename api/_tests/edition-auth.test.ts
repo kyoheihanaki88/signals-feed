@@ -37,11 +37,11 @@ function setup(
   return { dependencies, handle, subject, token };
 }
 
-test("Q: valid token reaches explicit selector_not_connected response", async () => {
+test("Q: a valid token reaches the connected edition path", async () => {
   const { handle, token } = setup();
   const response = await handle(editionRequest(token));
   assert.equal(response.status, 503);
-  assert.equal(await responseCode(response), "selector_not_connected");
+  assert.equal(await responseCode(response), "custom_mix_unavailable");
   assert.equal(response.headers.get("cache-control"), "private, no-store");
 });
 

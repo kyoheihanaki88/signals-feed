@@ -162,9 +162,12 @@ test("B. POST /api/edition reaches the composed edition handler", async () => {
   const token = await tokenFrom(await exchangeRoute.fetch(exchangeRequest()));
   assert.ok(token);
 
+  // The route export really is the CONNECTED handler: it authenticates, then attempts a
+  // Custom Mix. This harness configures no storage, so the pool read is unavailable and
+  // the route answers with the single stable public failure code.
   const response = await editionRoute.fetch(editionRequest(token));
   assert.equal(response.status, 503);
-  assert.equal(await codeOf(response), "selector_not_connected");
+  assert.equal(await codeOf(response), "custom_mix_unavailable");
 });
 
 test("B2. the edition route still rejects a missing or invalid token", async () => {
@@ -478,10 +481,18 @@ test("V3. a spoofed x-vercel-id is replaced before it can reach a log", async ()
   assert.ok(!logged.includes("injected"), "a forged request id reached the log");
 });
 
-// ── W / X / Y / Z. the selector stays disconnected ────────────────────────────────────
+/** Comments state intent; only executable code can violate an architectural boundary. */
+function stripSourceComments(text: string): string {
+  return text.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+}
 
-test("W. no Phase 3C-2 module reads a published edition, manifest or candidate pool", () => {
-  const forbidden = ["latest.json", "editions/", "mix-pool", "mix_pool", "readFileSync", "readFile"];
+// ── W / X / Y / Z. the connected route keeps its boundaries ────────────────────────────────────
+
+test("W. no route or transport module reads a published edition, manifest or the filesystem", () => {
+  // Phase 3E-1 connected the EDITORIAL pool, and only through the composition layer. The
+  // static Free edition (`latest.json`, `editions/`) stays a CDN artifact that no server
+  // module ever opens, and no route touches the filesystem.
+  const forbidden = ["latest.json", "editions/", "readFileSync", "readFile"];
   for (const relative of [
     "_lib/vercel-request.ts",
     "_lib/vercel-response.ts",
@@ -489,10 +500,26 @@ test("W. no Phase 3C-2 module reads a published edition, manifest or candidate p
     "auth/exchange.ts",
     "edition.ts",
   ]) {
-    const source = readFileSync(join(API_DIR, relative), "utf8");
+    // EXECUTABLE CODE only: `edition.ts` documents that the CLIENT falls back to the
+    // static `latest.json`. Describing the client's behaviour is not reading the file.
+    const source = stripSourceComments(readFileSync(join(API_DIR, relative), "utf8"));
     for (const needle of forbidden) {
       assert.ok(!source.includes(needle), `${relative} references ${needle}`);
     }
+  }
+  // The route performs no pool read and holds no credential: it receives an orchestration
+  // result. Only the composition layer may name the store.
+  const route = stripSourceComments(readFileSync(join(API_DIR, "edition.ts"), "utf8"));
+  for (const needle of [
+    "upstash",
+    "KV_REST_API_URL",
+    "KV_REST_API_TOKEN",
+    "KV_REST_API_WRITE_TOKEN",
+    "process.env",
+    "editorial-mix-source",
+    "signals:editorial-mix-pool",
+  ]) {
+    assert.ok(!route.includes(needle), `edition.ts references ${needle}`);
   }
 });
 
@@ -512,7 +539,7 @@ test("X. no module can invoke the selector", () => {
   }
 });
 
-test("Y. an authenticated edition response contains no stories of any kind", async () => {
+test("Y. an unavailable edition carries only the stable code, and never internals", async () => {
   const h = harness();
   prime(h);
   const token = await tokenFrom(await exchangeRoute.fetch(exchangeRequest()));
@@ -520,10 +547,16 @@ test("Y. an authenticated edition response contains no stories of any kind", asy
   const response = await editionRoute.fetch(editionRequest(token ?? ""));
   const body = (await response.json()) as Record<string, unknown>;
   assert.deepEqual(Object.keys(body).sort(), ["code", "status"]);
-  assert.equal(body.status, "not_connected");
-  assert.equal(body.code, "selector_not_connected");
-  for (const key of ["stories", "articles", "items", "edition", "mix", "pool"]) {
+  assert.equal(body.status, "unavailable");
+  assert.equal(body.code, "custom_mix_unavailable");
+  // No partial edition, and no diagnostic surface of any kind.
+  for (const key of ["stories", "articles", "items", "edition", "mix", "pool", "signals",
+                     "reason", "detail", "selector", "candidateLogs"]) {
     assert.equal(key in body, false, `the edition response carried ${key}`);
+  }
+  const text = JSON.stringify(body).toLowerCase();
+  for (const leak of ["upstash", "kv_rest", "signals:editorial", "candidate_pool"]) {
+    assert.ok(!text.includes(leak), `the failure body leaked ${leak}`);
   }
 });
 

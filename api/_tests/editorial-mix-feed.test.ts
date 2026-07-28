@@ -514,19 +514,14 @@ function mutate(fn: (a: Record<string, JsonValue>) => void): Record<string, Json
 
 // ── boundaries ────────────────────────────────────────────────────────────────────────
 
-test("61-64. nothing is connected: routes and runtime do not import these modules", () => {
-  for (const relative of [
-    "edition.ts",
-    "_lib/edition-orchestrator.ts",
-    "_lib/runtime-factory.ts",
-    "_lib/vercel-runtime.ts",
-  ]) {
-    const source = readFileSync(join(HERE, "..", relative), "utf8");
-    for (const needle of ["editorial-mix-pool-schema", "editorial-mix-feed", "mix-pool-source"]) {
-      assert.ok(!source.includes(needle), `${relative} imports ${needle}`);
-    }
+test("61-64. the adapter reaches the client only through the edition route", () => {
+  // Phase 3E-1: `edition.ts` DOES import the adapter now — that is the connection. What
+  // must stay true is that nothing else does, so feed assembly has exactly one caller.
+  const route = readFileSync(join(HERE, "..", "edition.ts"), "utf8");
+  assert.ok(route.includes("editorial-mix-feed.js"));
+  for (const name of ["auth/exchange.ts", "_lib/vercel-runtime.ts", "_lib/custom-mix-selector.ts"]) {
+    assert.ok(!readFileSync(join(HERE, "..", name), "utf8").includes("editorial-mix-feed.js"), name);
   }
-  assert.ok(readFileSync(join(HERE, "..", "edition.ts"), "utf8").includes("selector_not_connected"));
 });
 
 test("the adapter and schema touch no file, network, environment or clock", () => {

@@ -113,24 +113,24 @@ test("L3. Allow is preserved through harden()", () => {
   assert.equal(hardened.headers.get("Allow"), "POST");
 });
 
-// ── M. selector_not_connected ─────────────────────────────────────────────────────────
+// ── M. custom_mix_unavailable ─────────────────────────────────────────────────────────
 
-test("M. the selector_not_connected body survives hardening unchanged", async () => {
+test("M. the custom_mix_unavailable body survives hardening unchanged", async () => {
   const route = new Response(
-    JSON.stringify({ status: "not_connected", code: "selector_not_connected" }),
+    JSON.stringify({ status: "unavailable", code: "custom_mix_unavailable" }),
     { status: 503, headers: { "content-type": "application/json; charset=utf-8" } },
   );
   const hardened = harden(route);
   assert.equal(hardened.status, 503);
   assert.deepEqual(await hardened.json(), {
-    status: "not_connected",
-    code: "selector_not_connected",
+    status: "unavailable",
+    code: "custom_mix_unavailable",
   });
   assertMandatoryHeaders(hardened);
 });
 
-test("M2. selector_not_connected is a stable code", () => {
-  assert.ok(STABLE_ERROR_CODES.has("selector_not_connected"));
+test("M2. custom_mix_unavailable is a stable code", () => {
+  assert.ok(STABLE_ERROR_CODES.has("custom_mix_unavailable"));
 });
 
 // ── stable error codes ────────────────────────────────────────────────────────────────
@@ -172,7 +172,7 @@ test("every code the routes can emit is in the stable set", () => {
     "invalid_region",
     "invalid_topic",
     "unsupported_selector_version",
-    "selector_not_connected",
+    "custom_mix_unavailable",
   ]) {
     assert.ok(STABLE_ERROR_CODES.has(code), `${code} is missing from the stable set`);
   }

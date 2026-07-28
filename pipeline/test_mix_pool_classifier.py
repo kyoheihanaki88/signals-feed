@@ -179,8 +179,14 @@ check("8b. the counts blob carries no candidate content",
 # ── 12. the route stays disconnected ──────────────────────────────────────────────────
 
 edition = os.path.join(HERE, "..", "api", "edition.ts")
-check("12. /api/edition remains disconnected",
-      open(edition, encoding="utf-8").read().count("selector_not_connected") == 3)
+_edition_src = open(edition, encoding="utf-8").read()
+check("12. /api/edition is CONNECTED, and holds no credential of its own",
+      _edition_src.count("custom_mix_unavailable") >= 1
+      and "selector_not_connected" not in _edition_src
+      # Phase 3E-1: the route receives an orchestration result. It must never name the
+      # store, a key or a credential — only the composition layer may.
+      and not re.search(r"KV_REST_API|upstash|signals:editorial-mix-pool", _edition_src),
+      "edition.ts boundary")
 
 print()
 if FAILURES:

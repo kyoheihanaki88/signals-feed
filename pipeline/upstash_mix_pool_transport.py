@@ -95,6 +95,85 @@ REASON_INVALID_CREDENTIAL = "upstash_invalid_credential"
 #: The artifact could not be encoded as UTF-8. For valid Python text this is unreachable;
 #: it is reachable for a LONE SURROGATE, which is rejected rather than silently replaced.
 REASON_ARTIFACT_ENCODING = "artifact_utf8_encoding_failed"
+REASON_NETWORK_ERROR = "upstash_network_error"
+
+#: SAFE PROVIDER CATEGORIES. Derived from the HTTP status and, when the provider sends a
+#: JSON `error`, from a keyword match on that text — which is read ONLY long enough to
+#: classify and is then discarded. The prose itself never leaves this module, because an
+#: Upstash error can echo the key and, in some shapes, the command.
+CATEGORY_PERMISSION_DENIED = "permission_denied"
+CATEGORY_AUTHENTICATION_FAILED = "authentication_failed"
+CATEGORY_INVALID_REQUEST = "invalid_request"
+CATEGORY_PAYLOAD_TOO_LARGE = "payload_too_large"
+CATEGORY_RATE_LIMITED = "rate_limited"
+CATEGORY_NOT_FOUND = "endpoint_not_found"
+CATEGORY_PROVIDER_UNAVAILABLE = "provider_unavailable"
+CATEGORY_PROVIDER_REJECTED = "provider_rejected"
+CATEGORY_TIMEOUT = "timeout"
+CATEGORY_NETWORK = "network_error"
+CATEGORY_MALFORMED_RESPONSE = "malformed_response"
+
+#: Keyword -> category. Matched case-insensitively against the provider's `error` string.
+#: Ordered: first match wins.
+_PROVIDER_ERROR_KEYWORDS: tuple[tuple[str, str], ...] = (
+    ("noperm", CATEGORY_PERMISSION_DENIED),
+    ("permission", CATEGORY_PERMISSION_DENIED),
+    ("read only", CATEGORY_PERMISSION_DENIED),
+    ("readonly", CATEGORY_PERMISSION_DENIED),
+    ("not allowed", CATEGORY_PERMISSION_DENIED),
+    ("wrongpass", CATEGORY_AUTHENTICATION_FAILED),
+    ("unauthorized", CATEGORY_AUTHENTICATION_FAILED),
+    ("unauthenticated", CATEGORY_AUTHENTICATION_FAILED),
+    ("invalid auth", CATEGORY_AUTHENTICATION_FAILED),
+    ("invalid token", CATEGORY_AUTHENTICATION_FAILED),
+    ("wrong number of arguments", CATEGORY_INVALID_REQUEST),
+    ("unknown command", CATEGORY_INVALID_REQUEST),
+    ("syntax", CATEGORY_INVALID_REQUEST),
+    ("max request size", CATEGORY_PAYLOAD_TOO_LARGE),
+    ("too large", CATEGORY_PAYLOAD_TOO_LARGE),
+    ("daily request limit", CATEGORY_RATE_LIMITED),
+    ("rate limit", CATEGORY_RATE_LIMITED),
+    ("exceeded", CATEGORY_RATE_LIMITED),
+)
+
+#: HTTP status -> (reason, category). Upstash answers 400 for a command the token may not
+#: run, which is why the body keyword match refines it when present.
+_STATUS_MAP: dict[int, tuple[str, str]] = {
+    400: ("upstash_http_400", CATEGORY_INVALID_REQUEST),
+    401: ("upstash_http_401", CATEGORY_AUTHENTICATION_FAILED),
+    403: ("upstash_http_403", CATEGORY_PERMISSION_DENIED),
+    404: ("upstash_http_404", CATEGORY_NOT_FOUND),
+    405: ("upstash_http_405", CATEGORY_INVALID_REQUEST),
+    413: ("upstash_http_413", CATEGORY_PAYLOAD_TOO_LARGE),
+    429: ("upstash_http_429", CATEGORY_RATE_LIMITED),
+}
+
+
+def classify_provider_failure(status: int, body: bytes | None) -> tuple[str, str]:
+    """
+    Turn an HTTP status and an OPAQUE response body into a stable (reason, category).
+
+    The body is inspected only to match a keyword; neither it, nor any substring of it, nor
+    its length is ever returned. A body-derived category REFINES the status-derived one —
+    Upstash reports a permission refusal as HTTP 400, so the status alone would call it a
+    malformed request.
+    """
+    reason, category = _STATUS_MAP.get(int(status), ("", ""))
+    if not reason:
+        reason = "upstash_http_5xx" if 500 <= int(status) <= 599 else "upstash_http_other"
+        category = (CATEGORY_PROVIDER_UNAVAILABLE if 500 <= int(status) <= 599
+                    else CATEGORY_PROVIDER_REJECTED)
+
+    if body:
+        try:
+            text = bytes(body[:MAX_RESPONSE_BYTES]).decode("utf-8", errors="ignore").lower()
+        except Exception:  # noqa: BLE001 - classification must never itself raise
+            text = ""
+        for keyword, refined in _PROVIDER_ERROR_KEYWORDS:
+            if keyword in text:
+                category = refined
+                break
+    return reason, category
 
 #: The variable names the WRITE path uses. Deliberately different from the API read path's
 #: `KV_REST_API_TOKEN` so a read credential can never be pasted into the publisher secret
@@ -104,11 +183,33 @@ ENV_WRITE_TOKEN = "KV_REST_API_WRITE_TOKEN"
 
 
 class UpstashTransportError(RuntimeError):
-    """A transport failure. Carries a category code and nothing else."""
+    """
+    A transport failure. Carries stable categories and an HTTP status — nothing else.
 
-    def __init__(self, reason: str) -> None:
+    `http_status` is the numeric status the provider returned, which is safe: it names the
+    KIND of refusal without revealing the endpoint, the credential, the key or the body.
+    `provider_category` further distinguishes permission from authentication from request
+    shape, which a bare `upstash_provider_error` could not.
+    """
+
+    def __init__(self, reason: str, *, http_status: int | None = None,
+                 provider_category: str | None = None, stage: str | None = None) -> None:
         super().__init__(reason)
         self.reason = reason
+        self.http_status = http_status
+        self.provider_category = provider_category
+        self.stage = stage
+
+    def safe_detail(self) -> dict[str, Any]:
+        """Everything safe to print. Never a URL, token, body or provider sentence."""
+        detail: dict[str, Any] = {"reason": self.reason}
+        if self.stage:
+            detail["stage"] = self.stage
+        if self.http_status is not None:
+            detail["httpStatus"] = self.http_status
+        if self.provider_category:
+            detail["providerCategory"] = self.provider_category
+        return detail
 
 
 @dataclass(frozen=True)
@@ -195,6 +296,21 @@ def command_url(base: str, *arguments: str, query: str = "") -> str:
     return f"{base}/{path}{query}"
 
 
+def _from_http_error(error: urllib.error.HTTPError) -> tuple[str, dict[str, Any]]:
+    """
+    Extract the SAFE facts from an HTTPError: the status, and a category derived from a
+    keyword scan of the body. The body itself is read into a local, classified, and
+    dropped — it is never stored on the exception, returned or logged.
+    """
+    status = int(getattr(error, "code", 0) or 0)
+    try:
+        body = error.read(MAX_RESPONSE_BYTES)
+    except Exception:  # noqa: BLE001 - a body we cannot read simply carries no keyword
+        body = b""
+    reason, category = classify_provider_failure(status, body)
+    return reason, {"http_status": status, "provider_category": category}
+
+
 def _default_opener(request: urllib.request.Request, timeout: float) -> tuple[int, bytes]:
     """The only place a socket is opened. Isolated so tests can replace it wholesale."""
     with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310
@@ -278,19 +394,32 @@ class UpstashPoolObjectStore:
             # nothing about the value.
             raise UpstashTransportError(REASON_INVALID_CREDENTIAL) from None
         except (TimeoutError, socket.timeout):
-            raise UpstashTransportError(REASON_TIMEOUT) from None
-        except urllib.error.HTTPError:
-            # The body can echo the key and, in some shapes, the command. Discard it.
-            raise UpstashTransportError(REASON_PROVIDER_ERROR) from None
+            raise UpstashTransportError(REASON_TIMEOUT, provider_category=CATEGORY_TIMEOUT,
+                                        stage="set") from None
+        except urllib.error.HTTPError as error:
+            # `urlopen` raises for EVERY non-2xx, so this is the path a real provider
+            # refusal takes — and until Phase 3D-3G.10 it discarded `error.code`, which is
+            # exactly the fact needed to tell permission from auth from request shape.
+            # The body is read only to classify and is never retained.
+            reason, detail = _from_http_error(error)
+            raise UpstashTransportError(reason, stage="set", **detail) from None
         except urllib.error.URLError as error:
             if isinstance(error.reason, (TimeoutError, socket.timeout)):
-                raise UpstashTransportError(REASON_TIMEOUT) from None
-            raise UpstashTransportError(REASON_PROVIDER_ERROR) from None
+                raise UpstashTransportError(REASON_TIMEOUT,
+                                            provider_category=CATEGORY_TIMEOUT,
+                                            stage="set") from None
+            raise UpstashTransportError(REASON_NETWORK_ERROR,
+                                        provider_category=CATEGORY_NETWORK,
+                                        stage="set") from None
         except OSError:
-            raise UpstashTransportError(REASON_PROVIDER_ERROR) from None
+            raise UpstashTransportError(REASON_NETWORK_ERROR,
+                                        provider_category=CATEGORY_NETWORK,
+                                        stage="set") from None
 
         if status != 200:
-            raise UpstashTransportError(REASON_PROVIDER_ERROR)
+            reason, category = classify_provider_failure(status, raw)
+            raise UpstashTransportError(reason, http_status=status,
+                                        provider_category=category, stage="set")
         if not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_RESPONSE_BYTES:
             raise UpstashTransportError(REASON_INVALID_RESPONSE)
 
@@ -303,7 +432,11 @@ class UpstashPoolObjectStore:
             raise UpstashTransportError(REASON_INVALID_RESPONSE)
         # A 200 carrying `error` is Upstash reporting a command failure.
         if "error" in envelope:
-            raise UpstashTransportError(REASON_PROVIDER_ERROR)
+            # A 200 carrying `error` is a command-level refusal. Classify from the text,
+            # then drop it.
+            _, category = classify_provider_failure(200, raw)
+            raise UpstashTransportError(REASON_PROVIDER_ERROR, http_status=200,
+                                        provider_category=category, stage="set")
         # Redis answers a successful SET with the simple string OK. Anything else means the
         # command did not do what we asked, and we must not report a successful publish.
         if envelope.get("result") != "OK":
@@ -348,21 +481,31 @@ def _command(
         headers={"Authorization": f"Bearer {config.write_token}"},
     )
     run = opener or _default_opener
+    stage = str(command[0]).lower() if command else "command"
     try:
         status, raw = run(request, config.timeout_seconds)
     except UnicodeEncodeError:
-        raise UpstashTransportError(REASON_INVALID_CREDENTIAL) from None
+        raise UpstashTransportError(REASON_INVALID_CREDENTIAL, stage=stage) from None
     except (TimeoutError, socket.timeout):
-        raise UpstashTransportError(REASON_TIMEOUT) from None
+        raise UpstashTransportError(REASON_TIMEOUT, provider_category=CATEGORY_TIMEOUT,
+                                    stage=stage) from None
+    except urllib.error.HTTPError as error:
+        reason, detail = _from_http_error(error)
+        raise UpstashTransportError(reason, stage=stage, **detail) from None
     except urllib.error.URLError as error:
         if isinstance(getattr(error, "reason", None), (TimeoutError, socket.timeout)):
-            raise UpstashTransportError(REASON_TIMEOUT) from None
-        raise UpstashTransportError(REASON_PROVIDER_ERROR) from None
+            raise UpstashTransportError(REASON_TIMEOUT, provider_category=CATEGORY_TIMEOUT,
+                                        stage=stage) from None
+        raise UpstashTransportError(REASON_NETWORK_ERROR, provider_category=CATEGORY_NETWORK,
+                                    stage=stage) from None
     except OSError:
-        raise UpstashTransportError(REASON_PROVIDER_ERROR) from None
+        raise UpstashTransportError(REASON_NETWORK_ERROR, provider_category=CATEGORY_NETWORK,
+                                    stage=stage) from None
 
     if status != 200:
-        raise UpstashTransportError(REASON_PROVIDER_ERROR)
+        reason, category = classify_provider_failure(status, raw)
+        raise UpstashTransportError(reason, http_status=status, provider_category=category,
+                                    stage=stage)
     if not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_READ_RESPONSE_BYTES:
         raise UpstashTransportError(REASON_VALUE_TOO_LARGE)
     try:
@@ -372,7 +515,9 @@ def _command(
     if not isinstance(envelope, dict):
         raise UpstashTransportError(REASON_INVALID_RESPONSE)
     if "error" in envelope:
-        raise UpstashTransportError(REASON_PROVIDER_ERROR)
+        _, category = classify_provider_failure(200, raw)
+        raise UpstashTransportError(REASON_PROVIDER_ERROR, http_status=200,
+                                    provider_category=category, stage=stage)
     if "result" not in envelope:
         raise UpstashTransportError(REASON_INVALID_RESPONSE)
     return envelope["result"]

@@ -48,7 +48,14 @@ from editorial_mix_pool_schema import (
     MINIMUM_PUBLISHABLE_POOL_SIZE,
     validate_editorial_mix_pool,
 )
-from upstash_mix_pool_transport import UpstashTransportError, create_store
+from upstash_mix_pool_transport import (
+    UpstashPoolObjectStore,
+    UpstashTransportError,
+    create_store,
+    delete_key,
+    read_back,
+    resolve_config,
+)
 
 #: Distinct exit codes so the workflow can tell "not configured yet" from "it broke".
 EXIT_OK = 0
@@ -402,10 +409,54 @@ def command_publish(args: argparse.Namespace) -> int:
         print(json.dumps({"status": "rejected", "reason": error.reason}), file=sys.stderr)
         return EXIT_PUBLISH_FAILED
     except UpstashTransportError as error:
-        print(json.dumps({"status": "failed", "reason": error.reason}), file=sys.stderr)
+        # `safe_detail()` adds the HTTP status, the request stage and a provider category —
+        # enough to tell permission from authentication from request shape, and nothing
+        # more. No URL, token, response body or provider sentence is included.
+        print(json.dumps({"status": "failed", **error.safe_detail()}, sort_keys=True),
+              file=sys.stderr)
         return EXIT_PUBLISH_FAILED
 
     print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+    return EXIT_OK
+
+
+def command_verify_write(args: argparse.Namespace) -> int:
+    """
+    MANUAL diagnostic: prove the configured credential can actually write.
+
+    Deliberately NOT wired into any workflow. It performs one real round trip against a
+    dedicated throwaway key and reports safe metadata only, so a permission or auth refusal
+    is attributable without publishing — or even building — a production artifact.
+
+        SET signals:verify:write-capability:<label>  "1"  EX 60
+        GET  the same exact key
+        DEL  the same exact key
+
+    A 60-second TTL means a forgotten key disappears on its own. The namespace is one no
+    reader and no publisher consults, and no wildcard, scan or flush is expressible.
+    """
+    key = f"signals:verify:write-capability:{args.label}"
+    print(json.dumps({"status": "probing", "key": key, "ttlSeconds": 60}, sort_keys=True))
+
+    try:
+        config = resolve_config(dict(os.environ), timeout_seconds=args.timeout)
+    except UpstashTransportError as error:
+        print(json.dumps({"status": "not_configured", **error.safe_detail()},
+                         sort_keys=True), file=sys.stderr)
+        return EXIT_NOT_CONFIGURED
+
+    steps: dict[str, Any] = {}
+    try:
+        UpstashPoolObjectStore(config).put(key, b"1", ttl_seconds=60)
+        steps["set"] = "ok"
+        steps["get"] = "ok" if read_back(config, key) == b"1" else "mismatch"
+        steps["del"] = delete_key(config, key)
+    except UpstashTransportError as error:
+        print(json.dumps({"status": "failed", "steps": steps, **error.safe_detail()},
+                         sort_keys=True), file=sys.stderr)
+        return EXIT_PUBLISH_FAILED
+
+    print(json.dumps({"status": "ok", "key": key, "steps": steps}, sort_keys=True))
     return EXIT_OK
 
 
@@ -438,6 +489,13 @@ def parser() -> argparse.ArgumentParser:
     builder.add_argument("--source", default="daily-pipeline")
     builder.add_argument("--no-fetch", action="store_true")
     builder.set_defaults(handler=command_build)
+
+    prober = sub.add_parser("verify-write",
+                            help="manual: prove the credential can write one throwaway key")
+    prober.add_argument("--label", required=True,
+                        help="a unique suffix, e.g. the workflow run id — no default")
+    prober.add_argument("--timeout", type=float, default=10.0)
+    prober.set_defaults(handler=command_verify_write)
 
     publisher = sub.add_parser("publish", help="publish a built artifact to Upstash")
     publisher.add_argument("--artifact", required=True)

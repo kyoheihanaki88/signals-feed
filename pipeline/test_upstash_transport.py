@@ -298,11 +298,13 @@ check("F17. the 16,909-byte smoke artifact round-trips byte-exact",
 
 for name, raises, expected in [
     ("29. a timeout is handled safely", TimeoutError("connect timeout"), T.REASON_TIMEOUT),
+    # Phase 3D-3G.10 refines these: the status and a safe category now survive, so a
+    # permission refusal is no longer indistinguishable from a DNS failure.
     ("30. a provider rejection is handled safely",
      urllib.error.HTTPError(URL_VALUE, 401, "WRONGPASS bad token", {}, None),
-     T.REASON_PROVIDER_ERROR),
+     "upstash_http_401"),
     ("30b. a connection failure is handled safely",
-     urllib.error.URLError("name resolution failed"), T.REASON_PROVIDER_ERROR),
+     urllib.error.URLError("name resolution failed"), T.REASON_NETWORK_ERROR),
 ]:
     try:
         publish(recorder=Recorder(raises=raises))
@@ -322,7 +324,8 @@ for name, status, payload in [
         publish(recorder=Recorder(status=status, payload=payload))
         check(name, False, "accepted")
     except T.UpstashTransportError as error:
-        check(name, error.reason in (T.REASON_PROVIDER_ERROR, T.REASON_INVALID_RESPONSE),
+        check(name, error.reason in (T.REASON_PROVIDER_ERROR, T.REASON_INVALID_RESPONSE,
+                                     "upstash_http_5xx", "upstash_http_400"),
               error.reason)
 
 # ── 32-33. nothing leaks ──────────────────────────────────────────────────────────────

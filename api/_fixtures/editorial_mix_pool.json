@@ -1,0 +1,406 @@
+{
+  "artifactType": "editorial-mix-pool",
+  "candidateCount": 6,
+  "candidates": [
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "TECH",
+        "headline": "More than 200,000 people flee or lock down as wildfires sweep France and Spain",
+        "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "More than 110,000 people had been evacuated in two days to escape the Cap Ferret fire, the Gironde prefecture said, including thousands of holidaymakers in campsites and rental homes.",
+          "Scientists say climate breakdown is triggering more frequent and more extreme weather events, evaporating soils and waterways, fuelling wildfires and leading to thousands of excess deaths.",
+          "More than 600 firefighters were struggling to contain that blaze, Clavreul said.“There are a great many new fire starts ahead of the main blaze."
+        ],
+        "originalURL": "https://example.com/news/japan-quake-sensors",
+        "placeTime": "Infrastructure",
+        "readTime": 6,
+        "source": "The Verge",
+        "summary": "Tokyo「東京」 café — a \"quoted\" clause with a backslash \\ and Ω.",
+        "whyItMatters": "France’s president, ​Emmanuel Macron, said he had activated the EU’s civil protection mechanism as the country, which has endured three almost back-to-back heatwaves since May, battled numerous wildfires."
+      },
+      "selector": {
+        "baseScore": 11.753704,
+        "category": "TECH",
+        "eligible": true,
+        "headline": "New sensors will speed Japan's coastal quake alerts",
+        "id": "162b98",
+        "publishedAt": "2026-07-27T08:10:00Z",
+        "quality": {
+          "clusterSize": 2,
+          "clusterSources": 2,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 2
+        },
+        "regionMemberships": [
+          {
+            "evidence": [
+              "hokkaido:summary",
+              "japan:summary",
+              "japan:title",
+              "okinawa:summary"
+            ],
+            "id": "japan",
+            "strength": "primary"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "world",
+            "strength": "none"
+          }
+        ],
+        "source": "The Verge",
+        "sourceReliability": "high",
+        "summary": "Japan will add technology to the same national earthquake warning network spanning Okinawa and Hokkaido.",
+        "topicFingerprint": [],
+        "topics": [
+          "tech"
+        ],
+        "underlyingStoryIdentity": "cluster:3",
+        "url": "https://example.com/news/japan-quake-sensors"
+      }
+    },
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "SCIENCE",
+        "headline": "First person gets new experimental vaccine for Ebola",
+        "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "Hunt is the first of 50 healthy volunteers aged 18-55 being recruited for the trial.",
+          "The vaccine uses the same technology as the Oxford AstraZeneca Covid jab which was given to hundreds of millions of people during the pandemic.",
+          "What is Ebola and why is stopping the latest outbreak so difficult?"
+        ],
+        "originalURL": "https://example.com/news/japan-quake-warning",
+        "placeTime": "At the desk",
+        "readTime": 2,
+        "source": "NPR",
+        "summary": "Hunt said he wanted to help after seeing news reports of the deadly Ebola outbreak in Democratic Republic of Congo.",
+        "whyItMatters": "Prof Teresa Lambe, who led the Ebola vaccine team at the University of Oxford, said they had been able to create it so quickly because of the background of decades of research."
+      },
+      "selector": {
+        "baseScore": 10.262963,
+        "category": "SCIENCE",
+        "eligible": true,
+        "headline": "Japan expands its coastal earthquake warning network",
+        "id": "619a26",
+        "publishedAt": "2026-07-27T08:20:00Z",
+        "quality": {
+          "clusterSize": 2,
+          "clusterSources": 2,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 2
+        },
+        "regionMemberships": [
+          {
+            "evidence": [
+              "hokkaido:summary",
+              "japan:title",
+              "japanese-government:summary",
+              "japanese:summary",
+              "okinawa:summary"
+            ],
+            "id": "japan",
+            "strength": "primary"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "world",
+            "strength": "none"
+          }
+        ],
+        "source": "NPR",
+        "sourceReliability": "high",
+        "summary": "The Japanese government approved new warning sensors between Okinawa and Hokkaido after a national science review.",
+        "topicFingerprint": [],
+        "topics": [
+          "science"
+        ],
+        "underlyingStoryIdentity": "cluster:3",
+        "url": "https://example.com/news/japan-quake-warning"
+      }
+    },
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "BUSINESS",
+        "headline": "ICC member states vote to remove chief prosecutor Karim Khan",
+        "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "Karim Khan, Prosecutor of the International Criminal Court, looks up prior to a press conference in The Hague, Netherlands, July 3, 2023.",
+          "British barrister Karim Khan was accused of sexual misconduct with a female aide, as outlined by The Associated Press in a series of stories, allegations which he has steadfastly denied.",
+          "The court's oversight body, the Assembly of States Parties, concluded that Khan had committed \"serious misconduct and serious breach of duty,\" said Päivi Kaukoranta, the body's president."
+        ],
+        "originalURL": "https://example.com/news/bank-of-japan-rates",
+        "placeTime": "International",
+        "readTime": 4,
+        "source": "The Guardian",
+        "summary": "The International Criminal Court voted to remove the global tribunal's chief prosecutor on Friday, nearly two years after sexual misconduct allegations against him first emerged, the court's oversight body announced.",
+        "whyItMatters": "Rubio said he will pressure member states to withdraw from the institution, sanction organizations that work with the court and ban staff from traveling to the United States."
+      },
+      "selector": {
+        "baseScore": 10.881481,
+        "category": "BUSINESS",
+        "eligible": true,
+        "headline": "Bank of Japan keeps rates steady as yen strengthens",
+        "id": "776677",
+        "publishedAt": "2026-07-27T08:40:00Z",
+        "quality": {
+          "clusterSize": 1,
+          "clusterSources": 1,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 1
+        },
+        "regionMemberships": [
+          {
+            "evidence": [
+              "bank-of-japan:summary",
+              "bank-of-japan:title",
+              "japan:summary",
+              "japan:title",
+              "yen:summary",
+              "yen:title"
+            ],
+            "id": "japan",
+            "strength": "primary"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "world",
+            "strength": "none"
+          }
+        ],
+        "source": "The Guardian",
+        "sourceReliability": "high",
+        "summary": "Bank of Japan officials kept interest rates steady while policymakers reviewed wage growth and the yen's recent appreciation.",
+        "topicFingerprint": [],
+        "topics": [
+          "business"
+        ],
+        "underlyingStoryIdentity": "url:03b4403e6624f934fd941cf2",
+        "url": "https://example.com/news/bank-of-japan-rates"
+      }
+    },
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "HEALTH",
+        "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+        "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+          "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+          "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+        ],
+        "originalURL": "https://example.com/news/un-vaccine-fund",
+        "placeTime": "Engineering",
+        "readTime": 8,
+        "source": "BBC News",
+        "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+        "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7."
+      },
+      "selector": {
+        "baseScore": 5.744444,
+        "category": "HEALTH",
+        "eligible": true,
+        "headline": "United Nations launches an international vaccine fund",
+        "id": "78c7a7",
+        "publishedAt": "2026-07-27T08:00:00Z",
+        "quality": {
+          "clusterSize": 1,
+          "clusterSources": 1,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 2
+        },
+        "regionMemberships": [
+          {
+            "evidence": [],
+            "id": "japan",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [
+              "united-nations:summary",
+              "united-nations:title"
+            ],
+            "id": "world",
+            "strength": "primary"
+          }
+        ],
+        "source": "BBC News",
+        "sourceReliability": "high",
+        "summary": "The United Nations says countries will contribute to the international health fund according to income and population.",
+        "topicFingerprint": [],
+        "topics": [
+          "health"
+        ],
+        "underlyingStoryIdentity": "url:42980f432fcc1f93c4655552",
+        "url": "https://example.com/news/un-vaccine-fund"
+      }
+    },
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "CULTURE",
+        "headline": "Samsung’s wider Z Fold 8 feels just right",
+        "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "The Z Fold 8 is wider than any of Samsung’s previous foldables, and shorter too, a size and shape somewhere between Samsung’s traditional Flip and Fold models.",
+          "In person, to my surprise, it feels great, and almost immediately intuitive.",
+          "If you want to get a feel for it yourself, grab your passport — the Z Fold 8 is about the same height and less than half an inch more narrow."
+        ],
+        "originalURL": "https://example.com/news/heritage-rescue-fund",
+        "placeTime": "Software",
+        "readTime": 10,
+        "source": "The Guardian",
+        "summary": "A year after overhauling its Z Fold phone with a radically thinner design, Samsung has changed things up again, this time altering the shape entirely.",
+        "whyItMatters": "The Z Fold 8 may be the official follow-up to last year’s impressive Z Fold 7, but in truth the Z Fold 8 Ultra is the straightforward sequel."
+      },
+      "selector": {
+        "baseScore": 6.325926,
+        "category": "CULTURE",
+        "eligible": true,
+        "headline": "International coalition creates a heritage rescue fund",
+        "id": "9bf79b",
+        "publishedAt": "2026-07-27T07:40:00Z",
+        "quality": {
+          "clusterSize": 1,
+          "clusterSources": 1,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 1
+        },
+        "regionMemberships": [
+          {
+            "evidence": [],
+            "id": "japan",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [
+              "multinational:summary",
+              "multinational:title"
+            ],
+            "id": "world",
+            "strength": "primary"
+          }
+        ],
+        "source": "The Guardian",
+        "sourceReliability": "high",
+        "summary": "Museums in several countries will coordinate international emergency work through a new multinational heritage protection program.",
+        "topicFingerprint": [],
+        "topics": [
+          "culture"
+        ],
+        "underlyingStoryIdentity": "url:cff4b3e901b7ea8dac5143b8",
+        "url": "https://example.com/news/heritage-rescue-fund"
+      }
+    },
+    {
+      "editorial": {
+        "audioURL": "",
+        "category": "TECH",
+        "headline": "More than 200,000 people flee or lock down as wildfires sweep France and Spain",
+        "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+        "keyTakeaways": [
+          "More than 110,000 people had been evacuated in two days to escape the Cap Ferret fire, the Gironde prefecture said, including thousands of holidaymakers in campsites and rental homes.",
+          "Scientists say climate breakdown is triggering more frequent and more extreme weather events, evaporating soils and waterways, fuelling wildfires and leading to thousands of excess deaths.",
+          "More than 600 firefighters were struggling to contain that blaze, Clavreul said.“There are a great many new fire starts ahead of the main blaze."
+        ],
+        "originalURL": "https://example.com/news/tokyo-care-robot-trial",
+        "placeTime": "Infrastructure",
+        "readTime": 6,
+        "source": "BBC News",
+        "summary": "More than 200,000 people have fled or been ordered to lock down as huge wildfires swept Spain and France on Friday, prompting Madrid to declare a national emergency and the French authorities to order the total evacuation, by land and sea, of one of the country’s best-known holiday spots.",
+        "whyItMatters": "France’s president, ​Emmanuel Macron, said he had activated the EU’s civil protection mechanism as the country, which has endured three almost back-to-back heatwaves since May, battled numerous wildfires."
+      },
+      "selector": {
+        "baseScore": 9.4,
+        "category": "TECH",
+        "eligible": true,
+        "headline": "Tokyo hospitals begin a national care-robot trial",
+        "id": "f4d7d4",
+        "publishedAt": "2026-07-27T09:00:00Z",
+        "quality": {
+          "clusterSize": 1,
+          "clusterSources": 1,
+          "eligible": true,
+          "paywalled": false,
+          "sourceRisk": 1
+        },
+        "regionMemberships": [
+          {
+            "evidence": [
+              "japan:summary",
+              "tokyo:summary",
+              "tokyo:title"
+            ],
+            "id": "japan",
+            "strength": "primary"
+          },
+          {
+            "evidence": [],
+            "id": "united_states",
+            "strength": "none"
+          },
+          {
+            "evidence": [],
+            "id": "world",
+            "strength": "none"
+          }
+        ],
+        "source": "BBC News",
+        "sourceReliability": "high",
+        "summary": "Japan's health ministry is coordinating a Tokyo care-robot pilot across several hospitals, with researchers publishing results next year.",
+        "topicFingerprint": [],
+        "topics": [
+          "health",
+          "tech"
+        ],
+        "underlyingStoryIdentity": "url:72c8712fedb5ff3238035efc",
+        "url": "https://example.com/news/tokyo-care-robot-trial"
+      }
+    }
+  ],
+  "date": "2026-07-27",
+  "editorialPoolIdentity": "1f123c4da0f8ad65371ae024604bf198e18beaa4b38a7ab832b50190fc41adc3",
+  "editorialVersion": 1,
+  "generatedAt": "2026-07-27T09:00:00Z",
+  "provenance": {
+    "generatorVersion": 1,
+    "source": "offline-fixture"
+  },
+  "schemaVersion": 1,
+  "selectorPoolIdentity": "38d9c03d43bd5e94eb0205387b363d9dde795283bbac277d8ec1847d45806a3d",
+  "selectorVersion": 1
+}

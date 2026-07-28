@@ -8,6 +8,7 @@ import {
   ContractValidationError,
   validateEditionRequest,
 } from "./_lib/custom-mix-contract.js";
+import type { EditionOrchestrator } from "./_lib/edition-orchestrator.js";
 import type { SecurityLogger } from "./_lib/security-logging.js";
 import type { Clock } from "./_lib/signals-token.js";
 
@@ -17,6 +18,16 @@ type EditionDependencies = EditionAuthenticatorDependencies & {
   logger: SecurityLogger;
   clock: Clock;
   requestId: () => string;
+  /**
+   * Optional Custom Mix orchestration seam. (Phase 3D-2)
+   *
+   * When absent the route behaves exactly as before. When present it decides which path a
+   * verified-Pro request takes and returns that path for the security log. The PUBLIC
+   * response is unchanged either way: no 200 edition body is defined yet, because no
+   * candidate source exists to populate one and inventing the shape now would commit the
+   * API to a contract before the feature can ship.
+   */
+  orchestrator?: EditionOrchestrator;
 };
 
 export type EditionConfig = {
@@ -152,12 +163,22 @@ export function createEditionHandler(
       return finish(errorResponse(400, "invalid_request"), "invalid_request");
     }
 
+    // Reaching this point proves the caller is server-verified Pro: a Signals token is
+    // only ever issued against a live Apple entitlement check. The orchestrator decides
+    // which path that Pro request takes; the response below is identical either way until
+    // a candidate source and an agreed 200 contract exist.
+    let path = "selector_not_connected";
+    if (dependencies.orchestrator) {
+      const outcome = await dependencies.orchestrator({ contract });
+      path = outcome.path;
+    }
+
     return finish(
       jsonResponse(503, {
         status: "not_connected",
         code: "selector_not_connected",
       }),
-      "selector_not_connected",
+      path,
     );
   };
 }

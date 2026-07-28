@@ -21,9 +21,11 @@ import {
   selectCustomMix,
   topicAdjustment,
 } from "../_lib/custom-mix-selector.js";
+import { productionEditorialDuplicateGuard } from "../_lib/editorial-duplicate-guard.js";
 import {
   MixSelectionError,
   UnsupportedMixValue,
+  noEditorialDuplicateGuard,
   type EditorialDuplicateGuard,
   type MixCandidate,
 } from "../_lib/custom-mix-types.js";
@@ -403,11 +405,14 @@ test("P3. a naive timestamp is read as UTC, not as local time", () => {
 
 // ── the editorial duplicate seam ──────────────────────────────────────────────────────
 
-test("the editorial guard seam is consulted, and the default no-op never fires", () => {
+test("the editorial guard seam is consulted, and never fires on this fixture", () => {
   let calls = 0;
-  const spy: EditorialDuplicateGuard = () => {
+  let fired = 0;
+  const spy: EditorialDuplicateGuard = (a, b) => {
     calls += 1;
-    return { duplicate: false };
+    const decision = productionEditorialDuplicateGuard(a, b);
+    if (decision.duplicate) fired += 1;
+    return decision;
   };
   const withSpy = selectCustomMix({
     candidates: ALL.map((c) => structuredClone(c)),
@@ -416,8 +421,46 @@ test("the editorial guard seam is consulted, and the default no-op never fires",
     editorialDuplicateGuard: spy,
   });
   assert.ok(calls > 0, "the seam was never consulted");
-  // The no-op default produces exactly the same result.
+  assert.equal(fired, 0, "the real guard fires on the base fixture — goldens would change");
+  // The default (which IS the real guard) produces exactly the same result.
   assert.equal(JSON.stringify(withSpy), JSON.stringify(select()));
+});
+
+test("the production default is the REAL editorial guard, not the test-only no-op", () => {
+  // Proven behaviourally: a pair the real guard catches is caught WITHOUT injection.
+  const roundup = structuredClone(BY_ID.get("jp-business") as MixCandidate);
+  roundup.id = "samsung-roundup";
+  roundup.headline = "Samsung Galaxy Unpacked 2026: The 6 biggest announcements";
+  roundup.summary = "Everything Samsung showed, including the new Z Fold 8.";
+  roundup.url = "https://example.com/samsung-roundup";
+  roundup.underlyingStoryIdentity = "samsung-roundup";
+  roundup.baseScore = 95;
+
+  const handsOn = structuredClone(roundup);
+  handsOn.id = "samsung-handson";
+  handsOn.headline = "Samsung's wider Z Fold 8 feels just right";
+  handsOn.summary = "An hour with the new foldable.";
+  handsOn.url = "https://example.com/samsung-handson";
+  handsOn.underlyingStoryIdentity = "samsung-handson";
+  handsOn.baseScore = 94;
+
+  const withDefault = select([roundup, handsOn, ...subset(["jp-health", "jp-culture"])]);
+  assert.ok(withDefault.selectedIds.includes("samsung-roundup"));
+  assert.ok(
+    !withDefault.selectedIds.includes("samsung-handson"),
+    "the default guard let an editorial duplicate through",
+  );
+
+  // And the test-only no-op lets it through, confirming the difference is the guard.
+  const withNoOp = selectCustomMix({
+    candidates: [roundup, handsOn, ...subset(["jp-health", "jp-culture"])].map((c) =>
+      structuredClone(c),
+    ),
+    date: DATE,
+    regions: ["japan"],
+    editorialDuplicateGuard: noEditorialDuplicateGuard,
+  });
+  assert.ok(withNoOp.selectedIds.includes("samsung-handson"));
 });
 
 test("an editorial guard that DOES fire changes the outcome and reports its rule", () => {

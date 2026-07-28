@@ -8,6 +8,7 @@ import json
 import math
 import re
 from datetime import datetime
+from decimal import Decimal, InvalidOperation
 from typing import Any
 from urllib.parse import urlparse
 
@@ -42,6 +43,169 @@ CANDIDATE_REQUIRED = {
 CANDIDATE_ALLOWED = CANDIDATE_REQUIRED | {"quality", "eligible"}
 PROVENANCE_KEYS = {"source", "inputIdentity", "generatorVersion", "referenceAt"}
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+# ══════════════════════════════════════════════════════════════════════════════════════
+# NUMERIC CONTRACT  (Phase 3D-3A.1)
+#
+# This is a SEMANTIC SIGNALS SCORE CONTRACT, not a general-purpose JSON-number
+# canonicalisation standard. Its only job is to guarantee that every artifact this schema
+# accepts has ONE canonical byte representation that a future TypeScript reader can
+# reproduce exactly with ordinary `JSON.stringify`.
+#
+# WHY THE DOMAIN IS DELIBERATELY NARROW. Python and JavaScript disagree on three float
+# forms, and the disagreement is invisible until it silently breaks a content hash:
+#
+#     Python json.dumps        JavaScript JSON.stringify(parsed)
+#     7.0      -> "7.0"        7        -> "7"        integral float
+#     -0.0     -> "-0.0"       0        -> "0"        negative zero
+#     0.000001 -> "1e-06"      1e-6     -> "1e-7"…    exponent notation
+#
+# JSON text `7.0` parses to `7` in JavaScript with NO surviving trace, so TypeScript can
+# never reproduce Python's bytes for an integral float. Rather than write a custom
+# serializer or a raw-token parser, the accepted DOMAIN is constrained so that plain
+# `json.dumps` already emits the single approved form for every value it accepts.
+#
+# THE INTEGRAL-FLOAT CASE IS REAL. A 6,272-combination sweep of the actual producer
+# (`ranker.base_score` over cluster size × reliability × category × paywall × age ×
+# live-blog × importance) yields scores from -7.0 to 17.6 — and -7.0 is an integral float.
+# This is not a theoretical hazard.
+#
+# EXPONENT-SAFE FLOOR. `json.dumps` switches to exponent notation below 1e-4:
+# 0.0001 -> "0.0001", but 0.00001 -> "1e-05". A nonzero score must therefore have
+# magnitude >= 0.0001. Exact zero is allowed and normalised to the integer 0.
+#
+# RANGE. The observed producer range is [-7.0, 17.6]. SCORE_MIN/SCORE_MAX give ~57x
+# headroom so ordinary ranking changes will not trip the bound, while still rejecting
+# absurd values and staying far inside the exponent-safe upper region (|x| < 1e16).
+#
+# WHERE EACH RULE APPLIES:
+#   freeze_artifact   NORMALISES producer output (7.0 -> 7, -0.0 -> 0) and raises on a
+#                     value outside the contract. It never silently rounds or clips.
+#   validate_artifact REJECTS a non-canonical externally supplied artifact. An artifact
+#                     that arrives with 7.0, -0.0, an exponent-domain value or more than
+#                     six decimals is invalid — it did not come from this producer.
+# The two therefore never disagree: one produces canonical form, the other requires it.
+#
+# NO CUSTOM SERIALIZER, NO RAW-TOKEN PARSING. Because the accepted domain has exactly one
+# canonical form per value, ordinary `json.dumps` already emits it and semantic validation
+# is sufficient — there is nothing a JSON tokenizer could catch that the domain does not
+# already exclude.
+#
+# SCHEMA VERSION 1 IS RETAINED. This tightens validation and normalizes previously
+# unspecified edge cases; it does not change the serialized shape of any artifact the
+# producer already emits. Verified: the pinned real artifact keeps its poolIdentity
+# (38d9c03d…), canonical-bytes SHA-256 (41f9bb60…), canonical length (5499) and
+# serialize() SHA-256 (2ea69a39…) byte-for-byte. See `test_mix_pool_numeric.py`.
+# ══════════════════════════════════════════════════════════════════════════════════════
+
+#: Inclusive bounds for `candidates[].baseScore`. Observed producer range: [-7.0, 17.6].
+SCORE_MIN = Decimal("-1000")
+SCORE_MAX = Decimal("1000")
+#: Maximum fractional decimal digits. The producer emits `round(float(...), 6)`.
+SCORE_MAX_DECIMALS = 6
+#: Smallest nonzero magnitude `json.dumps` renders without exponent notation.
+SCORE_MIN_MAGNITUDE = Decimal("0.0001")
+
+#: Fields that must be exact Python integers, with their inclusive semantic ranges.
+#: `sourceRisk` maxes at 7 in `ranker.source_risk` (5 paywalled + 1 unreliable + 1 low).
+INTEGRAL_FIELD_RANGES: dict[str, tuple[int, int]] = {
+    "candidateCount": (0, 100_000),
+    "clusterSize": (1, 100_000),
+    "clusterSources": (1, 100_000),
+    "sourceRisk": (0, 100),
+}
+#: Fields that must be real booleans. Listed so `bool` is never mistaken for an integer.
+BOOLEAN_FIELDS = {"eligible", "paywalled", "valid"}
+
+
+class MixPoolNumericError(ValueError):
+    """A numeric value outside the Mix Pool contract. Message carries a safe field path."""
+
+
+def _is_exact_int(value: Any) -> bool:
+    """True only for a real `int`. `type(True) is bool`, so booleans are excluded."""
+    return type(value) is int
+
+
+def _score_decimal(value: Any, path: str) -> Decimal:
+    """
+    Interpret a score through its SHORTEST decimal representation.
+
+    `Decimal(str(0.1))` is `0.1`, whereas `Decimal(0.1)` is the exact binary expansion
+    `0.1000000000000000055511151231257827…`. Using `str()` keeps the value the producer
+    meant rather than the float's binary noise, which is what makes the 6-decimal limit
+    meaningful instead of always failing.
+    """
+    if isinstance(value, bool):
+        raise MixPoolNumericError(f"{path} must be a number, not a boolean")
+    if _is_exact_int(value):
+        return Decimal(value)
+    if not isinstance(value, float):
+        raise MixPoolNumericError(f"{path} must be a JSON number")
+    if not math.isfinite(value):
+        raise MixPoolNumericError(f"{path} must be finite")
+    try:
+        return Decimal(str(value))
+    except InvalidOperation as exc:  # pragma: no cover - unreachable for finite floats
+        raise MixPoolNumericError(f"{path} is not a usable decimal") from exc
+
+
+def normalize_score(value: Any, path: str = "$.baseScore") -> int | float:
+    """
+    Return the canonical form of a score, or raise `MixPoolNumericError`.
+
+    Canonical means: an integral value becomes an `int` (so `json.dumps` writes `7`, never
+    `7.0`), negative zero becomes `0`, and a fractional value keeps its shortest decimal
+    form. The output is asserted against its own serialization before being returned, so
+    the guarantee is enforced rather than assumed.
+    """
+    decimal_value = _score_decimal(value, path)
+
+    if decimal_value < SCORE_MIN or decimal_value > SCORE_MAX:
+        raise MixPoolNumericError(
+            f"{path} must be within [{SCORE_MIN}, {SCORE_MAX}]"
+        )
+    exponent = decimal_value.as_tuple().exponent
+    decimals = -exponent if isinstance(exponent, int) and exponent < 0 else 0
+    if decimals > SCORE_MAX_DECIMALS:
+        raise MixPoolNumericError(
+            f"{path} must have at most {SCORE_MAX_DECIMALS} fractional decimal digits"
+        )
+
+    if decimal_value == 0:
+        return 0  # covers 0, 0.0 and -0.0
+    if abs(decimal_value) < SCORE_MIN_MAGNITUDE:
+        raise MixPoolNumericError(
+            f"{path} nonzero magnitude must be at least {SCORE_MIN_MAGNITUDE} "
+            "(smaller values serialize in exponent notation)"
+        )
+    if decimal_value == decimal_value.to_integral_value():
+        return int(decimal_value)
+
+    normalized = float(decimal_value)
+    rendered = json.dumps(normalized)
+    if "e" in rendered or "E" in rendered:
+        raise MixPoolNumericError(f"{path} must not serialize in exponent notation")
+    if rendered.startswith("-0") and Decimal(rendered) == 0:
+        raise MixPoolNumericError(f"{path} must not serialize as negative zero")
+    if rendered.endswith(".0"):
+        raise MixPoolNumericError(f"{path} must not serialize with a trailing .0")
+    if Decimal(rendered) != decimal_value:
+        raise MixPoolNumericError(f"{path} does not round-trip through JSON")
+    return normalized
+
+
+def validate_integral(value: Any, field: str, path: str, errors: list[str]) -> None:
+    """Enforce `type(value) is int` and the field's semantic range."""
+    if isinstance(value, bool):
+        errors.append(f"{path} must be an integer, not a boolean")
+        return
+    if not _is_exact_int(value):
+        errors.append(f"{path} must be an integer")
+        return
+    bounds = INTEGRAL_FIELD_RANGES.get(field)
+    if bounds and not (bounds[0] <= value <= bounds[1]):
+        errors.append(f"{path} must be within [{bounds[0]}, {bounds[1]}]")
 
 
 def canonical_bytes(value: Any) -> bytes:
@@ -139,8 +303,14 @@ def validate_artifact(artifact: Any) -> dict[str, Any]:
     if not isinstance(candidates, list):
         errors.append("candidates must be an array")
         candidates = []
+    validate_integral(
+        artifact.get("candidateCount"), "candidateCount", "candidateCount", errors
+    )
     if artifact.get("candidateCount") != len(candidates):
         errors.append("candidateCount does not match candidates")
+    for field in ("schemaVersion", "selectorVersion"):
+        if not _is_exact_int(artifact.get(field)) or isinstance(artifact.get(field), bool):
+            errors.append(f"{field} must be an integer")
 
     ids: set[str] = set()
     urls: set[str] = set()
@@ -184,10 +354,33 @@ def validate_artifact(artifact: Any) -> dict[str, Any]:
             errors.append(f"{prefix}.topics contains a noncanonical topic")
         elif len(topics) != len(set(topics)):
             errors.append(f"{prefix}.topics contains duplicates")
-        for field in ("baseScore",):
-            value = candidate.get(field)
-            if not isinstance(value, (int, float)) or isinstance(value, bool) or not math.isfinite(value):
-                errors.append(f"{prefix}.{field} must be finite")
+        # An externally supplied artifact must ALREADY be canonical: `7.0`, `-0.0`, an
+        # exponent-domain value or over-precision means it did not come from this producer.
+        try:
+            normalize_score(candidate.get("baseScore"), f"{prefix}.baseScore")
+        except MixPoolNumericError as exc:
+            errors.append(str(exc))
+        else:
+            if type(candidate.get("baseScore")) is float and float(
+                candidate["baseScore"]
+            ).is_integer():
+                errors.append(f"{prefix}.baseScore must be an integer, not {candidate['baseScore']!r}")
+
+        quality = candidate.get("quality")
+        if quality is not None:
+            if not isinstance(quality, dict):
+                errors.append(f"{prefix}.quality must be an object")
+            else:
+                for field in ("clusterSize", "clusterSources", "sourceRisk"):
+                    if field in quality:
+                        validate_integral(
+                            quality[field], field, f"{prefix}.quality.{field}", errors
+                        )
+                for field in ("eligible", "paywalled"):
+                    if field in quality and not isinstance(quality[field], bool):
+                        errors.append(f"{prefix}.quality.{field} must be a boolean")
+        if "eligible" in candidate and not isinstance(candidate["eligible"], bool):
+            errors.append(f"{prefix}.eligible must be a boolean")
         if candidate.get("sourceReliability") not in SOURCE_RELIABILITIES:
             errors.append(f"{prefix}.sourceReliability is not allowed")
         memberships = candidate.get("regionMemberships")
@@ -231,6 +424,12 @@ def validate_artifact(artifact: Any) -> dict[str, Any]:
         for field in ("source", "inputIdentity"):
             if not _nonempty(provenance.get(field)):
                 errors.append(f"provenance.{field} must be nonempty")
+        validate_integral(
+            provenance.get("generatorVersion"),
+            "generatorVersion",
+            "provenance.generatorVersion",
+            errors,
+        )
         if provenance.get("generatorVersion") != GENERATOR_VERSION:
             errors.append("unsupported provenance.generatorVersion")
         if "referenceAt" in provenance and not _iso_datetime(provenance["referenceAt"]):
@@ -276,6 +475,15 @@ def freeze_artifact(
             key=lambda row: str(row["id"]),
         )
         candidate["topics"] = sorted(candidate.get("topics", []))
+        # THE normalization choke point: this runs before `pool_identity`, so the hash is
+        # always taken over canonical values. `candidate` is already a deep copy, so the
+        # caller's object is never mutated. An out-of-contract producer value raises here
+        # rather than being silently rounded or clipped.
+        if "baseScore" in candidate:
+            candidate["baseScore"] = normalize_score(
+                candidate["baseScore"],
+                f"candidates[{original.get('id')!s}].baseScore",
+            )
         candidates.append(candidate)
     candidates.sort(key=lambda row: str(row.get("id", "")))
     provenance: dict[str, Any] = {

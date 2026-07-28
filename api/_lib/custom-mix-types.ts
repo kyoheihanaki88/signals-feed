@@ -95,27 +95,24 @@ export type MixSelectionResult = {
  * The third duplicate check.
  *
  * Python's `_duplicate` consults `editorial.duplicate_story` after the identity and URL
- * checks. That function is the whole Phase-2.6 editorial guard — brand and product-family
- * regexes, roundup containment, launch-event rules — and its behaviour is NOT encoded in
- * the candidate contract, so it cannot be ported from the fixture.
- *
- * It is therefore an explicit injected seam. Measured against the golden fixture, Python
- * calls it 392 times across the eight golden scenarios and it returns `true` ZERO times.
- * `custom-mix-selector-parity.test.ts` asserts that the TypeScript port reaches the seam
- * the SAME number of times, scenario by scenario, which is what makes the enforcement order
- * verifiable even though the rule never fires on this data.
- *
- * So `noEditorialDuplicateGuard` is provably equivalent ON THIS FIXTURE and provably
- * nothing beyond it. It is NOT a port of the editorial guard and is NOT production-complete.
- * A real implementation must be supplied and tested before this selector is connected to
- * `/api/edition`.
+ * checks. As of Phase 3D-1.5 that function IS ported —
+ * `editorial-duplicate-guard.ts` / `editorial-story-identity.ts` — and
+ * `productionEditorialDuplicateGuard` is the selector's default. It stays an injected seam
+ * so tests can substitute a spy or a deliberately-firing stub.
  */
 export type EditorialDuplicateGuard = (
   a: MixCandidate,
   b: MixCandidate,
 ) => { duplicate: boolean; reason?: string; rule?: string };
 
-/** The documented no-op. Named so it can never be mistaken for a ported implementation. */
+/**
+ * TEST-ONLY no-op.
+ *
+ * This is NOT the production default and must never be passed by production code: it
+ * disables the third duplicate rule entirely. It remains useful for isolating the identity
+ * and URL gates in a test, and for demonstrating that the real guard changes nothing on the
+ * golden fixture.
+ */
 export const noEditorialDuplicateGuard: EditorialDuplicateGuard = () => ({
   duplicate: false,
 });

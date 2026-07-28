@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-27",
+  "note": "A selector fixture where the EDITORIAL guard is the only duplicate signal. The two Samsung candidates have different underlyingStoryIdentity values and different canonical URLs, so the first two duplicate gates both pass them; only the ported editorial identity recognises them as one Unpacked story. This is the exact 2026-07-25 production regression.",
+  "candidates": [
+    {
+      "id": "jp-samsung-roundup",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Everything Samsung showed at its Tokyo event, from the new Z Fold 8 foldable to wearables.",
+      "source": "Nikkei Asia",
+      "url": "https://example.com/jp-samsung-unpacked-roundup",
+      "publishedAt": "2026-07-27T09:00:00Z",
+      "category": "TECH",
+      "topics": ["tech"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["tokyo:title"] }
+      ],
+      "baseScore": 95,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "samsung-unpacked-roundup-2026"
+    },
+    {
+      "id": "jp-samsung-handson",
+      "headline": "Samsung's wider Z Fold 8 feels just right",
+      "summary": "We spent an hour with the new foldable in Tokyo before it reaches Japanese stores.",
+      "source": "The Verge",
+      "url": "https://example.com/jp-samsung-zfold-handson",
+      "publishedAt": "2026-07-27T08:55:00Z",
+      "category": "TECH",
+      "topics": ["tech"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["tokyo:summary"] }
+      ],
+      "baseScore": 94,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "samsung-zfold-handson-2026"
+    },
+    {
+      "id": "jp-filler-business",
+      "headline": "Bank of Japan holds rates as inflation cools",
+      "summary": "The central bank kept policy unchanged at its Tokyo meeting.",
+      "source": "Financial Times",
+      "url": "https://example.com/jp-filler-business",
+      "publishedAt": "2026-07-27T08:20:00Z",
+      "category": "BUSINESS",
+      "topics": ["business"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["bank-of-japan:title"] }
+      ],
+      "baseScore": 87,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "boj-rate-decision"
+    },
+    {
+      "id": "jp-filler-health",
+      "headline": "Osaka opens a dementia care centre",
+      "summary": "The prefecture expanded its elderly care programme this month.",
+      "source": "NHK World",
+      "url": "https://example.com/jp-filler-health",
+      "publishedAt": "2026-07-27T08:10:00Z",
+      "category": "HEALTH",
+      "topics": ["health"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["osaka:title"] }
+      ],
+      "baseScore": 85,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "osaka-dementia-center"
+    },
+    {
+      "id": "jp-filler-science",
+      "headline": "Hokkaido researchers map a shrinking kelp forest",
+      "summary": "A survey charted decline along the northern coast.",
+      "source": "Nature News",
+      "url": "https://example.com/jp-filler-science",
+      "publishedAt": "2026-07-27T08:00:00Z",
+      "category": "SCIENCE",
+      "topics": ["science"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["hokkaido:title"] }
+      ],
+      "baseScore": 84,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "hokkaido-kelp-map"
+    },
+    {
+      "id": "jp-filler-culture",
+      "headline": "Kyoto museum extends its evening hours",
+      "summary": "The gallery will stay open later through the summer.",
+      "source": "Kyodo Partner",
+      "url": "https://example.com/jp-filler-culture",
+      "publishedAt": "2026-07-27T07:50:00Z",
+      "category": "CULTURE",
+      "topics": ["culture"],
+      "regionMemberships": [
+        { "region": "japan", "strength": "primary", "evidence": ["kyoto:title"] }
+      ],
+      "baseScore": 82,
+      "sourceReliability": "high",
+      "topicFingerprint": [],
+      "underlyingStoryIdentity": "kyoto-museum-hours"
+    }
+  ]
+}

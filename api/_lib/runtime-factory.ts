@@ -17,6 +17,7 @@
 
 import { createAuthExchangeHandler } from "../auth/exchange.js";
 import { createEditionHandler } from "../edition.js";
+import { createDisconnectedEditionOrchestrator } from "./edition-orchestrator.js";
 import {
   IdempotencyConflictError,
   PersistentIdempotencyStore,
@@ -346,6 +347,10 @@ export function createProductionEditionHandler(
       logger: dependencies.logger,
       clock: dependencies.clock,
       requestId: dependencies.requestId,
+      // Custom Mix stays unreachable: this orchestrator has no candidate source, so every
+      // request resolves to `standard_candidates_unavailable` and the route answers
+      // `503 selector_not_connected` exactly as before.
+      orchestrator: createDisconnectedEditionOrchestrator(config.customMix.enabled),
     },
   );
 }

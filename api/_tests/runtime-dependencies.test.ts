@@ -630,14 +630,60 @@ test("K2. no API module reads process.env except as a call-time default argument
   }
 });
 
+/** Drop block comments and whole-line `//` comments, so the scan measures CODE, not prose. */
+function stripComments(source: string): string {
+  return source
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .split("\n")
+    .filter((line) => {
+      const trimmed = line.trim();
+      return !trimmed.startsWith("//") && !trimmed.startsWith("*");
+    })
+    .join("\n");
+}
+
+/**
+ * The two modules that DEFINE the candidate-pool contract are named after it, so the
+ * "mix-pool" needle would flag them for existing at all. They are exempt from that one
+ * needle only — every other needle still applies, and a separate test asserts no route or
+ * runtime module imports them.
+ */
+const POOL_CONTRACT_MODULES = new Set([
+  "_lib/mix-pool-schema.ts",
+  "_lib/mix-pool-source.ts",
+  "_lib/editorial-mix-pool-schema.ts",
+  "_lib/editorial-mix-feed.ts",
+]);
+
 test("L2. no runtime module reads edition data, latest.json or a mix pool", () => {
   const forbidden = ["latest.json", "editions/", "mix-pool", "mix_pool", "child_process", "spawnSync"];
   for (const file of runtimeSourceFiles()) {
+    const code = stripComments(file.text);
     for (const needle of forbidden) {
+      if (POOL_CONTRACT_MODULES.has(file.name) && needle.startsWith("mix")) continue;
       assert.ok(
-        !file.text.includes(needle),
+        !code.includes(needle),
         `${file.name} references production data or a subprocess: ${needle}`,
       );
+    }
+  }
+});
+
+test("L2b. the pool contract modules are not reachable from any route or runtime module", () => {
+  // Match the IMPORT SPECIFIER, not a bare substring: "editorial-mix-pool-schema" contains
+  // "mix-pool-schema", so a substring test would flag a legitimate sibling import.
+  const specifiers = [
+    "mix-pool-schema",
+    "mix-pool-source",
+    "editorial-mix-pool-schema",
+    "editorial-mix-feed",
+  ];
+  for (const file of runtimeSourceFiles()) {
+    if (POOL_CONTRACT_MODULES.has(file.name)) continue;
+    const code = stripComments(file.text);
+    for (const specifier of specifiers) {
+      const importsIt = new RegExp(`from\\s+["'][^"']*/${specifier}\\.js["']`).test(code);
+      assert.ok(!importsIt, `${file.name} imports ${specifier}`);
     }
   }
 });
@@ -646,7 +692,7 @@ test("L3. the only filesystem read in the API is the vendored certificate bundle
   for (const file of runtimeSourceFiles()) {
     if (file.name === "_lib/apple-root-certificates.ts") continue;
     assert.ok(
-      !/\breadFileSync\b|\breadFile\b/.test(file.text),
+      !/\breadFileSync\b|\breadFile\b/.test(stripComments(file.text)),
       `${file.name} performs a filesystem read`,
     );
   }

@@ -28,8 +28,8 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { selectCustomMix } from "../_lib/custom-mix-selector.js";
+import { productionEditorialDuplicateGuard } from "../_lib/editorial-duplicate-guard.js";
 import {
-  noEditorialDuplicateGuard,
   type EditorialDuplicateGuard,
   type MixCandidate,
   type MixSelectionResult,
@@ -94,7 +94,8 @@ function poolFor(ids: string[]): MixCandidate[] {
 
 function runTypeScript(
   scenario: Golden["scenarios"][number],
-  guard: EditorialDuplicateGuard = noEditorialDuplicateGuard,
+  // The PRODUCTION guard by default: parity must be proven on the path that ships.
+  guard: EditorialDuplicateGuard = productionEditorialDuplicateGuard,
 ): MixSelectionResult {
   return selectCustomMix({
     candidates: poolFor(scenario.input.candidateIds),
@@ -309,11 +310,15 @@ test("R6. the editorial duplicate seam is reached the same number of times as in
 
   let totalPython = 0;
   let totalTypeScript = 0;
+  let totalFired = 0;
   for (const scenario of golden.scenarios) {
     let calls = 0;
-    runTypeScript(scenario, () => {
+    runTypeScript(scenario, (a, b) => {
       calls += 1;
-      return { duplicate: false };
+      // Wraps the REAL guard, so the call sequence is the production one.
+      const decision = productionEditorialDuplicateGuard(a, b);
+      if (decision.duplicate) totalFired += 1;
+      return decision;
     });
     const pythonCalls = python.guardCalls?.[scenario.name] ?? -1;
     assert.equal(
@@ -326,7 +331,13 @@ test("R6. the editorial duplicate seam is reached the same number of times as in
   }
 
   assert.equal(totalTypeScript, totalPython);
+  assert.equal(totalTypeScript, 392, "the guard call count changed unexpectedly");
   assert.ok(totalPython > 0, "the seam was never reached — the comparison proves nothing");
+  assert.equal(
+    totalFired,
+    0,
+    "the real guard now fires on the base fixture — the goldens would need regenerating",
+  );
 });
 
 // ── boundary checks ───────────────────────────────────────────────────────────────────

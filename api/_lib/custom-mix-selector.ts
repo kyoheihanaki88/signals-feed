@@ -26,11 +26,11 @@
 import { createHash } from "node:crypto";
 
 import { mixIdentity, normalizeMix, normalizeRegions } from "./custom-mix-identity.js";
+import { productionEditorialDuplicateGuard } from "./editorial-duplicate-guard.js";
 import {
   MixSelectionError,
   SELECTOR_VERSION,
   UnsupportedMixValue,
-  noEditorialDuplicateGuard,
   type CandidateLog,
   type EditorialDuplicateGuard,
   type MixCandidate,
@@ -353,7 +353,9 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
     topics = [],
     size = 5,
     selectorVersion = SELECTOR_VERSION,
-    editorialDuplicateGuard: guard = noEditorialDuplicateGuard,
+    // The REAL ported editorial guard is the default. A caller must opt in explicitly to
+    // anything weaker — `noEditorialDuplicateGuard` is test-only.
+    editorialDuplicateGuard: guard = productionEditorialDuplicateGuard,
   } = options;
 
   const normalized = normalizeMix(regions, topics);

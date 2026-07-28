@@ -1,27 +1,40 @@
 name: Custom Mix Pool — manual verification
 
-# ONE-OFF INFRASTRUCTURE VERIFICATION. Not a daily job, not production publishing.
+# DEFAULT-BRANCH LAUNCHER. One-off infrastructure verification. Not a daily job.
 #
-# WHY THIS EXISTS. `daily-auto-publish.yml` checks out `ref: main` in every job, so a
-# workflow_dispatch from a feature branch runs that branch's YAML against MAIN's code —
-# and the Custom Mix pipeline files do not exist on main. The Custom Mix block there is
-# therefore unreachable until the feature merges. This workflow checks out the DISPATCHED
-# ref instead, so the real builder and transport can be proven before anything reaches main.
+# WHY THIS FILE IS ON MAIN. GitHub only registers a `workflow_dispatch` workflow if the
+# file exists on the DEFAULT branch — dispatching a branch-only workflow returns
+# "HTTP 404: workflow not found on the default branch", even with --ref set. So the
+# launcher lives here, while the implementation it runs stays on the feature branch.
+#
+# WHY THE DAILY WORKFLOW CANNOT DO THIS. `daily-auto-publish.yml` pins `ref: main` in every
+# job, so it can only ever execute main's code. This workflow checks out an explicitly
+# named `source_ref` instead, which is the entire reason it exists.
+#
+# SUPPLY-CHAIN NOTE — READ BEFORE WIDENING THE ALLOWLIST. A default-branch workflow that
+# checks out an arbitrary ref AND holds secrets lets anyone who can push a branch run code
+# with those secrets. That is why `source_ref` is restricted to a hardcoded allowlist below
+# rather than accepting free-form input. Widening it is a security decision, not a
+# convenience one. `permissions: contents: read` further ensures this workflow cannot write
+# to the repository even if the code it runs tries to.
 #
 # WHAT IT DELIBERATELY DOES NOT DO:
 #   • no standard edition build, no `editions/` file, no `latest.json` change
-#   • no branch, no commit, no PR, no merge, no push
+#   • no branch, commit, tag, release, deployment, PR, merge or push
 #   • no route activation — `/api/edition` is untouched and still answers 503
-#   • `permissions: contents: read` makes repository writes structurally impossible,
-#     not merely absent by convention
 #
-# WHAT IT DOES: scout -> raw Mix Pool -> Editorial Mix Pool -> ONE atomic Upstash SET at
-# `signals:editorial-mix-pool:v1:<UTC date>` with TTL 777600. It fails closed if fewer
-# than 15 candidates survive enrichment.
+# WHAT IT DOES: scout -> build-raw -> validate-raw -> build --raw-input -> ONE atomic
+# Upstash SET at
+# `signals:editorial-mix-pool:v1:<UTC date>` with TTL 777600. Fails closed below 15
+# surviving candidates.
 
 on:
   workflow_dispatch:
     inputs:
+      source_ref:
+        description: "Branch holding the Custom Mix implementation (must be on the allowlist)"
+        required: true
+        default: ""
       date:
         description: "UTC date YYYY-MM-DD — required, must equal today in UTC"
         required: true
@@ -30,7 +43,7 @@ on:
         required: true
         default: ""
 
-# Read-only. This workflow cannot create a branch, a commit, a tag or a pull request.
+# Read-only. This workflow cannot create a branch, commit, tag, release or pull request.
 permissions:
   contents: read
 
@@ -42,29 +55,35 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      # No `ref:` — checks out the ref this run was dispatched from, which is the whole
-      # point. The daily workflow's `ref: main` is what makes it unusable for this.
-      - name: Checkout the dispatched ref
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install pyyaml
-
-      # Two independent gates before anything external happens: an explicit typed
-      # confirmation, and a date that must be TODAY in UTC. Publishing yesterday or
-      # tomorrow by accident is the failure mode this prevents.
-      - name: Gate — explicit confirmation and UTC date
+      # Gate FIRST, on the launcher's own code, before a single byte of the feature branch
+      # is fetched or executed. Checking out untrusted code and then validating would be
+      # the wrong order.
+      - name: Gate — source ref, confirmation and UTC date
         id: gate
         env:
+          INPUT_SOURCE_REF: ${{ github.event.inputs.source_ref }}
           INPUT_DATE: ${{ github.event.inputs.date }}
           INPUT_CONFIRM: ${{ github.event.inputs.confirm }}
         run: |
           set -euo pipefail
+
+          # The only refs whose code may run with these secrets. Hardcoded on purpose.
+          ALLOWED="feed/dup-story-guard"
+
+          if [ -z "${INPUT_SOURCE_REF:-}" ]; then
+            echo "::error::source_ref is required and must not be empty."
+            exit 1
+          fi
+          case "$INPUT_SOURCE_REF" in
+            main|master|refs/heads/main|refs/heads/master)
+              echo "::error::source_ref must not be main — main does not contain the Custom Mix implementation, and running main here would be pointless and misleading."
+              exit 1 ;;
+          esac
+          if [ "$INPUT_SOURCE_REF" != "$ALLOWED" ]; then
+            echo "::error::source_ref '$INPUT_SOURCE_REF' is not on the allowlist ($ALLOWED). Widening the allowlist is a security decision — edit this workflow deliberately."
+            exit 1
+          fi
+
           if [ "$INPUT_CONFIRM" != "publish" ]; then
             echo "::error::confirmation input must be exactly 'publish' — refusing."
             exit 1
@@ -74,13 +93,42 @@ jobs:
             exit 1
           fi
           UTC_TODAY="$(date -u +%F)"
-          echo "requested=$INPUT_DATE  utc_today=$UTC_TODAY"
+          echo "source_ref=$INPUT_SOURCE_REF  requested=$INPUT_DATE  utc_today=$UTC_TODAY"
           if [ "$INPUT_DATE" != "$UTC_TODAY" ]; then
             echo "::error::date $INPUT_DATE is not today in UTC ($UTC_TODAY) — refusing to publish a past or future key."
             exit 1
           fi
+
           echo "date=$INPUT_DATE" >> "$GITHUB_OUTPUT"
-          echo "## Custom Mix Pool verification — $INPUT_DATE (UTC)" >> "$GITHUB_STEP_SUMMARY"
+          echo "source_ref=$INPUT_SOURCE_REF" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Custom Mix Pool verification — $INPUT_DATE (UTC)"
+            echo "Implementation ref: \`$INPUT_SOURCE_REF\` · launcher: default branch"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # The implementation comes from the gated source_ref, NOT from main.
+      - name: Checkout the implementation ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.gate.outputs.source_ref }}
+
+      - name: Confirm the checked-out ref carries the implementation
+        run: |
+          set -euo pipefail
+          for f in pipeline/editorial_mix_pool_cli.py \
+                   pipeline/editorial_mix_pool.py \
+                   pipeline/upstash_mix_pool_transport.py; do
+            [ -f "$f" ] || { echo "::error::$f missing — the source ref does not contain the Custom Mix implementation."; exit 1; }
+          done
+          echo "Implementation present on $(git rev-parse --short HEAD)."
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
 
       - name: Gate — the Upstash publisher secrets are provisioned
         env:
@@ -109,7 +157,8 @@ jobs:
       # STAGE 1 — scout/ranker candidates -> frozen, validated raw Mix Pool.
       # `prepare_scout_source` drops rows the raw contract cannot represent (empty RSS
       # description, unusable URL, canonical duplicate) BEFORE freezing, and reports the
-      # counts. A scout-shape failure exits 6 here, distinct from an enrichment failure.
+      # counts. Run 30360578299 died here as an opaque `MixPoolError`; a scout-shape
+      # failure now exits 6, distinct from an enrichment failure.
       - name: Custom Mix — build the raw Mix Pool
         if: steps.gate.outputs.date != ''
         env:

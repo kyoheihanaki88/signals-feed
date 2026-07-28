@@ -9907,6 +9907,293 @@
           ]
         }
       }
+    },
+    "2026-07-28": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-28/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Trump just paused strikes on Iran. Is the US actually running low on weapons?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a real concern. A New York Times report says Trump was advised that escalating the conflict would further drain American stockpiles.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "That's surprising. I thought the US had huge military reserves.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does, but recent conflicts have put pressure on supplies. Earlier this month, Trump held a summit with defense company CEOs, pushing them to build more weapons faster.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "What was that summit about exactly?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The administration called it a two-pronged approach: revitalize American industry and boost warfighting capabilities. They're calling it the arsenal of freedom.",
+              "duration": 9.221224
+            },
+            {
+              "speaker": "listener",
+              "text": "So the pause with Iran is partly about letting stockpiles recover?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be part of it. The pause is officially to allow negotiations to go ahead, but the weapons concern appears to be a factor in the timing.",
+              "duration": 8.385306
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-28/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Victoria has a new premier this morning?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Ben Carroll was sworn in after Jacinta Allan resigned. It all happened very quickly.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "And this is just months before an election, right?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Four months. It follows a really turbulent couple of days for Labor.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "What's his first move as premier?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's announced a royal commission into alleged corruption in the construction sector.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "Wasn't there some drama around how he became leader?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "There was. Back in June, he publicly said he wouldn't challenge Allan. But he says circumstances changed.",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "listener",
+              "text": "What changed exactly?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "A group within the party had already told Allan they wanted change. Then at Tuesday's meeting, the attorney general Sonya Kilkenny unexpectedly ran against him.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "So it wasn't the smooth transition people expected.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at all. The meeting descended into chaos, according to reports.",
+              "duration": 3.84
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-28/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So X is launching a payment service now?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, X Money is rolling out in the US starting today. It's part of Elon Musk's plan to turn X into what he calls an everything app.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "What does it actually do?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "It offers a digital wallet and peer-to-peer payments, similar to Venmo. You can also get a metal Visa card that can have your X username on it.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "Are there any special features?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "A couple things stand out. It supports Apple Wallet, and money transfers on X are free.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "Didn't Musk mention this was coming earlier?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. He said early public access would launch in April, so this is a few months after that timeline.",
+              "duration": 5.381224
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-28/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung had their big summer event yesterday?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "What was the main thing they announced?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Galaxy Z Fold 8 was the highlight. It got a major redesign from last year's Z Fold 7.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "What's different about it?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has an updated hinge design with something called Flex Titanium display tech.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "Does that fix the crease issue those phones have?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "It doesn't eliminate it completely, but Samsung says the crease is significantly less noticeable than on their previous foldables.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "Were there other announcements too?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, there were six major announcements total, including the new watches they mentioned. The full lineup is available if you want to catch up on what you missed.",
+              "duration": 8.385306
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-28/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a full Moon coming up this week?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on Wednesday. It's called the Buck Moon, and it's the second of three full Moons this summer.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Buck Moon? That's an interesting name.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The name comes from the time of year when male deer grow their antlers.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "When's the best time to see it?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "It actually peaks at 15:36 in the afternoon, so across the UK, the Moon will still be below the horizon at that exact moment.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "So we'll miss the peak fullness?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Technically, yes. But it'll still look beautifully full when it rises Wednesday evening.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Any weather concerns for viewing?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "In north-west England and Wales, there might be some cloud from a cold front, but very little rain is expected and the cloud could break up.",
+              "duration": 7.183673
+            }
+          ]
+        }
+      }
     }
   }
 }

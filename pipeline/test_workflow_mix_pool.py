@@ -217,8 +217,12 @@ check("V3. it is read-only: a repository write is structurally impossible",
       VDOC["permissions"] == {"contents": "read"}, str(VDOC.get("permissions")))
 
 checkout = [s for s in VSTEPS if str(s.get("uses", "")).startswith("actions/checkout")]
-check("V4. it checks out the DISPATCHED ref, not a hardcoded main",
-      len(checkout) == 1 and "ref" not in (checkout[0].get("with") or {}),
+# After the origin/main merge the launcher takes an explicit, allowlisted `source_ref`
+# rather than defaulting to the dispatched ref, so assert the STRONGER property: the
+# checkout resolves to the gated input, never to a hardcoded branch.
+check("V4. it checks out the gated source_ref, not a hardcoded main",
+      len(checkout) == 1
+      and (checkout[0].get("with") or {}).get("ref") == "${{ steps.gate.outputs.source_ref }}",
       str(checkout[0].get("with")))
 daily_checkouts = [s for s in STEPS if str(s.get("uses", "")).startswith("actions/checkout")]
 check("V4b. the daily workflow still pins main — this file does not change that",
@@ -227,7 +231,10 @@ check("V4b. the daily workflow still pins main — this file does not change tha
 check("V5. both required inputs have no usable default",
       (VDOC[True] if True in VDOC else VDOC["on"])["workflow_dispatch"]["inputs"]["date"]["required"] is True
       and (VDOC[True] if True in VDOC else VDOC["on"])["workflow_dispatch"]["inputs"]["confirm"]["required"] is True)
-gate = str(VSTEPS[VNAMES.index("Gate — explicit confirmation and UTC date")]["run"])
+# Locate the gate by its stable `id`, not its prose name: the origin/main merge renamed it
+# from "explicit confirmation and UTC date" to "source ref, confirmation and UTC date", and
+# a name-based lookup breaks on every future rewording.
+gate = str(next(s for s in VSTEPS if s.get("id") == "gate")["run"])
 check("V6. it refuses without the exact typed confirmation",
       '!= "publish"' in gate and "exit 1" in gate)
 check("V7. it refuses any date that is not today in UTC",

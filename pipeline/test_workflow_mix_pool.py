@@ -331,7 +331,14 @@ check("G9. prepare_scout_source does not mutate the caller's document",
           {"candidates": [{"title": "", "snippet": "", "source": ""}]}))
 check("G10. prepare_scout_source reports only aggregate counts",
       set(CLI.prepare_scout_source({"candidates": []})[1])
-      == {"empty_copy", "unusable_url", "duplicate_canonical"})
+      == {"empty_copy", "unusable_url", "invalid_timestamp", "duplicate_canonical"})
+check("G11. every MixPoolError form is classified — no silent unknown fallback",
+      CLI.safe_mix_pool_error(Exception("invalid published_at: None"))
+      == {"invalid_timestamp": 1}
+      and CLI.safe_mix_pool_error(Exception("candidate id collision: abc123"))
+      == {"duplicate_candidate_id": 1}
+      and CLI.safe_mix_pool_error(Exception("something genuinely new"))
+      == {"unknown_mix_pool_error": 1})
 
 print()
 if FAILURES:

@@ -134,7 +134,8 @@ def prepare_scout_source(source: dict[str, Any]) -> tuple[dict[str, Any], dict[s
 
     kept: list[dict[str, Any]] = []
     seen_canonical: set[str] = set()
-    dropped = {"empty_copy": 0, "unusable_url": 0, "duplicate_canonical": 0}
+    dropped = {"empty_copy": 0, "unusable_url": 0, "invalid_timestamp": 0,
+               "duplicate_canonical": 0}
 
     for row in rows:
         if not isinstance(row, dict):
@@ -148,6 +149,17 @@ def prepare_scout_source(source: dict[str, Any]) -> tuple[dict[str, Any], dict[s
         if not canonical:
             dropped["unusable_url"] += 1
             continue
+        # `scout.to_iso` returns None for an RSS date it cannot parse, and
+        # `ranker.is_stale` treats an unknown age as NOT stale — so such a row survives
+        # exclusion and then kills the whole build in `_normalize_candidate`. The frozen
+        # schema requires a parseable `publishedAt`, and a row with no usable timestamp
+        # cannot be scored for freshness or contribute to selection, so it is dropped here.
+        # Parseability is decided by mix_pool's own parser, never re-implemented.
+        try:
+            mix_pool._parse_time(row.get("published_at"), "published_at")
+        except mix_pool.MixPoolError:
+            dropped["invalid_timestamp"] += 1
+            continue
         if canonical in seen_canonical:
             dropped["duplicate_canonical"] += 1
             continue
@@ -157,26 +169,33 @@ def prepare_scout_source(source: dict[str, Any]) -> tuple[dict[str, Any], dict[s
     return {**source, "candidates": kept}, dropped
 
 
-#: Ordered: first match wins. Every rule maps to a STABLE category name.
+#: Ordered, first match wins. Every rule is anchored to a message form that actually
+#: exists in `mix_pool.py`; `pipeline/test_mix_pool_classifier.py` enumerates the raise
+#: sites and asserts none of them falls through to `unknown_mix_pool_error`.
+#:
+#: The four forms that fell through before Phase 3D-3G.6 — and cost run 30381280477 its
+#: diagnosis — were `candidate id collision`, `invalid published_at`, `invalid now` and
+#: `invalid date`: the classifier was matching camelCase field names and the word
+#: "duplicate", while `build_mix_pool` raises snake_case and the word "collision".
 _MIX_POOL_ERROR_RULES: tuple[tuple[str, str], ...] = (
-    ("empty required copy", "empty_required_copy"),
-    ("duplicate candidate id", "duplicate_candidate_id"),
-    ("duplicate canonical URL", "duplicate_canonical_url"),
-    ("poolIdentity", "identity_mismatch"),
-    ("category", "invalid_taxonomy"),
-    ("topics", "invalid_taxonomy"),
-    ("region", "invalid_taxonomy"),
-    ("baseScore", "invalid_numeric_field"),
-    ("sourceRisk", "invalid_numeric_field"),
-    ("clusterS", "invalid_numeric_field"),
-    ("candidateCount", "schema_invalid"),
-    ("schemaVersion", "schema_invalid"),
-    ("invalid URL", "schema_invalid"),
-    ("missing", "schema_invalid"),
-    ("date must be", "schema_invalid"),
-    ("generatedAt", "schema_invalid"),
-    ("publishedAt", "schema_invalid"),
-    ("candidates must be a list", "schema_invalid"),
+    # ── single-raise forms from build_mix_pool / _parse_time ──
+    (r"candidate id collision", "duplicate_candidate_id"),
+    (r"invalid (?:published_at|publishedAt|generatedAt|now|reference_at)\b", "invalid_timestamp"),
+    (r"invalid date\b|date must be", "invalid_timestamp"),
+    (r"(?:source )?candidates must be a list", "schema_invalid"),
+    # ── joined forms from validate_mix_pool ──
+    (r"empty required copy", "empty_required_copy"),
+    (r"duplicate candidate id", "duplicate_candidate_id"),
+    (r"duplicate canonical URL", "duplicate_canonical_url"),
+    (r"\bmissing\b", "missing_required_field"),
+    (r"unexpected (?:key|field)", "unexpected_field"),
+    (r"poolIdentity|identity", "identity_mismatch"),
+    (r"local path|file://|local_path", "local_path_leakage"),
+    (r"quality\b", "invalid_quality_shape"),
+    (r"evidence|eligib", "invalid_evidence"),
+    (r"category|topics?|region|taxonom", "invalid_taxonomy"),
+    (r"baseScore|sourceRisk|clusterS|numeric|precision", "invalid_numeric_field"),
+    (r"invalid URL|candidateCount|schemaVersion|selectorVersion", "schema_invalid"),
 )
 
 
@@ -192,8 +211,8 @@ def safe_mix_pool_error(error: Exception) -> dict[str, int]:
     categories: dict[str, int] = {}
     for part in str(error).split("; "):
         label = "unknown_mix_pool_error"
-        for needle, category in _MIX_POOL_ERROR_RULES:
-            if needle in part:
+        for pattern, category in _MIX_POOL_ERROR_RULES:
+            if re.search(pattern, part):
                 label = category
                 break
         categories[label] = categories.get(label, 0) + 1

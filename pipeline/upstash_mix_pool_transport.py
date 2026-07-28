@@ -86,6 +86,15 @@ REASON_PROVIDER_ERROR = "upstash_provider_error"
 REASON_INVALID_RESPONSE = "upstash_invalid_response"
 REASON_VALUE_TOO_LARGE = "upstash_value_too_large"
 REASON_PUBLISH_REJECTED = "upstash_publish_rejected"
+#: The credential itself cannot be put on the wire. HTTP header values are encoded as
+#: latin-1 by `http.client`, so a token carrying a typographic character — a smart quote or
+#: an en dash picked up by copying from a rendered document rather than the console's copy
+#: button — raises UnicodeEncodeError deep inside the socket layer, long after the artifact
+#: has been built. Caught here instead, before anything is sent.
+REASON_INVALID_CREDENTIAL = "upstash_invalid_credential"
+#: The artifact could not be encoded as UTF-8. For valid Python text this is unreachable;
+#: it is reachable for a LONE SURROGATE, which is rejected rather than silently replaced.
+REASON_ARTIFACT_ENCODING = "artifact_utf8_encoding_failed"
 
 #: The variable names the WRITE path uses. Deliberately different from the API read path's
 #: `KV_REST_API_TOKEN` so a read credential can never be pasted into the publisher secret
@@ -144,6 +153,16 @@ def resolve_config(
         raise UpstashTransportError(REASON_INSECURE_URL)
     if parsed.query or parsed.fragment:
         raise UpstashTransportError(REASON_INSECURE_URL)
+
+    # Both values end up in a request line / header, which `http.client` encodes as
+    # latin-1. Require plain ASCII: a REST URL and an Upstash token are ASCII by
+    # construction, so anything else is a corrupted paste, not a legitimate credential.
+    # The offending value is NEVER echoed — only the category leaves this function.
+    for candidate in (url, token):
+        try:
+            candidate.encode("ascii")
+        except UnicodeEncodeError:
+            raise UpstashTransportError(REASON_INVALID_CREDENTIAL) from None
 
     normalized = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rstrip('/')}"
     return UpstashConfig(
@@ -219,6 +238,9 @@ class UpstashPoolObjectStore:
         if len(body) > self._max_bytes:
             raise UpstashTransportError(REASON_VALUE_TOO_LARGE)
 
+        # BYTES-ONLY CONTRACT. The publisher owns the single str -> bytes boundary
+        # (`mix_pool_schema.serialize`); the transport never encodes text, so no caller can
+        # choose a different codec and no value can be double-encoded.
         try:
             bytes(body).decode("utf-8")
         except UnicodeDecodeError:
@@ -250,6 +272,11 @@ class UpstashPoolObjectStore:
 
         try:
             status, raw = self._opener(request, self._config.timeout_seconds)
+        except UnicodeEncodeError:
+            # A header value the socket layer could not encode. `resolve_config` rejects
+            # this at configuration time; this is the backstop, and it still reveals
+            # nothing about the value.
+            raise UpstashTransportError(REASON_INVALID_CREDENTIAL) from None
         except (TimeoutError, socket.timeout):
             raise UpstashTransportError(REASON_TIMEOUT) from None
         except urllib.error.HTTPError:
@@ -323,6 +350,8 @@ def _command(
     run = opener or _default_opener
     try:
         status, raw = run(request, config.timeout_seconds)
+    except UnicodeEncodeError:
+        raise UpstashTransportError(REASON_INVALID_CREDENTIAL) from None
     except (TimeoutError, socket.timeout):
         raise UpstashTransportError(REASON_TIMEOUT) from None
     except urllib.error.URLError as error:

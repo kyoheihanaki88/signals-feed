@@ -85,6 +85,7 @@ REASON_INSUFFICIENT_CANDIDATES = "editorial_publish_insufficient_candidates"
 REASON_TOO_MANY_CANDIDATES = "editorial_publish_too_many_candidates"
 REASON_TOO_LARGE = "editorial_publish_too_large"
 REASON_NO_STORE = "editorial_publish_no_store"
+REASON_ARTIFACT_ENCODING = "artifact_utf8_encoding_failed"
 
 
 def editorial_mix_pool_key(date: str) -> str:
@@ -142,7 +143,14 @@ def publish_editorial_mix_pool(
     ):
         raise EditorialPublishError(REASON_VERSION_MISMATCH, "provenance.generatorVersion")
 
-    validation = validate_editorial_mix_pool(artifact)
+    # A LONE SURROGATE cannot be encoded as UTF-8, and the identity check inside the
+    # validator is the first thing to touch it — earlier than serialization. Catch it here
+    # so the artifact is REJECTED with a stable category instead of the raw exception
+    # escaping as a bare class name. Nothing is replaced and nothing is transliterated.
+    try:
+        validation = validate_editorial_mix_pool(artifact)
+    except UnicodeEncodeError:
+        raise EditorialPublishError(REASON_ARTIFACT_ENCODING) from None
     if not validation["valid"]:
         # Field paths only — the validator never puts payload in an error.
         raise EditorialPublishError(
@@ -172,7 +180,14 @@ def publish_editorial_mix_pool(
     if editorial_pool_identity(candidates) != artifact.get("editorialPoolIdentity"):
         raise EditorialPublishError(REASON_IDENTITY_MISMATCH, "editorialPoolIdentity")
 
-    body = serializer(artifact)
+    # THE ONE str -> bytes BOUNDARY. `serialize` emits UTF-8 bytes with ensure_ascii=False,
+    # so the stored value keeps its Unicode exactly. A lone surrogate is the only input a
+    # valid Python string can carry that UTF-8 cannot represent; it is REJECTED here rather
+    # than replaced, so no artifact is ever silently mangled.
+    try:
+        body = serializer(artifact)
+    except UnicodeEncodeError:
+        raise EditorialPublishError(REASON_ARTIFACT_ENCODING) from None
     if len(body) > max_bytes:
         raise EditorialPublishError(REASON_TOO_LARGE, f"{len(body)} > {max_bytes}")
 

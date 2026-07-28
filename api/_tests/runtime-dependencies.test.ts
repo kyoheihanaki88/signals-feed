@@ -653,6 +653,10 @@ const POOL_CONTRACT_MODULES = new Set([
   "_lib/mix-pool-source.ts",
   "_lib/editorial-mix-pool-schema.ts",
   "_lib/editorial-mix-feed.ts",
+  // Phase 3D-3D. The concrete Upstash store is a POOL module by definition — it exists to
+  // fetch pool bytes — so it is exempt from the "no mix-pool reference" rule and, like its
+  // siblings, must remain unreachable from every route and runtime module. L2b proves that.
+  "_lib/upstash-pool-store.ts",
 ]);
 
 test("L2. no runtime module reads edition data, latest.json or a mix pool", () => {
@@ -677,6 +681,7 @@ test("L2b. the pool contract modules are not reachable from any route or runtime
     "mix-pool-source",
     "editorial-mix-pool-schema",
     "editorial-mix-feed",
+    "upstash-pool-store",
   ];
   for (const file of runtimeSourceFiles()) {
     if (POOL_CONTRACT_MODULES.has(file.name)) continue;

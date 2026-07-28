@@ -74,31 +74,34 @@ check("38b. the standard edition steps are still in their original order",
 # ── 39-40. the Custom Mix steps are additive, last, and gated ─────────────────────────
 
 MIX_GATE = index_of("Custom Mix — are the Upstash publisher secrets provisioned?")
-MIX_BUILD = index_of("Custom Mix — build the Editorial Mix Pool")
+MIX_RAW      = index_of("Custom Mix — build the raw Mix Pool")
+MIX_VALIDATE = index_of("Custom Mix — validate the raw Mix Pool")
+MIX_BUILD    = index_of("Custom Mix — build the Editorial Mix Pool")
 MIX_PUBLISH = index_of("Custom Mix — publish the Editorial Mix Pool")
 MIX_ASSERT = index_of("Custom Mix — assert nothing was added")
 
 check("39. the Custom Mix steps exist",
-      min(MIX_GATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT) >= 0,
-      str([MIX_GATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT]))
+      min(MIX_GATE, MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT) >= 0,
+      str([MIX_GATE, MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT]))
 check("39b. they are purely additive — they come AFTER every standard edition step",
       MIX_GATE > max(positions), f"{MIX_GATE} vs {max(positions)}")
 check("39c. a Custom Mix failure cannot roll back the edition: it runs after the merge",
-      MIX_BUILD > index_of("Merge publish PR"))
-check("40. publication happens only after the build step",
-      MIX_GATE < MIX_BUILD < MIX_PUBLISH)
+      MIX_RAW > index_of("Merge publish PR"))
+check("40. publication happens only after BOTH validations",
+      MIX_GATE < MIX_RAW < MIX_VALIDATE < MIX_BUILD < MIX_PUBLISH)
 
-mix_steps = [STEPS[i] for i in (MIX_BUILD, MIX_PUBLISH)]
+mix_steps = [STEPS[i] for i in (MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH)]
 check("40b. both build and publish are gated on the secrets being provisioned",
       all("steps.mixsecrets.outputs.configured == 'true'" in str(step.get("if", ""))
           for step in mix_steps))
 check("40c. the build fails closed — no continue-on-error anywhere in the block",
       not any(step.get("continue-on-error") for step in
-              [STEPS[i] for i in (MIX_GATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT)]))
+              [STEPS[i] for i in (MIX_GATE, MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT)]))
 check("40d. the publish step runs the CLI's `publish` subcommand, never a default action",
       "editorial_mix_pool_cli.py publish" in str(STEPS[MIX_PUBLISH]["run"]))
-check("40e. the build step revalidates by building, not by trusting a previous artifact",
-      "editorial_mix_pool_cli.py build" in str(STEPS[MIX_BUILD]["run"]))
+check("40e. the build step consumes the FROZEN raw artifact, never scout candidates",
+      "--raw-input" in str(STEPS[MIX_BUILD]["run"])
+      and "candidates.json" not in str(STEPS[MIX_BUILD]["run"]))
 
 # ── 41-42. secrets ────────────────────────────────────────────────────────────────────
 
@@ -107,7 +110,8 @@ check("41. the Upstash credentials are referenced only as GitHub Actions secrets
       {"KV_REST_API_URL", "KV_REST_API_WRITE_TOKEN"} <= secret_refs, str(sorted(secret_refs)))
 
 mix_block = "\n".join(
-    yaml.safe_dump(STEPS[i], sort_keys=False) for i in (MIX_GATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT)
+    yaml.safe_dump(STEPS[i], sort_keys=False)
+    for i in (MIX_GATE, MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT)
 )
 check("41b. the credentials reach the process through `env:` only",
       "KV_REST_API_WRITE_TOKEN" in str(STEPS[MIX_PUBLISH].get("env", {}))
@@ -124,10 +128,17 @@ check("42c. no real credential value appears anywhere in the workflow",
 
 # ── 43-44. the generated pool never touches the repository ────────────────────────────
 
-check("44. the build writes to the runner temp directory, not a repository path",
-      "$RUNNER_TEMP/editorial-mix-pool-" in str(STEPS[MIX_BUILD]["run"]))
+check("44. every generated artifact is written to the runner temp directory",
+      "$RUNNER_TEMP/raw-mix-pool-" in str(STEPS[MIX_RAW]["run"])
+      and "$RUNNER_TEMP/editorial-mix-pool-" in str(STEPS[MIX_BUILD]["run"]))
+# Match the RAW `run` scripts: yaml.safe_dump line-folds long commands, which breaks the
+# adjacency this regex depends on.
+mix_runs = "\n".join(
+    str(STEPS[i].get("run", ""))
+    for i in (MIX_GATE, MIX_RAW, MIX_VALIDATE, MIX_BUILD, MIX_PUBLISH, MIX_ASSERT)
+)
 check("44b. no Custom Mix step writes into the repository tree",
-      not re.search(r"--output\s+(?!\"?\$RUNNER_TEMP)", str(STEPS[MIX_BUILD]["run"])))
+      not re.search(r"--(output|raw-input|artifact)\s+(?!\"?\$RUNNER_TEMP)", mix_runs))
 check("43. an explicit step asserts no generated pool entered the repository",
       "editorial-mix-pool-*.json" in str(STEPS[MIX_ASSERT]["run"])
       and "::error::" in str(STEPS[MIX_ASSERT]["run"]))
@@ -230,8 +241,16 @@ check("V9. it creates no branch, commit, PR or push",
 check("V10. it writes the artifact only to the runner temp directory",
       "$RUNNER_TEMP/editorial-mix-pool-" in VRAW
       and not re.search(r"--output\s+(?!\"?\$RUNNER_TEMP)", VRAW))
-check("V11. publication happens only after the build step",
-      VNAMES.index("Build the Editorial Mix Pool") < VNAMES.index("Publish to Upstash"))
+def vindex(fragment):
+    for i, n in enumerate(VNAMES):
+        if fragment.lower() in n.lower():
+            return i
+    return -1
+
+
+check("V11. publication happens only after the raw pool is built AND validated",
+      0 <= vindex("build the raw Mix Pool") < vindex("validate the raw Mix Pool")
+        < vindex("build the Editorial Mix Pool") < vindex("Publish to Upstash"))
 check("V12. credentials are referenced only as Actions secrets, via env",
       set(re.findall(r"\$\{\{\s*secrets\.([A-Za-z0-9_]+)\s*\}\}", VRAW))
       == {"KV_REST_API_URL", "KV_REST_API_WRITE_TOKEN"})
@@ -252,6 +271,67 @@ check("V15. no step touches the route, the smoke namespace or the smoke tool",
       and "upstash_smoke_test" not in VEXEC)
 check("V16. no real provider host or credential appears in it",
       not re.search(r"upstash\.io", VRAW))
+
+
+# ── Phase 3D-3G.3 — the staged chain contract ─────────────────────────────────────────
+#
+# Run 30360578299 died in a combined build step with `{"status":"failed","reason":
+# "MixPoolError"}` — no stage, no category, nothing actionable. These assertions pin the
+# split that makes such a failure attributable, in BOTH workflows.
+
+import editorial_mix_pool_cli as CLI  # noqa: E402
+
+for label, steps in (("daily", STEPS), ("verify", VSTEPS)):
+    names = [str(s_.get("name", "")) for s_ in steps]
+    runs = "\n".join(str(s_.get("run", "")) for s_ in steps)
+    raw_i = next((i for i, n in enumerate(names) if "build the raw Mix Pool" in n), -1)
+    val_i = next((i for i, n in enumerate(names) if "validate the raw Mix Pool" in n), -1)
+    bld_i = next((i for i, n in enumerate(names) if "build the Editorial Mix Pool" in n), -1)
+    # Identify the publish step by what it RUNS, not by its name: "Publish (write files
+    # only)" is the standard edition's, and the secrets gate is titled "…publisher secrets
+    # provisioned?" — both would match a name-based search.
+    pub_i = next((i for i, s_ in enumerate(steps)
+                  if "editorial_mix_pool_cli.py publish" in str(s_.get("run", ""))), -1)
+
+    check(f"G1 [{label}]. scout candidates are NOT passed to the editorial builder",
+          bld_i >= 0 and "candidates.json" not in str(steps[bld_i]["run"])
+          and "--raw-input" in str(steps[bld_i]["run"]))
+    # Scout WRITES candidates.json and build-raw READS it — two legitimate references.
+    # What must never happen is a third one in the enrichment step.
+    consumers = [i for i, s_ in enumerate(steps)
+                 if "candidates.json" in str(s_.get("run", ""))]
+    check(f"G2 [{label}]. only scout and build-raw touch candidates.json",
+          raw_i in consumers and bld_i not in consumers and len(consumers) == 2,
+          str([names[i] for i in consumers]))
+    check(f"G3 [{label}]. the raw pool is built AND validated before enrichment",
+          0 <= raw_i < val_i < bld_i and "validate-raw" in str(steps[val_i]["run"]))
+    check(f"G4 [{label}]. every generated artifact stays in $RUNNER_TEMP",
+          not re.search(r"--(output|raw-input|artifact)\s+(?!\"?\$RUNNER_TEMP)", runs))
+    check(f"G5 [{label}]. publication occurs only after both validations",
+          pub_i > bld_i > val_i > raw_i)
+
+check("G6. a failure before publication issues zero Upstash requests",
+      # `publish` is the only subcommand that can reach the transport, and it is a separate
+      # step: a non-zero exit anywhere upstream ends the job before it is ever invoked.
+      "upstash" not in "".join(
+          str(STEPS[i].get("run", "")) for i in (MIX_RAW, MIX_VALIDATE, MIX_BUILD)).lower()
+      and "publish" not in "".join(
+          str(STEPS[i].get("run", "")) for i in (MIX_RAW, MIX_VALIDATE, MIX_BUILD)))
+check("G7. the raw-pool exit code is distinct from the enrichment exit code",
+      CLI.EXIT_RAW_POOL_FAILED == 6 and CLI.EXIT_BUILD_FAILED == 3
+      and CLI.EXIT_RAW_POOL_FAILED != CLI.EXIT_BUILD_FAILED)
+check("G8. safe_mix_pool_error emits stable categories and leaks no payload",
+      set(dict(CLI._MIX_POOL_ERROR_RULES).values()) >= {
+          "empty_required_copy", "duplicate_candidate_id", "duplicate_canonical_url",
+          "invalid_taxonomy", "invalid_numeric_field", "identity_mismatch", "schema_invalid"}
+      and CLI.safe_mix_pool_error(Exception("something unmapped")) ==
+          {"unknown_mix_pool_error": 1})
+check("G9. prepare_scout_source does not mutate the caller's document",
+      (lambda src: (CLI.prepare_scout_source(src), src["candidates"])[1] is src["candidates"])(
+          {"candidates": [{"title": "", "snippet": "", "source": ""}]}))
+check("G10. prepare_scout_source reports only aggregate counts",
+      set(CLI.prepare_scout_source({"candidates": []})[1])
+      == {"empty_copy", "unusable_url", "duplicate_canonical"})
 
 print()
 if FAILURES:

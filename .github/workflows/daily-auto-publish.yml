@@ -467,9 +467,42 @@ jobs:
             echo "- Custom Mix: SKIPPED (not provisioned)" >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      # Build the enriched pool into the RUNNER TEMP directory. Never a repository path:
-      # `editorial_mix_pool_cli.py build` refuses any destination inside the repo.
-      # Fails closed — fewer than 15 surviving candidates produces no artifact at all.
+      # STAGE 1 — scout/ranker candidates -> frozen, validated raw Mix Pool.
+      # `prepare_scout_source` drops rows the raw contract cannot represent (empty RSS
+      # description, unusable URL, canonical duplicate) BEFORE freezing, and reports the
+      # counts. A scout-shape failure exits 6 here, distinct from an enrichment failure.
+      - name: Custom Mix — build the raw Mix Pool
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py build-raw \
+            --input pipeline/candidates.json \
+            --date "$EDITION_DATE" \
+            --generated-at "$(date -u +%FT%TZ)" \
+            --output "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json" \
+            | tee "$RUNNER_TEMP/raw-summary.json"
+          {
+            echo '### Raw Mix Pool (counts and identity prefix only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/raw-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # STAGE 2 — revalidate the frozen raw artifact and re-derive its identity.
+      - name: Custom Mix — validate the raw Mix Pool
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py validate-raw \
+            --artifact "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json"
+
+      # STAGE 3 — enrichment from the FROZEN artifact. Scout output is not accepted here.
+      # The raw artifact is revalidated again before any article fetch, so a corrupted
+      # intermediate costs zero external work. Fewer than 15 survivors writes nothing.
       - name: Custom Mix — build the Editorial Mix Pool
         if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
         env:
@@ -477,10 +510,17 @@ jobs:
         run: |
           set -euo pipefail
           python pipeline/editorial_mix_pool_cli.py build \
-            --input pipeline/candidates.json \
+            --raw-input "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json" \
             --date "$EDITION_DATE" \
             --generated-at "$(date -u +%FT%TZ)" \
-            --output "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json"
+            --output "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json" \
+            | tee "$RUNNER_TEMP/build-summary.json"
+          {
+            echo '### Editorial Mix Pool (counts and identity prefixes only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/build-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       # Publish. The CLI revalidates the artifact and re-derives BOTH identities before the
       # transport is touched, then issues exactly ONE atomic Upstash SET with a 9-day TTL —

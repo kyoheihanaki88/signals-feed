@@ -8,17 +8,41 @@ becomes operational the moment the workflow supplies `KV_REST_API_URL` and
 socket, reads no environment variable and publishes nothing. Every effect requires an
 explicit call with an explicitly built configuration.
 
-WHY THE COMMAND FORM. Upstash exposes both `POST {url}/set/{key}` and a JSON command body.
-The key contains `:` separators and the value is a whole JSON document; sending
-`["SET", key, value, "EX", ttl]` puts both in the body as DATA, so no path encoding, query
-string or proxy can alter the key we write or the bytes we store. It is also exactly ONE
-request — the publisher contract forbids a multi-step assembly that could leave a partial
-object behind.
+REQUEST FORM — CORRECTED IN PHASE 3D-3F.1 AGAINST REAL ENDPOINT EVIDENCE.
 
-BYTE EXACTNESS. The value is the publisher's canonical UTF-8 bytes, decoded to `str` only
-so the JSON request body can carry it. JSON string escaping is lossless for valid UTF-8, so
-what Upstash stores round-trips to the same bytes the TypeScript reader will hash. This
-module never reformats, re-sorts or re-serialises the artifact.
+  root POST, body `["PING"]`  ->  HTTP 400
+  URL command  GET /ping      ->  HTTP 200  {"result":"PONG"}
+
+Phase 3D-3D used the root JSON-array form. Upstash documents it, but THIS deployment
+rejects it, so the transport now uses the URL-command form exclusively. That is not a
+fallback: the root form is never constructed anywhere in this module, and a regression
+test asserts it.
+
+  SET  ->  POST {base}/set/{key}?EX={ttl}   with the value as the raw REQUEST BODY
+  GET  ->  GET  {base}/get/{key}
+  DEL  ->  POST {base}/del/{key}
+  PING ->  GET  {base}/ping
+
+WHY THE VALUE IS NEVER IN THE URL. Upstash's docs are explicit that a POST body "is
+appended to the command as the last parameter", with trailing options supplied as query
+parameters — `POST /set/foo?EX=100` is exactly `SET foo <body> EX 100`. That matters
+because the artifact is ~16.9 KB of JSON: percent-encoded into a path segment it would
+exceed 40 KB, well past the 8–16 KB URL ceiling typical of proxies and CDNs. Only the KEY
+travels in the URL (about 45 characters), so the request line stays small and the value
+stays binary-safe. Upstash's own request ceiling is 10 MB, far above `MAX_BODY_BYTES`.
+
+KEY ENCODING. Each argument is percent-encoded as its own path segment via
+`encode_segment`. `:` is deliberately left literal: RFC 3986 admits it in a path segment,
+Upstash's documentation uses it unencoded (`/hget/employee:23381/salary`), and the
+TypeScript reader encodes identically — a cross-language test pins the two together, since
+a divergence would silently read the wrong object rather than fail.
+
+BYTE EXACTNESS. The value is written as the publisher's exact canonical UTF-8 bytes with no
+JSON wrapper, no escaping and no re-serialisation. On the way back, Upstash returns the
+stored string inside its `{"result": …}` envelope; the reader encodes that string to UTF-8
+and gets the same bytes. The artifact is valid UTF-8 by construction, so the provider's
+U+FFFD substitution for invalid sequences cannot apply — and the smoke test's byte
+comparison is what proves it rather than this comment.
 
 SAFETY. No logging of any kind. No payload, headline, URL, key material or provider prose
 appears in a raised error or a returned result — failures are stable category codes only.
@@ -33,17 +57,25 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from typing import Any, Callable
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 #: Slightly beyond the reader's freshness ceiling so provider expiry is never the gate.
 DEFAULT_TTL_SECONDS = 9 * 24 * 60 * 60
 #: One request, one deadline. The daily workflow is not latency-sensitive, but it must not
 #: hang a runner: a stuck publish should fail visibly rather than block the job.
 DEFAULT_TIMEOUT_SECONDS = 10.0
-#: Must not exceed the reader's MAX_POOL_BYTES.
+#: Must not exceed the reader's MAX_POOL_BYTES. Upstash's own request ceiling is 10 MB.
 MAX_BODY_BYTES = 2 * 1024 * 1024
-#: The provider's own reply is tiny (`{"result":"OK"}`); anything larger is not Upstash.
+#: A write reply is tiny (`{"result":"OK"}`); anything larger is not an Upstash SET reply.
 MAX_RESPONSE_BYTES = 64 * 1024
+#: A read reply carries the whole artifact inside a JSON envelope, so it needs its own,
+#: much larger ceiling — JSON string escaping can inflate the value several times over.
+MAX_READ_RESPONSE_BYTES = 6 * MAX_BODY_BYTES + 1024
+
+#: `:` stays literal: RFC 3986 permits it inside a path segment, Upstash's documentation
+#: uses it unencoded, and `api/_lib/upstash-pool-store.ts` encodes identically. Everything
+#: else that could change the target object — `/`, `?`, `#`, space, non-ASCII — is escaped.
+_SEGMENT_SAFE = ":"
 
 #: Stable, safe failure categories. Never a provider message.
 REASON_NOT_CONFIGURED = "upstash_not_configured"
@@ -119,10 +151,35 @@ def resolve_config(
     )
 
 
+def encode_segment(argument: str) -> str:
+    """
+    Percent-encode ONE Redis argument as its own URL path segment.
+
+    Mirrored exactly by `encodePathSegment` in `api/_lib/upstash-pool-store.ts`; a
+    cross-language test pins them together, because a divergence would make the reader ask
+    for a different object than the publisher wrote — silently, and with a valid response.
+    """
+    if not isinstance(argument, str) or not argument:
+        raise UpstashTransportError(REASON_PUBLISH_REJECTED)
+    return quote(argument, safe=_SEGMENT_SAFE)
+
+
+def command_url(base: str, *arguments: str, query: str = "") -> str:
+    """
+    Build a URL-command request target: `{base}/arg1/arg2/…`.
+
+    This is the ONLY way a request URL is constructed in this module. The root JSON-array
+    form is never built — this deployment answers it with HTTP 400 (recorded in the module
+    docstring), and a regression test asserts the form is absent from the source.
+    """
+    path = "/".join(encode_segment(argument) for argument in arguments)
+    return f"{base}/{path}{query}"
+
+
 def _default_opener(request: urllib.request.Request, timeout: float) -> tuple[int, bytes]:
     """The only place a socket is opened. Isolated so tests can replace it wholesale."""
     with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310
-        return response.status, response.read(MAX_RESPONSE_BYTES + 1)
+        return response.status, response.read(MAX_READ_RESPONSE_BYTES + 1)
 
 
 class UpstashPoolObjectStore:
@@ -163,25 +220,31 @@ class UpstashPoolObjectStore:
             raise UpstashTransportError(REASON_VALUE_TOO_LARGE)
 
         try:
-            value = bytes(body).decode("utf-8")
+            bytes(body).decode("utf-8")
         except UnicodeDecodeError:
             # The canonical serializer always emits UTF-8; anything else is a caller bug.
             raise UpstashTransportError(REASON_PUBLISH_REJECTED) from None
 
-        command: list[Any] = ["SET", key, value]
+        # `SET {key} {body} EX {ttl}`. The value is the raw request body, never a URL
+        # segment and never wrapped in JSON, so a 16.9 KB artifact costs a ~45-character
+        # request line. Trailing options must be query parameters — Upstash appends the
+        # body as the LAST argument, so `EX` cannot follow it in the path.
+        query = ""
         if ttl_seconds is not None:
             if not isinstance(ttl_seconds, int) or ttl_seconds <= 0:
                 raise UpstashTransportError(REASON_PUBLISH_REJECTED)
-            command += ["EX", str(ttl_seconds)]
+            query = f"?EX={int(ttl_seconds)}"
 
-        payload = json.dumps(command, ensure_ascii=False).encode("utf-8")
         request = urllib.request.Request(  # noqa: S310 - scheme validated in resolve_config
-            self._config.rest_url,
-            data=payload,
+            command_url(self._config.rest_url, "set", key, query=query),
+            data=bytes(body),
             method="POST",
             headers={
                 "Authorization": f"Bearer {self._config.write_token}",
-                "Content-Type": "application/json",
+                # Upstash does not interpret this: it takes the body verbatim as the last
+                # command argument. `octet-stream` states honestly that it is opaque bytes
+                # and stops an intermediary from trying to re-encode a form or JSON body.
+                "Content-Type": "application/octet-stream",
             },
         )
 
@@ -243,18 +306,19 @@ def _command(
     config: UpstashConfig,
     command: list[str],
     *,
+    method: str = "POST",
     opener: Callable[[urllib.request.Request, float], tuple[int, bytes]] | None = None,
 ) -> Any:
-    """Run one Upstash command and return its `result`. Shared by the helpers below."""
-    payload = json.dumps(command, ensure_ascii=False).encode("utf-8")
+    """
+    Run one URL-command request and return its `result`. Shared by the helpers below.
+
+    Every argument becomes its own percent-encoded path segment; no argument is ever
+    concatenated raw, and no request body is sent — these commands carry no value.
+    """
     request = urllib.request.Request(  # noqa: S310 - scheme validated in resolve_config
-        config.rest_url,
-        data=payload,
-        method="POST",
-        headers={
-            "Authorization": f"Bearer {config.write_token}",
-            "Content-Type": "application/json",
-        },
+        command_url(config.rest_url, *command),
+        method=method,
+        headers={"Authorization": f"Bearer {config.write_token}"},
     )
     run = opener or _default_opener
     try:
@@ -270,6 +334,8 @@ def _command(
 
     if status != 200:
         raise UpstashTransportError(REASON_PROVIDER_ERROR)
+    if not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_READ_RESPONSE_BYTES:
+        raise UpstashTransportError(REASON_VALUE_TOO_LARGE)
     try:
         envelope = json.loads(bytes(raw).decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError):
@@ -283,6 +349,20 @@ def _command(
     return envelope["result"]
 
 
+def ping(
+    config: UpstashConfig,
+    *,
+    opener: Callable[[urllib.request.Request, float], tuple[int, bytes]] | None = None,
+) -> bool:
+    """
+    `GET {base}/ping` — the cheapest proof that the URL, token and request form all work.
+
+    This is the exact request that answered HTTP 200 / PONG when the root JSON-array form
+    answered 400, so it is also the canary that would catch a future form regression.
+    """
+    return _command(config, ["ping"], method="GET", opener=opener) == "PONG"
+
+
 def read_back(
     config: UpstashConfig,
     key: str,
@@ -290,7 +370,7 @@ def read_back(
     opener: Callable[[urllib.request.Request, float], tuple[int, bytes]] | None = None,
 ) -> bytes | None:
     """Fetch one exact key's bytes, or None when absent. Smoke-test verification only."""
-    result = _command(config, ["GET", key], opener=opener)
+    result = _command(config, ["get", key], method="GET", opener=opener)
     if result is None:
         return None
     if not isinstance(result, str):
@@ -305,7 +385,7 @@ def delete_key(
     opener: Callable[[urllib.request.Request, float], tuple[int, bytes]] | None = None,
 ) -> int:
     """Delete ONE exact key. Returns the number removed (0 or 1). Smoke-test cleanup only."""
-    result = _command(config, ["DEL", key], opener=opener)
+    result = _command(config, ["del", key], opener=opener)
     if not isinstance(result, int):
         raise UpstashTransportError(REASON_INVALID_RESPONSE)
     return result

@@ -167,27 +167,132 @@ except T.UpstashTransportError as error:
 # ── 25-28. the write itself ───────────────────────────────────────────────────────────
 
 result, recorder = publish()
-command = json.loads(recorder.calls[0]["body"].decode("utf-8"))
+call = recorder.calls[0]
+KEY = f"signals:editorial-mix-pool:v1:{DATE}"
 
-check("25. the exact versioned, dated key is used",
-      command[1] == f"signals:editorial-mix-pool:v1:{DATE}" == result["key"], str(command[1]))
+check("25. the exact versioned, dated key is used, as its own URL path segment",
+      call["url"] == f"{URL_VALUE}/set/{KEY}?EX=777600" == f"{URL_VALUE}/set/{result['key']}?EX=777600",
+      call["url"].replace(URL_VALUE, "<base>"))
 check("25b. the editorial key cannot collide with the raw selector pool key",
-      not command[1].startswith("signals:mix-pool:"))
-check("26. the exact serialized bytes are stored",
-      command[2].encode("utf-8") == BODY and result["byteLength"] == len(BODY))
-check("27. the TTL is exactly 9 days",
-      command[3] == "EX" and command[4] == str(9 * 24 * 60 * 60) == "777600", str(command[3:]))
+      "/set/signals:editorial-mix-pool:v1:" in call["url"]
+      and "signals:mix-pool:" not in call["url"])
+check("26. the exact serialized bytes are the raw request BODY, not a URL segment",
+      call["body"] == BODY and result["byteLength"] == len(BODY)
+      and BODY[:40].decode("utf-8") not in call["url"])
+check("27. the TTL is exactly 9 days, carried as a query parameter",
+      call["url"].endswith("?EX=777600") and 9 * 24 * 60 * 60 == 777600)
 check("28. exactly ONE request is issued", len(recorder.calls) == 1, str(len(recorder.calls)))
-check("28b. it is a single POST carrying the key as data, not in the URL",
-      recorder.calls[0]["method"] == "POST"
-      and recorder.calls[0]["url"] == URL_VALUE
-      and command[0] == "SET")
+check("28b. it is a single POST to the /set/ URL command, not the root endpoint",
+      call["method"] == "POST"
+      and call["url"] != URL_VALUE
+      and call["url"].startswith(f"{URL_VALUE}/set/"))
 check("28c. the credential travels in the Authorization header only",
-      recorder.calls[0]["headers"].get("Authorization") == f"Bearer {TOKEN_VALUE}"
-      and TOKEN_VALUE not in recorder.calls[0]["url"]
-      and TOKEN_VALUE not in command[2])
+      call["headers"].get("Authorization") == f"Bearer {TOKEN_VALUE}"
+      and TOKEN_VALUE not in call["url"]
+      and TOKEN_VALUE.encode() not in call["body"])
 check("28d. an explicit timeout is applied to the request",
-      isinstance(recorder.calls[0]["timeout"], float) and recorder.calls[0]["timeout"] > 0)
+      isinstance(call["timeout"], float) and call["timeout"] > 0)
+check("28e. the body is declared opaque, never re-encodable JSON or form data",
+      call["headers"].get("Content-type") == "application/octet-stream",
+      str(call["headers"].get("Content-type")))
+
+# ── 3D-3F.1 regressions: the request FORM itself ──────────────────────────────────────
+#
+# Real endpoint evidence that motivated this: root POST `["PING"]` -> HTTP 400, while the
+# URL command GET /ping -> HTTP 200 {"result":"PONG"}. These assertions exist so the root
+# form can never quietly come back.
+
+check("F1. the root JSON-array command form is never used for SET",
+      call["url"] != URL_VALUE and not call["url"].rstrip("/").endswith(".upstash.io"))
+try:
+    json.loads(call["body"].decode("utf-8"))
+    body_is_array = isinstance(json.loads(call["body"].decode("utf-8")), list)
+except Exception:
+    body_is_array = False
+check("F2. the request body is the artifact, never a ['SET', …] command array",
+      not body_is_array)
+
+TRANSPORT_SRC = open(os.path.join(HERE, "upstash_mix_pool_transport.py"), encoding="utf-8").read()
+check("F3. no root-endpoint JSON command array is constructed anywhere in the transport",
+      "json.dumps(command" not in TRANSPORT_SRC
+      and '["SET"' not in TRANSPORT_SRC
+      and '"SET", key' not in TRANSPORT_SRC)
+check("F4. every request URL is built by the single command_url helper",
+      TRANSPORT_SRC.count("urllib.request.Request(") == 2
+      and TRANSPORT_SRC.count("command_url(") >= 2)
+
+# PING — the exact request that proved the URL form works against the real endpoint.
+ping_rec = Recorder(payload=b'{"result":"PONG"}')
+ok = T.ping(T.resolve_config(GOOD_ENV), opener=ping_rec)
+check("F5. PING uses the URL path form and reports PONG",
+      ok is True
+      and ping_rec.calls[0]["url"] == f"{URL_VALUE}/ping"
+      and ping_rec.calls[0]["method"] == "GET"
+      and ping_rec.calls[0]["body"] is None)
+
+# GET — exact key, byte-exact 16,909-byte round trip including multi-byte characters.
+UNICODE_VALUE = '{"t":"東京 café — \\"pilot\\" ✓","n":1}'
+get_rec = Recorder(payload=json.dumps({"result": BODY.decode("utf-8")},
+                                      ensure_ascii=False).encode("utf-8"))
+got = T.read_back(T.resolve_config(GOOD_ENV), KEY, opener=get_rec)
+check("F6. GET uses the exact key as a URL path segment",
+      get_rec.calls[0]["url"] == f"{URL_VALUE}/get/{KEY}"
+      and get_rec.calls[0]["method"] == "GET")
+check("F7. a 16,909-byte artifact round-trips byte-exact",
+      got == BODY and len(got) == len(BODY), f"{len(got or b'')} vs {len(BODY)}")
+
+uni_rec = Recorder(payload=json.dumps({"result": UNICODE_VALUE},
+                                      ensure_ascii=False).encode("utf-8"))
+uni = T.read_back(T.resolve_config(GOOD_ENV), KEY, opener=uni_rec)
+check("F8. multi-byte and escaped characters round-trip unchanged",
+      uni == UNICODE_VALUE.encode("utf-8"), repr(uni))
+
+missing_rec = Recorder(payload=b'{"result":null}')
+check("F9. an absent key reads as None, not as an error",
+      T.read_back(T.resolve_config(GOOD_ENV), KEY, opener=missing_rec) is None)
+
+# DEL — one exact key, no pattern.
+del_rec = Recorder(payload=b'{"result":1}')
+removed = T.delete_key(T.resolve_config(GOOD_ENV), KEY, opener=del_rec)
+check("F10. DEL targets exactly one key by path segment",
+      removed == 1 and del_rec.calls[0]["url"] == f"{URL_VALUE}/del/{KEY}")
+
+check("F11. dangerous characters are escaped out of the path",
+      T.encode_segment("a/b?c#d e") == "a%2Fb%3Fc%23d%20e"
+      and T.encode_segment("x:y") == "x:y")
+check("F12. a wildcard cannot survive into a request path",
+      "%2A" in T.encode_segment("signals:*") or "*" == T.encode_segment("signals:*")[-1])
+
+# The value never enters a URL: percent-encoding tens of KB would blow past proxy URL
+# limits, which is precisely why the body form is used instead.
+check("F13. the SET request line stays small however large the artifact is",
+      len(call["url"]) < 200 < len(call["body"]),
+      f"url={len(call['url'])} body={len(call['body'])}")
+check("F14. the artifact is far below Upstash's 10 MB request ceiling",
+      len(BODY) < 10 * 1024 * 1024 and T.MAX_BODY_BYTES <= 10 * 1024 * 1024)
+
+# The exact artifact the smoke test publishes: the committed 16,909-byte fixture.
+SMOKE_BODY = S.serialize(json.load(
+    open(os.path.join(HERE, "..", "api", "_fixtures", "editorial_mix_pool.json"),
+         encoding="utf-8")))
+check("F15. the committed smoke fixture is exactly 16,909 bytes",
+      len(SMOKE_BODY) == 16909, str(len(SMOKE_BODY)))
+
+smoke_set = Recorder()
+T.UpstashPoolObjectStore(T.resolve_config(GOOD_ENV), opener=smoke_set).put(
+    "signals:smoke:editorial-mix-pool:v1:2026-01-01", SMOKE_BODY, ttl_seconds=3600)
+check("F16. the smoke TTL is exactly 3600 on the exact smoke key",
+      smoke_set.calls[0]["url"]
+      == f"{URL_VALUE}/set/signals:smoke:editorial-mix-pool:v1:2026-01-01?EX=3600"
+      and smoke_set.calls[0]["body"] == SMOKE_BODY,
+      smoke_set.calls[0]["url"].replace(URL_VALUE, "<base>"))
+
+smoke_get = Recorder(payload=json.dumps({"result": SMOKE_BODY.decode("utf-8")},
+                                        ensure_ascii=False).encode("utf-8"))
+smoke_got = T.read_back(T.resolve_config(GOOD_ENV),
+                        "signals:smoke:editorial-mix-pool:v1:2026-01-01", opener=smoke_get)
+check("F17. the 16,909-byte smoke artifact round-trips byte-exact",
+      smoke_got == SMOKE_BODY and len(smoke_got) == 16909, str(len(smoke_got or b"")))
 
 # ── 29-31. transport failures ─────────────────────────────────────────────────────────
 

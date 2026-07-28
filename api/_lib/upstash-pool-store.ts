@@ -8,11 +8,21 @@
  * not imported by `/api/edition`, the edition orchestrator, the runtime factory or the
  * Vercel runtime, and `api/_tests/runtime-dependencies.test.ts` enforces that.
  *
- * WHY THE COMMAND FORM, NOT THE PATH FORM. Upstash exposes both `GET {url}/get/{key}` and
- * a JSON command body. The key contains `:` separators, and path-segment encoding of `:`
- * is ambiguous across proxies and client libraries — a mis-encoded key silently reads the
- * wrong object rather than failing. Posting `["GET", key]` as a JSON array sends the key
- * as data, so the key this module asks for is exactly the key the publisher wrote.
+ * REQUEST FORM — CORRECTED IN PHASE 3D-3F.1 AGAINST REAL ENDPOINT EVIDENCE.
+ *
+ *   root POST, body `["PING"]`  ->  HTTP 400
+ *   URL command  GET /ping      ->  HTTP 200  {"result":"PONG"}
+ *
+ * Phase 3D-3D used the root JSON-array form. Upstash documents it, but THIS deployment
+ * rejects it, so the reader now uses the URL-command form exclusively: `GET {base}/get/{key}`.
+ * That is not a fallback — the root form is never constructed here, and a regression test
+ * asserts it is absent from the source.
+ *
+ * KEY ENCODING. `encodePathSegment` percent-encodes the key as one path segment and leaves
+ * `:` literal, exactly matching `encode_segment` in `pipeline/upstash_mix_pool_transport.py`.
+ * A cross-language test pins the two together, because a divergence would make this reader
+ * request a different object than the publisher wrote — silently, with a valid-looking
+ * `result: null` rather than an error.
  *
  * BYTE EXACTNESS. Upstash answers with a JSON envelope, `{"result": "<the stored string>"}`.
  * The stored artifact is canonical UTF-8 JSON, so it survives the envelope's string
@@ -150,6 +160,25 @@ export type UpstashStoreOptions = {
 const ENVELOPE_OVERHEAD_FACTOR = 6;
 const ENVELOPE_FRAMING_BYTES = 1_024;
 
+/**
+ * Percent-encode ONE Redis argument as its own URL path segment.
+ *
+ * `encodeURIComponent` escapes `:` as `%3A`; Python's `quote(arg, safe=":")` does not.
+ * Both are valid URLs, but they are DIFFERENT request paths, and only one of them matches
+ * the key the publisher wrote. RFC 3986 admits `:` inside a path segment and Upstash's own
+ * documentation uses it unencoded, so the literal form wins and this function restores it.
+ * Everything else that could redirect the request — `/`, `?`, `#`, space, non-ASCII — stays
+ * escaped.
+ */
+export function encodePathSegment(argument: string): string {
+  return encodeURIComponent(argument).replace(/%3A/g, ":");
+}
+
+/** Build a URL-command target: `{base}/arg1/arg2/…`. The only URL builder in this module. */
+export function commandUrl(base: string, ...args: readonly string[]): string {
+  return `${base}/${args.map(encodePathSegment).join("/")}`;
+}
+
 function envelopeCeiling(maxBytes: number): number {
   return maxBytes * ENVELOPE_OVERHEAD_FACTOR + ENVELOPE_FRAMING_BYTES;
 }
@@ -235,19 +264,18 @@ export function createUpstashPoolStore(
         throw new UpstashStoreError("upstash_provider_error");
       }
 
-      // One command, one round trip, exact key as DATA — never interpolated into a path.
+      // One command, one round trip. `GET {base}/get/{key}` — the key is the only thing in
+      // the URL, percent-encoded as a single segment, and there is no request body at all.
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), timeoutMs);
 
       let response: Response;
       try {
-        response = await doFetch(restUrl, {
-          method: "POST",
+        response = await doFetch(commandUrl(restUrl, "get", key), {
+          method: "GET",
           headers: {
             authorization: `Bearer ${restToken}`,
-            "content-type": "application/json",
           },
-          body: JSON.stringify(["GET", key]),
           signal: controller.signal,
           // A pool read must never be served from an intermediary cache.
           cache: "no-store",

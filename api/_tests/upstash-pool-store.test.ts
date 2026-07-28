@@ -21,8 +21,10 @@ import { fileURLToPath } from "node:url";
 
 import {
   UpstashStoreError,
+  commandUrl,
   createUpstashCandidateSource,
   createUpstashPoolStore,
+  encodePathSegment,
   mapUpstashReason,
   readMixPoolFromUpstash,
   resolveUpstashCredentials,
@@ -32,6 +34,7 @@ import { mixPoolKey } from "../_lib/mix-pool-source.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB_DIR = resolve(HERE, "..", "_lib");
+const FIXTURE_DIR = resolve(HERE, "..", "_fixtures");
 
 function findPipelineDir(): string {
   let current = HERE;
@@ -140,14 +143,14 @@ test("4b. a plaintext or decorated URL is refused — a token never goes out in 
 
 // ── 5-6. the request itself ───────────────────────────────────────────────────────────
 
-test("5. exactly the requested key is asked for, as data and not as a path", async () => {
+test("5. exactly the requested key is asked for, as its own URL path segment", async () => {
   const { store, calls } = storeOf(() => envelope({ result: null }));
   await store.get(KEY, { timeoutMs: 500, maxBytes: 1_000 });
 
   assert.equal(calls.length, 1, "a read must be one round trip");
-  assert.equal(calls[0].url, URL_VALUE, "the key must not be interpolated into the URL");
-  assert.deepEqual(JSON.parse(String(calls[0].init.body)), ["GET", KEY]);
-  assert.equal(calls[0].init.method, "POST");
+  assert.equal(calls[0].url, `${URL_VALUE}/get/${KEY}`);
+  assert.equal(calls[0].init.method, "GET");
+  assert.equal(calls[0].init.body, undefined, "a GET must carry no body");
   assert.equal(calls[0].init.cache, "no-store");
   assert.equal(calls[0].init.redirect, "error");
 });
@@ -158,12 +161,11 @@ test("6. the authorization header is a bearer token and nothing else is sent", a
 
   const headers = calls[0].init.headers as Record<string, string>;
   assert.equal(headers.authorization, `Bearer ${TOKEN_VALUE}`);
-  assert.equal(headers["content-type"], "application/json");
-  // No cookie, no api-key duplicate, no custom identity header.
-  assert.deepEqual(Object.keys(headers).sort(), ["authorization", "content-type"]);
-  // The token is in the header, never in the URL or the body.
+  // No content-type on a bodyless GET, no cookie, no api-key duplicate, no identity header.
+  assert.deepEqual(Object.keys(headers).sort(), ["authorization"]);
+  // The token is in the header, never in the URL — and never as Upstash's `_token` param.
   assert.ok(!calls[0].url.includes(TOKEN_VALUE));
-  assert.ok(!String(calls[0].init.body).includes(TOKEN_VALUE));
+  assert.ok(!calls[0].url.includes("_token"));
 });
 
 // ── 7-8. success and absence ──────────────────────────────────────────────────────────
@@ -473,8 +475,98 @@ test("37. bytes published by Python are returned byte-exact by the TypeScript st
   assert.ok(Buffer.from(retrieved!).equals(published.body), "the bytes are not byte-exact");
 
   // The key the TypeScript reader asks for is the key the Python publisher wrote.
-  assert.deepEqual(JSON.parse(String(calls[0].init.body)), ["GET", published.key]);
+  assert.equal(calls[0].url, `${URL_VALUE}/get/${published.key}`);
   assert.equal(published.key, mixPoolKey(DATE));
+});
+
+// ── Phase 3D-3F.1 — the request FORM itself ───────────────────────────────────────────
+//
+// Real endpoint evidence: root POST `["PING"]` -> HTTP 400, URL command GET /ping -> HTTP
+// 200 {"result":"PONG"}. These assertions exist so the root form cannot quietly return.
+
+test("F1. the root JSON-array command form is never used", async () => {
+  const { store, calls } = storeOf(() => envelope({ result: null }));
+  await store.get(KEY, { timeoutMs: 500, maxBytes: 1_000 });
+
+  assert.notEqual(calls[0].url, URL_VALUE, "a request went to the root endpoint");
+  assert.equal(calls[0].init.body, undefined, "a command array was sent as a body");
+  assert.equal(calls[0].init.method, "GET");
+});
+
+test("F2. the source constructs no root-endpoint request and no command array", () => {
+  const source = readFileSync(join(LIB_DIR, "upstash-pool-store.ts"), "utf8");
+  const code = source.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+  assert.ok(!code.includes('JSON.stringify(["GET"'), "a root command array is built");
+  assert.ok(!/doFetch\(\s*restUrl\s*,/.test(code), "a request is sent to the bare base URL");
+  assert.ok(code.includes("commandUrl(restUrl"), "the URL is not built by commandUrl");
+});
+
+test("F3. path encoding leaves `:` literal and escapes everything dangerous", () => {
+  assert.equal(encodePathSegment("x:y"), "x:y");
+  assert.equal(encodePathSegment("a/b?c#d e"), "a%2Fb%3Fc%23d%20e");
+  assert.equal(encodePathSegment(KEY), KEY, "the real key must pass through unchanged");
+  assert.equal(commandUrl("https://h", "get", "a:b"), "https://h/get/a:b");
+  // A wildcard can never survive into a path segment as a live glob.
+  assert.equal(encodePathSegment("signals:*"), "signals:*");
+});
+
+test("F4. TypeScript and Python encode the same key to the same path — live parity", () => {
+  const keys = [
+    KEY,
+    "signals:editorial-mix-pool:v1:2026-07-27",
+    "signals:smoke:editorial-mix-pool:v1:2026-01-01",
+    "weird/key?with#chars and spaces",
+    "unicode:東京:café",
+  ];
+  const script = `
+import json, os, sys
+sys.path.insert(0, os.environ["PIPELINE_DIR"])
+import upstash_mix_pool_transport as T
+keys = json.loads(os.environ["KEYS"])
+sys.stdout.write(json.dumps([T.command_url("https://h", "get", k) for k in keys]))
+`;
+  const run = spawnSync("python3", ["-c", script], {
+    encoding: "utf8",
+    env: { ...process.env, PIPELINE_DIR, KEYS: JSON.stringify(keys) },
+  });
+  assert.equal(run.status, 0, `the Python encoder failed:\n${run.stderr}`);
+
+  const fromPython = JSON.parse(run.stdout) as string[];
+  const fromTypeScript = keys.map((k) => commandUrl("https://h", "get", k));
+  assert.deepEqual(fromTypeScript, fromPython, "the two encoders disagree on a request path");
+});
+
+test("F5. a 16,909-byte artifact and multi-byte text round-trip byte-exact", async () => {
+  const fixture = readFileSync(join(FIXTURE_DIR, "editorial_mix_pool.json"));
+  // The smoke fixture as the publisher serialises it, via the real Python serializer.
+  const run = spawnSync(
+    "python3",
+    [
+      "-c",
+      `import json,os,sys;sys.path.insert(0,os.environ["PIPELINE_DIR"]);import mix_pool_schema as S;` +
+        `sys.stdout.buffer.write(S.serialize(json.loads(sys.stdin.read())))`,
+    ],
+    { input: fixture.toString("utf8"), env: { ...process.env, PIPELINE_DIR }, maxBuffer: 1 << 24 },
+  );
+  assert.equal(run.status, 0, "the Python serializer failed");
+  const body = Buffer.from(run.stdout);
+  assert.equal(body.byteLength, 16909, "the committed smoke fixture changed size");
+
+  const { store } = storeOf(() => envelope({ result: body.toString("utf8") }));
+  const got = await store.get("signals:smoke:editorial-mix-pool:v1:2026-01-01", {
+    timeoutMs: 1_000,
+    maxBytes: 2 ** 21,
+  });
+  assert.ok(got !== null);
+  assert.equal(got!.byteLength, 16909);
+  assert.ok(Buffer.from(got!).equals(body), "the 16,909-byte artifact is not byte-exact");
+
+  // And a value that is nothing but multi-byte and escaped characters.
+  const unicode = '{"t":"東京 café — \\"pilot\\" ✓ \\\\ /","n":1}';
+  const { store: uniStore } = storeOf(() => envelope({ result: unicode }));
+  const uni = await uniStore.get(KEY, { timeoutMs: 500, maxBytes: 10_000 });
+  assert.equal(new TextDecoder().decode(uni!), unicode);
+  assert.deepEqual(Array.from(uni!), Array.from(new TextEncoder().encode(unicode)));
 });
 
 test("37b. the round-tripped bytes still pass full validation and identity re-derivation", async () => {

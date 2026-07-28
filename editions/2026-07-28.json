@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-28",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "As the US pauses the war with Iran, is Trump really running out of weapons?",
+      "summary": "When US President Donald Trump took the stage earlier this month at the Pennsylvania Defense and Innovation Summit, flanked by the CEOs of some of America's largest defence firms, he had one message in mind: build more weapons, and build them faster.",
+      "keyTakeaways": [
+        "Is the US really running out of weapons under Trump?",
+        "The Trump administration framed the summit as part of a two-pronged approach to revitalise American industry and bolster US warfighting capabilities and, in Hegseth's words, its \"arsenal of freedom\".",
+        "Now, the US has paused its strikes on Iran to allow negotiations to go ahead."
+      ],
+      "whyItMatters": "A New York Times report says that Trump was advised to shelve plans to escalate the conflict as it would further drain American stockpiles.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c0qvnk2ezp7o?at_medium=RSS&at_campaign=rss",
+      "readTime": 10,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "対イラン攻撃を一時停止——米国の兵器備蓄は本当に限界なのか",
+          "summary": "トランプ大統領は今月、ペンシルベニア州で開かれた防衛・イノベーション・サミットに主要防衛企業のCEOたちを従えて登壇し、兵器の増産と生産加速を訴えた。",
+          "keyTakeaways": [
+            "トランプ政権下で、米国の兵器備蓄は実際に逼迫しているのか",
+            "サミットは、米国の産業再生と戦闘能力の強化——ヘグセス長官の言葉を借りれば「自由の兵器庫」の拡充——という二本柱の取り組みとして位置づけられた",
+            "その後、米国はイランへの攻撃を一時停止し、交渉の余地を残した"
+          ],
+          "whyItMatters": "ニューヨーク・タイムズの報道によれば、トランプ大統領は側近から、紛争のエスカレートは米国の備蓄をさらに消耗させるとして、計画の棚上げを進言されていたという。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
+      "summary": "Ben Carroll has been sworn in as the premier of Victoria after Jacinta Allan resigned, with his first act as leader to announce a royal commission into alleged corruption in the construction sector.",
+      "keyTakeaways": [
+        "Carroll’s elevation comes just four months before the state election and follows a tumultuous 48 hours for Labor, during which Allan resigned and a surprise challenger emerged in the leadership contest.",
+        "Carroll, who at a press conference in June looked Allan in the eye and declared he would not challenge her, said “circumstances had changed”.",
+        "This delegation had already visited the premier and informed her that they wanted change."
+      ],
+      "whyItMatters": "After her announcement, it was expected that Carroll would run unopposed for the leadership during Tuesday’s caucus meeting, but the meeting descended into chaos when the attorney general, Sonya Kilkenny – a key supporter of Allan’s – put her hand up for the leadership.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/jul/28/jacinta-allan-resigns-quits-victoria-premier-leadership-challenge-ben-carroll",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ビクトリア州に新首相、就任初日に建設業界の王立委員会設置を表明",
+          "summary": "ジャシンタ・アランの辞任を受け、ベン・キャロルがビクトリア州首相に就任した。キャロルは就任直後、建設業界における汚職疑惑を調査する王立委員会の設置を表明している。",
+          "keyTakeaways": [
+            "就任は州議会選挙の四か月前というタイミングで、労働党にとって激動の四十八時間の末に実現した",
+            "六月の記者会見でアランを前に「挑戦しない」と明言していたキャロルは、「状況が変わった」と述べた",
+            "代議員団はすでにアラン前首相のもとを訪れ、交代を求めていた"
+          ],
+          "whyItMatters": "アランの辞任表明後、キャロルが無投票で党首に選出されると見られていたが、アランの有力な支持者だった司法長官ソーニャ・キルケニーが名乗りを上げ、党内会合は混乱に陥った。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "X Money is launching in the US starting today",
+      "summary": "X Money, a core part of Elon Musk’s mission to turn X into an “ everything app,” is rolling out starting today, 9to5Mac reports.",
+      "keyTakeaways": [
+        "Other perks include Apple Wallet support and free money transfers on X.",
+        "The launch comes a few months after Elon Musk said “early public access” for the payment platform was launching in April."
+      ],
+      "whyItMatters": "The payment platform offers a digital wallet and peer-to-peer payments similar to Venmo, along with a metal Visa card users can emblazon with their X username.",
+      "originalURL": "https://www.theverge.com/tech/971649/x-money-launch-elon-musk",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "Xのデジタルウォレットサービスがアメリカで始動",
+          "summary": "イーロン・マスクがXを「なんでもアプリ」にするという構想の核となる決済サービス、X Moneyが本日より米国でのロールアウトを開始した。9to5Macが伝えた。",
+          "keyTakeaways": [
+            "Apple Walletへの対応と、X上での無料送金機能も提供される。",
+            "マスク氏が4月に一般向け早期アクセスを開始すると述べてから、数か月を経ての正式始動となった。"
+          ],
+          "whyItMatters": "このサービスはVenmoに近いデジタルウォレットと個人間送金に加え、自分のXユーザー名を刻印できるメタル製Visaカードも用意されている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
+          "summary": "サムスンは夏恒例の発表イベントを水曜日に開催し、新ラインナップの折りたたみスマートフォンとスマートウォッチを公開した。",
+          "keyTakeaways": [
+            "イベントを見逃した人も、今年の主な発表内容をまとめて確認できる。",
+            "新型Foldは、サムスン独自のFlex Titaniumディスプレイ技術を採用した改良ヒンジを搭載。",
+            "内側ディスプレイの折り目が完全に消えたわけではないが、従来モデルと比べて明らかに目立たなくなっている。"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、昨年のZ Fold 7から大幅にデザインが刷新された。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "How to see July's full Buck Moon as it rises in the night sky",
+      "summary": "The July full Moon, also known as the Buck Moon, will light up the night sky across the UK on Wednesday.",
+      "keyTakeaways": [
+        "The second of three full Moons this summer, it is set to peak at 15:36 BST on 29 July.",
+        "The exact moment of its maximum fullness will be missed across the UK as the Moon will be just below the horizon.",
+        "Why is it called the Buck Moon?"
+      ],
+      "whyItMatters": "Across north-west England and Wales the remnants of a cold weather front might obscure the sky, but very little rain is expected and the cloud could break.",
+      "originalURL": "https://www.bbc.co.uk/weather/articles/cx2lvg855x8o?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "7月の満月「バック・ムーン」、夜空に昇る",
+          "summary": "7月の満月は「バック・ムーン」とも呼ばれ、水曜日の夜、英国の空を明るく照らす。",
+          "keyTakeaways": [
+            "今夏三度の満月のうち二度目で、最大の満月の瞬間は日本時間29日23時36分ごろ。",
+            "満月のピークは地平線の下にあたるため、英国では肉眼でその瞬間を捉えることはできない。",
+            "「バック・ムーン」という名は、この時期に雄鹿の角が生え揃うことに由来する。"
+          ],
+          "whyItMatters": "イングランド北西部とウェールズでは寒冷前線の残りが空を覆う可能性があるが、雨はほとんど見込まれず、雲の切れ間も期待できる。"
+        }
+      }
+    }
+  ]
+}

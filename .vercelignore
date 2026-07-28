@@ -1,0 +1,48 @@
+# Files excluded from the Vercel deployment. (Phase 3C-2)
+#
+# Vercel builds from the LOCAL FILESYSTEM, not from git, so .gitignore protects nothing
+# here: an untracked or git-ignored file still ships unless it is listed below.
+#
+# Only two things need to be publicly served — latest.json and editions/** — plus the
+# api/ directory, which Vercel compiles into functions. Everything else is internal.
+# Images come from images.unsplash.com and audio from Cloudflare R2, so no media is
+# served from Vercel and none can be broken by this file.
+
+# ── credentials: never upload, under any circumstances ──────────────────────────────
+.env
+.env.*
+
+# ── build and tool output ───────────────────────────────────────────────────────────
+.vercel/
+.wrangler/
+__pycache__/
+*.pyc
+
+# ── CI, tooling and internal scripts ────────────────────────────────────────────────
+.github/
+scripts/
+
+# ── the Python pipeline: source, tests, fixtures and working files ──────────────────
+pipeline/
+*.py
+
+# ── local experiments and historical material ───────────────────────────────────────
+scratch/
+archive/
+
+# ── documentation ───────────────────────────────────────────────────────────────────
+docs/
+*.md
+
+# ── build configuration that must not be published ──────────────────────────────────
+# The local build confirmed both functions still compile with this excluded.
+tsconfig.json
+
+# NOT ignored, deliberately:
+#   api/                 compiled into the /api/auth/exchange and /api/edition functions
+#   api/_lib/            imported by those functions
+#   api/_certs/          the vendored Apple root certificates, bundled and read at runtime
+#   latest.json          the live feed manifest
+#   editions/            the published editions
+#   package.json,        required for dependency installation and function bundling
+#   package-lock.json

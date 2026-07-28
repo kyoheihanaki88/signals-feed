@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-27",
+  "fixtureSha256": "f3c904228bd84839738d8a611627cf4715d6d58dd5f1ec8950c8059caf8ee231",
+  "input": {
+    "regions": [
+      "japan"
+    ],
+    "selectorVersion": 1,
+    "size": 5,
+    "topics": []
+  },
+  "note": "Generated from pipeline/custom_mix_selector.py with the real editorial guard. Do not edit by hand and do not regenerate from a test.",
+  "result": {
+    "candidateLogs": [
+      {
+        "baseScore": 87.0,
+        "finalScore": 88.0,
+        "id": "jp-filler-business",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": null,
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      },
+      {
+        "baseScore": 82.0,
+        "finalScore": 83.0,
+        "id": "jp-filler-culture",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": null,
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      },
+      {
+        "baseScore": 85.0,
+        "finalScore": 86.0,
+        "id": "jp-filler-health",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": null,
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      },
+      {
+        "baseScore": 84.0,
+        "finalScore": 85.0,
+        "id": "jp-filler-science",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": null,
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      },
+      {
+        "baseScore": 94.0,
+        "finalScore": 94.4,
+        "id": "jp-samsung-handson",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": "existing duplicate guard: same-product-family: same brand (samsung) + same product family (galaxy z fold)",
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      },
+      {
+        "baseScore": 95.0,
+        "finalScore": 96.0,
+        "id": "jp-samsung-roundup",
+        "regionEligibility": [
+          "japan"
+        ],
+        "rejectionReason": null,
+        "selectionPhase": "regional_primary",
+        "topicAdjustment": 0.0
+      }
+    ],
+    "metadata": {
+      "candidatePoolTotal": 6,
+      "fallbackReason": null,
+      "fallbackSlots": 0,
+      "finalRegionMix": {
+        "japan": 5
+      },
+      "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
+      "qualifyingRegionCandidates": 6,
+      "regionalCandidatesAfterDedup": 5,
+      "requestedRegionCount": 5,
+      "selectedRegionStories": 5,
+      "selectedRegions": [
+        "japan"
+      ],
+      "selectedTopics": [],
+      "selectorVersion": 1,
+      "shortage": false,
+      "unfilledSlots": 0
+    },
+    "selectedIds": [
+      "jp-samsung-roundup",
+      "jp-filler-business",
+      "jp-filler-health",
+      "jp-filler-science",
+      "jp-filler-culture"
+    ]
+  }
+}

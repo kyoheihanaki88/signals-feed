@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "note": "Fixed pair fixture for the editorial duplicate guard. Python is the specification; the golden results file records what pipeline/editorial.py actually returns for each pair. No wall-clock dependency: no pair supplies publishedAt.",
+  "pairs": [
+    {
+      "id": "A_unpacked_roundup_vs_zfold_handson",
+      "intent": "duplicate",
+      "description": "The 2026-07-25 production regression: one Unpacked event took two TECH slots.",
+      "a": {
+        "title": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+        "snippet": "Everything Samsung showed at its summer event, from foldables to wearables."
+      },
+      "b": {
+        "title": "Samsung's wider Z Fold 8 feels just right",
+        "snippet": "We spent an hour with the new foldable before it reaches stores."
+      }
+    },
+    {
+      "id": "B_same_launch_two_publishers",
+      "intent": "duplicate",
+      "description": "One announcement, two newsrooms, different wording.",
+      "a": {
+        "title": "Samsung launches the Galaxy Z Fold 8 with a wider display",
+        "snippet": "The new foldable phone goes on sale worldwide on Friday."
+      },
+      "b": {
+        "title": "Samsung unveils Galaxy Z Fold 8 foldable phone",
+        "snippet": "The company introduced the handset at its summer showcase."
+      }
+    },
+    {
+      "id": "C_launch_vs_semiconductor_earnings",
+      "intent": "not-duplicate",
+      "description": "Same company, but a product launch and an earnings story are different news.",
+      "a": {
+        "title": "Samsung launches the Galaxy Z Fold 8 foldable phone",
+        "snippet": "The flagship foldable is available worldwide from Friday."
+      },
+      "b": {
+        "title": "Samsung quarterly profit rises on strong chip demand",
+        "snippet": "The semiconductor division drove higher earnings this quarter."
+      }
+    },
+    {
+      "id": "D_apple_iphone_roundup_vs_macbook_handson",
+      "intent": "not-duplicate",
+      "description": "The reviewed false positive: a roundup must not absorb an unrelated product line.",
+      "a": {
+        "title": "Apple iPhone 18 event: the 5 biggest announcements",
+        "snippet": "Everything Apple showed about its new phone lineup."
+      },
+      "b": {
+        "title": "The new MacBook Pro feels faster in daily use",
+        "snippet": "We spent a week with Apple's latest laptop."
+      }
+    },
+    {
+      "id": "E_broad_apple_roundup_naming_macbook",
+      "intent": "duplicate",
+      "description": "A roundup that explicitly NAMES the other product line does absorb it.",
+      "a": {
+        "title": "Apple event recap: everything announced",
+        "snippet": "From the iPhone 18 to the new MacBook Pro and the iPad refresh."
+      },
+      "b": {
+        "title": "The new MacBook Pro feels faster in daily use",
+        "snippet": "We spent a week with Apple's latest laptop."
+      }
+    },
+    {
+      "id": "F_same_brand_unrelated_families_with_recap",
+      "intent": "not-duplicate",
+      "description": "A 'recap' headline must not merge two materially different Apple lines.",
+      "a": {
+        "title": "Apple Watch Series 12 recap",
+        "snippet": "What changed on the wearable this year."
+      },
+      "b": {
+        "title": "The new iPad Pro arrives with a brighter screen",
+        "snippet": "Apple's tablet gets a display upgrade."
+      }
+    },
+    {
+      "id": "G_galaxy_watch_recap_vs_zfold_handson",
+      "intent": "not-duplicate",
+      "description": "Specificity pruning: a Watch recap must not swallow a Z Fold story.",
+      "a": {
+        "title": "Galaxy Watch 8 recap: what is new",
+        "snippet": "Samsung's smartwatch gets a bigger battery."
+      },
+      "b": {
+        "title": "Samsung's wider Z Fold 8 feels just right",
+        "snippet": "We spent an hour with the new foldable."
+      }
+    },
+    {
+      "id": "H_same_family_roundup_and_handson",
+      "intent": "duplicate",
+      "description": "Roundup and hands-on about the SAME line are one story.",
+      "a": {
+        "title": "Galaxy Z Fold 8: everything Samsung announced",
+        "snippet": "All the details on the new foldable phone."
+      },
+      "b": {
+        "title": "Samsung's Z Fold 8 feels lighter than last year",
+        "snippet": "A closer look at the foldable."
+      }
+    },
+    {
+      "id": "I_same_launch_event_broad_and_individual",
+      "intent": "duplicate",
+      "description": "A shared named launch event is the strongest same-story evidence.",
+      "a": {
+        "title": "Galaxy Unpacked: all the news from Samsung's showcase",
+        "snippet": "The full rundown of the event."
+      },
+      "b": {
+        "title": "Samsung's Unpacked keynote closes with a surprise",
+        "snippet": "The final minutes of the presentation."
+      }
+    },
+    {
+      "id": "J_brand_only_match",
+      "intent": "not-duplicate",
+      "description": "Two Apple stories with no product line and no launch identity.",
+      "a": {
+        "title": "Apple faces a new antitrust complaint in Brussels",
+        "snippet": "Regulators opened a fresh inquiry into the company."
+      },
+      "b": {
+        "title": "Apple hires a new head of retail",
+        "snippet": "The company promoted an internal candidate."
+      }
+    },
+    {
+      "id": "K_both_identities_empty",
+      "intent": "not-duplicate",
+      "description": "Neither story names a recognised consumer brand — no identity at all.",
+      "a": {
+        "title": "Lenders tighten mortgage rules for first-time buyers",
+        "snippet": "Banks raised deposit requirements this month."
+      },
+      "b": {
+        "title": "Museum returns looted artifacts after a decade-long dispute",
+        "snippet": "The collection will travel home next spring."
+      }
+    },
+    {
+      "id": "L_product_story_vs_legal_story",
+      "intent": "not-duplicate",
+      "description": "A launch and a lawsuit about the same brand stay independently selectable.",
+      "a": {
+        "title": "Google launches the Pixel 11 smartphone",
+        "snippet": "The new handset ships next week."
+      },
+      "b": {
+        "title": "Google loses appeal in long-running search case",
+        "snippet": "The court ruling caps a multi-year dispute over search policy."
+      }
+    },
+    {
+      "id": "M_same_family_different_wording",
+      "intent": "duplicate",
+      "description": "'Z Fold' and 'Galaxy Z Fold' normalise to one family.",
+      "a": {
+        "title": "Samsung launches the Galaxy Z Fold 8 foldable phone",
+        "snippet": "Available worldwide from Friday."
+      },
+      "b": {
+        "title": "Hands on with Samsung's new Z Fold 8",
+        "snippet": "A first look at the foldable."
+      }
+    },
+    {
+      "id": "N_parent_child_family_hierarchy",
+      "intent": "duplicate",
+      "description": "A broad 'galaxy' story and a specific 'galaxy z fold' story are hierarchical.",
+      "a": {
+        "title": "Samsung's Galaxy line gets a design refresh",
+        "snippet": "A new look across the range."
+      },
+      "b": {
+        "title": "Samsung's Galaxy Z Fold 8 feels just right",
+        "snippet": "Time with the new foldable."
+      }
+    },
+    {
+      "id": "O_covered_family_specificity_pruning",
+      "intent": "not-duplicate",
+      "description": "The broad 'galaxy' parent must be pruned when 'galaxy buds' matched.",
+      "a": {
+        "title": "Galaxy Buds 4 recap: everything new",
+        "snippet": "Samsung's earbuds get better noise cancelling."
+      },
+      "b": {
+        "title": "Samsung's Galaxy S26 camera is a big step up",
+        "snippet": "A closer look at the new phone."
+      }
+    },
+    {
+      "id": "P_different_brand_same_generic_terms",
+      "intent": "not-duplicate",
+      "description": "Two different brands launching the same product class are different stories.",
+      "a": {
+        "title": "Samsung launches a new foldable phone",
+        "snippet": "The handset ships next month."
+      },
+      "b": {
+        "title": "Google launches a new foldable phone",
+        "snippet": "The handset ships next month."
+      }
+    },
+    {
+      "id": "Q_missing_brand_generic_product_terms",
+      "intent": "not-duplicate",
+      "description": "An unrecognised maker yields no identity — the guard must not invent one.",
+      "a": {
+        "title": "Fairphone launches a repairable new smartphone",
+        "snippet": "The handset ships next month."
+      },
+      "b": {
+        "title": "Framework launches a modular new laptop",
+        "snippet": "The notebook ships next month."
+      }
+    },
+    {
+      "id": "R_same_event_materially_distinct_followup",
+      "intent": "parity-only",
+      "description": "A named event plus a later supply-chain follow-up. Whatever Python decides is the contract.",
+      "a": {
+        "title": "Galaxy Unpacked: all the news from Samsung's showcase",
+        "snippet": "The full rundown of the event."
+      },
+      "b": {
+        "title": "Samsung shares slide after quarterly revenue miss",
+        "snippet": "Investors reacted to weaker guidance for the chip division."
+      }
+    },
+    {
+      "id": "S_roundup_plus_no_line_same_brand",
+      "intent": "parity-only",
+      "description": "Roundup + a product story with no identified line: the roundup-contains-broad path.",
+      "a": {
+        "title": "Everything Sony announced at its showcase",
+        "snippet": "A full rundown of the presentation."
+      },
+      "b": {
+        "title": "Sony introduces a new camera for creators",
+        "snippet": "The company unveiled the device this week."
+      }
+    },
+    {
+      "id": "T_accessory_launch_is_not_a_launch",
+      "intent": "parity-only",
+      "description": "Accessory refreshes are not platform-level launches.",
+      "a": {
+        "title": "Apple launches new iPhone cases for autumn",
+        "snippet": "A fresh set of colours."
+      },
+      "b": {
+        "title": "Apple launches the iPhone 18 smartphone",
+        "snippet": "The new handset ships next week."
+      }
+    },
+    {
+      "id": "U_roundup_contains_broad",
+      "intent": "parity-only",
+      "description": "Exercises rule 8: a roundup and a product story that names no known line.",
+      "a": {
+        "title": "Everything Sony announced: new consoles and more",
+        "snippet": "A full rundown of the showcase."
+      },
+      "b": {
+        "title": "Sony introduces a new camera for creators",
+        "snippet": "The company unveiled the device this week."
+      }
+    },
+    {
+      "id": "V_brand_product_news_no_line",
+      "intent": "parity-only",
+      "description": "Exercises rule 9: two product stories from one brand, neither naming a line.",
+      "a": {
+        "title": "Sony launches a new camera for creators",
+        "snippet": "The device ships next month."
+      },
+      "b": {
+        "title": "Sony unveils a new headset for professionals",
+        "snippet": "The device ships next month."
+      }
+    }
+  ]
+}

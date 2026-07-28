@@ -1,0 +1,17 @@
+{
+  "name": "signals-feed-api-contract",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:api": "node --import tsx --test api/_tests/*.test.ts",
+    "typecheck:api": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "@apple/app-store-server-library": "^3.1.0"
+  }
+}

@@ -436,3 +436,121 @@ jobs:
               *) echo "Skipping non-publish branch: $branch" ;;
             esac
           done
+
+      # ── 15) CUSTOM MIX (Pro) — Editorial Mix Pool. ADDITIVE AND LAST. ───────────────
+      #
+      # Everything above is the standard edition and is UNCHANGED. These steps run only
+      # after the edition has been built, validated, guarded, PR'd and merged, so a Custom
+      # Mix failure cannot roll back, corrupt or delay a successfully published edition.
+      #
+      # PRE-PRODUCTION BEHAVIOUR (documented, deliberate): no Upstash database is
+      # provisioned yet, so with the secrets absent the block SKIPS with an explicit
+      # notice instead of failing the daily run red every morning. Once the secrets exist,
+      # a build or publish failure FAILS this job visibly — the pool is either published
+      # for the exact date or it is reported as unavailable. It is never reported as
+      # available when it is not, and the generated pool is never committed: it is written
+      # to $RUNNER_TEMP, outside the repository, and dies with the runner.
+      - name: Custom Mix — are the Upstash publisher secrets provisioned?
+        id: mixsecrets
+        env:
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_WRITE_TOKEN: ${{ secrets.KV_REST_API_WRITE_TOKEN }}
+        run: |
+          # Presence only. The values are never echoed, expanded into a command line or
+          # written to the step summary — only these two booleans leave this step.
+          if [ -n "${KV_REST_API_URL:-}" ] && [ -n "${KV_REST_API_WRITE_TOKEN:-}" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "Upstash publisher secrets are present."
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Custom Mix publication skipped — Upstash secrets are not provisioned yet (see UPSTASH_PROVISIONING.md)."
+            echo "- Custom Mix: SKIPPED (not provisioned)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # STAGE 1 — scout/ranker candidates -> frozen, validated raw Mix Pool.
+      # `prepare_scout_source` drops rows the raw contract cannot represent (empty RSS
+      # description, unusable URL, canonical duplicate) BEFORE freezing, and reports the
+      # counts. A scout-shape failure exits 6 here, distinct from an enrichment failure.
+      - name: Custom Mix — build the raw Mix Pool
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py build-raw \
+            --input pipeline/candidates.json \
+            --date "$EDITION_DATE" \
+            --generated-at "$(date -u +%FT%TZ)" \
+            --output "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json" \
+            | tee "$RUNNER_TEMP/raw-summary.json"
+          {
+            echo '### Raw Mix Pool (counts and identity prefix only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/raw-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # STAGE 2 — revalidate the frozen raw artifact and re-derive its identity.
+      - name: Custom Mix — validate the raw Mix Pool
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py validate-raw \
+            --artifact "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json"
+
+      # STAGE 3 — enrichment from the FROZEN artifact. Scout output is not accepted here.
+      # The raw artifact is revalidated again before any article fetch, so a corrupted
+      # intermediate costs zero external work. Fewer than 15 survivors writes nothing.
+      - name: Custom Mix — build the Editorial Mix Pool
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py build \
+            --raw-input "$RUNNER_TEMP/raw-mix-pool-$EDITION_DATE.json" \
+            --date "$EDITION_DATE" \
+            --generated-at "$(date -u +%FT%TZ)" \
+            --output "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json" \
+            | tee "$RUNNER_TEMP/build-summary.json"
+          {
+            echo '### Editorial Mix Pool (counts and identity prefixes only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/build-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Publish. The CLI revalidates the artifact and re-derives BOTH identities before the
+      # transport is touched, then issues exactly ONE atomic Upstash SET with a 9-day TTL —
+      # so a rerun for the same date replaces that exact key rather than merging with it.
+      - name: Custom Mix — publish the Editorial Mix Pool to Upstash
+        if: steps.mixsecrets.outputs.configured == 'true' && steps.date.outputs.edition_date
+        env:
+          EDITION_DATE: ${{ steps.date.outputs.edition_date }}
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_WRITE_TOKEN: ${{ secrets.KV_REST_API_WRITE_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Secrets reach the process through the environment only — never as an argument,
+          # so they cannot appear in a command line, a process listing or the run log.
+          python pipeline/editorial_mix_pool_cli.py publish \
+            --artifact "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json" \
+            --date "$EDITION_DATE"
+          echo "### Custom Mix pool published ✅ ($EDITION_DATE)" >> "$GITHUB_STEP_SUMMARY"
+
+      # The generated pool is derived data with a 9-day life. Assert it never entered the
+      # repository, and assert the standard edition's own files were not disturbed.
+      - name: Custom Mix — assert nothing was added to the repository
+        if: always() && steps.mixsecrets.outputs.configured == 'true'
+        run: |
+          set -uo pipefail
+          find . -name 'editorial-mix-pool-*.json' -not -path './.git/*' | while read -r f; do
+            echo "::error::a generated Editorial Mix Pool reached the repository: $f"; exit 1
+          done
+          CHANGED="$(git status --porcelain -- latest.json editions/ || true)"
+          if [ -n "$CHANGED" ]; then
+            echo "::error::Custom Mix steps disturbed standard edition files:"; echo "$CHANGED"; exit 1
+          fi
+          echo "Repository clean of generated pool data; latest.json and editions/ untouched."

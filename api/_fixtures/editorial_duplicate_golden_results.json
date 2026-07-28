@@ -1,0 +1,710 @@
+{
+  "casesSha256": "2744876e7afab18a2d231371b40902e7c3368afa2356512fc7cb4407953eed54",
+  "note": "Generated from pipeline/editorial.py. Do not edit by hand and do not regenerate from a test.",
+  "pairs": [
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy)"
+      },
+      "id": "A_unpacked_roundup_vs_zfold_handson",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": "unpacked",
+        "productFamily": "galaxy"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      },
+      "id": "B_same_launch_two_publishers",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      },
+      "id": "C_launch_vs_semiconductor_earnings",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [],
+        "eventFamily": "earnings",
+        "isProductStory": false,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      },
+      "id": "D_apple_iphone_roundup_vs_macbook_handson",
+      "identityA": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "iphone"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "iphone"
+      },
+      "identityB": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "mac"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "mac"
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "roundup-covers-family",
+        "reason": "same brand (apple) + roundup covers that product line (mac)"
+      },
+      "id": "E_broad_apple_roundup_naming_macbook",
+      "identityA": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "ipad",
+          "iphone",
+          "mac"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "iphone"
+      },
+      "identityB": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "mac"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "mac"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "roundup-covers-family",
+        "reason": "same brand (apple) + roundup covers that product line (mac)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      },
+      "id": "F_same_brand_unrelated_families_with_recap",
+      "identityA": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "apple watch"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "apple watch"
+      },
+      "identityB": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "ipad"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "ipad"
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      },
+      "id": "G_galaxy_watch_recap_vs_zfold_handson",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy watch"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "galaxy watch"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      },
+      "id": "H_same_family_roundup_and_handson",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-launch-event",
+        "reason": "same brand (samsung) + same launch event (unpacked)"
+      },
+      "id": "I_same_launch_event_broad_and_individual",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": "unpacked",
+        "productFamily": "galaxy"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": "unpacked",
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-launch-event",
+        "reason": "same brand (samsung) + same launch event (unpacked)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      },
+      "id": "J_brand_only_match",
+      "identityA": {
+        "brand": "apple",
+        "coveredFamilies": [],
+        "eventFamily": "policy",
+        "isProductStory": false,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "identityB": {
+        "brand": "apple",
+        "coveredFamilies": [],
+        "eventFamily": "other",
+        "isProductStory": false,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "no-identity",
+        "reason": ""
+      },
+      "id": "K_both_identities_empty",
+      "identityA": null,
+      "identityB": null,
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "no-identity",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      },
+      "id": "L_product_story_vs_legal_story",
+      "identityA": {
+        "brand": "google",
+        "coveredFamilies": [
+          "pixel"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "pixel"
+      },
+      "identityB": {
+        "brand": "google",
+        "coveredFamilies": [],
+        "eventFamily": "policy",
+        "isProductStory": false,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      },
+      "id": "M_same_family_different_wording",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy)"
+      },
+      "id": "N_parent_child_family_hierarchy",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy z fold"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy z fold"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (samsung) + same product family (galaxy z fold)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      },
+      "id": "O_covered_family_specificity_pruning",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy buds"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": "galaxy buds"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy s"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "galaxy s"
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "distinct-product-families",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "different-brand",
+        "reason": ""
+      },
+      "id": "P_different_brand_same_generic_terms",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "identityB": {
+        "brand": "google",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "different-brand",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "no-identity",
+        "reason": ""
+      },
+      "id": "Q_missing_brand_generic_product_terms",
+      "identityA": null,
+      "identityB": null,
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "no-identity",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      },
+      "id": "R_same_event_materially_distinct_followup",
+      "identityA": {
+        "brand": "samsung",
+        "coveredFamilies": [
+          "galaxy"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": "unpacked",
+        "productFamily": "galaxy"
+      },
+      "identityB": {
+        "brand": "samsung",
+        "coveredFamilies": [],
+        "eventFamily": "earnings",
+        "isProductStory": false,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      },
+      "id": "S_roundup_plus_no_line_same_brand",
+      "identityA": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "other",
+        "isProductStory": false,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "identityB": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": false,
+        "matchedRule": "not-product-story",
+        "reason": ""
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (apple) + same product family (iphone)"
+      },
+      "id": "T_accessory_launch_is_not_a_launch",
+      "identityA": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "iphone"
+        ],
+        "eventFamily": "other",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "iphone"
+      },
+      "identityB": {
+        "brand": "apple",
+        "coveredFamilies": [
+          "iphone"
+        ],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": "iphone"
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "same-product-family",
+        "reason": "same brand (apple) + same product family (iphone)"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "roundup-contains-broad",
+        "reason": "same brand (sony) + event roundup and a story with no distinct product line"
+      },
+      "id": "U_roundup_contains_broad",
+      "identityA": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": true,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "identityB": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "roundup-contains-broad",
+        "reason": "same brand (sony) + event roundup and a story with no distinct product line"
+      }
+    },
+    {
+      "forward": {
+        "duplicate": true,
+        "matchedRule": "brand-product-news-no-line",
+        "reason": "same brand (sony) product news with no distinguishing product line"
+      },
+      "id": "V_brand_product_news_no_line",
+      "identityA": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "identityB": {
+        "brand": "sony",
+        "coveredFamilies": [],
+        "eventFamily": "consumer_launch",
+        "isProductStory": true,
+        "isRoundup": false,
+        "launchEvent": null,
+        "productFamily": null
+      },
+      "reversed": {
+        "duplicate": true,
+        "matchedRule": "brand-product-news-no-line",
+        "reason": "same brand (sony) product news with no distinguishing product line"
+      }
+    }
+  ]
+}

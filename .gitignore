@@ -25,3 +25,6 @@ pipeline/out/
 # Python cache
 __pycache__/
 *.pyc
+.vercel
+.env*
+.wrangler/

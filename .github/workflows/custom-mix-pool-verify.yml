@@ -160,6 +160,7 @@ jobs:
       # counts. Run 30360578299 died here as an opaque `MixPoolError`; a scout-shape
       # failure now exits 6, distinct from an enrichment failure.
       - name: Custom Mix — build the raw Mix Pool
+        if: steps.gate.outputs.date != ''
         env:
           EDITION_DATE: ${{ steps.gate.outputs.date }}
         run: |
@@ -179,6 +180,7 @@ jobs:
 
       # STAGE 2 — revalidate the frozen raw artifact and re-derive its identity.
       - name: Custom Mix — validate the raw Mix Pool
+        if: steps.gate.outputs.date != ''
         env:
           EDITION_DATE: ${{ steps.gate.outputs.date }}
         run: |
@@ -190,6 +192,7 @@ jobs:
       # The raw artifact is revalidated again before any article fetch, so a corrupted
       # intermediate costs zero external work. Fewer than 15 survivors writes nothing.
       - name: Custom Mix — build the Editorial Mix Pool
+        if: steps.gate.outputs.date != ''
         env:
           EDITION_DATE: ${{ steps.gate.outputs.date }}
         run: |

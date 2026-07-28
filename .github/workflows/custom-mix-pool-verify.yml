@@ -1,0 +1,165 @@
+name: Custom Mix Pool — manual verification
+
+# ONE-OFF INFRASTRUCTURE VERIFICATION. Not a daily job, not production publishing.
+#
+# WHY THIS EXISTS. `daily-auto-publish.yml` checks out `ref: main` in every job, so a
+# workflow_dispatch from a feature branch runs that branch's YAML against MAIN's code —
+# and the Custom Mix pipeline files do not exist on main. The Custom Mix block there is
+# therefore unreachable until the feature merges. This workflow checks out the DISPATCHED
+# ref instead, so the real builder and transport can be proven before anything reaches main.
+#
+# WHAT IT DELIBERATELY DOES NOT DO:
+#   • no standard edition build, no `editions/` file, no `latest.json` change
+#   • no branch, no commit, no PR, no merge, no push
+#   • no route activation — `/api/edition` is untouched and still answers 503
+#   • `permissions: contents: read` makes repository writes structurally impossible,
+#     not merely absent by convention
+#
+# WHAT IT DOES: scout -> raw Mix Pool -> Editorial Mix Pool -> ONE atomic Upstash SET at
+# `signals:editorial-mix-pool:v1:<UTC date>` with TTL 777600. It fails closed if fewer
+# than 15 candidates survive enrichment.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "UTC date YYYY-MM-DD — required, must equal today in UTC"
+        required: true
+      confirm:
+        description: 'Type exactly: publish'
+        required: true
+        default: ""
+
+# Read-only. This workflow cannot create a branch, a commit, a tag or a pull request.
+permissions:
+  contents: read
+
+concurrency:
+  group: custom-mix-pool-verify
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      # No `ref:` — checks out the ref this run was dispatched from, which is the whole
+      # point. The daily workflow's `ref: main` is what makes it unusable for this.
+      - name: Checkout the dispatched ref
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      # Two independent gates before anything external happens: an explicit typed
+      # confirmation, and a date that must be TODAY in UTC. Publishing yesterday or
+      # tomorrow by accident is the failure mode this prevents.
+      - name: Gate — explicit confirmation and UTC date
+        id: gate
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+          INPUT_CONFIRM: ${{ github.event.inputs.confirm }}
+        run: |
+          set -euo pipefail
+          if [ "$INPUT_CONFIRM" != "publish" ]; then
+            echo "::error::confirmation input must be exactly 'publish' — refusing."
+            exit 1
+          fi
+          if ! [[ "$INPUT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::date must be YYYY-MM-DD."
+            exit 1
+          fi
+          UTC_TODAY="$(date -u +%F)"
+          echo "requested=$INPUT_DATE  utc_today=$UTC_TODAY"
+          if [ "$INPUT_DATE" != "$UTC_TODAY" ]; then
+            echo "::error::date $INPUT_DATE is not today in UTC ($UTC_TODAY) — refusing to publish a past or future key."
+            exit 1
+          fi
+          echo "date=$INPUT_DATE" >> "$GITHUB_OUTPUT"
+          echo "## Custom Mix Pool verification — $INPUT_DATE (UTC)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Gate — the Upstash publisher secrets are provisioned
+        env:
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_WRITE_TOKEN: ${{ secrets.KV_REST_API_WRITE_TOKEN }}
+        run: |
+          # Presence only. Neither value is echoed, expanded into a command line or written
+          # to the step summary — only this boolean leaves the step.
+          if [ -z "${KV_REST_API_URL:-}" ] || [ -z "${KV_REST_API_WRITE_TOKEN:-}" ]; then
+            echo "::error::Upstash publisher secrets are not provisioned (see UPSTASH_PROVISIONING.md)."
+            exit 1
+          fi
+          echo "Upstash publisher secrets are present."
+
+      # Live RSS, exactly as the daily job does it. Writes pipeline/candidates.json, which
+      # is gitignored and never committed.
+      - name: Scout (live RSS)
+        run: |
+          set -euo pipefail
+          python pipeline/scout.py \
+            --sources pipeline/sources.yaml \
+            --out pipeline/candidates.json \
+            --max-age-hours 36 \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      # raw Mix Pool -> enrichment (real writer, real image allocator) -> validated
+      # artifact, written to the RUNNER TEMP directory. The CLI independently refuses any
+      # destination inside the repository. Fewer than 15 survivors produces no artifact.
+      - name: Build the Editorial Mix Pool
+        env:
+          EDITION_DATE: ${{ steps.gate.outputs.date }}
+        run: |
+          set -euo pipefail
+          python pipeline/editorial_mix_pool_cli.py build \
+            --input pipeline/candidates.json \
+            --date "$EDITION_DATE" \
+            --generated-at "$(date -u +%FT%TZ)" \
+            --output "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json" \
+            | tee "$RUNNER_TEMP/build-summary.json"
+          {
+            echo '### Build summary (counts and identity prefixes only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/build-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Revalidates the artifact and re-derives BOTH identities before the transport is
+      # touched, then issues exactly ONE atomic Upstash SET with TTL 777600.
+      - name: Publish to Upstash
+        env:
+          EDITION_DATE: ${{ steps.gate.outputs.date }}
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_WRITE_TOKEN: ${{ secrets.KV_REST_API_WRITE_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Secrets reach the process through the environment only — never as an argument,
+          # so they cannot appear in a command line, a process listing or the run log.
+          python pipeline/editorial_mix_pool_cli.py publish \
+            --artifact "$RUNNER_TEMP/editorial-mix-pool-$EDITION_DATE.json" \
+            --date "$EDITION_DATE" \
+            | tee "$RUNNER_TEMP/publish-summary.json"
+          {
+            echo '### Publish summary (safe metadata only)'
+            echo '```json'
+            cat "$RUNNER_TEMP/publish-summary.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Belt and braces: `permissions: contents: read` already makes a repository write
+      # impossible, but assert the working tree is untouched anyway.
+      - name: Assert the repository is unchanged
+        if: always()
+        run: |
+          set -uo pipefail
+          if find . -name 'editorial-mix-pool-*.json' -not -path './.git/*' | grep -q .; then
+            echo "::error::a generated Editorial Mix Pool reached the repository"; exit 1
+          fi
+          CHANGED="$(git status --porcelain -- latest.json editions/ || true)"
+          if [ -n "$CHANGED" ]; then
+            echo "::error::standard edition files were disturbed:"; echo "$CHANGED"; exit 1
+          fi
+          echo "Repository clean; latest.json and editions/ untouched."

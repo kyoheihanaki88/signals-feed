@@ -175,16 +175,83 @@ check("47b. this test executes no workflow step and opens no socket",
 
 # ── the other workflows are untouched ─────────────────────────────────────────────────
 
+VERIFY_NAME = "custom-mix-pool-verify.yml"
 others = [
     name for name in sorted(os.listdir(os.path.join(REPO, ".github", "workflows")))
-    if name != "daily-auto-publish.yml"
+    if name not in ("daily-auto-publish.yml", VERIFY_NAME)
 ]
 polluted = [
     name for name in others
     if "editorial_mix_pool" in open(
         os.path.join(REPO, ".github", "workflows", name), encoding="utf-8").read()
 ]
-check("no other workflow was modified to publish a pool", polluted == [], str(polluted))
+check("no unrelated workflow was modified to publish a pool", polluted == [], str(polluted))
+
+# ── the one-off verification workflow ─────────────────────────────────────────────────
+#
+# It exists because `daily-auto-publish.yml` checks out `ref: main` in every job, so its
+# Custom Mix block is unreachable from a feature branch. This one checks out the DISPATCHED
+# ref — which is exactly why its blast radius has to be provably smaller.
+
+VPATH = os.path.join(REPO, ".github", "workflows", VERIFY_NAME)
+VRAW = open(VPATH, encoding="utf-8").read()
+VDOC = yaml.safe_load(VRAW)
+VSTEPS = VDOC["jobs"]["verify"]["steps"]
+VNAMES = [str(s.get("name", "")) for s in VSTEPS]
+
+check("V1. the verification workflow is valid YAML with a single job", set(VDOC["jobs"]) == {"verify"})
+check("V2. it is manual-dispatch only — never scheduled",
+      set(VDOC[True] if True in VDOC else VDOC["on"]) == {"workflow_dispatch"})
+check("V3. it is read-only: a repository write is structurally impossible",
+      VDOC["permissions"] == {"contents": "read"}, str(VDOC.get("permissions")))
+
+checkout = [s for s in VSTEPS if str(s.get("uses", "")).startswith("actions/checkout")]
+check("V4. it checks out the DISPATCHED ref, not a hardcoded main",
+      len(checkout) == 1 and "ref" not in (checkout[0].get("with") or {}),
+      str(checkout[0].get("with")))
+daily_checkouts = [s for s in STEPS if str(s.get("uses", "")).startswith("actions/checkout")]
+check("V4b. the daily workflow still pins main — this file does not change that",
+      all((s.get("with") or {}).get("ref") == "main" for s in daily_checkouts))
+
+check("V5. both required inputs have no usable default",
+      (VDOC[True] if True in VDOC else VDOC["on"])["workflow_dispatch"]["inputs"]["date"]["required"] is True
+      and (VDOC[True] if True in VDOC else VDOC["on"])["workflow_dispatch"]["inputs"]["confirm"]["required"] is True)
+gate = str(VSTEPS[VNAMES.index("Gate — explicit confirmation and UTC date")]["run"])
+check("V6. it refuses without the exact typed confirmation",
+      '!= "publish"' in gate and "exit 1" in gate)
+check("V7. it refuses any date that is not today in UTC",
+      "date -u +%F" in gate and "refusing to publish a past or future key" in gate)
+
+check("V8. it builds no standard edition and touches no edition file",
+      not any(k in VRAW for k in ("publish.py", "build.py", "latest.json\"", "editions/${"))
+      and "publish_recovery" not in VRAW)
+check("V9. it creates no branch, commit, PR or push",
+      not re.search(r"git (add|commit|push|checkout -b)|gh pr |peter-evans", VRAW))
+check("V10. it writes the artifact only to the runner temp directory",
+      "$RUNNER_TEMP/editorial-mix-pool-" in VRAW
+      and not re.search(r"--output\s+(?!\"?\$RUNNER_TEMP)", VRAW))
+check("V11. publication happens only after the build step",
+      VNAMES.index("Build the Editorial Mix Pool") < VNAMES.index("Publish to Upstash"))
+check("V12. credentials are referenced only as Actions secrets, via env",
+      set(re.findall(r"\$\{\{\s*secrets\.([A-Za-z0-9_]+)\s*\}\}", VRAW))
+      == {"KV_REST_API_URL", "KV_REST_API_WRITE_TOKEN"})
+check("V13. no secret is echoed or passed on a command line",
+      not re.search(r"echo[^\n]*\$\{?KV_REST", VRAW)
+      and "$KV_REST_API_WRITE_TOKEN" not in str(VSTEPS[VNAMES.index("Publish to Upstash")]["run"]))
+check("V14. it asserts the repository stayed clean",
+      "editorial-mix-pool-*.json" in VRAW and "latest.json editions/" in VRAW)
+# Prose ABOUT the route in a header comment is not a reference to it, so check what the
+# steps actually EXECUTE rather than the raw file.
+VEXEC = "\n".join(
+    yaml.safe_dump({k: v for k, v in step.items() if k in ("uses", "with", "run", "env")},
+                   sort_keys=False)
+    for step in VSTEPS
+)
+check("V15. no step touches the route, the smoke namespace or the smoke tool",
+      "api/edition" not in VEXEC and "signals:smoke" not in VEXEC
+      and "upstash_smoke_test" not in VEXEC)
+check("V16. no real provider host or credential appears in it",
+      not re.search(r"upstash\.io", VRAW))
 
 print()
 if FAILURES:

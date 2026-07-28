@@ -9956,6 +9956,52 @@
               "duration": 8.385306
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-28/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカがイランへの攻撃を止めました。",
+              "duration": 3.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "交渉の時間を作るためと説明されていますが、背景には別の事情があるようです。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "ニューヨーク・タイムズによれば、トランプ大統領は側近から。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "これ以上戦いを広げると兵器の在庫が底をつくと忠告されていました。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "今月、ペンシルベニア州で開かれた防衛サミットでは。",
+              "duration": 4.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "大手防衛企業のトップたちを集め、兵器の生産を増やし、速度を上げるよう呼びかけています。",
+              "duration": 7.056
+            },
+            {
+              "speaker": "narrator",
+              "text": "政権はこれを、産業の立て直しと戦う力の強化という二つの目標を同時に進める取り組みだと位置づけています。",
+              "duration": 8.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "在庫の心配が戦略を左右する時代に、私たちは入っているのかもしれません。",
+              "duration": 6.0
+            }
+          ]
         }
       },
       "2": {
@@ -10025,6 +10071,52 @@
               "duration": 3.84
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-28/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オーストラリアのビクトリア州で、ベン・キャロルが新しい首相に就任しました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "前任のジャシンタ・アランが辞任したことを受けての交代です。",
+              "duration": 4.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "キャロルは就任後すぐに、建設業界の汚職疑惑を調べる王立委員会を設けると発表しました。",
+              "duration": 7.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の就任は州の選挙まで四か月という時期で、労働党内では激しい動きが続いていました。",
+              "duration": 7.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "キャロルは以前、アランに挑まないと公言していましたが、状況が変わったと説明しています。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "党内の代議員たちがアランに交代を求めたことが、辞任の背景にあります。",
+              "duration": 5.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "当初は無投票での選出が見込まれていましたが、司法長官も名乗りを上げ、党内会合は混乱しました。",
+              "duration": 7.776
+            },
+            {
+              "speaker": "narrator",
+              "text": "選挙を控えた時期の指導者交代は、州政治に大きな影響を与えそうです。",
+              "duration": 5.952
+            }
+          ]
         }
       },
       "3": {
@@ -10072,6 +10164,47 @@
               "speaker": "explainer",
               "text": "He did. He said early public access would launch in April, so this is a few months after that timeline.",
               "duration": 5.381224
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-28/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Xが今日から、アメリカで決済サービスを始めました。",
+              "duration": 4.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "デジタルウォレットと個人間の送金ができる仕組みで、Venmoに似ています。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "自分のXユーザー名を刻んだ金属製のVisaカードも使えます。",
+              "duration": 5.136
+            },
+            {
+              "speaker": "narrator",
+              "text": "Apple Walletにも対応し、X上での送金は無料です。",
+              "duration": 4.824
+            },
+            {
+              "speaker": "narrator",
+              "text": "イーロン・マスクはXを「なんでもアプリ」にしたいと話していて、この決済機能はその中心です。",
+              "duration": 7.32
+            },
+            {
+              "speaker": "narrator",
+              "text": "4月に早期アクセスを始めると言っていましたが、数か月遅れての開始となりました。",
+              "duration": 6.048
+            },
+            {
+              "speaker": "narrator",
+              "text": "支払いも送金も一つのアプリで済むようになれば、使い方が変わるかもしれません。",
+              "duration": 5.952
             }
           ]
         }
@@ -10133,6 +10266,52 @@
               "duration": 8.385306
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-07-28/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "水曜日の朝、Samsungが夏の発表会を開きました。",
+              "duration": 4.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい折りたたみスマートフォンと時計が並びます。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "中心はGalaxy Z Fold 8です。",
+              "duration": 3.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "昨年のZ Fold 7から、見た目が大きく変わりました。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヒンジが新しくなり、Flex Titaniumという技術が使われています。",
+              "duration": 5.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "内側の画面の折り目は、以前よりずっと目立ちにくくなりました。",
+              "duration": 4.872
+            },
+            {
+              "speaker": "narrator",
+              "text": "完全には消えていませんが、進歩は確かです。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみの形が、少しずつ日常に近づいています。",
+              "duration": 4.44
+            }
+          ]
         }
       },
       "5": {
@@ -10190,6 +10369,57 @@
               "speaker": "explainer",
               "text": "In north-west England and Wales, there might be some cloud from a cold front, but very little rain is expected and the cloud could break up.",
               "duration": 7.183673
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-07-28/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "水曜日の夜、英国の空に7月の満月が昇ります。",
+              "duration": 4.776
+            },
+            {
+              "speaker": "narrator",
+              "text": "この満月は「バック・ムーン」と呼ばれています。",
+              "duration": 4.152
+            },
+            {
+              "speaker": "narrator",
+              "text": "名前の由来は、この時期に雄鹿の角が生え揃うことにあります。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年の夏、満月は全部で3回訪れますが、これは2回目です。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "満月のピークは日本時間で29日の23時36分ごろです。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "英国では地平線の下にあたるため、その瞬間を直接見ることはできません。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "イングランド北西部とウェールズでは寒冷前線の影響で雲が広がる可能性があります。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "雨はほとんど降らず、雲の切れ間から月が顔を出すかもしれません。",
+              "duration": 5.136
+            },
+            {
+              "speaker": "narrator",
+              "text": "夜空を見上げるには、良い機会になりそうです。",
+              "duration": 3.744
             }
           ]
         }

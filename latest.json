@@ -91,6 +91,52 @@
               "duration": 6.687347
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "昨日の夕方、イランが中東にいるアメリカ軍に向けてミサイルを発射しました。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けて、アメリカとサウジアラビアはイラク国内の民兵組織を攻撃しています。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "サウジアラビアがこの紛争で直接攻撃に加わるのは珍しいことです。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方イスラエルは、イランとレバノンのヒズボラへの対応を続ける構えを示しています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "この動きは、トランプ大統領がネタニヤフ首相やゼレンスキー大統領と会談した日に起きました。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "別の話題として、ファウチ博士が今日、上院で証言します。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "新型コロナウイルスがどこから来たのかを巡る調査の一環です。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東の緊張と国内の検証が、同時に動いている朝です。",
+              "duration": 5.016
+            }
+          ]
         }
       }
     },
@@ -182,6 +228,47 @@
               "duration": 8.724898
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "AnthropicのAIチャットボット、Claudeで起きた出来事です。",
+              "duration": 4.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "ユーザーが共有したはずの会話が、数百件も検索エンジンに拾われていました。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "個人的な内容や仕事の話も含まれていたといいます。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "Googleで特定の言葉を検索すると、これらのリンクが表示される状態でした。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "共有機能には「リンクを持つ人が見られる」とあるものの、検索結果に載る可能性は書かれていません。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "Anthropicは、共有の判断はユーザーに委ねていると説明しています。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIとのやり取りを共有するとき、どこまで広がるかを知っておく必要がありそうです。",
+              "duration": 6.12
+            }
+          ]
         }
       }
     },
@@ -261,6 +348,42 @@
               "speaker": "explainer",
               "text": "Yes. Politicians there are actually battling over climate change's role in these wildfires, even as the fires themselves continue burning.",
               "duration": 7.836735
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "スペインでは先週から続く山火事が、いまも各地で燃え広がっています。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "焼失した面積はすでに八万ヘクタールに達しました。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "消火活動が続くなか、明日からは再び気温が摂氏三十八度を超える予報が出ています。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペインの夏はもともと暑いのですが、近年その厳しさが増しているのは確かです。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした状況のなかで、政治家たちは気候変動との関わりをめぐって意見を戦わせています。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "暑さと火災が重なる日々が、この国にとって新たな試練となっています。",
+              "duration": 5.616
             }
           ]
         }
@@ -354,6 +477,52 @@
               "duration": 7.78449
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスでは今、データセンターが電力網につなぐための順番待ちが深刻になっています。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "エネルギー規制当局のオフジェムによると、接続を待つ施設は315件、必要な電力は合わせて73ギガワットに達しています。",
+              "duration": 9.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは投機的な計画が枠を押さえたまま放置されているためです。",
+              "duration": 4.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "そこでオフジェムは、接続枠を確保したい事業者に多額の前払い費用を求める案を示しました。",
+              "duration": 7.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "例えば500メガワットの枠には3億5000万ポンドが必要で、施設が実際に動き出せば返還されます。",
+              "duration": 8.04
+            },
+            {
+              "speaker": "narrator",
+              "text": "AmazonやMicrosoftといった大手も対象です。",
+              "duration": 3.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "本気の計画だけを残し、待ち行列を整理する狙いがあります。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "データセンターの急増は電力網の余力を問い直す局面を迎えています。",
+              "duration": 5.688
+            }
+          ]
         }
       }
     },
@@ -443,6 +612,52 @@
               "speaker": "explainer",
               "text": "Exactly. It's worth looking up Wednesday evening to catch it lighting up the night sky.",
               "duration": 4.075102
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "水曜日の夜、イギリスでは7月の満月が空に昇ります。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "この満月は「バックムーン」と呼ばれています。",
+              "duration": 3.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "名前の由来は、この時期に雄鹿の角が伸びることです。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "満月の瞬間は29日の午後3時36分ですが、その時刻には月が地平線の下にあります。",
+              "duration": 7.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "イギリスでは最も丸い瞬間を直接見ることはできません。",
+              "duration": 4.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "それでも夜になれば、ほぼ満月の姿を楽しめます。",
+              "duration": 4.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "北西部やウェールズでは雲が出る可能性がありますが、雨の心配は少ないようです。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "雲の切れ間から、夏の夜空に浮かぶ月を眺められるかもしれません。",
+              "duration": 5.136
             }
           ]
         }

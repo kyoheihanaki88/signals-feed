@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-29",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "U.S. and Iran resume attacks. And, Fauci to face Senate questions on COVID pandemic",
+      "summary": "Fighting between the U.S. and Iran resumed after Iran launched missiles at U.S. forces in the Middle East yesterday, just before 6 p.m. ET, according to U.S. Central Command.",
+      "keyTakeaways": [
+        "U.S. and Saudi forces responded with attacks on Iranian-backed militias in Iraq, marking a rare show of force from Saudi Arabia in this conflict.",
+        "Israel wants to continue fighting to address security threats from Iran and Iran-backed Hezbollah in Lebanon.",
+        "Dr. Anthony Fauci is set to testify today before a Senate committee as part of ongoing investigations into the origins of COVID-19."
+      ],
+      "whyItMatters": "The escalation in violence happened on the same day President Trump met with Israeli Prime Minister Netanyahu and Ukrainian leader Zelenskyy at the White House.",
+      "originalURL": "https://www.npr.org/2026/07/29/g-s1-136076/up-first-newsletter-iran-benjamin-netanyahu-trump-iowa-water-anthony-fauci-fed-rates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米・イラン間の緊張が再燃、ファウチ博士は上院で証言へ",
+          "summary": "米中央軍によると、現地時間昨日午後6時前、イランが中東の米軍部隊に向けてミサイルを発射し、米国とイランの間で再び戦闘が始まった。",
+          "keyTakeaways": [
+            "米軍とサウジアラビア軍はイラク国内のイラン系民兵組織への攻撃で応じた。サウジがこの紛争に直接関与するのは異例のことだ。",
+            "イスラエルはイランおよびレバノンのヒズボラが及ぼす安全保障上の脅威に対処するため、戦闘継続の意向を示している。",
+            "アンソニー・ファウチ博士は本日、新型コロナウイルスの起源をめぐる調査の一環として上院委員会で証言する予定だ。"
+          ],
+          "whyItMatters": "この緊張の高まりは、トランプ大統領がホワイトハウスでイスラエルのネタニヤフ首相とウクライナのゼレンスキー大統領と会談した当日に起きた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "Some people's chats with Claude AI found to be publicly available online",
+      "summary": "Hundreds of user conversations with Anthropic's popular artificial intelligence (AI) chatbot Claude were found to have been available to essentially anyone online.",
+      "keyTakeaways": [
+        "Links to the chats, some of which included personal and work information, would show up if a user of a search engine like Google used a site-specific search term.",
+        "The searches showed Claude chats for which a user had decided to \"share\" a link had been saved by search engines like Google, leaving them accessible to the broader public.",
+        "A spokeswoman for Anthropic said that Claude users maintained control over if and when to share conversations they had with the chatbot."
+      ],
+      "whyItMatters": "The share option within Claude tells a user that \"anyone with the link\" may view the contents of that link, but does not explicitly state that the link may end up in Google and search results.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cly5qgjk5ywo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "Claudeとのチャットが検索で誰でも閲覧可能な状態に",
+          "summary": "AnthropicのAIチャットボット「Claude」におけるユーザーとの会話が、数百件にわたってオンライン上で事実上誰でも閲覧できる状態にあったことが明らかになった。",
+          "keyTakeaways": [
+            "個人情報や業務上のやり取りを含む会話へのリンクが、Googleなどで特定の検索を行うと表示される状態だった。",
+            "ユーザーが「共有」を選んだチャットのリンクが検索エンジンに保存され、広く一般に公開される形になっていた。",
+            "Anthropicの広報担当者は、会話を共有するかどうかはユーザー自身が管理していると説明した。"
+          ],
+          "whyItMatters": "Claudeの共有機能には「リンクを持つ誰もが閲覧できる」と記されているが、そのリンクが検索結果に表示される可能性については明示されていない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "As Spain battles wildfires, its politicians battle over climate change's role",
+      "summary": "Crews are still battling wildfires that broke out last week and have burned nearly 200,000 acres across Spain.",
+      "keyTakeaways": [
+        "SACHA PFEIFFER, HOST: In Spain, crews are still battling fires that broke out last week and have devastated nearly 200,000 acres across the country.",
+        "Now Spain is bracing itself even more as temperatures are again set to rise to more than 100 degrees starting tomorrow, as NPR's Miguel Macias reports.",
+        "MIGUEL MACIAS, BYLINE: It's always been very hot in Spain in the summer."
+      ],
+      "whyItMatters": "The country is bracing for another round of extreme heat, with temperatures expected to top 100 degrees Fahrenheit starting Wednesday.",
+      "originalURL": "https://www.npr.org/2026/07/28/nx-s1-5909198/spain-wildfires-politicians-climate-change",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "山火事が続くスペイン、気候変動をめぐり政界も揺れる",
+          "summary": "先週発生した山火事はいまだ収束せず、スペイン全土でおよそ八万ヘクタールが焼失した。消火活動が続くなか、政治家たちは気候変動との関連をめぐって論戦を繰り広げている。",
+          "keyTakeaways": [
+            "先週から続く山火事により、スペイン全土でおよそ八万ヘクタールが焼き尽くされた。",
+            "明日からは再び気温が摂氏三十八度を超える見込みで、当局はさらなる警戒を呼びかけている。",
+            "スペインの夏の酷暑は以前からのことだが、その深刻さは年々増している。"
+          ],
+          "whyItMatters": "再び極端な高温が迫るなか、スペインは厳しい試練に直面しようとしている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Datacentre projects could face fees for grid access to ease connection queue, Ofgem says",
+      "summary": "Datacentre projects in Britain will be forced to put down significant upfront fees to secure an energy connection under proposals to ease an electricity grid logjam.",
+      "keyTakeaways": [
+        "Ofgem, the sector watchdog, said there were 315 datacentres currently queueing to connect up, representing 73GW of demand.",
+        "This will be demanded when a project receives a connection offer and returned when the datacentre is switched on.",
+        "Ofgem is proposing that datacentre providers, who include companies such as Amazon and Microsoft, put down pledges of £350m to reserve 500MW of grid capacity."
+      ],
+      "whyItMatters": "Under the energy regulator for Great Britain’s proposals to thin out speculative schemes, projects will be required to lodge significant upfront fees or financial security via letters of credit, bonds or cash deposits.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/jul/29/datacentre-projects-fees-grid-access-connection-queue-ofgem",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "データセンターの系統接続に前払い費用、英規制当局が提案",
+          "summary": "英国のエネルギー規制当局オフジェムは、電力系統への接続待ちが深刻化するなか、データセンター事業者に対して接続枠を確保するための多額の前払い費用を義務付ける案を示した。",
+          "keyTakeaways": [
+            "現在315件のデータセンターが接続を待機しており、その需要は合計73GWに上る",
+            "費用は接続オファーの受領時に徴収され、施設の稼働開始後に返還される",
+            "アマゾンやマイクロソフトなどの事業者が対象で、500MWの容量確保に3億5000万ポンドの拠出が求められる"
+          ],
+          "whyItMatters": "投機的な計画を排除し系統接続の混雑を緩和するため、オフジェムは信用状・債券・現金預託などによる財務的担保の提供を事業者に求める方針だ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "How to see July's Buck Moon light up the night sky",
+      "summary": "The July full Moon, also known as the Buck Moon, will light up the night sky across the UK on Wednesday.",
+      "keyTakeaways": [
+        "The second of three full Moons this summer, it is set to peak at 15:36 BST on 29 July.",
+        "The exact moment of its maximum fullness will be missed across the UK as the Moon will be just below the horizon.",
+        "Why is it called the Buck Moon?"
+      ],
+      "whyItMatters": "Across north-west England and Wales the remnants of a cold weather front might obscure the sky, but very little rain is expected and the cloud could break.",
+      "originalURL": "https://www.bbc.co.uk/weather/articles/cx2lvg855x8o?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "7月の満月「バックムーン」、今夜の夜空を照らす",
+          "summary": "7月の満月、通称「バックムーン」が水曜日の夜、英国の空に浮かぶ。夏の夜を静かに彩る、季節の便りだ。",
+          "keyTakeaways": [
+            "今夏3度の満月のうち2度目。最大の満月は7月29日15時36分（英国夏時間）に訪れる",
+            "満月の瞬間、月は地平線の下にあるため、英国では肉眼で捉えることができない",
+            "「バックムーン」という名の由来は、この時期に雄鹿の角が伸びることにちなむ"
+          ],
+          "whyItMatters": "イングランド北西部とウェールズでは寒冷前線の影響で雲が広がる恐れがあるが、雨はほとんど見込まれず、雲の切れ間から月を望める可能性もある。"
+        }
+      }
+    }
+  ]
+}

@@ -426,19 +426,26 @@ test("no persistent key contains a raw Apple identifier, IP or token", async () 
 
 // ── W / X. the edition boundary ───────────────────────────────────────────────────────
 
-test("W. a composed edition request with a valid token reaches selector_not_connected", async () => {
+test("W. a composed edition request with a valid token reaches the connected edition path", async () => {
   const stack = buildStack();
   const exchanged = await stack.exchange(exchangeRequest());
   const token = await accessTokenOf(exchanged);
   assert.ok(token);
 
+  // The composed stack in this suite has NO storage configured, which is exactly the
+  // Preview deployment's shape. The connected route must then fail SAFE and provider-
+  // neutrally rather than erroring, leaking a reason, or serving a partial edition.
   const response = await stack.edition(editionRequest(token));
   assert.equal(response.status, 503);
   const body = (await response.json()) as { status?: string; code?: string };
-  assert.equal(body.status, "not_connected");
-  assert.equal(body.code, "selector_not_connected");
-  // Nothing resembling an edition came back.
+  assert.equal(body.status, "unavailable");
+  assert.equal(body.code, "custom_mix_unavailable");
   assert.equal("stories" in body, false);
+  // The failure names no key, no provider, no credential and no internal reason code.
+  const text = JSON.stringify(body).toLowerCase();
+  for (const leak of ["upstash", "kv_rest", "signals:editorial", "candidate_pool"]) {
+    assert.ok(!text.includes(leak), `leaked ${leak}`);
+  }
 });
 
 test("W2. the edition route still rejects a missing or malformed token", async () => {
@@ -457,7 +464,7 @@ test("X. a Sandbox token is rejected by Production edition dependencies", async 
   const production = buildStack();
   const response = await production.edition(editionRequest(sandboxToken));
   assert.ok(response.status === 401 || response.status === 403, `status ${response.status}`);
-  assert.notEqual(await codeOf(response), "selector_not_connected");
+  assert.notEqual(await codeOf(response), "custom_mix_unavailable");
 
   // And the Sandbox stack accepts its own token, so the rejection is about isolation.
   assert.equal((await sandbox.edition(editionRequest(sandboxToken))).status, 503);

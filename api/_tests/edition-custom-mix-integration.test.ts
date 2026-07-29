@@ -30,6 +30,7 @@ import {
   candidatesUnavailable,
   createDisconnectedEditionOrchestrator,
   createEditionOrchestrator,
+  type MixCandidateBundle,
   type MixCandidateSource,
 } from "../_lib/edition-orchestrator.js";
 import { selectCustomMix } from "../_lib/custom-mix-selector.js";
@@ -73,8 +74,36 @@ const baseCandidates = (
 
 const DATE = "2026-07-27";
 
+/**
+ * Phase 3E-1: the source now yields a BUNDLE — selector rows plus the enriched rows they
+ * were extracted from. Each selector candidate is paired with a schema-valid editorial
+ * story derived from the committed fixture, so the feed adapter has real content to
+ * assemble without inventing a second source of truth.
+ */
+const editorialTemplate = (
+  JSON.parse(readFileSync(join(FIXTURE_DIR, "editorial_mix_pool.json"), "utf8")) as {
+    candidates: { editorial: Record<string, unknown> }[];
+  }
+).candidates[0].editorial;
+
+function bundleOf(candidates: MixCandidate[]): MixCandidateBundle {
+  const rows = candidates.map((c) => structuredClone(c));
+  return {
+    candidates: rows,
+    enriched: rows.map((row, index) => ({
+      selector: row as unknown as Record<string, never>,
+      editorial: {
+        ...structuredClone(editorialTemplate),
+        headline: `Story ${index} — ${String((row as { headline?: string }).headline ?? "")}`,
+        originalURL: `https://example.com/story-${index}`,
+        imageURL: `https://images.example.com/photo-${index}?w=900`,
+      },
+    })) as unknown as MixCandidateBundle["enriched"],
+  };
+}
+
 function sourceOf(candidates: MixCandidate[]): MixCandidateSource {
-  return { async loadCandidates() { return candidates.map((c) => structuredClone(c)); } };
+  return { async loadCandidates() { return bundleOf(candidates); } };
 }
 
 /** Builds the real route with real auth and a chosen orchestrator. */
@@ -115,10 +144,10 @@ test("1. an authenticated request with no orchestrator is unchanged", async () =
 
   assert.equal(response.status, 503);
   assert.deepEqual(await response.clone().json(), {
-    status: "not_connected",
-    code: "selector_not_connected",
+    status: "unavailable",
+    code: "custom_mix_unavailable",
   });
-  assert.equal(lastPath(logger), "selector_not_connected");
+  assert.equal(lastPath(logger), "standard_selector_unavailable");
 });
 
 test("1b. the PRODUCTION orchestrator leaves the response byte-identical", async () => {
@@ -139,7 +168,7 @@ test("1b. the PRODUCTION orchestrator leaves the response byte-identical", async
 test("2+3. an anonymous caller never reaches the orchestrator", async () => {
   let called = false;
   const orchestrator = createEditionOrchestrator({
-    candidates: { async loadCandidates() { called = true; return baseCandidates; } },
+    candidates: { async loadCandidates() { called = true; return bundleOf(baseCandidates); } },
     customMixEnabled: true,
   });
   const { handler, logger } = buildRoute({ orchestrator });
@@ -154,7 +183,7 @@ test("2+3. an anonymous caller never reaches the orchestrator", async () => {
 test("4. a client-claimed Pro flag in the body is rejected by the contract, not honoured", async () => {
   let called = false;
   const orchestrator = createEditionOrchestrator({
-    candidates: { async loadCandidates() { called = true; return baseCandidates; } },
+    candidates: { async loadCandidates() { called = true; return bundleOf(baseCandidates); } },
     customMixEnabled: true,
   });
   const { handler, token } = buildRoute({ orchestrator });
@@ -170,7 +199,7 @@ test("4. a client-claimed Pro flag in the body is rejected by the contract, not 
 test("4b. a forged token cannot reach the orchestrator", async () => {
   let called = false;
   const orchestrator = createEditionOrchestrator({
-    candidates: { async loadCandidates() { called = true; return baseCandidates; } },
+    candidates: { async loadCandidates() { called = true; return bundleOf(baseCandidates); } },
     customMixEnabled: true,
   });
   const { handler } = buildRoute({ orchestrator });
@@ -241,8 +270,11 @@ test("6+7. verified Lifetime Pro with candidates: the selector runs and matches 
 
   assert.equal(selectorCalls, 1, "the selector did not run for a verified Pro request");
   assert.equal(lastPath(logger), "custom_mix_pro");
-  // The public response is still the 503 — no 200 contract exists yet.
-  assert.equal(response.status, 503);
+  // Phase 3E-1: a complete selection now returns the SignalsFeed document.
+  assert.equal(response.status, 200);
+  const feed = (await response.clone().json()) as { date: string; signals: unknown[] };
+  assert.equal(feed.date, editorialCase.date);
+  assert.equal(feed.signals.length, 5);
 
   const outcome = await orchestrator({
     contract: {
@@ -281,7 +313,7 @@ test("8. a candidate-source failure falls back instead of 500-ing", async () => 
 
   const response = await handler(editionRequest(token));
   assert.equal(response.status, 503);
-  assert.equal(await responseCode(response), "selector_not_connected");
+  assert.equal(await responseCode(response), "custom_mix_unavailable");
   assert.equal(lastPath(logger), "standard_candidates_unavailable");
 });
 
@@ -303,7 +335,7 @@ test("8b. a selector failure falls back instead of 500-ing", async () => {
 test("8c. a revoked subject is rejected before the orchestrator", async () => {
   let called = false;
   const orchestrator = createEditionOrchestrator({
-    candidates: { async loadCandidates() { called = true; return baseCandidates; } },
+    candidates: { async loadCandidates() { called = true; return bundleOf(baseCandidates); } },
     customMixEnabled: true,
   });
   const deps = createDependencies("Production");
@@ -335,7 +367,7 @@ test("8c. a revoked subject is rejected before the orchestrator", async () => {
 test("9. a malformed Custom Mix payload never reaches the selector", async () => {
   let called = false;
   const orchestrator = createEditionOrchestrator({
-    candidates: { async loadCandidates() { called = true; return baseCandidates; } },
+    candidates: { async loadCandidates() { called = true; return bundleOf(baseCandidates); } },
     customMixEnabled: true,
   });
   const { handler, token } = buildRoute({ orchestrator });
@@ -375,10 +407,22 @@ test("10. too few matching candidates degrades deterministically with no duplica
 
   const first = await orchestrator({ contract });
   const second = await orchestrator({ contract });
-  assert.equal(first.path, "custom_mix_pro");
-  assert.equal(JSON.stringify(first.selection), JSON.stringify(second.selection));
+  // Phase 3E-1: fewer than five resolvable stories is NOT a 200 path — the route falls
+  // back rather than serving a partial edition. Determinism still holds.
+  assert.equal(first.path, "standard_selector_unavailable");
+  assert.equal(first.path, second.path);
+  assert.equal(first.selection, null);
+  assert.equal(first.selected, null);
 
-  const selection = first.selection as MixSelectionResult;
+  // The shortage and duplicate guarantees are still the selector's, so assert them there.
+  const selection = selectCustomMix({
+    candidates: thin,
+    date: DATE,
+    regions: ["japan"],
+    topics: [],
+    size: 5,
+    selectorVersion: 1,
+  });
   assert.equal(selection.metadata.shortage, true);
   assert.ok(selection.metadata.unfilledSlots > 0);
   // jp-quake-a and global-quake-duplicate share an underlying story: only one may survive.
@@ -424,12 +468,18 @@ test("11. the production editorial guard fires through the real edition path", a
     editionRequest(token, { ...editionBody(), date: editorialCase.date }),
   );
   const body = await response.text();
+  // The guard's prose and the REJECTED candidate must not reach the client, even now that
+  // the response carries a real edition rather than a placeholder.
   assert.ok(!body.includes("duplicate guard"));
   assert.ok(!body.includes("jp-samsung-handson"));
-  assert.deepEqual(JSON.parse(body), {
-    status: "not_connected",
-    code: "selector_not_connected",
-  });
+  assert.ok(!body.includes("rejectionReason"));
+  assert.ok(!body.includes("candidateLogs"));
+  assert.ok(!body.includes("selector"));
+
+  assert.equal(response.status, 200);
+  const feed = JSON.parse(body) as { date: string; focus: string; version: number; signals: unknown[] };
+  assert.deepEqual(Object.keys(feed).sort(), ["date", "focus", "signals", "version"]);
+  assert.equal(feed.signals.length, 5);
 });
 
 // ── 12. determinism ───────────────────────────────────────────────────────────────────
@@ -492,7 +542,7 @@ test("path identifiers are narrow, and no preference or subject is ever logged",
     "standard_custom_mix_disabled",
     "standard_candidates_unavailable",
     "standard_selector_unavailable",
-    "selector_not_connected",
+    "custom_mix_unavailable",
     "missing_token",
     "invalid_token",
     "expired_token",

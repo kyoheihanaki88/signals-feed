@@ -188,9 +188,14 @@ check("16. the transport declares an explicit content type",
 
 # ── 19. the route stays disconnected ─────────────────────────────────────────────────
 
-check("19. /api/edition remains disconnected",
-      open(os.path.join(HERE, "..", "api", "edition.ts"),
-           encoding="utf-8").read().count("selector_not_connected") == 3)
+_edition_src = open(os.path.join(HERE, "..", "api", "edition.ts"), encoding="utf-8").read()
+check("19. /api/edition is CONNECTED, and holds no credential of its own",
+      _edition_src.count("custom_mix_unavailable") >= 1
+      and "selector_not_connected" not in _edition_src
+      # Phase 3E-1: the route receives an orchestration result. It must never name the
+      # store, a key or a credential — only the composition layer may.
+      and not re.search(r"KV_REST_API|upstash|signals:editorial-mix-pool", _edition_src),
+      "edition.ts boundary")
 
 _server.shutdown()
 print()

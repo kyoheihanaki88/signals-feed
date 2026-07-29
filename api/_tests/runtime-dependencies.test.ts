@@ -657,7 +657,61 @@ const POOL_CONTRACT_MODULES = new Set([
   // fetch pool bytes — so it is exempt from the "no mix-pool reference" rule and, like its
   // siblings, must remain unreachable from every route and runtime module. L2b proves that.
   "_lib/upstash-pool-store.ts",
+  // Phase 3E-1. The editorial reader is a pool module by definition, and the runtime
+  // COMPOSITION layer is now allowed to reach the pool contract — that is the connection.
+  // `_lib/runtime-factory.ts` is the single approved composition point; L2b proves no
+  // route and no other runtime module joins it.
+  "_lib/editorial-mix-source.ts",
+  "_lib/runtime-factory.ts",
+  // The orchestrator names the pool only in a TYPE import (`EnrichedCandidate`) — it holds
+  // the enriched rows the route will assemble. It performs no read of its own; the
+  // dedicated guard below pins that it imports no pool RUNTIME value.
+  "_lib/edition-orchestrator.ts",
 ]);
+
+/**
+ * Phase 3E-1. The three modules above are allowed to name the pool, but for different
+ * reasons, and the reasons must not drift into each other:
+ *
+ *   • `runtime-factory.ts`   — the single approved COMPOSITION point; builds the store.
+ *   • `editorial-mix-source.ts` — the reader itself.
+ *   • `edition-orchestrator.ts` — TYPE ONLY. It must never construct a store or read a key.
+ */
+test("L2c. the orchestrator names the pool in types only, and never reads one", () => {
+  const code = stripComments(
+    readFileSync(join(API_DIR, "_lib", "edition-orchestrator.ts"), "utf8"),
+  );
+  // Every pool import it makes must be a type-only import.
+  for (const line of code.split("\n")) {
+    if (!/from\s+["'][^"']*mix-pool[^"']*["']/.test(line)) continue;
+    assert.ok(/^\s*import\s+type\s/.test(line), `orchestrator has a value import: ${line}`);
+  }
+  // And it may not reach the store, the reader, or a credential.
+  for (const forbidden of [
+    "upstash-pool-store",
+    "editorial-mix-source",
+    "KV_REST_API",
+    "process.env",
+  ]) {
+    assert.ok(!code.includes(forbidden), `orchestrator references ${forbidden}`);
+  }
+});
+
+/**
+ * The composition layer is allowed to build the store — but only from the READ-ONLY
+ * credential. A write token in the request path would let a compromised route mutate the
+ * pool that every Pro user is served from.
+ */
+test("L2d. the API request path never names the write token", () => {
+  // EXECUTABLE CODE only. `editorial-mix-source.ts` documents in prose that the write
+  // token is a publisher-only secret; saying so is the opposite of using it.
+  for (const file of runtimeSourceFiles()) {
+    assert.ok(
+      !stripComments(file.text).includes("KV_REST_API_WRITE_TOKEN"),
+      `${file.name} names the write token`,
+    );
+  }
+});
 
 test("L2. no runtime module reads edition data, latest.json or a mix pool", () => {
   const forbidden = ["latest.json", "editions/", "mix-pool", "mix_pool", "child_process", "spawnSync"];
@@ -687,6 +741,9 @@ test("L2b. the pool contract modules are not reachable from any route or runtime
     if (POOL_CONTRACT_MODULES.has(file.name)) continue;
     const code = stripComments(file.text);
     for (const specifier of specifiers) {
+      // `edition.ts` legitimately imports the feed ADAPTER — that is how the selected five
+      // become the client document. Nothing else about the pool may reach a route.
+      if (file.name === "edition.ts" && specifier === "editorial-mix-feed") continue;
       const importsIt = new RegExp(`from\\s+["'][^"']*/${specifier}\\.js["']`).test(code);
       assert.ok(!importsIt, `${file.name} imports ${specifier}`);
     }

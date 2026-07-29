@@ -49,7 +49,7 @@ export const STABLE_ERROR_CODES = new Set([
   "invalid_region",
   "invalid_topic",
   "unsupported_selector_version",
-  "selector_not_connected",
+  "custom_mix_unavailable",
 ]);
 
 function baseHeaders(): Headers {

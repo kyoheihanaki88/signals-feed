@@ -65,6 +65,11 @@ function validateCanonicalList<T extends string>(
     throw new ContractValidationError(code);
   }
   const items = value as string[];
+  // A REPEATED entry is refused, not silently de-duplicated. That is deliberate: a client
+  // sending ["japan","japan"] has a bug, and quietly absorbing it would let two different
+  // client states map to one edition with no signal that anything was wrong. Order, by
+  // contrast, IS normalised below — sorting makes the mix identity independent of the
+  // order the user happened to tap the toggles in.
   if (
     new Set(items).size !== items.length ||
     items.some((item) => !allowed.includes(item as T))

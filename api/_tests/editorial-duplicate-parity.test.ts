@@ -323,14 +323,13 @@ test("Q. no editorial production module reads a file, spawns a process or logs",
   }
 });
 
-test("Q2. the selector still is not wired into any API route", () => {
-  for (const relative of ["edition.ts", "_lib/runtime-factory.ts", "_lib/vercel-runtime.ts"]) {
-    const source = readFileSync(join(HERE, "..", relative), "utf8");
-    for (const needle of ["custom-mix-selector", "editorial-duplicate-guard", "editorial-story-identity"]) {
-      assert.ok(!source.includes(needle), `${relative} imports ${needle}`);
-    }
-  }
-  assert.ok(readFileSync(join(HERE, "..", "edition.ts"), "utf8").includes("selector_not_connected"));
+test("the selector reaches the route ONLY through the orchestrator seam", () => {
+  // Phase 3E-1 connected the route. `edition.ts` still must not import the selector
+  // directly: selection stays behind `edition-orchestrator.ts`, which is what keeps the
+  // duplicate guard, determinism and fallback in one auditable place.
+  const route = readFileSync(resolve(HERE, "..", "edition.ts"), "utf8");
+  assert.ok(!/from\s+["'][^"']*\/custom-mix-selector\.js["']/.test(route));
+  assert.ok(/from\s+["'][^"']*\/edition-orchestrator\.js["']/.test(route));
 });
 
 test("Q3. the selector's default guard is the REAL editorial guard, not the no-op", () => {

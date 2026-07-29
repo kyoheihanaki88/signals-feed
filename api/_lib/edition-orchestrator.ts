@@ -38,6 +38,7 @@ import type {
   SelectCustomMixOptions,
 } from "./custom-mix-types.js";
 import type { EditionRequest } from "./custom-mix-contract.js";
+import type { EnrichedCandidate } from "./editorial-mix-pool-schema.js";
 
 /**
  * The narrow set of internal path identifiers. These reach the security log's `reasonCode`
@@ -50,16 +51,28 @@ export type EditionPathId =
   | "standard_selector_unavailable";
 
 export type EditionOrchestration =
-  | { path: "custom_mix_pro"; selection: MixSelectionResult }
+  | {
+      path: "custom_mix_pro";
+      selection: MixSelectionResult;
+      /** The selected stories, in selector order, ready for the feed adapter. */
+      selected: EnrichedCandidate[];
+    }
   | {
       path: Exclude<EditionPathId, "custom_mix_pro">;
       selection: null;
+      selected: null;
     };
 
-/** The seam a future candidate source plugs into. */
+/** One pool load: the selector rows AND the enriched rows they were extracted from. */
+export type MixCandidateBundle = {
+  candidates: MixCandidate[];
+  enriched: EnrichedCandidate[];
+};
+
+/** The seam the Editorial Mix Pool source plugs into. */
 export interface MixCandidateSource {
-  /** Resolves to null when no pool exists for the date — NOT an error. */
-  loadCandidates(date: string): Promise<MixCandidate[] | null>;
+  /** Resolves to null when no usable pool exists for the date — NOT an error. */
+  loadCandidates(date: string): Promise<MixCandidateBundle | null>;
 }
 
 /**
@@ -69,7 +82,7 @@ export interface MixCandidateSource {
  * than discovering it from behaviour.
  */
 export const candidatesUnavailable: MixCandidateSource = {
-  async loadCandidates(): Promise<MixCandidate[] | null> {
+  async loadCandidates(): Promise<MixCandidateBundle | null> {
     return null;
   },
 };
@@ -100,19 +113,22 @@ export function createEditionOrchestrator(
 
   return async ({ contract }) => {
     if (!options.customMixEnabled) {
-      return { path: "standard_custom_mix_disabled", selection: null };
+      // The global kill switch short-circuits BEFORE any pool load, so a disabled Custom
+      // Mix performs no Upstash read at all.
+      return { path: "standard_custom_mix_disabled", selection: null, selected: null };
     }
 
-    let candidates: MixCandidate[] | null;
+    let bundle: MixCandidateBundle | null;
     try {
-      candidates = await options.candidates.loadCandidates(contract.date);
+      bundle = await options.candidates.loadCandidates(contract.date);
     } catch {
       // A candidate source that throws is indistinguishable from one that has nothing.
-      return { path: "standard_candidates_unavailable", selection: null };
+      return { path: "standard_candidates_unavailable", selection: null, selected: null };
     }
-    if (!candidates || candidates.length === 0) {
-      return { path: "standard_candidates_unavailable", selection: null };
+    if (!bundle || bundle.candidates.length === 0) {
+      return { path: "standard_candidates_unavailable", selection: null, selected: null };
     }
+    const { candidates, enriched } = bundle;
 
     try {
       const selection = runSelector({
@@ -125,10 +141,28 @@ export function createEditionOrchestrator(
         // No guard is passed: the selector's own default is the ported production
         // editorial duplicate guard, and this boundary must not weaken it.
       });
-      return { path: "custom_mix_pro", selection };
+
+      // Map the chosen ids back to their enriched rows, PRESERVING SELECTOR ORDER — the
+      // feed's `number`, `importance` and `lead` all derive from position. A selection that
+      // cannot be fully resolved, or that is short of the required count, falls back rather
+      // than returning a partial edition.
+      const byId = new Map(
+        enriched.map((row) => [String((row.selector as { id?: unknown }).id ?? ""), row]),
+      );
+      const selected: EnrichedCandidate[] = [];
+      for (const id of selection.selectedIds) {
+        const row = byId.get(id);
+        if (!row) return { path: "standard_selector_unavailable", selection: null, selected: null };
+        selected.push(row);
+      }
+      if (selected.length !== contract.storyCount) {
+        return { path: "standard_selector_unavailable", selection: null, selected: null };
+      }
+
+      return { path: "custom_mix_pro", selection, selected };
     } catch {
       // Fail closed: an unexpected selector failure falls back rather than 500-ing.
-      return { path: "standard_selector_unavailable", selection: null };
+      return { path: "standard_selector_unavailable", selection: null, selected: null };
     }
   };
 }

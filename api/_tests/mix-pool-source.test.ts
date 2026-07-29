@@ -338,13 +338,18 @@ test("49. the adapter satisfies the MixCandidateSource shape in isolation", asyn
   assert.deepEqual(observed, ["ok", "candidate_pool_missing"]);
 });
 
-test("50+51. production stays disconnected and does not import the adapter", () => {
-  for (const relative of ["edition.ts", "_lib/edition-orchestrator.ts", "_lib/runtime-factory.ts", "_lib/vercel-runtime.ts"]) {
+test("50+51. the RAW pool reader stays unreachable from the connected route", () => {
+  // Phase 3E-1 connected `/api/edition` to the EDITORIAL pool. The RAW reader in this
+  // module is a different key and a different contract; nothing in the request path may
+  // reach it, or two incompatible pool shapes would be live at once.
+  for (const relative of ["edition.ts", "_lib/edition-orchestrator.ts", "_lib/vercel-runtime.ts"]) {
     const source = readFileSync(join(HERE, "..", relative), "utf8");
-    assert.ok(!source.includes("mix-pool-source"), `${relative} imports the adapter`);
-    assert.ok(!source.includes("mix-pool-schema"), `${relative} imports the pool schema`);
+    assert.ok(!/from\s+["'][^"']*\/mix-pool-source\.js["']/.test(source), relative);
   }
-  assert.ok(readFileSync(join(HERE, "..", "edition.ts"), "utf8").includes("selector_not_connected"));
+  // The route emits the connected failure code, not the retired placeholder.
+  const route = readFileSync(join(HERE, "..", "edition.ts"), "utf8");
+  assert.ok(route.includes("custom_mix_unavailable"));
+  assert.ok(!route.includes("selector_not_connected"));
 });
 
 test("42+43. the module reads no file, no environment and logs nothing", () => {

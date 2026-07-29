@@ -17,7 +17,10 @@
 
 import { createAuthExchangeHandler } from "../auth/exchange.js";
 import { createEditionHandler } from "../edition.js";
-import { createDisconnectedEditionOrchestrator } from "./edition-orchestrator.js";
+import { createEditionOrchestrator } from "./edition-orchestrator.js";
+import { createEditorialCandidateSource } from "./editorial-mix-source.js";
+import { createUpstashPoolStore } from "./upstash-pool-store.js";
+import type { PoolObjectStore } from "./mix-pool-source.js";
 import {
   IdempotencyConflictError,
   PersistentIdempotencyStore,
@@ -329,6 +332,49 @@ export function createProductionExchangeHandler(
  * limit, persistent revocation check and contract validation — stopping, by design, at
  * `503 selector_not_connected`.
  */
+/**
+ * The Editorial Mix Pool store, built from the READ-ONLY credential.
+ *
+ * `config.storage` carries `KV_REST_API_URL` and `KV_REST_API_TOKEN` — the read-only token
+ * from `parseRedis`. `KV_REST_API_WRITE_TOKEN` is a publisher secret held only by GitHub
+ * Actions; no API module names it, and `runtime-dependencies.test.ts` asserts that.
+ *
+ * Returns `null` when storage is unconfigured, which the reader turns into
+ * `candidate_pool_not_configured` and the route into `custom_mix_unavailable`. A
+ * deployment without Upstash therefore degrades to the client's static fallback rather
+ * than failing to start.
+ */
+function createProductionPoolStore(config: RuntimeConfig): PoolObjectStore | null {
+  if (!config.storage) return null;
+  const created = createUpstashPoolStore({
+    KV_REST_API_URL: config.storage.restUrl,
+    KV_REST_API_TOKEN: config.storage.restToken,
+  });
+  return created.ok ? created.store : null;
+}
+
+/**
+ * The UTC ±1 calendar-day gate.
+ *
+ * Pools are published per UTC date, and the one-day allowance absorbs a client whose local
+ * calendar has already rolled over. Anything wider would make the nine-day TTL an
+ * enumeration surface: retained is not the same as publicly selectable.
+ */
+export function createUtcDateWindow(nowMs: () => number): (date: string) => boolean {
+  return (date: string): boolean => {
+    const requested = Date.parse(`${date}T00:00:00Z`);
+    if (!Number.isFinite(requested)) return false;
+    const today = new Date(nowMs());
+    const midnightUtc = Date.UTC(
+      today.getUTCFullYear(),
+      today.getUTCMonth(),
+      today.getUTCDate(),
+    );
+    const dayMs = 24 * 60 * 60 * 1_000;
+    return Math.abs(requested - midnightUtc) <= dayMs;
+  };
+}
+
 export function createProductionEditionHandler(
   config: RuntimeConfig,
   dependencies: RuntimeDependencies,
@@ -339,6 +385,7 @@ export function createProductionEditionHandler(
     {
       enabled: config.customMix.enabled,
       environment: dependencies.environment,
+      isDateAllowed: createUtcDateWindow(() => dependencies.clock.nowMs()),
     },
     {
       tokens: dependencies.tokens,
@@ -347,10 +394,13 @@ export function createProductionEditionHandler(
       logger: dependencies.logger,
       clock: dependencies.clock,
       requestId: dependencies.requestId,
-      // Custom Mix stays unreachable: this orchestrator has no candidate source, so every
-      // request resolves to `standard_candidates_unavailable` and the route answers
-      // `503 selector_not_connected` exactly as before.
-      orchestrator: createDisconnectedEditionOrchestrator(config.customMix.enabled),
+      orchestrator: createEditionOrchestrator({
+        customMixEnabled: config.customMix.enabled,
+        candidates: createEditorialCandidateSource({
+          store: createProductionPoolStore(config),
+          now: () => dependencies.clock.nowMs(),
+        }),
+      }),
     },
   );
 }

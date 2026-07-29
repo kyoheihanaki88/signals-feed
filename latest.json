@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,123 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "As the US pauses the war with Iran, is Trump really running out of weapons?",
-      "summary": "When US President Donald Trump took the stage earlier this month at the Pennsylvania Defense and Innovation Summit, flanked by the CEOs of some of America's largest defence firms, he had one message in mind: build more weapons, and build them faster.",
+      "source": "NPR (World)",
+      "headline": "U.S. and Iran resume attacks. And, Fauci to face Senate questions on COVID pandemic",
+      "summary": "Fighting between the U.S. and Iran resumed after Iran launched missiles at U.S. forces in the Middle East yesterday, just before 6 p.m. ET, according to U.S. Central Command.",
       "keyTakeaways": [
-        "Is the US really running out of weapons under Trump?",
-        "The Trump administration framed the summit as part of a two-pronged approach to revitalise American industry and bolster US warfighting capabilities and, in Hegseth's words, its \"arsenal of freedom\".",
-        "Now, the US has paused its strikes on Iran to allow negotiations to go ahead."
+        "U.S. and Saudi forces responded with attacks on Iranian-backed militias in Iraq, marking a rare show of force from Saudi Arabia in this conflict.",
+        "Israel wants to continue fighting to address security threats from Iran and Iran-backed Hezbollah in Lebanon.",
+        "Dr. Anthony Fauci is set to testify today before a Senate committee as part of ongoing investigations into the origins of COVID-19."
       ],
-      "whyItMatters": "A New York Times report says that Trump was advised to shelve plans to escalate the conflict as it would further drain American stockpiles.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c0qvnk2ezp7o?at_medium=RSS&at_campaign=rss",
-      "readTime": 10,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "The escalation in violence happened on the same day President Trump met with Israeli Prime Minister Netanyahu and Ukrainian leader Zelenskyy at the White House.",
+      "originalURL": "https://www.npr.org/2026/07/29/g-s1-136076/up-first-newsletter-iran-benjamin-netanyahu-trump-iowa-water-anthony-fauci-fed-rates",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "対イラン攻撃を一時停止——米国の兵器備蓄は本当に限界なのか",
-          "summary": "トランプ大統領は今月、ペンシルベニア州で開かれた防衛・イノベーション・サミットに主要防衛企業のCEOたちを従えて登壇し、兵器の増産と生産加速を訴えた。",
+          "headline": "米・イラン間の緊張が再燃、ファウチ博士は上院で証言へ",
+          "summary": "米中央軍によると、現地時間昨日午後6時前、イランが中東の米軍部隊に向けてミサイルを発射し、米国とイランの間で再び戦闘が始まった。",
           "keyTakeaways": [
-            "トランプ政権下で、米国の兵器備蓄は実際に逼迫しているのか",
-            "サミットは、米国の産業再生と戦闘能力の強化——ヘグセス長官の言葉を借りれば「自由の兵器庫」の拡充——という二本柱の取り組みとして位置づけられた",
-            "その後、米国はイランへの攻撃を一時停止し、交渉の余地を残した"
+            "米軍とサウジアラビア軍はイラク国内のイラン系民兵組織への攻撃で応じた。サウジがこの紛争に直接関与するのは異例のことだ。",
+            "イスラエルはイランおよびレバノンのヒズボラが及ぼす安全保障上の脅威に対処するため、戦闘継続の意向を示している。",
+            "アンソニー・ファウチ博士は本日、新型コロナウイルスの起源をめぐる調査の一環として上院委員会で証言する予定だ。"
           ],
-          "whyItMatters": "ニューヨーク・タイムズの報道によれば、トランプ大統領は側近から、紛争のエスカレートは米国の備蓄をさらに消耗させるとして、計画の棚上げを進言されていたという。"
+          "whyItMatters": "この緊張の高まりは、トランプ大統領がホワイトハウスでイスラエルのネタニヤフ首相とウクライナのゼレンスキー大統領と会談した当日に起きた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Trump just paused strikes on Iran. Is the US actually running low on weapons?",
-              "duration": 4.545306
+              "text": "I'm seeing reports about fighting between the U.S. and Iran. What happened?",
+              "duration": 3.996735
             },
             {
               "speaker": "explainer",
-              "text": "It's a real concern. A New York Times report says Trump was advised that escalating the conflict would further drain American stockpiles.",
-              "duration": 7.706122
+              "text": "Iran launched missiles at U.S. forces in the Middle East yesterday, just before six p.m. Eastern time. That's according to U.S. Central Command.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "That's surprising. I thought the US had huge military reserves.",
-              "duration": 3.709388
+              "text": "And how did the U.S. respond?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "It does, but recent conflicts have put pressure on supplies. Earlier this month, Trump held a summit with defense company CEOs, pushing them to build more weapons faster.",
-              "duration": 9.221224
+              "text": "U.S. and Saudi forces responded with attacks on Iranian-backed militias in Iraq. It's actually a rare show of force from Saudi Arabia in this conflict.",
+              "duration": 8.803265
             },
             {
               "speaker": "listener",
-              "text": "What was that summit about exactly?",
-              "duration": 2.037551
+              "text": "What does Israel want in all of this?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "The administration called it a two-pronged approach: revitalize American industry and boost warfighting capabilities. They're calling it the arsenal of freedom.",
-              "duration": 9.221224
+              "text": "Israel wants to continue fighting to address security threats from Iran and Iran-backed Hezbollah in Lebanon.",
+              "duration": 5.381224
             },
             {
               "speaker": "listener",
-              "text": "So the pause with Iran is partly about letting stockpiles recover?",
-              "duration": 4.310204
+              "text": "The timing seems notable. Was anything else happening yesterday?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "That seems to be part of it. The pause is officially to allow negotiations to go ahead, but the weapons concern appears to be a factor in the timing.",
-              "duration": 8.385306
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカがイランへの攻撃を止めました。",
-              "duration": 3.168
+              "text": "Yes. This all happened on the same day President Trump met with Israeli Prime Minister Netanyahu and Ukrainian leader Zelenskyy at the White House.",
+              "duration": 9.012245
             },
             {
-              "speaker": "narrator",
-              "text": "交渉の時間を作るためと説明されていますが、背景には別の事情があるようです。",
-              "duration": 6.216
+              "speaker": "listener",
+              "text": "And I saw something about Dr. Fauci testifying today?",
+              "duration": 3.160816
             },
             {
-              "speaker": "narrator",
-              "text": "ニューヨーク・タイムズによれば、トランプ大統領は側近から。",
-              "duration": 4.896
-            },
-            {
-              "speaker": "narrator",
-              "text": "これ以上戦いを広げると兵器の在庫が底をつくと忠告されていました。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "今月、ペンシルベニア州で開かれた防衛サミットでは。",
-              "duration": 4.488
-            },
-            {
-              "speaker": "narrator",
-              "text": "大手防衛企業のトップたちを集め、兵器の生産を増やし、速度を上げるよう呼びかけています。",
-              "duration": 7.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "政権はこれを、産業の立て直しと戦う力の強化という二つの目標を同時に進める取り組みだと位置づけています。",
-              "duration": 8.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "在庫の心配が戦略を左右する時代に、私たちは入っているのかもしれません。",
-              "duration": 6.0
+              "speaker": "explainer",
+              "text": "Right. He's set to testify before a Senate committee as part of ongoing investigations into the origins of COVID-19.",
+              "duration": 6.687347
             }
           ]
         }
@@ -134,144 +98,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-      "summary": "Ben Carroll has been sworn in as the premier of Victoria after Jacinta Allan resigned, with his first act as leader to announce a royal commission into alleged corruption in the construction sector.",
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "Some people's chats with Claude AI found to be publicly available online",
+      "summary": "Hundreds of user conversations with Anthropic's popular artificial intelligence (AI) chatbot Claude were found to have been available to essentially anyone online.",
       "keyTakeaways": [
-        "Carroll’s elevation comes just four months before the state election and follows a tumultuous 48 hours for Labor, during which Allan resigned and a surprise challenger emerged in the leadership contest.",
-        "Carroll, who at a press conference in June looked Allan in the eye and declared he would not challenge her, said “circumstances had changed”.",
-        "This delegation had already visited the premier and informed her that they wanted change."
+        "Links to the chats, some of which included personal and work information, would show up if a user of a search engine like Google used a site-specific search term.",
+        "The searches showed Claude chats for which a user had decided to \"share\" a link had been saved by search engines like Google, leaving them accessible to the broader public.",
+        "A spokeswoman for Anthropic said that Claude users maintained control over if and when to share conversations they had with the chatbot."
       ],
-      "whyItMatters": "After her announcement, it was expected that Carroll would run unopposed for the leadership during Tuesday’s caucus meeting, but the meeting descended into chaos when the attorney general, Sonya Kilkenny – a key supporter of Allan’s – put her hand up for the leadership.",
-      "originalURL": "https://www.theguardian.com/australia-news/2026/jul/28/jacinta-allan-resigns-quits-victoria-premier-leadership-challenge-ben-carroll",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "The share option within Claude tells a user that \"anyone with the link\" may view the contents of that link, but does not explicitly state that the link may end up in Google and search results.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cly5qgjk5ywo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ビクトリア州に新首相、就任初日に建設業界の王立委員会設置を表明",
-          "summary": "ジャシンタ・アランの辞任を受け、ベン・キャロルがビクトリア州首相に就任した。キャロルは就任直後、建設業界における汚職疑惑を調査する王立委員会の設置を表明している。",
+          "headline": "Claudeとのチャットが検索で誰でも閲覧可能な状態に",
+          "summary": "AnthropicのAIチャットボット「Claude」におけるユーザーとの会話が、数百件にわたってオンライン上で事実上誰でも閲覧できる状態にあったことが明らかになった。",
           "keyTakeaways": [
-            "就任は州議会選挙の四か月前というタイミングで、労働党にとって激動の四十八時間の末に実現した",
-            "六月の記者会見でアランを前に「挑戦しない」と明言していたキャロルは、「状況が変わった」と述べた",
-            "代議員団はすでにアラン前首相のもとを訪れ、交代を求めていた"
+            "個人情報や業務上のやり取りを含む会話へのリンクが、Googleなどで特定の検索を行うと表示される状態だった。",
+            "ユーザーが「共有」を選んだチャットのリンクが検索エンジンに保存され、広く一般に公開される形になっていた。",
+            "Anthropicの広報担当者は、会話を共有するかどうかはユーザー自身が管理していると説明した。"
           ],
-          "whyItMatters": "アランの辞任表明後、キャロルが無投票で党首に選出されると見られていたが、アランの有力な支持者だった司法長官ソーニャ・キルケニーが名乗りを上げ、党内会合は混乱に陥った。"
+          "whyItMatters": "Claudeの共有機能には「リンクを持つ誰もが閲覧できる」と記されているが、そのリンクが検索結果に表示される可能性については明示されていない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Victoria has a new premier this morning?",
-              "duration": 2.45551
+              "text": "I saw something about Claude AI chats being found online. What happened exactly?",
+              "duration": 4.963265
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Ben Carroll was sworn in after Jacinta Allan resigned. It all happened very quickly.",
-              "duration": 4.597551
+              "text": "Hundreds of conversations people had with Claude ended up publicly accessible. If you searched Google with specific terms, you could find links to these chats.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "And this is just months before an election, right?",
-              "duration": 2.742857
+              "text": "Wait, how did private conversations end up on Google?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Four months. It follows a really turbulent couple of days for Labor.",
-              "duration": 3.84
+              "text": "They weren't exactly private. Users had clicked a 'share' button to create a link. Those shared links then got saved by search engines, making them discoverable by anyone.",
+              "duration": 9.795918
             },
             {
               "speaker": "listener",
-              "text": "What's his first move as premier?",
-              "duration": 1.697959
+              "text": "So people shared them without realizing they'd be searchable?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "He's announced a royal commission into alleged corruption in the construction sector.",
-              "duration": 3.84
+              "text": "That seems to be the issue. Claude tells users that 'anyone with the link' can view it, but doesn't explicitly mention the link might show up in Google results.",
+              "duration": 9.090612
             },
             {
               "speaker": "listener",
-              "text": "Wasn't there some drama around how he became leader?",
-              "duration": 3.056327
+              "text": "What kind of information was in these chats?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "There was. Back in June, he publicly said he wouldn't challenge Allan. But he says circumstances changed.",
-              "duration": 6.347755
+              "text": "Some included personal and work information. The concern is people may have thought they were just sharing with specific individuals, not the entire internet.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "What changed exactly?",
-              "duration": 1.332245
+              "text": "What's Anthropic saying about this?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "A group within the party had already told Allan they wanted change. Then at Tuesday's meeting, the attorney general Sonya Kilkenny unexpectedly ran against him.",
-              "duration": 8.777143
-            },
-            {
-              "speaker": "listener",
-              "text": "So it wasn't the smooth transition people expected.",
-              "duration": 3.108571
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not at all. The meeting descended into chaos, according to reports.",
-              "duration": 3.84
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オーストラリアのビクトリア州で、ベン・キャロルが新しい首相に就任しました。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "前任のジャシンタ・アランが辞任したことを受けての交代です。",
-              "duration": 4.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "キャロルは就任後すぐに、建設業界の汚職疑惑を調べる王立委員会を設けると発表しました。",
-              "duration": 7.392
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の就任は州の選挙まで四か月という時期で、労働党内では激しい動きが続いていました。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "キャロルは以前、アランに挑まないと公言していましたが、状況が変わったと説明しています。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "党内の代議員たちがアランに交代を求めたことが、辞任の背景にあります。",
-              "duration": 5.88
-            },
-            {
-              "speaker": "narrator",
-              "text": "当初は無投票での選出が見込まれていましたが、司法長官も名乗りを上げ、党内会合は混乱しました。",
-              "duration": 7.776
-            },
-            {
-              "speaker": "narrator",
-              "text": "選挙を控えた時期の指導者交代は、州政治に大きな影響を与えそうです。",
-              "duration": 5.952
+              "text": "A spokeswoman said users maintain control over whether to share conversations. The sharing is intentional, but the visibility in search results caught people off guard.",
+              "duration": 8.724898
             }
           ]
         }
@@ -281,117 +189,78 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Verge",
-      "headline": "X Money is launching in the US starting today",
-      "summary": "X Money, a core part of Elon Musk’s mission to turn X into an “ everything app,” is rolling out starting today, 9to5Mac reports.",
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "As Spain battles wildfires, its politicians battle over climate change's role",
+      "summary": "Crews are still battling wildfires that broke out last week and have burned nearly 200,000 acres across Spain.",
       "keyTakeaways": [
-        "Other perks include Apple Wallet support and free money transfers on X.",
-        "The launch comes a few months after Elon Musk said “early public access” for the payment platform was launching in April."
+        "SACHA PFEIFFER, HOST: In Spain, crews are still battling fires that broke out last week and have devastated nearly 200,000 acres across the country.",
+        "Now Spain is bracing itself even more as temperatures are again set to rise to more than 100 degrees starting tomorrow, as NPR's Miguel Macias reports.",
+        "MIGUEL MACIAS, BYLINE: It's always been very hot in Spain in the summer."
       ],
-      "whyItMatters": "The payment platform offers a digital wallet and peer-to-peer payments similar to Venmo, along with a metal Visa card users can emblazon with their X username.",
-      "originalURL": "https://www.theverge.com/tech/971649/x-money-launch-elon-musk",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "The country is bracing for another round of extreme heat, with temperatures expected to top 100 degrees Fahrenheit starting Wednesday.",
+      "originalURL": "https://www.npr.org/2026/07/28/nx-s1-5909198/spain-wildfires-politicians-climate-change",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "Xのデジタルウォレットサービスがアメリカで始動",
-          "summary": "イーロン・マスクがXを「なんでもアプリ」にするという構想の核となる決済サービス、X Moneyが本日より米国でのロールアウトを開始した。9to5Macが伝えた。",
+          "headline": "山火事が続くスペイン、気候変動をめぐり政界も揺れる",
+          "summary": "先週発生した山火事はいまだ収束せず、スペイン全土でおよそ八万ヘクタールが焼失した。消火活動が続くなか、政治家たちは気候変動との関連をめぐって論戦を繰り広げている。",
           "keyTakeaways": [
-            "Apple Walletへの対応と、X上での無料送金機能も提供される。",
-            "マスク氏が4月に一般向け早期アクセスを開始すると述べてから、数か月を経ての正式始動となった。"
+            "先週から続く山火事により、スペイン全土でおよそ八万ヘクタールが焼き尽くされた。",
+            "明日からは再び気温が摂氏三十八度を超える見込みで、当局はさらなる警戒を呼びかけている。",
+            "スペインの夏の酷暑は以前からのことだが、その深刻さは年々増している。"
           ],
-          "whyItMatters": "このサービスはVenmoに近いデジタルウォレットと個人間送金に加え、自分のXユーザー名を刻印できるメタル製Visaカードも用意されている。"
+          "whyItMatters": "再び極端な高温が迫るなか、スペインは厳しい試練に直面しようとしている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So X is launching a payment service now?",
-              "duration": 2.45551
+              "text": "I saw Spain is dealing with major wildfires right now. How bad is it?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, X Money is rolling out in the US starting today. It's part of Elon Musk's plan to turn X into what he calls an everything app.",
+              "text": "It's serious. Fires that started last week have burned nearly 200,000 acres across the country, and crews are still working to contain them.",
+              "duration": 8.254694
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a huge area. Is there any relief coming?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Unfortunately, the opposite. Spain is bracing for another round of extreme heat starting Wednesday, with temperatures expected to go above 100 degrees.",
+              "duration": 9.038367
+            },
+            {
+              "speaker": "listener",
+              "text": "So the conditions that helped fuel these fires are coming back?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And it's worth noting that while Spain has always had hot summers, the intensity and frequency of these heat waves is what's raising concerns.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there debate in Spain about what's driving this?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Politicians there are actually battling over climate change's role in these wildfires, even as the fires themselves continue burning.",
               "duration": 7.836735
-            },
-            {
-              "speaker": "listener",
-              "text": "What does it actually do?",
-              "duration": 1.436735
-            },
-            {
-              "speaker": "explainer",
-              "text": "It offers a digital wallet and peer-to-peer payments, similar to Venmo. You can also get a metal Visa card that can have your X username on it.",
-              "duration": 7.758367
-            },
-            {
-              "speaker": "listener",
-              "text": "Are there any special features?",
-              "duration": 1.697959
-            },
-            {
-              "speaker": "explainer",
-              "text": "A couple things stand out. It supports Apple Wallet, and money transfers on X are free.",
-              "duration": 4.623673
-            },
-            {
-              "speaker": "listener",
-              "text": "Didn't Musk mention this was coming earlier?",
-              "duration": 2.35102
-            },
-            {
-              "speaker": "explainer",
-              "text": "He did. He said early public access would launch in April, so this is a few months after that timeline.",
-              "duration": 5.381224
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Xが今日から、アメリカで決済サービスを始めました。",
-              "duration": 4.368
-            },
-            {
-              "speaker": "narrator",
-              "text": "デジタルウォレットと個人間の送金ができる仕組みで、Venmoに似ています。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "自分のXユーザー名を刻んだ金属製のVisaカードも使えます。",
-              "duration": 5.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "Apple Walletにも対応し、X上での送金は無料です。",
-              "duration": 4.824
-            },
-            {
-              "speaker": "narrator",
-              "text": "イーロン・マスクはXを「なんでもアプリ」にしたいと話していて、この決済機能はその中心です。",
-              "duration": 7.32
-            },
-            {
-              "speaker": "narrator",
-              "text": "4月に早期アクセスを始めると言っていましたが、数か月遅れての開始となりました。",
-              "duration": 6.048
-            },
-            {
-              "speaker": "narrator",
-              "text": "支払いも送金も一つのアプリで済むようになれば、使い方が変わるかもしれません。",
-              "duration": 5.952
             }
           ]
         }
@@ -402,133 +271,87 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge (Mobile)",
-      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
-      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "source": "The Guardian (Technology)",
+      "headline": "Datacentre projects could face fees for grid access to ease connection queue, Ofgem says",
+      "summary": "Datacentre projects in Britain will be forced to put down significant upfront fees to secure an energy connection under proposals to ease an electricity grid logjam.",
       "keyTakeaways": [
-        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
-        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
-        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+        "Ofgem, the sector watchdog, said there were 315 datacentres currently queueing to connect up, representing 73GW of demand.",
+        "This will be demanded when a project receives a connection offer and returned when the datacentre is switched on.",
+        "Ofgem is proposing that datacentre providers, who include companies such as Amazon and Microsoft, put down pledges of £350m to reserve 500MW of grid capacity."
       ],
-      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
-      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
-      "readTime": 8,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "whyItMatters": "Under the energy regulator for Great Britain’s proposals to thin out speculative schemes, projects will be required to lodge significant upfront fees or financial security via letters of credit, bonds or cash deposits.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/jul/29/datacentre-projects-fees-grid-access-connection-queue-ofgem",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
-          "summary": "サムスンは夏恒例の発表イベントを水曜日に開催し、新ラインナップの折りたたみスマートフォンとスマートウォッチを公開した。",
+          "headline": "データセンターの系統接続に前払い費用、英規制当局が提案",
+          "summary": "英国のエネルギー規制当局オフジェムは、電力系統への接続待ちが深刻化するなか、データセンター事業者に対して接続枠を確保するための多額の前払い費用を義務付ける案を示した。",
           "keyTakeaways": [
-            "イベントを見逃した人も、今年の主な発表内容をまとめて確認できる。",
-            "新型Foldは、サムスン独自のFlex Titaniumディスプレイ技術を採用した改良ヒンジを搭載。",
-            "内側ディスプレイの折り目が完全に消えたわけではないが、従来モデルと比べて明らかに目立たなくなっている。"
+            "現在315件のデータセンターが接続を待機しており、その需要は合計73GWに上る",
+            "費用は接続オファーの受領時に徴収され、施設の稼働開始後に返還される",
+            "アマゾンやマイクロソフトなどの事業者が対象で、500MWの容量確保に3億5000万ポンドの拠出が求められる"
           ],
-          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、昨年のZ Fold 7から大幅にデザインが刷新された。"
+          "whyItMatters": "投機的な計画を排除し系統接続の混雑を緩和するため、オフジェムは信用状・債券・現金預託などによる財務的担保の提供を事業者に求める方針だ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Samsung had their big summer event yesterday?",
-              "duration": 2.76898
+              "text": "I saw something about datacentres having to pay fees just to connect to the electricity grid. What's going on there?",
+              "duration": 6.347755
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Galaxy Unpacked happened Wednesday morning. They showed off new watches and foldable phones.",
-              "duration": 5.381224
+              "text": "Britain's energy regulator, Ofgem, is proposing that datacentre projects put down significant upfront fees to reserve grid capacity. The idea is to ease a huge backlog.",
+              "duration": 10.266122
             },
             {
               "speaker": "listener",
-              "text": "What was the main thing they announced?",
-              "duration": 1.802449
+              "text": "How big is this backlog?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "The Galaxy Z Fold 8 was the highlight. It got a major redesign from last year's Z Fold 7.",
-              "duration": 5.01551
+              "text": "There are currently 315 datacentres queueing to connect, representing 73 gigawatts of demand. That's a lot of projects waiting in line.",
+              "duration": 7.836735
             },
             {
               "speaker": "listener",
-              "text": "What's different about it?",
-              "duration": 1.567347
+              "text": "So what exactly would these fees look like?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "It has an updated hinge design with something called Flex Titanium display tech.",
-              "duration": 4.310204
+              "text": "Ofgem is proposing that providers put down pledges of £350 million to reserve 500 megawatts of grid capacity. The money would be returned when the datacentre actually switches on.",
+              "duration": 10.03102
             },
             {
               "speaker": "listener",
-              "text": "Does that fix the crease issue those phones have?",
-              "duration": 3.004082
+              "text": "Why make them pay upfront like that?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "It doesn't eliminate it completely, but Samsung says the crease is significantly less noticeable than on their previous foldables.",
-              "duration": 6.582857
+              "text": "The regulator wants to thin out speculative schemes. Some projects might be reserving grid space without serious plans to build, and this requirement helps ensure only committed projects move forward.",
+              "duration": 10.527347
             },
             {
               "speaker": "listener",
-              "text": "Were there other announcements too?",
-              "duration": 1.933061
+              "text": "Who are we talking about here? Big tech companies?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Yes, there were six major announcements total, including the new watches they mentioned. The full lineup is available if you want to catch up on what you missed.",
-              "duration": 8.385306
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "水曜日の朝、Samsungが夏の発表会を開きました。",
-              "duration": 4.584
-            },
-            {
-              "speaker": "narrator",
-              "text": "新しい折りたたみスマートフォンと時計が並びます。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "中心はGalaxy Z Fold 8です。",
-              "duration": 3.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "昨年のZ Fold 7から、見た目が大きく変わりました。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "ヒンジが新しくなり、Flex Titaniumという技術が使われています。",
-              "duration": 5.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "内側の画面の折り目は、以前よりずっと目立ちにくくなりました。",
-              "duration": 4.872
-            },
-            {
-              "speaker": "narrator",
-              "text": "完全には消えていませんが、進歩は確かです。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "折りたたみの形が、少しずつ日常に近づいています。",
-              "duration": 4.44
+              "text": "Yes, the providers include companies like Amazon and Microsoft. They can put down the fees as cash deposits, letters of credit, or bonds.",
+              "duration": 7.78449
             }
           ]
         }
@@ -540,7 +363,7 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "BBC News (Science & Environment)",
-      "headline": "How to see July's full Buck Moon as it rises in the night sky",
+      "headline": "How to see July's Buck Moon light up the night sky",
       "summary": "The July full Moon, also known as the Buck Moon, will light up the night sky across the UK on Wednesday.",
       "keyTakeaways": [
         "The second of three full Moons this summer, it is set to peak at 15:36 BST on 29 July.",
@@ -550,31 +373,31 @@
       "whyItMatters": "Across north-west England and Wales the remnants of a cold weather front might obscure the sky, but very little rain is expected and the cloud could break.",
       "originalURL": "https://www.bbc.co.uk/weather/articles/cx2lvg855x8o?at_medium=RSS&at_campaign=rss",
       "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The academy",
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "7月の満月「バック・ムーン」、夜空に昇る",
-          "summary": "7月の満月は「バック・ムーン」とも呼ばれ、水曜日の夜、英国の空を明るく照らす。",
+          "headline": "7月の満月「バックムーン」、今夜の夜空を照らす",
+          "summary": "7月の満月、通称「バックムーン」が水曜日の夜、英国の空に浮かぶ。夏の夜を静かに彩る、季節の便りだ。",
           "keyTakeaways": [
-            "今夏三度の満月のうち二度目で、最大の満月の瞬間は日本時間29日23時36分ごろ。",
-            "満月のピークは地平線の下にあたるため、英国では肉眼でその瞬間を捉えることはできない。",
-            "「バック・ムーン」という名は、この時期に雄鹿の角が生え揃うことに由来する。"
+            "今夏3度の満月のうち2度目。最大の満月は7月29日15時36分（英国夏時間）に訪れる",
+            "満月の瞬間、月は地平線の下にあるため、英国では肉眼で捉えることができない",
+            "「バックムーン」という名の由来は、この時期に雄鹿の角が伸びることにちなむ"
           ],
-          "whyItMatters": "イングランド北西部とウェールズでは寒冷前線の残りが空を覆う可能性があるが、雨はほとんど見込まれず、雲の切れ間も期待できる。"
+          "whyItMatters": "イングランド北西部とウェールズでは寒冷前線の影響で雲が広がる恐れがあるが、雨はほとんど見込まれず、雲の切れ間から月を望める可能性もある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-29/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
               "text": "So there's a full Moon coming up this week?",
-              "duration": 2.403265
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
@@ -584,93 +407,42 @@
             {
               "speaker": "listener",
               "text": "Buck Moon? That's an interesting name.",
-              "duration": 2.324898
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "It is. The name comes from the time of year when male deer grow their antlers.",
-              "duration": 4.832653
+              "text": "It is. The name comes from traditional naming, though the story doesn't explain exactly why it's called that.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
               "text": "When's the best time to see it?",
-              "duration": 1.567347
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "It actually peaks at 15:36 in the afternoon, so across the UK, the Moon will still be below the horizon at that exact moment.",
-              "duration": 7.601633
+              "text": "It peaks at 15:36 BST on the 29th, but that's when the Moon will be just below the horizon in the UK. So you'll want to look after sunset when it rises.",
+              "duration": 9.613061
             },
             {
               "speaker": "listener",
-              "text": "So we'll miss the peak fullness?",
-              "duration": 1.854694
+              "text": "Will the weather cooperate?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "Technically, yes. But it'll still look beautifully full when it rises Wednesday evening.",
-              "duration": 5.041633
+              "text": "Mostly, yes. There might be some cloud across north-west England and Wales from a cold front, but very little rain is expected and the cloud could break up.",
+              "duration": 9.508571
             },
             {
               "speaker": "listener",
-              "text": "Any weather concerns for viewing?",
-              "duration": 1.750204
+              "text": "So it should still be visible for most people.",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "In north-west England and Wales, there might be some cloud from a cold front, but very little rain is expected and the cloud could break up.",
-              "duration": 7.183673
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-07-28/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "水曜日の夜、英国の空に7月の満月が昇ります。",
-              "duration": 4.776
-            },
-            {
-              "speaker": "narrator",
-              "text": "この満月は「バック・ムーン」と呼ばれています。",
-              "duration": 4.152
-            },
-            {
-              "speaker": "narrator",
-              "text": "名前の由来は、この時期に雄鹿の角が生え揃うことにあります。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "今年の夏、満月は全部で3回訪れますが、これは2回目です。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "満月のピークは日本時間で29日の23時36分ごろです。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "英国では地平線の下にあたるため、その瞬間を直接見ることはできません。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "イングランド北西部とウェールズでは寒冷前線の影響で雲が広がる可能性があります。",
-              "duration": 6.216
-            },
-            {
-              "speaker": "narrator",
-              "text": "雨はほとんど降らず、雲の切れ間から月が顔を出すかもしれません。",
-              "duration": 5.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "夜空を見上げるには、良い機会になりそうです。",
-              "duration": 3.744
+              "text": "Exactly. It's worth looking up Wednesday evening to catch it lighting up the night sky.",
+              "duration": 4.075102
             }
           ]
         }

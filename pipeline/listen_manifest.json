@@ -10424,6 +10424,293 @@
           ]
         }
       }
+    },
+    "2026-07-29": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-29/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about fighting between the U.S. and Iran. What happened?",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran launched missiles at U.S. forces in the Middle East yesterday, just before six p.m. Eastern time. That's according to U.S. Central Command.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "And how did the U.S. respond?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "U.S. and Saudi forces responded with attacks on Iranian-backed militias in Iraq. It's actually a rare show of force from Saudi Arabia in this conflict.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "What does Israel want in all of this?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Israel wants to continue fighting to address security threats from Iran and Iran-backed Hezbollah in Lebanon.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "The timing seems notable. Was anything else happening yesterday?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. This all happened on the same day President Trump met with Israeli Prime Minister Netanyahu and Ukrainian leader Zelenskyy at the White House.",
+              "duration": 9.012245
+            },
+            {
+              "speaker": "listener",
+              "text": "And I saw something about Dr. Fauci testifying today?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. He's set to testify before a Senate committee as part of ongoing investigations into the origins of COVID-19.",
+              "duration": 6.687347
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-29/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about Claude AI chats being found online. What happened exactly?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hundreds of conversations people had with Claude ended up publicly accessible. If you searched Google with specific terms, you could find links to these chats.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, how did private conversations end up on Google?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "They weren't exactly private. Users had clicked a 'share' button to create a link. Those shared links then got saved by search engines, making them discoverable by anyone.",
+              "duration": 9.795918
+            },
+            {
+              "speaker": "listener",
+              "text": "So people shared them without realizing they'd be searchable?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be the issue. Claude tells users that 'anyone with the link' can view it, but doesn't explicitly mention the link might show up in Google results.",
+              "duration": 9.090612
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of information was in these chats?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some included personal and work information. The concern is people may have thought they were just sharing with specific individuals, not the entire internet.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "What's Anthropic saying about this?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "A spokeswoman said users maintain control over whether to share conversations. The sharing is intentional, but the visibility in search results caught people off guard.",
+              "duration": 8.724898
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-29/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Spain is dealing with major wildfires right now. How bad is it?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's serious. Fires that started last week have burned nearly 200,000 acres across the country, and crews are still working to contain them.",
+              "duration": 8.254694
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a huge area. Is there any relief coming?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Unfortunately, the opposite. Spain is bracing for another round of extreme heat starting Wednesday, with temperatures expected to go above 100 degrees.",
+              "duration": 9.038367
+            },
+            {
+              "speaker": "listener",
+              "text": "So the conditions that helped fuel these fires are coming back?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And it's worth noting that while Spain has always had hot summers, the intensity and frequency of these heat waves is what's raising concerns.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there debate in Spain about what's driving this?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Politicians there are actually battling over climate change's role in these wildfires, even as the fires themselves continue burning.",
+              "duration": 7.836735
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-29/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about datacentres having to pay fees just to connect to the electricity grid. What's going on there?",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Britain's energy regulator, Ofgem, is proposing that datacentre projects put down significant upfront fees to reserve grid capacity. The idea is to ease a huge backlog.",
+              "duration": 10.266122
+            },
+            {
+              "speaker": "listener",
+              "text": "How big is this backlog?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "There are currently 315 datacentres queueing to connect, representing 73 gigawatts of demand. That's a lot of projects waiting in line.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "So what exactly would these fees look like?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Ofgem is proposing that providers put down pledges of £350 million to reserve 500 megawatts of grid capacity. The money would be returned when the datacentre actually switches on.",
+              "duration": 10.03102
+            },
+            {
+              "speaker": "listener",
+              "text": "Why make them pay upfront like that?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The regulator wants to thin out speculative schemes. Some projects might be reserving grid space without serious plans to build, and this requirement helps ensure only committed projects move forward.",
+              "duration": 10.527347
+            },
+            {
+              "speaker": "listener",
+              "text": "Who are we talking about here? Big tech companies?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the providers include companies like Amazon and Microsoft. They can put down the fees as cash deposits, letters of credit, or bonds.",
+              "duration": 7.78449
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-07-29/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a full Moon coming up this week?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on Wednesday. It's called the Buck Moon, and it's the second of three full Moons this summer.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Buck Moon? That's an interesting name.",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The name comes from traditional naming, though the story doesn't explain exactly why it's called that.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "When's the best time to see it?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It peaks at 15:36 BST on the 29th, but that's when the Moon will be just below the horizon in the UK. So you'll want to look after sunset when it rises.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "Will the weather cooperate?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly, yes. There might be some cloud across north-west England and Wales from a cold front, but very little rain is expected and the cloud could break up.",
+              "duration": 9.508571
+            },
+            {
+              "speaker": "listener",
+              "text": "So it should still be visible for most people.",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's worth looking up Wednesday evening to catch it lighting up the night sky.",
+              "duration": 4.075102
+            }
+          ]
+        }
+      }
     }
   }
 }

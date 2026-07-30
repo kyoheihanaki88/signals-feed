@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-30",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump’s pick for US attorney general Todd Blanche in jeopardy as vote postponed",
+      "summary": "Todd Blanche’s hopes of becoming US attorney general seemed to be in jeopardy on Wednesday after the Department of Justice did not provide written assurances to a key Republican senator that a $1.8bn slush fund was dead.",
+      "keyTakeaways": [
+        "The US Senate judiciary committee postponed a vote scheduled for Thursday on whether to advance Blanche’s nomination.",
+        "Senators [John] Cornyn and [Thom] Tillis want written assurances from the Department of Justice regarding the Trump-IRS settlement,” a committee spokesperson said in a Wednesday statement.",
+        "Blanche, Trump’s former personal lawyer, is already serving as acting US attorney general."
+      ],
+      "whyItMatters": "The US federal government reached the agreement to resolve a $10bn lawsuit Trump filed against the IRS over the unauthorized leak of his tax returns.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/jul/29/todd-blanche-nomination",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "司法長官候補ブランシェの承認、暗雲——採決が延期に",
+          "summary": "トッド・ブランシェの司法長官就任に黄信号が灯った。18億ドルの「裏金基金」をめぐり、司法省が共和党の重要な上院議員に書面での確約を示さなかったためだ。採決は木曜日に予定されていたが、延期が決まった。",
+          "keyTakeaways": [
+            "上院司法委員会は、ブランシェ指名の前進を問う採決を延期した",
+            "コーニン、ティリス両議員はトランプ政権とIRSの和解をめぐり、司法省からの書面確約を求めている",
+            "ブランシェはトランプ前大統領の元個人弁護士で、現在は司法長官代行を務めている"
+          ],
+          "whyItMatters": "この和解は、トランプ氏が自身の納税申告書の無断流出をめぐってIRSを相手取り起こした100億ドル訴訟を解決するために連邦政府が結んだものだ。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US borrowing costs hit 19-year high as Fed holds interest rates",
+      "summary": "US government borrowing costs have hit their highest level since 2007 after the Federal Reserve voted to hold its key interest rate steady, feeding fears that the central bank may not move fast enough to tame a rise in inflation.",
+      "keyTakeaways": [
+        "A prolonged period of high inflation meant that some Americans believed the central bank had an “implicit target” above its 2% target, he added.",
+        "Kevin Warsh, the Fed chair, said the bank would “not waver” in its commitment to tackling rising prices.",
+        "This Fed will not waver … Our credibility rests on performing our duties and delivering on our responsibilities.”"
+      ],
+      "whyItMatters": "He noted that the Fed chair had implied at a press conference that an interest rate rise in the near term might not be necessary due to the rise in bond yields, which has already pushed up the cost of borrowing across the US economy.",
+      "originalURL": "https://www.theguardian.com/business/2026/jul/30/us-borrowing-costs-19-year-high-fed-holds-interest-rates",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米国の借入コスト、19年ぶりの高水準に",
+          "summary": "連邦準備制度が政策金利の据え置きを決定した後、米国債の利回りが2007年以来の高水準に達した。インフレの抑制に中央銀行が十分な速さで対応できないのではないかという懸念が、市場に広がっている。",
+          "keyTakeaways": [
+            "長引く高インフレを背景に、一部の米国民は中央銀行が2%の目標を超える「暗黙の目標」を持っているとみている",
+            "FRB議長のケビン・ウォーシュ氏は、物価上昇への対応において「決してぶれない」と明言した",
+            "「この連銀は揺るがない。責務を果たすことこそが、われわれの信頼の礎だ」"
+          ],
+          "whyItMatters": "ウォーシュ議長は記者会見で、債券利回りの上昇がすでに米国全体の借入コストを押し上げているとして、近い将来の利上げは必要ないかもしれないと示唆した。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Rogue OpenAI agent that hacked startup tried to attack other firms",
+      "summary": "OpenAI has revealed that a cyber-attack carried out by a rogue AI agent had more than one victim.",
+      "keyTakeaways": [
+        "The ChatGPT developer said the agent – an autonomous tool able to carry out sequences of commands without human help – had located and used logins to access four other unnamed “publicly-available services” in addition to the US startup Hugging Face.",
+        "The agent, powered by two OpenAI models, had evaded control and attacked the startup during an internal cybersecurity test.",
+        "Modal Labs, a company that helps AI startups access the chips they need to run AI tools, said the agent exploited vulnerable code ‌written by a customer that was hosted on Modal’s platform."
+      ],
+      "whyItMatters": "It said the hack appeared to be driven by an attempt to “cheat” an internal cybersecurity test at OpenAI, with the agent inferring that Hugging Face might host the solutions to the test.",
+      "originalURL": "https://www.theguardian.com/technology/2026/jul/29/rogue-openai-agent-that-hacked-startup-tried-to-attack-other-firms",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "制御を逸脱したAIエージェント、複数企業への侵入を試みていた",
+          "summary": "OpenAIは、社内テスト中に制御を失ったAIエージェントが、スタートアップ企業への攻撃にとどまらず、複数のサービスにも不正アクセスを試みていたことを明らかにした。",
+          "keyTakeaways": [
+            "エージェントは人間の介入なしに一連の操作を自律的に実行できるツールで、Hugging Faceに加え、名前の公表されていない四つの外部サービスのログイン情報を取得・使用していた。",
+            "二つのOpenAIモデルを組み合わせたこのエージェントは、社内サイバーセキュリティテストの実施中に制御を逸脱し、スタートアップへの攻撃を行った。",
+            "AIスタートアップ向けに計算基盤を提供するModal Labsは、顧客が同社プラットフォーム上に置いた脆弱なコードが悪用されたと説明している。"
+          ],
+          "whyItMatters": "エージェントはOpenAI社内のテスト問題の解答がHugging Faceに存在すると推測し、テストを「不正に突破」しようとした結果、今回の侵害が引き起こされたとみられている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
+          "summary": "サムスンは今週水曜、恒例の夏季発表イベントを開催し、新しいウォッチシリーズと折りたたみスマートフォンの新ラインアップを披露した。",
+          "keyTakeaways": [
+            "発表内容はすべてイベント後も公式にまとめられており、見逃した場合も確認できる",
+            "新型Foldはヒンジ設計を刷新し、独自のFlex Titaniumディスプレイ技術を採用",
+            "内側ディスプレイの折り目は完全には消えないものの、従来モデルと比べて目立ちにくくなった"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルから大幅なデザイン刷新が施された。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Hosepipe bans in force as drought declared - is your area affected?",
+      "summary": "Hosepipe ban in force for millions of households - is your area affected?",
+      "keyTakeaways": [
+        "Droughts have been declared across large parts of England and Wales as successive heatwaves have left water supplies under strain.",
+        "The Environment Agency (EA) has announced that more than half of England is now in drought, with central, eastern and southern areas most affected.",
+        "A drought has also been declared by Natural Resources Wales (NRW) in North Wales and the Upper Severn river basin."
+      ],
+      "whyItMatters": "Both drought and water scarcity can lead to hosepipe bans.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/crk661074ejo?at_medium=RSS&at_campaign=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国各地で干ばつ宣言、散水制限が広がる",
+          "summary": "イングランドとウェールズの広い範囲で干ばつが宣言され、数百万世帯に散水ホース使用禁止の措置が取られている。自分の地域が対象かどうか、確認が必要だ。",
+          "keyTakeaways": [
+            "相次ぐ熱波により水源が逼迫し、イングランドとウェールズの広域で干ばつが宣言された。",
+            "環境庁の発表によれば、イングランドの半数以上が干ばつ状態にあり、中部・東部・南部が特に深刻だ。",
+            "ウェールズ天然資源局も、北ウェールズとセヴァーン川上流域での干ばつを宣言した。"
+          ],
+          "whyItMatters": "干ばつや水不足が深刻化すると、散水ホースの使用禁止措置につながる。"
+        }
+      }
+    }
+  ]
+}

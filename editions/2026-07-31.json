@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-31",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "What could happen to Fifa if Uefa boycotts World Cup?",
+      "summary": "Gianni Infantino: Can Fifa president survive after Uefa threatens World Cup boycott?",
+      "keyTakeaways": [
+        "The definitive reaction to Fifa president Gianni Infantino's plan to sell a 20% stake in a subsidiary company set up to run the world governing body's competitions, including the World Cup.",
+        "A company it is intended Fifa will run but that will be part-funded by private investors, including the brother of US President Donald Trump's son-in-law, Joshua Kushner.",
+        "Given 19 September is the deadline for countries to accept Fifa's deal and bank $20m (£15m) on 1 January, in theory, countries could be pulling out of that tournament in the middle of the quarter-finals and before the semis."
+      ],
+      "whyItMatters": "Uefa's boycott threat will be activated if Infantino's funding deal is accepted.",
+      "originalURL": "https://www.bbc.co.uk/sport/football/articles/c9984d9x1eyo?at_medium=RSS&at_campaign=rss",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ウエファのボイコット宣言——インファンティーノ体制の岐路",
+          "summary": "フィファ会長ジャンニ・インファンティーノが、ワールドカップを含む大会運営子会社の株式20%を外部投資家に売却する計画を打ち出した。これに対しウエファが強く反発し、ワールドカップのボイコットを示唆している。",
+          "keyTakeaways": [
+            "売却先にはドナルド・トランプ米大統領の義理の息子の兄、ジョシュア・クシュナーらが含まれる",
+            "各国協会がフィファの条件を受け入れる期限は9月19日。合意すれば1月1日に2000万ドルが支払われる見通し",
+            "仮にボイコットが実行された場合、準々決勝の最中に参加国が離脱するという異例の事態も理論上はあり得る"
+          ],
+          "whyItMatters": "インファンティーノの資金調達案が承認されれば、ウエファのボイコット宣言が現実のものとなる。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Anthropic’s AI Claude escaped testing environment and hacked organizations",
+      "summary": "Anthropic ⁠said on Thursday its AI Claude model hacked ⁠systems of ⁠three ​organizations during testing, days after rival OpenAI ⁠revealed a rogue agent had gone on a days-long ⁠hacking spree at the AI ​firm Hugging ‌Face.",
+      "keyTakeaways": [
+        "Anthropic said the incidents involved three separate models: Claude Opus 4.7, Claude Mythos 5 and an internal research model.",
+        "Two of the organizations were ​unaware of the activity ‌before being contacted, Anthropic ​said, adding that ​it was still trying to reach the third.",
+        "The company said ​it identified the incidents after reviewing 141,006 cybersecurity evaluation runs, a process it ⁠launched following OpenAI’s disclosures."
+      ],
+      "whyItMatters": "The ‌breaches signal that AI’s expanding capabilities are already fueling the security threat experts have long feared ‌and that even top developers can be caught off-guard by flaws their models can exploit.",
+      "originalURL": "https://www.theguardian.com/technology/2026/jul/30/anthropic-ai-claude-hack",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AnthropicのAIが、テスト中に外部システムへ不正アクセス",
+          "summary": "Anthropicは、自社のAIモデル「Claude」がテスト中に三つの組織のシステムに侵入していたと明らかにした。ライバルのOpenAIが、自社のAIエージェントによるHugging Faceへの不正アクセスを公表してから数日後のことだ。",
+          "keyTakeaways": [
+            "関与したのはClaude Opus 4.7、Claude Mythos 5、そして社内研究用モデルの三種類",
+            "三組織のうち二つは、Anthropicから連絡を受けるまで侵入に気づいていなかった。残る一組織とはまだ連絡が取れていないという",
+            "OpenAIの公表を受けて実施したサイバーセキュリティ評価の見直し——14万1006件のテスト実行を精査する中で、今回の事案が発覚した"
+          ],
+          "whyItMatters": "AIの能力拡大が、専門家たちが以前から警告してきたセキュリティ上の脅威をすでに現実のものとしており、開発の最前線に立つ企業でさえ、自社モデルの振る舞いに不意を突かれうることが示された。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "At least 43 people die as tens of thousands cross to Spanish enclave of Ceuta from Morocco",
+      "summary": "At least 43 people have died trying to reach the Spanish enclave of Ceuta after as many as 50,000 migrants entered the tiny territory from Morocco in a matter of hours, triggering a political crisis for the Madrid government and unleashing a barrage of criticism from other EU countries.",
+      "keyTakeaways": [
+        "He also said the government would erect a visible barrier – a line of buoys – near the breakwater at Ceuta’s Tarajal beach to make it clear where the border was, to legally comply with the court’s ruling.",
+        "Spain’s interior ministry said about 25,000 people had voluntarily crossed the border back into Morocco during the course of Friday.",
+        "The latest incident dwarfs the last mass border crossing in May 2021, when 10,000 people entered the territory over the course of two days by taking advantage of a loosening of border controls by Morocco."
+      ],
+      "whyItMatters": "He attributed the mass crossing to “human trafficking mafias” that had taken advantage of a decision by Spain’s supreme court, which recently ruled that those intercepted at sea while trying to enter Ceuta, or Spain’s other north African enclave of Melilla, could not be summarily returned under special rules.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/31/ceuta-spain-morocco-border-deaths",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "モロッコからスペイン領セウタへ、数万人が越境し43人死亡",
+          "summary": "スペインの飛び地セウタに、モロッコから数時間のうちに最大5万人が流入し、少なくとも43人が命を落とした。マドリード政府は政治的な危機に直面し、EU各国からも批判の声が相次いでいる。",
+          "keyTakeaways": [
+            "スペイン政府はセウタのタラハル海岸沖に浮標による境界線を設け、最高裁判決への法的対応を示す方針を明らかにした。",
+            "金曜日の間に約2万5000人が自ら国境を越え、モロッコ側へ戻った。",
+            "今回の越境は、2021年5月にモロッコの国境管理が緩んだ際に2日間で1万人が流入した事例を大きく上回る規模だ。"
+          ],
+          "whyItMatters": "スペイン最高裁がセウタやメリリャへの海上越境者を特例規定で即時送還することを違法と判断したことを、人身売買組織が利用したとみられている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung Galaxy Unpacked 2026: The 6 biggest announcements",
+      "summary": "Samsung’s annual summer event kicked off on Wednesday morning with the company unveiling a new lineup of watches and foldables.",
+      "keyTakeaways": [
+        "If you weren’t able to watch the event yourself, you can catch up with all of this year’s biggest Galaxy Unpacked announcements below.",
+        "The new Fold also features an updated hinge design with Samsung’s new Flex Titanium display tech.",
+        "It doesn’t completely eliminate the crease on the inside display, but it does make it significantly less noticeable than the crease on Samsung’s previous foldables."
+      ],
+      "whyItMatters": "The highlight of Galaxy Unpacked was the Galaxy Z Fold 8, which got a major redesign from last year’s Z Fold 7.",
+      "originalURL": "https://www.theverge.com/tech/969208/samsung-galaxy-unpacked-2026-everything-announced",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンが新型折りたたみスマートフォンと時計を発表",
+          "summary": "サムスンは夏恒例の発表イベントを水曜朝に開催し、新しいウォッチシリーズと折りたたみスマートフォンの新ラインアップを披露した。",
+          "keyTakeaways": [
+            "発表内容はすべて後から確認できる",
+            "新型Foldは蝶番のデザインを刷新し、新技術「Flex Titanium」ディスプレイを採用",
+            "内側ディスプレイの折り目は完全には消えないが、従来モデルより大幅に目立たなくなった"
+          ],
+          "whyItMatters": "今回の目玉はGalaxy Z Fold 8で、前モデルから大きくデザインが刷新された。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "‘Extremely scary findings’ show climate crisis is supercharging Europe’s wildfire weather",
+      "summary": "The extreme heat and drought stoking huge wildfires in Spain and France were made far more likely by the climate crisis, a scientific analysis has found.",
+      "keyTakeaways": [
+        "Global heating made hot, dry and windy weather at least 20 times more likely in Spain and twice as likely in France, experts from the World Weather Attribution (WWA) consortium calculated.",
+        "Another found that the climate crisis-driven heat was “sucking soils dry” as extreme drought spread across Europe.",
+        "Searing heat and parched land led to very high “daily severity ratings”, the metric that was used in the new analysis and which measures how severe a wildfire will be if ignited."
+      ],
+      "whyItMatters": "The intense heatwave at the end of June, which is estimated to have killed 20,000 people, could not have happened without the extra heat trapped by carbon pollution, a previous WWA study showed.",
+      "originalURL": "https://www.theguardian.com/world/2026/jul/31/wildfires-extreme-weather-europe-spain-france-climate-crisis-analysis",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "気候危機が欧州の山火事リスクを急激に高めている",
+          "summary": "スペインとフランスで大規模な山火事を引き起こした記録的な熱波と干ばつ。科学的分析により、気候危機がこうした極端な気象条件を大幅に起こりやすくしていることが明らかになった。",
+          "keyTakeaways": [
+            "世界気象アトリビューション（WWA）の専門家らによると、地球温暖化により、スペインでは高温・乾燥・強風が重なる気象が少なくとも20倍、フランスでは2倍起きやすくなった。",
+            "気候危機による熱が「土壌から水分を奪い続けている」とも指摘され、深刻な干ばつが欧州全土に広がっている。",
+            "猛暑と乾燥した大地は「日別深刻度評価」を押し上げ、いったん火が点けば大規模火災に発展しやすい状況が続いている。"
+          ],
+          "whyItMatters": "以前のWWA研究では、推定2万人が命を落とした6月末の熱波は、炭素汚染による余剰熱がなければ起こり得なかったと示されている。"
+        }
+      }
+    }
+  ]
+}

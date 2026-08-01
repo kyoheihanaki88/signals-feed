@@ -147,6 +147,8 @@ HISTORY_PENALTIES = (-2.5, -3.5, -4.5)  # (country,event_family) seen 1 / 2 / 3 
 HISTORY_MAX_DAYS = 3             # read at most the previous 3 committed edition dates
 CONFLICT_TONES = ("negative_conflict", "negative_crisis")
 DISCOVERY_SLOT_MIN_BASE = 4.0    # never force a WEAK story into the discovery slot
+EXACT_STORY_COOLDOWN_DAYS = 7    # same URL/headline must not recur across daily editions
+PRODUCT_STORY_COOLDOWN_DAYS = 3 # same consumer-product event told by another article
 
 
 def meta(c, now=None):
@@ -181,6 +183,111 @@ def load_history(editions_dir, today, max_days=HISTORY_MAX_DAYS):
             if m["country"] and m["event_family"] != "other":
                 pairs.setdefault((m["country"], m["event_family"]), []).append(d)
     return pairs, dates
+
+
+def load_recent_stories(editions_dir, today, max_days=EXACT_STORY_COOLDOWN_DAYS):
+    """Load story-level recent-edition history for the hard cross-day repeat guard.
+
+    Unlike ``load_history`` (a soft country/event-family scoring hint), this preserves
+    headline, URL and summary so the exact same article — or the same consumer-product
+    launch under a different headline — can be rejected before lead/support selection.
+    Missing or malformed history is neutral; publishing still fails closed later if the
+    remaining eligible pool cannot make five distinct stories.
+    """
+    try:
+        names = sorted(f for f in os.listdir(editions_dir)
+                       if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f))
+    except OSError:
+        return []
+    dates = [n[:-5] for n in names if n[:-5] < str(today)][-max_days:][::-1]
+    recent = []
+    for edition_rank, date in enumerate(dates, start=1):
+        try:
+            edition = json.load(open(os.path.join(editions_dir, date + ".json")))
+        except Exception:
+            continue
+        for signal in edition.get("signals", []):
+            if not isinstance(signal, dict):
+                continue
+            recent.append({
+                "edition_date": date,
+                "edition_rank": edition_rank,
+                "headline": signal.get("headline", ""),
+                "summary": signal.get("summary", ""),
+                "url": signal.get("originalURL", ""),
+            })
+    return recent
+
+
+def _normalized_story_url(value):
+    """Stable URL identity: host + path, ignoring tracking/query/fragment differences."""
+    try:
+        parsed = urlsplit(value or "")
+    except Exception:
+        return ""
+    if not parsed.netloc or not parsed.path.strip("/"):
+        return ""
+    host = (parsed.hostname or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    if not host:
+        return ""
+    # Preserve an explicit non-default port while treating www.example.com and
+    # example.com as the same publisher URL. Query/fragment differences stay ignored.
+    try:
+        parsed_port = parsed.port
+    except ValueError:
+        return ""
+    port = f":{parsed_port}" if parsed_port else ""
+    return f"{host}{port}{parsed.path.rstrip('/')}"
+
+
+def _normalized_headline(value):
+    return re.sub(r"[^a-z0-9]+", " ", (value or "").lower()).strip()
+
+
+def recent_repeat_of(candidate, recent_stories, now=None):
+    """Return ``(prior, reason, rule)`` when candidate is cooling down, else neutral.
+
+    Exact URL/headline repetition is blocked for seven editions. A different article
+    retelling the same recognized consumer-product launch is blocked for three editions.
+    The product rule intentionally does *not* block unrelated news about the same company
+    (for example a Samsung launch today and Samsung earnings tomorrow).
+    """
+    candidate_url = _normalized_story_url(candidate.get("canonical_url") or candidate.get("url"))
+    candidate_headline = _normalized_headline(candidate.get("title", ""))
+    candidate_identity = _identity(candidate, now)
+    for prior in recent_stories:
+        rank = int(prior.get("edition_rank") or 0)
+        prior_url = _normalized_story_url(prior.get("url", ""))
+        if candidate_url and prior_url and candidate_url == prior_url:
+            return prior, f"same article URL already ran on {prior.get('edition_date')}", "recent-exact-url"
+        prior_headline = _normalized_headline(prior.get("headline", ""))
+        if candidate_headline and prior_headline and candidate_headline == prior_headline:
+            return prior, f"same headline already ran on {prior.get('edition_date')}", "recent-exact-headline"
+        if rank and rank <= PRODUCT_STORY_COOLDOWN_DAYS:
+            prior_identity = story_identity(prior.get("headline", ""), prior.get("summary", ""))
+            duplicate, why, rule = same_underlying_story(candidate_identity, prior_identity)
+            if duplicate:
+                return prior, (f"same consumer-product story as {prior.get('edition_date')} — {why}"), \
+                       f"recent-{rule}"
+    return None, "", ""
+
+
+def exclude_recent_repeats(pool, recent_stories, now=None, log=print):
+    """Hard-filter cross-day repeats before any lead/support/emergency selection path."""
+    kept, rejected = [], []
+    for candidate in pool:
+        prior, reason, rule = recent_repeat_of(candidate, recent_stories, now)
+        if prior is None:
+            kept.append(candidate)
+            continue
+        rejected.append(candidate)
+        log(f"  recent repeat rejected: matched_rule={rule} id={short_id(candidate)}")
+        log(f"      candidate: {candidate.get('title','')[:72]}")
+        log(f"      prior {prior.get('edition_date')}: {prior.get('headline','')[:64]}")
+        log(f"      reason: {reason}")
+    return kept, rejected
 
 
 def history_run(c, history, now=None):
@@ -858,6 +965,20 @@ def main():
     pool = dedup_by_cluster(quality, now, args.fresh_hours)
     if len(pool) < 5:
         pool = dedup_by_cluster(base, now, args.fresh_hours)         # allow live blogs (last resort)
+
+    # HARD cross-day repeat guard. The same URL/headline cannot win again simply because it
+    # remains fresh and highly scored; recognized product-event retellings also cool down.
+    # This runs before lead selection, so no later balance relaxation or emergency fill can
+    # reintroduce a repeat. A too-thin remainder fails closed and holds the last valid edition.
+    recent_stories = load_recent_stories(args.editions_dir, now.date())
+    pool, recent_rejected = exclude_recent_repeats(pool, recent_stories, now)
+    if recent_rejected:
+        print(f"cross-day repeat guard: rejected {len(recent_rejected)} candidate(s); "
+              f"{len(pool)} distinct candidate(s) remain")
+    if len(pool) < 5:
+        fail(f"fewer than 5 distinct stories after cross-day repeat cooldown ({len(pool)}) — "
+             f"holding the last valid edition rather than repeating recent coverage.",
+             args.summary_file)
 
     # GATE 3 — a lead-quality story (serious category, corroborated cross-source OR reliable source)
     lead_pool = [c for c in pool if cat_weight(c) > 0 and (int(c.get("cluster_size") or 1) >= 2 or is_reliable(c))]

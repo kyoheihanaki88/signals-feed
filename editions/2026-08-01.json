@@ -91,6 +91,42 @@
               "duration": 4.440816
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-01/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "FIFAが、ワールドカップの権益を外部に売却する計画を撤回しました。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "この計画は各地域のサッカー連盟から強い反発を受けていました。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "FIFAのインファンティーノ会長は、各方面の意見に耳を傾けた結果だと説明しています。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "アジアサッカー連盟の会長は、この撤回を歓迎する一方で、進め方そのものに苦言を呈しました。",
+              "duration": 7.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後は重要な決定を事前に透明な形で協議するよう求めています。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "世界のサッカーを動かす組織の内部で、意思決定のあり方が問われています。",
+              "duration": 5.76
+            }
+          ]
         }
       }
     },
@@ -180,6 +216,52 @@
               "speaker": "explainer",
               "text": "The funding organizations have been criticized for badly misreading the politics around these decisions, which hasn't helped the situation.",
               "duration": 6.713469
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-01/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリス北西部のジョドレルバンク天文台には、ラヴェル望遠鏡という巨大な電波望遠鏡があります。",
+              "duration": 7.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "この望遠鏡は1957年にソ連の人工衛星スプートニクを追跡して以来、暗黒物質の研究など宇宙の謎に挑み続けてきました。",
+              "duration": 10.824
+            },
+            {
+              "speaker": "narrator",
+              "text": "ところがいま、この施設を含む物理学分野の予算が大きく削られようとしています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "削減の対象には、海外の望遠鏡網やスイスのCERN施設との国際共同研究も含まれています。",
+              "duration": 7.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "多くの研究者は、すぐに成果が出ない長期的な基礎研究が狙われていると感じています。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "資金を配分する機関は政治的な配慮を欠き、状況をさらに悪くしたと批判されています。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "物理学にお金がかかるのは確かですが、政府がどの科学を支え、どの分野を衰退させるかという選択が透けて見えます。",
+              "duration": 8.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝のコーヒーを淹れる間に、遠い宇宙を見つめる目が少しずつ閉じられていくのかもしれません。",
+              "duration": 6.744
             }
           ]
         }
@@ -273,6 +355,42 @@
               "duration": 8.254694
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-01/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "国際サッカー連盟のトップが、大会の運営権を民間に売る計画を打ち出していました。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "ヨーロッパを統括するUEFAは、この計画が進めばワールドカップに出場しないと表明していました。",
+              "duration": 6.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "週末、FIFAの会長は計画を取り下げると発表しました。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "UEFAはこれを歓迎しましたが、同時にFIFAへの信頼を失ったとも述べています。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "会長は来月の総会で4期目の再選を目指していますが、今回の混乱で立場が揺らいでいます。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "サッカーの世界的な統治をめぐる対立は、簡単には収まりそうにありません。",
+              "duration": 5.832
+            }
+          ]
         }
       }
     },
@@ -362,6 +480,52 @@
               "speaker": "explainer",
               "text": "The company acknowledged that, saying decisions impacting livelihoods aren't taken lightly and they know how difficult this transition is for affected team members.",
               "duration": 8.437551
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-01/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "スマートフォンメーカーのNothingが人員削減を行いました。",
+              "duration": 4.464
+            },
+            {
+              "speaker": "narrator",
+              "text": "CEOのカール・ペイは市場からの撤退を否定しています。",
+              "duration": 4.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "同社は業務を地域ごとの拠点にまとめ、AI事業の部門も新たに設けるとしています。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には部品価格の上昇があります。",
+              "duration": 3.36
+            },
+            {
+              "speaker": "narrator",
+              "text": "Nothingが主に扱う中価格帯の機種では、メモリの費用が端末全体の半分に達することもあるそうです。",
+              "duration": 7.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "サブブランドのCMFは、部品不足のため今年の新機種を出さないと先月発表していました。",
+              "duration": 7.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "スマートフォン業界では、価格を抑えた製品ほど利益を出すのが難しくなっています。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の決定は、働く人たちの暮らしに直接関わるものです。",
+              "duration": 5.16
             }
           ]
         }
@@ -463,6 +627,47 @@
               "speaker": "explainer",
               "text": "It's about transparency—helping people distinguish real content from artificial, especially when it's designed to deceive.",
               "duration": 7.235918
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-01/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ヨーロッパでは日曜日から、AIで作られた画像や音声、文章に目印をつけることが義務になります。",
+              "duration": 7.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象となるのは、本物と見分けがつかないように作られたコンテンツです。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまで政治家を狙った偽の動画や音声が数多く出回り、人々を惑わせてきました。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "EUのAI法に基づくこの規制では、企業は利用者にはっきりと知らせる責任を負います。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "チャットボットと話しているのか、見ている画像が加工されたものなのか、わかるようにしなければなりません。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しいAIシステムは8月から、既存のものは4か月の猶予を経て対象となります。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "情報の出どころを見極める手がかりが、少しずつ整い始めています。",
+              "duration": 5.376
             }
           ]
         }

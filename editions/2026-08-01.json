@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-01",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "FIFA World Cup plan fallout: AFC reacts as Infantino scraps investment push",
+      "summary": "Asian Football ‌Confederation (AFC) President Sheikh Salman bin Ebrahim Al Khalifa has ⁠welcomed FIFA’s ⁠decision to walk back plans to sell a stake in the World Cup and stressed the need ⁠to discuss all such moves with transparency in the future.",
+      "keyTakeaways": [
+        "Following the backlash, FIFA President Gianni Infantino said world football’s governing body had scrapped the plans after listening “carefully to all the views”.",
+        "On Thursday, Sheikh Salman, in a letter to member associations, had said the way the FIFA proposal had been made was “ totally unacceptable “.",
+        "The Kuala Lumpur-based AFC is one of FIFA’s six confederations and is responsible for running ‌regional ‌club and national team competitions across continental Asia, the Middle East and Australia."
+      ],
+      "whyItMatters": "In a letter posted on the AFC’s website on Saturday, Sheikh Salman ⁠said he expects “any initiative that has the ⁠potential to impact global football will be presented and discussed with the Confederations, the FIFA Council, Member Associations and other stakeholders in a timely, ⁠transparent and meaningful manner”.",
+      "originalURL": "https://www.aljazeera.com/sports/2026/8/1/fifa-world-cup-plan-fallout-afc-react-as-fifa-scrap-investment-push?traffic_source=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "FIFAのワールドカップ株売却計画、撤回へ――AFCも歓迎の意を表明",
+          "summary": "アジアサッカー連盟（AFC）会長シェイク・サルマン・ビン・エブラヒム・アル・ハリーファは、FIFAがワールドカップの持ち分売却計画を撤回したことを歓迎し、今後こうした動きについては透明性をもって協議する必要があると強調した。",
+          "keyTakeaways": [
+            "批判を受けてFIFAのジャンニ・インファンティーノ会長は、各方面の意見に「真摯に耳を傾けた」うえで計画を白紙に戻したと述べた。",
+            "シェイク・サルマンは木曜日、加盟協会への書簡の中で、FIFAの提案の進め方は「まったく受け入れがたい」と明言していた。",
+            "クアラルンプールに本部を置くAFCはFIFAの六つの連盟のひとつで、アジア大陸・中東・オーストラリアにわたるクラブおよび代表チームの大会を統括している。"
+          ],
+          "whyItMatters": "シェイク・サルマンは土曜日にAFC公式サイトで公開した書簡の中で、世界のサッカーに影響を及ぼしうるいかなる構想も、各連盟・FIFAカウンシル・加盟協会・関係者に対して適時かつ透明性のある形で提示・協議されることを求めた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "The Guardian view on the Lovell telescope: budget cuts to physics are bad science and worse politics | Editorial",
+      "summary": "T he iconic Lovell telescope, housed at the Jodrell Bank Observatory in Cheshire, has always expanded our view of the universe – from tracking the Sputnik launch in 1957 to its current contributions to the study of dark matter.",
+      "keyTakeaways": [
+        "There is no doubt that physics is expensive.",
+        "Looking across the programmes cut, which include international collaborations with other telescope arrays and the Cern facility in Switzerland, many scientists believe that long-term, fundamental research is under specific threat.",
+        "The UKRI and STFC have not helped the situation by badly misreading the politics."
+      ],
+      "whyItMatters": "That may be true, but it is hard not to see this as part of a larger shift in what kind of science the government funds and prioritises, and what areas it allows to wither.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/jul/31/the-guardian-view-on-the-lovell-telescope-cuts-physics-bad-science-politics",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ラヴェル望遠鏡と科学予算削減が問うもの",
+          "summary": "イングランド北西部、ジョドレルバンク天文台にそびえるラヴェル望遠鏡は、1957年のスプートニク打ち上げ追跡から現在の暗黒物質研究まで、人類の宇宙への視野を広げ続けてきた。その象徴的な施設を擁する物理学分野が、いま予算削減の波にさらされている。",
+          "keyTakeaways": [
+            "物理学研究にコストがかかることは、疑いようがない。",
+            "他国の望遠鏡網やスイスのCERNとの国際共同研究を含む複数の計画が削減対象となり、長期的・基礎的な研究が狙い撃ちにされていると感じる科学者は多い。",
+            "UKRIとSTFCは政治的な空気を読み誤り、事態をさらに悪化させた。"
+          ],
+          "whyItMatters": "それが財政上の判断だとしても、政府がどの科学を育て、どの科学を枯らすかという、より大きな優先順位の転換の一部として見えてしまうことは否めない。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Uefa has 'lost confidence' in Fifa leadership",
+      "summary": "Uefa says it has lost confidence in Gianni Infantino's Fifa leadership as the fallout from the scrapped controversial investment plan intensifies.",
+      "keyTakeaways": [
+        "On Saturday, Infantino said Fifa would no longer proceed with the proposal to sell stakes in the governing body's competitions to private investors.",
+        "Uefa - which governs European football - had earlier voted to boycott World Cups if the plans went ahead, and other governing bodies also voiced their opposition.",
+        "On Saturday, Uefa said it welcomed the decision to withdraw the plan, describing it as \"a victory for the whole game\"."
+      ],
+      "whyItMatters": "The fallout from the plans means Infantino is now under immense pressure as he seeks re-election for a fourth term as president at the Fifa Congress in March.",
+      "originalURL": "https://www.bbc.co.uk/sport/football/articles/c04kr2nv3v3o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "UEFAがFIFAへの信頼喪失を表明",
+          "summary": "物議を醸した民営化構想が撤回されたことを受け、UEFAはジャンニ・インファンティーノ体制のFIFAに対する信頼を失ったと表明した。両組織の亀裂は深まりつつある。",
+          "keyTakeaways": [
+            "インファンティーノ会長は土曜日、FIFAの大会運営権を民間投資家に売却する構想を断念すると発表した。",
+            "UEFAはかねてより、構想が実現すればワールドカップをボイコットすると宣言しており、他の統括団体も反対の意を示していた。",
+            "UEFAは撤回の決定を歓迎し、「サッカー全体にとっての勝利」と評した。"
+          ],
+          "whyItMatters": "今回の混乱により、インファンティーノ会長は3月のFIFA総会での4期目再選を前に、かつてない重圧にさらされている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Nothing confirms layoffs, but calls market exit rumors ‘fake news’",
+      "summary": "He also said Nothing isn’t shutting down in any markets, and is instead “consolidating” its operations into regional hubs as well as introducing an “AI-native” business unit.",
+      "keyTakeaways": [
+        "The update comes as rising component prices squeeze the midrange phone segment where Nothing typically operates, with no sign of relief anytime soon.",
+        "Last month, Evangelidis announced that Nothing’s budget CMF brand won’t release a new phone this year due to ongoing component shortages.",
+        "Nothing CEO Carl Pei also said last month that memory costs for the Phone 4A have doubled since its launch earlier this year, and claimed that RAM can now account for half the cost of a new phone."
+      ],
+      "whyItMatters": "Decisions that impact people’s livelihoods are never taken lightly, and we know how difficult this transition is for our team members who are affected.",
+      "originalURL": "https://www.theverge.com/tech/970848/nothing-layoffs-rumors-phone-4b",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "Nothingがリストラを認める、ただし市場撤退説は否定",
+          "summary": "CEOのカール・ペイは、同社がいかなる市場からも撤退しないと明言した。現在は業務を地域拠点に集約する「統合」を進めており、あわせてAIを軸とした新たな事業部門を立ち上げると説明している。",
+          "keyTakeaways": [
+            "部品価格の高騰がミッドレンジ市場を直撃しており、Nothingの主戦場も例外ではない。改善の兆しは見えていない。",
+            "先月、サブブランドのCMFが部品不足を理由に今年の新機種投入を見送ると発表した。",
+            "CEOによれば、Phone 4Aのメモリコストは発売以来倍増し、RAMだけで端末原価の半分を占める場合もあるという。"
+          ],
+          "whyItMatters": "影響を受けるメンバーにとってこの移行がいかに困難であるかを認識しており、生活に関わる決断は決して軽く下されるものではない。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "AI labels to be compulsory on authentic-looking content under EU rules",
+      "summary": "From apparently conspiring to steal elections to abusing staff or performing embarrassing dance moves, the last few years have seen plenty of fake content made about politicians intended to malign its targets and mislead the public.",
+      "keyTakeaways": [
+        "Now EU rules aim to stem the flood of this deceptive content: starting from Sunday, artificially generated images, audio and text designed to look authentic must be labelled.",
+        "The rules apply to new AI systems on the EU market from 2 August, while existing ones have an extra four months to comply.",
+        "Under the rules, synthetic text, images, video and audio designed to look truthful must be visibly marked as AI-generated and contain a digital watermark to show the artificial origins of the content."
+      ],
+      "whyItMatters": "The rules, devised under the EU’s landmark AI Act, mean companies must ensure people know when they are interacting with an AI-powered chatbot or viewing a manipulated image or AI-generated text.",
+      "originalURL": "https://www.theguardian.com/technology/2026/jul/31/ai-labels-to-be-compulsory-on-authentic-looking-content-under-eu-rules",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "EU、AIが生成したリアルなコンテンツへのラベル表示を義務化",
+          "summary": "選挙介入の疑惑から、スタッフへの暴言、恥ずかしいダンス動画まで——ここ数年、政治家を標的にした偽コンテンツが世論を惑わせてきた。EUはこうした欺瞞的な情報の氾濫に歯止めをかけようとしている。",
+          "keyTakeaways": [
+            "今日曜日から、本物と見紛うよう作られたAI生成の画像・音声・テキストへのラベル表示が義務付けられる。",
+            "新たなAIシステムは8月2日から規制の対象となり、既存のシステムには4か月の猶予が与えられる。",
+            "真実らしく見せることを意図した合成コンテンツには、AI生成であることを示す表示とデジタル透かしの両方が求められる。"
+          ],
+          "whyItMatters": "EUのAI法に基づくこの規制により、企業はユーザーがAIチャットボットと対話していること、あるいはAIが生成・加工した画像やテキストを見ていることを、明確に認識できるよう義務を負う。"
+        }
+      }
+    }
+  ]
+}

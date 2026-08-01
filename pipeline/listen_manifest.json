@@ -11745,6 +11745,313 @@
           ]
         }
       }
+    },
+    "2026-08-01": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-01/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw FIFA backed away from some big investment plan. What was that about?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "FIFA had been planning to sell a stake in the World Cup, but they've scrapped those plans after getting a lot of pushback.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Who was pushing back?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "One of the loudest voices was Sheikh Salman, who heads the Asian Football Confederation. He sent a letter to member associations saying the way FIFA proposed this was totally unacceptable.",
+              "duration": 11.049796
+            },
+            {
+              "speaker": "listener",
+              "text": "So FIFA just dropped it?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. FIFA President Gianni Infantino said they listened carefully to all the views and decided to walk it back.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "What does Sheikh Salman want going forward?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "He posted a letter saying any big initiative affecting global football should be presented and discussed transparently with confederations and member associations before moving ahead.",
+              "duration": 9.848163
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like a call for better communication.",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's about making sure everyone has a voice before major decisions are made.",
+              "duration": 4.440816
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-01/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about the Lovell telescope and budget cuts. What's happening?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Lovell telescope at Jodrell Bank Observatory in Cheshire is part of a broader concern about cuts to physics funding in the UK. It's been tracking cosmic events since Sputnik in 1957.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "So what exactly is being cut?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "International collaborations are affected, including work with other telescope arrays and the Cern facility in Switzerland. Scientists say long-term fundamental research is specifically under threat.",
+              "duration": 10.057143
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter beyond just one field?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Many see it as part of a larger shift in what kind of science the government chooses to fund and prioritize, and what areas it lets decline.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is physics just really expensive to support?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is expensive, yes. But the concern is whether cost alone should determine which fundamental research continues and which doesn't.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "Have the funding bodies responded?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The funding organizations have been criticized for badly misreading the politics around these decisions, which hasn't helped the situation.",
+              "duration": 6.713469
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-01/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Uefa made a pretty strong statement about Fifa's leadership. What happened?",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Uefa says it's lost confidence in Gianni Infantino, who leads Fifa, the global football governing body. This comes after a controversial investment plan fell apart.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "What was this investment plan about?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Fifa had proposed selling stakes in its competitions to private investors. On Saturday, Infantino announced they're no longer moving forward with it.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "So why did Uefa react so strongly to this?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Uefa, which governs European football, had actually voted to boycott World Cups if the plan went ahead. Other governing bodies also opposed it.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "That's quite a threat. How did they respond when the plan was scrapped?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Uefa welcomed the decision and called it a victory for the whole game. But they still said they've lost confidence in Infantino's leadership.",
+              "duration": 7.340408
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this creating problems for him personally?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Infantino is seeking re-election for a fourth term as Fifa president at their Congress in March, and he's now under immense pressure.",
+              "duration": 8.254694
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-01/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Nothing, the phone company, is making some big changes. What's going on?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've confirmed layoffs, though they're calling rumors about leaving markets 'fake news.' The CEO says they're consolidating operations into regional hubs and adding an AI-focused business unit.",
+              "duration": 10.814694
+            },
+            {
+              "speaker": "listener",
+              "text": "Why the restructuring now?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Rising component prices are squeezing the midrange phone segment where Nothing operates. They're not seeing relief anytime soon.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad have those costs gotten?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Pretty significant. The CEO said memory costs for their Phone 4A have doubled since launch earlier this year. He claims RAM can now account for half the cost of a new phone.",
+              "duration": 10.34449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this affecting their other products too?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Last month they announced their budget CMF brand won't release a new phone this year because of ongoing component shortages.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a tough situation for the employees affected.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "The company acknowledged that, saying decisions impacting livelihoods aren't taken lightly and they know how difficult this transition is for affected team members.",
+              "duration": 8.437551
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-01/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the EU is requiring labels on AI content now?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, starting Sunday. If AI-generated images, audio, or text are designed to look authentic, they must be clearly labelled.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "What brought this on?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's been a flood of fake content in recent years—politicians shown doing things they never did, meant to mislead people or damage reputations.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "When do companies actually have to follow this?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "New AI systems on the EU market must comply from August second. Existing systems get four extra months.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "What does labelling actually mean here?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Synthetic content designed to look real must be visibly marked as AI-generated and include a digital watermark showing its artificial origins.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Does this cover chatbots too?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Companies must make sure people know when they're interacting with an AI chatbot or viewing manipulated images.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does the EU think this matters?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's about transparency—helping people distinguish real content from artificial, especially when it's designed to deceive.",
+              "duration": 7.235918
+            }
+          ]
+        }
+      }
     }
   }
 }

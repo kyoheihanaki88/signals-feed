@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "トランプ氏は合意を迅速にまとめることを条件に、攻撃の中止に応じた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Trump says he's called off a military strike on Iran?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. He announced late Saturday that he cancelled a planned large-scale attack, saying the perimeters of a deal have been reached instead.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of deal is he talking about?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says it would immediately open the Hormuz Strait and end what he called Iran's nuclear threat. Though he did say the deal needs to be concluded quickly.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "Was this strike actually about to happen?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "US media had reported just a day earlier that Washington and Israel were preparing to strike Iran's energy infrastructure.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what changed his mind?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Axios reported that Saudi Arabia's Crown Prince called Trump on Saturday, urging him to cancel the strikes and return to negotiations.",
+              "duration": 7.053061
+            },
+            {
+              "speaker": "listener",
+              "text": "So diplomacy instead of military action, at least for now.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what it looks like, yes. Though we'll need to see if this deal actually comes together.",
+              "duration": 5.01551
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "直近の1週間だけで567人の感染と296人の死亡が確認され、週単位の数字としては流行開始以来最多を記録した。"
           ],
           "whyItMatters": "今回の流行は2026年5月15日に宣言されたもので、感染者約3500人・死者約2300人を出した2018年から2020年にかけての大規模流行を上回る、過去最悪の事態となっている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I'm seeing reports about Ebola in the Democratic Republic of Congo. What's happening there?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The WHO says the current outbreak is the worst ever recorded in DR Congo. It was declared in mid-May last year and has now surpassed the previous largest outbreak from 2018 to 2020.",
+              "duration": 11.702857
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad was that earlier outbreak?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "That one had nearly 3,500 cases with almost 2,300 deaths. The current situation has now exceeded those numbers.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they reporting recently?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The WHO says transmission is sustained and cases are continuing to increase. Just this past week, they recorded 567 cases and 296 deaths—the highest weekly total so far.",
+              "duration": 11.833469
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this a different strain or the same virus we've heard about before?",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "explainer",
+              "text": "This outbreak is caused by the Bundibugyo strain of Ebola. The virus spreads through contact with bodily fluids.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "That's really serious. How widespread has Ebola been historically?",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Over the last 50 years, Ebola has killed 15,000 people across Africa. This current outbreak is intensifying, which is why the WHO is raising the alarm now.",
+              "duration": 9.874286
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,65 @@
           ],
           "whyItMatters": "ポケモンが長く愛され続ける理由について、ラルフはこう語る——生活費の高騰など世界が重苦しい今だからこそ、ポケモンは人々を「どんなときも、幸せだったあの頃」へ連れ戻してくれる、と。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Pokémon just turned 30. Are people still really into it?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very much so. There's a fan named Ralph who's been playing since the very first game came out three decades ago.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "That's dedication. Does she just play at home, or is it bigger than that?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "She's traveled to Japan, the US, and France for fan events — meeting other fans from all over.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, how do they even communicate if they don't speak the same language?",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "She says it hasn't been a problem. The language of Pokémon itself is kind of universal.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "That's sweet. Why does she think it's stayed popular for so long?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "She believes it brings people back to a happy place, no matter how bad the world is — especially now with things like the cost of living weighing on people.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "A little escape that's lasted 30 years.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And still going strong.",
+              "duration": 2.037551
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +306,65 @@
           ],
           "whyItMatters": "セインズベリーは自社を「古書市に出店する一般書店」と表現しており、希少本だけを扱っているわけではない。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's happening with rare books in Australia?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Secondhand booksellers there are raising an alarm. They've noticed unusual waves of orders that don't match normal customer patterns.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "Unusual how?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "The orders came through large secondhand marketplaces like Abebooks or Biblio. Booksellers are wondering if they've been caught up in the AI supply chain.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, what does AI need with old books?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the concern. There's worry that rare titles are being destroyed to feed AI systems, rather than being preserved or collected.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a waste. Are these actually rare books?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "The marketplaces carry everything from cheap paperbacks to rare, expensive items. For sellers like those at Melbourne's Rare Book Fair, the physical book itself matters just as much as what's inside it.",
+              "duration": 11.232653
+            },
+            {
+              "speaker": "listener",
+              "text": "So they're calling it horrific because these books are being lost?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They see books as more than just objects, and the idea of destroying them for data feels like a real loss.",
+              "duration": 6.217143
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +396,65 @@
             "「ビーバーが行う最大の改変のひとつがダムの建設だ。それが複雑な湿地を生み出し、天敵から身を守り、自由に動き回れる環境をもたらす」とパットック博士は語る。"
           ],
           "whyItMatters": "イングランドの半数以上の地域が干ばつに見舞われており、高温と少雨が水の供給に深刻な影響を与えている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about beavers helping with drought. How does that work?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "So researchers at the University of Exeter have been watching how beaver dams actually hold water during dry spells.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Hold water? Like they're creating little reservoirs?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Dr. Alan Puttock says the dams and ponds the beavers build slow down water flow and create these complex wetland areas.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "And that helps during a drought?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. The water gets released slowly into rivers instead of draining away quickly. It also gives wildlife a refuge when the countryside gets really parched.",
+              "duration": 9.430204
+            },
+            {
+              "speaker": "listener",
+              "text": "That's kind of remarkable. Why do beavers build all this in the first place?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "For them, it's about safety from predators and being able to move around. But it turns out those same dams create wetlands that help the whole landscape retain water.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like we need more beavers around.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, more than half of England is in drought right now, so researchers say these natural solutions are worth paying attention to.",
+              "duration": 6.530612
+            }
+          ]
         }
       }
     }

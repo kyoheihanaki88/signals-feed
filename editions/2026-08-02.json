@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-02",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Trump cancels Iran strike, says ‘deal perimeters’ reached",
+      "summary": "United States President Donald Trump says he has cancelled a planned large-scale military attack on Iran, claiming that the “perimeters of a deal” have been agreed upon.",
+      "keyTakeaways": [
+        "Trump announced the decision on his Truth Social platform late Saturday, a day after US media reported that Washington and Israel were preparing to strike Iran’s energy infrastructure.",
+        "He added that the agreement would bring the “Immediate, Complete, and Total OPENING OF THE HORMUZ STRAIT” and end what he called “Iran’s nuclear threat”.",
+        "US news site Axios reported that Saudi Crown Prince Mohammed bin Salman called Trump on Saturday, urging the president to cancel the strikes and return to negotiations, citing a source familiar with the matter."
+      ],
+      "whyItMatters": "He agreed on condition that the deal be concluded quickly.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/2/trump-cancels-iran-strike-says-deal-perimeters-reached?traffic_source=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ氏、イラン攻撃を中止——「合意の輪郭が見えた」",
+          "summary": "トランプ米大統領は、イランへの大規模軍事攻撃の計画を取りやめたと表明した。「合意の骨格が固まった」というのがその理由だ。",
+          "keyTakeaways": [
+            "トランプ氏は土曜深夜、自身のSNS「トゥルース・ソーシャル」でこの決定を発表。前日には米メディアが、米国とイスラエルがイランのエネルギー施設への攻撃を準備していると報じていた。",
+            "合意によりホルムズ海峡が「即時かつ完全に開放」され、イランの核の脅威が終わると同氏は主張した。",
+            "米メディアAxiosは、サウジアラビアのムハンマド・ビン・サルマン皇太子が同日トランプ氏に電話し、攻撃の中止と交渉への復帰を促したと、事情に詳しい関係者の話として伝えた。"
+          ],
+          "whyItMatters": "トランプ氏は合意を迅速にまとめることを条件に、攻撃の中止に応じた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Current Ebola outbreak worst ever in DR Congo, WHO says",
+      "summary": "The current outbreak is caused by the Bundibugyo strain of the virus.",
+      "keyTakeaways": [
+        "Ebola, which spreads through contact with bodily fluids, has killed 15,000 people across Africa over the last 50 years.",
+        "The WHO said in a statement posted on X, external that the outbreak was \"intensifying, with sustained transmission and continued increases in reported cases and deaths\".",
+        "It added that during the past week, the outbreak reached its highest weekly total with 567 cases and 296 deaths."
+      ],
+      "whyItMatters": "It was declared on 15 May 2026 and surpasses the previous biggest outbreak between 2018 and 2020, which had nearly 3,500 recorded cases of whom almost 2,300 died.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "コンゴ民主共和国のエボラ出血熱、過去最悪の規模に",
+          "summary": "世界保健機関（WHO）は、コンゴ民主共和国で現在進行中のエボラ出血熱の流行が、記録上最悪の規模に達したと発表した。今回の流行はブンディブギョ株によるものだ。",
+          "keyTakeaways": [
+            "エボラ出血熱は体液との接触で感染し、過去50年間でアフリカ全土において1万5000人の命を奪ってきた。",
+            "WHOは声明の中で、流行は「拡大を続けており、感染者数と死者数はともに増加している」と述べた。",
+            "直近の1週間だけで567人の感染と296人の死亡が確認され、週単位の数字としては流行開始以来最多を記録した。"
+          ],
+          "whyItMatters": "今回の流行は2026年5月15日に宣言されたもので、感染者約3500人・死者約2300人を出した2018年から2020年にかけての大規模流行を上回る、過去最悪の事態となっている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘The language of Pokémon is universal’: why fans are still catching ‘em all after 30 years",
+      "summary": "The pair first locked eyes amid decks of Pokémon playing cards and Pokéballs at a fan event 16 years ago and the rest is history.",
+      "keyTakeaways": [
+        "Ralph, 42, is an OG Pokémon fan, getting into Pokémon Red when the game (and franchise) debuted 30 years ago.",
+        "She has travelled to Japan, the US and France to mingle with fellow fans.",
+        "Despite often not sharing the same language, this hasn’t been a challenge for Ralph."
+      ],
+      "whyItMatters": "She thinks Pokémon has remained popular because it “brings people back to a happy place, no matter how bad the world is”, especially during these tricky times where issues such as the cost of living are hitting hard.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/02/the-language-of-pokemon-is-universal-why-fans-are-still-catching-em-all-after-30-years",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ポケモンが結んだ縁——30年後も続く、世界をまたぐ熱狂",
+          "summary": "16年前、ファンイベントの会場でポケモンカードとモンスターボールに囲まれながら、ふたりは出会った。きっかけはポケモン、そこから先の話はもう語るまでもない。",
+          "keyTakeaways": [
+            "42歳のラルフは生粋のポケモン世代。シリーズ誕生と同時に『ポケットモンスター赤』に触れた、30年来のファンだ。",
+            "これまで日本、アメリカ、フランスへと足を運び、世界中のファンと交流してきた。",
+            "言葉が通じなくても、それが壁になったことは一度もない。"
+          ],
+          "whyItMatters": "ポケモンが長く愛され続ける理由について、ラルフはこう語る——生活費の高騰など世界が重苦しい今だからこそ、ポケモンは人々を「どんなときも、幸せだったあの頃」へ連れ戻してくれる、と。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘More than just objects’: Australian booksellers raise alarm over ‘horrific’ destruction of rare titles to feed AI",
+      "summary": "He’s preparing his stall for this weekend’s Melbourne Rare Book Fair.",
+      "keyTakeaways": [
+        "For people like White, who runs independent bookshop Books for Cooks, the book as a physical object is just as important as what’s inside it.",
+        "Australian secondhand booksellers are wondering if they have been caught up in the AI supply chain after they recently experienced waves of orders that did not fit with usual customer patterns.",
+        "The orders usually came through large secondhand marketplaces like Abebooks or Biblio, where inventory can range from cheap paperbacks to rare, expensive items."
+      ],
+      "whyItMatters": "Sainsbury described his company as “a general bookseller at an antiquarian book fair”, as he doesn’t just deal in rare material.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/02/australian-book-sellers-alarm-destruction-rare-titles-ai-supply-chain",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIの学習データに古書が使われているのか――オーストラリアの書店主たちが懸念を示す",
+          "summary": "今週末に迫るメルボルン稀少本フェアへの準備を進めながら、ある書店主は静かに不安を抱えている。",
+          "keyTakeaways": [
+            "「Books for Cooks」を営むホワイトにとって、本とは内容と同じくらい、物としての存在そのものに意味がある",
+            "通常の購買パターンとは異なる大量注文が相次ぎ、古書業者たちはAIのサプライチェーンに巻き込まれているのではないかと疑い始めている",
+            "注文の多くはAbebooksやBiblioといったECプラットフォームを経由しており、安価な文庫本から希少な高額本まで幅広い在庫が対象となっていた"
+          ],
+          "whyItMatters": "セインズベリーは自社を「古書市に出店する一般書店」と表現しており、希少本だけを扱っているわけではない。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Beaver dams 'helping boost drought resilience'",
+      "summary": "Beavers are helping to create wetland areas during dry and hot weather, according to a researcher.",
+      "keyTakeaways": [
+        "Dr Alan Puttock, from the University of Exeter in Devon, said dams and ponds created by the mammals held water, slowed its flow and provided refuge for wildlife struggling in the parched countryside.",
+        "Puttock, from the university's Centre for Resilience in Environment, Water and Waste, said modern landscapes tended to be extensively drained but beavers had created \"complex wetlands\" through dams and canals that slowly released water into rivers.",
+        "Puttock said: \"One of the biggest modifications beavers do is build dams… that creates these really complex wetlands, which for beavers provides them with safety from predators and ability to move around in the landscape."
+      ],
+      "whyItMatters": "More than half of England is in drought as hot and dry temperatures impact water supplies.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c5yr7z150d7o?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ビーバーのダムが、干ばつへの備えになる",
+          "summary": "乾燥した暑い季節に、ビーバーが湿地帯の形成を助けているという研究報告がある。",
+          "keyTakeaways": [
+            "エクセター大学のアラン・パットック博士によれば、ビーバーが造るダムや池は水を蓄え、流れを緩やかにし、干上がった大地で生きる野生動物の避難場所にもなっている。",
+            "現代の景観は広範囲にわたって排水が進んでいるが、ビーバーはダムや水路を通じて複雑な湿地を生み出し、水をゆっくりと川へ還している。",
+            "「ビーバーが行う最大の改変のひとつがダムの建設だ。それが複雑な湿地を生み出し、天敵から身を守り、自由に動き回れる環境をもたらす」とパットック博士は語る。"
+          ],
+          "whyItMatters": "イングランドの半数以上の地域が干ばつに見舞われており、高温と少雨が水の供給に深刻な影響を与えている。"
+        }
+      }
+    }
+  ]
+}

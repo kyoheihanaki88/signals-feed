@@ -91,6 +91,47 @@
               "duration": 5.01551
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカのトランプ大統領が、イランへの大規模な軍事攻撃を中止すると発表しました。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "理由は、合意の大枠が見えてきたからだといいます。",
+              "duration": 4.128
+            },
+            {
+              "speaker": "narrator",
+              "text": "前日には、アメリカとイスラエルがイランのエネルギー施設を狙う準備をしていると報じられていました。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は、この合意でホルムズ海峡が即座に完全に開かれ、イランの核の脅威も終わると述べています。",
+              "duration": 7.752
+            },
+            {
+              "speaker": "narrator",
+              "text": "報道によれば、サウジアラビアの皇太子が電話で攻撃の中止を求めたとされています。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は、合意を素早くまとめることを条件に攻撃を取りやめました。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "中東の緊張が、交渉の場に戻る兆しを見せています。",
+              "duration": 4.608
+            }
+          ]
         }
       }
     },
@@ -180,6 +221,52 @@
               "speaker": "explainer",
               "text": "Over the last 50 years, Ebola has killed 15,000 people across Africa. This current outbreak is intensifying, which is why the WHO is raising the alarm now.",
               "duration": 9.874286
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "コンゴ民主共和国で続くエボラの流行が、記録上最も深刻な規模になっています。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "世界保健機関は、感染と死亡が増え続けていると伝えました。",
+              "duration": 5.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "直近の一週間で567人が感染し、296人が亡くなりました。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは週ごとの数字として、流行が始まって以来最も多い数です。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の流行は去年5月に宣言され、すでに2018年から2020年の大規模な流行を超えています。",
+              "duration": 8.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "エボラは体液を通じて広がり、過去50年でアフリカ全体で1万5000人の命を奪ってきました。",
+              "duration": 7.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回はブンディブギョ株と呼ばれる型によるものです。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "感染の広がりが続く中、現地の対応と国際的な支援が求められています。",
+              "duration": 6.288
             }
           ]
         }
@@ -273,6 +360,47 @@
               "duration": 2.037551
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ラルフさんは42歳、30年前にポケモンが生まれたときから遊び続けているファンです。",
+              "duration": 7.008
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまで日本やアメリカ、フランスまで出かけて、世界中のファンと交流してきました。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "言葉が違っても、それが問題になったことはないといいます。",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "16年前、あるファンイベントでカードやグッズに囲まれながら、彼女は今のパートナーと出会いました。",
+              "duration": 7.416
+            },
+            {
+              "speaker": "narrator",
+              "text": "ポケモンが今も愛される理由を、ラルフさんはこう考えています。",
+              "duration": 4.872
+            },
+            {
+              "speaker": "narrator",
+              "text": "生活が苦しく世の中が重たい今だからこそ、ポケモンは人を幸せだった頃へ連れ戻してくれる。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "その力が、世代を超えて人を引きつけ続けているのかもしれません。",
+              "duration": 5.04
+            }
+          ]
         }
       }
     },
@@ -364,6 +492,57 @@
               "duration": 6.217143
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オーストラリアの古書店で、最近おかしな注文が増えています。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "いつもと違うのは、買い手が本の内容を気にせず、大量に買っていく点です。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "注文はAbebooksやBiblioといった古書の売買サイトを通じて入り。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "安い文庫から貴重な本まで幅広く対象になっています。",
+              "duration": 4.608
+            },
+            {
+              "speaker": "narrator",
+              "text": "店主たちは、これらの本がAIの学習用に買われ、裁断されているのではないかと疑っています。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "Books for Cooksを営むホワイトのような人にとって。",
+              "duration": 4.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "本は中身だけでなく、物としての存在そのものに価値があります。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "今週末のメルボルン稀少本フェアでは、こうした懸念を抱えながら準備を進める店主の姿がありました。",
+              "duration": 7.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "本がデータの材料として消えていくかもしれない、静かな不安が広がっています。",
+              "duration": 5.616
+            }
+          ]
         }
       }
     },
@@ -453,6 +632,47 @@
               "speaker": "explainer",
               "text": "Well, more than half of England is in drought right now, so researchers say these natural solutions are worth paying attention to.",
               "duration": 6.530612
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスでは今、ビーバーが造るダムが思わぬ役割を果たしています。",
+              "duration": 5.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "エクセター大学のアラン・パットック博士の調査によれば、ビーバーが川に造るダムや池が水を蓄え、流れを遅くしているそうです。",
+              "duration": 9.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "乾いた大地で苦しむ野生動物にとっては、貴重な水場にもなっています。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "現代の土地は排水が進み、水が素早く流れ去る仕組みになっています。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "ビーバーはダムや水路で複雑な湿地を作り、水をゆっくりと川へ戻します。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "イングランドでは半分以上の地域が干ばつに見舞われており、水不足が深刻です。",
+              "duration": 6.456
+            },
+            {
+              "speaker": "narrator",
+              "text": "ビーバーが作る湿地は、天敵から身を守る場所であると同時に、干ばつへの備えにもなっているようです。",
+              "duration": 7.272
             }
           ]
         }

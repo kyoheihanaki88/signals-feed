@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-03",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Iran in talks with Oman over shipping but US negotiations on hold, says Tehran",
+      "summary": "Iran has been in discussion with Oman about the creation of a new temporary route through the strait of Hormuz that would allow commercial shipping to resume, but is not yet reviving talks with the US, Tehran’s foreign ministry spokesperson said on Monday.",
+      "keyTakeaways": [
+        "Trump said the cancellation was conditional on Iran reaching a deal quickly.",
+        "It is thought to be the 12th time in the war between the US and Iran that Trump has called off threatened strikes.",
+        "Iran is claiming full sovereignty over the strait and has been making demands over the routes and future management of the strait, including the possibility of charging fees in return for providing ships with maritime services."
+      ],
+      "whyItMatters": "Esmail Baghaei was responding to claims by Donald Trump that talks between the two sides covering all the major disputes between them could restart as early as Monday.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/03/iran-in-talks-with-oman-over-shipping-route-but-not-us-says-tehran",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "イランとオマーン、ホルムズ海峡の新航路を協議中――米国との交渉は停止のまま",
+          "summary": "イラン外務省報道官は月曜日、オマーンとの間でホルムズ海峡を通る商業船舶向けの暫定航路の創設について協議を進めていると明らかにした。一方、米国との交渉再開には至っていないとしている。",
+          "keyTakeaways": [
+            "トランプ氏は、イランが速やかに合意に達することを条件に攻撃計画の中止を表明した。",
+            "今回の攻撃見送りは、米イラン間の緊張をめぐりトランプ氏が脅しを撤回した12度目の事例とされる。",
+            "イランは海峡の完全な主権を主張し、航路の管理や将来的な通航料徴収の可能性を含む条件を提示している。"
+          ],
+          "whyItMatters": "この発言は、両国間の主要な懸案を包括的に協議する交渉が早ければ月曜日にも再開できるとしたトランプ氏の発言に対する、イラン側の回答として注目される。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "Woman has pioneering womb surgery to fix 'miracle' baby with intestines outside its body",
+      "summary": "Doctors have used ground-breaking surgery on an unborn baby to successfully correct a birth defect while he was still inside the womb.",
+      "keyTakeaways": [
+        "Baby Theo, who is now five months old and thriving, had gastroschisis, where the belly button does not develop properly, causing the intestines to grow externally.",
+        "Doctors partially exposed his mother's womb and then gently pushed his organs back inside his abdomen using keyhole surgery.",
+        "He was the third baby in the world to benefit from the first-of-its-kind clinical trial."
+      ],
+      "whyItMatters": "His mother, Maisie Savage, from London, was operated on by doctors in the US while she was 26 weeks pregnant.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c86ngegz9qno?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "At the desk",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "胎内で腸を修復——世界でも前例のない手術が成功",
+          "summary": "まだ母親の胎内にいる赤ちゃんの先天性疾患を、画期的な手術によって修正することに医師たちが成功した。",
+          "keyTakeaways": [
+            "現在生後5か月を迎え元気に育つセオくんは、腸が体外に出た状態で発育するガストロスキシスという疾患を抱えていた。",
+            "医師たちは母体の子宮を部分的に露出させ、内視鏡手術によって腸を腹腔内へと丁寧に戻した。",
+            "この臨床試験で恩恵を受けた赤ちゃんは、世界でまだ3例目。"
+          ],
+          "whyItMatters": "ロンドン在住の母親メイジー・セイヴィッジさんは妊娠26週の時点でアメリカに渡り、この手術を受けた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Protests, boycott cast shadow on Pakistan-administered Kashmir election",
+      "summary": "Islamabad, Pakistan – By the time polling stations opened in Muzaffarabad, the capital of Pakistan-administered Kashmir, the city had already witnessed two days of shutdowns and empty streets.",
+      "keyTakeaways": [
+        "The unrest dates back to June 5 when authorities banned the Jammu Kashmir Joint Awami Action Committee (JAAC), a local pressure group, for holding demonstrations over rising prices and governance.",
+        "Markets, banks and petrol stations had been closed since Friday, and public transport was suspended as deadly protests spread.",
+        "Its leaders are not contesting the election, and the group has called for a boycott of the vote."
+      ],
+      "whyItMatters": "Yasir Josh, a 28-year-old, said he voted for the Pakistan People’s Party (PPP), the region’s governing party, “because PMLN wants to form a government with a two-thirds majority and commit tyranny”.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/3/protests-boycott-cast-shadow-on-pakistan-administered-kashmir-election?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "パキスタン統治下カシミールで選挙、抗議とボイコットが影を落とす",
+          "summary": "パキスタン統治下カシミールの州都ムザファラバードで投票が始まった日、街はすでに二日間にわたるストと静寂を経験していた。",
+          "keyTakeaways": [
+            "混乱の発端は6月5日、当局が地元の圧力団体「JAAC」を物価高と統治への抗議活動を理由に禁止したことにある。",
+            "金曜日から市場、銀行、ガソリンスタンドが閉鎖され、死者を出した抗議の広がりとともに公共交通も止まった。",
+            "JAACの指導部は選挙に出馬せず、団体として投票のボイコットを呼びかけている。"
+          ],
+          "whyItMatters": "28歳のヤシル・ジョシュ氏はPMLNによる三分の二多数派政権の樹立を懸念し、PPPに投票したと語った。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Stock market turmoil sheds stark light on the opaque AI economy",
+      "summary": "On Monday, the Chinese memory chipmaker CXMT floated on the Shanghai stock market, soaring by 466% in value to 3.3tn yuan (£365bn).",
+      "keyTakeaways": [
+        "Long term, this week’s advances are gamechanging for the AI economy, although in many ways they should have been predictable.",
+        "It may be that last week’s correction is an overreaction – but also a reasonable response to a circular and extremely opaque AI economy that rests heavily on the fate of a single company, Nvidia.",
+        "A contributing factor to the investor skittishness appears to be yet another circular, opaque deal."
+      ],
+      "whyItMatters": "This means, put simply, that CXMT is not a threat to GPU maker Nvidia, the biggest company in the AI economy and the only one making a profit on AI.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/02/stock-market-turmoil-nvidia-china-light-ai-economy",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AI経済の不透明さが、市場の混乱で浮き彫りに",
+          "summary": "月曜日、中国のメモリーチップメーカーCXMTが上海市場に上場し、株価は466%急騰。時価総額は3兆3000億元（約36兆5000億円）に達した。",
+          "keyTakeaways": [
+            "今週の動きは長期的にAI経済を大きく塗り替えるものだが、ある意味では予測可能な展開でもあった",
+            "先週の調整は過剰反応かもしれない。だが、単一企業エヌビディアの命運に大きく依存する、循環的で不透明なAI経済への、もっともな懸念の表れでもある",
+            "投資家の不安をさらに高めた要因として、またしても不透明な循環取引の存在が挙げられる"
+          ],
+          "whyItMatters": "つまりCXMTは、AI経済最大の企業であり唯一AIで利益を上げているGPUメーカー、エヌビディアの脅威にはならないということだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "UK’s state investments agency hit by data breach",
+      "summary": "The public body in charge of the UK’s state investments has been pushed to improve its internal security after a data breach left “high-level management information” publicly accessible for nearly two days.",
+      "keyTakeaways": [
+        "The state body, best known for managing government holdings in bailed-out lenders Royal Bank of Scotland and Lloyds after the 2008 financial crisis, blamed the breach on an unnamed staff member who it said failed to follow security rules.",
+        "Bosses also hired external experts to review security protocols, who suggested the body “strengthen our controls and incident preparedness”.",
+        "The incident will be a wake-up call for public agencies, at a time when the rapid rise of AI has prompted fresh fears over how the frontier technology could exploit security gaps."
+      ],
+      "whyItMatters": "It stopped short of divulging the date of the security failure but said it had been identified within the past financial year, after which it was escalated to board members and also to the UK’s information watchdog, the Information Commissioner’s Office.",
+      "originalURL": "https://www.theguardian.com/business/2026/aug/02/uk-state-investments-agency-data-breach",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国の国家投資機関で情報漏洩、内部管理の甘さが露呈",
+          "summary": "英国の国家投資を管轄する公的機関が、機密性の高い管理情報を約2日間にわたって外部から閲覧できる状態に置いていたことが明らかになった。この情報漏洩を受け、同機関はセキュリティ体制の見直しを迫られている。",
+          "keyTakeaways": [
+            "2008年の金融危機後にロイヤル・バンク・オブ・スコットランドやロイズへの政府出資を管理したことで知られる同機関は、セキュリティ規則に従わなかった職員の行為が原因だとしている。",
+            "外部の専門家を招いてセキュリティ手順を検証した結果、「管理体制とインシデント対応の強化」が勧告された。",
+            "AIの急速な台頭がセキュリティの脆弱性への懸念を高めるなか、今回の事案は公的機関全体への警鐘となりうる。"
+          ],
+          "whyItMatters": "漏洩の発生日は明かされていないが、直近の会計年度内に把握され、その後、経営幹部および英国の情報監督機関である情報コミッショナー事務局に報告されたという。"
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-02",
+  "date": "2026-08-03",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,128 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Trump cancels Iran strike, says ‘deal perimeters’ reached",
-      "summary": "United States President Donald Trump says he has cancelled a planned large-scale military attack on Iran, claiming that the “perimeters of a deal” have been agreed upon.",
+      "source": "The Guardian (World)",
+      "headline": "Iran in talks with Oman over shipping but US negotiations on hold, says Tehran",
+      "summary": "Iran has been in discussion with Oman about the creation of a new temporary route through the strait of Hormuz that would allow commercial shipping to resume, but is not yet reviving talks with the US, Tehran’s foreign ministry spokesperson said on Monday.",
       "keyTakeaways": [
-        "Trump announced the decision on his Truth Social platform late Saturday, a day after US media reported that Washington and Israel were preparing to strike Iran’s energy infrastructure.",
-        "He added that the agreement would bring the “Immediate, Complete, and Total OPENING OF THE HORMUZ STRAIT” and end what he called “Iran’s nuclear threat”.",
-        "US news site Axios reported that Saudi Crown Prince Mohammed bin Salman called Trump on Saturday, urging the president to cancel the strikes and return to negotiations, citing a source familiar with the matter."
+        "Trump said the cancellation was conditional on Iran reaching a deal quickly.",
+        "It is thought to be the 12th time in the war between the US and Iran that Trump has called off threatened strikes.",
+        "Iran is claiming full sovereignty over the strait and has been making demands over the routes and future management of the strait, including the possibility of charging fees in return for providing ships with maritime services."
       ],
-      "whyItMatters": "He agreed on condition that the deal be concluded quickly.",
-      "originalURL": "https://www.aljazeera.com/news/2026/8/2/trump-cancels-iran-strike-says-deal-perimeters-reached?traffic_source=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "Esmail Baghaei was responding to claims by Donald Trump that talks between the two sides covering all the major disputes between them could restart as early as Monday.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/03/iran-in-talks-with-oman-over-shipping-route-but-not-us-says-tehran",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "トランプ氏、イラン攻撃を中止——「合意の輪郭が見えた」",
-          "summary": "トランプ米大統領は、イランへの大規模軍事攻撃の計画を取りやめたと表明した。「合意の骨格が固まった」というのがその理由だ。",
+          "headline": "イランとオマーン、ホルムズ海峡の新航路を協議中――米国との交渉は停止のまま",
+          "summary": "イラン外務省報道官は月曜日、オマーンとの間でホルムズ海峡を通る商業船舶向けの暫定航路の創設について協議を進めていると明らかにした。一方、米国との交渉再開には至っていないとしている。",
           "keyTakeaways": [
-            "トランプ氏は土曜深夜、自身のSNS「トゥルース・ソーシャル」でこの決定を発表。前日には米メディアが、米国とイスラエルがイランのエネルギー施設への攻撃を準備していると報じていた。",
-            "合意によりホルムズ海峡が「即時かつ完全に開放」され、イランの核の脅威が終わると同氏は主張した。",
-            "米メディアAxiosは、サウジアラビアのムハンマド・ビン・サルマン皇太子が同日トランプ氏に電話し、攻撃の中止と交渉への復帰を促したと、事情に詳しい関係者の話として伝えた。"
+            "トランプ氏は、イランが速やかに合意に達することを条件に攻撃計画の中止を表明した。",
+            "今回の攻撃見送りは、米イラン間の緊張をめぐりトランプ氏が脅しを撤回した12度目の事例とされる。",
+            "イランは海峡の完全な主権を主張し、航路の管理や将来的な通航料徴収の可能性を含む条件を提示している。"
           ],
-          "whyItMatters": "トランプ氏は合意を迅速にまとめることを条件に、攻撃の中止に応じた。"
+          "whyItMatters": "この発言は、両国間の主要な懸案を包括的に協議する交渉が早ければ月曜日にも再開できるとしたトランプ氏の発言に対する、イラン側の回答として注目される。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Trump says he's called off a military strike on Iran?",
-              "duration": 3.056327
+              "text": "I saw Iran's talking with Oman about shipping. What's this about?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "Yes. He announced late Saturday that he cancelled a planned large-scale attack, saying the perimeters of a deal have been reached instead.",
-              "duration": 6.922449
+              "text": "Iran's foreign ministry said they're discussing a temporary route through the Strait of Hormuz with Oman to let commercial ships pass through again.",
+              "duration": 7.758367
             },
             {
               "speaker": "listener",
-              "text": "What kind of deal is he talking about?",
-              "duration": 2.089796
+              "text": "And what about the US? I thought there might be talks there too.",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "He says it would immediately open the Hormuz Strait and end what he called Iran's nuclear threat. Though he did say the deal needs to be concluded quickly.",
-              "duration": 8.306939
+              "text": "Tehran says they're not reviving negotiations with the US yet, even though Trump claimed talks could restart as early as Monday.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "Was this strike actually about to happen?",
-              "duration": 2.403265
+              "text": "What's Iran asking for with this strait?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "US media had reported just a day earlier that Washington and Israel were preparing to strike Iran's energy infrastructure.",
-              "duration": 6.530612
+              "text": "They're claiming full sovereignty over the strait and making demands about routes and management, including possibly charging fees for maritime services.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "Do we know what changed his mind?",
-              "duration": 1.697959
+              "text": "Has Trump said anything about this?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "Axios reported that Saudi Arabia's Crown Prince called Trump on Saturday, urging him to cancel the strikes and return to negotiations.",
-              "duration": 7.053061
+              "text": "He said a cancellation was conditional on Iran reaching a deal quickly. This is reportedly the twelfth time he's called off threatened strikes during the conflict.",
+              "duration": 7.88898
             },
             {
               "speaker": "listener",
-              "text": "So diplomacy instead of military action, at least for now.",
-              "duration": 3.291429
+              "text": "So things are still pretty uncertain between them.",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "That's what it looks like, yes. Though we'll need to see if this deal actually comes together.",
-              "duration": 5.01551
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "アメリカのトランプ大統領が、イランへの大規模な軍事攻撃を中止すると発表しました。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "理由は、合意の大枠が見えてきたからだといいます。",
-              "duration": 4.128
-            },
-            {
-              "speaker": "narrator",
-              "text": "前日には、アメリカとイスラエルがイランのエネルギー施設を狙う準備をしていると報じられていました。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は、この合意でホルムズ海峡が即座に完全に開かれ、イランの核の脅威も終わると述べています。",
-              "duration": 7.752
-            },
-            {
-              "speaker": "narrator",
-              "text": "報道によれば、サウジアラビアの皇太子が電話で攻撃の中止を求めたとされています。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は、合意を素早くまとめることを条件に攻撃を取りやめました。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "中東の緊張が、交渉の場に戻る兆しを見せています。",
-              "duration": 4.608
+              "text": "Yes, the two sides are giving different signals about whether talks are actually happening.",
+              "duration": 3.996735
             }
           ]
         }
@@ -139,134 +98,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Current Ebola outbreak worst ever in DR Congo, WHO says",
-      "summary": "The current outbreak is caused by the Bundibugyo strain of the virus.",
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "Woman has pioneering womb surgery to fix 'miracle' baby with intestines outside its body",
+      "summary": "Doctors have used ground-breaking surgery on an unborn baby to successfully correct a birth defect while he was still inside the womb.",
       "keyTakeaways": [
-        "Ebola, which spreads through contact with bodily fluids, has killed 15,000 people across Africa over the last 50 years.",
-        "The WHO said in a statement posted on X, external that the outbreak was \"intensifying, with sustained transmission and continued increases in reported cases and deaths\".",
-        "It added that during the past week, the outbreak reached its highest weekly total with 567 cases and 296 deaths."
+        "Baby Theo, who is now five months old and thriving, had gastroschisis, where the belly button does not develop properly, causing the intestines to grow externally.",
+        "Doctors partially exposed his mother's womb and then gently pushed his organs back inside his abdomen using keyhole surgery.",
+        "He was the third baby in the world to benefit from the first-of-its-kind clinical trial."
       ],
-      "whyItMatters": "It was declared on 15 May 2026 and surpasses the previous biggest outbreak between 2018 and 2020, which had nearly 3,500 recorded cases of whom almost 2,300 died.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "His mother, Maisie Savage, from London, was operated on by doctors in the US while she was 26 weeks pregnant.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c86ngegz9qno?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "At the desk",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "コンゴ民主共和国のエボラ出血熱、過去最悪の規模に",
-          "summary": "世界保健機関（WHO）は、コンゴ民主共和国で現在進行中のエボラ出血熱の流行が、記録上最悪の規模に達したと発表した。今回の流行はブンディブギョ株によるものだ。",
+          "headline": "胎内で腸を修復——世界でも前例のない手術が成功",
+          "summary": "まだ母親の胎内にいる赤ちゃんの先天性疾患を、画期的な手術によって修正することに医師たちが成功した。",
           "keyTakeaways": [
-            "エボラ出血熱は体液との接触で感染し、過去50年間でアフリカ全土において1万5000人の命を奪ってきた。",
-            "WHOは声明の中で、流行は「拡大を続けており、感染者数と死者数はともに増加している」と述べた。",
-            "直近の1週間だけで567人の感染と296人の死亡が確認され、週単位の数字としては流行開始以来最多を記録した。"
+            "現在生後5か月を迎え元気に育つセオくんは、腸が体外に出た状態で発育するガストロスキシスという疾患を抱えていた。",
+            "医師たちは母体の子宮を部分的に露出させ、内視鏡手術によって腸を腹腔内へと丁寧に戻した。",
+            "この臨床試験で恩恵を受けた赤ちゃんは、世界でまだ3例目。"
           ],
-          "whyItMatters": "今回の流行は2026年5月15日に宣言されたもので、感染者約3500人・死者約2300人を出した2018年から2020年にかけての大規模流行を上回る、過去最悪の事態となっている。"
+          "whyItMatters": "ロンドン在住の母親メイジー・セイヴィッジさんは妊娠26週の時点でアメリカに渡り、この手術を受けた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I'm seeing reports about Ebola in the Democratic Republic of Congo. What's happening there?",
-              "duration": 4.780408
+              "text": "I saw something about a baby born with a really rare condition. What happened?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "The WHO says the current outbreak is the worst ever recorded in DR Congo. It was declared in mid-May last year and has now surpassed the previous largest outbreak from 2018 to 2020.",
-              "duration": 11.702857
+              "text": "A baby named Theo had gastroschisis — that's when the belly button doesn't develop properly, so the intestines grow outside the body instead of inside.",
+              "duration": 8.019592
             },
             {
               "speaker": "listener",
-              "text": "How bad was that earlier outbreak?",
-              "duration": 1.854694
+              "text": "Outside the body? That sounds serious. How did they fix it?",
+              "duration": 3.369796
             },
             {
               "speaker": "explainer",
-              "text": "That one had nearly 3,500 cases with almost 2,300 deaths. The current situation has now exceeded those numbers.",
-              "duration": 7.47102
+              "text": "Doctors did something remarkable. They operated while Theo was still in the womb — his mother was 26 weeks pregnant at the time.",
+              "duration": 7.288163
             },
             {
               "speaker": "listener",
-              "text": "What are they reporting recently?",
-              "duration": 1.515102
+              "text": "Wait, they operated on him before he was born?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "The WHO says transmission is sustained and cases are continuing to increase. Just this past week, they recorded 567 cases and 296 deaths—the highest weekly total so far.",
-              "duration": 11.833469
+              "text": "Yes. They partially exposed the mother's womb, then used keyhole surgery to gently push his organs back inside his abdomen.",
+              "duration": 7.105306
             },
             {
               "speaker": "listener",
-              "text": "Is this a different strain or the same virus we've heard about before?",
-              "duration": 3.787755
+              "text": "That's incredible. Has this been done before?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "This outbreak is caused by the Bundibugyo strain of Ebola. The virus spreads through contact with bodily fluids.",
-              "duration": 6.164898
+              "text": "Theo was only the third baby in the world to benefit from this first-of-its-kind clinical trial. His mother traveled from London to the US for the procedure.",
+              "duration": 8.254694
             },
             {
               "speaker": "listener",
-              "text": "That's really serious. How widespread has Ebola been historically?",
-              "duration": 4.127347
+              "text": "And how is he now?",
+              "duration": 1.253878
             },
             {
               "speaker": "explainer",
-              "text": "Over the last 50 years, Ebola has killed 15,000 people across Africa. This current outbreak is intensifying, which is why the WHO is raising the alarm now.",
-              "duration": 9.874286
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "コンゴ民主共和国で続くエボラの流行が、記録上最も深刻な規模になっています。",
-              "duration": 6.432
-            },
-            {
-              "speaker": "narrator",
-              "text": "世界保健機関は、感染と死亡が増え続けていると伝えました。",
-              "duration": 5.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "直近の一週間で567人が感染し、296人が亡くなりました。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "これは週ごとの数字として、流行が始まって以来最も多い数です。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の流行は去年5月に宣言され、すでに2018年から2020年の大規模な流行を超えています。",
-              "duration": 8.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "エボラは体液を通じて広がり、過去50年でアフリカ全体で1万5000人の命を奪ってきました。",
-              "duration": 7.512
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回はブンディブギョ株と呼ばれる型によるものです。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "感染の広がりが続く中、現地の対応と国際的な支援が求められています。",
-              "duration": 6.288
+              "text": "He's five months old and thriving. The surgery worked.",
+              "duration": 2.821224
             }
           ]
         }
@@ -276,129 +189,88 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "‘The language of Pokémon is universal’: why fans are still catching ‘em all after 30 years",
-      "summary": "The pair first locked eyes amid decks of Pokémon playing cards and Pokéballs at a fan event 16 years ago and the rest is history.",
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Protests, boycott cast shadow on Pakistan-administered Kashmir election",
+      "summary": "Islamabad, Pakistan – By the time polling stations opened in Muzaffarabad, the capital of Pakistan-administered Kashmir, the city had already witnessed two days of shutdowns and empty streets.",
       "keyTakeaways": [
-        "Ralph, 42, is an OG Pokémon fan, getting into Pokémon Red when the game (and franchise) debuted 30 years ago.",
-        "She has travelled to Japan, the US and France to mingle with fellow fans.",
-        "Despite often not sharing the same language, this hasn’t been a challenge for Ralph."
+        "The unrest dates back to June 5 when authorities banned the Jammu Kashmir Joint Awami Action Committee (JAAC), a local pressure group, for holding demonstrations over rising prices and governance.",
+        "Markets, banks and petrol stations had been closed since Friday, and public transport was suspended as deadly protests spread.",
+        "Its leaders are not contesting the election, and the group has called for a boycott of the vote."
       ],
-      "whyItMatters": "She thinks Pokémon has remained popular because it “brings people back to a happy place, no matter how bad the world is”, especially during these tricky times where issues such as the cost of living are hitting hard.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/02/the-language-of-pokemon-is-universal-why-fans-are-still-catching-em-all-after-30-years",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "whyItMatters": "Yasir Josh, a 28-year-old, said he voted for the Pakistan People’s Party (PPP), the region’s governing party, “because PMLN wants to form a government with a two-thirds majority and commit tyranny”.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/3/protests-boycott-cast-shadow-on-pakistan-administered-kashmir-election?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ポケモンが結んだ縁——30年後も続く、世界をまたぐ熱狂",
-          "summary": "16年前、ファンイベントの会場でポケモンカードとモンスターボールに囲まれながら、ふたりは出会った。きっかけはポケモン、そこから先の話はもう語るまでもない。",
+          "headline": "パキスタン統治下カシミールで選挙、抗議とボイコットが影を落とす",
+          "summary": "パキスタン統治下カシミールの州都ムザファラバードで投票が始まった日、街はすでに二日間にわたるストと静寂を経験していた。",
           "keyTakeaways": [
-            "42歳のラルフは生粋のポケモン世代。シリーズ誕生と同時に『ポケットモンスター赤』に触れた、30年来のファンだ。",
-            "これまで日本、アメリカ、フランスへと足を運び、世界中のファンと交流してきた。",
-            "言葉が通じなくても、それが壁になったことは一度もない。"
+            "混乱の発端は6月5日、当局が地元の圧力団体「JAAC」を物価高と統治への抗議活動を理由に禁止したことにある。",
+            "金曜日から市場、銀行、ガソリンスタンドが閉鎖され、死者を出した抗議の広がりとともに公共交通も止まった。",
+            "JAACの指導部は選挙に出馬せず、団体として投票のボイコットを呼びかけている。"
           ],
-          "whyItMatters": "ポケモンが長く愛され続ける理由について、ラルフはこう語る——生活費の高騰など世界が重苦しい今だからこそ、ポケモンは人々を「どんなときも、幸せだったあの頃」へ連れ戻してくれる、と。"
+          "whyItMatters": "28歳のヤシル・ジョシュ氏はPMLNによる三分の二多数派政権の樹立を懸念し、PPPに投票したと語った。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Pokémon just turned 30. Are people still really into it?",
-              "duration": 3.369796
+              "text": "I saw there was an election in Pakistan-administered Kashmir, but it sounds like it didn't go smoothly?",
+              "duration": 5.694694
             },
             {
               "speaker": "explainer",
-              "text": "Very much so. There's a fan named Ralph who's been playing since the very first game came out three decades ago.",
-              "duration": 6.112653
+              "text": "Right. When polling stations opened in the capital, Muzaffarabad, the city had already seen two days of shutdowns and empty streets.",
+              "duration": 7.288163
             },
             {
               "speaker": "listener",
-              "text": "That's dedication. Does she just play at home, or is it bigger than that?",
-              "duration": 3.761633
+              "text": "What caused all that?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "She's traveled to Japan, the US, and France for fan events — meeting other fans from all over.",
-              "duration": 5.146122
+              "text": "It goes back to early June when authorities banned a local pressure group called the Jammu Kashmir Joint Awami Action Committee. They'd been holding demonstrations over rising prices and governance issues.",
+              "duration": 10.762449
             },
             {
               "speaker": "listener",
-              "text": "Wait, how do they even communicate if they don't speak the same language?",
-              "duration": 3.996735
+              "text": "So people were protesting the ban?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "She says it hasn't been a problem. The language of Pokémon itself is kind of universal.",
-              "duration": 4.728163
-            },
-            {
-              "speaker": "listener",
-              "text": "That's sweet. Why does she think it's stayed popular for so long?",
-              "duration": 3.604898
-            },
-            {
-              "speaker": "explainer",
-              "text": "She believes it brings people back to a happy place, no matter how bad the world is — especially now with things like the cost of living weighing on people.",
+              "text": "Yes. Markets, banks, petrol stations closed since Friday. Public transport stopped as the protests spread and turned deadly.",
               "duration": 7.836735
             },
             {
               "speaker": "listener",
-              "text": "A little escape that's lasted 30 years.",
+              "text": "And this group called for a boycott of the election?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Its leaders aren't contesting, and they urged people not to vote. Though some did vote—one man said he supported the governing party to prevent another party from gaining too much power.",
+              "duration": 10.631837
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like a tense situation all around.",
               "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. And still going strong.",
-              "duration": 2.037551
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ラルフさんは42歳、30年前にポケモンが生まれたときから遊び続けているファンです。",
-              "duration": 7.008
-            },
-            {
-              "speaker": "narrator",
-              "text": "これまで日本やアメリカ、フランスまで出かけて、世界中のファンと交流してきました。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "言葉が違っても、それが問題になったことはないといいます。",
-              "duration": 4.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "16年前、あるファンイベントでカードやグッズに囲まれながら、彼女は今のパートナーと出会いました。",
-              "duration": 7.416
-            },
-            {
-              "speaker": "narrator",
-              "text": "ポケモンが今も愛される理由を、ラルフさんはこう考えています。",
-              "duration": 4.872
-            },
-            {
-              "speaker": "narrator",
-              "text": "生活が苦しく世の中が重たい今だからこそ、ポケモンは人を幸せだった頃へ連れ戻してくれる。",
-              "duration": 7.032
-            },
-            {
-              "speaker": "narrator",
-              "text": "その力が、世代を超えて人を引きつけ続けているのかもしれません。",
-              "duration": 5.04
+              "text": "It is. The election happened, but under a real shadow of unrest and division.",
+              "duration": 4.545306
             }
           ]
         }
@@ -410,137 +282,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "‘More than just objects’: Australian booksellers raise alarm over ‘horrific’ destruction of rare titles to feed AI",
-      "summary": "He’s preparing his stall for this weekend’s Melbourne Rare Book Fair.",
+      "headline": "Stock market turmoil sheds stark light on the opaque AI economy",
+      "summary": "On Monday, the Chinese memory chipmaker CXMT floated on the Shanghai stock market, soaring by 466% in value to 3.3tn yuan (£365bn).",
       "keyTakeaways": [
-        "For people like White, who runs independent bookshop Books for Cooks, the book as a physical object is just as important as what’s inside it.",
-        "Australian secondhand booksellers are wondering if they have been caught up in the AI supply chain after they recently experienced waves of orders that did not fit with usual customer patterns.",
-        "The orders usually came through large secondhand marketplaces like Abebooks or Biblio, where inventory can range from cheap paperbacks to rare, expensive items."
+        "Long term, this week’s advances are gamechanging for the AI economy, although in many ways they should have been predictable.",
+        "It may be that last week’s correction is an overreaction – but also a reasonable response to a circular and extremely opaque AI economy that rests heavily on the fate of a single company, Nvidia.",
+        "A contributing factor to the investor skittishness appears to be yet another circular, opaque deal."
       ],
-      "whyItMatters": "Sainsbury described his company as “a general bookseller at an antiquarian book fair”, as he doesn’t just deal in rare material.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/02/australian-book-sellers-alarm-destruction-rare-titles-ai-supply-chain",
-      "readTime": 6,
+      "whyItMatters": "This means, put simply, that CXMT is not a threat to GPU maker Nvidia, the biggest company in the AI economy and the only one making a profit on AI.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/02/stock-market-turmoil-nvidia-china-light-ai-economy",
+      "readTime": 5,
       "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
       "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AIの学習データに古書が使われているのか――オーストラリアの書店主たちが懸念を示す",
-          "summary": "今週末に迫るメルボルン稀少本フェアへの準備を進めながら、ある書店主は静かに不安を抱えている。",
+          "headline": "AI経済の不透明さが、市場の混乱で浮き彫りに",
+          "summary": "月曜日、中国のメモリーチップメーカーCXMTが上海市場に上場し、株価は466%急騰。時価総額は3兆3000億元（約36兆5000億円）に達した。",
           "keyTakeaways": [
-            "「Books for Cooks」を営むホワイトにとって、本とは内容と同じくらい、物としての存在そのものに意味がある",
-            "通常の購買パターンとは異なる大量注文が相次ぎ、古書業者たちはAIのサプライチェーンに巻き込まれているのではないかと疑い始めている",
-            "注文の多くはAbebooksやBiblioといったECプラットフォームを経由しており、安価な文庫本から希少な高額本まで幅広い在庫が対象となっていた"
+            "今週の動きは長期的にAI経済を大きく塗り替えるものだが、ある意味では予測可能な展開でもあった",
+            "先週の調整は過剰反応かもしれない。だが、単一企業エヌビディアの命運に大きく依存する、循環的で不透明なAI経済への、もっともな懸念の表れでもある",
+            "投資家の不安をさらに高めた要因として、またしても不透明な循環取引の存在が挙げられる"
           ],
-          "whyItMatters": "セインズベリーは自社を「古書市に出店する一般書店」と表現しており、希少本だけを扱っているわけではない。"
+          "whyItMatters": "つまりCXMTは、AI経済最大の企業であり唯一AIで利益を上げているGPUメーカー、エヌビディアの脅威にはならないということだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what's happening with rare books in Australia?",
-              "duration": 2.586122
+              "text": "So there's been some real turbulence in the stock market around AI companies this week?",
+              "duration": 4.414694
             },
             {
               "speaker": "explainer",
-              "text": "Secondhand booksellers there are raising an alarm. They've noticed unusual waves of orders that don't match normal customer patterns.",
-              "duration": 7.000816
+              "text": "Yes. A Chinese chipmaker called CXMT went public on Monday and its value shot up by 466 percent to about 365 billion pounds.",
+              "duration": 9.195102
             },
             {
               "speaker": "listener",
-              "text": "Unusual how?",
-              "duration": 1.149388
+              "text": "That sounds massive. Why does the headline call the AI economy opaque though?",
+              "duration": 4.963265
             },
             {
               "speaker": "explainer",
-              "text": "The orders came through large secondhand marketplaces like Abebooks or Biblio. Booksellers are wondering if they've been caught up in the AI supply chain.",
-              "duration": 8.359184
+              "text": "Because so much of it seems to revolve around one company—Nvidia. They're the biggest player and really the only one making a profit on AI right now.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "Wait, what does AI need with old books?",
-              "duration": 2.403265
+              "text": "And that's making investors nervous?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "That's the concern. There's worry that rare titles are being destroyed to feed AI systems, rather than being preserved or collected.",
-              "duration": 7.235918
+              "text": "Exactly. There was a market correction last week, and some think it's because the whole AI economy feels circular and hard to see through—very dependent on Nvidia's fate.",
+              "duration": 9.377959
             },
             {
               "speaker": "listener",
-              "text": "That seems like a waste. Are these actually rare books?",
-              "duration": 3.657143
+              "text": "What about this Chinese company? Are they a competitor?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "The marketplaces carry everything from cheap paperbacks to rare, expensive items. For sellers like those at Melbourne's Rare Book Fair, the physical book itself matters just as much as what's inside it.",
-              "duration": 11.232653
+              "text": "Not really. CXMT makes memory chips, not the GPUs that Nvidia produces, so they're not a direct threat.",
+              "duration": 5.32898
             },
             {
               "speaker": "listener",
-              "text": "So they're calling it horrific because these books are being lost?",
-              "duration": 3.343673
+              "text": "So even with all this activity, Nvidia still holds the cards?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. They see books as more than just objects, and the idea of destroying them for data feels like a real loss.",
-              "duration": 6.217143
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オーストラリアの古書店で、最近おかしな注文が増えています。",
-              "duration": 4.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "いつもと違うのは、買い手が本の内容を気にせず、大量に買っていく点です。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "注文はAbebooksやBiblioといった古書の売買サイトを通じて入り。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "安い文庫から貴重な本まで幅広く対象になっています。",
-              "duration": 4.608
-            },
-            {
-              "speaker": "narrator",
-              "text": "店主たちは、これらの本がAIの学習用に買われ、裁断されているのではないかと疑っています。",
-              "duration": 7.032
-            },
-            {
-              "speaker": "narrator",
-              "text": "Books for Cooksを営むホワイトのような人にとって。",
-              "duration": 4.08
-            },
-            {
-              "speaker": "narrator",
-              "text": "本は中身だけでなく、物としての存在そのものに価値があります。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "今週末のメルボルン稀少本フェアでは、こうした懸念を抱えながら準備を進める店主の姿がありました。",
-              "duration": 7.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "本がデータの材料として消えていくかもしれない、静かな不安が広がっています。",
-              "duration": 5.616
+              "text": "For now, yes. That concentration is part of what's making the market so jittery.",
+              "duration": 4.310204
             }
           ]
         }
@@ -550,129 +371,88 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Beaver dams 'helping boost drought resilience'",
-      "summary": "Beavers are helping to create wetland areas during dry and hot weather, according to a researcher.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "UK’s state investments agency hit by data breach",
+      "summary": "The public body in charge of the UK’s state investments has been pushed to improve its internal security after a data breach left “high-level management information” publicly accessible for nearly two days.",
       "keyTakeaways": [
-        "Dr Alan Puttock, from the University of Exeter in Devon, said dams and ponds created by the mammals held water, slowed its flow and provided refuge for wildlife struggling in the parched countryside.",
-        "Puttock, from the university's Centre for Resilience in Environment, Water and Waste, said modern landscapes tended to be extensively drained but beavers had created \"complex wetlands\" through dams and canals that slowly released water into rivers.",
-        "Puttock said: \"One of the biggest modifications beavers do is build dams… that creates these really complex wetlands, which for beavers provides them with safety from predators and ability to move around in the landscape."
+        "The state body, best known for managing government holdings in bailed-out lenders Royal Bank of Scotland and Lloyds after the 2008 financial crisis, blamed the breach on an unnamed staff member who it said failed to follow security rules.",
+        "Bosses also hired external experts to review security protocols, who suggested the body “strengthen our controls and incident preparedness”.",
+        "The incident will be a wake-up call for public agencies, at a time when the rapid rise of AI has prompted fresh fears over how the frontier technology could exploit security gaps."
       ],
-      "whyItMatters": "More than half of England is in drought as hot and dry temperatures impact water supplies.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c5yr7z150d7o?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "It stopped short of divulging the date of the security failure but said it had been identified within the past financial year, after which it was escalated to board members and also to the UK’s information watchdog, the Information Commissioner’s Office.",
+      "originalURL": "https://www.theguardian.com/business/2026/aug/02/uk-state-investments-agency-data-breach",
       "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The instrument",
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ビーバーのダムが、干ばつへの備えになる",
-          "summary": "乾燥した暑い季節に、ビーバーが湿地帯の形成を助けているという研究報告がある。",
+          "headline": "英国の国家投資機関で情報漏洩、内部管理の甘さが露呈",
+          "summary": "英国の国家投資を管轄する公的機関が、機密性の高い管理情報を約2日間にわたって外部から閲覧できる状態に置いていたことが明らかになった。この情報漏洩を受け、同機関はセキュリティ体制の見直しを迫られている。",
           "keyTakeaways": [
-            "エクセター大学のアラン・パットック博士によれば、ビーバーが造るダムや池は水を蓄え、流れを緩やかにし、干上がった大地で生きる野生動物の避難場所にもなっている。",
-            "現代の景観は広範囲にわたって排水が進んでいるが、ビーバーはダムや水路を通じて複雑な湿地を生み出し、水をゆっくりと川へ還している。",
-            "「ビーバーが行う最大の改変のひとつがダムの建設だ。それが複雑な湿地を生み出し、天敵から身を守り、自由に動き回れる環境をもたらす」とパットック博士は語る。"
+            "2008年の金融危機後にロイヤル・バンク・オブ・スコットランドやロイズへの政府出資を管理したことで知られる同機関は、セキュリティ規則に従わなかった職員の行為が原因だとしている。",
+            "外部の専門家を招いてセキュリティ手順を検証した結果、「管理体制とインシデント対応の強化」が勧告された。",
+            "AIの急速な台頭がセキュリティの脆弱性への懸念を高めるなか、今回の事案は公的機関全体への警鐘となりうる。"
           ],
-          "whyItMatters": "イングランドの半数以上の地域が干ばつに見舞われており、高温と少雨が水の供給に深刻な影響を与えている。"
+          "whyItMatters": "漏洩の発生日は明かされていないが、直近の会計年度内に把握され、その後、経営幹部および英国の情報監督機関である情報コミッショナー事務局に報告されたという。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about beavers helping with drought. How does that work?",
-              "duration": 3.84
+              "text": "I saw something about a data breach at a UK government investment agency. What happened?",
+              "duration": 4.780408
             },
             {
               "speaker": "explainer",
-              "text": "So researchers at the University of Exeter have been watching how beaver dams actually hold water during dry spells.",
-              "duration": 5.799184
+              "text": "The public body that manages the UK's state investments had high-level management information left publicly accessible for nearly two days.",
+              "duration": 7.288163
             },
             {
               "speaker": "listener",
-              "text": "Hold water? Like they're creating little reservoirs?",
-              "duration": 3.160816
+              "text": "How did that happen?",
+              "duration": 1.201633
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Dr. Alan Puttock says the dams and ponds the beavers build slow down water flow and create these complex wetland areas.",
-              "duration": 7.836735
+              "text": "They blamed it on a staff member who they say didn't follow security rules. The exact date wasn't disclosed, but it was within the past financial year.",
+              "duration": 8.306939
             },
             {
               "speaker": "listener",
-              "text": "And that helps during a drought?",
-              "duration": 2.089796
+              "text": "This is the group that handled the bank bailouts, right?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "It does. The water gets released slowly into rivers instead of draining away quickly. It also gives wildlife a refuge when the countryside gets really parched.",
-              "duration": 9.430204
+              "text": "Yes, they're best known for managing government holdings in Royal Bank of Scotland and Lloyds after the 2008 financial crisis.",
+              "duration": 6.635102
             },
             {
               "speaker": "listener",
-              "text": "That's kind of remarkable. Why do beavers build all this in the first place?",
-              "duration": 3.94449
+              "text": "What are they doing about it now?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "For them, it's about safety from predators and being able to move around. But it turns out those same dams create wetlands that help the whole landscape retain water.",
-              "duration": 9.142857
+              "text": "They brought in external experts to review their security. Those experts recommended they strengthen their controls and incident preparedness. The breach was also reported to the UK's information watchdog.",
+              "duration": 10.997551
             },
             {
               "speaker": "listener",
-              "text": "Sounds like we need more beavers around.",
-              "duration": 2.115918
+              "text": "Why does this matter beyond just this one agency?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "Well, more than half of England is in drought right now, so researchers say these natural solutions are worth paying attention to.",
-              "duration": 6.530612
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-02/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスでは今、ビーバーが造るダムが思わぬ役割を果たしています。",
-              "duration": 5.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "エクセター大学のアラン・パットック博士の調査によれば、ビーバーが川に造るダムや池が水を蓄え、流れを遅くしているそうです。",
-              "duration": 9.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "乾いた大地で苦しむ野生動物にとっては、貴重な水場にもなっています。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "現代の土地は排水が進み、水が素早く流れ去る仕組みになっています。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "ビーバーはダムや水路で複雑な湿地を作り、水をゆっくりと川へ戻します。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "イングランドでは半分以上の地域が干ばつに見舞われており、水不足が深刻です。",
-              "duration": 6.456
-            },
-            {
-              "speaker": "narrator",
-              "text": "ビーバーが作る湿地は、天敵から身を守る場所であると同時に、干ばつへの備えにもなっているようです。",
-              "duration": 7.272
+              "text": "It's a wake-up call for public agencies generally, especially as concerns grow about how AI could potentially exploit security gaps.",
+              "duration": 6.948571
             }
           ]
         }

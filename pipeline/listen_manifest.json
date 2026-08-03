@@ -12774,6 +12774,303 @@
           ]
         }
       }
+    },
+    "2026-08-03": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-03/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Iran's talking with Oman about shipping. What's this about?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran's foreign ministry said they're discussing a temporary route through the Strait of Hormuz with Oman to let commercial ships pass through again.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "And what about the US? I thought there might be talks there too.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Tehran says they're not reviving negotiations with the US yet, even though Trump claimed talks could restart as early as Monday.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "What's Iran asking for with this strait?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're claiming full sovereignty over the strait and making demands about routes and management, including possibly charging fees for maritime services.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "Has Trump said anything about this?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "He said a cancellation was conditional on Iran reaching a deal quickly. This is reportedly the twelfth time he's called off threatened strikes during the conflict.",
+              "duration": 7.88898
+            },
+            {
+              "speaker": "listener",
+              "text": "So things are still pretty uncertain between them.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the two sides are giving different signals about whether talks are actually happening.",
+              "duration": 3.996735
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-03/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a baby born with a really rare condition. What happened?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "A baby named Theo had gastroschisis — that's when the belly button doesn't develop properly, so the intestines grow outside the body instead of inside.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "Outside the body? That sounds serious. How did they fix it?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Doctors did something remarkable. They operated while Theo was still in the womb — his mother was 26 weeks pregnant at the time.",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, they operated on him before he was born?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. They partially exposed the mother's womb, then used keyhole surgery to gently push his organs back inside his abdomen.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "That's incredible. Has this been done before?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Theo was only the third baby in the world to benefit from this first-of-its-kind clinical trial. His mother traveled from London to the US for the procedure.",
+              "duration": 8.254694
+            },
+            {
+              "speaker": "listener",
+              "text": "And how is he now?",
+              "duration": 1.253878
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's five months old and thriving. The surgery worked.",
+              "duration": 2.821224
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-03/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw there was an election in Pakistan-administered Kashmir, but it sounds like it didn't go smoothly?",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. When polling stations opened in the capital, Muzaffarabad, the city had already seen two days of shutdowns and empty streets.",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "What caused all that?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "It goes back to early June when authorities banned a local pressure group called the Jammu Kashmir Joint Awami Action Committee. They'd been holding demonstrations over rising prices and governance issues.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "So people were protesting the ban?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Markets, banks, petrol stations closed since Friday. Public transport stopped as the protests spread and turned deadly.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "And this group called for a boycott of the election?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Its leaders aren't contesting, and they urged people not to vote. Though some did vote—one man said he supported the governing party to prevent another party from gaining too much power.",
+              "duration": 10.631837
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like a tense situation all around.",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The election happened, but under a real shadow of unrest and division.",
+              "duration": 4.545306
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-03/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's been some real turbulence in the stock market around AI companies this week?",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A Chinese chipmaker called CXMT went public on Monday and its value shot up by 466 percent to about 365 billion pounds.",
+              "duration": 9.195102
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds massive. Why does the headline call the AI economy opaque though?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because so much of it seems to revolve around one company—Nvidia. They're the biggest player and really the only one making a profit on AI right now.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's making investors nervous?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. There was a market correction last week, and some think it's because the whole AI economy feels circular and hard to see through—very dependent on Nvidia's fate.",
+              "duration": 9.377959
+            },
+            {
+              "speaker": "listener",
+              "text": "What about this Chinese company? Are they a competitor?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really. CXMT makes memory chips, not the GPUs that Nvidia produces, so they're not a direct threat.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "So even with all this activity, Nvidia still holds the cards?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, yes. That concentration is part of what's making the market so jittery.",
+              "duration": 4.310204
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-03/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a data breach at a UK government investment agency. What happened?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The public body that manages the UK's state investments had high-level management information left publicly accessible for nearly two days.",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "How did that happen?",
+              "duration": 1.201633
+            },
+            {
+              "speaker": "explainer",
+              "text": "They blamed it on a staff member who they say didn't follow security rules. The exact date wasn't disclosed, but it was within the past financial year.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "This is the group that handled the bank bailouts, right?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, they're best known for managing government holdings in Royal Bank of Scotland and Lloyds after the 2008 financial crisis.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they doing about it now?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "They brought in external experts to review their security. Those experts recommended they strengthen their controls and incident preparedness. The breach was also reported to the UK's information watchdog.",
+              "duration": 10.997551
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter beyond just this one agency?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a wake-up call for public agencies generally, especially as concerns grow about how AI could potentially exploit security gaps.",
+              "duration": 6.948571
+            }
+          ]
+        }
+      }
     }
   }
 }

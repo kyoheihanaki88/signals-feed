@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,128 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Iran in talks with Oman over shipping but US negotiations on hold, says Tehran",
-      "summary": "Iran has been in discussion with Oman about the creation of a new temporary route through the strait of Hormuz that would allow commercial shipping to resume, but is not yet reviving talks with the US, Tehran’s foreign ministry spokesperson said on Monday.",
+      "source": "NPR (World)",
+      "headline": "Nauru, the world's 3rd-smallest country, changes its name to Naoero",
+      "summary": "The Pacific Island country of Nauru has changed its name to the Republic of Naoero, its president said, matching the spelling and pronunciation in the national language.",
       "keyTakeaways": [
-        "Trump said the cancellation was conditional on Iran reaching a deal quickly.",
-        "It is thought to be the 12th time in the war between the US and Iran that Trump has called off threatened strikes.",
-        "Iran is claiming full sovereignty over the strait and has been making demands over the routes and future management of the strait, including the possibility of charging fees in return for providing ships with maritime services."
+        "The country's international code will change from NRU to NRO and its people will be known as dei-Naoero instead of Nauruan.",
+        "Commonly known abroad by the pronunciation of Now-roo, the new name is spoken as Now-ero.",
+        "With 12,000 residents, Nauru is the world's third-smallest country by population size, after Tuvalu and Vatican City."
       ],
-      "whyItMatters": "Esmail Baghaei was responding to claims by Donald Trump that talks between the two sides covering all the major disputes between them could restart as early as Monday.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/03/iran-in-talks-with-oman-over-shipping-route-but-not-us-says-tehran",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "The country became known internationally as Nauru only because its local name was difficult for foreigners to pronounce and was a matter of convenience rather than one of choice, according to an earlier government statement.",
+      "originalURL": "https://www.npr.org/2026/08/04/g-s1-137261/nauru-name-change",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "イランとオマーン、ホルムズ海峡の新航路を協議中――米国との交渉は停止のまま",
-          "summary": "イラン外務省報道官は月曜日、オマーンとの間でホルムズ海峡を通る商業船舶向けの暫定航路の創設について協議を進めていると明らかにした。一方、米国との交渉再開には至っていないとしている。",
+          "headline": "太平洋の島国ナウル、国名を「ナオエロ」に改称",
+          "summary": "太平洋に浮かぶ島国ナウルが、国名を「ナオエロ共和国」に改めた。大統領が発表したもので、自国語の表記と発音に合わせた形となる。",
           "keyTakeaways": [
-            "トランプ氏は、イランが速やかに合意に達することを条件に攻撃計画の中止を表明した。",
-            "今回の攻撃見送りは、米イラン間の緊張をめぐりトランプ氏が脅しを撤回した12度目の事例とされる。",
-            "イランは海峡の完全な主権を主張し、航路の管理や将来的な通航料徴収の可能性を含む条件を提示している。"
+            "国際コードはNRUからNROへ変更され、国民の呼称もナウル人からdei-Naoeroへと改まる。",
+            "これまで国際的には「ナウルー」に近い発音で知られてきたが、新名称は「ナオエロ」と読む。",
+            "人口約1万2000人のナウルは、ツバルとバチカン市国に次ぐ世界で3番目に小さな国だ。"
           ],
-          "whyItMatters": "この発言は、両国間の主要な懸案を包括的に協議する交渉が早ければ月曜日にも再開できるとしたトランプ氏の発言に対する、イラン側の回答として注目される。"
+          "whyItMatters": "「ナウル」という名は、外国人が現地語の発音を苦手としたための便宜的な呼称にすぎなかったと、政府はかつて説明していた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Iran's talking with Oman about shipping. What's this about?",
-              "duration": 3.578776
+              "text": "So a tiny Pacific Island nation just changed its name?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "Iran's foreign ministry said they're discussing a temporary route through the Strait of Hormuz with Oman to let commercial ships pass through again.",
-              "duration": 7.758367
+              "text": "Yes, Nauru is now officially the Republic of Naoero. The president announced they're using the spelling and pronunciation from their own national language.",
+              "duration": 8.385306
             },
             {
               "speaker": "listener",
-              "text": "And what about the US? I thought there might be talks there too.",
-              "duration": 3.239184
+              "text": "How different does it sound?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Tehran says they're not reviving negotiations with the US yet, even though Trump claimed talks could restart as early as Monday.",
-              "duration": 6.870204
+              "text": "It's subtle. Instead of Now-roo, it's Now-ero. The old name was basically what foreigners found easier to say.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "What's Iran asking for with this strait?",
-              "duration": 2.272653
+              "text": "And they're changing everything official too?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "They're claiming full sovereignty over the strait and making demands about routes and management, including possibly charging fees for maritime services.",
-              "duration": 7.78449
+              "text": "Right. The international country code goes from NRU to NRO, and people will be called dei-Naoero instead of Nauruan.",
+              "duration": 7.053061
             },
             {
               "speaker": "listener",
-              "text": "Has Trump said anything about this?",
-              "duration": 1.802449
+              "text": "Why does this matter now?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "He said a cancellation was conditional on Iran reaching a deal quickly. This is reportedly the twelfth time he's called off threatened strikes during the conflict.",
-              "duration": 7.88898
+              "text": "The government said the old name was a matter of convenience, not choice. This feels like reclaiming their own identity.",
+              "duration": 6.50449
             },
             {
               "speaker": "listener",
-              "text": "So things are still pretty uncertain between them.",
-              "duration": 2.45551
+              "text": "How small is this country, by the way?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes, the two sides are giving different signals about whether talks are actually happening.",
-              "duration": 3.996735
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イランは、ホルムズ海峡に商業船が通れる新しい航路を設けようと、オマーンと話し合いを続けています。",
-              "duration": 7.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で、アメリカとの交渉はまだ再開していないと、イランの外務省が明らかにしました。",
-              "duration": 6.552
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は先日、イランが早く合意すれば攻撃を取りやめると述べていました。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした脅しの撤回は、これまでに12回ほど繰り返されてきたとされています。",
-              "duration": 5.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "イランは海峡の管理権を主張し、将来的には通航料を求める可能性にも触れています。",
-              "duration": 7.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "この海峡は世界の石油輸送の要所であり、航路の行方は各国の経済に直結します。",
-              "duration": 6.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "両国の対話が本格化するかどうかは、まだ見通せない状況です。",
-              "duration": 5.16
+              "text": "About twelve thousand residents. It's the world's third-smallest by population, after Tuvalu and Vatican City.",
+              "duration": 6.347755
             }
           ]
         }
@@ -139,129 +98,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "HEALTH",
-      "source": "BBC News (Health)",
-      "headline": "Woman has pioneering womb surgery to fix 'miracle' baby with intestines outside its body",
-      "summary": "Doctors have used ground-breaking surgery on an unborn baby to successfully correct a birth defect while he was still inside the womb.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "UK plastic ‘waste colonialism’ found to be polluting Turkey’s farming heartland",
+      "summary": "High levels of microplastics and other plastic contamination have been discovered in a waterway close to a major recycling hub in Turkey supplied with plastic waste by British companies.",
       "keyTakeaways": [
-        "Baby Theo, who is now five months old and thriving, had gastroschisis, where the belly button does not develop properly, causing the intestines to grow externally.",
-        "Doctors partially exposed his mother's womb and then gently pushed his organs back inside his abdomen using keyhole surgery.",
-        "He was the third baby in the world to benefit from the first-of-its-kind clinical trial."
+        "It is one of the largest and most fertile agricultural basins in Turkey.",
+        "The UK government pledged to reduce plastic pollution and eliminate harmful plastics during talks to reach a global plastics treaty, which collapsed last year, but it has not committed to a ban on exports.",
+        "Britain, one of the world’s largest exporters of plastic waste, exported 675,000 tonnes in 2025, its largest amount in eight years, of which 139,000 tonnes was shipped to Turkey."
       ],
-      "whyItMatters": "His mother, Maisie Savage, from London, was operated on by doctors in the US while she was 26 weeks pregnant.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c86ngegz9qno?at_medium=RSS&at_campaign=rss",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "At the desk",
+      "whyItMatters": "The findings from a Guardian investigation reignite concerns over Britain’s continuing role in “waste colonialism” – a term used to describe the export of plastic waste by rich nations to poorer countries with less regulated waste management.",
+      "originalURL": "https://www.theguardian.com/environment/2026/aug/04/uk-plastic-waste-colonialism-recycling-exports-contaminating-water-crops-turkey",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "胎内で腸を修復——世界でも前例のない手術が成功",
-          "summary": "まだ母親の胎内にいる赤ちゃんの先天性疾患を、画期的な手術によって修正することに医師たちが成功した。",
+          "headline": "英国産プラスチックごみがトルコの農業地帯を汚染",
+          "summary": "英国企業がプラスチック廃棄物を輸出するトルコの主要リサイクル拠点の近くで、高濃度のマイクロプラスチックを含む汚染が水路で確認された。",
           "keyTakeaways": [
-            "現在生後5か月を迎え元気に育つセオくんは、腸が体外に出た状態で発育するガストロスキシスという疾患を抱えていた。",
-            "医師たちは母体の子宮を部分的に露出させ、内視鏡手術によって腸を腹腔内へと丁寧に戻した。",
-            "この臨床試験で恩恵を受けた赤ちゃんは、世界でまだ3例目。"
+            "汚染が確認された地域は、トルコ有数の広大で肥沃な農業地帯だ。",
+            "英国政府は昨年決裂したプラスチック条約交渉でプラスチック汚染の削減を約束したが、廃棄物輸出の禁止には踏み込んでいない。",
+            "世界最大級のプラスチック廃棄物輸出国である英国は2025年に67万5000トンを輸出し、うち13万9000トンがトルコ向けで、いずれも過去8年で最大の規模だった。"
           ],
-          "whyItMatters": "ロンドン在住の母親メイジー・セイヴィッジさんは妊娠26週の時点でアメリカに渡り、この手術を受けた。"
+          "whyItMatters": "今回の調査結果は、規制の緩い途上国へ廃棄物を押しつける「廃棄物の植民地主義」に英国が加担し続けているという懸念を、改めて浮き彫りにしている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a baby born with a really rare condition. What happened?",
-              "duration": 4.362449
+              "text": "I saw something about UK plastic waste ending up in Turkey. What's happening there?",
+              "duration": 4.780408
             },
             {
               "speaker": "explainer",
-              "text": "A baby named Theo had gastroschisis — that's when the belly button doesn't develop properly, so the intestines grow outside the body instead of inside.",
-              "duration": 8.019592
+              "text": "A Guardian investigation found high levels of microplastics and other plastic contamination in a waterway near a major recycling hub in Turkey — one that receives plastic waste from British companies.",
+              "duration": 10.893061
             },
             {
               "speaker": "listener",
-              "text": "Outside the body? That sounds serious. How did they fix it?",
-              "duration": 3.369796
+              "text": "How much waste are we talking about?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Doctors did something remarkable. They operated while Theo was still in the womb — his mother was 26 weeks pregnant at the time.",
-              "duration": 7.288163
+              "text": "Britain exported 675,000 tonnes of plastic waste in 2025, its largest amount in eight years. Of that, 139,000 tonnes went to Turkey.",
+              "duration": 10.762449
             },
             {
               "speaker": "listener",
-              "text": "Wait, they operated on him before he was born?",
-              "duration": 2.638367
+              "text": "And this area in Turkey — is it just an industrial zone?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Yes. They partially exposed the mother's womb, then used keyhole surgery to gently push his organs back inside his abdomen.",
-              "duration": 7.105306
+              "text": "No, that's part of the concern. It's one of the largest and most fertile agricultural basins in Turkey, so contamination there affects farming and water supplies.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "That's incredible. Has this been done before?",
-              "duration": 2.220408
+              "text": "Why is the UK sending so much waste abroad in the first place?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Theo was only the third baby in the world to benefit from this first-of-its-kind clinical trial. His mother traveled from London to the US for the procedure.",
-              "duration": 8.254694
+              "text": "Britain is one of the world's largest exporters of plastic waste. Critics call it 'waste colonialism' — rich nations shipping waste to poorer countries with less regulated waste management.",
+              "duration": 11.180408
             },
             {
               "speaker": "listener",
-              "text": "And how is he now?",
-              "duration": 1.253878
+              "text": "Has the UK committed to stopping this?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "He's five months old and thriving. The surgery worked.",
-              "duration": 2.821224
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ロンドンに住む女性が、妊娠26週のときにアメリカで特別な手術を受けました。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "お腹の中の赤ちゃんは、腸が体の外に出てしまう病気を抱えていました。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "医師たちは子宮を少しだけ開き、内視鏡を使って腸を体の中へ戻しました。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "この方法で治療を受けた赤ちゃんは、世界でまだ3人目です。",
-              "duration": 4.776
-            },
-            {
-              "speaker": "narrator",
-              "text": "生まれたセオくんは今、生後5か月になり元気に育っています。",
-              "duration": 4.824
-            },
-            {
-              "speaker": "narrator",
-              "text": "胎内にいる間に治すことで、生まれてからの負担を減らせる可能性があります。",
-              "duration": 5.568
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした試みが、同じ病気を持つ赤ちゃんの選択肢を広げていくかもしれません。",
-              "duration": 5.928
+              "text": "The government pledged to reduce plastic pollution during global treaty talks last year, but those talks collapsed, and the UK has not committed to a ban on exports.",
+              "duration": 8.907755
             }
           ]
         }
@@ -271,134 +189,88 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Protests, boycott cast shadow on Pakistan-administered Kashmir election",
-      "summary": "Islamabad, Pakistan – By the time polling stations opened in Muzaffarabad, the capital of Pakistan-administered Kashmir, the city had already witnessed two days of shutdowns and empty streets.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Apple launches legal challenge against UK government demand to access data",
+      "summary": "Apple has launched a new legal challenge against a UK government demand to access its customers’ highly encrypted data, a year after the Home Office agreed to abandon its previous request.",
       "keyTakeaways": [
-        "The unrest dates back to June 5 when authorities banned the Jammu Kashmir Joint Awami Action Committee (JAAC), a local pressure group, for holding demonstrations over rising prices and governance.",
-        "Markets, banks and petrol stations had been closed since Friday, and public transport was suspended as deadly protests spread.",
-        "Its leaders are not contesting the election, and the group has called for a boycott of the vote."
+        "The US tech company launched the legal complaint last month at the Investigatory Powers Tribunal (IPT), an independent court that has the power to investigate claims that the UK intelligence services have acted unlawfully.",
+        "The UK government had made a second request to Apple to grant it a “back door” to encrypted iCloud data belonging to British users, according to an order issued by the court.",
+        "Britain backed down on its original demand for access to data from UK and US customers last year, after a heated transatlantic tussle over encryption between London and Washington."
       ],
-      "whyItMatters": "Yasir Josh, a 28-year-old, said he voted for the Pakistan People’s Party (PPP), the region’s governing party, “because PMLN wants to form a government with a two-thirds majority and commit tyranny”.",
-      "originalURL": "https://www.aljazeera.com/news/2026/8/3/protests-boycott-cast-shadow-on-pakistan-administered-kashmir-election?traffic_source=rss",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "The original TCN issued last year asked Apple for the right to see users’ encrypted data protected by its advanced data protection (ADP) programme in the event of a national security risk.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/03/apple-legal-challenge-uk-government-data-access",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "パキスタン統治下カシミールで選挙、抗議とボイコットが影を落とす",
-          "summary": "パキスタン統治下カシミールの州都ムザファラバードで投票が始まった日、街はすでに二日間にわたるストと静寂を経験していた。",
+          "headline": "アップル、英政府の暗号化データ開示要求に法的対抗措置",
+          "summary": "アップルが英国政府によるユーザーの暗号化データへのアクセス要求に対し、新たな法的異議申し立てを行った。内務省が以前の要求を取り下げてから、およそ一年後のことだ。",
           "keyTakeaways": [
-            "混乱の発端は6月5日、当局が地元の圧力団体「JAAC」を物価高と統治への抗議活動を理由に禁止したことにある。",
-            "金曜日から市場、銀行、ガソリンスタンドが閉鎖され、死者を出した抗議の広がりとともに公共交通も止まった。",
-            "JAACの指導部は選挙に出馬せず、団体として投票のボイコットを呼びかけている。"
+            "先月、独立機関である調査権限審判所に法的申し立てを提起した",
+            "英政府はiCloudの暗号化データへの「バックドア」アクセスを求める二度目の要求を出していたことが、裁判所の命令で明らかになった",
+            "英国は昨年、米英間の暗号化をめぐる対立の末、英米両国のユーザーデータへのアクセスを求めた当初の要求を撤回していた"
           ],
-          "whyItMatters": "28歳のヤシル・ジョシュ氏はPMLNによる三分の二多数派政権の樹立を懸念し、PPPに投票したと語った。"
+          "whyItMatters": "昨年発令された最初の技術的能力通知は、国家安全保障上のリスクが生じた際に、アップルの高度データ保護プログラムで守られたユーザーの暗号化データを閲覧する権限を同社に求めるものだった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw there was an election in Pakistan-administered Kashmir, but it sounds like it didn't go smoothly?",
-              "duration": 5.694694
+              "text": "So Apple is back in court with the UK government over data access?",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "Right. When polling stations opened in the capital, Muzaffarabad, the city had already seen two days of shutdowns and empty streets.",
-              "duration": 7.288163
+              "text": "Yes. Apple filed a legal challenge last month at a tribunal that oversees UK intelligence services.",
+              "duration": 5.877551
             },
             {
               "speaker": "listener",
-              "text": "What caused all that?",
-              "duration": 1.28
+              "text": "What does the government want this time?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "It goes back to early June when authorities banned a local pressure group called the Jammu Kashmir Joint Awami Action Committee. They'd been holding demonstrations over rising prices and governance issues.",
-              "duration": 10.762449
+              "text": "According to the court, it's a second request for what's called a back door to encrypted iCloud data belonging to British users.",
+              "duration": 7.653878
             },
             {
               "speaker": "listener",
-              "text": "So people were protesting the ban?",
-              "duration": 2.168163
+              "text": "Didn't they already try this once?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Markets, banks, petrol stations closed since Friday. Public transport stopped as the protests spread and turned deadly.",
-              "duration": 7.836735
+              "text": "They did. Last year, the UK backed down on an earlier demand after a dispute with Washington over encryption.",
+              "duration": 6.269388
             },
             {
               "speaker": "listener",
-              "text": "And this group called for a boycott of the election?",
-              "duration": 3.056327
+              "text": "What kind of data are we talking about?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Its leaders aren't contesting, and they urged people not to vote. Though some did vote—one man said he supported the governing party to prevent another party from gaining too much power.",
-              "duration": 10.631837
+              "text": "The original request was for access to data protected by Apple's advanced data protection program, in cases of national security risk.",
+              "duration": 7.235918
             },
             {
               "speaker": "listener",
-              "text": "It sounds like a tense situation all around.",
-              "duration": 2.45551
+              "text": "So this is still about whether Apple has to build a way in for the government.",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "It is. The election happened, but under a real shadow of unrest and division.",
-              "duration": 4.545306
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "パキスタンが統治するカシミール地方で、選挙の日を迎えました。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "州都ムザファラバードでは、投票が始まる前から二日間、店も道も閉ざされていました。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "きっかけは6月5日、当局が地元の圧力団体JAACを禁止したことです。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "この団体は物価の高騰と統治への不満を訴えていました。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "金曜日から市場も銀行もガソリンスタンドも閉まり、抗議は広がりました。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "JAACは選挙への出馬を見送り、住民に投票しないよう呼びかけています。",
-              "duration": 5.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "それでも投票した28歳の男性は、特定の政党が圧倒的多数を握ることへの警戒を口にしました。",
-              "duration": 8.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "選挙という形は整っても、人々の不満は消えていません。",
-              "duration": 4.872
+              "text": "Exactly. And Apple is challenging it again through the independent court that handles these disputes.",
+              "duration": 5.041633
             }
           ]
         }
@@ -410,127 +282,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Stock market turmoil sheds stark light on the opaque AI economy",
-      "summary": "On Monday, the Chinese memory chipmaker CXMT floated on the Shanghai stock market, soaring by 466% in value to 3.3tn yuan (£365bn).",
+      "headline": "Big Walk review – larking around with mates elevated to an artform",
+      "summary": "He was relentlessly spamming a gigantic, ball-shaped lamp on and off, the ground around him flicking from inky dark to warm pastel pink and back again, like a single Christmas light blinking from afar.",
       "keyTakeaways": [
-        "Long term, this week’s advances are gamechanging for the AI economy, although in many ways they should have been predictable.",
-        "It may be that last week’s correction is an overreaction – but also a reasonable response to a circular and extremely opaque AI economy that rests heavily on the fate of a single company, Nvidia.",
-        "A contributing factor to the investor skittishness appears to be yet another circular, opaque deal."
+        "Here’s one that has stuck with me: in the black of night, cicadas kicking up an almighty din, I had lost my partner.",
+        "Then, there in the far distance, I saw him signalling in my direction.",
+        "Step out of earshot of your party and you will find it difficult to call for one another (unless, of course, you’ve picked up a Fisher-Price-like walkie-talkie)."
       ],
-      "whyItMatters": "This means, put simply, that CXMT is not a threat to GPU maker Nvidia, the biggest company in the AI economy and the only one making a profit on AI.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/02/stock-market-turmoil-nvidia-china-light-ai-economy",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "That’s somewhat because this rugged terrain is dense with vegetation and cliffs to fall down, and also because the game makes ingenious use of proximity and direction-based voice audio.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/04/big-walk-review-larking-around-with-mates-elevated-to-an-artform",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AI経済の不透明さが、市場の混乱で浮き彫りに",
-          "summary": "月曜日、中国のメモリーチップメーカーCXMTが上海市場に上場し、株価は466%急騰。時価総額は3兆3000億元（約36兆5000億円）に達した。",
+          "headline": "仲間と歩く夜、光と声が織りなす体験",
+          "summary": "巨大な球形のランプを点滅させ続ける彼の足元で、地面は深い闇と淡いピンクの光の間を行き来していた。遠くから瞬くクリスマスの飾り電球のように、静かに、繰り返し。",
           "keyTakeaways": [
-            "今週の動きは長期的にAI経済を大きく塗り替えるものだが、ある意味では予測可能な展開でもあった",
-            "先週の調整は過剰反応かもしれない。だが、単一企業エヌビディアの命運に大きく依存する、循環的で不透明なAI経済への、もっともな懸念の表れでもある",
-            "投資家の不安をさらに高めた要因として、またしても不透明な循環取引の存在が挙げられる"
+            "忘れられない場面がある。夜の闇の中、セミの声が轟くなか、気づけばパートナーの姿を見失っていた",
+            "ふと遠くを見ると、彼がこちらに向かって合図を送っていた",
+            "仲間の声が届かない距離まで離れると、呼び合うことすら難しくなる。おもちゃのような無線機を拾っていない限りは"
           ],
-          "whyItMatters": "つまりCXMTは、AI経済最大の企業であり唯一AIで利益を上げているGPUメーカー、エヌビディアの脅威にはならないということだ。"
+          "whyItMatters": "険しい地形と密な植生、そして距離と方向に応じて変化する音声設計が、このゲームに独特の緊張感を与えている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's been some real turbulence in the stock market around AI companies this week?",
-              "duration": 4.414694
+              "text": "I saw a review about something called Big Walk. Is this a hiking game?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "Yes. A Chinese chipmaker called CXMT went public on Monday and its value shot up by 466 percent to about 365 billion pounds.",
-              "duration": 9.195102
+              "text": "It's a game where you walk around with friends at night, and the reviewer describes it as larking around with mates elevated to an artform.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "That sounds massive. Why does the headline call the AI economy opaque though?",
-              "duration": 4.963265
+              "text": "At night? That sounds a bit disorienting.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Because so much of it seems to revolve around one company—Nvidia. They're the biggest player and really the only one making a profit on AI right now.",
-              "duration": 8.437551
+              "text": "It is. The reviewer mentions losing their partner in the dark while cicadas were making noise all around them.",
+              "duration": 6.112653
             },
             {
               "speaker": "listener",
-              "text": "And that's making investors nervous?",
-              "duration": 2.037551
+              "text": "How did they find each other again?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. There was a market correction last week, and some think it's because the whole AI economy feels circular and hard to see through—very dependent on Nvidia's fate.",
-              "duration": 9.377959
+              "text": "Their partner was in the distance, signaling by flashing a giant ball-shaped lamp on and off, switching between darkness and warm pink light.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "What about this Chinese company? Are they a competitor?",
-              "duration": 3.186939
+              "text": "So communication is tricky in this game?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Not really. CXMT makes memory chips, not the GPUs that Nvidia produces, so they're not a direct threat.",
-              "duration": 5.32898
+              "text": "Very much so. The game uses proximity and direction-based voice audio, so if you step away from your group, it's hard to call out to each other.",
+              "duration": 7.758367
             },
             {
               "speaker": "listener",
-              "text": "So even with all this activity, Nvidia still holds the cards?",
-              "duration": 3.474286
+              "text": "Unless you have one of those walkie-talkies they mention?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "For now, yes. That concentration is part of what's making the market so jittery.",
-              "duration": 4.310204
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "月曜日、中国のメモリーチップメーカーCXMTが上海市場に上場しました。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "株価は初日に466パーセント急騰し、時価総額は約36兆円に達しています。",
-              "duration": 7.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、CXMTが作るのはメモリーで、エヌビディアが手がけるGPUとは異なります。",
-              "duration": 6.648
-            },
-            {
-              "speaker": "narrator",
-              "text": "つまり、AI分野で唯一利益を出しているエヌビディアへの直接的な脅威にはなりません。",
-              "duration": 6.36
-            },
-            {
-              "speaker": "narrator",
-              "text": "先週の株価調整は、単一企業に大きく依存する構造への懸念の表れかもしれません。",
-              "duration": 6.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "AI経済の循環と不透明さが、投資家の不安を高めているようです。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "長い目で見れば、今週の動きは大きな変化の始まりになるでしょう。",
-              "duration": 5.424
+              "text": "Exactly. The reviewer says you can pick up a Fisher-Price-like walkie-talkie to help. The terrain itself is rugged, dense with vegetation and cliffs.",
+              "duration": 9.926531
             }
           ]
         }
@@ -540,124 +371,88 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "UK’s state investments agency hit by data breach",
-      "summary": "The public body in charge of the UK’s state investments has been pushed to improve its internal security after a data breach left “high-level management information” publicly accessible for nearly two days.",
+      "category": "CULTURE",
+      "source": "The Guardian (Culture)",
+      "headline": "John Oliver on police surveillance: ‘Big Brother on steroids’",
+      "summary": "John Oliver discussed the tools that police are using to keep track of Americans on the latest episode of Last Week Tonight.",
       "keyTakeaways": [
-        "The state body, best known for managing government holdings in bailed-out lenders Royal Bank of Scotland and Lloyds after the 2008 financial crisis, blamed the breach on an unnamed staff member who it said failed to follow security rules.",
-        "Bosses also hired external experts to review security protocols, who suggested the body “strengthen our controls and incident preparedness”.",
-        "The incident will be a wake-up call for public agencies, at a time when the rapid rise of AI has prompted fresh fears over how the frontier technology could exploit security gaps."
+        "Police are increasingly able to use cameras used by private businesses or homeowners and routinely request access to the 85,000 cameras in the US.",
+        "One software company named Fusus recently advertised its ability to allow police to request all camera footage from businesses in an area at the click of a button.",
+        "Fusus is also developing tools to allow police to livestream footage from private homeowners’ Ring cameras, while cities such as Rialto, California, stipulate that businesses must allow authorities access to security footage."
       ],
-      "whyItMatters": "It stopped short of divulging the date of the security failure but said it had been identified within the past financial year, after which it was escalated to board members and also to the UK’s information watchdog, the Information Commissioner’s Office.",
-      "originalURL": "https://www.theguardian.com/business/2026/aug/02/uk-state-investments-agency-data-breach",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "whyItMatters": "In recent years, the use of surveillance technology has exploded among local police forces due to decreasing prices and federal funding, with one local mayor comparing modern systems to “Big Brother on steroids”.",
+      "originalURL": "https://www.theguardian.com/tv-and-radio/2026/aug/03/john-oliver-police-surveillance-cameras",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英国の国家投資機関で情報漏洩、内部管理の甘さが露呈",
-          "summary": "英国の国家投資を管轄する公的機関が、機密性の高い管理情報を約2日間にわたって外部から閲覧できる状態に置いていたことが明らかになった。この情報漏洩を受け、同機関はセキュリティ体制の見直しを迫られている。",
+          "headline": "広がる警察の監視網——民間カメラが捜査ツールに",
+          "summary": "米国のトーク番組「ラスト・ウィーク・トゥナイト」で、ジョン・オリバーが警察による市民監視の実態を取り上げた。民間の防犯カメラが捜査に組み込まれていく現状を、丁寧に掘り下げた内容だった。",
           "keyTakeaways": [
-            "2008年の金融危機後にロイヤル・バンク・オブ・スコットランドやロイズへの政府出資を管理したことで知られる同機関は、セキュリティ規則に従わなかった職員の行為が原因だとしている。",
-            "外部の専門家を招いてセキュリティ手順を検証した結果、「管理体制とインシデント対応の強化」が勧告された。",
-            "AIの急速な台頭がセキュリティの脆弱性への懸念を高めるなか、今回の事案は公的機関全体への警鐘となりうる。"
+            "警察は民間企業や一般家庭のカメラを活用する機会が増えており、全米約八万五千台のカメラへのアクセスを日常的に求めている",
+            "監視システム企業のFususは、特定エリアの店舗カメラ映像をワンクリックで一括取得できる機能を警察向けに売り込んでいる",
+            "Fususは一般家庭のRingカメラのライブ映像を警察が閲覧できるツールも開発中で、カリフォルニア州リアルトなど一部の都市では、事業者に当局へのカメラアクセス提供を義務付けている"
           ],
-          "whyItMatters": "漏洩の発生日は明かされていないが、直近の会計年度内に把握され、その後、経営幹部および英国の情報監督機関である情報コミッショナー事務局に報告されたという。"
+          "whyItMatters": "監視技術のコスト低下と連邦資金の後押しにより、地方警察への普及が急速に進んでおり、ある市長はその現状を「ビッグ・ブラザーの比ではない」と表現した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a data breach at a UK government investment agency. What happened?",
-              "duration": 4.780408
+              "text": "I saw John Oliver did a piece on police surveillance. What's the main concern here?",
+              "duration": 4.597551
             },
             {
               "speaker": "explainer",
-              "text": "The public body that manages the UK's state investments had high-level management information left publicly accessible for nearly two days.",
-              "duration": 7.288163
+              "text": "He highlighted how much police access to cameras has grown. They can now tap into thousands of private business and homeowner cameras across the country.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "How did that happen?",
-              "duration": 1.201633
+              "text": "Wait, so these are private cameras, not just police ones?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "They blamed it on a staff member who they say didn't follow security rules. The exact date wasn't disclosed, but it was within the past financial year.",
-              "duration": 8.306939
+              "text": "Exactly. Police routinely request access to around 85,000 cameras in the US that belong to businesses or homeowners.",
+              "duration": 7.053061
             },
             {
               "speaker": "listener",
-              "text": "This is the group that handled the bank bailouts, right?",
-              "duration": 3.056327
+              "text": "How does that even work? Do they ask each business individually?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Yes, they're best known for managing government holdings in Royal Bank of Scotland and Lloyds after the 2008 financial crisis.",
-              "duration": 6.635102
+              "text": "Not anymore. Oliver mentioned a company called Fusus that lets police request all camera footage from businesses in an area with just a click of a button.",
+              "duration": 8.542041
             },
             {
               "speaker": "listener",
-              "text": "What are they doing about it now?",
-              "duration": 1.567347
+              "text": "That seems like a lot of power. Are there any rules around this?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "They brought in external experts to review their security. Those experts recommended they strengthen their controls and incident preparedness. The breach was also reported to the UK's information watchdog.",
-              "duration": 10.997551
+              "text": "It varies. Some cities, like Rialto, California, actually require businesses to give authorities access to their security footage. And Fusus is developing tools to livestream from homeowners' Ring cameras too.",
+              "duration": 11.937959
             },
             {
               "speaker": "listener",
-              "text": "Why does this matter beyond just this one agency?",
-              "duration": 3.108571
+              "text": "Why is this happening now?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "It's a wake-up call for public agencies generally, especially as concerns grow about how AI could potentially exploit security gaps.",
-              "duration": 6.948571
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-03/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスで国の投資を管理する公的機関が、機密性の高い情報を二日近く外部から見られる状態にしていました。",
-              "duration": 8.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "この機関は2008年の金融危機のとき、政府が救済した銀行への出資を管理していたことで知られています。",
-              "duration": 8.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "原因は職員一人がセキュリティの規則を守らなかったことだと説明されています。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "発覚後、外部の専門家を呼んで点検したところ、管理体制と対応の準備を強くするよう助言を受けました。",
-              "duration": 8.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "漏洩の日付は公表されていませんが、直近の会計年度内に把握され、幹部と監督当局に報告されています。",
-              "duration": 8.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIの普及でセキュリティの穴を突かれる心配が高まる中、公的機関全体にとって今回は大きな教訓になりそうです。",
-              "duration": 8.904
+              "text": "Surveillance technology has gotten cheaper, and there's federal funding available. One mayor called modern systems 'Big Brother on steroids.'",
+              "duration": 7.47102
             }
           ]
         }

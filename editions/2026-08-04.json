@@ -33,6 +33,65 @@
           ],
           "whyItMatters": "「ナウル」という名は、外国人が現地語の発音を苦手としたための便宜的な呼称にすぎなかったと、政府はかつて説明していた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a tiny Pacific Island nation just changed its name?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Nauru is now officially the Republic of Naoero. The president announced they're using the spelling and pronunciation from their own national language.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "How different does it sound?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's subtle. Instead of Now-roo, it's Now-ero. The old name was basically what foreigners found easier to say.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "And they're changing everything official too?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The international country code goes from NRU to NRO, and people will be called dei-Naoero instead of Nauruan.",
+              "duration": 7.053061
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter now?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The government said the old name was a matter of convenience, not choice. This feels like reclaiming their own identity.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "How small is this country, by the way?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "About twelve thousand residents. It's the world's third-smallest by population, after Tuvalu and Vatican City.",
+              "duration": 6.347755
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +123,65 @@
             "世界最大級のプラスチック廃棄物輸出国である英国は2025年に67万5000トンを輸出し、うち13万9000トンがトルコ向けで、いずれも過去8年で最大の規模だった。"
           ],
           "whyItMatters": "今回の調査結果は、規制の緩い途上国へ廃棄物を押しつける「廃棄物の植民地主義」に英国が加担し続けているという懸念を、改めて浮き彫りにしている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about UK plastic waste ending up in Turkey. What's happening there?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "A Guardian investigation found high levels of microplastics and other plastic contamination in a waterway near a major recycling hub in Turkey — one that receives plastic waste from British companies.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "How much waste are we talking about?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Britain exported 675,000 tonnes of plastic waste in 2025, its largest amount in eight years. Of that, 139,000 tonnes went to Turkey.",
+              "duration": 10.762449
+            },
+            {
+              "speaker": "listener",
+              "text": "And this area in Turkey — is it just an industrial zone?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, that's part of the concern. It's one of the largest and most fertile agricultural basins in Turkey, so contamination there affects farming and water supplies.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is the UK sending so much waste abroad in the first place?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Britain is one of the world's largest exporters of plastic waste. Critics call it 'waste colonialism' — rich nations shipping waste to poorer countries with less regulated waste management.",
+              "duration": 11.180408
+            },
+            {
+              "speaker": "listener",
+              "text": "Has the UK committed to stopping this?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "The government pledged to reduce plastic pollution during global treaty talks last year, but those talks collapsed, and the UK has not committed to a ban on exports.",
+              "duration": 8.907755
+            }
+          ]
         }
       }
     },
@@ -97,6 +215,65 @@
           ],
           "whyItMatters": "昨年発令された最初の技術的能力通知は、国家安全保障上のリスクが生じた際に、アップルの高度データ保護プログラムで守られたユーザーの暗号化データを閲覧する権限を同社に求めるものだった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Apple is back in court with the UK government over data access?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Apple filed a legal challenge last month at a tribunal that oversees UK intelligence services.",
+              "duration": 5.877551
+            },
+            {
+              "speaker": "listener",
+              "text": "What does the government want this time?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "According to the court, it's a second request for what's called a back door to encrypted iCloud data belonging to British users.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "Didn't they already try this once?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "They did. Last year, the UK backed down on an earlier demand after a dispute with Washington over encryption.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of data are we talking about?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The original request was for access to data protected by Apple's advanced data protection program, in cases of national security risk.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is still about whether Apple has to build a way in for the government.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And Apple is challenging it again through the independent court that handles these disputes.",
+              "duration": 5.041633
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +306,65 @@
           ],
           "whyItMatters": "険しい地形と密な植生、そして距離と方向に応じて変化する音声設計が、このゲームに独特の緊張感を与えている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw a review about something called Big Walk. Is this a hiking game?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a game where you walk around with friends at night, and the reviewer describes it as larking around with mates elevated to an artform.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "At night? That sounds a bit disorienting.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The reviewer mentions losing their partner in the dark while cicadas were making noise all around them.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "How did they find each other again?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Their partner was in the distance, signaling by flashing a giant ball-shaped lamp on and off, switching between darkness and warm pink light.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "So communication is tricky in this game?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very much so. The game uses proximity and direction-based voice audio, so if you step away from your group, it's hard to call out to each other.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "Unless you have one of those walkie-talkies they mention?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The reviewer says you can pick up a Fisher-Price-like walkie-talkie to help. The terrain itself is rugged, dense with vegetation and cliffs.",
+              "duration": 9.926531
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +396,65 @@
             "Fususは一般家庭のRingカメラのライブ映像を警察が閲覧できるツールも開発中で、カリフォルニア州リアルトなど一部の都市では、事業者に当局へのカメラアクセス提供を義務付けている"
           ],
           "whyItMatters": "監視技術のコスト低下と連邦資金の後押しにより、地方警察への普及が急速に進んでおり、ある市長はその現状を「ビッグ・ブラザーの比ではない」と表現した。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw John Oliver did a piece on police surveillance. What's the main concern here?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "He highlighted how much police access to cameras has grown. They can now tap into thousands of private business and homeowner cameras across the country.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, so these are private cameras, not just police ones?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Police routinely request access to around 85,000 cameras in the US that belong to businesses or homeowners.",
+              "duration": 7.053061
+            },
+            {
+              "speaker": "listener",
+              "text": "How does that even work? Do they ask each business individually?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not anymore. Oliver mentioned a company called Fusus that lets police request all camera footage from businesses in an area with just a click of a button.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a lot of power. Are there any rules around this?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It varies. Some cities, like Rialto, California, actually require businesses to give authorities access to their security footage. And Fusus is developing tools to livestream from homeowners' Ring cameras too.",
+              "duration": 11.937959
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is this happening now?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Surveillance technology has gotten cheaper, and there's federal funding available. One mayor called modern systems 'Big Brother on steroids.'",
+              "duration": 7.47102
+            }
+          ]
         }
       }
     }

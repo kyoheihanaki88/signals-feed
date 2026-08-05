@@ -13573,6 +13573,303 @@
           ]
         }
       }
+    },
+    "2026-08-05": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-05/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw there was a mass funeral in Gaza yesterday. What happened?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mourners gathered in central Gaza on Tuesday to bury 112 people, including 40 children, who were killed in an Israeli strike back in 2023.",
+              "duration": 8.85551
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, if this happened in 2023, why is the funeral happening now?",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The bodies were only recently recovered. Last weekend, Gaza's civil defense dug through a leveled apartment block and found the remains of these 112 victims.",
+              "duration": 9.142857
+            },
+            {
+              "speaker": "listener",
+              "text": "So they've been buried under rubble this whole time?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The strike happened on November 22nd, 2023, when Israeli warplanes demolished a residential block in Gaza City. More than 300 people were killed that day.",
+              "duration": 10.161633
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are they able to recover bodies now?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "A ceasefire was established in October, and while Israeli bombing hasn't completely stopped, it has allowed first responders to dig through rubble where thousands of remains are still buried across Gaza.",
+              "duration": 10.44898
+            },
+            {
+              "speaker": "listener",
+              "text": "Thousands still buried?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, across the territory. Mourners yesterday carried these bodies through rubble-lined streets past destroyed buildings to a nearby cemetery.",
+              "duration": 7.836735
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-05/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw something about a report on the Victorian government and firefighters. What happened?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "An anti-corruption commission released a report on Wednesday about how senior members of Daniel Andrews' government dealt with the firefighters' union leader.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds serious. What did the report actually find?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "It found serious and concerning conduct — things like actions against policy and codes of conduct, deliberate attempts to conceal and mislead, and misuse of information.",
+              "duration": 9.848163
+            },
+            {
+              "speaker": "listener",
+              "text": "Did they call it corruption though?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, the commission stopped short of making any findings of corrupt conduct.",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "listener",
+              "text": "How's Daniel Andrews responding to this?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's defending the actions of his senior government members. He's the former premier now.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "And the opposition?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're calling Labor a gangster government based on these findings.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "What was this all about originally?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It goes back to 2015, when the government was negotiating a new agreement for firefighters, overseen by the then emergency services minister Jane Garrett.",
+              "duration": 8.019592
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-05/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a journalist got banned from a platform after posting about his new book?",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Durán was banned after showing the cover of his book called The Nerd Reich, which is about Silicon Valley and democracy.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "What sparked him to write it?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was responding to a tech company called Palantir. They posted a 22-point manifesto praising American hard power, AI weapons, and calling for compulsory national service while denouncing inclusivity.",
+              "duration": 11.72898
+            },
+            {
+              "speaker": "listener",
+              "text": "That's pretty bold. What's his main argument?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says big tech billionaires have seized economic and political control, and they're steering things toward their own apocalyptic visions.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "Does he connect this to current politics?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "He does. He says tech titans helped Trump and his family become billionaires through cryptocurrency, and in return got government contracts and freedom from regulation.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of philosophy drives these tech leaders?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Without getting too deep, he points to ideas that prioritize billions of unborn future people over those living now.",
+              "duration": 6.29551
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-05/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I keep hearing about Fields of Mistria. What is it exactly?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a farming and life simulator game with fantasy themes. Think of it as part of the wave of games inspired by Stardew Valley.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's similar to Stardew Valley?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it satisfies those same farming sim desires — growing crops, befriending townspeople — but it updates the formula with more expansive character creation and a story steeped in magic.",
+              "duration": 10.684082
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, magic? That sounds different.",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the twist. You gain magical powers thanks to a mysterious dragon named Caldarus, who you can talk to by visiting a shrine on your farm.",
+              "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "A dragon on your farm. That's definitely not your typical farming game.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It keeps the cozy farming sim feel but adds that fantasy layer, which is why it's becoming a new obsession for fans of the genre.",
+              "duration": 8.777143
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-05/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So we're more than six years into the pandemic now. Where do things stand with long Covid?",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Well, millions of people are still dealing with it. And researchers are still trying to understand it better and find treatments that work.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "Has there been any progress on the treatment side?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a new trial from University College London that found some modest help. They tested over-the-counter antihistamines and a prescription anti-inflammatory called colchicine.",
+              "duration": 9.613061
+            },
+            {
+              "speaker": "listener",
+              "text": "And did they actually help?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They offered a small reduction in fatigue for people with long Covid. So not a cure, but a bit of relief for some.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is long Covid still so hard to understand?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what Professor Danny Altmann, an immunologist at Imperial College London, has been discussing. The condition affects people in different ways, and we're still learning about the underlying causes.",
+              "duration": 10.213878
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like there's still a long way to go.",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "There is. But these small steps in research do matter for the people living with it every day.",
+              "duration": 5.459592
+            }
+          ]
+        }
+      }
     }
   }
 }

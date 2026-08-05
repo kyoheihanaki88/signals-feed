@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,87 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Nauru, the world's 3rd-smallest country, changes its name to Naoero",
-      "summary": "The Pacific Island country of Nauru has changed its name to the Republic of Naoero, its president said, matching the spelling and pronunciation in the national language.",
+      "source": "The Guardian (World)",
+      "headline": "Mass funeral held in Gaza for victims of 2023 Israeli strike",
+      "summary": "Mourners gathered in central Gaza on Tuesday for a mass funeral for 112 people, including 40 children, who were killed in 2023 in one of the deadliest Israeli strikes of the Gaza war.",
       "keyTakeaways": [
-        "The country's international code will change from NRU to NRO and its people will be known as dei-Naoero instead of Nauruan.",
-        "Commonly known abroad by the pronunciation of Now-roo, the new name is spoken as Now-ero.",
-        "With 12,000 residents, Nauru is the world's third-smallest country by population size, after Tuvalu and Vatican City."
+        "Mourners prayed for the victims before carrying the bodies through rubble-lined streets and past destroyed buildings for burial in a nearby cemetery.",
+        "The victims had been among more than 300 people killed on 22 November 2023, when Israeli warplanes demolished a residential block in Gaza City.",
+        "Last weekend, Gaza’s civil defence dug through the levelled apartment block and recovered the remains of a further 112 victims, including women and children."
       ],
-      "whyItMatters": "The country became known internationally as Nauru only because its local name was difficult for foreigners to pronounce and was a matter of convenience rather than one of choice, according to an earlier government statement.",
-      "originalURL": "https://www.npr.org/2026/08/04/g-s1-137261/nauru-name-change",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "The ceasefire that was established in October – which has not stopped Israeli bombing of Gaza – has allowed first responders to dig through the rubble where thousands of remains are still buried across the territory.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/04/mass-funeral-gaza-victims-2023-israeli-strike",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "太平洋の島国ナウル、国名を「ナオエロ」に改称",
-          "summary": "太平洋に浮かぶ島国ナウルが、国名を「ナオエロ共和国」に改めた。大統領が発表したもので、自国語の表記と発音に合わせた形となる。",
+          "headline": "2023年のイスラエル空爆犠牲者、ガザで合同葬儀",
+          "summary": "火曜日、ガザ中部で合同葬儀が営まれた。子ども40人を含む112人が対象で、いずれもガザ戦争中に起きた最も被害の大きな空爆のひとつで2023年に命を落とした人々だ。",
           "keyTakeaways": [
-            "国際コードはNRUからNROへ変更され、国民の呼称もナウル人からdei-Naoeroへと改まる。",
-            "これまで国際的には「ナウルー」に近い発音で知られてきたが、新名称は「ナオエロ」と読む。",
-            "人口約1万2000人のナウルは、ツバルとバチカン市国に次ぐ世界で3番目に小さな国だ。"
+            "参列者たちは祈りを捧げた後、瓦礫が残る街路を抜け、破壊された建物の傍らを通りながら、近くの墓地へと遺体を運んだ。",
+            "犠牲者たちは、2023年11月22日にイスラエル軍機がガザ市内の集合住宅を破壊し、300人以上が死亡した攻撃の被害者だった。",
+            "先週末、ガザの民間防衛隊が崩壊したアパートの瓦礫を掘り起こし、女性や子どもを含む112人の遺体をさらに収容した。"
           ],
-          "whyItMatters": "「ナウル」という名は、外国人が現地語の発音を苦手としたための便宜的な呼称にすぎなかったと、政府はかつて説明していた。"
+          "whyItMatters": "10月に成立した停戦合意はイスラエルによるガザ爆撃を止めていないが、救助隊員たちが瓦礫の撤去を進める余地を生み出しており、いまも数千人の遺体が各地に埋もれたままだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a tiny Pacific Island nation just changed its name?",
-              "duration": 3.160816
+              "text": "I saw there was a mass funeral in Gaza yesterday. What happened?",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Nauru is now officially the Republic of Naoero. The president announced they're using the spelling and pronunciation from their own national language.",
-              "duration": 8.385306
+              "text": "Mourners gathered in central Gaza on Tuesday to bury 112 people, including 40 children, who were killed in an Israeli strike back in 2023.",
+              "duration": 8.85551
             },
             {
               "speaker": "listener",
-              "text": "How different does it sound?",
-              "duration": 1.38449
+              "text": "Wait, if this happened in 2023, why is the funeral happening now?",
+              "duration": 4.075102
             },
             {
               "speaker": "explainer",
-              "text": "It's subtle. Instead of Now-roo, it's Now-ero. The old name was basically what foreigners found easier to say.",
-              "duration": 7.183673
+              "text": "The bodies were only recently recovered. Last weekend, Gaza's civil defense dug through a leveled apartment block and found the remains of these 112 victims.",
+              "duration": 9.142857
             },
             {
               "speaker": "listener",
-              "text": "And they're changing everything official too?",
-              "duration": 2.690612
+              "text": "So they've been buried under rubble this whole time?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Right. The international country code goes from NRU to NRO, and people will be called dei-Naoero instead of Nauruan.",
-              "duration": 7.053061
+              "text": "Yes. The strike happened on November 22nd, 2023, when Israeli warplanes demolished a residential block in Gaza City. More than 300 people were killed that day.",
+              "duration": 10.161633
             },
             {
               "speaker": "listener",
-              "text": "Why does this matter now?",
-              "duration": 1.48898
+              "text": "Why are they able to recover bodies now?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "The government said the old name was a matter of convenience, not choice. This feels like reclaiming their own identity.",
-              "duration": 6.50449
+              "text": "A ceasefire was established in October, and while Israeli bombing hasn't completely stopped, it has allowed first responders to dig through rubble where thousands of remains are still buried across Gaza.",
+              "duration": 10.44898
             },
             {
               "speaker": "listener",
-              "text": "How small is this country, by the way?",
-              "duration": 1.985306
+              "text": "Thousands still buried?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "About twelve thousand residents. It's the world's third-smallest by population, after Tuvalu and Vatican City.",
-              "duration": 6.347755
+              "text": "Yes, across the territory. Mourners yesterday carried these bodies through rubble-lined streets past destroyed buildings to a nearby cemetery.",
+              "duration": 7.836735
             }
           ]
         }
@@ -100,86 +100,96 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "UK plastic ‘waste colonialism’ found to be polluting Turkey’s farming heartland",
-      "summary": "High levels of microplastics and other plastic contamination have been discovered in a waterway close to a major recycling hub in Turkey supplied with plastic waste by British companies.",
+      "headline": "Daniel Andrews defends actions as opposition labels Labor ‘a gangster government’ after Ibac report released",
+      "summary": "Former Victorian premier Daniel Andrews has defended the actions of senior members of his government, whom the state’s anti-corruption watchdog found engaged in “serious and concerning” conduct in their dealings with the leader of the firefighters’ union.",
       "keyTakeaways": [
-        "It is one of the largest and most fertile agricultural basins in Turkey.",
-        "The UK government pledged to reduce plastic pollution and eliminate harmful plastics during talks to reach a global plastics treaty, which collapsed last year, but it has not committed to a ban on exports.",
-        "Britain, one of the world’s largest exporters of plastic waste, exported 675,000 tonnes in 2025, its largest amount in eight years, of which 139,000 tonnes was shipped to Turkey."
+        "A long-awaited report by the Independent Broad-based Anti-corruption Commission, tabled in parliament on Wednesday, stopped stopped short of making any findings of corrupt conduct.",
+        "This included “actions contrary to policy, procedure and codes of conduct, deliberate attempts to conceal and mislead, and the misuse of information”.",
+        "The findings led the Victorian opposition to claim the state is being led by a “gangster government”."
       ],
-      "whyItMatters": "The findings from a Guardian investigation reignite concerns over Britain’s continuing role in “waste colonialism” – a term used to describe the export of plastic waste by rich nations to poorer countries with less regulated waste management.",
-      "originalURL": "https://www.theguardian.com/environment/2026/aug/04/uk-plastic-waste-colonialism-recycling-exports-contaminating-water-crops-turkey",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "In February 2015, Labor began negotiations for a new enterprise bargaining agreement (EBA) for the CFA, which the then Brunswick MP, Jane Garrett, oversaw as emergency services minister.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/05/ibac-report-daniel-andrews-victoria-government-firefighter-union-ntwnfb",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英国産プラスチックごみがトルコの農業地帯を汚染",
-          "summary": "英国企業がプラスチック廃棄物を輸出するトルコの主要リサイクル拠点の近くで、高濃度のマイクロプラスチックを含む汚染が水路で確認された。",
+          "headline": "ビクトリア州汚職調査報告書、元首相アンドリュースは政府の行動を擁護",
+          "summary": "ビクトリア州の汚職監視機関が報告書を公表し、ダニエル・アンドリュース元州首相率いる政府の幹部らが消防士組合の委員長との関係において「深刻かつ憂慮すべき」行為に及んでいたと認定した。アンドリュース元首相はこれに対し、政府の行動を正当なものだったと主張している。",
           "keyTakeaways": [
-            "汚染が確認された地域は、トルコ有数の広大で肥沃な農業地帯だ。",
-            "英国政府は昨年決裂したプラスチック条約交渉でプラスチック汚染の削減を約束したが、廃棄物輸出の禁止には踏み込んでいない。",
-            "世界最大級のプラスチック廃棄物輸出国である英国は2025年に67万5000トンを輸出し、うち13万9000トンがトルコ向けで、いずれも過去8年で最大の規模だった。"
+            "独立汚職調査委員会（IBAC）は長らく待たれていた報告書を水曜日に議会へ提出したが、腐敗行為そのものの認定には至らなかった",
+            "報告書が指摘した問題には、規則や行動規範に反する行為、隠蔽や誤誘導を意図した行動、情報の不正利用などが含まれる",
+            "この認定を受け、ビクトリア州野党は現政権を「ギャング政府」と批判した"
           ],
-          "whyItMatters": "今回の調査結果は、規制の緩い途上国へ廃棄物を押しつける「廃棄物の植民地主義」に英国が加担し続けているという懸念を、改めて浮き彫りにしている。"
+          "whyItMatters": "事の発端は2015年2月、当時ブランズウィック選出の議員だったジェーン・ギャレット緊急サービス大臣が主導するかたちで、労働党政府がCFAの新たな労働協約交渉を開始したことにある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about UK plastic waste ending up in Turkey. What's happening there?",
-              "duration": 4.780408
+              "text": "I saw something about a report on the Victorian government and firefighters. What happened?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "A Guardian investigation found high levels of microplastics and other plastic contamination in a waterway near a major recycling hub in Turkey — one that receives plastic waste from British companies.",
-              "duration": 10.893061
+              "text": "An anti-corruption commission released a report on Wednesday about how senior members of Daniel Andrews' government dealt with the firefighters' union leader.",
+              "duration": 7.758367
             },
             {
               "speaker": "listener",
-              "text": "How much waste are we talking about?",
-              "duration": 1.906939
+              "text": "That sounds serious. What did the report actually find?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "Britain exported 675,000 tonnes of plastic waste in 2025, its largest amount in eight years. Of that, 139,000 tonnes went to Turkey.",
-              "duration": 10.762449
+              "text": "It found serious and concerning conduct — things like actions against policy and codes of conduct, deliberate attempts to conceal and mislead, and misuse of information.",
+              "duration": 9.848163
             },
             {
               "speaker": "listener",
-              "text": "And this area in Turkey — is it just an industrial zone?",
-              "duration": 3.343673
+              "text": "Did they call it corruption though?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "No, that's part of the concern. It's one of the largest and most fertile agricultural basins in Turkey, so contamination there affects farming and water supplies.",
-              "duration": 8.437551
+              "text": "No, the commission stopped short of making any findings of corrupt conduct.",
+              "duration": 3.657143
             },
             {
               "speaker": "listener",
-              "text": "Why is the UK sending so much waste abroad in the first place?",
-              "duration": 3.604898
+              "text": "How's Daniel Andrews responding to this?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Britain is one of the world's largest exporters of plastic waste. Critics call it 'waste colonialism' — rich nations shipping waste to poorer countries with less regulated waste management.",
-              "duration": 11.180408
+              "text": "He's defending the actions of his senior government members. He's the former premier now.",
+              "duration": 4.623673
             },
             {
               "speaker": "listener",
-              "text": "Has the UK committed to stopping this?",
-              "duration": 2.272653
+              "text": "And the opposition?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "The government pledged to reduce plastic pollution during global treaty talks last year, but those talks collapsed, and the UK has not committed to a ban on exports.",
-              "duration": 8.907755
+              "text": "They're calling Labor a gangster government based on these findings.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "What was this all about originally?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It goes back to 2015, when the government was negotiating a new agreement for firefighters, overseen by the then emergency services minister Jane Garrett.",
+              "duration": 8.019592
             }
           ]
         }
@@ -191,86 +201,86 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Apple launches legal challenge against UK government demand to access data",
-      "summary": "Apple has launched a new legal challenge against a UK government demand to access its customers’ highly encrypted data, a year after the Home Office agreed to abandon its previous request.",
+      "headline": "‘If we don’t fight back, we don’t have a future’: the journalist taking on the ‘tech fascists’ of Silicon Valley",
+      "summary": "Durán was responding to a post from the tech company Palantir outlining its 22‑point “technological manifesto”, which praised American “hard power”, western culture and AI weapons, denounced inclusivity and called for compulsory national service.",
       "keyTakeaways": [
-        "The US tech company launched the legal complaint last month at the Investigatory Powers Tribunal (IPT), an independent court that has the power to investigate claims that the UK intelligence services have acted unlawfully.",
-        "The UK government had made a second request to Apple to grant it a “back door” to encrypted iCloud data belonging to British users, according to an order issued by the court.",
-        "Britain backed down on its original demand for access to data from UK and US customers last year, after a heated transatlantic tussle over encryption between London and Washington."
+        "The book’s central argument is that big tech is no longer our friend, as many of its billionaire owners have seized economic and political control and are steering the fate of the planet towards their own bizarre, apocalyptic visions.",
+        "It’s a cosy relationship, Durán says: the tech titans have helped Trump and his family become billionaires through cryptocurrency and have been given government contracts and freedom from regulation or oversight.",
+        "Unpacking all their overlapping philosophies would take some time, but TLDR: “It’s the idea that what matters more is the billions or trillions of people yet unborn in the future."
       ],
-      "whyItMatters": "The original TCN issued last year asked Apple for the right to see users’ encrypted data protected by its advanced data protection (ADP) programme in the event of a national security risk.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/03/apple-legal-challenge-uk-government-data-access",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Engineering",
+      "whyItMatters": "His ban might just have had something to do with his preceding tweet, showing the cover of his new book, The Nerd Reich: Silicon Valley Fascism and the War on Democracy.",
+      "originalURL": "https://www.theguardian.com/lifeandstyle/2026/aug/05/journalist-taking-on-tech-fascists-silicon-valley",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "アップル、英政府の暗号化データ開示要求に法的対抗措置",
-          "summary": "アップルが英国政府によるユーザーの暗号化データへのアクセス要求に対し、新たな法的異議申し立てを行った。内務省が以前の要求を取り下げてから、およそ一年後のことだ。",
+          "headline": "シリコンバレーの「テック・ファシズム」に挑むジャーナリスト",
+          "summary": "パランティア社が発表した22項目の「技術宣言」は、アメリカの「ハードパワー」や西洋文化、AI兵器を称賛し、包括性を否定、国民への兵役義務化を訴える内容だった。ジャーナリストのドゥランはこれに真っ向から反論している。",
           "keyTakeaways": [
-            "先月、独立機関である調査権限審判所に法的申し立てを提起した",
-            "英政府はiCloudの暗号化データへの「バックドア」アクセスを求める二度目の要求を出していたことが、裁判所の命令で明らかになった",
-            "英国は昨年、米英間の暗号化をめぐる対立の末、英米両国のユーザーデータへのアクセスを求めた当初の要求を撤回していた"
+            "巨大テック企業はもはや社会の友ではない——その創業者たちは経済的・政治的支配を握り、独自の黙示録的ビジョンへと世界を誘導しつつある",
+            "テック界の重鎮たちはトランプ一家の資産形成を後押しし、見返りとして政府契約や規制免除という恩恵を受けている",
+            "彼らに共通するのは、「重要なのは現在ではなく、未来に生まれてくる何十億もの人々だ」という思想だ"
           ],
-          "whyItMatters": "昨年発令された最初の技術的能力通知は、国家安全保障上のリスクが生じた際に、アップルの高度データ保護プログラムで守られたユーザーの暗号化データを閲覧する権限を同社に求めるものだった。"
+          "whyItMatters": "ドゥランがSNSで投稿禁止になった直前、彼は新著『ナード・ライヒ——シリコンバレーのファシズムと民主主義への戦争』の表紙を公開していた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Apple is back in court with the UK government over data access?",
-              "duration": 3.761633
+              "text": "So a journalist got banned from a platform after posting about his new book?",
+              "duration": 4.414694
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Apple filed a legal challenge last month at a tribunal that oversees UK intelligence services.",
-              "duration": 5.877551
+              "text": "Yes, Durán was banned after showing the cover of his book called The Nerd Reich, which is about Silicon Valley and democracy.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "What does the government want this time?",
-              "duration": 1.854694
+              "text": "What sparked him to write it?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "According to the court, it's a second request for what's called a back door to encrypted iCloud data belonging to British users.",
-              "duration": 7.653878
+              "text": "He was responding to a tech company called Palantir. They posted a 22-point manifesto praising American hard power, AI weapons, and calling for compulsory national service while denouncing inclusivity.",
+              "duration": 11.72898
             },
             {
               "speaker": "listener",
-              "text": "Didn't they already try this once?",
-              "duration": 1.854694
+              "text": "That's pretty bold. What's his main argument?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "They did. Last year, the UK backed down on an earlier demand after a dispute with Washington over encryption.",
-              "duration": 6.269388
+              "text": "He says big tech billionaires have seized economic and political control, and they're steering things toward their own apocalyptic visions.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "What kind of data are we talking about?",
+              "text": "Does he connect this to current politics?",
               "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "The original request was for access to data protected by Apple's advanced data protection program, in cases of national security risk.",
-              "duration": 7.235918
+              "text": "He does. He says tech titans helped Trump and his family become billionaires through cryptocurrency, and in return got government contracts and freedom from regulation.",
+              "duration": 9.613061
             },
             {
               "speaker": "listener",
-              "text": "So this is still about whether Apple has to build a way in for the government.",
-              "duration": 4.362449
+              "text": "What kind of philosophy drives these tech leaders?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. And Apple is challenging it again through the independent court that handles these disputes.",
-              "duration": 5.041633
+              "text": "Without getting too deep, he points to ideas that prioritize billions of unborn future people over those living now.",
+              "duration": 6.29551
             }
           ]
         }
@@ -282,86 +292,76 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Big Walk review – larking around with mates elevated to an artform",
-      "summary": "He was relentlessly spamming a gigantic, ball-shaped lamp on and off, the ground around him flicking from inky dark to warm pastel pink and back again, like a single Christmas light blinking from afar.",
+      "headline": "What is Fields of Mistria? A magical new obsession for fans of Stardew Valley",
+      "summary": "While these games have had dedicated fans since the days of Harvest Moon, the most popular today, Stardew Valley, contemporised the genre with a larger range of activities and lovable townspeople to befriend and romance.",
       "keyTakeaways": [
-        "Here’s one that has stuck with me: in the black of night, cicadas kicking up an almighty din, I had lost my partner.",
-        "Then, there in the far distance, I saw him signalling in my direction.",
-        "Step out of earshot of your party and you will find it difficult to call for one another (unless, of course, you’ve picked up a Fisher-Price-like walkie-talkie)."
+        "Fields of Mistria is one of these farming sims in a post - Stardew world – though it updates the core formula.",
+        "It’s for a good reason: Mistria satisfies all of those same farming sim desires but with more expansive character creation and a story steeped in magic.",
+        "Fields of Mistria is a farming and life simulator game with fantasy themes."
       ],
-      "whyItMatters": "That’s somewhat because this rugged terrain is dense with vegetation and cliffs to fall down, and also because the game makes ingenious use of proximity and direction-based voice audio.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/04/big-walk-review-larking-around-with-mates-elevated-to-an-artform",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "whyItMatters": "Fields of Mistria may sound like a classic farming sim – but there’s a twist: you gain magical powers, thanks to the mysterious dragon Caldarus, who you can talk to by visiting a shrine on your farm.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/05/what-is-fields-of-mistria-stardew-valley-farming-sim",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "仲間と歩く夜、光と声が織りなす体験",
-          "summary": "巨大な球形のランプを点滅させ続ける彼の足元で、地面は深い闇と淡いピンクの光の間を行き来していた。遠くから瞬くクリスマスの飾り電球のように、静かに、繰り返し。",
+          "headline": "魔法が宿る農場シム「Fields of Mistria」とは",
+          "summary": "「ハーベストムーン」の時代から根強いファンを持つ農場シミュレーションというジャンル。その現代的な頂点に立つ「Stardew Valley」は、豊富な活動と個性豊かな住人たちで多くの人を魅了してきた。",
           "keyTakeaways": [
-            "忘れられない場面がある。夜の闇の中、セミの声が轟くなか、気づけばパートナーの姿を見失っていた",
-            "ふと遠くを見ると、彼がこちらに向かって合図を送っていた",
-            "仲間の声が届かない距離まで離れると、呼び合うことすら難しくなる。おもちゃのような無線機を拾っていない限りは"
+            "「Fields of Mistria」はポスト・Stardew時代の農場シムとして、定番の要素を独自に刷新している",
+            "キャラクター作成の自由度が高く、魔法を軸にした物語が農場シムの醍醐味をさらに深める",
+            "農業と生活、そしてファンタジーが融合したシミュレーションゲーム"
           ],
-          "whyItMatters": "険しい地形と密な植生、そして距離と方向に応じて変化する音声設計が、このゲームに独特の緊張感を与えている。"
+          "whyItMatters": "農場に設けられた祠を訪れると謎めいた竜カルダルスと言葉を交わせ、やがて魔法の力を手にする——古典的な農場シムに見えて、その核心には独特のねじれがある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw a review about something called Big Walk. Is this a hiking game?",
-              "duration": 4.362449
+              "text": "I keep hearing about Fields of Mistria. What is it exactly?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "It's a game where you walk around with friends at night, and the reviewer describes it as larking around with mates elevated to an artform.",
-              "duration": 6.922449
+              "text": "It's a farming and life simulator game with fantasy themes. Think of it as part of the wave of games inspired by Stardew Valley.",
+              "duration": 7.235918
             },
             {
               "speaker": "listener",
-              "text": "At night? That sounds a bit disorienting.",
-              "duration": 2.115918
+              "text": "So it's similar to Stardew Valley?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "It is. The reviewer mentions losing their partner in the dark while cicadas were making noise all around them.",
-              "duration": 6.112653
+              "text": "Yes, it satisfies those same farming sim desires — growing crops, befriending townspeople — but it updates the formula with more expansive character creation and a story steeped in magic.",
+              "duration": 10.684082
             },
             {
               "speaker": "listener",
-              "text": "How did they find each other again?",
-              "duration": 1.854694
+              "text": "Wait, magic? That sounds different.",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Their partner was in the distance, signaling by flashing a giant ball-shaped lamp on and off, switching between darkness and warm pink light.",
-              "duration": 7.706122
+              "text": "That's the twist. You gain magical powers thanks to a mysterious dragon named Caldarus, who you can talk to by visiting a shrine on your farm.",
+              "duration": 8.176327
             },
             {
               "speaker": "listener",
-              "text": "So communication is tricky in this game?",
-              "duration": 2.220408
+              "text": "A dragon on your farm. That's definitely not your typical farming game.",
+              "duration": 5.093878
             },
             {
               "speaker": "explainer",
-              "text": "Very much so. The game uses proximity and direction-based voice audio, so if you step away from your group, it's hard to call out to each other.",
-              "duration": 7.758367
-            },
-            {
-              "speaker": "listener",
-              "text": "Unless you have one of those walkie-talkies they mention?",
-              "duration": 3.108571
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly. The reviewer says you can pick up a Fisher-Price-like walkie-talkie to help. The terrain itself is rugged, dense with vegetation and cliffs.",
-              "duration": 9.926531
+              "text": "Exactly. It keeps the cozy farming sim feel but adds that fantasy layer, which is why it's becoming a new obsession for fans of the genre.",
+              "duration": 8.777143
             }
           ]
         }
@@ -371,88 +371,88 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "CULTURE",
-      "source": "The Guardian (Culture)",
-      "headline": "John Oliver on police surveillance: ‘Big Brother on steroids’",
-      "summary": "John Oliver discussed the tools that police are using to keep track of Americans on the latest episode of Last Week Tonight.",
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "Inside Health",
+      "summary": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.",
       "keyTakeaways": [
-        "Police are increasingly able to use cameras used by private businesses or homeowners and routinely request access to the 85,000 cameras in the US.",
-        "One software company named Fusus recently advertised its ability to allow police to request all camera footage from businesses in an area at the click of a button.",
-        "Fusus is also developing tools to allow police to livestream footage from private homeowners’ Ring cameras, while cities such as Rialto, California, stipulate that businesses must allow authorities access to security footage."
+        "Where are we at with long Covid?",
+        "A new clinical trial led by University College London and University College London Hospitals found that over-the-counter antihistamines and a prescription anti-inflammatory drug called colchicine offered a small reduction in fatigue for people with long Covid.",
+        "Professor Danny Altmann, an immunologist at Imperial College London, joins us to discuss this new research and the problems with understanding long Covid."
       ],
-      "whyItMatters": "In recent years, the use of surveillance technology has exploded among local police forces due to decreasing prices and federal funding, with one local mayor comparing modern systems to “Big Brother on steroids”.",
-      "originalURL": "https://www.theguardian.com/tv-and-radio/2026/aug/03/john-oliver-police-surveillance-cameras",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "More than six years since the start of the Covid pandemic, it might feel like we're pretty over it, yet that's simply not the case for the millions of people who suffer from long Covid.",
+      "originalURL": "https://www.bbc.co.uk/sounds/play/m002zrmr?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "広がる警察の監視網——民間カメラが捜査ツールに",
-          "summary": "米国のトーク番組「ラスト・ウィーク・トゥナイト」で、ジョン・オリバーが警察による市民監視の実態を取り上げた。民間の防犯カメラが捜査に組み込まれていく現状を、丁寧に掘り下げた内容だった。",
+          "headline": "ロングCOVIDの今",
+          "summary": "BBCのポッドキャスト番組「Inside Health」より。英国外でもBBC.comまたはBBCアプリで聴取できる。",
           "keyTakeaways": [
-            "警察は民間企業や一般家庭のカメラを活用する機会が増えており、全米約八万五千台のカメラへのアクセスを日常的に求めている",
-            "監視システム企業のFususは、特定エリアの店舗カメラ映像をワンクリックで一括取得できる機能を警察向けに売り込んでいる",
-            "Fususは一般家庭のRingカメラのライブ映像を警察が閲覧できるツールも開発中で、カリフォルニア州リアルトなど一部の都市では、事業者に当局へのカメラアクセス提供を義務付けている"
+            "ロングCOVIDの現状はどこまで解明されたか",
+            "ユニバーシティ・カレッジ・ロンドンらの臨床試験で、市販の抗ヒスタミン薬と処方抗炎症薬コルヒチンがロングCOVIDの倦怠感をわずかに軽減する可能性が示された",
+            "インペリアル・カレッジ・ロンドンの免疫学者ダニー・アルトマン教授が、この研究とロングCOVID理解の難しさを語る"
           ],
-          "whyItMatters": "監視技術のコスト低下と連邦資金の後押しにより、地方警察への普及が急速に進んでおり、ある市長はその現状を「ビッグ・ブラザーの比ではない」と表現した。"
+          "whyItMatters": "パンデミック開始から六年以上が過ぎ、多くの人にとってCOVIDは過去のものになりつつあるが、ロングCOVIDに苦しむ人々にとって、その現実はいまも続いている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-04/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw John Oliver did a piece on police surveillance. What's the main concern here?",
-              "duration": 4.597551
+              "text": "So we're more than six years into the pandemic now. Where do things stand with long Covid?",
+              "duration": 5.01551
             },
             {
               "speaker": "explainer",
-              "text": "He highlighted how much police access to cameras has grown. They can now tap into thousands of private business and homeowner cameras across the country.",
-              "duration": 7.706122
+              "text": "Well, millions of people are still dealing with it. And researchers are still trying to understand it better and find treatments that work.",
+              "duration": 6.948571
             },
             {
               "speaker": "listener",
-              "text": "Wait, so these are private cameras, not just police ones?",
-              "duration": 3.474286
+              "text": "Has there been any progress on the treatment side?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Police routinely request access to around 85,000 cameras in the US that belong to businesses or homeowners.",
-              "duration": 7.053061
+              "text": "There's a new trial from University College London that found some modest help. They tested over-the-counter antihistamines and a prescription anti-inflammatory called colchicine.",
+              "duration": 9.613061
             },
             {
               "speaker": "listener",
-              "text": "How does that even work? Do they ask each business individually?",
-              "duration": 3.422041
+              "text": "And did they actually help?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Not anymore. Oliver mentioned a company called Fusus that lets police request all camera footage from businesses in an area with just a click of a button.",
-              "duration": 8.542041
+              "text": "They offered a small reduction in fatigue for people with long Covid. So not a cure, but a bit of relief for some.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "That seems like a lot of power. Are there any rules around this?",
-              "duration": 3.186939
+              "text": "Why is long Covid still so hard to understand?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "It varies. Some cities, like Rialto, California, actually require businesses to give authorities access to their security footage. And Fusus is developing tools to livestream from homeowners' Ring cameras too.",
-              "duration": 11.937959
+              "text": "That's what Professor Danny Altmann, an immunologist at Imperial College London, has been discussing. The condition affects people in different ways, and we're still learning about the underlying causes.",
+              "duration": 10.213878
             },
             {
               "speaker": "listener",
-              "text": "Why is this happening now?",
-              "duration": 1.933061
+              "text": "It sounds like there's still a long way to go.",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Surveillance technology has gotten cheaper, and there's federal funding available. One mayor called modern systems 'Big Brother on steroids.'",
-              "duration": 7.47102
+              "text": "There is. But these small steps in research do matter for the people living with it every day.",
+              "duration": 5.459592
             }
           ]
         }

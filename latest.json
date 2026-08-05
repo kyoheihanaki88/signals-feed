@@ -91,6 +91,52 @@
               "duration": 7.836735
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ガザ中部で火曜日、大規模な葬儀が営まれました。",
+              "duration": 4.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "埋葬されたのは、2023年11月の空爆で亡くなった112人です。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "このうち40人は子どもでした。",
+              "duration": 2.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "当時、イスラエル軍機がガザ市内の集合住宅を破壊し、300人以上が命を落としています。",
+              "duration": 7.464
+            },
+            {
+              "speaker": "narrator",
+              "text": "先週末、民間の救助隊が瓦礫を掘り起こし、新たに112人の遺体を収容しました。",
+              "duration": 7.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "10月の停戦後も爆撃は続いていますが、救助活動が少しずつ進められています。",
+              "duration": 6.48
+            },
+            {
+              "speaker": "narrator",
+              "text": "ガザ全域には、いまも数千人の遺体が瓦礫の下に残されたままです。",
+              "duration": 5.52
+            },
+            {
+              "speaker": "narrator",
+              "text": "参列者たちは、壊れた建物の間を静かに歩き、墓地へ向かいました。",
+              "duration": 5.928
+            }
+          ]
         }
       }
     },
@@ -192,6 +238,52 @@
               "duration": 8.019592
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オーストラリアのビクトリア州で、汚職監視機関が政府幹部の行動を調べた報告書が公表されました。",
+              "duration": 7.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象となったのは、ダニエル・アンドリュース元州首相の政権下で消防士組合との交渉に関わった人たちです。",
+              "duration": 8.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "報告書は、規則違反や情報の隠蔽、不正な利用があったと指摘しています。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただし、腐敗行為そのものの認定には至りませんでした。",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "野党はこの結果を受けて、現政権を「ギャング政府」と呼んで批判しています。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "問題の始まりは2015年、労働協約の交渉をめぐる政府内部のやり取りでした。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "アンドリュース氏は自分たちの行動は正当だったと主張しています。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "州政府への信頼が問われる局面が続きそうです。",
+              "duration": 4.224
+            }
+          ]
         }
       }
     },
@@ -283,6 +375,52 @@
               "duration": 6.29551
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ジャーナリストのドゥランが、新しい本を出しました。",
+              "duration": 3.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "タイトルは『ナード・ライヒ』。",
+              "duration": 2.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "シリコンバレーと民主主義の関係を問う内容です。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼によれば、巨大テック企業はもう味方ではありません。",
+              "duration": 4.512
+            },
+            {
+              "speaker": "narrator",
+              "text": "創業者たちは経済と政治の力を握り、独自の未来像へ世界を導いています。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ一家の資産づくりを支え、見返りに規制を免れてきました。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼らの思想の核には、今ではなく未来の人類を重んじる考えがあります。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "ドゥランがこの本の表紙を公開した直後、投稿が禁止されました。",
+              "duration": 5.088
+            }
+          ]
         }
       }
     },
@@ -362,6 +500,52 @@
               "speaker": "explainer",
               "text": "Exactly. It keeps the cozy farming sim feel but adds that fantasy layer, which is why it's becoming a new obsession for fans of the genre.",
               "duration": 8.777143
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "農場を耕し、住人と親しくなる。",
+              "duration": 3.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "そんなゲームの定番は「ハーベストムーン」の頃から愛されてきました。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "近年は「Stardew Valley」が活動の幅と魅力的な登場人物で人気を集めています。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "新作「Fields of Mistria」は、その流れを受け継ぎながら独自の要素を加えました。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "キャラクターの見た目を細かく決められ、物語には魔法が深く関わります。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "農場にある祠を訪ねると、謎の竜カルダルスと話ができます。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "やがてあなたは魔法の力を手に入れることになります。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "農業と暮らしにファンタジーが溶け込んだ世界です。",
+              "duration": 3.768
             }
           ]
         }
@@ -453,6 +637,57 @@
               "speaker": "explainer",
               "text": "There is. But these small steps in research do matter for the people living with it every day.",
               "duration": 5.459592
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "新型コロナのパンデミックが始まってから六年以上が経ちました。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "多くの人にとって過去の出来事になりつつありますが、ロングCOVIDに苦しむ人々の現実は今も続いています。",
+              "duration": 8.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "ユニバーシティ・カレッジ・ロンドンの臨床試験で、新しい手がかりが見つかりました。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "市販の抗ヒスタミン薬と、コルヒチンという処方の抗炎症薬が、倦怠感をわずかに軽くする可能性があるそうです。",
+              "duration": 8.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "効果は小さいものの、症状の仕組みを探る上で意味のある一歩です。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "インペリアル・カレッジ・ロンドンの免疫学者、ダニー・アルトマン教授がこの研究について語っています。",
+              "duration": 7.752
+            },
+            {
+              "speaker": "narrator",
+              "text": "ロングCOVIDの理解がなぜ難しいのか、その理由にも触れています。",
+              "duration": 5.136
+            },
+            {
+              "speaker": "narrator",
+              "text": "症状が多様で、原因もまだはっきりしないため、治療法の確立には時間がかかります。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "それでも、少しずつ前に進んでいることは確かです。",
+              "duration": 4.224
             }
           ]
         }

@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-05",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Mass funeral held in Gaza for victims of 2023 Israeli strike",
+      "summary": "Mourners gathered in central Gaza on Tuesday for a mass funeral for 112 people, including 40 children, who were killed in 2023 in one of the deadliest Israeli strikes of the Gaza war.",
+      "keyTakeaways": [
+        "Mourners prayed for the victims before carrying the bodies through rubble-lined streets and past destroyed buildings for burial in a nearby cemetery.",
+        "The victims had been among more than 300 people killed on 22 November 2023, when Israeli warplanes demolished a residential block in Gaza City.",
+        "Last weekend, Gaza’s civil defence dug through the levelled apartment block and recovered the remains of a further 112 victims, including women and children."
+      ],
+      "whyItMatters": "The ceasefire that was established in October – which has not stopped Israeli bombing of Gaza – has allowed first responders to dig through the rubble where thousands of remains are still buried across the territory.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/04/mass-funeral-gaza-victims-2023-israeli-strike",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "2023年のイスラエル空爆犠牲者、ガザで合同葬儀",
+          "summary": "火曜日、ガザ中部で合同葬儀が営まれた。子ども40人を含む112人が対象で、いずれもガザ戦争中に起きた最も被害の大きな空爆のひとつで2023年に命を落とした人々だ。",
+          "keyTakeaways": [
+            "参列者たちは祈りを捧げた後、瓦礫が残る街路を抜け、破壊された建物の傍らを通りながら、近くの墓地へと遺体を運んだ。",
+            "犠牲者たちは、2023年11月22日にイスラエル軍機がガザ市内の集合住宅を破壊し、300人以上が死亡した攻撃の被害者だった。",
+            "先週末、ガザの民間防衛隊が崩壊したアパートの瓦礫を掘り起こし、女性や子どもを含む112人の遺体をさらに収容した。"
+          ],
+          "whyItMatters": "10月に成立した停戦合意はイスラエルによるガザ爆撃を止めていないが、救助隊員たちが瓦礫の撤去を進める余地を生み出しており、いまも数千人の遺体が各地に埋もれたままだ。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Daniel Andrews defends actions as opposition labels Labor ‘a gangster government’ after Ibac report released",
+      "summary": "Former Victorian premier Daniel Andrews has defended the actions of senior members of his government, whom the state’s anti-corruption watchdog found engaged in “serious and concerning” conduct in their dealings with the leader of the firefighters’ union.",
+      "keyTakeaways": [
+        "A long-awaited report by the Independent Broad-based Anti-corruption Commission, tabled in parliament on Wednesday, stopped stopped short of making any findings of corrupt conduct.",
+        "This included “actions contrary to policy, procedure and codes of conduct, deliberate attempts to conceal and mislead, and the misuse of information”.",
+        "The findings led the Victorian opposition to claim the state is being led by a “gangster government”."
+      ],
+      "whyItMatters": "In February 2015, Labor began negotiations for a new enterprise bargaining agreement (EBA) for the CFA, which the then Brunswick MP, Jane Garrett, oversaw as emergency services minister.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/05/ibac-report-daniel-andrews-victoria-government-firefighter-union-ntwnfb",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ビクトリア州汚職調査報告書、元首相アンドリュースは政府の行動を擁護",
+          "summary": "ビクトリア州の汚職監視機関が報告書を公表し、ダニエル・アンドリュース元州首相率いる政府の幹部らが消防士組合の委員長との関係において「深刻かつ憂慮すべき」行為に及んでいたと認定した。アンドリュース元首相はこれに対し、政府の行動を正当なものだったと主張している。",
+          "keyTakeaways": [
+            "独立汚職調査委員会（IBAC）は長らく待たれていた報告書を水曜日に議会へ提出したが、腐敗行為そのものの認定には至らなかった",
+            "報告書が指摘した問題には、規則や行動規範に反する行為、隠蔽や誤誘導を意図した行動、情報の不正利用などが含まれる",
+            "この認定を受け、ビクトリア州野党は現政権を「ギャング政府」と批判した"
+          ],
+          "whyItMatters": "事の発端は2015年2月、当時ブランズウィック選出の議員だったジェーン・ギャレット緊急サービス大臣が主導するかたちで、労働党政府がCFAの新たな労働協約交渉を開始したことにある。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘If we don’t fight back, we don’t have a future’: the journalist taking on the ‘tech fascists’ of Silicon Valley",
+      "summary": "Durán was responding to a post from the tech company Palantir outlining its 22‑point “technological manifesto”, which praised American “hard power”, western culture and AI weapons, denounced inclusivity and called for compulsory national service.",
+      "keyTakeaways": [
+        "The book’s central argument is that big tech is no longer our friend, as many of its billionaire owners have seized economic and political control and are steering the fate of the planet towards their own bizarre, apocalyptic visions.",
+        "It’s a cosy relationship, Durán says: the tech titans have helped Trump and his family become billionaires through cryptocurrency and have been given government contracts and freedom from regulation or oversight.",
+        "Unpacking all their overlapping philosophies would take some time, but TLDR: “It’s the idea that what matters more is the billions or trillions of people yet unborn in the future."
+      ],
+      "whyItMatters": "His ban might just have had something to do with his preceding tweet, showing the cover of his new book, The Nerd Reich: Silicon Valley Fascism and the War on Democracy.",
+      "originalURL": "https://www.theguardian.com/lifeandstyle/2026/aug/05/journalist-taking-on-tech-fascists-silicon-valley",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "シリコンバレーの「テック・ファシズム」に挑むジャーナリスト",
+          "summary": "パランティア社が発表した22項目の「技術宣言」は、アメリカの「ハードパワー」や西洋文化、AI兵器を称賛し、包括性を否定、国民への兵役義務化を訴える内容だった。ジャーナリストのドゥランはこれに真っ向から反論している。",
+          "keyTakeaways": [
+            "巨大テック企業はもはや社会の友ではない——その創業者たちは経済的・政治的支配を握り、独自の黙示録的ビジョンへと世界を誘導しつつある",
+            "テック界の重鎮たちはトランプ一家の資産形成を後押しし、見返りとして政府契約や規制免除という恩恵を受けている",
+            "彼らに共通するのは、「重要なのは現在ではなく、未来に生まれてくる何十億もの人々だ」という思想だ"
+          ],
+          "whyItMatters": "ドゥランがSNSで投稿禁止になった直前、彼は新著『ナード・ライヒ——シリコンバレーのファシズムと民主主義への戦争』の表紙を公開していた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "What is Fields of Mistria? A magical new obsession for fans of Stardew Valley",
+      "summary": "While these games have had dedicated fans since the days of Harvest Moon, the most popular today, Stardew Valley, contemporised the genre with a larger range of activities and lovable townspeople to befriend and romance.",
+      "keyTakeaways": [
+        "Fields of Mistria is one of these farming sims in a post - Stardew world – though it updates the core formula.",
+        "It’s for a good reason: Mistria satisfies all of those same farming sim desires but with more expansive character creation and a story steeped in magic.",
+        "Fields of Mistria is a farming and life simulator game with fantasy themes."
+      ],
+      "whyItMatters": "Fields of Mistria may sound like a classic farming sim – but there’s a twist: you gain magical powers, thanks to the mysterious dragon Caldarus, who you can talk to by visiting a shrine on your farm.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/05/what-is-fields-of-mistria-stardew-valley-farming-sim",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "魔法が宿る農場シム「Fields of Mistria」とは",
+          "summary": "「ハーベストムーン」の時代から根強いファンを持つ農場シミュレーションというジャンル。その現代的な頂点に立つ「Stardew Valley」は、豊富な活動と個性豊かな住人たちで多くの人を魅了してきた。",
+          "keyTakeaways": [
+            "「Fields of Mistria」はポスト・Stardew時代の農場シムとして、定番の要素を独自に刷新している",
+            "キャラクター作成の自由度が高く、魔法を軸にした物語が農場シムの醍醐味をさらに深める",
+            "農業と生活、そしてファンタジーが融合したシミュレーションゲーム"
+          ],
+          "whyItMatters": "農場に設けられた祠を訪れると謎めいた竜カルダルスと言葉を交わせ、やがて魔法の力を手にする——古典的な農場シムに見えて、その核心には独特のねじれがある。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "Inside Health",
+      "summary": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.",
+      "keyTakeaways": [
+        "Where are we at with long Covid?",
+        "A new clinical trial led by University College London and University College London Hospitals found that over-the-counter antihistamines and a prescription anti-inflammatory drug called colchicine offered a small reduction in fatigue for people with long Covid.",
+        "Professor Danny Altmann, an immunologist at Imperial College London, joins us to discuss this new research and the problems with understanding long Covid."
+      ],
+      "whyItMatters": "More than six years since the start of the Covid pandemic, it might feel like we're pretty over it, yet that's simply not the case for the millions of people who suffer from long Covid.",
+      "originalURL": "https://www.bbc.co.uk/sounds/play/m002zrmr?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ロングCOVIDの今",
+          "summary": "BBCのポッドキャスト番組「Inside Health」より。英国外でもBBC.comまたはBBCアプリで聴取できる。",
+          "keyTakeaways": [
+            "ロングCOVIDの現状はどこまで解明されたか",
+            "ユニバーシティ・カレッジ・ロンドンらの臨床試験で、市販の抗ヒスタミン薬と処方抗炎症薬コルヒチンがロングCOVIDの倦怠感をわずかに軽減する可能性が示された",
+            "インペリアル・カレッジ・ロンドンの免疫学者ダニー・アルトマン教授が、この研究とロングCOVID理解の難しさを語る"
+          ],
+          "whyItMatters": "パンデミック開始から六年以上が過ぎ、多くの人にとってCOVIDは過去のものになりつつあるが、ロングCOVIDに苦しむ人々にとって、その現実はいまも続いている。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-06",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+      "summary": "Iran says it has reached an agreement with Oman on a route for shipping through the Strait of Hormuz.",
+      "keyTakeaways": [
+        "Baqaei warned, however, that a deal with Oman would not guarantee safe navigation through the strait, arguing security remained impacted by the US blockade of Iran's ports.",
+        "The US and Oman have not commented on the proposal.",
+        "Since the US and Israel attacked Iran in February, Tehran has largely blocked the Strait of Hormuz through which about a fifth of the world's oil and liquefied natural gas usually passes."
+      ],
+      "whyItMatters": "Foreign ministry spokesman Esmaeil Baqaei did not give any further details on the agreement, which he said was \"in the final stages\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "イランとオマーン、ホルムズ海峡の航路合意が最終段階へ",
+          "summary": "イランはオマーンとの間で、ホルムズ海峡を通る船舶の航路について合意に達したと発表した。",
+          "keyTakeaways": [
+            "ただしバガエイ報道官は、オマーンとの合意が海峡の安全な航行を保証するものではないと述べ、米国によるイラン港湾封鎖が依然として安全保障に影響していると主張した。",
+            "米国とオマーンは、この提案についていずれもコメントしていない。",
+            "今年2月に米国とイスラエルがイランを攻撃して以降、テヘランは世界の石油および液化天然ガスの約5分の1が通過するホルムズ海峡をほぼ封鎖している。"
+          ],
+          "whyItMatters": "外務省報道官エスマイル・バガエイは合意の詳細を明らかにしておらず、現在「最終段階にある」と述べるにとどめた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Drone carrying explosives at German airport marks ‘new level of danger’, says interior minister",
+      "summary": "Germany’s interior minister has warned that the discovery of a drone carrying explosives at Leipzig airport marks “a new level of danger” for the country, as authorities examine whether the thwarted attack could have been planned by a foreign power.",
+      "keyTakeaways": [
+        "The discovery of a small drone carrying explosives at Leipzig airport, a leading shipping and military hub, set off alarm and caused flight diversions on Wednesday morning.",
+        "German police deployed a bomb disposal robot to defuse and destroy the explosive device.",
+        "A DHL cargo plane that had been forced to abort its landing at the airport then collided with an unknown object in mid-air as it was climbing away from the airport."
+      ],
+      "whyItMatters": "In public remarks on Wednesday evening, the interior minister, Alexander Dobrindt, said the incident did not appear to be the work of amateurs, and that investigators were treating it as part of a “professional hybrid threat scenario”.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/05/drone-german-airport-dhl-cargo-plane-collides-object-leipzig",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ライプツィヒ空港で爆発物搭載ドローン発見——内相「新たな脅威の段階」",
+          "summary": "ドイツのライプツィヒ空港で爆発物を積んだドローンが発見され、内相は「国にとって新たな危険の段階」だと警告した。当局は、未遂に終わったこの攻撃が外国勢力によって計画された可能性も視野に調査を進めている。",
+          "keyTakeaways": [
+            "主要な物流・軍事拠点であるライプツィヒ空港で小型ドローンが発見され、水曜朝に警戒態勢が敷かれ、複数の便が迂回を余儀なくされた。",
+            "ドイツ警察は爆発物処理ロボットを投入し、装置を無力化・破壊した。",
+            "着陸を中断して上昇中のDHL貨物機が、空港付近の上空で不明の物体と接触した。"
+          ],
+          "whyItMatters": "水曜夜の会見で内相アレクサンダー・ドブリントは、今回の事案はアマチュアの仕業とは考えにくいとし、捜査当局は「組織的なハイブリッド脅威」として対応していると述べた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Restaurants, pubs and theatres ban Meta’s ‘spy glasses’ over privacy fears",
+      "summary": "When Meta used superstar Kylie Jenner to promote its sleek new line of “spy glasses”, the social media company hoped the devices would reach the same broad acceptance that tablets and smartwatches have found before them.",
+      "keyTakeaways": [
+        "Even pub chain Wetherspoons will not allow people to record using the glasses inside.",
+        "Tim Martin, its chief executive, said: “The general code that applies in our pubs, and most pubs, is that you can’t film customers or employees without their permission.",
+        "Meta glasses seem to breach this code, and common sense, by enabling surreptitious surveillance, so our instinct is to say turn off the cameras."
+      ],
+      "whyItMatters": "Those wearing the glasses in Soho House’s private members’ clubs can also be expected to be asked to remove them.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/06/restaurants-pubs-and-theatres-ban-metas-spy-glasses-over-privacy-fears",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「スパイグラス」締め出し——飲食店や劇場がMetaのスマートグラスを拒否",
+          "summary": "Metaはカイリー・ジェンナーを起用し、スタイリッシュな新型スマートグラスを売り込んだ。タブレットやスマートウォッチのように社会に浸透させたいという狙いがあったが、飲食店や劇場からは着用を禁じる動きが広がっている。",
+          "keyTakeaways": [
+            "パブチェーンのウェザースプーンズも、店内でのグラスによる撮影を禁止した。",
+            "同社のティム・マーティンCEOは「当店を含む多くのパブでは、客や従業員の許可なく撮影することは認めていない」と語る。",
+            "Metaのグラスは気づかれないまま周囲を記録できるため、こうした基準にも常識にも反するとして、カメラをオフにするよう求めていく姿勢だ。"
+          ],
+          "whyItMatters": "会員制クラブ「ソーホー・ハウス」でも、グラスの着用者には退去を求める方針が示されており、プライバシーをめぐる懸念は各所に広がりつつある。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The ​games industry’s obsession with ​visual fidelity is costing them money and talent",
+      "summary": "L ast week, Asha Sharma, the new head of Xbox, laid out her vision for the future of the console and interestingly, the two titles she picked out as potential areas of growth were Minecraft and Candy Crush Saga – games that don’t exactly scream next-generation entertainment.",
+      "keyTakeaways": [
+        "Neither relies on hyper-realistic visuals, which is the north star that games consoles and gaming PCs have been aiming at for the past 40 years.",
+        "The fact is, the quest for visual hyperrealism is breaking the games industry.",
+        "It’s very clear from the shameful number of redundancies the industry has processed in the last two years that its model isn’t working."
+      ],
+      "whyItMatters": "An increased focus on graphical fidelity leads to greater costs, which in turn leads to creative caution.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/04/pushing-buttons-xbox-asha-sharma-games-industry-hyperrealism",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "映像美への執着が、ゲーム産業を蝕んでいる",
+          "summary": "Xboxの新トップ、アシャ・シャルマは先週、コンソールの将来像を語った。その中で成長の可能性として名を挙げたのは、「マインクラフト」と「キャンディクラッシュ」——いずれも、最先端の映像美とは縁遠いタイトルだ。",
+          "keyTakeaways": [
+            "両作品は、ゲーム業界が40年間追い求めてきた超リアルなグラフィックに依存していない。",
+            "映像のハイパーリアリズムを追う競争が、産業そのものを壊しつつある。",
+            "この2年間で相次いだ大規模なリストラは、現在のビジネスモデルが機能していないことを示している。"
+          ],
+          "whyItMatters": "グラフィック品質への過度な注力はコストを押し上げ、結果として制作現場の創造的な挑戦を萎縮させる。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Study finds three midlife health factors that could delay dementia for 13 years",
+      "summary": "Scientists claim to have identified three health measures in middle age that can ward off dementia for more than a decade.",
+      "keyTakeaways": [
+        "Having normal blood pressure, no type 2 diabetes, and not smoking between the ages of 45 and 65 were associated with almost 13 additional years, on average, of dementia-free life, a study shows.",
+        "Researchers from NYU Langone Health analysed data from the Atherosclerosis Risk in Communities (Aric) study, which began in 1986 and followed Americans for decades into late life, measuring midlife vascular risk factors and dementia.",
+        "In the new analysis, researchers looked at 12,409 people with an average age of 56 who were free of dementia."
+      ],
+      "whyItMatters": "The research also suggested that, no matter how many risk factors people had, women lived longer without dementia than men, and that white people had more dementia-free years than black people.",
+      "originalURL": "https://www.theguardian.com/society/2026/aug/05/midlife-health-factors-delay-dementia-study",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "中年期の三つの習慣が、認知症の発症を13年遅らせる可能性",
+          "summary": "45歳から65歳の間に血圧を正常に保ち、2型糖尿病がなく、喫煙しないという三つの条件を満たすことで、認知症を発症しない期間が平均約13年延びる可能性があると、研究者たちが報告した。",
+          "keyTakeaways": [
+            "血圧正常・2型糖尿病なし・非喫煙の三条件が、認知症のない生活を平均約13年延ばすと関連づけられた。",
+            "NYUランゴン・ヘルスの研究チームが、1986年から数十年にわたって追跡した大規模疫学研究「ARIC」のデータを分析した。",
+            "分析対象は平均年齢56歳の1万2409人で、いずれも認知症のない状態からの追跡となった。"
+          ],
+          "whyItMatters": "リスク要因の数にかかわらず、女性は男性より長く認知症のない期間を過ごし、白人は黒人より認知症フリーの年数が多いという傾向も、この研究は示唆している。"
+        }
+      }
+    }
+  ]
+}

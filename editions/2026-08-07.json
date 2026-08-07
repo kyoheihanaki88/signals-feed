@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-07",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump orders new 15% tariff on key material for solar panels and microchips",
+      "summary": "Donald Trump has ordered a new 15% tariff on imported products made of polysilicon, an important ingredient in microchip manufacturing that is primarily produced by China.",
+      "keyTakeaways": [
+        "The new tariff, which will take effect on 4 December, is aimed at supporting US chip and solar panel supply chains to compete with Beijing on artificial intelligence and energy.",
+        "Polysilicon, an ultra-pure form of silicon, is an important ingredient in making the semiconductors vital for AI processing power, datacentres and solar power generation.",
+        "US solar factories have long accused Chinese ‌rivals of dumping cheaper panels on the ‌market, which they say have been enabled by excessive government subsidies and by moving manufacturing to other countries to dodge US tariffs."
+      ],
+      "whyItMatters": "She added that although disruption in the Middle East could continue to keep energy and transport costs elevated, “China’s competitiveness in AI hardware, electric vehicles, batteries, and other high-value manufacturing will probably allow it to continue gaining global export market share despite softer demand”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/07/trump-orders-tariff-solar-panels-microchips-manufacturing-ingredient",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": ""
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Buried for not being Brueghel: overlooked masterpiece by still-life pioneer discovered in storage area",
+      "summary": "Osiecki had been studying the work of a renowned 17th-century Flemish artist, Clara Peeters, one of the earliest practitioners of still life painting.",
+      "keyTakeaways": [
+        "The Oslo painting, Still Life with Small Game and Grapes on a Gilded Tazza, was created around 1620 and features nine freshly dead birds, hazelnuts, apricots and a fly perched on a bunch of grapes.",
+        "It had once been regarded as the work of a member of a famous family of Antwerp artists, Ambrosius Brueghel.",
+        "Since then it had mostly been consigned to storage."
+      ],
+      "whyItMatters": "Osiecki began to wonder whether the work – some details of which have been obscured by many layers of varnish – could be by Peeters, an enigmatic but prolific artist who pushed the boundaries of still life painting in the Northern European baroque period.",
+      "originalURL": "https://www.theguardian.com/artanddesign/2026/aug/07/clara-peeters-painting-oslo-national-mueum-norway",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Safety fears as scientists make first viruses designed by AI",
+      "summary": "Scientists have made the first viruses designed by artificial intelligence in a milestone that raises hopes for new medicines but also concerns over how to ensure the technology remains safe.",
+      "keyTakeaways": [
+        "The viruses are specific kinds known as bacteriophages, which only infect bacteria and are used around the world to treat patients with persistent infections.",
+        "In lab tests, a cocktail of the AI-designed viruses killed E coli bugs that were resistant to natural bacteriophages.",
+        "The viruses were then made in the laboratory and pitted against E coli in a dish."
+      ],
+      "whyItMatters": "The genetic code for viruses that can infect plants, humans or other animals was intentionally excluded from the AI’s training to reduce the risk of it designing dangerous viruses.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/06/safety-fears-as-scientists-make-first-viruses-designed-by-ai",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": ""
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "Trevor Noah is hosting Google’s Pixel 11 launch event",
+      "summary": "Google’s next hardware show will feature new gadgets and a lot of celebrities.",
+      "keyTakeaways": [
+        "Jimmy Fallon hosted the show last year, an event that my colleague Victoria Song described as more like “a live taping of The Tonight Show with Jimmy Fallon ” than a traditional tech launch event.",
+        "Given the celebrity faces set to appear at this year’s event, it seems that Google is once again aiming to reach a more mainstream audience.",
+        "It’s also airing right at the end of the ET workday: the event, which takes place in New York City, starts at 6PM ET."
+      ],
+      "whyItMatters": "Google is set to host its next live Made by Google hardware launch event on August 12th, and the company says in a new video that comedian Trevor Noah will be hosting the show.",
+      "originalURL": "https://www.theverge.com/tech/976454/made-by-google-2026-event-pixel-11-trevor-noah",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Wildfire damage could take hundreds of years to recover from, experts say",
+      "summary": "Nick Thomas, from Natural Resources Wales (NRW), said if soil had been incinerated in upland areas rich in peat, which grows at about a millimetre a year, it could take centuries for the vegetation to come back.",
+      "keyTakeaways": [
+        "While some areas will recover quite quickly - potentially within a couple of years - he said: \"It all depends on how deep the fire goes.",
+        "Thomas said a large wildfire on Mynydd Llantysilio near Llangollen, Denbighshire, in 2018 had incinerated about 10cm (4in) of peat in some areas.",
+        "Eight years on, there is still no heather in large patches."
+      ],
+      "whyItMatters": "As well as damage to natural habitats and animal life, Thomas warned loss of soil could increase flood risks, because it no longer acted as a \"sponge\" holding water on high ground.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c0qvp00x707o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
+      "audioURL": ""
+    }
+  ]
+}

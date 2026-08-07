@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-05",
+  "date": "2026-08-07",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,132 +9,84 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Mass funeral held in Gaza for victims of 2023 Israeli strike",
-      "summary": "Mourners gathered in central Gaza on Tuesday for a mass funeral for 112 people, including 40 children, who were killed in 2023 in one of the deadliest Israeli strikes of the Gaza war.",
+      "headline": "Trump orders new 15% tariff on key material for solar panels and microchips",
+      "summary": "Donald Trump has ordered a new 15% tariff on imported products made of polysilicon, an important ingredient in microchip manufacturing that is primarily produced by China.",
       "keyTakeaways": [
-        "Mourners prayed for the victims before carrying the bodies through rubble-lined streets and past destroyed buildings for burial in a nearby cemetery.",
-        "The victims had been among more than 300 people killed on 22 November 2023, when Israeli warplanes demolished a residential block in Gaza City.",
-        "Last weekend, Gaza’s civil defence dug through the levelled apartment block and recovered the remains of a further 112 victims, including women and children."
+        "The new tariff, which will take effect on 4 December, is aimed at supporting US chip and solar panel supply chains to compete with Beijing on artificial intelligence and energy.",
+        "Polysilicon, an ultra-pure form of silicon, is an important ingredient in making the semiconductors vital for AI processing power, datacentres and solar power generation.",
+        "US solar factories have long accused Chinese ‌rivals of dumping cheaper panels on the ‌market, which they say have been enabled by excessive government subsidies and by moving manufacturing to other countries to dodge US tariffs."
       ],
-      "whyItMatters": "The ceasefire that was established in October – which has not stopped Israeli bombing of Gaza – has allowed first responders to dig through the rubble where thousands of remains are still buried across the territory.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/04/mass-funeral-gaza-victims-2023-israeli-strike",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "She added that although disruption in the Middle East could continue to keep energy and transport costs elevated, “China’s competitiveness in AI hardware, electric vehicles, batteries, and other high-value manufacturing will probably allow it to continue gaining global export market share despite softer demand”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/07/trump-orders-tariff-solar-panels-microchips-manufacturing-ingredient",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "2023年のイスラエル空爆犠牲者、ガザで合同葬儀",
-          "summary": "火曜日、ガザ中部で合同葬儀が営まれた。子ども40人を含む112人が対象で、いずれもガザ戦争中に起きた最も被害の大きな空爆のひとつで2023年に命を落とした人々だ。",
-          "keyTakeaways": [
-            "参列者たちは祈りを捧げた後、瓦礫が残る街路を抜け、破壊された建物の傍らを通りながら、近くの墓地へと遺体を運んだ。",
-            "犠牲者たちは、2023年11月22日にイスラエル軍機がガザ市内の集合住宅を破壊し、300人以上が死亡した攻撃の被害者だった。",
-            "先週末、ガザの民間防衛隊が崩壊したアパートの瓦礫を掘り起こし、女性や子どもを含む112人の遺体をさらに収容した。"
-          ],
-          "whyItMatters": "10月に成立した停戦合意はイスラエルによるガザ爆撃を止めていないが、救助隊員たちが瓦礫の撤去を進める余地を生み出しており、いまも数千人の遺体が各地に埋もれたままだ。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw there was a mass funeral in Gaza yesterday. What happened?",
-              "duration": 3.709388
+              "text": "I saw Trump ordered a new tariff. What's it on?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Mourners gathered in central Gaza on Tuesday to bury 112 people, including 40 children, who were killed in an Israeli strike back in 2023.",
-              "duration": 8.85551
+              "text": "A 15% tariff on imported products made of polysilicon.",
+              "duration": 3.422041
             },
             {
               "speaker": "listener",
-              "text": "Wait, if this happened in 2023, why is the funeral happening now?",
-              "duration": 4.075102
+              "text": "What is polysilicon, exactly?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "The bodies were only recently recovered. Last weekend, Gaza's civil defense dug through a leveled apartment block and found the remains of these 112 victims.",
-              "duration": 9.142857
+              "text": "It's an ultra-pure form of silicon, and it's mostly produced by China.",
+              "duration": 3.94449
             },
             {
               "speaker": "listener",
-              "text": "So they've been buried under rubble this whole time?",
+              "text": "Why does that material matter so much?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a key ingredient in microchips and in solar panels.",
               "duration": 2.76898
             },
             {
+              "speaker": "listener",
+              "text": "So this touches things like AI and energy?",
+              "duration": 2.403265
+            },
+            {
               "speaker": "explainer",
-              "text": "Yes. The strike happened on November 22nd, 2023, when Israeli warplanes demolished a residential block in Gaza City. More than 300 people were killed that day.",
-              "duration": 10.161633
+              "text": "Yes. Chips are vital for AI, datacentres, and solar power generation.",
+              "duration": 4.728163
             },
             {
               "speaker": "listener",
-              "text": "Why are they able to recover bodies now?",
-              "duration": 2.35102
+              "text": "When does the tariff start?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "A ceasefire was established in October, and while Israeli bombing hasn't completely stopped, it has allowed first responders to dig through rubble where thousands of remains are still buried across Gaza.",
-              "duration": 10.44898
+              "text": "It takes effect on the 4th of December.",
+              "duration": 2.220408
             },
             {
               "speaker": "listener",
-              "text": "Thousands still buried?",
-              "duration": 1.515102
+              "text": "And the goal behind it?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "Yes, across the territory. Mourners yesterday carried these bodies through rubble-lined streets past destroyed buildings to a nearby cemetery.",
-              "duration": 7.836735
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ガザ中部で火曜日、大規模な葬儀が営まれました。",
-              "duration": 4.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "埋葬されたのは、2023年11月の空爆で亡くなった112人です。",
-              "duration": 6.216
-            },
-            {
-              "speaker": "narrator",
-              "text": "このうち40人は子どもでした。",
-              "duration": 2.88
-            },
-            {
-              "speaker": "narrator",
-              "text": "当時、イスラエル軍機がガザ市内の集合住宅を破壊し、300人以上が命を落としています。",
-              "duration": 7.464
-            },
-            {
-              "speaker": "narrator",
-              "text": "先週末、民間の救助隊が瓦礫を掘り起こし、新たに112人の遺体を収容しました。",
-              "duration": 7.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "10月の停戦後も爆撃は続いていますが、救助活動が少しずつ進められています。",
-              "duration": 6.48
-            },
-            {
-              "speaker": "narrator",
-              "text": "ガザ全域には、いまも数千人の遺体が瓦礫の下に残されたままです。",
-              "duration": 5.52
-            },
-            {
-              "speaker": "narrator",
-              "text": "参列者たちは、壊れた建物の間を静かに歩き、墓地へ向かいました。",
-              "duration": 5.928
+              "text": "To support US chip and solar supply chains, so they can compete with Beijing.",
+              "duration": 4.179592
             }
           ]
         }
@@ -146,142 +98,84 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Daniel Andrews defends actions as opposition labels Labor ‘a gangster government’ after Ibac report released",
-      "summary": "Former Victorian premier Daniel Andrews has defended the actions of senior members of his government, whom the state’s anti-corruption watchdog found engaged in “serious and concerning” conduct in their dealings with the leader of the firefighters’ union.",
+      "headline": "Buried for not being Brueghel: overlooked masterpiece by still-life pioneer discovered in storage area",
+      "summary": "Osiecki had been studying the work of a renowned 17th-century Flemish artist, Clara Peeters, one of the earliest practitioners of still life painting.",
       "keyTakeaways": [
-        "A long-awaited report by the Independent Broad-based Anti-corruption Commission, tabled in parliament on Wednesday, stopped stopped short of making any findings of corrupt conduct.",
-        "This included “actions contrary to policy, procedure and codes of conduct, deliberate attempts to conceal and mislead, and the misuse of information”.",
-        "The findings led the Victorian opposition to claim the state is being led by a “gangster government”."
+        "The Oslo painting, Still Life with Small Game and Grapes on a Gilded Tazza, was created around 1620 and features nine freshly dead birds, hazelnuts, apricots and a fly perched on a bunch of grapes.",
+        "It had once been regarded as the work of a member of a famous family of Antwerp artists, Ambrosius Brueghel.",
+        "Since then it had mostly been consigned to storage."
       ],
-      "whyItMatters": "In February 2015, Labor began negotiations for a new enterprise bargaining agreement (EBA) for the CFA, which the then Brunswick MP, Jane Garrett, oversaw as emergency services minister.",
-      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/05/ibac-report-daniel-andrews-victoria-government-firefighter-union-ntwnfb",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "Osiecki began to wonder whether the work – some details of which have been obscured by many layers of varnish – could be by Peeters, an enigmatic but prolific artist who pushed the boundaries of still life painting in the Northern European baroque period.",
+      "originalURL": "https://www.theguardian.com/artanddesign/2026/aug/07/clara-peeters-painting-oslo-national-mueum-norway",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "ビクトリア州汚職調査報告書、元首相アンドリュースは政府の行動を擁護",
-          "summary": "ビクトリア州の汚職監視機関が報告書を公表し、ダニエル・アンドリュース元州首相率いる政府の幹部らが消防士組合の委員長との関係において「深刻かつ憂慮すべき」行為に及んでいたと認定した。アンドリュース元首相はこれに対し、政府の行動を正当なものだったと主張している。",
-          "keyTakeaways": [
-            "独立汚職調査委員会（IBAC）は長らく待たれていた報告書を水曜日に議会へ提出したが、腐敗行為そのものの認定には至らなかった",
-            "報告書が指摘した問題には、規則や行動規範に反する行為、隠蔽や誤誘導を意図した行動、情報の不正利用などが含まれる",
-            "この認定を受け、ビクトリア州野党は現政権を「ギャング政府」と批判した"
-          ],
-          "whyItMatters": "事の発端は2015年2月、当時ブランズウィック選出の議員だったジェーン・ギャレット緊急サービス大臣が主導するかたちで、労働党政府がCFAの新たな労働協約交渉を開始したことにある。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw something about a report on the Victorian government and firefighters. What happened?",
-              "duration": 4.362449
+              "text": "I heard a painting was found in storage. What's the story?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "An anti-corruption commission released a report on Wednesday about how senior members of Daniel Andrews' government dealt with the firefighters' union leader.",
-              "duration": 7.758367
+              "text": "A researcher named Osiecki was studying Clara Peeters, an early Flemish still-life painter.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "That sounds serious. What did the report actually find?",
-              "duration": 3.056327
+              "text": "And she noticed something?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "It found serious and concerning conduct — things like actions against policy and codes of conduct, deliberate attempts to conceal and mislead, and misuse of information.",
-              "duration": 9.848163
+              "text": "There's an Oslo painting from around 1620, once attributed to Ambrosius Brueghel.",
+              "duration": 4.310204
             },
             {
               "speaker": "listener",
-              "text": "Did they call it corruption though?",
-              "duration": 1.697959
+              "text": "So it was thought to be a Brueghel's work?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "No, the commission stopped short of making any findings of corrupt conduct.",
-              "duration": 3.657143
+              "text": "Yes. Because of that, it had mostly been kept in storage.",
+              "duration": 2.951837
             },
             {
               "speaker": "listener",
-              "text": "How's Daniel Andrews responding to this?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "He's defending the actions of his senior government members. He's the former premier now.",
-              "duration": 4.623673
-            },
-            {
-              "speaker": "listener",
-              "text": "And the opposition?",
-              "duration": 1.28
-            },
-            {
-              "speaker": "explainer",
-              "text": "They're calling Labor a gangster government based on these findings.",
-              "duration": 3.526531
-            },
-            {
-              "speaker": "listener",
-              "text": "What was this all about originally?",
+              "text": "What does the painting actually show?",
               "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "It goes back to 2015, when the government was negotiating a new agreement for firefighters, overseen by the then emergency services minister Jane Garrett.",
-              "duration": 8.019592
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オーストラリアのビクトリア州で、汚職監視機関が政府幹部の行動を調べた報告書が公表されました。",
-              "duration": 7.584
+              "text": "A still life with nine small dead birds, hazelnuts, apricots, and a fly on a bunch of grapes.",
+              "duration": 4.91102
             },
             {
-              "speaker": "narrator",
-              "text": "対象となったのは、ダニエル・アンドリュース元州首相の政権下で消防士組合との交渉に関わった人たちです。",
-              "duration": 8.304
+              "speaker": "listener",
+              "text": "And now people think Peeters made it?",
+              "duration": 1.985306
             },
             {
-              "speaker": "narrator",
-              "text": "報告書は、規則違反や情報の隠蔽、不正な利用があったと指摘しています。",
-              "duration": 6.168
+              "speaker": "explainer",
+              "text": "Osiecki began to wonder that. Peeters was an early, prolific still-life pioneer.",
+              "duration": 4.858776
             },
             {
-              "speaker": "narrator",
-              "text": "ただし、腐敗行為そのものの認定には至りませんでした。",
-              "duration": 4.56
+              "speaker": "listener",
+              "text": "Is anything making it hard to be sure?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "野党はこの結果を受けて、現政権を「ギャング政府」と呼んで批判しています。",
-              "duration": 6.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "問題の始まりは2015年、労働協約の交渉をめぐる政府内部のやり取りでした。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "アンドリュース氏は自分たちの行動は正当だったと主張しています。",
-              "duration": 4.968
-            },
-            {
-              "speaker": "narrator",
-              "text": "州政府への信頼が問われる局面が続きそうです。",
-              "duration": 4.224
+              "speaker": "explainer",
+              "text": "Some details are obscured by many layers of varnish, so questions remain.",
+              "duration": 3.94449
             }
           ]
         }
@@ -293,132 +187,84 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "‘If we don’t fight back, we don’t have a future’: the journalist taking on the ‘tech fascists’ of Silicon Valley",
-      "summary": "Durán was responding to a post from the tech company Palantir outlining its 22‑point “technological manifesto”, which praised American “hard power”, western culture and AI weapons, denounced inclusivity and called for compulsory national service.",
+      "headline": "Safety fears as scientists make first viruses designed by AI",
+      "summary": "Scientists have made the first viruses designed by artificial intelligence in a milestone that raises hopes for new medicines but also concerns over how to ensure the technology remains safe.",
       "keyTakeaways": [
-        "The book’s central argument is that big tech is no longer our friend, as many of its billionaire owners have seized economic and political control and are steering the fate of the planet towards their own bizarre, apocalyptic visions.",
-        "It’s a cosy relationship, Durán says: the tech titans have helped Trump and his family become billionaires through cryptocurrency and have been given government contracts and freedom from regulation or oversight.",
-        "Unpacking all their overlapping philosophies would take some time, but TLDR: “It’s the idea that what matters more is the billions or trillions of people yet unborn in the future."
+        "The viruses are specific kinds known as bacteriophages, which only infect bacteria and are used around the world to treat patients with persistent infections.",
+        "In lab tests, a cocktail of the AI-designed viruses killed E coli bugs that were resistant to natural bacteriophages.",
+        "The viruses were then made in the laboratory and pitted against E coli in a dish."
       ],
-      "whyItMatters": "His ban might just have had something to do with his preceding tweet, showing the cover of his new book, The Nerd Reich: Silicon Valley Fascism and the War on Democracy.",
-      "originalURL": "https://www.theguardian.com/lifeandstyle/2026/aug/05/journalist-taking-on-tech-fascists-silicon-valley",
-      "readTime": 12,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "whyItMatters": "The genetic code for viruses that can infect plants, humans or other animals was intentionally excluded from the AI’s training to reduce the risk of it designing dangerous viruses.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/06/safety-fears-as-scientists-make-first-viruses-designed-by-ai",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "シリコンバレーの「テック・ファシズム」に挑むジャーナリスト",
-          "summary": "パランティア社が発表した22項目の「技術宣言」は、アメリカの「ハードパワー」や西洋文化、AI兵器を称賛し、包括性を否定、国民への兵役義務化を訴える内容だった。ジャーナリストのドゥランはこれに真っ向から反論している。",
-          "keyTakeaways": [
-            "巨大テック企業はもはや社会の友ではない——その創業者たちは経済的・政治的支配を握り、独自の黙示録的ビジョンへと世界を誘導しつつある",
-            "テック界の重鎮たちはトランプ一家の資産形成を後押しし、見返りとして政府契約や規制免除という恩恵を受けている",
-            "彼らに共通するのは、「重要なのは現在ではなく、未来に生まれてくる何十億もの人々だ」という思想だ"
-          ],
-          "whyItMatters": "ドゥランがSNSで投稿禁止になった直前、彼は新著『ナード・ライヒ——シリコンバレーのファシズムと民主主義への戦争』の表紙を公開していた。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a journalist got banned from a platform after posting about his new book?",
-              "duration": 4.414694
+              "text": "I saw scientists made the first viruses designed by AI. What does that mean?",
+              "duration": 4.91102
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Durán was banned after showing the cover of his book called The Nerd Reich, which is about Silicon Valley and democracy.",
-              "duration": 7.183673
+              "text": "They used artificial intelligence to design viruses, then built them in the lab.",
+              "duration": 3.996735
             },
             {
               "speaker": "listener",
-              "text": "What sparked him to write it?",
-              "duration": 1.515102
+              "text": "Viruses sound worrying. What kind are these?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "He was responding to a tech company called Palantir. They posted a 22-point manifesto praising American hard power, AI weapons, and calling for compulsory national service while denouncing inclusivity.",
-              "duration": 11.72898
+              "text": "They're bacteriophages, a type that only infects bacteria, not people.",
+              "duration": 4.127347
             },
             {
               "speaker": "listener",
-              "text": "That's pretty bold. What's his main argument?",
-              "duration": 2.35102
+              "text": "So how are those used?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "He says big tech billionaires have seized economic and political control, and they're steering things toward their own apocalyptic visions.",
-              "duration": 7.706122
+              "text": "They're used around the world to treat patients with persistent infections.",
+              "duration": 3.474286
             },
             {
               "speaker": "listener",
-              "text": "Does he connect this to current politics?",
-              "duration": 2.324898
+              "text": "And did the AI-designed ones actually work?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "He does. He says tech titans helped Trump and his family become billionaires through cryptocurrency, and in return got government contracts and freedom from regulation.",
-              "duration": 9.613061
+              "text": "In lab tests, a cocktail of them killed E. coli that resisted natural phages.",
+              "duration": 4.440816
             },
             {
               "speaker": "listener",
-              "text": "What kind of philosophy drives these tech leaders?",
-              "duration": 2.586122
+              "text": "How was that tested?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "Without getting too deep, he points to ideas that prioritize billions of unborn future people over those living now.",
-              "duration": 6.29551
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ジャーナリストのドゥランが、新しい本を出しました。",
-              "duration": 3.792
+              "text": "The viruses were made in the lab and pitted against E. coli in a dish.",
+              "duration": 3.787755
             },
             {
-              "speaker": "narrator",
-              "text": "タイトルは『ナード・ライヒ』。",
-              "duration": 2.712
+              "speaker": "listener",
+              "text": "What about the safety fears?",
+              "duration": 1.697959
             },
             {
-              "speaker": "narrator",
-              "text": "シリコンバレーと民主主義の関係を問う内容です。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "彼によれば、巨大テック企業はもう味方ではありません。",
-              "duration": 4.512
-            },
-            {
-              "speaker": "narrator",
-              "text": "創業者たちは経済と政治の力を握り、独自の未来像へ世界を導いています。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ一家の資産づくりを支え、見返りに規制を免れてきました。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "彼らの思想の核には、今ではなく未来の人類を重んじる考えがあります。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "ドゥランがこの本の表紙を公開した直後、投稿が禁止されました。",
-              "duration": 5.088
+              "speaker": "explainer",
+              "text": "To reduce risk, code for viruses that infect plants, humans or animals was left out of the AI's training.",
+              "duration": 5.929796
             }
           ]
         }
@@ -429,123 +275,85 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "What is Fields of Mistria? A magical new obsession for fans of Stardew Valley",
-      "summary": "While these games have had dedicated fans since the days of Harvest Moon, the most popular today, Stardew Valley, contemporised the genre with a larger range of activities and lovable townspeople to befriend and romance.",
+      "source": "The Verge",
+      "headline": "Trevor Noah is hosting Google’s Pixel 11 launch event",
+      "summary": "Google’s next hardware show will feature new gadgets and a lot of celebrities.",
       "keyTakeaways": [
-        "Fields of Mistria is one of these farming sims in a post - Stardew world – though it updates the core formula.",
-        "It’s for a good reason: Mistria satisfies all of those same farming sim desires but with more expansive character creation and a story steeped in magic.",
-        "Fields of Mistria is a farming and life simulator game with fantasy themes."
+        "Jimmy Fallon hosted the show last year, an event that my colleague Victoria Song described as more like “a live taping of The Tonight Show with Jimmy Fallon ” than a traditional tech launch event.",
+        "Given the celebrity faces set to appear at this year’s event, it seems that Google is once again aiming to reach a more mainstream audience.",
+        "It’s also airing right at the end of the ET workday: the event, which takes place in New York City, starts at 6PM ET."
       ],
-      "whyItMatters": "Fields of Mistria may sound like a classic farming sim – but there’s a twist: you gain magical powers, thanks to the mysterious dragon Caldarus, who you can talk to by visiting a shrine on your farm.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/05/what-is-fields-of-mistria-stardew-valley-farming-sim",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "Google is set to host its next live Made by Google hardware launch event on August 12th, and the company says in a new video that comedian Trevor Noah will be hosting the show.",
+      "originalURL": "https://www.theverge.com/tech/976454/made-by-google-2026-event-pixel-11-trevor-noah",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "魔法が宿る農場シム「Fields of Mistria」とは",
-          "summary": "「ハーベストムーン」の時代から根強いファンを持つ農場シミュレーションというジャンル。その現代的な頂点に立つ「Stardew Valley」は、豊富な活動と個性豊かな住人たちで多くの人を魅了してきた。",
-          "keyTakeaways": [
-            "「Fields of Mistria」はポスト・Stardew時代の農場シムとして、定番の要素を独自に刷新している",
-            "キャラクター作成の自由度が高く、魔法を軸にした物語が農場シムの醍醐味をさらに深める",
-            "農業と生活、そしてファンタジーが融合したシミュレーションゲーム"
-          ],
-          "whyItMatters": "農場に設けられた祠を訪れると謎めいた竜カルダルスと言葉を交わせ、やがて魔法の力を手にする——古典的な農場シムに見えて、その核心には独特のねじれがある。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I keep hearing about Fields of Mistria. What is it exactly?",
-              "duration": 3.474286
+              "text": "I saw Google has a new hardware event coming up?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "It's a farming and life simulator game with fantasy themes. Think of it as part of the wave of games inspired by Stardew Valley.",
-              "duration": 7.235918
+              "text": "Yes, the next Made by Google launch is set for August 12th.",
+              "duration": 3.004082
             },
             {
               "speaker": "listener",
-              "text": "So it's similar to Stardew Valley?",
-              "duration": 1.802449
+              "text": "And someone notable is hosting it?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it satisfies those same farming sim desires — growing crops, befriending townspeople — but it updates the formula with more expansive character creation and a story steeped in magic.",
-              "duration": 10.684082
+              "text": "Comedian Trevor Noah will be hosting the show, according to a new video from the company.",
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
-              "text": "Wait, magic? That sounds different.",
-              "duration": 2.089796
+              "text": "That's an interesting choice. Have they done this before?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "That's the twist. You gain magical powers thanks to a mysterious dragon named Caldarus, who you can talk to by visiting a shrine on your farm.",
-              "duration": 8.176327
+              "text": "Last year, Jimmy Fallon hosted.",
+              "duration": 1.750204
             },
             {
               "speaker": "listener",
-              "text": "A dragon on your farm. That's definitely not your typical farming game.",
-              "duration": 5.093878
+              "text": "How did that one feel?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. It keeps the cozy farming sim feel but adds that fantasy layer, which is why it's becoming a new obsession for fans of the genre.",
-              "duration": 8.777143
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "農場を耕し、住人と親しくなる。",
-              "duration": 3.6
+              "text": "My colleague Victoria Song described it as more like a live taping of The Tonight Show than a traditional tech launch.",
+              "duration": 5.851429
             },
             {
-              "speaker": "narrator",
-              "text": "そんなゲームの定番は「ハーベストムーン」の頃から愛されてきました。",
-              "duration": 5.016
+              "speaker": "listener",
+              "text": "So why bring in these celebrity hosts?",
+              "duration": 2.507755
             },
             {
-              "speaker": "narrator",
-              "text": "近年は「Stardew Valley」が活動の幅と魅力的な登場人物で人気を集めています。",
-              "duration": 6.96
+              "speaker": "explainer",
+              "text": "With the faces appearing this year, it seems Google is again aiming to reach a more mainstream audience.",
+              "duration": 5.32898
             },
             {
-              "speaker": "narrator",
-              "text": "新作「Fields of Mistria」は、その流れを受け継ぎながら独自の要素を加えました。",
-              "duration": 6.624
+              "speaker": "listener",
+              "text": "When and where can people watch it?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "キャラクターの見た目を細かく決められ、物語には魔法が深く関わります。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "農場にある祠を訪ねると、謎の竜カルダルスと話ができます。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "やがてあなたは魔法の力を手に入れることになります。",
-              "duration": 4.224
-            },
-            {
-              "speaker": "narrator",
-              "text": "農業と暮らしにファンタジーが溶け込んだ世界です。",
-              "duration": 3.768
+              "speaker": "explainer",
+              "text": "It takes place in New York City and starts at 6PM ET, right at the end of the workday.",
+              "duration": 4.414694
             }
           ]
         }
@@ -555,139 +363,86 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "HEALTH",
-      "source": "BBC News (Health)",
-      "headline": "Inside Health",
-      "summary": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.",
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Wildfire damage could take hundreds of years to recover from, experts say",
+      "summary": "Nick Thomas, from Natural Resources Wales (NRW), said if soil had been incinerated in upland areas rich in peat, which grows at about a millimetre a year, it could take centuries for the vegetation to come back.",
       "keyTakeaways": [
-        "Where are we at with long Covid?",
-        "A new clinical trial led by University College London and University College London Hospitals found that over-the-counter antihistamines and a prescription anti-inflammatory drug called colchicine offered a small reduction in fatigue for people with long Covid.",
-        "Professor Danny Altmann, an immunologist at Imperial College London, joins us to discuss this new research and the problems with understanding long Covid."
+        "While some areas will recover quite quickly - potentially within a couple of years - he said: \"It all depends on how deep the fire goes.",
+        "Thomas said a large wildfire on Mynydd Llantysilio near Llangollen, Denbighshire, in 2018 had incinerated about 10cm (4in) of peat in some areas.",
+        "Eight years on, there is still no heather in large patches."
       ],
-      "whyItMatters": "More than six years since the start of the Covid pandemic, it might feel like we're pretty over it, yet that's simply not the case for the millions of people who suffer from long Covid.",
-      "originalURL": "https://www.bbc.co.uk/sounds/play/m002zrmr?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Morning light",
+      "whyItMatters": "As well as damage to natural habitats and animal life, Thomas warned loss of soil could increase flood risks, because it no longer acted as a \"sponge\" holding water on high ground.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c0qvp00x707o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "ロングCOVIDの今",
-          "summary": "BBCのポッドキャスト番組「Inside Health」より。英国外でもBBC.comまたはBBCアプリで聴取できる。",
-          "keyTakeaways": [
-            "ロングCOVIDの現状はどこまで解明されたか",
-            "ユニバーシティ・カレッジ・ロンドンらの臨床試験で、市販の抗ヒスタミン薬と処方抗炎症薬コルヒチンがロングCOVIDの倦怠感をわずかに軽減する可能性が示された",
-            "インペリアル・カレッジ・ロンドンの免疫学者ダニー・アルトマン教授が、この研究とロングCOVID理解の難しさを語る"
-          ],
-          "whyItMatters": "パンデミック開始から六年以上が過ぎ、多くの人にとってCOVIDは過去のものになりつつあるが、ロングCOVIDに苦しむ人々にとって、その現実はいまも続いている。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So we're more than six years into the pandemic now. Where do things stand with long Covid?",
-              "duration": 5.01551
+              "text": "I read that some wildfire damage could take hundreds of years to recover. Is that really true?",
+              "duration": 5.250612
             },
             {
               "speaker": "explainer",
-              "text": "Well, millions of people are still dealing with it. And researchers are still trying to understand it better and find treatments that work.",
-              "duration": 6.948571
+              "text": "It can be, according to Nick Thomas from Natural Resources Wales.",
+              "duration": 3.422041
             },
             {
               "speaker": "listener",
-              "text": "Has there been any progress on the treatment side?",
-              "duration": 2.45551
+              "text": "Why would it take so long?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "There's a new trial from University College London that found some modest help. They tested over-the-counter antihistamines and a prescription anti-inflammatory called colchicine.",
-              "duration": 9.613061
+              "text": "In upland areas rich in peat, if the soil is incinerated, the vegetation can take centuries to come back.",
+              "duration": 5.929796
             },
             {
               "speaker": "listener",
-              "text": "And did they actually help?",
-              "duration": 1.48898
+              "text": "Why peat especially?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "They offered a small reduction in fatigue for people with long Covid. So not a cure, but a bit of relief for some.",
-              "duration": 6.217143
+              "text": "Peat grows at only about a millimetre a year, so it recovers very slowly.",
+              "duration": 3.996735
             },
             {
               "speaker": "listener",
-              "text": "Why is long Covid still so hard to understand?",
-              "duration": 2.742857
+              "text": "Does every fire cause that kind of lasting harm?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "That's what Professor Danny Altmann, an immunologist at Imperial College London, has been discussing. The condition affects people in different ways, and we're still learning about the underlying causes.",
-              "duration": 10.213878
+              "text": "No. Some areas recover within a couple of years. Thomas said it all depends on how deep the fire goes.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "It sounds like there's still a long way to go.",
-              "duration": 2.586122
+              "text": "Is there an example of the deeper kind of damage?",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "There is. But these small steps in research do matter for the people living with it every day.",
-              "duration": 5.459592
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-05/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "新型コロナのパンデミックが始まってから六年以上が経ちました。",
-              "duration": 4.8
+              "text": "A large wildfire near Llangollen in 2018 incinerated about 10cm of peat in places. Eight years on, there's still no heather in large patches.",
+              "duration": 9.273469
             },
             {
-              "speaker": "narrator",
-              "text": "多くの人にとって過去の出来事になりつつありますが、ロングCOVIDに苦しむ人々の現実は今も続いています。",
-              "duration": 8.208
+              "speaker": "listener",
+              "text": "And why does this matter beyond the plants themselves?",
+              "duration": 2.873469
             },
             {
-              "speaker": "narrator",
-              "text": "ユニバーシティ・カレッジ・ロンドンの臨床試験で、新しい手がかりが見つかりました。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "市販の抗ヒスタミン薬と、コルヒチンという処方の抗炎症薬が、倦怠感をわずかに軽くする可能性があるそうです。",
-              "duration": 8.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "効果は小さいものの、症状の仕組みを探る上で意味のある一歩です。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "インペリアル・カレッジ・ロンドンの免疫学者、ダニー・アルトマン教授がこの研究について語っています。",
-              "duration": 7.752
-            },
-            {
-              "speaker": "narrator",
-              "text": "ロングCOVIDの理解がなぜ難しいのか、その理由にも触れています。",
-              "duration": 5.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "症状が多様で、原因もまだはっきりしないため、治療法の確立には時間がかかります。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "それでも、少しずつ前に進んでいることは確かです。",
-              "duration": 4.224
+              "speaker": "explainer",
+              "text": "As well as harming habitats and animal life, losing that soil can raise flood risks, because it no longer acts as a sponge holding water on high ground.",
+              "duration": 8.254694
             }
           ]
         }

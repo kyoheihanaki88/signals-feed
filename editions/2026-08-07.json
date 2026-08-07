@@ -21,7 +21,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Soft light",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Trump ordered a new tariff. What's it on?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "A 15% tariff on imported products made of polysilicon.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "listener",
+              "text": "What is polysilicon, exactly?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an ultra-pure form of silicon, and it's mostly produced by China.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that material matter so much?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a key ingredient in microchips and in solar panels.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "listener",
+              "text": "So this touches things like AI and energy?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Chips are vital for AI, datacentres, and solar power generation.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "When does the tariff start?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "It takes effect on the 4th of December.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "listener",
+              "text": "And the goal behind it?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "To support US chip and solar supply chains, so they can compete with Beijing.",
+              "duration": 4.179592
+            }
+          ]
+        }
+      }
     },
     {
       "number": 2,
@@ -41,7 +110,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
       "placeTime": "City morning",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I heard a painting was found in storage. What's the story?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "A researcher named Osiecki was studying Clara Peeters, an early Flemish still-life painter.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "And she noticed something?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's an Oslo painting from around 1620, once attributed to Ambrosius Brueghel.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "So it was thought to be a Brueghel's work?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Because of that, it had mostly been kept in storage.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "listener",
+              "text": "What does the painting actually show?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "A still life with nine small dead birds, hazelnuts, apricots, and a fly on a bunch of grapes.",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "listener",
+              "text": "And now people think Peeters made it?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Osiecki began to wonder that. Peeters was an early, prolific still-life pioneer.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "Is anything making it hard to be sure?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some details are obscured by many layers of varnish, so questions remain.",
+              "duration": 3.94449
+            }
+          ]
+        }
+      }
     },
     {
       "number": 3,
@@ -61,7 +199,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
       "placeTime": "The team",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw scientists made the first viruses designed by AI. What does that mean?",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "explainer",
+              "text": "They used artificial intelligence to design viruses, then built them in the lab.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "Viruses sound worrying. What kind are these?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're bacteriophages, a type that only infects bacteria, not people.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "So how are those used?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're used around the world to treat patients with persistent infections.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "listener",
+              "text": "And did the AI-designed ones actually work?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "In lab tests, a cocktail of them killed E. coli that resisted natural phages.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "How was that tested?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "The viruses were made in the lab and pitted against E. coli in a dish.",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "listener",
+              "text": "What about the safety fears?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "To reduce risk, code for viruses that infect plants, humans or animals was left out of the AI's training.",
+              "duration": 5.929796
+            }
+          ]
+        }
+      }
     },
     {
       "number": 4,
@@ -81,7 +288,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Workstation",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw Google has a new hardware event coming up?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the next Made by Google launch is set for August 12th.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "listener",
+              "text": "And someone notable is hosting it?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Comedian Trevor Noah will be hosting the show, according to a new video from the company.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "That's an interesting choice. Have they done this before?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Last year, Jimmy Fallon hosted.",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "listener",
+              "text": "How did that one feel?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "My colleague Victoria Song described it as more like a live taping of The Tonight Show than a traditional tech launch.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "So why bring in these celebrity hosts?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "With the faces appearing this year, it seems Google is again aiming to reach a more mainstream audience.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "When and where can people watch it?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It takes place in New York City and starts at 6PM ET, right at the end of the workday.",
+              "duration": 4.414694
+            }
+          ]
+        }
+      }
     },
     {
       "number": 5,
@@ -101,7 +377,76 @@
       "readTime": 5,
       "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
       "placeTime": "The academy",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I read that some wildfire damage could take hundreds of years to recover. Is that really true?",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "explainer",
+              "text": "It can be, according to Nick Thomas from Natural Resources Wales.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "listener",
+              "text": "Why would it take so long?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "In upland areas rich in peat, if the soil is incinerated, the vegetation can take centuries to come back.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "Why peat especially?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Peat grows at only about a millimetre a year, so it recovers very slowly.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "Does every fire cause that kind of lasting harm?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Some areas recover within a couple of years. Thomas said it all depends on how deep the fire goes.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there an example of the deeper kind of damage?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "A large wildfire near Llangollen in 2018 incinerated about 10cm of peat in places. Eight years on, there's still no heather in large patches.",
+              "duration": 9.273469
+            },
+            {
+              "speaker": "listener",
+              "text": "And why does this matter beyond the plants themselves?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "As well as harming habitats and animal life, losing that soil can raise flood risks, because it no longer acts as a sponge holding water on high ground.",
+              "duration": 8.254694
+            }
+          ]
+        }
+      }
     }
   ]
 }

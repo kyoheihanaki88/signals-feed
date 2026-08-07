@@ -160,13 +160,44 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
         if ja_ref:
             fields["japanese_reference"] = ja_ref     # ground JA terminology in the app's own JP text
     system = SCRIPT_SYSTEM_JA_SOLO if lang == "ja" else SCRIPT_SYSTEM
+    # NO SAMPLING PARAMETERS. Claude Opus 4.7/4.8, Opus 5, Sonnet 5, Fable 5 and Mythos 5 reject a
+    # non-default temperature, top_p or top_k with HTTP 400 on EVERY request, whether or not
+    # thinking is used (docs: Thinking → Limits and feature compatibility). This request carried
+    # temperature: 0.5 from the claude-3-5-sonnet era, which is why the Listen chain 400'd on
+    # 2026-08-06/07 and why simply pointing SIGNALS_LISTEN_MODEL at a newer model did not help.
+    # The key must be OMITTED, not set to a default value — sending it at all is the failure.
+    # Determinism now comes from the system prompt and the quality gates, not from a sampler knob.
     body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
-                       "temperature": 0.5, "system": system,
+                       "system": system,
                        "messages": [{"role": "user", "content": json.dumps(fields, ensure_ascii=False)}]}).encode()
     req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
         "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION, "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        data = json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            data = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        # The API answers a rejected request with a JSON body naming the exact problem —
+        # "model: <id> not found", an unsupported parameter, and so on. urllib discards
+        # that body, so the bare exception reads only "HTTP Error 400: Bad Request" and
+        # says nothing about which model or field was wrong. On 2026-08-06 the whole
+        # Listen chain stopped because the configured model had reached its retirement
+        # date, and the logs showed only the status line. Surface the body, and name the
+        # model being used, so a retirement is obvious from the failing run itself.
+        try:
+            detail = e.read().decode("utf-8", "replace")[:600]
+        except Exception:
+            detail = "<response body unavailable>"
+        raise RuntimeError(
+            f"Anthropic request failed: HTTP {e.code} {e.reason}\n"
+            f"  model={model!r} (from SIGNALS_LISTEN_MODEL, else the built-in default)\n"
+            f"  lang={lang}\n"
+            f"  response: {detail}\n"
+            f"  A 400 after a model change is usually one of two things: the old model was "
+            f"retired (see docs/about-claude/model-deprecations — update SIGNALS_LISTEN_MODEL), "
+            f"or the request carries a parameter the new model rejects. Recent models refuse a "
+            f"non-default temperature/top_p/top_k outright (see docs Thinking → Limits and "
+            f"feature compatibility). The 'response' line above names which one it is."
+        ) from e
     text = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
     return parse_solo_lines(text) if lang == "ja" else parse_dialogue(text)
 

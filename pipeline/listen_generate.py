@@ -161,6 +161,18 @@ SCRIPT_SYSTEM_JA_SOLO = (
 # HTTP/auth errors still raise RuntimeError immediately, and the quality gate in generate()
 # still fails the run without any retry. EN keeps exactly one attempt, byte-identical payload.
 JA_FORMAT_MAX_ATTEMPTS = 3        # 1 initial + up to 2 retries
+# Output budget per JA attempt (2026-08-08, run 31272374419). Sonnet 5 runs ADAPTIVE THINKING
+# BY DEFAULT, and max_tokens is a hard limit on TOTAL output — thinking plus response text
+# (docs: What's new in Claude Sonnet 5). Its new tokenizer also yields ~30% more tokens for
+# the same text. At the old flat 1200, signal 5's thinking alone consumed the whole budget:
+# attempts 1–2 returned an EMPTY text block and attempt 3 cut off mid-array — all with the
+# same ceiling, so retrying could never help. Attempt 1 keeps 1200 (the historical value,
+# usually enough). The ladder advances ONLY when the failed attempt actually hit the budget
+# (stop_reason == "max_tokens"); a plain format defect retries at the SAME budget, and a
+# refusal (HTTP 200 + stop_reason "refusal" — a safety stop, not a budget problem) is never
+# retried at all. Worst case (3 attempts, all budget-bound) is 1200+2400+4800 = 8400 output
+# tokens ≈ $0.13 per signal at standard Sonnet 5 pricing; a normal day runs attempt 1 only.
+JA_BUDGETS = (1200, 2400, 4800)   # escalation ladder; EN stays flat 900
 _JA_FORMAT_RETRY_NOTE = (
     "\n\n[出力形式の再指示] 前回の出力はJSON配列として解析できませんでした。"
     "説明・前置き・後書き・Markdown・コードフェンスは一切書かず、"
@@ -172,26 +184,32 @@ _JA_FORMAT_RETRY_NOTE = (
 _JA_RUN_DATE = None
 
 
-def _dump_failed_ja_format(num, attempt, model, error, raw_text):
+def _dump_failed_ja_format(num, attempt, model, error, raw_text, meta=None):
     """DEBUG-ONLY: save a format-rejected raw LLM output where the workflow's existing
     artifact glob (scratch/failed_ja_dialogue_*.json) will pick it up. Before this, a parse
     failure aborted the run with NOTHING saved — the summary pointed at an artifact that was
     never written. One file per attempt, kept even if a later attempt succeeds.
 
-    Contains ONLY: date, signal, attempt, model, parse_error, raw_output. Never the API key,
-    headers, or any secret. NEVER raises; returns the path written, or None."""
+    Contains ONLY: date, signal, attempt, model, parse_error, raw_output, plus safe response
+    metadata (stop_reason, usage, content_block_types, max_tokens) — enough to tell a budget
+    exhaustion (stop_reason "max_tokens") from a refusal (HTTP 200 + stop_reason "refusal")
+    from a genuine format defect. Never the API key, headers, thinking content, or any
+    secret: raw_output is assembled ONLY from type=="text" blocks, so thinking text can
+    never reach this file. NEVER raises; returns the path written, or None."""
     try:
         scratch = os.path.join(ROOT, "scratch")
         os.makedirs(scratch, exist_ok=True)
         date = _JA_RUN_DATE or "unknown-date"
         path = os.path.join(scratch,
                             f"failed_ja_dialogue_{date}_signal{num}_attempt{attempt}_format.json")
+        rec = {"date": date, "signal": num, "attempt": attempt, "model": model,
+               "parse_error": str(error), "raw_output": raw_text}
+        rec.update(meta or {})
         with open(path, "w", encoding="utf-8") as f:
-            json.dump({"date": date, "signal": num, "attempt": attempt, "model": model,
-                       "parse_error": str(error), "raw_output": raw_text},
-                      f, ensure_ascii=False, indent=2)
-        print(f"    format-rejected LLM output saved: {os.path.relpath(path, ROOT)}",
-              file=sys.stderr)
+            json.dump(rec, f, ensure_ascii=False, indent=2)
+        stop = (meta or {}).get("stop_reason")
+        print(f"    format-rejected LLM output saved (stop_reason={stop!r}): "
+              f"{os.path.relpath(path, ROOT)}", file=sys.stderr)
         return path
     except Exception:
         return None
@@ -206,14 +224,15 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
     system = SCRIPT_SYSTEM_JA_SOLO if lang == "ja" else SCRIPT_SYSTEM
     user_content = json.dumps(fields, ensure_ascii=False)
 
-    def request_text(content):
+    def request_text(content, max_tokens):
         # NO SAMPLING PARAMETERS — on any attempt. Claude Opus 4.7/4.8, Opus 5, Sonnet 5,
         # Fable 5 and Mythos 5 reject a non-default temperature, top_p or top_k with HTTP 400
         # on EVERY request (docs: Thinking → Limits and feature compatibility). This request
         # carried temperature: 0.5 from the claude-3-5-sonnet era, which is why the Listen
         # chain 400'd on 2026-08-06/07 and why changing SIGNALS_LISTEN_MODEL did not help.
-        # The key must be OMITTED, not set to a default value.
-        body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
+        # The key must be OMITTED, not set to a default value. No explicit thinking parameter
+        # either: adaptive thinking is the model default and max_tokens caps thinking + text.
+        body = json.dumps({"model": model, "max_tokens": max_tokens,
                            "system": system,
                            "messages": [{"role": "user", "content": content}]}).encode()
         req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
@@ -244,25 +263,51 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
                 f"non-default temperature/top_p/top_k outright (see docs Thinking → Limits and "
                 f"feature compatibility). The 'response' line above names which one it is."
             ) from e
-        return "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
+        text = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
+        # Safe response metadata for the failure artifact. stop_reason "max_tokens" proves a
+        # budget exhaustion, "refusal" a safety stop; usage shows how much of the budget the
+        # (default-on) thinking consumed. Never any thinking content, headers, or the key.
+        meta = {"stop_reason": data.get("stop_reason"),
+                "usage": data.get("usage"),
+                "content_block_types": [p.get("type") for p in data.get("content", [])],
+                "max_tokens": max_tokens}
+        return text, meta
 
     if lang != "ja":
-        # EN: exactly one attempt, identical payload and behavior to the historical path.
-        return parse_dialogue(request_text(user_content))
+        # EN: exactly one attempt, flat 900 budget — identical payload and behavior.
+        text, _ = request_text(user_content, 900)
+        return parse_dialogue(text)
 
-    last_err = None
+    num = signal.get("number")
+    last_err, last_meta = None, None
+    budget_idx = 0                            # advances ONLY on a proven budget exhaustion
     for attempt in range(1, JA_FORMAT_MAX_ATTEMPTS + 1):
         content = user_content if attempt == 1 else user_content + _JA_FORMAT_RETRY_NOTE
-        text = request_text(content)          # HTTP/auth failures raise here — never retried
+        text, meta = request_text(content, JA_BUDGETS[budget_idx])   # HTTP/auth failures raise here — never retried
+        if meta.get("stop_reason") == "refusal":
+            # A safety stop, not a budget or format problem: HTTP 200 + stop_reason
+            # "refusal". A bigger budget or a rephrased format note cannot change the
+            # safeguards' verdict, so retrying only spends money on the same answer.
+            # One call, artifact saved, fail closed.
+            _dump_failed_ja_format(num, attempt, model, "model refused (safety stop)", text, meta)
+            raise ValueError(
+                f"signal {num} [ja]: the model refused this content (stop_reason 'refusal') "
+                f"— not retried; see scratch/failed_ja_dialogue_*_format.json"
+            )
         try:
             return parse_solo_lines(text)
         except ValueError as e:               # format defect only (json.JSONDecodeError included)
-            last_err = e
-            _dump_failed_ja_format(signal.get("number"), attempt, model, e, text)
-    num = signal.get("number")
+            last_err, last_meta = e, meta
+            _dump_failed_ja_format(num, attempt, model, e, text, meta)
+            if meta.get("stop_reason") == "max_tokens":
+                # Empty or truncated because the budget ran out (thinking counts toward
+                # max_tokens on Sonnet 5): the ladder is the fix. An ordinary format
+                # defect retries at the SAME budget — more tokens don't fix formatting.
+                budget_idx = min(budget_idx + 1, len(JA_BUDGETS) - 1)
     raise ValueError(
         f"signal {num} [ja]: LLM output was not a valid solo-narration JSON array after "
-        f"{JA_FORMAT_MAX_ATTEMPTS} attempts — last parse error: {last_err} "
+        f"{JA_FORMAT_MAX_ATTEMPTS} attempts (budget ladder {JA_BUDGETS}) — last parse error: "
+        f"{last_err}; last stop_reason: {(last_meta or {}).get('stop_reason')!r} "
         f"(rejected outputs saved to scratch/failed_ja_dialogue_*_format.json)"
     ) from last_err
 

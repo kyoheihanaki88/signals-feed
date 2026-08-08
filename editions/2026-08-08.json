@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-08",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump loyalist Todd Blanche confirmed by Senate as US attorney general",
+      "summary": "The US senate voted to confirm Todd Blanche as attorney general in a major win for Donald Trump, who will now have his one-time personal attorney sitting atop the nation’s law enforcement apparatus.",
+      "keyTakeaways": [
+        "Senator Bill Cassidy of Louisiana cast the deciding vote in Blanche’s favor after two other Republicans – Susan Collins of Maine and Lisa Murkowski of Alaska – voted against him.",
+        "The vote came after Blanche’s nomination had been in limbo for weeks.",
+        "That appears to have cost Blanche among at least some GOP senators who will oppose his nomination."
+      ],
+      "whyItMatters": "He faced pushback from Republican senators over the department’s deal to create a $1.8bn so-called “anti-weaponization fund” and to give the president, his sons, and business tax immunity.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/08/todd-blanche-attorney-general-confirmed",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": ""
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "CULTURE",
+      "source": "The Guardian (Culture)",
+      "headline": "Add to playlist: the anxiety-ridden sugar rush of Tiffany Day and the week’s best new tracks",
+      "summary": "Enter Tiffany Day, a Wichita-raised artist who first went viral in 2017 when a video of her singing Hallelujah on a school trip blew up online.",
+      "keyTakeaways": [
+        "Only by channeling her frustrations into this year’s anxiety-ridden sugar rush Halo did Day finally regain her early momentum.",
+        "After his ultra-emotional, 80s-sampling rap tracks Cry and Southpaw this year, the UK vocalist switches up to singing for his synthwave-ballad debut for XL, restless and upset in the choppy wake of a breakup.",
+        "She spent the subsequent years unsuccessfully chipping away at building on that virality, cycling through acoustic guitar covers and bedroom R&B."
+      ],
+      "whyItMatters": "Right now popstar breakthrough and burnout are a hair’s breadth from one another.",
+      "originalURL": "https://www.theguardian.com/music/2026/aug/07/add-to-playlist-tiffany-day-and-the-weeks-best-new-tracks",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Bluster and backdown have turned Iran war into Trump’s own Groundhog Day",
+      "summary": "Being the subject of mockery may be the most intense of all Donald Trump’s known aversions.",
+      "keyTakeaways": [
+        "Critics suggest the ultimatum-climbdown sequence has acquired a Groundhog Day quality.",
+        "Despite negotiations between Iran and Oman over shipping in the strait of Hormuz, no deal has thus far materialized, and the strategically vital waterway – conduit to a fifth of the world’s oil supply before the war – remains closed.",
+        "The US president has also claimed multiple times that the US has “virtually” won the war and that Iran’s regime was clamoring for a deal."
+      ],
+      "whyItMatters": "Last weekend saw the latest episode, as Trump told reporters onboard Air Force One that he had suddenly called off “a massive” attack that he said would have been “the biggest since world war two” after an appeal from US allies and because “I think there’s a deal”.",
+      "originalURL": "https://www.theguardian.com/world/ng-interactive/2026/aug/08/trump-iran-war-criticism-groundhog-day",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": ""
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+      "summary": "A New Mexico court has ordered Meta, the parent company of Facebook, to pay $567m into a fund aimed at redressing adverse mental health impacts from the social media giant’s platforms.",
+      "keyTakeaways": [
+        "At the time, a jury found that the company knowingly harmed children’s mental health and concealed what it knew about child sexual exploitation on its platforms, and imposed the maximum penalty: a $375m fine.",
+        "The ruling on Thursday is an addition to that fine, bringing the total amount Meta is responsible for to $942m.",
+        "Judge Bryan Biedscheid said the bulk of the money – $420m – would be used for treatment services for young people in New Mexico."
+      ],
+      "whyItMatters": "Several former Meta moderators told the Guardian there were instances where they flagged harmful content related to child grooming, but the cases were not escalated.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The White House’s plan to vet potentially dangerous AI is cloaked in secrecy",
+      "summary": "So far, the White House is keeping details of the framework private, in a blow to transparency and potential boon for secretive AI companies.",
+      "keyTakeaways": [
+        "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft attended a private meeting with White House officials to review the AI framework.",
+        "The White House, OpenAI and Anthropic did not respond to a request for comment.",
+        "In June, the White House issued an executive order that called for AI companies to voluntarily submit their new models for government review up to 30 days before release."
+      ],
+      "whyItMatters": "Discussions over creating an AI cybersecurity framework began earlier this year after the release of Anthropic’s Mythos model, which the company withheld from public release in April over concerns that it could be used to hack into IT and financial systems.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/07/white-house-ai",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": ""
+    }
+  ]
+}

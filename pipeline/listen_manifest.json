@@ -14452,6 +14452,353 @@
           ]
         }
       }
+    },
+    "2026-08-08": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-08/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the Senate confirmed Todd Blanche as attorney general?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. He was Trump's personal attorney, and now he'll lead the Justice Department.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it a close vote?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Close enough. Senator Bill Cassidy of Louisiana cast the deciding vote in his favor.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Did everyone in his party support him?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Susan Collins and Lisa Murkowski both voted against the nomination.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "Why the hesitation from some Republicans?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Part of it was timing. The nomination sat in limbo for weeks, and that seems to have cost him support.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there a policy concern too?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Some senators pushed back on a deal tied to an $1.8bn so-called anti-weaponization fund, and on tax immunity extended to the president, his sons, and their businesses.",
+              "duration": 11.180408
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is being seen as a real win for Trump.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It puts someone close to him directly in charge of federal law enforcement.",
+              "duration": 5.146122
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-08/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So who is Tiffany Day, exactly?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "She's an artist from Wichita who first went viral back in 2017, singing Hallelujah on a school trip.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a big moment. Did it launch her career right away?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite. She spent the following years trying to build on it, moving through acoustic covers and bedroom R&B without quite recapturing that spark.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "So what changed this year?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "She channeled her frustrations into a new track called Halo, described as an anxiety-ridden sugar rush. That's what finally brought back her early momentum.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Interesting. Is there another artist in this playlist worth mentioning?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a UK vocalist who's known for emotional, 80s-sampling rap tracks like Cry and Southpaw. This time he switches to singing, on a synthwave ballad for XL.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "What's that song about?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's restless and upset, written in the choppy aftermath of a breakup.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like these artists are all navigating something fragile.",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's really the theme here. Right now, breakthrough and burnout are only a hair's breadth apart.",
+              "duration": 5.511837
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-08/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what actually happened this time?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trump said he called off a massive planned attack, one he described as the biggest since World War Two.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "Why did he pull back?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says US allies appealed to him, and that he believes there's a deal coming.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that pattern familiar?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Critics say yes — this ultimatum, then backdown, has a Groundhog Day feel to it now.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "What about the strait of Hormuz? I know that matters for oil.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's still closed. Iran and Oman have been talking, but no deal has come through yet.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "And Trump's take on the war itself?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's said several times the US has virtually won, and that Iran's regime is eager for a deal.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "But nothing's actually settled.",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. The waterway that carries a fifth of the world's oil remains shut for now.",
+              "duration": 4.440816
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-08/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a court has ordered Meta to pay out over harms to children's mental health?",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a New Mexico court ordered $567m, paid into a fund to address those harms.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that on top of something else, or is that the whole penalty?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an addition. A jury earlier found Meta knowingly harmed children's mental health and hid what it knew about child sexual exploitation on its platforms, and fined it $375m.",
+              "duration": 12.434286
+            },
+            {
+              "speaker": "listener",
+              "text": "So together that's...",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, $942m in total that Meta is now responsible for.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "Where does most of this new money go?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "The judge said $420m of it will fund treatment services for young people in New Mexico.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a heavy topic. Has anything else come up about how these cases were handled internally?",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, former Meta moderators told the Guardian they'd flagged content related to child grooming, but some of those cases weren't escalated.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "That's sobering to hear.",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It's part of why this ruling is being watched so closely.",
+              "duration": 3.604898
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-08/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what actually happened here?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft met privately with White House officials.",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "listener",
+              "text": "What were they discussing?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "A framework for vetting AI models that might be dangerous, but the details are being kept private.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that matter?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a blow to transparency, and it could work in favor of AI companies that prefer to stay secretive.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "Did anyone explain the secrecy?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. The White House, OpenAI and Anthropic all declined to comment.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there a policy behind this already?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in June the White House issued an order asking companies to voluntarily submit new models for review up to 30 days before release.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "What sparked all this?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "It traces back to April, when Anthropic withheld its Mythos model over concerns it could be used to hack IT and financial systems.",
+              "duration": 7.366531
+            }
+          ]
+        }
+      }
     }
   }
 }

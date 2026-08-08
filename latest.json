@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,84 +9,84 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Trump orders new 15% tariff on key material for solar panels and microchips",
-      "summary": "Donald Trump has ordered a new 15% tariff on imported products made of polysilicon, an important ingredient in microchip manufacturing that is primarily produced by China.",
+      "headline": "Trump loyalist Todd Blanche confirmed by Senate as US attorney general",
+      "summary": "The US senate voted to confirm Todd Blanche as attorney general in a major win for Donald Trump, who will now have his one-time personal attorney sitting atop the nation’s law enforcement apparatus.",
       "keyTakeaways": [
-        "The new tariff, which will take effect on 4 December, is aimed at supporting US chip and solar panel supply chains to compete with Beijing on artificial intelligence and energy.",
-        "Polysilicon, an ultra-pure form of silicon, is an important ingredient in making the semiconductors vital for AI processing power, datacentres and solar power generation.",
-        "US solar factories have long accused Chinese ‌rivals of dumping cheaper panels on the ‌market, which they say have been enabled by excessive government subsidies and by moving manufacturing to other countries to dodge US tariffs."
+        "Senator Bill Cassidy of Louisiana cast the deciding vote in Blanche’s favor after two other Republicans – Susan Collins of Maine and Lisa Murkowski of Alaska – voted against him.",
+        "The vote came after Blanche’s nomination had been in limbo for weeks.",
+        "That appears to have cost Blanche among at least some GOP senators who will oppose his nomination."
       ],
-      "whyItMatters": "She added that although disruption in the Middle East could continue to keep energy and transport costs elevated, “China’s competitiveness in AI hardware, electric vehicles, batteries, and other high-value manufacturing will probably allow it to continue gaining global export market share despite softer demand”.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/07/trump-orders-tariff-solar-panels-microchips-manufacturing-ingredient",
+      "whyItMatters": "He faced pushback from Republican senators over the department’s deal to create a $1.8bn so-called “anti-weaponization fund” and to give the president, his sons, and business tax immunity.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/08/todd-blanche-attorney-general-confirmed",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Trump ordered a new tariff. What's it on?",
-              "duration": 2.925714
+              "text": "So the Senate confirmed Todd Blanche as attorney general?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "A 15% tariff on imported products made of polysilicon.",
-              "duration": 3.422041
+              "text": "That's right. He was Trump's personal attorney, and now he'll lead the Justice Department.",
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
-              "text": "What is polysilicon, exactly?",
-              "duration": 1.750204
+              "text": "Was it a close vote?",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "It's an ultra-pure form of silicon, and it's mostly produced by China.",
+              "text": "Close enough. Senator Bill Cassidy of Louisiana cast the deciding vote in his favor.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Did everyone in his party support him?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "No. Susan Collins and Lisa Murkowski both voted against the nomination.",
               "duration": 3.94449
             },
             {
               "speaker": "listener",
-              "text": "Why does that material matter so much?",
-              "duration": 2.037551
+              "text": "Why the hesitation from some Republicans?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "It's a key ingredient in microchips and in solar panels.",
-              "duration": 2.76898
+              "text": "Part of it was timing. The nomination sat in limbo for weeks, and that seems to have cost him support.",
+              "duration": 5.564082
             },
             {
               "speaker": "listener",
-              "text": "So this touches things like AI and energy?",
-              "duration": 2.403265
+              "text": "Was there a policy concern too?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Chips are vital for AI, datacentres, and solar power generation.",
-              "duration": 4.728163
+              "text": "Yes. Some senators pushed back on a deal tied to an $1.8bn so-called anti-weaponization fund, and on tax immunity extended to the president, his sons, and their businesses.",
+              "duration": 11.180408
             },
             {
               "speaker": "listener",
-              "text": "When does the tariff start?",
-              "duration": 1.697959
+              "text": "So this is being seen as a real win for Trump.",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "It takes effect on the 4th of December.",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "listener",
-              "text": "And the goal behind it?",
-              "duration": 1.436735
-            },
-            {
-              "speaker": "explainer",
-              "text": "To support US chip and solar supply chains, so they can compete with Beijing.",
-              "duration": 4.179592
+              "text": "It is. It puts someone close to him directly in charge of federal law enforcement.",
+              "duration": 5.146122
             }
           ]
         }
@@ -96,86 +96,86 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Buried for not being Brueghel: overlooked masterpiece by still-life pioneer discovered in storage area",
-      "summary": "Osiecki had been studying the work of a renowned 17th-century Flemish artist, Clara Peeters, one of the earliest practitioners of still life painting.",
+      "category": "CULTURE",
+      "source": "The Guardian (Culture)",
+      "headline": "Add to playlist: the anxiety-ridden sugar rush of Tiffany Day and the week’s best new tracks",
+      "summary": "Enter Tiffany Day, a Wichita-raised artist who first went viral in 2017 when a video of her singing Hallelujah on a school trip blew up online.",
       "keyTakeaways": [
-        "The Oslo painting, Still Life with Small Game and Grapes on a Gilded Tazza, was created around 1620 and features nine freshly dead birds, hazelnuts, apricots and a fly perched on a bunch of grapes.",
-        "It had once been regarded as the work of a member of a famous family of Antwerp artists, Ambrosius Brueghel.",
-        "Since then it had mostly been consigned to storage."
+        "Only by channeling her frustrations into this year’s anxiety-ridden sugar rush Halo did Day finally regain her early momentum.",
+        "After his ultra-emotional, 80s-sampling rap tracks Cry and Southpaw this year, the UK vocalist switches up to singing for his synthwave-ballad debut for XL, restless and upset in the choppy wake of a breakup.",
+        "She spent the subsequent years unsuccessfully chipping away at building on that virality, cycling through acoustic guitar covers and bedroom R&B."
       ],
-      "whyItMatters": "Osiecki began to wonder whether the work – some details of which have been obscured by many layers of varnish – could be by Peeters, an enigmatic but prolific artist who pushed the boundaries of still life painting in the Northern European baroque period.",
-      "originalURL": "https://www.theguardian.com/artanddesign/2026/aug/07/clara-peeters-painting-oslo-national-mueum-norway",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "Right now popstar breakthrough and burnout are a hair’s breadth from one another.",
+      "originalURL": "https://www.theguardian.com/music/2026/aug/07/add-to-playlist-tiffany-day-and-the-weeks-best-new-tracks",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Morning light",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I heard a painting was found in storage. What's the story?",
-              "duration": 3.186939
-            },
-            {
-              "speaker": "explainer",
-              "text": "A researcher named Osiecki was studying Clara Peeters, an early Flemish still-life painter.",
-              "duration": 5.459592
-            },
-            {
-              "speaker": "listener",
-              "text": "And she noticed something?",
-              "duration": 1.48898
-            },
-            {
-              "speaker": "explainer",
-              "text": "There's an Oslo painting from around 1620, once attributed to Ambrosius Brueghel.",
-              "duration": 4.310204
-            },
-            {
-              "speaker": "listener",
-              "text": "So it was thought to be a Brueghel's work?",
-              "duration": 2.168163
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Because of that, it had mostly been kept in storage.",
-              "duration": 2.951837
-            },
-            {
-              "speaker": "listener",
-              "text": "What does the painting actually show?",
-              "duration": 1.854694
-            },
-            {
-              "speaker": "explainer",
-              "text": "A still life with nine small dead birds, hazelnuts, apricots, and a fly on a bunch of grapes.",
-              "duration": 4.91102
-            },
-            {
-              "speaker": "listener",
-              "text": "And now people think Peeters made it?",
-              "duration": 1.985306
-            },
-            {
-              "speaker": "explainer",
-              "text": "Osiecki began to wonder that. Peeters was an early, prolific still-life pioneer.",
-              "duration": 4.858776
-            },
-            {
-              "speaker": "listener",
-              "text": "Is anything making it hard to be sure?",
+              "text": "So who is Tiffany Day, exactly?",
               "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Some details are obscured by many layers of varnish, so questions remain.",
-              "duration": 3.94449
+              "text": "She's an artist from Wichita who first went viral back in 2017, singing Hallelujah on a school trip.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a big moment. Did it launch her career right away?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite. She spent the following years trying to build on it, moving through acoustic covers and bedroom R&B without quite recapturing that spark.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "So what changed this year?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "She channeled her frustrations into a new track called Halo, described as an anxiety-ridden sugar rush. That's what finally brought back her early momentum.",
+              "duration": 8.672653
+            },
+            {
+              "speaker": "listener",
+              "text": "Interesting. Is there another artist in this playlist worth mentioning?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a UK vocalist who's known for emotional, 80s-sampling rap tracks like Cry and Southpaw. This time he switches to singing, on a synthwave ballad for XL.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "What's that song about?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's restless and upset, written in the choppy aftermath of a breakup.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like these artists are all navigating something fragile.",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's really the theme here. Right now, breakthrough and burnout are only a hair's breadth apart.",
+              "duration": 5.511837
             }
           ]
         }
@@ -185,86 +185,86 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "Safety fears as scientists make first viruses designed by AI",
-      "summary": "Scientists have made the first viruses designed by artificial intelligence in a milestone that raises hopes for new medicines but also concerns over how to ensure the technology remains safe.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Bluster and backdown have turned Iran war into Trump’s own Groundhog Day",
+      "summary": "Being the subject of mockery may be the most intense of all Donald Trump’s known aversions.",
       "keyTakeaways": [
-        "The viruses are specific kinds known as bacteriophages, which only infect bacteria and are used around the world to treat patients with persistent infections.",
-        "In lab tests, a cocktail of the AI-designed viruses killed E coli bugs that were resistant to natural bacteriophages.",
-        "The viruses were then made in the laboratory and pitted against E coli in a dish."
+        "Critics suggest the ultimatum-climbdown sequence has acquired a Groundhog Day quality.",
+        "Despite negotiations between Iran and Oman over shipping in the strait of Hormuz, no deal has thus far materialized, and the strategically vital waterway – conduit to a fifth of the world’s oil supply before the war – remains closed.",
+        "The US president has also claimed multiple times that the US has “virtually” won the war and that Iran’s regime was clamoring for a deal."
       ],
-      "whyItMatters": "The genetic code for viruses that can infect plants, humans or other animals was intentionally excluded from the AI’s training to reduce the risk of it designing dangerous viruses.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/06/safety-fears-as-scientists-make-first-viruses-designed-by-ai",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "Last weekend saw the latest episode, as Trump told reporters onboard Air Force One that he had suddenly called off “a massive” attack that he said would have been “the biggest since world war two” after an appeal from US allies and because “I think there’s a deal”.",
+      "originalURL": "https://www.theguardian.com/world/ng-interactive/2026/aug/08/trump-iran-war-criticism-groundhog-day",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw scientists made the first viruses designed by AI. What does that mean?",
-              "duration": 4.91102
+              "text": "So what actually happened this time?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "They used artificial intelligence to design viruses, then built them in the lab.",
-              "duration": 3.996735
+              "text": "Trump said he called off a massive planned attack, one he described as the biggest since World War Two.",
+              "duration": 5.694694
             },
             {
               "speaker": "listener",
-              "text": "Viruses sound worrying. What kind are these?",
-              "duration": 2.638367
-            },
-            {
-              "speaker": "explainer",
-              "text": "They're bacteriophages, a type that only infects bacteria, not people.",
-              "duration": 4.127347
-            },
-            {
-              "speaker": "listener",
-              "text": "So how are those used?",
-              "duration": 1.619592
-            },
-            {
-              "speaker": "explainer",
-              "text": "They're used around the world to treat patients with persistent infections.",
-              "duration": 3.474286
-            },
-            {
-              "speaker": "listener",
-              "text": "And did the AI-designed ones actually work?",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "In lab tests, a cocktail of them killed E. coli that resisted natural phages.",
-              "duration": 4.440816
-            },
-            {
-              "speaker": "listener",
-              "text": "How was that tested?",
+              "text": "Why did he pull back?",
               "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "The viruses were made in the lab and pitted against E. coli in a dish.",
-              "duration": 3.787755
+              "text": "He says US allies appealed to him, and that he believes there's a deal coming.",
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
-              "text": "What about the safety fears?",
-              "duration": 1.697959
+              "text": "Is that pattern familiar?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "To reduce risk, code for viruses that infect plants, humans or animals was left out of the AI's training.",
-              "duration": 5.929796
+              "text": "Critics say yes — this ultimatum, then backdown, has a Groundhog Day feel to it now.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "What about the strait of Hormuz? I know that matters for oil.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's still closed. Iran and Oman have been talking, but no deal has come through yet.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "And Trump's take on the war itself?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's said several times the US has virtually won, and that Iran's regime is eager for a deal.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "But nothing's actually settled.",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. The waterway that carries a fifth of the world's oil remains shut for now.",
+              "duration": 4.440816
             }
           ]
         }
@@ -275,85 +275,85 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge",
-      "headline": "Trevor Noah is hosting Google’s Pixel 11 launch event",
-      "summary": "Google’s next hardware show will feature new gadgets and a lot of celebrities.",
+      "source": "The Guardian (Technology)",
+      "headline": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+      "summary": "A New Mexico court has ordered Meta, the parent company of Facebook, to pay $567m into a fund aimed at redressing adverse mental health impacts from the social media giant’s platforms.",
       "keyTakeaways": [
-        "Jimmy Fallon hosted the show last year, an event that my colleague Victoria Song described as more like “a live taping of The Tonight Show with Jimmy Fallon ” than a traditional tech launch event.",
-        "Given the celebrity faces set to appear at this year’s event, it seems that Google is once again aiming to reach a more mainstream audience.",
-        "It’s also airing right at the end of the ET workday: the event, which takes place in New York City, starts at 6PM ET."
+        "At the time, a jury found that the company knowingly harmed children’s mental health and concealed what it knew about child sexual exploitation on its platforms, and imposed the maximum penalty: a $375m fine.",
+        "The ruling on Thursday is an addition to that fine, bringing the total amount Meta is responsible for to $942m.",
+        "Judge Bryan Biedscheid said the bulk of the money – $420m – would be used for treatment services for young people in New Mexico."
       ],
-      "whyItMatters": "Google is set to host its next live Made by Google hardware launch event on August 12th, and the company says in a new video that comedian Trevor Noah will be hosting the show.",
-      "originalURL": "https://www.theverge.com/tech/976454/made-by-google-2026-event-pixel-11-trevor-noah",
-      "readTime": 4,
+      "whyItMatters": "Several former Meta moderators told the Guardian there were instances where they flagged harmful content related to child grooming, but the cases were not escalated.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+      "readTime": 5,
       "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Workstation",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw Google has a new hardware event coming up?",
-              "duration": 2.742857
+              "text": "So a court has ordered Meta to pay out over harms to children's mental health?",
+              "duration": 5.01551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, the next Made by Google launch is set for August 12th.",
-              "duration": 3.004082
+              "text": "Yes, a New Mexico court ordered $567m, paid into a fund to address those harms.",
+              "duration": 5.381224
             },
             {
               "speaker": "listener",
-              "text": "And someone notable is hosting it?",
-              "duration": 2.324898
+              "text": "Is that on top of something else, or is that the whole penalty?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "Comedian Trevor Noah will be hosting the show, according to a new video from the company.",
-              "duration": 4.362449
+              "text": "It's an addition. A jury earlier found Meta knowingly harmed children's mental health and hid what it knew about child sexual exploitation on its platforms, and fined it $375m.",
+              "duration": 12.434286
             },
             {
               "speaker": "listener",
-              "text": "That's an interesting choice. Have they done this before?",
-              "duration": 2.925714
+              "text": "So together that's...",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "Last year, Jimmy Fallon hosted.",
-              "duration": 1.750204
+              "text": "Right, $942m in total that Meta is now responsible for.",
+              "duration": 3.84
             },
             {
               "speaker": "listener",
-              "text": "How did that one feel?",
+              "text": "Where does most of this new money go?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "The judge said $420m of it will fund treatment services for young people in New Mexico.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a heavy topic. Has anything else come up about how these cases were handled internally?",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, former Meta moderators told the Guardian they'd flagged content related to child grooming, but some of those cases weren't escalated.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "That's sobering to hear.",
               "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "My colleague Victoria Song described it as more like a live taping of The Tonight Show than a traditional tech launch.",
-              "duration": 5.851429
-            },
-            {
-              "speaker": "listener",
-              "text": "So why bring in these celebrity hosts?",
-              "duration": 2.507755
-            },
-            {
-              "speaker": "explainer",
-              "text": "With the faces appearing this year, it seems Google is again aiming to reach a more mainstream audience.",
-              "duration": 5.32898
-            },
-            {
-              "speaker": "listener",
-              "text": "When and where can people watch it?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "It takes place in New York City and starts at 6PM ET, right at the end of the workday.",
-              "duration": 4.414694
+              "text": "It is. It's part of why this ruling is being watched so closely.",
+              "duration": 3.604898
             }
           ]
         }
@@ -363,86 +363,86 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Wildfire damage could take hundreds of years to recover from, experts say",
-      "summary": "Nick Thomas, from Natural Resources Wales (NRW), said if soil had been incinerated in upland areas rich in peat, which grows at about a millimetre a year, it could take centuries for the vegetation to come back.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The White House’s plan to vet potentially dangerous AI is cloaked in secrecy",
+      "summary": "So far, the White House is keeping details of the framework private, in a blow to transparency and potential boon for secretive AI companies.",
       "keyTakeaways": [
-        "While some areas will recover quite quickly - potentially within a couple of years - he said: \"It all depends on how deep the fire goes.",
-        "Thomas said a large wildfire on Mynydd Llantysilio near Llangollen, Denbighshire, in 2018 had incinerated about 10cm (4in) of peat in some areas.",
-        "Eight years on, there is still no heather in large patches."
+        "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft attended a private meeting with White House officials to review the AI framework.",
+        "The White House, OpenAI and Anthropic did not respond to a request for comment.",
+        "In June, the White House issued an executive order that called for AI companies to voluntarily submit their new models for government review up to 30 days before release."
       ],
-      "whyItMatters": "As well as damage to natural habitats and animal life, Thomas warned loss of soil could increase flood risks, because it no longer acted as a \"sponge\" holding water on high ground.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c0qvp00x707o?at_medium=RSS&at_campaign=rss",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The academy",
+      "whyItMatters": "Discussions over creating an AI cybersecurity framework began earlier this year after the release of Anthropic’s Mythos model, which the company withheld from public release in April over concerns that it could be used to hack into IT and financial systems.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/07/white-house-ai",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-07/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I read that some wildfire damage could take hundreds of years to recover. Is that really true?",
-              "duration": 5.250612
+              "text": "So what actually happened here?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "It can be, according to Nick Thomas from Natural Resources Wales.",
-              "duration": 3.422041
+              "text": "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft met privately with White House officials.",
+              "duration": 6.347755
             },
             {
               "speaker": "listener",
-              "text": "Why would it take so long?",
-              "duration": 1.515102
+              "text": "What were they discussing?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "In upland areas rich in peat, if the soil is incinerated, the vegetation can take centuries to come back.",
-              "duration": 5.929796
+              "text": "A framework for vetting AI models that might be dangerous, but the details are being kept private.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "Why peat especially?",
-              "duration": 1.567347
+              "text": "Why does that matter?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "Peat grows at only about a millimetre a year, so it recovers very slowly.",
-              "duration": 3.996735
+              "text": "It's a blow to transparency, and it could work in favor of AI companies that prefer to stay secretive.",
+              "duration": 5.32898
             },
             {
               "speaker": "listener",
-              "text": "Does every fire cause that kind of lasting harm?",
-              "duration": 3.160816
+              "text": "Did anyone explain the secrecy?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "No. Some areas recover within a couple of years. Thomas said it all depends on how deep the fire goes.",
-              "duration": 6.452245
+              "text": "No. The White House, OpenAI and Anthropic all declined to comment.",
+              "duration": 4.493061
             },
             {
               "speaker": "listener",
-              "text": "Is there an example of the deeper kind of damage?",
-              "duration": 2.873469
+              "text": "Is there a policy behind this already?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "A large wildfire near Llangollen in 2018 incinerated about 10cm of peat in places. Eight years on, there's still no heather in large patches.",
-              "duration": 9.273469
+              "text": "Yes, in June the White House issued an order asking companies to voluntarily submit new models for review up to 30 days before release.",
+              "duration": 7.366531
             },
             {
               "speaker": "listener",
-              "text": "And why does this matter beyond the plants themselves?",
-              "duration": 2.873469
+              "text": "What sparked all this?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "As well as harming habitats and animal life, losing that soil can raise flood risks, because it no longer acts as a sponge holding water on high ground.",
-              "duration": 8.254694
+              "text": "It traces back to April, when Anthropic withheld its Mythos model over concerns it could be used to hack IT and financial systems.",
+              "duration": 7.366531
             }
           ]
         }

@@ -605,11 +605,20 @@ def parse_solo_lines(text):
     if not (isinstance(arr, list) and arr
             and all(isinstance(x, str) and x.strip() for x in arr)):
         raise ValueError(f"solo narration must be a non-empty array of sentence strings: {text[:120]!r}")
+    # The 6–10 rule judges what the MODEL wrote, so it must run on the raw array — BEFORE the
+    # deterministic length repair. On 2026-08-08 (run 31275454416, signal 5) the model returned
+    # a perfectly valid 10-sentence array whose first sentence was 61 chars — one over the
+    # ceiling — so _split_long_sentence repaired it into two, and the count gate then rejected
+    # its own repair ("unexpected solo sentence count 11"). Splitting rephrases length, it adds
+    # no content; the post-split bound only guards runaway repair (every sentence maximally
+    # fragmented), so it is loose: ≤ 14.
+    if not (6 <= len(arr) <= 10):
+        raise ValueError(f"unexpected solo sentence count {len(arr)} (need 6–10)")
     sents = []
     for x in arr:
         sents.extend(_split_long_sentence(x.strip()))
-    if not (6 <= len(sents) <= 10):
-        raise ValueError(f"unexpected solo sentence count {len(sents)} (need 6–10)")
+    if len(sents) > 14:
+        raise ValueError(f"length repair fragmented {len(arr)} sentences into {len(sents)} (max 14)")
     return [{"speaker": "narrator", "text": t} for t in sents]
 
 

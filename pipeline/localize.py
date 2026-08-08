@@ -36,7 +36,9 @@ API_URL = "https://api.anthropic.com/v1/messages"
 API_VERSION = "2023-06-01"
 # Override per-environment with SIGNALS_JA_MODEL / --model. Kept as a plain alias so ops can point
 # it at whatever current model they prefer without touching code.
-DEFAULT_MODEL = "claude-3-5-sonnet-latest"
+DEFAULT_MODEL = "claude-sonnet-5"   # fallback only — SIGNALS_JA_MODEL (set in CI) always wins.
+                                    # The previous fallback, claude-3-5-sonnet-latest, is retired
+                                    # and would 400 on its own if the env var ever went missing.
 MAX_TOKENS = 1024
 TIMEOUT = 60
 
@@ -84,11 +86,18 @@ def _english_payload(sig):
 
 
 def _call_anthropic(user_text, model, api_key):
-    """One Messages API call → raw assistant text. Raises LocalizeError on transport/HTTP failure."""
+    """One Messages API call → raw assistant text. Raises LocalizeError on transport/HTTP failure.
+
+    NO SAMPLING PARAMETERS. Current models (Claude Sonnet 5, Opus 4.7/4.8, Opus 5, Fable 5,
+    Mythos 5) reject a non-default temperature/top_p/top_k with HTTP 400 on every request.
+    This function carried temperature: 0.4 from the claude-3-5-sonnet era, and on 2026-08-08
+    every signal failed with "`temperature` is deprecated for this model." the moment
+    SIGNALS_JA_MODEL pointed at claude-sonnet-5 — the same outage listen_generate.py had on
+    2026-08-06/07. The key must be OMITTED, not set to a default value; sending it at all is
+    the failure. test_localize_request_payload.py pins this against the real request body."""
     body = json.dumps({
         "model": model,
         "max_tokens": MAX_TOKENS,
-        "temperature": 0.4,
         "system": SYSTEM_PROMPT,
         "messages": [{"role": "user", "content": user_text}],
     }).encode("utf-8")

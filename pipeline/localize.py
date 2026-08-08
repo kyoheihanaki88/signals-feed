@@ -196,6 +196,47 @@ def localize_feed(feed, *, model, api_key, strict=False, limit=None, log=print):
     return feed, stats
 
 
+def ci_annotations(stats, *, key_present, summary_path=None, log=print):
+    """Make a silent Japanese wipe-out loud in CI, without ever blocking the publish.
+
+    Best-effort is the right SHIPPING behaviour — an English-only edition beats no
+    edition — but on 2026-08-07 it also proved to be perfect camouflage: the Anthropic
+    account ran out of credits, all five signals skipped localization, the workflow
+    stayed green, and nobody knew Japanese was gone until JA Listen failed hours later
+    for what looked like an unrelated reason (no japanese_reference → the model invented
+    a number → quality gate). This emits GitHub Actions annotations (::warning:: on
+    stdout, plus $GITHUB_STEP_SUMMARY when present) so a wipe-out is visible on the run
+    page the moment it happens. Annotations only — the exit code stays 0 by design.
+
+    Returns the warning text (or None) so tests can assert on it directly.
+    """
+    total = stats.get("total", 0)
+    if total == 0:
+        return None
+    if not key_present:
+        text = (f"Japanese localization skipped for all {total} signals — ANTHROPIC_API_KEY "
+                f"is not set. The edition ships English-only.")
+    elif stats.get("localized", 0) == 0:
+        text = (f"Japanese localization FAILED for all {total} signals — the edition ships "
+                f"English-only, and JA Listen will fail later without japanese_reference. "
+                f"Read the per-signal errors above (an expired key or exhausted credit "
+                f"balance fails exactly like this).")
+    elif stats.get("failed", 0) > 0:
+        text = (f"Japanese localization failed for {stats['failed']} of {total} signals — "
+                f"those signals ship English-only. Per-signal errors above.")
+    else:
+        return None
+
+    log(f"::warning title=localize.py::{text}")
+    if summary_path:
+        try:
+            with open(summary_path, "a", encoding="utf-8") as f:
+                f.write(f"\n⚠️ **localize.py** — {text}\n")
+        except OSError as e:
+            log(f"::warning::could not append to step summary: {e}")
+    return text
+
+
 def main():
     ap = argparse.ArgumentParser(description="Add optional localized.ja to a built Signals feed.")
     ap.add_argument("feed", help="path to a built feed JSON (e.g. pipeline/generated/latest.draft.json)")
@@ -232,6 +273,8 @@ def main():
     print(f"\n  {stats['localized']}/{stats['total']} localized, "
           f"{stats['failed']} failed, {stats['skipped']} skipped → {os.path.relpath(out)}")
     print("  (English fields unchanged; localized.ja is additive and optional.)")
+    ci_annotations(stats, key_present=bool(api_key),
+                   summary_path=os.environ.get("GITHUB_STEP_SUMMARY"))
 
 
 if __name__ == "__main__":

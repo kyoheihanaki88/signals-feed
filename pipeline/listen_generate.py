@@ -153,6 +153,50 @@ SCRIPT_SYSTEM_JA_SOLO = (
 
 
 # ── external calls (injectable for tests) ───────────────────────────────────────────────────────
+# JA format retry (2026-08-08 outage). Sonnet 5 occasionally answers the solo-narration prompt
+# with prose around (or instead of) the JSON array; parse_solo_lines rightly rejects that, but
+# with no retry one bad sample killed the whole run — twice, at the same signal, with nothing
+# saved to inspect. Retry is JA-ONLY and covers ONLY parser/format ValueErrors (including
+# sentence-count/shape — every ValueError the parsers raise is an output-format defect).
+# HTTP/auth errors still raise RuntimeError immediately, and the quality gate in generate()
+# still fails the run without any retry. EN keeps exactly one attempt, byte-identical payload.
+JA_FORMAT_MAX_ATTEMPTS = 3        # 1 initial + up to 2 retries
+_JA_FORMAT_RETRY_NOTE = (
+    "\n\n[出力形式の再指示] 前回の出力はJSON配列として解析できませんでした。"
+    "説明・前置き・後書き・Markdown・コードフェンスは一切書かず、"
+    "JSON配列のみを出力してください。"
+)
+# The edition date generate() is currently running, for the failed-output artifact filename.
+# A module variable (not a new llm_fn parameter) so the injectable llm_fn/test-double contract
+# and every existing call site stay untouched.
+_JA_RUN_DATE = None
+
+
+def _dump_failed_ja_format(num, attempt, model, error, raw_text):
+    """DEBUG-ONLY: save a format-rejected raw LLM output where the workflow's existing
+    artifact glob (scratch/failed_ja_dialogue_*.json) will pick it up. Before this, a parse
+    failure aborted the run with NOTHING saved — the summary pointed at an artifact that was
+    never written. One file per attempt, kept even if a later attempt succeeds.
+
+    Contains ONLY: date, signal, attempt, model, parse_error, raw_output. Never the API key,
+    headers, or any secret. NEVER raises; returns the path written, or None."""
+    try:
+        scratch = os.path.join(ROOT, "scratch")
+        os.makedirs(scratch, exist_ok=True)
+        date = _JA_RUN_DATE or "unknown-date"
+        path = os.path.join(scratch,
+                            f"failed_ja_dialogue_{date}_signal{num}_attempt{attempt}_format.json")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"date": date, "signal": num, "attempt": attempt, "model": model,
+                       "parse_error": str(error), "raw_output": raw_text},
+                      f, ensure_ascii=False, indent=2)
+        print(f"    format-rejected LLM output saved: {os.path.relpath(path, ROOT)}",
+              file=sys.stderr)
+        return path
+    except Exception:
+        return None
+
+
 def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
     fields = {k: signal.get(k) for k in ("headline", "summary", "keyTakeaways", "whyItMatters") if signal.get(k)}
     if lang == "ja":
@@ -160,46 +204,67 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
         if ja_ref:
             fields["japanese_reference"] = ja_ref     # ground JA terminology in the app's own JP text
     system = SCRIPT_SYSTEM_JA_SOLO if lang == "ja" else SCRIPT_SYSTEM
-    # NO SAMPLING PARAMETERS. Claude Opus 4.7/4.8, Opus 5, Sonnet 5, Fable 5 and Mythos 5 reject a
-    # non-default temperature, top_p or top_k with HTTP 400 on EVERY request, whether or not
-    # thinking is used (docs: Thinking → Limits and feature compatibility). This request carried
-    # temperature: 0.5 from the claude-3-5-sonnet era, which is why the Listen chain 400'd on
-    # 2026-08-06/07 and why simply pointing SIGNALS_LISTEN_MODEL at a newer model did not help.
-    # The key must be OMITTED, not set to a default value — sending it at all is the failure.
-    # Determinism now comes from the system prompt and the quality gates, not from a sampler knob.
-    body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
-                       "system": system,
-                       "messages": [{"role": "user", "content": json.dumps(fields, ensure_ascii=False)}]}).encode()
-    req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
-        "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION, "content-type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            data = json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        # The API answers a rejected request with a JSON body naming the exact problem —
-        # "model: <id> not found", an unsupported parameter, and so on. urllib discards
-        # that body, so the bare exception reads only "HTTP Error 400: Bad Request" and
-        # says nothing about which model or field was wrong. On 2026-08-06 the whole
-        # Listen chain stopped because the configured model had reached its retirement
-        # date, and the logs showed only the status line. Surface the body, and name the
-        # model being used, so a retirement is obvious from the failing run itself.
+    user_content = json.dumps(fields, ensure_ascii=False)
+
+    def request_text(content):
+        # NO SAMPLING PARAMETERS — on any attempt. Claude Opus 4.7/4.8, Opus 5, Sonnet 5,
+        # Fable 5 and Mythos 5 reject a non-default temperature, top_p or top_k with HTTP 400
+        # on EVERY request (docs: Thinking → Limits and feature compatibility). This request
+        # carried temperature: 0.5 from the claude-3-5-sonnet era, which is why the Listen
+        # chain 400'd on 2026-08-06/07 and why changing SIGNALS_LISTEN_MODEL did not help.
+        # The key must be OMITTED, not set to a default value.
+        body = json.dumps({"model": model, "max_tokens": 1200 if lang == "ja" else 900,
+                           "system": system,
+                           "messages": [{"role": "user", "content": content}]}).encode()
+        req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
+            "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION, "content-type": "application/json"})
         try:
-            detail = e.read().decode("utf-8", "replace")[:600]
-        except Exception:
-            detail = "<response body unavailable>"
-        raise RuntimeError(
-            f"Anthropic request failed: HTTP {e.code} {e.reason}\n"
-            f"  model={model!r} (from SIGNALS_LISTEN_MODEL, else the built-in default)\n"
-            f"  lang={lang}\n"
-            f"  response: {detail}\n"
-            f"  A 400 after a model change is usually one of two things: the old model was "
-            f"retired (see docs/about-claude/model-deprecations — update SIGNALS_LISTEN_MODEL), "
-            f"or the request carries a parameter the new model rejects. Recent models refuse a "
-            f"non-default temperature/top_p/top_k outright (see docs Thinking → Limits and "
-            f"feature compatibility). The 'response' line above names which one it is."
-        ) from e
-    text = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
-    return parse_solo_lines(text) if lang == "ja" else parse_dialogue(text)
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            # The API answers a rejected request with a JSON body naming the exact problem —
+            # "model: <id> not found", an unsupported parameter, and so on. urllib discards
+            # that body, so the bare exception reads only "HTTP Error 400: Bad Request" and
+            # says nothing about which model or field was wrong. On 2026-08-06 the whole
+            # Listen chain stopped because the configured model had reached its retirement
+            # date, and the logs showed only the status line. Surface the body, and name the
+            # model being used, so a retirement is obvious from the failing run itself.
+            try:
+                detail = e.read().decode("utf-8", "replace")[:600]
+            except Exception:
+                detail = "<response body unavailable>"
+            raise RuntimeError(
+                f"Anthropic request failed: HTTP {e.code} {e.reason}\n"
+                f"  model={model!r} (from SIGNALS_LISTEN_MODEL, else the built-in default)\n"
+                f"  lang={lang}\n"
+                f"  response: {detail}\n"
+                f"  A 400 after a model change is usually one of two things: the old model was "
+                f"retired (see docs/about-claude/model-deprecations — update SIGNALS_LISTEN_MODEL), "
+                f"or the request carries a parameter the new model rejects. Recent models refuse a "
+                f"non-default temperature/top_p/top_k outright (see docs Thinking → Limits and "
+                f"feature compatibility). The 'response' line above names which one it is."
+            ) from e
+        return "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text").strip()
+
+    if lang != "ja":
+        # EN: exactly one attempt, identical payload and behavior to the historical path.
+        return parse_dialogue(request_text(user_content))
+
+    last_err = None
+    for attempt in range(1, JA_FORMAT_MAX_ATTEMPTS + 1):
+        content = user_content if attempt == 1 else user_content + _JA_FORMAT_RETRY_NOTE
+        text = request_text(content)          # HTTP/auth failures raise here — never retried
+        try:
+            return parse_solo_lines(text)
+        except ValueError as e:               # format defect only (json.JSONDecodeError included)
+            last_err = e
+            _dump_failed_ja_format(signal.get("number"), attempt, model, e, text)
+    num = signal.get("number")
+    raise ValueError(
+        f"signal {num} [ja]: LLM output was not a valid solo-narration JSON array after "
+        f"{JA_FORMAT_MAX_ATTEMPTS} attempts — last parse error: {last_err} "
+        f"(rejected outputs saved to scratch/failed_ja_dialogue_*_format.json)"
+    ) from last_err
 
 
 # ── Azure Speech backend (JA only) ───────────────────────────────────────────────────────────────
@@ -935,6 +1000,8 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
     usual. Atomicity is unchanged: nothing uploads and no manifest is written until 5/5 pass in
     one run. Set LISTEN_JA_RESUME=0 to force full regeneration. EN never reads or writes
     checkpoints."""
+    global _JA_RUN_DATE
+    _JA_RUN_DATE = date        # names the failed-output artifact; read only by the JA dump helper
     edition = os.path.join(ROOT, "editions", f"{date}.json")
     feed = json.load(open(edition, encoding="utf-8"))
     if feed.get("date") != date:

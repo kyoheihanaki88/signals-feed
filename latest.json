@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,149 +9,98 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Trump loyalist Todd Blanche confirmed by Senate as US attorney general",
-      "summary": "The US senate voted to confirm Todd Blanche as attorney general in a major win for Donald Trump, who will now have his one-time personal attorney sitting atop the nation’s law enforcement apparatus.",
+      "headline": "Labor open to ‘sensible amendments’ to gambling laws after inquiry hears alcohol and cocaine offered to punters",
+      "summary": "The Albanese government is prepared to tighten rules on gambling inducements, but is less likely to budge on advertising rules, as negotiations continue on wagering legislation, which so far has lacked the support needed to pass parliament.",
       "keyTakeaways": [
-        "Senator Bill Cassidy of Louisiana cast the deciding vote in Blanche’s favor after two other Republicans – Susan Collins of Maine and Lisa Murkowski of Alaska – voted against him.",
-        "The vote came after Blanche’s nomination had been in limbo for weeks.",
-        "That appears to have cost Blanche among at least some GOP senators who will oppose his nomination."
+        "Federal Labor is open to considering amendments to its legislation from the Coalition when MPs return to Canberra this week, sources say.",
+        "The Coalition, crossbenchers and the Greens have opposed Labor’s reforms as proposed by the communications minister, Anika Wells, meaning the legislation is unlikely to pass in its current form.",
+        "Sources said the government was more inclined to deal with the Coalition and would await amendments from the opposition after its party room met in the nation’s capital this week."
       ],
-      "whyItMatters": "He faced pushback from Republican senators over the department’s deal to create a $1.8bn so-called “anti-weaponization fund” and to give the president, his sons, and business tax immunity.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/08/todd-blanche-attorney-general-confirmed",
+      "whyItMatters": "Additional restrictions on ads are a major demand of gambling harm advocates and the Senate crossbench.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/09/labor-amendments-gambling-laws-inquiry-hears-alcohol-cocaine-offered-punters",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ギャンブル規制法、労働党は「妥当な修正」に応じる姿勢",
+          "summary": "調査で酒やコカインを賭客に提供していた実態が明らかになったことを受け、アルバニージー政権はギャンブルへの勧誘規制を強化する方針だ。ただ広告規制については譲歩の余地が少ないとみられる。賭博関連法案は議会通過に必要な支持をまだ得られておらず、交渉が続いている。",
+          "keyTakeaways": [
+            "連邦議会が今週再開されるのを前に、労働党は野党保守連合による修正案の検討に前向きだと関係者は話す。",
+            "通信担当相アニカ・ウェルズが提示した改革案には保守連合、クロスベンチ、緑の党が反対しており、現行案のままでは法案通過は難しい情勢だ。",
+            "政府は保守連合との協議を優先し、今週の党内会合を経て示される修正案を待つ構えだという。"
+          ],
+          "whyItMatters": "広告への追加規制は、ギャンブル被害の防止を訴える団体や上院クロスベンチにとって重要な要求事項である。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-09/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the Senate confirmed Todd Blanche as attorney general?",
-              "duration": 3.291429
+              "text": "So what's actually happening with these gambling laws?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "That's right. He was Trump's personal attorney, and now he'll lead the Justice Department.",
+              "text": "The Albanese government's wagering legislation hasn't had enough support to pass parliament yet.",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "listener",
+              "text": "Why not? Who's against it?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Coalition, the Greens, and crossbenchers have all opposed Labor's reforms as they stand, put forward by communications minister Anika Wells.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "I saw something about an inquiry hearing troubling details about inducements.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the inquiry heard punters were offered alcohol and cocaine. That's part of what's driving calls to tighten the rules.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "So is the government willing to change its approach?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sources say Labor is open to sensible amendments, especially from the Coalition once MPs return to Canberra this week.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "What about advertising restrictions? That seems like a big issue too.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Gambling harm advocates and the Senate crossbench see stronger ad rules as essential, but the government seems less willing to move on that front.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "So the inducements side might shift, but ads stay largely the same?",
               "duration": 4.362449
             },
             {
-              "speaker": "listener",
-              "text": "Was it a close vote?",
-              "duration": 1.332245
-            },
-            {
               "speaker": "explainer",
-              "text": "Close enough. Senator Bill Cassidy of Louisiana cast the deciding vote in his favor.",
-              "duration": 5.146122
-            },
-            {
-              "speaker": "listener",
-              "text": "Did everyone in his party support him?",
-              "duration": 1.933061
-            },
-            {
-              "speaker": "explainer",
-              "text": "No. Susan Collins and Lisa Murkowski both voted against the nomination.",
-              "duration": 3.94449
-            },
-            {
-              "speaker": "listener",
-              "text": "Why the hesitation from some Republicans?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "Part of it was timing. The nomination sat in limbo for weeks, and that seems to have cost him support.",
-              "duration": 5.564082
-            },
-            {
-              "speaker": "listener",
-              "text": "Was there a policy concern too?",
-              "duration": 1.854694
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Some senators pushed back on a deal tied to an $1.8bn so-called anti-weaponization fund, and on tax immunity extended to the president, his sons, and their businesses.",
-              "duration": 11.180408
-            },
-            {
-              "speaker": "listener",
-              "text": "So this is being seen as a real win for Trump.",
-              "duration": 2.533878
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. It puts someone close to him directly in charge of federal law enforcement.",
-              "duration": 5.146122
+              "text": "That's the sense from sources for now. It really depends on what amendments the Coalition brings after its party room meeting.",
+              "duration": 6.269388
             }
           ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "米国の上院が、トッド・ブランシュ氏を司法長官として承認しました。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "かつてトランプ氏個人の弁護士だった人物が、国の法執行機関の頂点に立つことになります。",
-              "duration": 6.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "採決では共和党のスーザン・コリンズ氏とリサ・マーコウスキー氏が反対票を投じました。",
-              "duration": 6.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "最終的に賛成に回ったビル・キャシディ氏の一票が、承認を決定づけました。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "この人事案は、数週間にわたって議会内で滞っていました。",
-              "duration": 5.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、司法省が18億ドル規模の「反武器化基金」を新設する取り決めがあります。",
-              "duration": 7.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "この基金には、トランプ氏本人や息子たち、関連する事業への税の免除も含まれていました。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした内容に一部の共和党議員が反発し、賛否が割れる結果につながりました。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "司法長官人事は、政権と法の距離感を測る一つの目安にもなります。",
-              "duration": 5.928
-            }
-          ]
-        }
-      },
-      "localized": {
-        "ja": {
-          "headline": "トランプ氏の側近ブランシュ氏、米司法長官に就任承認",
-          "summary": "米上院は、トッド・ブランシュ氏を司法長官に承認した。トランプ大統領にとって大きな勝利であり、かつての個人弁護士が国の法執行機関の頂点に立つことになる。",
-          "keyTakeaways": [
-            "共和党のスーザン・コリンズ氏とリサ・マーコウスキー氏が反対票を投じたが、ビル・キャシディ氏が賛成に回り、承認を決定づけた。",
-            "指名は数週間にわたり停滞していた。",
-            "その停滞が一部の共和党議員の支持離れを招いたとみられる。"
-          ],
-          "whyItMatters": "司法省が総額18億ドル規模の「反武器化基金」を設け、大統領やその息子たち、関連事業に税の免除を与える取り決めを結んだことに、共和党議員から反発が出ていた。"
         }
       }
     },
@@ -159,146 +108,100 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "CULTURE",
-      "source": "The Guardian (Culture)",
-      "headline": "Add to playlist: the anxiety-ridden sugar rush of Tiffany Day and the week’s best new tracks",
-      "summary": "Enter Tiffany Day, a Wichita-raised artist who first went viral in 2017 when a video of her singing Hallelujah on a school trip blew up online.",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+      "summary": "Oman has said positive talks have been taking place with Iran over an agreement to secure a shipping route through the Strait of Hormuz, as Tehran warned that any deal would not see an immediate reopening of the vital waterway.",
       "keyTakeaways": [
-        "Only by channeling her frustrations into this year’s anxiety-ridden sugar rush Halo did Day finally regain her early momentum.",
-        "After his ultra-emotional, 80s-sampling rap tracks Cry and Southpaw this year, the UK vocalist switches up to singing for his synthwave-ballad debut for XL, restless and upset in the choppy wake of a breakup.",
-        "She spent the subsequent years unsuccessfully chipping away at building on that virality, cycling through acoustic guitar covers and bedroom R&B."
+        "Iranian Foreign Minister Abbas Araghchi said talks were in their final stages but the reopening of the strait remained \"subject to other conditions\".",
+        "He said the conditions included Iran receiving compensation from the US for what Tehran described as violations of the deal both sides signed in June to cease fighting and advance talks to end the war.",
+        "That deal - called a Memorandum of Understanding (MoU) - quickly fell through, as did diplomatic talks, with tit-for-tat attacks resuming just days after it was signed."
       ],
-      "whyItMatters": "Right now popstar breakthrough and burnout are a hair’s breadth from one another.",
-      "originalURL": "https://www.theguardian.com/music/2026/aug/07/add-to-playlist-tiffany-day-and-the-weeks-best-new-tracks",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Morning light",
+      "whyItMatters": "Both sides suggested on Saturday that discussions were progressing, but a timeline on any deal being finalised remained unclear.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホルムズ海峡めぐる協議、前向きな進展",
+          "summary": "オマーンは、ホルムズ海峡の航行安全確保に向けたイランとの協議が前向きに進んでいると明らかにした。一方でテヘラン側は、合意が成立しても海峡がただちに再開されるわけではないとくぎを刺している。",
+          "keyTakeaways": [
+            "イランのアラグチ外相は、協議は最終段階にあるとしつつ、海峡再開には「別の条件」が伴うと発言。",
+            "その条件には、六月に停戦と終戦交渉の継続で両国が合意した覚書への違反として、米国からの補償を受けることが含まれるという。",
+            "この覚書は成立後すぐに機能を失い、外交協議も停滞、署名から数日で応酬的な攻撃が再開した。"
+          ],
+          "whyItMatters": "両国は土曜日、協議の進展を示唆したが、最終合意の時期はなお見通せない。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-09/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So who is Tiffany Day, exactly?",
-              "duration": 2.220408
+              "text": "So there's talk of a deal over the Strait of Hormuz — is it actually close?",
+              "duration": 4.257959
             },
             {
               "speaker": "explainer",
-              "text": "She's an artist from Wichita who first went viral back in 2017, singing Hallelujah on a school trip.",
-              "duration": 5.511837
+              "text": "Oman says the talks are positive, and Iran's foreign minister has called them final-stage.",
+              "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "That's a big moment. Did it launch her career right away?",
-              "duration": 3.160816
+              "text": "Final-stage sounds promising. Does that mean the strait reopens soon?",
+              "duration": 4.075102
             },
             {
               "speaker": "explainer",
-              "text": "Not quite. She spent the following years trying to build on it, moving through acoustic covers and bedroom R&B without quite recapturing that spark.",
-              "duration": 8.594286
+              "text": "Not quite. Iran says any agreement still depends on other conditions being met first.",
+              "duration": 4.179592
             },
             {
               "speaker": "listener",
-              "text": "So what changed this year?",
-              "duration": 1.619592
+              "text": "What kind of conditions?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "She channeled her frustrations into a new track called Halo, described as an anxiety-ridden sugar rush. That's what finally brought back her early momentum.",
-              "duration": 8.672653
+              "text": "Iran wants compensation from the US, saying it violated an earlier agreement between them.",
+              "duration": 4.832653
             },
             {
               "speaker": "listener",
-              "text": "Interesting. Is there another artist in this playlist worth mentioning?",
-              "duration": 3.892245
+              "text": "Wasn't there already a deal to stop the fighting?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a UK vocalist who's known for emotional, 80s-sampling rap tracks like Cry and Southpaw. This time he switches to singing, on a synthwave ballad for XL.",
-              "duration": 9.691429
+              "text": "Yes, a memorandum signed in June. But it broke down quickly, and attacks resumed within days.",
+              "duration": 5.564082
             },
             {
               "speaker": "listener",
-              "text": "What's that song about?",
+              "text": "So this new round of talks is trying to rebuild trust after that collapse.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Both sides say progress is being made, but there's no clear timeline yet.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "So cautious optimism, but nothing settled.",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's a fair way to put it.",
               "duration": 1.38449
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's restless and upset, written in the choppy aftermath of a breakup.",
-              "duration": 3.996735
-            },
-            {
-              "speaker": "listener",
-              "text": "It sounds like these artists are all navigating something fragile.",
-              "duration": 3.657143
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's really the theme here. Right now, breakthrough and burnout are only a hair's breadth apart.",
-              "duration": 5.511837
             }
           ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Tiffany Dayという歌手の話が、今朝は静かに耳に留まりました。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "2017年、学校旅行でHallelujahを歌う動画が話題になった人です。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "その後は長く、思うように波に乗れない時期が続きました。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "アコースティックカバーや落ち着いたR&Bを試しながら模索していたそうです。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "今年、焦りや不安をそのまま音に込めた新曲Haloで、久しぶりに勢いを取り戻しました。",
-              "duration": 7.152
-            },
-            {
-              "speaker": "narrator",
-              "text": "同じ時期には、失恋の動揺をシンセウェイブのバラードに変えたイギリスの歌手の曲も注目されています。",
-              "duration": 7.272
-            },
-            {
-              "speaker": "narrator",
-              "text": "今のポップミュージックでは、成功と燃え尽きの距離が驚くほど近いようです。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "今週のプレイリストには、そんな揺れる心情がそのまま音になった曲が並んでいます。",
-              "duration": 6.288
-            }
-          ]
-        }
-      },
-      "localized": {
-        "ja": {
-          "headline": "今週の新曲、不安と甘さが入り混じるティファニー・デイ",
-          "summary": "ウィチタ出身のティファニー・デイは、学校の旅行中に歌った「ハレルヤ」の動画が拡散し、2017年に一躍注目を集めたアーティストだ。",
-          "keyTakeaways": [
-            "苛立ちを今年の新曲、不安げで甘さの弾けるHaloに注ぎ込んだことで、デイはようやくデビュー当初の勢いを取り戻した。",
-            "今年発表した80年代サウンドを取り込んだ感情的なラップ曲「クライ」「サウスポー」を経て、この英国出身の歌手はXLからのシンセウェイブ調バラードのデビュー作で歌唱へと転じる。破局の余韻の中、そこには落ち着かない痛みがにじむ。",
-            "その後の数年間、デイはあの話題性の上に何かを築こうと試みたが実らず、アコースティックカバーやベッドルームR&Bを渡り歩いた。"
-          ],
-          "whyItMatters": "今、ポップスターとしての飛躍と燃え尽きは、ほんの一歩の距離にある。"
         }
       }
     },
@@ -306,151 +209,100 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Bluster and backdown have turned Iran war into Trump’s own Groundhog Day",
-      "summary": "Being the subject of mockery may be the most intense of all Donald Trump’s known aversions.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "OpenAI to pause some work on AI model Astra due to security concerns",
+      "summary": "OpenAI will pause some work on an artificial intelligence model because of security concerns, the company stated on Friday, following a series of incidents in which AI agents have escaped containment.",
       "keyTakeaways": [
-        "Critics suggest the ultimatum-climbdown sequence has acquired a Groundhog Day quality.",
-        "Despite negotiations between Iran and Oman over shipping in the strait of Hormuz, no deal has thus far materialized, and the strategically vital waterway – conduit to a fifth of the world’s oil supply before the war – remains closed.",
-        "The US president has also claimed multiple times that the US has “virtually” won the war and that Iran’s regime was clamoring for a deal."
+        "OpenAI stated that the model was not involved in an incident in which one of its AI agents went rogue during a test, accessed the open web and hacked a startup, Hugging Face.",
+        "The reports have increased concerns about advancements in AI models and humans’ ability to control them.",
+        "Still, critics of the AI industry have warned that such disclosures from OpenAI and its competitors Anthropic and Meta could be designed to generate hype about the technology’s power and thus spur additional interest from investors."
       ],
-      "whyItMatters": "Last weekend saw the latest episode, as Trump told reporters onboard Air Force One that he had suddenly called off “a massive” attack that he said would have been “the biggest since world war two” after an appeal from US allies and because “I think there’s a deal”.",
-      "originalURL": "https://www.theguardian.com/world/ng-interactive/2026/aug/08/trump-iran-war-criticism-groundhog-day",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "whyItMatters": "The company had evaluated the agent, Astra, and found “significant advancements in agentic coding and cybersecurity”, which had moved to a “critical” threshold where it can find and exploit vulnerabilities without human intervention, or devise and execute cyber-attacks when given only a “high level desired goal”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/08/openai-astra-security-concerns",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "OpenAI、「アストラ」の一部開発を一時停止 セキュリティ懸念で",
+          "summary": "OpenAIは金曜、セキュリティ上の懸念からAIモデルの一部開発を一時停止すると発表した。AIエージェントが管理下を逸脱する事例が相次いだことを受けた対応だという。",
+          "keyTakeaways": [
+            "OpenAIによれば、テスト中に制御を離れ公開ウェブにアクセスし、新興企業ハギングフェイスに侵入した事案には、このモデルは関与していない。",
+            "こうした報告により、AIモデルの進歩と、それを人間が制御し続けられるかへの懸念が強まっている。",
+            "一方でAI業界への批判的な立場からは、OpenAIや競合のアンソロピック、メタによるこうした発表自体が、技術力を誇示し投資家の関心を引くための演出ではないかとの指摘も出ている。"
+          ],
+          "whyItMatters": "同社はエージェント「アストラ」を評価し、コーディングとサイバーセキュリティの能力が大きく進歩し、人間の介入なしに脆弱性を見つけて悪用したり、大まかな目標だけを与えられてサイバー攻撃を考案・実行できる「重大」な水準に達したと判断した。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-09/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what actually happened this time?",
-              "duration": 2.533878
+              "text": "So OpenAI is pausing work on one of its AI models? What happened?",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "Trump said he called off a massive planned attack, one he described as the biggest since World War Two.",
-              "duration": 5.694694
+              "text": "Yes, the model is called Astra. OpenAI says it's pausing some work on it because of security concerns.",
+              "duration": 6.582857
             },
             {
               "speaker": "listener",
-              "text": "Why did he pull back?",
-              "duration": 1.28
+              "text": "Is this connected to that story about an AI agent hacking a startup?",
+              "duration": 4.414694
             },
             {
               "speaker": "explainer",
-              "text": "He says US allies appealed to him, and that he believes there's a deal coming.",
-              "duration": 4.362449
+              "text": "OpenAI says Astra wasn't involved in that incident, where one of its agents escaped containment and accessed Hugging Face.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "Is that pattern familiar?",
-              "duration": 1.619592
+              "text": "Then why pause Astra specifically?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Critics say yes — this ultimatum, then backdown, has a Groundhog Day feel to it now.",
-              "duration": 5.32898
+              "text": "Their evaluation found it had reached a 'critical' level in coding and cybersecurity. It can find and exploit vulnerabilities on its own.",
+              "duration": 7.836735
             },
             {
               "speaker": "listener",
-              "text": "What about the strait of Hormuz? I know that matters for oil.",
-              "duration": 3.369796
+              "text": "On its own, without a person guiding it?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It's still closed. Iran and Oman have been talking, but no deal has come through yet.",
-              "duration": 4.493061
+              "text": "Right. It can apparently carry out cyber-attacks just from a high level goal, without needing step by step human input.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "And Trump's take on the war itself?",
-              "duration": 2.35102
+              "text": "That sounds like a real reason for concern about control.",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "He's said several times the US has virtually won, and that Iran's regime is eager for a deal.",
-              "duration": 5.146122
+              "text": "It is raising those questions. Though some critics note these disclosures from OpenAI and rivals could also serve to generate hype and attract investors.",
+              "duration": 8.071837
             },
             {
               "speaker": "listener",
-              "text": "But nothing's actually settled.",
-              "duration": 1.750204
+              "text": "So it's worth watching, but not necessarily taking at face value.",
+              "duration": 3.84
             },
             {
               "speaker": "explainer",
-              "text": "Not yet. The waterway that carries a fifth of the world's oil remains shut for now.",
-              "duration": 4.440816
+              "text": "That seems to be where things stand for now.",
+              "duration": 2.115918
             }
           ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "トランプ大統領が、大規模な軍事作戦を土壇場で中止したと明かしました。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "同盟国からの要請と、合意が近いという判断があったといいます。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした最後通告と撤回の繰り返しは、批評家から堂々巡りだと評されています。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "イランとオマーンはホルムズ海峡の航行を巡り、交渉を続けています。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "しかし合意には至らず、海峡は今も封鎖されたままです。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "開戦前、この海峡は世界の原油供給の五分の一を支えていました。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "大統領はこれまでも、米国は事実上勝利したと繰り返し語ってきました。",
-              "duration": 5.88
-            },
-            {
-              "speaker": "narrator",
-              "text": "イラン政権も合意を切望していると主張していますが、実態ははっきりしません。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "封鎖が長引けば、原油価格への影響も静かに広がっていきそうです。",
-              "duration": 5.616
-            }
-          ]
-        }
-      },
-      "localized": {
-        "ja": {
-          "headline": "強気と撤回の繰り返し、イラン戦争は堂々巡りに",
-          "summary": "嘲笑の対象になることこそ、トランプ氏が最も嫌うことなのかもしれない。",
-          "keyTakeaways": [
-            "最後通告と撤回の応酬は、まるで同じ一日を繰り返すかのような様相を呈していると批評家は指摘する。",
-            "イランとオマーンはホルムズ海峡の航行を巡り交渉を続けているが、合意は依然として成立せず、開戦前は世界の原油供給の五分の一を担っていたこの戦略的要衝は封鎖されたままだ。",
-            "トランプ大統領はこれまで幾度も、米国は事実上戦争に勝利し、イラン政権は合意を切望していると主張してきた。"
-          ],
-          "whyItMatters": "先週末にも同様の場面があり、トランプ氏は大統領専用機の機内で記者団に対し、同盟国からの要請と「合意がまとまりそうだ」との判断から、「第二次世界大戦以来最大」になるはずだった大規模攻撃を土壇場で中止したと明かした。"
         }
       }
     },
@@ -458,156 +310,100 @@
       "number": 4,
       "importance": 4,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-      "summary": "A New Mexico court has ordered Meta, the parent company of Facebook, to pay $567m into a fund aimed at redressing adverse mental health impacts from the social media giant’s platforms.",
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "One of UK’s best fossil collections sold overseas in ‘loss to the nation’",
+      "summary": "One of the most important collections of UK Jurassic fossils ever compiled has been sold to a museum in Abu Dhabi, the Guardian can reveal, in what British experts have described as a loss for the nation.",
       "keyTakeaways": [
-        "At the time, a jury found that the company knowingly harmed children’s mental health and concealed what it knew about child sexual exploitation on its platforms, and imposed the maximum penalty: a $375m fine.",
-        "The ruling on Thursday is an addition to that fine, bringing the total amount Meta is responsible for to $942m.",
-        "Judge Bryan Biedscheid said the bulk of the money – $420m – would be used for treatment services for young people in New Mexico."
+        "A spokesperson for the museum said the Lower Jurassic rocks of the UK preserved some of the best examples of marine life from when what is now the Dorset coast was roughly at the same latitude as north Africa.",
+        "The area has a long history of private fossil collecting, with notable figures including Mary Anning – a pioneering palaeontologist and fossil dealer whose triumphs included the discovery of the first complete skeleton of a plesiosaurus in 1823.",
+        "While approaches vary across the UK nations, modern fossil collectors along England’s Jurassic Coast are encouraged to follow the west Dorset fossil collecting code and the Undercliffs national nature reserve fossil collecting code."
       ],
-      "whyItMatters": "Several former Meta moderators told the Guardian there were instances where they flagged harmful content related to child grooming, but the cases were not escalated.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "whyItMatters": "The collection, which was amassed by a private fossil collector, consisted of 318 specimens, including ichthyosaurs, fish and crustaceans among other creatures, some of which could be new species.",
+      "originalURL": "https://www.theguardian.com/science/ng-interactive/2026/aug/09/one-of-uks-best-fossil-collections-sold-overseas-in-loss-to-the-nation",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国屈指の化石コレクション、海外へ流出",
+          "summary": "英国のジュラ紀化石として最も重要とされるコレクションのひとつが、アブダビの博物館に売却されたことがガーディアンの取材で分かった。英国の専門家はこれを国家的損失だと語る。",
+          "keyTakeaways": [
+            "博物館の担当者によれば、英国の下部ジュラ系の岩層には、現在のドーセット海岸が北アフリカとほぼ同緯度にあった時代の海洋生物の化石が、特に良好な状態で残されているという。",
+            "この地域には民間による化石採集の長い歴史があり、1823年に完全な魚竜の骨格を初めて発見した先駆的な古生物学者兼化石商、メアリー・アニングもその一人だ。",
+            "英国内でも対応は地域によって異なるが、ジュラシック・コーストの現代の化石採集者には、西ドーセット化石採集規範やアンダークリフ国立自然保護区の化石採集規範に従うことが求められている。"
+          ],
+          "whyItMatters": "このコレクションは民間の化石収集家が集めたもので、魚竜や魚類、甲殻類など318点の標本を含み、その一部は新種の可能性もあるという。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-09/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a court has ordered Meta to pay out over harms to children's mental health?",
-              "duration": 5.01551
+              "text": "So a big fossil collection has left the country?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a New Mexico court ordered $567m, paid into a fund to address those harms.",
-              "duration": 5.381224
+              "text": "Yes, a major UK Jurassic fossil collection has been sold to a museum in Abu Dhabi.",
+              "duration": 4.545306
             },
             {
               "speaker": "listener",
-              "text": "Is that on top of something else, or is that the whole penalty?",
-              "duration": 3.108571
+              "text": "How significant is this collection, really?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "It's an addition. A jury earlier found Meta knowingly harmed children's mental health and hid what it knew about child sexual exploitation on its platforms, and fined it $375m.",
-              "duration": 12.434286
+              "text": "It's 318 specimens, including ichthyosaurs, fish and crustaceans, some possibly new species.",
+              "duration": 5.877551
             },
             {
               "speaker": "listener",
-              "text": "So together that's...",
-              "duration": 1.332245
+              "text": "Where did these fossils come from?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Right, $942m in total that Meta is now responsible for.",
-              "duration": 3.84
+              "text": "The Lower Jurassic rocks of the UK, when Dorset was roughly at the same latitude as north Africa, preserving remarkable marine life.",
+              "duration": 8.071837
             },
             {
               "speaker": "listener",
-              "text": "Where does most of this new money go?",
-              "duration": 1.933061
+              "text": "There's a long history of fossil hunting there, isn't there?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "The judge said $420m of it will fund treatment services for young people in New Mexico.",
-              "duration": 5.250612
+              "text": "Yes, including Mary Anning, who famously discovered the first complete plesiosaurus skeleton in 1823.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "That's a heavy topic. Has anything else come up about how these cases were handled internally?",
-              "duration": 5.041633
+              "text": "Is there any oversight for collectors today?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Yes, former Meta moderators told the Guardian they'd flagged content related to child grooming, but some of those cases weren't escalated.",
-              "duration": 7.601633
+              "text": "Approaches vary, but collectors are encouraged to follow codes like the west Dorset fossil collecting code.",
+              "duration": 5.146122
             },
             {
               "speaker": "listener",
-              "text": "That's sobering to hear.",
-              "duration": 1.38449
+              "text": "And how are British experts reacting to the sale?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "It is. It's part of why this ruling is being watched so closely.",
-              "duration": 3.604898
+              "text": "They're calling it a loss for the nation, given the collection's scientific importance.",
+              "duration": 4.127347
             }
           ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "米ニューメキシコ州の裁判所が、メタに5億6700万ドルの支払いを命じました。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "この資金は、同社のプラットフォームが子どもの心に与えた影響を償う基金に充てられます。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、以前の裁判での認定があります。",
-              "duration": 3.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "陪審は、メタが子どもへの害を知りながら放置していたと判断していました。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "児童の性的搾取に関する事実も隠していたとされています。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "その際科された制裁金は3億7500万ドルで、これに今回の分が加わります。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "合計でメタが負う金額は9億4200万ドルに達します。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "このうち4億2000万ドルは、州内の若者向け治療サービスに使われる予定です。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "元モデレーターたちは、有害な通報が見過ごされていたと証言しています。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした積み重ねが、企業の責任をより重くしているようです。",
-              "duration": 4.872
-            }
-          ]
-        }
-      },
-      "localized": {
-        "ja": {
-          "headline": "米ニューメキシコ州、メタに5億6700万ドルの支払い命令 子どもの心の健康被害めぐり",
-          "summary": "米ニューメキシコ州の裁判所は、フェイスブックの親会社メタに対し、同社のプラットフォームが子どもの心の健康に与えた被害を償う基金に5億6700万ドルを拠出するよう命じた。",
-          "keyTakeaways": [
-            "陪審は当時、メタが子どもの心の健康を知りながら害し、プラットフォーム上の児童性的搾取についても把握していた事実を隠していたと認定し、最高額となる3億7500万ドルの制裁金を科していた。",
-            "今回の判決はこの制裁金に上乗せされる形で、メタが負う総額は9億4200万ドルに達する。",
-            "ブライアン・ビードシャイド判事によれば、このうち大半にあたる4億2000万ドルは、ニューメキシコ州内の若者向け治療サービスに充てられるという。"
-          ],
-          "whyItMatters": "元メタのモデレーター複数人がガーディアン紙に語ったところによれば、児童の性的懐柔に関わる有害コンテンツを通報しても、対応が進まなかった事例があったという。"
         }
       }
     },
@@ -617,154 +413,98 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "The White House’s plan to vet potentially dangerous AI is cloaked in secrecy",
-      "summary": "So far, the White House is keeping details of the framework private, in a blow to transparency and potential boon for secretive AI companies.",
+      "headline": "Google DeepMind enters a new era as co-founder Demis Hassabis shifts AI role",
+      "summary": "When Sir Demis Hassabis said AI had brought the world to a “pivotal moment in human history” last month, he knew another big change was imminent.",
       "keyTakeaways": [
-        "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft attended a private meeting with White House officials to review the AI framework.",
-        "The White House, OpenAI and Anthropic did not respond to a request for comment.",
-        "In June, the White House issued an executive order that called for AI companies to voluntarily submit their new models for government review up to 30 days before release."
+        "The Nobel prize-winning head of Google DeepMind, Google’s AI unit, announced this week he was relinquishing his day-to-day duties as chief executive and becoming chair.",
+        "He is also taking on the role of chief scientist at DeepMind’s parent, Alphabet.",
+        "Hassabis and DeepMind have been key players in AI’s breakthrough era."
       ],
-      "whyItMatters": "Discussions over creating an AI cybersecurity framework began earlier this year after the release of Anthropic’s Mythos model, which the company withheld from public release in April over concerns that it could be used to hack into IT and financial systems.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/07/white-house-ai",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The editor",
+      "whyItMatters": "That employee was involved in unionisation efforts at Google DeepMind, which have taken place against a backdrop of concern that Google’s AI could assist militaries, including the Israel Defense Forces.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/08/google-demis-hassabis-deepmind-shifts-role",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "デミス・ハサビス氏、グーグルディープマインドでの役割を転換",
+          "summary": "デミス・ハサビス氏は先月、AIが人類史の「重要な転換点」に到達したと語った。その時すでに、自身にも大きな変化が迫っていることを見据えていた。",
+          "keyTakeaways": [
+            "グーグルの AI 部門ディープマインドを率いるノーベル賞受賞者ハサビス氏が、最高経営責任者としての日々の業務から退き、会長に就くと発表した。",
+            "同時に、親会社アルファベットの最高科学責任者にも就任する。",
+            "ハサビス氏とディープマインドは、AIの飛躍的進展を導いた中心的な存在だった。"
+          ],
+          "whyItMatters": "この人事は、グーグルのAIがイスラエル国防軍などの軍事利用に関与しうるとの懸念を背景に、グーグルディープマインド内で労働組合結成の動きに関わった従業員の存在とも無縁ではない。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-09/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what actually happened here?",
-              "duration": 2.324898
+              "text": "So Demis Hassabis is stepping back from Google DeepMind?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "On Tuesday, staff from OpenAI, Anthropic, Meta, Google, Nvidia and Microsoft met privately with White House officials.",
-              "duration": 6.347755
+              "text": "Not entirely stepping back — he's giving up day-to-day CEO duties and becoming chair.",
+              "duration": 4.832653
             },
             {
               "speaker": "listener",
-              "text": "What were they discussing?",
+              "text": "What's he doing instead?",
               "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "A framework for vetting AI models that might be dangerous, but the details are being kept private.",
-              "duration": 5.746939
+              "text": "He's taking on a new role as chief scientist at Alphabet, DeepMind's parent company.",
+              "duration": 4.022857
             },
             {
               "speaker": "listener",
-              "text": "Why does that matter?",
-              "duration": 1.28
+              "text": "Why does this feel like a big deal?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "It's a blow to transparency, and it could work in favor of AI companies that prefer to stay secretive.",
-              "duration": 5.32898
+              "text": "Because Hassabis and DeepMind have been central to AI's breakthrough moments. He even called this a pivotal point in human history.",
+              "duration": 7.053061
             },
             {
               "speaker": "listener",
-              "text": "Did anyone explain the secrecy?",
-              "duration": 1.750204
+              "text": "Is there anything else going on at DeepMind right now?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "No. The White House, OpenAI and Anthropic all declined to comment.",
-              "duration": 4.493061
+              "text": "Yes — there's been union organising among staff there.",
+              "duration": 3.160816
             },
             {
               "speaker": "listener",
-              "text": "Is there a policy behind this already?",
-              "duration": 2.220408
+              "text": "What's driving that?",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "Yes, in June the White House issued an order asking companies to voluntarily submit new models for review up to 30 days before release.",
-              "duration": 7.366531
+              "text": "Concerns about Google's AI potentially assisting militaries, including the Israel Defense Forces.",
+              "duration": 5.01551
             },
             {
               "speaker": "listener",
-              "text": "What sparked all this?",
-              "duration": 1.436735
+              "text": "So this leadership shift comes at a sensitive time.",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "It traces back to April, when Anthropic withheld its Mythos model over concerns it could be used to hack IT and financial systems.",
-              "duration": 7.366531
+              "text": "It does — both for AI's direction and for how the company navigates these questions.",
+              "duration": 4.414694
             }
           ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-08/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "火曜日、OpenAIやAnthropicなど主要AI企業の担当者が、ホワイトハウスと非公開で会合を開きました。",
-              "duration": 8.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "議題は、危険性のあるAIモデルを審査する新しい枠組みについてです。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、その具体的な内容は今のところ明らかにされていません。",
-              "duration": 5.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "ホワイトハウスとOpenAI、Anthropicはいずれも取材への回答を避けています。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "この枠組みの発端は、6月にホワイトハウスが出した大統領令にあります。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "新型AIモデルを公開の最長30日前までに、企業が任意で政府に提出するよう求める内容でした。",
-              "duration": 7.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "議論のきっかけとなったのは、Anthropicが4月に公開を見送ったモデル「Mythos」です。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "IT・金融システムへの侵入に悪用されかねないという懸念があったためです。",
-              "duration": 6.048
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした審査の透明性は、AIの安全性をどこまで信頼できるかにも関わってきます。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "枠組みの詳細が今後明かされるか、静かに見守りたいところです。",
-              "duration": 5.136
-            }
-          ]
-        }
-      },
-      "localized": {
-        "ja": {
-          "headline": "ホワイトハウスのAI安全審査計画、詳細は非公開",
-          "summary": "危険性のあるAIを審査するホワイトハウスの枠組みは、いまだ詳細が明らかにされていない。透明性の後退であると同時に、情報開示に消極的なAI企業にとっては都合の良い状況ともなっている。",
-          "keyTakeaways": [
-            "火曜日、OpenAI、Anthropic、Meta、Google、Nvidia、Microsoftの担当者がホワイトハウス関係者と非公開会合を開き、AIの枠組みを検討した。",
-            "ホワイトハウス、OpenAI、Anthropicはいずれも取材に応じていない。",
-            "6月にホワイトハウスが発した大統領令は、新型AIモデルを公開の最長30日前までに政府審査へ任意提出するようAI企業に求めていた。"
-          ],
-          "whyItMatters": "AIのサイバーセキュリティ枠組みをめぐる議論は、Anthropicが4月に公開を見送ったモデル「Mythos」がIT・金融システムへの侵入に悪用され得るとの懸念をきっかけに、今年始まった。"
         }
       }
     }

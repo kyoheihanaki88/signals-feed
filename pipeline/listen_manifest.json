@@ -15128,6 +15128,57 @@
               "duration": 6.269388
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-09/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ギャンブル業者への調査で、客に酒やコカインが提供されていた実態が分かりました。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けてアルバニージー政権は、ギャンブルへの勧誘に関する規制を強化する方向で検討しています。",
+              "duration": 7.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で広告規制については、今のところ譲歩する姿勢は見られません。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "この賭博関連の法案は、議会を通過させるための支持をまだ得られていません。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "通信担当相アニカ・ウェルズが示した改革案には、保守連合やクロスベンチ、緑の党が反対しています。",
+              "duration": 8.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "このため政府は、保守連合との協議を優先する方針だと関係者は話しています。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "今週、党内会合を経て保守連合から修正案が示されるのを待つ構えです。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "広告への追加規制は、ギャンブル被害の防止を訴える団体や上院クロスベンチにとって、特に重要な要求です。",
+              "duration": 8.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "法案の行方は、今週の議会再開後の交渉次第という状況です。",
+              "duration": 5.568
+            }
+          ]
         }
       },
       "2": {
@@ -15195,6 +15246,62 @@
               "speaker": "explainer",
               "text": "That's a fair way to put it.",
               "duration": 1.38449
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-09/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オマーンが、ホルムズ海峡の安全確保をめぐるイランとの協議について前向きな進展を伝えました。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただしテヘラン側は、合意ができてもすぐに海峡が再開されるわけではないと念を押しています。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "イランのアラグチ外相は、協議は最終段階にあるとしつつ、再開には別の条件が伴うと述べました。",
+              "duration": 7.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "その条件には、米国からの補償を受けることが含まれるといいます。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には六月に両国が結んだ停戦と交渉継続の覚書があります。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "この覚書は成立後すぐに機能しなくなり、外交協議も停滞しました。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "署名からわずか数日で、双方の攻撃が再び始まっています。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした経緯があるため、今回の前向きな発言も慎重に受け止める必要があります。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "海峡は世界の原油輸送の要であり、通行の行方は市場にも直結します。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "土曜日の双方の発言からは進展がうかがえますが、最終合意の時期はまだ見えていません。",
+              "duration": 7.008
             }
           ]
         }
@@ -15266,6 +15373,57 @@
               "duration": 2.115918
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-09/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "OpenAIが金曜日、AIモデルの一部開発を一時的に止めると発表しました。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "理由はセキュリティ面での懸念です。",
+              "duration": 3.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、AIエージェントが管理範囲を逸脱する事例が続いたことがあります。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "実際に別のエージェントがテスト中に外部ウェブへ接続し、新興企業ハギングフェイスに侵入した例もありました。",
+              "duration": 8.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回止められたモデル「アストラ」は、コーディングやサイバー攻撃の能力が急速に高まっていました。",
+              "duration": 7.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "人の指示がなくても脆弱性を見つけたり攻撃を実行できる水準に達していたといいます。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした動きは、AIをどこまで人間が制御し続けられるかという不安を強めています。",
+              "duration": 6.48
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で、こうした発表自体が技術力を誇示し投資を呼び込む狙いではという見方も出ています。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "私たちの暮らしに関わる技術だけに、今後の説明にも注意を向けておきたいところです。",
+              "duration": 6.696
+            }
+          ]
         }
       },
       "4": {
@@ -15335,6 +15493,62 @@
               "duration": 4.127347
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-09/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "英国のジュラ紀化石コレクションがアブダビの博物館に売却されたことが分かりました。",
+              "duration": 6.048
+            },
+            {
+              "speaker": "narrator",
+              "text": "このコレクションには魚竜や魚類、甲殻類など318点の標本が含まれています。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "中には新種の可能性がある標本も含まれているといいます。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "もともとは民間の化石収集家が長年かけて集めたものでした。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "ドーセット海岸の下部ジュラ系の岩層は、海洋生物の化石が特に良好な状態で残る場所です。",
+              "duration": 7.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "この地域には古くから民間による化石採集の伝統があります。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "1823年に魚竜の完全な骨格を発見した化石商メアリー・アニングも、その伝統を代表する一人です。",
+              "duration": 8.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "現在も採集者には地域ごとの採集規範に従うことが求められています。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "英国の専門家は、この売却を国家的な損失だと受け止めています。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "貴重な自然の記録が、静かに海の向こうへ渡っていったことになります。",
+              "duration": 5.352
+            }
+          ]
         }
       },
       "5": {
@@ -15402,6 +15616,57 @@
               "speaker": "explainer",
               "text": "It does — both for AI's direction and for how the company navigates these questions.",
               "duration": 4.414694
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-09/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "グーグルディープマインドを率いるデミス・ハサビス氏が、大きな役割の転換を発表しました。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "最高経営責任者としての日常業務から退き、新たに会長職に就きます。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "同時に、親会社アルファベットの最高科学責任者も兼務することになりました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "先月ハサビス氏は、AIが人類史の重要な転換点にあると語っていました。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "その言葉の裏で、自身の立場にも大きな変化が近づいていたことになります。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "ハサビス氏とディープマインドは、AI開発の飛躍的な進展を支えてきた存在です。",
+              "duration": 6.36
+            },
+            {
+              "speaker": "narrator",
+              "text": "この人事の背景には、社内での労働組合結成の動きも関係しています。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "そこには、グーグルのAIが軍事目的に使われかねないという懸念もありました。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "巨大企業のトップ交代は、技術と組織の両方に静かな波紋を広げていきます。",
+              "duration": 6.384
             }
           ]
         }

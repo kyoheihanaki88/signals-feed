@@ -15740,6 +15740,62 @@
               "duration": 3.343673
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-10/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イスラエルのネタニヤフ首相が、米国主導のガザ和平案を拒否しました。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "15項目からなる合意文書について、受け入れないと明言しています。",
+              "duration": 5.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ大統領との間で、これまでにない公然の対立となりました。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "イスラエル側は以前から、この案への拒否姿勢を示していました。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏の発表後、イスラエルはガザへの空爆を強めました。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "先週日曜の空爆では18人が死亡しています。",
+              "duration": 4.272
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は合意を段階的に進める考えでした。",
+              "duration": 3.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "しかしネタニヤフ氏は、まず完全な武装解除を求めています。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "双方の隔たりは、今後の停戦交渉の行方を左右しそうです。",
+              "duration": 5.232
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝のうちに、この動きを心に留めておきたいところです。",
+              "duration": 4.44
+            }
+          ]
         }
       },
       "2": {
@@ -15809,6 +15865,62 @@
               "duration": 8.803265
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-10/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "今週、ペルセウス座流星群が北半球の夜空を彩ります。",
+              "duration": 5.208
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年は観測条件がとても良いと言われています。",
+              "duration": 3.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "米国流星協会によると、田舎の地域では一時間に三十から五十個ほどの流星が見えるそうです。",
+              "duration": 7.584
+            },
+            {
+              "speaker": "narrator",
+              "text": "流星群は、地球が彗星や小惑星の残した塵の帯を通るときに起こる現象です。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのため毎年ほぼ同じ時期に、規則的に見られます。",
+              "duration": 4.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "この流星群の観測記録は、二千年以上前まで遡ります。",
+              "duration": 5.232
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の見頃は水曜の夜から木曜の朝にかけてです。",
+              "duration": 4.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "同じ時期には、スペインやアイスランド、グリーンランドで皆既日食も見られます。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "さらに六つの惑星が並ぶ現象も重なっています。",
+              "duration": 3.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "火球をよく見たいなら、皆既日食が終わったあとの時間が狙い目です。",
+              "duration": 5.184
+            }
+          ]
         }
       },
       "3": {
@@ -15866,6 +15978,57 @@
               "speaker": "explainer",
               "text": "That's the idea — less of an oddity, more of a standard.",
               "duration": 3.004082
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-10/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "サムスンが新しい折りたたみスマートフォンに「Z Fold 8」という名前をつけました。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまでの横長モデルとは違い、今後の標準形として位置づけています。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "横に広く縦に短いという独特の形は、以前は変わり種と見られていました。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "しかし一週間使ってみると、その形が自然で心地よく感じられます。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "ファーウェイが先に横長型を出し、サムスンやアップルもこの流れに続いています。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "誰の功績かは別としても、この形には理由があるように思えます。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "実はアップルも同じ発想で、9月発売予定の初代折りたたみiPhoneが似た形になると予想されています。",
+              "duration": 8.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "つまり折りたたみスマホの標準は、これから大きく変わろうとしています。",
+              "duration": 5.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "次に新しい端末を選ぶときは、この横長という選択肢を意識してみるのもよさそうです。",
+              "duration": 6.792
             }
           ]
         }
@@ -15937,6 +16100,52 @@
               "duration": 2.951837
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-10/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "水曜の夕方、イギリス南西部とチャンネル諸島の空に部分日食が現れます。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "太陽の九割以上が月に隠れる、大きく欠けた姿が見られるということです。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年の皆既日食は、ロシア北部からグリーンランド、アイスランド、スペイン、ポルトガル北部へと弧を描いて移動します。",
+              "duration": 8.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "皆既の帯はイギリスを外れますが、その通り道はニューキーやプリマスなどの上空にもかかります。",
+              "duration": 6.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "欠けた太陽の姿は、肉眼でも十分に印象的な眺めになりそうです。",
+              "duration": 5.784
+            },
+            {
+              "speaker": "narrator",
+              "text": "ガーンジー在住の王立天文学会フェロー、ジーン・ディーン博士も見守っています。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "日食が進むにつれて、自然の振る舞いも変わっていくと話しています。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "空を見上げる短い時間が、いつもと違う朝夕の景色を運んできそうです。",
+              "duration": 5.904
+            }
+          ]
         }
       },
       "5": {
@@ -16004,6 +16213,62 @@
               "speaker": "explainer",
               "text": "Some describe being under near-constant attempts to access their systems.",
               "duration": 3.84
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-10/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "英国の製造業を対象にした調査で、3割近い企業がサイバー攻撃の被害を受けたと分かりました。",
+              "duration": 7.608
+            },
+            {
+              "speaker": "narrator",
+              "text": "自社だけでなく、サプライチェーン内の企業が狙われた例も含まれています。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "調査を行ったのは、製造業団体のメイクUKです。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "ちょうど一年ほど前、自動車業界最大の雇用主JLRが攻撃を受け、生産停止に追い込まれました。",
+              "duration": 8.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の結果は、あの出来事から間もない時期にまとまったものです。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "被害を受けた企業では、生産時間の損失やコスト増に直結したケースも多いそうです。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "大企業の中には、常に侵入を試みられていると感じているところもあります。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "英政府の推計では、サイバー犯罪による経済損失は年間147億ポンドにのぼります。",
+              "duration": 7.416
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、敵対的な国家に支援されたハッカーの増加と、手口の巧妙化があります。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "製造業を支える現場の安全は、私たちの暮らしとも静かに結びついています。",
+              "duration": 6.288
             }
           ]
         }

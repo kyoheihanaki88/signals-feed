@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-10",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Netanyahu rejects US-led 15-point Gaza peace plan in rare public break with Trump",
+      "summary": "Israel’s prime minister, Benjamin Netanyahu, has rejected a US-backed 15-point peace plan for Gaza in a rare public break with Donald Trump.",
+      "keyTakeaways": [
+        "On Gaza, he said: “Israel does not accept the 15-point document.",
+        "Israel had already signalled that it would reject the US-led plan.",
+        "Soon after Trump announced it last month, Israel stepped up its bombing campaign in the Palestinian territory – strikes killed 18 people last Sunday."
+      ],
+      "whyItMatters": "Trump had said that the agreement would be implemented in stages, but Netanyahu on Sunday said that he wanted a full disarmament first in order to implement the deal.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/09/israel-rejects-us-led-15-point-gaza-peace-plan-says-netanyahu",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ネタニヤフ氏、米主導のガザ和平案を拒否 トランプ氏と異例の公然対立",
+          "summary": "イスラエルのネタニヤフ首相が、米国主導によるガザ和平のための15項目案を拒否した。トランプ大統領との間で、これまで見られなかった公然の意見対立となっている。",
+          "keyTakeaways": [
+            "ネタニヤフ氏はガザについて「イスラエルは15項目の文書を受け入れない」と述べた",
+            "イスラエル側は米国主導案への拒否姿勢をすでに示していた",
+            "トランプ氏の発表直後、イスラエルはガザへの空爆を強化し、先週日曜には空爆で18人が死亡した"
+          ],
+          "whyItMatters": "トランプ氏は段階的な実施を想定していたが、ネタニヤフ氏は日曜、合意実行の前提として完全な武装解除をまず求めると述べた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Perseid meteor shower set to dazzle northern hemisphere this week",
+      "summary": "The Perseid summer light show is back, and viewing conditions are especially promising across the northern hemisphere.",
+      "keyTakeaways": [
+        "The American Meteor Society estimates 30 to 50 meteors per hour could be seen from rural regions in the US.",
+        "Meteor showers tend to put on dazzling celestial shows and happen at predictable times every year when the Earth plows through trails of debris left behind by comets and, sometimes, asteroids.",
+        "Observations of this meteor shower date back over 2,000 years."
+      ],
+      "whyItMatters": "The meteor shower is expected to peak on Wednesday night into Thursday morning, and coincides with a total solar eclipse across Spain, Iceland and Greenland and a six-planet parade – though the best time to view the fireballs will come after totality.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/09/perseid-meteor-shower",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "今週、ペルセウス座流星群が夜空を彩る",
+          "summary": "夏の夜を飾るペルセウス座流星群が今年もめぐってくる。北半球では観測条件が特に良好とみられている。",
+          "keyTakeaways": [
+            "米国流星協会によると、米国の田舎の地域では一時間に三十から五十個ほどの流星が見られる可能性がある。",
+            "流星群は毎年ほぼ決まった時期に、地球が彗星や小惑星の残した塵の帯を通過することで起こる、規則的な天体現象だ。",
+            "この流星群の観測記録は二千年以上前にまで遡る。"
+          ],
+          "whyItMatters": "流星群は水曜の夜から木曜の朝にかけて最も活発になると見込まれ、スペインやアイスランド、グリーンランドで見られる皆既日食や六つの惑星が並ぶ現象とも重なるが、火球を眺めるには皆既の後がより見やすいとされている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Samsung’s Galaxy Z Fold 8 feels like the future",
+      "summary": "The company has given its new wide foldable the “Z Fold 8” name, positioning the phone not as a widescreen oddity, but as the new normal, the default design for foldables going forward.",
+      "keyTakeaways": [
+        "Is this the future of foldable phones?",
+        "Whether you want to give the credit to Apple, Samsung, or even Huawei (which got here first with the Pura X Max ), I think they might be onto something.",
+        "After a week, the Z Fold 8 feels comfortable, natural, and normal, despite being the shortest and widest phone I can remember using."
+      ],
+      "whyItMatters": "Rumor has it that Apple feels the same way, with a similar squat shape widely predicted for the first foldable iPhone, expected to launch in September.",
+      "originalURL": "https://www.theverge.com/tech/972387/samsung-galaxy-z-fold-8-review",
+      "readTime": 12,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "サムスンの新型折りたたみ、Z Fold 8が示す未来",
+          "summary": "サムスンは新しいワイド型折りたたみスマートフォンに「Z Fold 8」という名を与えた。これは変わり種の横長端末ではなく、折りたたみスマホの新たな標準としての位置づけだ。",
+          "keyTakeaways": [
+            "折りたたみスマホの未来を先取りする一台",
+            "アップルかサムスンか、あるいは先に横長型を出したファーウェイか。功績が誰にあるにせよ、この形に何かがあるように思える",
+            "一週間使ってみると、これまでで最も短く幅広い端末でありながら、Z Fold 8は自然で心地よく、もはや違和感がない"
+          ],
+          "whyItMatters": "アップルも同じ考えのようで、9月発売予定の初代折りたたみiPhoneも似た横長の形になると広く予想されている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "What can we see during the partial solar eclipse?",
+      "summary": "A partial solar eclipse is set to be visible across the South West and Channel Islands on Wednesday evening.",
+      "keyTakeaways": [
+        "The team at the National Space Centre said the main event of this year's total solar eclipse will be visible in a giant arc moving across from northern Russia to Greenland, Iceland, Spain and northern Portugal.",
+        "They said although the \"arc of totality - the path the eclipse shadow takes - misses us here in the UK, we will still get to see over 90% of the sun covered by the moon\".",
+        "Guernsey-based Dr Jean Dean, fellow of the Royal Astronomical Society, said nature would alter its behaviour as the eclipse progresses."
+      ],
+      "whyItMatters": "The path of totality for this event is expected to pass over locations including Newquay and Plymouth.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c86n5w392xjo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "部分日食、水曜の空に見えるもの",
+          "summary": "水曜の夕方、イギリス南西部とチャンネル諸島で部分日食が見られる見込みだ。",
+          "keyTakeaways": [
+            "ナショナル・スペース・センターの研究チームによると、今年の皆既日食の本体はロシア北部からグリーンランド、アイスランド、スペイン、ポルトガル北部へと大きな弧を描いて移動する",
+            "皆既の影が通る帯はイギリスを外れるものの、太陽の九割以上が月に隠れる様子は見られるという",
+            "ガーンジー在住の英国王立天文学会フェロー、ジーン・ディーン博士は、日食の進行とともに自然の振る舞いも変わっていくと話す"
+          ],
+          "whyItMatters": "今回の皆既帯は、ニューキーやプリマスなどの上空を通過する見込みだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "UK manufacturers face rising hacking risk as survey shows 30% were hit last year",
+      "summary": "Nearly a third of British manufacturers have been hit by a cyber-attack on them or a company in their supply chain, according to a survey that highlighted the growing hacking risk to companies.",
+      "keyTakeaways": [
+        "The findings come almost a year after Britain’s largest automotive employer, JLR, was hit by an attack that forced it to halt production for weeks.",
+        "The report by MakeUK, a lobby group for British manufacturers, found that 30% of manufacturers had experienced a cyber-incident in the past 12 months, leading in many cases to lost production time and increased costs.",
+        "Large businesses describe being under near-constant attack from people trying to access their systems, and the UK government has said cybercrime costs the economy £14.7bn a year."
+      ],
+      "whyItMatters": "The risk of attacks has risen in recent years as hackers, often backed by hostile states, have become more numerous and more adept at penetrating company defences.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/10/uk-companies-cyber-attack-third-jlr",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英製造業の3割がサイバー攻撃被害、リスク拡大浮き彫りに",
+          "summary": "英国の製造業を対象にした調査で、自社またはサプライチェーン内の企業がサイバー攻撃を受けたと回答した企業が3割近くに達した。企業を狙うハッキングの脅威が広がっている実態を示す結果となった。",
+          "keyTakeaways": [
+            "英自動車業界最大の雇用主JLRが攻撃を受け、生産停止に追い込まれてから約一年での調査結果。",
+            "英製造業団体メイクUKの報告書によると、過去一年で3割の企業がサイバー被害を経験し、生産時間の損失やコスト増につながった例も多い。",
+            "大企業からは絶えず侵入を試みられているとの声があり、英政府はサイバー犯罪による経済損失を年間147億ポンドと見積もっている。"
+          ],
+          "whyItMatters": "敵対的な国家の支援を受けたハッカーが増え、その手口も巧妙になっていることで、攻撃のリスクは近年高まっている。"
+        }
+      }
+    }
+  ]
+}

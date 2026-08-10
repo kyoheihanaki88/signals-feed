@@ -34,6 +34,7 @@ import {
   assertSignalsEntitlement,
   mapVerificationException,
   SIGNALS_PRO_PRODUCT_ID,
+  SIGNALS_PRO_PRODUCT_IDS,
   toAppleEnvironment,
   type AppleEntitlementReason,
   type SignedTransactionDecoder,
@@ -193,6 +194,8 @@ export class AppleEntitlementClient {
     let revision: string | null = null;
     let pages = 0;
     let sawMatchingProduct = false;
+    /** The most recent definitive rejection ("expired" | "revoked") seen while scanning. */
+    let lastDeadReason: AppleEntitlementReason | null = null;
 
     try {
       while (pages < this.o.maxPages) {
@@ -208,14 +211,31 @@ export class AppleEntitlementClient {
           } catch (error) {
             throw new AppleEntitlementError(mapVerificationException(error));
           }
-          if (payload.productId !== SIGNALS_PRO_PRODUCT_ID) continue;
+          if (typeof payload.productId !== "string" ||
+              !SIGNALS_PRO_PRODUCT_IDS.has(payload.productId)) continue;
           sawMatchingProduct = true;
 
           // Reuses the exact same entitlement rules as the device-JWS path, so a
           // refunded or family-shared transaction is rejected identically here.
-          const entitlement = assertSignalsEntitlement(payload, this.o.environment!);
-          this.breaker.recordSuccess();
-          return entitlement;
+          // A DEFINITIVELY DEAD transaction (expired monthly, refunded purchase) must
+          // not end the search: the same account may also own the lifetime, or a newer
+          // renewal — keep scanning and only fail once every candidate is exhausted.
+          try {
+            const entitlement = assertSignalsEntitlement(
+              payload,
+              this.o.environment!,
+              () => this.o.now(),
+            );
+            this.breaker.recordSuccess();
+            return entitlement;
+          } catch (error) {
+            if (error instanceof AppleEntitlementError &&
+                (error.reason === "expired" || error.reason === "revoked")) {
+              lastDeadReason = error.reason;
+              continue;
+            }
+            throw error;
+          }
         }
 
         if (!response.hasMore || !response.revision) break;
@@ -232,8 +252,12 @@ export class AppleEntitlementClient {
     }
 
     this.breaker.recordSuccess();
-    // Apple answered, but this account holds no valid Pro purchase.
-    throw new AppleEntitlementError(sawMatchingProduct ? "revoked" : "wrong_product");
+    // Apple answered, but this account holds no valid Pro purchase. Name the most
+    // specific reason we saw: an expired monthly says "expired", a refund says
+    // "revoked", and an account with no Signals product at all says "wrong_product".
+    throw new AppleEntitlementError(
+      sawMatchingProduct ? (lastDeadReason ?? "revoked") : "wrong_product",
+    );
   }
 
   private async fetchPageWithRetry(
@@ -253,8 +277,8 @@ export class AppleEntitlementClient {
           originalTransactionId,
           revision,
           {
-            productIds: [SIGNALS_PRO_PRODUCT_ID],
-            productTypes: [ProductType.NON_CONSUMABLE],
+            productIds: [...SIGNALS_PRO_PRODUCT_IDS],
+            productTypes: [ProductType.NON_CONSUMABLE, ProductType.AUTO_RENEWABLE],
             sort: Order.DESCENDING,
           },
           GetTransactionHistoryVersion.V2,

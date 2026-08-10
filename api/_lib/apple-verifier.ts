@@ -6,8 +6,12 @@ export type VerifiedAppleEntitlement = {
   productId: string;
   environment: SignalsEnvironment;
   ownershipType: "PURCHASED";
-  productType: "NON_CONSUMABLE";
+  /** Lifetime is a non-consumable; the monthly plan is an auto-renewable subscription. */
+  productType: "NON_CONSUMABLE" | "AUTO_RENEWABLE_SUBSCRIPTION";
   revoked: boolean;
+  /** Present only for the monthly subscription: the verified expiry (ms since epoch),
+   *  already checked to be in the future at verification time. */
+  expiresDate?: number;
 };
 
 export type VerifySignedTransactionInput = {

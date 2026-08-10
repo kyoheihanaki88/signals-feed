@@ -3,11 +3,14 @@ import {
   type AppleEntitlementVerifier,
   type SignalsEnvironment,
 } from "../_lib/apple-verifier.js";
+import {
+  SIGNALS_PRO_MONTHLY_PRODUCT_ID,
+  SIGNALS_PRO_PRODUCT_IDS,
+} from "../_lib/apple-verifier-real.js";
 import type { RateLimiter } from "../_lib/rate-limit.js";
 import type { RevocationStore } from "../_lib/revocation-store.js";
 import type { SecurityLogger } from "../_lib/security-logging.js";
 import {
-  PRO_PRODUCT_ID,
   TOKEN_SCOPE,
   type Clock,
   type SignalsTokenService,
@@ -255,14 +258,26 @@ export function createAuthExchangeHandler(
     if (entitlement.bundleId !== BUNDLE_ID) {
       return finish(errorResponse(401, "wrong_bundle"), "wrong_bundle");
     }
-    if (entitlement.productId !== PRO_PRODUCT_ID) {
+    // Either Pro plan is exchangeable: the lifetime non-consumable or the monthly
+    // auto-renewable. These re-checks are defense in depth — the verifier already
+    // enforced all of this on the VERIFIED payload; nothing here loosens it.
+    if (!SIGNALS_PRO_PRODUCT_IDS.has(entitlement.productId)) {
       return finish(errorResponse(401, "wrong_product"), "wrong_product");
     }
-    if (entitlement.productType !== "NON_CONSUMABLE") {
+    const expectMonthly = entitlement.productId === SIGNALS_PRO_MONTHLY_PRODUCT_ID;
+    if (entitlement.productType !== (expectMonthly ? "AUTO_RENEWABLE_SUBSCRIPTION" : "NON_CONSUMABLE")) {
       return finish(
         errorResponse(401, "wrong_product_type"),
         "wrong_product_type",
       );
+    }
+    if (expectMonthly) {
+      // The monthly plan must still be inside its verified paid period at exchange
+      // time. The lifetime plan is deliberately exempt — it has no expiry.
+      if (typeof entitlement.expiresDate !== "number" ||
+          entitlement.expiresDate <= dependencies.clock.nowMs()) {
+        return finish(errorResponse(401, "expired"), "expired");
+      }
     }
     if (entitlement.ownershipType !== "PURCHASED") {
       return finish(

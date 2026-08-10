@@ -37,7 +37,15 @@ import {
 } from "./apple-verifier.js";
 
 export const SIGNALS_BUNDLE_ID = "com.kyohei.Signals";
+/** The lifetime non-consumable. Legacy name kept — pre-subscription callers use it. */
 export const SIGNALS_PRO_PRODUCT_ID = "com.signalsapp.pro.lifetime";
+/** The monthly auto-renewable subscription (1.0 ships both). */
+export const SIGNALS_PRO_MONTHLY_PRODUCT_ID = "com.signalsapp.pro.monthly";
+/** Every product that grants Signals Pro. Anything else is `wrong_product`. */
+export const SIGNALS_PRO_PRODUCT_IDS: ReadonlySet<string> = new Set([
+  SIGNALS_PRO_PRODUCT_ID,
+  SIGNALS_PRO_MONTHLY_PRODUCT_ID,
+]);
 
 /**
  * Stable internal reasons. Extends the Phase 3B-1 codes with the specific mismatch
@@ -51,6 +59,7 @@ export type AppleEntitlementReason =
   | "wrong_product_type"
   | "wrong_ownership"
   | "revoked"
+  | "expired"
   | "unsupported_environment"
   | "verification_unavailable";
 
@@ -106,14 +115,25 @@ export function mapVerificationException(error: unknown): AppleEntitlementReason
 export function assertSignalsEntitlement(
   payload: JWSTransactionDecodedPayload,
   expectedEnvironment: SignalsEnvironment,
+  nowMs: () => number = () => Date.now(),
 ): VerifiedAppleEntitlement {
   if (payload.bundleId !== SIGNALS_BUNDLE_ID) {
     throw new AppleEntitlementError("wrong_bundle");
   }
-  if (payload.productId !== SIGNALS_PRO_PRODUCT_ID) {
+  if (typeof payload.productId !== "string" || !SIGNALS_PRO_PRODUCT_IDS.has(payload.productId)) {
+    // Unknown product IDs — including future SKUs not yet rolled out — grant nothing.
     throw new AppleEntitlementError("wrong_product");
   }
-  if (payload.type !== Type.NON_CONSUMABLE) {
+  const isMonthly = payload.productId === SIGNALS_PRO_MONTHLY_PRODUCT_ID;
+
+  // The product's TYPE must match what that product ID is: the lifetime is a
+  // non-consumable and the monthly is an auto-renewable subscription. A signed payload
+  // claiming any other combination is not a Signals purchase.
+  if (isMonthly) {
+    if (payload.type !== Type.AUTO_RENEWABLE_SUBSCRIPTION) {
+      throw new AppleEntitlementError("wrong_product_type");
+    }
+  } else if (payload.type !== Type.NON_CONSUMABLE) {
     throw new AppleEntitlementError("wrong_product_type");
   }
   if (payload.inAppOwnershipType !== InAppOwnershipType.PURCHASED) {
@@ -121,7 +141,19 @@ export function assertSignalsEntitlement(
     throw new AppleEntitlementError("wrong_ownership");
   }
   if (payload.revocationDate !== undefined && payload.revocationDate !== null) {
+    // Refunds and revocations lock Pro for BOTH plans, exactly as before.
     throw new AppleEntitlementError("revoked");
+  }
+  // Expiry applies ONLY to the monthly subscription. The lifetime non-consumable never
+  // expires and is deliberately exempt — its expiresDate, if Apple ever set one, is
+  // ignored, so existing lifetime owners can never be locked out by this check.
+  let expiresDate: number | undefined;
+  if (isMonthly) {
+    expiresDate = typeof payload.expiresDate === "number" ? payload.expiresDate : undefined;
+    if (expiresDate === undefined || expiresDate <= nowMs()) {
+      // A subscription with no verified expiry is treated as lapsed, not trusted open-ended.
+      throw new AppleEntitlementError("expired");
+    }
   }
   if (payload.environment !== expectedEnvironment) {
     throw new AppleEntitlementError("unsupported_environment");
@@ -134,11 +166,12 @@ export function assertSignalsEntitlement(
   return {
     originalTransactionId,
     bundleId: SIGNALS_BUNDLE_ID,
-    productId: SIGNALS_PRO_PRODUCT_ID,
+    productId: payload.productId,
     environment: expectedEnvironment,
     ownershipType: "PURCHASED",
-    productType: "NON_CONSUMABLE",
+    productType: isMonthly ? "AUTO_RENEWABLE_SUBSCRIPTION" : "NON_CONSUMABLE",
     revoked: false,
+    ...(isMonthly ? { expiresDate } : {}),
   };
 }
 
@@ -153,14 +186,18 @@ export type RealAppleEntitlementVerifierOptions = {
   enableOnlineChecks: boolean;
   /** Test seam: inject a decoder instead of constructing SignedDataVerifier. */
   decoder?: SignedTransactionDecoder;
+  /** Test seam: the clock used for the monthly expiry check. Defaults to Date.now. */
+  nowMs?: () => number;
 };
 
 export class RealAppleEntitlementVerifier implements AppleEntitlementVerifier {
   private readonly decoder: SignedTransactionDecoder;
   private readonly environment: SignalsEnvironment;
+  private readonly nowMs: () => number;
 
   constructor(options: RealAppleEntitlementVerifierOptions) {
     this.environment = options.environment;
+    this.nowMs = options.nowMs ?? (() => Date.now());
 
     if (options.bundleId !== SIGNALS_BUNDLE_ID) {
       throw new AppleEntitlementError("wrong_bundle");
@@ -210,7 +247,7 @@ export class RealAppleEntitlementVerifier implements AppleEntitlementVerifier {
       throw new AppleEntitlementError(mapVerificationException(error));
     }
 
-    return assertSignalsEntitlement(payload, this.environment);
+    return assertSignalsEntitlement(payload, this.environment, this.nowMs);
   }
 }
 

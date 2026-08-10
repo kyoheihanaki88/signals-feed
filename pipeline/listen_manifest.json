@@ -15671,6 +15671,343 @@
           ]
         }
       }
+    },
+    "2026-08-10": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-10/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Netanyahu actually said no to Trump's plan?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. He said plainly, 'Israel does not accept the 15-point document.'",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's being described as a rare public break between the two leaders.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "listener",
+              "text": "Did this come out of nowhere?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not entirely. Israel had already signalled it would reject the plan.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "listener",
+              "text": "What's actually at stake here?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trump wanted the deal implemented in stages. Netanyahu wants full disarmament first.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "And meanwhile, things on the ground?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Difficult. After Trump announced the plan, Israel stepped up its bombing campaign in Gaza.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Strikes last Sunday killed 18 people.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "listener",
+              "text": "So the disagreement isn't just political — it's affecting real lives right now.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. That's why this rift between allies matters so much.",
+              "duration": 3.343673
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-10/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the Perseids are back this week?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, and conditions look especially good this year.",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "listener",
+              "text": "How many meteors could we actually see?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "The American Meteor Society estimates 30 to 50 an hour from rural areas in the US.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this happen every year at the same time?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Earth passes through debris left by comets, sometimes asteroids, and that creates the shower.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this a new thing to watch for?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at all. People have recorded this shower for over 2,000 years.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "When's the best time to look up?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It peaks Wednesday night into Thursday morning.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything else happening in the sky that week?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's also a total solar eclipse over Spain, Iceland and Greenland, and a six-planet parade, but the fireballs are best seen after totality passes.",
+              "duration": 8.803265
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-10/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Samsung's calling this one the Z Fold 8 — what's different about it?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's the shape, mostly. It's wider and shorter than past foldables, and Samsung is treating that as the new default, not a niche design.",
+              "duration": 7.967347
+            },
+            {
+              "speaker": "listener",
+              "text": "Does that actually feel good to use, or is it just a look?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "The reviewer says after a week it felt comfortable and natural, even though it's the shortest, widest phone they'd used.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "Is Samsung the first to try this squat shape?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite. Huawei's Pura X Max got there first, and Apple may be moving the same direction too.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, Apple's making a foldable now?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a widely predicted foldable iPhone expected in September, and rumor has it Apple's leaning toward a similar squat shape.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could end up being how most foldables look going forward.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the idea — less of an oddity, more of a standard.",
+              "duration": 3.004082
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-10/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a solar eclipse coming Wednesday evening?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a partial one, visible across the South West and the Channel Islands.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "Partial meaning we won't get full darkness like you sometimes hear about?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The National Space Centre says the total eclipse's path runs from northern Russia over to Greenland, Iceland, Spain and northern Portugal.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "So the UK misses out on totality altogether?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "We do, but they say we'll still see over 90% of the sun covered by the moon, which is a lot.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Are there particular places best placed to watch it?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Newquay and Plymouth are mentioned as being along that path where the effect will be most noticeable.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Will anything actually feel different while it's happening?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Dr Jean Dean, from the Royal Astronomical Society, says nature tends to change its behaviour as an eclipse progresses.",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a nice thing to watch for, even without full totality.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, it should still be a striking evening to look up.",
+              "duration": 2.951837
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-10/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So how big a problem is this really, for manufacturers?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Quite big. A survey found nearly a third were hit by a cyber-attack in the past year.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "That's on the companies themselves, or their suppliers too?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Either — it counts attacks on them directly or on someone in their supply chain.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "Didn't something like this happen to a car maker recently?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, JLR was hit almost a year ago and had to halt production for weeks.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the actual cost of all this?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The report, from the lobby group MakeUK, says it often means lost production time and higher costs. Government figures put cybercrime's cost to the UK economy at £14.7bn a year.",
+              "duration": 10.631837
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does it feel like this keeps getting worse?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hackers, sometimes backed by hostile states, have grown more numerous and more skilled at breaking through company defences.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "So larger firms feel it more?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some describe being under near-constant attempts to access their systems.",
+              "duration": 3.84
+            }
+          ]
+        }
+      }
     }
   }
 }

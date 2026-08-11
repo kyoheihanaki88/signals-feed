@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,153 +8,87 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Netanyahu rejects US-led 15-point Gaza peace plan in rare public break with Trump",
-      "summary": "Israel’s prime minister, Benjamin Netanyahu, has rejected a US-backed 15-point peace plan for Gaza in a rare public break with Donald Trump.",
+      "source": "BBC News (World)",
+      "headline": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
+      "summary": "Ukraine and Russia have continued striking each other overnight, with Volodymyr Zelensky accusing Moscow of using North Korean missiles.",
       "keyTakeaways": [
-        "On Gaza, he said: “Israel does not accept the 15-point document.",
-        "Israel had already signalled that it would reject the US-led plan.",
-        "Soon after Trump announced it last month, Israel stepped up its bombing campaign in the Palestinian territory – strikes killed 18 people last Sunday."
+        "The Ukrainian president said strikes in Zaporizhzhia - which killed at least six and injured at least 19 - involved ballistic missiles from Russia's ally.",
+        "In Voronezh, in southern Russia, warehouses belonging to the online retailer, Wildberries, were hit by Ukraine.",
+        "The company, known as Russia's Amazon, has been repeatedly targeted in recent weeks."
       ],
-      "whyItMatters": "Trump had said that the agreement would be implemented in stages, but Netanyahu on Sunday said that he wanted a full disarmament first in order to implement the deal.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/09/israel-rejects-us-led-15-point-gaza-peace-plan-says-netanyahu",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "whyItMatters": "In a video address on Monday evening, Zelensky said \"for the first time\" Russia \"cannot wage war without reinforcements from North Korea\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ネタニヤフ氏、米主導のガザ和平案を拒否 トランプ氏と異例の公然対立",
-          "summary": "イスラエルのネタニヤフ首相が、米国主導によるガザ和平のための15項目案を拒否した。トランプ大統領との間で、これまで見られなかった公然の意見対立となっている。",
+          "headline": "北朝鮮製ミサイル、露がウクライナ攻撃に使用とゼレンスキー氏",
+          "summary": "ウクライナとロシアは夜間の応酬を続けており、ゼレンスキー大統領はモスクワが北朝鮮製ミサイルを使用していると非難した。",
           "keyTakeaways": [
-            "ネタニヤフ氏はガザについて「イスラエルは15項目の文書を受け入れない」と述べた",
-            "イスラエル側は米国主導案への拒否姿勢をすでに示していた",
-            "トランプ氏の発表直後、イスラエルはガザへの空爆を強化し、先週日曜には空爆で18人が死亡した"
+            "ザポリージャへの攻撃では少なくとも六人が死亡、十九人が負傷し、ロシアの同盟国製の弾道ミサイルが使われたとウクライナ大統領は述べた。",
+            "南ロシアのボロネジでは、ネット通販大手ワイルドベリーズの倉庫がウクライナの攻撃を受けた。",
+            "「ロシアのアマゾン」とも呼ばれる同社は、ここ数週間で標的とされることが続いている。"
           ],
-          "whyItMatters": "トランプ氏は段階的な実施を想定していたが、ネタニヤフ氏は日曜、合意実行の前提として完全な武装解除をまず求めると述べた。"
+          "whyItMatters": "月曜夜のビデオ演説でゼレンスキー氏は、ロシアが北朝鮮の増援なしに戦争を続けられなくなったのは「初めて」だと述べた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Netanyahu actually said no to Trump's plan?",
-              "duration": 2.821224
+              "text": "What's happened overnight?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Yes. He said plainly, 'Israel does not accept the 15-point document.'",
-              "duration": 4.832653
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's being described as a rare public break between the two leaders.",
-              "duration": 3.369796
+              "text": "Russia and Ukraine struck each other again. Zelensky says some of the missiles used against Ukraine came from North Korea.",
+              "duration": 6.582857
             },
             {
               "speaker": "listener",
-              "text": "Did this come out of nowhere?",
-              "duration": 1.619592
+              "text": "Where were the strikes he mentioned?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "Not entirely. Israel had already signalled it would reject the plan.",
-              "duration": 3.422041
+              "text": "In Zaporizhzhia, where ballistic missiles reportedly killed at least six people and injured nineteen.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "What's actually at stake here?",
-              "duration": 1.697959
+              "text": "And what did Ukraine hit in return?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Trump wanted the deal implemented in stages. Netanyahu wants full disarmament first.",
-              "duration": 5.093878
+              "text": "Warehouses in Voronezh, in southern Russia, belonging to Wildberries — often called Russia's Amazon.",
+              "duration": 7.418776
             },
             {
               "speaker": "listener",
-              "text": "And meanwhile, things on the ground?",
-              "duration": 2.35102
-            },
-            {
-              "speaker": "explainer",
-              "text": "Difficult. After Trump announced the plan, Israel stepped up its bombing campaign in Gaza.",
-              "duration": 5.564082
-            },
-            {
-              "speaker": "explainer",
-              "text": "Strikes last Sunday killed 18 people.",
+              "text": "Has that company been targeted before?",
               "duration": 2.272653
             },
             {
+              "speaker": "explainer",
+              "text": "Yes, it's been hit several times in recent weeks.",
+              "duration": 2.403265
+            },
+            {
               "speaker": "listener",
-              "text": "So the disagreement isn't just political — it's affecting real lives right now.",
-              "duration": 4.623673
+              "text": "Why does the North Korea detail matter so much?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. That's why this rift between allies matters so much.",
-              "duration": 3.343673
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イスラエルのネタニヤフ首相が、米国主導のガザ和平案を拒否しました。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "15項目からなる合意文書について、受け入れないと明言しています。",
-              "duration": 5.352
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ大統領との間で、これまでにない公然の対立となりました。",
-              "duration": 5.304
-            },
-            {
-              "speaker": "narrator",
-              "text": "イスラエル側は以前から、この案への拒否姿勢を示していました。",
-              "duration": 5.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏の発表後、イスラエルはガザへの空爆を強めました。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "先週日曜の空爆では18人が死亡しています。",
-              "duration": 4.272
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は合意を段階的に進める考えでした。",
-              "duration": 3.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "しかしネタニヤフ氏は、まず完全な武装解除を求めています。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "双方の隔たりは、今後の停戦交渉の行方を左右しそうです。",
-              "duration": 5.232
-            },
-            {
-              "speaker": "narrator",
-              "text": "朝のうちに、この動きを心に留めておきたいところです。",
-              "duration": 4.44
+              "text": "Zelensky said it's the first time Russia can't sustain the war without North Korean reinforcements — a sign of how stretched its resources have become.",
+              "duration": 8.124082
             }
           ]
         }
@@ -164,154 +98,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Perseid meteor shower set to dazzle northern hemisphere this week",
-      "summary": "The Perseid summer light show is back, and viewing conditions are especially promising across the northern hemisphere.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "AI ‘will do more to boost fossil fuel production than green energy’",
+      "summary": "AI-driven productivity gains enable more planet-heating pollution from fossil fuels than they avoid from renewables, a study has found.",
       "keyTakeaways": [
-        "The American Meteor Society estimates 30 to 50 meteors per hour could be seen from rural regions in the US.",
-        "Meteor showers tend to put on dazzling celestial shows and happen at predictable times every year when the Earth plows through trails of debris left behind by comets and, sometimes, asteroids.",
-        "Observations of this meteor shower date back over 2,000 years."
+        "Researchers modelled the technical potential for AI to boost clean power generation along with projections for how it can help produce coal, oil and gas.",
+        "Across 64 scenarios, they found net yearly carbon pollution rose by 0.47-1.8 gigatonnes, or about 1-5% of the energy sector’s annual emissions.",
+        "The researchers found net emissions only fell in scenarios where AI did not increase productivity in the fossil fuel sector."
       ],
-      "whyItMatters": "The meteor shower is expected to peak on Wednesday night into Thursday morning, and coincides with a total solar eclipse across Spain, Iceland and Greenland and a six-planet parade – though the best time to view the fireballs will come after totality.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/09/perseid-meteor-shower",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "whyItMatters": "The International Energy Agency estimates that AI could boost technically recoverable oil and gas reserves by 5% and cut the cost of deepwater offshore projects by 10%.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/11/ai-will-do-more-to-boost-fossil-fuel-production-than-green-energy",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "今週、ペルセウス座流星群が夜空を彩る",
-          "summary": "夏の夜を飾るペルセウス座流星群が今年もめぐってくる。北半球では観測条件が特に良好とみられている。",
+          "headline": "AIが後押しするのは化石燃料か、それとも再生可能エネルギーか",
+          "summary": "AIによる生産性向上は、再生可能エネルギーが減らす分よりも多くの温室効果ガスを化石燃料から生み出す、という研究結果が出た。",
           "keyTakeaways": [
-            "米国流星協会によると、米国の田舎の地域では一時間に三十から五十個ほどの流星が見られる可能性がある。",
-            "流星群は毎年ほぼ決まった時期に、地球が彗星や小惑星の残した塵の帯を通過することで起こる、規則的な天体現象だ。",
-            "この流星群の観測記録は二千年以上前にまで遡る。"
+            "研究チームはAIがクリーン発電を後押しする技術的可能性と、石炭や石油、天然ガスの生産を助ける可能性の両方を試算した。",
+            "64通りの想定のうち、年間の正味の炭素排出量は0.47から1.8ギガトン増加し、エネルギー部門全体の年間排出量の1から5パーセントに相当した。",
+            "正味の排出量が減ったのは、AIが化石燃料部門の生産性を高めなかった場合に限られた。"
           ],
-          "whyItMatters": "流星群は水曜の夜から木曜の朝にかけて最も活発になると見込まれ、スペインやアイスランド、グリーンランドで見られる皆既日食や六つの惑星が並ぶ現象とも重なるが、火球を眺めるには皆既の後がより見やすいとされている。"
+          "whyItMatters": "国際エネルギー機関は、AIによって技術的に回収可能な石油・天然ガスの埋蔵量が5パーセント増え、深海油田開発の費用が10パーセント下がる可能性があると見積もっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the Perseids are back this week?",
-              "duration": 1.933061
+              "text": "So AI is supposed to help the climate, right? Isn't that the whole pitch?",
+              "duration": 4.022857
             },
             {
               "speaker": "explainer",
-              "text": "Yes, and conditions look especially good this year.",
-              "duration": 2.821224
+              "text": "That's the hope, but a new study found the opposite tends to happen in practice.",
+              "duration": 3.892245
             },
             {
               "speaker": "listener",
-              "text": "How many meteors could we actually see?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "The American Meteor Society estimates 30 to 50 an hour from rural areas in the US.",
-              "duration": 4.728163
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does this happen every year at the same time?",
-              "duration": 2.925714
-            },
-            {
-              "speaker": "explainer",
-              "text": "Earth passes through debris left by comets, sometimes asteroids, and that creates the shower.",
-              "duration": 5.511837
-            },
-            {
-              "speaker": "listener",
-              "text": "Is this a new thing to watch for?",
-              "duration": 1.933061
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not at all. People have recorded this shower for over 2,000 years.",
-              "duration": 4.075102
-            },
-            {
-              "speaker": "listener",
-              "text": "When's the best time to look up?",
+              "text": "What did they actually look at?",
               "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "It peaks Wednesday night into Thursday morning.",
-              "duration": 2.403265
+              "text": "Researchers modelled how AI could boost clean power generation, and also how it could boost coal, oil and gas production.",
+              "duration": 7.235918
             },
             {
               "speaker": "listener",
-              "text": "Anything else happening in the sky that week?",
-              "duration": 2.220408
+              "text": "And which one won out?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "There's also a total solar eclipse over Spain, Iceland and Greenland, and a six-planet parade, but the fireballs are best seen after totality passes.",
-              "duration": 8.803265
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "今週、ペルセウス座流星群が北半球の夜空を彩ります。",
-              "duration": 5.208
+              "text": "Across 64 scenarios, net carbon pollution actually rose, by roughly 0.47 to 1.8 gigatonnes a year.",
+              "duration": 7.366531
             },
             {
-              "speaker": "narrator",
-              "text": "今年は観測条件がとても良いと言われています。",
-              "duration": 3.912
+              "speaker": "listener",
+              "text": "That sounds like a lot. How much is that in context?",
+              "duration": 2.742857
             },
             {
-              "speaker": "narrator",
-              "text": "米国流星協会によると、田舎の地域では一時間に三十から五十個ほどの流星が見えるそうです。",
-              "duration": 7.584
+              "speaker": "explainer",
+              "text": "It's about 1 to 5% of the energy sector's total annual emissions.",
+              "duration": 3.709388
             },
             {
-              "speaker": "narrator",
-              "text": "流星群は、地球が彗星や小惑星の残した塵の帯を通るときに起こる現象です。",
-              "duration": 6.624
+              "speaker": "listener",
+              "text": "Was there any scenario where emissions actually went down?",
+              "duration": 3.474286
             },
             {
-              "speaker": "narrator",
-              "text": "そのため毎年ほぼ同じ時期に、規則的に見られます。",
-              "duration": 4.44
+              "speaker": "explainer",
+              "text": "Yes, but only when AI wasn't allowed to improve productivity in fossil fuel extraction at all.",
+              "duration": 4.832653
             },
             {
-              "speaker": "narrator",
-              "text": "この流星群の観測記録は、二千年以上前まで遡ります。",
-              "duration": 5.232
+              "speaker": "listener",
+              "text": "So the efficiency gains are the problem, not the technology itself.",
+              "duration": 3.996735
             },
             {
-              "speaker": "narrator",
-              "text": "今回の見頃は水曜の夜から木曜の朝にかけてです。",
-              "duration": 4.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "同じ時期には、スペインやアイスランド、グリーンランドで皆既日食も見られます。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "さらに六つの惑星が並ぶ現象も重なっています。",
-              "duration": 3.984
-            },
-            {
-              "speaker": "narrator",
-              "text": "火球をよく見たいなら、皆既日食が終わったあとの時間が狙い目です。",
-              "duration": 5.184
+              "speaker": "explainer",
+              "text": "Exactly. The same tools that make drilling and extraction cheaper are hard to keep away from fossil fuels too.",
+              "duration": 5.694694
             }
           ]
         }
@@ -321,139 +199,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Verge (Mobile)",
-      "headline": "Samsung’s Galaxy Z Fold 8 feels like the future",
-      "summary": "The company has given its new wide foldable the “Z Fold 8” name, positioning the phone not as a widescreen oddity, but as the new normal, the default design for foldables going forward.",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Wall Street giants hand Nvidia $500bn to fund boom in AI projects",
+      "summary": "Nvidia has teamed up with some of Wall Street's largest banks and investors to raise $500bn (£370bn) in capital for artificial intelligence infrastructure.",
       "keyTakeaways": [
-        "Is this the future of foldable phones?",
-        "Whether you want to give the credit to Apple, Samsung, or even Huawei (which got here first with the Pura X Max ), I think they might be onto something.",
-        "After a week, the Z Fold 8 feels comfortable, natural, and normal, despite being the shortest and widest phone I can remember using."
+        "The financing will go towards Nvidia's own projects and those being built by its partners.",
+        "Infrastructure projects backed by this fund will likely include the construction of new data centres to house, operate, and cool miles of stacked computer chips that process AI data and actions.",
+        "Companies using Nvidia's popular chips or GPUs include Google, Meta, Amazon, Microsoft, SpaceX, Tesla, OpenAI and Anthropic."
       ],
-      "whyItMatters": "Rumor has it that Apple feels the same way, with a similar squat shape widely predicted for the first foldable iPhone, expected to launch in September.",
-      "originalURL": "https://www.theverge.com/tech/972387/samsung-galaxy-z-fold-8-review",
-      "readTime": 12,
-      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Devices",
+      "whyItMatters": "Essentially every major technology and AI company uses Nvidia's computer chips, or graphics processing units (GPUs), to power their services, AI platforms and AI chatbots.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "サムスンの新型折りたたみ、Z Fold 8が示す未来",
-          "summary": "サムスンは新しいワイド型折りたたみスマートフォンに「Z Fold 8」という名を与えた。これは変わり種の横長端末ではなく、折りたたみスマホの新たな標準としての位置づけだ。",
+          "headline": "ウォール街がエヌビディアに5000億ドル、AI投資を後押し",
+          "summary": "エヌビディアはウォール街の大手銀行や投資会社と組み、人工知能インフラの整備に向けて5000億ドル（約3700億ポンド）の資金を調達した。",
           "keyTakeaways": [
-            "折りたたみスマホの未来を先取りする一台",
-            "アップルかサムスンか、あるいは先に横長型を出したファーウェイか。功績が誰にあるにせよ、この形に何かがあるように思える",
-            "一週間使ってみると、これまでで最も短く幅広い端末でありながら、Z Fold 8は自然で心地よく、もはや違和感がない"
+            "資金はエヌビディア自身の計画と、提携企業が進める事業の双方に投じられる。",
+            "支援対象には、AIのデータや処理を担う半導体を収容し稼働・冷却するための、新たなデータセンター建設が含まれるとみられる。",
+            "エヌビディアのチップやGPUは、グーグル、メタ、アマゾン、マイクロソフト、スペースX、テスラ、OpenAI、アンソロピックなどが利用している。"
           ],
-          "whyItMatters": "アップルも同じ考えのようで、9月発売予定の初代折りたたみiPhoneも似た横長の形になると広く予想されている。"
+          "whyItMatters": "主要なテクノロジー企業やAI企業のほとんどが、サービスやAIプラットフォーム、チャットボットの稼働にエヌビディアの半導体（GPU）を利用している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Samsung's calling this one the Z Fold 8 — what's different about it?",
-              "duration": 4.963265
+              "text": "Half a trillion dollars for Nvidia — what's that actually going toward?",
+              "duration": 4.362449
             },
             {
               "speaker": "explainer",
-              "text": "It's the shape, mostly. It's wider and shorter than past foldables, and Samsung is treating that as the new default, not a niche design.",
-              "duration": 7.967347
+              "text": "It's financing for AI infrastructure — Nvidia's own projects and ones built by its partners.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "Does that actually feel good to use, or is it just a look?",
-              "duration": 3.369796
+              "text": "Infrastructure meaning what exactly?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "The reviewer says after a week it felt comfortable and natural, even though it's the shortest, widest phone they'd used.",
-              "duration": 6.582857
+              "text": "Mostly new data centres — huge facilities to house and cool the stacked computer chips that process AI data.",
+              "duration": 5.929796
             },
             {
               "speaker": "listener",
-              "text": "Is Samsung the first to try this squat shape?",
-              "duration": 2.742857
+              "text": "Who's actually putting up the money?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Not quite. Huawei's Pura X Max got there first, and Apple may be moving the same direction too.",
-              "duration": 5.198367
+              "text": "Some of Wall Street's biggest banks and investors have teamed up with Nvidia on this.",
+              "duration": 3.94449
             },
             {
               "speaker": "listener",
-              "text": "Wait, Apple's making a foldable now?",
-              "duration": 2.220408
+              "text": "And who benefits from all this new capacity?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "There's a widely predicted foldable iPhone expected in September, and rumor has it Apple's leaning toward a similar squat shape.",
+              "text": "Companies like Google, Meta, Amazon, Microsoft, and OpenAI all rely on Nvidia's chips to run their AI systems.",
               "duration": 7.105306
             },
             {
               "speaker": "listener",
-              "text": "So this could end up being how most foldables look going forward.",
-              "duration": 3.186939
+              "text": "So this really touches almost every big tech name out there.",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "That's the idea — less of an oddity, more of a standard.",
-              "duration": 3.004082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "サムスンが新しい折りたたみスマートフォンに「Z Fold 8」という名前をつけました。",
-              "duration": 6.24
+              "text": "Pretty much — nearly every major AI platform runs on Nvidia's GPUs in some way.",
+              "duration": 4.780408
             },
             {
-              "speaker": "narrator",
-              "text": "これまでの横長モデルとは違い、今後の標準形として位置づけています。",
-              "duration": 5.64
+              "speaker": "listener",
+              "text": "It's a lot of money chasing a lot of chips.",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "横に広く縦に短いという独特の形は、以前は変わり種と見られていました。",
-              "duration": 6.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "しかし一週間使ってみると、その形が自然で心地よく感じられます。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "ファーウェイが先に横長型を出し、サムスンやアップルもこの流れに続いています。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "誰の功績かは別としても、この形には理由があるように思えます。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "実はアップルも同じ発想で、9月発売予定の初代折りたたみiPhoneが似た形になると予想されています。",
-              "duration": 8.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "つまり折りたたみスマホの標準は、これから大きく変わろうとしています。",
-              "duration": 5.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "次に新しい端末を選ぶときは、この横長という選択肢を意識してみるのもよさそうです。",
-              "duration": 6.792
+              "speaker": "explainer",
+              "text": "It is — a sign of how much is being staked on AI's continued growth.",
+              "duration": 3.94449
             }
           ]
         }
@@ -463,144 +300,88 @@
       "number": 4,
       "importance": 4,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "What can we see during the partial solar eclipse?",
-      "summary": "A partial solar eclipse is set to be visible across the South West and Channel Islands on Wednesday evening.",
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "What to expect from Google’s 2026 Pixel hardware launch event",
+      "summary": "It’s that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets.",
       "keyTakeaways": [
-        "The team at the National Space Centre said the main event of this year's total solar eclipse will be visible in a giant arc moving across from northern Russia to Greenland, Iceland, Spain and northern Portugal.",
-        "They said although the \"arc of totality - the path the eclipse shadow takes - misses us here in the UK, we will still get to see over 90% of the sun covered by the moon\".",
-        "Guernsey-based Dr Jean Dean, fellow of the Royal Astronomical Society, said nature would alter its behaviour as the eclipse progresses."
+        "That could mean that all of the details about Google’s new devices will be officially revealed long before the company hosts the formal launch event.",
+        "Here’s what we expect to see Google announce this week.",
+        "If you want to watch the event live, you can catch it on YouTube."
       ],
-      "whyItMatters": "The path of totality for this event is expected to pass over locations including Newquay and Plymouth.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c86n5w392xjo?at_medium=RSS&at_campaign=rss",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The observatory",
+      "whyItMatters": "Google itself has already teased new slab-style and foldable Pixel smartphones, but leaks also indicate that the company could announce updated watches, a new color for familiar earbuds, and perhaps a brand new AirTag-like item tracker.",
+      "originalURL": "https://www.theverge.com/tech/977448/made-by-google-2026-pixel-hardware-launch-event",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "部分日食、水曜の空に見えるもの",
-          "summary": "水曜の夕方、イギリス南西部とチャンネル諸島で部分日食が見られる見込みだ。",
+          "headline": "グーグル、Pixel新製品発表会を今週開催",
+          "summary": "今年もこの季節がやってきた。水曜日、グーグルは恒例のハードウェア発表会「Made by Google」を開き、新しいPixel製品を披露する予定だ。",
           "keyTakeaways": [
-            "ナショナル・スペース・センターの研究チームによると、今年の皆既日食の本体はロシア北部からグリーンランド、アイスランド、スペイン、ポルトガル北部へと大きな弧を描いて移動する",
-            "皆既の影が通る帯はイギリスを外れるものの、太陽の九割以上が月に隠れる様子は見られるという",
-            "ガーンジー在住の英国王立天文学会フェロー、ジーン・ディーン博士は、日食の進行とともに自然の振る舞いも変わっていくと話す"
+            "新端末の詳細は、正式発表より前にすでに明らかになっている可能性がある",
+            "今週グーグルが発表するとみられる内容をまとめた",
+            "発表会はYouTubeで生中継される予定"
           ],
-          "whyItMatters": "今回の皆既帯は、ニューキーやプリマスなどの上空を通過する見込みだ。"
+          "whyItMatters": "グーグル自身が新しいストレート型と折りたたみ型のPixelスマートフォンを予告しているほか、更新版のスマートウォッチや新色のイヤホン、さらにはAirTagのような新しい紛失防止タグが登場するとの情報もある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a solar eclipse coming Wednesday evening?",
-              "duration": 2.951837
+              "text": "So Google's got a big event this week?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a partial one, visible across the South West and the Channel Islands.",
-              "duration": 4.022857
+              "text": "Yes, their annual Made by Google hardware event is happening Wednesday.",
+              "duration": 3.761633
             },
             {
               "speaker": "listener",
-              "text": "Partial meaning we won't get full darkness like you sometimes hear about?",
+              "text": "What are they expected to show off?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "New Pixel phones, both a slab-style model and a foldable one, since Google's already teased those.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything beyond phones?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Leaks point to updated watches, a new color for the earbuds, and possibly a new item tracker, similar to an AirTag.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, will there even be surprises left by the time the event starts?",
               "duration": 3.84
             },
             {
               "speaker": "explainer",
-              "text": "Right. The National Space Centre says the total eclipse's path runs from northern Russia over to Greenland, Iceland, Spain and northern Portugal.",
-              "duration": 9.325714
+              "text": "Maybe not many. So much detail tends to leak out beforehand that the formal event often just confirms what's already known.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "So the UK misses out on totality altogether?",
-              "duration": 2.873469
+              "text": "Can people actually watch it happen?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "We do, but they say we'll still see over 90% of the sun covered by the moon, which is a lot.",
-              "duration": 5.459592
-            },
-            {
-              "speaker": "listener",
-              "text": "Are there particular places best placed to watch it?",
-              "duration": 3.056327
-            },
-            {
-              "speaker": "explainer",
-              "text": "Newquay and Plymouth are mentioned as being along that path where the effect will be most noticeable.",
-              "duration": 4.545306
-            },
-            {
-              "speaker": "listener",
-              "text": "Will anything actually feel different while it's happening?",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "Dr Jean Dean, from the Royal Astronomical Society, says nature tends to change its behaviour as an eclipse progresses.",
-              "duration": 6.347755
-            },
-            {
-              "speaker": "listener",
-              "text": "That's a nice thing to watch for, even without full totality.",
-              "duration": 3.369796
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly, it should still be a striking evening to look up.",
-              "duration": 2.951837
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "水曜の夕方、イギリス南西部とチャンネル諸島の空に部分日食が現れます。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "太陽の九割以上が月に隠れる、大きく欠けた姿が見られるということです。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "今年の皆既日食は、ロシア北部からグリーンランド、アイスランド、スペイン、ポルトガル北部へと弧を描いて移動します。",
-              "duration": 8.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "皆既の帯はイギリスを外れますが、その通り道はニューキーやプリマスなどの上空にもかかります。",
-              "duration": 6.864
-            },
-            {
-              "speaker": "narrator",
-              "text": "欠けた太陽の姿は、肉眼でも十分に印象的な眺めになりそうです。",
-              "duration": 5.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "ガーンジー在住の王立天文学会フェロー、ジーン・ディーン博士も見守っています。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "日食が進むにつれて、自然の振る舞いも変わっていくと話しています。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "空を見上げる短い時間が、いつもと違う朝夕の景色を運んできそうです。",
-              "duration": 5.904
+              "text": "Yes, it'll be streamed live on YouTube for anyone who wants to follow along.",
+              "duration": 4.022857
             }
           ]
         }
@@ -610,154 +391,98 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "UK manufacturers face rising hacking risk as survey shows 30% were hit last year",
-      "summary": "Nearly a third of British manufacturers have been hit by a cyber-attack on them or a company in their supply chain, according to a survey that highlighted the growing hacking risk to companies.",
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Where to see partial solar eclipse across England",
+      "summary": "People across England will have the rare chance to experience a dramatic partial solar eclipse this week, where the Sun will be almost entirely blocked by the Moon.",
       "keyTakeaways": [
-        "The findings come almost a year after Britain’s largest automotive employer, JLR, was hit by an attack that forced it to halt production for weeks.",
-        "The report by MakeUK, a lobby group for British manufacturers, found that 30% of manufacturers had experienced a cyber-incident in the past 12 months, leading in many cases to lost production time and increased costs.",
-        "Large businesses describe being under near-constant attack from people trying to access their systems, and the UK government has said cybercrime costs the economy £14.7bn a year."
+        "It will be the biggest coverage since the total eclipse in 1999.",
+        "There will be dozens of celestial events to mark the occasion across the country and ideal spots where people should be able to watch the moment safely.",
+        "People in the South West of England are likely to see the most coverage with spectators in parts of Greenland, Iceland and northern Spain seeing a total eclipse."
       ],
-      "whyItMatters": "The risk of attacks has risen in recent years as hackers, often backed by hostile states, have become more numerous and more adept at penetrating company defences.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/10/uk-companies-cyber-attack-third-jlr",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Keyboard",
+      "whyItMatters": "The Moon will cover 90-96 per cent of the Sun on Wednesday.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cdx7kzv5e3qo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英製造業の3割がサイバー攻撃被害、リスク拡大浮き彫りに",
-          "summary": "英国の製造業を対象にした調査で、自社またはサプライチェーン内の企業がサイバー攻撃を受けたと回答した企業が3割近くに達した。企業を狙うハッキングの脅威が広がっている実態を示す結果となった。",
+          "headline": "英国各地、今週は部分日食の朝",
+          "summary": "今週、英国各地で太陽の大部分が月に隠れる部分日食が観測される。日常ではなかなか出会えない天体の光景だ。",
           "keyTakeaways": [
-            "英自動車業界最大の雇用主JLRが攻撃を受け、生産停止に追い込まれてから約一年での調査結果。",
-            "英製造業団体メイクUKの報告書によると、過去一年で3割の企業がサイバー被害を経験し、生産時間の損失やコスト増につながった例も多い。",
-            "大企業からは絶えず侵入を試みられているとの声があり、英政府はサイバー犯罪による経済損失を年間147億ポンドと見積もっている。"
+            "一九九九年の皆既日食以来、最大の欠け方になる見込み。",
+            "各地で観測会が開かれ、安全に眺められる好適な場所も紹介されている。",
+            "南西部で最も大きく欠けて見え、グリーンランドやアイスランド、スペイン北部の一部では皆既日食となる。"
           ],
-          "whyItMatters": "敵対的な国家の支援を受けたハッカーが増え、その手口も巧妙になっていることで、攻撃のリスクは近年高まっている。"
+          "whyItMatters": "水曜日には太陽の九割から九割六分ほどが月に隠れる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So how big a problem is this really, for manufacturers?",
-              "duration": 3.160816
+              "text": "So there's a solar eclipse happening this week?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "Quite big. A survey found nearly a third were hit by a cyber-attack in the past year.",
-              "duration": 4.858776
+              "text": "Yes, a partial one, visible across England on Wednesday.",
+              "duration": 3.186939
             },
             {
               "speaker": "listener",
-              "text": "That's on the companies themselves, or their suppliers too?",
-              "duration": 3.343673
+              "text": "How much of the Sun will actually be covered?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Either — it counts attacks on them directly or on someone in their supply chain.",
-              "duration": 4.179592
+              "text": "The Moon will block between 90 and 96 per cent of it.",
+              "duration": 2.925714
             },
             {
               "speaker": "listener",
-              "text": "Didn't something like this happen to a car maker recently?",
-              "duration": 2.821224
+              "text": "That sounds like a lot. Is it unusual?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "Yes, JLR was hit almost a year ago and had to halt production for weeks.",
-              "duration": 4.127347
+              "text": "It is. This will be the biggest coverage seen since the total eclipse back in 1999.",
+              "duration": 5.093878
             },
             {
               "speaker": "listener",
-              "text": "What's the actual cost of all this?",
+              "text": "Where's the best place to watch from?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "The report, from the lobby group MakeUK, says it often means lost production time and higher costs. Government figures put cybercrime's cost to the UK economy at £14.7bn a year.",
-              "duration": 10.631837
+              "text": "The South West of England should get the most coverage.",
+              "duration": 2.638367
             },
             {
               "speaker": "listener",
-              "text": "Why does it feel like this keeps getting worse?",
-              "duration": 2.45551
+              "text": "And will anyone see a full total eclipse?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Hackers, sometimes backed by hostile states, have grown more numerous and more skilled at breaking through company defences.",
-              "duration": 5.799184
+              "text": "Yes, people in parts of Greenland, Iceland and northern Spain will see a total eclipse.",
+              "duration": 4.493061
             },
             {
               "speaker": "listener",
-              "text": "So larger firms feel it more?",
-              "duration": 1.619592
+              "text": "Are there events planned to mark it?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Some describe being under near-constant attempts to access their systems.",
-              "duration": 3.84
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-10/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "英国の製造業を対象にした調査で、3割近い企業がサイバー攻撃の被害を受けたと分かりました。",
-              "duration": 7.608
-            },
-            {
-              "speaker": "narrator",
-              "text": "自社だけでなく、サプライチェーン内の企業が狙われた例も含まれています。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "調査を行ったのは、製造業団体のメイクUKです。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "ちょうど一年ほど前、自動車業界最大の雇用主JLRが攻撃を受け、生産停止に追い込まれました。",
-              "duration": 8.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の結果は、あの出来事から間もない時期にまとまったものです。",
-              "duration": 4.92
-            },
-            {
-              "speaker": "narrator",
-              "text": "被害を受けた企業では、生産時間の損失やコスト増に直結したケースも多いそうです。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "大企業の中には、常に侵入を試みられていると感じているところもあります。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "英政府の推計では、サイバー犯罪による経済損失は年間147億ポンドにのぼります。",
-              "duration": 7.416
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、敵対的な国家に支援されたハッカーの増加と、手口の巧妙化があります。",
-              "duration": 6.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "製造業を支える現場の安全は、私たちの暮らしとも静かに結びついています。",
-              "duration": 6.288
+              "text": "Dozens, with safe viewing spots set up across the country.",
+              "duration": 3.004082
             }
           ]
         }

@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-11",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
+      "summary": "Ukraine and Russia have continued striking each other overnight, with Volodymyr Zelensky accusing Moscow of using North Korean missiles.",
+      "keyTakeaways": [
+        "The Ukrainian president said strikes in Zaporizhzhia - which killed at least six and injured at least 19 - involved ballistic missiles from Russia's ally.",
+        "In Voronezh, in southern Russia, warehouses belonging to the online retailer, Wildberries, were hit by Ukraine.",
+        "The company, known as Russia's Amazon, has been repeatedly targeted in recent weeks."
+      ],
+      "whyItMatters": "In a video address on Monday evening, Zelensky said \"for the first time\" Russia \"cannot wage war without reinforcements from North Korea\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "北朝鮮製ミサイル、露がウクライナ攻撃に使用とゼレンスキー氏",
+          "summary": "ウクライナとロシアは夜間の応酬を続けており、ゼレンスキー大統領はモスクワが北朝鮮製ミサイルを使用していると非難した。",
+          "keyTakeaways": [
+            "ザポリージャへの攻撃では少なくとも六人が死亡、十九人が負傷し、ロシアの同盟国製の弾道ミサイルが使われたとウクライナ大統領は述べた。",
+            "南ロシアのボロネジでは、ネット通販大手ワイルドベリーズの倉庫がウクライナの攻撃を受けた。",
+            "「ロシアのアマゾン」とも呼ばれる同社は、ここ数週間で標的とされることが続いている。"
+          ],
+          "whyItMatters": "月曜夜のビデオ演説でゼレンスキー氏は、ロシアが北朝鮮の増援なしに戦争を続けられなくなったのは「初めて」だと述べた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "AI ‘will do more to boost fossil fuel production than green energy’",
+      "summary": "AI-driven productivity gains enable more planet-heating pollution from fossil fuels than they avoid from renewables, a study has found.",
+      "keyTakeaways": [
+        "Researchers modelled the technical potential for AI to boost clean power generation along with projections for how it can help produce coal, oil and gas.",
+        "Across 64 scenarios, they found net yearly carbon pollution rose by 0.47-1.8 gigatonnes, or about 1-5% of the energy sector’s annual emissions.",
+        "The researchers found net emissions only fell in scenarios where AI did not increase productivity in the fossil fuel sector."
+      ],
+      "whyItMatters": "The International Energy Agency estimates that AI could boost technically recoverable oil and gas reserves by 5% and cut the cost of deepwater offshore projects by 10%.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/11/ai-will-do-more-to-boost-fossil-fuel-production-than-green-energy",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIが後押しするのは化石燃料か、それとも再生可能エネルギーか",
+          "summary": "AIによる生産性向上は、再生可能エネルギーが減らす分よりも多くの温室効果ガスを化石燃料から生み出す、という研究結果が出た。",
+          "keyTakeaways": [
+            "研究チームはAIがクリーン発電を後押しする技術的可能性と、石炭や石油、天然ガスの生産を助ける可能性の両方を試算した。",
+            "64通りの想定のうち、年間の正味の炭素排出量は0.47から1.8ギガトン増加し、エネルギー部門全体の年間排出量の1から5パーセントに相当した。",
+            "正味の排出量が減ったのは、AIが化石燃料部門の生産性を高めなかった場合に限られた。"
+          ],
+          "whyItMatters": "国際エネルギー機関は、AIによって技術的に回収可能な石油・天然ガスの埋蔵量が5パーセント増え、深海油田開発の費用が10パーセント下がる可能性があると見積もっている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Wall Street giants hand Nvidia $500bn to fund boom in AI projects",
+      "summary": "Nvidia has teamed up with some of Wall Street's largest banks and investors to raise $500bn (£370bn) in capital for artificial intelligence infrastructure.",
+      "keyTakeaways": [
+        "The financing will go towards Nvidia's own projects and those being built by its partners.",
+        "Infrastructure projects backed by this fund will likely include the construction of new data centres to house, operate, and cool miles of stacked computer chips that process AI data and actions.",
+        "Companies using Nvidia's popular chips or GPUs include Google, Meta, Amazon, Microsoft, SpaceX, Tesla, OpenAI and Anthropic."
+      ],
+      "whyItMatters": "Essentially every major technology and AI company uses Nvidia's computer chips, or graphics processing units (GPUs), to power their services, AI platforms and AI chatbots.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ウォール街がエヌビディアに5000億ドル、AI投資を後押し",
+          "summary": "エヌビディアはウォール街の大手銀行や投資会社と組み、人工知能インフラの整備に向けて5000億ドル（約3700億ポンド）の資金を調達した。",
+          "keyTakeaways": [
+            "資金はエヌビディア自身の計画と、提携企業が進める事業の双方に投じられる。",
+            "支援対象には、AIのデータや処理を担う半導体を収容し稼働・冷却するための、新たなデータセンター建設が含まれるとみられる。",
+            "エヌビディアのチップやGPUは、グーグル、メタ、アマゾン、マイクロソフト、スペースX、テスラ、OpenAI、アンソロピックなどが利用している。"
+          ],
+          "whyItMatters": "主要なテクノロジー企業やAI企業のほとんどが、サービスやAIプラットフォーム、チャットボットの稼働にエヌビディアの半導体（GPU）を利用している。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge",
+      "headline": "What to expect from Google’s 2026 Pixel hardware launch event",
+      "summary": "It’s that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets.",
+      "keyTakeaways": [
+        "That could mean that all of the details about Google’s new devices will be officially revealed long before the company hosts the formal launch event.",
+        "Here’s what we expect to see Google announce this week.",
+        "If you want to watch the event live, you can catch it on YouTube."
+      ],
+      "whyItMatters": "Google itself has already teased new slab-style and foldable Pixel smartphones, but leaks also indicate that the company could announce updated watches, a new color for familiar earbuds, and perhaps a brand new AirTag-like item tracker.",
+      "originalURL": "https://www.theverge.com/tech/977448/made-by-google-2026-pixel-hardware-launch-event",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "グーグル、Pixel新製品発表会を今週開催",
+          "summary": "今年もこの季節がやってきた。水曜日、グーグルは恒例のハードウェア発表会「Made by Google」を開き、新しいPixel製品を披露する予定だ。",
+          "keyTakeaways": [
+            "新端末の詳細は、正式発表より前にすでに明らかになっている可能性がある",
+            "今週グーグルが発表するとみられる内容をまとめた",
+            "発表会はYouTubeで生中継される予定"
+          ],
+          "whyItMatters": "グーグル自身が新しいストレート型と折りたたみ型のPixelスマートフォンを予告しているほか、更新版のスマートウォッチや新色のイヤホン、さらにはAirTagのような新しい紛失防止タグが登場するとの情報もある。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Where to see partial solar eclipse across England",
+      "summary": "People across England will have the rare chance to experience a dramatic partial solar eclipse this week, where the Sun will be almost entirely blocked by the Moon.",
+      "keyTakeaways": [
+        "It will be the biggest coverage since the total eclipse in 1999.",
+        "There will be dozens of celestial events to mark the occasion across the country and ideal spots where people should be able to watch the moment safely.",
+        "People in the South West of England are likely to see the most coverage with spectators in parts of Greenland, Iceland and northern Spain seeing a total eclipse."
+      ],
+      "whyItMatters": "The Moon will cover 90-96 per cent of the Sun on Wednesday.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cdx7kzv5e3qo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国各地、今週は部分日食の朝",
+          "summary": "今週、英国各地で太陽の大部分が月に隠れる部分日食が観測される。日常ではなかなか出会えない天体の光景だ。",
+          "keyTakeaways": [
+            "一九九九年の皆既日食以来、最大の欠け方になる見込み。",
+            "各地で観測会が開かれ、安全に眺められる好適な場所も紹介されている。",
+            "南西部で最も大きく欠けて見え、グリーンランドやアイスランド、スペイン北部の一部では皆既日食となる。"
+          ],
+          "whyItMatters": "水曜日には太陽の九割から九割六分ほどが月に隠れる。"
+        }
+      }
+    }
+  ]
+}

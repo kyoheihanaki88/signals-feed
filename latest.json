@@ -91,6 +91,62 @@
               "duration": 8.124082
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ウクライナ南部のザポリージャが、夜間に激しい攻撃を受けました。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "この攻撃で少なくとも六人が亡くなりました。",
+              "duration": 3.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "負傷者も十九人にのぼっています。",
+              "duration": 3.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "ゼレンスキー大統領は、使われた弾道ミサイルが北朝鮮製だと述べました。",
+              "duration": 5.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "ロシアの同盟国である北朝鮮の兵器が使われた形です。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "同じ頃、南ロシアのボロネジではウクライナ側の攻撃がありました。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "標的は「ロシアのアマゾン」と呼ばれるワイルドベリーズの倉庫でした。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "同社の施設は、ここ数週間で繰り返し狙われています。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "ゼレンスキー氏は、ロシアが北朝鮮の増援なしには戦えなくなったと語りました。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "双方の攻防が続くなか、戦況の行方に静かに注目が集まっています。",
+              "duration": 6.024
+            }
+          ]
         }
       }
     },
@@ -190,6 +246,57 @@
               "speaker": "explainer",
               "text": "Exactly. The same tools that make drilling and extraction cheaper are hard to keep away from fossil fuels too.",
               "duration": 5.694694
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ある研究チームが、AIと気候変動の関係を細かく試算しました。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIが生産性を高めると、化石燃料の生産も進みやすくなるといいます。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "その結果、再生エネルギーが減らす排出量より、化石燃料が増やす排出量の方が大きくなりました。",
+              "duration": 7.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "64通りの想定を調べたところ、年間の炭素排出量は0.47から1.8ギガトン増える計算になりました。",
+              "duration": 8.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "これはエネルギー部門全体の年間排出量の、1から5パーセントに相当する量です。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "排出量が減ったのは、AIが化石燃料の生産性を高めなかった場合だけでした。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "国際エネルギー機関も、AIで石油や天然ガスの回収可能量が5パーセント増えると見ています。",
+              "duration": 7.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "深海の油田開発費用も、10パーセントほど下がる可能性があるそうです。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIの進歩が、そのまま脱炭素の助けになるとは言えないようです。",
+              "duration": 5.16
             }
           ]
         }
@@ -293,6 +400,62 @@
               "duration": 3.94449
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "エヌビディアがウォール街の大手銀行や投資会社と手を組みました。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "人工知能インフラの整備に向けて、5000億ドルの資金を調達しています。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "この資金はエヌビディア自身の計画と、提携企業の事業の両方に使われます。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "支援対象には新たなデータセンターの建設も含まれるとみられます。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "半導体を収容し、稼働や冷却を行うための施設です。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "グーグルやメタ、アマゾン、マイクロソフトなど、多くの企業がエヌビディアのGPUを使っています。",
+              "duration": 7.176
+            },
+            {
+              "speaker": "narrator",
+              "text": "スペースXやテスラ、OpenAI、アンソロピックも同様です。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "主要なテクノロジー企業のほとんどが、サービスの稼働にこの半導体を頼っています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の資金は、AIの基盤づくりをさらに加速させることになります。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "私たちが日々使うサービスの裏側で、静かに大きな動きが進んでいます。",
+              "duration": 5.808
+            }
+          ]
         }
       }
     },
@@ -382,6 +545,57 @@
               "speaker": "explainer",
               "text": "Yes, it'll be streamed live on YouTube for anyone who wants to follow along.",
               "duration": 4.022857
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "水曜日、グーグルは恒例の発表会Made by Googleを開き、新しいPixel製品を披露する予定です。",
+              "duration": 7.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "すでに新しいストレート型と折りたたみ型のPixelスマートフォンが予告されています。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "更新版のスマートウォッチや新色のイヤホンも登場するとの情報があります。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "AirTagのような紛失防止タグが新登場する可能性も伝えられています。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "毎年この時期に開かれる発表会ですが、今回は事前の情報が特に多く出ています。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "正式発表より前に、詳細の大部分がすでに知られてしまう形になりそうです。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "とはいえ実機の価格や発売日など、公式な確認が必要な点はまだ残っています。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "気になる方は発表会をYouTubeで生中継で見ることができます。",
+              "duration": 5.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい道具たちが、これからの暮らしにどう入り込むか楽しみなところです。",
+              "duration": 5.424
             }
           ]
         }
@@ -483,6 +697,52 @@
               "speaker": "explainer",
               "text": "Dozens, with safe viewing spots set up across the country.",
               "duration": 3.004082
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "今週の水曜日、英国各地で太陽の大部分が月に隠れる部分日食が見られます。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "太陽の九割から九割六分ほどが欠ける、珍しい規模の日食です。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "一九九九年の皆既日食以来、最も大きく欠ける日食になるそうです。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "各地で観測会が開かれ、安全に眺められる場所も案内されています。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "南西部では特に大きく欠けて見える見込みです。",
+              "duration": 3.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "グリーンランドやアイスランド、スペイン北部の一部では皆既日食となります。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした天体現象は日常でなかなか出会えない光景です。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "空を見上げる時間を持つのも、朝の小さな楽しみになりそうです。",
+              "duration": 5.136
             }
           ]
         }

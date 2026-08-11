@@ -16273,6 +16273,333 @@
           ]
         }
       }
+    },
+    "2026-08-11": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-11/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's happened overnight?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Russia and Ukraine struck each other again. Zelensky says some of the missiles used against Ukraine came from North Korea.",
+              "duration": 6.582857
+            },
+            {
+              "speaker": "listener",
+              "text": "Where were the strikes he mentioned?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "In Zaporizhzhia, where ballistic missiles reportedly killed at least six people and injured nineteen.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "And what did Ukraine hit in return?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Warehouses in Voronezh, in southern Russia, belonging to Wildberries — often called Russia's Amazon.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "Has that company been targeted before?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's been hit several times in recent weeks.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does the North Korea detail matter so much?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Zelensky said it's the first time Russia can't sustain the war without North Korean reinforcements — a sign of how stretched its resources have become.",
+              "duration": 8.124082
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-11/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So AI is supposed to help the climate, right? Isn't that the whole pitch?",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the hope, but a new study found the opposite tends to happen in practice.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "What did they actually look at?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Researchers modelled how AI could boost clean power generation, and also how it could boost coal, oil and gas production.",
+              "duration": 7.235918
+            },
+            {
+              "speaker": "listener",
+              "text": "And which one won out?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Across 64 scenarios, net carbon pollution actually rose, by roughly 0.47 to 1.8 gigatonnes a year.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a lot. How much is that in context?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's about 1 to 5% of the energy sector's total annual emissions.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there any scenario where emissions actually went down?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, but only when AI wasn't allowed to improve productivity in fossil fuel extraction at all.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "So the efficiency gains are the problem, not the technology itself.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. The same tools that make drilling and extraction cheaper are hard to keep away from fossil fuels too.",
+              "duration": 5.694694
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-11/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Half a trillion dollars for Nvidia — what's that actually going toward?",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's financing for AI infrastructure — Nvidia's own projects and ones built by its partners.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Infrastructure meaning what exactly?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly new data centres — huge facilities to house and cool the stacked computer chips that process AI data.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "Who's actually putting up the money?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some of Wall Street's biggest banks and investors have teamed up with Nvidia on this.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "And who benefits from all this new capacity?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Companies like Google, Meta, Amazon, Microsoft, and OpenAI all rely on Nvidia's chips to run their AI systems.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "So this really touches almost every big tech name out there.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Pretty much — nearly every major AI platform runs on Nvidia's GPUs in some way.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "It's a lot of money chasing a lot of chips.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is — a sign of how much is being staked on AI's continued growth.",
+              "duration": 3.94449
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-11/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google's got a big event this week?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, their annual Made by Google hardware event is happening Wednesday.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they expected to show off?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "New Pixel phones, both a slab-style model and a foldable one, since Google's already teased those.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything beyond phones?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Leaks point to updated watches, a new color for the earbuds, and possibly a new item tracker, similar to an AirTag.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, will there even be surprises left by the time the event starts?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "Maybe not many. So much detail tends to leak out beforehand that the formal event often just confirms what's already known.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Can people actually watch it happen?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it'll be streamed live on YouTube for anyone who wants to follow along.",
+              "duration": 4.022857
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-11/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a solar eclipse happening this week?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a partial one, visible across England on Wednesday.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "How much of the Sun will actually be covered?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Moon will block between 90 and 96 per cent of it.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a lot. Is it unusual?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. This will be the biggest coverage seen since the total eclipse back in 1999.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "Where's the best place to watch from?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The South West of England should get the most coverage.",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "listener",
+              "text": "And will anyone see a full total eclipse?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, people in parts of Greenland, Iceland and northern Spain will see a total eclipse.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "Are there events planned to mark it?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Dozens, with safe viewing spots set up across the country.",
+              "duration": 3.004082
+            }
+          ]
+        }
+      }
     }
   }
 }

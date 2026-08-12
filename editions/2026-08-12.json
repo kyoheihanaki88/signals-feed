@@ -1,0 +1,166 @@
+{
+  "date": "2026-08-12",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Earthquake response strains Colombia's new government and rescuers",
+      "summary": "The earthquake killed at least 181 people and left 2,595 injured, according to Colombian authorities.",
+      "keyTakeaways": [
+        "PEREIRA, Colombia — The search for life in the rubble of Colombia's powerful earthquake grew more desperate on Wednesday as search teams pushed up against a key time threshold to locate survivors with signs of life.",
+        "Small successes have broken through the flattened buildings: rescuers pulling a dust-covered baby through a crack in a concrete wall and onlookers cheering as teams lift a woman onto a stretcher.",
+        "Patients from a clinic evacuated due to earthquake damage lie in beds at a temporary facility set up in a gymnasium at a nearby school in Cali, Colombia, Tuesday, Aug."
+      ],
+      "whyItMatters": "A 2016 peace accord between rebels and the government along with an ongoing armed conflict may allow aid organizations to distribute food and other emergency materials more quickly, said María José Torres, the U.N. resident coordinator in Colombia.",
+      "originalURL": "https://www.npr.org/2026/08/12/g-s1-138315/colombia-earthquake-updates",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "コロンビア地震、政府と救助隊に重い試練",
+          "summary": "コロンビア当局によると、地震による死者は少なくとも181人、負傷者は2595人にのぼる。",
+          "keyTakeaways": [
+            "ペレイラでは、生存者の発見に望みをつなぐ節目の時間が迫るなか、瓦礫の中の捜索が続く",
+            "崩れたビルからは小さな希望も生まれている。粉塵にまみれた赤ん坊が壁の隙間から救出され、担架に乗せられる女性を見守る人々から歓声があがった",
+            "カリでは損傷した診療所から避難した患者たちが、近くの学校の体育館に設けられた仮設施設のベッドに横たわっている"
+          ],
+          "whyItMatters": "国連コロンビア常駐調整官のマリア・ホセ・トーレス氏は、2016年の和平合意と続く紛争の枠組みが、支援団体による食料や緊急物資の迅速な配布を後押しする可能性があると述べた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Solar eclipse: Where and when you can see it across North West England",
+      "summary": "The most dramatic partial solar eclipse of the century will be visible across the UK this evening - peaking in north west England at 19:10 BST.",
+      "keyTakeaways": [
+        "While the people of Greenland, Iceland and parts of northern Spain will be lucky enough to see a total eclipse, it will still represent the highest level of coverage seen from the UK since 11 August 1999.",
+        "It will be the most extensive solar eclipse for the next 54 years, and it is clear why astronomers are calling it \"really exciting\".",
+        "What time can I see the partial eclipse?"
+      ],
+      "whyItMatters": "The \"eclipse maximum\", when most of the sun is covered, is expected to fall at about 19:10 in the north-west of England.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cx256nwl7lxo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英北西部で今夜、今世紀最大級の部分日食",
+          "summary": "今世紀で最も見応えのある部分日食が、今夜イギリス全土で観測できる。ピークは英国夏時間の午後七時十分ごろ、北西イングランドで訪れる。",
+          "keyTakeaways": [
+            "グリーンランドやアイスランド、スペイン北部の一部では皆既日食が見られる幸運に恵まれるが、英国から見ても一九九九年八月十一日以来の高い欠け具合となる",
+            "今後五十四年間で最大規模の日食となり、天文学者が「本当に心躍る」と語るのもうなずける",
+            "部分日食が見られる時間帯はいつか"
+          ],
+          "whyItMatters": "太陽の大部分が隠れる「食の最大」は、英国北西部でおよそ午後七時十分に訪れると見込まれている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Wisconsin race tight: Key takeaways from US primary election results",
+      "summary": "Democratic socialist Francesca Hong and centrist David Crowley are neck-and-neck in swing state Wisconsin’s Democratic gubernatorial primary election held on Tuesday.",
+      "keyTakeaways": [
+        "The Democratic race in Wisconsin reflects a wider, ongoing battle inside the Democratic primaries between mainstream, “establishment” candidates, referred to as “moderates” by Democrats, and more left-wing, “progressive” democratic socialists.",
+        "Besides Wisconsin, Alabama, Connecticut, Minnesota, South Carolina and Vermont also conducted primary elections on Tuesday.",
+        "Here are some of the key takeaways from Tuesday’s primary races."
+      ],
+      "whyItMatters": "More than seven in 10 Democrats who identify as liberal said they consider it “essential” that their party’s candidates support raising taxes on corporations and billionaires (76 percent), expanding access to abortion (72 percent) and universal government-provided healthcare (71 percent).",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/12/wisconsin-race-tight-key-takeaways-from-us-primary-election-results?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ウィスコンシン州予備選、大接戦の行方",
+          "summary": "激戦州ウィスコンシンで火曜に行われた民主党の知事候補予備選で、民主社会主義派のフランチェスカ・ホン氏と中道派のデービッド・クロウリー氏が、互角の争いを見せている。",
+          "keyTakeaways": [
+            "ウィスコンシン州の民主党内対決は、主流派、いわゆる「穏健派」と、より左派的な「進歩派」の民主社会主義者との、党全体に広がる争いを映し出している。",
+            "ウィスコンシン州のほか、アラバマ、コネチカット、ミネソタ、サウスカロライナ、バーモントの各州でも火曜に予備選が行われた。"
+          ],
+          "whyItMatters": "自らをリベラルと位置づける民主党支持者の七割以上が、企業や富裕層への増税、人工妊娠中絶の権利拡大、政府による皆保険制度を党の候補者が支持することを「不可欠」だと考えている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "AI was supposed to destroy jobs. Where’s the carnage?",
+      "summary": "T he prediction was stark: artificial intelligence advancements would wipe out jobs en masse.",
+      "keyTakeaways": [
+        "The AI jobs apocalypse never showed up.",
+        "Still, jobs are changing and economists expect more to come.",
+        "Robert Seamans, a professor at NYU Stern who helped co-develop one of the standard measures used to gauge an occupation’s exposure to AI, categorizes AI’s impact into three buckets: jobs made obsolete, jobs created and jobs changed."
+      ],
+      "whyItMatters": "For now, AI’s biggest impact is not on the number of jobs, but on the nature of them.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/12/ai-job-destruction",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIによる雇用崩壊、まだ起きず",
+          "summary": "AIの進歩が雇用を大量に奪うという予測は、これまでのところ現実になっていない。とはいえ仕事の中身は静かに変わりつつあり、経済学者はその変化がこれから本格化すると見ている。",
+          "keyTakeaways": [
+            "懸念されたAIによる雇用崩壊は起きていない",
+            "仕事の変化はすでに始まっており、今後さらに進むと見られる",
+            "AIの影響を測る指標の開発に携わったニューヨーク大学スターン校のロバート・シーマンズ教授は、AIの影響を「消える仕事」「生まれる仕事」「変わる仕事」の三つに分類する"
+          ],
+          "whyItMatters": "今のところAIが変えているのは仕事の数ではなく、仕事の中身である。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Carcass Clad: stifling tank combat promises tension, terror and surprising laughs",
+      "summary": "Well, you could set the entire game in the stifling crew compartment of a heavily armoured tank, a coffin-like interior you share with two other players as you co-operatively attempt to pilot your beleaguered war machine to safety through the crumbling remains of a city in enemy territory.",
+      "keyTakeaways": [
+        "While there’s undoubtedly tonal overlap, the roaring engine powering Carcass Clad is gameplay rather than scriptwriting.",
+        "Your adversaries aren’t run-of-the-mill camo-clad baddies.",
+        "It’s a dynamic that was inspired in part by Battlefield V – specifically one mission that casts you as the crew of a German Tiger tank still defending Cologne in March 1945."
+      ],
+      "whyItMatters": "On some level, that might be the biggest difference between Mouthwashing and Carcass Clad: a belief that in spite of everything, people can hold together, work together and even find something to smile about.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/12/carcass-clad-tank-combat-game-wrong-organ",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "密室の戦車戦、緊張と恐怖の先に笑いを見出す",
+          "summary": "ゲーム全体の舞台は、重装甲戦車の息詰まるクルー室ひとつだけだ。棺のようなその内部を三人のプレイヤーで共有し、敵地の瓦礫の街を、傷ついた戦車で安全な場所まで導こうと協力して奮闘する。",
+          "keyTakeaways": [
+            "語り口に重なる部分はあっても、カーカス・クラッドを動かす原動力は脚本ではなくゲームプレイそのものだ。",
+            "敵として現れるのは、ありふれた迷彩服の悪役ではない。",
+            "この構図は「バトルフィールドV」、なかでもドイツのティーガー戦車の乗員として一九四五年三月のケルン防衛戦を描いた任務に着想を得ている。"
+          ],
+          "whyItMatters": "ある意味、これこそが「マウスウォッシング」と「カーカス・クラッド」の最大の違いかもしれない。すべてが崩れ去っても、人は共に支え合い、力を合わせ、笑いを見出せるという信念だ。"
+        }
+      }
+    }
+  ]
+}

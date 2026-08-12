@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,143 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
-      "summary": "Ukraine and Russia have continued striking each other overnight, with Volodymyr Zelensky accusing Moscow of using North Korean missiles.",
+      "source": "NPR (World)",
+      "headline": "Earthquake response strains Colombia's new government and rescuers",
+      "summary": "The earthquake killed at least 181 people and left 2,595 injured, according to Colombian authorities.",
       "keyTakeaways": [
-        "The Ukrainian president said strikes in Zaporizhzhia - which killed at least six and injured at least 19 - involved ballistic missiles from Russia's ally.",
-        "In Voronezh, in southern Russia, warehouses belonging to the online retailer, Wildberries, were hit by Ukraine.",
-        "The company, known as Russia's Amazon, has been repeatedly targeted in recent weeks."
+        "PEREIRA, Colombia — The search for life in the rubble of Colombia's powerful earthquake grew more desperate on Wednesday as search teams pushed up against a key time threshold to locate survivors with signs of life.",
+        "Small successes have broken through the flattened buildings: rescuers pulling a dust-covered baby through a crack in a concrete wall and onlookers cheering as teams lift a woman onto a stretcher.",
+        "Patients from a clinic evacuated due to earthquake damage lie in beds at a temporary facility set up in a gymnasium at a nearby school in Cali, Colombia, Tuesday, Aug."
       ],
-      "whyItMatters": "In a video address on Monday evening, Zelensky said \"for the first time\" Russia \"cannot wage war without reinforcements from North Korea\".",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "A 2016 peace accord between rebels and the government along with an ongoing armed conflict may allow aid organizations to distribute food and other emergency materials more quickly, said María José Torres, the U.N. resident coordinator in Colombia.",
+      "originalURL": "https://www.npr.org/2026/08/12/g-s1-138315/colombia-earthquake-updates",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "北朝鮮製ミサイル、露がウクライナ攻撃に使用とゼレンスキー氏",
-          "summary": "ウクライナとロシアは夜間の応酬を続けており、ゼレンスキー大統領はモスクワが北朝鮮製ミサイルを使用していると非難した。",
+          "headline": "コロンビア地震、政府と救助隊に重い試練",
+          "summary": "コロンビア当局によると、地震による死者は少なくとも181人、負傷者は2595人にのぼる。",
           "keyTakeaways": [
-            "ザポリージャへの攻撃では少なくとも六人が死亡、十九人が負傷し、ロシアの同盟国製の弾道ミサイルが使われたとウクライナ大統領は述べた。",
-            "南ロシアのボロネジでは、ネット通販大手ワイルドベリーズの倉庫がウクライナの攻撃を受けた。",
-            "「ロシアのアマゾン」とも呼ばれる同社は、ここ数週間で標的とされることが続いている。"
+            "ペレイラでは、生存者の発見に望みをつなぐ節目の時間が迫るなか、瓦礫の中の捜索が続く",
+            "崩れたビルからは小さな希望も生まれている。粉塵にまみれた赤ん坊が壁の隙間から救出され、担架に乗せられる女性を見守る人々から歓声があがった",
+            "カリでは損傷した診療所から避難した患者たちが、近くの学校の体育館に設けられた仮設施設のベッドに横たわっている"
           ],
-          "whyItMatters": "月曜夜のビデオ演説でゼレンスキー氏は、ロシアが北朝鮮の増援なしに戦争を続けられなくなったのは「初めて」だと述べた。"
+          "whyItMatters": "国連コロンビア常駐調整官のマリア・ホセ・トーレス氏は、2016年の和平合意と続く紛争の枠組みが、支援団体による食料や緊急物資の迅速な配布を後押しする可能性があると述べた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "What's happened overnight?",
-              "duration": 1.38449
+              "text": "How bad is the situation in Colombia right now?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Russia and Ukraine struck each other again. Zelensky says some of the missiles used against Ukraine came from North Korea.",
-              "duration": 6.582857
+              "text": "It's serious. Authorities say at least 181 people have died and about 2,595 are injured.",
+              "duration": 6.269388
             },
             {
               "speaker": "listener",
-              "text": "Where were the strikes he mentioned?",
-              "duration": 1.671837
-            },
-            {
-              "speaker": "explainer",
-              "text": "In Zaporizhzhia, where ballistic missiles reportedly killed at least six people and injured nineteen.",
-              "duration": 5.276735
-            },
-            {
-              "speaker": "listener",
-              "text": "And what did Ukraine hit in return?",
+              "text": "Are rescue teams still finding people alive?",
               "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Warehouses in Voronezh, in southern Russia, belonging to Wildberries — often called Russia's Amazon.",
-              "duration": 7.418776
+              "text": "Yes, though time is running short. In Pereira, crews are pushing against a key window for finding survivors.",
+              "duration": 5.929796
             },
             {
               "speaker": "listener",
-              "text": "Has that company been targeted before?",
-              "duration": 2.272653
+              "text": "Have there been any hopeful moments?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it's been hit several times in recent weeks.",
-              "duration": 2.403265
+              "text": "A few. Rescuers pulled a dust-covered baby through a crack in a wall, and onlookers cheered as a woman was lifted onto a stretcher.",
+              "duration": 8.071837
             },
             {
               "speaker": "listener",
-              "text": "Why does the North Korea detail matter so much?",
+              "text": "What's happening with people who are hurt or displaced?",
               "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Zelensky said it's the first time Russia can't sustain the war without North Korean reinforcements — a sign of how stretched its resources have become.",
-              "duration": 8.124082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ウクライナ南部のザポリージャが、夜間に激しい攻撃を受けました。",
-              "duration": 4.896
+              "text": "In Cali, patients from a damaged clinic are now being cared for in a temporary facility set up in a school gymnasium.",
+              "duration": 5.929796
             },
             {
-              "speaker": "narrator",
-              "text": "この攻撃で少なくとも六人が亡くなりました。",
-              "duration": 3.768
+              "speaker": "listener",
+              "text": "Is aid able to reach people quickly?",
+              "duration": 1.906939
             },
             {
-              "speaker": "narrator",
-              "text": "負傷者も十九人にのぼっています。",
-              "duration": 3.096
+              "speaker": "explainer",
+              "text": "It may help that Colombia's 2016 peace accord and ongoing conflict management have created channels aid groups already use, according to the U.N.'s María José Torres.",
+              "duration": 9.639184
             },
             {
-              "speaker": "narrator",
-              "text": "ゼレンスキー大統領は、使われた弾道ミサイルが北朝鮮製だと述べました。",
-              "duration": 5.88
+              "speaker": "listener",
+              "text": "So there's some structure in place even amid the chaos.",
+              "duration": 3.108571
             },
             {
-              "speaker": "narrator",
-              "text": "ロシアの同盟国である北朝鮮の兵器が使われた形です。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "同じ頃、南ロシアのボロネジではウクライナ側の攻撃がありました。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "標的は「ロシアのアマゾン」と呼ばれるワイルドベリーズの倉庫でした。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "同社の施設は、ここ数週間で繰り返し狙われています。",
-              "duration": 4.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "ゼレンスキー氏は、ロシアが北朝鮮の増援なしには戦えなくなったと語りました。",
-              "duration": 5.976
-            },
-            {
-              "speaker": "narrator",
-              "text": "双方の攻防が続くなか、戦況の行方に静かに注目が集まっています。",
-              "duration": 6.024
+              "speaker": "explainer",
+              "text": "Exactly — it's giving responders a way to move food and emergency supplies while the search for survivors continues.",
+              "duration": 5.982041
             }
           ]
         }
@@ -154,149 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "AI ‘will do more to boost fossil fuel production than green energy’",
-      "summary": "AI-driven productivity gains enable more planet-heating pollution from fossil fuels than they avoid from renewables, a study has found.",
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Solar eclipse: Where and when you can see it across North West England",
+      "summary": "The most dramatic partial solar eclipse of the century will be visible across the UK this evening - peaking in north west England at 19:10 BST.",
       "keyTakeaways": [
-        "Researchers modelled the technical potential for AI to boost clean power generation along with projections for how it can help produce coal, oil and gas.",
-        "Across 64 scenarios, they found net yearly carbon pollution rose by 0.47-1.8 gigatonnes, or about 1-5% of the energy sector’s annual emissions.",
-        "The researchers found net emissions only fell in scenarios where AI did not increase productivity in the fossil fuel sector."
+        "While the people of Greenland, Iceland and parts of northern Spain will be lucky enough to see a total eclipse, it will still represent the highest level of coverage seen from the UK since 11 August 1999.",
+        "It will be the most extensive solar eclipse for the next 54 years, and it is clear why astronomers are calling it \"really exciting\".",
+        "What time can I see the partial eclipse?"
       ],
-      "whyItMatters": "The International Energy Agency estimates that AI could boost technically recoverable oil and gas reserves by 5% and cut the cost of deepwater offshore projects by 10%.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/11/ai-will-do-more-to-boost-fossil-fuel-production-than-green-energy",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Keyboard",
+      "whyItMatters": "The \"eclipse maximum\", when most of the sun is covered, is expected to fall at about 19:10 in the north-west of England.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cx256nwl7lxo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AIが後押しするのは化石燃料か、それとも再生可能エネルギーか",
-          "summary": "AIによる生産性向上は、再生可能エネルギーが減らす分よりも多くの温室効果ガスを化石燃料から生み出す、という研究結果が出た。",
+          "headline": "英北西部で今夜、今世紀最大級の部分日食",
+          "summary": "今世紀で最も見応えのある部分日食が、今夜イギリス全土で観測できる。ピークは英国夏時間の午後七時十分ごろ、北西イングランドで訪れる。",
           "keyTakeaways": [
-            "研究チームはAIがクリーン発電を後押しする技術的可能性と、石炭や石油、天然ガスの生産を助ける可能性の両方を試算した。",
-            "64通りの想定のうち、年間の正味の炭素排出量は0.47から1.8ギガトン増加し、エネルギー部門全体の年間排出量の1から5パーセントに相当した。",
-            "正味の排出量が減ったのは、AIが化石燃料部門の生産性を高めなかった場合に限られた。"
+            "グリーンランドやアイスランド、スペイン北部の一部では皆既日食が見られる幸運に恵まれるが、英国から見ても一九九九年八月十一日以来の高い欠け具合となる",
+            "今後五十四年間で最大規模の日食となり、天文学者が「本当に心躍る」と語るのもうなずける",
+            "部分日食が見られる時間帯はいつか"
           ],
-          "whyItMatters": "国際エネルギー機関は、AIによって技術的に回収可能な石油・天然ガスの埋蔵量が5パーセント増え、深海油田開発の費用が10パーセント下がる可能性があると見積もっている。"
+          "whyItMatters": "太陽の大部分が隠れる「食の最大」は、英国北西部でおよそ午後七時十分に訪れると見込まれている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So AI is supposed to help the climate, right? Isn't that the whole pitch?",
-              "duration": 4.022857
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the hope, but a new study found the opposite tends to happen in practice.",
-              "duration": 3.892245
-            },
-            {
-              "speaker": "listener",
-              "text": "What did they actually look at?",
-              "duration": 1.671837
-            },
-            {
-              "speaker": "explainer",
-              "text": "Researchers modelled how AI could boost clean power generation, and also how it could boost coal, oil and gas production.",
-              "duration": 7.235918
-            },
-            {
-              "speaker": "listener",
-              "text": "And which one won out?",
-              "duration": 1.515102
-            },
-            {
-              "speaker": "explainer",
-              "text": "Across 64 scenarios, net carbon pollution actually rose, by roughly 0.47 to 1.8 gigatonnes a year.",
-              "duration": 7.366531
-            },
-            {
-              "speaker": "listener",
-              "text": "That sounds like a lot. How much is that in context?",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's about 1 to 5% of the energy sector's total annual emissions.",
-              "duration": 3.709388
-            },
-            {
-              "speaker": "listener",
-              "text": "Was there any scenario where emissions actually went down?",
+              "text": "So there's an eclipse tonight? What are we actually going to see?",
               "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Yes, but only when AI wasn't allowed to improve productivity in fossil fuel extraction at all.",
-              "duration": 4.832653
+              "text": "A partial solar eclipse - the most dramatic one this century, visible across the UK.",
+              "duration": 4.493061
             },
             {
               "speaker": "listener",
-              "text": "So the efficiency gains are the problem, not the technology itself.",
-              "duration": 3.996735
+              "text": "And it's especially good in the north west of England?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. The same tools that make drilling and extraction cheaper are hard to keep away from fossil fuels too.",
+              "text": "Yes, that's where the peak coverage happens, around 19:10 BST this evening.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "How does that compare to eclipses we've had before?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's the highest level of coverage seen from the UK since August 1999.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Will we see the sun completely covered, like a total eclipse?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, that's only for places like Greenland, Iceland, and parts of northern Spain. We get the partial version.",
               "duration": 5.694694
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ある研究チームが、AIと気候変動の関係を細かく試算しました。",
-              "duration": 5.592
             },
             {
-              "speaker": "narrator",
-              "text": "AIが生産性を高めると、化石燃料の生産も進みやすくなるといいます。",
-              "duration": 6.168
+              "speaker": "listener",
+              "text": "Still sounds special though.",
+              "duration": 1.515102
             },
             {
-              "speaker": "narrator",
-              "text": "その結果、再生エネルギーが減らす排出量より、化石燃料が増やす排出量の方が大きくなりました。",
-              "duration": 7.944
+              "speaker": "explainer",
+              "text": "It is - astronomers are calling it really exciting, since nothing this extensive will happen again for 54 years.",
+              "duration": 6.687347
             },
             {
-              "speaker": "narrator",
-              "text": "64通りの想定を調べたところ、年間の炭素排出量は0.47から1.8ギガトン増える計算になりました。",
-              "duration": 8.736
+              "speaker": "listener",
+              "text": "Worth stepping outside for, then.",
+              "duration": 1.567347
             },
             {
-              "speaker": "narrator",
-              "text": "これはエネルギー部門全体の年間排出量の、1から5パーセントに相当する量です。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "排出量が減ったのは、AIが化石燃料の生産性を高めなかった場合だけでした。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "国際エネルギー機関も、AIで石油や天然ガスの回収可能量が5パーセント増えると見ています。",
-              "duration": 7.488
-            },
-            {
-              "speaker": "narrator",
-              "text": "深海の油田開発費用も、10パーセントほど下がる可能性があるそうです。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIの進歩が、そのまま脱炭素の助けになるとは言えないようです。",
-              "duration": 5.16
+              "speaker": "explainer",
+              "text": "Definitely, especially around that 19:10 peak in the north west.",
+              "duration": 3.422041
             }
           ]
         }
@@ -307,153 +210,86 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Wall Street giants hand Nvidia $500bn to fund boom in AI projects",
-      "summary": "Nvidia has teamed up with some of Wall Street's largest banks and investors to raise $500bn (£370bn) in capital for artificial intelligence infrastructure.",
+      "source": "Al Jazeera",
+      "headline": "Wisconsin race tight: Key takeaways from US primary election results",
+      "summary": "Democratic socialist Francesca Hong and centrist David Crowley are neck-and-neck in swing state Wisconsin’s Democratic gubernatorial primary election held on Tuesday.",
       "keyTakeaways": [
-        "The financing will go towards Nvidia's own projects and those being built by its partners.",
-        "Infrastructure projects backed by this fund will likely include the construction of new data centres to house, operate, and cool miles of stacked computer chips that process AI data and actions.",
-        "Companies using Nvidia's popular chips or GPUs include Google, Meta, Amazon, Microsoft, SpaceX, Tesla, OpenAI and Anthropic."
+        "The Democratic race in Wisconsin reflects a wider, ongoing battle inside the Democratic primaries between mainstream, “establishment” candidates, referred to as “moderates” by Democrats, and more left-wing, “progressive” democratic socialists.",
+        "Besides Wisconsin, Alabama, Connecticut, Minnesota, South Carolina and Vermont also conducted primary elections on Tuesday.",
+        "Here are some of the key takeaways from Tuesday’s primary races."
       ],
-      "whyItMatters": "Essentially every major technology and AI company uses Nvidia's computer chips, or graphics processing units (GPUs), to power their services, AI platforms and AI chatbots.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "More than seven in 10 Democrats who identify as liberal said they consider it “essential” that their party’s candidates support raising taxes on corporations and billionaires (76 percent), expanding access to abortion (72 percent) and universal government-provided healthcare (71 percent).",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/12/wisconsin-race-tight-key-takeaways-from-us-primary-election-results?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ウォール街がエヌビディアに5000億ドル、AI投資を後押し",
-          "summary": "エヌビディアはウォール街の大手銀行や投資会社と組み、人工知能インフラの整備に向けて5000億ドル（約3700億ポンド）の資金を調達した。",
+          "headline": "ウィスコンシン州予備選、大接戦の行方",
+          "summary": "激戦州ウィスコンシンで火曜に行われた民主党の知事候補予備選で、民主社会主義派のフランチェスカ・ホン氏と中道派のデービッド・クロウリー氏が、互角の争いを見せている。",
           "keyTakeaways": [
-            "資金はエヌビディア自身の計画と、提携企業が進める事業の双方に投じられる。",
-            "支援対象には、AIのデータや処理を担う半導体を収容し稼働・冷却するための、新たなデータセンター建設が含まれるとみられる。",
-            "エヌビディアのチップやGPUは、グーグル、メタ、アマゾン、マイクロソフト、スペースX、テスラ、OpenAI、アンソロピックなどが利用している。"
+            "ウィスコンシン州の民主党内対決は、主流派、いわゆる「穏健派」と、より左派的な「進歩派」の民主社会主義者との、党全体に広がる争いを映し出している。",
+            "ウィスコンシン州のほか、アラバマ、コネチカット、ミネソタ、サウスカロライナ、バーモントの各州でも火曜に予備選が行われた。"
           ],
-          "whyItMatters": "主要なテクノロジー企業やAI企業のほとんどが、サービスやAIプラットフォーム、チャットボットの稼働にエヌビディアの半導体（GPU）を利用している。"
+          "whyItMatters": "自らをリベラルと位置づける民主党支持者の七割以上が、企業や富裕層への増税、人工妊娠中絶の権利拡大、政府による皆保険制度を党の候補者が支持することを「不可欠」だと考えている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Half a trillion dollars for Nvidia — what's that actually going toward?",
-              "duration": 4.362449
+              "text": "So how close is this Wisconsin race, really?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "It's financing for AI infrastructure — Nvidia's own projects and ones built by its partners.",
-              "duration": 5.851429
+              "text": "Very close. Francesca Hong and David Crowley are neck-and-neck in the Democratic primary for governor.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "Infrastructure meaning what exactly?",
-              "duration": 2.089796
+              "text": "Remind me what separates them?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Mostly new data centres — huge facilities to house and cool the stacked computer chips that process AI data.",
-              "duration": 5.929796
+              "text": "Hong is more of a democratic socialist, Crowley leans centrist. It's part of a bigger split in the party between moderates and progressives.",
+              "duration": 7.549388
             },
             {
               "speaker": "listener",
-              "text": "Who's actually putting up the money?",
-              "duration": 2.403265
+              "text": "Is that split only happening in Wisconsin?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Some of Wall Street's biggest banks and investors have teamed up with Nvidia on this.",
-              "duration": 3.94449
+              "text": "No, primaries were also held Tuesday in Alabama, Connecticut, Minnesota, South Carolina, and Vermont.",
+              "duration": 5.799184
             },
             {
               "speaker": "listener",
-              "text": "And who benefits from all this new capacity?",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "Companies like Google, Meta, Amazon, Microsoft, and OpenAI all rely on Nvidia's chips to run their AI systems.",
-              "duration": 7.105306
-            },
-            {
-              "speaker": "listener",
-              "text": "So this really touches almost every big tech name out there.",
-              "duration": 3.709388
-            },
-            {
-              "speaker": "explainer",
-              "text": "Pretty much — nearly every major AI platform runs on Nvidia's GPUs in some way.",
+              "text": "Why does this moderate versus progressive divide matter so much right now?",
               "duration": 4.780408
             },
             {
+              "speaker": "explainer",
+              "text": "Surveys show most liberal Democrats want candidates who back things like higher taxes on corporations, abortion access, and universal healthcare.",
+              "duration": 8.306939
+            },
+            {
               "speaker": "listener",
-              "text": "It's a lot of money chasing a lot of chips.",
-              "duration": 2.220408
+              "text": "So the primary results could signal which direction the party leans on those issues.",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "It is — a sign of how much is being staked on AI's continued growth.",
-              "duration": 3.94449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "エヌビディアがウォール街の大手銀行や投資会社と手を組みました。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "人工知能インフラの整備に向けて、5000億ドルの資金を調達しています。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "この資金はエヌビディア自身の計画と、提携企業の事業の両方に使われます。",
-              "duration": 6.12
-            },
-            {
-              "speaker": "narrator",
-              "text": "支援対象には新たなデータセンターの建設も含まれるとみられます。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "半導体を収容し、稼働や冷却を行うための施設です。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "グーグルやメタ、アマゾン、マイクロソフトなど、多くの企業がエヌビディアのGPUを使っています。",
-              "duration": 7.176
-            },
-            {
-              "speaker": "narrator",
-              "text": "スペースXやテスラ、OpenAI、アンソロピックも同様です。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "主要なテクノロジー企業のほとんどが、サービスの稼働にこの半導体を頼っています。",
-              "duration": 6.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の資金は、AIの基盤づくりをさらに加速させることになります。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "私たちが日々使うサービスの裏側で、静かに大きな動きが進んでいます。",
-              "duration": 5.808
+              "text": "Exactly. Wisconsin, as a swing state, makes this race a useful early read on that.",
+              "duration": 4.597551
             }
           ]
         }
@@ -464,138 +300,97 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge",
-      "headline": "What to expect from Google’s 2026 Pixel hardware launch event",
-      "summary": "It’s that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets.",
+      "source": "The Guardian (Technology)",
+      "headline": "AI was supposed to destroy jobs. Where’s the carnage?",
+      "summary": "T he prediction was stark: artificial intelligence advancements would wipe out jobs en masse.",
       "keyTakeaways": [
-        "That could mean that all of the details about Google’s new devices will be officially revealed long before the company hosts the formal launch event.",
-        "Here’s what we expect to see Google announce this week.",
-        "If you want to watch the event live, you can catch it on YouTube."
+        "The AI jobs apocalypse never showed up.",
+        "Still, jobs are changing and economists expect more to come.",
+        "Robert Seamans, a professor at NYU Stern who helped co-develop one of the standard measures used to gauge an occupation’s exposure to AI, categorizes AI’s impact into three buckets: jobs made obsolete, jobs created and jobs changed."
       ],
-      "whyItMatters": "Google itself has already teased new slab-style and foldable Pixel smartphones, but leaks also indicate that the company could announce updated watches, a new color for familiar earbuds, and perhaps a brand new AirTag-like item tracker.",
-      "originalURL": "https://www.theverge.com/tech/977448/made-by-google-2026-pixel-hardware-launch-event",
-      "readTime": 8,
+      "whyItMatters": "For now, AI’s biggest impact is not on the number of jobs, but on the nature of them.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/12/ai-job-destruction",
+      "readTime": 6,
       "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "グーグル、Pixel新製品発表会を今週開催",
-          "summary": "今年もこの季節がやってきた。水曜日、グーグルは恒例のハードウェア発表会「Made by Google」を開き、新しいPixel製品を披露する予定だ。",
+          "headline": "AIによる雇用崩壊、まだ起きず",
+          "summary": "AIの進歩が雇用を大量に奪うという予測は、これまでのところ現実になっていない。とはいえ仕事の中身は静かに変わりつつあり、経済学者はその変化がこれから本格化すると見ている。",
           "keyTakeaways": [
-            "新端末の詳細は、正式発表より前にすでに明らかになっている可能性がある",
-            "今週グーグルが発表するとみられる内容をまとめた",
-            "発表会はYouTubeで生中継される予定"
+            "懸念されたAIによる雇用崩壊は起きていない",
+            "仕事の変化はすでに始まっており、今後さらに進むと見られる",
+            "AIの影響を測る指標の開発に携わったニューヨーク大学スターン校のロバート・シーマンズ教授は、AIの影響を「消える仕事」「生まれる仕事」「変わる仕事」の三つに分類する"
           ],
-          "whyItMatters": "グーグル自身が新しいストレート型と折りたたみ型のPixelスマートフォンを予告しているほか、更新版のスマートウォッチや新色のイヤホン、さらにはAirTagのような新しい紛失防止タグが登場するとの情報もある。"
+          "whyItMatters": "今のところAIが変えているのは仕事の数ではなく、仕事の中身である。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Google's got a big event this week?",
-              "duration": 2.168163
+              "text": "So all that talk about AI wiping out jobs — did it actually happen?",
+              "duration": 4.623673
             },
             {
               "speaker": "explainer",
-              "text": "Yes, their annual Made by Google hardware event is happening Wednesday.",
-              "duration": 3.761633
+              "text": "Not really. The mass job losses people predicted haven't shown up.",
+              "duration": 3.291429
             },
             {
               "speaker": "listener",
-              "text": "What are they expected to show off?",
-              "duration": 2.037551
+              "text": "That's surprising. So AI just... isn't affecting work?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "New Pixel phones, both a slab-style model and a foldable one, since Google's already teased those.",
-              "duration": 5.511837
+              "text": "It is affecting work — just not the way people feared. Economists expect more change ahead, too.",
+              "duration": 5.564082
             },
             {
               "speaker": "listener",
-              "text": "Anything beyond phones?",
-              "duration": 1.619592
+              "text": "How do experts think about what AI is actually doing to jobs?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "Leaks point to updated watches, a new color for the earbuds, and possibly a new item tracker, similar to an AirTag.",
-              "duration": 6.50449
+              "text": "Robert Seamans, a professor at NYU Stern, breaks it into three buckets: jobs made obsolete, jobs created, and jobs changed.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "Wait, will there even be surprises left by the time the event starts?",
-              "duration": 3.84
+              "text": "So it's not one story — some jobs disappear, some appear, some just shift.",
+              "duration": 4.414694
             },
             {
               "speaker": "explainer",
-              "text": "Maybe not many. So much detail tends to leak out beforehand that the formal event often just confirms what's already known.",
-              "duration": 6.922449
+              "text": "Exactly. And right now, that third bucket seems to matter most.",
+              "duration": 3.186939
             },
             {
               "speaker": "listener",
-              "text": "Can people actually watch it happen?",
-              "duration": 2.272653
+              "text": "Meaning people are keeping their jobs, but the jobs themselves look different?",
+              "duration": 4.675918
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it'll be streamed live on YouTube for anyone who wants to follow along.",
-              "duration": 4.022857
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "水曜日、グーグルは恒例の発表会Made by Googleを開き、新しいPixel製品を披露する予定です。",
-              "duration": 7.992
+              "text": "That's the core of it. The impact isn't on job numbers so much as the nature of the work itself.",
+              "duration": 5.459592
             },
             {
-              "speaker": "narrator",
-              "text": "すでに新しいストレート型と折りたたみ型のPixelスマートフォンが予告されています。",
-              "duration": 6.12
+              "speaker": "listener",
+              "text": "Good to know — a quieter shift than the headlines suggested.",
+              "duration": 3.996735
             },
             {
-              "speaker": "narrator",
-              "text": "更新版のスマートウォッチや新色のイヤホンも登場するとの情報があります。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "AirTagのような紛失防止タグが新登場する可能性も伝えられています。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "毎年この時期に開かれる発表会ですが、今回は事前の情報が特に多く出ています。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "正式発表より前に、詳細の大部分がすでに知られてしまう形になりそうです。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "とはいえ実機の価格や発売日など、公式な確認が必要な点はまだ残っています。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "気になる方は発表会をYouTubeで生中継で見ることができます。",
-              "duration": 5.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "新しい道具たちが、これからの暮らしにどう入り込むか楽しみなところです。",
-              "duration": 5.424
+              "speaker": "explainer",
+              "text": "Quieter, yes. But still real, and still unfolding.",
+              "duration": 3.004082
             }
           ]
         }
@@ -605,144 +400,98 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Where to see partial solar eclipse across England",
-      "summary": "People across England will have the rare chance to experience a dramatic partial solar eclipse this week, where the Sun will be almost entirely blocked by the Moon.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Carcass Clad: stifling tank combat promises tension, terror and surprising laughs",
+      "summary": "Well, you could set the entire game in the stifling crew compartment of a heavily armoured tank, a coffin-like interior you share with two other players as you co-operatively attempt to pilot your beleaguered war machine to safety through the crumbling remains of a city in enemy territory.",
       "keyTakeaways": [
-        "It will be the biggest coverage since the total eclipse in 1999.",
-        "There will be dozens of celestial events to mark the occasion across the country and ideal spots where people should be able to watch the moment safely.",
-        "People in the South West of England are likely to see the most coverage with spectators in parts of Greenland, Iceland and northern Spain seeing a total eclipse."
+        "While there’s undoubtedly tonal overlap, the roaring engine powering Carcass Clad is gameplay rather than scriptwriting.",
+        "Your adversaries aren’t run-of-the-mill camo-clad baddies.",
+        "It’s a dynamic that was inspired in part by Battlefield V – specifically one mission that casts you as the crew of a German Tiger tank still defending Cologne in March 1945."
       ],
-      "whyItMatters": "The Moon will cover 90-96 per cent of the Sun on Wednesday.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cdx7kzv5e3qo?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Night sky",
+      "whyItMatters": "On some level, that might be the biggest difference between Mouthwashing and Carcass Clad: a belief that in spite of everything, people can hold together, work together and even find something to smile about.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/12/carcass-clad-tank-combat-game-wrong-organ",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英国各地、今週は部分日食の朝",
-          "summary": "今週、英国各地で太陽の大部分が月に隠れる部分日食が観測される。日常ではなかなか出会えない天体の光景だ。",
+          "headline": "密室の戦車戦、緊張と恐怖の先に笑いを見出す",
+          "summary": "ゲーム全体の舞台は、重装甲戦車の息詰まるクルー室ひとつだけだ。棺のようなその内部を三人のプレイヤーで共有し、敵地の瓦礫の街を、傷ついた戦車で安全な場所まで導こうと協力して奮闘する。",
           "keyTakeaways": [
-            "一九九九年の皆既日食以来、最大の欠け方になる見込み。",
-            "各地で観測会が開かれ、安全に眺められる好適な場所も紹介されている。",
-            "南西部で最も大きく欠けて見え、グリーンランドやアイスランド、スペイン北部の一部では皆既日食となる。"
+            "語り口に重なる部分はあっても、カーカス・クラッドを動かす原動力は脚本ではなくゲームプレイそのものだ。",
+            "敵として現れるのは、ありふれた迷彩服の悪役ではない。",
+            "この構図は「バトルフィールドV」、なかでもドイツのティーガー戦車の乗員として一九四五年三月のケルン防衛戦を描いた任務に着想を得ている。"
           ],
-          "whyItMatters": "水曜日には太陽の九割から九割六分ほどが月に隠れる。"
+          "whyItMatters": "ある意味、これこそが「マウスウォッシング」と「カーカス・クラッド」の最大の違いかもしれない。すべてが崩れ去っても、人は共に支え合い、力を合わせ、笑いを見出せるという信念だ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a solar eclipse happening this week?",
+              "text": "So this game puts you inside a tank the whole time?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the whole crew compartment - a tight, coffin-like space you share with two other players.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds stressful. Is it meant to be scary?",
               "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a partial one, visible across England on Wednesday.",
-              "duration": 3.186939
+              "text": "There's tension, even terror, but the summary says the real driver is gameplay, not the script.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "How much of the Sun will actually be covered?",
-              "duration": 2.089796
+              "text": "And you're fighting soldiers out there?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "The Moon will block between 90 and 96 per cent of it.",
-              "duration": 2.925714
+              "text": "Not run-of-the-mill enemies, apparently - something a bit different from typical camo-clad baddies.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "That sounds like a lot. Is it unusual?",
-              "duration": 2.35102
+              "text": "Where did the idea for a cooperative tank crew even come from?",
+              "duration": 3.84
             },
             {
               "speaker": "explainer",
-              "text": "It is. This will be the biggest coverage seen since the total eclipse back in 1999.",
-              "duration": 5.093878
+              "text": "Partly Battlefield V - a mission where you're a German Tiger tank crew defending Cologne in March 1945.",
+              "duration": 6.817959
             },
             {
               "speaker": "listener",
-              "text": "Where's the best place to watch from?",
-              "duration": 2.037551
+              "text": "With all that tension, is there any lighter side?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "The South West of England should get the most coverage.",
-              "duration": 2.638367
+              "text": "Surprisingly, yes - there are said to be laughs alongside the dread.",
+              "duration": 3.94449
             },
             {
               "speaker": "listener",
-              "text": "And will anyone see a full total eclipse?",
-              "duration": 2.533878
+              "text": "So what's the bigger idea behind it all?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Yes, people in parts of Greenland, Iceland and northern Spain will see a total eclipse.",
-              "duration": 4.493061
-            },
-            {
-              "speaker": "listener",
-              "text": "Are there events planned to mark it?",
-              "duration": 2.324898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Dozens, with safe viewing spots set up across the country.",
-              "duration": 3.004082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-11/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "今週の水曜日、英国各地で太陽の大部分が月に隠れる部分日食が見られます。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "太陽の九割から九割六分ほどが欠ける、珍しい規模の日食です。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "一九九九年の皆既日食以来、最も大きく欠ける日食になるそうです。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "各地で観測会が開かれ、安全に眺められる場所も案内されています。",
-              "duration": 5.568
-            },
-            {
-              "speaker": "narrator",
-              "text": "南西部では特に大きく欠けて見える見込みです。",
-              "duration": 3.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "グリーンランドやアイスランド、スペイン北部の一部では皆既日食となります。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした天体現象は日常でなかなか出会えない光景です。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "空を見上げる時間を持つのも、朝の小さな楽しみになりそうです。",
-              "duration": 5.136
+              "text": "It's about believing that even in the worst circumstances, people can hold together and still find something to smile about.",
+              "duration": 5.851429
             }
           ]
         }

@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "国連コロンビア常駐調整官のマリア・ホセ・トーレス氏は、2016年の和平合意と続く紛争の枠組みが、支援団体による食料や緊急物資の迅速な配布を後押しする可能性があると述べた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "How bad is the situation in Colombia right now?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's serious. Authorities say at least 181 people have died and about 2,595 are injured.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "Are rescue teams still finding people alive?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, though time is running short. In Pereira, crews are pushing against a key window for finding survivors.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "Have there been any hopeful moments?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "A few. Rescuers pulled a dust-covered baby through a crack in a wall, and onlookers cheered as a woman was lifted onto a stretcher.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "What's happening with people who are hurt or displaced?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "In Cali, patients from a damaged clinic are now being cared for in a temporary facility set up in a school gymnasium.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "Is aid able to reach people quickly?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It may help that Colombia's 2016 peace accord and ongoing conflict management have created channels aid groups already use, according to the U.N.'s María José Torres.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "So there's some structure in place even amid the chaos.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — it's giving responders a way to move food and emergency supplies while the search for survivors continues.",
+              "duration": 5.982041
+            }
+          ]
+        }
       }
     },
     {
@@ -65,6 +134,75 @@
           ],
           "whyItMatters": "太陽の大部分が隠れる「食の最大」は、英国北西部でおよそ午後七時十分に訪れると見込まれている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's an eclipse tonight? What are we actually going to see?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "A partial solar eclipse - the most dramatic one this century, visible across the UK.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "And it's especially good in the north west of England?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, that's where the peak coverage happens, around 19:10 BST this evening.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "How does that compare to eclipses we've had before?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's the highest level of coverage seen from the UK since August 1999.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Will we see the sun completely covered, like a total eclipse?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, that's only for places like Greenland, Iceland, and parts of northern Spain. We get the partial version.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "Still sounds special though.",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is - astronomers are calling it really exciting, since nothing this extensive will happen again for 54 years.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "Worth stepping outside for, then.",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Definitely, especially around that 19:10 peak in the north west.",
+              "duration": 3.422041
+            }
+          ]
+        }
       }
     },
     {
@@ -95,6 +233,65 @@
             "ウィスコンシン州のほか、アラバマ、コネチカット、ミネソタ、サウスカロライナ、バーモントの各州でも火曜に予備選が行われた。"
           ],
           "whyItMatters": "自らをリベラルと位置づける民主党支持者の七割以上が、企業や富裕層への増税、人工妊娠中絶の権利拡大、政府による皆保険制度を党の候補者が支持することを「不可欠」だと考えている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So how close is this Wisconsin race, really?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very close. Francesca Hong and David Crowley are neck-and-neck in the Democratic primary for governor.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Remind me what separates them?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hong is more of a democratic socialist, Crowley leans centrist. It's part of a bigger split in the party between moderates and progressives.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that split only happening in Wisconsin?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, primaries were also held Tuesday in Alabama, Connecticut, Minnesota, South Carolina, and Vermont.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this moderate versus progressive divide matter so much right now?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Surveys show most liberal Democrats want candidates who back things like higher taxes on corporations, abortion access, and universal healthcare.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "So the primary results could signal which direction the party leans on those issues.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Wisconsin, as a swing state, makes this race a useful early read on that.",
+              "duration": 4.597551
+            }
+          ]
         }
       }
     },
@@ -128,6 +325,75 @@
           ],
           "whyItMatters": "今のところAIが変えているのは仕事の数ではなく、仕事の中身である。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So all that talk about AI wiping out jobs — did it actually happen?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really. The mass job losses people predicted haven't shown up.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "listener",
+              "text": "That's surprising. So AI just... isn't affecting work?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is affecting work — just not the way people feared. Economists expect more change ahead, too.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "How do experts think about what AI is actually doing to jobs?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "Robert Seamans, a professor at NYU Stern, breaks it into three buckets: jobs made obsolete, jobs created, and jobs changed.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's not one story — some jobs disappear, some appear, some just shift.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. And right now, that third bucket seems to matter most.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "Meaning people are keeping their jobs, but the jobs themselves look different?",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the core of it. The impact isn't on job numbers so much as the nature of the work itself.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Good to know — a quieter shift than the headlines suggested.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Quieter, yes. But still real, and still unfolding.",
+              "duration": 3.004082
+            }
+          ]
+        }
       }
     },
     {
@@ -159,6 +425,75 @@
             "この構図は「バトルフィールドV」、なかでもドイツのティーガー戦車の乗員として一九四五年三月のケルン防衛戦を描いた任務に着想を得ている。"
           ],
           "whyItMatters": "ある意味、これこそが「マウスウォッシング」と「カーカス・クラッド」の最大の違いかもしれない。すべてが崩れ去っても、人は共に支え合い、力を合わせ、笑いを見出せるという信念だ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this game puts you inside a tank the whole time?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the whole crew compartment - a tight, coffin-like space you share with two other players.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds stressful. Is it meant to be scary?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's tension, even terror, but the summary says the real driver is gameplay, not the script.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "And you're fighting soldiers out there?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not run-of-the-mill enemies, apparently - something a bit different from typical camo-clad baddies.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "Where did the idea for a cooperative tank crew even come from?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "Partly Battlefield V - a mission where you're a German Tiger tank crew defending Cologne in March 1945.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "With all that tension, is there any lighter side?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Surprisingly, yes - there are said to be laughs alongside the dread.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "So what's the bigger idea behind it all?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's about believing that even in the worst circumstances, people can hold together and still find something to smile about.",
+              "duration": 5.851429
+            }
+          ]
         }
       }
     }

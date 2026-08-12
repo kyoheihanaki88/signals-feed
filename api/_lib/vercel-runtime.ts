@@ -23,12 +23,15 @@
 import { AsyncLocalStorage } from "node:async_hooks";
 import { randomUUID } from "node:crypto";
 
+import { AppleRootCertificateError } from "./apple-root-certificates.js";
 import type { RawEnv } from "./env.js";
 import {
+  RuntimeConfigError,
   loadRuntimeConfig,
   type RuntimeConfig,
 } from "./runtime-config.js";
 import {
+  RuntimeCompositionError,
   createDevelopmentDependencies,
   createRuntimeDependencies,
   type DevelopmentOverrides,
@@ -36,11 +39,16 @@ import {
   type RuntimeTransports,
 } from "./runtime-dependencies.js";
 import {
+  JsonSecurityLogger,
+  type RuntimeInitFailureClassification,
+  type SecurityLogger,
+} from "./security-logging.js";
+import {
   createProductionEditionHandler,
   createProductionExchangeHandler,
   type RouteHandler,
 } from "./runtime-factory.js";
-import { adaptVercelRequest } from "./vercel-request.js";
+import { adaptVercelRequest, deriveRequestId } from "./vercel-request.js";
 import { errorResponse, failClosed, harden, methodNotAllowed } from "./vercel-response.js";
 
 /** Per-route body caps, matching the Phase 3B-1 route contracts exactly. */
@@ -195,6 +203,89 @@ export function createDevelopmentVercelRuntime(options: {
 
 type RouteKind = "exchange" | "edition";
 
+/**
+ * The logger for `runtime_init_failed` events. The runtime's own logger cannot exist here —
+ * initialisation is exactly what failed — so a standalone instance of the same structured
+ * abstraction is used (one JSON line, no free-form error dumping).
+ *
+ * Built LAZILY, mirroring the runtime's own cold-start holder above: importing this module
+ * must construct nothing, and a healthy initialisation never touches this at all. The
+ * holder is only populated on the first failure that actually needs to log.
+ */
+let initDiagnosticLogger: SecurityLogger | null = null;
+
+function diagnosticLogger(): SecurityLogger {
+  if (initDiagnosticLogger === null) {
+    initDiagnosticLogger = new JsonSecurityLogger();
+  }
+  return initDiagnosticLogger;
+}
+
+/** Test-only: capture runtime-init diagnostic events. */
+export function setRuntimeInitDiagnosticLoggerForTests(logger: SecurityLogger): void {
+  initDiagnosticLogger = logger;
+}
+
+/** Test-only: drop the injected logger; the lazy default returns on next use. */
+export function resetRuntimeInitDiagnosticLoggerForTests(): void {
+  initDiagnosticLogger = null;
+}
+
+/**
+ * Map a runtime-construction failure onto the fixed classification allowlist.
+ *
+ * For the KNOWN classes, the recorded codes are `issues` / `reason` — fields whose
+ * construction sites guarantee they name a variable and a constraint, never a value.
+ * For anything else only the classification is recorded: `.message`, `.stack` and
+ * `String(error)` are never read, because an unknown error can echo the input that
+ * produced it.
+ */
+export function classifyRuntimeInitFailure(error: unknown): {
+  classification: RuntimeInitFailureClassification;
+  codes: readonly string[];
+} {
+  if (error instanceof RuntimeConfigError) {
+    return { classification: "runtime_config", codes: error.issues };
+  }
+  if (error instanceof VercelRuntimeError) {
+    return { classification: "vercel_runtime", codes: [error.reason] };
+  }
+  if (error instanceof RuntimeCompositionError) {
+    return { classification: "runtime_composition", codes: [error.reason] };
+  }
+  if (error instanceof AppleRootCertificateError) {
+    return { classification: "apple_root_certificate", codes: [error.reason] };
+  }
+  return { classification: "unknown", codes: [] };
+}
+
+function logRuntimeInitFailure(
+  kind: RouteKind,
+  error: unknown,
+  request: Request,
+): void {
+  try {
+    const { classification, codes } = classifyRuntimeInitFailure(error);
+    diagnosticLogger().log({
+      route: kind === "exchange" ? "/api/auth/exchange" : "/api/edition",
+      status: 503,
+      reasonCode: "runtime_init_failed",
+      // Initialisation failed before any clock dependency existed; latency is not the
+      // signal here and 0 keeps the event shape honest rather than inventing a timing.
+      latencyMs: 0,
+      // Vercel's own id, accepted only after the bounded-pattern validation in
+      // `deriveRequestId`; anything unsafe is replaced by a generated UUID.
+      requestId: deriveRequestId(request.headers),
+      initFailure: {
+        classification,
+        ...(codes.length === 0 ? {} : { codes }),
+      },
+    });
+  } catch {
+    // Diagnostics must never change the HTTP response.
+  }
+}
+
 async function handle(
   kind: RouteKind,
   request: Request,
@@ -206,8 +297,10 @@ async function handle(
   let runtime: VercelRuntime;
   try {
     runtime = getVercelRuntime(env);
-  } catch {
-    // Fail closed. The reason stays server-side; the client sees only "try later".
+  } catch (error) {
+    // Fail closed with the SAME response as before. The allowlisted classification goes
+    // to the security log so the operator learns WHICH contract failed — never a value.
+    logRuntimeInitFailure(kind, error, request);
     return failClosed();
   }
 

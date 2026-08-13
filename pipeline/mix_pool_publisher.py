@@ -34,7 +34,7 @@ try:
         serialize,
         validate_artifact,
     )
-    from .mix_identity import SELECTOR_VERSION
+    from .mix_identity import POOL_SELECTOR_VERSION as SELECTOR_VERSION
 except ImportError:  # direct script/module use, matching the rest of the pipeline
     from mix_pool_schema import (  # type: ignore[no-redef]
         GENERATOR_VERSION,
@@ -43,7 +43,7 @@ except ImportError:  # direct script/module use, matching the rest of the pipeli
         serialize,
         validate_artifact,
     )
-    from mix_identity import SELECTOR_VERSION  # type: ignore[no-redef]
+    from mix_identity import POOL_SELECTOR_VERSION as SELECTOR_VERSION  # type: ignore[no-redef]
 
 #: Shared with `api/_lib/mix-pool-source.ts`. Both sides must build the same key.
 KEY_NAMESPACE = "signals:mix-pool"

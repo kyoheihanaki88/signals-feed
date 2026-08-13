@@ -8,7 +8,14 @@
  * Nothing in this module reads a file, spawns a process or touches the environment.
  */
 
-export const SELECTOR_VERSION = 1;
+/**
+ * Selection semantics version. v2 (2026-08-13): selected topics are a STRICT ALLOWLIST
+ * (never resurrected by fallback; the mix ships short instead), and regions fill in the
+ * fixed priority united_states > japan > world with a 3-slot US minimum when selected.
+ * The bump invalidates every v1 mix identity, so no cache computed under the old
+ * "topic boost" semantics can ever be reused.
+ */
+export const SELECTOR_VERSION = 2;
 
 export const SUPPORTED_REGIONS = ["japan", "united_states", "world"] as const;
 export const SUPPORTED_TOPICS = [

@@ -56,7 +56,7 @@ test("S/T: unsupported selector, invalid region, and invalid topic rejected", as
   await t.test("selector version", async () => {
     const { handle, token } = setup();
     const response = await handle(
-      editionRequest(token, editionBody({ selectorVersion: 2 })),
+      editionRequest(token, editionBody({ selectorVersion: 1 })),
     );
     assert.equal(response.status, 422);
     assert.equal(

@@ -34,7 +34,7 @@ function request(
 
 function jsonRequest(
   headers: Record<string, string> = {},
-  body: Record<string, unknown> = { signedTransactionInfo: "a.b.c", selectorVersion: 1 },
+  body: Record<string, unknown> = { signedTransactionInfo: "a.b.c", selectorVersion: 2 },
 ): Request {
   return request({ "content-type": "application/json", ...headers }, JSON.stringify(body));
 }
@@ -326,7 +326,7 @@ test("the forwarded request is rebuilt: only allowed headers survive", async () 
 });
 
 test("the forwarded body is byte-identical and content-length is recomputed", async () => {
-  const body = { signedTransactionInfo: "a.b.c", selectorVersion: 1, appVersion: "1.4.0" };
+  const body = { signedTransactionInfo: "a.b.c", selectorVersion: 2, appVersion: "1.4.0" };
   const result = await adaptVercelRequest(jsonRequest({}, body), { maxBodyBytes: MAX });
   assert.equal(result.ok, true);
   if (!result.ok) return;

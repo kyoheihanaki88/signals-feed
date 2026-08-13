@@ -46,12 +46,16 @@ with tempfile.TemporaryDirectory() as directory:
     report_bytes = report_path.read_bytes()
     artifact = json.loads(artifact_bytes)
     report = json.loads(report_bytes)
-    check("O. Japan selector returns five", len(report["selectedStoryIds"]) == 5)
+    # Selector v2: "tech" is a strict allowlist, so this fixture yields only the two
+    # japan tech stories — the mix ships short (fail closed) instead of filling with
+    # off-topic stories.
+    check("O. Japan tech allowlist returns the two tech stories only",
+          len(report["selectedStoryIds"]) == 2)
     check(
-        "P. shortage fallback is explicit",
-        report["selectedRegionStories"] == 3
-        and report["fallbackSlots"] == 2
-        and report["fallbackReason"] == "insufficient qualifying regional candidates",
+        "P. the fail-closed shortage is explicit",
+        report["selectedRegionStories"] == 2
+        and report["fallbackSlots"] == 0
+        and report["fallbackReason"] == "insufficient total eligible candidates",
         report,
     )
     expected = {

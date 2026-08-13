@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import datetime as dt
 from urllib.parse import urlsplit, urlunsplit
 
@@ -14,6 +13,33 @@ from region_classifier import classify_regions
 TOPIC_ADJUSTMENT = 10.0
 NEW_CATEGORY_BONUS = 0.6
 NEW_SOURCE_BONUS = 0.4
+
+# ── selector v2 (2026-08-13) ────────────────────────────────────────────────────────────
+# Selected topics are a STRICT ALLOWLIST: a candidate whose topics do not intersect the
+# selection is ineligible for EVERY phase, including global fallback. Rather than fill a
+# slot with an article that violates the user's settings, the mix ships short (fail
+# closed; `shortage`/`unfilledSlots` report it). An empty topic selection means "no topic
+# filter" — the pre-v2 behavior.
+#
+# Regions fill in a fixed priority order. A UK story is a "world" story (the classifier
+# gives it world membership) and therefore competes only for world slots — it can never
+# displace a united_states slot.
+REGION_PRIORITY = ("united_states", "japan", "world")
+# With the US selected (alongside others) and enough distinct US stories, at least 3 of
+# the 5 slots are US stories.
+US_MIN_QUOTA = 3
+
+
+def _priority_order(regions) -> tuple[str, ...]:
+    return tuple(r for r in REGION_PRIORITY if r in regions)
+
+
+def _topic_allowed(candidate: dict, topics: tuple[str, ...]) -> bool:
+    """v2 strict allowlist. Empty selection = no filter (unchanged behavior)."""
+    if not topics:
+        return True
+    candidate_topics = {str(v).lower() for v in candidate.get("topics", [])}
+    return bool(candidate_topics.intersection(topics))
 
 
 def _memberships(candidate: dict) -> dict[str, str]:
@@ -125,19 +151,28 @@ def _pick(pool: list[dict], count: int, topics: tuple[str, ...], selected: list[
 
 def _initial_targets(regions: tuple[str, ...], candidates: list[dict], size: int,
                      identity: str) -> dict[str, int]:
-    base, remainder = divmod(size, len(regions))
-    targets = {region: base for region in regions}
-    if remainder:
-        strengths = {}
-        for region in regions:
-            scores = sorted(
-                (float(c.get("baseScore", 0)) for c in candidates
-                 if _memberships(c).get(region) == "primary"),
-                reverse=True,
-            )
-            strengths[region] = sum(scores[:base + 1])
-        ordered = sorted(regions, key=lambda r: (-strengths[r],
-                         hashlib.sha256(f"{identity}|{r}".encode()).hexdigest(), r))
+    """v2 quotas: fixed priority united_states > japan > world.
+
+    With the US selected alongside other regions it takes US_MIN_QUOTA slots up front;
+    the rest split evenly over the remaining regions with any remainder awarded in
+    priority order. Without the US, slots split evenly with the remainder in priority
+    order. (v1's strength/hash remainder is gone — the order is part of the spec now.)
+    `candidates`/`identity` are kept in the signature for call-site compatibility."""
+    ordered = _priority_order(regions)
+    targets = {region: 0 for region in regions}
+    if "united_states" in ordered and len(ordered) > 1:
+        us = min(US_MIN_QUOTA, size)
+        targets["united_states"] = us
+        others = tuple(r for r in ordered if r != "united_states")
+        base, remainder = divmod(size - us, len(others))
+        for region in others:
+            targets[region] = base
+        for region in others[:remainder]:
+            targets[region] += 1
+    else:
+        base, remainder = divmod(size, len(ordered))
+        for region in ordered:
+            targets[region] = base
         for region in ordered[:remainder]:
             targets[region] += 1
     return targets
@@ -167,6 +202,10 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
     eligible = []
     for candidate in sorted(candidates, key=lambda c: str(c.get("id", ""))):
         ok, reason = _eligible(candidate, date)
+        # v2 strict topic allowlist: an unselected topic is ineligible for EVERY phase,
+        # fallback included — checked after the base checks so their reasons win.
+        if ok and not _topic_allowed(candidate, selected_topics):
+            ok, reason = False, "topic not selected (strict allowlist)"
         memberships = _memberships(candidate)
         region_eligible = [r for r in selected_regions if memberships.get(r) == "primary"]
         logs[str(candidate.get("id", ""))] = {
@@ -196,7 +235,9 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
         assigned_regions.extend([region] * len(picked))
     else:
         targets = _initial_targets(selected_regions, region_pool, size, identity)
-        for region in selected_regions:
+        # Quotas fill in PRIORITY order (US first), so the US takes its slots before any
+        # lower-priority region can consume a story that also has US membership.
+        for region in _priority_order(selected_regions):
             picked = _pick(
                 [c for c in region_pool if _memberships(c).get(region) == "primary"
                  and c not in selected],
@@ -204,16 +245,21 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
             )
             selected.extend(picked)
             assigned_regions.extend([region] * len(picked))
-        # Deterministic reallocation within the combined selected-region scope.
+        # Deterministic reallocation, still inside the selected-region scope, and still in
+        # priority order: an unmet quota is refilled from the US pool first, then japan,
+        # then world — a deep US pool grows the US share, never the other way around.
         if len(selected) < size:
-            picked = _pick([c for c in region_pool if c not in selected],
-                           size - len(selected), selected_topics, selected,
-                           "regional_reallocation", logs)
-            selected.extend(picked)
-            for candidate in picked:
-                membership = _memberships(candidate)
-                assigned_regions.append(next(r for r in selected_regions
-                                             if membership.get(r) == "primary"))
+            for region in _priority_order(selected_regions):
+                if len(selected) >= size:
+                    break
+                picked = _pick(
+                    [c for c in region_pool if _memberships(c).get(region) == "primary"
+                     and c not in selected],
+                    size - len(selected), selected_topics, selected,
+                    f"regional_reallocation:{region}", logs,
+                )
+                selected.extend(picked)
+                assigned_regions.extend([region] * len(picked))
 
     regional_count = len(selected)
     fallback_slots = 0

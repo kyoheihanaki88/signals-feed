@@ -1,4 +1,6 @@
-export const SUPPORTED_SELECTOR_VERSION = 1;
+// v2 = strict topic allowlist + fixed region priority (see custom-mix-types.ts).
+// The Production env var CUSTOM_MIX_SELECTOR_VERSION must move to 2 with this deploy.
+export const SUPPORTED_SELECTOR_VERSION = 2;
 export const STORY_COUNT = 5;
 export const ALLOWED_REGIONS = [
   "japan",
@@ -26,8 +28,8 @@ export type EditionRequest = {
   date: string;
   active: ActiveMix;
   pending: ActiveMix | null;
-  selectorVersion: 1;
-  storyCount: 5;
+  selectorVersion: typeof SUPPORTED_SELECTOR_VERSION;
+  storyCount: typeof STORY_COUNT;
 };
 
 export class ContractValidationError extends Error {
@@ -146,8 +148,8 @@ export function validateEditionRequest(value: unknown): EditionRequest {
     date: value.date,
     active,
     pending,
-    selectorVersion: 1,
-    storyCount: 5,
+    selectorVersion: SUPPORTED_SELECTOR_VERSION,
+    storyCount: STORY_COUNT,
   };
 }
 

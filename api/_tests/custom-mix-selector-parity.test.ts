@@ -331,7 +331,9 @@ test("R6. the editorial duplicate seam is reached the same number of times as in
   }
 
   assert.equal(totalTypeScript, totalPython);
-  assert.equal(totalTypeScript, 392, "the guard call count changed unexpectedly");
+  // 392 under selector v1; v2's strict topic allowlist shrinks the eligible pools in the
+  // topic scenarios, so fewer candidates ever reach the duplicate guard.
+  assert.equal(totalTypeScript, 279, "the guard call count changed unexpectedly");
   assert.ok(totalPython > 0, "the seam was never reached — the comparison proves nothing");
   assert.equal(
     totalFired,

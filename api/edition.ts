@@ -6,6 +6,7 @@ import {
 } from "./_lib/auth-middleware.js";
 import {
   ContractValidationError,
+  SUPPORTED_SELECTOR_VERSION,
   validateEditionRequest,
 } from "./_lib/custom-mix-contract.js";
 import type { EditionOrchestrator } from "./_lib/edition-orchestrator.js";
@@ -92,7 +93,7 @@ export function createEditionHandler(
         reasonCode,
         latencyMs: Math.max(0, dependencies.clock.nowMs() - startedAt),
         requestId,
-        selectorVersion: 1,
+        selectorVersion: SUPPORTED_SELECTOR_VERSION,
         environment: config.environment,
         ...(reason === "rate_limited"
           ? { rateLimitBucket: "token_edition" as const }

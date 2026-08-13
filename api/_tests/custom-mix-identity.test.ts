@@ -31,7 +31,7 @@ test("A. every Japan alias collapses to one identity", () => {
   assert.equal(identities.size, 1);
   assert.equal(
     [...identities][0],
-    "date=2026-07-27|regions=japan|topics=tech|selector=1|size=5",
+    "date=2026-07-27|regions=japan|topics=tech|selector=2|size=5",
   );
 });
 
@@ -93,12 +93,12 @@ test("B2. a different mix is a different identity", () => {
 test("B3. the identity string has the exact Python shape", () => {
   assert.equal(
     mixIdentity(" 2026-07-27 ", ["US", "JP"], ["tech", "business"]),
-    "date=2026-07-27|regions=japan,united_states|topics=business,tech|selector=1|size=5",
+    "date=2026-07-27|regions=japan,united_states|topics=business,tech|selector=2|size=5",
   );
   // Empty topics still emit the key with an empty value.
   assert.equal(
     mixIdentity("2026-07-27", ["japan"], []),
-    "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
+    "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
   );
 });
 

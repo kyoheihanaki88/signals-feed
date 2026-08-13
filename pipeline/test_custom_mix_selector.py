@@ -62,19 +62,23 @@ class CustomMixSelectorTests(unittest.TestCase):
         categories = {self.lookup[i]["category"] for i in result["selectedIds"]}
         self.assertGreaterEqual(len(categories), 3)
 
-    def test_e_japan_and_us_are_balanced(self):
+    def test_e_japan_and_us_us_takes_priority_quota(self):
+        # v2: the US is highest priority and takes US_MIN_QUOTA=3 of the 5; japan the rest.
         result = self.select(regions=("japan", "united_states"))
         mix = result["metadata"]["finalRegionMix"]
-        self.assertEqual(sum(mix.get(r, 0) for r in ("japan", "united_states")), 5)
-        self.assertEqual(sorted([mix.get("japan", 0), mix.get("united_states", 0)]), [2, 3])
+        self.assertEqual(mix.get("united_states", 0), 3)
+        self.assertEqual(mix.get("japan", 0), 2)
         self.assertEqual(result["metadata"]["fallbackSlots"], 0)
 
-    def test_f_japan_tech_then_other_japan_before_global_tech(self):
+    def test_f_japan_tech_is_a_strict_allowlist(self):
+        # v2: "tech" selected means ONLY tech stories — japan's tech stories first, and a
+        # shortage is filled from tech stories elsewhere, never from off-topic japan ones.
         result = self.select(topics=("tech",))
         selected = result["selectedIds"]
         self.assertEqual(selected[:2], ["jp-tech-robot", "jp-tech-chips"])
-        self.assertNotIn("us-tech", selected)
-        self.assertTrue(all(is_primary(self.lookup[i], "japan") for i in selected))
+        for story_id in selected:
+            topics = {str(t).lower() for t in self.lookup[story_id].get("topics", [])}
+            self.assertIn("tech", topics, f"{story_id} is off-topic for the tech allowlist")
 
     def test_g_regression_japan_candidates_cannot_yield_zero(self):
         result = self.select()
@@ -142,6 +146,128 @@ class CustomMixSelectorTests(unittest.TestCase):
         logs = {row["id"]: row for row in result["candidateLogs"]}
         self.assertEqual(logs["low-source"]["rejectionReason"], "low source reliability")
         self.assertEqual(logs["stale"]["rejectionReason"], "outside 72-hour freshness window")
+
+
+class CustomMixSelectorV2Tests(unittest.TestCase):
+    """Selector v2 (2026-08-13): strict topic allowlist + fixed region priority.
+
+    The user's settings are a CONTRACT: an unselected topic is never chosen (not even by
+    fallback — ship short instead), the US outranks japan outranks world, the US keeps a
+    minimum of 3 slots when selected and its pool suffices, and a UK story competes only
+    as a world story."""
+
+    def setUp(self):
+        self.candidates = load_candidates()
+        self.lookup = by_id(self.candidates)
+
+    def select(self, candidates=None, regions=("japan",), topics=()):
+        return select_custom_mix(candidates or self.candidates, "2026-07-27",
+                                 regions, topics)
+
+    @staticmethod
+    def make(cid, *, topics, regions, score, category="WORLD"):
+        return {
+            "id": cid,
+            "headline": f"Headline for {cid} with distinct wording {cid}",
+            "summary": f"A distinct summary for {cid} that shares no event with others.",
+            "source": f"SOURCE-{cid}",
+            "category": category,
+            "url": f"https://example.com/{cid}",
+            "publishedAt": "2026-07-27T06:00:00Z",
+            "baseScore": score,
+            "topics": list(topics),
+            "underlyingStoryIdentity": f"story-{cid}",
+            "regionMemberships": [{"id": r, "strength": "primary"} for r in regions],
+        }
+
+    def selected_topics_of(self, result, pool=None):
+        lookup = by_id(pool) if pool else self.lookup
+        return [{str(t).lower() for t in lookup[i].get("topics", [])}
+                for i in result["selectedIds"]]
+
+    def test_science_off_selects_no_science_candidate(self):
+        # Science OFF (an allowlist without science): pure-science stories are 0/5.
+        result = self.select(topics=("tech", "business", "health", "climate", "culture"))
+        for story_id in result["selectedIds"]:
+            topics = {str(t).lower() for t in self.lookup[story_id].get("topics", [])}
+            self.assertTrue(topics & {"tech", "business", "health", "climate", "culture"})
+        self.assertNotIn("jp-quake-a", result["selectedIds"])   # science-only stories
+        self.assertNotIn("jp-quake-b", result["selectedIds"])
+
+    def test_science_off_fallback_does_not_resurrect_science(self):
+        # Force a fallback: a tiny japan pool + off-region candidates. Even with unfilled
+        # slots, no science-only story may return through global_fallback.
+        ids = {"jp-culture", "jp-quake-a", "us-science", "world-culture",
+               "global-quake-duplicate"}
+        pool = [c for c in self.candidates if c["id"] in ids]
+        result = self.select(pool, topics=("culture",))
+        for topics in self.selected_topics_of(result, pool):
+            self.assertIn("culture", topics)
+        self.assertNotIn("us-science", result["selectedIds"])
+        self.assertNotIn("jp-quake-a", result["selectedIds"])
+        self.assertNotIn("global-quake-duplicate", result["selectedIds"])
+        self.assertTrue(result["metadata"]["shortage"])
+
+    def test_us_beats_world_when_both_selected(self):
+        # world-climate scores 91 — above every US story except us-tech — yet the US
+        # priority quota keeps 3 US slots.
+        result = self.select(regions=("united_states", "world"))
+        mix = result["metadata"]["finalRegionMix"]
+        self.assertEqual(mix.get("united_states", 0), 3)
+        self.assertEqual(mix.get("world", 0), 2)
+
+    def test_us_minimum_three_of_five_with_all_three_regions(self):
+        result = self.select(regions=("united_states", "japan", "world"))
+        mix = result["metadata"]["finalRegionMix"]
+        self.assertGreaterEqual(mix.get("united_states", 0), 3)
+        self.assertEqual(sum(mix.values()), 5)
+        # Priority order United States > Japan > World also decides the remainder.
+        self.assertEqual(mix.get("japan", 0), 1)
+        self.assertEqual(mix.get("world", 0), 1)
+
+    def test_uk_story_is_a_world_story_and_cannot_displace_us_slots(self):
+        # A very strong UK story (world membership — the classifier's rule for the UK)
+        # must not push any US story out of the US quota.
+        pool = [
+            self.make("uk-science", topics=("science",), regions=("world",), score=99),
+            self.make("us-a", topics=("tech",), regions=("united_states",), score=70),
+            self.make("us-b", topics=("business",), regions=("united_states",), score=69),
+            self.make("us-c", topics=("health",), regions=("united_states",), score=68),
+            self.make("world-a", topics=("climate",), regions=("world",), score=67),
+        ]
+        result = self.select(pool, regions=("united_states", "world"))
+        mix = result["metadata"]["finalRegionMix"]
+        self.assertEqual(mix.get("united_states", 0), 3)
+        self.assertIn("uk-science", result["selectedIds"])   # as a world story only
+
+    def test_uk_science_loses_to_us_when_science_is_off(self):
+        pool = [
+            self.make("uk-science", topics=("science",), regions=("world",), score=99),
+            self.make("us-a", topics=("tech",), regions=("united_states",), score=70),
+            self.make("us-b", topics=("business",), regions=("united_states",), score=69),
+            self.make("us-c", topics=("health",), regions=("united_states",), score=68),
+            self.make("world-a", topics=("climate",), regions=("world",), score=67),
+        ]
+        result = self.select(pool, regions=("united_states", "world"),
+                             topics=("tech", "business", "health", "climate"))
+        self.assertNotIn("uk-science", result["selectedIds"])
+        logs = {row["id"]: row for row in result["candidateLogs"]}
+        self.assertEqual(logs["uk-science"]["rejectionReason"],
+                         "topic not selected (strict allowlist)")
+        self.assertEqual(set(result["selectedIds"]), {"us-a", "us-b", "us-c", "world-a"})
+
+    def test_fail_closed_rather_than_fill_with_violations(self):
+        # Only ONE culture story exists in japan and one in world: the mix ships 2/5 with
+        # three unfilled slots — never five with off-topic filler.
+        result = self.select(topics=("culture",))
+        self.assertEqual(set(result["selectedIds"]), {"jp-culture", "world-culture"})
+        self.assertTrue(result["metadata"]["shortage"])
+        self.assertEqual(result["metadata"]["unfilledSlots"], 3)
+
+    def test_v2_identity_and_version_invalidate_v1_caches(self):
+        result = self.select()
+        self.assertEqual(result["metadata"]["selectorVersion"], 2)
+        self.assertIn("|selector=2|", result["metadata"]["mixIdentity"])
 
 
 if __name__ == "__main__":

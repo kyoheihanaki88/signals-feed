@@ -171,7 +171,7 @@ function optionalExactInteger(
   }
   if (Number.parseInt(value, 10) !== expected) {
     issues.push(
-      `${name} must be ${expected} for selector v1 (a change requires explicit approval)`,
+      `${name} must be ${expected} for this selector version (a change requires explicit approval)`,
     );
   }
   return expected;

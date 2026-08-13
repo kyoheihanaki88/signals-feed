@@ -7,6 +7,7 @@ import {
   SIGNALS_PRO_MONTHLY_PRODUCT_ID,
   SIGNALS_PRO_PRODUCT_IDS,
 } from "../_lib/apple-verifier-real.js";
+import { SUPPORTED_SELECTOR_VERSION } from "../_lib/custom-mix-contract.js";
 import type { RateLimiter } from "../_lib/rate-limit.js";
 import type { RevocationStore } from "../_lib/revocation-store.js";
 import type { SecurityLogger } from "../_lib/security-logging.js";
@@ -83,7 +84,7 @@ async function readValidatedRequest(
       value: {
         signedTransactionInfo: string;
         appVersion?: string;
-        selectorVersion: 1;
+        selectorVersion: typeof SUPPORTED_SELECTOR_VERSION;
       };
     }
   | { ok: false; response: Response }
@@ -139,7 +140,7 @@ async function readValidatedRequest(
     body.signedTransactionInfo.length === 0 ||
     Buffer.byteLength(body.signedTransactionInfo, "utf8") > MAX_JWS_BYTES ||
     !looksLikeCompactJws(body.signedTransactionInfo) ||
-    body.selectorVersion !== 1 ||
+    body.selectorVersion !== SUPPORTED_SELECTOR_VERSION ||
     (body.appVersion !== undefined &&
       (typeof body.appVersion !== "string" ||
         body.appVersion.length === 0 ||
@@ -155,7 +156,7 @@ async function readValidatedRequest(
       ...(body.appVersion === undefined
         ? {}
         : { appVersion: body.appVersion as string }),
-      selectorVersion: 1,
+      selectorVersion: SUPPORTED_SELECTOR_VERSION,
     },
   };
 }
@@ -192,7 +193,7 @@ export function createAuthExchangeHandler(
         reasonCode,
         latencyMs: Math.max(0, dependencies.clock.nowMs() - startedAt),
         requestId,
-        selectorVersion: 1,
+        selectorVersion: SUPPORTED_SELECTOR_VERSION,
         ...(environment === undefined ? {} : { environment }),
         ...(rateLimitBucket === undefined ? {} : { rateLimitBucket }),
       });

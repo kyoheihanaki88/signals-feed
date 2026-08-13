@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,97 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Earthquake response strains Colombia's new government and rescuers",
-      "summary": "The earthquake killed at least 181 people and left 2,595 injured, according to Colombian authorities.",
+      "source": "The Guardian (World)",
+      "headline": "‘Absolutely unacceptable’: Japan condemns visit by Vladimir Putin to disputed Kuril Islands",
+      "summary": "The Japanese government has reacted angrily to Vladimir Putin’s first visit to the disputed Kuril Islands, which are claimed by both Tokyo and Moscow.",
       "keyTakeaways": [
-        "PEREIRA, Colombia — The search for life in the rubble of Colombia's powerful earthquake grew more desperate on Wednesday as search teams pushed up against a key time threshold to locate survivors with signs of life.",
-        "Small successes have broken through the flattened buildings: rescuers pulling a dust-covered baby through a crack in a concrete wall and onlookers cheering as teams lift a woman onto a stretcher.",
-        "Patients from a clinic evacuated due to earthquake damage lie in beds at a temporary facility set up in a gymnasium at a nearby school in Cali, Colombia, Tuesday, Aug."
+        "Japan’s foreign minister, Toshimitsu Motegi, summoned the Russian ambassador Nikolay Nozdrev, while the prime minister, Sanae Takaichi, called Putin’s actions “absolutely unacceptable”.",
+        "The Soviet Union declared war on Japan in August 1945 as Tokyo was about to surrender, and the dispute has prevented the two nations from signing a formal peace treaty.",
+        "About 17,000 Japanese formerly lived on the islands, which today are occupied by about 20,000 Russian citizens."
       ],
-      "whyItMatters": "A 2016 peace accord between rebels and the government along with an ongoing armed conflict may allow aid organizations to distribute food and other emergency materials more quickly, said María José Torres, the U.N. resident coordinator in Colombia.",
-      "originalURL": "https://www.npr.org/2026/08/12/g-s1-138315/colombia-earthquake-updates",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "The Russian president acknowledged Abe’s actions in his remarks on Wednesday and went to call the recent sanctions “unprovoked”.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/13/japan-condemns-vladimir-putin-visit-kuril-islands",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "コロンビア地震、政府と救助隊に重い試練",
-          "summary": "コロンビア当局によると、地震による死者は少なくとも181人、負傷者は2595人にのぼる。",
+          "headline": "プーチン氏の北方四島訪問 日本「断固容認できない」",
+          "summary": "ロシアのプーチン大統領が北方四島を初めて訪問したことに対し、日本政府が強い反発を示している。北方四島は日本とロシアの双方が領有権を主張してきた地域だ。",
           "keyTakeaways": [
-            "ペレイラでは、生存者の発見に望みをつなぐ節目の時間が迫るなか、瓦礫の中の捜索が続く",
-            "崩れたビルからは小さな希望も生まれている。粉塵にまみれた赤ん坊が壁の隙間から救出され、担架に乗せられる女性を見守る人々から歓声があがった",
-            "カリでは損傷した診療所から避難した患者たちが、近くの学校の体育館に設けられた仮設施設のベッドに横たわっている"
+            "茂木敏充外相はロシアのノズドレフ大使を呼び、高市早苗首相はプーチン氏の行動を「断固容認できない」と述べた。",
+            "ソ連は1945年8月、日本が降伏を目前にした時期に対日参戦し、この領土問題が両国の平和条約締結を妨げてきた。",
+            "かつて島には約一万七千人の日本人が暮らしていたが、現在は約二万人のロシア国民が住む。"
           ],
-          "whyItMatters": "国連コロンビア常駐調整官のマリア・ホセ・トーレス氏は、2016年の和平合意と続く紛争の枠組みが、支援団体による食料や緊急物資の迅速な配布を後押しする可能性があると述べた。"
+          "whyItMatters": "プーチン氏は水曜の発言で安倍元首相の対応に触れつつ、最近の制裁を「不当な仕打ち」と呼んだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-13/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "How bad is the situation in Colombia right now?",
-              "duration": 2.586122
+              "text": "So Putin visited some islands and Japan is furious about it?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "It's serious. Authorities say at least 181 people have died and about 2,595 are injured.",
-              "duration": 6.269388
+              "text": "Yes. He made his first visit to the Kuril Islands, which both Japan and Russia claim.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Are rescue teams still finding people alive?",
-              "duration": 2.533878
+              "text": "Why does that touch such a nerve?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "Yes, though time is running short. In Pereira, crews are pushing against a key window for finding survivors.",
+              "text": "The dispute goes back to 1945, when the Soviet Union declared war on Japan just as Tokyo was about to surrender.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's still unresolved after all this time?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It's actually the reason Japan and Russia have never signed a formal peace treaty.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "What did Japan actually do in response?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The foreign minister summoned Russia's ambassador, and the prime minister called Putin's visit 'absolutely unacceptable'.",
               "duration": 5.929796
             },
             {
               "speaker": "listener",
-              "text": "Have there been any hopeful moments?",
-              "duration": 2.037551
+              "text": "Who actually lives there now?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "A few. Rescuers pulled a dust-covered baby through a crack in a wall, and onlookers cheered as a woman was lifted onto a stretcher.",
-              "duration": 8.071837
+              "text": "About 20,000 Russian citizens live there today, though roughly 17,000 Japanese once called the islands home.",
+              "duration": 6.765714
             },
             {
               "speaker": "listener",
-              "text": "What's happening with people who are hurt or displaced?",
-              "duration": 2.690612
+              "text": "And Putin's side of it?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "In Cali, patients from a damaged clinic are now being cared for in a temporary facility set up in a school gymnasium.",
-              "duration": 5.929796
-            },
-            {
-              "speaker": "listener",
-              "text": "Is aid able to reach people quickly?",
-              "duration": 1.906939
-            },
-            {
-              "speaker": "explainer",
-              "text": "It may help that Colombia's 2016 peace accord and ongoing conflict management have created channels aid groups already use, according to the U.N.'s María José Torres.",
-              "duration": 9.639184
-            },
-            {
-              "speaker": "listener",
-              "text": "So there's some structure in place even amid the chaos.",
-              "duration": 3.108571
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly — it's giving responders a way to move food and emergency supplies while the search for survivors continues.",
-              "duration": 5.982041
+              "text": "He referenced Japan's own past actions and also called recent sanctions against Russia 'unprovoked'.",
+              "duration": 5.276735
             }
           ]
         }
@@ -108,98 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Solar eclipse: Where and when you can see it across North West England",
-      "summary": "The most dramatic partial solar eclipse of the century will be visible across the UK this evening - peaking in north west England at 19:10 BST.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "RSC postpones Othello while leading actor Sharon D Clarke has cancer treatment",
+      "summary": "The Royal Shakespeare Company has announced that it will postpone its radical production of Othello starring Sharon D Clarke, while the Olivier-winning actor undergoes treatment for cancer.",
       "keyTakeaways": [
-        "While the people of Greenland, Iceland and parts of northern Spain will be lucky enough to see a total eclipse, it will still represent the highest level of coverage seen from the UK since 11 August 1999.",
-        "It will be the most extensive solar eclipse for the next 54 years, and it is clear why astronomers are calling it \"really exciting\".",
-        "What time can I see the partial eclipse?"
+        "Clarke, 60, is best known for her role as Lola Griffin in the BBC medical drama Holby City, as well as for her theatrical performances in Ma Rainey’s Black Bottom and Caroline, or Change.",
+        "In a statement on Thursday, Clarke said: “I would like to thank all the beautiful people at the RSC for their understanding, love, support and healing energy.",
+        "Othello will be my north star as I undergo treatment.”"
       ],
-      "whyItMatters": "The \"eclipse maximum\", when most of the sun is covered, is expected to fall at about 19:10 in the north-west of England.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cx256nwl7lxo?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "The production, directed by Monique Touko, was scheduled to run from 13 February to 3 April 2027 at the Swan theatre in Stratford-upon-Avon.",
+      "originalURL": "https://www.theguardian.com/culture/2026/aug/13/rsc-postpones-othello-shakespeare-actor-sharon-d-clarke-cancer-treatment",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The instrument",
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英北西部で今夜、今世紀最大級の部分日食",
-          "summary": "今世紀で最も見応えのある部分日食が、今夜イギリス全土で観測できる。ピークは英国夏時間の午後七時十分ごろ、北西イングランドで訪れる。",
+          "headline": "RSC、『オセロー』上演を延期 主演女優の療養のため",
+          "summary": "英国のロイヤル・シェイクスピア・カンパニー（RSC）は、シャロン・D・クラーク氏主演の新演出『オセロー』の上演延期を発表した。オリヴィエ賞受賞歴を持つクラーク氏は、がんの治療に専念するという。",
           "keyTakeaways": [
-            "グリーンランドやアイスランド、スペイン北部の一部では皆既日食が見られる幸運に恵まれるが、英国から見ても一九九九年八月十一日以来の高い欠け具合となる",
-            "今後五十四年間で最大規模の日食となり、天文学者が「本当に心躍る」と語るのもうなずける",
-            "部分日食が見られる時間帯はいつか"
+            "クラーク氏（60）はBBCの医療ドラマ『ホルビー・シティ』のローラ・グリフィン役、また舞台『マ・レイニーのブラックボトム』や『キャロライン、あるいは変化』での演技で知られる。",
+            "木曜の声明でクラーク氏は「RSCの心優しい皆さんの理解と愛、支え、そして癒しの力に感謝したい」と述べた。",
+            "「治療を受けるあいだ、『オセロー』は私にとって北極星のような存在になる」と語った。"
           ],
-          "whyItMatters": "太陽の大部分が隠れる「食の最大」は、英国北西部でおよそ午後七時十分に訪れると見込まれている。"
+          "whyItMatters": "モニーク・トゥーコ氏が演出を手がける本作は、2027年2月13日から4月3日までストラトフォード・アポン・エイヴォンのスワン劇場で上演予定だった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-13/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's an eclipse tonight? What are we actually going to see?",
+              "text": "I saw the RSC's postponing Othello — what happened?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sharon D Clarke, who's starring in it, is undergoing treatment for cancer, so the production's been paused.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "She's the actor from Holby City, right?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's her — Lola Griffin. She's also known for Ma Rainey's Black Bottom and Caroline, or Change.",
+              "duration": 5.668571
+            },
+            {
+              "speaker": "listener",
+              "text": "Has she said anything about it herself?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, she thanked everyone at the RSC for their support, and said Othello will be her 'north star' during treatment.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lovely way to put it. When was the show meant to open?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was set to run from 13 February to 3 April 2027 at the Swan theatre in Stratford-upon-Avon.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there a new date yet?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet — for now it's simply postponed while she focuses on her health.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "Well, I hope she recovers well.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Same here — and it sounds like the whole production is standing by her.",
               "duration": 3.474286
-            },
-            {
-              "speaker": "explainer",
-              "text": "A partial solar eclipse - the most dramatic one this century, visible across the UK.",
-              "duration": 4.493061
-            },
-            {
-              "speaker": "listener",
-              "text": "And it's especially good in the north west of England?",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, that's where the peak coverage happens, around 19:10 BST this evening.",
-              "duration": 5.01551
-            },
-            {
-              "speaker": "listener",
-              "text": "How does that compare to eclipses we've had before?",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's the highest level of coverage seen from the UK since August 1999.",
-              "duration": 4.075102
-            },
-            {
-              "speaker": "listener",
-              "text": "Will we see the sun completely covered, like a total eclipse?",
-              "duration": 3.343673
-            },
-            {
-              "speaker": "explainer",
-              "text": "No, that's only for places like Greenland, Iceland, and parts of northern Spain. We get the partial version.",
-              "duration": 5.694694
-            },
-            {
-              "speaker": "listener",
-              "text": "Still sounds special though.",
-              "duration": 1.515102
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is - astronomers are calling it really exciting, since nothing this extensive will happen again for 54 years.",
-              "duration": 6.687347
-            },
-            {
-              "speaker": "listener",
-              "text": "Worth stepping outside for, then.",
-              "duration": 1.567347
-            },
-            {
-              "speaker": "explainer",
-              "text": "Definitely, especially around that 19:10 peak in the north west.",
-              "duration": 3.422041
             }
           ]
         }
@@ -210,86 +210,97 @@
       "importance": 3,
       "lead": false,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Wisconsin race tight: Key takeaways from US primary election results",
-      "summary": "Democratic socialist Francesca Hong and centrist David Crowley are neck-and-neck in swing state Wisconsin’s Democratic gubernatorial primary election held on Tuesday.",
+      "source": "NPR (World)",
+      "headline": "Photos: See the best photos from the solar eclipse",
+      "summary": "The Picture Show Millions of people in Europe stepped outside this evening to watch a spectacular sunset with a solar eclipse.",
       "keyTakeaways": [
-        "The Democratic race in Wisconsin reflects a wider, ongoing battle inside the Democratic primaries between mainstream, “establishment” candidates, referred to as “moderates” by Democrats, and more left-wing, “progressive” democratic socialists.",
-        "Besides Wisconsin, Alabama, Connecticut, Minnesota, South Carolina and Vermont also conducted primary elections on Tuesday.",
-        "Here are some of the key takeaways from Tuesday’s primary races."
+        "People record a video of the moon partially covering the sun during a solar eclipse, as seen from Berlin, Germany.",
+        "A fish jumps out of the water during a solar eclipse as the moon partially covers the sun and briefly dims the afternoon light along the coast of Fregene, near Rome.",
+        "A beachgoer wearing special eclipse glasses looks up during the beginning phase of a solar eclipse at Puerto de Sagunto beach near Valencia, Spain."
       ],
-      "whyItMatters": "More than seven in 10 Democrats who identify as liberal said they consider it “essential” that their party’s candidates support raising taxes on corporations and billionaires (76 percent), expanding access to abortion (72 percent) and universal government-provided healthcare (71 percent).",
-      "originalURL": "https://www.aljazeera.com/news/2026/8/12/wisconsin-race-tight-key-takeaways-from-us-primary-election-results?traffic_source=rss",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "The moon completely covers the sun during a total solar eclipse as seen from the Javalambre Astrophysical Observatory in Arcos de las Salinas, near Teruel, Spain, August 12, 2026.",
+      "originalURL": "https://www.npr.org/sections/the-picture-show/2026/08/12/nx-s1-5929788/photos-best-photos-from-solar-eclipse",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ウィスコンシン州予備選、大接戦の行方",
-          "summary": "激戦州ウィスコンシンで火曜に行われた民主党の知事候補予備選で、民主社会主義派のフランチェスカ・ホン氏と中道派のデービッド・クロウリー氏が、互角の争いを見せている。",
+          "headline": "欧州の空を彩った日食、その瞬間をカメラが捉えた",
+          "summary": "この夕方、欧州各地で人々が外に出て、日食と重なる壮麗な夕焼けを見上げた。ベルリンからスペインまで、各地の海辺や街角で人々が空を見つめた光景が広がった。",
           "keyTakeaways": [
-            "ウィスコンシン州の民主党内対決は、主流派、いわゆる「穏健派」と、より左派的な「進歩派」の民主社会主義者との、党全体に広がる争いを映し出している。",
-            "ウィスコンシン州のほか、アラバマ、コネチカット、ミネソタ、サウスカロライナ、バーモントの各州でも火曜に予備選が行われた。"
+            "ドイツ・ベルリンでは、月が太陽の一部を隠す様子を人々がスマートフォンで撮影した",
+            "ローマ近郊フレジェネの海岸では、日食で午後の光がわずかに薄れる中、魚が水面から跳ねる場面が見られた",
+            "スペイン・バレンシア近郊のプエルト・デ・サグント海岸では、専用の遮光グラスをかけた人が日食の始まりを見上げていた"
           ],
-          "whyItMatters": "自らをリベラルと位置づける民主党支持者の七割以上が、企業や富裕層への増税、人工妊娠中絶の権利拡大、政府による皆保険制度を党の候補者が支持することを「不可欠」だと考えている。"
+          "whyItMatters": "スペイン・テルエル近郊、アルコス・デ・ラス・サリナスのハバランブレ天文台からは、月が太陽を完全に覆う皆既日食の様子が観測された。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-13/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So how close is this Wisconsin race, really?",
-              "duration": 2.45551
+              "text": "So people across Europe just stopped to watch the sky tonight?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "Very close. Francesca Hong and David Crowley are neck-and-neck in the Democratic primary for governor.",
-              "duration": 5.459592
+              "text": "Yes, a solar eclipse lined up right at sunset, which made it even more striking.",
+              "duration": 4.623673
             },
             {
               "speaker": "listener",
-              "text": "Remind me what separates them?",
-              "duration": 1.906939
+              "text": "Where were people watching from?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "Hong is more of a democratic socialist, Crowley leans centrist. It's part of a bigger split in the party between moderates and progressives.",
-              "duration": 7.549388
+              "text": "Places like Berlin, Valencia, and along the coast near Rome all caught different views of it.",
+              "duration": 4.675918
             },
             {
               "speaker": "listener",
-              "text": "Is that split only happening in Wisconsin?",
-              "duration": 2.586122
+              "text": "What did it actually look like?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "No, primaries were also held Tuesday in Alabama, Connecticut, Minnesota, South Carolina, and Vermont.",
-              "duration": 5.799184
+              "text": "In Berlin, people filmed the moon slowly covering part of the sun. Near Rome, the light dimmed enough that a fish leaping from the water became part of the scene.",
+              "duration": 8.620408
             },
             {
               "speaker": "listener",
-              "text": "Why does this moderate versus progressive divide matter so much right now?",
-              "duration": 4.780408
+              "text": "And in Spain?",
+              "duration": 1.253878
             },
             {
               "speaker": "explainer",
-              "text": "Surveys show most liberal Democrats want candidates who back things like higher taxes on corporations, abortion access, and universal healthcare.",
-              "duration": 8.306939
+              "text": "At a beach near Valencia, someone wearing eclipse glasses looked up just as the moon began sliding across the sun.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "So the primary results could signal which direction the party leans on those issues.",
-              "duration": 4.545306
+              "text": "Was it a full eclipse anywhere?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Wisconsin, as a swing state, makes this race a useful early read on that.",
-              "duration": 4.597551
+              "text": "Yes, at an observatory near Teruel, Spain, the moon fully covered the sun, giving a clear view of a total eclipse.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like a quiet kind of wonder people shared together.",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. A shared moment, looking up at the same sky.",
+              "duration": 3.004082
             }
           ]
         }
@@ -300,97 +311,75 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "AI was supposed to destroy jobs. Where’s the carnage?",
-      "summary": "T he prediction was stark: artificial intelligence advancements would wipe out jobs en masse.",
+      "source": "BBC News (Technology)",
+      "headline": "Flock boss admits surveillance firm took too long to act over police abuse",
+      "summary": "Flock, the US surveillance firm, is rolling out new safeguards to prevent police misuse of its technology which, its founder and chief executive admits, should have happened sooner.",
       "keyTakeaways": [
-        "The AI jobs apocalypse never showed up.",
-        "Still, jobs are changing and economists expect more to come.",
-        "Robert Seamans, a professor at NYU Stern who helped co-develop one of the standard measures used to gauge an occupation’s exposure to AI, categorizes AI’s impact into three buckets: jobs made obsolete, jobs created and jobs changed."
+        "Police have used Flock to track romantic partners, external and stalk strangers, leading to growing public backlash against the company.",
+        "Flock is cutting the number of days most data is retained, from 30 days to seven and abnormal searches and uses will also automatically be flagged.",
+        "Flock cameras have been used by police to not only track former and current romantic partners, but in one case, even a woman who had had an abortion, external."
       ],
-      "whyItMatters": "For now, AI’s biggest impact is not on the number of jobs, but on the nature of them.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/12/ai-job-destruction",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "whyItMatters": "This was around the time that Amazon's Ring, a doorbell camera firm, cancelled a partnership with Flock after an outcry over a Super Bowl advert which sparked concern about unwanted surveillance.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/crrv1rjwgl9o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "AIによる雇用崩壊、まだ起きず",
-          "summary": "AIの進歩が雇用を大量に奪うという予測は、これまでのところ現実になっていない。とはいえ仕事の中身は静かに変わりつつあり、経済学者はその変化がこれから本格化すると見ている。",
-          "keyTakeaways": [
-            "懸念されたAIによる雇用崩壊は起きていない",
-            "仕事の変化はすでに始まっており、今後さらに進むと見られる",
-            "AIの影響を測る指標の開発に携わったニューヨーク大学スターン校のロバート・シーマンズ教授は、AIの影響を「消える仕事」「生まれる仕事」「変わる仕事」の三つに分類する"
-          ],
-          "whyItMatters": "今のところAIが変えているのは仕事の数ではなく、仕事の中身である。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-13/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So all that talk about AI wiping out jobs — did it actually happen?",
-              "duration": 4.623673
+              "text": "So this is the company behind those license plate cameras police use?",
+              "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "Not really. The mass job losses people predicted haven't shown up.",
-              "duration": 3.291429
-            },
-            {
-              "speaker": "listener",
-              "text": "That's surprising. So AI just... isn't affecting work?",
-              "duration": 3.474286
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is affecting work — just not the way people feared. Economists expect more change ahead, too.",
-              "duration": 5.564082
-            },
-            {
-              "speaker": "listener",
-              "text": "How do experts think about what AI is actually doing to jobs?",
-              "duration": 3.578776
-            },
-            {
-              "speaker": "explainer",
-              "text": "Robert Seamans, a professor at NYU Stern, breaks it into three buckets: jobs made obsolete, jobs created, and jobs changed.",
-              "duration": 7.78449
-            },
-            {
-              "speaker": "listener",
-              "text": "So it's not one story — some jobs disappear, some appear, some just shift.",
+              "text": "Yes, Flock. And its own boss admits they took too long to stop police misusing it.",
               "duration": 4.414694
             },
             {
+              "speaker": "listener",
+              "text": "Misusing it how?",
+              "duration": 1.38449
+            },
+            {
               "speaker": "explainer",
-              "text": "Exactly. And right now, that third bucket seems to matter most.",
-              "duration": 3.186939
+              "text": "Police have used it to track romantic partners, and in one case, a woman who'd had an abortion.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Meaning people are keeping their jobs, but the jobs themselves look different?",
-              "duration": 4.675918
+              "text": "That's unsettling. What's changing now?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "That's the core of it. The impact isn't on job numbers so much as the nature of the work itself.",
-              "duration": 5.459592
+              "text": "Data will now be kept for seven days instead of thirty, and unusual searches will be flagged automatically.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "Good to know — a quieter shift than the headlines suggested.",
-              "duration": 3.996735
+              "text": "Did something push them to act now?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Quieter, yes. But still real, and still unfolding.",
-              "duration": 3.004082
+              "text": "Partly. Amazon's Ring pulled out of a partnership with Flock after backlash over an advert during the Super Bowl.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "So public pressure made the difference.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems so. The company is admitting the safeguards should have come much sooner.",
+              "duration": 4.545306
             }
           ]
         }
@@ -402,96 +391,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Carcass Clad: stifling tank combat promises tension, terror and surprising laughs",
-      "summary": "Well, you could set the entire game in the stifling crew compartment of a heavily armoured tank, a coffin-like interior you share with two other players as you co-operatively attempt to pilot your beleaguered war machine to safety through the crumbling remains of a city in enemy territory.",
+      "headline": "Are teens on ebikes the ‘new Hells Angels’? Not so fast, boomers",
+      "summary": "They are often marketed as ebikes, despite exceeding speed and power rules set for actual ebikes.",
       "keyTakeaways": [
-        "While there’s undoubtedly tonal overlap, the roaring engine powering Carcass Clad is gameplay rather than scriptwriting.",
-        "Your adversaries aren’t run-of-the-mill camo-clad baddies.",
-        "It’s a dynamic that was inspired in part by Battlefield V – specifically one mission that casts you as the crew of a German Tiger tank still defending Cologne in March 1945."
+        "Are teens on ebikes the ‘new Hells Angels’?",
+        "The Los Angeles Times recently dubbed them the “ new Hells Angels ”.",
+        "In this regulatory wild west, legal ebikes are caught in the crossfire."
       ],
-      "whyItMatters": "On some level, that might be the biggest difference between Mouthwashing and Carcass Clad: a belief that in spite of everything, people can hold together, work together and even find something to smile about.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/12/carcass-clad-tank-combat-game-wrong-organ",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "Biking advocates point to existing rules for actual ebikes and argue the majority of riders are not thrill-seeking speedsters but commuters who’ve tapped into ebikes’ convenience and low environmental impact as a replacement for local car trips.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/13/ebikes-e-motorcycles-teenagers",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "密室の戦車戦、緊張と恐怖の先に笑いを見出す",
-          "summary": "ゲーム全体の舞台は、重装甲戦車の息詰まるクルー室ひとつだけだ。棺のようなその内部を三人のプレイヤーで共有し、敵地の瓦礫の街を、傷ついた戦車で安全な場所まで導こうと協力して奮闘する。",
+          "headline": "電動バイクの若者たち、本当に『危険な存在』か",
+          "summary": "電動バイクに乗る若者たちが「新たなヘルズエンジェルス」と呼ばれている。だが多くは正規のebikeとして売られながら、実際には速度や出力の基準を超えている。",
           "keyTakeaways": [
-            "語り口に重なる部分はあっても、カーカス・クラッドを動かす原動力は脚本ではなくゲームプレイそのものだ。",
-            "敵として現れるのは、ありふれた迷彩服の悪役ではない。",
-            "この構図は「バトルフィールドV」、なかでもドイツのティーガー戦車の乗員として一九四五年三月のケルン防衛戦を描いた任務に着想を得ている。"
+            "電動バイクの若者は『新たなヘルズエンジェルス』なのか",
+            "ロサンゼルス・タイムズ紙が最近そう呼んだ",
+            "規制の空白の中、正規のebikeも巻き添えになっている"
           ],
-          "whyItMatters": "ある意味、これこそが「マウスウォッシング」と「カーカス・クラッド」の最大の違いかもしれない。すべてが崩れ去っても、人は共に支え合い、力を合わせ、笑いを見出せるという信念だ。"
+          "whyItMatters": "自転車推進派は、多くの利用者がスリルを求める暴走者ではなく、車移動に代わる手軽で環境負荷の低い通勤手段として電動バイクを選んでいると指摘する。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-12/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-13/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this game puts you inside a tank the whole time?",
-              "duration": 3.004082
+              "text": "So are teens on ebikes really being called the 'new Hells Angels'?",
+              "duration": 4.414694
             },
             {
               "speaker": "explainer",
-              "text": "Yes, the whole crew compartment - a tight, coffin-like space you share with two other players.",
-              "duration": 5.250612
+              "text": "That's the phrase the Los Angeles Times used, yes.",
+              "duration": 2.951837
             },
             {
               "speaker": "listener",
-              "text": "That sounds stressful. Is it meant to be scary?",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "There's tension, even terror, but the summary says the real driver is gameplay, not the script.",
-              "duration": 5.041633
-            },
-            {
-              "speaker": "listener",
-              "text": "And you're fighting soldiers out there?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not run-of-the-mill enemies, apparently - something a bit different from typical camo-clad baddies.",
-              "duration": 4.963265
-            },
-            {
-              "speaker": "listener",
-              "text": "Where did the idea for a cooperative tank crew even come from?",
-              "duration": 3.84
-            },
-            {
-              "speaker": "explainer",
-              "text": "Partly Battlefield V - a mission where you're a German Tiger tank crew defending Cologne in March 1945.",
-              "duration": 6.817959
-            },
-            {
-              "speaker": "listener",
-              "text": "With all that tension, is there any lighter side?",
-              "duration": 2.45551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Surprisingly, yes - there are said to be laughs alongside the dread.",
-              "duration": 3.94449
-            },
-            {
-              "speaker": "listener",
-              "text": "So what's the bigger idea behind it all?",
+              "text": "That sounds pretty alarming. Is it fair?",
               "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It's about believing that even in the worst circumstances, people can hold together and still find something to smile about.",
+              "text": "Not quite. Many of these bikes are marketed as ebikes but actually exceed the speed and power limits set for real ebikes.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's more of a labeling problem than a teens problem?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "In many cases, yes. There's a regulatory gap right now, and legal ebikes are getting caught in the crossfire.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "What do people who bike a lot say about this?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Advocates point out that most riders on proper ebikes aren't speedsters at all.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they using them for, then?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly commuting. They're replacing short local car trips, which also helps cut down on environmental impact.",
               "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "So the real story is about rules catching up, not teens causing chaos.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the heart of it, yes.",
+              "duration": 1.515102
             }
           ]
         }

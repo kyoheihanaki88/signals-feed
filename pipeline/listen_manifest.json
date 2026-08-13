@@ -17197,6 +17197,343 @@
           ]
         }
       }
+    },
+    "2026-08-13": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-13/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Putin visited some islands and Japan is furious about it?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. He made his first visit to the Kuril Islands, which both Japan and Russia claim.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that touch such a nerve?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "The dispute goes back to 1945, when the Soviet Union declared war on Japan just as Tokyo was about to surrender.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's still unresolved after all this time?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It's actually the reason Japan and Russia have never signed a formal peace treaty.",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "listener",
+              "text": "What did Japan actually do in response?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "The foreign minister summoned Russia's ambassador, and the prime minister called Putin's visit 'absolutely unacceptable'.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "Who actually lives there now?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "About 20,000 Russian citizens live there today, though roughly 17,000 Japanese once called the islands home.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "And Putin's side of it?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "He referenced Japan's own past actions and also called recent sanctions against Russia 'unprovoked'.",
+              "duration": 5.276735
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-13/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw the RSC's postponing Othello — what happened?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sharon D Clarke, who's starring in it, is undergoing treatment for cancer, so the production's been paused.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "She's the actor from Holby City, right?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's her — Lola Griffin. She's also known for Ma Rainey's Black Bottom and Caroline, or Change.",
+              "duration": 5.668571
+            },
+            {
+              "speaker": "listener",
+              "text": "Has she said anything about it herself?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, she thanked everyone at the RSC for their support, and said Othello will be her 'north star' during treatment.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lovely way to put it. When was the show meant to open?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was set to run from 13 February to 3 April 2027 at the Swan theatre in Stratford-upon-Avon.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there a new date yet?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet — for now it's simply postponed while she focuses on her health.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "Well, I hope she recovers well.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Same here — and it sounds like the whole production is standing by her.",
+              "duration": 3.474286
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-13/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So people across Europe just stopped to watch the sky tonight?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a solar eclipse lined up right at sunset, which made it even more striking.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "Where were people watching from?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Places like Berlin, Valencia, and along the coast near Rome all caught different views of it.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "What did it actually look like?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "In Berlin, people filmed the moon slowly covering part of the sun. Near Rome, the light dimmed enough that a fish leaping from the water became part of the scene.",
+              "duration": 8.620408
+            },
+            {
+              "speaker": "listener",
+              "text": "And in Spain?",
+              "duration": 1.253878
+            },
+            {
+              "speaker": "explainer",
+              "text": "At a beach near Valencia, someone wearing eclipse glasses looked up just as the moon began sliding across the sun.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it a full eclipse anywhere?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, at an observatory near Teruel, Spain, the moon fully covered the sun, giving a clear view of a total eclipse.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like a quiet kind of wonder people shared together.",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. A shared moment, looking up at the same sky.",
+              "duration": 3.004082
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-13/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this is the company behind those license plate cameras police use?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Flock. And its own boss admits they took too long to stop police misusing it.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "Misusing it how?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police have used it to track romantic partners, and in one case, a woman who'd had an abortion.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "That's unsettling. What's changing now?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Data will now be kept for seven days instead of thirty, and unusual searches will be flagged automatically.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Did something push them to act now?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Partly. Amazon's Ring pulled out of a partnership with Flock after backlash over an advert during the Super Bowl.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "So public pressure made the difference.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems so. The company is admitting the safeguards should have come much sooner.",
+              "duration": 4.545306
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-13/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So are teens on ebikes really being called the 'new Hells Angels'?",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the phrase the Los Angeles Times used, yes.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds pretty alarming. Is it fair?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite. Many of these bikes are marketed as ebikes but actually exceed the speed and power limits set for real ebikes.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's more of a labeling problem than a teens problem?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "In many cases, yes. There's a regulatory gap right now, and legal ebikes are getting caught in the crossfire.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "What do people who bike a lot say about this?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Advocates point out that most riders on proper ebikes aren't speedsters at all.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they using them for, then?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly commuting. They're replacing short local car trips, which also helps cut down on environmental impact.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "So the real story is about rules catching up, not teens causing chaos.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the heart of it, yes.",
+              "duration": 1.515102
+            }
+          ]
+        }
+      }
     }
   }
 }

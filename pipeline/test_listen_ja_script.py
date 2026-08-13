@@ -865,8 +865,11 @@ try:
     check("resume run 1: signal 5 gate failure still aborts", False)
 except ValueError as e:
     check("resume run 1: signal 5 gate failure still aborts", "signal 5 JA quality gate failed" in str(e))
-check("resume run 1: nothing uploaded, all 5 LLM calls made",
-      uploaded == [] and llm_calls == [1, 2, 3, 4, 5])
+# Signal 5 is retried with feedback up to JA_QUALITY_MAX_ATTEMPTS before the run aborts
+# (2026-08-12 quality retry) — the stub keeps returning the same bad script, so all
+# attempts fail and the abort itself is unchanged.
+check("resume run 1: nothing uploaded; signals 1-4 one call each, signal 5 retried then aborts",
+      uploaded == [] and llm_calls == [1, 2, 3, 4] + [5] * lg.JA_QUALITY_MAX_ATTEMPTS)
 check("resume run 1: checkpoints written for passed 1-4 only",
       all(os.path.exists(_ck(n)) for n in (1, 2, 3, 4)) and not os.path.exists(_ck(5)))
 

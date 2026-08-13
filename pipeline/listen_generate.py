@@ -178,6 +178,37 @@ _JA_FORMAT_RETRY_NOTE = (
     "説明・前置き・後書き・Markdown・コードフェンスは一切書かず、"
     "JSON配列のみを出力してください。"
 )
+# JA quality retry (2026-08-12 outage, run 31615984769). The solo model answered signals
+# 1–3 with STRUCTURAL COPIES of localized.ja sentences; the quality gate rightly rejected
+# them, but generate() had no retry for gate failures, so every workflow rerun failed the
+# same way — the model was never told WHAT was rejected, so it kept producing the same
+# copy. The fix is retry-with-feedback, NOT a weaker gate: the gate itself is byte-for-byte
+# unchanged and re-runs in full on every regenerated script. Bounded like the format
+# ladder: at most JA_QUALITY_MAX_ATTEMPTS scripts per signal per run, each retry carrying
+# the gate's own issue strings (they quote only the REJECTED generated text and rule names
+# — never a secret) plus an explicit rewrite-from-meaning instruction. JA-only; the EN
+# path and the two-person legacy path are untouched.
+JA_QUALITY_MAX_ATTEMPTS = 3       # 1 initial + up to 2 quality retries per signal
+_JA_QUALITY_ISSUE_LIMIT = 8       # cap the issues quoted back (prompt stays small)
+
+
+def _ja_quality_retry_note(issues):
+    """The reinstruction appended to the NEXT attempt's user content after a gate
+    rejection. Built only from the gate's own issue strings."""
+    quoted = "; ".join(i[:120] for i in issues[:_JA_QUALITY_ISSUE_LIMIT])
+    return (
+        "\n\n[品質再指示] 前回の台本は品質ゲートで却下されました。指摘: " + quoted +
+        "\n記事や japanese_reference の文を、そのままでも部分的にも使わないでください。"
+        "元の文を見ずに、意味だけを頭に置いて、完全に自分の話し言葉でゼロから書き直して"
+        "ください。事実・名前・数字は正確に保ち、新しい事実は加えないでください。"
+    )
+
+
+# The quality feedback for the attempt llm_dialogue is CURRENTLY serving. A module variable
+# (not a new llm_fn parameter) so the injectable llm_fn/test-double contract and every
+# existing call site stay untouched — the same pattern as _JA_RUN_DATE below. Set by
+# generate() immediately before a quality retry and ALWAYS cleared right after the call.
+_JA_QUALITY_FEEDBACK = None
 # The edition date generate() is currently running, for the failed-output artifact filename.
 # A module variable (not a new llm_fn parameter) so the injectable llm_fn/test-double contract
 # and every existing call site stay untouched.
@@ -223,6 +254,10 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
             fields["japanese_reference"] = ja_ref     # ground JA terminology in the app's own JP text
     system = SCRIPT_SYSTEM_JA_SOLO if lang == "ja" else SCRIPT_SYSTEM
     user_content = json.dumps(fields, ensure_ascii=False)
+    if lang == "ja" and _JA_QUALITY_FEEDBACK:
+        # Quality retry: tell the model exactly what the gate rejected. JA-only; the EN
+        # payload stays byte-identical (guarded by test_listen_request_payload).
+        user_content += _JA_QUALITY_FEEDBACK
 
     def request_text(content, max_tokens):
         # NO SAMPLING PARAMETERS — on any attempt. Claude Opus 4.7/4.8, Opus 5, Sonnet 5,
@@ -280,7 +315,12 @@ def llm_dialogue(signal, *, api_key, model=SCRIPT_MODEL, lang="en"):
 
     num = signal.get("number")
     last_err, last_meta = None, None
-    budget_idx = 0                            # advances ONLY on a proven budget exhaustion
+    # A QUALITY retry carries the feedback note, so the prompt is longer and the model
+    # demonstrably thinks harder about it — on 2026-08-13 (run 31700364788) the retry
+    # attempts exhausted the 1200 ceiling on thinking alone and returned no JSON body.
+    # Those attempts start one rung up the ladder (2400); a first attempt keeps the
+    # historical 1200. Escalation on a PROVEN "max_tokens" stop is unchanged.
+    budget_idx = 1 if _JA_QUALITY_FEEDBACK else 0  # advances ONLY on a proven budget exhaustion
     for attempt in range(1, JA_FORMAT_MAX_ATTEMPTS + 1):
         content = user_content if attempt == 1 else user_content + _JA_FORMAT_RETRY_NOTE
         text, meta = request_text(content, JA_BUDGETS[budget_idx])   # HTTP/auth failures raise here — never retried
@@ -1054,7 +1094,7 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
     usual. Atomicity is unchanged: nothing uploads and no manifest is written until 5/5 pass in
     one run. Set LISTEN_JA_RESUME=0 to force full regeneration. EN never reads or writes
     checkpoints."""
-    global _JA_RUN_DATE
+    global _JA_RUN_DATE, _JA_QUALITY_FEEDBACK
     _JA_RUN_DATE = date        # names the failed-output artifact; read only by the JA dump helper
     edition = os.path.join(ROOT, "editions", f"{date}.json")
     feed = json.load(open(edition, encoding="utf-8"))
@@ -1085,7 +1125,24 @@ def generate(date, *, el_key, an_key, listener_voice, explainer_voice, lang="en"
                 continue
         lines = llm_fn(sig, api_key=an_key, lang=lang) if lang != "en" else llm_fn(sig, api_key=an_key)
         if lang == "ja":
+            # Quality gate with BOUNDED retry-with-feedback (2026-08-12). The gate itself
+            # is unchanged and re-runs in full on every regenerated script; a rejection is
+            # fed back verbatim so the model stops reproducing the same structural copy.
+            # Every rejected script is still dumped for inspection, and a signal that
+            # cannot pass within JA_QUALITY_MAX_ATTEMPTS fails the run exactly as before.
             issues = ja_solo_quality_issues(lines, sig)
+            for q_attempt in range(2, JA_QUALITY_MAX_ATTEMPTS + 1):
+                if not issues:
+                    break
+                _dump_failed_ja(date, num, sig, lines, issues)   # debug-only; never alters the gate
+                log(f"  signal {num} [ja]: quality gate rejected ({len(issues)} issue(s)) — "
+                    f"regenerating with feedback (attempt {q_attempt}/{JA_QUALITY_MAX_ATTEMPTS})")
+                _JA_QUALITY_FEEDBACK = _ja_quality_retry_note(issues)
+                try:
+                    lines = llm_fn(sig, api_key=an_key, lang=lang)
+                finally:
+                    _JA_QUALITY_FEEDBACK = None   # never leaks into another signal/attempt
+                issues = ja_solo_quality_issues(lines, sig)
             if issues:
                 _dump_failed_ja(date, num, sig, lines, issues)   # debug-only; never alters the gate
                 raise ValueError(f"signal {num} JA quality gate failed:\n  " + "\n  ".join(issues))

@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-13",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "‘Absolutely unacceptable’: Japan condemns visit by Vladimir Putin to disputed Kuril Islands",
+      "summary": "The Japanese government has reacted angrily to Vladimir Putin’s first visit to the disputed Kuril Islands, which are claimed by both Tokyo and Moscow.",
+      "keyTakeaways": [
+        "Japan’s foreign minister, Toshimitsu Motegi, summoned the Russian ambassador Nikolay Nozdrev, while the prime minister, Sanae Takaichi, called Putin’s actions “absolutely unacceptable”.",
+        "The Soviet Union declared war on Japan in August 1945 as Tokyo was about to surrender, and the dispute has prevented the two nations from signing a formal peace treaty.",
+        "About 17,000 Japanese formerly lived on the islands, which today are occupied by about 20,000 Russian citizens."
+      ],
+      "whyItMatters": "The Russian president acknowledged Abe’s actions in his remarks on Wednesday and went to call the recent sanctions “unprovoked”.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/13/japan-condemns-vladimir-putin-visit-kuril-islands",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "プーチン氏の北方四島訪問 日本「断固容認できない」",
+          "summary": "ロシアのプーチン大統領が北方四島を初めて訪問したことに対し、日本政府が強い反発を示している。北方四島は日本とロシアの双方が領有権を主張してきた地域だ。",
+          "keyTakeaways": [
+            "茂木敏充外相はロシアのノズドレフ大使を呼び、高市早苗首相はプーチン氏の行動を「断固容認できない」と述べた。",
+            "ソ連は1945年8月、日本が降伏を目前にした時期に対日参戦し、この領土問題が両国の平和条約締結を妨げてきた。",
+            "かつて島には約一万七千人の日本人が暮らしていたが、現在は約二万人のロシア国民が住む。"
+          ],
+          "whyItMatters": "プーチン氏は水曜の発言で安倍元首相の対応に触れつつ、最近の制裁を「不当な仕打ち」と呼んだ。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "RSC postpones Othello while leading actor Sharon D Clarke has cancer treatment",
+      "summary": "The Royal Shakespeare Company has announced that it will postpone its radical production of Othello starring Sharon D Clarke, while the Olivier-winning actor undergoes treatment for cancer.",
+      "keyTakeaways": [
+        "Clarke, 60, is best known for her role as Lola Griffin in the BBC medical drama Holby City, as well as for her theatrical performances in Ma Rainey’s Black Bottom and Caroline, or Change.",
+        "In a statement on Thursday, Clarke said: “I would like to thank all the beautiful people at the RSC for their understanding, love, support and healing energy.",
+        "Othello will be my north star as I undergo treatment.”"
+      ],
+      "whyItMatters": "The production, directed by Monique Touko, was scheduled to run from 13 February to 3 April 2027 at the Swan theatre in Stratford-upon-Avon.",
+      "originalURL": "https://www.theguardian.com/culture/2026/aug/13/rsc-postpones-othello-shakespeare-actor-sharon-d-clarke-cancer-treatment",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "RSC、『オセロー』上演を延期 主演女優の療養のため",
+          "summary": "英国のロイヤル・シェイクスピア・カンパニー（RSC）は、シャロン・D・クラーク氏主演の新演出『オセロー』の上演延期を発表した。オリヴィエ賞受賞歴を持つクラーク氏は、がんの治療に専念するという。",
+          "keyTakeaways": [
+            "クラーク氏（60）はBBCの医療ドラマ『ホルビー・シティ』のローラ・グリフィン役、また舞台『マ・レイニーのブラックボトム』や『キャロライン、あるいは変化』での演技で知られる。",
+            "木曜の声明でクラーク氏は「RSCの心優しい皆さんの理解と愛、支え、そして癒しの力に感謝したい」と述べた。",
+            "「治療を受けるあいだ、『オセロー』は私にとって北極星のような存在になる」と語った。"
+          ],
+          "whyItMatters": "モニーク・トゥーコ氏が演出を手がける本作は、2027年2月13日から4月3日までストラトフォード・アポン・エイヴォンのスワン劇場で上演予定だった。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Photos: See the best photos from the solar eclipse",
+      "summary": "The Picture Show Millions of people in Europe stepped outside this evening to watch a spectacular sunset with a solar eclipse.",
+      "keyTakeaways": [
+        "People record a video of the moon partially covering the sun during a solar eclipse, as seen from Berlin, Germany.",
+        "A fish jumps out of the water during a solar eclipse as the moon partially covers the sun and briefly dims the afternoon light along the coast of Fregene, near Rome.",
+        "A beachgoer wearing special eclipse glasses looks up during the beginning phase of a solar eclipse at Puerto de Sagunto beach near Valencia, Spain."
+      ],
+      "whyItMatters": "The moon completely covers the sun during a total solar eclipse as seen from the Javalambre Astrophysical Observatory in Arcos de las Salinas, near Teruel, Spain, August 12, 2026.",
+      "originalURL": "https://www.npr.org/sections/the-picture-show/2026/08/12/nx-s1-5929788/photos-best-photos-from-solar-eclipse",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "欧州の空を彩った日食、その瞬間をカメラが捉えた",
+          "summary": "この夕方、欧州各地で人々が外に出て、日食と重なる壮麗な夕焼けを見上げた。ベルリンからスペインまで、各地の海辺や街角で人々が空を見つめた光景が広がった。",
+          "keyTakeaways": [
+            "ドイツ・ベルリンでは、月が太陽の一部を隠す様子を人々がスマートフォンで撮影した",
+            "ローマ近郊フレジェネの海岸では、日食で午後の光がわずかに薄れる中、魚が水面から跳ねる場面が見られた",
+            "スペイン・バレンシア近郊のプエルト・デ・サグント海岸では、専用の遮光グラスをかけた人が日食の始まりを見上げていた"
+          ],
+          "whyItMatters": "スペイン・テルエル近郊、アルコス・デ・ラス・サリナスのハバランブレ天文台からは、月が太陽を完全に覆う皆既日食の様子が観測された。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "Flock boss admits surveillance firm took too long to act over police abuse",
+      "summary": "Flock, the US surveillance firm, is rolling out new safeguards to prevent police misuse of its technology which, its founder and chief executive admits, should have happened sooner.",
+      "keyTakeaways": [
+        "Police have used Flock to track romantic partners, external and stalk strangers, leading to growing public backlash against the company.",
+        "Flock is cutting the number of days most data is retained, from 30 days to seven and abnormal searches and uses will also automatically be flagged.",
+        "Flock cameras have been used by police to not only track former and current romantic partners, but in one case, even a woman who had had an abortion, external."
+      ],
+      "whyItMatters": "This was around the time that Amazon's Ring, a doorbell camera firm, cancelled a partnership with Flock after an outcry over a Super Bowl advert which sparked concern about unwanted surveillance.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/crrv1rjwgl9o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Are teens on ebikes the ‘new Hells Angels’? Not so fast, boomers",
+      "summary": "They are often marketed as ebikes, despite exceeding speed and power rules set for actual ebikes.",
+      "keyTakeaways": [
+        "Are teens on ebikes the ‘new Hells Angels’?",
+        "The Los Angeles Times recently dubbed them the “ new Hells Angels ”.",
+        "In this regulatory wild west, legal ebikes are caught in the crossfire."
+      ],
+      "whyItMatters": "Biking advocates point to existing rules for actual ebikes and argue the majority of riders are not thrill-seeking speedsters but commuters who’ve tapped into ebikes’ convenience and low environmental impact as a replacement for local car trips.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/13/ebikes-e-motorcycles-teenagers",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "電動バイクの若者たち、本当に『危険な存在』か",
+          "summary": "電動バイクに乗る若者たちが「新たなヘルズエンジェルス」と呼ばれている。だが多くは正規のebikeとして売られながら、実際には速度や出力の基準を超えている。",
+          "keyTakeaways": [
+            "電動バイクの若者は『新たなヘルズエンジェルス』なのか",
+            "ロサンゼルス・タイムズ紙が最近そう呼んだ",
+            "規制の空白の中、正規のebikeも巻き添えになっている"
+          ],
+          "whyItMatters": "自転車推進派は、多くの利用者がスリルを求める暴走者ではなく、車移動に代わる手軽で環境負荷の低い通勤手段として電動バイクを選んでいると指摘する。"
+        }
+      }
+    }
+  ]
+}

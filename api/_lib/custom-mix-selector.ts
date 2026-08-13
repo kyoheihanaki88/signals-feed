@@ -23,8 +23,6 @@
  * import time or after.
  */
 
-import { createHash } from "node:crypto";
-
 import { mixIdentity, normalizeMix, normalizeRegions } from "./custom-mix-identity.js";
 import { productionEditorialDuplicateGuard } from "./editorial-duplicate-guard.js";
 import {
@@ -43,6 +41,27 @@ export const NEW_CATEGORY_BONUS = 0.6;
 export const NEW_SOURCE_BONUS = 0.4;
 const FRESHNESS_MAX_MS = 72 * 60 * 60 * 1_000;
 const FRESHNESS_MIN_MS = -24 * 60 * 60 * 1_000;
+
+// ── selector v2 (2026-08-13) — mirrors pipeline/custom_mix_selector.py exactly ─────────
+// Selected topics are a STRICT ALLOWLIST (fallback included; ship short rather than
+// violate the user's settings), and regions fill in fixed priority order with a 3-slot
+// US minimum when the US is selected alongside others. A UK story carries only `world`
+// membership, so it competes for world slots and can never displace a US slot.
+export const REGION_PRIORITY = ["united_states", "japan", "world"] as const;
+export const US_MIN_QUOTA = 3;
+
+function priorityOrder(regions: readonly string[]): string[] {
+  return REGION_PRIORITY.filter((r) => regions.includes(r));
+}
+
+/** Python `_topic_allowed`: empty selection = no filter (the pre-v2 behavior). */
+function topicAllowed(candidate: MixCandidate, topics: readonly string[]): boolean {
+  if (topics.length === 0) return true;
+  const candidateTopics = new Set(
+    (candidate.topics ?? []).map((t) => pyStr(t).toLowerCase()),
+  );
+  return topics.some((topic) => candidateTopics.has(topic));
+}
 
 /**
  * Python's `str(d.get(key, ""))`. An ABSENT key yields the fallback; a key present with a
@@ -287,45 +306,38 @@ function pick(
 }
 
 /**
- * Python `_initial_targets`.
+ * Python `_initial_targets` (v2).
  *
- * `divmod` splits the slots evenly; any remainder goes to the regions with the strongest
- * top-N candidates. The SHA-256 of `identity|region` breaks a strength tie deterministically
- * without falling back to alphabetical order, so "japan" is not permanently privileged over
- * "united_states" when both are equally strong.
+ * Fixed priority united_states > japan > world. With the US selected alongside other
+ * regions it takes US_MIN_QUOTA slots up front; the rest split evenly over the remaining
+ * regions with any remainder awarded in priority order. Without the US, slots split
+ * evenly with the remainder in priority order. The `candidates`/`identity` parameters
+ * are kept for call-site parity with the Python signature.
  */
 function initialTargets(
   regions: readonly string[],
-  candidates: MixCandidate[],
+  _candidates: MixCandidate[],
   size: number,
-  identity: string,
+  _identity: string,
 ): Record<string, number> {
-  const base = Math.floor(size / regions.length);
-  const remainder = size % regions.length;
-
+  const ordered = priorityOrder(regions);
   const targets: Record<string, number> = {};
-  for (const region of regions) targets[region] = base;
-  if (remainder === 0) return targets;
+  for (const region of regions) targets[region] = 0;
 
-  const strengths: Record<string, number> = {};
-  for (const region of regions) {
-    const scores = candidates
-      .filter((c) => memberships(c)[region] === "primary")
-      .map((c) => pyFloat(c.baseScore))
-      .sort((a, b) => b - a)
-      .slice(0, base + 1);
-    strengths[region] = scores.reduce((total, value) => total + value, 0);
+  if (ordered.includes("united_states") && ordered.length > 1) {
+    const us = Math.min(US_MIN_QUOTA, size);
+    targets["united_states"] = us;
+    const others = ordered.filter((r) => r !== "united_states");
+    const base = Math.floor((size - us) / others.length);
+    const remainder = (size - us) % others.length;
+    for (const region of others) targets[region] = base;
+    for (const region of others.slice(0, remainder)) targets[region] += 1;
+  } else {
+    const base = Math.floor(size / ordered.length);
+    const remainder = size % ordered.length;
+    for (const region of ordered) targets[region] = base;
+    for (const region of ordered.slice(0, remainder)) targets[region] += 1;
   }
-
-  const ordered = [...regions].sort((a, b) => {
-    if (strengths[a] !== strengths[b]) return strengths[b] - strengths[a]; // -strength
-    const hashA = createHash("sha256").update(`${identity}|${a}`).digest("hex");
-    const hashB = createHash("sha256").update(`${identity}|${b}`).digest("hex");
-    if (hashA !== hashB) return compareStrings(hashA, hashB);
-    return compareStrings(a, b);
-  });
-
-  for (const region of ordered.slice(0, remainder)) targets[region] += 1;
   return targets;
 }
 
@@ -374,7 +386,12 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
   );
 
   for (const candidate of orderedCandidates) {
-    const outcome = isEligible(candidate, date);
+    let outcome = isEligible(candidate, date);
+    // v2 strict topic allowlist: an unselected topic is ineligible for EVERY phase,
+    // fallback included — checked after the base checks so their reasons win.
+    if (outcome.eligible && !topicAllowed(candidate, selectedTopics)) {
+      outcome = { eligible: false, reason: "topic not selected (strict allowlist)" };
+    }
     const regionMap = memberships(candidate);
     const regionEligibility = selectedRegions.filter((r) => regionMap[r] === "primary");
     logs.set(pyStr(candidate.id), {
@@ -413,7 +430,9 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
     for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
   } else {
     const targets = initialTargets(selectedRegions, regionPool, size, identity);
-    for (const region of selectedRegions) {
+    // Quotas fill in PRIORITY order (US first), so the US takes its slots before any
+    // lower-priority region can consume a story that also has US membership.
+    for (const region of priorityOrder(selectedRegions)) {
       const picked = pick(
         regionPool.filter((c) => memberships(c)[region] === "primary" && !isSelected(c)),
         targets[region],
@@ -426,24 +445,23 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
       selected.push(...picked);
       for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
     }
+    // Deterministic reallocation, still inside the selected-region scope, and still in
+    // priority order: an unmet quota is refilled from the US pool first, then japan,
+    // then world — a deep US pool grows the US share, never the other way around.
     if (selected.length < size) {
-      const picked = pick(
-        regionPool.filter((c) => !isSelected(c)),
-        size - selected.length,
-        selectedTopics,
-        selected,
-        "regional_reallocation",
-        logs,
-        guard,
-      );
-      selected.push(...picked);
-      for (const candidate of picked) {
-        const regionMap = memberships(candidate);
-        const region = selectedRegions.find((r) => regionMap[r] === "primary");
-        if (region === undefined) {
-          throw new MixSelectionError("reallocated candidate has no selected-region primary");
-        }
-        assignedRegions.push(region);
+      for (const region of priorityOrder(selectedRegions)) {
+        if (selected.length >= size) break;
+        const picked = pick(
+          regionPool.filter((c) => memberships(c)[region] === "primary" && !isSelected(c)),
+          size - selected.length,
+          selectedTopics,
+          selected,
+          `regional_reallocation:${region}`,
+          logs,
+          guard,
+        );
+        selected.push(...picked);
+        for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
       }
     }
   }

@@ -95,7 +95,7 @@ function baseTokenEnv(signing: Keypair): RawEnv {
     SIGNALS_TOKEN_TTL_SECONDS: "900",
     SIGNALS_TOKEN_CLOCK_SKEW_SECONDS: "60",
     CUSTOM_MIX_API_ENABLED: "true",
-    CUSTOM_MIX_SELECTOR_VERSION: "1",
+    CUSTOM_MIX_SELECTOR_VERSION: "2",
     CUSTOM_MIX_STORY_COUNT: "5",
     CUSTOM_MIX_POOL_TIMEZONE: "America/New_York",
   };
@@ -266,7 +266,7 @@ export function exchangeRequest(
   body: Record<string, unknown> = {
     signedTransactionInfo: FIXTURE_DEVICE_JWS,
     appVersion: "1.4.0",
-    selectorVersion: 1,
+    selectorVersion: 2,
   },
   headers: Record<string, string> = {},
 ): Request {
@@ -292,7 +292,7 @@ export function editionRequest(token: string | null): Request {
       date: "2026-07-27",
       active: { mode: "custom", regions: ["japan"], topics: ["tech"] },
       pending: null,
-      selectorVersion: 1,
+      selectorVersion: 2,
       storyCount: 5,
     }),
   });

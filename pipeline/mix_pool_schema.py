@@ -13,9 +13,12 @@ from typing import Any
 from urllib.parse import urlparse
 
 try:
-    from .mix_identity import SELECTOR_VERSION, SUPPORTED_REGIONS, SUPPORTED_TOPICS
+    from .mix_identity import POOL_SELECTOR_VERSION, SUPPORTED_REGIONS, SUPPORTED_TOPICS
 except ImportError:
-    from mix_identity import SELECTOR_VERSION, SUPPORTED_REGIONS, SUPPORTED_TOPICS
+    from mix_identity import POOL_SELECTOR_VERSION, SUPPORTED_REGIONS, SUPPORTED_TOPICS
+
+# Pool artifacts carry the POOL version (their schema is unchanged by selector v2).
+SELECTOR_VERSION = POOL_SELECTOR_VERSION
 
 SCHEMA_VERSION = 1
 GENERATOR_VERSION = 1

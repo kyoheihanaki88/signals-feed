@@ -56,7 +56,7 @@ test("a valid Production environment produces a Production runtime config", () =
   assert.equal(config.apple?.privateKeyPem, applePrivateKey.privateKeyPem.trim());
   assert.equal(config.apple?.enableOnlineChecks, true);
   assert.equal(config.customMix.enabled, true);
-  assert.equal(config.customMix.selectorVersion, 1);
+  assert.equal(config.customMix.selectorVersion, 2);
   assert.equal(config.customMix.storyCount, 5);
   assert.equal(config.customMix.poolTimezone, "America/New_York");
   assert.equal(config.token.ttlSeconds, 900);
@@ -252,8 +252,8 @@ test("G3. a token issuer or audience that disagrees with the service fails", () 
 
 // ── H / I / J. Custom Mix invariants ──────────────────────────────────────────────────
 
-test("H. a selector version other than 1 fails", () => {
-  for (const value of ["2", "0", "v1"]) {
+test("H. a selector version other than the supported one (2) fails", () => {
+  for (const value of ["1", "0", "v1"]) {
     assert.ok(
       issuesOf(() =>
         loadRuntimeConfig(productionEnv({ CUSTOM_MIX_SELECTOR_VERSION: value }).env),
@@ -415,7 +415,7 @@ test("every reported issue is reported at once, not one per attempt", () => {
     loadRuntimeConfig(
       productionEnv({
         CUSTOM_MIX_STORY_COUNT: "6",
-        CUSTOM_MIX_SELECTOR_VERSION: "2",
+        CUSTOM_MIX_SELECTOR_VERSION: "3",
         CUSTOM_MIX_POOL_TIMEZONE: "UTC",
       }).env,
     ),

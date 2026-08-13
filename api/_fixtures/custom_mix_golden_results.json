@@ -30,240 +30,240 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "A_japan_only_five_or_more",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 98.0,
-            "finalScore": 98.0,
-            "id": "false-positive-sony",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.0,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 97.0,
-            "finalScore": 97.0,
-            "id": "incidental-japan",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 88.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.0,
-            "finalScore": 89.0,
-            "id": "jp-climate",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 82.0,
-            "finalScore": 82.0,
-            "id": "jp-culture",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 85.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 81.0,
-            "finalScore": 81.0,
-            "id": "jp-policy",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.5,
-            "finalScore": 88.9,
-            "id": "jp-quake-b",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 84.0,
-            "finalScore": 84.0,
-            "id": "jp-science",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 90.0,
-            "finalScore": 90.4,
-            "id": "jp-tech-chips",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 92.0,
-            "finalScore": 93.0,
-            "id": "jp-tech-robot",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 83.0,
-            "finalScore": 83.0,
-            "id": "us-business",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 86.0,
-            "finalScore": 86.0,
-            "id": "us-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 80.0,
-            "finalScore": 80.0,
-            "id": "us-science",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 96.0,
-            "finalScore": 96.0,
-            "id": "us-tech",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 91.0,
-            "finalScore": 91.0,
-            "id": "world-climate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 75.0,
-            "finalScore": 75.0,
-            "id": "world-culture",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          }
-        ],
-        "metadata": {
-          "candidatePoolTotal": 20,
-          "fallbackReason": null,
-          "fallbackSlots": 0,
-          "finalRegionMix": {
-            "japan": 5
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 10,
-          "regionalCandidatesAfterDedup": 9,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 5,
-          "selectedRegions": [
-            "japan"
-          ],
-          "selectedTopics": [],
-          "selectorVersion": 1,
-          "shortage": false,
-          "unfilledSlots": 0
-        },
         "selectedIds": [
           "jp-tech-robot",
           "jp-tech-chips",
           "jp-quake-a",
           "jp-climate",
           "jp-business"
+        ],
+        "metadata": {
+          "selectedRegions": [
+            "japan"
+          ],
+          "selectedTopics": [],
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 20,
+          "qualifyingRegionCandidates": 10,
+          "regionalCandidatesAfterDedup": 9,
+          "selectedRegionStories": 5,
+          "fallbackSlots": 0,
+          "fallbackReason": null,
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 5
+          },
+          "shortage": false,
+          "unfilledSlots": 0
+        },
+        "candidateLogs": [
+          {
+            "id": "false-positive-sony",
+            "baseScore": 98.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 98.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "incidental-japan",
+            "baseScore": 97.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 97.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-climate",
+            "baseScore": 88.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 89.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-culture",
+            "baseScore": 82.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 82.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 85.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-policy",
+            "baseScore": 81.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 81.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-quake-b",
+            "baseScore": 88.5,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.9,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning"
+          },
+          {
+            "id": "jp-science",
+            "baseScore": 84.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 84.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-tech-chips",
+            "baseScore": 90.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.4,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-tech-robot",
+            "baseScore": 92.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 93.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-business",
+            "baseScore": 83.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 83.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "us-health",
+            "baseScore": 86.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 86.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "us-science",
+            "baseScore": 80.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 80.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "us-tech",
+            "baseScore": 96.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 96.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "world-climate",
+            "baseScore": 91.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 91.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "world-culture",
+            "baseScore": 75.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 75.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 79.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          }
         ]
       }
     },
@@ -280,101 +280,101 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "B_japan_only_exactly_three",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 87.0,
-            "finalScore": 88.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 86.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 92.0,
-            "finalScore": 93.0,
-            "id": "jp-tech-robot",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 96.0,
-            "finalScore": 96.4,
-            "id": "us-tech",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 91.0,
-            "finalScore": 92.0,
-            "id": "world-climate",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          }
-        ],
-        "metadata": {
-          "candidatePoolTotal": 6,
-          "fallbackReason": "insufficient qualifying regional candidates",
-          "fallbackSlots": 2,
-          "finalRegionMix": {
-            "global_fallback": 2,
-            "japan": 3
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 3,
-          "regionalCandidatesAfterDedup": 3,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 3,
-          "selectedRegions": [
-            "japan"
-          ],
-          "selectedTopics": [],
-          "selectorVersion": 1,
-          "shortage": false,
-          "unfilledSlots": 0
-        },
         "selectedIds": [
           "jp-tech-robot",
           "jp-business",
           "jp-health",
           "us-tech",
           "world-climate"
+        ],
+        "metadata": {
+          "selectedRegions": [
+            "japan"
+          ],
+          "selectedTopics": [],
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 6,
+          "qualifyingRegionCandidates": 3,
+          "regionalCandidatesAfterDedup": 3,
+          "selectedRegionStories": 3,
+          "fallbackSlots": 2,
+          "fallbackReason": "insufficient qualifying regional candidates",
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 3,
+            "global_fallback": 2
+          },
+          "shortage": false,
+          "unfilledSlots": 0
+        },
+        "candidateLogs": [
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 86.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-tech-robot",
+            "baseScore": 92.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 93.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-tech",
+            "baseScore": 96.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 96.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-climate",
+            "baseScore": 91.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 92.0,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 79.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          }
         ]
       }
     },
@@ -391,103 +391,103 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "C_japan_only_duplicate_event",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.4,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 88.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 82.0,
-            "finalScore": 83.0,
-            "id": "jp-culture",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 86.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.5,
-            "finalScore": 88.9,
-            "id": "jp-quake-b",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          }
-        ],
-        "metadata": {
-          "candidatePoolTotal": 6,
-          "fallbackReason": "insufficient total eligible candidates",
-          "fallbackSlots": 0,
-          "finalRegionMix": {
-            "japan": 4
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 5,
-          "regionalCandidatesAfterDedup": 4,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 4,
-          "selectedRegions": [
-            "japan"
-          ],
-          "selectedTopics": [],
-          "selectorVersion": 1,
-          "shortage": true,
-          "unfilledSlots": 1
-        },
         "selectedIds": [
           "jp-quake-a",
           "jp-business",
           "jp-health",
           "jp-culture"
+        ],
+        "metadata": {
+          "selectedRegions": [
+            "japan"
+          ],
+          "selectedTopics": [],
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 6,
+          "qualifyingRegionCandidates": 5,
+          "regionalCandidatesAfterDedup": 4,
+          "selectedRegionStories": 4,
+          "fallbackSlots": 0,
+          "fallbackReason": "insufficient total eligible candidates",
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 4
+          },
+          "shortage": true,
+          "unfilledSlots": 1
+        },
+        "candidateLogs": [
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-culture",
+            "baseScore": 82.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 83.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 86.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-quake-b",
+            "baseScore": 88.5,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.9,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning"
+          }
         ]
       }
     },
@@ -519,250 +519,250 @@
           "japan",
           "united_states"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "D_japan_and_us",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 98.0,
-            "finalScore": 98.0,
-            "id": "false-positive-sony",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.0,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 97.0,
-            "finalScore": 97.0,
-            "id": "incidental-japan",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 87.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.0,
-            "finalScore": 88.0,
-            "id": "jp-climate",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 82.0,
-            "finalScore": 82.0,
-            "id": "jp-culture",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 85.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 81.0,
-            "finalScore": 81.0,
-            "id": "jp-policy",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.5,
-            "finalScore": 88.5,
-            "id": "jp-quake-b",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 84.0,
-            "finalScore": 84.0,
-            "id": "jp-science",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 90.0,
-            "finalScore": 90.4,
-            "id": "jp-tech-chips",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 92.0,
-            "finalScore": 93.0,
-            "id": "jp-tech-robot",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 83.0,
-            "finalScore": 83.0,
-            "id": "us-business",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 86.0,
-            "finalScore": 87.0,
-            "id": "us-health",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:united_states",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 80.0,
-            "finalScore": 80.0,
-            "id": "us-science",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 96.0,
-            "finalScore": 96.4,
-            "id": "us-tech",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:united_states",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 91.0,
-            "finalScore": 91.0,
-            "id": "world-climate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 75.0,
-            "finalScore": 75.0,
-            "id": "world-culture",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          }
+        "selectedIds": [
+          "us-tech",
+          "us-health",
+          "us-business",
+          "jp-tech-robot",
+          "jp-tech-chips"
         ],
         "metadata": {
-          "candidatePoolTotal": 20,
-          "fallbackReason": null,
-          "fallbackSlots": 0,
-          "finalRegionMix": {
-            "japan": 3,
-            "united_states": 2
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan,united_states|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 14,
-          "regionalCandidatesAfterDedup": 13,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 5,
           "selectedRegions": [
             "japan",
             "united_states"
           ],
           "selectedTopics": [],
-          "selectorVersion": 1,
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 20,
+          "qualifyingRegionCandidates": 14,
+          "regionalCandidatesAfterDedup": 13,
+          "selectedRegionStories": 5,
+          "fallbackSlots": 0,
+          "fallbackReason": null,
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan,united_states|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "united_states": 3,
+            "japan": 2
+          },
           "shortage": false,
           "unfilledSlots": 0
         },
-        "selectedIds": [
-          "jp-tech-robot",
-          "jp-tech-chips",
-          "jp-quake-a",
-          "us-tech",
-          "us-health"
+        "candidateLogs": [
+          {
+            "id": "false-positive-sony",
+            "baseScore": 98.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 98.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "incidental-japan",
+            "baseScore": 97.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 97.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 87.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-climate",
+            "baseScore": 88.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-culture",
+            "baseScore": 82.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 82.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 85.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-policy",
+            "baseScore": 81.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 81.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 89.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-quake-b",
+            "baseScore": 88.5,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.5,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-science",
+            "baseScore": 84.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 84.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-tech-chips",
+            "baseScore": 90.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.4,
+            "selectionPhase": "regional_quota:japan",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-tech-robot",
+            "baseScore": 92.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 92.4,
+            "selectionPhase": "regional_quota:japan",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-business",
+            "baseScore": 83.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 84.0,
+            "selectionPhase": "regional_quota:united_states",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-health",
+            "baseScore": 86.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 87.0,
+            "selectionPhase": "regional_quota:united_states",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-science",
+            "baseScore": 80.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 80.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "us-tech",
+            "baseScore": 96.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 97.0,
+            "selectionPhase": "regional_quota:united_states",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-climate",
+            "baseScore": 91.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 91.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "world-culture",
+            "baseScore": 75.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 75.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 79.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          }
         ]
       }
     },
@@ -793,7 +793,7 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": [
           "tech"
@@ -801,236 +801,236 @@
       },
       "name": "E_japan_and_tech",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 98.0,
-            "finalScore": 108.0,
-            "id": "false-positive-sony",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.0,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 97.0,
-            "finalScore": 97.0,
-            "id": "incidental-japan",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 88.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.0,
-            "finalScore": 89.0,
-            "id": "jp-climate",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 82.0,
-            "finalScore": 82.0,
-            "id": "jp-culture",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 85.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 81.0,
-            "finalScore": 81.0,
-            "id": "jp-policy",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.5,
-            "finalScore": 88.9,
-            "id": "jp-quake-b",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 84.0,
-            "finalScore": 84.0,
-            "id": "jp-science",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 90.0,
-            "finalScore": 100.4,
-            "id": "jp-tech-chips",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 92.0,
-            "finalScore": 103.0,
-            "id": "jp-tech-robot",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 83.0,
-            "finalScore": 83.0,
-            "id": "us-business",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 86.0,
-            "finalScore": 86.0,
-            "id": "us-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 80.0,
-            "finalScore": 80.0,
-            "id": "us-science",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 96.0,
-            "finalScore": 106.0,
-            "id": "us-tech",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 91.0,
-            "finalScore": 91.0,
-            "id": "world-climate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 75.0,
-            "finalScore": 75.0,
-            "id": "world-culture",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          }
+        "selectedIds": [
+          "jp-tech-robot",
+          "jp-tech-chips",
+          "false-positive-sony",
+          "us-tech"
         ],
         "metadata": {
-          "candidatePoolTotal": 20,
-          "fallbackReason": null,
-          "fallbackSlots": 0,
-          "finalRegionMix": {
-            "japan": 5
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=tech|selector=1|size=5",
-          "qualifyingRegionCandidates": 10,
-          "regionalCandidatesAfterDedup": 9,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 5,
           "selectedRegions": [
             "japan"
           ],
           "selectedTopics": [
             "tech"
           ],
-          "selectorVersion": 1,
-          "shortage": false,
-          "unfilledSlots": 0
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 20,
+          "qualifyingRegionCandidates": 2,
+          "regionalCandidatesAfterDedup": 2,
+          "selectedRegionStories": 2,
+          "fallbackSlots": 2,
+          "fallbackReason": "insufficient total eligible candidates",
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=tech|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 2,
+            "global_fallback": 2
+          },
+          "shortage": true,
+          "unfilledSlots": 1
         },
-        "selectedIds": [
-          "jp-tech-robot",
-          "jp-tech-chips",
-          "jp-quake-a",
-          "jp-climate",
-          "jp-business"
+        "candidateLogs": [
+          {
+            "id": "false-positive-sony",
+            "baseScore": 98.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 98.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "incidental-japan",
+            "baseScore": 97.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-climate",
+            "baseScore": 88.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-culture",
+            "baseScore": 82.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-policy",
+            "baseScore": 81.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-quake-b",
+            "baseScore": 88.5,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-science",
+            "baseScore": 84.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-tech-chips",
+            "baseScore": 90.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 100.4,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-tech-robot",
+            "baseScore": 92.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 103.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-business",
+            "baseScore": 83.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "us-health",
+            "baseScore": 86.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "us-science",
+            "baseScore": 80.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "us-tech",
+            "baseScore": 96.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 96.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-climate",
+            "baseScore": 91.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "world-culture",
+            "baseScore": 75.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          }
         ]
       }
     },
@@ -1062,7 +1062,7 @@
           "US",
           "JPN"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": [
           "business",
@@ -1071,229 +1071,14 @@
       },
       "name": "F_reordered_inputs",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 98.0,
-            "finalScore": 108.0,
-            "id": "false-positive-sony",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.0,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 97.0,
-            "finalScore": 107.0,
-            "id": "incidental-japan",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 98.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 88.0,
-            "finalScore": 88.0,
-            "id": "jp-climate",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 82.0,
-            "finalScore": 82.0,
-            "id": "jp-culture",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 85.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 81.0,
-            "finalScore": 91.0,
-            "id": "jp-policy",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 89.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 88.5,
-            "finalScore": 88.5,
-            "id": "jp-quake-b",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 84.0,
-            "finalScore": 84.0,
-            "id": "jp-science",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 90.0,
-            "finalScore": 100.4,
-            "id": "jp-tech-chips",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 92.0,
-            "finalScore": 103.0,
-            "id": "jp-tech-robot",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:japan",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 83.0,
-            "finalScore": 93.4,
-            "id": "us-business",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:united_states",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 86.0,
-            "finalScore": 86.0,
-            "id": "us-health",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 80.0,
-            "finalScore": 80.0,
-            "id": "us-science",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": "lower deterministic rank after requested slots filled",
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 96.0,
-            "finalScore": 106.4,
-            "id": "us-tech",
-            "regionEligibility": [
-              "united_states"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_quota:united_states",
-            "topicAdjustment": 10.0
-          },
-          {
-            "baseScore": 91.0,
-            "finalScore": 91.0,
-            "id": "world-climate",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 75.0,
-            "finalScore": 75.0,
-            "id": "world-culture",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": "not primary for any selected region",
-            "selectionPhase": "outside_scope",
-            "topicAdjustment": 0.0
-          }
+        "selectedIds": [
+          "us-tech",
+          "us-business",
+          "jp-tech-robot",
+          "jp-tech-chips",
+          "jp-business"
         ],
         "metadata": {
-          "candidatePoolTotal": 20,
-          "fallbackReason": null,
-          "fallbackSlots": 0,
-          "finalRegionMix": {
-            "japan": 3,
-            "united_states": 2
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan,united_states|topics=business,tech|selector=1|size=5",
-          "qualifyingRegionCandidates": 14,
-          "regionalCandidatesAfterDedup": 13,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 5,
           "selectedRegions": [
             "japan",
             "united_states"
@@ -1302,16 +1087,231 @@
             "business",
             "tech"
           ],
-          "selectorVersion": 1,
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 20,
+          "qualifyingRegionCandidates": 6,
+          "regionalCandidatesAfterDedup": 6,
+          "selectedRegionStories": 5,
+          "fallbackSlots": 0,
+          "fallbackReason": null,
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan,united_states|topics=business,tech|selector=2|size=5",
+          "finalRegionMix": {
+            "united_states": 2,
+            "japan": 3
+          },
           "shortage": false,
           "unfilledSlots": 0
         },
-        "selectedIds": [
-          "jp-tech-robot",
-          "jp-tech-chips",
-          "jp-business",
-          "us-tech",
-          "us-business"
+        "candidateLogs": [
+          {
+            "id": "false-positive-sony",
+            "baseScore": 98.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [],
+            "finalScore": 108.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "incidental-japan",
+            "baseScore": 97.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [],
+            "finalScore": 107.0,
+            "selectionPhase": "outside_scope",
+            "rejectionReason": "not primary for any selected region"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 97.4,
+            "selectionPhase": "regional_reallocation:japan",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-climate",
+            "baseScore": 88.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-culture",
+            "baseScore": 82.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-policy",
+            "baseScore": 81.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 91.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": "lower deterministic rank after requested slots filled"
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-quake-b",
+            "baseScore": 88.5,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-science",
+            "baseScore": 84.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "jp-tech-chips",
+            "baseScore": 90.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 100.4,
+            "selectionPhase": "regional_quota:japan",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-tech-robot",
+            "baseScore": 92.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 102.4,
+            "selectionPhase": "regional_quota:japan",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-business",
+            "baseScore": 83.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 94.0,
+            "selectionPhase": "regional_quota:united_states",
+            "rejectionReason": null
+          },
+          {
+            "id": "us-health",
+            "baseScore": 86.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "us-science",
+            "baseScore": 80.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "us-tech",
+            "baseScore": 96.0,
+            "topicAdjustment": 10.0,
+            "regionEligibility": [
+              "united_states"
+            ],
+            "finalScore": 107.0,
+            "selectionPhase": "regional_quota:united_states",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-climate",
+            "baseScore": 91.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "world-culture",
+            "baseScore": 75.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": null,
+            "selectionPhase": null,
+            "rejectionReason": "topic not selected (strict allowlist)"
+          }
         ]
       }
     },
@@ -1326,77 +1326,77 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "G_shortage_below_five",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 98.0,
-            "finalScore": 99.0,
-            "id": "false-positive-sony",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.4,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.6,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          }
-        ],
-        "metadata": {
-          "candidatePoolTotal": 4,
-          "fallbackReason": "insufficient total eligible candidates",
-          "fallbackSlots": 2,
-          "finalRegionMix": {
-            "global_fallback": 2,
-            "japan": 1
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 1,
-          "regionalCandidatesAfterDedup": 1,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 1,
-          "selectedRegions": [
-            "japan"
-          ],
-          "selectedTopics": [],
-          "selectorVersion": 1,
-          "shortage": true,
-          "unfilledSlots": 2
-        },
         "selectedIds": [
           "jp-quake-a",
           "false-positive-sony",
           "world-health"
+        ],
+        "metadata": {
+          "selectedRegions": [
+            "japan"
+          ],
+          "selectedTopics": [],
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 4,
+          "qualifyingRegionCandidates": 1,
+          "regionalCandidatesAfterDedup": 1,
+          "selectedRegionStories": 1,
+          "fallbackSlots": 2,
+          "fallbackReason": "insufficient total eligible candidates",
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 1,
+            "global_fallback": 2
+          },
+          "shortage": true,
+          "unfilledSlots": 2
+        },
+        "candidateLogs": [
+          {
+            "id": "false-positive-sony",
+            "baseScore": 98.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.0,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning"
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 79.6,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          }
         ]
       }
     },
@@ -1413,101 +1413,101 @@
         "regions": [
           "japan"
         ],
-        "selectorVersion": 1,
+        "selectorVersion": 2,
         "size": 5,
         "topics": []
       },
       "name": "H_fallback_duplicates_regional",
       "result": {
-        "candidateLogs": [
-          {
-            "baseScore": 99.0,
-            "finalScore": 99.4,
-            "id": "global-quake-duplicate",
-            "regionEligibility": [],
-            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning",
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 87.0,
-            "finalScore": 88.0,
-            "id": "jp-business",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 85.0,
-            "finalScore": 86.0,
-            "id": "jp-health",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 89.0,
-            "finalScore": 90.0,
-            "id": "jp-quake-a",
-            "regionEligibility": [
-              "japan"
-            ],
-            "rejectionReason": null,
-            "selectionPhase": "regional_primary",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 75.0,
-            "finalScore": 76.0,
-            "id": "world-culture",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          },
-          {
-            "baseScore": 79.0,
-            "finalScore": 79.0,
-            "id": "world-health",
-            "regionEligibility": [],
-            "rejectionReason": null,
-            "selectionPhase": "global_fallback",
-            "topicAdjustment": 0.0
-          }
-        ],
-        "metadata": {
-          "candidatePoolTotal": 6,
-          "fallbackReason": "insufficient qualifying regional candidates",
-          "fallbackSlots": 2,
-          "finalRegionMix": {
-            "global_fallback": 2,
-            "japan": 3
-          },
-          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=1|size=5",
-          "qualifyingRegionCandidates": 3,
-          "regionalCandidatesAfterDedup": 3,
-          "requestedRegionCount": 5,
-          "selectedRegionStories": 3,
-          "selectedRegions": [
-            "japan"
-          ],
-          "selectedTopics": [],
-          "selectorVersion": 1,
-          "shortage": false,
-          "unfilledSlots": 0
-        },
         "selectedIds": [
           "jp-quake-a",
           "jp-business",
           "jp-health",
           "world-health",
           "world-culture"
+        ],
+        "metadata": {
+          "selectedRegions": [
+            "japan"
+          ],
+          "selectedTopics": [],
+          "requestedRegionCount": 5,
+          "candidatePoolTotal": 6,
+          "qualifyingRegionCandidates": 3,
+          "regionalCandidatesAfterDedup": 3,
+          "selectedRegionStories": 3,
+          "fallbackSlots": 2,
+          "fallbackReason": "insufficient qualifying regional candidates",
+          "selectorVersion": 2,
+          "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+          "finalRegionMix": {
+            "japan": 3,
+            "global_fallback": 2
+          },
+          "shortage": false,
+          "unfilledSlots": 0
+        },
+        "candidateLogs": [
+          {
+            "id": "global-quake-duplicate",
+            "baseScore": 99.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 99.4,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": "duplicate underlyingStoryIdentity=jp-coastal-warning"
+          },
+          {
+            "id": "jp-business",
+            "baseScore": 87.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 88.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-health",
+            "baseScore": 85.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 86.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "jp-quake-a",
+            "baseScore": 89.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [
+              "japan"
+            ],
+            "finalScore": 90.0,
+            "selectionPhase": "regional_primary",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-culture",
+            "baseScore": 75.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 76.0,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          },
+          {
+            "id": "world-health",
+            "baseScore": 79.0,
+            "topicAdjustment": 0.0,
+            "regionEligibility": [],
+            "finalScore": 79.0,
+            "selectionPhase": "global_fallback",
+            "rejectionReason": null
+          }
         ]
       }
     }

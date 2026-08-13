@@ -353,7 +353,7 @@ test("the same proof submitted with contradictory metadata is a conflict, not a 
     exchangeRequest({
       signedTransactionInfo: FIXTURE_DEVICE_JWS,
       appVersion: "9.9.9",
-      selectorVersion: 1,
+      selectorVersion: 2,
     }),
   );
   assert.equal(conflicting.status, 400);

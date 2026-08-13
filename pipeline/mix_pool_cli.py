@@ -16,7 +16,12 @@ if str(PIPELINE_DIR) not in sys.path:
     sys.path.insert(0, str(PIPELINE_DIR))
 
 from custom_mix_selector import select_custom_mix
-from mix_identity import SELECTOR_VERSION, normalize_regions, normalize_topics
+from mix_identity import (
+    POOL_SELECTOR_VERSION as SELECTOR_VERSION,   # pool ARTIFACT version (schema unchanged)
+    SELECTOR_VERSION as SELECTION_VERSION,       # selection SEMANTICS version (v2 allowlist)
+    normalize_regions,
+    normalize_topics,
+)
 from mix_pool import build_mix_pool
 from mix_pool_schema import (
     SCHEMA_VERSION,
@@ -170,7 +175,9 @@ def run(argv: list[str] | None = None) -> int:
             regions,
             topics,
             size=args.story_count,
-            selector_version=args.selector_version,
+            # The selection identity always uses the CURRENT selection semantics version;
+            # --selector-version continues to gate the pool ARTIFACT only.
+            selector_version=SELECTION_VERSION,
         )
         if not selection.get("selectedIds"):
             raise ValueError("selector returned no stories")

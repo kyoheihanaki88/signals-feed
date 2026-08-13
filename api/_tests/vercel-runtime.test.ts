@@ -105,7 +105,7 @@ function exchangeRequest(body?: Record<string, unknown>, headers: Record<string,
       body ?? {
         signedTransactionInfo: FIXTURE_DEVICE_JWS,
         appVersion: "1.4.0",
-        selectorVersion: 1,
+        selectorVersion: 2,
       },
     ),
   });
@@ -123,7 +123,7 @@ function editionRequest(token: string | null): Request {
       date: "2026-07-27",
       active: { mode: "custom", regions: ["japan"], topics: ["tech"] },
       pending: null,
-      selectorVersion: 1,
+      selectorVersion: 2,
       storyCount: 5,
     }),
   });

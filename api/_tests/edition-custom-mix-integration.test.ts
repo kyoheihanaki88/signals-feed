@@ -228,7 +228,7 @@ test("5. Custom Mix disabled: the selector never runs", async () => {
       date: DATE,
       active: { mode: "custom" as const, regions: ["japan" as const], topics: [] },
       pending: null,
-      selectorVersion: 1 as const,
+      selectorVersion: 2 as const,
       storyCount: 5 as const,
     },
   });
@@ -281,7 +281,7 @@ test("6+7. verified Lifetime Pro with candidates: the selector runs and matches 
       date: editorialCase.date,
       active: { mode: "custom" as const, regions: ["japan" as const], topics: [] },
       pending: null,
-      selectorVersion: 1 as const,
+      selectorVersion: 2 as const,
       storyCount: 5 as const,
     },
   });
@@ -375,7 +375,7 @@ test("9. a malformed Custom Mix payload never reaches the selector", async () =>
   const bad: [Record<string, unknown>, number, string][] = [
     [{ ...editionBody(), active: { mode: "custom", regions: ["mars"], topics: [] } }, 400, "invalid_region"],
     [{ ...editionBody(), active: { mode: "custom", regions: ["japan"], topics: ["sports"] } }, 400, "invalid_topic"],
-    [{ ...editionBody(), selectorVersion: 2 }, 422, "unsupported_selector_version"],
+    [{ ...editionBody(), selectorVersion: 1 }, 422, "unsupported_selector_version"],
     [{ ...editionBody(), storyCount: 6 }, 400, "invalid_request"],
     [{ ...editionBody(), active: { mode: "custom", regions: [], topics: [] } }, 400, "invalid_region"],
   ];
@@ -401,7 +401,7 @@ test("10. too few matching candidates degrades deterministically with no duplica
     date: DATE,
     active: { mode: "custom" as const, regions: ["japan"], topics: [] },
     pending: null,
-    selectorVersion: 1 as const,
+    selectorVersion: 2 as const,
     storyCount: 5 as const,
   };
 
@@ -421,7 +421,7 @@ test("10. too few matching candidates degrades deterministically with no duplica
     regions: ["japan"],
     topics: [],
     size: 5,
-    selectorVersion: 1,
+    selectorVersion: 2,
   });
   assert.equal(selection.metadata.shortage, true);
   assert.ok(selection.metadata.unfilledSlots > 0);
@@ -444,7 +444,7 @@ test("11. the production editorial guard fires through the real edition path", a
       date: editorialCase.date,
       active: { mode: "custom" as const, regions: ["japan" as const], topics: [] },
       pending: null,
-      selectorVersion: 1 as const,
+      selectorVersion: 2 as const,
       storyCount: 5 as const,
     },
   });
@@ -493,7 +493,7 @@ test("12. an identical request produces an identical result", async () => {
     date: editorialCase.date,
     active: { mode: "custom" as const, regions: ["japan"], topics: [] },
     pending: null,
-    selectorVersion: 1 as const,
+    selectorVersion: 2 as const,
     storyCount: 5 as const,
   };
   const runs = await Promise.all([
@@ -600,7 +600,7 @@ sys.stdout.write(json.dumps(select_custom_mix(p["candidates"], p["date"], p["reg
         regions: ["japan"],
         topics: [],
         size: 5,
-        selectorVersion: 1,
+        selectorVersion: 2,
       }),
     },
     maxBuffer: 32 * 1_024 * 1_024,
@@ -617,7 +617,7 @@ sys.stdout.write(json.dumps(select_custom_mix(p["candidates"], p["date"], p["reg
     regions: ["japan"],
     topics: [],
     size: 5,
-    selectorVersion: 1,
+    selectorVersion: 2,
   });
 
   assert.deepEqual(JSON.parse(JSON.stringify(tsResult)), JSON.parse(JSON.stringify(pythonResult)));
@@ -659,7 +659,7 @@ test("the production wiring keeps Custom Mix unreachable", async () => {
       date: DATE,
       active: { mode: "custom" as const, regions: ["japan" as const], topics: [] },
       pending: null,
-      selectorVersion: 1 as const,
+      selectorVersion: 2 as const,
       storyCount: 5 as const,
     },
   });

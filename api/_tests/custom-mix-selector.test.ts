@@ -218,20 +218,29 @@ test("G2. the two-region allocation is deterministic across repeated runs", () =
 
 // ── H / I. Japan + Tech ordering ──────────────────────────────────────────────────────
 
-test("H. Japan Tech comes first, then other Japan", () => {
+test("H. Japan Tech fills the regional slots; the tech allowlist admits nothing off-topic", () => {
+  // v2: "tech" is a strict allowlist. Japan's two tech stories take the regional slots,
+  // and every remaining pick — fallback included — must itself be a tech story.
   const result = select(undefined, ["japan"], ["tech"]);
   assert.deepEqual(result.selectedIds.slice(0, 2), ["jp-tech-robot", "jp-tech-chips"]);
   for (const id of result.selectedIds) {
-    assert.ok(isPrimary(BY_ID.get(id) as MixCandidate, "japan"));
+    const topics = ((BY_ID.get(id) as MixCandidate).topics ?? []).map((t) =>
+      String(t).toLowerCase(),
+    );
+    assert.ok(topics.includes("tech"), `${id} is off-topic for the tech allowlist`);
   }
 });
 
 test("I. a higher-scoring GLOBAL tech story never displaces a qualifying Japan story", () => {
   const result = select(undefined, ["japan"], ["tech"]);
-  // us-tech scores 96 — higher than every Japan candidate — and is still excluded.
-  assert.ok(!result.selectedIds.includes("us-tech"));
+  // us-tech scores 96 — higher than every Japan candidate — yet japan's own tech stories
+  // still take the regional slots; us-tech may enter ONLY through global fallback.
+  assert.deepEqual(result.selectedIds.slice(0, 2), ["jp-tech-robot", "jp-tech-chips"]);
+  const usTechLog = result.candidateLogs.find((log) => log.id === "us-tech");
+  if (result.selectedIds.includes("us-tech")) {
+    assert.equal(usTechLog?.selectionPhase, "global_fallback");
+  }
   assert.equal((BY_ID.get("us-tech") as MixCandidate).baseScore, 96);
-  assert.equal(logFor(result, "us-tech").selectionPhase, "outside_scope");
 });
 
 test("I2. the topic adjustment is +10 per matching topic", () => {

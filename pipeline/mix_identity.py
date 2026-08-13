@@ -6,7 +6,16 @@ from __future__ import annotations
 import re
 from typing import Iterable
 
-SELECTOR_VERSION = 1
+# SELECTION semantics version. v2 (2026-08-13): selected topics are a STRICT ALLOWLIST
+# (an unselected topic is never chosen, not even by fallback), and regions fill in the
+# fixed priority united_states > japan > world with a minimum of 3 US stories when the
+# US is selected and its pool suffices. Bumped so every cached mix / identity computed
+# under the v1 "topic boost" semantics is invalidated rather than reused.
+SELECTOR_VERSION = 2
+# CANDIDATE POOL artifact version. The pool is the selector's INPUT; its schema did not
+# change in v2, so published pool artifacts stay valid and keep this version. Deliberately
+# decoupled from SELECTOR_VERSION above.
+POOL_SELECTOR_VERSION = 1
 SUPPORTED_REGIONS = ("japan", "united_states", "world")
 SUPPORTED_TOPICS = ("ai", "business", "climate", "culture", "health", "science", "tech")
 

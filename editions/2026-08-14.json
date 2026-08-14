@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "干ばつと記録的な低水位により、新たな熱波に見舞われる欧州全体でエネルギー危機への懸念が深まっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-14/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Romania actually had to switch off its nuclear plant?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the last working reactor at Cernavoda shut down completely.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "Because of the heat, not a technical problem?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The Danube's water is what cools the plant, and the river dropped to record lows from drought.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Was this sudden, or building up for a while?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's been building. One reactor already shut in late July, and now the second has followed.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Do they know when it might restart?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not within the next ten days, according to the company running the plant.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "listener",
+              "text": "And this affects more than just Romania?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Moldova relies on that power too, so it feels the impact right away.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is the country doing anything in response?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Romania's declared an energy emergency for August and is asking people to cut back on power during peak hours.",
+              "duration": 5.799184
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "今回の発見は、保全に携わる人々に新たな希望を与え、他の生息地が見つかる可能性も開いた。"
           ],
           "whyItMatters": "かつて北イングランドとスコットランドに広く分布していたこの蛾は、生息地の喪失により大きく数を減らしてきた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-14/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "A moth found after 70 years? That's a long time to be missing.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. This is the dark bordered beauty, one of England's rarest moths, rediscovered at the Wallington estate in Northumberland.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "Who found it?",
+              "duration": 0.914286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Dr Dave Wainwright, head of conservation at Butterfly Conservation, who's spent his career searching for it. He said he felt an overwhelming sense of relief.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "Where had it been surviving until now?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "For decades, the only known English site was Strensall Common in Yorkshire, but that population has been struggling with climate change and a wildfire.",
+              "duration": 8.071837
+            },
+            {
+              "speaker": "listener",
+              "text": "So this new site really matters.",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. It gives conservationists new hope and suggests there could be other hidden populations still out there.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Why has the moth become so rare in the first place?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was once widespread across northern England and Scotland, but habitat loss has driven a serious decline over time.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "Small discovery, but it sounds like a meaningful one.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, it opens up new possibilities for where else this moth might still be quietly holding on.",
+              "duration": 5.093878
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "グゼッティ氏は、今回の事故を受けて連邦航空局とNTSBが対策の期限前倒しを検討する可能性があると述べた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-14/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what actually happened on that flight?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "A preliminary NTSB report says an engine fan blade broke off shortly after takeoff.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "And that's what caused the damage?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the broken blade shattered a window and damaged part of the fuselage.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "I heard someone was actually pulled toward the window.",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. A passenger, Ljubisa Karović, was sitting by the window and had his head and arm pulled out through it.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds terrifying. Was he alright?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Other passengers grabbed hold of him and kept him from being pulled out completely.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "Where was the flight headed?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "It was travelling from Thessaloniki in Greece to Memmingen, near Munich, when the engine failure occurred during climb out.",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "listener",
+              "text": "Will this change anything going forward?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It may prompt regulators to look again at safety timelines already under review.",
+              "duration": 4.205714
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "ドゥラン氏の指摘通り、「テック系権力者」への反感は確実に広がっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-14/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this letter is responding to that interview with Gil Durán, right? The one about his book on Silicon Valley?",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Durán wrote 'The Nerd Reich,' and the letter writer is picking up on his warnings.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the core worry here?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "The claim is that some tech figures envision total control over space and financial transactions.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like more than just business ambition.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "The letter frames it that way too — not as the end of democracy, but as something closer to a slavery system.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "And there's something about lifespan and automation?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The idea is that some of these figures believe technology could greatly extend their own lives while automation replaces much of the workforce.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this getting more attention now?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems so. The letter notes that public unease toward these 'tech bros' is growing, and Durán's warning feels timely to many.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "A sobering read for a Monday morning.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. But it's prompting people to pay closer attention.",
+              "duration": 3.160816
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,65 @@
             "携帯型エアコンの大半は寝室に置かれ、来客の目に触れることはない。"
           ],
           "whyItMatters": "エアコンを選ぶこと自体が、暑さの問題をかえって深めているのかもしれない。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-14/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So more people in the UK have air conditioning than I'd have guessed?",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems so. Once you mention testing aircon, people quietly admit they already own one.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "Why keep it quiet, though?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Most units are portable and kept in bedrooms, out of sight from visitors, so it's easy not to mention it.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it just about hotter summers becoming normal now?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's part of it. As summers get warmer, the appeal of aircon at home naturally grows.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "But is there a downside to using it?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, that's the tension here. Choosing aircon could actually add to the very problem making things hotter.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's worth weighing the pros and cons before buying one.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's less about whether it works, and more about whether it's the right choice long term.",
+              "duration": 5.276735
+            }
+          ]
         }
       }
     }

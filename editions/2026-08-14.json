@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-14",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Romania shuts its last nuclear reactor as drought-hit Danube river drops to record low",
+      "summary": "Romania has been forced to shut down the last working ⁠reactor at its only nuclear plant after drought caused the Danube river to fall to record lows – a rare move that will immediately affect power supplies in neighbouring Moldova.",
+      "keyTakeaways": [
+        "The drought-hit Danube, whose waters cool the Romanian plant in Cernavoda, already forced Nucelarelectrica to shut down ⁠one reactor ​in late July.",
+        "On Thursday the company said it needed to shut the second reactor “due to the significant and ongoing drop” in the river’s water level, and it did not foresee a restart in within the next 10 days.",
+        "Romania has declared a state of energy emergency throughout August and asked companies and households to reduce consumption during peak hours."
+      ],
+      "whyItMatters": "Drought and record-low water levels have deepened fears of an energy crisis across Europe, which is facing a new summer heatwave.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/14/romania-nuclear-plant-shut-down-cernavoda-danube-river-water-drought",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "干ばつでドナウ川水位が最低に、ルーマニアが原発を全面停止",
+          "summary": "干ばつでドナウ川の水位が記録的な低さとなり、ルーマニアは唯一の原子力発電所で稼働していた最後の原子炉を停止せざるを得なくなった。異例の措置で、隣国モルドバの電力供給にも直ちに影響が及ぶ。",
+          "keyTakeaways": [
+            "チェルナヴォダ原発の冷却に使うドナウ川の水位低下で、運営会社ヌクレアレレクトリカは七月末にすでに一基の原子炉を停止していた。",
+            "同社は木曜、川の水位が著しく下がり続けているため二基目も停止したと発表し、今後十日は再稼働を見込まないとした。",
+            "ルーマニアは八月中のエネルギー緊急事態を宣言し、企業や家庭に電力需要が高まる時間帯の使用抑制を求めている。"
+          ],
+          "whyItMatters": "干ばつと記録的な低水位により、新たな熱波に見舞われる欧州全体でエネルギー危機への懸念が深まっている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Hidden moth population found after 70 years",
+      "summary": "A hidden population of one of England's rarest moths has been found at a site where it had not been seen for more than 70 years.",
+      "keyTakeaways": [
+        "Head of conservation at Butterfly Conservation Dr Dave Wainwright has spent his career searching for the dark bordered beauty and said he felt an \"overwhelming feeling of relief\" when they were found at Wallington estate, in Northumberland.",
+        "For decades, the only site where the moth was found in England was at Strensall Common, in Yorkshire, but the population there has been in decline due to climate change and a wildfire.",
+        "The discovery has given conservationists new hope for the species and opened up the possibilities of where more can be found."
+      ],
+      "whyItMatters": "Once widespread across northern England and Scotland, habitat loss has caused significant decline in the dark bordered beauty.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c1712kz5qpgo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Exploration",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "70年ぶりに見つかった希少な蛾",
+          "summary": "イングランドで最も希少とされる蛾の一種の、知られざる個体群が見つかった。この地では70年以上、その姿が確認されていなかった。",
+          "keyTakeaways": [
+            "蝶類保護団体バタフライ・コンサベーションの保全部門責任者デイブ・ウェインライト博士は、長年この蛾（ダーク・ボーダード・ビューティー）を探し続けてきた人物で、ノーサンバーランドのウォリントン邸で発見された際は「押し寄せるような安堵感」を覚えたという。",
+            "これまで数十年間、イングランドでこの蛾が確認できる唯一の生息地はヨークシャーのストレンソール・コモンだったが、気候変動と山火事の影響で個体数は減少していた。",
+            "今回の発見は、保全に携わる人々に新たな希望を与え、他の生息地が見つかる可能性も開いた。"
+          ],
+          "whyItMatters": "かつて北イングランドとスコットランドに広く分布していたこの蛾は、生息地の喪失により大きく数を減らしてきた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Engine parts shattered Ryanair window that passenger was partly sucked out of, report says",
+      "summary": "A preliminary report by the National Transportation Safety Board (NTSB) found an engine fan blade broke off shortly after takeoff on the 10 July flight from Greece to Germany shattering the window and damaging the fuselage.",
+      "keyTakeaways": [
+        "The Serbian entrepreneur Ljubisa Karović, sitting by the window in seat 11F, had his head and right arm sucked out of the broken window in the incident.",
+        "Karović was saved from being completely sucked out of the window by other passengers, who grabbed hold of him.",
+        "The NTSB said the flight, which was scheduled to fly from Thessaloniki in Greece to Memmingen near Munich, “experienced a No 2 (right) engine fan-blade-out (FBO) failure during climb out from the Thessaloniki international airport (SKG)”."
+      ],
+      "whyItMatters": "Guzzetti said the latest accident could prompt the FAA and NTSB to examine whether that deadline should be moved up.",
+      "originalURL": "https://www.theguardian.com/business/2026/aug/14/ryanair-engine-parts-shattered-window-passenger-partly-sucked-out-of-report",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ライアンエア機の窓破損、原因はエンジン部品の破断",
+          "summary": "米国家運輸安全委員会（NTSB）の中間報告によると、7月10日にギリシャからドイツへ向かっていた便で、離陸直後にエンジンのファンブレードが破断した。これにより窓が割れ、機体にも損傷が生じたという。",
+          "keyTakeaways": [
+            "11F席の窓側に座っていたセルビア人実業家リュビシャ・カロヴィッチ氏は、割れた窓から頭と右腕が機外に引き込まれた。",
+            "同氏が完全に機外へ吸い出される寸前で、周囲の乗客がつかんで引き止めた。",
+            "NTSBによれば、テッサロニキからミュンヘン近郊のメミンゲンへ向かう予定だった同便は、テッサロニキ国際空港からの上昇中に2番（右側）エンジンのファンブレード脱落による不具合を起こしたという。"
+          ],
+          "whyItMatters": "グゼッティ氏は、今回の事故を受けて連邦航空局とNTSBが対策の期限前倒しを検討する可能性があると述べた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "A timely warning on the rise of the ‘tech bros’ from the author of The Nerd Reich | Letter",
+      "summary": "Thank you for your interview with Gil Durán, the author of The Nerd Reich: Silicon Valley Fascism and the War on Democracy ( ‘If we don’t fight back, we don’t have a future’: the journalist taking on the ‘tech fascists’ of Silicon Valley, 5 August ).",
+      "keyTakeaways": [
+        "The plan is for complete spatial and financial transaction control.",
+        "This is not the end of democracy – it is a slavery system.",
+        "Many of the people involved believe technology can dramatically extend their lifespan and they can replace most of the population with robots and automation."
+      ],
+      "whyItMatters": "Durán is right – the antipathy towards the “tech bros” is growing.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/13/a-timely-warning-on-the-rise-of-the-tech-bros-from-the-author-of-the-nerd-reich",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「テック系権力者」の台頭に鳴る警鐘、『ザ・ナード・ライヒ』著者への手紙",
+          "summary": "シリコンバレーのファシズムと民主主義への攻撃を描いた『ザ・ナード・ライヒ』の著者、ギル・ドゥラン氏へのインタビュー（8月5日掲載、「戦わなければ未来はない」とシリコンバレーの「テックファシスト」に挑む記者、と題した記事）への謝意を伝える投書。",
+          "keyTakeaways": [
+            "目指されているのは空間と金融取引を完全に掌握する体制だ。",
+            "これは民主主義の終焉ではなく、新たな隷属の仕組みである。",
+            "関係者の多くは技術で寿命を大幅に延ばせると信じ、人口の大半をロボットと自動化に置き換えられると考えている。"
+          ],
+          "whyItMatters": "ドゥラン氏の指摘通り、「テック系権力者」への反感は確実に広がっている。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Do I really need air conditioning in the UK? The best portable aircon tested – plus the pros, cons and alternatives",
+      "summary": "As hotter summers become the norm, home aircon can feel increasingly tempting.",
+      "keyTakeaways": [
+        "Do I really need air conditioning in the UK?",
+        "T ell people you’re testing air conditioning, and the truth soon comes out: far more people have aircon than you’d ever imagine.",
+        "Most portable aircons are in bedrooms, hidden away from visitors, so they’re easy to keep secret."
+      ],
+      "whyItMatters": "You could be making the problem worse by opting to have air conditioning.",
+      "originalURL": "https://www.theguardian.com/thefilter/2026/aug/13/best-portable-air-conditioning-ac-units-tested-uk",
+      "readTime": 26,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国にエアコンは本当に必要か 携帯型を試してわかったこと",
+          "summary": "夏の暑さが当たり前になりつつある今、家庭用エアコンの誘惑は年々強まっている。",
+          "keyTakeaways": [
+            "英国で暮らすうえで、エアコンは本当に必要なのか。",
+            "エアコンを試していると話すと、思いのほか多くの人がひそかに使っている実態が見えてくる。",
+            "携帯型エアコンの大半は寝室に置かれ、来客の目に触れることはない。"
+          ],
+          "whyItMatters": "エアコンを選ぶこと自体が、暑さの問題をかえって深めているのかもしれない。"
+        }
+      }
+    }
+  ]
+}

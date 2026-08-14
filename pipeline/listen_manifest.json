@@ -17868,6 +17868,62 @@
               "duration": 5.799184
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-14/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ルーマニアで、唯一の原子力発電所にある最後の原子炉が停止しました。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "冷却に使うドナウ川の水位が、記録的な低さになったためです。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "この原発を運営するヌクレアレレクトリカは、七月末にもすでに一基を止めていました。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "木曜には残る一基も、水位の低下が続くとして停止を発表しました。",
+              "duration": 5.76
+            },
+            {
+              "speaker": "narrator",
+              "text": "再稼働の見込みは、少なくとも十日先になるといいます。",
+              "duration": 4.536
+            },
+            {
+              "speaker": "narrator",
+              "text": "隣国モルドバへの電力供給にも、すぐに影響が及ぶ見通しです。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "ルーマニアは八月いっぱい、エネルギー緊急事態を宣言しています。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "企業や家庭にも、電力需要が高まる時間帯の節電を呼びかけています。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "欧州は新たな熱波を控え、エネルギー危機への懸念が広がっています。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "川の水位ひとつが、遠く離れた暮らしにもつながっていることを感じさせます。",
+              "duration": 5.616
+            }
+          ]
         }
       },
       "2": {
@@ -17935,6 +17991,62 @@
               "speaker": "explainer",
               "text": "Exactly, it opens up new possibilities for where else this moth might still be quietly holding on.",
               "duration": 5.093878
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-14/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ノーサンバーランドのウォリントン邸で、70年以上姿を消していた蛾が見つかりました。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "ダーク・ボーダード・ビューティーという、イングランドで最も希少な蛾の一種です。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "長年この蛾を探し続けてきたのが、バタフライ・コンサベーションのデイブ・ウェインライト博士です。",
+              "duration": 6.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "発見の瞬間、押し寄せるような安堵感を覚えたと振り返っています。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまでイングランドでこの蛾が見られる場所は、ヨークシャーのストレンソール・コモンだけでした。",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "しかしそこでは気候変動と山火事の影響で、個体数が減り続けていました。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "かつてこの蛾は北イングランドやスコットランドに広く生息していました。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "生息地の減少が、長い年月をかけて数を大きく減らしてきた背景にあります。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の発見は、他の場所にも隠れた個体群がいる可能性を示しています。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かな自然の中に、まだ知られていない命が息づいているのかもしれません。",
+              "duration": 5.664
             }
           ]
         }
@@ -18006,6 +18118,57 @@
               "duration": 4.205714
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-14/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "7月10日、ギリシャからドイツへ向かうライアンエア便で窓が割れる事故がありました。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "米国家運輸安全委員会の中間報告で、原因はエンジンのファンブレード破断だったと分かりました。",
+              "duration": 7.296
+            },
+            {
+              "speaker": "narrator",
+              "text": "離陸直後、テッサロニキ国際空港からの上昇中に右側エンジンの不具合が起きたそうです。",
+              "duration": 6.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "破断した部品が窓を直撃し、機体にも損傷が及びました。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "窓側の11F席にいたセルビア人実業家リュビシャ・カロヴィッチ氏は、頭と右腕が機外に引き込まれています。",
+              "duration": 8.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "周囲の乗客が体をつかんで引き止め、完全に機外へ吸い出される事態は免れました。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "エンジン部品の脱落は極めて稀な事故ですが、起きれば機内の安全を一瞬で脅かします。",
+              "duration": 6.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回のケースは、航空当局が安全対策の見直し時期を早めるきっかけになるかもしれません。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "空の旅の安心は、こうした小さな部品の点検の積み重ねに支えられています。",
+              "duration": 6.168
+            }
+          ]
         }
       },
       "4": {
@@ -18075,6 +18238,62 @@
               "duration": 3.160816
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-14/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ある読者からの投書が、シリコンバレーの権力構造に警鐘を鳴らしています。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "投書は『ザ・ナード・ライヒ』著者ギル・ドゥラン氏へのインタビューに応えたものです。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "目指されているのは、空間と金融取引を丸ごと管理する仕組みだといいます。",
+              "duration": 5.784
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは単なる民主主義の後退ではなく、新しい形の隷属だと指摘しています。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "関係者の中には、技術で寿命を大きく延ばせると信じる人もいます。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "さらに、人口の多くをロボットや自動化で置き換えられると考えているといいます。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした発想が、テクノロジー業界のごく一部に広がっているのです。",
+              "duration": 5.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "私たちの暮らしを支える技術が、誰の手に握られるかが問われています。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "ドゥラン氏が指摘する通り、テック系権力者への反感は各地で強まっています。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かな投書の言葉が、大きな問いを私たちに残しています。",
+              "duration": 4.872
+            }
+          ]
         }
       },
       "5": {
@@ -18132,6 +18351,62 @@
               "speaker": "explainer",
               "text": "Exactly. It's less about whether it works, and more about whether it's the right choice long term.",
               "duration": 5.276735
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-14/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "英国の夏は近年、以前より確実に暑くなっています。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのせいで家庭用エアコンを求める人が増えています。",
+              "duration": 4.176
+            },
+            {
+              "speaker": "narrator",
+              "text": "実際に話を聞くと、思った以上に多くの人が持っています。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただ携帯型の多くは寝室に置かれ、来客の目には触れません。",
+              "duration": 5.064
+            },
+            {
+              "speaker": "narrator",
+              "text": "人に知られたくないという、少し後ろめたい気持ちがあるようです。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "暑さへの備えと、環境への引け目という二つの感情が背景にあります。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "実はエアコンを選ぶこと自体が、暑さの問題を悪化させる面もあります。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "電力消費が増えれば、排熱や二酸化炭素の増加にもつながるからです。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "扇風機や換気など、他の選択肢も見直す価値がありそうです。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "涼しさを求める前に、その涼しさの代償も考えてみたい朝です。",
+              "duration": 5.448
             }
           ]
         }

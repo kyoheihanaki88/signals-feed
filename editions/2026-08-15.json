@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "当局は津波警報を出し沿岸住民に高台への避難を呼びかけたが、インドネシア気象気候地球物理庁が沿岸に脅威となるような海面変化は確認されていないとしたことを受け、警報は後に解除された。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What happened in Indonesia overnight?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "A magnitude 7.7 earthquake struck off the coast early Saturday, in the Flores region.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad was it?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "At least 20 people were killed. Buildings collapsed and there was widespread panic.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know how deep it was?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The U.S. Geological Survey put it at 10 kilometers deep, around 5:58 a.m. local time.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there a tsunami risk?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, authorities issued a warning and told coastal residents to move to higher ground.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that still in effect?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, it was lifted once monitoring showed no significant changes in sea level.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "And the damage on the ground?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Local police said the quake caused severe damage, with buildings collapsing in East Nusa Tenggara province.",
+              "duration": 5.564082
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "ベルギーの法律では、所有権を主張する者が現れるまで最低5年待つ必要がある"
           ],
           "whyItMatters": "建設会社、福祉団体、そしてかつて富裕だったヴァン・アッシュ家の子孫まで、それぞれが金塊の権利を主張しうる立場にある。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Wait, someone found gold while digging a sewer?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — a student on a summer job in Belgium. He was laying drainage pipes and hit a hidden trove of gold.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "How much are we talking about?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's estimated at around €9m, so roughly £8m.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "What did he do when he found it?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "He and his colleagues called the police right away, and also notified a local welfare organisation, CAW.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "So does he just get to keep it?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet. Belgian law requires a five-year wait, in case the rightful owners come forward to claim it.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Who might that be?",
+              "duration": 1.149388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Possibly descendants of the Van Assche family, who were once wealthy in the area. The contractors and CAW could have claims too.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "So for now, it's just... waiting.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. A quiet mystery buried under a sewer line, for a little while longer.",
+              "duration": 4.075102
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "横長のパスポート型デザインを数年前に広めたのはグーグルであり、今年サムスンがZ Fold 8で初めて追随し、アップルも折りたたみiPhone、実現するかどうかは未定だが、で追随するとの噂がある。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google had its big Pixel event?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on August 12th, they revealed a whole new lineup of devices.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "What's new with the phones?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Pixel 11 lineup comes in fresh colors, with upgraded cameras and performance.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything interesting on the Pro models?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "They added a built-in LED ring that lights up for Gemini, Google's AI, and other features.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "What about the foldable phone?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a next-gen Pixel Fold with thinner bezels, plus a new Pixel Watch 5 with better GPS tracking.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything smaller in the mix?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a new Pixel Tag as well.",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does the fold design matter so much?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Google popularized that wider, passport-style shape years ago. Samsung just tried it with the Z Fold 8, and Apple may follow with its own foldable.",
+              "duration": 8.777143
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "スコットランド警察は今月提出した計画協議への書簡で、エディンバラ西方約30マイルのラーバートに計画されるデータセンターについて「大規模な住民の反対が予想される」と述べた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So police in Scotland are worried about AI datacentres being attacked?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, they've flagged the need for what they call 'robust security measures' around a planned site.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "Which site is this about?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "One proposed for Larbert, about 30 miles west of Edinburgh.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "Why would people target it at all?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police say public opposition is likely, and they want the developer to work with them to prevent disruptive incursions.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this just one project, or part of something bigger?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of a much wider picture. There are at least 23 hyperscale datacentre developments going through planning in Scotland right now.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a lot of demand on the grid.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Combined, they'd use more than one and a half times the power Scotland uses at its peak.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "So the concern isn't just security, it's the scale of it all.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, and that's why campaigners like Action to Protect Rural Scotland are watching closely too.",
+              "duration": 5.459592
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,65 @@
             "これに対し上級公務員の労働組合FDAは、大臣に仕える義務があり公に反論できない職員の辞任を求めるのは「まったく不適切」だと反論した。"
           ],
           "whyItMatters": "今週初め、ムーア氏は自身に殺害の脅迫があったことを明らかにしている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly did the Agriculture Minister say this time?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Andrew Muir said the days of the Ulster Farmers' Union dictating government policy are over.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a break from how things usually work there.",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was clear he'll keep engaging with the UFU though - he spoke with its president just Friday morning.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "Why's he taking this tone now?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says he inherited an extremely challenging situation in the department, with problems building up from what he called wrong government policy previously.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anyone pushed back on him?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes - the FDA, the civil servants' union, said it was entirely inappropriate to call for officials' resignations when they're duty-bound to serve ministers and can't defend themselves publicly.",
+              "duration": 10.866939
+            },
+            {
+              "speaker": "listener",
+              "text": "This all feels tense for a farming policy dispute.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is - earlier this week Muir said a death threat had been made against him, so tensions are clearly running high.",
+              "duration": 6.50449
+            }
+          ]
         }
       }
     }

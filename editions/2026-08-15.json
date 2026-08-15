@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-15",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Magnitude 7.7 earthquake strikes off Indonesia's coast, killing at least 20",
+      "summary": "A powerful magnitude 7.7 earthquake struck off the coast of Indonesia early Saturday, killing at least 20 people, collapsing buildings as well as causing panic in a region prone to deadly quakes.",
+      "keyTakeaways": [
+        "The U.S. Geological Survey said the quake hit Indonesia's Flores region with a depth of 10 kilometers at 5:58 a.m. local time.",
+        "A man examines the damage to a building following an earthquake in East Manggarai, East Nusa Tenggara province, Indonesia, Saturday, Aug.",
+        "East Nusa Tenggara Police Chief Rudi Darmoko said the earthquake caused severe damage and collapsed buildings."
+      ],
+      "whyItMatters": "Authorities issued a tsunami warning and urged coastal residents to move to higher ground, but later lifted the warning when Indonesia's Meteorology, Climatology and Geophysics Agency said monitoring showed no significant sea-level changes that would pose a threat to coastal communities.",
+      "originalURL": "https://www.npr.org/2026/08/15/nx-s1-5932405/earthquake-indonesia",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "インドネシア沖でM7.7の地震、20人以上死亡",
+          "summary": "土曜早朝、インドネシア沖でマグニチュード7.7の強い地震が発生し、少なくとも20人が死亡した。建物の倒壊も相次ぎ、地震の多い同地域に混乱が広がった。",
+          "keyTakeaways": [
+            "米地質調査所によれば、震源はインドネシアのフローレス地域、深さ10キロ、現地時間午前5時58分の発生。",
+            "東ヌサトゥンガラ州東マンガライでは、地震後に建物の被害を確認する男性の姿。",
+            "東ヌサトゥンガラ州警察本部長のルディ・ダルモコ氏は、地震により深刻な被害と建物の倒壊が生じたと述べた。"
+          ],
+          "whyItMatters": "当局は津波警報を出し沿岸住民に高台への避難を呼びかけたが、インドネシア気象気候地球物理庁が沿岸に脅威となるような海面変化は確認されていないとしたことを受け、警報は後に解除された。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Belgian student strikes gold worth €9m while digging a new sewer",
+      "summary": "For a student with a summer job working on a Belgian building site, “money down the drain” has taken on a whole new meaning: excavating the trenches for a sewage system, he stumbled across a hidden trove of gold worth an estimated €9m (£8m).",
+      "keyTakeaways": [
+        "Labourers were laying drainage pipes when they stumbled across the gold.”",
+        "Kobe and his colleagues called the police and notified CAW as soon as they came across the gold hoard.",
+        "Belgian law requires finders to wait at least five years for potential owners to claim any treasure."
+      ],
+      "whyItMatters": "The building contractors, the welfare organisation and any descendants of the once-wealthy Van Assche family could all have a claim to part of the fortune.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/14/belgian-student-strikes-gold-worth-9m-while-digging-sewers",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "下水道工事で偶然の金塊、推定9百万ユーロ",
+          "summary": "ベルギーの建設現場でアルバイトをしていた学生が、下水管を通す溝を掘っていたところ、思いがけず地中から金塊を発見した。推定価値は9百万ユーロ、日本円で約14億円にのぼるという。",
+          "keyTakeaways": [
+            "下水管の敷設作業中に作業員が金塊を発見",
+            "発見したコーベさんたちはただちに警察と福祉団体CAWに通報",
+            "ベルギーの法律では、所有権を主張する者が現れるまで最低5年待つ必要がある"
+          ],
+          "whyItMatters": "建設会社、福祉団体、そしてかつて富裕だったヴァン・アッシュ家の子孫まで、それぞれが金塊の権利を主張しうる立場にある。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Made by Google 2026: all the Pixel news and announcements",
+      "summary": "On August 12, 2026, Google revealed a bunch of new Pixel devices.",
+      "keyTakeaways": [
+        "The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features.",
+        "Google also showed off its next-gen Pixel Fold featuring thinner bezels, alongside a new Pixel Watch 5 with improved GPS tracking.",
+        "There’s a new Pixel Tag as well."
+      ],
+      "whyItMatters": "For one, it popularized the passport-style design years ago, being more wide than tall — something that Samsung tried for the first time this year with its Z Fold 8, and that Apple is rumored to do with its foldable iPhone that may or may not arrive in 2026.",
+      "originalURL": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+      "readTime": 14,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "Made by Google 2026、Pixelシリーズが一新",
+          "summary": "2026年8月12日、グーグルが新型Pixel端末群を発表した。カメラや性能を強化した新シリーズから、次世代の折りたたみ機種、新型ウォッチまで、ラインナップは幅広い。",
+          "keyTakeaways": [
+            "カラフルなPixel 11シリーズはカメラと性能を強化。Proモデルには、GeminiなどのAI機能に反応して光るLEDリングを新搭載。",
+            "次世代Pixel Foldはベゼルをさらに薄型化。GPS精度を高めた新型Pixel Watch 5も披露された。",
+            "新製品として紛失防止タグのPixel Tagも登場。"
+          ],
+          "whyItMatters": "横長のパスポート型デザインを数年前に広めたのはグーグルであり、今年サムスンがZ Fold 8で初めて追随し、アップルも折りたたみiPhone、実現するかどうかは未定だが、で追随するとの噂がある。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Police Scotland warns ‘robust security’ needed to stop attacks on AI datacentres",
+      "summary": "Police in Scotland have issued a stark warning about the need for “robust security measures” to stop proposed AI datacentres from being attacked by protesters.",
+      "keyTakeaways": [
+        "The letter encouraged the datacentre’s developer to liaise with the police to prevent “unplanned incursions for the purposes of disruption”.",
+        "In Scotland there are at least 23 “hyperscale” datacentre developments in the planning process, according to the Edinburgh-based charity Action to Protect Rural Scotland (APRS).",
+        "Combined, they would use more than one and a half times the power that Scotland uses at peak demand."
+      ],
+      "whyItMatters": "Police Scotland said “a great deal of public opposition is likely” to a datacentre planned in Larbert, about 30 miles west of Edinburgh, in a letter submitted as a part of a planning consultation this month.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/aug/14/scottish-police-expect-public-opposition-larbert-datacentre",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIデータセンター、警備強化の必要性 スコットランド警察が警告",
+          "summary": "スコットランド警察は、計画中のAIデータセンターが抗議行動の標的になるおそれがあるとして、「強固な警備体制」の必要性を強く訴える警告を発した。",
+          "keyTakeaways": [
+            "開発事業者に対し、妨害目的の「計画外の侵入」を防ぐため、警察との連携を求める書簡",
+            "スコットランドでは少なくとも23件の大規模データセンター開発が計画審査中（エディンバラ拠点の慈善団体APRS調べ）",
+            "これらを合わせると、スコットランドのピーク時電力使用量の1.5倍以上を消費する見込み"
+          ],
+          "whyItMatters": "スコットランド警察は今月提出した計画協議への書簡で、エディンバラ西方約30マイルのラーバートに計画されるデータセンターについて「大規模な住民の反対が予想される」と述べた。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "'Days of the farmers' union dictating policy are over' - Muir",
+      "summary": "The Agriculture Minister Andrew Muir has said \"the days of the Ulster Farmers' Union (UFU) dictating government policy are over\".",
+      "keyTakeaways": [
+        "Muir said he would continue to engage with the UFU and had spoken with its president on Friday morning.",
+        "He added that the situation he had inherited in the department was \"extremely challenging\", with issues building up \"due to wrong government policy previously\".",
+        "In response, the senior civil servants' union the FDA said it was \"entirely inappropriate\" to call for the resignation of officials who were \"duty-bound to serve ministers\" and \"could not defend themselves publicly\"."
+      ],
+      "whyItMatters": "Earlier this week, Muir said a death threat had been made against him.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cdj0pv2m812o?at_medium=RSS&at_campaign=rss",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Deep field",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「農民組合が政策を決める時代は終わった」ムーア農業相",
+          "summary": "アンドリュー・ムーア農業相は、アルスター農民組合(UFU)が政府の政策を左右する時代は終わったと述べた。",
+          "keyTakeaways": [
+            "ムーア氏はUFUとの対話は今後も続けるとし、金曜朝に同組合の会長と話したことを明かした。",
+            "就任時に引き継いだ省内の状況は「極めて厳しく」、過去の誤った政策の積み重ねが背景にあると語った。",
+            "これに対し上級公務員の労働組合FDAは、大臣に仕える義務があり公に反論できない職員の辞任を求めるのは「まったく不適切」だと反論した。"
+          ],
+          "whyItMatters": "今週初め、ムーア氏は自身に殺害の脅迫があったことを明らかにしている。"
+        }
+      }
+    }
+  ]
+}

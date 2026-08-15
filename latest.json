@@ -101,6 +101,62 @@
               "duration": 5.564082
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "インドネシア沖で土曜の早朝、マグニチュード7.7の地震が発生しました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "現地時間午前5時58分、震源はフローレス地域で深さ10キロでした。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまでに少なくとも20人が亡くなったと伝えられています。",
+              "duration": 4.392
+            },
+            {
+              "speaker": "narrator",
+              "text": "東ヌサトゥンガラ州では建物の倒壊が相次ぎ、深刻な被害が出ています。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "州警察本部長のルディ・ダルモコ氏も被害の大きさを認めています。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "インドネシアは地震が多い地域で、住民の間には不安が広がりました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "当局は一時、津波警報を出し高台への避難を呼びかけました。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "その後、気象気候地球物理庁が海面に大きな変化はないと確認しました。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けて警報は解除され、沿岸部の緊張も少し和らいでいます。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後は被害の全容把握と、被災者の救助が急がれる段階です。",
+              "duration": 5.232
+            }
+          ]
         }
       }
     },
@@ -200,6 +256,57 @@
               "speaker": "explainer",
               "text": "Exactly. A quiet mystery buried under a sewer line, for a little while longer.",
               "duration": 4.075102
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ベルギーの建設現場で、夏のアルバイトをしていた学生が思わぬ発見をしました。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "コーベさんという学生が、下水管を通す溝を掘っていたときの出来事です。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "土の中から金塊が次々と現れ、総額は推定9百万ユーロにのぼりました。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "日本円にすると、およそ14億円という金額になります。",
+              "duration": 4.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "コーベさんたちはすぐに作業を止め、警察と福祉団体CAWへ連絡しました。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "ベルギーの法律では、所有権を主張する人が現れるまで最低5年待つ決まりです。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "この金塊は、かつて裕福だったヴァン・アッシュ家にゆかりがあるようです。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "建設会社や福祉団体、そして同家の子孫にも、権利を主張できる可能性があります。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "思いがけない発見が、静かに持ち主を探す長い時間の始まりとなりました。",
+              "duration": 5.856
             }
           ]
         }
@@ -303,6 +410,62 @@
               "duration": 8.777143
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "8月12日、Googleが新しいPixelシリーズを一斉に披露しました。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "中心となるPixel 11は色使いが豊かで、カメラと処理性能を底上げしています。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "上位のProモデルには、Gemini AIなどの動作に合わせて光る小さなLEDリングが加わりました。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ型のPixel Foldも進化し、画面の枠がこれまでより薄く仕上げられています。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "腕時計型のPixel Watch 5は、位置測定の精度が上がり、GPSの追従がより安定しました。",
+              "duration": 7.704
+            },
+            {
+              "speaker": "narrator",
+              "text": "紛失防止用の小型タグ、Pixel Tagという新製品も加わっています。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "実はこの横長で開く折りたたみの形は、Googleが数年前から広めてきたスタイルです。",
+              "duration": 6.648
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年になってSamsungもZ Fold 8で同じ横長デザインを採用しました。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "Appleも同様の折りたたみiPhoneを準備しているという噂があり、時期はまだ定まっていません。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "端末選びの基準として、こうした形の流れは今後も注目しておく価値がありそうです。",
+              "duration": 6.576
+            }
+          ]
         }
       }
     },
@@ -404,6 +567,62 @@
               "duration": 5.459592
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "スコットランド警察が、計画中のAIデータセンターをめぐって警備体制の強化を求める書簡を提出しました。",
+              "duration": 8.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、抗議活動によって施設が攻撃を受けかねないという懸念があります。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "書簡では開発事業者に対し、警察と事前に連携し無断の侵入を防ぐよう求めています。",
+              "duration": 7.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象となっているのは、エディンバラの西およそ30マイルにあるラーバートの計画地です。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "この施設をめぐっては、住民から強い反発が起きると警察側も見込んでいます。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "スコットランド全体では、大規模データセンターの計画が少なくとも23件、審査段階にあります。",
+              "duration": 7.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "この数字は、エディンバラを拠点とする慈善団体APRSの調査によるものです。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "これらすべてが稼働すれば、消費電力はスコットランドのピーク時需要の1.5倍を超える見通しです。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "治安と電力という二つの課題が、同時に重みを増しています。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "施設が増えるほど、地域との対話の丁寧さが問われそうです。",
+              "duration": 4.848
+            }
+          ]
         }
       }
     },
@@ -493,6 +712,57 @@
               "speaker": "explainer",
               "text": "It is - earlier this week Muir said a death threat had been made against him, so tensions are clearly running high.",
               "duration": 6.50449
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "北アイルランドのムーア農業相が、農民組合が政策を決める時代は終わったと語りました。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象はアルスター農民組合、UFUとの関係についてです。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "ムーア氏は今後も対話を続けるとし、金曜の朝に会長とも話したと明かしました。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で、就任時に引き継いだ省内の状況は極めて厳しいものだったそうです。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "その背景には、これまでの政策の積み重ねがあったといいます。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "これに対し、上級公務員の労働組合FDAは反論の声を上げました。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "大臣に仕える立場で公に反論できない職員に、辞任を求めるのは筋違いだという主張です。",
+              "duration": 7.536
+            },
+            {
+              "speaker": "narrator",
+              "text": "ムーア氏に対しては今週、殺害の脅迫もあったと伝えられています。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "農業政策の主導権を巡る綱引きは、まだ落ち着きを見せていません。",
+              "duration": 5.544
             }
           ]
         }

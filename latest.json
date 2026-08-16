@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-15",
+  "date": "2026-08-16",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,153 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Magnitude 7.7 earthquake strikes off Indonesia's coast, killing at least 20",
-      "summary": "A powerful magnitude 7.7 earthquake struck off the coast of Indonesia early Saturday, killing at least 20 people, collapsing buildings as well as causing panic in a region prone to deadly quakes.",
+      "source": "The Guardian (World)",
+      "headline": "Rescue teams search for survivors in Indonesia after powerful earthquake",
+      "summary": "Rescue crews dug through collapsed buildings and landslide debris in eastern Indonesia on Sunday as they searched for bodies and possible survivors a day after a powerful earthquake killed at least 51 people, injured more than 100 and displaced thousands.",
       "keyTakeaways": [
-        "The U.S. Geological Survey said the quake hit Indonesia's Flores region with a depth of 10 kilometers at 5:58 a.m. local time.",
-        "A man examines the damage to a building following an earthquake in East Manggarai, East Nusa Tenggara province, Indonesia, Saturday, Aug.",
-        "East Nusa Tenggara Police Chief Rudi Darmoko said the earthquake caused severe damage and collapsed buildings."
+        "Rescuers were still searching for people feared buried beneath landslides triggered by the quake across six regencies on Flores, a predominantly Catholic island in Muslim-majority Indonesia.",
+        "The quake also struck Labuan Bajo, the gateway to Komodo national park, one of Indonesia’s best-known tourist destinations.",
+        "Teams resumed searches on Sunday in areas that had remained inaccessible since the quake, particularly in Manggarai, East Manggarai and Nagekeo regencies."
       ],
-      "whyItMatters": "Authorities issued a tsunami warning and urged coastal residents to move to higher ground, but later lifted the warning when Indonesia's Meteorology, Climatology and Geophysics Agency said monitoring showed no significant sea-level changes that would pose a threat to coastal communities.",
-      "originalURL": "https://www.npr.org/2026/08/15/nx-s1-5932405/earthquake-indonesia",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "International",
+      "whyItMatters": "Indonesia, an archipelago of more than 17,000 islands, is prone to earthquakes and volcanic eruptions because of its location on the Pacific “ring of fire”, a horseshoe-shaped arc of seismic faults and volcanoes.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/16/rescue-teams-search-for-survivors-in-indonesia-after-powerful-earthquake",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "インドネシア沖でM7.7の地震、20人以上死亡",
-          "summary": "土曜早朝、インドネシア沖でマグニチュード7.7の強い地震が発生し、少なくとも20人が死亡した。建物の倒壊も相次ぎ、地震の多い同地域に混乱が広がった。",
+          "headline": "インドネシア大地震、なお続く救助活動",
+          "summary": "インドネシア東部で日曜、救助隊が倒壊した建物や土砂崩れの跡を掘り続けた。前日に起きた強い地震で少なくとも51人が死亡、100人以上が負傷し、数千人が避難を強いられている。遺体の収容と生存者の捜索が続く。",
           "keyTakeaways": [
-            "米地質調査所によれば、震源はインドネシアのフローレス地域、深さ10キロ、現地時間午前5時58分の発生。",
-            "東ヌサトゥンガラ州東マンガライでは、地震後に建物の被害を確認する男性の姿。",
-            "東ヌサトゥンガラ州警察本部長のルディ・ダルモコ氏は、地震により深刻な被害と建物の倒壊が生じたと述べた。"
+            "ムスリムが多数を占めるインドネシアの中でカトリック信仰が根付くフローレス島。六つの県で地震による土砂崩れが起き、生き埋めになった人々の捜索が続く。",
+            "地震はコモド国立公園への玄関口として知られる観光地、ラブアンバジョも襲った。",
+            "地震以降孤立していた地域でも日曜、捜索が再開された。特にマンガライ県、東マンガライ県、ナゲケオ県が対象となっている。"
           ],
-          "whyItMatters": "当局は津波警報を出し沿岸住民に高台への避難を呼びかけたが、インドネシア気象気候地球物理庁が沿岸に脅威となるような海面変化は確認されていないとしたことを受け、警報は後に解除された。"
+          "whyItMatters": "一万七千を超える島々からなるインドネシアは、環太平洋火山帯という地震と火山が集まる弧状の地帯に位置し、地震や噴火が起こりやすい土地である。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "What happened in Indonesia overnight?",
-              "duration": 1.906939
+              "text": "What's happening in Indonesia this morning?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "A magnitude 7.7 earthquake struck off the coast early Saturday, in the Flores region.",
-              "duration": 4.832653
-            },
-            {
-              "speaker": "listener",
-              "text": "How bad was it?",
-              "duration": 1.149388
-            },
-            {
-              "speaker": "explainer",
-              "text": "At least 20 people were killed. Buildings collapsed and there was widespread panic.",
-              "duration": 4.362449
-            },
-            {
-              "speaker": "listener",
-              "text": "Do we know how deep it was?",
-              "duration": 1.48898
-            },
-            {
-              "speaker": "explainer",
-              "text": "The U.S. Geological Survey put it at 10 kilometers deep, around 5:58 a.m. local time.",
-              "duration": 5.093878
-            },
-            {
-              "speaker": "listener",
-              "text": "Was there a tsunami risk?",
-              "duration": 1.697959
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, authorities issued a warning and told coastal residents to move to higher ground.",
-              "duration": 4.205714
-            },
-            {
-              "speaker": "listener",
-              "text": "Is that still in effect?",
-              "duration": 1.436735
-            },
-            {
-              "speaker": "explainer",
-              "text": "No, it was lifted once monitoring showed no significant changes in sea level.",
+              "text": "Rescue teams are searching through collapsed buildings and landslide debris on the island of Flores.",
               "duration": 5.01551
             },
             {
               "speaker": "listener",
-              "text": "And the damage on the ground?",
-              "duration": 1.697959
+              "text": "How bad was the earthquake?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "Local police said the quake caused severe damage, with buildings collapsing in East Nusa Tenggara province.",
-              "duration": 5.564082
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "インドネシア沖で土曜の早朝、マグニチュード7.7の地震が発生しました。",
-              "duration": 5.952
+              "text": "At least 51 people were killed, more than 100 injured, and thousands displaced.",
+              "duration": 4.440816
             },
             {
-              "speaker": "narrator",
-              "text": "現地時間午前5時58分、震源はフローレス地域で深さ10キロでした。",
-              "duration": 6.168
+              "speaker": "listener",
+              "text": "Are there still people missing?",
+              "duration": 1.671837
             },
             {
-              "speaker": "narrator",
-              "text": "これまでに少なくとも20人が亡くなったと伝えられています。",
-              "duration": 4.392
+              "speaker": "explainer",
+              "text": "Yes. Crews are looking for anyone buried beneath landslides across six regencies on the island.",
+              "duration": 5.799184
             },
             {
-              "speaker": "narrator",
-              "text": "東ヌサトゥンガラ州では建物の倒壊が相次ぎ、深刻な被害が出ています。",
-              "duration": 5.928
+              "speaker": "listener",
+              "text": "Were rescuers able to reach everyone right away?",
+              "duration": 2.821224
             },
             {
-              "speaker": "narrator",
-              "text": "州警察本部長のルディ・ダルモコ氏も被害の大きさを認めています。",
-              "duration": 5.688
+              "speaker": "explainer",
+              "text": "Not at first. Some areas, like Manggarai and Nagekeo, were only accessible again on Sunday.",
+              "duration": 5.276735
             },
             {
-              "speaker": "narrator",
-              "text": "インドネシアは地震が多い地域で、住民の間には不安が広がりました。",
-              "duration": 5.952
+              "speaker": "listener",
+              "text": "Did the quake affect any well-known places?",
+              "duration": 2.45551
             },
             {
-              "speaker": "narrator",
-              "text": "当局は一時、津波警報を出し高台への避難を呼びかけました。",
-              "duration": 5.256
+              "speaker": "explainer",
+              "text": "It did. It struck near Labuan Bajo, the gateway to Komodo National Park.",
+              "duration": 4.493061
             },
             {
-              "speaker": "narrator",
-              "text": "その後、気象気候地球物理庁が海面に大きな変化はないと確認しました。",
-              "duration": 6.24
+              "speaker": "listener",
+              "text": "Why does Indonesia see so many of these quakes?",
+              "duration": 2.76898
             },
             {
-              "speaker": "narrator",
-              "text": "これを受けて警報は解除され、沿岸部の緊張も少し和らいでいます。",
-              "duration": 5.568
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後は被害の全容把握と、被災者の救助が急がれる段階です。",
-              "duration": 5.232
+              "speaker": "explainer",
+              "text": "It sits along the Pacific 'ring of fire,' a region with frequent seismic and volcanic activity.",
+              "duration": 5.746939
             }
           ]
         }
@@ -166,147 +110,84 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Belgian student strikes gold worth €9m while digging a new sewer",
-      "summary": "For a student with a summer job working on a Belgian building site, “money down the drain” has taken on a whole new meaning: excavating the trenches for a sewage system, he stumbled across a hidden trove of gold worth an estimated €9m (£8m).",
+      "headline": "Block export of ‘national treasure’ UK fossils, says MP",
+      "summary": "An MP has called on ministers to change export controls so that significant fossils can be classed as national treasures after one of the UK’s best collections, unearthed on Dorset beaches, was sold overseas.",
       "keyTakeaways": [
-        "Labourers were laying drainage pipes when they stumbled across the gold.”",
-        "Kobe and his colleagues called the police and notified CAW as soon as they came across the gold hoard.",
-        "Belgian law requires finders to wait at least five years for potential owners to claim any treasure."
+        "The fossils, which belonged to the Dorset-based private collector Chris Moore, were initially offered to the Natural History Museum (NHM) in London and Amgueddfa Cymru (Museum Wales), but neither institution had the funds to buy them.",
+        "This means that “some important and rare fossils can be sold without an export licence,” the letter states.",
+        "Evans and Houseago want fossils of exceptional scientific or national significance to be covered by the Waverley criteria – three benchmarks used to determine whether an object is classed as a “national treasure”."
       ],
-      "whyItMatters": "The building contractors, the welfare organisation and any descendants of the once-wealthy Van Assche family could all have a claim to part of the fortune.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/14/belgian-student-strikes-gold-worth-9m-while-digging-sewers",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "A letter from Bridget Houseago, the director of the museum, to Edward Morello, the Liberal Democrat MP for West Dorset, notes that the UK’s cultural goods export controls – intended to give the country an opportunity to retain objects of outstanding national importance – do not cover fossils and other items of natural history because they are not “made”.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/16/block-export-of-national-treasure-uk-fossils-says-mp",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "下水道工事で偶然の金塊、推定9百万ユーロ",
-          "summary": "ベルギーの建設現場でアルバイトをしていた学生が、下水管を通す溝を掘っていたところ、思いがけず地中から金塊を発見した。推定価値は9百万ユーロ、日本円で約14億円にのぼるという。",
-          "keyTakeaways": [
-            "下水管の敷設作業中に作業員が金塊を発見",
-            "発見したコーベさんたちはただちに警察と福祉団体CAWに通報",
-            "ベルギーの法律では、所有権を主張する者が現れるまで最低5年待つ必要がある"
-          ],
-          "whyItMatters": "建設会社、福祉団体、そしてかつて富裕だったヴァン・アッシュ家の子孫まで、それぞれが金塊の権利を主張しうる立場にある。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Wait, someone found gold while digging a sewer?",
-              "duration": 2.638367
+              "text": "So a whole fossil collection from Dorset just... left the country?",
+              "duration": 3.892245
             },
             {
               "speaker": "explainer",
-              "text": "Yes — a student on a summer job in Belgium. He was laying drainage pipes and hit a hidden trove of gold.",
-              "duration": 5.982041
+              "text": "Yes. It belonged to a private collector, Chris Moore, and it was sold overseas.",
+              "duration": 4.858776
             },
             {
               "speaker": "listener",
-              "text": "How much are we talking about?",
-              "duration": 1.619592
+              "text": "Didn't any UK museums want it first?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "It's estimated at around €9m, so roughly £8m.",
-              "duration": 3.186939
+              "text": "They did. It was offered to the Natural History Museum and Museum Wales, but neither could afford it.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "What did he do when he found it?",
-              "duration": 1.619592
+              "text": "Couldn't the government just stop the export, like they do for paintings?",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "He and his colleagues called the police right away, and also notified a local welfare organisation, CAW.",
-              "duration": 5.694694
+              "text": "That's the issue. Export controls apply to 'made' objects, so fossils and natural history items slip through.",
+              "duration": 6.817959
             },
             {
               "speaker": "listener",
-              "text": "So does he just get to keep it?",
-              "duration": 1.750204
+              "text": "That seems like a strange gap.",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "Not yet. Belgian law requires a five-year wait, in case the rightful owners come forward to claim it.",
-              "duration": 5.799184
+              "text": "An MP thinks so too. He and the museum director have written to ministers about it.",
+              "duration": 4.440816
             },
             {
               "speaker": "listener",
-              "text": "Who might that be?",
-              "duration": 1.149388
+              "text": "What are they actually asking for?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "Possibly descendants of the Van Assche family, who were once wealthy in the area. The contractors and CAW could have claims too.",
-              "duration": 7.183673
+              "text": "They want important fossils covered by the Waverley criteria, the same test used to call something a national treasure.",
+              "duration": 6.50449
             },
             {
               "speaker": "listener",
-              "text": "So for now, it's just... waiting.",
-              "duration": 2.220408
+              "text": "So this could change how future finds are protected.",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. A quiet mystery buried under a sewer line, for a little while longer.",
-              "duration": 4.075102
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ベルギーの建設現場で、夏のアルバイトをしていた学生が思わぬ発見をしました。",
-              "duration": 6.024
-            },
-            {
-              "speaker": "narrator",
-              "text": "コーベさんという学生が、下水管を通す溝を掘っていたときの出来事です。",
-              "duration": 5.568
-            },
-            {
-              "speaker": "narrator",
-              "text": "土の中から金塊が次々と現れ、総額は推定9百万ユーロにのぼりました。",
-              "duration": 6.72
-            },
-            {
-              "speaker": "narrator",
-              "text": "日本円にすると、およそ14億円という金額になります。",
-              "duration": 4.848
-            },
-            {
-              "speaker": "narrator",
-              "text": "コーベさんたちはすぐに作業を止め、警察と福祉団体CAWへ連絡しました。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "ベルギーの法律では、所有権を主張する人が現れるまで最低5年待つ決まりです。",
-              "duration": 6.432
-            },
-            {
-              "speaker": "narrator",
-              "text": "この金塊は、かつて裕福だったヴァン・アッシュ家にゆかりがあるようです。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "建設会社や福祉団体、そして同家の子孫にも、権利を主張できる可能性があります。",
-              "duration": 6.696
-            },
-            {
-              "speaker": "narrator",
-              "text": "思いがけない発見が、静かに持ち主を探す長い時間の始まりとなりました。",
-              "duration": 5.856
+              "text": "That's the hope, especially for finds as significant as these Dorset fossils.",
+              "duration": 3.892245
             }
           ]
         }
@@ -317,153 +198,97 @@
       "importance": 3,
       "lead": false,
       "category": "TECH",
-      "source": "The Verge (Mobile)",
-      "headline": "Made by Google 2026: all the Pixel news and announcements",
-      "summary": "On August 12, 2026, Google revealed a bunch of new Pixel devices.",
+      "source": "BBC News (Technology)",
+      "headline": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
+      "summary": "A mobile game made by a developer in Manchester has recently beaten the global phenomenon Minecraft to top Apple's paid games chart.",
       "keyTakeaways": [
-        "The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features.",
-        "Google also showed off its next-gen Pixel Fold featuring thinner bezels, alongside a new Pixel Watch 5 with improved GPS tracking.",
-        "There’s a new Pixel Tag as well."
+        "No 10: Full Confidence by Benjamin Brewis sees players take on the role of prime minister, making decisions through a wave of parliamentary scenarios and trying to remain in power for as long as possible.",
+        "In No 10: Full Confidence, external, players who take on the precarious position of prime minister must balance the moods of four factions - their cabinet, backbenchers, the media, and the public - to remain in the game.",
+        "My first attempt at playing prime minister in No 10: Full Confidence hasn't left me considering a Westminster career."
       ],
-      "whyItMatters": "For one, it popularized the passport-style design years ago, being more wide than tall — something that Samsung tried for the first time this year with its Z Fold 8, and that Apple is rumored to do with its foldable iPhone that may or may not arrive in 2026.",
-      "originalURL": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-      "readTime": 14,
-      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Software",
+      "whyItMatters": "Unfortunately, a cabinet minister resigns and publishes a three-page-long letter that contains the phrase \"the PM was warned\" four times.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "Made by Google 2026、Pixelシリーズが一新",
-          "summary": "2026年8月12日、グーグルが新型Pixel端末群を発表した。カメラや性能を強化した新シリーズから、次世代の折りたたみ機種、新型ウォッチまで、ラインナップは幅広い。",
+          "headline": "話題の新作ゲームで首相を二年務めたら、内閣に見放された",
+          "summary": "マンチェスターの開発者が手がけたスマホゲームが、世界的人気を誇るマインクラフトを抜き、アップルの有料ゲームランキングで首位に立った。",
           "keyTakeaways": [
-            "カラフルなPixel 11シリーズはカメラと性能を強化。Proモデルには、GeminiなどのAI機能に反応して光るLEDリングを新搭載。",
-            "次世代Pixel Foldはベゼルをさらに薄型化。GPS精度を高めた新型Pixel Watch 5も披露された。",
-            "新製品として紛失防止タグのPixel Tagも登場。"
+            "ベンジャミン・ブルーウィス作「No 10: Full Confidence」は、プレイヤーが首相となり、次々と訪れる議会の局面で決断を下しながら、できる限り長く政権を維持することを目指すゲームだ。",
+            "首相という不安定な立場を担うプレイヤーは、内閣、後方議員、メディア、世論という四つの勢力の機嫌を保ちながら、ゲームを続けなければならない。",
+            "実際に首相役に挑んでみたが、ウェストミンスターでのキャリアを志す気にはなれなかった。"
           ],
-          "whyItMatters": "横長のパスポート型デザインを数年前に広めたのはグーグルであり、今年サムスンがZ Fold 8で初めて追随し、アップルも折りたたみiPhone、実現するかどうかは未定だが、で追随するとの噂がある。"
+          "whyItMatters": "残念ながら、ある閣僚が辞任し、「首相は警告されていた」という一節を四回も含む三ページの辞任表明文を公表した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Google had its big Pixel event?",
-              "duration": 2.35102
+              "text": "So there's a game beating Minecraft on the app charts?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Yes, on August 12th, they revealed a whole new lineup of devices.",
-              "duration": 3.84
+              "text": "Yes, made by a developer in Manchester. It's called No 10: Full Confidence.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "What's new with the phones?",
-              "duration": 1.436735
-            },
-            {
-              "speaker": "explainer",
-              "text": "The Pixel 11 lineup comes in fresh colors, with upgraded cameras and performance.",
-              "duration": 4.414694
-            },
-            {
-              "speaker": "listener",
-              "text": "Anything interesting on the Pro models?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "They added a built-in LED ring that lights up for Gemini, Google's AI, and other features.",
-              "duration": 4.728163
-            },
-            {
-              "speaker": "listener",
-              "text": "What about the foldable phone?",
+              "text": "What do you actually do in it?",
               "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "There's a next-gen Pixel Fold with thinner bezels, plus a new Pixel Watch 5 with better GPS tracking.",
-              "duration": 5.616327
+              "text": "You play the prime minister, making decisions through parliamentary scenarios, trying to stay in power.",
+              "duration": 5.146122
             },
             {
               "speaker": "listener",
-              "text": "Anything smaller in the mix?",
-              "duration": 1.48898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, a new Pixel Tag as well.",
+              "text": "That sounds harder than it looks.",
               "duration": 1.697959
             },
             {
+              "speaker": "explainer",
+              "text": "It is. You're balancing four factions - cabinet, backbenchers, media, and the public.",
+              "duration": 4.91102
+            },
+            {
               "speaker": "listener",
-              "text": "Why does the fold design matter so much?",
+              "text": "Keep everyone happy at once, basically.",
               "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Google popularized that wider, passport-style shape years ago. Samsung just tried it with the Z Fold 8, and Apple may follow with its own foldable.",
-              "duration": 8.777143
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "8月12日、Googleが新しいPixelシリーズを一斉に披露しました。",
-              "duration": 5.664
+              "text": "Right, and it's precarious. One misstep and support can collapse quickly.",
+              "duration": 4.257959
             },
             {
-              "speaker": "narrator",
-              "text": "中心となるPixel 11は色使いが豊かで、カメラと処理性能を底上げしています。",
-              "duration": 6.672
+              "speaker": "listener",
+              "text": "Did our reviewer manage to survive?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "上位のProモデルには、Gemini AIなどの動作に合わせて光る小さなLEDリングが加わりました。",
-              "duration": 7.032
+              "speaker": "explainer",
+              "text": "Not really - a cabinet minister resigned with a three-page letter, repeating that the PM was warned.",
+              "duration": 5.694694
             },
             {
-              "speaker": "narrator",
-              "text": "折りたたみ型のPixel Foldも進化し、画面の枠がこれまでより薄く仕上げられています。",
-              "duration": 6.384
+              "speaker": "listener",
+              "text": "That sounds painfully familiar.",
+              "duration": 1.854694
             },
             {
-              "speaker": "narrator",
-              "text": "腕時計型のPixel Watch 5は、位置測定の精度が上がり、GPSの追従がより安定しました。",
-              "duration": 7.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "紛失防止用の小型タグ、Pixel Tagという新製品も加わっています。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "実はこの横長で開く折りたたみの形は、Googleが数年前から広めてきたスタイルです。",
-              "duration": 6.648
-            },
-            {
-              "speaker": "narrator",
-              "text": "今年になってSamsungもZ Fold 8で同じ横長デザインを採用しました。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "Appleも同様の折りたたみiPhoneを準備しているという噂があり、時期はまだ定まっていません。",
-              "duration": 6.528
-            },
-            {
-              "speaker": "narrator",
-              "text": "端末選びの基準として、こうした形の流れは今後も注目しておく価値がありそうです。",
-              "duration": 6.576
+              "speaker": "explainer",
+              "text": "It does. And apparently it hasn't left them wanting a Westminster career.",
+              "duration": 4.728163
             }
           ]
         }
@@ -475,152 +300,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Police Scotland warns ‘robust security’ needed to stop attacks on AI datacentres",
-      "summary": "Police in Scotland have issued a stark warning about the need for “robust security measures” to stop proposed AI datacentres from being attacked by protesters.",
+      "headline": "The first anti-AI protester to be jailed has a message for OpenAI, Anthropic and Meta: ‘Regain your humanity’",
+      "summary": "A n activist who blocked the entrance to one of the world’s biggest AI companies is believed to have become the first person jailed for protesting against artificial intelligence as supporters dub her the “Rosa Parks of AI risk”.",
       "keyTakeaways": [
-        "The letter encouraged the datacentre’s developer to liaise with the police to prevent “unplanned incursions for the purposes of disruption”.",
-        "In Scotland there are at least 23 “hyperscale” datacentre developments in the planning process, according to the Edinburgh-based charity Action to Protect Rural Scotland (APRS).",
-        "Combined, they would use more than one and a half times the power that Scotland uses at peak demand."
+        "She was found guilty by a jury for her role in an action last year that saw members of the group StopAI chain and lock the front doors of OpenAI’s headquarters in protest against the pursuit of artificial superintelligence.",
+        "Brooke Jenkins, the San Francisco district attorney, said the guilty verdict sent “a resounding message rejecting the notion that protesters can endanger public safety as a means to an end”.",
+        "She played down the Parks parallel, pointing out her short sentence, but said the comparison had also crossed the campaign group’s mind, given that she is thought to be the first AI protester jailed."
       ],
-      "whyItMatters": "Police Scotland said “a great deal of public opposition is likely” to a datacentre planned in Larbert, about 30 miles west of Edinburgh, in a letter submitted as a part of a planning consultation this month.",
-      "originalURL": "https://www.theguardian.com/uk-news/2026/aug/14/scottish-police-expect-public-opposition-larbert-datacentre",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "She said she was willing to go to jail not because she was a martyr but because it was an “issue of sounding the alarm, challenging the system and hopefully trying to get the message out”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/california-openai-protester-wynd-kaufman",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AIデータセンター、警備強化の必要性 スコットランド警察が警告",
-          "summary": "スコットランド警察は、計画中のAIデータセンターが抗議行動の標的になるおそれがあるとして、「強固な警備体制」の必要性を強く訴える警告を発した。",
+          "headline": "AI抗議で初の実刑、活動家が企業に問う「人間性を取り戻して」",
+          "summary": "世界最大級のAI企業の入り口を封鎖した活動家が、AIに対する抗議活動で投獄された初めての人物とみられている。支持者たちは彼女を「AIリスク版ローザ・パークス」と呼ぶ。",
           "keyTakeaways": [
-            "開発事業者に対し、妨害目的の「計画外の侵入」を防ぐため、警察との連携を求める書簡",
-            "スコットランドでは少なくとも23件の大規模データセンター開発が計画審査中（エディンバラ拠点の慈善団体APRS調べ）",
-            "これらを合わせると、スコットランドのピーク時電力使用量の1.5倍以上を消費する見込み"
+            "超知能AIの開発に反対し、団体StopAIのメンバーとともにOpenAI本社の正面扉を鎖でつなぎ封鎖した行為をめぐり、陪審により有罪と認定された。",
+            "サンフランシスコ地区検事のブルック・ジェンキンス氏は、有罪評決について「目的のために公共の安全を脅かせるという考えを退ける、明確なメッセージだ」と述べた。",
+            "本人はローザ・パークスとの比較について、自身の刑期の短さを挙げて控えめな姿勢を見せたが、AI抗議で投獄された初の例とされることから、団体内でも同様の連想があったと明かした。"
           ],
-          "whyItMatters": "スコットランド警察は今月提出した計画協議への書簡で、エディンバラ西方約30マイルのラーバートに計画されるデータセンターについて「大規模な住民の反対が予想される」と述べた。"
+          "whyItMatters": "彼女は、自分は殉教者になりたいわけではなく、投獄も辞さなかったのは「警鐘を鳴らし、システムに異議を唱え、メッセージを伝えたかったからだ」と語った。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So police in Scotland are worried about AI datacentres being attacked?",
-              "duration": 4.257959
+              "text": "So someone actually went to jail over an AI protest?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "Yes, they've flagged the need for what they call 'robust security measures' around a planned site.",
-              "duration": 5.564082
+              "text": "Yes — she's believed to be the first person jailed for protesting against artificial intelligence.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "Which site is this about?",
-              "duration": 1.48898
+              "text": "What did she actually do?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "One proposed for Larbert, about 30 miles west of Edinburgh.",
-              "duration": 3.186939
+              "text": "She was part of a group called StopAI who chained and locked the front doors of OpenAI's headquarters, protesting the push toward artificial superintelligence.",
+              "duration": 8.385306
             },
             {
               "speaker": "listener",
-              "text": "Why would people target it at all?",
-              "duration": 1.906939
+              "text": "And a jury found her guilty for that?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Police say public opposition is likely, and they want the developer to work with them to prevent disruptive incursions.",
-              "duration": 6.034286
+              "text": "Right. San Francisco's district attorney said the verdict sent a clear message rejecting the idea that protesters can endanger public safety to make a point.",
+              "duration": 8.306939
             },
             {
               "speaker": "listener",
-              "text": "Is this just one project, or part of something bigger?",
-              "duration": 3.291429
+              "text": "People are comparing her to Rosa Parks — does she agree with that?",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "It's part of a much wider picture. There are at least 23 hyperscale datacentre developments going through planning in Scotland right now.",
-              "duration": 7.183673
+              "text": "She actually downplayed it, noting her sentence was short. But she said the comparison had crossed her group's mind too, since she may be the first AI protester jailed.",
+              "duration": 9.456327
             },
             {
               "speaker": "listener",
-              "text": "That sounds like a lot of demand on the grid.",
-              "duration": 2.115918
+              "text": "Why was she willing to risk jail over this?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "It is. Combined, they'd use more than one and a half times the power Scotland uses at its peak.",
-              "duration": 5.929796
+              "text": "She said it wasn't about being a martyr — it was about sounding the alarm and challenging the system.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "So the concern isn't just security, it's the scale of it all.",
-              "duration": 3.343673
+              "text": "So really, she just wanted people to notice.",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Exactly, and that's why campaigners like Action to Protect Rural Scotland are watching closely too.",
-              "duration": 5.459592
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "スコットランド警察が、計画中のAIデータセンターをめぐって警備体制の強化を求める書簡を提出しました。",
-              "duration": 8.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、抗議活動によって施設が攻撃を受けかねないという懸念があります。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "書簡では開発事業者に対し、警察と事前に連携し無断の侵入を防ぐよう求めています。",
-              "duration": 7.224
-            },
-            {
-              "speaker": "narrator",
-              "text": "対象となっているのは、エディンバラの西およそ30マイルにあるラーバートの計画地です。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "この施設をめぐっては、住民から強い反発が起きると警察側も見込んでいます。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "スコットランド全体では、大規模データセンターの計画が少なくとも23件、審査段階にあります。",
-              "duration": 7.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "この数字は、エディンバラを拠点とする慈善団体APRSの調査によるものです。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "これらすべてが稼働すれば、消費電力はスコットランドのピーク時需要の1.5倍を超える見通しです。",
-              "duration": 7.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "治安と電力という二つの課題が、同時に重みを増しています。",
-              "duration": 5.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "施設が増えるほど、地域との対話の丁寧さが問われそうです。",
-              "duration": 4.848
+              "text": "Exactly — to get the message out, however small the act.",
+              "duration": 3.160816
             }
           ]
         }
@@ -631,138 +400,97 @@
       "importance": 5,
       "lead": false,
       "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "'Days of the farmers' union dictating policy are over' - Muir",
-      "summary": "The Agriculture Minister Andrew Muir has said \"the days of the Ulster Farmers' Union (UFU) dictating government policy are over\".",
+      "source": "The Guardian (Science)",
+      "headline": "The Fauci hearing was painful to watch. But we need answers on Covid-19’s origin| David Relman",
+      "summary": "A s a microbiologist and infectious disease clinician, it has been tough to watch the recent devolution of public discourse on Covid-19 origins.",
       "keyTakeaways": [
-        "Muir said he would continue to engage with the UFU and had spoken with its president on Friday morning.",
-        "He added that the situation he had inherited in the department was \"extremely challenging\", with issues building up \"due to wrong government policy previously\".",
-        "In response, the senior civil servants' union the FDA said it was \"entirely inappropriate\" to call for the resignation of officials who were \"duty-bound to serve ministers\" and \"could not defend themselves publicly\"."
+        "The Fauci hearing was painful to watch.",
+        "Yet, this published work does not reveal a plausible Covid precursor virus.",
+        "Anthony Fauci is correct in that the published work, on the face of it, did not cause Covid."
       ],
-      "whyItMatters": "Earlier this week, Muir said a death threat had been made against him.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cdj0pv2m812o?at_medium=RSS&at_campaign=rss",
-      "readTime": 9,
-      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Deep field",
+      "whyItMatters": "Despite many early pleas, including my own, for a dispassionate, objective assessment of what we know, don’t know and need to know about Covid-19 origins, we seem to be even further from this goal now than we have ever been – plagued by politicization, polarization and illogical thinking.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/15/covid-19-origins",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "「農民組合が政策を決める時代は終わった」ムーア農業相",
-          "summary": "アンドリュー・ムーア農業相は、アルスター農民組合(UFU)が政府の政策を左右する時代は終わったと述べた。",
+          "headline": "ファウチ公聴会が映した、コロナ起源論議の劣化",
+          "summary": "微生物学者であり感染症の臨床医でもある筆者にとって、新型コロナの起源をめぐる公の議論がここまで劣化していく様を見るのはつらいことだった。",
           "keyTakeaways": [
-            "ムーア氏はUFUとの対話は今後も続けるとし、金曜朝に同組合の会長と話したことを明かした。",
-            "就任時に引き継いだ省内の状況は「極めて厳しく」、過去の誤った政策の積み重ねが背景にあると語った。",
-            "これに対し上級公務員の労働組合FDAは、大臣に仕える義務があり公に反論できない職員の辞任を求めるのは「まったく不適切」だと反論した。"
+            "ファウチ氏の公聴会は見ていて痛々しいものだった。",
+            "公表された研究からは、コロナの前駆ウイルスと呼べるものは見当たらない。",
+            "その研究自体がコロナの原因になったわけではないというファウチ氏の主張は、表面的には正しい。"
           ],
-          "whyItMatters": "今週初め、ムーア氏は自身に殺害の脅迫があったことを明らかにしている。"
+          "whyItMatters": "起源について冷静で客観的な検証を求める声は早くから、筆者自身も含めて上がっていたが、政治化と分断、そして筋の通らない議論に阻まれ、今もその目標からむしろ遠ざかっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what exactly did the Agriculture Minister say this time?",
-              "duration": 3.343673
+              "text": "There was another Fauci hearing this week. How did it go?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Andrew Muir said the days of the Ulster Farmers' Union dictating government policy are over.",
-              "duration": 5.01551
+              "text": "By most accounts, it was painful to watch.",
+              "duration": 2.220408
             },
             {
               "speaker": "listener",
-              "text": "That sounds like a break from how things usually work there.",
-              "duration": 2.873469
+              "text": "Painful how? What was actually being debated?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "He was clear he'll keep engaging with the UFU though - he spoke with its president just Friday morning.",
-              "duration": 5.198367
+              "text": "Whether certain published research could explain how Covid-19 began.",
+              "duration": 3.709388
             },
             {
               "speaker": "listener",
-              "text": "Why's he taking this tone now?",
-              "duration": 1.697959
+              "text": "And did it? Does the research point to an origin?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "He says he inherited an extremely challenging situation in the department, with problems building up from what he called wrong government policy previously.",
-              "duration": 8.202449
+              "text": "No — the published work doesn't reveal a plausible precursor virus.",
+              "duration": 3.996735
             },
             {
               "speaker": "listener",
-              "text": "Has anyone pushed back on him?",
-              "duration": 1.619592
+              "text": "So does that clear things up, at least a little?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Yes - the FDA, the civil servants' union, said it was entirely inappropriate to call for officials' resignations when they're duty-bound to serve ministers and can't defend themselves publicly.",
-              "duration": 10.866939
+              "text": "In one narrow sense, yes — Fauci seems right that this specific work didn't cause Covid.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "This all feels tense for a farming policy dispute.",
-              "duration": 3.369796
+              "text": "But it sounds like the bigger question is still open.",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "It is - earlier this week Muir said a death threat had been made against him, so tensions are clearly running high.",
-              "duration": 6.50449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-15/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "北アイルランドのムーア農業相が、農民組合が政策を決める時代は終わったと語りました。",
-              "duration": 6.672
+              "text": "It is. Despite early calls for a calm, honest look at origins, the discussion has become more political and polarized, not less.",
+              "duration": 8.359184
             },
             {
-              "speaker": "narrator",
-              "text": "対象はアルスター農民組合、UFUとの関係についてです。",
-              "duration": 5.328
+              "speaker": "listener",
+              "text": "So we're further from answers than when this started.",
+              "duration": 3.291429
             },
             {
-              "speaker": "narrator",
-              "text": "ムーア氏は今後も対話を続けるとし、金曜の朝に会長とも話したと明かしました。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で、就任時に引き継いだ省内の状況は極めて厳しいものだったそうです。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "その背景には、これまでの政策の積み重ねがあったといいます。",
-              "duration": 4.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "これに対し、上級公務員の労働組合FDAは反論の声を上げました。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "大臣に仕える立場で公に反論できない職員に、辞任を求めるのは筋違いだという主張です。",
-              "duration": 7.536
-            },
-            {
-              "speaker": "narrator",
-              "text": "ムーア氏に対しては今週、殺害の脅迫もあったと伝えられています。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "農業政策の主導権を巡る綱引きは、まだ落ち着きを見せていません。",
-              "duration": 5.544
+              "speaker": "explainer",
+              "text": "That's the concern — less clarity, more noise.",
+              "duration": 2.821224
             }
           ]
         }

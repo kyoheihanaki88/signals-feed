@@ -19018,6 +19018,353 @@
           ]
         }
       }
+    },
+    "2026-08-16": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-16/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's happening in Indonesia this morning?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "Rescue teams are searching through collapsed buildings and landslide debris on the island of Flores.",
+              "duration": 5.01551
+            },
+            {
+              "speaker": "listener",
+              "text": "How bad was the earthquake?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "At least 51 people were killed, more than 100 injured, and thousands displaced.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "Are there still people missing?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Crews are looking for anyone buried beneath landslides across six regencies on the island.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Were rescuers able to reach everyone right away?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not at first. Some areas, like Manggarai and Nagekeo, were only accessible again on Sunday.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "Did the quake affect any well-known places?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did. It struck near Labuan Bajo, the gateway to Komodo National Park.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does Indonesia see so many of these quakes?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It sits along the Pacific 'ring of fire,' a region with frequent seismic and volcanic activity.",
+              "duration": 5.746939
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-16/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a whole fossil collection from Dorset just... left the country?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. It belonged to a private collector, Chris Moore, and it was sold overseas.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "Didn't any UK museums want it first?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "They did. It was offered to the Natural History Museum and Museum Wales, but neither could afford it.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Couldn't the government just stop the export, like they do for paintings?",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the issue. Export controls apply to 'made' objects, so fossils and natural history items slip through.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "That seems like a strange gap.",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "An MP thinks so too. He and the museum director have written to ministers about it.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they actually asking for?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "They want important fossils covered by the Waverley criteria, the same test used to call something a national treasure.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could change how future finds are protected.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the hope, especially for finds as significant as these Dorset fossils.",
+              "duration": 3.892245
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-16/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a game beating Minecraft on the app charts?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, made by a developer in Manchester. It's called No 10: Full Confidence.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "What do you actually do in it?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "You play the prime minister, making decisions through parliamentary scenarios, trying to stay in power.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds harder than it looks.",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. You're balancing four factions - cabinet, backbenchers, media, and the public.",
+              "duration": 4.91102
+            },
+            {
+              "speaker": "listener",
+              "text": "Keep everyone happy at once, basically.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, and it's precarious. One misstep and support can collapse quickly.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "listener",
+              "text": "Did our reviewer manage to survive?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really - a cabinet minister resigned with a three-page letter, repeating that the PM was warned.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds painfully familiar.",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. And apparently it hasn't left them wanting a Westminster career.",
+              "duration": 4.728163
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-16/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So someone actually went to jail over an AI protest?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — she's believed to be the first person jailed for protesting against artificial intelligence.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "What did she actually do?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "She was part of a group called StopAI who chained and locked the front doors of OpenAI's headquarters, protesting the push toward artificial superintelligence.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "And a jury found her guilty for that?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. San Francisco's district attorney said the verdict sent a clear message rejecting the idea that protesters can endanger public safety to make a point.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "People are comparing her to Rosa Parks — does she agree with that?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "She actually downplayed it, noting her sentence was short. But she said the comparison had crossed her group's mind too, since she may be the first AI protester jailed.",
+              "duration": 9.456327
+            },
+            {
+              "speaker": "listener",
+              "text": "Why was she willing to risk jail over this?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "She said it wasn't about being a martyr — it was about sounding the alarm and challenging the system.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "So really, she just wanted people to notice.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — to get the message out, however small the act.",
+              "duration": 3.160816
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-16/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "There was another Fauci hearing this week. How did it go?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "By most accounts, it was painful to watch.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "listener",
+              "text": "Painful how? What was actually being debated?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Whether certain published research could explain how Covid-19 began.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "And did it? Does the research point to an origin?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "No — the published work doesn't reveal a plausible precursor virus.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "So does that clear things up, at least a little?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "In one narrow sense, yes — Fauci seems right that this specific work didn't cause Covid.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "But it sounds like the bigger question is still open.",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Despite early calls for a calm, honest look at origins, the discussion has become more political and polarized, not less.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "So we're further from answers than when this started.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the concern — less clarity, more noise.",
+              "duration": 2.821224
+            }
+          ]
+        }
+      }
     }
   }
 }

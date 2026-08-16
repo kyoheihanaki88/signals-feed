@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-16",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Rescue teams search for survivors in Indonesia after powerful earthquake",
+      "summary": "Rescue crews dug through collapsed buildings and landslide debris in eastern Indonesia on Sunday as they searched for bodies and possible survivors a day after a powerful earthquake killed at least 51 people, injured more than 100 and displaced thousands.",
+      "keyTakeaways": [
+        "Rescuers were still searching for people feared buried beneath landslides triggered by the quake across six regencies on Flores, a predominantly Catholic island in Muslim-majority Indonesia.",
+        "The quake also struck Labuan Bajo, the gateway to Komodo national park, one of Indonesia’s best-known tourist destinations.",
+        "Teams resumed searches on Sunday in areas that had remained inaccessible since the quake, particularly in Manggarai, East Manggarai and Nagekeo regencies."
+      ],
+      "whyItMatters": "Indonesia, an archipelago of more than 17,000 islands, is prone to earthquakes and volcanic eruptions because of its location on the Pacific “ring of fire”, a horseshoe-shaped arc of seismic faults and volcanoes.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/16/rescue-teams-search-for-survivors-in-indonesia-after-powerful-earthquake",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "インドネシア大地震、なお続く救助活動",
+          "summary": "インドネシア東部で日曜、救助隊が倒壊した建物や土砂崩れの跡を掘り続けた。前日に起きた強い地震で少なくとも51人が死亡、100人以上が負傷し、数千人が避難を強いられている。遺体の収容と生存者の捜索が続く。",
+          "keyTakeaways": [
+            "ムスリムが多数を占めるインドネシアの中でカトリック信仰が根付くフローレス島。六つの県で地震による土砂崩れが起き、生き埋めになった人々の捜索が続く。",
+            "地震はコモド国立公園への玄関口として知られる観光地、ラブアンバジョも襲った。",
+            "地震以降孤立していた地域でも日曜、捜索が再開された。特にマンガライ県、東マンガライ県、ナゲケオ県が対象となっている。"
+          ],
+          "whyItMatters": "一万七千を超える島々からなるインドネシアは、環太平洋火山帯という地震と火山が集まる弧状の地帯に位置し、地震や噴火が起こりやすい土地である。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Block export of ‘national treasure’ UK fossils, says MP",
+      "summary": "An MP has called on ministers to change export controls so that significant fossils can be classed as national treasures after one of the UK’s best collections, unearthed on Dorset beaches, was sold overseas.",
+      "keyTakeaways": [
+        "The fossils, which belonged to the Dorset-based private collector Chris Moore, were initially offered to the Natural History Museum (NHM) in London and Amgueddfa Cymru (Museum Wales), but neither institution had the funds to buy them.",
+        "This means that “some important and rare fossils can be sold without an export licence,” the letter states.",
+        "Evans and Houseago want fossils of exceptional scientific or national significance to be covered by the Waverley criteria – three benchmarks used to determine whether an object is classed as a “national treasure”."
+      ],
+      "whyItMatters": "A letter from Bridget Houseago, the director of the museum, to Edward Morello, the Liberal Democrat MP for West Dorset, notes that the UK’s cultural goods export controls – intended to give the country an opportunity to retain objects of outstanding national importance – do not cover fossils and other items of natural history because they are not “made”.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/16/block-export-of-national-treasure-uk-fossils-says-mp",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
+      "summary": "A mobile game made by a developer in Manchester has recently beaten the global phenomenon Minecraft to top Apple's paid games chart.",
+      "keyTakeaways": [
+        "No 10: Full Confidence by Benjamin Brewis sees players take on the role of prime minister, making decisions through a wave of parliamentary scenarios and trying to remain in power for as long as possible.",
+        "In No 10: Full Confidence, external, players who take on the precarious position of prime minister must balance the moods of four factions - their cabinet, backbenchers, the media, and the public - to remain in the game.",
+        "My first attempt at playing prime minister in No 10: Full Confidence hasn't left me considering a Westminster career."
+      ],
+      "whyItMatters": "Unfortunately, a cabinet minister resigns and publishes a three-page-long letter that contains the phrase \"the PM was warned\" four times.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "話題の新作ゲームで首相を二年務めたら、内閣に見放された",
+          "summary": "マンチェスターの開発者が手がけたスマホゲームが、世界的人気を誇るマインクラフトを抜き、アップルの有料ゲームランキングで首位に立った。",
+          "keyTakeaways": [
+            "ベンジャミン・ブルーウィス作「No 10: Full Confidence」は、プレイヤーが首相となり、次々と訪れる議会の局面で決断を下しながら、できる限り長く政権を維持することを目指すゲームだ。",
+            "首相という不安定な立場を担うプレイヤーは、内閣、後方議員、メディア、世論という四つの勢力の機嫌を保ちながら、ゲームを続けなければならない。",
+            "実際に首相役に挑んでみたが、ウェストミンスターでのキャリアを志す気にはなれなかった。"
+          ],
+          "whyItMatters": "残念ながら、ある閣僚が辞任し、「首相は警告されていた」という一節を四回も含む三ページの辞任表明文を公表した。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The first anti-AI protester to be jailed has a message for OpenAI, Anthropic and Meta: ‘Regain your humanity’",
+      "summary": "A n activist who blocked the entrance to one of the world’s biggest AI companies is believed to have become the first person jailed for protesting against artificial intelligence as supporters dub her the “Rosa Parks of AI risk”.",
+      "keyTakeaways": [
+        "She was found guilty by a jury for her role in an action last year that saw members of the group StopAI chain and lock the front doors of OpenAI’s headquarters in protest against the pursuit of artificial superintelligence.",
+        "Brooke Jenkins, the San Francisco district attorney, said the guilty verdict sent “a resounding message rejecting the notion that protesters can endanger public safety as a means to an end”.",
+        "She played down the Parks parallel, pointing out her short sentence, but said the comparison had also crossed the campaign group’s mind, given that she is thought to be the first AI protester jailed."
+      ],
+      "whyItMatters": "She said she was willing to go to jail not because she was a martyr but because it was an “issue of sounding the alarm, challenging the system and hopefully trying to get the message out”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/california-openai-protester-wynd-kaufman",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AI抗議で初の実刑、活動家が企業に問う「人間性を取り戻して」",
+          "summary": "世界最大級のAI企業の入り口を封鎖した活動家が、AIに対する抗議活動で投獄された初めての人物とみられている。支持者たちは彼女を「AIリスク版ローザ・パークス」と呼ぶ。",
+          "keyTakeaways": [
+            "超知能AIの開発に反対し、団体StopAIのメンバーとともにOpenAI本社の正面扉を鎖でつなぎ封鎖した行為をめぐり、陪審により有罪と認定された。",
+            "サンフランシスコ地区検事のブルック・ジェンキンス氏は、有罪評決について「目的のために公共の安全を脅かせるという考えを退ける、明確なメッセージだ」と述べた。",
+            "本人はローザ・パークスとの比較について、自身の刑期の短さを挙げて控えめな姿勢を見せたが、AI抗議で投獄された初の例とされることから、団体内でも同様の連想があったと明かした。"
+          ],
+          "whyItMatters": "彼女は、自分は殉教者になりたいわけではなく、投獄も辞さなかったのは「警鐘を鳴らし、システムに異議を唱え、メッセージを伝えたかったからだ」と語った。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "The Fauci hearing was painful to watch. But we need answers on Covid-19’s origin| David Relman",
+      "summary": "A s a microbiologist and infectious disease clinician, it has been tough to watch the recent devolution of public discourse on Covid-19 origins.",
+      "keyTakeaways": [
+        "The Fauci hearing was painful to watch.",
+        "Yet, this published work does not reveal a plausible Covid precursor virus.",
+        "Anthony Fauci is correct in that the published work, on the face of it, did not cause Covid."
+      ],
+      "whyItMatters": "Despite many early pleas, including my own, for a dispassionate, objective assessment of what we know, don’t know and need to know about Covid-19 origins, we seem to be even further from this goal now than we have ever been – plagued by politicization, polarization and illogical thinking.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/15/covid-19-origins",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ファウチ公聴会が映した、コロナ起源論議の劣化",
+          "summary": "微生物学者であり感染症の臨床医でもある筆者にとって、新型コロナの起源をめぐる公の議論がここまで劣化していく様を見るのはつらいことだった。",
+          "keyTakeaways": [
+            "ファウチ氏の公聴会は見ていて痛々しいものだった。",
+            "公表された研究からは、コロナの前駆ウイルスと呼べるものは見当たらない。",
+            "その研究自体がコロナの原因になったわけではないというファウチ氏の主張は、表面的には正しい。"
+          ],
+          "whyItMatters": "起源について冷静で客観的な検証を求める声は早くから、筆者自身も含めて上がっていたが、政治化と分断、そして筋の通らない議論に阻まれ、今もその目標からむしろ遠ざかっている。"
+        }
+      }
+    }
+  ]
+}

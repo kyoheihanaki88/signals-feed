@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-16",
+  "date": "2026-08-17",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,96 +9,96 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Rescue teams search for survivors in Indonesia after powerful earthquake",
-      "summary": "Rescue crews dug through collapsed buildings and landslide debris in eastern Indonesia on Sunday as they searched for bodies and possible survivors a day after a powerful earthquake killed at least 51 people, injured more than 100 and displaced thousands.",
+      "headline": "Jared Kushner meets with Hamas ahead of talks with Netanyahu on Gaza",
+      "summary": "Donald Trump’s son-in-law and envoy, Jared Kushner, held a rare meeting with Hamas ’s political chief on Sunday in Egypt, in a new diplomatic effort to make progress in the stalled Gaza ceasefire.",
       "keyTakeaways": [
-        "Rescuers were still searching for people feared buried beneath landslides triggered by the quake across six regencies on Flores, a predominantly Catholic island in Muslim-majority Indonesia.",
-        "The quake also struck Labuan Bajo, the gateway to Komodo national park, one of Indonesia’s best-known tourist destinations.",
-        "Teams resumed searches on Sunday in areas that had remained inaccessible since the quake, particularly in Manggarai, East Manggarai and Nagekeo regencies."
+        "Kushner will meet on Monday with Benjamin Netanyahu, who is under pressure after rejecting the new 15-point, US-backed road map.",
+        "The talks aim to salvage the plan for Hamas to disarm and Israel to withdraw from the Palestinian territory shattered by war.",
+        "A meeting between Kushner, fellow envoy Steve Witkoff and Hamas leaders in Egypt last year helped clinch the ceasefire, whose progress until now had been stalled over the key issue of Hamas’s disarmament."
       ],
-      "whyItMatters": "Indonesia, an archipelago of more than 17,000 islands, is prone to earthquakes and volcanic eruptions because of its location on the Pacific “ring of fire”, a horseshoe-shaped arc of seismic faults and volcanoes.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/16/rescue-teams-search-for-survivors-in-indonesia-after-powerful-earthquake",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "At stake are the lives of some 2 million people in Gaza and reconstruction of the crowded enclave now largely controlled by Israeli forces, more than 10 months since the ceasefire ended major military operations.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/jared-kushner-hamas-gaza-meeting",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "インドネシア大地震、なお続く救助活動",
-          "summary": "インドネシア東部で日曜、救助隊が倒壊した建物や土砂崩れの跡を掘り続けた。前日に起きた強い地震で少なくとも51人が死亡、100人以上が負傷し、数千人が避難を強いられている。遺体の収容と生存者の捜索が続く。",
+          "headline": "クシュナー氏、ハマスと接触 停戦打開へ動く",
+          "summary": "トランプ大統領の娘婿で特使を務めるジャレッド・クシュナー氏が日曜日、エジプトでハマス政治部門トップと異例の会談を行った。停滞するガザ停戦の打開を目指す新たな外交努力の一環である。",
           "keyTakeaways": [
-            "ムスリムが多数を占めるインドネシアの中でカトリック信仰が根付くフローレス島。六つの県で地震による土砂崩れが起き、生き埋めになった人々の捜索が続く。",
-            "地震はコモド国立公園への玄関口として知られる観光地、ラブアンバジョも襲った。",
-            "地震以降孤立していた地域でも日曜、捜索が再開された。特にマンガライ県、東マンガライ県、ナゲケオ県が対象となっている。"
+            "クシュナー氏は月曜日、米国主導の和平案十五項目を拒んだことで批判を浴びるネタニヤフ首相とも会談する予定。",
+            "協議の狙いは、ハマスの武装解除とイスラエル軍の撤退という、戦争で荒廃したパレスチナ自治区の再建計画を立て直すことにある。",
+            "昨年、クシュナー氏と特使スティーブ・ウィトコフ氏がエジプトでハマス幹部と会談したことが停戦合意につながった。だがその後、ハマスの武装解除という核心的な課題をめぐり進展が止まっていた。"
           ],
-          "whyItMatters": "一万七千を超える島々からなるインドネシアは、環太平洋火山帯という地震と火山が集まる弧状の地帯に位置し、地震や噴火が起こりやすい土地である。"
+          "whyItMatters": "停戦により大規模な軍事作戦が終わってから十か月余り、いまもイスラエル軍がほぼ支配するガザでは、およそ二百万人の暮らしと復興の行方がかかっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "What's happening in Indonesia this morning?",
+              "text": "So Kushner actually sat down with Hamas's political chief?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in Egypt on Sunday. It's a rare, direct meeting as part of a new diplomatic push.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the push aiming to fix, exactly?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Gaza ceasefire has stalled, mainly over whether Hamas will disarm. This meeting is meant to move that forward.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "And Netanyahu's part in this?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Kushner meets him Monday. Netanyahu had rejected the new 15-point US-backed plan, so he's under pressure to reconsider.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that plan actually call for?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hamas disarming, and Israel withdrawing from the territory, which the war has left shattered.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Has this kind of meeting worked before?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Last year, Kushner and fellow envoy Steve Witkoff met Hamas leaders in Egypt, and that helped bring about the ceasefire itself.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "So what's really riding on these talks now?",
               "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "Rescue teams are searching through collapsed buildings and landslide debris on the island of Flores.",
-              "duration": 5.01551
-            },
-            {
-              "speaker": "listener",
-              "text": "How bad was the earthquake?",
-              "duration": 1.567347
-            },
-            {
-              "speaker": "explainer",
-              "text": "At least 51 people were killed, more than 100 injured, and thousands displaced.",
-              "duration": 4.440816
-            },
-            {
-              "speaker": "listener",
-              "text": "Are there still people missing?",
-              "duration": 1.671837
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Crews are looking for anyone buried beneath landslides across six regencies on the island.",
-              "duration": 5.799184
-            },
-            {
-              "speaker": "listener",
-              "text": "Were rescuers able to reach everyone right away?",
-              "duration": 2.821224
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not at first. Some areas, like Manggarai and Nagekeo, were only accessible again on Sunday.",
-              "duration": 5.276735
-            },
-            {
-              "speaker": "listener",
-              "text": "Did the quake affect any well-known places?",
-              "duration": 2.45551
-            },
-            {
-              "speaker": "explainer",
-              "text": "It did. It struck near Labuan Bajo, the gateway to Komodo National Park.",
-              "duration": 4.493061
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does Indonesia see so many of these quakes?",
-              "duration": 2.76898
-            },
-            {
-              "speaker": "explainer",
-              "text": "It sits along the Pacific 'ring of fire,' a region with frequent seismic and volcanic activity.",
-              "duration": 5.746939
+              "text": "About two million people in Gaza, and the rebuilding of an enclave still largely under Israeli military control, more than ten months after major fighting stopped.",
+              "duration": 8.907755
             }
           ]
         }
@@ -110,84 +110,84 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Block export of ‘national treasure’ UK fossils, says MP",
-      "summary": "An MP has called on ministers to change export controls so that significant fossils can be classed as national treasures after one of the UK’s best collections, unearthed on Dorset beaches, was sold overseas.",
+      "headline": "Republican senator denounces Trump’s ‘crazy, stupid’ claims about MMR vaccine safety",
+      "summary": "Republican senator Bill Cassidy – a medical doctor who voted to confirm anti-vaccine activist Robert F Kennedy as federal health secretary in early 2025 – on Sunday denounced Donald Trump ’s “crazy, stupid” claims about the safety of the combined MMR vaccine for undermining faith in immunization.",
       "keyTakeaways": [
-        "The fossils, which belonged to the Dorset-based private collector Chris Moore, were initially offered to the Natural History Museum (NHM) in London and Amgueddfa Cymru (Museum Wales), but neither institution had the funds to buy them.",
-        "This means that “some important and rare fossils can be sold without an export licence,” the letter states.",
-        "Evans and Houseago want fossils of exceptional scientific or national significance to be covered by the Waverley criteria – three benchmarks used to determine whether an object is classed as a “national treasure”."
+        "Cassidy’s critics have lambasted the outgoing senator for expressing misgivings about Trump’s actions, including a recent shouting match over the ongoing Iran war – but continuing to cast crucial votes to confirm the president’s nominees.",
+        "He cast the decisive vote on 8 August that allowed Todd Blanche – a former criminal defense lawyer for Trump – to secure Senate confirmation as US attorney general.",
+        "Text was also added to the top of the same page, so that anyone who searches for CDC guidance on autism and vaccines is now presented with two “key points” that further appease vaccine skeptics and conspiracy theorists."
       ],
-      "whyItMatters": "A letter from Bridget Houseago, the director of the museum, to Edward Morello, the Liberal Democrat MP for West Dorset, notes that the UK’s cultural goods export controls – intended to give the country an opportunity to retain objects of outstanding national importance – do not cover fossils and other items of natural history because they are not “made”.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/16/block-export-of-national-treasure-uk-fossils-says-mp",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "When Trump recently ordered changes to the recommended childhood vaccination schedule, with Kennedy by his side, the president called for two shots of the combined Measles, Mumps and Rubella vaccine to be scrapped in favor of two doses of three separate vaccines, claiming that the MMR shots are “sort of like a nuclear weapon” that could be “quite lethal”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/republican-senator-bill-cassidy-denounces-trump-vaccine-claims",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a whole fossil collection from Dorset just... left the country?",
-              "duration": 3.892245
+              "text": "So what exactly did Senator Cassidy say?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Yes. It belonged to a private collector, Chris Moore, and it was sold overseas.",
-              "duration": 4.858776
+              "text": "He called Trump's claims about the MMR vaccine 'crazy, stupid,' saying they undermine public trust in immunization.",
+              "duration": 7.105306
             },
             {
               "speaker": "listener",
-              "text": "Didn't any UK museums want it first?",
-              "duration": 2.45551
+              "text": "What claims specifically was he responding to?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "They did. It was offered to the Natural History Museum and Museum Wales, but neither could afford it.",
-              "duration": 5.459592
+              "text": "Trump wants the combined MMR shot replaced with three separate vaccines, saying the combined version could be 'quite lethal.'",
+              "duration": 7.288163
             },
             {
               "speaker": "listener",
-              "text": "Couldn't the government just stop the export, like they do for paintings?",
-              "duration": 3.578776
+              "text": "That's a strong reaction. Isn't Cassidy a doctor himself?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "That's the issue. Export controls apply to 'made' objects, so fossils and natural history items slip through.",
+              "text": "Yes, he's a physician, which is likely why he's pushing back so directly on the safety claims.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "But didn't he also help confirm RFK Jr. as health secretary?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. Critics point out he's voiced concerns about Trump's actions while still confirming his nominees.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anything changed on official guidance because of this?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the CDC page on vaccines and autism now includes new language that leans toward vaccine skeptics' views.",
               "duration": 6.817959
             },
             {
               "speaker": "listener",
-              "text": "That seems like a strange gap.",
-              "duration": 1.697959
+              "text": "That sounds like it could shape how people see routine childhood shots.",
+              "duration": 3.604898
             },
             {
               "speaker": "explainer",
-              "text": "An MP thinks so too. He and the museum director have written to ministers about it.",
-              "duration": 4.440816
-            },
-            {
-              "speaker": "listener",
-              "text": "What are they actually asking for?",
-              "duration": 1.933061
-            },
-            {
-              "speaker": "explainer",
-              "text": "They want important fossils covered by the Waverley criteria, the same test used to call something a national treasure.",
-              "duration": 6.50449
-            },
-            {
-              "speaker": "listener",
-              "text": "So this could change how future finds are protected.",
-              "duration": 2.76898
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the hope, especially for finds as significant as these Dorset fossils.",
-              "duration": 3.892245
+              "text": "It could. That's exactly what worries doctors like Cassidy about this moment.",
+              "duration": 4.597551
             }
           ]
         }
@@ -198,97 +198,97 @@
       "importance": 3,
       "lead": false,
       "category": "TECH",
-      "source": "BBC News (Technology)",
-      "headline": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
-      "summary": "A mobile game made by a developer in Manchester has recently beaten the global phenomenon Minecraft to top Apple's paid games chart.",
+      "source": "The Guardian (Technology)",
+      "headline": "Report supporting Australia’s teen social media ban appears to contain AI hallucinations, Senate hears",
+      "summary": "The authors of a report testing the technology underpinning Australia’s social media ban have conceded ChatGPT was used in editing, but denied a number of citation errors in the report were due to AI hallucinations.",
       "keyTakeaways": [
-        "No 10: Full Confidence by Benjamin Brewis sees players take on the role of prime minister, making decisions through a wave of parliamentary scenarios and trying to remain in power for as long as possible.",
-        "In No 10: Full Confidence, external, players who take on the precarious position of prime minister must balance the moods of four factions - their cabinet, backbenchers, the media, and the public - to remain in the game.",
-        "My first attempt at playing prime minister in No 10: Full Confidence hasn't left me considering a Westminster career."
+        "Most of the report is based on tests the authors did of the various age-verification technologies currently available, but one chapter covers “emerging technologies” and cites a number of journal papers about potential new ways to check ages.",
+        "An ongoing Senate inquiry seeking to further strengthen the social media ban law received a submission highlighting at least two citation errors in the report.",
+        "When asked about the allegation by Guardian Australia this month, a spokesperson for ACCS initially denied the use of AI in the report, but later conceded that AI had been used to rewrite paragraphs more succinctly."
       ],
-      "whyItMatters": "Unfortunately, a cabinet minister resigns and publishes a three-page-long letter that contains the phrase \"the PM was warned\" four times.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "The communications minister, Anika Wells, heralded the report as showing “many effective options” for checking people’s ages, and it paved the way for the ban to come into effect in December last year.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/17/australia-social-media-ban-report-ai-hallucinations-ntwnfb",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "話題の新作ゲームで首相を二年務めたら、内閣に見放された",
-          "summary": "マンチェスターの開発者が手がけたスマホゲームが、世界的人気を誇るマインクラフトを抜き、アップルの有料ゲームランキングで首位に立った。",
+          "headline": "豪の未成年SNS禁止法、根拠報告書にAIの誤情報か 上院で追及",
+          "summary": "オーストラリアのSNS禁止法を支える年齢確認技術の検証報告書をめぐり、執筆者側はChatGPTを編集作業に使ったことを認めた。ただし報告書に見つかった複数の引用の誤りについては、AIの幻覚によるものではないと否定している。",
           "keyTakeaways": [
-            "ベンジャミン・ブルーウィス作「No 10: Full Confidence」は、プレイヤーが首相となり、次々と訪れる議会の局面で決断を下しながら、できる限り長く政権を維持することを目指すゲームだ。",
-            "首相という不安定な立場を担うプレイヤーは、内閣、後方議員、メディア、世論という四つの勢力の機嫌を保ちながら、ゲームを続けなければならない。",
-            "実際に首相役に挑んでみたが、ウェストミンスターでのキャリアを志す気にはなれなかった。"
+            "報告書の大半は現行の年齢確認技術を実際に検証した内容だが、「新興技術」の章では将来的な確認手法をめぐる学術論文が複数引用されている。",
+            "SNS禁止法の強化を検討する上院の調査には、報告書中の少なくとも二件の引用の誤りを指摘する意見書が提出された。",
+            "今月ガーディアン紙の取材に対し、ACCSの広報担当者は当初AI使用を否定したが、のちに段落をより簡潔に書き直す目的でAIを使ったと認めた。"
           ],
-          "whyItMatters": "残念ながら、ある閣僚が辞任し、「首相は警告されていた」という一節を四回も含む三ページの辞任表明文を公表した。"
+          "whyItMatters": "通信相アニカ・ウェルズはこの報告書を年齢確認の「有効な選択肢の多さ」を示すものとして称賛し、昨年十二月の禁止法施行への道を開いた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a game beating Minecraft on the app charts?",
-              "duration": 3.343673
+              "text": "So this report backing the teen social media ban might have AI mistakes in it?",
+              "duration": 4.623673
             },
             {
               "speaker": "explainer",
-              "text": "Yes, made by a developer in Manchester. It's called No 10: Full Confidence.",
-              "duration": 5.041633
+              "text": "That's what's being raised in the Senate. Some citation errors turned up in a chapter about emerging age-check technologies.",
+              "duration": 6.713469
             },
             {
               "speaker": "listener",
-              "text": "What do you actually do in it?",
-              "duration": 1.515102
-            },
-            {
-              "speaker": "explainer",
-              "text": "You play the prime minister, making decisions through parliamentary scenarios, trying to stay in power.",
-              "duration": 5.146122
-            },
-            {
-              "speaker": "listener",
-              "text": "That sounds harder than it looks.",
-              "duration": 1.697959
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. You're balancing four factions - cabinet, backbenchers, media, and the public.",
-              "duration": 4.91102
-            },
-            {
-              "speaker": "listener",
-              "text": "Keep everyone happy at once, basically.",
+              "text": "What kind of errors are we talking about?",
               "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Right, and it's precarious. One misstep and support can collapse quickly.",
-              "duration": 4.257959
-            },
-            {
-              "speaker": "listener",
-              "text": "Did our reviewer manage to survive?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not really - a cabinet minister resigned with a three-page letter, repeating that the PM was warned.",
+              "text": "At least two citation issues were flagged in a submission to an ongoing inquiry looking at strengthening the ban.",
               "duration": 5.694694
             },
             {
               "speaker": "listener",
-              "text": "That sounds painfully familiar.",
-              "duration": 1.854694
+              "text": "Did the report's authors explain what happened?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "It does. And apparently it hasn't left them wanting a Westminster career.",
-              "duration": 4.728163
+              "text": "They've denied the errors came from AI hallucinations. But they did admit ChatGPT was used to help edit the writing.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, didn't they deny using AI at all at first?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, a spokesperson initially said no AI was used. Later they conceded it had rewritten some paragraphs more succinctly.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "This report mattered for the actual ban, didn't it?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the communications minister pointed to it as showing effective options for checking ages. It helped clear the way for the ban to start in December.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "So now people are questioning the evidence behind that decision.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's essentially what the Senate inquiry is now sorting through.",
+              "duration": 3.422041
             }
           ]
         }
@@ -299,97 +299,97 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "The first anti-AI protester to be jailed has a message for OpenAI, Anthropic and Meta: ‘Regain your humanity’",
-      "summary": "A n activist who blocked the entrance to one of the world’s biggest AI companies is believed to have become the first person jailed for protesting against artificial intelligence as supporters dub her the “Rosa Parks of AI risk”.",
+      "source": "BBC News (Technology)",
+      "headline": "Instagram and Facebook could change forever if Meta loses child privacy trial",
+      "summary": "Meta has been hit with successive losses in court over how its platforms have targeted and harmed young users, but a jury trial set to begin on Tuesday may pose the biggest threat yet to its operations.",
       "keyTakeaways": [
-        "She was found guilty by a jury for her role in an action last year that saw members of the group StopAI chain and lock the front doors of OpenAI’s headquarters in protest against the pursuit of artificial superintelligence.",
-        "Brooke Jenkins, the San Francisco district attorney, said the guilty verdict sent “a resounding message rejecting the notion that protesters can endanger public safety as a means to an end”.",
-        "She played down the Parks parallel, pointing out her short sentence, but said the comparison had also crossed the campaign group’s mind, given that she is thought to be the first AI protester jailed."
+        "The trial stems from a lawsuit filed in 2023 by 30 US states, including California and New York, in which they claim numerous violations of federal and state privacy laws for children.",
+        "Not only are the states seeking upwards of $1 trillion, external from Meta, they are demanding it make changes to Instagram and Facebook, including ending \"like\" counts and infinite scroll.",
+        "The states suing Meta are asking for many more changes to the way Instagram and Facebook operate for young people, too."
       ],
-      "whyItMatters": "She said she was willing to go to jail not because she was a martyr but because it was an “issue of sounding the alarm, challenging the system and hopefully trying to get the message out”.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/california-openai-protester-wynd-kaufman",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "Should Meta ultimately lose a case of this scale, it could force fundamental changes to the way young people experience social media.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AI抗議で初の実刑、活動家が企業に問う「人間性を取り戻して」",
-          "summary": "世界最大級のAI企業の入り口を封鎖した活動家が、AIに対する抗議活動で投獄された初めての人物とみられている。支持者たちは彼女を「AIリスク版ローザ・パークス」と呼ぶ。",
+          "headline": "メタの陪審裁判、インスタとフェイスブックの姿を変えるか",
+          "summary": "子どもへの影響をめぐり、メタはこれまでも法廷で相次いで敗訴してきた。火曜日に始まる陪審裁判は、その中でも同社の事業運営に最大級の打撃を与えかねない。",
           "keyTakeaways": [
-            "超知能AIの開発に反対し、団体StopAIのメンバーとともにOpenAI本社の正面扉を鎖でつなぎ封鎖した行為をめぐり、陪審により有罪と認定された。",
-            "サンフランシスコ地区検事のブルック・ジェンキンス氏は、有罪評決について「目的のために公共の安全を脅かせるという考えを退ける、明確なメッセージだ」と述べた。",
-            "本人はローザ・パークスとの比較について、自身の刑期の短さを挙げて控えめな姿勢を見せたが、AI抗議で投獄された初の例とされることから、団体内でも同様の連想があったと明かした。"
+            "訴訟は、カリフォルニア州やニューヨーク州を含む米国三十州が二〇二三年に起こしたもので、連邦および州の子どものプライバシー法に対する数々の違反を主張している。",
+            "各州が求めているのは一兆ドルを超える賠償だけではない。「いいね」の表示や無限スクロールの廃止など、インスタグラムとフェイスブックの仕様変更も要求している。",
+            "若年層向けの運営方法をめぐっては、ほかにも多くの変更が求められている。"
           ],
-          "whyItMatters": "彼女は、自分は殉教者になりたいわけではなく、投獄も辞さなかったのは「警鐘を鳴らし、システムに異議を唱え、メッセージを伝えたかったからだ」と語った。"
+          "whyItMatters": "これほどの規模の訴訟でメタが敗れれば、若い世代がソーシャルメディアと向き合う形そのものが変わりかねない。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So someone actually went to jail over an AI protest?",
-              "duration": 3.160816
+              "text": "So Meta's heading into a big trial over child privacy?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Yes — she's believed to be the first person jailed for protesting against artificial intelligence.",
-              "duration": 5.616327
+              "text": "Yes, starting Tuesday. It's seen as the biggest legal threat Meta has faced yet.",
+              "duration": 4.414694
             },
             {
               "speaker": "listener",
-              "text": "What did she actually do?",
+              "text": "Who's actually suing them?",
               "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "She was part of a group called StopAI who chained and locked the front doors of OpenAI's headquarters, protesting the push toward artificial superintelligence.",
-              "duration": 8.385306
+              "text": "Thirty US states, including California and New York. They filed the lawsuit back in 2023.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "And a jury found her guilty for that?",
+              "text": "What are they claiming happened?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say Meta violated federal and state privacy laws meant to protect children on its platforms.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like it could get expensive.",
               "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Right. San Francisco's district attorney said the verdict sent a clear message rejecting the idea that protesters can endanger public safety to make a point.",
-              "duration": 8.306939
+              "text": "It could. The states are seeking upwards of a trillion dollars from Meta.",
+              "duration": 3.94449
             },
             {
               "speaker": "listener",
-              "text": "People are comparing her to Rosa Parks — does she agree with that?",
-              "duration": 3.709388
+              "text": "Is it just about money, or do they want changes too?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "She actually downplayed it, noting her sentence was short. But she said the comparison had crossed her group's mind too, since she may be the first AI protester jailed.",
-              "duration": 9.456327
+              "text": "Both. They want Meta to end things like 'like' counts and infinite scroll, plus other changes for young users.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "Why was she willing to risk jail over this?",
-              "duration": 2.35102
+              "text": "So this could really reshape Instagram and Facebook.",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "She said it wasn't about being a martyr — it was about sounding the alarm and challenging the system.",
-              "duration": 5.250612
-            },
-            {
-              "speaker": "listener",
-              "text": "So really, she just wanted people to notice.",
-              "duration": 2.533878
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly — to get the message out, however small the act.",
-              "duration": 3.160816
+              "text": "If Meta loses on this scale, yes — it could fundamentally change how young people experience these platforms.",
+              "duration": 6.269388
             }
           ]
         }
@@ -400,97 +400,97 @@
       "importance": 5,
       "lead": false,
       "category": "SCIENCE",
-      "source": "The Guardian (Science)",
-      "headline": "The Fauci hearing was painful to watch. But we need answers on Covid-19’s origin| David Relman",
-      "summary": "A s a microbiologist and infectious disease clinician, it has been tough to watch the recent devolution of public discourse on Covid-19 origins.",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Belgian wildfire doubles in size on third day tearing through nature reserve",
+      "summary": "A wildfire described as the largest in Belgium's recent history has more than doubled in size in 24 hours, local officials said on Sunday.",
       "keyTakeaways": [
-        "The Fauci hearing was painful to watch.",
-        "Yet, this published work does not reveal a plausible Covid precursor virus.",
-        "Anthony Fauci is correct in that the published work, on the face of it, did not cause Covid."
+        "Hundreds of firefighters are spending a third day beating back flames tearing through Hautes Fagnes - the country's largest nature reserve - prompting the evacuation of two nearby villages.",
+        "Belgian Interior Minister Bernard Quintin said two of its fronts - heading towards Jalhay and Monschau - had been brought under control.",
+        "Two water-bombing aircraft arrived from Sweden on Sunday afternoon to back up four helicopters - two Belgian and two Dutch - already on site."
       ],
-      "whyItMatters": "Despite many early pleas, including my own, for a dispassionate, objective assessment of what we know, don’t know and need to know about Covid-19 origins, we seem to be even further from this goal now than we have ever been – plagued by politicization, polarization and illogical thinking.",
-      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/15/covid-19-origins",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Research",
+      "whyItMatters": "Belgian officials have warned that high heat and the park's terrain - which consists of bog-like territory, moorland and forests - have hampered efforts to extinguish the fire.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ファウチ公聴会が映した、コロナ起源論議の劣化",
-          "summary": "微生物学者であり感染症の臨床医でもある筆者にとって、新型コロナの起源をめぐる公の議論がここまで劣化していく様を見るのはつらいことだった。",
+          "headline": "ベルギー最大の自然保護区、山火事が三日目で倍に拡大",
+          "summary": "ベルギー近年で最大規模とされる山火事が、二十四時間で面積を二倍以上に広げた。地元当局が日曜日に明らかにした。",
           "keyTakeaways": [
-            "ファウチ氏の公聴会は見ていて痛々しいものだった。",
-            "公表された研究からは、コロナの前駆ウイルスと呼べるものは見当たらない。",
-            "その研究自体がコロナの原因になったわけではないというファウチ氏の主張は、表面的には正しい。"
+            "消防隊数百人が三日目も国内最大の自然保護区オート・ファーニュで消火にあたり、近隣二村が避難対象となっている。",
+            "ベルギー内務大臣ベルナール・カンタン氏によると、ジャレーとモンシャウ方面へ延びていた二つの火線は制御下に入った。",
+            "日曜午後にはスウェーデンから消火用航空機二機が到着し、既に現場にあるベルギー機二機、オランダ機二機のヘリコプターを支援する。"
           ],
-          "whyItMatters": "起源について冷静で客観的な検証を求める声は早くから、筆者自身も含めて上がっていたが、政治化と分断、そして筋の通らない議論に阻まれ、今もその目標からむしろ遠ざかっている。"
+          "whyItMatters": "高温と、湿地や荒野、森林からなる保護区特有の地形が、消火活動を難しくしているとベルギー当局は警告している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-16/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "There was another Fauci hearing this week. How did it go?",
-              "duration": 2.925714
+              "text": "So this wildfire in Belgium is still growing?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "By most accounts, it was painful to watch.",
-              "duration": 2.220408
+              "text": "Yes, it more than doubled in size in just a day. Officials are calling it the largest in the country's recent history.",
+              "duration": 6.4
             },
             {
               "speaker": "listener",
-              "text": "Painful how? What was actually being debated?",
-              "duration": 2.821224
+              "text": "Where exactly is it burning?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "Whether certain published research could explain how Covid-19 began.",
-              "duration": 3.709388
+              "text": "Through Hautes Fagnes, Belgium's largest nature reserve. It's now the third day crews have been fighting it.",
+              "duration": 6.29551
             },
             {
               "speaker": "listener",
-              "text": "And did it? Does the research point to an origin?",
-              "duration": 2.925714
+              "text": "Has anyone had to leave their homes?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "No — the published work doesn't reveal a plausible precursor virus.",
-              "duration": 3.996735
+              "text": "Two nearby villages were evacuated as a precaution while the fire spread.",
+              "duration": 3.892245
             },
             {
               "speaker": "listener",
-              "text": "So does that clear things up, at least a little?",
-              "duration": 2.403265
+              "text": "Is there any good news on containing it?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "In one narrow sense, yes — Fauci seems right that this specific work didn't cause Covid.",
+              "text": "Some progress, actually. The interior minister said two fronts, heading toward Jalhay and Monschau, are now under control.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "What's making this so hard to put out?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "High heat, plus the terrain itself, bog, moorland, and forest, which slows crews down.",
               "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "But it sounds like the bigger question is still open.",
-              "duration": 2.821224
+              "text": "Are they getting outside help?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "It is. Despite early calls for a calm, honest look at origins, the discussion has become more political and polarized, not less.",
-              "duration": 8.359184
-            },
-            {
-              "speaker": "listener",
-              "text": "So we're further from answers than when this started.",
-              "duration": 3.291429
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the concern — less clarity, more noise.",
-              "duration": 2.821224
+              "text": "Yes, two water-bombing planes arrived from Sweden, joining four helicopters already working the fire.",
+              "duration": 5.668571
             }
           ]
         }

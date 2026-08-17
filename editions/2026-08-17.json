@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-17",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Jared Kushner meets with Hamas ahead of talks with Netanyahu on Gaza",
+      "summary": "Donald Trump’s son-in-law and envoy, Jared Kushner, held a rare meeting with Hamas ’s political chief on Sunday in Egypt, in a new diplomatic effort to make progress in the stalled Gaza ceasefire.",
+      "keyTakeaways": [
+        "Kushner will meet on Monday with Benjamin Netanyahu, who is under pressure after rejecting the new 15-point, US-backed road map.",
+        "The talks aim to salvage the plan for Hamas to disarm and Israel to withdraw from the Palestinian territory shattered by war.",
+        "A meeting between Kushner, fellow envoy Steve Witkoff and Hamas leaders in Egypt last year helped clinch the ceasefire, whose progress until now had been stalled over the key issue of Hamas’s disarmament."
+      ],
+      "whyItMatters": "At stake are the lives of some 2 million people in Gaza and reconstruction of the crowded enclave now largely controlled by Israeli forces, more than 10 months since the ceasefire ended major military operations.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/jared-kushner-hamas-gaza-meeting",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "クシュナー氏、ハマスと接触 停戦打開へ動く",
+          "summary": "トランプ大統領の娘婿で特使を務めるジャレッド・クシュナー氏が日曜日、エジプトでハマス政治部門トップと異例の会談を行った。停滞するガザ停戦の打開を目指す新たな外交努力の一環である。",
+          "keyTakeaways": [
+            "クシュナー氏は月曜日、米国主導の和平案十五項目を拒んだことで批判を浴びるネタニヤフ首相とも会談する予定。",
+            "協議の狙いは、ハマスの武装解除とイスラエル軍の撤退という、戦争で荒廃したパレスチナ自治区の再建計画を立て直すことにある。",
+            "昨年、クシュナー氏と特使スティーブ・ウィトコフ氏がエジプトでハマス幹部と会談したことが停戦合意につながった。だがその後、ハマスの武装解除という核心的な課題をめぐり進展が止まっていた。"
+          ],
+          "whyItMatters": "停戦により大規模な軍事作戦が終わってから十か月余り、いまもイスラエル軍がほぼ支配するガザでは、およそ二百万人の暮らしと復興の行方がかかっている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Republican senator denounces Trump’s ‘crazy, stupid’ claims about MMR vaccine safety",
+      "summary": "Republican senator Bill Cassidy – a medical doctor who voted to confirm anti-vaccine activist Robert F Kennedy as federal health secretary in early 2025 – on Sunday denounced Donald Trump ’s “crazy, stupid” claims about the safety of the combined MMR vaccine for undermining faith in immunization.",
+      "keyTakeaways": [
+        "Cassidy’s critics have lambasted the outgoing senator for expressing misgivings about Trump’s actions, including a recent shouting match over the ongoing Iran war – but continuing to cast crucial votes to confirm the president’s nominees.",
+        "He cast the decisive vote on 8 August that allowed Todd Blanche – a former criminal defense lawyer for Trump – to secure Senate confirmation as US attorney general.",
+        "Text was also added to the top of the same page, so that anyone who searches for CDC guidance on autism and vaccines is now presented with two “key points” that further appease vaccine skeptics and conspiracy theorists."
+      ],
+      "whyItMatters": "When Trump recently ordered changes to the recommended childhood vaccination schedule, with Kennedy by his side, the president called for two shots of the combined Measles, Mumps and Rubella vaccine to be scrapped in favor of two doses of three separate vaccines, claiming that the MMR shots are “sort of like a nuclear weapon” that could be “quite lethal”.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/republican-senator-bill-cassidy-denounces-trump-vaccine-claims",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Report supporting Australia’s teen social media ban appears to contain AI hallucinations, Senate hears",
+      "summary": "The authors of a report testing the technology underpinning Australia’s social media ban have conceded ChatGPT was used in editing, but denied a number of citation errors in the report were due to AI hallucinations.",
+      "keyTakeaways": [
+        "Most of the report is based on tests the authors did of the various age-verification technologies currently available, but one chapter covers “emerging technologies” and cites a number of journal papers about potential new ways to check ages.",
+        "An ongoing Senate inquiry seeking to further strengthen the social media ban law received a submission highlighting at least two citation errors in the report.",
+        "When asked about the allegation by Guardian Australia this month, a spokesperson for ACCS initially denied the use of AI in the report, but later conceded that AI had been used to rewrite paragraphs more succinctly."
+      ],
+      "whyItMatters": "The communications minister, Anika Wells, heralded the report as showing “many effective options” for checking people’s ages, and it paved the way for the ban to come into effect in December last year.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/17/australia-social-media-ban-report-ai-hallucinations-ntwnfb",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "豪の未成年SNS禁止法、根拠報告書にAIの誤情報か 上院で追及",
+          "summary": "オーストラリアのSNS禁止法を支える年齢確認技術の検証報告書をめぐり、執筆者側はChatGPTを編集作業に使ったことを認めた。ただし報告書に見つかった複数の引用の誤りについては、AIの幻覚によるものではないと否定している。",
+          "keyTakeaways": [
+            "報告書の大半は現行の年齢確認技術を実際に検証した内容だが、「新興技術」の章では将来的な確認手法をめぐる学術論文が複数引用されている。",
+            "SNS禁止法の強化を検討する上院の調査には、報告書中の少なくとも二件の引用の誤りを指摘する意見書が提出された。",
+            "今月ガーディアン紙の取材に対し、ACCSの広報担当者は当初AI使用を否定したが、のちに段落をより簡潔に書き直す目的でAIを使ったと認めた。"
+          ],
+          "whyItMatters": "通信相アニカ・ウェルズはこの報告書を年齢確認の「有効な選択肢の多さ」を示すものとして称賛し、昨年十二月の禁止法施行への道を開いた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "Instagram and Facebook could change forever if Meta loses child privacy trial",
+      "summary": "Meta has been hit with successive losses in court over how its platforms have targeted and harmed young users, but a jury trial set to begin on Tuesday may pose the biggest threat yet to its operations.",
+      "keyTakeaways": [
+        "The trial stems from a lawsuit filed in 2023 by 30 US states, including California and New York, in which they claim numerous violations of federal and state privacy laws for children.",
+        "Not only are the states seeking upwards of $1 trillion, external from Meta, they are demanding it make changes to Instagram and Facebook, including ending \"like\" counts and infinite scroll.",
+        "The states suing Meta are asking for many more changes to the way Instagram and Facebook operate for young people, too."
+      ],
+      "whyItMatters": "Should Meta ultimately lose a case of this scale, it could force fundamental changes to the way young people experience social media.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "メタの陪審裁判、インスタとフェイスブックの姿を変えるか",
+          "summary": "子どもへの影響をめぐり、メタはこれまでも法廷で相次いで敗訴してきた。火曜日に始まる陪審裁判は、その中でも同社の事業運営に最大級の打撃を与えかねない。",
+          "keyTakeaways": [
+            "訴訟は、カリフォルニア州やニューヨーク州を含む米国三十州が二〇二三年に起こしたもので、連邦および州の子どものプライバシー法に対する数々の違反を主張している。",
+            "各州が求めているのは一兆ドルを超える賠償だけではない。「いいね」の表示や無限スクロールの廃止など、インスタグラムとフェイスブックの仕様変更も要求している。",
+            "若年層向けの運営方法をめぐっては、ほかにも多くの変更が求められている。"
+          ],
+          "whyItMatters": "これほどの規模の訴訟でメタが敗れれば、若い世代がソーシャルメディアと向き合う形そのものが変わりかねない。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Belgian wildfire doubles in size on third day tearing through nature reserve",
+      "summary": "A wildfire described as the largest in Belgium's recent history has more than doubled in size in 24 hours, local officials said on Sunday.",
+      "keyTakeaways": [
+        "Hundreds of firefighters are spending a third day beating back flames tearing through Hautes Fagnes - the country's largest nature reserve - prompting the evacuation of two nearby villages.",
+        "Belgian Interior Minister Bernard Quintin said two of its fronts - heading towards Jalhay and Monschau - had been brought under control.",
+        "Two water-bombing aircraft arrived from Sweden on Sunday afternoon to back up four helicopters - two Belgian and two Dutch - already on site."
+      ],
+      "whyItMatters": "Belgian officials have warned that high heat and the park's terrain - which consists of bog-like territory, moorland and forests - have hampered efforts to extinguish the fire.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ベルギー最大の自然保護区、山火事が三日目で倍に拡大",
+          "summary": "ベルギー近年で最大規模とされる山火事が、二十四時間で面積を二倍以上に広げた。地元当局が日曜日に明らかにした。",
+          "keyTakeaways": [
+            "消防隊数百人が三日目も国内最大の自然保護区オート・ファーニュで消火にあたり、近隣二村が避難対象となっている。",
+            "ベルギー内務大臣ベルナール・カンタン氏によると、ジャレーとモンシャウ方面へ延びていた二つの火線は制御下に入った。",
+            "日曜午後にはスウェーデンから消火用航空機二機が到着し、既に現場にあるベルギー機二機、オランダ機二機のヘリコプターを支援する。"
+          ],
+          "whyItMatters": "高温と、湿地や荒野、森林からなる保護区特有の地形が、消火活動を難しくしているとベルギー当局は警告している。"
+        }
+      }
+    }
+  ]
+}

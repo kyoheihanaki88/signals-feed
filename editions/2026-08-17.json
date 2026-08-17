@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "停戦により大規模な軍事作戦が終わってから十か月余り、いまもイスラエル軍がほぼ支配するガザでは、およそ二百万人の暮らしと復興の行方がかかっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Kushner actually sat down with Hamas's political chief?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, in Egypt on Sunday. It's a rare, direct meeting as part of a new diplomatic push.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the push aiming to fix, exactly?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Gaza ceasefire has stalled, mainly over whether Hamas will disarm. This meeting is meant to move that forward.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "And Netanyahu's part in this?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Kushner meets him Monday. Netanyahu had rejected the new 15-point US-backed plan, so he's under pressure to reconsider.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "What does that plan actually call for?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Hamas disarming, and Israel withdrawing from the territory, which the war has left shattered.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "Has this kind of meeting worked before?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Last year, Kushner and fellow envoy Steve Witkoff met Hamas leaders in Egypt, and that helped bring about the ceasefire itself.",
+              "duration": 7.601633
+            },
+            {
+              "speaker": "listener",
+              "text": "So what's really riding on these talks now?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "About two million people in Gaza, and the rebuilding of an enclave still largely under Israeli military control, more than ten months after major fighting stopped.",
+              "duration": 8.907755
+            }
+          ]
+        }
       }
     },
     {
@@ -53,7 +122,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
       "placeTime": "City morning",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly did Senator Cassidy say?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "He called Trump's claims about the MMR vaccine 'crazy, stupid,' saying they undermine public trust in immunization.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What claims specifically was he responding to?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trump wants the combined MMR shot replaced with three separate vaccines, saying the combined version could be 'quite lethal.'",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a strong reaction. Isn't Cassidy a doctor himself?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he's a physician, which is likely why he's pushing back so directly on the safety claims.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "But didn't he also help confirm RFK Jr. as health secretary?",
+              "duration": 3.657143
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. Critics point out he's voiced concerns about Trump's actions while still confirming his nominees.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anything changed on official guidance because of this?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the CDC page on vaccines and autism now includes new language that leans toward vaccine skeptics' views.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like it could shape how people see routine childhood shots.",
+              "duration": 3.604898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It could. That's exactly what worries doctors like Cassidy about this moment.",
+              "duration": 4.597551
+            }
+          ]
+        }
+      }
     },
     {
       "number": 3,
@@ -84,6 +222,75 @@
             "今月ガーディアン紙の取材に対し、ACCSの広報担当者は当初AI使用を否定したが、のちに段落をより簡潔に書き直す目的でAIを使ったと認めた。"
           ],
           "whyItMatters": "通信相アニカ・ウェルズはこの報告書を年齢確認の「有効な選択肢の多さ」を示すものとして称賛し、昨年十二月の禁止法施行への道を開いた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this report backing the teen social media ban might have AI mistakes in it?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what's being raised in the Senate. Some citation errors turned up in a chapter about emerging age-check technologies.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of errors are we talking about?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "At least two citation issues were flagged in a submission to an ongoing inquiry looking at strengthening the ban.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "Did the report's authors explain what happened?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've denied the errors came from AI hallucinations. But they did admit ChatGPT was used to help edit the writing.",
+              "duration": 6.687347
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, didn't they deny using AI at all at first?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, a spokesperson initially said no AI was used. Later they conceded it had rewritten some paragraphs more succinctly.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "This report mattered for the actual ban, didn't it?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the communications minister pointed to it as showing effective options for checking ages. It helped clear the way for the ban to start in December.",
+              "duration": 8.124082
+            },
+            {
+              "speaker": "listener",
+              "text": "So now people are questioning the evidence behind that decision.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's essentially what the Senate inquiry is now sorting through.",
+              "duration": 3.422041
+            }
+          ]
         }
       }
     },
@@ -117,6 +324,75 @@
           ],
           "whyItMatters": "これほどの規模の訴訟でメタが敗れれば、若い世代がソーシャルメディアと向き合う形そのものが変わりかねない。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Meta's heading into a big trial over child privacy?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, starting Tuesday. It's seen as the biggest legal threat Meta has faced yet.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "Who's actually suing them?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Thirty US states, including California and New York. They filed the lawsuit back in 2023.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they claiming happened?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say Meta violated federal and state privacy laws meant to protect children on its platforms.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like it could get expensive.",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It could. The states are seeking upwards of a trillion dollars from Meta.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it just about money, or do they want changes too?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Both. They want Meta to end things like 'like' counts and infinite scroll, plus other changes for young users.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "So this could really reshape Instagram and Facebook.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "If Meta loses on this scale, yes — it could fundamentally change how young people experience these platforms.",
+              "duration": 6.269388
+            }
+          ]
+        }
       }
     },
     {
@@ -148,6 +424,75 @@
             "日曜午後にはスウェーデンから消火用航空機二機が到着し、既に現場にあるベルギー機二機、オランダ機二機のヘリコプターを支援する。"
           ],
           "whyItMatters": "高温と、湿地や荒野、森林からなる保護区特有の地形が、消火活動を難しくしているとベルギー当局は警告している。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this wildfire in Belgium is still growing?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it more than doubled in size in just a day. Officials are calling it the largest in the country's recent history.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "Where exactly is it burning?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "Through Hautes Fagnes, Belgium's largest nature reserve. It's now the third day crews have been fighting it.",
+              "duration": 6.29551
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anyone had to leave their homes?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Two nearby villages were evacuated as a precaution while the fire spread.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there any good news on containing it?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Some progress, actually. The interior minister said two fronts, heading toward Jalhay and Monschau, are now under control.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "What's making this so hard to put out?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "High heat, plus the terrain itself, bog, moorland, and forest, which slows crews down.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "Are they getting outside help?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, two water-bombing planes arrived from Sweden, joining four helicopters already working the fire.",
+              "duration": 5.668571
+            }
+          ]
         }
       }
     }

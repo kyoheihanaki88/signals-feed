@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "演習には韓国軍約1万8000人に加え、米軍、そして1953年の朝鮮戦争休戦協定を監督する多国籍機関である国連軍司令部（UNC）加盟18か国のうち11か国の人員が参加する予定だった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So South Korea's president wants more control over its own military?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — control in the event of war, which currently rests with the US.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is this coming up now?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trump ordered a cut to joint military drills, and that seems to have pushed the issue forward.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "Remind me why the US has that kind of role there in the first place.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "US troops have been stationed in South Korea since the Korean War, and it now hosts Camp Humphreys, the largest American base outside the US.",
+              "duration": 7.653878
+            },
+            {
+              "speaker": "listener",
+              "text": "Were these drills a big deal?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Fairly — about 18,000 South Korean troops were expected to take part, alongside US forces and personnel from 11 UN Command member states.",
+              "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "What were they actually meant to accomplish?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "They were meant to help certify South Korea's readiness to finally take over wartime control, something Lee has pushed to speed up.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is he asking for anything else alongside that?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's also urging faster progress on nuclear-powered submarines and on training officers for more integrated future operations.",
+              "duration": 7.131429
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,65 @@
             "隣国ウガンダでは感染者二十人、死者二人が確認されたが、七月二十八日にエボラ終息が宣言された。"
           ],
           "whyItMatters": "コンゴ民主共和国保健省は五月十五日にイトゥリ州での流行を宣言したが、遺伝子解析からは実際には二月に始まっていたことが分かっている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Ebola is spreading again in DRC — how serious is this one?",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very serious. Health authorities there are struggling to contain it, and it's now the deadliest outbreak the country has seen.",
+              "duration": 6.948571
+            },
+            {
+              "speaker": "listener",
+              "text": "Has it stayed in one area, or is it moving?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's spread to five other provinces. If it continues at this pace, it could overtake the 2014-16 west Africa outbreak as the largest in history.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a sobering thought. When did this actually begin?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "DRC's health ministry declared the outbreak in Ituri province on 15 May, but sequencing shows it actually started back in February.",
+              "duration": 7.523265
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there any better news from the region?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — neighbouring Uganda had 20 cases and two deaths, but was declared Ebola-free on 28 July.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "So containment is possible, it's just not happening in DRC yet.",
+              "duration": 3.578776
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Uganda shows it can be done, but the situation in DRC remains difficult and is being watched closely.",
+              "duration": 6.870204
+            }
+          ]
         }
       }
     },
@@ -97,6 +225,75 @@
           ],
           "whyItMatters": "開票作業が一時中断されたことについて、監視団は選挙の信頼性と有権者の信認を損ないかねないと懸念を示した。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Zambia's president won another term?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Hakainde Hichilema has been re-elected for a second five-year term.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "By how much?",
+              "duration": 1.097143
+            },
+            {
+              "speaker": "explainer",
+              "text": "The electoral commission says he took 60% of the vote.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it a close race?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really. His closest challenger, Brian Mundubile, got 38%, and the win was widely expected.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "What did Hichilema say about it?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "He called Zambia a democratic nation that settles its differences at the ballot box, not elsewhere.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "Did the vote go smoothly?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Mostly, though counting was briefly suspended, and observers say that raised some concern about confidence in the process.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "But overall it stayed peaceful?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did — Zambia has a strong record of peaceful transfers of power, and that held again.",
+              "duration": 5.250612
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +326,75 @@
           ],
           "whyItMatters": "飛行機雲ができやすい大気の領域をあらかじめ予測できれば、飛行機はそこを避けて飛べるようになる、というのがこの試験の狙いである。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So those white lines planes leave behind — they actually affect the climate?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. They're called contrails, and these icy clouds trap heat, contributing to warming.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "And now there's a trial to try to reduce them?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, a £5m UK trial. It'll use AI to predict where these warming contrails are likely to form.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "So planes could just... fly around those spots?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the idea. If you can predict the conditions in advance, aircraft can avoid those areas altogether.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Where's this being tested?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Shanwick Oceanic airspace, over the eastern North Atlantic. That corridor alone accounts for about 5% of global contrail warming.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a bigger share than I'd have guessed.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. There's even a nice detail — Google's technical lead on the project said his five-year-old calls them 'sky graffiti'.",
+              "duration": 7.523265
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a good way to put it, honestly.",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is — simple, but it captures exactly what scientists are trying to clean up.",
+              "duration": 4.362449
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +426,65 @@
             "最初の選択がただのヤギのドアである回数の期待値は、千回。"
           ],
           "whyItMatters": "その場合、司会者がただのヤギのドアを開ける回数の期待値は五百回となる。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this is a twist on the Monty Hall problem, with goats?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. You pick a door, then Monty opens one of the other two, and it always has a goat.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "But not just any goat, I gather?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. He shows you the ordinary goat, not the secretly valuable one, and he knows which is which.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "How often would my first pick actually land on the ordinary goat?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Out of a thousand games, the expected count is a thousand times your choice being the ordinary goat's door.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "And how often does Monty end up opening that ordinary-goat door himself?",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "explainer",
+              "text": "On average, about five hundred times out of those games.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "listener",
+              "text": "So the numbers really do shift the odds once he reveals that.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "They do — that reveal is the whole trick behind puzzledom's new goat problem.",
+              "duration": 4.623673
+            }
+          ]
         }
       }
     }

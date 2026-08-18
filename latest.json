@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,96 +9,96 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Jared Kushner meets with Hamas ahead of talks with Netanyahu on Gaza",
-      "summary": "Donald Trump’s son-in-law and envoy, Jared Kushner, held a rare meeting with Hamas ’s political chief on Sunday in Egypt, in a new diplomatic effort to make progress in the stalled Gaza ceasefire.",
+      "headline": "South Korea president calls for military independence in wake of Trump call to cut joint drills",
+      "summary": "South Korea’s president ⁠has renewed his push to regain independent control of the military from the US in the event of war and urged faster progress in acquiring nuclear-powered submarines after Donald Trump’s order to cut joint drills.",
       "keyTakeaways": [
-        "Kushner will meet on Monday with Benjamin Netanyahu, who is under pressure after rejecting the new 15-point, US-backed road map.",
-        "The talks aim to salvage the plan for Hamas to disarm and Israel to withdraw from the Palestinian territory shattered by war.",
-        "A meeting between Kushner, fellow envoy Steve Witkoff and Hamas leaders in Egypt last year helped clinch the ceasefire, whose progress until now had been stalled over the key issue of Hamas’s disarmament."
+        "US troops have been stationed in South Korea ever since, and the country now hosts Camp Humphreys, the largest American military base outside the US.",
+        "This week’s now-curtailed drills were meant to help certify South Korea’s readiness to finally take it over, a process Lee has pushed to accelerate since taking office.",
+        "Lee also called for faster progress on South Korea’s nuclear-powered submarine programme and on developing officers capable of integrated operations for future conflicts."
       ],
-      "whyItMatters": "At stake are the lives of some 2 million people in Gaza and reconstruction of the crowded enclave now largely controlled by Israeli forces, more than 10 months since the ceasefire ended major military operations.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/jared-kushner-hamas-gaza-meeting",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "They were expected to involve about 18,000 South Korean troops, alongside US forces and personnel from 11 of the 18 member states of the United Nations Command (UNC), the multinational body that oversees the 1953 armistice that halted hostilities of the Korean war.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/18/south-korea-president-trump-military-drills-control-opcon-kim-jong-un",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "クシュナー氏、ハマスと接触 停戦打開へ動く",
-          "summary": "トランプ大統領の娘婿で特使を務めるジャレッド・クシュナー氏が日曜日、エジプトでハマス政治部門トップと異例の会談を行った。停滞するガザ停戦の打開を目指す新たな外交努力の一環である。",
+          "headline": "合同演習縮小を受け、韓国大統領が軍の自主権拡大を求める",
+          "summary": "韓国大統領は、戦時における軍の指揮権を米国から取り戻す動きを改めて強めている。トランプ氏が合同軍事演習の縮小を指示したことを受け、原子力潜水艦導入の加速も求めた。",
           "keyTakeaways": [
-            "クシュナー氏は月曜日、米国主導の和平案十五項目を拒んだことで批判を浴びるネタニヤフ首相とも会談する予定。",
-            "協議の狙いは、ハマスの武装解除とイスラエル軍の撤退という、戦争で荒廃したパレスチナ自治区の再建計画を立て直すことにある。",
-            "昨年、クシュナー氏と特使スティーブ・ウィトコフ氏がエジプトでハマス幹部と会談したことが停戦合意につながった。だがその後、ハマスの武装解除という核心的な課題をめぐり進展が止まっていた。"
+            "米軍は休戦以来韓国に駐留を続け、現在は米国外最大の米軍基地であるキャンプ・ヒュンフリーズを抱える。",
+            "今回縮小された演習は、韓国が指揮権を最終的に引き継ぐための準備状況を確認する狙いだった。李大統領はこの移行を就任以来加速させてきた。",
+            "李大統領は原子力潜水艦計画の推進と、将来の戦闘に対応できる統合作戦能力を持つ将校の育成も急ぐよう求めた。"
           ],
-          "whyItMatters": "停戦により大規模な軍事作戦が終わってから十か月余り、いまもイスラエル軍がほぼ支配するガザでは、およそ二百万人の暮らしと復興の行方がかかっている。"
+          "whyItMatters": "演習には韓国軍約1万8000人に加え、米軍、そして1953年の朝鮮戦争休戦協定を監督する多国籍機関である国連軍司令部（UNC）加盟18か国のうち11か国の人員が参加する予定だった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Kushner actually sat down with Hamas's political chief?",
-              "duration": 3.657143
+              "text": "So South Korea's president wants more control over its own military?",
+              "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "Yes, in Egypt on Sunday. It's a rare, direct meeting as part of a new diplomatic push.",
-              "duration": 5.198367
+              "text": "Yes — control in the event of war, which currently rests with the US.",
+              "duration": 4.022857
             },
             {
               "speaker": "listener",
-              "text": "What's the push aiming to fix, exactly?",
-              "duration": 2.220408
+              "text": "Why is this coming up now?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "The Gaza ceasefire has stalled, mainly over whether Hamas will disarm. This meeting is meant to move that forward.",
-              "duration": 6.713469
+              "text": "Trump ordered a cut to joint military drills, and that seems to have pushed the issue forward.",
+              "duration": 4.832653
             },
             {
               "speaker": "listener",
-              "text": "And Netanyahu's part in this?",
-              "duration": 1.854694
+              "text": "Remind me why the US has that kind of role there in the first place.",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Kushner meets him Monday. Netanyahu had rejected the new 15-point US-backed plan, so he's under pressure to reconsider.",
-              "duration": 6.922449
+              "text": "US troops have been stationed in South Korea since the Korean War, and it now hosts Camp Humphreys, the largest American base outside the US.",
+              "duration": 7.653878
             },
             {
               "speaker": "listener",
-              "text": "What does that plan actually call for?",
-              "duration": 2.220408
+              "text": "Were these drills a big deal?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Hamas disarming, and Israel withdrawing from the territory, which the war has left shattered.",
-              "duration": 5.146122
-            },
-            {
-              "speaker": "listener",
-              "text": "Has this kind of meeting worked before?",
-              "duration": 2.037551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Last year, Kushner and fellow envoy Steve Witkoff met Hamas leaders in Egypt, and that helped bring about the ceasefire itself.",
-              "duration": 7.601633
-            },
-            {
-              "speaker": "listener",
-              "text": "So what's really riding on these talks now?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "About two million people in Gaza, and the rebuilding of an enclave still largely under Israeli military control, more than ten months after major fighting stopped.",
+              "text": "Fairly — about 18,000 South Korean troops were expected to take part, alongside US forces and personnel from 11 UN Command member states.",
               "duration": 8.907755
+            },
+            {
+              "speaker": "listener",
+              "text": "What were they actually meant to accomplish?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "They were meant to help certify South Korea's readiness to finally take over wartime control, something Lee has pushed to speed up.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is he asking for anything else alongside that?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's also urging faster progress on nuclear-powered submarines and on training officers for more integrated future operations.",
+              "duration": 7.131429
             }
           ]
         }
@@ -108,86 +108,88 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Republican senator denounces Trump’s ‘crazy, stupid’ claims about MMR vaccine safety",
-      "summary": "Republican senator Bill Cassidy – a medical doctor who voted to confirm anti-vaccine activist Robert F Kennedy as federal health secretary in early 2025 – on Sunday denounced Donald Trump ’s “crazy, stupid” claims about the safety of the combined MMR vaccine for undermining faith in immunization.",
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "What is Ebola and why is the outbreak in DRC causing so much concern?",
+      "summary": "What is Ebola and why is the outbreak in DRC causing so much concern?",
       "keyTakeaways": [
-        "Cassidy’s critics have lambasted the outgoing senator for expressing misgivings about Trump’s actions, including a recent shouting match over the ongoing Iran war – but continuing to cast crucial votes to confirm the president’s nominees.",
-        "He cast the decisive vote on 8 August that allowed Todd Blanche – a former criminal defense lawyer for Trump – to secure Senate confirmation as US attorney general.",
-        "Text was also added to the top of the same page, so that anyone who searches for CDC guidance on autism and vaccines is now presented with two “key points” that further appease vaccine skeptics and conspiracy theorists."
+        "Health authorities in the Democratic Republic of the Congo are losing their battle to contain the country’s deadliest Ebola outbreak.",
+        "It has since spread to five other provinces and is on track to overtake the 2014-16 west Africa outbreak as the largest in history.",
+        "Neighbouring Uganda, which recorded 20 cases and two deaths, was declared Ebola-free on 28 July."
       ],
-      "whyItMatters": "When Trump recently ordered changes to the recommended childhood vaccination schedule, with Kennedy by his side, the president called for two shots of the combined Measles, Mumps and Rubella vaccine to be scrapped in favor of two doses of three separate vaccines, claiming that the MMR shots are “sort of like a nuclear weapon” that could be “quite lethal”.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/16/republican-senator-bill-cassidy-denounces-trump-vaccine-claims",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "DRC’s health ministry declared an outbreak in Ituri province on 15 May, though sequencing shows it had begun in February.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/17/what-is-ebola-why-who-says-drc-uganda-outbreak-global-health-emergency",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "エボラとは何か、コンゴの流行はなぜ深刻なのか",
+          "summary": "エボラとは何か、そしてコンゴ民主共和国での流行がこれほど懸念される理由とは何か。",
+          "keyTakeaways": [
+            "コンゴ民主共和国の保健当局は、同国史上最悪のエボラ流行の封じ込めに苦戦している。",
+            "感染はほかの五つの州にも広がり、二〇一四年から一六年の西アフリカでの流行を上回り、史上最大規模となる勢いだ。",
+            "隣国ウガンダでは感染者二十人、死者二人が確認されたが、七月二十八日にエボラ終息が宣言された。"
+          ],
+          "whyItMatters": "コンゴ民主共和国保健省は五月十五日にイトゥリ州での流行を宣言したが、遺伝子解析からは実際には二月に始まっていたことが分かっている。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what exactly did Senator Cassidy say?",
-              "duration": 2.403265
+              "text": "So Ebola is spreading again in DRC — how serious is this one?",
+              "duration": 4.022857
             },
             {
               "speaker": "explainer",
-              "text": "He called Trump's claims about the MMR vaccine 'crazy, stupid,' saying they undermine public trust in immunization.",
-              "duration": 7.105306
+              "text": "Very serious. Health authorities there are struggling to contain it, and it's now the deadliest outbreak the country has seen.",
+              "duration": 6.948571
             },
             {
               "speaker": "listener",
-              "text": "What claims specifically was he responding to?",
-              "duration": 2.690612
+              "text": "Has it stayed in one area, or is it moving?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Trump wants the combined MMR shot replaced with three separate vaccines, saying the combined version could be 'quite lethal.'",
-              "duration": 7.288163
+              "text": "It's spread to five other provinces. If it continues at this pace, it could overtake the 2014-16 west Africa outbreak as the largest in history.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "That's a strong reaction. Isn't Cassidy a doctor himself?",
-              "duration": 3.422041
+              "text": "That's a sobering thought. When did this actually begin?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "Yes, he's a physician, which is likely why he's pushing back so directly on the safety claims.",
-              "duration": 4.780408
+              "text": "DRC's health ministry declared the outbreak in Ituri province on 15 May, but sequencing shows it actually started back in February.",
+              "duration": 7.523265
             },
             {
               "speaker": "listener",
-              "text": "But didn't he also help confirm RFK Jr. as health secretary?",
-              "duration": 3.657143
+              "text": "Is there any better news from the region?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "He did. Critics point out he's voiced concerns about Trump's actions while still confirming his nominees.",
-              "duration": 5.799184
+              "text": "Yes — neighbouring Uganda had 20 cases and two deaths, but was declared Ebola-free on 28 July.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "Has anything changed on official guidance because of this?",
-              "duration": 2.873469
+              "text": "So containment is possible, it's just not happening in DRC yet.",
+              "duration": 3.578776
             },
             {
               "speaker": "explainer",
-              "text": "Yes, the CDC page on vaccines and autism now includes new language that leans toward vaccine skeptics' views.",
-              "duration": 6.817959
-            },
-            {
-              "speaker": "listener",
-              "text": "That sounds like it could shape how people see routine childhood shots.",
-              "duration": 3.604898
-            },
-            {
-              "speaker": "explainer",
-              "text": "It could. That's exactly what worries doctors like Cassidy about this moment.",
-              "duration": 4.597551
+              "text": "Exactly. Uganda shows it can be done, but the situation in DRC remains difficult and is being watched closely.",
+              "duration": 6.870204
             }
           ]
         }
@@ -197,98 +199,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "Report supporting Australia’s teen social media ban appears to contain AI hallucinations, Senate hears",
-      "summary": "The authors of a report testing the technology underpinning Australia’s social media ban have conceded ChatGPT was used in editing, but denied a number of citation errors in the report were due to AI hallucinations.",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Zambia's president wins second term with 60% of the vote",
+      "summary": "Zambia's President Hakainde Hichilema has been re-elected for a second five-year term after securing a 60% share of the vote, the electoral commission has announced.",
       "keyTakeaways": [
-        "Most of the report is based on tests the authors did of the various age-verification technologies currently available, but one chapter covers “emerging technologies” and cites a number of journal papers about potential new ways to check ages.",
-        "An ongoing Senate inquiry seeking to further strengthen the social media ban law received a submission highlighting at least two citation errors in the report.",
-        "When asked about the allegation by Guardian Australia this month, a spokesperson for ACCS initially denied the use of AI in the report, but later conceded that AI had been used to rewrite paragraphs more succinctly."
+        "He said the election showed that Zambia was a place of peace, law and order and a \"democratic nation that settles our differences at the ballot box, and nowhere else\".",
+        "Zambia has a record of peaceful transfers of power.",
+        "Hichilema's win was widely expected, with his closest challenger Brian Mundubile getting 38% of the votes cast."
       ],
-      "whyItMatters": "The communications minister, Anika Wells, heralded the report as showing “many effective options” for checking people’s ages, and it paved the way for the ban to come into effect in December last year.",
-      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/17/australia-social-media-ban-report-ai-hallucinations-ntwnfb",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "whyItMatters": "Observers also expressed concern over the brief suspension of the vote counting, saying it risked the credibility of the process as well as voter confidence.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c5y6j4jl03xo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "豪の未成年SNS禁止法、根拠報告書にAIの誤情報か 上院で追及",
-          "summary": "オーストラリアのSNS禁止法を支える年齢確認技術の検証報告書をめぐり、執筆者側はChatGPTを編集作業に使ったことを認めた。ただし報告書に見つかった複数の引用の誤りについては、AIの幻覚によるものではないと否定している。",
+          "headline": "ザンビア大統領、得票6割で再選",
+          "summary": "ザンビアのヒチレマ大統領が2期目の当選を果たした。選挙管理委員会の発表によると、得票率はおよそ6割に達したという。",
           "keyTakeaways": [
-            "報告書の大半は現行の年齢確認技術を実際に検証した内容だが、「新興技術」の章では将来的な確認手法をめぐる学術論文が複数引用されている。",
-            "SNS禁止法の強化を検討する上院の調査には、報告書中の少なくとも二件の引用の誤りを指摘する意見書が提出された。",
-            "今月ガーディアン紙の取材に対し、ACCSの広報担当者は当初AI使用を否定したが、のちに段落をより簡潔に書き直す目的でAIを使ったと認めた。"
+            "大統領は今回の選挙について、ザンビアが平和と法秩序の国であり、対立を投票箱でのみ解決する民主国家であることを示したと語った。",
+            "ザンビアには平和的な政権移行の実績がある。",
+            "最大の対抗馬ムンドゥビレ氏の得票率は38パーセントにとどまり、ヒチレマ氏の勝利は事前に広く予想されていた。"
           ],
-          "whyItMatters": "通信相アニカ・ウェルズはこの報告書を年齢確認の「有効な選択肢の多さ」を示すものとして称賛し、昨年十二月の禁止法施行への道を開いた。"
+          "whyItMatters": "開票作業が一時中断されたことについて、監視団は選挙の信頼性と有権者の信認を損ないかねないと懸念を示した。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this report backing the teen social media ban might have AI mistakes in it?",
-              "duration": 4.623673
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's what's being raised in the Senate. Some citation errors turned up in a chapter about emerging age-check technologies.",
-              "duration": 6.713469
-            },
-            {
-              "speaker": "listener",
-              "text": "What kind of errors are we talking about?",
+              "text": "So Zambia's president won another term?",
               "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "At least two citation issues were flagged in a submission to an ongoing inquiry looking at strengthening the ban.",
-              "duration": 5.694694
+              "text": "Yes, Hakainde Hichilema has been re-elected for a second five-year term.",
+              "duration": 4.179592
             },
             {
               "speaker": "listener",
-              "text": "Did the report's authors explain what happened?",
-              "duration": 2.533878
+              "text": "By how much?",
+              "duration": 1.097143
             },
             {
               "speaker": "explainer",
-              "text": "They've denied the errors came from AI hallucinations. But they did admit ChatGPT was used to help edit the writing.",
-              "duration": 6.687347
+              "text": "The electoral commission says he took 60% of the vote.",
+              "duration": 3.160816
             },
             {
               "speaker": "listener",
-              "text": "Wait, didn't they deny using AI at all at first?",
-              "duration": 2.873469
+              "text": "Was it a close race?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "Right, a spokesperson initially said no AI was used. Later they conceded it had rewritten some paragraphs more succinctly.",
-              "duration": 6.948571
+              "text": "Not really. His closest challenger, Brian Mundubile, got 38%, and the win was widely expected.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "This report mattered for the actual ban, didn't it?",
-              "duration": 2.873469
+              "text": "What did Hichilema say about it?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "Yes, the communications minister pointed to it as showing effective options for checking ages. It helped clear the way for the ban to start in December.",
-              "duration": 8.124082
+              "text": "He called Zambia a democratic nation that settles its differences at the ballot box, not elsewhere.",
+              "duration": 5.093878
             },
             {
               "speaker": "listener",
-              "text": "So now people are questioning the evidence behind that decision.",
-              "duration": 3.239184
+              "text": "Did the vote go smoothly?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "That's essentially what the Senate inquiry is now sorting through.",
-              "duration": 3.422041
+              "text": "Mostly, though counting was briefly suspended, and observers say that raised some concern about confidence in the process.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "But overall it stayed peaceful?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did — Zambia has a strong record of peaceful transfers of power, and that held again.",
+              "duration": 5.250612
             }
           ]
         }
@@ -300,96 +302,96 @@
       "lead": false,
       "category": "TECH",
       "source": "BBC News (Technology)",
-      "headline": "Instagram and Facebook could change forever if Meta loses child privacy trial",
-      "summary": "Meta has been hit with successive losses in court over how its platforms have targeted and harmed young users, but a jury trial set to begin on Tuesday may pose the biggest threat yet to its operations.",
+      "headline": "AI to help planes avoid climate-warming 'sky graffiti'",
+      "summary": "Known as contrails, these icy clouds contribute to climate change, and scientists have been trying to work out how to stop them.",
       "keyTakeaways": [
-        "The trial stems from a lawsuit filed in 2023 by 30 US states, including California and New York, in which they claim numerous violations of federal and state privacy laws for children.",
-        "Not only are the states seeking upwards of $1 trillion, external from Meta, they are demanding it make changes to Instagram and Facebook, including ending \"like\" counts and infinite scroll.",
-        "The states suing Meta are asking for many more changes to the way Instagram and Facebook operate for young people, too."
+        "Now, a £5m UK trial will test whether AI can help, by predicting where warming contrails are likely to form and getting planes to avoid those areas.",
+        "It will focus on the Shanwick Oceanic airspace in the eastern half of the North Atlantic corridor which accounts for approximately 5% of global contrail warming.",
+        "Dr Paul Hodgson, Google's technical lead for Operation Blue Skies, told the BBC's Tech Life programme his five-year-old has a more colourful description for the white lines - \"sky graffiti\"."
       ],
-      "whyItMatters": "Should Meta ultimately lose a case of this scale, it could force fundamental changes to the way young people experience social media.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss",
-      "readTime": 5,
+      "whyItMatters": "The idea behind the trial is that if scientists can predict the areas of the atmosphere where contrails are likely to form, aircraft could avoid them.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "メタの陪審裁判、インスタとフェイスブックの姿を変えるか",
-          "summary": "子どもへの影響をめぐり、メタはこれまでも法廷で相次いで敗訴してきた。火曜日に始まる陪審裁判は、その中でも同社の事業運営に最大級の打撃を与えかねない。",
+          "headline": "「空の落書き」、AIが防ぐ飛行機雲対策",
+          "summary": "飛行機雲と呼ばれるこの氷の雲は気候変動の一因とされ、科学者たちはその発生を防ぐ方法を長く模索してきた。",
           "keyTakeaways": [
-            "訴訟は、カリフォルニア州やニューヨーク州を含む米国三十州が二〇二三年に起こしたもので、連邦および州の子どものプライバシー法に対する数々の違反を主張している。",
-            "各州が求めているのは一兆ドルを超える賠償だけではない。「いいね」の表示や無限スクロールの廃止など、インスタグラムとフェイスブックの仕様変更も要求している。",
-            "若年層向けの運営方法をめぐっては、ほかにも多くの変更が求められている。"
+            "英国で500万ポンドを投じた試験が始まる。温暖化を招く飛行機雲ができやすい場所をAIが予測し、飛行機がその空域を避けられるようにする試みだ。",
+            "対象は北大西洋航路東側のシャンウィック洋上空域。世界の飛行機雲による温暖化の約5パーセントを占めるとされる。",
+            "グーグルで「オペレーション・ブルー・スカイズ」の技術責任者を務めるポール・ホジソン博士はBBCの取材に対し、5歳の子どもがあの白い筋を「空の落書き」と呼んでいると明かした。"
           ],
-          "whyItMatters": "これほどの規模の訴訟でメタが敗れれば、若い世代がソーシャルメディアと向き合う形そのものが変わりかねない。"
+          "whyItMatters": "飛行機雲ができやすい大気の領域をあらかじめ予測できれば、飛行機はそこを避けて飛べるようになる、というのがこの試験の狙いである。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Meta's heading into a big trial over child privacy?",
-              "duration": 3.422041
+              "text": "So those white lines planes leave behind — they actually affect the climate?",
+              "duration": 4.310204
             },
             {
               "speaker": "explainer",
-              "text": "Yes, starting Tuesday. It's seen as the biggest legal threat Meta has faced yet.",
-              "duration": 4.414694
+              "text": "Yes. They're called contrails, and these icy clouds trap heat, contributing to warming.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "Who's actually suing them?",
-              "duration": 1.567347
+              "text": "And now there's a trial to try to reduce them?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Thirty US states, including California and New York. They filed the lawsuit back in 2023.",
+              "text": "Right, a £5m UK trial. It'll use AI to predict where these warming contrails are likely to form.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "So planes could just... fly around those spots?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the idea. If you can predict the conditions in advance, aircraft can avoid those areas altogether.",
               "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "What are they claiming happened?",
-              "duration": 1.854694
+              "text": "Where's this being tested?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "They say Meta violated federal and state privacy laws meant to protect children on its platforms.",
-              "duration": 4.963265
+              "text": "The Shanwick Oceanic airspace, over the eastern North Atlantic. That corridor alone accounts for about 5% of global contrail warming.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "That sounds like it could get expensive.",
-              "duration": 1.985306
+              "text": "That's a bigger share than I'd have guessed.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "It could. The states are seeking upwards of a trillion dollars from Meta.",
-              "duration": 3.94449
+              "text": "It is. There's even a nice detail — Google's technical lead on the project said his five-year-old calls them 'sky graffiti'.",
+              "duration": 7.523265
             },
             {
               "speaker": "listener",
-              "text": "Is it just about money, or do they want changes too?",
-              "duration": 3.108571
+              "text": "That's a good way to put it, honestly.",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "Both. They want Meta to end things like 'like' counts and infinite scroll, plus other changes for young users.",
-              "duration": 6.870204
-            },
-            {
-              "speaker": "listener",
-              "text": "So this could really reshape Instagram and Facebook.",
-              "duration": 2.76898
-            },
-            {
-              "speaker": "explainer",
-              "text": "If Meta loses on this scale, yes — it could fundamentally change how young people experience these platforms.",
-              "duration": 6.269388
+              "text": "It is — simple, but it captures exactly what scientists are trying to clean up.",
+              "duration": 4.362449
             }
           ]
         }
@@ -400,97 +402,87 @@
       "importance": 5,
       "lead": false,
       "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Belgian wildfire doubles in size on third day tearing through nature reserve",
-      "summary": "A wildfire described as the largest in Belgium's recent history has more than doubled in size in 24 hours, local officials said on Sunday.",
+      "source": "The Guardian (Science)",
+      "headline": "Did you solve it? A new goat for puzzledom’s GOAT",
+      "summary": "Before your chosen door is opened, however, Monty Hall opens one of the other two doors that he knows has a goat behind it.",
       "keyTakeaways": [
-        "Hundreds of firefighters are spending a third day beating back flames tearing through Hautes Fagnes - the country's largest nature reserve - prompting the evacuation of two nearby villages.",
-        "Belgian Interior Minister Bernard Quintin said two of its fronts - heading towards Jalhay and Monschau - had been brought under control.",
-        "Two water-bombing aircraft arrived from Sweden on Sunday afternoon to back up four helicopters - two Belgian and two Dutch - already on site."
+        "He opens the door and it reveals a goat.",
+        "He reveals a goat, which you can tell is the ordinary goat and not the secretly valuable one.",
+        "The expected number of games in which your initial choice is the (door with the) ordinary goat is 1,000."
       ],
-      "whyItMatters": "Belgian officials have warned that high heat and the park's terrain - which consists of bog-like territory, moorland and forests - have hampered efforts to extinguish the fire.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The academy",
+      "whyItMatters": "Then the expected number of times the host opens the door with the ordinary goat is 500.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/17/did-you-solve-it-a-new-goat-for-puzzledoms-goat",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ベルギー最大の自然保護区、山火事が三日目で倍に拡大",
-          "summary": "ベルギー近年で最大規模とされる山火事が、二十四時間で面積を二倍以上に広げた。地元当局が日曜日に明らかにした。",
+          "headline": "解けたか、パズル界の伝説に新たな一頭",
+          "summary": "ただし、選んだドアが開けられる前に、モンティ・ホールは残り二つのドアのうち、ヤギがいると知っている方を一つ開けてみせる。",
           "keyTakeaways": [
-            "消防隊数百人が三日目も国内最大の自然保護区オート・ファーニュで消火にあたり、近隣二村が避難対象となっている。",
-            "ベルギー内務大臣ベルナール・カンタン氏によると、ジャレーとモンシャウ方面へ延びていた二つの火線は制御下に入った。",
-            "日曜午後にはスウェーデンから消火用航空機二機が到着し、既に現場にあるベルギー機二機、オランダ機二機のヘリコプターを支援する。"
+            "ドアを開けると、そこにはヤギがいる。",
+            "現れたヤギは、ただのヤギであり、実は価値のある方ではないとわかる。",
+            "最初の選択がただのヤギのドアである回数の期待値は、千回。"
           ],
-          "whyItMatters": "高温と、湿地や荒野、森林からなる保護区特有の地形が、消火活動を難しくしているとベルギー当局は警告している。"
+          "whyItMatters": "その場合、司会者がただのヤギのドアを開ける回数の期待値は五百回となる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-17/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this wildfire in Belgium is still growing?",
-              "duration": 2.690612
+              "text": "So this is a twist on the Monty Hall problem, with goats?",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it more than doubled in size in just a day. Officials are calling it the largest in the country's recent history.",
-              "duration": 6.4
+              "text": "Right. You pick a door, then Monty opens one of the other two, and it always has a goat.",
+              "duration": 4.440816
             },
             {
               "speaker": "listener",
-              "text": "Where exactly is it burning?",
-              "duration": 1.567347
+              "text": "But not just any goat, I gather?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Through Hautes Fagnes, Belgium's largest nature reserve. It's now the third day crews have been fighting it.",
-              "duration": 6.29551
+              "text": "Exactly. He shows you the ordinary goat, not the secretly valuable one, and he knows which is which.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "Has anyone had to leave their homes?",
-              "duration": 1.671837
+              "text": "How often would my first pick actually land on the ordinary goat?",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "Two nearby villages were evacuated as a precaution while the fire spread.",
-              "duration": 3.892245
+              "text": "Out of a thousand games, the expected count is a thousand times your choice being the ordinary goat's door.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "Is there any good news on containing it?",
-              "duration": 2.089796
+              "text": "And how often does Monty end up opening that ordinary-goat door himself?",
+              "duration": 4.858776
             },
             {
               "speaker": "explainer",
-              "text": "Some progress, actually. The interior minister said two fronts, heading toward Jalhay and Monschau, are now under control.",
-              "duration": 6.50449
+              "text": "On average, about five hundred times out of those games.",
+              "duration": 2.76898
             },
             {
               "speaker": "listener",
-              "text": "What's making this so hard to put out?",
-              "duration": 2.089796
+              "text": "So the numbers really do shift the odds once he reveals that.",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "High heat, plus the terrain itself, bog, moorland, and forest, which slows crews down.",
-              "duration": 5.250612
-            },
-            {
-              "speaker": "listener",
-              "text": "Are they getting outside help?",
-              "duration": 1.515102
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, two water-bombing planes arrived from Sweden, joining four helicopters already working the fire.",
-              "duration": 5.668571
+              "text": "They do — that reveal is the whole trick behind puzzledom's new goat problem.",
+              "duration": 4.623673
             }
           ]
         }

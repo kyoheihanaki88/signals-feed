@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-19",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Ukraine’s dismissed defence minister calls for wartime presidential election",
+      "summary": "Ukraine’s recently dismissed former defence minister Mykhailo Fedorov has called for a wartime presidential election in the most direct political challenge to Volodymyr Zelenskyy since the start of Russia’s full-scale invasion in 2022.",
+      "keyTakeaways": [
+        "The politician, whose abrupt sacking last month triggered a wave of protests, said that Ukraine had to “restore a full democratic process even amid a prolonged war” in a video address released online late on Tuesday evening.",
+        "Why some reforms move forward while others are blocked,” Fedorov said, arguing that Ukraine could fight a war and hold a national poll.",
+        "Elections have been suspended in Ukraine since martial law was imposed at the start of the full-scale invasion by Russia."
+      ],
+      "whyItMatters": "Zelenskyy’s five-year term ended in May 2024 but there has been little desire in Ukraine to hold a contest while war continues.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/18/ukraines-dismissed-defence-minister-calls-for-wartime-presidential-election",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "更迭前国防相、戦時下の大統領選を要求",
+          "summary": "ウクライナで先月更迭されたばかりの前国防相ミハイロ・フェドロフ氏が、戦時下での大統領選挙実施を求めた。2022年のロシアによる全面侵攻開始以来、ゼレンスキー大統領に対する最も直接的な政治的挑戦となっている。",
+          "keyTakeaways": [
+            "急な解任が抗議の波を招いたフェドロフ氏は、火曜夜に公開した動画声明で、長引く戦争のさなかでも民主的な手続きを取り戻す必要があると訴えた。",
+            "一部の改革は進む一方でなぜ他は阻まれるのかを問い、戦争を続けながらでも国政選挙は実施できると主張した。",
+            "ロシアの全面侵攻開始とともに戒厳令が敷かれて以降、ウクライナでは選挙が停止されている。"
+          ],
+          "whyItMatters": "ゼレンスキー氏の任期は2024年5月に満了したが、戦争が続くなかで選挙を望む声はこれまで乏しかった。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
+      "summary": "Brazilian President Luiz Inácio Lula da Silva has hailed the discovery of oil near the mouth of the Amazon river.",
+      "keyTakeaways": [
+        "Lula, who is running for another four-year term in elections scheduled for October, stressed that he was still committed to eventually phasing out fossil fuels to curb climate change.",
+        "The oil discovery was made in the sea about 175km (110 miles) off the Amazon coast but the size of the field is not yet clear.",
+        "Lula has in the past rejected criticism by conservationists as \"meddling\" and on Monday he again said that he would not accept any foreign interference."
+      ],
+      "whyItMatters": "Speaking after the find was announced by Brazil's state-run oil company Petrobras, he said it could be \"a passport to the country's future\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "アマゾン河口沖で油田発見、ルラ大統領歓迎",
+          "summary": "ブラジルのルラ大統領が、アマゾン川河口付近で発見された油田を歓迎する意向を示した。",
+          "keyTakeaways": [
+            "十月の選挙で四期目を目指すルラ氏だが、気候変動対策として化石燃料からの脱却を進める姿勢は変わらないと強調している。",
+            "油田はアマゾン沿岸から約百七十五キロ沖合の海域で見つかったが、埋蔵規模はまだ明らかになっていない。",
+            "環境保護派からの批判をルラ氏はこれまでも「内政干渉」として退けており、今回もあらためて外国からの干渉は受け入れないと述べた。"
+          ],
+          "whyItMatters": "国営石油会社ペトロブラスの発表を受け、ルラ氏はこの発見を国の未来を開く「パスポート」になり得ると語った。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘The ultimate gamers’ mascot’: Sonic the Hedgehog at 35 – from 2D to 3D to a billion-dollar film franchise",
+      "summary": "O ne day in the early 1990s, I came home from university for the weekend and discovered that my dad had bought himself a Sega Mega Drive, bundled with a copy of Sonic the Hedgehog 2.",
+      "keyTakeaways": [
+        "I knew about Sega’s mascot of course.",
+        "The launch of the original Sonic the Hedgehog game in 1991 was a landmark moment for the company, massively boosting the sales of its 16bit console in the west, ripping market share from the dominant Super Nintendo.",
+        "While Mario was the family favourite, Sonic with his speed, attitude and brash visual energy encapsulated the edgy spirit of the early 1990s MTV culture."
+      ],
+      "whyItMatters": "I took the opportunity to set up my dad’s Mega Drive so they could play Sonic 2 together.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/18/sonic-the-hedgehog-at-35",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ゲーム史を走り続けた35年、ソニックが刻んだ軌跡",
+          "summary": "1990年代初め、大学から週末に帰省したある日、父がセガのメガドライブを買っていた。同梱されていたのは『ソニック・ザ・ヘッジホッグ2』だった。以来、二人でその画面を見つめた時間が、ソニックという存在の記憶として残っている。",
+          "keyTakeaways": [
+            "セガのマスコットとしてのソニックはもちろん知っていた",
+            "1991年の初代発売はセガにとって転機となり、16ビット機の欧米での販売を押し上げ、任天堂優位の市場に食い込んだ",
+            "マリオが家族の定番だった一方、ソニックの速さと挑発的な佇まいは、90年代初頭のMTV文化の気分そのものだった"
+          ],
+          "whyItMatters": "その週末、父のメガドライブを一緒に設定し、『ソニック2』を並んで遊んだ。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The Blood of Dawnwalker – save your family while becoming what you hate",
+      "summary": "T he Blood of Dawnwalker could be the start of an epic saga.",
+      "keyTakeaways": [
+        "The developers envisage Dawnwalker as a trilogy.",
+        "While you can explore and talk to people at your leisure, time moves forward whenever you complete a clearly marked quest.",
+        "You have to manage your time while growing in power, sharpening those claws for the final showdown."
+      ],
+      "whyItMatters": "You could always attempt to save your family on day one, but you’ll be severely unprepared.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/19/the-blood-of-dawnwalker-save-your-family-while-becoming-what-you-hate",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "家族を救うため、憎むものに変わる――『ブラッド・オブ・ドーンウォーカー』",
+          "summary": "『ブラッド・オブ・ドーンウォーカー』は、壮大な物語の序章となるかもしれない。",
+          "keyTakeaways": [
+            "開発陣はドーンウォーカーを三部作として構想している。",
+            "探索や会話は自由だが、明確に示されたクエストを終えるたびに時間は進んでいく。",
+            "力を蓄えながら時間をやりくりし、最後の対決に備えて牙を研ぐ必要がある。"
+          ],
+          "whyItMatters": "家族を救うために初日から動くこともできるが、その時はまだ、あまりに無力だろう。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "SpaceX Starship the talk of remote Australian island as Elon Musk’s engineers sent to retrieve it",
+      "summary": "Engineers from Elon Musk’s SpaceX are on their way to a remote Australian island to retrieve part of a Starship that dived into the Indian Ocean.",
+      "keyTakeaways": [
+        "The spacecraft – now floating off the coast of Christmas Island – was launched in Texas on 24 July, in the 13th test of the technology.",
+        "In recent weeks, the company has been working to retrieve the 52m long piece of spacecraft amid rough seas, before towing it to calmer waters for further study.",
+        "David Watchorn, the chair of the Christmas Island Tourism Association, said most islanders woke on Tuesday to see what appeared to be three big ships."
+      ],
+      "whyItMatters": "Locals hoped the global attention might encourage more tourists to come and visit the island, about 1,550km off Western Australia, and experience its “rugged, raw” landscapes and unique biodiversity, including red crabs and fluffy flying foxes.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/19/elon-musk-spacex-starship-lands-christmas-island-australia",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "スペースXの残骸、豪の離島で話題に マスク氏のチームが回収へ",
+          "summary": "イーロン・マスク氏のスペースXの技術者たちが、インド洋に着水したスターシップの一部を回収するため、オーストラリアの離島に向かっている。",
+          "keyTakeaways": [
+            "この宇宙船は7月24日にテキサス州から打ち上げられたスターシップの13回目の試験機で、現在はクリスマス島沖に浮かんでいる。",
+            "同社はここ数週間、荒れた海の中で全長52メートルの機体の回収を進め、その後詳しい調査のため穏やかな海域へ曳航する予定だ。",
+            "クリスマス島観光協会のデビッド・ワッチョーン会長によると、火曜の朝、島民の多くが目覚めると大きな船が三隻現れているのに気づいたという。"
+          ],
+          "whyItMatters": "島民は、この注目が観光客の増加につながり、西オーストラリア沖約千五百五十キロに位置する島の荒々しく原始的な景観や、赤いカニやふさふさのオオコウモリなど独特の生態系を訪れる人が増えることを期待している。"
+        }
+      }
+    }
+  ]
+}

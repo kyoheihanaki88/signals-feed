@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "ゼレンスキー氏の任期は2024年5月に満了したが、戦争が続くなかで選挙を望む声はこれまで乏しかった。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Ukraine's former defence minister is calling for an election, during the war?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Mykhailo Fedorov, who was dismissed last month, made the call in a video address released Tuesday evening.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "Isn't that a big deal, given everything happening with Russia?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It's being called the most direct political challenge to Zelenskyy since the full-scale invasion began in 2022.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What exactly is he asking for?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says Ukraine needs to restore a full democratic process, even amid a prolonged war, and argued the country can fight and hold a national poll at the same time.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter right now?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Zelenskyy's five-year term actually ended back in May 2024, but elections have been suspended since martial law was imposed at the start of the invasion.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "Has there been much appetite for an election while the war continues?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really, there's been little desire in Ukraine to hold a contest during active conflict.",
+              "duration": 4.493061
+            },
+            {
+              "speaker": "listener",
+              "text": "And Fedorov's sacking already caused unrest, didn't it?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did. His abrupt dismissal last month triggered a wave of protests, so this call adds to that tension.",
+              "duration": 6.269388
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "環境保護派からの批判をルラ氏はこれまでも「内政干渉」として退けており、今回もあらためて外国からの干渉は受け入れないと述べた。"
           ],
           "whyItMatters": "国営石油会社ペトロブラスの発表を受け、ルラ氏はこの発見を国の未来を開く「パスポート」になり得ると語った。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Brazil found oil near the Amazon? What's the story there?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. President Lula announced it, and he's calling it a possible passport to the country's future.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Where exactly was it found?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "About 175 kilometers off the Amazon coast, out at sea. It was Brazil's state oil company, Petrobras, that made the discovery.",
+              "duration": 8.489796
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know how big the field is?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet, that part is still unclear.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "listener",
+              "text": "Isn't this a strange thing to celebrate, given the Amazon and climate concerns?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Lula addressed that. He says he's still committed to eventually phasing out fossil fuels.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "But conservationists must have concerns about drilling there.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "They do, and Lula has pushed back on that criticism before, calling it meddling. He repeated that he won't accept foreign interference.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "And this comes with an election coming up too.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, Lula is running for another four-year term in October's elections.",
+              "duration": 3.604898
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "その週末、父のメガドライブを一緒に設定し、『ソニック2』を並んで遊んだ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Sonic the Hedgehog is turning 35?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. It started back in 1991 as Sega's answer to Mario.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "Did it actually make a difference for Sega at the time?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, quite a big one. The original game helped boost sales of Sega's 16-bit console in the west.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it competing directly with Nintendo then?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It managed to pull market share away from the Super Nintendo, which had been dominant.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "What made Sonic stand out from Mario?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "His speed and attitude. He had this brash energy that matched the MTV culture of the early nineties.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like this had a personal side to it too.",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did. One writer describes coming home from university to find his dad had bought a Sega Mega Drive with Sonic 2.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "So they ended up playing it together?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he set it up so they could share that moment, even though Mario had been the family favourite before that.",
+              "duration": 5.877551
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "家族を救うために初日から動くこともできるが、その時はまだ、あまりに無力だろう。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly is The Blood of Dawnwalker?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a new game, and the developers actually see it as the start of a trilogy.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "A trilogy already? What's the story about?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "You're trying to save your family, but along the way you end up becoming something you hate.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds tense. How does the day-to-day playing work?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "You can explore and talk to people freely, but time only moves forward once you finish a clearly marked quest.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "So you can't just rush in and fix everything right away?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. You could try to save your family on day one, but you'd be badly unprepared.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "So you have to build up strength first.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, you manage your time carefully while growing in power, sharpening yourself for the final showdown.",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "listener",
+              "text": "It sounds like patience matters as much as strength here.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. That balance seems to be at the heart of the whole experience.",
+              "duration": 3.84
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,75 @@
             "クリスマス島観光協会のデビッド・ワッチョーン会長によると、火曜の朝、島民の多くが目覚めると大きな船が三隻現れているのに気づいたという。"
           ],
           "whyItMatters": "島民は、この注目が観光客の増加につながり、西オーストラリア沖約千五百五十キロに位置する島の荒々しく原始的な景観や、赤いカニやふさふさのオオコウモリなど独特の生態系を訪れる人が増えることを期待している。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a piece of SpaceX's Starship just... showed up near Christmas Island?",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. It's part of the spacecraft launched from Texas on July 24th, the 13th test flight.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "And now it's floating in the Indian Ocean?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, off the coast of Christmas Island. SpaceX engineers are on their way to retrieve it.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds tricky, pulling something out of the ocean.",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has been. The seas have been rough, so they're working to tow the piece, which is 52 metres long, to calmer waters for study.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "I bet that's a strange sight for locals.",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very much so. David Watchorn from the tourism association said islanders woke up to see three big ships just offshore.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there any upside to all this for the island?",
+              "duration": 2.638367
+            },
+            {
+              "speaker": "explainer",
+              "text": "Locals are hopeful. They think the attention might draw more visitors to see the island's rugged landscapes and wildlife, like the red crabs and flying foxes.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "A quiet island suddenly in the spotlight.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, at least. Once the retrieval's done, things should settle back to normal.",
+              "duration": 4.127347
+            }
+          ]
         }
       }
     }

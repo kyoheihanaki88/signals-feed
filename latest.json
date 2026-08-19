@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-18",
+  "date": "2026-08-19",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,152 +9,96 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "South Korea president calls for military independence in wake of Trump call to cut joint drills",
-      "summary": "South Korea’s president ⁠has renewed his push to regain independent control of the military from the US in the event of war and urged faster progress in acquiring nuclear-powered submarines after Donald Trump’s order to cut joint drills.",
+      "headline": "Ukraine’s dismissed defence minister calls for wartime presidential election",
+      "summary": "Ukraine’s recently dismissed former defence minister Mykhailo Fedorov has called for a wartime presidential election in the most direct political challenge to Volodymyr Zelenskyy since the start of Russia’s full-scale invasion in 2022.",
       "keyTakeaways": [
-        "US troops have been stationed in South Korea ever since, and the country now hosts Camp Humphreys, the largest American military base outside the US.",
-        "This week’s now-curtailed drills were meant to help certify South Korea’s readiness to finally take it over, a process Lee has pushed to accelerate since taking office.",
-        "Lee also called for faster progress on South Korea’s nuclear-powered submarine programme and on developing officers capable of integrated operations for future conflicts."
+        "The politician, whose abrupt sacking last month triggered a wave of protests, said that Ukraine had to “restore a full democratic process even amid a prolonged war” in a video address released online late on Tuesday evening.",
+        "Why some reforms move forward while others are blocked,” Fedorov said, arguing that Ukraine could fight a war and hold a national poll.",
+        "Elections have been suspended in Ukraine since martial law was imposed at the start of the full-scale invasion by Russia."
       ],
-      "whyItMatters": "They were expected to involve about 18,000 South Korean troops, alongside US forces and personnel from 11 of the 18 member states of the United Nations Command (UNC), the multinational body that oversees the 1953 armistice that halted hostilities of the Korean war.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/18/south-korea-president-trump-military-drills-control-opcon-kim-jong-un",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "Zelenskyy’s five-year term ended in May 2024 but there has been little desire in Ukraine to hold a contest while war continues.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/18/ukraines-dismissed-defence-minister-calls-for-wartime-presidential-election",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "合同演習縮小を受け、韓国大統領が軍の自主権拡大を求める",
-          "summary": "韓国大統領は、戦時における軍の指揮権を米国から取り戻す動きを改めて強めている。トランプ氏が合同軍事演習の縮小を指示したことを受け、原子力潜水艦導入の加速も求めた。",
+          "headline": "更迭前国防相、戦時下の大統領選を要求",
+          "summary": "ウクライナで先月更迭されたばかりの前国防相ミハイロ・フェドロフ氏が、戦時下での大統領選挙実施を求めた。2022年のロシアによる全面侵攻開始以来、ゼレンスキー大統領に対する最も直接的な政治的挑戦となっている。",
           "keyTakeaways": [
-            "米軍は休戦以来韓国に駐留を続け、現在は米国外最大の米軍基地であるキャンプ・ヒュンフリーズを抱える。",
-            "今回縮小された演習は、韓国が指揮権を最終的に引き継ぐための準備状況を確認する狙いだった。李大統領はこの移行を就任以来加速させてきた。",
-            "李大統領は原子力潜水艦計画の推進と、将来の戦闘に対応できる統合作戦能力を持つ将校の育成も急ぐよう求めた。"
+            "急な解任が抗議の波を招いたフェドロフ氏は、火曜夜に公開した動画声明で、長引く戦争のさなかでも民主的な手続きを取り戻す必要があると訴えた。",
+            "一部の改革は進む一方でなぜ他は阻まれるのかを問い、戦争を続けながらでも国政選挙は実施できると主張した。",
+            "ロシアの全面侵攻開始とともに戒厳令が敷かれて以降、ウクライナでは選挙が停止されている。"
           ],
-          "whyItMatters": "演習には韓国軍約1万8000人に加え、米軍、そして1953年の朝鮮戦争休戦協定を監督する多国籍機関である国連軍司令部（UNC）加盟18か国のうち11か国の人員が参加する予定だった。"
+          "whyItMatters": "ゼレンスキー氏の任期は2024年5月に満了したが、戦争が続くなかで選挙を望む声はこれまで乏しかった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So South Korea's president wants more control over its own military?",
+              "text": "So Ukraine's former defence minister is calling for an election, during the war?",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Mykhailo Fedorov, who was dismissed last month, made the call in a video address released Tuesday evening.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "Isn't that a big deal, given everything happening with Russia?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. It's being called the most direct political challenge to Zelenskyy since the full-scale invasion began in 2022.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What exactly is he asking for?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "He says Ukraine needs to restore a full democratic process, even amid a prolonged war, and argued the country can fight and hold a national poll at the same time.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter right now?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Zelenskyy's five-year term actually ended back in May 2024, but elections have been suspended since martial law was imposed at the start of the invasion.",
+              "duration": 8.594286
+            },
+            {
+              "speaker": "listener",
+              "text": "Has there been much appetite for an election while the war continues?",
               "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "Yes — control in the event of war, which currently rests with the US.",
-              "duration": 4.022857
+              "text": "Not really, there's been little desire in Ukraine to hold a contest during active conflict.",
+              "duration": 4.493061
             },
             {
               "speaker": "listener",
-              "text": "Why is this coming up now?",
-              "duration": 1.48898
+              "text": "And Fedorov's sacking already caused unrest, didn't it?",
+              "duration": 3.291429
             },
             {
               "speaker": "explainer",
-              "text": "Trump ordered a cut to joint military drills, and that seems to have pushed the issue forward.",
-              "duration": 4.832653
-            },
-            {
-              "speaker": "listener",
-              "text": "Remind me why the US has that kind of role there in the first place.",
-              "duration": 3.474286
-            },
-            {
-              "speaker": "explainer",
-              "text": "US troops have been stationed in South Korea since the Korean War, and it now hosts Camp Humphreys, the largest American base outside the US.",
-              "duration": 7.653878
-            },
-            {
-              "speaker": "listener",
-              "text": "Were these drills a big deal?",
-              "duration": 1.750204
-            },
-            {
-              "speaker": "explainer",
-              "text": "Fairly — about 18,000 South Korean troops were expected to take part, alongside US forces and personnel from 11 UN Command member states.",
-              "duration": 8.907755
-            },
-            {
-              "speaker": "listener",
-              "text": "What were they actually meant to accomplish?",
-              "duration": 2.403265
-            },
-            {
-              "speaker": "explainer",
-              "text": "They were meant to help certify South Korea's readiness to finally take over wartime control, something Lee has pushed to speed up.",
-              "duration": 7.183673
-            },
-            {
-              "speaker": "listener",
-              "text": "Is he asking for anything else alongside that?",
-              "duration": 2.742857
-            },
-            {
-              "speaker": "explainer",
-              "text": "He's also urging faster progress on nuclear-powered submarines and on training officers for more integrated future operations.",
-              "duration": 7.131429
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "韓国と米国の合同軍事演習が、トランプ氏の指示で規模を縮小されました。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "これを受けて韓国の大統領は、戦時の軍指揮権を米国から取り戻す動きを一段と強めています。",
-              "duration": 7.584
-            },
-            {
-              "speaker": "narrator",
-              "text": "あわせて原子力潜水艦の開発を早めるようにも求めました。",
-              "duration": 4.848
-            },
-            {
-              "speaker": "narrator",
-              "text": "朝鮮戦争の休戦以来、米軍は韓国に駐留を続けてきました。",
-              "duration": 5.784
-            },
-            {
-              "speaker": "narrator",
-              "text": "韓国には米国外で最大の米軍基地、キャンプ・ヒュンフリーズもあります。",
-              "duration": 5.88
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回縮小された演習は、韓国が指揮権を引き継ぐ準備が整っているか確認するためのものでした。",
-              "duration": 7.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "大統領は就任してからずっと、この移行を急ぐよう働きかけてきました。",
-              "duration": 5.712
-            },
-            {
-              "speaker": "narrator",
-              "text": "演習には韓国軍およそ1万8000人に加え、米軍や国連軍司令部加盟国の一部も参加する予定でした。",
-              "duration": 8.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "指揮権の在り方は、この地域の安全保障の枠組みそのものに関わる問題です。",
-              "duration": 6.12
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後、韓国がどこまで自立した防衛体制を築けるか、注目されるところです。",
-              "duration": 6.288
+              "text": "It did. His abrupt dismissal last month triggered a wave of protests, so this call adds to that tension.",
+              "duration": 6.269388
             }
           ]
         }
@@ -164,139 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "The Guardian (Science)",
-      "headline": "What is Ebola and why is the outbreak in DRC causing so much concern?",
-      "summary": "What is Ebola and why is the outbreak in DRC causing so much concern?",
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
+      "summary": "Brazilian President Luiz Inácio Lula da Silva has hailed the discovery of oil near the mouth of the Amazon river.",
       "keyTakeaways": [
-        "Health authorities in the Democratic Republic of the Congo are losing their battle to contain the country’s deadliest Ebola outbreak.",
-        "It has since spread to five other provinces and is on track to overtake the 2014-16 west Africa outbreak as the largest in history.",
-        "Neighbouring Uganda, which recorded 20 cases and two deaths, was declared Ebola-free on 28 July."
+        "Lula, who is running for another four-year term in elections scheduled for October, stressed that he was still committed to eventually phasing out fossil fuels to curb climate change.",
+        "The oil discovery was made in the sea about 175km (110 miles) off the Amazon coast but the size of the field is not yet clear.",
+        "Lula has in the past rejected criticism by conservationists as \"meddling\" and on Monday he again said that he would not accept any foreign interference."
       ],
-      "whyItMatters": "DRC’s health ministry declared an outbreak in Ituri province on 15 May, though sequencing shows it had begun in February.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/17/what-is-ebola-why-who-says-drc-uganda-outbreak-global-health-emergency",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The lab",
+      "whyItMatters": "Speaking after the find was announced by Brazil's state-run oil company Petrobras, he said it could be \"a passport to the country's future\".",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "エボラとは何か、コンゴの流行はなぜ深刻なのか",
-          "summary": "エボラとは何か、そしてコンゴ民主共和国での流行がこれほど懸念される理由とは何か。",
+          "headline": "アマゾン河口沖で油田発見、ルラ大統領歓迎",
+          "summary": "ブラジルのルラ大統領が、アマゾン川河口付近で発見された油田を歓迎する意向を示した。",
           "keyTakeaways": [
-            "コンゴ民主共和国の保健当局は、同国史上最悪のエボラ流行の封じ込めに苦戦している。",
-            "感染はほかの五つの州にも広がり、二〇一四年から一六年の西アフリカでの流行を上回り、史上最大規模となる勢いだ。",
-            "隣国ウガンダでは感染者二十人、死者二人が確認されたが、七月二十八日にエボラ終息が宣言された。"
+            "十月の選挙で四期目を目指すルラ氏だが、気候変動対策として化石燃料からの脱却を進める姿勢は変わらないと強調している。",
+            "油田はアマゾン沿岸から約百七十五キロ沖合の海域で見つかったが、埋蔵規模はまだ明らかになっていない。",
+            "環境保護派からの批判をルラ氏はこれまでも「内政干渉」として退けており、今回もあらためて外国からの干渉は受け入れないと述べた。"
           ],
-          "whyItMatters": "コンゴ民主共和国保健省は五月十五日にイトゥリ州での流行を宣言したが、遺伝子解析からは実際には二月に始まっていたことが分かっている。"
+          "whyItMatters": "国営石油会社ペトロブラスの発表を受け、ルラ氏はこの発見を国の未来を開く「パスポート」になり得ると語った。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Ebola is spreading again in DRC — how serious is this one?",
-              "duration": 4.022857
+              "text": "So Brazil found oil near the Amazon? What's the story there?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Very serious. Health authorities there are struggling to contain it, and it's now the deadliest outbreak the country has seen.",
-              "duration": 6.948571
+              "text": "Yes. President Lula announced it, and he's calling it a possible passport to the country's future.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "Has it stayed in one area, or is it moving?",
-              "duration": 2.324898
+              "text": "Where exactly was it found?",
+              "duration": 1.697959
             },
             {
               "speaker": "explainer",
-              "text": "It's spread to five other provinces. If it continues at this pace, it could overtake the 2014-16 west Africa outbreak as the largest in history.",
-              "duration": 8.437551
+              "text": "About 175 kilometers off the Amazon coast, out at sea. It was Brazil's state oil company, Petrobras, that made the discovery.",
+              "duration": 8.489796
             },
             {
               "speaker": "listener",
-              "text": "That's a sobering thought. When did this actually begin?",
-              "duration": 3.160816
+              "text": "Do we know how big the field is?",
+              "duration": 1.854694
             },
             {
               "speaker": "explainer",
-              "text": "DRC's health ministry declared the outbreak in Ituri province on 15 May, but sequencing shows it actually started back in February.",
-              "duration": 7.523265
+              "text": "Not yet, that part is still unclear.",
+              "duration": 1.933061
             },
             {
               "speaker": "listener",
-              "text": "Is there any better news from the region?",
-              "duration": 2.168163
+              "text": "Isn't this a strange thing to celebrate, given the Amazon and climate concerns?",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "Yes — neighbouring Uganda had 20 cases and two deaths, but was declared Ebola-free on 28 July.",
-              "duration": 6.870204
+              "text": "Lula addressed that. He says he's still committed to eventually phasing out fossil fuels.",
+              "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "So containment is possible, it's just not happening in DRC yet.",
-              "duration": 3.578776
+              "text": "But conservationists must have concerns about drilling there.",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Uganda shows it can be done, but the situation in DRC remains difficult and is being watched closely.",
-              "duration": 6.870204
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "コンゴ民主共和国で、史上最悪となるエボラ出血熱の流行が広がっています。",
-              "duration": 6.288
+              "text": "They do, and Lula has pushed back on that criticism before, calling it meddling. He repeated that he won't accept foreign interference.",
+              "duration": 7.836735
             },
             {
-              "speaker": "narrator",
-              "text": "保健当局は封じ込めに苦戦しており、感染はすでに五つの州に及んでいます。",
-              "duration": 6.12
+              "speaker": "listener",
+              "text": "And this comes with an election coming up too.",
+              "duration": 2.272653
             },
             {
-              "speaker": "narrator",
-              "text": "このままだと二〇一四年から一六年の西アフリカでの流行を超え、史上最大規模になる恐れがあります。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "保健省がイトゥリ州での流行を宣言したのは五月十五日でした。",
-              "duration": 5.208
-            },
-            {
-              "speaker": "narrator",
-              "text": "しかし遺伝子解析からは、実際には二月の時点で感染が始まっていたことが分かっています。",
-              "duration": 6.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "つまり公式な発表よりずっと早く、静かに広がり始めていたわけです。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "隣国ウガンダでも感染者二十人、死者二人が出ましたが、七月二十八日に終息が宣言されました。",
-              "duration": 7.872
-            },
-            {
-              "speaker": "narrator",
-              "text": "エボラは接触感染が中心のため、早期の把握と対応が拡大を防ぐ鍵になります。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "コンゴでの状況は、今後の対応次第で被害の規模が大きく変わってくると見られます。",
-              "duration": 6.264
+              "speaker": "explainer",
+              "text": "Right, Lula is running for another four-year term in October's elections.",
+              "duration": 3.604898
             }
           ]
         }
@@ -306,154 +209,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Zambia's president wins second term with 60% of the vote",
-      "summary": "Zambia's President Hakainde Hichilema has been re-elected for a second five-year term after securing a 60% share of the vote, the electoral commission has announced.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘The ultimate gamers’ mascot’: Sonic the Hedgehog at 35 – from 2D to 3D to a billion-dollar film franchise",
+      "summary": "O ne day in the early 1990s, I came home from university for the weekend and discovered that my dad had bought himself a Sega Mega Drive, bundled with a copy of Sonic the Hedgehog 2.",
       "keyTakeaways": [
-        "He said the election showed that Zambia was a place of peace, law and order and a \"democratic nation that settles our differences at the ballot box, and nowhere else\".",
-        "Zambia has a record of peaceful transfers of power.",
-        "Hichilema's win was widely expected, with his closest challenger Brian Mundubile getting 38% of the votes cast."
+        "I knew about Sega’s mascot of course.",
+        "The launch of the original Sonic the Hedgehog game in 1991 was a landmark moment for the company, massively boosting the sales of its 16bit console in the west, ripping market share from the dominant Super Nintendo.",
+        "While Mario was the family favourite, Sonic with his speed, attitude and brash visual energy encapsulated the edgy spirit of the early 1990s MTV culture."
       ],
-      "whyItMatters": "Observers also expressed concern over the brief suspension of the vote counting, saying it risked the credibility of the process as well as voter confidence.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c5y6j4jl03xo?at_medium=RSS&at_campaign=rss",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "whyItMatters": "I took the opportunity to set up my dad’s Mega Drive so they could play Sonic 2 together.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/18/sonic-the-hedgehog-at-35",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ザンビア大統領、得票6割で再選",
-          "summary": "ザンビアのヒチレマ大統領が2期目の当選を果たした。選挙管理委員会の発表によると、得票率はおよそ6割に達したという。",
+          "headline": "ゲーム史を走り続けた35年、ソニックが刻んだ軌跡",
+          "summary": "1990年代初め、大学から週末に帰省したある日、父がセガのメガドライブを買っていた。同梱されていたのは『ソニック・ザ・ヘッジホッグ2』だった。以来、二人でその画面を見つめた時間が、ソニックという存在の記憶として残っている。",
           "keyTakeaways": [
-            "大統領は今回の選挙について、ザンビアが平和と法秩序の国であり、対立を投票箱でのみ解決する民主国家であることを示したと語った。",
-            "ザンビアには平和的な政権移行の実績がある。",
-            "最大の対抗馬ムンドゥビレ氏の得票率は38パーセントにとどまり、ヒチレマ氏の勝利は事前に広く予想されていた。"
+            "セガのマスコットとしてのソニックはもちろん知っていた",
+            "1991年の初代発売はセガにとって転機となり、16ビット機の欧米での販売を押し上げ、任天堂優位の市場に食い込んだ",
+            "マリオが家族の定番だった一方、ソニックの速さと挑発的な佇まいは、90年代初頭のMTV文化の気分そのものだった"
           ],
-          "whyItMatters": "開票作業が一時中断されたことについて、監視団は選挙の信頼性と有権者の信認を損ないかねないと懸念を示した。"
+          "whyItMatters": "その週末、父のメガドライブを一緒に設定し、『ソニック2』を並んで遊んだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Zambia's president won another term?",
-              "duration": 2.272653
+              "text": "So Sonic the Hedgehog is turning 35?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Hakainde Hichilema has been re-elected for a second five-year term.",
-              "duration": 4.179592
+              "text": "That's right. It started back in 1991 as Sega's answer to Mario.",
+              "duration": 3.761633
             },
             {
               "speaker": "listener",
-              "text": "By how much?",
-              "duration": 1.097143
+              "text": "Did it actually make a difference for Sega at the time?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "The electoral commission says he took 60% of the vote.",
-              "duration": 3.160816
+              "text": "Yes, quite a big one. The original game helped boost sales of Sega's 16-bit console in the west.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "Was it a close race?",
-              "duration": 1.515102
+              "text": "Was it competing directly with Nintendo then?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "Not really. His closest challenger, Brian Mundubile, got 38%, and the win was widely expected.",
-              "duration": 5.250612
+              "text": "Exactly. It managed to pull market share away from the Super Nintendo, which had been dominant.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "What did Hichilema say about it?",
-              "duration": 1.933061
-            },
-            {
-              "speaker": "explainer",
-              "text": "He called Zambia a democratic nation that settles its differences at the ballot box, not elsewhere.",
-              "duration": 5.093878
-            },
-            {
-              "speaker": "listener",
-              "text": "Did the vote go smoothly?",
-              "duration": 1.619592
-            },
-            {
-              "speaker": "explainer",
-              "text": "Mostly, though counting was briefly suspended, and observers say that raised some concern about confidence in the process.",
-              "duration": 6.530612
-            },
-            {
-              "speaker": "listener",
-              "text": "But overall it stayed peaceful?",
+              "text": "What made Sonic stand out from Mario?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "It did — Zambia has a strong record of peaceful transfers of power, and that held again.",
-              "duration": 5.250612
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ザンビアで大統領選挙の結果が発表され、ヒチレマ氏が再選を果たしました。",
-              "duration": 5.976
+              "text": "His speed and attitude. He had this brash energy that matched the MTV culture of the early nineties.",
+              "duration": 5.041633
             },
             {
-              "speaker": "narrator",
-              "text": "得票率はおよそ6割に達し、2期目の当選が確定しています。",
-              "duration": 5.544
+              "speaker": "listener",
+              "text": "It sounds like this had a personal side to it too.",
+              "duration": 3.056327
             },
             {
-              "speaker": "narrator",
-              "text": "最大の対抗馬だったムンドゥビレ氏の得票は38パーセントにとどまりました。",
-              "duration": 5.976
+              "speaker": "explainer",
+              "text": "It did. One writer describes coming home from university to find his dad had bought a Sega Mega Drive with Sonic 2.",
+              "duration": 6.4
             },
             {
-              "speaker": "narrator",
-              "text": "事前の予想通りの結果だったといえます。",
-              "duration": 3.264
+              "speaker": "listener",
+              "text": "So they ended up playing it together?",
+              "duration": 1.985306
             },
             {
-              "speaker": "narrator",
-              "text": "大統領は今回の選挙が平和と法秩序を示したと語りました。",
-              "duration": 5.352
-            },
-            {
-              "speaker": "narrator",
-              "text": "対立を投票箱でのみ解決する国であることを強調した発言です。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "ザンビアにはこれまでも平和的な政権移行の実績があります。",
-              "duration": 4.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で開票作業が一時中断された点には監視団が懸念を示しました。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "選挙の信頼性や有権者の信認に関わる問題だという指摘です。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "民主的な手続きの安定は今後も注目され続けそうです。",
-              "duration": 4.848
+              "speaker": "explainer",
+              "text": "Yes, he set it up so they could share that moment, even though Mario had been the family favourite before that.",
+              "duration": 5.877551
             }
           ]
         }
@@ -464,153 +311,97 @@
       "importance": 4,
       "lead": false,
       "category": "TECH",
-      "source": "BBC News (Technology)",
-      "headline": "AI to help planes avoid climate-warming 'sky graffiti'",
-      "summary": "Known as contrails, these icy clouds contribute to climate change, and scientists have been trying to work out how to stop them.",
+      "source": "The Guardian (Technology)",
+      "headline": "The Blood of Dawnwalker – save your family while becoming what you hate",
+      "summary": "T he Blood of Dawnwalker could be the start of an epic saga.",
       "keyTakeaways": [
-        "Now, a £5m UK trial will test whether AI can help, by predicting where warming contrails are likely to form and getting planes to avoid those areas.",
-        "It will focus on the Shanwick Oceanic airspace in the eastern half of the North Atlantic corridor which accounts for approximately 5% of global contrail warming.",
-        "Dr Paul Hodgson, Google's technical lead for Operation Blue Skies, told the BBC's Tech Life programme his five-year-old has a more colourful description for the white lines - \"sky graffiti\"."
+        "The developers envisage Dawnwalker as a trilogy.",
+        "While you can explore and talk to people at your leisure, time moves forward whenever you complete a clearly marked quest.",
+        "You have to manage your time while growing in power, sharpening those claws for the final showdown."
       ],
-      "whyItMatters": "The idea behind the trial is that if scientists can predict the areas of the atmosphere where contrails are likely to form, aircraft could avoid them.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "You could always attempt to save your family on day one, but you’ll be severely unprepared.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/19/the-blood-of-dawnwalker-save-your-family-while-becoming-what-you-hate",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "「空の落書き」、AIが防ぐ飛行機雲対策",
-          "summary": "飛行機雲と呼ばれるこの氷の雲は気候変動の一因とされ、科学者たちはその発生を防ぐ方法を長く模索してきた。",
+          "headline": "家族を救うため、憎むものに変わる――『ブラッド・オブ・ドーンウォーカー』",
+          "summary": "『ブラッド・オブ・ドーンウォーカー』は、壮大な物語の序章となるかもしれない。",
           "keyTakeaways": [
-            "英国で500万ポンドを投じた試験が始まる。温暖化を招く飛行機雲ができやすい場所をAIが予測し、飛行機がその空域を避けられるようにする試みだ。",
-            "対象は北大西洋航路東側のシャンウィック洋上空域。世界の飛行機雲による温暖化の約5パーセントを占めるとされる。",
-            "グーグルで「オペレーション・ブルー・スカイズ」の技術責任者を務めるポール・ホジソン博士はBBCの取材に対し、5歳の子どもがあの白い筋を「空の落書き」と呼んでいると明かした。"
+            "開発陣はドーンウォーカーを三部作として構想している。",
+            "探索や会話は自由だが、明確に示されたクエストを終えるたびに時間は進んでいく。",
+            "力を蓄えながら時間をやりくりし、最後の対決に備えて牙を研ぐ必要がある。"
           ],
-          "whyItMatters": "飛行機雲ができやすい大気の領域をあらかじめ予測できれば、飛行機はそこを避けて飛べるようになる、というのがこの試験の狙いである。"
+          "whyItMatters": "家族を救うために初日から動くこともできるが、その時はまだ、あまりに無力だろう。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So those white lines planes leave behind — they actually affect the climate?",
-              "duration": 4.310204
+              "text": "So what exactly is The Blood of Dawnwalker?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "Yes. They're called contrails, and these icy clouds trap heat, contributing to warming.",
-              "duration": 5.616327
+              "text": "It's a new game, and the developers actually see it as the start of a trilogy.",
+              "duration": 3.996735
             },
             {
               "speaker": "listener",
-              "text": "And now there's a trial to try to reduce them?",
-              "duration": 2.45551
+              "text": "A trilogy already? What's the story about?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "Right, a £5m UK trial. It'll use AI to predict where these warming contrails are likely to form.",
-              "duration": 6.034286
+              "text": "You're trying to save your family, but along the way you end up becoming something you hate.",
+              "duration": 4.257959
             },
             {
               "speaker": "listener",
-              "text": "So planes could just... fly around those spots?",
+              "text": "That sounds tense. How does the day-to-day playing work?",
               "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "That's the idea. If you can predict the conditions in advance, aircraft can avoid those areas altogether.",
-              "duration": 5.746939
+              "text": "You can explore and talk to people freely, but time only moves forward once you finish a clearly marked quest.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "Where's this being tested?",
-              "duration": 1.750204
+              "text": "So you can't just rush in and fix everything right away?",
+              "duration": 3.004082
             },
             {
               "speaker": "explainer",
-              "text": "The Shanwick Oceanic airspace, over the eastern North Atlantic. That corridor alone accounts for about 5% of global contrail warming.",
-              "duration": 7.47102
+              "text": "Exactly. You could try to save your family on day one, but you'd be badly unprepared.",
+              "duration": 4.414694
             },
             {
               "speaker": "listener",
-              "text": "That's a bigger share than I'd have guessed.",
-              "duration": 2.115918
+              "text": "So you have to build up strength first.",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "It is. There's even a nice detail — Google's technical lead on the project said his five-year-old calls them 'sky graffiti'.",
-              "duration": 7.523265
+              "text": "Right, you manage your time carefully while growing in power, sharpening yourself for the final showdown.",
+              "duration": 5.433469
             },
             {
               "speaker": "listener",
-              "text": "That's a good way to put it, honestly.",
-              "duration": 1.906939
+              "text": "It sounds like patience matters as much as strength here.",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "It is — simple, but it captures exactly what scientists are trying to clean up.",
-              "duration": 4.362449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "飛行機が空に描く白い筋、あの飛行機雲が気候変動に関わっているという話です。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "あの氷でできた雲は熱を閉じ込め、地球を温める働きを持っています。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "英国では500万ポンドをかけた実証実験が始まりました。",
-              "duration": 4.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIが大気の状態を分析し、飛行機雲ができやすい空域を事前に予測します。",
-              "duration": 6.432
-            },
-            {
-              "speaker": "narrator",
-              "text": "予測をもとに飛行機がその空域を避けて飛べば、温暖化への影響を減らせるという発想です。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "対象となるのは北大西洋東側のシャンウィック洋上空域です。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "この空域だけで、世界の飛行機雲による温暖化の約5パーセントを生んでいるといいます。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "グーグルでこの取り組みを率いるポール・ホジソン博士によると。",
-              "duration": 4.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "5歳の子どもはあの白い筋を「空の落書き」と呼んでいるそうです。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "空を彩るその落書きが減れば、見上げる空の景色も少し変わるかもしれません。",
-              "duration": 6.192
+              "text": "It does. That balance seems to be at the heart of the whole experience.",
+              "duration": 3.84
             }
           ]
         }
@@ -622,142 +413,96 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "The Guardian (Science)",
-      "headline": "Did you solve it? A new goat for puzzledom’s GOAT",
-      "summary": "Before your chosen door is opened, however, Monty Hall opens one of the other two doors that he knows has a goat behind it.",
+      "headline": "SpaceX Starship the talk of remote Australian island as Elon Musk’s engineers sent to retrieve it",
+      "summary": "Engineers from Elon Musk’s SpaceX are on their way to a remote Australian island to retrieve part of a Starship that dived into the Indian Ocean.",
       "keyTakeaways": [
-        "He opens the door and it reveals a goat.",
-        "He reveals a goat, which you can tell is the ordinary goat and not the secretly valuable one.",
-        "The expected number of games in which your initial choice is the (door with the) ordinary goat is 1,000."
+        "The spacecraft – now floating off the coast of Christmas Island – was launched in Texas on 24 July, in the 13th test of the technology.",
+        "In recent weeks, the company has been working to retrieve the 52m long piece of spacecraft amid rough seas, before towing it to calmer waters for further study.",
+        "David Watchorn, the chair of the Christmas Island Tourism Association, said most islanders woke on Tuesday to see what appeared to be three big ships."
       ],
-      "whyItMatters": "Then the expected number of times the host opens the door with the ordinary goat is 500.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/17/did-you-solve-it-a-new-goat-for-puzzledoms-goat",
-      "readTime": 3,
+      "whyItMatters": "Locals hoped the global attention might encourage more tourists to come and visit the island, about 1,550km off Western Australia, and experience its “rugged, raw” landscapes and unique biodiversity, including red crabs and fluffy flying foxes.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/19/elon-musk-spacex-starship-lands-christmas-island-australia",
+      "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Experiment",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "解けたか、パズル界の伝説に新たな一頭",
-          "summary": "ただし、選んだドアが開けられる前に、モンティ・ホールは残り二つのドアのうち、ヤギがいると知っている方を一つ開けてみせる。",
+          "headline": "スペースXの残骸、豪の離島で話題に マスク氏のチームが回収へ",
+          "summary": "イーロン・マスク氏のスペースXの技術者たちが、インド洋に着水したスターシップの一部を回収するため、オーストラリアの離島に向かっている。",
           "keyTakeaways": [
-            "ドアを開けると、そこにはヤギがいる。",
-            "現れたヤギは、ただのヤギであり、実は価値のある方ではないとわかる。",
-            "最初の選択がただのヤギのドアである回数の期待値は、千回。"
+            "この宇宙船は7月24日にテキサス州から打ち上げられたスターシップの13回目の試験機で、現在はクリスマス島沖に浮かんでいる。",
+            "同社はここ数週間、荒れた海の中で全長52メートルの機体の回収を進め、その後詳しい調査のため穏やかな海域へ曳航する予定だ。",
+            "クリスマス島観光協会のデビッド・ワッチョーン会長によると、火曜の朝、島民の多くが目覚めると大きな船が三隻現れているのに気づいたという。"
           ],
-          "whyItMatters": "その場合、司会者がただのヤギのドアを開ける回数の期待値は五百回となる。"
+          "whyItMatters": "島民は、この注目が観光客の増加につながり、西オーストラリア沖約千五百五十キロに位置する島の荒々しく原始的な景観や、赤いカニやふさふさのオオコウモリなど独特の生態系を訪れる人が増えることを期待している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this is a twist on the Monty Hall problem, with goats?",
-              "duration": 3.761633
+              "text": "So a piece of SpaceX's Starship just... showed up near Christmas Island?",
+              "duration": 4.963265
             },
             {
               "speaker": "explainer",
-              "text": "Right. You pick a door, then Monty opens one of the other two, and it always has a goat.",
-              "duration": 4.440816
+              "text": "That's right. It's part of the spacecraft launched from Texas on July 24th, the 13th test flight.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "But not just any goat, I gather?",
-              "duration": 1.750204
+              "text": "And now it's floating in the Indian Ocean?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. He shows you the ordinary goat, not the secretly valuable one, and he knows which is which.",
+              "text": "Yes, off the coast of Christmas Island. SpaceX engineers are on their way to retrieve it.",
               "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "How often would my first pick actually land on the ordinary goat?",
-              "duration": 4.205714
+              "text": "That sounds tricky, pulling something out of the ocean.",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "Out of a thousand games, the expected count is a thousand times your choice being the ordinary goat's door.",
-              "duration": 5.851429
+              "text": "It has been. The seas have been rough, so they're working to tow the piece, which is 52 metres long, to calmer waters for study.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "And how often does Monty end up opening that ordinary-goat door himself?",
-              "duration": 4.858776
+              "text": "I bet that's a strange sight for locals.",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "On average, about five hundred times out of those games.",
-              "duration": 2.76898
+              "text": "Very much so. David Watchorn from the tourism association said islanders woke up to see three big ships just offshore.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "So the numbers really do shift the odds once he reveals that.",
-              "duration": 3.474286
+              "text": "Is there any upside to all this for the island?",
+              "duration": 2.638367
             },
             {
               "speaker": "explainer",
-              "text": "They do — that reveal is the whole trick behind puzzledom's new goat problem.",
-              "duration": 4.623673
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-18/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "朝から少し頭を使う話題を選んでみました。",
-              "duration": 3.864
+              "text": "Locals are hopeful. They think the attention might draw more visitors to see the island's rugged landscapes and wildlife, like the red crabs and flying foxes.",
+              "duration": 8.724898
             },
             {
-              "speaker": "narrator",
-              "text": "有名な「モンティ・ホール問題」に、新しい捻りが加わったパズルが話題になっています。",
-              "duration": 6.48
+              "speaker": "listener",
+              "text": "A quiet island suddenly in the spotlight.",
+              "duration": 2.533878
             },
             {
-              "speaker": "narrator",
-              "text": "司会者が三つのドアのうち一つを選ばせ、残り二つのうちヤギがいる方を開けて見せる仕組みです。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回のポイントは、ヤギに二種類あるという設定です。",
-              "duration": 4.368
-            },
-            {
-              "speaker": "narrator",
-              "text": "一頭はただの普通のヤギで、もう一頭はひそかに価値のあるヤギとされています。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "司会者が開けたドアに現れるのは、必ずただの普通のヤギの方です。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "千回ゲームを行うと、最初にただのヤギを選んでしまう回数はおよそ千回になります。",
-              "duration": 6.648
-            },
-            {
-              "speaker": "narrator",
-              "text": "そのうち司会者がただのヤギのドアを開ける回数は、およそ五百回という計算になります。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "数字の裏にある確率の仕組みを追ってみると、朝の頭の体操にちょうどよい難しさです。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした論理パズルは、日常の判断にも意外と役立つ視点を与えてくれます。",
-              "duration": 5.856
+              "speaker": "explainer",
+              "text": "For now, at least. Once the retrieval's done, things should settle back to normal.",
+              "duration": 4.127347
             }
           ]
         }

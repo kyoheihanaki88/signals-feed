@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-20",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "NPR (World)",
+      "headline": "Chinese court sentences founder of property developer Evergrande to life in prison",
+      "summary": "Chinese court sentences founder of property developer Evergrande Chinese property developer Hui Ka Yan has been sentenced to life in prison.",
+      "keyTakeaways": [
+        "A worker collects trash in a partially shuttered Evergrande commercial complex, on the day Hong Kong Stock Exchange delisted the Chinese property developer China Evergrande, in Beijing, China, Aug.",
+        "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities when Chinese authorities cracked down on excessive borrowing in the real estate industry in 2020.",
+        "The Shenzhen Intermediate People's Court convicted Hui, also known as Xu Jiayin, and Evergrande of engaged in large-scale financial fraud in inflating the group's assets and concealing its liabilities."
+      ],
+      "whyItMatters": "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities.",
+      "originalURL": "https://www.npr.org/2026/08/20/nx-s1-5939335/chinese-sentence-founder-evergrande",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "恒大集団創業者に無期懲役、中国裁判所が判決",
+          "summary": "中国の不動産大手、中国恒大集団の創業者である許家印被告に対し、中国の裁判所が無期懲役の判決を言い渡した。",
+          "keyTakeaways": [
+            "香港証券取引所は中国恒大集団の株式を上場廃止とし、同社の商業施設では一部閉鎖が進んでいる。",
+            "恒大集団は2020年の不動産融資規制強化を機に経営破綻し、負債総額は3000億ドルを超えるとされる。",
+            "深圳市中級人民法院は、許被告と恒大集団が資産を水増しし負債を隠す大規模な金融詐欺に関与したと認定した。"
+          ],
+          "whyItMatters": "3000億ドルを超える負債を抱えて破綻した恒大集団をめぐる問題は、今回の判決で一つの節目を迎えた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Kim Jong-un’s sister casts doubt on Trump’s claims of secret US-North Korea talks",
+      "summary": "Donald Trump has said he is planning to meet North Korea’s Kim Jong-un later this year, though the reclusive leader’s younger sister cast doubt on their communications and dampened hopes of a diplomatic breakthrough between them.",
+      "keyTakeaways": [
+        "Trump, who also claimed North Korea had 57 nuclear weapons, had suggested he and Kim were holding secret negotiations on Tuesday after announcing the US would downgrade its participation in military exercises held by South Korea, a US ally.",
+        "Asked whether Kim had responded to his request for a conversation, Trump said: “Yeah, he has.”",
+        "The Wall Street Journal reported on Tuesday that Trump was pushing aides to set up an in-person meeting with Kim, potentially during a trip to Asia in November for the Asia-Pacific Economic Cooperation summit in Shenzhen, China."
+      ],
+      "whyItMatters": "Trump also made the unusual disclosure that North Korea had 57 “very powerful nuclear weapons”, revealing exact intelligence that may not ordinarily be made public.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/19/kim-jong-un-sister-doubt-trump-claims-secret-us-north-korea-talks",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米朝首脳会談構想に金正恩氏の妹が疑問符",
+          "summary": "トランプ大統領は年内に北朝鮮の金正恩氏と会談する意向を示したが、金氏の妹は両者のやり取りに疑問を投げかけ、外交的進展への期待に水を差した。",
+          "keyTakeaways": [
+            "トランプ氏は北朝鮮が核兵器57発を保有していると主張し、韓国との合同軍事演習への米国の関与縮小を発表した直後、金氏との間で秘密裏に交渉を進めていることをほのめかした。",
+            "金氏が会談要請に応じたかを問われたトランプ氏は「応じた」と答えた。",
+            "ウォール・ストリート・ジャーナル紙は、トランプ氏が11月のアジア歴訪、中国・深圳でのAPEC首脳会議に合わせた金氏との対面会談実現を側近に急がせていると報じた。"
+          ],
+          "whyItMatters": "トランプ氏は北朝鮮が「非常に強力な核兵器」を57発保有していると異例の言及をし、通常公にされない機密情報とみられる内容まで明かした。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Roblox commits to privacy overhaul after eSafety discovers adults can contact children via gaming platform",
+      "summary": "Roblox has committed to making changes to its online gaming platform after Australia’s eSafety commissioner discovered adults were still able to see child accounts and send connection requests without parental consent.",
+      "keyTakeaways": [
+        "Additionally, the regulator found children’s connections and profiles – including account names and interests – were visible to anyone on Roblox.",
+        "The eSafety commissioner had raised concerns Roblox may not be compliant with codes and standards under the Online Safety Act, alleging the platform failed to have sufficient measures in place to prevent contact between adults and children.",
+        "A Roblox spokesperson said there had been “constructive dialogue with eSafety” and the company had delivered on its safety commitments to eSafety in the past year while continuing to work towards keeping children safe online."
+      ],
+      "whyItMatters": "The company has provided a legal agreement to the online safety regulator after testing earlier this year also revealed children and adults could view and respond to one another’s posts on forums outside game environments without parental consent.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/20/roblox-esafety-commissioner-children-adults-ntwnfb",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ロバートックス、子どもと大人の接触問題受けプライバシー対策見直しへ",
+          "summary": "オーストラリアのeセーフティ委員会は、保護者の同意なしに大人が子どものアカウントを閲覧し、接続リクエストを送れる状態が続いていたことを確認した。これを受けてロバートックスは、オンラインゲームプラットフォームの改善を約束した。",
+          "keyTakeaways": [
+            "子どものアカウント名や興味関心を含む交友関係やプロフィールが、誰でも閲覧できる状態だったことも判明した。",
+            "同委員会は、大人と子どもの接触を防ぐ十分な措置が取られていないとして、オンライン安全法の基準への違反を指摘していた。",
+            "ロバートックス広報担当者は、eセーフティ委員会との「建設的な対話」があったとし、この一年間に安全面での約束を果たしながら、子どもの安全確保に取り組み続けてきたと述べた。"
+          ],
+          "whyItMatters": "今年これに先立つ検証でも、ゲーム外のフォーラムで子どもと大人が保護者の同意なく互いの投稿を閲覧し返信できることが明らかになっており、同社は規制当局に法的合意書を提出している。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Relax, everyone: Elon Musk has a mantra to make the climate crisis go away | Emma Brockes",
+      "summary": "The Kardashev scale is the answer both to our impending doom and our anxiety around it – and if we decide to believe in it, we won’t have to give the climate crisis a single thought until the last drip falls from the tap.",
+      "keyTakeaways": [
+        "If this isn’t blue-sky thinking, I don’t know what is, and Musk has launched into it.",
+        "This is the idea and it’s a familiar one to anyone who has watched tech billionaires take intractable, commonplace crises and decide that, among the measures and proposals in play, the vital missing ingredient so far has been them.",
+        "Do you remember when Jeff Bezos, rather than doing something quotidian and loserish like funding public education by ensuring Amazon pays the same tax rate as regular Americans, decided instead to reinvent preschools?"
+      ],
+      "whyItMatters": "N ext time the weather gives the UK 61 days without rain and we wonder idly if this is the end, there is a term we may whistle up to soothe us.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/20/elon-musk-climate-crisis-spacex-kardashev-scale-energy-production",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Astronomers detect fastest known star in Milky Way",
+      "summary": "Astronomers have detected the fastest known star in the Milky Way, hurtling around the supermassive black hole at the heart of the galaxy.",
+      "keyTakeaways": [
+        "The star, called S301, travels at about 25,000km (15,500 miles) per second, 100,000 times faster than a commercial plane.",
+        "It is also the closest known star to the Milky Way’s central black hole, Sagittarius A*, approaching it around the distance of Saturn to the Sun.",
+        "Although the star is unusually close to the central black hole, it is not expected to cross its event horizon, the point beyond which objects can never escape."
+      ],
+      "whyItMatters": "The star’s extreme proximity to Sagittarius A* means that it could open a new window on to the black hole’s fundamental properties and the extreme environment surrounding it.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/19/astronomers-detect-fastest-known-star-in-milky-way-s301",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "銀河系で最速の恒星を発見",
+          "summary": "天文学者が、銀河系の中心にある超大質量ブラックホールの周囲を猛速度で周回する、これまでで最も速い恒星を発見した。",
+          "keyTakeaways": [
+            "S301と名付けられたこの星は秒速およそ2万5000キロで移動し、旅客機の10万倍の速さに達する。",
+            "銀河系中心のブラックホール「いて座A*」に最も近い恒星でもあり、その距離は土星と太陽の間ほどに近い。",
+            "中心のブラックホールに異例なほど接近しているが、その先に出ると二度と戻れない境界である事象の地平面を越えることはないと見られている。"
+          ],
+          "whyItMatters": "この星がいて座A*にこれほど近づいていることは、ブラックホールの基本的な性質とその周囲の極限環境を探る新たな手がかりになりうる。"
+        }
+      }
+    }
+  ]
+}

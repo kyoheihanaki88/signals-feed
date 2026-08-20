@@ -101,6 +101,57 @@
               "duration": 5.093878
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "中国の不動産大手、中国恒大集団の創業者、許家印被告に無期懲役の判決が出ました。",
+              "duration": 7.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "深圳市中級人民法院は、大規模な金融詐欺があったと認定しました。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "その内容は、資産の水増しと負債の隠蔽でした。",
+              "duration": 4.368
+            },
+            {
+              "speaker": "narrator",
+              "text": "恒大集団は2020年、不動産融資への規制強化を機に経営が悪化しました。",
+              "duration": 6.792
+            },
+            {
+              "speaker": "narrator",
+              "text": "最終的な負債総額は3000億ドルを超えるとされています。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "香港証券取引所では、すでに株式が上場廃止となっています。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "商業施設の一部閉鎖も、今も進んでいます。",
+              "duration": 4.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "巨大企業の破綻が刑事責任にまで及んだことは、重い意味を持ちます。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "この判決は、恒大集団をめぐる長い問題の一つの節目となりました。",
+              "duration": 5.688
+            }
+          ]
         }
       }
     },
@@ -200,6 +251,62 @@
               "speaker": "explainer",
               "text": "That's the picture right now — Trump describing progress, while North Korea's response stays uncertain.",
               "duration": 6.452245
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "トランプ大統領が、年内に金正恩氏との会談を計画していると述べました。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "秘密裏にやり取りを重ねてきたと、本人は説明しています。",
+              "duration": 4.848
+            },
+            {
+              "speaker": "narrator",
+              "text": "しかし金氏の妹は、両者の接触について疑問を呈しました。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "外交的な進展への期待には、早くも水が差された形です。",
+              "duration": 5.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は韓国との合同軍事演習で、米国の関与を縮小すると発表したばかりです。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "その直後に、北朝鮮との交渉をほのめかす発言が飛び出しました。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "さらに北朝鮮が核兵器を57発保有しているとも明かしています。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "通常は公表されない機密情報に踏み込んだ点が、異例とされています。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "実現するかどうかは不透明ですが、朝鮮半島情勢は再び動き始めています。",
+              "duration": 6.408
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後の発言の一つ一つが、緊張の行方を左右しそうです。",
+              "duration": 5.064
             }
           ]
         }
@@ -303,6 +410,57 @@
               "duration": 5.668571
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オンラインゲームのRobloxで、子どもの安全に関わる問題が見つかりました。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "オーストラリアのeセーフティ委員会が調査したところ。",
+              "duration": 4.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "保護者の同意がないまま大人が子どものアカウントを見られる状態が続いていたのです。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "接続リクエストを送ることも可能で、子どもの交友関係やプロフィールも誰でも閲覧できる状態でした。",
+              "duration": 7.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "委員会はこれをオンライン安全法の基準に反する可能性があると指摘していました。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "今年これより前の検証でも、ゲーム外のフォーラムで子どもと大人が互いの投稿に返信できる状態が見つかっています。",
+              "duration": 8.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした経緯を受けて、Robloxは規制当局に法的な合意書を提出しました。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "会社側は委員会との対話を重ね、この一年間で安全対策を進めてきたと説明しています。",
+              "duration": 7.488
+            },
+            {
+              "speaker": "narrator",
+              "text": "子ども向けのサービスほど、見えない部分の設計が問われる時代になっています。",
+              "duration": 5.424
+            }
+          ]
         }
       }
     },
@@ -390,6 +548,62 @@
               "speaker": "explainer",
               "text": "Exactly — something to whistle up next time the dry spell makes us wonder if this is the end.",
               "duration": 4.91102
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスでは61日間雨が降らない日が続き、気候への不安が広がっています。",
+              "duration": 6.456
+            },
+            {
+              "speaker": "narrator",
+              "text": "そんな中、Elon Muskが持ち出したのが「カルダシェフ・スケール」という考え方です。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "文明の進歩を宇宙規模のエネルギー利用で測るという壮大な理論です。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "この発想を信じれば、水道の最後の一滴が落ちるまで気候危機を考えなくて済む、という皮肉が込められています。",
+              "duration": 8.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、テック業界の富豪たちが複雑な社会課題に対して、自分こそが欠けていた答えだと考える傾向があります。",
+              "duration": 8.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "以前にはJeff Bezosが、公教育への公平な税負担ではなく、独自の幼児教育事業を選んだ例もありました。",
+              "duration": 8.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "壮大な理論やビジョンは、実際の課題解決を先送りにする隠れ蓑になることがあります。",
+              "duration": 6.744
+            },
+            {
+              "speaker": "narrator",
+              "text": "私たちが日々の暮らしの中で向き合うべきなのは、遠い未来の理論よりも今の現実です。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "気候危機への不安は、簡単な言葉やスケールで消えるものではありません。",
+              "duration": 5.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "遠くの星の話より、足元の空模様に目を向けたい朝です。",
+              "duration": 5.064
             }
           ]
         }
@@ -491,6 +705,52 @@
               "speaker": "explainer",
               "text": "Because studying a star this close could reveal new details about the black hole's properties and the extreme environment around it.",
               "duration": 6.582857
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "銀河系の中心付近で、これまでで最も速く動く星が見つかりました。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "S301と名付けられたこの星は、秒速およそ2万5000キロで動いています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは旅客機の10万倍ほどの速さにあたります。",
+              "duration": 3.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "この星は銀河系中心にあるブラックホール、いて座A*のすぐそばを回っています。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "その距離は、太陽と土星の間ほどの近さだといいます。",
+              "duration": 4.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただし、二度と戻れない境界である事象の地平面を越えることはないと考えられています。",
+              "duration": 6.288
+            },
+            {
+              "speaker": "narrator",
+              "text": "この星の動きから、ブラックホールの性質や周囲の極限環境について新しい手がかりが得られそうです。",
+              "duration": 8.04
+            },
+            {
+              "speaker": "narrator",
+              "text": "遠い宇宙の出来事ですが、私たちの銀河の姿を少しずつ明らかにしてくれています。",
+              "duration": 6.504
             }
           ]
         }

@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,148 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Ukraine’s dismissed defence minister calls for wartime presidential election",
-      "summary": "Ukraine’s recently dismissed former defence minister Mykhailo Fedorov has called for a wartime presidential election in the most direct political challenge to Volodymyr Zelenskyy since the start of Russia’s full-scale invasion in 2022.",
+      "source": "NPR (World)",
+      "headline": "Chinese court sentences founder of property developer Evergrande to life in prison",
+      "summary": "Chinese court sentences founder of property developer Evergrande Chinese property developer Hui Ka Yan has been sentenced to life in prison.",
       "keyTakeaways": [
-        "The politician, whose abrupt sacking last month triggered a wave of protests, said that Ukraine had to “restore a full democratic process even amid a prolonged war” in a video address released online late on Tuesday evening.",
-        "Why some reforms move forward while others are blocked,” Fedorov said, arguing that Ukraine could fight a war and hold a national poll.",
-        "Elections have been suspended in Ukraine since martial law was imposed at the start of the full-scale invasion by Russia."
+        "A worker collects trash in a partially shuttered Evergrande commercial complex, on the day Hong Kong Stock Exchange delisted the Chinese property developer China Evergrande, in Beijing, China, Aug.",
+        "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities when Chinese authorities cracked down on excessive borrowing in the real estate industry in 2020.",
+        "The Shenzhen Intermediate People's Court convicted Hui, also known as Xu Jiayin, and Evergrande of engaged in large-scale financial fraud in inflating the group's assets and concealing its liabilities."
       ],
-      "whyItMatters": "Zelenskyy’s five-year term ended in May 2024 but there has been little desire in Ukraine to hold a contest while war continues.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/18/ukraines-dismissed-defence-minister-calls-for-wartime-presidential-election",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "From orbit",
+      "whyItMatters": "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities.",
+      "originalURL": "https://www.npr.org/2026/08/20/nx-s1-5939335/chinese-sentence-founder-evergrande",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "更迭前国防相、戦時下の大統領選を要求",
-          "summary": "ウクライナで先月更迭されたばかりの前国防相ミハイロ・フェドロフ氏が、戦時下での大統領選挙実施を求めた。2022年のロシアによる全面侵攻開始以来、ゼレンスキー大統領に対する最も直接的な政治的挑戦となっている。",
+          "headline": "恒大集団創業者に無期懲役、中国裁判所が判決",
+          "summary": "中国の不動産大手、中国恒大集団の創業者である許家印被告に対し、中国の裁判所が無期懲役の判決を言い渡した。",
           "keyTakeaways": [
-            "急な解任が抗議の波を招いたフェドロフ氏は、火曜夜に公開した動画声明で、長引く戦争のさなかでも民主的な手続きを取り戻す必要があると訴えた。",
-            "一部の改革は進む一方でなぜ他は阻まれるのかを問い、戦争を続けながらでも国政選挙は実施できると主張した。",
-            "ロシアの全面侵攻開始とともに戒厳令が敷かれて以降、ウクライナでは選挙が停止されている。"
+            "香港証券取引所は中国恒大集団の株式を上場廃止とし、同社の商業施設では一部閉鎖が進んでいる。",
+            "恒大集団は2020年の不動産融資規制強化を機に経営破綻し、負債総額は3000億ドルを超えるとされる。",
+            "深圳市中級人民法院は、許被告と恒大集団が資産を水増しし負債を隠す大規模な金融詐欺に関与したと認定した。"
           ],
-          "whyItMatters": "ゼレンスキー氏の任期は2024年5月に満了したが、戦争が続くなかで選挙を望む声はこれまで乏しかった。"
+          "whyItMatters": "3000億ドルを超える負債を抱えて破綻した恒大集団をめぐる問題は、今回の判決で一つの節目を迎えた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Ukraine's former defence minister is calling for an election, during the war?",
-              "duration": 4.623673
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. Mykhailo Fedorov, who was dismissed last month, made the call in a video address released Tuesday evening.",
-              "duration": 6.765714
-            },
-            {
-              "speaker": "listener",
-              "text": "Isn't that a big deal, given everything happening with Russia?",
-              "duration": 2.873469
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. It's being called the most direct political challenge to Zelenskyy since the full-scale invasion began in 2022.",
-              "duration": 7.105306
-            },
-            {
-              "speaker": "listener",
-              "text": "What exactly is he asking for?",
-              "duration": 1.802449
-            },
-            {
-              "speaker": "explainer",
-              "text": "He says Ukraine needs to restore a full democratic process, even amid a prolonged war, and argued the country can fight and hold a national poll at the same time.",
-              "duration": 8.777143
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does this matter right now?",
-              "duration": 1.802449
-            },
-            {
-              "speaker": "explainer",
-              "text": "Zelenskyy's five-year term actually ended back in May 2024, but elections have been suspended since martial law was imposed at the start of the invasion.",
-              "duration": 8.594286
-            },
-            {
-              "speaker": "listener",
-              "text": "Has there been much appetite for an election while the war continues?",
+              "text": "Did I hear that right — the Evergrande founder got life in prison?",
               "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "Not really, there's been little desire in Ukraine to hold a contest during active conflict.",
-              "duration": 4.493061
+              "text": "Yes. A court in Shenzhen sentenced Hui Ka Yan, also known as Xu Jiayin, to life.",
+              "duration": 5.146122
             },
             {
               "speaker": "listener",
-              "text": "And Fedorov's sacking already caused unrest, didn't it?",
-              "duration": 3.291429
+              "text": "What was he actually convicted of?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "It did. His abrupt dismissal last month triggered a wave of protests, so this call adds to that tension.",
+              "text": "Large-scale financial fraud — inflating Evergrande's assets and hiding how much debt the company really had.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "This is the company that collapsed a while back, right?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. Evergrande fell apart after Chinese regulators cracked down on excessive borrowing in real estate back in 2020.",
               "duration": 6.269388
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ウクライナで先月更迭されたミハイロ・フェドロフ前国防相が、戦時下での大統領選挙を求めました。",
-              "duration": 7.776
             },
             {
-              "speaker": "narrator",
-              "text": "火曜夜に公開した動画声明での発言です。",
-              "duration": 3.864
+              "speaker": "listener",
+              "text": "How much debt are we talking about?",
+              "duration": 1.906939
             },
             {
-              "speaker": "narrator",
-              "text": "戦争が続くなかでも、民主的な手続きを取り戻すべきだと訴えました。",
-              "duration": 5.616
+              "speaker": "explainer",
+              "text": "More than $300 billion in liabilities when it all came apart.",
+              "duration": 3.369796
             },
             {
-              "speaker": "narrator",
-              "text": "一部の改革は進むのに、なぜ選挙だけが止まったままなのかと疑問を投げかけています。",
-              "duration": 6.432
+              "speaker": "listener",
+              "text": "So why does this ruling matter now?",
+              "duration": 2.220408
             },
             {
-              "speaker": "narrator",
-              "text": "ウクライナでは全面侵攻とともに戒厳令が敷かれ、以降選挙は停止されたままです。",
-              "duration": 6.384
+              "speaker": "explainer",
+              "text": "It's a major milestone in the whole saga — a clear legal outcome after years of fallout from the company's collapse.",
+              "duration": 6.922449
             },
             {
-              "speaker": "narrator",
-              "text": "フェドロフ氏の解任は先月、国内で抗議の波を引き起こしました。",
-              "duration": 5.4
+              "speaker": "listener",
+              "text": "A quiet ending to a very big story.",
+              "duration": 2.690612
             },
             {
-              "speaker": "narrator",
-              "text": "ゼレンスキー氏の任期は2024年5月に切れていますが、選挙を望む声はこれまで少なかったのです。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の発言は、侵攻開始以来もっとも直接的な政治的挑戦とされています。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "この先、国内の政治的な空気に変化が出てくるかもしれません。",
-              "duration": 5.088
+              "speaker": "explainer",
+              "text": "In a way, yes. The consequences are still being felt, but this closes one major chapter.",
+              "duration": 5.093878
             }
           ]
         }
@@ -160,148 +109,97 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "BBC News (World)",
-      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
-      "summary": "Brazilian President Luiz Inácio Lula da Silva has hailed the discovery of oil near the mouth of the Amazon river.",
+      "source": "The Guardian (World)",
+      "headline": "Kim Jong-un’s sister casts doubt on Trump’s claims of secret US-North Korea talks",
+      "summary": "Donald Trump has said he is planning to meet North Korea’s Kim Jong-un later this year, though the reclusive leader’s younger sister cast doubt on their communications and dampened hopes of a diplomatic breakthrough between them.",
       "keyTakeaways": [
-        "Lula, who is running for another four-year term in elections scheduled for October, stressed that he was still committed to eventually phasing out fossil fuels to curb climate change.",
-        "The oil discovery was made in the sea about 175km (110 miles) off the Amazon coast but the size of the field is not yet clear.",
-        "Lula has in the past rejected criticism by conservationists as \"meddling\" and on Monday he again said that he would not accept any foreign interference."
+        "Trump, who also claimed North Korea had 57 nuclear weapons, had suggested he and Kim were holding secret negotiations on Tuesday after announcing the US would downgrade its participation in military exercises held by South Korea, a US ally.",
+        "Asked whether Kim had responded to his request for a conversation, Trump said: “Yeah, he has.”",
+        "The Wall Street Journal reported on Tuesday that Trump was pushing aides to set up an in-person meeting with Kim, potentially during a trip to Asia in November for the Asia-Pacific Economic Cooperation summit in Shenzhen, China."
       ],
-      "whyItMatters": "Speaking after the find was announced by Brazil's state-run oil company Petrobras, he said it could be \"a passport to the country's future\".",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
+      "whyItMatters": "Trump also made the unusual disclosure that North Korea had 57 “very powerful nuclear weapons”, revealing exact intelligence that may not ordinarily be made public.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/19/kim-jong-un-sister-doubt-trump-claims-secret-us-north-korea-talks",
       "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "アマゾン河口沖で油田発見、ルラ大統領歓迎",
-          "summary": "ブラジルのルラ大統領が、アマゾン川河口付近で発見された油田を歓迎する意向を示した。",
+          "headline": "米朝首脳会談構想に金正恩氏の妹が疑問符",
+          "summary": "トランプ大統領は年内に北朝鮮の金正恩氏と会談する意向を示したが、金氏の妹は両者のやり取りに疑問を投げかけ、外交的進展への期待に水を差した。",
           "keyTakeaways": [
-            "十月の選挙で四期目を目指すルラ氏だが、気候変動対策として化石燃料からの脱却を進める姿勢は変わらないと強調している。",
-            "油田はアマゾン沿岸から約百七十五キロ沖合の海域で見つかったが、埋蔵規模はまだ明らかになっていない。",
-            "環境保護派からの批判をルラ氏はこれまでも「内政干渉」として退けており、今回もあらためて外国からの干渉は受け入れないと述べた。"
+            "トランプ氏は北朝鮮が核兵器57発を保有していると主張し、韓国との合同軍事演習への米国の関与縮小を発表した直後、金氏との間で秘密裏に交渉を進めていることをほのめかした。",
+            "金氏が会談要請に応じたかを問われたトランプ氏は「応じた」と答えた。",
+            "ウォール・ストリート・ジャーナル紙は、トランプ氏が11月のアジア歴訪、中国・深圳でのAPEC首脳会議に合わせた金氏との対面会談実現を側近に急がせていると報じた。"
           ],
-          "whyItMatters": "国営石油会社ペトロブラスの発表を受け、ルラ氏はこの発見を国の未来を開く「パスポート」になり得ると語った。"
+          "whyItMatters": "トランプ氏は北朝鮮が「非常に強力な核兵器」を57発保有していると異例の言及をし、通常公にされない機密情報とみられる内容まで明かした。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Brazil found oil near the Amazon? What's the story there?",
-              "duration": 3.422041
+              "text": "So Trump says he's talking with Kim Jong-un again?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "Yes. President Lula announced it, and he's calling it a possible passport to the country's future.",
-              "duration": 5.459592
+              "text": "That's what he claimed. He said he's planning to meet Kim later this year.",
+              "duration": 3.709388
             },
             {
               "speaker": "listener",
-              "text": "Where exactly was it found?",
-              "duration": 1.697959
+              "text": "But North Korea isn't confirming that?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "About 175 kilometers off the Amazon coast, out at sea. It was Brazil's state oil company, Petrobras, that made the discovery.",
-              "duration": 8.489796
+              "text": "Right. Kim's sister cast doubt on it, saying she's not sure any real communication is happening.",
+              "duration": 5.877551
             },
             {
               "speaker": "listener",
-              "text": "Do we know how big the field is?",
-              "duration": 1.854694
+              "text": "Did Trump say Kim had actually responded to him?",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Not yet, that part is still unclear.",
-              "duration": 1.933061
+              "text": "He did. When asked, he said 'Yeah, he has.' But that's his account, not confirmed by Pyongyang.",
+              "duration": 6.635102
             },
             {
               "speaker": "listener",
-              "text": "Isn't this a strange thing to celebrate, given the Amazon and climate concerns?",
-              "duration": 4.545306
+              "text": "Is there talk of an actual meeting?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "Lula addressed that. He says he's still committed to eventually phasing out fossil fuels.",
-              "duration": 4.780408
+              "text": "The Wall Street Journal reported Trump is pushing aides to arrange one, possibly during his Asia trip in November for the APEC summit in Shenzhen.",
+              "duration": 7.967347
             },
             {
               "speaker": "listener",
-              "text": "But conservationists must have concerns about drilling there.",
-              "duration": 3.239184
+              "text": "What else stood out from what he said?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "They do, and Lula has pushed back on that criticism before, calling it meddling. He repeated that he won't accept foreign interference.",
-              "duration": 7.836735
+              "text": "He also mentioned North Korea has 57 nuclear weapons, which is unusual — that kind of intelligence detail isn't normally made public.",
+              "duration": 7.758367
             },
             {
               "speaker": "listener",
-              "text": "And this comes with an election coming up too.",
-              "duration": 2.272653
+              "text": "So for now, it's mostly one-sided claims.",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Right, Lula is running for another four-year term in October's elections.",
-              "duration": 3.604898
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ブラジルの国営石油会社ペトロブラスが、アマゾン川河口付近の海域で新たな油田を見つけました。",
-              "duration": 7.392
-            },
-            {
-              "speaker": "narrator",
-              "text": "沿岸から約百七十五キロ沖の海域で、埋蔵量の規模はまだわかっていません。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "ルラ大統領はこの発見を歓迎し、国の将来を開く鍵になり得ると語りました。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "十月の選挙で四期目を目指す中での発表でした。",
-              "duration": 4.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "それでも、化石燃料からの脱却を進める方針自体は変えないと強調しています。",
-              "duration": 6.456
-            },
-            {
-              "speaker": "narrator",
-              "text": "環境保護派はアマゾン周辺での開発に、以前から懸念を示してきました。",
-              "duration": 6.12
-            },
-            {
-              "speaker": "narrator",
-              "text": "ルラ氏はこうした批判を「内政干渉」として退けてきました。",
-              "duration": 5.376
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回もあらためて、外国からの干渉は受け入れないと述べました。",
-              "duration": 5.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "資源開発と環境保護のバランスが、これからのブラジルを試すことになりそうです。",
-              "duration": 6.096
+              "text": "That's the picture right now — Trump describing progress, while North Korea's response stays uncertain.",
+              "duration": 6.452245
             }
           ]
         }
@@ -313,152 +211,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "‘The ultimate gamers’ mascot’: Sonic the Hedgehog at 35 – from 2D to 3D to a billion-dollar film franchise",
-      "summary": "O ne day in the early 1990s, I came home from university for the weekend and discovered that my dad had bought himself a Sega Mega Drive, bundled with a copy of Sonic the Hedgehog 2.",
+      "headline": "Roblox commits to privacy overhaul after eSafety discovers adults can contact children via gaming platform",
+      "summary": "Roblox has committed to making changes to its online gaming platform after Australia’s eSafety commissioner discovered adults were still able to see child accounts and send connection requests without parental consent.",
       "keyTakeaways": [
-        "I knew about Sega’s mascot of course.",
-        "The launch of the original Sonic the Hedgehog game in 1991 was a landmark moment for the company, massively boosting the sales of its 16bit console in the west, ripping market share from the dominant Super Nintendo.",
-        "While Mario was the family favourite, Sonic with his speed, attitude and brash visual energy encapsulated the edgy spirit of the early 1990s MTV culture."
+        "Additionally, the regulator found children’s connections and profiles – including account names and interests – were visible to anyone on Roblox.",
+        "The eSafety commissioner had raised concerns Roblox may not be compliant with codes and standards under the Online Safety Act, alleging the platform failed to have sufficient measures in place to prevent contact between adults and children.",
+        "A Roblox spokesperson said there had been “constructive dialogue with eSafety” and the company had delivered on its safety commitments to eSafety in the past year while continuing to work towards keeping children safe online."
       ],
-      "whyItMatters": "I took the opportunity to set up my dad’s Mega Drive so they could play Sonic 2 together.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/18/sonic-the-hedgehog-at-35",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The editor",
+      "whyItMatters": "The company has provided a legal agreement to the online safety regulator after testing earlier this year also revealed children and adults could view and respond to one another’s posts on forums outside game environments without parental consent.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/20/roblox-esafety-commissioner-children-adults-ntwnfb",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ゲーム史を走り続けた35年、ソニックが刻んだ軌跡",
-          "summary": "1990年代初め、大学から週末に帰省したある日、父がセガのメガドライブを買っていた。同梱されていたのは『ソニック・ザ・ヘッジホッグ2』だった。以来、二人でその画面を見つめた時間が、ソニックという存在の記憶として残っている。",
+          "headline": "ロバートックス、子どもと大人の接触問題受けプライバシー対策見直しへ",
+          "summary": "オーストラリアのeセーフティ委員会は、保護者の同意なしに大人が子どものアカウントを閲覧し、接続リクエストを送れる状態が続いていたことを確認した。これを受けてロバートックスは、オンラインゲームプラットフォームの改善を約束した。",
           "keyTakeaways": [
-            "セガのマスコットとしてのソニックはもちろん知っていた",
-            "1991年の初代発売はセガにとって転機となり、16ビット機の欧米での販売を押し上げ、任天堂優位の市場に食い込んだ",
-            "マリオが家族の定番だった一方、ソニックの速さと挑発的な佇まいは、90年代初頭のMTV文化の気分そのものだった"
+            "子どものアカウント名や興味関心を含む交友関係やプロフィールが、誰でも閲覧できる状態だったことも判明した。",
+            "同委員会は、大人と子どもの接触を防ぐ十分な措置が取られていないとして、オンライン安全法の基準への違反を指摘していた。",
+            "ロバートックス広報担当者は、eセーフティ委員会との「建設的な対話」があったとし、この一年間に安全面での約束を果たしながら、子どもの安全確保に取り組み続けてきたと述べた。"
           ],
-          "whyItMatters": "その週末、父のメガドライブを一緒に設定し、『ソニック2』を並んで遊んだ。"
+          "whyItMatters": "今年これに先立つ検証でも、ゲーム外のフォーラムで子どもと大人が保護者の同意なく互いの投稿を閲覧し返信できることが明らかになっており、同社は規制当局に法的合意書を提出している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Sonic the Hedgehog is turning 35?",
-              "duration": 2.324898
+              "text": "So what did eSafety actually find with Roblox?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "That's right. It started back in 1991 as Sega's answer to Mario.",
-              "duration": 3.761633
+              "text": "They discovered adults could still contact child accounts and send connection requests without parental consent.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "Did it actually make a difference for Sega at the time?",
-              "duration": 3.108571
+              "text": "Wait, and other kids' profiles were just visible too?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Yes, quite a big one. The original game helped boost sales of Sega's 16-bit console in the west.",
-              "duration": 5.851429
+              "text": "Yes, account names, interests, and connections were visible to anyone on the platform, not just approved contacts.",
+              "duration": 6.164898
             },
             {
               "speaker": "listener",
-              "text": "Was it competing directly with Nintendo then?",
-              "duration": 2.638367
+              "text": "Is that against the rules somehow?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. It managed to pull market share away from the Super Nintendo, which had been dominant.",
-              "duration": 5.198367
+              "text": "eSafety raised concerns Roblox may not meet the codes and standards under the Online Safety Act around preventing adult-child contact.",
+              "duration": 7.183673
             },
             {
               "speaker": "listener",
-              "text": "What made Sonic stand out from Mario?",
-              "duration": 2.037551
+              "text": "Was this the first time this came up?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "His speed and attitude. He had this brash energy that matched the MTV culture of the early nineties.",
-              "duration": 5.041633
+              "text": "No, earlier testing this year also found children and adults could view and respond to each other's posts on forums outside the actual games.",
+              "duration": 7.000816
             },
             {
               "speaker": "listener",
-              "text": "It sounds like this had a personal side to it too.",
-              "duration": 3.056327
+              "text": "So what's happening now?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "It did. One writer describes coming home from university to find his dad had bought a Sega Mega Drive with Sonic 2.",
-              "duration": 6.4
+              "text": "Roblox has given eSafety a legal agreement to make privacy changes, and says it's had constructive talks with the regulator.",
+              "duration": 7.000816
             },
             {
               "speaker": "listener",
-              "text": "So they ended up playing it together?",
+              "text": "Does the company say much about it?",
               "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Yes, he set it up so they could share that moment, even though Mario had been the family favourite before that.",
-              "duration": 5.877551
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "セガの看板キャラクター、ソニック・ザ・ヘッジホッグが今年で35周年を迎えました。",
-              "duration": 6.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "1991年に発売された初代タイトルは、セガにとって重要な出来事でした。",
-              "duration": 6.624
-            },
-            {
-              "speaker": "narrator",
-              "text": "欧米市場でのメガドライブ販売を押し上げる原動力になりました。",
-              "duration": 4.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "当時圧倒的だった任天堂のシェアにも食い込む結果を残しました。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "マリオが家庭の定番だった一方、ソニックは別の魅力を放っていました。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "そのスピード感と挑発的な佇まいは、90年代初頭のMTV文化そのものでした。",
-              "duration": 7.152
-            },
-            {
-              "speaker": "narrator",
-              "text": "ある家庭では、父親が買ったメガドライブにソニック2が同梱されていました。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "それをきっかけに、親子で一緒に画面を見つめる時間が生まれました。",
-              "duration": 5.064
-            },
-            {
-              "speaker": "narrator",
-              "text": "今ではソニックは映画シリーズとしても大きな成功を収めています。",
-              "duration": 5.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "一台のゲーム機から始まった物語は、今も多くの人の記憶に残っています。",
-              "duration": 6.024
+              "text": "A spokesperson said they've met past safety commitments and continue working toward keeping children safe on the platform.",
+              "duration": 5.668571
             }
           ]
         }
@@ -470,142 +312,84 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "The Blood of Dawnwalker – save your family while becoming what you hate",
-      "summary": "T he Blood of Dawnwalker could be the start of an epic saga.",
+      "headline": "Relax, everyone: Elon Musk has a mantra to make the climate crisis go away | Emma Brockes",
+      "summary": "The Kardashev scale is the answer both to our impending doom and our anxiety around it – and if we decide to believe in it, we won’t have to give the climate crisis a single thought until the last drip falls from the tap.",
       "keyTakeaways": [
-        "The developers envisage Dawnwalker as a trilogy.",
-        "While you can explore and talk to people at your leisure, time moves forward whenever you complete a clearly marked quest.",
-        "You have to manage your time while growing in power, sharpening those claws for the final showdown."
+        "If this isn’t blue-sky thinking, I don’t know what is, and Musk has launched into it.",
+        "This is the idea and it’s a familiar one to anyone who has watched tech billionaires take intractable, commonplace crises and decide that, among the measures and proposals in play, the vital missing ingredient so far has been them.",
+        "Do you remember when Jeff Bezos, rather than doing something quotidian and loserish like funding public education by ensuring Amazon pays the same tax rate as regular Americans, decided instead to reinvent preschools?"
       ],
-      "whyItMatters": "You could always attempt to save your family on day one, but you’ll be severely unprepared.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/19/the-blood-of-dawnwalker-save-your-family-while-becoming-what-you-hate",
+      "whyItMatters": "N ext time the weather gives the UK 61 days without rain and we wonder idly if this is the end, there is a term we may whistle up to soothe us.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/20/elon-musk-climate-crisis-spacex-kardashev-scale-energy-production",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Devices",
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "家族を救うため、憎むものに変わる――『ブラッド・オブ・ドーンウォーカー』",
-          "summary": "『ブラッド・オブ・ドーンウォーカー』は、壮大な物語の序章となるかもしれない。",
-          "keyTakeaways": [
-            "開発陣はドーンウォーカーを三部作として構想している。",
-            "探索や会話は自由だが、明確に示されたクエストを終えるたびに時間は進んでいく。",
-            "力を蓄えながら時間をやりくりし、最後の対決に備えて牙を研ぐ必要がある。"
-          ],
-          "whyItMatters": "家族を救うために初日から動くこともできるが、その時はまだ、あまりに無力だろう。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what exactly is The Blood of Dawnwalker?",
-              "duration": 2.742857
+              "text": "So what's this mantra Elon Musk has for the climate crisis?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "It's a new game, and the developers actually see it as the start of a trilogy.",
-              "duration": 3.996735
+              "text": "It's called the Kardashev scale — the idea that advancing civilizations eventually master more and more energy, solving problems along the way.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "A trilogy already? What's the story about?",
-              "duration": 2.586122
+              "text": "So the thinking is... technology just outgrows the crisis?",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "You're trying to save your family, but along the way you end up becoming something you hate.",
-              "duration": 4.257959
+              "text": "Right. The article calls it blue-sky thinking — a way to make anxiety about climate change feel unnecessary.",
+              "duration": 7.053061
             },
             {
               "speaker": "listener",
-              "text": "That sounds tense. How does the day-to-day playing work?",
-              "duration": 3.160816
+              "text": "That sounds comforting, but also a bit convenient.",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "You can explore and talk to people freely, but time only moves forward once you finish a clearly marked quest.",
-              "duration": 5.616327
+              "text": "That's the writer's point. She notes a pattern — tech billionaires looking at big, shared crises and deciding they personally are the missing piece.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "So you can't just rush in and fix everything right away?",
-              "duration": 3.004082
+              "text": "Like what?",
+              "duration": 0.862041
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. You could try to save your family on day one, but you'd be badly unprepared.",
-              "duration": 4.414694
+              "text": "She brings up Jeff Bezos — instead of something as simple as paying standard tax rates to fund public education, he chose to reinvent preschools instead.",
+              "duration": 8.306939
             },
             {
               "speaker": "listener",
-              "text": "So you have to build up strength first.",
-              "duration": 2.220408
+              "text": "So it's less about fixing the system and more about a personal vision.",
+              "duration": 4.022857
             },
             {
               "speaker": "explainer",
-              "text": "Right, you manage your time carefully while growing in power, sharpening yourself for the final showdown.",
-              "duration": 5.433469
+              "text": "That's the argument. And she notes the timing — after weeks of unusually dry weather, people start reaching for reassurance, any reassurance.",
+              "duration": 7.836735
             },
             {
               "speaker": "listener",
-              "text": "It sounds like patience matters as much as strength here.",
-              "duration": 3.108571
+              "text": "Even one as big and abstract as a cosmic energy scale.",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "It does. That balance seems to be at the heart of the whole experience.",
-              "duration": 3.84
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "新しいゲーム『ブラッド・オブ・ドーンウォーカー』が発表されました。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "家族を救うために、自らが憎んできた存在へと変わっていく物語です。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "開発陣はこの作品を三部作として構想しているということです。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "探索や会話は自由に楽しめます。",
-              "duration": 3.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただ、明確に示されたクエストを終えるたびに、時間が進んでいきます。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "力を蓄えながら時間をやりくりし、最後の対決に備える必要があります。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "初日から家族を救おうとすることもできますが、その時点ではまだ力が足りません。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "じっくりと準備を重ねてこそ、道が開けていく設計のようです。",
-              "duration": 4.896
+              "text": "Exactly — something to whistle up next time the dry spell makes us wonder if this is the end.",
+              "duration": 4.91102
             }
           ]
         }
@@ -617,147 +401,96 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "The Guardian (Science)",
-      "headline": "SpaceX Starship the talk of remote Australian island as Elon Musk’s engineers sent to retrieve it",
-      "summary": "Engineers from Elon Musk’s SpaceX are on their way to a remote Australian island to retrieve part of a Starship that dived into the Indian Ocean.",
+      "headline": "Astronomers detect fastest known star in Milky Way",
+      "summary": "Astronomers have detected the fastest known star in the Milky Way, hurtling around the supermassive black hole at the heart of the galaxy.",
       "keyTakeaways": [
-        "The spacecraft – now floating off the coast of Christmas Island – was launched in Texas on 24 July, in the 13th test of the technology.",
-        "In recent weeks, the company has been working to retrieve the 52m long piece of spacecraft amid rough seas, before towing it to calmer waters for further study.",
-        "David Watchorn, the chair of the Christmas Island Tourism Association, said most islanders woke on Tuesday to see what appeared to be three big ships."
+        "The star, called S301, travels at about 25,000km (15,500 miles) per second, 100,000 times faster than a commercial plane.",
+        "It is also the closest known star to the Milky Way’s central black hole, Sagittarius A*, approaching it around the distance of Saturn to the Sun.",
+        "Although the star is unusually close to the central black hole, it is not expected to cross its event horizon, the point beyond which objects can never escape."
       ],
-      "whyItMatters": "Locals hoped the global attention might encourage more tourists to come and visit the island, about 1,550km off Western Australia, and experience its “rugged, raw” landscapes and unique biodiversity, including red crabs and fluffy flying foxes.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/19/elon-musk-spacex-starship-lands-christmas-island-australia",
+      "whyItMatters": "The star’s extreme proximity to Sagittarius A* means that it could open a new window on to the black hole’s fundamental properties and the extreme environment surrounding it.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/19/astronomers-detect-fastest-known-star-in-milky-way-s301",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Experiment",
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "スペースXの残骸、豪の離島で話題に マスク氏のチームが回収へ",
-          "summary": "イーロン・マスク氏のスペースXの技術者たちが、インド洋に着水したスターシップの一部を回収するため、オーストラリアの離島に向かっている。",
+          "headline": "銀河系で最速の恒星を発見",
+          "summary": "天文学者が、銀河系の中心にある超大質量ブラックホールの周囲を猛速度で周回する、これまでで最も速い恒星を発見した。",
           "keyTakeaways": [
-            "この宇宙船は7月24日にテキサス州から打ち上げられたスターシップの13回目の試験機で、現在はクリスマス島沖に浮かんでいる。",
-            "同社はここ数週間、荒れた海の中で全長52メートルの機体の回収を進め、その後詳しい調査のため穏やかな海域へ曳航する予定だ。",
-            "クリスマス島観光協会のデビッド・ワッチョーン会長によると、火曜の朝、島民の多くが目覚めると大きな船が三隻現れているのに気づいたという。"
+            "S301と名付けられたこの星は秒速およそ2万5000キロで移動し、旅客機の10万倍の速さに達する。",
+            "銀河系中心のブラックホール「いて座A*」に最も近い恒星でもあり、その距離は土星と太陽の間ほどに近い。",
+            "中心のブラックホールに異例なほど接近しているが、その先に出ると二度と戻れない境界である事象の地平面を越えることはないと見られている。"
           ],
-          "whyItMatters": "島民は、この注目が観光客の増加につながり、西オーストラリア沖約千五百五十キロに位置する島の荒々しく原始的な景観や、赤いカニやふさふさのオオコウモリなど独特の生態系を訪れる人が増えることを期待している。"
+          "whyItMatters": "この星がいて座A*にこれほど近づいていることは、ブラックホールの基本的な性質とその周囲の極限環境を探る新たな手がかりになりうる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a piece of SpaceX's Starship just... showed up near Christmas Island?",
-              "duration": 4.963265
+              "text": "So there's a star that's basically the speed champion of the galaxy?",
+              "duration": 3.892245
             },
             {
               "speaker": "explainer",
-              "text": "That's right. It's part of the spacecraft launched from Texas on July 24th, the 13th test flight.",
-              "duration": 5.276735
+              "text": "Yes, it's called S301, and it's the fastest known star in the Milky Way.",
+              "duration": 5.093878
             },
             {
               "speaker": "listener",
-              "text": "And now it's floating in the Indian Ocean?",
-              "duration": 2.272653
+              "text": "How fast are we talking?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "Yes, off the coast of Christmas Island. SpaceX engineers are on their way to retrieve it.",
-              "duration": 5.198367
+              "text": "About 25,000 kilometres per second, roughly 100,000 times faster than a commercial plane.",
+              "duration": 5.511837
             },
             {
               "speaker": "listener",
-              "text": "That sounds tricky, pulling something out of the ocean.",
-              "duration": 2.873469
+              "text": "What's it doing, just flying through space?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "It has been. The seas have been rough, so they're working to tow the piece, which is 52 metres long, to calmer waters for study.",
-              "duration": 7.78449
+              "text": "It's orbiting close to Sagittarius A*, the supermassive black hole at our galaxy's centre.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "I bet that's a strange sight for locals.",
-              "duration": 2.35102
+              "text": "Close how close, exactly?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Very much so. David Watchorn from the tourism association said islanders woke up to see three big ships just offshore.",
-              "duration": 7.183673
+              "text": "Around the distance between Saturn and the Sun, which makes it the nearest known star to that black hole.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "Is there any upside to all this for the island?",
-              "duration": 2.638367
+              "text": "Is it in danger of being pulled in?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Locals are hopeful. They think the attention might draw more visitors to see the island's rugged landscapes and wildlife, like the red crabs and flying foxes.",
-              "duration": 8.724898
+              "text": "No, astronomers don't expect it to cross the event horizon, the point where nothing can escape.",
+              "duration": 4.728163
             },
             {
               "speaker": "listener",
-              "text": "A quiet island suddenly in the spotlight.",
-              "duration": 2.533878
+              "text": "So why does this discovery matter?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "For now, at least. Once the retrieval's done, things should settle back to normal.",
-              "duration": 4.127347
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-19/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オーストラリアのクリスマス島沖に、スペースXのスターシップの一部が浮かんでいます。",
-              "duration": 6.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "この機体は7月24日にテキサス州から打ち上げられた、13回目の試験機です。",
-              "duration": 6.456
-            },
-            {
-              "speaker": "narrator",
-              "text": "全長52メートルの残骸を、技術者たちが荒れた海の中で回収しようとしています。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "回収後は穏やかな海域まで曳航し、詳しく調査する計画です。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "火曜の朝、島民の多くは大きな船が三隻現れているのに気づきました。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "クリスマス島観光協会のデビッド・ワッチョーン会長がこの様子を伝えています。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "島は西オーストラリア沖約千五百五十キロにあり、赤いカニやオオコウモリなど独特の生態系で知られています。",
-              "duration": 8.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "島民は、この出来事への注目が観光客を呼び込むきっかけになればと期待しています。",
-              "duration": 6.528
-            },
-            {
-              "speaker": "narrator",
-              "text": "静かな島に、思いがけない来訪者たちが集まった朝です。",
-              "duration": 4.704
+              "text": "Because studying a star this close could reveal new details about the black hole's properties and the extreme environment around it.",
+              "duration": 6.582857
             }
           ]
         }

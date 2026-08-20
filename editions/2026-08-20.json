@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "3000億ドルを超える負債を抱えて破綻した恒大集団をめぐる問題は、今回の判決で一つの節目を迎えた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Did I hear that right — the Evergrande founder got life in prison?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. A court in Shenzhen sentenced Hui Ka Yan, also known as Xu Jiayin, to life.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "What was he actually convicted of?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Large-scale financial fraud — inflating Evergrande's assets and hiding how much debt the company really had.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "This is the company that collapsed a while back, right?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. Evergrande fell apart after Chinese regulators cracked down on excessive borrowing in real estate back in 2020.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "How much debt are we talking about?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "More than $300 billion in liabilities when it all came apart.",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "listener",
+              "text": "So why does this ruling matter now?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a major milestone in the whole saga — a clear legal outcome after years of fallout from the company's collapse.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "A quiet ending to a very big story.",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "In a way, yes. The consequences are still being felt, but this closes one major chapter.",
+              "duration": 5.093878
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "ウォール・ストリート・ジャーナル紙は、トランプ氏が11月のアジア歴訪、中国・深圳でのAPEC首脳会議に合わせた金氏との対面会談実現を側近に急がせていると報じた。"
           ],
           "whyItMatters": "トランプ氏は北朝鮮が「非常に強力な核兵器」を57発保有していると異例の言及をし、通常公にされない機密情報とみられる内容まで明かした。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Trump says he's talking with Kim Jong-un again?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's what he claimed. He said he's planning to meet Kim later this year.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "But North Korea isn't confirming that?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. Kim's sister cast doubt on it, saying she's not sure any real communication is happening.",
+              "duration": 5.877551
+            },
+            {
+              "speaker": "listener",
+              "text": "Did Trump say Kim had actually responded to him?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did. When asked, he said 'Yeah, he has.' But that's his account, not confirmed by Pyongyang.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there talk of an actual meeting?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Wall Street Journal reported Trump is pushing aides to arrange one, possibly during his Asia trip in November for the APEC summit in Shenzhen.",
+              "duration": 7.967347
+            },
+            {
+              "speaker": "listener",
+              "text": "What else stood out from what he said?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He also mentioned North Korea has 57 nuclear weapons, which is unusual — that kind of intelligence detail isn't normally made public.",
+              "duration": 7.758367
+            },
+            {
+              "speaker": "listener",
+              "text": "So for now, it's mostly one-sided claims.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the picture right now — Trump describing progress, while North Korea's response stays uncertain.",
+              "duration": 6.452245
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "今年これに先立つ検証でも、ゲーム外のフォーラムで子どもと大人が保護者の同意なく互いの投稿を閲覧し返信できることが明らかになっており、同社は規制当局に法的合意書を提出している。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what did eSafety actually find with Roblox?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "They discovered adults could still contact child accounts and send connection requests without parental consent.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, and other kids' profiles were just visible too?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, account names, interests, and connections were visible to anyone on the platform, not just approved contacts.",
+              "duration": 6.164898
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that against the rules somehow?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "eSafety raised concerns Roblox may not meet the codes and standards under the Online Safety Act around preventing adult-child contact.",
+              "duration": 7.183673
+            },
+            {
+              "speaker": "listener",
+              "text": "Was this the first time this came up?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, earlier testing this year also found children and adults could view and respond to each other's posts on forums outside the actual games.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "So what's happening now?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Roblox has given eSafety a legal agreement to make privacy changes, and says it's had constructive talks with the regulator.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "Does the company say much about it?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "A spokesperson said they've met past safety commitments and continue working toward keeping children safe on the platform.",
+              "duration": 5.668571
+            }
+          ]
+        }
       }
     },
     {
@@ -117,7 +324,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Keyboard",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's this mantra Elon Musk has for the climate crisis?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's called the Kardashev scale — the idea that advancing civilizations eventually master more and more energy, solving problems along the way.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "So the thinking is... technology just outgrows the crisis?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. The article calls it blue-sky thinking — a way to make anxiety about climate change feel unnecessary.",
+              "duration": 7.053061
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds comforting, but also a bit convenient.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the writer's point. She notes a pattern — tech billionaires looking at big, shared crises and deciding they personally are the missing piece.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "Like what?",
+              "duration": 0.862041
+            },
+            {
+              "speaker": "explainer",
+              "text": "She brings up Jeff Bezos — instead of something as simple as paying standard tax rates to fund public education, he chose to reinvent preschools instead.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's less about fixing the system and more about a personal vision.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the argument. And she notes the timing — after weeks of unusually dry weather, people start reaching for reassurance, any reassurance.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "Even one as big and abstract as a cosmic energy scale.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — something to whistle up next time the dry spell makes us wonder if this is the end.",
+              "duration": 4.91102
+            }
+          ]
+        }
+      }
     },
     {
       "number": 5,
@@ -148,6 +424,75 @@
             "中心のブラックホールに異例なほど接近しているが、その先に出ると二度と戻れない境界である事象の地平面を越えることはないと見られている。"
           ],
           "whyItMatters": "この星がいて座A*にこれほど近づいていることは、ブラックホールの基本的な性質とその周囲の極限環境を探る新たな手がかりになりうる。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a star that's basically the speed champion of the galaxy?",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, it's called S301, and it's the fastest known star in the Milky Way.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "How fast are we talking?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "About 25,000 kilometres per second, roughly 100,000 times faster than a commercial plane.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "What's it doing, just flying through space?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's orbiting close to Sagittarius A*, the supermassive black hole at our galaxy's centre.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Close how close, exactly?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Around the distance between Saturn and the Sun, which makes it the nearest known star to that black hole.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it in danger of being pulled in?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, astronomers don't expect it to cross the event horizon, the point where nothing can escape.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "So why does this discovery matter?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because studying a star this close could reveal new details about the black hole's properties and the extreme environment around it.",
+              "duration": 6.582857
+            }
+          ]
         }
       }
     }

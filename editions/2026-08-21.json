@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "カーン氏の弁護団は、収監中に健康が悪化し、右目の視力を大きく失ったと訴えている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Imran Khan was taken to hospital? What happened there?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he was moved to a hospital in Islamabad in the early hours of Friday, on orders from the supreme court.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it because of concerns about his health?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. There's been weeks of uproar over his deteriorating condition while in prison.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Did doctors find anything serious?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "The information minister said a team of qualified doctors declared him medically fit, and he was returned to Adiala prison after a few hours.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "What are his lawyers saying about all this?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say his health has worsened in custody, and that he's lost significant vision in his right eye.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a real concern for him.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. There was also heavy security around the hospital, with hundreds of personnel posted before he arrived.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "So for now, he's back at Adiala.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, back at the prison in Rawalpindi, according to his party's spokesperson.",
+              "duration": 3.94449
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "「私たちの知る限り、この治療法がヘビに用いられたのはこれが初めてだ」"
           ],
           "whyItMatters": "飼育員が異変に気づいたのは、ジョディの食欲が落ち、巣の中でじっとしている時間が増えたことがきっかけだった。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Wait, a python got cancer treatment? Like, human cancer treatment?",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Her name's Jodie Foster, she's a 15-foot reticulated python at Chester Zoo.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "Named after the actress?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. She's 23 years old and weighs about 50 kilograms.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "How did keepers even know something was wrong?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "She started eating less and staying still more than usual in her habitat.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "So they gave her a treatment normally used on people?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, and as far as anyone knows, it's the first time it's been tried on a snake.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Did it work?",
+              "duration": 1.07102
+            },
+            {
+              "speaker": "explainer",
+              "text": "So far, yes. Since her surgery she's still striking, gripping and swallowing food with no trouble.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "That's genuinely reassuring to hear.",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. A quiet but meaningful step for animal medicine.",
+              "duration": 3.291429
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "被告による情報提供の試みは、ウクライナ軍関係者の安全を脅かすものだったとされている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what happened here?",
+              "duration": 1.253878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Australian police have charged a man named Vladimir Teslov with attempted foreign interference.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "Who is he?",
+              "duration": 1.28
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's a dual Russian-Australian citizen, 27 years old, and he appeared in court on Friday.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "What exactly is he accused of doing?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "Police allege he joined the Ukrainian military and then tried to pass on information about its activities.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Who was he trying to give that information to?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "People he believed were connected to Russian intelligence services.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there more to his background?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — police say he travelled to Russia for military-style training back in October 2024, then returned to Australia later that year.",
+              "duration": 8.176327
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this case matter?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because his alleged actions are said to have created a risk to the safety and security of Ukrainian military personnel.",
+              "duration": 5.799184
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "市議会は三月に満場一致でカメラ導入を承認しており、Axon製ナンバープレート識別装置の契約は未確定ながら、このまま進む見通しだ。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So some cities actually got rid of these license plate cameras?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, at least 56 municipalities have dropped or rejected contracts with Flock Safety this year.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "Flock, that's the company with the cameras everywhere, right?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. They have over 120,000 cameras scanning plates billions of times a month across the country.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "But the headline says people are still being watched even after cities drop them.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the twist. One resident found that even after his city moved away from Flock, similar tracking continued.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "Why do privacy groups have a problem with this in the first place?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say it creates a dragnet — no warrant needed, and it captures cars belonging to people who aren't suspected of anything.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "So dropping one company's cameras doesn't really solve that.",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not necessarily. In fact, one city council already voted to approve a similar system from another company, Axon.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "So the debate just shifts to who's providing the cameras, not whether they exist.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the concern advocates are raising as more of these contracts move forward.",
+              "duration": 4.022857
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,75 @@
             "感染していながら所在が分からない人々が、感染拡大の大きな危険をはらむ。"
           ],
           "whyItMatters": "五月十五日以降、感染者は約五千人、死者は二千人を超え、コンゴ民主共和国史上最大かつ最悪の流行となっている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So this Ebola outbreak in DRC — how bad has it actually gotten?",
+              "duration": 3.84
+            },
+            {
+              "speaker": "explainer",
+              "text": "Very serious. Since mid-May, there have been almost 5,000 cases and more than 2,000 deaths.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a huge jump. Wasn't this outbreak declared over at some point?",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, earlier this year it was declared over after just 20 cases and two deaths.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "So how did it go from that to being the deadliest outbreak in the country's history?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's one of the big questions officials are trying to answer now.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "What's making it so hard to bring under control?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Partly that some people known to have the virus can't be located.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "And why does that matter so much?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because untracked cases carry a high risk of spreading the virus further.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "So the priority now is finding those people.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — that, and stopping it from becoming the world's largest outbreak.",
+              "duration": 4.493061
+            }
+          ]
         }
       }
     }

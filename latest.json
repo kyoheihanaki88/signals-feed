@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-20",
+  "date": "2026-08-21",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,148 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "NPR (World)",
-      "headline": "Chinese court sentences founder of property developer Evergrande to life in prison",
-      "summary": "Chinese court sentences founder of property developer Evergrande Chinese property developer Hui Ka Yan has been sentenced to life in prison.",
+      "source": "The Guardian (World)",
+      "headline": "Jailed ex-Pakistan PM Imran Khan allowed brief hospital visit after uproar over health",
+      "summary": "Pakistan’s jailed former prime minister Imran Khan was briefly taken to a hospital in the country’s capital on supreme court orders after weeks of uproar about his deteriorating health.",
       "keyTakeaways": [
-        "A worker collects trash in a partially shuttered Evergrande commercial complex, on the day Hong Kong Stock Exchange delisted the Chinese property developer China Evergrande, in Beijing, China, Aug.",
-        "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities when Chinese authorities cracked down on excessive borrowing in the real estate industry in 2020.",
-        "The Shenzhen Intermediate People's Court convicted Hui, also known as Xu Jiayin, and Evergrande of engaged in large-scale financial fraud in inflating the group's assets and concealing its liabilities."
+        "Khan, 73, was transferred to the hospital in the early hours of Friday, but then moved back to Adiala prison in Rawalpindi after a ⁠few hours, a spokesperson for his party said on Friday.",
+        "Pakistan’s information minister said Khan was returned to prison after a “team of qualified doctors … declared him medically fit.”",
+        "Security was beefed up in Islamabad, and hundreds of security personnel were posted around the hospital before Khan was taken there."
       ],
-      "whyItMatters": "The decision marks a milestone in Evergrande's saga after it collapsed with more than $300 billion in liabilities.",
-      "originalURL": "https://www.npr.org/2026/08/20/nx-s1-5939335/chinese-sentence-founder-evergrande",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The globe",
+      "whyItMatters": "Khan’s lawyers say his health has ​deteriorated in prison and that he has lost significant vision in his right eye.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "恒大集団創業者に無期懲役、中国裁判所が判決",
-          "summary": "中国の不動産大手、中国恒大集団の創業者である許家印被告に対し、中国の裁判所が無期懲役の判決を言い渡した。",
+          "headline": "収監中のイマラン・カーン氏、健康懸念で一時病院へ",
+          "summary": "パキスタンの前首相で服役中のイマラン・カーン氏が、健康悪化をめぐる数週間の懸念を受け、最高裁の命令により首都の病院に一時的に搬送された。",
           "keyTakeaways": [
-            "香港証券取引所は中国恒大集団の株式を上場廃止とし、同社の商業施設では一部閉鎖が進んでいる。",
-            "恒大集団は2020年の不動産融資規制強化を機に経営破綻し、負債総額は3000億ドルを超えるとされる。",
-            "深圳市中級人民法院は、許被告と恒大集団が資産を水増しし負債を隠す大規模な金融詐欺に関与したと認定した。"
+            "73歳のカーン氏は金曜未明に病院へ移送されたが、数時間後にラワルピンディのアディアラ刑務所へ戻された、と同氏の政党の広報担当者が明らかにした。",
+            "パキスタン情報相は、「有資格の医師団」がカーン氏を「医学的に問題なし」と判断したため刑務所へ戻したと説明した。",
+            "病院への搬送に先立ち、イスラマバードでは警備が強化され、数百人の治安要員が周辺に配置された。"
           ],
-          "whyItMatters": "3000億ドルを超える負債を抱えて破綻した恒大集団をめぐる問題は、今回の判決で一つの節目を迎えた。"
+          "whyItMatters": "カーン氏の弁護団は、収監中に健康が悪化し、右目の視力を大きく失ったと訴えている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Did I hear that right — the Evergrande founder got life in prison?",
+              "text": "So Imran Khan was taken to hospital? What happened there?",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he was moved to a hospital in Islamabad in the early hours of Friday, on orders from the supreme court.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it because of concerns about his health?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. There's been weeks of uproar over his deteriorating condition while in prison.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Did doctors find anything serious?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "The information minister said a team of qualified doctors declared him medically fit, and he was returned to Adiala prison after a few hours.",
+              "duration": 7.418776
+            },
+            {
+              "speaker": "listener",
+              "text": "What are his lawyers saying about all this?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say his health has worsened in custody, and that he's lost significant vision in his right eye.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a real concern for him.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. There was also heavy security around the hospital, with hundreds of personnel posted before he arrived.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "So for now, he's back at Adiala.",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, back at the prison in Rawalpindi, according to his party's spokesperson.",
               "duration": 3.94449
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. A court in Shenzhen sentenced Hui Ka Yan, also known as Xu Jiayin, to life.",
-              "duration": 5.146122
-            },
-            {
-              "speaker": "listener",
-              "text": "What was he actually convicted of?",
-              "duration": 1.906939
-            },
-            {
-              "speaker": "explainer",
-              "text": "Large-scale financial fraud — inflating Evergrande's assets and hiding how much debt the company really had.",
-              "duration": 5.616327
-            },
-            {
-              "speaker": "listener",
-              "text": "This is the company that collapsed a while back, right?",
-              "duration": 3.369796
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's right. Evergrande fell apart after Chinese regulators cracked down on excessive borrowing in real estate back in 2020.",
-              "duration": 6.269388
-            },
-            {
-              "speaker": "listener",
-              "text": "How much debt are we talking about?",
-              "duration": 1.906939
-            },
-            {
-              "speaker": "explainer",
-              "text": "More than $300 billion in liabilities when it all came apart.",
-              "duration": 3.369796
-            },
-            {
-              "speaker": "listener",
-              "text": "So why does this ruling matter now?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "It's a major milestone in the whole saga — a clear legal outcome after years of fallout from the company's collapse.",
-              "duration": 6.922449
-            },
-            {
-              "speaker": "listener",
-              "text": "A quiet ending to a very big story.",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "In a way, yes. The consequences are still being felt, but this closes one major chapter.",
-              "duration": 5.093878
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "中国の不動産大手、中国恒大集団の創業者、許家印被告に無期懲役の判決が出ました。",
-              "duration": 7.848
-            },
-            {
-              "speaker": "narrator",
-              "text": "深圳市中級人民法院は、大規模な金融詐欺があったと認定しました。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "その内容は、資産の水増しと負債の隠蔽でした。",
-              "duration": 4.368
-            },
-            {
-              "speaker": "narrator",
-              "text": "恒大集団は2020年、不動産融資への規制強化を機に経営が悪化しました。",
-              "duration": 6.792
-            },
-            {
-              "speaker": "narrator",
-              "text": "最終的な負債総額は3000億ドルを超えるとされています。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "香港証券取引所では、すでに株式が上場廃止となっています。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "商業施設の一部閉鎖も、今も進んでいます。",
-              "duration": 4.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "巨大企業の破綻が刑事責任にまで及んだことは、重い意味を持ちます。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "この判決は、恒大集団をめぐる長い問題の一つの節目となりました。",
-              "duration": 5.688
             }
           ]
         }
@@ -159,154 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Kim Jong-un’s sister casts doubt on Trump’s claims of secret US-North Korea talks",
-      "summary": "Donald Trump has said he is planning to meet North Korea’s Kim Jong-un later this year, though the reclusive leader’s younger sister cast doubt on their communications and dampened hopes of a diplomatic breakthrough between them.",
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Python named Jodie Foster first snake to receive pioneering cancer treatment",
+      "summary": "A 15ft (4.5-metre) python is believed to be the first snake in the world to be given a pioneering, life-saving cancer treatment normally used on humans.",
       "keyTakeaways": [
-        "Trump, who also claimed North Korea had 57 nuclear weapons, had suggested he and Kim were holding secret negotiations on Tuesday after announcing the US would downgrade its participation in military exercises held by South Korea, a US ally.",
-        "Asked whether Kim had responded to his request for a conversation, Trump said: “Yeah, he has.”",
-        "The Wall Street Journal reported on Tuesday that Trump was pushing aides to set up an in-person meeting with Kim, potentially during a trip to Asia in November for the Asia-Pacific Economic Cooperation summit in Shenzhen, China."
+        "The 50kg reticulated python, named Jodie Foster after the Hollywood star, has just turned 23 and lives at Chester zoo.",
+        "Pythons can unhinge their jaws to swallow prey many times the size of their head, and in the months since her surgery zoo staff have observed that Jodie continues to strike, grip and swallow food without difficulty.",
+        "As far as we’re aware, this is the first time it’s ever been used in one.”"
       ],
-      "whyItMatters": "Trump also made the unusual disclosure that North Korea had 57 “very powerful nuclear weapons”, revealing exact intelligence that may not ordinarily be made public.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/19/kim-jong-un-sister-doubt-trump-claims-secret-us-north-korea-talks",
+      "whyItMatters": "Keepers first became concerned that she may be unwell when she began eating less and spending more time inactive in her habitat.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/21/python-jodie-foster-snake-cancer-electrochemotherapy",
       "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米朝首脳会談構想に金正恩氏の妹が疑問符",
-          "summary": "トランプ大統領は年内に北朝鮮の金正恩氏と会談する意向を示したが、金氏の妹は両者のやり取りに疑問を投げかけ、外交的進展への期待に水を差した。",
+          "headline": "ニシキヘビが世界初のがん治療を受ける",
+          "summary": "体長4.5メートルのニシキヘビが、通常は人間に用いられる先進的ながん治療を世界で初めて受けたヘビとみられている。",
           "keyTakeaways": [
-            "トランプ氏は北朝鮮が核兵器57発を保有していると主張し、韓国との合同軍事演習への米国の関与縮小を発表した直後、金氏との間で秘密裏に交渉を進めていることをほのめかした。",
-            "金氏が会談要請に応じたかを問われたトランプ氏は「応じた」と答えた。",
-            "ウォール・ストリート・ジャーナル紙は、トランプ氏が11月のアジア歴訪、中国・深圳でのAPEC首脳会議に合わせた金氏との対面会談実現を側近に急がせていると報じた。"
+            "体重50キロのアミメニシキヘビは、映画スターにちなんでジョディ・フォスターと名づけられ、23歳になったばかりで、チェスター動物園で暮らしている。",
+            "ニシキヘビは顎を外し、自分の頭より何倍も大きな獲物を丸呑みできる。手術後の数か月、飼育スタッフはジョディが問題なく獲物に噛みつき、締めつけ、飲み込む様子を確認している。",
+            "「私たちの知る限り、この治療法がヘビに用いられたのはこれが初めてだ」"
           ],
-          "whyItMatters": "トランプ氏は北朝鮮が「非常に強力な核兵器」を57発保有していると異例の言及をし、通常公にされない機密情報とみられる内容まで明かした。"
+          "whyItMatters": "飼育員が異変に気づいたのは、ジョディの食欲が落ち、巣の中でじっとしている時間が増えたことがきっかけだった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Trump says he's talking with Kim Jong-un again?",
-              "duration": 3.108571
+              "text": "Wait, a python got cancer treatment? Like, human cancer treatment?",
+              "duration": 3.94449
             },
             {
               "speaker": "explainer",
-              "text": "That's what he claimed. He said he's planning to meet Kim later this year.",
-              "duration": 3.709388
+              "text": "Yes. Her name's Jodie Foster, she's a 15-foot reticulated python at Chester Zoo.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "But North Korea isn't confirming that?",
-              "duration": 1.906939
+              "text": "Named after the actress?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "Right. Kim's sister cast doubt on it, saying she's not sure any real communication is happening.",
-              "duration": 5.877551
+              "text": "Exactly. She's 23 years old and weighs about 50 kilograms.",
+              "duration": 3.343673
             },
             {
               "speaker": "listener",
-              "text": "Did Trump say Kim had actually responded to him?",
-              "duration": 2.690612
-            },
-            {
-              "speaker": "explainer",
-              "text": "He did. When asked, he said 'Yeah, he has.' But that's his account, not confirmed by Pyongyang.",
-              "duration": 6.635102
-            },
-            {
-              "speaker": "listener",
-              "text": "Is there talk of an actual meeting?",
-              "duration": 2.324898
-            },
-            {
-              "speaker": "explainer",
-              "text": "The Wall Street Journal reported Trump is pushing aides to arrange one, possibly during his Asia trip in November for the APEC summit in Shenzhen.",
-              "duration": 7.967347
-            },
-            {
-              "speaker": "listener",
-              "text": "What else stood out from what he said?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "He also mentioned North Korea has 57 nuclear weapons, which is unusual — that kind of intelligence detail isn't normally made public.",
-              "duration": 7.758367
-            },
-            {
-              "speaker": "listener",
-              "text": "So for now, it's mostly one-sided claims.",
+              "text": "How did keepers even know something was wrong?",
               "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "That's the picture right now — Trump describing progress, while North Korea's response stays uncertain.",
-              "duration": 6.452245
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "トランプ大統領が、年内に金正恩氏との会談を計画していると述べました。",
-              "duration": 6.024
+              "text": "She started eating less and staying still more than usual in her habitat.",
+              "duration": 3.94449
             },
             {
-              "speaker": "narrator",
-              "text": "秘密裏にやり取りを重ねてきたと、本人は説明しています。",
-              "duration": 4.848
+              "speaker": "listener",
+              "text": "So they gave her a treatment normally used on people?",
+              "duration": 2.951837
             },
             {
-              "speaker": "narrator",
-              "text": "しかし金氏の妹は、両者の接触について疑問を呈しました。",
-              "duration": 5.4
+              "speaker": "explainer",
+              "text": "Right, and as far as anyone knows, it's the first time it's been tried on a snake.",
+              "duration": 4.075102
             },
             {
-              "speaker": "narrator",
-              "text": "外交的な進展への期待には、早くも水が差された形です。",
-              "duration": 5.184
+              "speaker": "listener",
+              "text": "Did it work?",
+              "duration": 1.07102
             },
             {
-              "speaker": "narrator",
-              "text": "トランプ氏は韓国との合同軍事演習で、米国の関与を縮小すると発表したばかりです。",
-              "duration": 6.816
+              "speaker": "explainer",
+              "text": "So far, yes. Since her surgery she's still striking, gripping and swallowing food with no trouble.",
+              "duration": 5.564082
             },
             {
-              "speaker": "narrator",
-              "text": "その直後に、北朝鮮との交渉をほのめかす発言が飛び出しました。",
-              "duration": 5.472
+              "speaker": "listener",
+              "text": "That's genuinely reassuring to hear.",
+              "duration": 2.168163
             },
             {
-              "speaker": "narrator",
-              "text": "さらに北朝鮮が核兵器を57発保有しているとも明かしています。",
-              "duration": 5.376
-            },
-            {
-              "speaker": "narrator",
-              "text": "通常は公表されない機密情報に踏み込んだ点が、異例とされています。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "実現するかどうかは不透明ですが、朝鮮半島情勢は再び動き始めています。",
-              "duration": 6.408
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後の発言の一つ一つが、緊張の行方を左右しそうです。",
-              "duration": 5.064
+              "speaker": "explainer",
+              "text": "It is. A quiet but meaningful step for animal medicine.",
+              "duration": 3.291429
             }
           ]
         }
@@ -316,149 +209,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "Roblox commits to privacy overhaul after eSafety discovers adults can contact children via gaming platform",
-      "summary": "Roblox has committed to making changes to its online gaming platform after Australia’s eSafety commissioner discovered adults were still able to see child accounts and send connection requests without parental consent.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Australian police charge man accused of attempting to share Ukrainian military intel with Russian agents",
+      "summary": "Australian police have charged a man who allegedly joined the Ukrainian military and sought to provide information about its activities to people he suspected were Russian agents.",
       "keyTakeaways": [
-        "Additionally, the regulator found children’s connections and profiles – including account names and interests – were visible to anyone on Roblox.",
-        "The eSafety commissioner had raised concerns Roblox may not be compliant with codes and standards under the Online Safety Act, alleging the platform failed to have sufficient measures in place to prevent contact between adults and children.",
-        "A Roblox spokesperson said there had been “constructive dialogue with eSafety” and the company had delivered on its safety commitments to eSafety in the past year while continuing to work towards keeping children safe online."
+        "Vladimir Teslov, a dual Russian-Australian citizen, appeared in court on Friday after the Australian federal police (AFP) charged him with an attempted foreign interference.",
+        "Police alleged the 27-year-old travelled to Russia to undergo military-style training in October 2024.",
+        "When Teslov returned to Australia later that year, he maintained contact “with individuals he believed were connected to Russian intelligence services”, police alleged."
       ],
-      "whyItMatters": "The company has provided a legal agreement to the online safety regulator after testing earlier this year also revealed children and adults could view and respond to one another’s posts on forums outside game environments without parental consent.",
-      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/20/roblox-esafety-commissioner-children-adults-ntwnfb",
+      "whyItMatters": "It is alleged Teslov’s attempts to share the information “created a risk to the safety and security of Ukrainian military personnel”.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/21/vladimir-teslov-australian-charged-sharing-ukraine-intel-russian-agents-ntwnfb",
       "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Devices",
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ロバートックス、子どもと大人の接触問題受けプライバシー対策見直しへ",
-          "summary": "オーストラリアのeセーフティ委員会は、保護者の同意なしに大人が子どものアカウントを閲覧し、接続リクエストを送れる状態が続いていたことを確認した。これを受けてロバートックスは、オンラインゲームプラットフォームの改善を約束した。",
+          "headline": "豪州、対ウクライナ諜報疑惑の男を起訴",
+          "summary": "オーストラリア連邦警察は、ウクライナ軍に加わりながら、その活動情報をロシア側の関係者とみられる人物に提供しようとした疑いで男を起訴した。",
           "keyTakeaways": [
-            "子どものアカウント名や興味関心を含む交友関係やプロフィールが、誰でも閲覧できる状態だったことも判明した。",
-            "同委員会は、大人と子どもの接触を防ぐ十分な措置が取られていないとして、オンライン安全法の基準への違反を指摘していた。",
-            "ロバートックス広報担当者は、eセーフティ委員会との「建設的な対話」があったとし、この一年間に安全面での約束を果たしながら、子どもの安全確保に取り組み続けてきたと述べた。"
+            "ロシアとオーストラリアの二重国籍を持つウラジーミル・テスロフ被告が金曜日に出廷、外国からの干渉を試みた容疑で起訴された。",
+            "警察によれば、27歳の被告は2024年10月にロシアへ渡り、軍事訓練のようなものを受けたとされる。",
+            "その後オーストラリアに戻った被告は、ロシア情報機関とつながりがあると信じていた人物との接触を続けていたという。"
           ],
-          "whyItMatters": "今年これに先立つ検証でも、ゲーム外のフォーラムで子どもと大人が保護者の同意なく互いの投稿を閲覧し返信できることが明らかになっており、同社は規制当局に法的合意書を提出している。"
+          "whyItMatters": "被告による情報提供の試みは、ウクライナ軍関係者の安全を脅かすものだったとされている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what did eSafety actually find with Roblox?",
-              "duration": 2.951837
+              "text": "So what happened here?",
+              "duration": 1.253878
             },
             {
               "speaker": "explainer",
-              "text": "They discovered adults could still contact child accounts and send connection requests without parental consent.",
-              "duration": 5.746939
+              "text": "Australian police have charged a man named Vladimir Teslov with attempted foreign interference.",
+              "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "Wait, and other kids' profiles were just visible too?",
-              "duration": 2.925714
+              "text": "Who is he?",
+              "duration": 1.28
             },
             {
               "speaker": "explainer",
-              "text": "Yes, account names, interests, and connections were visible to anyone on the platform, not just approved contacts.",
-              "duration": 6.164898
+              "text": "He's a dual Russian-Australian citizen, 27 years old, and he appeared in court on Friday.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "Is that against the rules somehow?",
-              "duration": 2.168163
+              "text": "What exactly is he accused of doing?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "eSafety raised concerns Roblox may not meet the codes and standards under the Online Safety Act around preventing adult-child contact.",
-              "duration": 7.183673
+              "text": "Police allege he joined the Ukrainian military and then tried to pass on information about its activities.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Was this the first time this came up?",
-              "duration": 1.933061
+              "text": "Who was he trying to give that information to?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "No, earlier testing this year also found children and adults could view and respond to each other's posts on forums outside the actual games.",
-              "duration": 7.000816
+              "text": "People he believed were connected to Russian intelligence services.",
+              "duration": 3.291429
             },
             {
               "speaker": "listener",
-              "text": "So what's happening now?",
-              "duration": 1.671837
+              "text": "Is there more to his background?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Roblox has given eSafety a legal agreement to make privacy changes, and says it's had constructive talks with the regulator.",
-              "duration": 7.000816
+              "text": "Yes — police say he travelled to Russia for military-style training back in October 2024, then returned to Australia later that year.",
+              "duration": 8.176327
             },
             {
               "speaker": "listener",
-              "text": "Does the company say much about it?",
-              "duration": 1.985306
+              "text": "Why does this case matter?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "A spokesperson said they've met past safety commitments and continue working toward keeping children safe on the platform.",
-              "duration": 5.668571
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オンラインゲームのRobloxで、子どもの安全に関わる問題が見つかりました。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "オーストラリアのeセーフティ委員会が調査したところ。",
-              "duration": 4.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "保護者の同意がないまま大人が子どものアカウントを見られる状態が続いていたのです。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "接続リクエストを送ることも可能で、子どもの交友関係やプロフィールも誰でも閲覧できる状態でした。",
-              "duration": 7.488
-            },
-            {
-              "speaker": "narrator",
-              "text": "委員会はこれをオンライン安全法の基準に反する可能性があると指摘していました。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "今年これより前の検証でも、ゲーム外のフォーラムで子どもと大人が互いの投稿に返信できる状態が見つかっています。",
-              "duration": 8.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした経緯を受けて、Robloxは規制当局に法的な合意書を提出しました。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "会社側は委員会との対話を重ね、この一年間で安全対策を進めてきたと説明しています。",
-              "duration": 7.488
-            },
-            {
-              "speaker": "narrator",
-              "text": "子ども向けのサービスほど、見えない部分の設計が問われる時代になっています。",
-              "duration": 5.424
+              "text": "Because his alleged actions are said to have created a risk to the safety and security of Ukrainian military personnel.",
+              "duration": 5.799184
             }
           ]
         }
@@ -470,140 +312,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Relax, everyone: Elon Musk has a mantra to make the climate crisis go away | Emma Brockes",
-      "summary": "The Kardashev scale is the answer both to our impending doom and our anxiety around it – and if we decide to believe in it, we won’t have to give the climate crisis a single thought until the last drip falls from the tap.",
+      "headline": "Their cities dropped Flock surveillance cameras. They’re still being watched",
+      "summary": "He and like-minded neighbors had been riding the momentum of a nationwide backlash against these cameras and their ability to track cars.",
       "keyTakeaways": [
-        "If this isn’t blue-sky thinking, I don’t know what is, and Musk has launched into it.",
-        "This is the idea and it’s a familiar one to anyone who has watched tech billionaires take intractable, commonplace crises and decide that, among the measures and proposals in play, the vital missing ingredient so far has been them.",
-        "Do you remember when Jeff Bezos, rather than doing something quotidian and loserish like funding public education by ensuring Amazon pays the same tax rate as regular Americans, decided instead to reinvent preschools?"
+        "Flock Safety has more than 120,000 cameras set up on roads across the US that scan license plates billions of times every month.",
+        "Privacy advocates say Flock has created a dragnet, as these queries don’t require a warrant, and the cameras routinely capture details about cars driven by people who are not suspected of crimes.",
+        "At least 56 municipalities have deactivated, canceled or rejected contracts with Flock this year, according to national advocacy organization DeFlock."
       ],
-      "whyItMatters": "N ext time the weather gives the UK 61 days without rain and we wonder idly if this is the end, there is a term we may whistle up to soothe us.",
-      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/20/elon-musk-climate-crisis-spacex-kardashev-scale-energy-production",
-      "readTime": 4,
+      "whyItMatters": "The contract for Axon’s ALPRs has not yet been finalized, although the city council is expected to move forward with the company after voting unanimously to approve the cameras in March.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/20/flock-cameras-surveillance",
+      "readTime": 10,
       "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Keyboard",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "撤去されたはずの監視カメラ、なお街を見張る",
+          "summary": "彼と志を同じくする住民たちは、車両追跡を可能にするこの種のカメラに対する全米的な反発の流れに乗ってきた。",
+          "keyTakeaways": [
+            "Flock Safetyは全米の道路に12万台以上のカメラを設置し、月に数十億回ナンバープレートを読み取っている。",
+            "プライバシー擁護派は、令状なしで照会でき、犯罪の疑いのない人の車の情報まで日常的に記録するこの仕組みを、無差別な監視網だと指摘する。",
+            "全米の擁護団体DeFlockによれば、今年だけで少なくとも56の自治体がFlockとの契約を停止、解約、または拒否した。"
+          ],
+          "whyItMatters": "市議会は三月に満場一致でカメラ導入を承認しており、Axon製ナンバープレート識別装置の契約は未確定ながら、このまま進む見通しだ。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what's this mantra Elon Musk has for the climate crisis?",
-              "duration": 3.422041
+              "text": "So some cities actually got rid of these license plate cameras?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "It's called the Kardashev scale — the idea that advancing civilizations eventually master more and more energy, solving problems along the way.",
-              "duration": 8.359184
+              "text": "Yes, at least 56 municipalities have dropped or rejected contracts with Flock Safety this year.",
+              "duration": 4.858776
             },
             {
               "speaker": "listener",
-              "text": "So the thinking is... technology just outgrows the crisis?",
-              "duration": 3.761633
+              "text": "Flock, that's the company with the cameras everywhere, right?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "Right. The article calls it blue-sky thinking — a way to make anxiety about climate change feel unnecessary.",
-              "duration": 7.053061
+              "text": "Right. They have over 120,000 cameras scanning plates billions of times a month across the country.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "That sounds comforting, but also a bit convenient.",
-              "duration": 2.925714
+              "text": "But the headline says people are still being watched even after cities drop them.",
+              "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "That's the writer's point. She notes a pattern — tech billionaires looking at big, shared crises and deciding they personally are the missing piece.",
-              "duration": 7.78449
+              "text": "That's the twist. One resident found that even after his city moved away from Flock, similar tracking continued.",
+              "duration": 6.034286
             },
             {
               "speaker": "listener",
-              "text": "Like what?",
-              "duration": 0.862041
-            },
-            {
-              "speaker": "explainer",
-              "text": "She brings up Jeff Bezos — instead of something as simple as paying standard tax rates to fund public education, he chose to reinvent preschools instead.",
-              "duration": 8.306939
-            },
-            {
-              "speaker": "listener",
-              "text": "So it's less about fixing the system and more about a personal vision.",
-              "duration": 4.022857
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the argument. And she notes the timing — after weeks of unusually dry weather, people start reaching for reassurance, any reassurance.",
-              "duration": 7.836735
-            },
-            {
-              "speaker": "listener",
-              "text": "Even one as big and abstract as a cosmic energy scale.",
+              "text": "Why do privacy groups have a problem with this in the first place?",
               "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Exactly — something to whistle up next time the dry spell makes us wonder if this is the end.",
-              "duration": 4.91102
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスでは61日間雨が降らない日が続き、気候への不安が広がっています。",
-              "duration": 6.456
+              "text": "They say it creates a dragnet — no warrant needed, and it captures cars belonging to people who aren't suspected of anything.",
+              "duration": 6.635102
             },
             {
-              "speaker": "narrator",
-              "text": "そんな中、Elon Muskが持ち出したのが「カルダシェフ・スケール」という考え方です。",
-              "duration": 6.432
+              "speaker": "listener",
+              "text": "So dropping one company's cameras doesn't really solve that.",
+              "duration": 3.056327
             },
             {
-              "speaker": "narrator",
-              "text": "文明の進歩を宇宙規模のエネルギー利用で測るという壮大な理論です。",
-              "duration": 5.448
+              "speaker": "explainer",
+              "text": "Not necessarily. In fact, one city council already voted to approve a similar system from another company, Axon.",
+              "duration": 6.034286
             },
             {
-              "speaker": "narrator",
-              "text": "この発想を信じれば、水道の最後の一滴が落ちるまで気候危機を考えなくて済む、という皮肉が込められています。",
-              "duration": 8.328
+              "speaker": "listener",
+              "text": "So the debate just shifts to who's providing the cameras, not whether they exist.",
+              "duration": 4.675918
             },
             {
-              "speaker": "narrator",
-              "text": "背景には、テック業界の富豪たちが複雑な社会課題に対して、自分こそが欠けていた答えだと考える傾向があります。",
-              "duration": 8.712
-            },
-            {
-              "speaker": "narrator",
-              "text": "以前にはJeff Bezosが、公教育への公平な税負担ではなく、独自の幼児教育事業を選んだ例もありました。",
-              "duration": 8.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "壮大な理論やビジョンは、実際の課題解決を先送りにする隠れ蓑になることがあります。",
-              "duration": 6.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "私たちが日々の暮らしの中で向き合うべきなのは、遠い未来の理論よりも今の現実です。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "気候危機への不安は、簡単な言葉やスケールで消えるものではありません。",
-              "duration": 5.352
-            },
-            {
-              "speaker": "narrator",
-              "text": "遠くの星の話より、足元の空模様に目を向けたい朝です。",
-              "duration": 5.064
+              "speaker": "explainer",
+              "text": "That's the concern advocates are raising as more of these contracts move forward.",
+              "duration": 4.022857
             }
           ]
         }
@@ -615,142 +413,96 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "The Guardian (Science)",
-      "headline": "Astronomers detect fastest known star in Milky Way",
-      "summary": "Astronomers have detected the fastest known star in the Milky Way, hurtling around the supermassive black hole at the heart of the galaxy.",
+      "headline": "Ebola outbreak: five big questions",
+      "summary": "How did it became the DRC’s most deadly outbreak and what must be done to stop it becoming the world’s largest?",
       "keyTakeaways": [
-        "The star, called S301, travels at about 25,000km (15,500 miles) per second, 100,000 times faster than a commercial plane.",
-        "It is also the closest known star to the Milky Way’s central black hole, Sagittarius A*, approaching it around the distance of Saturn to the Sun.",
-        "Although the star is unusually close to the central black hole, it is not expected to cross its event horizon, the point beyond which objects can never escape."
+        "Almost 100 days ago, Africa’s public health watchdog reported an outbreak of Ebola in the Democratic Republic of the Congo.",
+        "It declared its outbreak over after just 20 cases and two deaths.",
+        "People who have the virus, but whose whereabouts are unknown, represent a high risk of onward Ebola transmission."
       ],
-      "whyItMatters": "The star’s extreme proximity to Sagittarius A* means that it could open a new window on to the black hole’s fundamental properties and the extreme environment surrounding it.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/19/astronomers-detect-fastest-known-star-in-milky-way-s301",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The observatory",
+      "whyItMatters": "There have now been almost 5,000 cases and more than 2,000 deaths since 15 May, making this Ebola outbreak the biggest and most deadly in the DRC’s history.",
+      "originalURL": "https://www.theguardian.com/global-development/2026/aug/21/ebola-outbreak-five-big-questions",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "銀河系で最速の恒星を発見",
-          "summary": "天文学者が、銀河系の中心にある超大質量ブラックホールの周囲を猛速度で周回する、これまでで最も速い恒星を発見した。",
+          "headline": "エボラ出血熱、五つの問い",
+          "summary": "コンゴ民主共和国で史上最悪の流行となった経緯は何か。そして、これが世界最大の流行に拡大するのを防ぐには何が必要か。",
           "keyTakeaways": [
-            "S301と名付けられたこの星は秒速およそ2万5000キロで移動し、旅客機の10万倍の速さに達する。",
-            "銀河系中心のブラックホール「いて座A*」に最も近い恒星でもあり、その距離は土星と太陽の間ほどに近い。",
-            "中心のブラックホールに異例なほど接近しているが、その先に出ると二度と戻れない境界である事象の地平面を越えることはないと見られている。"
+            "約百日前、アフリカの公衆衛生機関がコンゴ民主共和国でのエボラ出血熱の流行を報告した。",
+            "その流行はわずか二十例、死者二人の段階で終息が宣言されていた。",
+            "感染していながら所在が分からない人々が、感染拡大の大きな危険をはらむ。"
           ],
-          "whyItMatters": "この星がいて座A*にこれほど近づいていることは、ブラックホールの基本的な性質とその周囲の極限環境を探る新たな手がかりになりうる。"
+          "whyItMatters": "五月十五日以降、感染者は約五千人、死者は二千人を超え、コンゴ民主共和国史上最大かつ最悪の流行となっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So there's a star that's basically the speed champion of the galaxy?",
-              "duration": 3.892245
+              "text": "So this Ebola outbreak in DRC — how bad has it actually gotten?",
+              "duration": 3.84
             },
             {
               "speaker": "explainer",
-              "text": "Yes, it's called S301, and it's the fastest known star in the Milky Way.",
-              "duration": 5.093878
+              "text": "Very serious. Since mid-May, there have been almost 5,000 cases and more than 2,000 deaths.",
+              "duration": 5.250612
             },
             {
               "speaker": "listener",
-              "text": "How fast are we talking?",
-              "duration": 1.619592
+              "text": "That's a huge jump. Wasn't this outbreak declared over at some point?",
+              "duration": 4.310204
             },
             {
               "speaker": "explainer",
-              "text": "About 25,000 kilometres per second, roughly 100,000 times faster than a commercial plane.",
-              "duration": 5.511837
+              "text": "Yes, earlier this year it was declared over after just 20 cases and two deaths.",
+              "duration": 4.179592
             },
             {
               "speaker": "listener",
-              "text": "What's it doing, just flying through space?",
-              "duration": 2.220408
+              "text": "So how did it go from that to being the deadliest outbreak in the country's history?",
+              "duration": 4.440816
             },
             {
               "speaker": "explainer",
-              "text": "It's orbiting close to Sagittarius A*, the supermassive black hole at our galaxy's centre.",
-              "duration": 5.746939
+              "text": "That's one of the big questions officials are trying to answer now.",
+              "duration": 3.186939
             },
             {
               "speaker": "listener",
-              "text": "Close how close, exactly?",
-              "duration": 1.750204
+              "text": "What's making it so hard to bring under control?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Around the distance between Saturn and the Sun, which makes it the nearest known star to that black hole.",
-              "duration": 5.459592
+              "text": "Partly that some people known to have the virus can't be located.",
+              "duration": 3.186939
             },
             {
               "speaker": "listener",
-              "text": "Is it in danger of being pulled in?",
-              "duration": 2.089796
+              "text": "And why does that matter so much?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "No, astronomers don't expect it to cross the event horizon, the point where nothing can escape.",
-              "duration": 4.728163
+              "text": "Because untracked cases carry a high risk of spreading the virus further.",
+              "duration": 3.709388
             },
             {
               "speaker": "listener",
-              "text": "So why does this discovery matter?",
-              "duration": 2.220408
+              "text": "So the priority now is finding those people.",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Because studying a star this close could reveal new details about the black hole's properties and the extreme environment around it.",
-              "duration": 6.582857
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-20/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "銀河系の中心付近で、これまでで最も速く動く星が見つかりました。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "S301と名付けられたこの星は、秒速およそ2万5000キロで動いています。",
-              "duration": 6.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "これは旅客機の10万倍ほどの速さにあたります。",
-              "duration": 3.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "この星は銀河系中心にあるブラックホール、いて座A*のすぐそばを回っています。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "その距離は、太陽と土星の間ほどの近さだといいます。",
-              "duration": 4.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただし、二度と戻れない境界である事象の地平面を越えることはないと考えられています。",
-              "duration": 6.288
-            },
-            {
-              "speaker": "narrator",
-              "text": "この星の動きから、ブラックホールの性質や周囲の極限環境について新しい手がかりが得られそうです。",
-              "duration": 8.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "遠い宇宙の出来事ですが、私たちの銀河の姿を少しずつ明らかにしてくれています。",
-              "duration": 6.504
+              "text": "Yes — that, and stopping it from becoming the world's largest outbreak.",
+              "duration": 4.493061
             }
           ]
         }

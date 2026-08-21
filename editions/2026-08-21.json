@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-21",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Jailed ex-Pakistan PM Imran Khan allowed brief hospital visit after uproar over health",
+      "summary": "Pakistan’s jailed former prime minister Imran Khan was briefly taken to a hospital in the country’s capital on supreme court orders after weeks of uproar about his deteriorating health.",
+      "keyTakeaways": [
+        "Khan, 73, was transferred to the hospital in the early hours of Friday, but then moved back to Adiala prison in Rawalpindi after a ⁠few hours, a spokesperson for his party said on Friday.",
+        "Pakistan’s information minister said Khan was returned to prison after a “team of qualified doctors … declared him medically fit.”",
+        "Security was beefed up in Islamabad, and hundreds of security personnel were posted around the hospital before Khan was taken there."
+      ],
+      "whyItMatters": "Khan’s lawyers say his health has ​deteriorated in prison and that he has lost significant vision in his right eye.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "収監中のイマラン・カーン氏、健康懸念で一時病院へ",
+          "summary": "パキスタンの前首相で服役中のイマラン・カーン氏が、健康悪化をめぐる数週間の懸念を受け、最高裁の命令により首都の病院に一時的に搬送された。",
+          "keyTakeaways": [
+            "73歳のカーン氏は金曜未明に病院へ移送されたが、数時間後にラワルピンディのアディアラ刑務所へ戻された、と同氏の政党の広報担当者が明らかにした。",
+            "パキスタン情報相は、「有資格の医師団」がカーン氏を「医学的に問題なし」と判断したため刑務所へ戻したと説明した。",
+            "病院への搬送に先立ち、イスラマバードでは警備が強化され、数百人の治安要員が周辺に配置された。"
+          ],
+          "whyItMatters": "カーン氏の弁護団は、収監中に健康が悪化し、右目の視力を大きく失ったと訴えている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Python named Jodie Foster first snake to receive pioneering cancer treatment",
+      "summary": "A 15ft (4.5-metre) python is believed to be the first snake in the world to be given a pioneering, life-saving cancer treatment normally used on humans.",
+      "keyTakeaways": [
+        "The 50kg reticulated python, named Jodie Foster after the Hollywood star, has just turned 23 and lives at Chester zoo.",
+        "Pythons can unhinge their jaws to swallow prey many times the size of their head, and in the months since her surgery zoo staff have observed that Jodie continues to strike, grip and swallow food without difficulty.",
+        "As far as we’re aware, this is the first time it’s ever been used in one.”"
+      ],
+      "whyItMatters": "Keepers first became concerned that she may be unwell when she began eating less and spending more time inactive in her habitat.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/21/python-jodie-foster-snake-cancer-electrochemotherapy",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ニシキヘビが世界初のがん治療を受ける",
+          "summary": "体長4.5メートルのニシキヘビが、通常は人間に用いられる先進的ながん治療を世界で初めて受けたヘビとみられている。",
+          "keyTakeaways": [
+            "体重50キロのアミメニシキヘビは、映画スターにちなんでジョディ・フォスターと名づけられ、23歳になったばかりで、チェスター動物園で暮らしている。",
+            "ニシキヘビは顎を外し、自分の頭より何倍も大きな獲物を丸呑みできる。手術後の数か月、飼育スタッフはジョディが問題なく獲物に噛みつき、締めつけ、飲み込む様子を確認している。",
+            "「私たちの知る限り、この治療法がヘビに用いられたのはこれが初めてだ」"
+          ],
+          "whyItMatters": "飼育員が異変に気づいたのは、ジョディの食欲が落ち、巣の中でじっとしている時間が増えたことがきっかけだった。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Australian police charge man accused of attempting to share Ukrainian military intel with Russian agents",
+      "summary": "Australian police have charged a man who allegedly joined the Ukrainian military and sought to provide information about its activities to people he suspected were Russian agents.",
+      "keyTakeaways": [
+        "Vladimir Teslov, a dual Russian-Australian citizen, appeared in court on Friday after the Australian federal police (AFP) charged him with an attempted foreign interference.",
+        "Police alleged the 27-year-old travelled to Russia to undergo military-style training in October 2024.",
+        "When Teslov returned to Australia later that year, he maintained contact “with individuals he believed were connected to Russian intelligence services”, police alleged."
+      ],
+      "whyItMatters": "It is alleged Teslov’s attempts to share the information “created a risk to the safety and security of Ukrainian military personnel”.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/21/vladimir-teslov-australian-charged-sharing-ukraine-intel-russian-agents-ntwnfb",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "豪州、対ウクライナ諜報疑惑の男を起訴",
+          "summary": "オーストラリア連邦警察は、ウクライナ軍に加わりながら、その活動情報をロシア側の関係者とみられる人物に提供しようとした疑いで男を起訴した。",
+          "keyTakeaways": [
+            "ロシアとオーストラリアの二重国籍を持つウラジーミル・テスロフ被告が金曜日に出廷、外国からの干渉を試みた容疑で起訴された。",
+            "警察によれば、27歳の被告は2024年10月にロシアへ渡り、軍事訓練のようなものを受けたとされる。",
+            "その後オーストラリアに戻った被告は、ロシア情報機関とつながりがあると信じていた人物との接触を続けていたという。"
+          ],
+          "whyItMatters": "被告による情報提供の試みは、ウクライナ軍関係者の安全を脅かすものだったとされている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Their cities dropped Flock surveillance cameras. They’re still being watched",
+      "summary": "He and like-minded neighbors had been riding the momentum of a nationwide backlash against these cameras and their ability to track cars.",
+      "keyTakeaways": [
+        "Flock Safety has more than 120,000 cameras set up on roads across the US that scan license plates billions of times every month.",
+        "Privacy advocates say Flock has created a dragnet, as these queries don’t require a warrant, and the cameras routinely capture details about cars driven by people who are not suspected of crimes.",
+        "At least 56 municipalities have deactivated, canceled or rejected contracts with Flock this year, according to national advocacy organization DeFlock."
+      ],
+      "whyItMatters": "The contract for Axon’s ALPRs has not yet been finalized, although the city council is expected to move forward with the company after voting unanimously to approve the cameras in March.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/20/flock-cameras-surveillance",
+      "readTime": 10,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "撤去されたはずの監視カメラ、なお街を見張る",
+          "summary": "彼と志を同じくする住民たちは、車両追跡を可能にするこの種のカメラに対する全米的な反発の流れに乗ってきた。",
+          "keyTakeaways": [
+            "Flock Safetyは全米の道路に12万台以上のカメラを設置し、月に数十億回ナンバープレートを読み取っている。",
+            "プライバシー擁護派は、令状なしで照会でき、犯罪の疑いのない人の車の情報まで日常的に記録するこの仕組みを、無差別な監視網だと指摘する。",
+            "全米の擁護団体DeFlockによれば、今年だけで少なくとも56の自治体がFlockとの契約を停止、解約、または拒否した。"
+          ],
+          "whyItMatters": "市議会は三月に満場一致でカメラ導入を承認しており、Axon製ナンバープレート識別装置の契約は未確定ながら、このまま進む見通しだ。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Ebola outbreak: five big questions",
+      "summary": "How did it became the DRC’s most deadly outbreak and what must be done to stop it becoming the world’s largest?",
+      "keyTakeaways": [
+        "Almost 100 days ago, Africa’s public health watchdog reported an outbreak of Ebola in the Democratic Republic of the Congo.",
+        "It declared its outbreak over after just 20 cases and two deaths.",
+        "People who have the virus, but whose whereabouts are unknown, represent a high risk of onward Ebola transmission."
+      ],
+      "whyItMatters": "There have now been almost 5,000 cases and more than 2,000 deaths since 15 May, making this Ebola outbreak the biggest and most deadly in the DRC’s history.",
+      "originalURL": "https://www.theguardian.com/global-development/2026/aug/21/ebola-outbreak-five-big-questions",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "エボラ出血熱、五つの問い",
+          "summary": "コンゴ民主共和国で史上最悪の流行となった経緯は何か。そして、これが世界最大の流行に拡大するのを防ぐには何が必要か。",
+          "keyTakeaways": [
+            "約百日前、アフリカの公衆衛生機関がコンゴ民主共和国でのエボラ出血熱の流行を報告した。",
+            "その流行はわずか二十例、死者二人の段階で終息が宣言されていた。",
+            "感染していながら所在が分からない人々が、感染拡大の大きな危険をはらむ。"
+          ],
+          "whyItMatters": "五月十五日以降、感染者は約五千人、死者は二千人を超え、コンゴ民主共和国史上最大かつ最悪の流行となっている。"
+        }
+      }
+    }
+  ]
+}

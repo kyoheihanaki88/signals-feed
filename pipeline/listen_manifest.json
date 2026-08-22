@@ -22204,6 +22204,57 @@
               "duration": 4.440816
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-22/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "米国とカナダの通商交渉が、金曜深夜の期限までにまとまりませんでした。",
+              "duration": 6.048
+            },
+            {
+              "speaker": "narrator",
+              "text": "カナダのカーニー首相は、米国の関税措置に同額で対抗すると表明しています。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "米国はカナダ製品に五十パーセントの関税を課す方針です。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "その影響を受ける製品は約二百億米ドル相当にのぼります。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "カーニー首相は、カナダ側は誠実に交渉を続けてきたと述べています。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "一方で米側が土壇場で条件を変えたことが、不公正で信頼性を欠くと批判しました。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "米通商代表のジェイミソン・グリア氏は、今回の決裂をカナダにとって逃した機会だと述べています。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "もともと緊張を抱えていた両国の関係は、さらに冷え込む形となりました。",
+              "duration": 5.832
+            },
+            {
+              "speaker": "narrator",
+              "text": "この関税は、両国をまたぐ企業や消費者の暮らしにも静かに影響していきそうです。",
+              "duration": 6.696
+            }
+          ]
         }
       },
       "2": {
@@ -22271,6 +22322,62 @@
               "speaker": "explainer",
               "text": "It does. It's one thread in a pattern officials say they've been watching closely.",
               "duration": 4.780408
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-22/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ベルリン近郊の森で見つかった武器を巡り、ドイツはルーマニアにいる容疑者の引き渡しを求めています。",
+              "duration": 7.128
+            },
+            {
+              "speaker": "narrator",
+              "text": "拳銃二丁と弾薬が地中に隠されていたのは、およそ一年前のことでした。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "発見のきっかけは、国内情報機関に寄せられた一本の通報だったといいます。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "独メディアは今回、この事件をロシアの情報機関と結びつけて報じました。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "捜査自体は以前から続いていましたが、報道を受けて内相が急きょ会見を開いています。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "報道によれば、ロシア側が狙う対象には兵器企業の幹部や亡命中の反体制派も含まれるとされます。",
+              "duration": 8.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウクライナを支持してきた著名人も、標的リストに挙がっているようです。",
+              "duration": 5.136
+            },
+            {
+              "speaker": "narrator",
+              "text": "ドイツの情報機関トップは、ロシアによる強硬な工作が強まっていると数か月前から警告してきました。",
+              "duration": 7.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "標的を定めた攻撃がドイツ国内で起きる可能性についても、懸念が示されています。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かな森に埋められていた武器が、今、大きな緊張を映し出しています。",
+              "duration": 5.688
             }
           ]
         }
@@ -22342,6 +22449,57 @@
               "duration": 5.694694
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-22/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "カリフォルニア州オークランドで、Metaを相手取った裁判が今週始まりました。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "原告側の弁護士は、Metaのビジネスを四つの言葉で言い表しました。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "誘い込み、つなぎ止め、搾り取り、そして隠す、という表現です。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "法廷では八人の陪審員が、元従業員や心理学者の証言に耳を傾けています。",
+              "duration": 7.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "争点の一つは、子どもの安全のために製品設計を変えるべきかという点です。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "これが認められれば、Metaのビジネスの仕組み自体が変わる可能性があります。",
+              "duration": 5.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後はマーク・ザッカーバーグCEOやインスタグラムのアダム・モセリCEOも証言する予定です。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "経営トップの言葉が、この裁判の行方を左右しそうです。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かに進む法廷の攻防が、私たちの日常のアプリの姿を変えるかもしれません。",
+              "duration": 6.36
+            }
+          ]
         }
       },
       "4": {
@@ -22411,6 +22569,57 @@
               "duration": 4.858776
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-22/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "AIの研究者たちの間で、ある重い懸念が語られています。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "たとえ広島規模の惨事が起きても、人類は自らを守れないかもしれないという指摘です。",
+              "duration": 6.552
+            },
+            {
+              "speaker": "narrator",
+              "text": "その根拠は、人間とAI双方の進化にすでに現れている特徴にあります。",
+              "duration": 6.024
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIはやがて、自らの後継モデルを自ら訓練する段階に入るとされています。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "これは「再帰的自己改良」と呼ばれ、指数関数的な進化を意味します。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "その先には、多くの面で人間の知能を超える存在が現れる可能性があります。",
+              "duration": 6.0
+            },
+            {
+              "speaker": "narrator",
+              "text": "冷静に見通しても、楽観できる状況ではないという声もあります。",
+              "duration": 5.112
+            },
+            {
+              "speaker": "narrator",
+              "text": "危険を生み出した張本人である人類が、その危険にどう向き合うかが問われています。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "技術の進歩を喜ぶ朝にも、こうした静かな警鐘を心に留めておきたいところです。",
+              "duration": 6.648
+            }
+          ]
         }
       },
       "5": {
@@ -22478,6 +22687,62 @@
               "speaker": "explainer",
               "text": "Exactly — though for now, it's all still talks, nothing official.",
               "duration": 3.996735
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-22/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "メーガン氏が、ネットフリックスの人気シリーズ「ジェントルメン」への出演を交渉しているそうです。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "女優業への復帰を意味する話として、注目を集めています。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "Varietyの報道によれば、対象はシーズン3への参加だといいます。",
+              "duration": 5.088
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただこのシーズン自体、まだ正式な制作決定は出ていません。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "「ジェントルメン」は2019年の同名映画から生まれたスピンオフです。",
+              "duration": 5.016
+            },
+            {
+              "speaker": "narrator",
+              "text": "どちらもガイ・リッチー氏が手がけている作品です。",
+              "duration": 3.864
+            },
+            {
+              "speaker": "narrator",
+              "text": "メーガン氏がどんな役を演じるのかは、まだ分かっていません。",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "契約もまだ結ばれておらず、公式な発表もない段階です。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "ハリー夫妻は2020年、ネットフリックスと総額およそ1億ドルの契約を結んでいました。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の話が本当なら、その関係の新しい一歩になりそうです。",
+              "duration": 5.328
             }
           ]
         }

@@ -22135,6 +22135,353 @@
           ]
         }
       }
+    },
+    "2026-08-22": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-22/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the trade talks between the US and Canada just fell apart?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. They missed the midnight Friday deadline, and now the US is imposing 50% tariffs.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "And Canada's just accepting that?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "No — Prime Minister Mark Carney says Canada will match those tariffs dollar for dollar.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "How much trade are we actually talking about here?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Around 20 billion US dollars worth of Canadian products will be affected.",
+              "duration": 3.84
+            },
+            {
+              "speaker": "listener",
+              "text": "What happened at the last minute that broke things down?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Carney says the US changed its proposed terms late, and called them unfair and unreliable.",
+              "duration": 5.381224
+            },
+            {
+              "speaker": "listener",
+              "text": "Does Washington see it the same way?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not quite. Their trade representative, Jamieson Greer, called it a missed opportunity for Canada.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "This is between two countries that usually get along well.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is — and that's part of why this breakdown is being felt so sharply on both sides.",
+              "duration": 4.440816
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-22/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly did they find in this forest near Berlin?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "About a year ago, German intelligence agents found two handguns and ammunition buried underground, after getting a tip.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "And now there's an extradition request?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Germany wants a suspect extradited from Romania, and reports have linked the stash to Russian intelligence.",
+              "duration": 6.635102
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is this coming up now, if the find was a year old?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "The investigation has been ongoing, but new revelations reportedly pushed a top official, Dobrindt, to call a hasty news conference on Friday.",
+              "duration": 7.78449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there more to this than just weapons in the ground?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Reports suggest a wider concern — a possible target list that could include weapons executives, exiled opposition figures, and Ukraine supporters.",
+              "duration": 9.325714
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds serious. Have officials said anything about the broader risk?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Sinan Selen, who heads Germany's domestic intelligence agency, has warned for months that Russian services may be planning more direct action inside Germany.",
+              "duration": 8.359184
+            },
+            {
+              "speaker": "listener",
+              "text": "So this fits into that warning.",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. It's one thread in a pattern officials say they've been watching closely.",
+              "duration": 4.780408
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-22/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's this trial actually about?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "A lawyer prosecuting Meta laid out her case this week, summing it up in four words: hook, hold, harvest, hide.",
+              "duration": 6.50449
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a striking way to put it. What's it meant to describe?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's her characterization of Meta's alleged strategy — the accusation that opened the trial in Oakland this week.",
+              "duration": 6.086531
+            },
+            {
+              "speaker": "listener",
+              "text": "Who's actually testifying?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "So far, eight jurors have heard from that lawyer, Meta's attorneys, former employees, and a psychologist.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there more testimony coming?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The jury is expected to hear from Meta CEO Mark Zuckerberg and Instagram's Adam Mosseri as the trial continues.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What are the states actually asking for?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "They want Meta forced to redesign its products to make them safer for children.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like it could reshape the platforms themselves.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the idea — it could have lasting effects on how Meta's products are built and how its business works.",
+              "duration": 5.694694
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-22/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the idea here is that even a huge AI disaster might not be enough to make us act?",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the fear, yes. The comparison being made is to Hiroshima - even something on that scale might not unite people enough.",
+              "duration": 7.836735
+            },
+            {
+              "speaker": "listener",
+              "text": "Why wouldn't it? You'd think a disaster like that would force everyone to pay attention.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "The argument is that it's rooted in how both humans and AI are already evolving - patterns we can already see.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "What kind of patterns are we talking about?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "One key point raised is something called recursive self-improvement - where AI starts training the next version of itself.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "So it just keeps getting smarter, on its own?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exponentially, yes. The piece describes it as reaching a point where AI becomes more intelligent than us in significant ways.",
+              "duration": 7.288163
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a sobering thought - that we might not act even after a disaster.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. The author says even a sober prognosis feels too optimistic given where things stand.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "So the concern isn't just the technology, but whether we'd actually come together to face it.",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly - whether human nature itself would let us combat a danger we've created for ourselves.",
+              "duration": 4.858776
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-22/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Meghan might be acting again?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the report. She's reportedly in talks to join The Gentlemen on Netflix.",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "listener",
+              "text": "The Guy Ritchie show?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, he created it. This would be for its third season.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "Has that season even been confirmed?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet — it hasn't received an official greenlight.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what role she'd play?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, that's still unknown, and there's reportedly no contract in place yet.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this feel like a bigger story than just casting news?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because Harry and Meghan signed that $100 million Netflix deal back in 2020.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "So this would tie back into that.",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — though for now, it's all still talks, nothing official.",
+              "duration": 3.996735
+            }
+          ]
+        }
+      }
     }
   }
 }

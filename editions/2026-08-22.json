@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-22",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Canada vows to match Trump’s 50% tariffs after trade deal talks fail",
+      "summary": "Canadian prime minister Mark Carney has promised to match US tariffs “dollar for dollar”, after the two sides failed to agree a trade deal by the deadline of midnight on Friday.",
+      "keyTakeaways": [
+        "He said of the 50% tariffs the US was imposing: “Canada will match those tariffs dollar for dollar to protect our workers and businesses.”",
+        "The US tariffs will affect about US$20bn worth of Canadian products after the last-ditch negotiations failed to resolve the latest strain in already tense relations between the historic allies.",
+        "US trade representative Jamieson Greer said the breakdown represented a “missed opportunity for Canada”."
+      ],
+      "whyItMatters": "Canadian officials had worked hard in good faith but “last-minute changes in the US proposed terms were unfair, uneconomic and called into question the reliability of any deal”, Carney said in a statement.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米加通商交渉が決裂、カナダも同率関税で対抗へ",
+          "summary": "カナダのカーニー首相は、金曜深夜の期限までに米国との通商合意に至らなかったことを受け、米国の関税に「同額」で対抗すると表明した。",
+          "keyTakeaways": [
+            "首相は米国が課す五十パーセント関税について、「自国の労働者と企業を守るため、同額の関税で応じる」と述べた。",
+            "最後の交渉も決裂し、両国はもともと緊張を抱えていたが、今回の措置で約二百億米ドル相当のカナダ製品が影響を受ける見通しだ。",
+            "米通商代表のジェイミソン・グリア氏は、今回の決裂を「カナダにとって逃した機会」と評した。"
+          ],
+          "whyItMatters": "カーニー首相は、カナダ側は誠実に交渉を重ねてきたが、「米側が土壇場で条件を変更したことは不公正かつ非経済的で、合意そのものの信頼性を損なうものだった」と声明で述べた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Gun stash in German forest believed to be linked to Russia, say reports",
+      "summary": "Germany is seeking to extradite a suspect from Romania over the discovery of an underground stash of weapons in a forest near Berlin that German media reports have linked to Russian intelligence.",
+      "keyTakeaways": [
+        "Earlier, local media had reported that German authorities had unearthed two handguns and ammunition about a year ago in a wooded area outside the German capital after agents of the domestic intelligence service received a tip.",
+        "Although the investigation into the Berlin stash has been long-running, the revelations apparently led Dobrindt to hastily call the news conference on Friday.",
+        "Moscow’s potential hit list is believed to include weapons contractor executives, opposition figures in exile and other prominent Ukraine supporters, according to the report by Süddeutsche and the public broadcasters NDR and WDR."
+      ],
+      "whyItMatters": "Sinan Selen, the head of the Federal Office for the Protection of the Constitution, Germany’s domestic intelligence agency, has warned for months of more aggressive tactics by Russian secret services, including plans for targeted attacks on German soil.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/21/gun-stash-germany-forest-berlin-believed-linked-russia-reports",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "独の森で発見の武器、ロシア関与の疑い",
+          "summary": "ドイツはルーマニアにいる容疑者の身柄引き渡しを求めている。ベルリン近郊の森で見つかった地下の武器隠し場を巡る事件で、独メディアはロシア情報機関との関連を報じている。",
+          "keyTakeaways": [
+            "地元メディアによれば、国内情報機関への通報を受け、当局は約一年前に首都近郊の林の中で拳銃二丁と弾薬を発見していたという。",
+            "ベルリンの武器隠し場を巡る捜査は長期に及んでいたが、今回の報道を受けドブリント内相は急遽金曜日に記者会見を開いたとみられる。",
+            "南ドイツ新聞と公共放送NDR、WDRの報道によれば、ロシア側の標的リストには兵器関連企業の幹部や亡命中の反体制派、ウクライナ支持で知られる人物らが含まれるとみられる。"
+          ],
+          "whyItMatters": "ドイツ憲法擁護庁のゼリン長官は、ロシア情報機関がドイツ国内での標的攻撃を含め、より強硬な手法を取る恐れがあると、これまで数か月にわたり警告してきた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Hook, hold, harvest and hide: Meta’s alleged strategy laid out in first week of landmark trial",
+      "summary": "Meta’s business can be boiled down to four words that begin with the letter H: hook, hold, harvest, hide, according to a lawyer who is prosecuting the world’s largest social media company.",
+      "keyTakeaways": [
+        "Her accusation opened the blockbuster trial against the US tech company on Tuesday in Oakland, California, just north of Meta’s headquarters in Silicon Valley.",
+        "Eight jurors heard from O’Neill and attorneys for Meta this week, along with testimony from former employees and a psychologist.",
+        "The states are also asking that Meta be forced to change the design of its products to make them safer for children, which could have permanent effects on the company’s business model and how its social media platforms operate."
+      ],
+      "whyItMatters": "Over the course of the trial, the jury is additionally expected to hear from Meta CEO Mark Zuckerberg and Instagram CEO Adam Mosseri.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/22/meta-trial-children-privacy",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「誘い込み、つなぎ止め、搾り取り、隠す」——Meta裁判が初週で示した構図",
+          "summary": "世界最大のソーシャルメディア企業を訴える弁護士によれば、Metaのビジネスは「引き込み、つなぎ止め、搾り取り、隠す」という四つの言葉に集約されるという。この告発をもって、火曜日、Metaの本拠地シリコンバレーに近いカリフォルニア州オークランドで、注目の裁判が幕を開けた。",
+          "keyTakeaways": [
+            "火曜日、カリフォルニア州オークランドで始まった裁判は、Meta本社に近いこの地で開かれた。",
+            "今週は八人の陪審員が、オニール弁護士とMeta側弁護団、さらに元従業員や心理学者の証言に耳を傾けた。",
+            "原告の各州は、子どもの安全を高めるための製品設計変更もMetaに求めており、これが認められればビジネスモデルやプラットフォームの運営に長期的な影響を及ぼしかねない。"
+          ],
+          "whyItMatters": "裁判の今後の過程では、Metaのマーク・ザッカーバーグCEOとインスタグラムのアダム・モセリCEOの証言も予定されている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself? I fear not | Timothy Garton Ash",
+      "summary": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself?",
+      "keyTakeaways": [
+        "Unfortunately, I think even that sober prognosis is too optimistic.",
+        "Yet we must fear that even an AI Hiroshima – to take the most obvious historical analogy – won’t bring humankind together sufficiently to combat the danger we have ourselves created.",
+        "This fear is rationally grounded in already visible key characteristics of both human and AI evolution."
+      ],
+      "whyItMatters": "More prosaically, the imminent breakthrough is described as “recursive self-improvement” – the point at which AI itself trains each successive model of AI, resulting in an exponential development to something which, in many significant respects, is more intelligent than us humans.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/22/ai-disaster-hiroshima-humankind-silicon-valley-technology",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "広島級の破局でも、人類は変われるか",
+          "summary": "広島規模のAI災禍が起きたとしても、人類はそれを教訓に自らを守れるのか。この問いへの答えは、楽観できるものではない。",
+          "keyTakeaways": [
+            "冷静な見通しさえ、楽観的すぎるのではないかという懸念がある。",
+            "歴史上もっとも分かりやすい類比である広島級の惨事が起きても、人類は自ら生んだ危険に立ち向かうため十分にまとまれないおそれがある。",
+            "この懸念は、人間とAI双方の進化にすでに現れている特徴に根ざした、理にかなったものだ。"
+          ],
+          "whyItMatters": "焦点となる技術的飛躍は「再帰的自己改良」と呼ばれ、AIが次々と自らの後継モデルを訓練し、人間の知能を多くの重要な面で凌駕する存在へと指数関数的に進化していく段階を指す。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "CULTURE",
+      "source": "The Guardian (Culture)",
+      "headline": "Meghan reportedly in talks to join Guy Ritchie’s TV series The Gentlemen",
+      "summary": "The Duchess of Sussex is in talks to make her acting return in Netflix’s hit series The Gentlemen.",
+      "keyTakeaways": [
+        "According to Variety, Meghan is in discussions to join the third season, which has yet to receive an official greenlight.",
+        "The Gentlemen is a spin-off from the 2019 crime comedy of the same name with Guy Ritchie acting as creator of both.",
+        "Meghan’s role in the show is as-yet-unknown, with a contract reportedly still not in place and no official announcement."
+      ],
+      "whyItMatters": "Harry and Meghan had previously signed a deal with Netflix in 2020 worth a reported $100m.",
+      "originalURL": "https://www.theguardian.com/tv-and-radio/2026/aug/21/meghan-duchess-of-sussex-guy-ritchie-the-gentlemen",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "メーガン妃、ドラマ復帰へ交渉中か",
+          "summary": "サセックス公爵夫人メーガン氏が、ネットフリックスの人気シリーズ「ジェントルメン」で女優業に復帰すべく交渉中と伝えられている。",
+          "keyTakeaways": [
+            "Varietyによれば、正式な制作決定がまだ出ていないシーズン3への出演について協議しているという。",
+            "「ジェントルメン」は2019年公開の同名犯罪コメディ映画のスピンオフで、ガイ・リッチー氏が両方の制作を手がけている。",
+            "メーガン氏の役柄はまだ明らかになっておらず、契約も未締結、公式発表もない状態だという。"
+          ],
+          "whyItMatters": "ハリー夫妻は2020年、ネットフリックスと総額約1億ドルとされる契約を結んでいた。"
+        }
+      }
+    }
+  ]
+}

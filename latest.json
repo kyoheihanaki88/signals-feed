@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-21",
+  "date": "2026-08-22",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,147 +9,96 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Jailed ex-Pakistan PM Imran Khan allowed brief hospital visit after uproar over health",
-      "summary": "Pakistan’s jailed former prime minister Imran Khan was briefly taken to a hospital in the country’s capital on supreme court orders after weeks of uproar about his deteriorating health.",
+      "headline": "Canada vows to match Trump’s 50% tariffs after trade deal talks fail",
+      "summary": "Canadian prime minister Mark Carney has promised to match US tariffs “dollar for dollar”, after the two sides failed to agree a trade deal by the deadline of midnight on Friday.",
       "keyTakeaways": [
-        "Khan, 73, was transferred to the hospital in the early hours of Friday, but then moved back to Adiala prison in Rawalpindi after a ⁠few hours, a spokesperson for his party said on Friday.",
-        "Pakistan’s information minister said Khan was returned to prison after a “team of qualified doctors … declared him medically fit.”",
-        "Security was beefed up in Islamabad, and hundreds of security personnel were posted around the hospital before Khan was taken there."
+        "He said of the 50% tariffs the US was imposing: “Canada will match those tariffs dollar for dollar to protect our workers and businesses.”",
+        "The US tariffs will affect about US$20bn worth of Canadian products after the last-ditch negotiations failed to resolve the latest strain in already tense relations between the historic allies.",
+        "US trade representative Jamieson Greer said the breakdown represented a “missed opportunity for Canada”."
       ],
-      "whyItMatters": "Khan’s lawyers say his health has ​deteriorated in prison and that he has lost significant vision in his right eye.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The map",
+      "whyItMatters": "Canadian officials had worked hard in good faith but “last-minute changes in the US proposed terms were unfair, uneconomic and called into question the reliability of any deal”, Carney said in a statement.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "収監中のイマラン・カーン氏、健康懸念で一時病院へ",
-          "summary": "パキスタンの前首相で服役中のイマラン・カーン氏が、健康悪化をめぐる数週間の懸念を受け、最高裁の命令により首都の病院に一時的に搬送された。",
+          "headline": "米加通商交渉が決裂、カナダも同率関税で対抗へ",
+          "summary": "カナダのカーニー首相は、金曜深夜の期限までに米国との通商合意に至らなかったことを受け、米国の関税に「同額」で対抗すると表明した。",
           "keyTakeaways": [
-            "73歳のカーン氏は金曜未明に病院へ移送されたが、数時間後にラワルピンディのアディアラ刑務所へ戻された、と同氏の政党の広報担当者が明らかにした。",
-            "パキスタン情報相は、「有資格の医師団」がカーン氏を「医学的に問題なし」と判断したため刑務所へ戻したと説明した。",
-            "病院への搬送に先立ち、イスラマバードでは警備が強化され、数百人の治安要員が周辺に配置された。"
+            "首相は米国が課す五十パーセント関税について、「自国の労働者と企業を守るため、同額の関税で応じる」と述べた。",
+            "最後の交渉も決裂し、両国はもともと緊張を抱えていたが、今回の措置で約二百億米ドル相当のカナダ製品が影響を受ける見通しだ。",
+            "米通商代表のジェイミソン・グリア氏は、今回の決裂を「カナダにとって逃した機会」と評した。"
           ],
-          "whyItMatters": "カーン氏の弁護団は、収監中に健康が悪化し、右目の視力を大きく失ったと訴えている。"
+          "whyItMatters": "カーニー首相は、カナダ側は誠実に交渉を重ねてきたが、「米側が土壇場で条件を変更したことは不公正かつ非経済的で、合意そのものの信頼性を損なうものだった」と声明で述べた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Imran Khan was taken to hospital? What happened there?",
-              "duration": 3.004082
+              "text": "So the trade talks between the US and Canada just fell apart?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Yes, he was moved to a hospital in Islamabad in the early hours of Friday, on orders from the supreme court.",
-              "duration": 5.851429
+              "text": "Yes. They missed the midnight Friday deadline, and now the US is imposing 50% tariffs.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Was it because of concerns about his health?",
-              "duration": 2.403265
+              "text": "And Canada's just accepting that?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "That's right. There's been weeks of uproar over his deteriorating condition while in prison.",
-              "duration": 4.545306
+              "text": "No — Prime Minister Mark Carney says Canada will match those tariffs dollar for dollar.",
+              "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "Did doctors find anything serious?",
-              "duration": 2.272653
+              "text": "How much trade are we actually talking about here?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "The information minister said a team of qualified doctors declared him medically fit, and he was returned to Adiala prison after a few hours.",
-              "duration": 7.418776
+              "text": "Around 20 billion US dollars worth of Canadian products will be affected.",
+              "duration": 3.84
             },
             {
               "speaker": "listener",
-              "text": "What are his lawyers saying about all this?",
-              "duration": 2.272653
+              "text": "What happened at the last minute that broke things down?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "They say his health has worsened in custody, and that he's lost significant vision in his right eye.",
+              "text": "Carney says the US changed its proposed terms late, and called them unfair and unreliable.",
               "duration": 5.381224
             },
             {
               "speaker": "listener",
-              "text": "That sounds like a real concern for him.",
-              "duration": 2.115918
+              "text": "Does Washington see it the same way?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "It is. There was also heavy security around the hospital, with hundreds of personnel posted before he arrived.",
-              "duration": 6.452245
+              "text": "Not quite. Their trade representative, Jamieson Greer, called it a missed opportunity for Canada.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "So for now, he's back at Adiala.",
-              "duration": 2.403265
+              "text": "This is between two countries that usually get along well.",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Yes, back at the prison in Rawalpindi, according to his party's spokesperson.",
-              "duration": 3.94449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "パキスタンで服役中の前首相、イマラン・カーン氏が今週金曜、首都の病院に一時的に運ばれました。",
-              "duration": 8.208
-            },
-            {
-              "speaker": "narrator",
-              "text": "これは最高裁の命令によるもので、健康悪化を心配する声が数週間続いていたためです。",
-              "duration": 6.888
-            },
-            {
-              "speaker": "narrator",
-              "text": "73歳のカーン氏は金曜未明に病院へ移送され、数時間後には再びラワルピンディの刑務所に戻されました。",
-              "duration": 8.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "パキスタン情報相によれば、医師団が診察した結果「医学的に問題なし」と判断されたとのことです。",
-              "duration": 7.728
-            },
-            {
-              "speaker": "narrator",
-              "text": "搬送に先立ってイスラマバードでは警備が強化され、数百人の治安要員が病院周辺に配置されていました。",
-              "duration": 8.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、カーン氏の弁護団が訴えてきた深刻な体調の変化があります。",
-              "duration": 5.76
-            },
-            {
-              "speaker": "narrator",
-              "text": "収監中に視力が大きく低下し、特に右目はほとんど見えなくなっているといいます。",
-              "duration": 6.36
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の一時的な診察がどこまで実態を映すものだったのか、まだはっきりしません。",
-              "duration": 6.12
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後もカーン氏の健康状態と、それをめぐる政治的な動きから目が離せません。",
-              "duration": 6.12
+              "text": "It is — and that's part of why this breakdown is being felt so sharply on both sides.",
+              "duration": 4.440816
             }
           ]
         }
@@ -159,149 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "The Guardian (Science)",
-      "headline": "Python named Jodie Foster first snake to receive pioneering cancer treatment",
-      "summary": "A 15ft (4.5-metre) python is believed to be the first snake in the world to be given a pioneering, life-saving cancer treatment normally used on humans.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Gun stash in German forest believed to be linked to Russia, say reports",
+      "summary": "Germany is seeking to extradite a suspect from Romania over the discovery of an underground stash of weapons in a forest near Berlin that German media reports have linked to Russian intelligence.",
       "keyTakeaways": [
-        "The 50kg reticulated python, named Jodie Foster after the Hollywood star, has just turned 23 and lives at Chester zoo.",
-        "Pythons can unhinge their jaws to swallow prey many times the size of their head, and in the months since her surgery zoo staff have observed that Jodie continues to strike, grip and swallow food without difficulty.",
-        "As far as we’re aware, this is the first time it’s ever been used in one.”"
+        "Earlier, local media had reported that German authorities had unearthed two handguns and ammunition about a year ago in a wooded area outside the German capital after agents of the domestic intelligence service received a tip.",
+        "Although the investigation into the Berlin stash has been long-running, the revelations apparently led Dobrindt to hastily call the news conference on Friday.",
+        "Moscow’s potential hit list is believed to include weapons contractor executives, opposition figures in exile and other prominent Ukraine supporters, according to the report by Süddeutsche and the public broadcasters NDR and WDR."
       ],
-      "whyItMatters": "Keepers first became concerned that she may be unwell when she began eating less and spending more time inactive in her habitat.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/21/python-jodie-foster-snake-cancer-electrochemotherapy",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Night sky",
+      "whyItMatters": "Sinan Selen, the head of the Federal Office for the Protection of the Constitution, Germany’s domestic intelligence agency, has warned for months of more aggressive tactics by Russian secret services, including plans for targeted attacks on German soil.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/21/gun-stash-germany-forest-berlin-believed-linked-russia-reports",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "ニシキヘビが世界初のがん治療を受ける",
-          "summary": "体長4.5メートルのニシキヘビが、通常は人間に用いられる先進的ながん治療を世界で初めて受けたヘビとみられている。",
+          "headline": "独の森で発見の武器、ロシア関与の疑い",
+          "summary": "ドイツはルーマニアにいる容疑者の身柄引き渡しを求めている。ベルリン近郊の森で見つかった地下の武器隠し場を巡る事件で、独メディアはロシア情報機関との関連を報じている。",
           "keyTakeaways": [
-            "体重50キロのアミメニシキヘビは、映画スターにちなんでジョディ・フォスターと名づけられ、23歳になったばかりで、チェスター動物園で暮らしている。",
-            "ニシキヘビは顎を外し、自分の頭より何倍も大きな獲物を丸呑みできる。手術後の数か月、飼育スタッフはジョディが問題なく獲物に噛みつき、締めつけ、飲み込む様子を確認している。",
-            "「私たちの知る限り、この治療法がヘビに用いられたのはこれが初めてだ」"
+            "地元メディアによれば、国内情報機関への通報を受け、当局は約一年前に首都近郊の林の中で拳銃二丁と弾薬を発見していたという。",
+            "ベルリンの武器隠し場を巡る捜査は長期に及んでいたが、今回の報道を受けドブリント内相は急遽金曜日に記者会見を開いたとみられる。",
+            "南ドイツ新聞と公共放送NDR、WDRの報道によれば、ロシア側の標的リストには兵器関連企業の幹部や亡命中の反体制派、ウクライナ支持で知られる人物らが含まれるとみられる。"
           ],
-          "whyItMatters": "飼育員が異変に気づいたのは、ジョディの食欲が落ち、巣の中でじっとしている時間が増えたことがきっかけだった。"
+          "whyItMatters": "ドイツ憲法擁護庁のゼリン長官は、ロシア情報機関がドイツ国内での標的攻撃を含め、より強硬な手法を取る恐れがあると、これまで数か月にわたり警告してきた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Wait, a python got cancer treatment? Like, human cancer treatment?",
-              "duration": 3.94449
+              "text": "So what exactly did they find in this forest near Berlin?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Her name's Jodie Foster, she's a 15-foot reticulated python at Chester Zoo.",
-              "duration": 5.276735
+              "text": "About a year ago, German intelligence agents found two handguns and ammunition buried underground, after getting a tip.",
+              "duration": 6.034286
             },
             {
               "speaker": "listener",
-              "text": "Named after the actress?",
-              "duration": 1.48898
+              "text": "And now there's an extradition request?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. She's 23 years old and weighs about 50 kilograms.",
-              "duration": 3.343673
+              "text": "Yes. Germany wants a suspect extradited from Romania, and reports have linked the stash to Russian intelligence.",
+              "duration": 6.635102
             },
             {
               "speaker": "listener",
-              "text": "How did keepers even know something was wrong?",
-              "duration": 2.403265
+              "text": "Why is this coming up now, if the find was a year old?",
+              "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "She started eating less and staying still more than usual in her habitat.",
-              "duration": 3.94449
+              "text": "The investigation has been ongoing, but new revelations reportedly pushed a top official, Dobrindt, to call a hasty news conference on Friday.",
+              "duration": 7.78449
             },
             {
               "speaker": "listener",
-              "text": "So they gave her a treatment normally used on people?",
-              "duration": 2.951837
+              "text": "Is there more to this than just weapons in the ground?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "Right, and as far as anyone knows, it's the first time it's been tried on a snake.",
-              "duration": 4.075102
+              "text": "Reports suggest a wider concern — a possible target list that could include weapons executives, exiled opposition figures, and Ukraine supporters.",
+              "duration": 9.325714
             },
             {
               "speaker": "listener",
-              "text": "Did it work?",
-              "duration": 1.07102
+              "text": "That sounds serious. Have officials said anything about the broader risk?",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "So far, yes. Since her surgery she's still striking, gripping and swallowing food with no trouble.",
-              "duration": 5.564082
+              "text": "Sinan Selen, who heads Germany's domestic intelligence agency, has warned for months that Russian services may be planning more direct action inside Germany.",
+              "duration": 8.359184
             },
             {
               "speaker": "listener",
-              "text": "That's genuinely reassuring to hear.",
-              "duration": 2.168163
+              "text": "So this fits into that warning.",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It is. A quiet but meaningful step for animal medicine.",
-              "duration": 3.291429
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスのチェスター動物園に、ジョディ・フォスターという名前のニシキヘビがいます。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "体重50キロ、体長4.5メートルのアミメニシキヘビで、23歳になったばかりです。",
-              "duration": 6.864
-            },
-            {
-              "speaker": "narrator",
-              "text": "このヘビが、通常は人間に用いる先進的ながん治療を受けました。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "ヘビへの使用としては、世界で初めての事例とみられています。",
-              "duration": 4.776
-            },
-            {
-              "speaker": "narrator",
-              "text": "異変に気づいたきっかけは、食欲が落ち、じっとしている時間が増えたことでした。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "手術後の経過は良好で、獲物を捕らえて飲み込む様子にも問題は見られません。",
-              "duration": 6.048
-            },
-            {
-              "speaker": "narrator",
-              "text": "ニシキヘビは顎を外し、自分の頭より大きな獲物も丸呑みできる生き物です。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "その力強い動きが戻ってきたことは、回復の確かな証といえます。",
-              "duration": 5.352
-            },
-            {
-              "speaker": "narrator",
-              "text": "動物にも人間と同じ治療の道が開かれつつあります。",
-              "duration": 4.488
+              "text": "It does. It's one thread in a pattern officials say they've been watching closely.",
+              "duration": 4.780408
             }
           ]
         }
@@ -311,149 +209,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Australian police charge man accused of attempting to share Ukrainian military intel with Russian agents",
-      "summary": "Australian police have charged a man who allegedly joined the Ukrainian military and sought to provide information about its activities to people he suspected were Russian agents.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Hook, hold, harvest and hide: Meta’s alleged strategy laid out in first week of landmark trial",
+      "summary": "Meta’s business can be boiled down to four words that begin with the letter H: hook, hold, harvest, hide, according to a lawyer who is prosecuting the world’s largest social media company.",
       "keyTakeaways": [
-        "Vladimir Teslov, a dual Russian-Australian citizen, appeared in court on Friday after the Australian federal police (AFP) charged him with an attempted foreign interference.",
-        "Police alleged the 27-year-old travelled to Russia to undergo military-style training in October 2024.",
-        "When Teslov returned to Australia later that year, he maintained contact “with individuals he believed were connected to Russian intelligence services”, police alleged."
+        "Her accusation opened the blockbuster trial against the US tech company on Tuesday in Oakland, California, just north of Meta’s headquarters in Silicon Valley.",
+        "Eight jurors heard from O’Neill and attorneys for Meta this week, along with testimony from former employees and a psychologist.",
+        "The states are also asking that Meta be forced to change the design of its products to make them safer for children, which could have permanent effects on the company’s business model and how its social media platforms operate."
       ],
-      "whyItMatters": "It is alleged Teslov’s attempts to share the information “created a risk to the safety and security of Ukrainian military personnel”.",
-      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/21/vladimir-teslov-australian-charged-sharing-ukraine-intel-russian-agents-ntwnfb",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "Over the course of the trial, the jury is additionally expected to hear from Meta CEO Mark Zuckerberg and Instagram CEO Adam Mosseri.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/22/meta-trial-children-privacy",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "豪州、対ウクライナ諜報疑惑の男を起訴",
-          "summary": "オーストラリア連邦警察は、ウクライナ軍に加わりながら、その活動情報をロシア側の関係者とみられる人物に提供しようとした疑いで男を起訴した。",
+          "headline": "「誘い込み、つなぎ止め、搾り取り、隠す」——Meta裁判が初週で示した構図",
+          "summary": "世界最大のソーシャルメディア企業を訴える弁護士によれば、Metaのビジネスは「引き込み、つなぎ止め、搾り取り、隠す」という四つの言葉に集約されるという。この告発をもって、火曜日、Metaの本拠地シリコンバレーに近いカリフォルニア州オークランドで、注目の裁判が幕を開けた。",
           "keyTakeaways": [
-            "ロシアとオーストラリアの二重国籍を持つウラジーミル・テスロフ被告が金曜日に出廷、外国からの干渉を試みた容疑で起訴された。",
-            "警察によれば、27歳の被告は2024年10月にロシアへ渡り、軍事訓練のようなものを受けたとされる。",
-            "その後オーストラリアに戻った被告は、ロシア情報機関とつながりがあると信じていた人物との接触を続けていたという。"
+            "火曜日、カリフォルニア州オークランドで始まった裁判は、Meta本社に近いこの地で開かれた。",
+            "今週は八人の陪審員が、オニール弁護士とMeta側弁護団、さらに元従業員や心理学者の証言に耳を傾けた。",
+            "原告の各州は、子どもの安全を高めるための製品設計変更もMetaに求めており、これが認められればビジネスモデルやプラットフォームの運営に長期的な影響を及ぼしかねない。"
           ],
-          "whyItMatters": "被告による情報提供の試みは、ウクライナ軍関係者の安全を脅かすものだったとされている。"
+          "whyItMatters": "裁判の今後の過程では、Metaのマーク・ザッカーバーグCEOとインスタグラムのアダム・モセリCEOの証言も予定されている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what happened here?",
-              "duration": 1.253878
+              "text": "So what's this trial actually about?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Australian police have charged a man named Vladimir Teslov with attempted foreign interference.",
-              "duration": 4.780408
+              "text": "A lawyer prosecuting Meta laid out her case this week, summing it up in four words: hook, hold, harvest, hide.",
+              "duration": 6.50449
             },
             {
               "speaker": "listener",
-              "text": "Who is he?",
-              "duration": 1.28
+              "text": "That's a striking way to put it. What's it meant to describe?",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "He's a dual Russian-Australian citizen, 27 years old, and he appeared in court on Friday.",
-              "duration": 5.459592
+              "text": "It's her characterization of Meta's alleged strategy — the accusation that opened the trial in Oakland this week.",
+              "duration": 6.086531
             },
             {
               "speaker": "listener",
-              "text": "What exactly is he accused of doing?",
-              "duration": 2.089796
+              "text": "Who's actually testifying?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "Police allege he joined the Ukrainian military and then tried to pass on information about its activities.",
-              "duration": 5.041633
+              "text": "So far, eight jurors have heard from that lawyer, Meta's attorneys, former employees, and a psychologist.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "Who was he trying to give that information to?",
+              "text": "Is there more testimony coming?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The jury is expected to hear from Meta CEO Mark Zuckerberg and Instagram's Adam Mosseri as the trial continues.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "What are the states actually asking for?",
               "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "People he believed were connected to Russian intelligence services.",
-              "duration": 3.291429
+              "text": "They want Meta forced to redesign its products to make them safer for children.",
+              "duration": 3.892245
             },
             {
               "speaker": "listener",
-              "text": "Is there more to his background?",
-              "duration": 1.750204
+              "text": "That sounds like it could reshape the platforms themselves.",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Yes — police say he travelled to Russia for military-style training back in October 2024, then returned to Australia later that year.",
-              "duration": 8.176327
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does this case matter?",
-              "duration": 1.48898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Because his alleged actions are said to have created a risk to the safety and security of Ukrainian military personnel.",
-              "duration": 5.799184
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "オーストラリア連邦警察が、ある男性を外国干渉未遂の容疑で起訴しました。",
-              "duration": 6.36
-            },
-            {
-              "speaker": "narrator",
-              "text": "起訴されたのはロシアとオーストラリアの二重国籍を持つウラジーミル・テスロフ被告で、27歳です。",
-              "duration": 7.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "金曜日に法廷に出廷しています。",
-              "duration": 3.048
-            },
-            {
-              "speaker": "narrator",
-              "text": "警察によると、被告は2024年10月にロシアへ渡り、軍事訓練のようなものを受けたとされます。",
-              "duration": 7.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "その後オーストラリアへ戻ってからも、ロシア情報機関とつながりがあると信じていた人物と接触を続けていたといいます。",
-              "duration": 8.52
-            },
-            {
-              "speaker": "narrator",
-              "text": "被告はウクライナ軍に加わりながら、その活動情報を相手に伝えようとしていた疑いが持たれています。",
-              "duration": 7.608
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした行為はウクライナ軍関係者の安全を脅かすものだったとされています。",
-              "duration": 5.712
-            },
-            {
-              "speaker": "narrator",
-              "text": "軍事情報の扱いは、当人だけでなく多くの人の命に関わる重い問題です。",
-              "duration": 6.216
-            },
-            {
-              "speaker": "narrator",
-              "text": "この事件の行方は、今後の司法手続きの中で明らかになっていくことになります。",
-              "duration": 6.072
+              "text": "That's the idea — it could have lasting effects on how Meta's products are built and how its business works.",
+              "duration": 5.694694
             }
           ]
         }
@@ -465,152 +312,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Their cities dropped Flock surveillance cameras. They’re still being watched",
-      "summary": "He and like-minded neighbors had been riding the momentum of a nationwide backlash against these cameras and their ability to track cars.",
+      "headline": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself? I fear not | Timothy Garton Ash",
+      "summary": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself?",
       "keyTakeaways": [
-        "Flock Safety has more than 120,000 cameras set up on roads across the US that scan license plates billions of times every month.",
-        "Privacy advocates say Flock has created a dragnet, as these queries don’t require a warrant, and the cameras routinely capture details about cars driven by people who are not suspected of crimes.",
-        "At least 56 municipalities have deactivated, canceled or rejected contracts with Flock this year, according to national advocacy organization DeFlock."
+        "Unfortunately, I think even that sober prognosis is too optimistic.",
+        "Yet we must fear that even an AI Hiroshima – to take the most obvious historical analogy – won’t bring humankind together sufficiently to combat the danger we have ourselves created.",
+        "This fear is rationally grounded in already visible key characteristics of both human and AI evolution."
       ],
-      "whyItMatters": "The contract for Axon’s ALPRs has not yet been finalized, although the city council is expected to move forward with the company after voting unanimously to approve the cameras in March.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/20/flock-cameras-surveillance",
-      "readTime": 10,
-      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Keyboard",
+      "whyItMatters": "More prosaically, the imminent breakthrough is described as “recursive self-improvement” – the point at which AI itself trains each successive model of AI, resulting in an exponential development to something which, in many significant respects, is more intelligent than us humans.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/22/ai-disaster-hiroshima-humankind-silicon-valley-technology",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "撤去されたはずの監視カメラ、なお街を見張る",
-          "summary": "彼と志を同じくする住民たちは、車両追跡を可能にするこの種のカメラに対する全米的な反発の流れに乗ってきた。",
+          "headline": "広島級の破局でも、人類は変われるか",
+          "summary": "広島規模のAI災禍が起きたとしても、人類はそれを教訓に自らを守れるのか。この問いへの答えは、楽観できるものではない。",
           "keyTakeaways": [
-            "Flock Safetyは全米の道路に12万台以上のカメラを設置し、月に数十億回ナンバープレートを読み取っている。",
-            "プライバシー擁護派は、令状なしで照会でき、犯罪の疑いのない人の車の情報まで日常的に記録するこの仕組みを、無差別な監視網だと指摘する。",
-            "全米の擁護団体DeFlockによれば、今年だけで少なくとも56の自治体がFlockとの契約を停止、解約、または拒否した。"
+            "冷静な見通しさえ、楽観的すぎるのではないかという懸念がある。",
+            "歴史上もっとも分かりやすい類比である広島級の惨事が起きても、人類は自ら生んだ危険に立ち向かうため十分にまとまれないおそれがある。",
+            "この懸念は、人間とAI双方の進化にすでに現れている特徴に根ざした、理にかなったものだ。"
           ],
-          "whyItMatters": "市議会は三月に満場一致でカメラ導入を承認しており、Axon製ナンバープレート識別装置の契約は未確定ながら、このまま進む見通しだ。"
+          "whyItMatters": "焦点となる技術的飛躍は「再帰的自己改良」と呼ばれ、AIが次々と自らの後継モデルを訓練し、人間の知能を多くの重要な面で凌駕する存在へと指数関数的に進化していく段階を指す。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So some cities actually got rid of these license plate cameras?",
-              "duration": 3.239184
+              "text": "So the idea here is that even a huge AI disaster might not be enough to make us act?",
+              "duration": 4.780408
             },
             {
               "speaker": "explainer",
-              "text": "Yes, at least 56 municipalities have dropped or rejected contracts with Flock Safety this year.",
-              "duration": 4.858776
+              "text": "That's the fear, yes. The comparison being made is to Hiroshima - even something on that scale might not unite people enough.",
+              "duration": 7.836735
             },
             {
               "speaker": "listener",
-              "text": "Flock, that's the company with the cameras everywhere, right?",
-              "duration": 2.951837
-            },
-            {
-              "speaker": "explainer",
-              "text": "Right. They have over 120,000 cameras scanning plates billions of times a month across the country.",
-              "duration": 5.851429
-            },
-            {
-              "speaker": "listener",
-              "text": "But the headline says people are still being watched even after cities drop them.",
+              "text": "Why wouldn't it? You'd think a disaster like that would force everyone to pay attention.",
               "duration": 4.205714
             },
             {
               "speaker": "explainer",
-              "text": "That's the twist. One resident found that even after his city moved away from Flock, similar tracking continued.",
-              "duration": 6.034286
+              "text": "The argument is that it's rooted in how both humans and AI are already evolving - patterns we can already see.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "Why do privacy groups have a problem with this in the first place?",
-              "duration": 3.474286
+              "text": "What kind of patterns are we talking about?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "They say it creates a dragnet — no warrant needed, and it captures cars belonging to people who aren't suspected of anything.",
-              "duration": 6.635102
+              "text": "One key point raised is something called recursive self-improvement - where AI starts training the next version of itself.",
+              "duration": 6.870204
             },
             {
               "speaker": "listener",
-              "text": "So dropping one company's cameras doesn't really solve that.",
-              "duration": 3.056327
+              "text": "So it just keeps getting smarter, on its own?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Not necessarily. In fact, one city council already voted to approve a similar system from another company, Axon.",
-              "duration": 6.034286
+              "text": "Exponentially, yes. The piece describes it as reaching a point where AI becomes more intelligent than us in significant ways.",
+              "duration": 7.288163
             },
             {
               "speaker": "listener",
-              "text": "So the debate just shifts to who's providing the cameras, not whether they exist.",
-              "duration": 4.675918
+              "text": "That's a sobering thought - that we might not act even after a disaster.",
+              "duration": 4.545306
             },
             {
               "speaker": "explainer",
-              "text": "That's the concern advocates are raising as more of these contracts move forward.",
-              "duration": 4.022857
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Flockのナンバープレート監視カメラをめぐり、住民の反対運動が各地で広がっています。",
-              "duration": 6.432
+              "text": "It is. The author says even a sober prognosis feels too optimistic given where things stand.",
+              "duration": 5.746939
             },
             {
-              "speaker": "narrator",
-              "text": "全米にはこの種のカメラが12万台以上設置され、月に数十億回もナンバープレートを読み取っています。",
-              "duration": 7.632
+              "speaker": "listener",
+              "text": "So the concern isn't just the technology, but whether we'd actually come together to face it.",
+              "duration": 5.433469
             },
             {
-              "speaker": "narrator",
-              "text": "令状なしで照会できる仕組みのため、犯罪と無関係な車の情報まで記録されてしまいます。",
-              "duration": 6.84
-            },
-            {
-              "speaker": "narrator",
-              "text": "プライバシー擁護派は、これを無差別な監視網だと批判してきました。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした声を受け、今年だけで少なくとも56の自治体がFlockとの契約を停止や解約、拒否しています。",
-              "duration": 8.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "住民たちはカメラの撤去を勝ち取ったように見えました。",
-              "duration": 4.176
-            },
-            {
-              "speaker": "narrator",
-              "text": "ところがある街では、市議会が三月に別会社Axonのナンバープレート識別装置の導入を満場一致で承認しています。",
-              "duration": 8.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "契約自体はまだ確定していませんが、このまま進む見通しです。",
-              "duration": 5.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "つまり一つの監視カメラを退けても、別の監視の仕組みが街を見張り続けることになります。",
-              "duration": 6.744
-            },
-            {
-              "speaker": "narrator",
-              "text": "住民の努力とは裏腹に、街から車の記録が消える日は簡単には来なさそうです。",
-              "duration": 6.456
+              "speaker": "explainer",
+              "text": "Exactly - whether human nature itself would let us combat a danger we've created for ourselves.",
+              "duration": 4.858776
             }
           ]
         }
@@ -620,154 +411,98 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "The Guardian (Science)",
-      "headline": "Ebola outbreak: five big questions",
-      "summary": "How did it became the DRC’s most deadly outbreak and what must be done to stop it becoming the world’s largest?",
+      "category": "CULTURE",
+      "source": "The Guardian (Culture)",
+      "headline": "Meghan reportedly in talks to join Guy Ritchie’s TV series The Gentlemen",
+      "summary": "The Duchess of Sussex is in talks to make her acting return in Netflix’s hit series The Gentlemen.",
       "keyTakeaways": [
-        "Almost 100 days ago, Africa’s public health watchdog reported an outbreak of Ebola in the Democratic Republic of the Congo.",
-        "It declared its outbreak over after just 20 cases and two deaths.",
-        "People who have the virus, but whose whereabouts are unknown, represent a high risk of onward Ebola transmission."
+        "According to Variety, Meghan is in discussions to join the third season, which has yet to receive an official greenlight.",
+        "The Gentlemen is a spin-off from the 2019 crime comedy of the same name with Guy Ritchie acting as creator of both.",
+        "Meghan’s role in the show is as-yet-unknown, with a contract reportedly still not in place and no official announcement."
       ],
-      "whyItMatters": "There have now been almost 5,000 cases and more than 2,000 deaths since 15 May, making this Ebola outbreak the biggest and most deadly in the DRC’s history.",
-      "originalURL": "https://www.theguardian.com/global-development/2026/aug/21/ebola-outbreak-five-big-questions",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The instrument",
+      "whyItMatters": "Harry and Meghan had previously signed a deal with Netflix in 2020 worth a reported $100m.",
+      "originalURL": "https://www.theguardian.com/tv-and-radio/2026/aug/21/meghan-duchess-of-sussex-guy-ritchie-the-gentlemen",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "エボラ出血熱、五つの問い",
-          "summary": "コンゴ民主共和国で史上最悪の流行となった経緯は何か。そして、これが世界最大の流行に拡大するのを防ぐには何が必要か。",
+          "headline": "メーガン妃、ドラマ復帰へ交渉中か",
+          "summary": "サセックス公爵夫人メーガン氏が、ネットフリックスの人気シリーズ「ジェントルメン」で女優業に復帰すべく交渉中と伝えられている。",
           "keyTakeaways": [
-            "約百日前、アフリカの公衆衛生機関がコンゴ民主共和国でのエボラ出血熱の流行を報告した。",
-            "その流行はわずか二十例、死者二人の段階で終息が宣言されていた。",
-            "感染していながら所在が分からない人々が、感染拡大の大きな危険をはらむ。"
+            "Varietyによれば、正式な制作決定がまだ出ていないシーズン3への出演について協議しているという。",
+            "「ジェントルメン」は2019年公開の同名犯罪コメディ映画のスピンオフで、ガイ・リッチー氏が両方の制作を手がけている。",
+            "メーガン氏の役柄はまだ明らかになっておらず、契約も未締結、公式発表もない状態だという。"
           ],
-          "whyItMatters": "五月十五日以降、感染者は約五千人、死者は二千人を超え、コンゴ民主共和国史上最大かつ最悪の流行となっている。"
+          "whyItMatters": "ハリー夫妻は2020年、ネットフリックスと総額約1億ドルとされる契約を結んでいた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So this Ebola outbreak in DRC — how bad has it actually gotten?",
-              "duration": 3.84
+              "text": "So Meghan might be acting again?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Very serious. Since mid-May, there have been almost 5,000 cases and more than 2,000 deaths.",
-              "duration": 5.250612
-            },
-            {
-              "speaker": "listener",
-              "text": "That's a huge jump. Wasn't this outbreak declared over at some point?",
-              "duration": 4.310204
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, earlier this year it was declared over after just 20 cases and two deaths.",
-              "duration": 4.179592
-            },
-            {
-              "speaker": "listener",
-              "text": "So how did it go from that to being the deadliest outbreak in the country's history?",
+              "text": "That's the report. She's reportedly in talks to join The Gentlemen on Netflix.",
               "duration": 4.440816
             },
             {
-              "speaker": "explainer",
-              "text": "That's one of the big questions officials are trying to answer now.",
-              "duration": 3.186939
-            },
-            {
               "speaker": "listener",
-              "text": "What's making it so hard to bring under control?",
-              "duration": 2.403265
+              "text": "The Guy Ritchie show?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "Partly that some people known to have the virus can't be located.",
-              "duration": 3.186939
+              "text": "Right, he created it. This would be for its third season.",
+              "duration": 3.343673
             },
             {
               "speaker": "listener",
-              "text": "And why does that matter so much?",
+              "text": "Has that season even been confirmed?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Because untracked cases carry a high risk of spreading the virus further.",
-              "duration": 3.709388
+              "text": "Not yet — it hasn't received an official greenlight.",
+              "duration": 3.343673
             },
             {
               "speaker": "listener",
-              "text": "So the priority now is finding those people.",
-              "duration": 2.403265
+              "text": "Do we know what role she'd play?",
+              "duration": 1.38449
             },
             {
               "speaker": "explainer",
-              "text": "Yes — that, and stopping it from becoming the world's largest outbreak.",
-              "duration": 4.493061
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-21/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "コンゴ民主共和国で、エボラ出血熱の流行が深刻な事態になっています。",
-              "duration": 5.88
+              "text": "No, that's still unknown, and there's reportedly no contract in place yet.",
+              "duration": 4.075102
             },
             {
-              "speaker": "narrator",
-              "text": "五月十五日以降、感染者は約五千人、死者は二千人を超えました。",
-              "duration": 6.0
+              "speaker": "listener",
+              "text": "Why does this feel like a bigger story than just casting news?",
+              "duration": 3.474286
             },
             {
-              "speaker": "narrator",
-              "text": "これはコンゴ民主共和国の歴史の中で、最大かつ最悪の流行です。",
-              "duration": 5.808
+              "speaker": "explainer",
+              "text": "Because Harry and Meghan signed that $100 million Netflix deal back in 2020.",
+              "duration": 4.310204
             },
             {
-              "speaker": "narrator",
-              "text": "実は約百日前、いったんは終息が宣言されていました。",
-              "duration": 4.776
+              "speaker": "listener",
+              "text": "So this would tie back into that.",
+              "duration": 1.933061
             },
             {
-              "speaker": "narrator",
-              "text": "当時はわずか二十例、死者は二人にとどまっていたためです。",
-              "duration": 4.704
-            },
-            {
-              "speaker": "narrator",
-              "text": "しかしその後、感染は収まらず拡大を続けました。",
-              "duration": 4.392
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、感染していても所在が分からない人々の存在があります。",
-              "duration": 5.376
-            },
-            {
-              "speaker": "narrator",
-              "text": "そうした人たちが、次の感染を静かに広げてしまうのです。",
-              "duration": 4.896
-            },
-            {
-              "speaker": "narrator",
-              "text": "この流行を世界最大の規模にしないためには、行方の分からない感染者を見つけ出すことが欠かせません。",
-              "duration": 7.176
-            },
-            {
-              "speaker": "narrator",
-              "text": "遠い国の出来事のようでも、感染症の広がり方には学ぶべき教訓が多くあります。",
-              "duration": 6.624
+              "speaker": "explainer",
+              "text": "Exactly — though for now, it's all still talks, nothing official.",
+              "duration": 3.996735
             }
           ]
         }

@@ -95,9 +95,9 @@ test("C3. incidental and company-false-positive candidates are not region-eligib
   }
 });
 
-// ── D. shortage fallback ──────────────────────────────────────────────────────────────
+// ── D. region boundary on shortage ────────────────────────────────────────────────────
 
-test("D. three Japan stories are topped up by two global fallbacks", () => {
+test("D. three Japan stories ship short — the v3 boundary admits no cross-region fill", () => {
   const pool = subset([
     "jp-tech-robot",
     "jp-business",
@@ -112,25 +112,29 @@ test("D. three Japan stories are topped up by two global fallbacks", () => {
   ).length;
 
   assert.equal(japanCount, 3);
+  assert.equal(result.selectedIds.length, 3);
   assert.equal(result.metadata.selectedRegionStories, 3);
-  assert.equal(result.metadata.fallbackSlots, 2);
-  assert.equal(result.metadata.fallbackReason, "insufficient qualifying regional candidates");
-  assert.equal(result.metadata.finalRegionMix.global_fallback, 2);
-  assert.equal(result.metadata.shortage, false);
+  assert.equal(result.metadata.fallbackSlots, 0);
+  assert.equal(result.metadata.shortage, true);
+  assert.equal(result.metadata.unfilledSlots, 2);
+  assert.ok(!("global_fallback" in result.metadata.finalRegionMix));
+  for (const id of ["world-climate", "world-health", "us-tech"]) {
+    assert.equal(
+      logFor(result, id).rejectionReason,
+      "not primary for any selected region",
+    );
+  }
 });
 
-test("D2. the regional phase is exhausted before any fallback is considered", () => {
+test("D2. every selected story comes from the regional phase — no fallback phase exists across regions", () => {
   const result = select(
     subset(["jp-tech-robot", "jp-business", "jp-health", "world-climate", "world-health", "us-tech"]),
   );
-  // Every Japan story appears before every fallback.
   const phases = result.selectedIds.map((id) => logFor(result, id).selectionPhase);
   assert.deepEqual(phases, [
     "regional_primary",
     "regional_primary",
     "regional_primary",
-    "global_fallback",
-    "global_fallback",
   ]);
 });
 
@@ -143,19 +147,19 @@ test("E. two candidates for one underlying story never both survive", () => {
 });
 
 test("E2. the duplicate is rejected by underlyingStoryIdentity, and says so", () => {
+  // v3: the duplicate must sit INSIDE the region boundary to reach duplicate checking
+  // at all — jp-quake-b shares jp-quake-a's underlying story within japan.
   const pool = subset([
     "jp-quake-a",
+    "jp-quake-b",
     "jp-business",
     "jp-health",
-    "global-quake-duplicate",
-    "world-health",
-    "world-culture",
   ]);
   const result = select(pool);
   assert.ok(result.selectedIds.includes("jp-quake-a"));
-  assert.ok(!result.selectedIds.includes("global-quake-duplicate"));
+  assert.ok(!result.selectedIds.includes("jp-quake-b"));
   assert.match(
-    logFor(result, "global-quake-duplicate").rejectionReason ?? "",
+    logFor(result, "jp-quake-b").rejectionReason ?? "",
     /^duplicate underlyingStoryIdentity=jp-coastal-warning$/,
   );
 });
@@ -253,7 +257,9 @@ test("I2. the topic adjustment is +10 per matching topic", () => {
 
 // ── J. fallback duplicate ─────────────────────────────────────────────────────────────
 
-test("J. a fallback candidate duplicating a regional pick is rejected", () => {
+test("J. a world duplicate of a regional pick is stopped at the region boundary", () => {
+  // v3: the world-side duplicate never reaches duplicate checking — it is already
+  // outside the japan-only region boundary, as are the other world stories.
   const pool = subset([
     "jp-quake-a",
     "jp-business",
@@ -265,14 +271,13 @@ test("J. a fallback candidate duplicating a regional pick is rejected", () => {
   const result = select(pool);
   assert.ok(result.selectedIds.includes("jp-quake-a"));
   assert.ok(!result.selectedIds.includes("global-quake-duplicate"));
-  assert.equal(result.metadata.fallbackSlots, 2);
-  assert.deepEqual(result.selectedIds, [
-    "jp-quake-a",
-    "jp-business",
-    "jp-health",
-    "world-health",
-    "world-culture",
-  ]);
+  assert.deepEqual(result.selectedIds, ["jp-quake-a", "jp-business", "jp-health"]);
+  assert.equal(result.metadata.fallbackSlots, 0);
+  assert.equal(result.metadata.shortage, true);
+  assert.equal(
+    logFor(result, "global-quake-duplicate").rejectionReason,
+    "not primary for any selected region",
+  );
 });
 
 // ── K. shortage metadata ──────────────────────────────────────────────────────────────

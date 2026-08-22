@@ -115,7 +115,7 @@ test("G/H/P: malformed, oversized, or boolean-only requests never invoke verifie
   await t.test("malformed JWS", async () => {
     const { handle, dependencies } = handler();
     const response = await handle(
-      exchangeRequest({ signedTransactionInfo: "not-jws", selectorVersion: 2 }),
+      exchangeRequest({ signedTransactionInfo: "not-jws", selectorVersion: 3 }),
     );
     assert.equal(response.status, 400);
     assert.equal(dependencies.verifier.calls.length, 0);
@@ -126,7 +126,7 @@ test("G/H/P: malformed, oversized, or boolean-only requests never invoke verifie
     const response = await handle(
       exchangeRequest({
         signedTransactionInfo: oversized,
-        selectorVersion: 2,
+        selectorVersion: 3,
       }),
     );
     assert.equal(response.status, 400);

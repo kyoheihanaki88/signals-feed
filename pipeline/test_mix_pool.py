@@ -125,9 +125,13 @@ check("30. normalized artifact validates", validate_mix_pool(pool_a) is None)
 
 selected = select_custom_mix(pool_a["candidates"], DATE, ["Japan"])
 check("31. generated pool is directly compatible with Phase 2A selector",
-      len(selected["selectedIds"]) == 5
+      # v3: the region boundary is absolute — a japan-only mix ships its 3 japan
+      # stories and reports a shortage instead of crossing into world/US stories.
+      len(selected["selectedIds"]) == 3
       and selected["metadata"]["selectedRegionStories"] == 3
-      and selected["metadata"]["fallbackSlots"] == 2)
+      and selected["metadata"]["fallbackSlots"] == 0
+      and selected["metadata"]["shortage"] is True
+      and selected["metadata"]["unfilledSlots"] == 2)
 
 if FAILURES:
     print("\n" + "\n".join(FAILURES))

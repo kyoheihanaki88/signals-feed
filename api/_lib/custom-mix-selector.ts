@@ -50,17 +50,82 @@ const FRESHNESS_MIN_MS = -24 * 60 * 60 * 1_000;
 export const REGION_PRIORITY = ["united_states", "japan", "world"] as const;
 export const US_MIN_QUOTA = 3;
 
+// ── canonical topic rule (v2.1, 2026-08-18) — mirrors the Python selector exactly ──────
+// What an article IS is its CATEGORY. A category-typed article is eligible only when
+// EVERY canonical topic is selected (Science OFF removes every SCIENCE article, even a
+// tech-tagged one); general news (WORLD / JAPAN / OTHER) is region coverage and stays
+// topic-eligible. This map mirrors pipeline/mix_pool._CATEGORY_TOPICS.
+const CANONICAL_TOPICS_BY_CATEGORY: Record<string, readonly string[]> = {
+  AI: ["ai", "tech"],
+  BUSINESS: ["business"],
+  CLIMATE: ["climate"],
+  CULTURE: ["culture"],
+  ECONOMY: ["business"],
+  FINANCE: ["business"],
+  HEALTH: ["health"],
+  SCIENCE: ["science"],
+  TECH: ["tech"],
+};
+
+// ── publisher families (v2.1) — mirrors the Python selector exactly ────────────────────
+// Section feeds are ONE publisher; the family is derived from `source` at selection
+// time so the pool artifact schema is untouched. Caps: max 1 story per family, and at
+// most 1 UK-family story in total while the United States is active.
+const PUBLISHER_FAMILY_ALIASES: Record<string, string> = {
+  "bbc news": "bbc",
+  bbc: "bbc",
+  "the guardian": "guardian",
+  guardian: "guardian",
+  "financial times": "ft",
+  "the verge": "verge",
+  npr: "npr",
+  "al jazeera": "al-jazeera",
+  "cbs news": "cbs",
+};
+const UK_PUBLISHER_FAMILIES = new Set(["bbc", "guardian", "ft"]);
+const SECTION_SUFFIX_RE = /\s*\(.*?\)\s*$/;
+
+export function publisherFamily(source: unknown): string {
+  const base = pyStr(source).replace(SECTION_SUFFIX_RE, "").trim().toLowerCase();
+  return PUBLISHER_FAMILY_ALIASES[base] ?? base;
+}
+
 function priorityOrder(regions: readonly string[]): string[] {
   return REGION_PRIORITY.filter((r) => regions.includes(r));
 }
 
-/** Python `_topic_allowed`: empty selection = no filter (the pre-v2 behavior). */
+function canonicalTopics(candidate: MixCandidate): readonly string[] {
+  return CANONICAL_TOPICS_BY_CATEGORY[pyStr(candidate.category).toUpperCase()] ?? [];
+}
+
+/** Python `_topic_allowed` (v2.1): canonical-topic subset rule; empty selection = no filter. */
 function topicAllowed(candidate: MixCandidate, topics: readonly string[]): boolean {
   if (topics.length === 0) return true;
-  const candidateTopics = new Set(
-    (candidate.topics ?? []).map((t) => pyStr(t).toLowerCase()),
-  );
-  return topics.some((topic) => candidateTopics.has(topic));
+  return canonicalTopics(candidate).every((topic) => topics.includes(topic));
+}
+
+/** Python `_family_violation`: the publisher-family caps, applied in every phase. */
+function familyViolation(
+  candidate: MixCandidate,
+  chosen: MixCandidate[],
+  regions: readonly string[],
+  relaxFamily = false,
+): string | null {
+  // "Max 1 per family" is a PRINCIPLE, not a suicide pact: the LAST fallback pass may
+  // relax the generic cap when five stories are otherwise unreachable. The UK cap is
+  // never relaxed. Mirrors Python `_family_violation` exactly.
+  const family = publisherFamily(candidate.source);
+  if (regions.includes("united_states") && UK_PUBLISHER_FAMILIES.has(family)) {
+    if (chosen.some((c) => UK_PUBLISHER_FAMILIES.has(publisherFamily(c.source)))) {
+      return "UK publisher cap reached (max 1 while United States is active)";
+    }
+  }
+  if (!relaxFamily) {
+    if (chosen.some((c) => publisherFamily(c.source) === family)) {
+      return `publisher family '${family}' already selected (max 1 per family)`;
+    }
+  }
+  return null;
 }
 
 /**
@@ -245,11 +310,13 @@ function rank(
   const adjustment = topicAdjustment(candidate, topics);
 
   const categories = new Set(selected.map((c) => pyStr(c.category).toLowerCase()));
-  const sources = new Set(selected.map((c) => pyStr(c.source).toLowerCase()));
+  // v2.1: the source-diversity bonus is measured per publisher FAMILY, so a second
+  // section feed of the same publisher can never look like a new source.
+  const families = new Set(selected.map((c) => publisherFamily(c.source)));
 
   let diversity = 0;
   if (!categories.has(pyStr(candidate.category).toLowerCase())) diversity += NEW_CATEGORY_BONUS;
-  if (!sources.has(pyStr(candidate.source).toLowerCase())) diversity += NEW_SOURCE_BONUS;
+  if (!families.has(publisherFamily(candidate.source))) diversity += NEW_SOURCE_BONUS;
 
   const final = base + adjustment + diversity;
   return { sortKey: [-final, pyStr(candidate.id)], base, adjustment, final };
@@ -275,6 +342,8 @@ function pick(
   phase: string,
   logs: Map<string, CandidateLog>,
   guard: EditorialDuplicateGuard,
+  regions: readonly string[] = [],
+  relaxFamily = false,
 ): MixCandidate[] {
   const picked: MixCandidate[] = [];
   const remaining = [...pool];
@@ -288,7 +357,13 @@ function pick(
     const candidate = ranked[0].candidate;
     remaining.splice(remaining.indexOf(candidate), 1);
 
-    const duplicate = findDuplicate(candidate, soFar, guard);
+    let rejection = findDuplicate(candidate, soFar, guard);
+    if (!rejection.duplicate) {
+      // Publisher-family caps run in EVERY phase, exactly like the duplicate guard:
+      // a capped candidate is consumed and logged, never reconsidered.
+      const familyReason = familyViolation(candidate, soFar, regions, relaxFamily);
+      if (familyReason) rejection = { duplicate: true, reason: familyReason };
+    }
     const parts = rank(candidate, topics, soFar);
 
     const log = logs.get(pyStr(candidate.id));
@@ -297,9 +372,9 @@ function pick(
       log.topicAdjustment = parts.adjustment;
       log.finalScore = parts.final;
       log.selectionPhase = phase;
-      log.rejectionReason = duplicate.duplicate ? duplicate.reason : null;
+      log.rejectionReason = rejection.duplicate ? rejection.reason : null;
     }
-    if (duplicate.duplicate) continue;
+    if (rejection.duplicate) continue;
     picked.push(candidate);
   }
   return picked;
@@ -425,6 +500,7 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
       "regional_primary",
       logs,
       guard,
+      selectedRegions,
     );
     selected.push(...picked);
     for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
@@ -441,6 +517,7 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
         `regional_quota:${region}`,
         logs,
         guard,
+        selectedRegions,
       );
       selected.push(...picked);
       for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
@@ -459,6 +536,7 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
           `regional_reallocation:${region}`,
           logs,
           guard,
+          selectedRegions,
         );
         selected.push(...picked);
         for (let i = 0; i < picked.length; i += 1) assignedRegions.push(region);
@@ -469,19 +547,39 @@ export function selectCustomMix(options: SelectCustomMixOptions): MixSelectionRe
   const regionalCount = selected.length;
   let fallbackSlots = 0;
   if (selected.length < size) {
-    // Note the EMPTY topic tuple: a global fallback is not topic-boosted.
+    // v3: the REGION BOUNDARY is absolute — every fallback pass draws only from
+    // candidates primary in a SELECTED region. Note the EMPTY topic tuple: a global
+    // fallback is not topic-boosted.
     const picked = pick(
-      eligible.filter((c) => !isSelected(c)),
+      regionPool.filter((c) => !isSelected(c)),
       size - selected.length,
       [],
       selected,
       "global_fallback",
       logs,
       guard,
+      selectedRegions,
     );
     selected.push(...picked);
     fallbackSlots = picked.length;
-    for (let i = 0; i < picked.length; i += 1) assignedRegions.push("global_fallback");
+    // LAST RESORT (v2.1): five stories beat the per-family principle. The UK cap, the
+    // topic allowlist (applied at eligibility) and every duplicate guard stay enforced.
+    if (selected.length < size) {
+      const relaxed = pick(
+        regionPool.filter((c) => !isSelected(c)),
+        size - selected.length,
+        [],
+        selected,
+        "global_fallback_relaxed",
+        logs,
+        guard,
+        selectedRegions,
+        true,
+      );
+      selected.push(...relaxed);
+      fallbackSlots += relaxed.length;
+    }
+    for (let i = 0; i < fallbackSlots; i += 1) assignedRegions.push("global_fallback");
   }
 
   // A final guard, independent of the phases that produced the list.

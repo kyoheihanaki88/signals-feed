@@ -20,7 +20,7 @@ test("O: exchange logs omit JWS, transaction ID, subject, body, and secrets", as
     exchangeRequest({
       signedTransactionInfo: TEST_JWS,
       appVersion: "sensitive-version",
-      selectorVersion: 2,
+      selectorVersion: 3,
     }),
   );
   assert.equal(response.status, 200);

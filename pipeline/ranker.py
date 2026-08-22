@@ -37,7 +37,8 @@ DEF_CAND = os.path.join(HERE, "candidates.json")
 DEF_OUT = os.path.join(HERE, "selection.yaml")
 
 # Reliable outlets we prefer (substring match on the source name, lowercased).
-RELIABLE = ("bbc", "npr", "guardian", "financial times", "the verge", "al jazeera")
+RELIABLE = ("bbc", "npr", "guardian", "financial times", "the verge", "al jazeera",
+            "cbs news")   # CBS News added with the U.S. section feed (2026-08-18)
 
 # Lead-worthiness by category: global urgency / war / geopolitics, then economy, then major tech,
 # then regional/institutional. A 0 means "never the Lead" (but still fine as Supporting).

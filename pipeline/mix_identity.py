@@ -6,12 +6,13 @@ from __future__ import annotations
 import re
 from typing import Iterable
 
-# SELECTION semantics version. v2 (2026-08-13): selected topics are a STRICT ALLOWLIST
-# (an unselected topic is never chosen, not even by fallback), and regions fill in the
-# fixed priority united_states > japan > world with a minimum of 3 US stories when the
-# US is selected and its pool suffices. Bumped so every cached mix / identity computed
-# under the v1 "topic boost" semantics is invalidated rather than reused.
-SELECTOR_VERSION = 2
+# SELECTION semantics version. v3 (2026-08-18): canonical (category) topic allowlist,
+# publisher-family caps (max 1 per family; UK families capped at 1 total while the US is
+# active), an absolute region boundary (no fallback ever crosses into an unselected
+# region), CBS US structured-region sourcing and a coverage-aware enrichment pool.
+# v2 (2026-08-13) introduced the tag-based allowlist and US-first region priority.
+# Bumped so no identity or cached mix computed under v2 semantics is ever reused.
+SELECTOR_VERSION = 3
 # CANDIDATE POOL artifact version. The pool is the selector's INPUT; its schema did not
 # change in v2, so published pool artifacts stay valid and keep this version. Deliberately
 # decoupled from SELECTOR_VERSION above.

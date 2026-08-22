@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import re
 from urllib.parse import urlsplit, urlunsplit
 
 from editorial import duplicate_story
@@ -29,17 +30,94 @@ REGION_PRIORITY = ("united_states", "japan", "world")
 # the 5 slots are US stories.
 US_MIN_QUOTA = 3
 
+# ── canonical topic rule (v2.1, 2026-08-18) ─────────────────────────────────────────────
+# What an article IS is its CATEGORY — the section label the app displays — not the noisy
+# text-derived tags. This map mirrors mix_pool._CATEGORY_TOPICS exactly (kept in sync by
+# test_custom_mix_selector's canonical-map test). The strict rule:
+#
+#   • A category-typed article (SCIENCE, TECH, AI, …) is eligible only when EVERY one of
+#     its canonical topics is selected. Science OFF therefore removes every SCIENCE
+#     article — including one that also carries a tech text-tag — from every phase.
+#   • General-news articles (WORLD / JAPAN / OTHER: no canonical topic) are REGION
+#     stories, always topic-eligible. A WORLD story mentioning "research" in passing is
+#     not a Science article and must not be blocked by a regex hit; equally, US general
+#     news must stay selectable under any topic setting or "always 5" is impossible.
+_CANONICAL_TOPICS_BY_CATEGORY = {
+    "AI": ("ai", "tech"),
+    "BUSINESS": ("business",),
+    "CLIMATE": ("climate",),
+    "CULTURE": ("culture",),
+    "ECONOMY": ("business",),
+    "FINANCE": ("business",),
+    "HEALTH": ("health",),
+    "SCIENCE": ("science",),
+    "TECH": ("tech",),
+}
+
+# ── publisher families (v2.1) ───────────────────────────────────────────────────────────
+# Section feeds ("BBC News (Health)", "The Guardian (Science)", …) are ONE publisher.
+# The family is derived at selection time from the candidate's `source` string, so no
+# pool-artifact schema change is needed and published pools stay valid. Caps:
+#   • at most 1 story per family in the final five (any mix);
+#   • while the United States is active, UK-based families contribute at most 1 story
+#     IN TOTAL — a single strong world story may stay, but the mix can never read like a
+#     UK front page again.
+_PUBLISHER_FAMILY_ALIASES = {
+    "bbc news": "bbc",
+    "bbc": "bbc",
+    "the guardian": "guardian",
+    "guardian": "guardian",
+    "financial times": "ft",
+    "the verge": "verge",
+    "npr": "npr",
+    "al jazeera": "al-jazeera",
+    "cbs news": "cbs",
+}
+_UK_PUBLISHER_FAMILIES = frozenset({"bbc", "guardian", "ft"})
+_SECTION_SUFFIX_RE = re.compile(r"\s*\(.*?\)\s*$")
+
+
+def _publisher_family(source) -> str:
+    base = _SECTION_SUFFIX_RE.sub("", str(source or "")).strip().lower()
+    return _PUBLISHER_FAMILY_ALIASES.get(base, base)
+
 
 def _priority_order(regions) -> tuple[str, ...]:
     return tuple(r for r in REGION_PRIORITY if r in regions)
 
 
+def _canonical_topics(candidate: dict) -> tuple[str, ...]:
+    return _CANONICAL_TOPICS_BY_CATEGORY.get(
+        str(candidate.get("category", "")).upper(), ()
+    )
+
+
 def _topic_allowed(candidate: dict, topics: tuple[str, ...]) -> bool:
-    """v2 strict allowlist. Empty selection = no filter (unchanged behavior)."""
+    """v2.1 strict allowlist over CANONICAL (category-derived) topics. Empty selection =
+    no filter. A general-news article (no canonical topic) is always eligible."""
     if not topics:
         return True
-    candidate_topics = {str(v).lower() for v in candidate.get("topics", [])}
-    return bool(candidate_topics.intersection(topics))
+    return all(topic in topics for topic in _canonical_topics(candidate))
+
+
+def _family_violation(candidate: dict, chosen: list[dict],
+                      regions: tuple[str, ...],
+                      relax_family: bool = False) -> str | None:
+    """The publisher-family caps, applied in every phase (fallback included).
+
+    "Max 1 per family" is a PRINCIPLE, not a suicide pact: when the pool is so thin
+    that five stories cannot otherwise be reached, the LAST fallback pass may relax the
+    generic per-family cap (`relax_family=True`). The UK cap is never relaxed — while
+    the United States is active, UK families contribute at most one story, full stop."""
+    family = _publisher_family(candidate.get("source"))
+    if "united_states" in regions and family in _UK_PUBLISHER_FAMILIES:
+        if any(_publisher_family(c.get("source")) in _UK_PUBLISHER_FAMILIES
+               for c in chosen):
+            return "UK publisher cap reached (max 1 while United States is active)"
+    if not relax_family:
+        if any(_publisher_family(c.get("source")) == family for c in chosen):
+            return f"publisher family {family!r} already selected (max 1 per family)"
+    return None
 
 
 def _memberships(candidate: dict) -> dict[str, str]:
@@ -118,18 +196,22 @@ def _rank(candidate: dict, topics: tuple[str, ...], selected: list[dict]) -> tup
     base = float(candidate.get("baseScore", 0))
     adjustment = _topic_adjustment(candidate, topics)
     categories = {str(c.get("category", "")).lower() for c in selected}
-    sources = {str(c.get("source", "")).lower() for c in selected}
+    # v2.1: the source-diversity bonus is measured per publisher FAMILY, so a second
+    # section feed of the same publisher can never look like a new source.
+    families = {_publisher_family(c.get("source")) for c in selected}
     diversity = 0.0
     if str(candidate.get("category", "")).lower() not in categories:
         diversity += NEW_CATEGORY_BONUS
-    if str(candidate.get("source", "")).lower() not in sources:
+    if _publisher_family(candidate.get("source")) not in families:
         diversity += NEW_SOURCE_BONUS
     final = base + adjustment + diversity
     return (-final, str(candidate.get("id"))), base, adjustment, final
 
 
 def _pick(pool: list[dict], count: int, topics: tuple[str, ...], selected: list[dict],
-          phase: str, logs: dict[str, dict]) -> list[dict]:
+          phase: str, logs: dict[str, dict],
+          regions: tuple[str, ...] = (),
+          relax_family: bool = False) -> list[dict]:
     picked = []
     remaining = list(pool)
     while remaining and len(picked) < count:
@@ -137,6 +219,13 @@ def _pick(pool: list[dict], count: int, topics: tuple[str, ...], selected: list[
         _, candidate = ranked[0]
         remaining.remove(candidate)
         duplicate, reason = _duplicate(candidate, selected + picked)
+        if not duplicate:
+            # Publisher-family caps run in EVERY phase, exactly like the duplicate
+            # guard: a capped candidate is consumed and logged, never reconsidered.
+            family_reason = _family_violation(candidate, selected + picked, regions,
+                                              relax_family=relax_family)
+            if family_reason:
+                duplicate, reason = True, family_reason
         _, base, adjustment, final = _rank(candidate, topics, selected + picked)
         log = logs[candidate["id"]]
         log.update({"baseScore": base, "topicAdjustment": adjustment,
@@ -230,6 +319,7 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
         picked = _pick(
             [c for c in region_pool if _memberships(c).get(region) == "primary"],
             size, selected_topics, selected, "regional_primary", logs,
+            regions=selected_regions,
         )
         selected.extend(picked)
         assigned_regions.extend([region] * len(picked))
@@ -242,6 +332,7 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
                 [c for c in region_pool if _memberships(c).get(region) == "primary"
                  and c not in selected],
                 targets[region], selected_topics, selected, f"regional_quota:{region}", logs,
+                regions=selected_regions,
             )
             selected.extend(picked)
             assigned_regions.extend([region] * len(picked))
@@ -257,6 +348,7 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
                      and c not in selected],
                     size - len(selected), selected_topics, selected,
                     f"regional_reallocation:{region}", logs,
+                    regions=selected_regions,
                 )
                 selected.extend(picked)
                 assigned_regions.extend([region] * len(picked))
@@ -264,11 +356,28 @@ def select_custom_mix(candidates: list[dict], date: str, regions, topics=(),
     regional_count = len(selected)
     fallback_slots = 0
     if len(selected) < size:
-        fallback = [c for c in eligible if c not in selected]
-        picked = _pick(fallback, size - len(selected), (), selected, "global_fallback", logs)
+        # v3: the REGION BOUNDARY is absolute. Every fallback pass draws only from
+        # candidates that are primary in a SELECTED region — a World story can never
+        # enter a US-only mix, and a US story can never enter a world-only mix. Rather
+        # than cross the boundary, the selection ships short and the orchestrator
+        # refuses to serve it.
+        fallback = [c for c in region_pool if c not in selected]
+        picked = _pick(fallback, size - len(selected), (), selected, "global_fallback", logs,
+                       regions=selected_regions)
         selected.extend(picked)
         fallback_slots = len(picked)
-        assigned_regions.extend(["global_fallback"] * len(picked))
+        # LAST RESORT (v2.1): five stories beat the per-family principle. Re-offer the
+        # remaining eligible candidates with the generic family cap relaxed; the UK cap,
+        # the topic allowlist (already applied at eligibility) and every duplicate guard
+        # remain fully enforced.
+        if len(selected) < size:
+            relaxed = _pick([c for c in region_pool if c not in selected],
+                            size - len(selected), (), selected,
+                            "global_fallback_relaxed", logs,
+                            regions=selected_regions, relax_family=True)
+            selected.extend(relaxed)
+            fallback_slots += len(relaxed)
+        assigned_regions.extend(["global_fallback"] * fallback_slots)
 
     # A final guard independent from each selection phase.
     for i, candidate in enumerate(selected):

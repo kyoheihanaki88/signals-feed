@@ -1,6 +1,7 @@
-// v2 = strict topic allowlist + fixed region priority (see custom-mix-types.ts).
-// The Production env var CUSTOM_MIX_SELECTOR_VERSION must move to 2 with this deploy.
-export const SUPPORTED_SELECTOR_VERSION = 2;
+// v3 = canonical topic allowlist + publisher-family caps + absolute region boundary
+// (see custom-mix-types.ts). The Production env var CUSTOM_MIX_SELECTOR_VERSION must
+// move to 3 with this deploy, and iOS must send selectorVersion 3 in lockstep.
+export const SUPPORTED_SELECTOR_VERSION = 3;
 export const STORY_COUNT = 5;
 export const ALLOWED_REGIONS = [
   "japan",

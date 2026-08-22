@@ -157,7 +157,7 @@ def main():
             if cu in seen:
                 skipped["dup"] += 1; continue
             seen.add(cu)
-            candidates.append({
+            candidate = {
                 "id": stable_id(cu or url),       # stable, canonical-URL-based id (selection.py needs c["id"])
                 "title": clean_text(it["title"]),
                 "source": src["name"],
@@ -169,7 +169,15 @@ def main():
                 "snippet": clean_text(it["desc"])[:400],
                 "paywalled": bool(src.get("paywalled", False)),
                 "source_reliability": reliability(src.get("status", "")),
-            })
+            }
+            # SECTION-level region metadata (e.g. CBS News U.S.). This is a structured
+            # editorial fact about the FEED — every item of a national section belongs to
+            # that region — carried through to the Mix Pool's region classifier, where it
+            # yields `primary` with `<region>:structured` evidence. Deliberately per-feed:
+            # a publisher being American never marks its world coverage as US news.
+            if src.get("region"):
+                candidate["structured_regions"] = [str(src["region"])]
+            candidates.append(candidate)
 
     # light clustering: greedy token-Jaccard on titles (same story across sources)
     toks = [title_tokens(c["title"]) for c in candidates]

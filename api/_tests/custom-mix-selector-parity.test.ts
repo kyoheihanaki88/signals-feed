@@ -149,7 +149,7 @@ test("R. all eight golden scenarios match the committed Python output exactly", 
     "E_japan_and_tech",
     "F_reordered_inputs",
     "G_shortage_below_five",
-    "H_fallback_duplicates_regional",
+    "H_region_boundary_excludes_world_duplicate",
   ]);
 
   for (const scenario of golden.scenarios) {
@@ -205,7 +205,10 @@ test("R3. the golden file records no wall-clock timestamp", () => {
 });
 
 test("R4. rejected duplicates and their reasons match the golden output", () => {
-  const scenario = golden.scenarios.find((s) => s.name === "H_fallback_duplicates_regional");
+  // v3: cross-region duplicates are stopped by the region boundary BEFORE duplicate
+  // checking runs, so the in-region duplicate scenario (C) proves the duplicate guard
+  // and scenario H proves the boundary rejection.
+  const scenario = golden.scenarios.find((s) => s.name === "C_japan_only_duplicate_event");
   assert.ok(scenario);
   const actual = runTypeScript(scenario);
   const rejected = actual.candidateLogs
@@ -216,6 +219,15 @@ test("R4. rejected duplicates and their reasons match the golden output", () => 
     .map((log) => [log.id, log.rejectionReason]);
   assert.deepEqual(rejected, expected);
   assert.ok(rejected.length > 0, "this scenario should reject at least one duplicate");
+
+  const boundary = golden.scenarios.find(
+    (s) => s.name === "H_region_boundary_excludes_world_duplicate",
+  );
+  assert.ok(boundary);
+  const boundaryLog = runTypeScript(boundary).candidateLogs.find(
+    (log) => log.id === "global-quake-duplicate",
+  );
+  assert.equal(boundaryLog?.rejectionReason, "not primary for any selected region");
 });
 
 // ── live Python comparison ────────────────────────────────────────────────────────────
@@ -331,9 +343,11 @@ test("R6. the editorial duplicate seam is reached the same number of times as in
   }
 
   assert.equal(totalTypeScript, totalPython);
-  // 392 under selector v1; v2's strict topic allowlist shrinks the eligible pools in the
-  // topic scenarios, so fewer candidates ever reach the duplicate guard.
-  assert.equal(totalTypeScript, 279, "the guard call count changed unexpectedly");
+  // 392 under selector v1; 279 under v2's tag-based allowlist; 310 under v2.1;
+  // 269 under v3 — the absolute region boundary removes every cross-region fallback
+  // pass, so the guard is consulted for fewer candidate pairs. Per-scenario equality
+  // with LIVE Python above is the real assertion; this pin just detects silent drift.
+  assert.equal(totalTypeScript, 269, "the guard call count changed unexpectedly");
   assert.ok(totalPython > 0, "the seam was never reached — the comparison proves nothing");
   assert.equal(
     totalFired,

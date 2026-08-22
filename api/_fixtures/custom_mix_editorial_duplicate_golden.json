@@ -5,7 +5,7 @@
     "regions": [
       "japan"
     ],
-    "selectorVersion": 2,
+    "selectorVersion": 3,
     "size": 5,
     "topics": []
   },
@@ -30,8 +30,8 @@
       "selectedRegionStories": 5,
       "fallbackSlots": 0,
       "fallbackReason": null,
-      "selectorVersion": 2,
-      "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=2|size=5",
+      "selectorVersion": 3,
+      "mixIdentity": "date=2026-07-27|regions=japan|topics=|selector=3|size=5",
       "finalRegionMix": {
         "japan": 5
       },

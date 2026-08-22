@@ -9,13 +9,14 @@
  */
 
 /**
- * Selection semantics version. v2 (2026-08-13): selected topics are a STRICT ALLOWLIST
- * (never resurrected by fallback; the mix ships short instead), and regions fill in the
- * fixed priority united_states > japan > world with a 3-slot US minimum when selected.
- * The bump invalidates every v1 mix identity, so no cache computed under the old
- * "topic boost" semantics can ever be reused.
+ * Selection semantics version. v3 (2026-08-18): canonical (category) topic allowlist,
+ * publisher-family caps (max 1 per family; UK families capped at 1 total while the US
+ * is active), an absolute region boundary (no fallback ever crosses into an unselected
+ * region), CBS US structured-region sourcing and a coverage-aware enrichment pool.
+ * Each bump invalidates every previous mix identity, so no cache computed under older
+ * semantics can ever be reused.
  */
-export const SELECTOR_VERSION = 2;
+export const SELECTOR_VERSION = 3;
 
 export const SUPPORTED_REGIONS = ["japan", "united_states", "world"] as const;
 export const SUPPORTED_TOPICS = [

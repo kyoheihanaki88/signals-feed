@@ -145,7 +145,7 @@ export function exchangeRequest(
   body: Record<string, unknown> = {
     signedTransactionInfo: TEST_JWS,
     appVersion: "1.0",
-    selectorVersion: 2,
+    selectorVersion: 3,
   },
   headers: Record<string, string> = {},
 ): Request {
@@ -177,7 +177,7 @@ export function editionBody(overrides: Record<string, unknown> = {}): {
     // filter — tests that exercise the allowlist pass their own topics explicitly.
     active: { mode: "custom", regions: ["japan"], topics: [] },
     pending: null,
-    selectorVersion: 2,
+    selectorVersion: 3,
     storyCount: 5,
     ...overrides,
   };

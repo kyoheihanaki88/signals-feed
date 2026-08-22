@@ -59,21 +59,40 @@ def main():
               and bool(by_name[n].get("paywalled")) == p and by_name[n]["status"] == st
               for n, (u, c, p, st) in original.items()))
 
-    new = [s for s in src if s.get("feed_id")]
-    check("eight section feeds added", len(new) == 8)
+    # Regional feeds carry explicit `region` metadata (CBS News U.S., 2026-08-18);
+    # topic-section feeds do not. Both use feed_id.
+    regional = [s for s in src if s.get("feed_id") and s.get("region")]
+    new = [s for s in src if s.get("feed_id") and not s.get("region")]
+    check("eight topic-section feeds retained", len(new) == 8)
     check("section feeds: https, category in TECH/SCIENCE/HEALTH/CULTURE, purpose noted",
           all(s["url"].startswith("https://")
               and s["category"] in {"TECH", "SCIENCE", "HEALTH", "CULTURE"}
               and "section feed" in (s.get("notes") or "")
               and s.get("paywalled") is False
               for s in new))
-    check("feed_id values are unique", len({s["feed_id"] for s in new}) == len(new))
+    check("feed_id values are unique",
+          len({s["feed_id"] for s in new + regional}) == len(new) + len(regional))
     urls = [s["url"] for s in src if s.get("url")]
     check("no section feed is an alias of an existing feed (all URLs distinct)",
           len(urls) == len(set(urls)))
     check("section feeds belong to already-audited publishers only",
           {publisher_key(s["name"]) for s in new}
           <= {"The Verge", "BBC News", "The Guardian"})
+
+    # ── CBS News U.S. — the explicit US-section counterweight (2026-08-18) ──────────
+    check("CBS News (U.S.) regional feed present with structured region metadata",
+          len(regional) == 1
+          and regional[0]["name"] == "CBS News (U.S.)"
+          and regional[0]["feed_id"] == "cbs-us"
+          and regional[0]["url"] == "https://www.cbsnews.com/latest/rss/us"
+          and regional[0]["region"] == "united_states"
+          and regional[0]["category"] == "WORLD"
+          and regional[0].get("paywalled") is False
+          and regional[0]["status"] == "verified")
+    check("CBS publisher family collapses to CBS News",
+          publisher_key("CBS News (U.S.)") == "CBS News")
+    check("region metadata is per-feed, never publisher-wide (only the U.S. section has it)",
+          all(not s.get("region") for s in src if s is not regional[0]))
 
     # ── publisher identity ──────────────────────────────────────────────────────────
     check("publisher_key collapses section names to one publisher",

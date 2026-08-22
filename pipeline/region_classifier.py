@@ -28,6 +28,19 @@ _US = (
     ("washington", re.compile(r"\bwashington(?:,\s*d\.?c\.?)?\b", re.I)),
     ("white-house", re.compile(r"\bwhite house\b", re.I)),
     ("congress", re.compile(r"\bcongress\b", re.I)),
+    # 2026-08-18 audit additions — UNAMBIGUOUS US signals only. Deliberately NOT added:
+    # "Senate", "Supreme Court", "federal", "governor" — every one of these names an
+    # institution that exists in many countries, and a lone ambiguous word must never
+    # make a story American. State names below exclude Georgia (a country) and
+    # Washington (already matched above, and ambiguous with the UK place name usage is
+    # negligible for the state list chosen).
+    ("capitol-hill", re.compile(r"\bcapitol hill\b", re.I)),
+    ("pentagon", re.compile(r"\bthe pentagon\b", re.I)),
+    ("fbi", re.compile(r"\bfbi\b", re.I)),
+    ("us-state", re.compile(
+        r"\b(california|texas|florida|new york|pennsylvania|illinois|ohio|"
+        r"michigan|arizona|colorado|massachusetts|virginia|oregon|nevada|"
+        r"alabama|louisiana|kentucky|oklahoma|minnesota|wisconsin)\b", re.I)),
 )
 _WORLD = (
     ("united-nations", re.compile(r"\bunited nations\b|\bu\.n\.\b", re.I)),

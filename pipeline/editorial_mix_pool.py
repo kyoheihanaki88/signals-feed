@@ -136,14 +136,78 @@ def validate_raw_pool(raw_artifact: Any, *, expected_date: str | None = None) ->
     return eligible
 
 
+#: Regional coverage floors for the enrichment pool (as available in the raw pool).
+#: 6+4+4 = 14 of the 20 slots guarantee that a US-first, japan-only or world-heavy mix
+#: can reach five stories; the remaining slots restore topic coverage and score order.
+_ENRICHMENT_REGION_FLOORS = (("united_states", 6), ("japan", 4), ("world", 4))
+_ENRICHMENT_TOPICS = ("ai", "business", "climate", "culture", "health", "science", "tech")
+
+
+def _is_primary(candidate: dict[str, Any], region: str) -> bool:
+    for row in candidate.get("regionMemberships") or []:
+        if (row.get("region") or row.get("id")) == region and row.get("strength") == "primary":
+            return True
+    return False
+
+
 def select_for_enrichment(eligible: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
-    The first `TARGET_POOL_SIZE` eligible candidates in the raw pool's own order.
+    COVERAGE-AWARE choice of the `TARGET_POOL_SIZE` candidates to enrich. (2026-08-18)
 
-    The raw artifact is already sorted by candidate id by `freeze_artifact`, so this is
-    deterministic and introduces no new ranking function.
+    The old rule — "first 20 in id order" — was blind to what the pool contained, so a
+    UK-heavy Scout day could produce an enrichment pool with two US stories and no
+    culture story, making "always five" impossible for whole classes of user settings.
+    Deterministic, in three passes over a score-then-id ordering:
+
+      1. REGIONAL FLOORS: the top-scoring primaries per region, US first (6/4/4).
+      2. TOPIC COVERAGE: one candidate per canonical topic that is still missing.
+      3. SCORE FILL: remaining slots by score, id as the tie-break.
+
+    No new ranking function is introduced — `baseScore` is the pool's own score and the
+    id tie-break keeps the result independent of input order.
     """
-    return eligible[:TARGET_POOL_SIZE]
+    by_score = sorted(
+        eligible,
+        key=lambda c: (-float(c.get("baseScore", 0)), str(c.get("id", ""))),
+    )
+    chosen: list[dict[str, Any]] = []
+    chosen_ids: set[str] = set()
+
+    def take(candidate: dict[str, Any]) -> bool:
+        if len(chosen) >= TARGET_POOL_SIZE:
+            return False
+        identifier = str(candidate.get("id", ""))
+        if identifier in chosen_ids:
+            return False
+        chosen.append(candidate)
+        chosen_ids.add(identifier)
+        return True
+
+    for region, floor in _ENRICHMENT_REGION_FLOORS:
+        have = sum(1 for c in chosen if _is_primary(c, region))
+        for candidate in by_score:
+            if have >= floor:
+                break
+            if str(candidate.get("id", "")) in chosen_ids:
+                continue
+            if _is_primary(candidate, region) and take(candidate):
+                have += 1
+
+    for topic in _ENRICHMENT_TOPICS:
+        if any(topic in (c.get("topics") or []) for c in chosen):
+            continue
+        for candidate in by_score:
+            if str(candidate.get("id", "")) in chosen_ids:
+                continue
+            if topic in (candidate.get("topics") or []):
+                take(candidate)
+                break
+
+    for candidate in by_score:
+        if len(chosen) >= TARGET_POOL_SIZE:
+            break
+        take(candidate)
+    return chosen
 
 
 def enrich_story(

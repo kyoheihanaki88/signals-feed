@@ -46,6 +46,26 @@ sources:
     status: reachable
     notes: 200 + rss content-type; body returned as binary in review — verify on the runner
 
+  # --- United States general news (Custom Mix US balance, 2026-08-18) ------------------
+  # The pool's only general US-news source was effectively NPR World, while BBC and the
+  # Guardian contribute four section feeds each — a UK skew. CBS News U.S. is the explicit
+  # US-section counterweight. `region: united_states` is STRUCTURED metadata: every item
+  # of this feed comes from CBS's U.S. section, so the region classifier can mark it
+  # `united_states: primary` even when the headline never says "U.S.". This is a
+  # SECTION-level fact, not a publisher-level rule — a general CBS feed (world, politics,
+  # …) must NOT inherit it, so `region` is set per-feed here and nowhere else.
+  # Verified live 2026-08-18: HTTP 200, valid RSS 2.0, 30 items, direct
+  # https://www.cbsnews.com/news/... article URLs, pubDate present. /video/ items exist in
+  # the feed and are dropped by the Scout's existing VIDEO_RE filter.
+  - name: CBS News (U.S.)
+    feed_id: cbs-us
+    url: https://www.cbsnews.com/latest/rss/us
+    category: WORLD
+    region: united_states
+    paywalled: false
+    status: verified
+    notes: US-section general news; publisher family normalizes to "CBS News"; region metadata applies to this section feed only
+
   # --- section feeds (Morning Mix, 2026-07-24) ---------------------------------------
   # Same five audited publishers as above — SECTION endpoints only, so the licensing
   # posture from docs/app-store Appendix A2 is unchanged. Purpose: (1) widen the tiny

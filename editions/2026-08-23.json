@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-23",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "Canada to hit US with retaliatory tariffs as trade war escalates",
+      "summary": "Canada’s Prime Minister Mark Carney has announced retaliatory tariffs on the United States after Washington imposed a 50 percent levy on $20bn worth of Canadian goods.",
+      "keyTakeaways": [
+        "Carney, speaking in Ottawa on Saturday, said the new Canadian tariffs would target US steel, dairy and electronics industries, among others, and take effect on September 8.",
+        "The announcement came after days of intense negotiations broke down late on Friday, worsening a delicate relationship between the longtime trade partners and allies.",
+        "US President Donald Trump’s new tariffs hit sectors including wine, furniture, dairy products, cement, clothing, fishing rods and hockey equipment, and cover some $20bn worth of goods, or 5.5 percent of Canadian exports to the US."
+      ],
+      "whyItMatters": "He added that Canada would announce support measures next week for industries hit ⁠by the new US duties, adding these measures could last years.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米加の貿易摩擦、報復関税で激化",
+          "summary": "米国がカナダ製品200億ドル相当に50パーセントの関税を課したのを受け、カナダのマーク・カーニー首相が対抗措置として報復関税を発表した。",
+          "keyTakeaways": [
+            "カーニー首相はオタワでの会見で、鉄鋼や乳製品、電子機器などを対象とする新たな関税が9月8日に発効すると述べた",
+            "発表の背景には、金曜深夜に決裂した数日間の集中交渉があり、長年の貿易相手であり同盟国でもある両国の関係に影を落としている",
+            "トランプ米大統領による新関税はワインや家具、乳製品、セメント、衣料品、釣り竿、ホッケー用品などに及び、対象額は約200億ドル、カナダの対米輸出の5.5パーセントに相当する"
+          ],
+          "whyItMatters": "カーニー首相は、新たな米関税の影響を受ける産業への支援策を来週発表するとし、その措置は数年に及ぶ可能性があると述べた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Man leaves young son on Mount Fuji before ascending Japan’s highest peak",
+      "summary": "A man who abandoned his seven-year-old son on Mount Fuji in Japan after the boy complained of feeling tired while on a family hike has been reprimanded by local police.",
+      "keyTakeaways": [
+        "The man, who was from Japan’s fourth-largest city, Nagoya, gave his son some snacks and a soft drink.",
+        "He then told him to wait for him before continuing his five-hour ascent to the summit with the child’s older brother, who had already gone on ahead.",
+        "Local police are urging hikers to consider the abilities and stamina of everyone in their group when planning an ascent on Mount Fuji, and to adjust their pace accordingly."
+      ],
+      "whyItMatters": "A worker on Japan’s highest mountain discovered the child sitting alone on a bench near the sixth station of the Fujinomiya trail at an altitude of more than 2,000 metres (6,500 feet) on Thursday.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/22/man-leaves-young-son-mount-fuji-japan",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "富士山に息子を置き去り、父親を警察が注意",
+          "summary": "家族で富士登山中、疲れたと訴えた七歳の息子を残して先へ進んだ男性が、地元警察から注意を受けた。",
+          "keyTakeaways": [
+            "名古屋出身の男性は、息子に軽食と飲み物を渡した。",
+            "その後、待つよう言い残し、先に出発していた兄とともに山頂までの五時間の登山を続けた。",
+            "地元警察は、富士登山では同行者全員の体力や力量を踏まえ、ペース配分に気を配るよう呼びかけている。"
+          ],
+          "whyItMatters": "木曜日、富士宮口六合目付近、標高二千メートルを超える地点のベンチで、作業員が一人でいる少年を見つけた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Mobile)",
+      "headline": "Made by Google 2026: all the Pixel news and announcements",
+      "summary": "On August 12, 2026, Google revealed a bunch of new Pixel devices.",
+      "keyTakeaways": [
+        "The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features.",
+        "Google also showed off its next-gen Pixel Fold featuring thinner bezels, alongside a new Pixel Watch 5 with improved GPS tracking.",
+        "There’s a new Pixel Tag as well."
+      ],
+      "whyItMatters": "For one, it popularized the passport-style design years ago, being more wide than tall — something that Samsung tried for the first time this year with its Z Fold 8, and that Apple is rumored to do with its foldable iPhone that may or may not arrive in 2026.",
+      "originalURL": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+      "readTime": 14,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "「Made by Google 2026」、Pixel新製品が出そろう",
+          "summary": "2026年8月12日、グーグルは複数の新型Pixel端末を発表した。",
+          "keyTakeaways": [
+            "色鮮やかなPixel 11シリーズはカメラと性能を強化。上位のProモデルには、AI「Gemini」などの通知に反応して光るLEDリングを新たに搭載した。",
+            "次世代Pixel Foldも披露され、ベゼルはより薄く。GPS精度を高めた新型Pixel Watch 5も登場した。",
+            "新しいPixel Tagも発表された。"
+          ],
+          "whyItMatters": "Pixelは数年前、縦より横に長いパスポート型のフォルダブルデザインを世に広めた存在であり、サムスンは今年のZ Fold8で初めてこの形状を採用し、アップルも2026年に登場するとされる折りたたみ式iPhoneで追随する可能性がある。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks",
+      "summary": "A senior leader at OpenAI has said people should prepare to defend against “ongoing, persistent” cyber-attacks from AIs, as cutting-edge artificial intelligence models gain advanced capabilities to plan and launch offensives.",
+      "keyTakeaways": [
+        "OpenAI announced on Tuesday it has paused training of some frontier AI models to implement new safeguards, and it is unclear when training will restart after new guardrails have been put in place.",
+        "The threat of cyber-attacks crippling businesses, infrastructure and the general public has rapidly risen to the top of the list of urgent concerns about AI.",
+        "This week, the UK government’s National Cyber Security Centre urged caution over the use of AI agents, warning their safety controls can be bypassed and that an AI agent “does not have common sense”."
+      ],
+      "whyItMatters": "OpenAI also said it could not rule out another new model, Astra, having “critical cybersecurity capability”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/23/openai-cyber-attacks-threat-chris-lehane",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIによるサイバー攻撃、新たな段階へ　OpenAI幹部が警鐘",
+          "summary": "OpenAIの幹部が、AIによる「継続的で執拗な」サイバー攻撃に備える必要があると述べた。最先端のAIモデルが攻撃を計画し、実行する高度な能力を身につけつつあるという。",
+          "keyTakeaways": [
+            "OpenAIは火曜日、一部の最先端AIモデルの訓練を一時停止し、新たな安全対策を導入すると発表。訓練再開の時期は未定という。",
+            "AIによるサイバー攻撃が企業やインフラ、市民生活を脅かすリスクは、AIをめぐる懸念の中でも急速に最優先課題となっている。",
+            "英国政府のサイバーセキュリティ機関は今週、AIエージェントの利用に注意を呼びかけた。安全対策は回避され得るうえ、AIエージェントには「常識がない」と警告している。"
+          ],
+          "whyItMatters": "OpenAIは、新モデル「Astra」が「重大なサイバーセキュリティ能力」を持つ可能性も否定できないとしている。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Council set to axe climate emergency declaration",
+      "summary": "Reform UK-led Barnsley Council has announced its intention to withdraw its climate emergency declaration.",
+      "keyTakeaways": [
+        "The party said a review of all climate and net-zero activity was under way, saying programmes that lacked a clear resident benefit, financial saving or statutory requirement should change or stop.",
+        "The council's intention is to withdraw the Climate Emergency declaration from 2019, Zero40, Zero45 and similar net-zero targets, and to direct resources to frontline services.",
+        "Council leader William Brown said: \"Our focus is on practical priorities that matter to residents, rather than ideological targets and costly political posturing.\""
+      ],
+      "whyItMatters": "Earlier this year, Reform-led Wakefield Council voted to rescind its climate and biodiversity emergency declaration from May 2019.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c1d1v63ngz1o?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Microscope",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "気候非常事態宣言、撤回へ",
+          "summary": "英国改革党（リフォームUK）が主導するバーンズリー市議会が、気候非常事態宣言の撤回方針を明らかにした。",
+          "keyTakeaways": [
+            "同党は気候・ネットゼロ関連施策の総点検を進めており、住民への明確な利益や財政的な節約、法的義務のない事業は見直すか中止すべきだとしている。",
+            "2019年の気候非常事態宣言や「ゼロ40」「ゼロ45」などのネットゼロ目標を撤回し、資源を最前線の住民サービスに振り向ける方針。",
+            "ウィリアム・ブラウン議長は「理念先行の目標や高くつく政治的姿勢ではなく、住民にとって実際に重要な課題を優先する」と述べた。"
+          ],
+          "whyItMatters": "同じくリフォームUKが主導するウェイクフィールド市議会も今年、2019年5月の気候・生物多様性非常事態宣言の撤回を可決している。"
+        }
+      }
+    }
+  ]
+}

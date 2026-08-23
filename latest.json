@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-22",
+  "date": "2026-08-23",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,148 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "Canada vows to match Trump’s 50% tariffs after trade deal talks fail",
-      "summary": "Canadian prime minister Mark Carney has promised to match US tariffs “dollar for dollar”, after the two sides failed to agree a trade deal by the deadline of midnight on Friday.",
+      "source": "Al Jazeera",
+      "headline": "Canada to hit US with retaliatory tariffs as trade war escalates",
+      "summary": "Canada’s Prime Minister Mark Carney has announced retaliatory tariffs on the United States after Washington imposed a 50 percent levy on $20bn worth of Canadian goods.",
       "keyTakeaways": [
-        "He said of the 50% tariffs the US was imposing: “Canada will match those tariffs dollar for dollar to protect our workers and businesses.”",
-        "The US tariffs will affect about US$20bn worth of Canadian products after the last-ditch negotiations failed to resolve the latest strain in already tense relations between the historic allies.",
-        "US trade representative Jamieson Greer said the breakdown represented a “missed opportunity for Canada”."
+        "Carney, speaking in Ottawa on Saturday, said the new Canadian tariffs would target US steel, dairy and electronics industries, among others, and take effect on September 8.",
+        "The announcement came after days of intense negotiations broke down late on Friday, worsening a delicate relationship between the longtime trade partners and allies.",
+        "US President Donald Trump’s new tariffs hit sectors including wine, furniture, dairy products, cement, clothing, fishing rods and hockey equipment, and cover some $20bn worth of goods, or 5.5 percent of Canadian exports to the US."
       ],
-      "whyItMatters": "Canadian officials had worked hard in good faith but “last-minute changes in the US proposed terms were unfair, uneconomic and called into question the reliability of any deal”, Carney said in a statement.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The terminal",
+      "whyItMatters": "He added that Canada would announce support measures next week for industries hit ⁠by the new US duties, adding these measures could last years.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates?traffic_source=rss",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米加通商交渉が決裂、カナダも同率関税で対抗へ",
-          "summary": "カナダのカーニー首相は、金曜深夜の期限までに米国との通商合意に至らなかったことを受け、米国の関税に「同額」で対抗すると表明した。",
+          "headline": "米加の貿易摩擦、報復関税で激化",
+          "summary": "米国がカナダ製品200億ドル相当に50パーセントの関税を課したのを受け、カナダのマーク・カーニー首相が対抗措置として報復関税を発表した。",
           "keyTakeaways": [
-            "首相は米国が課す五十パーセント関税について、「自国の労働者と企業を守るため、同額の関税で応じる」と述べた。",
-            "最後の交渉も決裂し、両国はもともと緊張を抱えていたが、今回の措置で約二百億米ドル相当のカナダ製品が影響を受ける見通しだ。",
-            "米通商代表のジェイミソン・グリア氏は、今回の決裂を「カナダにとって逃した機会」と評した。"
+            "カーニー首相はオタワでの会見で、鉄鋼や乳製品、電子機器などを対象とする新たな関税が9月8日に発効すると述べた",
+            "発表の背景には、金曜深夜に決裂した数日間の集中交渉があり、長年の貿易相手であり同盟国でもある両国の関係に影を落としている",
+            "トランプ米大統領による新関税はワインや家具、乳製品、セメント、衣料品、釣り竿、ホッケー用品などに及び、対象額は約200億ドル、カナダの対米輸出の5.5パーセントに相当する"
           ],
-          "whyItMatters": "カーニー首相は、カナダ側は誠実に交渉を重ねてきたが、「米側が土壇場で条件を変更したことは不公正かつ非経済的で、合意そのものの信頼性を損なうものだった」と声明で述べた。"
+          "whyItMatters": "カーニー首相は、新たな米関税の影響を受ける産業への支援策を来週発表するとし、その措置は数年に及ぶ可能性があると述べた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the trade talks between the US and Canada just fell apart?",
+              "text": "So Canada's actually hitting back with its own tariffs now?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Prime Minister Mark Carney announced retaliatory tariffs after talks with Washington broke down Friday night.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "What sparked it in the first place?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The US imposed a 50 percent tariff on about $20bn worth of Canadian goods.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "And what's Canada targeting in response?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Steel, dairy, and electronics among other US industries. Those tariffs start September 8.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the US tariffs actually hit on Canada's side?",
               "duration": 3.474286
             },
             {
               "speaker": "explainer",
-              "text": "Yes. They missed the midnight Friday deadline, and now the US is imposing 50% tariffs.",
-              "duration": 5.041633
+              "text": "A wide range — wine, furniture, dairy, cement, clothing, even fishing rods and hockey equipment.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "And Canada's just accepting that?",
-              "duration": 2.35102
+              "text": "That's a lot of everyday goods. Is Canada doing anything to help businesses affected?",
+              "duration": 4.597551
             },
             {
               "speaker": "explainer",
-              "text": "No — Prime Minister Mark Carney says Canada will match those tariffs dollar for dollar.",
-              "duration": 4.780408
+              "text": "Carney said support measures for hit industries will be announced next week, and they could last for years.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "How much trade are we actually talking about here?",
-              "duration": 2.925714
+              "text": "Sounds like this rift between two close allies isn't closing anytime soon.",
+              "duration": 5.093878
             },
             {
               "speaker": "explainer",
-              "text": "Around 20 billion US dollars worth of Canadian products will be affected.",
-              "duration": 3.84
-            },
-            {
-              "speaker": "listener",
-              "text": "What happened at the last minute that broke things down?",
-              "duration": 3.056327
-            },
-            {
-              "speaker": "explainer",
-              "text": "Carney says the US changed its proposed terms late, and called them unfair and unreliable.",
-              "duration": 5.381224
-            },
-            {
-              "speaker": "listener",
-              "text": "Does Washington see it the same way?",
-              "duration": 2.168163
-            },
-            {
-              "speaker": "explainer",
-              "text": "Not quite. Their trade representative, Jamieson Greer, called it a missed opportunity for Canada.",
-              "duration": 5.198367
-            },
-            {
-              "speaker": "listener",
-              "text": "This is between two countries that usually get along well.",
-              "duration": 3.474286
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is — and that's part of why this breakdown is being felt so sharply on both sides.",
-              "duration": 4.440816
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "米国とカナダの通商交渉が、金曜深夜の期限までにまとまりませんでした。",
-              "duration": 6.048
-            },
-            {
-              "speaker": "narrator",
-              "text": "カナダのカーニー首相は、米国の関税措置に同額で対抗すると表明しています。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "米国はカナダ製品に五十パーセントの関税を課す方針です。",
-              "duration": 4.968
-            },
-            {
-              "speaker": "narrator",
-              "text": "その影響を受ける製品は約二百億米ドル相当にのぼります。",
-              "duration": 5.304
-            },
-            {
-              "speaker": "narrator",
-              "text": "カーニー首相は、カナダ側は誠実に交渉を続けてきたと述べています。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "一方で米側が土壇場で条件を変えたことが、不公正で信頼性を欠くと批判しました。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "米通商代表のジェイミソン・グリア氏は、今回の決裂をカナダにとって逃した機会だと述べています。",
-              "duration": 7.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "もともと緊張を抱えていた両国の関係は、さらに冷え込む形となりました。",
-              "duration": 5.832
-            },
-            {
-              "speaker": "narrator",
-              "text": "この関税は、両国をまたぐ企業や消費者の暮らしにも静かに影響していきそうです。",
-              "duration": 6.696
+              "text": "That's the sense from Ottawa right now — a strained relationship with no quick resolution in sight.",
+              "duration": 5.459592
             }
           ]
         }
@@ -161,152 +110,96 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Gun stash in German forest believed to be linked to Russia, say reports",
-      "summary": "Germany is seeking to extradite a suspect from Romania over the discovery of an underground stash of weapons in a forest near Berlin that German media reports have linked to Russian intelligence.",
+      "headline": "Man leaves young son on Mount Fuji before ascending Japan’s highest peak",
+      "summary": "A man who abandoned his seven-year-old son on Mount Fuji in Japan after the boy complained of feeling tired while on a family hike has been reprimanded by local police.",
       "keyTakeaways": [
-        "Earlier, local media had reported that German authorities had unearthed two handguns and ammunition about a year ago in a wooded area outside the German capital after agents of the domestic intelligence service received a tip.",
-        "Although the investigation into the Berlin stash has been long-running, the revelations apparently led Dobrindt to hastily call the news conference on Friday.",
-        "Moscow’s potential hit list is believed to include weapons contractor executives, opposition figures in exile and other prominent Ukraine supporters, according to the report by Süddeutsche and the public broadcasters NDR and WDR."
+        "The man, who was from Japan’s fourth-largest city, Nagoya, gave his son some snacks and a soft drink.",
+        "He then told him to wait for him before continuing his five-hour ascent to the summit with the child’s older brother, who had already gone on ahead.",
+        "Local police are urging hikers to consider the abilities and stamina of everyone in their group when planning an ascent on Mount Fuji, and to adjust their pace accordingly."
       ],
-      "whyItMatters": "Sinan Selen, the head of the Federal Office for the Protection of the Constitution, Germany’s domestic intelligence agency, has warned for months of more aggressive tactics by Russian secret services, including plans for targeted attacks on German soil.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/21/gun-stash-germany-forest-berlin-believed-linked-russia-reports",
-      "readTime": 4,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "A worker on Japan’s highest mountain discovered the child sitting alone on a bench near the sixth station of the Fujinomiya trail at an altitude of more than 2,000 metres (6,500 feet) on Thursday.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/22/man-leaves-young-son-mount-fuji-japan",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "独の森で発見の武器、ロシア関与の疑い",
-          "summary": "ドイツはルーマニアにいる容疑者の身柄引き渡しを求めている。ベルリン近郊の森で見つかった地下の武器隠し場を巡る事件で、独メディアはロシア情報機関との関連を報じている。",
+          "headline": "富士山に息子を置き去り、父親を警察が注意",
+          "summary": "家族で富士登山中、疲れたと訴えた七歳の息子を残して先へ進んだ男性が、地元警察から注意を受けた。",
           "keyTakeaways": [
-            "地元メディアによれば、国内情報機関への通報を受け、当局は約一年前に首都近郊の林の中で拳銃二丁と弾薬を発見していたという。",
-            "ベルリンの武器隠し場を巡る捜査は長期に及んでいたが、今回の報道を受けドブリント内相は急遽金曜日に記者会見を開いたとみられる。",
-            "南ドイツ新聞と公共放送NDR、WDRの報道によれば、ロシア側の標的リストには兵器関連企業の幹部や亡命中の反体制派、ウクライナ支持で知られる人物らが含まれるとみられる。"
+            "名古屋出身の男性は、息子に軽食と飲み物を渡した。",
+            "その後、待つよう言い残し、先に出発していた兄とともに山頂までの五時間の登山を続けた。",
+            "地元警察は、富士登山では同行者全員の体力や力量を踏まえ、ペース配分に気を配るよう呼びかけている。"
           ],
-          "whyItMatters": "ドイツ憲法擁護庁のゼリン長官は、ロシア情報機関がドイツ国内での標的攻撃を含め、より強硬な手法を取る恐れがあると、これまで数か月にわたり警告してきた。"
+          "whyItMatters": "木曜日、富士宮口六合目付近、標高二千メートルを超える地点のベンチで、作業員が一人でいる少年を見つけた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what exactly did they find in this forest near Berlin?",
-              "duration": 3.186939
+              "text": "So a father just left his young son on Mount Fuji?",
+              "duration": 3.160816
             },
             {
               "speaker": "explainer",
-              "text": "About a year ago, German intelligence agents found two handguns and ammunition buried underground, after getting a tip.",
-              "duration": 6.034286
+              "text": "Yes. The boy, seven years old, said he was tired during a family hike.",
+              "duration": 3.892245
             },
             {
               "speaker": "listener",
-              "text": "And now there's an extradition request?",
-              "duration": 2.45551
+              "text": "What did the father do then?",
+              "duration": 1.567347
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Germany wants a suspect extradited from Romania, and reports have linked the stash to Russian intelligence.",
-              "duration": 6.635102
+              "text": "He gave him some snacks and a drink, told him to wait, and went on.",
+              "duration": 3.239184
             },
             {
               "speaker": "listener",
-              "text": "Why is this coming up now, if the find was a year old?",
+              "text": "Went on without him? To the summit?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, with the boy's older brother, who'd already gone ahead. It was a five-hour climb.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "How was the boy found?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "A mountain worker spotted him alone on a bench near the sixth station, quite high up.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds frightening for a child that age.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Local police reprimanded the father afterward.",
               "duration": 3.474286
             },
             {
-              "speaker": "explainer",
-              "text": "The investigation has been ongoing, but new revelations reportedly pushed a top official, Dobrindt, to call a hasty news conference on Friday.",
-              "duration": 7.78449
-            },
-            {
               "speaker": "listener",
-              "text": "Is there more to this than just weapons in the ground?",
-              "duration": 2.76898
+              "text": "What are they telling other hikers?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Reports suggest a wider concern — a possible target list that could include weapons executives, exiled opposition figures, and Ukraine supporters.",
-              "duration": 9.325714
-            },
-            {
-              "speaker": "listener",
-              "text": "That sounds serious. Have officials said anything about the broader risk?",
-              "duration": 4.545306
-            },
-            {
-              "speaker": "explainer",
-              "text": "Sinan Selen, who heads Germany's domestic intelligence agency, has warned for months that Russian services may be planning more direct action inside Germany.",
-              "duration": 8.359184
-            },
-            {
-              "speaker": "listener",
-              "text": "So this fits into that warning.",
-              "duration": 2.272653
-            },
-            {
-              "speaker": "explainer",
-              "text": "It does. It's one thread in a pattern officials say they've been watching closely.",
-              "duration": 4.780408
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "ベルリン近郊の森で見つかった武器を巡り、ドイツはルーマニアにいる容疑者の引き渡しを求めています。",
-              "duration": 7.128
-            },
-            {
-              "speaker": "narrator",
-              "text": "拳銃二丁と弾薬が地中に隠されていたのは、およそ一年前のことでした。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "発見のきっかけは、国内情報機関に寄せられた一本の通報だったといいます。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "独メディアは今回、この事件をロシアの情報機関と結びつけて報じました。",
-              "duration": 5.928
-            },
-            {
-              "speaker": "narrator",
-              "text": "捜査自体は以前から続いていましたが、報道を受けて内相が急きょ会見を開いています。",
-              "duration": 6.528
-            },
-            {
-              "speaker": "narrator",
-              "text": "報道によれば、ロシア側が狙う対象には兵器企業の幹部や亡命中の反体制派も含まれるとされます。",
-              "duration": 8.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "ウクライナを支持してきた著名人も、標的リストに挙がっているようです。",
-              "duration": 5.136
-            },
-            {
-              "speaker": "narrator",
-              "text": "ドイツの情報機関トップは、ロシアによる強硬な工作が強まっていると数か月前から警告してきました。",
-              "duration": 7.8
-            },
-            {
-              "speaker": "narrator",
-              "text": "標的を定めた攻撃がドイツ国内で起きる可能性についても、懸念が示されています。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "静かな森に埋められていた武器が、今、大きな緊張を映し出しています。",
-              "duration": 5.688
+              "text": "To think about everyone's stamina in a group, especially children, and pace the climb around them.",
+              "duration": 5.276735
             }
           ]
         }
@@ -317,148 +210,97 @@
       "importance": 3,
       "lead": false,
       "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "Hook, hold, harvest and hide: Meta’s alleged strategy laid out in first week of landmark trial",
-      "summary": "Meta’s business can be boiled down to four words that begin with the letter H: hook, hold, harvest, hide, according to a lawyer who is prosecuting the world’s largest social media company.",
+      "source": "The Verge (Mobile)",
+      "headline": "Made by Google 2026: all the Pixel news and announcements",
+      "summary": "On August 12, 2026, Google revealed a bunch of new Pixel devices.",
       "keyTakeaways": [
-        "Her accusation opened the blockbuster trial against the US tech company on Tuesday in Oakland, California, just north of Meta’s headquarters in Silicon Valley.",
-        "Eight jurors heard from O’Neill and attorneys for Meta this week, along with testimony from former employees and a psychologist.",
-        "The states are also asking that Meta be forced to change the design of its products to make them safer for children, which could have permanent effects on the company’s business model and how its social media platforms operate."
+        "The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features.",
+        "Google also showed off its next-gen Pixel Fold featuring thinner bezels, alongside a new Pixel Watch 5 with improved GPS tracking.",
+        "There’s a new Pixel Tag as well."
       ],
-      "whyItMatters": "Over the course of the trial, the jury is additionally expected to hear from Meta CEO Mark Zuckerberg and Instagram CEO Adam Mosseri.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/22/meta-trial-children-privacy",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Modern office",
+      "whyItMatters": "For one, it popularized the passport-style design years ago, being more wide than tall — something that Samsung tried for the first time this year with its Z Fold 8, and that Apple is rumored to do with its foldable iPhone that may or may not arrive in 2026.",
+      "originalURL": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+      "readTime": 14,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "「誘い込み、つなぎ止め、搾り取り、隠す」——Meta裁判が初週で示した構図",
-          "summary": "世界最大のソーシャルメディア企業を訴える弁護士によれば、Metaのビジネスは「引き込み、つなぎ止め、搾り取り、隠す」という四つの言葉に集約されるという。この告発をもって、火曜日、Metaの本拠地シリコンバレーに近いカリフォルニア州オークランドで、注目の裁判が幕を開けた。",
+          "headline": "「Made by Google 2026」、Pixel新製品が出そろう",
+          "summary": "2026年8月12日、グーグルは複数の新型Pixel端末を発表した。",
           "keyTakeaways": [
-            "火曜日、カリフォルニア州オークランドで始まった裁判は、Meta本社に近いこの地で開かれた。",
-            "今週は八人の陪審員が、オニール弁護士とMeta側弁護団、さらに元従業員や心理学者の証言に耳を傾けた。",
-            "原告の各州は、子どもの安全を高めるための製品設計変更もMetaに求めており、これが認められればビジネスモデルやプラットフォームの運営に長期的な影響を及ぼしかねない。"
+            "色鮮やかなPixel 11シリーズはカメラと性能を強化。上位のProモデルには、AI「Gemini」などの通知に反応して光るLEDリングを新たに搭載した。",
+            "次世代Pixel Foldも披露され、ベゼルはより薄く。GPS精度を高めた新型Pixel Watch 5も登場した。",
+            "新しいPixel Tagも発表された。"
           ],
-          "whyItMatters": "裁判の今後の過程では、Metaのマーク・ザッカーバーグCEOとインスタグラムのアダム・モセリCEOの証言も予定されている。"
+          "whyItMatters": "Pixelは数年前、縦より横に長いパスポート型のフォルダブルデザインを世に広めた存在であり、サムスンは今年のZ Fold8で初めてこの形状を採用し、アップルも2026年に登場するとされる折りたたみ式iPhoneで追随する可能性がある。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what's this trial actually about?",
+              "text": "So Google had its big Pixel event?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on August 12th, they announced a whole lineup of new devices.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "What's new with the phones?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Pixel 11 lineup, with upgraded cameras and better performance overall.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything unusual about the Pro models?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've got a built-in LED ring that lights up for Gemini, Google's AI, and other features.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "Did they show anything besides phones?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "A lawyer prosecuting Meta laid out her case this week, summing it up in four words: hook, hold, harvest, hide.",
-              "duration": 6.50449
+              "text": "A next-gen Pixel Fold with thinner bezels, a new Pixel Watch with better GPS tracking, and a new Pixel Tag.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "That's a striking way to put it. What's it meant to describe?",
-              "duration": 3.108571
+              "text": "Why does the fold design matter so much?",
+              "duration": 2.35102
             },
             {
               "speaker": "explainer",
-              "text": "It's her characterization of Meta's alleged strategy — the accusation that opened the trial in Oakland this week.",
-              "duration": 6.086531
+              "text": "Google popularized that wider, passport-style shape years ago. Samsung just tried it with the Z Fold 8, and Apple may follow with its own foldable.",
+              "duration": 8.777143
             },
             {
               "speaker": "listener",
-              "text": "Who's actually testifying?",
-              "duration": 1.567347
+              "text": "So Google's early design choice is still shaping the industry.",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "So far, eight jurors have heard from that lawyer, Meta's attorneys, former employees, and a psychologist.",
-              "duration": 6.217143
-            },
-            {
-              "speaker": "listener",
-              "text": "Is there more testimony coming?",
-              "duration": 1.802449
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes. The jury is expected to hear from Meta CEO Mark Zuckerberg and Instagram's Adam Mosseri as the trial continues.",
-              "duration": 7.105306
-            },
-            {
-              "speaker": "listener",
-              "text": "What are the states actually asking for?",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "They want Meta forced to redesign its products to make them safer for children.",
-              "duration": 3.892245
-            },
-            {
-              "speaker": "listener",
-              "text": "That sounds like it could reshape the platforms themselves.",
-              "duration": 2.925714
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the idea — it could have lasting effects on how Meta's products are built and how its business works.",
-              "duration": 5.694694
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "カリフォルニア州オークランドで、Metaを相手取った裁判が今週始まりました。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "原告側の弁護士は、Metaのビジネスを四つの言葉で言い表しました。",
-              "duration": 5.568
-            },
-            {
-              "speaker": "narrator",
-              "text": "誘い込み、つなぎ止め、搾り取り、そして隠す、という表現です。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "法廷では八人の陪審員が、元従業員や心理学者の証言に耳を傾けています。",
-              "duration": 7.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "争点の一つは、子どもの安全のために製品設計を変えるべきかという点です。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "これが認められれば、Metaのビジネスの仕組み自体が変わる可能性があります。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後はマーク・ザッカーバーグCEOやインスタグラムのアダム・モセリCEOも証言する予定です。",
-              "duration": 7.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "経営トップの言葉が、この裁判の行方を左右しそうです。",
-              "duration": 4.656
-            },
-            {
-              "speaker": "narrator",
-              "text": "静かに進む法廷の攻防が、私たちの日常のアプリの姿を変えるかもしれません。",
-              "duration": 6.36
+              "text": "Exactly, it's influencing how other companies think about foldables now.",
+              "duration": 4.022857
             }
           ]
         }
@@ -470,147 +312,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself? I fear not | Timothy Garton Ash",
-      "summary": "Would even an AI disaster on the scale of Hiroshima be enough to make humankind protect itself?",
+      "headline": "‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks",
+      "summary": "A senior leader at OpenAI has said people should prepare to defend against “ongoing, persistent” cyber-attacks from AIs, as cutting-edge artificial intelligence models gain advanced capabilities to plan and launch offensives.",
       "keyTakeaways": [
-        "Unfortunately, I think even that sober prognosis is too optimistic.",
-        "Yet we must fear that even an AI Hiroshima – to take the most obvious historical analogy – won’t bring humankind together sufficiently to combat the danger we have ourselves created.",
-        "This fear is rationally grounded in already visible key characteristics of both human and AI evolution."
+        "OpenAI announced on Tuesday it has paused training of some frontier AI models to implement new safeguards, and it is unclear when training will restart after new guardrails have been put in place.",
+        "The threat of cyber-attacks crippling businesses, infrastructure and the general public has rapidly risen to the top of the list of urgent concerns about AI.",
+        "This week, the UK government’s National Cyber Security Centre urged caution over the use of AI agents, warning their safety controls can be bypassed and that an AI agent “does not have common sense”."
       ],
-      "whyItMatters": "More prosaically, the imminent breakthrough is described as “recursive self-improvement” – the point at which AI itself trains each successive model of AI, resulting in an exponential development to something which, in many significant respects, is more intelligent than us humans.",
-      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/22/ai-disaster-hiroshima-humankind-silicon-valley-technology",
-      "readTime": 7,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "OpenAI also said it could not rule out another new model, Astra, having “critical cybersecurity capability”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/23/openai-cyber-attacks-threat-chris-lehane",
+      "readTime": 6,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "広島級の破局でも、人類は変われるか",
-          "summary": "広島規模のAI災禍が起きたとしても、人類はそれを教訓に自らを守れるのか。この問いへの答えは、楽観できるものではない。",
+          "headline": "AIによるサイバー攻撃、新たな段階へ　OpenAI幹部が警鐘",
+          "summary": "OpenAIの幹部が、AIによる「継続的で執拗な」サイバー攻撃に備える必要があると述べた。最先端のAIモデルが攻撃を計画し、実行する高度な能力を身につけつつあるという。",
           "keyTakeaways": [
-            "冷静な見通しさえ、楽観的すぎるのではないかという懸念がある。",
-            "歴史上もっとも分かりやすい類比である広島級の惨事が起きても、人類は自ら生んだ危険に立ち向かうため十分にまとまれないおそれがある。",
-            "この懸念は、人間とAI双方の進化にすでに現れている特徴に根ざした、理にかなったものだ。"
+            "OpenAIは火曜日、一部の最先端AIモデルの訓練を一時停止し、新たな安全対策を導入すると発表。訓練再開の時期は未定という。",
+            "AIによるサイバー攻撃が企業やインフラ、市民生活を脅かすリスクは、AIをめぐる懸念の中でも急速に最優先課題となっている。",
+            "英国政府のサイバーセキュリティ機関は今週、AIエージェントの利用に注意を呼びかけた。安全対策は回避され得るうえ、AIエージェントには「常識がない」と警告している。"
           ],
-          "whyItMatters": "焦点となる技術的飛躍は「再帰的自己改良」と呼ばれ、AIが次々と自らの後継モデルを訓練し、人間の知能を多くの重要な面で凌駕する存在へと指数関数的に進化していく段階を指す。"
+          "whyItMatters": "OpenAIは、新モデル「Astra」が「重大なサイバーセキュリティ能力」を持つ可能性も否定できないとしている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the idea here is that even a huge AI disaster might not be enough to make us act?",
-              "duration": 4.780408
+              "text": "So what exactly did OpenAI's leader warn about?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "That's the fear, yes. The comparison being made is to Hiroshima - even something on that scale might not unite people enough.",
-              "duration": 7.836735
+              "text": "That people should prepare for ongoing, persistent AI cyber-attacks, not just one-off incidents.",
+              "duration": 5.511837
             },
             {
               "speaker": "listener",
-              "text": "Why wouldn't it? You'd think a disaster like that would force everyone to pay attention.",
-              "duration": 4.205714
+              "text": "Why now? Has something changed?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "The argument is that it's rooted in how both humans and AI are already evolving - patterns we can already see.",
-              "duration": 6.217143
+              "text": "Yes — the newest AI models are gaining real ability to plan and carry out attacks on their own.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "What kind of patterns are we talking about?",
-              "duration": 2.168163
+              "text": "Is that why they paused some training?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "One key point raised is something called recursive self-improvement - where AI starts training the next version of itself.",
-              "duration": 6.870204
+              "text": "Right. OpenAI paused training on certain frontier models this week to add new safeguards first.",
+              "duration": 5.511837
             },
             {
               "speaker": "listener",
-              "text": "So it just keeps getting smarter, on its own?",
-              "duration": 2.533878
+              "text": "Do they know when training will start again?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Exponentially, yes. The piece describes it as reaching a point where AI becomes more intelligent than us in significant ways.",
-              "duration": 7.288163
+              "text": "Not yet — it depends on getting those guardrails properly in place.",
+              "duration": 4.075102
             },
             {
               "speaker": "listener",
-              "text": "That's a sobering thought - that we might not act even after a disaster.",
-              "duration": 4.545306
+              "text": "Is this worry just coming from OpenAI?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "It is. The author says even a sober prognosis feels too optimistic given where things stand.",
+              "text": "No, the UK's cyber security centre also warned this week that AI agents can be tricked and lack common sense.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "So the concern is spreading across the whole field.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — cyber-attacks are now near the top of the list of AI risks people are watching closely.",
               "duration": 5.746939
-            },
-            {
-              "speaker": "listener",
-              "text": "So the concern isn't just the technology, but whether we'd actually come together to face it.",
-              "duration": 5.433469
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly - whether human nature itself would let us combat a danger we've created for ourselves.",
-              "duration": 4.858776
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "AIの研究者たちの間で、ある重い懸念が語られています。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "たとえ広島規模の惨事が起きても、人類は自らを守れないかもしれないという指摘です。",
-              "duration": 6.552
-            },
-            {
-              "speaker": "narrator",
-              "text": "その根拠は、人間とAI双方の進化にすでに現れている特徴にあります。",
-              "duration": 6.024
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIはやがて、自らの後継モデルを自ら訓練する段階に入るとされています。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "これは「再帰的自己改良」と呼ばれ、指数関数的な進化を意味します。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "その先には、多くの面で人間の知能を超える存在が現れる可能性があります。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "冷静に見通しても、楽観できる状況ではないという声もあります。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "危険を生み出した張本人である人類が、その危険にどう向き合うかが問われています。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "技術の進歩を喜ぶ朝にも、こうした静かな警鐘を心に留めておきたいところです。",
-              "duration": 6.648
             }
           ]
         }
@@ -620,154 +411,98 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "CULTURE",
-      "source": "The Guardian (Culture)",
-      "headline": "Meghan reportedly in talks to join Guy Ritchie’s TV series The Gentlemen",
-      "summary": "The Duchess of Sussex is in talks to make her acting return in Netflix’s hit series The Gentlemen.",
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Council set to axe climate emergency declaration",
+      "summary": "Reform UK-led Barnsley Council has announced its intention to withdraw its climate emergency declaration.",
       "keyTakeaways": [
-        "According to Variety, Meghan is in discussions to join the third season, which has yet to receive an official greenlight.",
-        "The Gentlemen is a spin-off from the 2019 crime comedy of the same name with Guy Ritchie acting as creator of both.",
-        "Meghan’s role in the show is as-yet-unknown, with a contract reportedly still not in place and no official announcement."
+        "The party said a review of all climate and net-zero activity was under way, saying programmes that lacked a clear resident benefit, financial saving or statutory requirement should change or stop.",
+        "The council's intention is to withdraw the Climate Emergency declaration from 2019, Zero40, Zero45 and similar net-zero targets, and to direct resources to frontline services.",
+        "Council leader William Brown said: \"Our focus is on practical priorities that matter to residents, rather than ideological targets and costly political posturing.\""
       ],
-      "whyItMatters": "Harry and Meghan had previously signed a deal with Netflix in 2020 worth a reported $100m.",
-      "originalURL": "https://www.theguardian.com/tv-and-radio/2026/aug/21/meghan-duchess-of-sussex-guy-ritchie-the-gentlemen",
+      "whyItMatters": "Earlier this year, Reform-led Wakefield Council voted to rescind its climate and biodiversity emergency declaration from May 2019.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c1d1v63ngz1o?at_medium=RSS&at_campaign=rss",
       "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "imageURL": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Microscope",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "メーガン妃、ドラマ復帰へ交渉中か",
-          "summary": "サセックス公爵夫人メーガン氏が、ネットフリックスの人気シリーズ「ジェントルメン」で女優業に復帰すべく交渉中と伝えられている。",
+          "headline": "気候非常事態宣言、撤回へ",
+          "summary": "英国改革党（リフォームUK）が主導するバーンズリー市議会が、気候非常事態宣言の撤回方針を明らかにした。",
           "keyTakeaways": [
-            "Varietyによれば、正式な制作決定がまだ出ていないシーズン3への出演について協議しているという。",
-            "「ジェントルメン」は2019年公開の同名犯罪コメディ映画のスピンオフで、ガイ・リッチー氏が両方の制作を手がけている。",
-            "メーガン氏の役柄はまだ明らかになっておらず、契約も未締結、公式発表もない状態だという。"
+            "同党は気候・ネットゼロ関連施策の総点検を進めており、住民への明確な利益や財政的な節約、法的義務のない事業は見直すか中止すべきだとしている。",
+            "2019年の気候非常事態宣言や「ゼロ40」「ゼロ45」などのネットゼロ目標を撤回し、資源を最前線の住民サービスに振り向ける方針。",
+            "ウィリアム・ブラウン議長は「理念先行の目標や高くつく政治的姿勢ではなく、住民にとって実際に重要な課題を優先する」と述べた。"
           ],
-          "whyItMatters": "ハリー夫妻は2020年、ネットフリックスと総額約1億ドルとされる契約を結んでいた。"
+          "whyItMatters": "同じくリフォームUKが主導するウェイクフィールド市議会も今年、2019年5月の気候・生物多様性非常事態宣言の撤回を可決している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Meghan might be acting again?",
-              "duration": 1.985306
+              "text": "So Barnsley Council wants to drop its climate emergency declaration?",
+              "duration": 4.257959
             },
             {
               "speaker": "explainer",
-              "text": "That's the report. She's reportedly in talks to join The Gentlemen on Netflix.",
-              "duration": 4.440816
+              "text": "Yes, that's the intention. It was declared back in 2019, and now the council says it wants to withdraw it.",
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "The Guy Ritchie show?",
-              "duration": 1.619592
-            },
-            {
-              "speaker": "explainer",
-              "text": "Right, he created it. This would be for its third season.",
-              "duration": 3.343673
-            },
-            {
-              "speaker": "listener",
-              "text": "Has that season even been confirmed?",
+              "text": "Why now? What's driving this?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Not yet — it hasn't received an official greenlight.",
-              "duration": 3.343673
+              "text": "They say a review is underway of all climate and net-zero work. Anything without a clear benefit to residents, a financial saving, or a legal requirement could change or stop.",
+              "duration": 9.639184
             },
             {
               "speaker": "listener",
-              "text": "Do we know what role she'd play?",
-              "duration": 1.38449
+              "text": "Is it just this one declaration, or more targets too?",
+              "duration": 3.239184
             },
             {
               "speaker": "explainer",
-              "text": "No, that's still unknown, and there's reportedly no contract in place yet.",
-              "duration": 4.075102
+              "text": "More than that. They're also looking at withdrawing from Zero40, Zero45, and similar net-zero targets, redirecting resources to frontline services instead.",
+              "duration": 9.195102
             },
             {
               "speaker": "listener",
-              "text": "Why does this feel like a bigger story than just casting news?",
-              "duration": 3.474286
+              "text": "What's the reasoning behind that shift?",
+              "duration": 1.985306
             },
             {
               "speaker": "explainer",
-              "text": "Because Harry and Meghan signed that $100 million Netflix deal back in 2020.",
-              "duration": 4.310204
+              "text": "Council leader William Brown said the focus should be on practical priorities for residents, rather than what he called ideological targets or political posturing.",
+              "duration": 8.724898
             },
             {
               "speaker": "listener",
-              "text": "So this would tie back into that.",
-              "duration": 1.933061
+              "text": "Has this happened anywhere else recently?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "Exactly — though for now, it's all still talks, nothing official.",
-              "duration": 3.996735
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-22/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "メーガン氏が、ネットフリックスの人気シリーズ「ジェントルメン」への出演を交渉しているそうです。",
-              "duration": 6.84
+              "text": "It has. Earlier this year, Wakefield Council, also Reform-led, voted to rescind its own climate and biodiversity emergency declaration from 2019.",
+              "duration": 9.691429
             },
             {
-              "speaker": "narrator",
-              "text": "女優業への復帰を意味する話として、注目を集めています。",
-              "duration": 4.968
+              "speaker": "listener",
+              "text": "So it seems part of a wider pattern among some councils.",
+              "duration": 3.186939
             },
             {
-              "speaker": "narrator",
-              "text": "Varietyの報道によれば、対象はシーズン3への参加だといいます。",
-              "duration": 5.088
-            },
-            {
-              "speaker": "narrator",
-              "text": "ただこのシーズン自体、まだ正式な制作決定は出ていません。",
-              "duration": 4.944
-            },
-            {
-              "speaker": "narrator",
-              "text": "「ジェントルメン」は2019年の同名映画から生まれたスピンオフです。",
-              "duration": 5.016
-            },
-            {
-              "speaker": "narrator",
-              "text": "どちらもガイ・リッチー氏が手がけている作品です。",
-              "duration": 3.864
-            },
-            {
-              "speaker": "narrator",
-              "text": "メーガン氏がどんな役を演じるのかは、まだ分かっていません。",
-              "duration": 4.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "契約もまだ結ばれておらず、公式な発表もない段階です。",
-              "duration": 4.92
-            },
-            {
-              "speaker": "narrator",
-              "text": "ハリー夫妻は2020年、ネットフリックスと総額およそ1億ドルの契約を結んでいました。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の話が本当なら、その関係の新しい一歩になりそうです。",
-              "duration": 5.328
+              "speaker": "explainer",
+              "text": "That does appear to be the case, yes.",
+              "duration": 1.985306
             }
           ]
         }

@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "カーニー首相は、新たな米関税の影響を受ける産業への支援策を来週発表するとし、その措置は数年に及ぶ可能性があると述べた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Canada's actually hitting back with its own tariffs now?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Prime Minister Mark Carney announced retaliatory tariffs after talks with Washington broke down Friday night.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "What sparked it in the first place?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "The US imposed a 50 percent tariff on about $20bn worth of Canadian goods.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "And what's Canada targeting in response?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Steel, dairy, and electronics among other US industries. Those tariffs start September 8.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the US tariffs actually hit on Canada's side?",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "A wide range — wine, furniture, dairy, cement, clothing, even fishing rods and hockey equipment.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of everyday goods. Is Canada doing anything to help businesses affected?",
+              "duration": 4.597551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Carney said support measures for hit industries will be announced next week, and they could last for years.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like this rift between two close allies isn't closing anytime soon.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the sense from Ottawa right now — a strained relationship with no quick resolution in sight.",
+              "duration": 5.459592
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "地元警察は、富士登山では同行者全員の体力や力量を踏まえ、ペース配分に気を配るよう呼びかけている。"
           ],
           "whyItMatters": "木曜日、富士宮口六合目付近、標高二千メートルを超える地点のベンチで、作業員が一人でいる少年を見つけた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So a father just left his young son on Mount Fuji?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. The boy, seven years old, said he was tired during a family hike.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "What did the father do then?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "He gave him some snacks and a drink, told him to wait, and went on.",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "listener",
+              "text": "Went on without him? To the summit?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, with the boy's older brother, who'd already gone ahead. It was a five-hour climb.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "How was the boy found?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "A mountain worker spotted him alone on a bench near the sixth station, quite high up.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds frightening for a child that age.",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. Local police reprimanded the father afterward.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "listener",
+              "text": "What are they telling other hikers?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "To think about everyone's stamina in a group, especially children, and pace the climb around them.",
+              "duration": 5.276735
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "Pixelは数年前、縦より横に長いパスポート型のフォルダブルデザインを世に広めた存在であり、サムスンは今年のZ Fold8で初めてこの形状を採用し、アップルも2026年に登場するとされる折りたたみ式iPhoneで追随する可能性がある。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Google had its big Pixel event?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on August 12th, they announced a whole lineup of new devices.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "What's new with the phones?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "The Pixel 11 lineup, with upgraded cameras and better performance overall.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "Anything unusual about the Pro models?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've got a built-in LED ring that lights up for Gemini, Google's AI, and other features.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "Did they show anything besides phones?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "A next-gen Pixel Fold with thinner bezels, a new Pixel Watch with better GPS tracking, and a new Pixel Tag.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does the fold design matter so much?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Google popularized that wider, passport-style shape years ago. Samsung just tried it with the Z Fold 8, and Apple may follow with its own foldable.",
+              "duration": 8.777143
+            },
+            {
+              "speaker": "listener",
+              "text": "So Google's early design choice is still shaping the industry.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, it's influencing how other companies think about foldables now.",
+              "duration": 4.022857
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "OpenAIは、新モデル「Astra」が「重大なサイバーセキュリティ能力」を持つ可能性も否定できないとしている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly did OpenAI's leader warn about?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "That people should prepare for ongoing, persistent AI cyber-attacks, not just one-off incidents.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Why now? Has something changed?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes — the newest AI models are gaining real ability to plan and carry out attacks on their own.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "Is that why they paused some training?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. OpenAI paused training on certain frontier models this week to add new safeguards first.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "Do they know when training will start again?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not yet — it depends on getting those guardrails properly in place.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this worry just coming from OpenAI?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, the UK's cyber security centre also warned this week that AI agents can be tricked and lack common sense.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "So the concern is spreading across the whole field.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — cyber-attacks are now near the top of the list of AI risks people are watching closely.",
+              "duration": 5.746939
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,75 @@
             "ウィリアム・ブラウン議長は「理念先行の目標や高くつく政治的姿勢ではなく、住民にとって実際に重要な課題を優先する」と述べた。"
           ],
           "whyItMatters": "同じくリフォームUKが主導するウェイクフィールド市議会も今年、2019年5月の気候・生物多様性非常事態宣言の撤回を可決している。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Barnsley Council wants to drop its climate emergency declaration?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, that's the intention. It was declared back in 2019, and now the council says it wants to withdraw it.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "Why now? What's driving this?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "They say a review is underway of all climate and net-zero work. Anything without a clear benefit to residents, a financial saving, or a legal requirement could change or stop.",
+              "duration": 9.639184
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it just this one declaration, or more targets too?",
+              "duration": 3.239184
+            },
+            {
+              "speaker": "explainer",
+              "text": "More than that. They're also looking at withdrawing from Zero40, Zero45, and similar net-zero targets, redirecting resources to frontline services instead.",
+              "duration": 9.195102
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the reasoning behind that shift?",
+              "duration": 1.985306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Council leader William Brown said the focus should be on practical priorities for residents, rather than what he called ideological targets or political posturing.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "Has this happened anywhere else recently?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "It has. Earlier this year, Wakefield Council, also Reform-led, voted to rescind its own climate and biodiversity emergency declaration from 2019.",
+              "duration": 9.691429
+            },
+            {
+              "speaker": "listener",
+              "text": "So it seems part of a wider pattern among some councils.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "That does appear to be the case, yes.",
+              "duration": 1.985306
+            }
+          ]
         }
       }
     }

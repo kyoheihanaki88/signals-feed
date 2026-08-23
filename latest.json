@@ -101,6 +101,62 @@
               "duration": 5.459592
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "カナダとアメリカの間で、貿易摩擦がまた一段と深まりました。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "アメリカがカナダ製品200億ドル分に50パーセントの関税をかけたことがきっかけです。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けてカーニー首相が、報復関税を発表しました。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象は鉄鋼や乳製品、電子機器などで、9月8日から発効します。",
+              "duration": 5.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には金曜深夜まで続いた交渉があり、結局まとまりませんでした。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "長年の同盟国であり貿易相手でもある両国の関係に、深い影を落としています。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "アメリカ側の関税はワインや家具、衣料品、ホッケー用品など幅広い品目に及びます。",
+              "duration": 6.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象額は約200億ドルで、カナダの対米輸出の5.5パーセントにあたります。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "カーニー首相は、影響を受ける産業への支援策を来週発表するとしています。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "その支援は数年に及ぶ可能性があるとも述べています。",
+              "duration": 4.32
+            }
+          ]
         }
       }
     },
@@ -200,6 +256,57 @@
               "speaker": "explainer",
               "text": "To think about everyone's stamina in a group, especially children, and pace the climb around them.",
               "duration": 5.276735
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "富士山で、七歳の息子を一人残して登山を続けた父親のニュースです。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "名古屋出身のこの男性は、息子が疲れたと訴えたため、先に行くよう決めました。",
+              "duration": 6.432
+            },
+            {
+              "speaker": "narrator",
+              "text": "軽食と飲み物を渡し、待っているよう言い残して、兄と共に山頂を目指しました。",
+              "duration": 6.48
+            },
+            {
+              "speaker": "narrator",
+              "text": "木曜日、作業員が富士宮口六合目付近、標高二千メートル超の地点で少年を発見しました。",
+              "duration": 7.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "一人でベンチに座っていた少年に、大きな怪我はなかったということです。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "地元警察はこの父親に注意を行いました。",
+              "duration": 4.176
+            },
+            {
+              "speaker": "narrator",
+              "text": "富士登山では体力差のある家族連れも多く、ペース配分の判断が難しい場面があります。",
+              "duration": 6.816
+            },
+            {
+              "speaker": "narrator",
+              "text": "警察は、同行者全員の力量を見極めながら登るよう呼びかけています。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "夏山シーズンに向けて、こうした基本の心構えを見直しておきたいところです。",
+              "duration": 5.76
             }
           ]
         }
@@ -303,6 +410,62 @@
               "duration": 4.022857
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "8月12日、グーグルが新しいPixelシリーズを一斉に披露しました。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "色とりどりのPixel 11は、カメラと処理性能を底上げしています。",
+              "duration": 5.328
+            },
+            {
+              "speaker": "narrator",
+              "text": "上位のProモデルには、Gemini からの通知で光るLEDリングが加わりました。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "折りたたみ式の新型Pixel Foldは、ベゼルがさらに薄くなっています。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "GPS精度を高めた新しいPixel Watch 5も同時に登場しました。",
+              "duration": 5.496
+            },
+            {
+              "speaker": "narrator",
+              "text": "小物を探す新しいPixel Tagも仲間入りしています。",
+              "duration": 4.248
+            },
+            {
+              "speaker": "narrator",
+              "text": "Pixelは以前から、横長のパスポート型という独自の折りたたみ形状を広めてきました。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "この形状は今年、サムスンのZ Fold8にも採用されています。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "アップルの折りたたみiPhoneでも同じ方向性になるとの見方があります。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "手のひらの中の選択肢は、これからも静かに広がっていきそうです。",
+              "duration": 5.184
+            }
+          ]
         }
       }
     },
@@ -404,6 +567,62 @@
               "duration": 5.746939
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "OpenAIが火曜日、一部の最先端AIモデルの訓練を一時停止したと発表しました。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "新たな安全対策を組み込むためで、訓練再開の時期はまだ決まっていません。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "幹部は、AIによる継続的で執拗なサイバー攻撃に備える必要があると述べています。",
+              "duration": 6.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "最先端のAIモデルは、攻撃を計画し実行する能力を急速に高めています。",
+              "duration": 6.6
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした攻撃は企業やインフラ、市民生活を脅かす恐れがあります。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIをめぐる懸念の中でも、この問題は今、最も優先度の高い課題になっています。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "英国のサイバーセキュリティ機関も今週、AIエージェントの利用に注意を呼びかけました。",
+              "duration": 6.504
+            },
+            {
+              "speaker": "narrator",
+              "text": "安全対策は回避され得るうえ、AIエージェントには常識がないと指摘しています。",
+              "duration": 6.384
+            },
+            {
+              "speaker": "narrator",
+              "text": "OpenAIは新モデルAstraについても、重大な能力を持つ可能性を否定していません。",
+              "duration": 6.768
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かな備えが、これからの日常にも求められる時期に入っています。",
+              "duration": 5.256
+            }
+          ]
         }
       }
     },
@@ -503,6 +722,57 @@
               "speaker": "explainer",
               "text": "That does appear to be the case, yes.",
               "duration": 1.985306
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスのバーンズリー市議会で、気候非常事態宣言を撤回する動きが出ています。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "改革党（リフォームUK）が主導するこの議会は、2019年の宣言と関連するネットゼロ目標を取り下げる方針です。",
+              "duration": 9.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "気候・ネットゼロ関連の施策は現在、全面的に見直しが進められています。",
+              "duration": 6.096
+            },
+            {
+              "speaker": "narrator",
+              "text": "住民への明確な利益や財政的な節約、法的な義務がない事業は、変更か中止の対象になるということです。",
+              "duration": 8.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "ウィリアム・ブラウン議長は、理念先行の目標ではなく、住民にとって実際に重要な課題を優先すると述べています。",
+              "duration": 8.904
+            },
+            {
+              "speaker": "narrator",
+              "text": "同じくリフォームUKが主導するウェイクフィールド市議会も、今年同様の宣言を撤回しました。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "地方議会での気候政策の見直しが、一つの流れとして広がりつつあります。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後は、気候関連の予算が住民サービスへ回される可能性があります。",
+              "duration": 5.52
+            },
+            {
+              "speaker": "narrator",
+              "text": "地方自治の現場でも、優先順位の組み替えが静かに進んでいるようです。",
+              "duration": 5.496
             }
           ]
         }

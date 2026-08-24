@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-24",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war",
+      "summary": "Donald Trump has hit back at Canada after a breakdown in negotiations plunged the two countries into a trade war.",
+      "keyTakeaways": [
+        "Both sides blamed the other for the breakdown in talks on Friday.",
+        "Carney told Canadian journalists that the country was “at war” over trade with the US, after Trump “miscalculated” by escalating his tariff attack.",
+        "Jamieson Greer, the US trade representative, has said the US was compelled to act after a year of retaliatory measures by Canada."
+      ],
+      "whyItMatters": "Trade experts have predicted that the tariffs could result in some job losses, but the biggest impact is expected to be political, triggering fresh tension between the neighbours.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/23/donald-trump-lashes-out-after-us-canada-talks-devolve-into-trade-war",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米加交渉決裂、貿易戦争へ トランプ氏が強く反発",
+          "summary": "米国とカナダの通商交渉が決裂し、両国は貿易戦争の様相を呈している。トランプ大統領はカナダへの非難を強めた。",
+          "keyTakeaways": [
+            "金曜日の交渉決裂をめぐり、双方が相手を非難した。",
+            "カーニー首相は、トランプ氏が関税攻勢を強めたのは「誤算」だと指摘し、対米貿易は事実上「戦争状態」にあるとカナダの記者団に語った。",
+            "米通商代表のジェイミソン・グリア氏は、カナダによる一年に及ぶ報復措置を受けて米国は対応を迫られたと述べた。"
+          ],
+          "whyItMatters": "専門家は関税により一定の雇用喪失が生じ得ると見る一方、より大きな影響は政治面に及び、両国間に新たな緊張を生むとみている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "How do you vaccinate 1,000 tiny penguins against bird flu in the wild? It’s ‘really tricky’ but there is a way",
+      "summary": "How do you vaccinate 1,000 tiny penguins against bird flu in the wild?",
+      "keyTakeaways": [
+        "More than 1,000 little penguins have received their first dose of bird flu vaccine in Victoria, in what is believed to be the world’s largest vaccination program involving wild birds.",
+        "In recent nights, about 300 penguins were weighed, measured and microchipped, before being vaccinated and released.",
+        "Little penguins are the world’s smallest species of penguin – about a ruler’s length in height – and found only in southern Australia and New Zealand."
+      ],
+      "whyItMatters": "About 5,000 birds across Phillip Island and St Kilda would receive two doses of the H5N1 vaccine, an effort that was only possible because penguins returned to the same burrows each night.",
+      "originalURL": "https://www.theguardian.com/environment/2026/aug/24/little-penguins-bird-flu-vaccination-phillip-island-australia",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "野生のペンギンにワクチンを 難題への静かな挑戦",
+          "summary": "野生のコガタペンギン1000羽余りに、どうやって鳥インフルエンザワクチンを接種するのか。簡単ではないが、方法はある。",
+          "keyTakeaways": [
+            "ビクトリア州で1000羽を超えるコガタペンギンが鳥インフルワクチンの初回接種を受けた。野生の鳥を対象とした世界最大級の接種計画とされる。",
+            "ここ数晩で約300羽の体重と体長を測り、マイクロチップを埋め込んだうえでワクチンを接種し、その後放している。",
+            "コガタペンギンは世界最小のペンギンで、体長は定規一本ほど。生息地はオーストラリア南部とニュージーランドに限られる。"
+          ],
+          "whyItMatters": "フィリップ島とセントキルダの約5000羽が二回の接種を受ける予定で、ペンギンが毎晩同じ巣穴に戻る習性があるからこそ実現できる取り組みだ。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "‘Cookies’ made from plastic may be on the menu for future astronauts",
+      "summary": "The method to transform waste plastic into nutrition was funded as part of Nasa’s Deep Space Food Challenge, which invited scientists to develop new food technologies to solve the problems of feeding astronauts on long voyages.",
+      "keyTakeaways": [
+        "Plastic is carbon and food is carbon.”",
+        "In this case, the researchers took one of the most common forms of plastic, polyethylene terephthalate (PET), which is often the sole ingredient in single-use water bottles.",
+        "These are then fed to yeast, which have been genetically reprogrammed to use the plastic-derived molecules as food."
+      ],
+      "whyItMatters": "The team suggest that, besides long-distance space travel, the concept might be useful in extreme environments on Earth, such as on submarines or in disaster zones – or even as a mainstream ecological solution to the dual challenges of plastic waste and food production.",
+      "originalURL": "https://www.theguardian.com/food/2026/aug/24/cookies-plastic-astronauts-space-food",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Exploration",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "廃プラスチックが宇宙食に、未来の「クッキー」構想",
+          "summary": "廃プラスチックを栄養に変える技術に、NASAが資金を提供した。長期宇宙飛行における宇宙飛行士の食料問題を解決するため、新しい食品技術の開発を科学者に募る「ディープスペース・フード・チャレンジ」の一環である。",
+          "keyTakeaways": [
+            "「プラスチックも食物も、突き詰めれば炭素だ」という発想が出発点。",
+            "使い捨て水のボトルなどに使われる代表的なプラスチック、PET(ポリエチレンテレフタレート)を原料に用いる。",
+            "分解された分子は、プラスチック由来の物質を栄養源とするよう遺伝子操作された酵母に与えられる。"
+          ],
+          "whyItMatters": "研究チームは、この技術が長距離宇宙飛行にとどまらず、潜水艦や被災地といった地球上の過酷な環境、さらにはプラスチックごみと食料生産という二つの課題を同時に解決する一般的な環境技術としても役立ちうると見ている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "My Arms Are Longer Now – comedy stealth game sends lawlessness into new territory",
+      "summary": "M ost stealth games cast you as a spy, an assassin or a master thief.",
+      "keyTakeaways": [
+        "My Arms Are Longer Now dispenses with most of the criminal person, to send in just one spectacularly badly behaved limb.",
+        "The idea began as a much simpler prototype made during a weekend game jam themed around the idea of lost and found.",
+        "Since then, the game has been all about comedy."
+      ],
+      "whyItMatters": "Jackson and fellow Toot co-founder Millie Holten, who met through Melbourne’s improv and sketch comedy community, wanted an idea that could be understood – and raise a laugh – in a single still image.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/24/my-arms-are-longer-now-comedy-stealth-game-preview",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "腕一本の無法者、ステルスゲームに新境地",
+          "summary": "多くのステルスゲームでは、プレイヤーはスパイや暗殺者、あるいは大泥棒を演じる。だが本作が主役に据えるのは、そのどれでもない。",
+          "keyTakeaways": [
+            "「マイ・アームズ・アー・ロンガー・ナウ」は、犯罪者の姿をほぼ省き、暴れ回る一本の腕だけを送り込む。",
+            "発端は、落とし物をテーマにした週末のゲームジャムで作られた、もっと簡素な試作品だった。",
+            "それ以来、この作品は一貫してコメディを追求してきた。"
+          ],
+          "whyItMatters": "メルボルンの即興・コント劇の界隈で出会ったジャクソンとトゥートの共同創業者ミリー・ホルテンは、一枚の静止画だけで意味が伝わり、思わず笑えるようなアイデアを求めていた。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Verge (Tech)",
+      "headline": "TikTok will pay $400 million to settle DOJ child privacy lawsuit",
+      "summary": "TikTok’s settlement is one of the ‘largest recoveries ever’ in a COPPA case.",
+      "keyTakeaways": [
+        "The US Department of Justice announced on Friday that TikTok will pay $400 million to settle a lawsuit filed in 2024 over allegedly violating the Children’s Online Privacy Protection Act (COPPA).",
+        "In the lawsuit, the DOJ alleged that TikTok collected data from children without notifying parents or obtaining consent and did not delete the accounts when parents requested.",
+        "TikTok is set to pay $300 million right away and will pay a further $100 million “upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,” the DOJ says in a press release."
+      ],
+      "whyItMatters": "The DOJ also notes that TikTok has “undergone significant changes to its ownership, management, compliance functions, and privacy practices” since the lawsuit was filed and that TikTok has “implemented extensive measures designed to strengthen safeguards for younger users, improve age-related controls, and enhance parental oversight.”",
+      "originalURL": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "TikTokが児童プライバシー訴訟で4億ドル支払いに合意",
+          "summary": "TikTokが米司法省との和解に応じ、4億ドルを支払う。COPPA違反をめぐる訴訟としては過去最大級の和解となる。",
+          "keyTakeaways": [
+            "米司法省は金曜日、TikTokが2024年に提起された児童オンラインプライバシー保護法（COPPA）違反訴訟をめぐり、4億ドルを支払って和解すると発表した",
+            "訴訟では、TikTokが保護者への通知や同意なしに子どものデータを収集し、削除要請にも応じなかったと指摘されていた",
+            "TikTokはまず3億ドルを支払い、残る1億ドルは前身企業Musical.lyに対する過去の同意判決を取り消す命令が出た時点で支払うという"
+          ],
+          "whyItMatters": "司法省は、TikTokが訴訟提起後に所有構造や経営体制、コンプライアンス、プライバシー対応を大きく見直し、若年ユーザー保護や年齢確認、保護者による管理機能を強化してきた点にも触れている。"
+        }
+      }
+    }
+  ]
+}

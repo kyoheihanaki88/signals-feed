@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-23",
+  "date": "2026-08-24",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,153 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "Al Jazeera",
-      "headline": "Canada to hit US with retaliatory tariffs as trade war escalates",
-      "summary": "Canada’s Prime Minister Mark Carney has announced retaliatory tariffs on the United States after Washington imposed a 50 percent levy on $20bn worth of Canadian goods.",
+      "source": "The Guardian (World)",
+      "headline": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war",
+      "summary": "Donald Trump has hit back at Canada after a breakdown in negotiations plunged the two countries into a trade war.",
       "keyTakeaways": [
-        "Carney, speaking in Ottawa on Saturday, said the new Canadian tariffs would target US steel, dairy and electronics industries, among others, and take effect on September 8.",
-        "The announcement came after days of intense negotiations broke down late on Friday, worsening a delicate relationship between the longtime trade partners and allies.",
-        "US President Donald Trump’s new tariffs hit sectors including wine, furniture, dairy products, cement, clothing, fishing rods and hockey equipment, and cover some $20bn worth of goods, or 5.5 percent of Canadian exports to the US."
+        "Both sides blamed the other for the breakdown in talks on Friday.",
+        "Carney told Canadian journalists that the country was “at war” over trade with the US, after Trump “miscalculated” by escalating his tariff attack.",
+        "Jamieson Greer, the US trade representative, has said the US was compelled to act after a year of retaliatory measures by Canada."
       ],
-      "whyItMatters": "He added that Canada would announce support measures next week for industries hit ⁠by the new US duties, adding these measures could last years.",
-      "originalURL": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates?traffic_source=rss",
-      "readTime": 6,
-      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The port",
+      "whyItMatters": "Trade experts have predicted that the tariffs could result in some job losses, but the biggest impact is expected to be political, triggering fresh tension between the neighbours.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/23/donald-trump-lashes-out-after-us-canada-talks-devolve-into-trade-war",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "米加の貿易摩擦、報復関税で激化",
-          "summary": "米国がカナダ製品200億ドル相当に50パーセントの関税を課したのを受け、カナダのマーク・カーニー首相が対抗措置として報復関税を発表した。",
+          "headline": "米加交渉決裂、貿易戦争へ トランプ氏が強く反発",
+          "summary": "米国とカナダの通商交渉が決裂し、両国は貿易戦争の様相を呈している。トランプ大統領はカナダへの非難を強めた。",
           "keyTakeaways": [
-            "カーニー首相はオタワでの会見で、鉄鋼や乳製品、電子機器などを対象とする新たな関税が9月8日に発効すると述べた",
-            "発表の背景には、金曜深夜に決裂した数日間の集中交渉があり、長年の貿易相手であり同盟国でもある両国の関係に影を落としている",
-            "トランプ米大統領による新関税はワインや家具、乳製品、セメント、衣料品、釣り竿、ホッケー用品などに及び、対象額は約200億ドル、カナダの対米輸出の5.5パーセントに相当する"
+            "金曜日の交渉決裂をめぐり、双方が相手を非難した。",
+            "カーニー首相は、トランプ氏が関税攻勢を強めたのは「誤算」だと指摘し、対米貿易は事実上「戦争状態」にあるとカナダの記者団に語った。",
+            "米通商代表のジェイミソン・グリア氏は、カナダによる一年に及ぶ報復措置を受けて米国は対応を迫られたと述べた。"
           ],
-          "whyItMatters": "カーニー首相は、新たな米関税の影響を受ける産業への支援策を来週発表するとし、その措置は数年に及ぶ可能性があると述べた。"
+          "whyItMatters": "専門家は関税により一定の雇用喪失が生じ得ると見る一方、より大きな影響は政治面に及び、両国間に新たな緊張を生むとみている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Canada's actually hitting back with its own tariffs now?",
-              "duration": 3.108571
+              "text": "So the US and Canada talks just fell apart?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "Yes. Prime Minister Mark Carney announced retaliatory tariffs after talks with Washington broke down Friday night.",
-              "duration": 5.982041
+              "text": "Yes, negotiations broke down on Friday, and both sides are blaming each other.",
+              "duration": 4.075102
             },
             {
               "speaker": "listener",
-              "text": "What sparked it in the first place?",
-              "duration": 1.985306
+              "text": "What did Trump actually say?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "The US imposed a 50 percent tariff on about $20bn worth of Canadian goods.",
-              "duration": 4.675918
+              "text": "He lashed out publicly, saying 'no more,' after the talks collapsed.",
+              "duration": 4.257959
             },
             {
               "speaker": "listener",
-              "text": "And what's Canada targeting in response?",
-              "duration": 2.220408
+              "text": "And how's Canada responding?",
+              "duration": 1.619592
             },
             {
               "speaker": "explainer",
-              "text": "Steel, dairy, and electronics among other US industries. Those tariffs start September 8.",
-              "duration": 5.799184
-            },
-            {
-              "speaker": "listener",
-              "text": "What did the US tariffs actually hit on Canada's side?",
-              "duration": 3.474286
-            },
-            {
-              "speaker": "explainer",
-              "text": "A wide range — wine, furniture, dairy, cement, clothing, even fishing rods and hockey equipment.",
-              "duration": 6.217143
-            },
-            {
-              "speaker": "listener",
-              "text": "That's a lot of everyday goods. Is Canada doing anything to help businesses affected?",
-              "duration": 4.597551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Carney said support measures for hit industries will be announced next week, and they could last for years.",
-              "duration": 5.616327
-            },
-            {
-              "speaker": "listener",
-              "text": "Sounds like this rift between two close allies isn't closing anytime soon.",
+              "text": "Carney told Canadian journalists the country is essentially 'at war' over trade with the US.",
               "duration": 5.093878
             },
             {
+              "speaker": "listener",
+              "text": "Did he say why things escalated?",
+              "duration": 1.854694
+            },
+            {
               "speaker": "explainer",
-              "text": "That's the sense from Ottawa right now — a strained relationship with no quick resolution in sight.",
-              "duration": 5.459592
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "カナダとアメリカの間で、貿易摩擦がまた一段と深まりました。",
-              "duration": 4.992
+              "text": "He said Trump miscalculated by ramping up tariffs further.",
+              "duration": 3.056327
             },
             {
-              "speaker": "narrator",
-              "text": "アメリカがカナダ製品200億ドル分に50パーセントの関税をかけたことがきっかけです。",
-              "duration": 6.264
+              "speaker": "listener",
+              "text": "What's the US side of it?",
+              "duration": 1.619592
             },
             {
-              "speaker": "narrator",
-              "text": "これを受けてカーニー首相が、報復関税を発表しました。",
-              "duration": 4.728
+              "speaker": "explainer",
+              "text": "Trade representative Jamieson Greer says the US had to act after a year of Canadian retaliatory measures.",
+              "duration": 5.511837
             },
             {
-              "speaker": "narrator",
-              "text": "対象は鉄鋼や乳製品、電子機器などで、9月8日から発効します。",
-              "duration": 5.904
+              "speaker": "listener",
+              "text": "So what happens now?",
+              "duration": 1.515102
             },
             {
-              "speaker": "narrator",
-              "text": "背景には金曜深夜まで続いた交渉があり、結局まとまりませんでした。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "長年の同盟国であり貿易相手でもある両国の関係に、深い影を落としています。",
-              "duration": 6.336
-            },
-            {
-              "speaker": "narrator",
-              "text": "アメリカ側の関税はワインや家具、衣料品、ホッケー用品など幅広い品目に及びます。",
-              "duration": 6.936
-            },
-            {
-              "speaker": "narrator",
-              "text": "対象額は約200億ドルで、カナダの対米輸出の5.5パーセントにあたります。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "カーニー首相は、影響を受ける産業への支援策を来週発表するとしています。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "その支援は数年に及ぶ可能性があるとも述べています。",
-              "duration": 4.32
+              "speaker": "explainer",
+              "text": "Experts expect some job losses, but the bigger impact may be political tension between the two neighbours.",
+              "duration": 5.32898
             }
           ]
         }
@@ -166,147 +110,96 @@
       "lead": false,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Man leaves young son on Mount Fuji before ascending Japan’s highest peak",
-      "summary": "A man who abandoned his seven-year-old son on Mount Fuji in Japan after the boy complained of feeling tired while on a family hike has been reprimanded by local police.",
+      "headline": "How do you vaccinate 1,000 tiny penguins against bird flu in the wild? It’s ‘really tricky’ but there is a way",
+      "summary": "How do you vaccinate 1,000 tiny penguins against bird flu in the wild?",
       "keyTakeaways": [
-        "The man, who was from Japan’s fourth-largest city, Nagoya, gave his son some snacks and a soft drink.",
-        "He then told him to wait for him before continuing his five-hour ascent to the summit with the child’s older brother, who had already gone on ahead.",
-        "Local police are urging hikers to consider the abilities and stamina of everyone in their group when planning an ascent on Mount Fuji, and to adjust their pace accordingly."
+        "More than 1,000 little penguins have received their first dose of bird flu vaccine in Victoria, in what is believed to be the world’s largest vaccination program involving wild birds.",
+        "In recent nights, about 300 penguins were weighed, measured and microchipped, before being vaccinated and released.",
+        "Little penguins are the world’s smallest species of penguin – about a ruler’s length in height – and found only in southern Australia and New Zealand."
       ],
-      "whyItMatters": "A worker on Japan’s highest mountain discovered the child sitting alone on a bench near the sixth station of the Fujinomiya trail at an altitude of more than 2,000 metres (6,500 feet) on Thursday.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/22/man-leaves-young-son-mount-fuji-japan",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Infrastructure",
+      "whyItMatters": "About 5,000 birds across Phillip Island and St Kilda would receive two doses of the H5N1 vaccine, an effort that was only possible because penguins returned to the same burrows each night.",
+      "originalURL": "https://www.theguardian.com/environment/2026/aug/24/little-penguins-bird-flu-vaccination-phillip-island-australia",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "富士山に息子を置き去り、父親を警察が注意",
-          "summary": "家族で富士登山中、疲れたと訴えた七歳の息子を残して先へ進んだ男性が、地元警察から注意を受けた。",
+          "headline": "野生のペンギンにワクチンを 難題への静かな挑戦",
+          "summary": "野生のコガタペンギン1000羽余りに、どうやって鳥インフルエンザワクチンを接種するのか。簡単ではないが、方法はある。",
           "keyTakeaways": [
-            "名古屋出身の男性は、息子に軽食と飲み物を渡した。",
-            "その後、待つよう言い残し、先に出発していた兄とともに山頂までの五時間の登山を続けた。",
-            "地元警察は、富士登山では同行者全員の体力や力量を踏まえ、ペース配分に気を配るよう呼びかけている。"
+            "ビクトリア州で1000羽を超えるコガタペンギンが鳥インフルワクチンの初回接種を受けた。野生の鳥を対象とした世界最大級の接種計画とされる。",
+            "ここ数晩で約300羽の体重と体長を測り、マイクロチップを埋め込んだうえでワクチンを接種し、その後放している。",
+            "コガタペンギンは世界最小のペンギンで、体長は定規一本ほど。生息地はオーストラリア南部とニュージーランドに限られる。"
           ],
-          "whyItMatters": "木曜日、富士宮口六合目付近、標高二千メートルを超える地点のベンチで、作業員が一人でいる少年を見つけた。"
+          "whyItMatters": "フィリップ島とセントキルダの約5000羽が二回の接種を受ける予定で、ペンギンが毎晩同じ巣穴に戻る習性があるからこそ実現できる取り組みだ。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So a father just left his young son on Mount Fuji?",
-              "duration": 3.160816
+              "text": "So people are actually vaccinating wild penguins against bird flu?",
+              "duration": 3.761633
             },
             {
               "speaker": "explainer",
-              "text": "Yes. The boy, seven years old, said he was tired during a family hike.",
-              "duration": 3.892245
+              "text": "They are. More than 1,000 little penguins in Victoria have had their first dose already.",
+              "duration": 4.310204
             },
             {
               "speaker": "listener",
-              "text": "What did the father do then?",
-              "duration": 1.567347
+              "text": "How do you even catch that many wild penguins?",
+              "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "He gave him some snacks and a drink, told him to wait, and went on.",
-              "duration": 3.239184
-            },
-            {
-              "speaker": "listener",
-              "text": "Went on without him? To the summit?",
-              "duration": 2.037551
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, with the boy's older brother, who'd already gone ahead. It was a five-hour climb.",
+              "text": "It helps that they return to the same burrows every night, so teams can find them reliably.",
               "duration": 4.414694
             },
             {
               "speaker": "listener",
-              "text": "How was the boy found?",
-              "duration": 1.38449
+              "text": "What actually happens when they get one?",
+              "duration": 1.802449
             },
             {
               "speaker": "explainer",
-              "text": "A mountain worker spotted him alone on a bench near the sixth station, quite high up.",
-              "duration": 4.205714
+              "text": "Each penguin is weighed, measured, microchipped, vaccinated, then released back to its burrow.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "That sounds frightening for a child that age.",
-              "duration": 2.324898
+              "text": "That sounds like a huge effort for such small birds.",
+              "duration": 2.873469
             },
             {
               "speaker": "explainer",
-              "text": "It does. Local police reprimanded the father afterward.",
-              "duration": 3.474286
+              "text": "They are tiny — about the length of a ruler — and only found in southern Australia and New Zealand.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "What are they telling other hikers?",
-              "duration": 1.750204
+              "text": "Is this happening in more than one place?",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "To think about everyone's stamina in a group, especially children, and pace the climb around them.",
+              "text": "Yes, around 5,000 birds across Phillip Island and St Kilda are expected to get two doses each.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is really about protecting a species that's found nowhere else.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — and it's thought to be the largest vaccination effort ever attempted with wild birds.",
               "duration": 5.276735
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "富士山で、七歳の息子を一人残して登山を続けた父親のニュースです。",
-              "duration": 5.976
-            },
-            {
-              "speaker": "narrator",
-              "text": "名古屋出身のこの男性は、息子が疲れたと訴えたため、先に行くよう決めました。",
-              "duration": 6.432
-            },
-            {
-              "speaker": "narrator",
-              "text": "軽食と飲み物を渡し、待っているよう言い残して、兄と共に山頂を目指しました。",
-              "duration": 6.48
-            },
-            {
-              "speaker": "narrator",
-              "text": "木曜日、作業員が富士宮口六合目付近、標高二千メートル超の地点で少年を発見しました。",
-              "duration": 7.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "一人でベンチに座っていた少年に、大きな怪我はなかったということです。",
-              "duration": 5.304
-            },
-            {
-              "speaker": "narrator",
-              "text": "地元警察はこの父親に注意を行いました。",
-              "duration": 4.176
-            },
-            {
-              "speaker": "narrator",
-              "text": "富士登山では体力差のある家族連れも多く、ペース配分の判断が難しい場面があります。",
-              "duration": 6.816
-            },
-            {
-              "speaker": "narrator",
-              "text": "警察は、同行者全員の力量を見極めながら登るよう呼びかけています。",
-              "duration": 5.712
-            },
-            {
-              "speaker": "narrator",
-              "text": "夏山シーズンに向けて、こうした基本の心構えを見直しておきたいところです。",
-              "duration": 5.76
             }
           ]
         }
@@ -316,154 +209,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "TECH",
-      "source": "The Verge (Mobile)",
-      "headline": "Made by Google 2026: all the Pixel news and announcements",
-      "summary": "On August 12, 2026, Google revealed a bunch of new Pixel devices.",
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "‘Cookies’ made from plastic may be on the menu for future astronauts",
+      "summary": "The method to transform waste plastic into nutrition was funded as part of Nasa’s Deep Space Food Challenge, which invited scientists to develop new food technologies to solve the problems of feeding astronauts on long voyages.",
       "keyTakeaways": [
-        "The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features.",
-        "Google also showed off its next-gen Pixel Fold featuring thinner bezels, alongside a new Pixel Watch 5 with improved GPS tracking.",
-        "There’s a new Pixel Tag as well."
+        "Plastic is carbon and food is carbon.”",
+        "In this case, the researchers took one of the most common forms of plastic, polyethylene terephthalate (PET), which is often the sole ingredient in single-use water bottles.",
+        "These are then fed to yeast, which have been genetically reprogrammed to use the plastic-derived molecules as food."
       ],
-      "whyItMatters": "For one, it popularized the passport-style design years ago, being more wide than tall — something that Samsung tried for the first time this year with its Z Fold 8, and that Apple is rumored to do with its foldable iPhone that may or may not arrive in 2026.",
-      "originalURL": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-      "readTime": 14,
-      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The bench",
+      "whyItMatters": "The team suggest that, besides long-distance space travel, the concept might be useful in extreme environments on Earth, such as on submarines or in disaster zones – or even as a mainstream ecological solution to the dual challenges of plastic waste and food production.",
+      "originalURL": "https://www.theguardian.com/food/2026/aug/24/cookies-plastic-astronauts-space-food",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Exploration",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "「Made by Google 2026」、Pixel新製品が出そろう",
-          "summary": "2026年8月12日、グーグルは複数の新型Pixel端末を発表した。",
+          "headline": "廃プラスチックが宇宙食に、未来の「クッキー」構想",
+          "summary": "廃プラスチックを栄養に変える技術に、NASAが資金を提供した。長期宇宙飛行における宇宙飛行士の食料問題を解決するため、新しい食品技術の開発を科学者に募る「ディープスペース・フード・チャレンジ」の一環である。",
           "keyTakeaways": [
-            "色鮮やかなPixel 11シリーズはカメラと性能を強化。上位のProモデルには、AI「Gemini」などの通知に反応して光るLEDリングを新たに搭載した。",
-            "次世代Pixel Foldも披露され、ベゼルはより薄く。GPS精度を高めた新型Pixel Watch 5も登場した。",
-            "新しいPixel Tagも発表された。"
+            "「プラスチックも食物も、突き詰めれば炭素だ」という発想が出発点。",
+            "使い捨て水のボトルなどに使われる代表的なプラスチック、PET(ポリエチレンテレフタレート)を原料に用いる。",
+            "分解された分子は、プラスチック由来の物質を栄養源とするよう遺伝子操作された酵母に与えられる。"
           ],
-          "whyItMatters": "Pixelは数年前、縦より横に長いパスポート型のフォルダブルデザインを世に広めた存在であり、サムスンは今年のZ Fold8で初めてこの形状を採用し、アップルも2026年に登場するとされる折りたたみ式iPhoneで追随する可能性がある。"
+          "whyItMatters": "研究チームは、この技術が長距離宇宙飛行にとどまらず、潜水艦や被災地といった地球上の過酷な環境、さらにはプラスチックごみと食料生産という二つの課題を同時に解決する一般的な環境技術としても役立ちうると見ている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Google had its big Pixel event?",
-              "duration": 2.35102
+              "text": "Wait, cookies made from plastic? That sounds strange.",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "Yes, on August 12th, they announced a whole lineup of new devices.",
-              "duration": 3.526531
+              "text": "It does, but the idea is more clever than it sounds. Plastic and food are both built from carbon.",
+              "duration": 5.459592
             },
             {
               "speaker": "listener",
-              "text": "What's new with the phones?",
-              "duration": 1.332245
+              "text": "So how do you actually turn plastic into something edible?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "The Pixel 11 lineup, with upgraded cameras and better performance overall.",
-              "duration": 4.127347
+              "text": "Researchers used PET plastic, the kind found in water bottles, and broke it down into smaller molecules.",
+              "duration": 6.112653
             },
             {
               "speaker": "listener",
-              "text": "Anything unusual about the Pro models?",
-              "duration": 2.324898
-            },
-            {
-              "speaker": "explainer",
-              "text": "They've got a built-in LED ring that lights up for Gemini, Google's AI, and other features.",
-              "duration": 4.623673
-            },
-            {
-              "speaker": "listener",
-              "text": "Did they show anything besides phones?",
+              "text": "And then what happens to those molecules?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "A next-gen Pixel Fold with thinner bezels, a new Pixel Watch with better GPS tracking, and a new Pixel Tag.",
-              "duration": 6.452245
+              "text": "They're fed to yeast that's been genetically reprogrammed to treat those molecules as food.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "Why does the fold design matter so much?",
-              "duration": 2.35102
+              "text": "Why is NASA interested in this at all?",
+              "duration": 2.45551
             },
             {
               "speaker": "explainer",
-              "text": "Google popularized that wider, passport-style shape years ago. Samsung just tried it with the Z Fold 8, and Apple may follow with its own foldable.",
-              "duration": 8.777143
+              "text": "It's part of their Deep Space Food Challenge, aimed at feeding astronauts on very long missions.",
+              "duration": 5.276735
             },
             {
               "speaker": "listener",
-              "text": "So Google's early design choice is still shaping the industry.",
-              "duration": 3.709388
+              "text": "Could this ever matter outside of space travel?",
+              "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "Exactly, it's influencing how other companies think about foldables now.",
-              "duration": 4.022857
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "8月12日、グーグルが新しいPixelシリーズを一斉に披露しました。",
-              "duration": 5.688
+              "text": "Possibly. The researchers mention submarines, disaster zones, even everyday use for tackling plastic waste and food production together.",
+              "duration": 8.385306
             },
             {
-              "speaker": "narrator",
-              "text": "色とりどりのPixel 11は、カメラと処理性能を底上げしています。",
-              "duration": 5.328
+              "speaker": "listener",
+              "text": "So it's really about solving two problems at once.",
+              "duration": 2.742857
             },
             {
-              "speaker": "narrator",
-              "text": "上位のProモデルには、Gemini からの通知で光るLEDリングが加わりました。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "折りたたみ式の新型Pixel Foldは、ベゼルがさらに薄くなっています。",
-              "duration": 5.376
-            },
-            {
-              "speaker": "narrator",
-              "text": "GPS精度を高めた新しいPixel Watch 5も同時に登場しました。",
-              "duration": 5.496
-            },
-            {
-              "speaker": "narrator",
-              "text": "小物を探す新しいPixel Tagも仲間入りしています。",
-              "duration": 4.248
-            },
-            {
-              "speaker": "narrator",
-              "text": "Pixelは以前から、横長のパスポート型という独自の折りたたみ形状を広めてきました。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "この形状は今年、サムスンのZ Fold8にも採用されています。",
-              "duration": 5.424
-            },
-            {
-              "speaker": "narrator",
-              "text": "アップルの折りたたみiPhoneでも同じ方向性になるとの見方があります。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "手のひらの中の選択肢は、これからも静かに広がっていきそうです。",
-              "duration": 5.184
+              "speaker": "explainer",
+              "text": "Exactly. Waste plastic in, usable nutrition out.",
+              "duration": 2.873469
             }
           ]
         }
@@ -475,152 +312,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks",
-      "summary": "A senior leader at OpenAI has said people should prepare to defend against “ongoing, persistent” cyber-attacks from AIs, as cutting-edge artificial intelligence models gain advanced capabilities to plan and launch offensives.",
+      "headline": "My Arms Are Longer Now – comedy stealth game sends lawlessness into new territory",
+      "summary": "M ost stealth games cast you as a spy, an assassin or a master thief.",
       "keyTakeaways": [
-        "OpenAI announced on Tuesday it has paused training of some frontier AI models to implement new safeguards, and it is unclear when training will restart after new guardrails have been put in place.",
-        "The threat of cyber-attacks crippling businesses, infrastructure and the general public has rapidly risen to the top of the list of urgent concerns about AI.",
-        "This week, the UK government’s National Cyber Security Centre urged caution over the use of AI agents, warning their safety controls can be bypassed and that an AI agent “does not have common sense”."
+        "My Arms Are Longer Now dispenses with most of the criminal person, to send in just one spectacularly badly behaved limb.",
+        "The idea began as a much simpler prototype made during a weekend game jam themed around the idea of lost and found.",
+        "Since then, the game has been all about comedy."
       ],
-      "whyItMatters": "OpenAI also said it could not rule out another new model, Astra, having “critical cybersecurity capability”.",
-      "originalURL": "https://www.theguardian.com/technology/2026/aug/23/openai-cyber-attacks-threat-chris-lehane",
-      "readTime": 6,
+      "whyItMatters": "Jackson and fellow Toot co-founder Millie Holten, who met through Melbourne’s improv and sketch comedy community, wanted an idea that could be understood – and raise a laugh – in a single still image.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/24/my-arms-are-longer-now-comedy-stealth-game-preview",
+      "readTime": 3,
       "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
       "placeTime": "Engineering",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "AIによるサイバー攻撃、新たな段階へ　OpenAI幹部が警鐘",
-          "summary": "OpenAIの幹部が、AIによる「継続的で執拗な」サイバー攻撃に備える必要があると述べた。最先端のAIモデルが攻撃を計画し、実行する高度な能力を身につけつつあるという。",
+          "headline": "腕一本の無法者、ステルスゲームに新境地",
+          "summary": "多くのステルスゲームでは、プレイヤーはスパイや暗殺者、あるいは大泥棒を演じる。だが本作が主役に据えるのは、そのどれでもない。",
           "keyTakeaways": [
-            "OpenAIは火曜日、一部の最先端AIモデルの訓練を一時停止し、新たな安全対策を導入すると発表。訓練再開の時期は未定という。",
-            "AIによるサイバー攻撃が企業やインフラ、市民生活を脅かすリスクは、AIをめぐる懸念の中でも急速に最優先課題となっている。",
-            "英国政府のサイバーセキュリティ機関は今週、AIエージェントの利用に注意を呼びかけた。安全対策は回避され得るうえ、AIエージェントには「常識がない」と警告している。"
+            "「マイ・アームズ・アー・ロンガー・ナウ」は、犯罪者の姿をほぼ省き、暴れ回る一本の腕だけを送り込む。",
+            "発端は、落とし物をテーマにした週末のゲームジャムで作られた、もっと簡素な試作品だった。",
+            "それ以来、この作品は一貫してコメディを追求してきた。"
           ],
-          "whyItMatters": "OpenAIは、新モデル「Astra」が「重大なサイバーセキュリティ能力」を持つ可能性も否定できないとしている。"
+          "whyItMatters": "メルボルンの即興・コント劇の界隈で出会ったジャクソンとトゥートの共同創業者ミリー・ホルテンは、一枚の静止画だけで意味が伝わり、思わず笑えるようなアイデアを求めていた。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what exactly did OpenAI's leader warn about?",
-              "duration": 2.821224
+              "text": "So what exactly is this game about?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "That people should prepare for ongoing, persistent AI cyber-attacks, not just one-off incidents.",
-              "duration": 5.511837
+              "text": "It's called My Arms Are Longer Now. Instead of playing a spy or a thief, you're just... an arm.",
+              "duration": 6.034286
             },
             {
               "speaker": "listener",
-              "text": "Why now? Has something changed?",
-              "duration": 1.802449
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes — the newest AI models are gaining real ability to plan and carry out attacks on their own.",
-              "duration": 5.276735
-            },
-            {
-              "speaker": "listener",
-              "text": "Is that why they paused some training?",
+              "text": "Just an arm? Not a whole character?",
               "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Right. OpenAI paused training on certain frontier models this week to add new safeguards first.",
-              "duration": 5.511837
+              "text": "Right. It strips away the usual criminal-mastermind stuff and sends in one very badly behaved limb instead.",
+              "duration": 6.217143
             },
             {
               "speaker": "listener",
-              "text": "Do they know when training will start again?",
-              "duration": 2.220408
+              "text": "That's an odd place to start. Where did the idea come from?",
+              "duration": 3.186939
             },
             {
               "speaker": "explainer",
-              "text": "Not yet — it depends on getting those guardrails properly in place.",
-              "duration": 4.075102
+              "text": "A weekend game jam, actually. The theme was 'lost and found', and it began as a much simpler prototype.",
+              "duration": 6.29551
             },
             {
               "speaker": "listener",
-              "text": "Is this worry just coming from OpenAI?",
+              "text": "And it grew from there into something bigger?",
               "duration": 2.403265
             },
             {
               "speaker": "explainer",
-              "text": "No, the UK's cyber security centre also warned this week that AI agents can be tricked and lack common sense.",
-              "duration": 5.982041
+              "text": "It did. Since then, the whole focus has been on comedy.",
+              "duration": 3.787755
             },
             {
               "speaker": "listener",
-              "text": "So the concern is spreading across the whole field.",
-              "duration": 2.951837
+              "text": "Who's actually making it?",
+              "duration": 1.436735
             },
             {
               "speaker": "explainer",
-              "text": "Exactly — cyber-attacks are now near the top of the list of AI risks people are watching closely.",
-              "duration": 5.746939
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "OpenAIが火曜日、一部の最先端AIモデルの訓練を一時停止したと発表しました。",
-              "duration": 6.96
+              "text": "Jackson and Millie Holten, co-founders of Toot. They met through Melbourne's improv and sketch comedy scene.",
+              "duration": 5.799184
             },
             {
-              "speaker": "narrator",
-              "text": "新たな安全対策を組み込むためで、訓練再開の時期はまだ決まっていません。",
-              "duration": 6.096
+              "speaker": "listener",
+              "text": "So the comedy background really shapes the design.",
+              "duration": 3.291429
             },
             {
-              "speaker": "narrator",
-              "text": "幹部は、AIによる継続的で執拗なサイバー攻撃に備える必要があると述べています。",
-              "duration": 6.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "最先端のAIモデルは、攻撃を計画し実行する能力を急速に高めています。",
-              "duration": 6.6
-            },
-            {
-              "speaker": "narrator",
-              "text": "こうした攻撃は企業やインフラ、市民生活を脅かす恐れがあります。",
-              "duration": 5.472
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIをめぐる懸念の中でも、この問題は今、最も優先度の高い課題になっています。",
-              "duration": 6.576
-            },
-            {
-              "speaker": "narrator",
-              "text": "英国のサイバーセキュリティ機関も今週、AIエージェントの利用に注意を呼びかけました。",
-              "duration": 6.504
-            },
-            {
-              "speaker": "narrator",
-              "text": "安全対策は回避され得るうえ、AIエージェントには常識がないと指摘しています。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "OpenAIは新モデルAstraについても、重大な能力を持つ可能性を否定していません。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "静かな備えが、これからの日常にも求められる時期に入っています。",
-              "duration": 5.256
+              "speaker": "explainer",
+              "text": "Exactly. They wanted something you could understand, and laugh at, from just a single still image.",
+              "duration": 4.728163
             }
           ]
         }
@@ -630,149 +411,98 @@
       "number": 5,
       "importance": 5,
       "lead": false,
-      "category": "SCIENCE",
-      "source": "BBC News (Science & Environment)",
-      "headline": "Council set to axe climate emergency declaration",
-      "summary": "Reform UK-led Barnsley Council has announced its intention to withdraw its climate emergency declaration.",
+      "category": "TECH",
+      "source": "The Verge (Tech)",
+      "headline": "TikTok will pay $400 million to settle DOJ child privacy lawsuit",
+      "summary": "TikTok’s settlement is one of the ‘largest recoveries ever’ in a COPPA case.",
       "keyTakeaways": [
-        "The party said a review of all climate and net-zero activity was under way, saying programmes that lacked a clear resident benefit, financial saving or statutory requirement should change or stop.",
-        "The council's intention is to withdraw the Climate Emergency declaration from 2019, Zero40, Zero45 and similar net-zero targets, and to direct resources to frontline services.",
-        "Council leader William Brown said: \"Our focus is on practical priorities that matter to residents, rather than ideological targets and costly political posturing.\""
+        "The US Department of Justice announced on Friday that TikTok will pay $400 million to settle a lawsuit filed in 2024 over allegedly violating the Children’s Online Privacy Protection Act (COPPA).",
+        "In the lawsuit, the DOJ alleged that TikTok collected data from children without notifying parents or obtaining consent and did not delete the accounts when parents requested.",
+        "TikTok is set to pay $300 million right away and will pay a further $100 million “upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,” the DOJ says in a press release."
       ],
-      "whyItMatters": "Earlier this year, Reform-led Wakefield Council voted to rescind its climate and biodiversity emergency declaration from May 2019.",
-      "originalURL": "https://www.bbc.co.uk/news/articles/c1d1v63ngz1o?at_medium=RSS&at_campaign=rss",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Microscope",
+      "whyItMatters": "The DOJ also notes that TikTok has “undergone significant changes to its ownership, management, compliance functions, and privacy practices” since the lawsuit was filed and that TikTok has “implemented extensive measures designed to strengthen safeguards for younger users, improve age-related controls, and enhance parental oversight.”",
+      "originalURL": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "気候非常事態宣言、撤回へ",
-          "summary": "英国改革党（リフォームUK）が主導するバーンズリー市議会が、気候非常事態宣言の撤回方針を明らかにした。",
+          "headline": "TikTokが児童プライバシー訴訟で4億ドル支払いに合意",
+          "summary": "TikTokが米司法省との和解に応じ、4億ドルを支払う。COPPA違反をめぐる訴訟としては過去最大級の和解となる。",
           "keyTakeaways": [
-            "同党は気候・ネットゼロ関連施策の総点検を進めており、住民への明確な利益や財政的な節約、法的義務のない事業は見直すか中止すべきだとしている。",
-            "2019年の気候非常事態宣言や「ゼロ40」「ゼロ45」などのネットゼロ目標を撤回し、資源を最前線の住民サービスに振り向ける方針。",
-            "ウィリアム・ブラウン議長は「理念先行の目標や高くつく政治的姿勢ではなく、住民にとって実際に重要な課題を優先する」と述べた。"
+            "米司法省は金曜日、TikTokが2024年に提起された児童オンラインプライバシー保護法（COPPA）違反訴訟をめぐり、4億ドルを支払って和解すると発表した",
+            "訴訟では、TikTokが保護者への通知や同意なしに子どものデータを収集し、削除要請にも応じなかったと指摘されていた",
+            "TikTokはまず3億ドルを支払い、残る1億ドルは前身企業Musical.lyに対する過去の同意判決を取り消す命令が出た時点で支払うという"
           ],
-          "whyItMatters": "同じくリフォームUKが主導するウェイクフィールド市議会も今年、2019年5月の気候・生物多様性非常事態宣言の撤回を可決している。"
+          "whyItMatters": "司法省は、TikTokが訴訟提起後に所有構造や経営体制、コンプライアンス、プライバシー対応を大きく見直し、若年ユーザー保護や年齢確認、保護者による管理機能を強化してきた点にも触れている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Barnsley Council wants to drop its climate emergency declaration?",
-              "duration": 4.257959
+              "text": "So TikTok is paying $400 million? What was this actually about?",
+              "duration": 3.526531
             },
             {
               "speaker": "explainer",
-              "text": "Yes, that's the intention. It was declared back in 2019, and now the council says it wants to withdraw it.",
-              "duration": 5.982041
+              "text": "It settles a 2024 lawsuit from the Justice Department over child privacy law, COPPA.",
+              "duration": 4.858776
             },
             {
               "speaker": "listener",
-              "text": "Why now? What's driving this?",
-              "duration": 2.037551
+              "text": "What did they say TikTok did wrong?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "They say a review is underway of all climate and net-zero work. Anything without a clear benefit to residents, a financial saving, or a legal requirement could change or stop.",
-              "duration": 9.639184
+              "text": "The DOJ alleged TikTok collected kids' data without telling or getting consent from parents.",
+              "duration": 5.198367
             },
             {
               "speaker": "listener",
-              "text": "Is it just this one declaration, or more targets too?",
-              "duration": 3.239184
+              "text": "And if parents asked for accounts to be deleted?",
+              "duration": 2.951837
             },
             {
               "speaker": "explainer",
-              "text": "More than that. They're also looking at withdrawing from Zero40, Zero45, and similar net-zero targets, redirecting resources to frontline services instead.",
-              "duration": 9.195102
+              "text": "The lawsuit says TikTok didn't follow through on those requests.",
+              "duration": 3.004082
             },
             {
               "speaker": "listener",
-              "text": "What's the reasoning behind that shift?",
-              "duration": 1.985306
+              "text": "How is the payment structured?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "Council leader William Brown said the focus should be on practical priorities for residents, rather than what he called ideological targets or political posturing.",
+              "text": "$300 million comes right away, with another $100 million tied to lifting an older order against Musical.ly, TikTok's predecessor.",
               "duration": 8.724898
             },
             {
               "speaker": "listener",
-              "text": "Has this happened anywhere else recently?",
-              "duration": 2.168163
+              "text": "Has TikTok changed anything since then?",
+              "duration": 2.272653
             },
             {
               "speaker": "explainer",
-              "text": "It has. Earlier this year, Wakefield Council, also Reform-led, voted to rescind its own climate and biodiversity emergency declaration from 2019.",
-              "duration": 9.691429
+              "text": "The DOJ notes TikTok has shifted its ownership and management, and added stronger age controls and parental oversight tools.",
+              "duration": 7.47102
             },
             {
               "speaker": "listener",
-              "text": "So it seems part of a wider pattern among some councils.",
-              "duration": 3.186939
+              "text": "So this closes the case for good?",
+              "duration": 1.906939
             },
             {
               "speaker": "explainer",
-              "text": "That does appear to be the case, yes.",
-              "duration": 1.985306
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-23/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスのバーンズリー市議会で、気候非常事態宣言を撤回する動きが出ています。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "改革党（リフォームUK）が主導するこの議会は、2019年の宣言と関連するネットゼロ目標を取り下げる方針です。",
-              "duration": 9.168
-            },
-            {
-              "speaker": "narrator",
-              "text": "気候・ネットゼロ関連の施策は現在、全面的に見直しが進められています。",
-              "duration": 6.096
-            },
-            {
-              "speaker": "narrator",
-              "text": "住民への明確な利益や財政的な節約、法的な義務がない事業は、変更か中止の対象になるということです。",
-              "duration": 8.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "ウィリアム・ブラウン議長は、理念先行の目標ではなく、住民にとって実際に重要な課題を優先すると述べています。",
-              "duration": 8.904
-            },
-            {
-              "speaker": "narrator",
-              "text": "同じくリフォームUKが主導するウェイクフィールド市議会も、今年同様の宣言を撤回しました。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "地方議会での気候政策の見直しが、一つの流れとして広がりつつあります。",
-              "duration": 5.976
-            },
-            {
-              "speaker": "narrator",
-              "text": "今後は、気候関連の予算が住民サービスへ回される可能性があります。",
-              "duration": 5.52
-            },
-            {
-              "speaker": "narrator",
-              "text": "地方自治の現場でも、優先順位の組み替えが静かに進んでいるようです。",
-              "duration": 5.496
+              "text": "It settles this lawsuit, with the DOJ calling it one of the largest recoveries in a COPPA case.",
+              "duration": 5.276735
             }
           ]
         }

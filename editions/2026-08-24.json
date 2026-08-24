@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "専門家は関税により一定の雇用喪失が生じ得ると見る一方、より大きな影響は政治面に及び、両国間に新たな緊張を生むとみている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the US and Canada talks just fell apart?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, negotiations broke down on Friday, and both sides are blaming each other.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "What did Trump actually say?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "He lashed out publicly, saying 'no more,' after the talks collapsed.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "listener",
+              "text": "And how's Canada responding?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Carney told Canadian journalists the country is essentially 'at war' over trade with the US.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "Did he say why things escalated?",
+              "duration": 1.854694
+            },
+            {
+              "speaker": "explainer",
+              "text": "He said Trump miscalculated by ramping up tariffs further.",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the US side of it?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "Trade representative Jamieson Greer says the US had to act after a year of Canadian retaliatory measures.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "So what happens now?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Experts expect some job losses, but the bigger impact may be political tension between the two neighbours.",
+              "duration": 5.32898
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "コガタペンギンは世界最小のペンギンで、体長は定規一本ほど。生息地はオーストラリア南部とニュージーランドに限られる。"
           ],
           "whyItMatters": "フィリップ島とセントキルダの約5000羽が二回の接種を受ける予定で、ペンギンが毎晩同じ巣穴に戻る習性があるからこそ実現できる取り組みだ。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So people are actually vaccinating wild penguins against bird flu?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are. More than 1,000 little penguins in Victoria have had their first dose already.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "How do you even catch that many wild penguins?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "It helps that they return to the same burrows every night, so teams can find them reliably.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "What actually happens when they get one?",
+              "duration": 1.802449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Each penguin is weighed, measured, microchipped, vaccinated, then released back to its burrow.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a huge effort for such small birds.",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "They are tiny — about the length of a ruler — and only found in southern Australia and New Zealand.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this happening in more than one place?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, around 5,000 birds across Phillip Island and St Kilda are expected to get two doses each.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "So this is really about protecting a species that's found nowhere else.",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly — and it's thought to be the largest vaccination effort ever attempted with wild birds.",
+              "duration": 5.276735
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "研究チームは、この技術が長距離宇宙飛行にとどまらず、潜水艦や被災地といった地球上の過酷な環境、さらにはプラスチックごみと食料生産という二つの課題を同時に解決する一般的な環境技術としても役立ちうると見ている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Wait, cookies made from plastic? That sounds strange.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does, but the idea is more clever than it sounds. Plastic and food are both built from carbon.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "So how do you actually turn plastic into something edible?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "Researchers used PET plastic, the kind found in water bottles, and broke it down into smaller molecules.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "And then what happens to those molecules?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're fed to yeast that's been genetically reprogrammed to treat those molecules as food.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "Why is NASA interested in this at all?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's part of their Deep Space Food Challenge, aimed at feeding astronauts on very long missions.",
+              "duration": 5.276735
+            },
+            {
+              "speaker": "listener",
+              "text": "Could this ever matter outside of space travel?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Possibly. The researchers mention submarines, disaster zones, even everyday use for tackling plastic waste and food production together.",
+              "duration": 8.385306
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's really about solving two problems at once.",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Waste plastic in, usable nutrition out.",
+              "duration": 2.873469
+            }
+          ]
+        }
       }
     },
     {
@@ -129,6 +336,75 @@
           ],
           "whyItMatters": "メルボルンの即興・コント劇の界隈で出会ったジャクソンとトゥートの共同創業者ミリー・ホルテンは、一枚の静止画だけで意味が伝わり、思わず笑えるようなアイデアを求めていた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly is this game about?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's called My Arms Are Longer Now. Instead of playing a spy or a thief, you're just... an arm.",
+              "duration": 6.034286
+            },
+            {
+              "speaker": "listener",
+              "text": "Just an arm? Not a whole character?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. It strips away the usual criminal-mastermind stuff and sends in one very badly behaved limb instead.",
+              "duration": 6.217143
+            },
+            {
+              "speaker": "listener",
+              "text": "That's an odd place to start. Where did the idea come from?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "A weekend game jam, actually. The theme was 'lost and found', and it began as a much simpler prototype.",
+              "duration": 6.29551
+            },
+            {
+              "speaker": "listener",
+              "text": "And it grew from there into something bigger?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "It did. Since then, the whole focus has been on comedy.",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "listener",
+              "text": "Who's actually making it?",
+              "duration": 1.436735
+            },
+            {
+              "speaker": "explainer",
+              "text": "Jackson and Millie Holten, co-founders of Toot. They met through Melbourne's improv and sketch comedy scene.",
+              "duration": 5.799184
+            },
+            {
+              "speaker": "listener",
+              "text": "So the comedy background really shapes the design.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. They wanted something you could understand, and laugh at, from just a single still image.",
+              "duration": 4.728163
+            }
+          ]
+        }
       }
     },
     {
@@ -160,6 +436,75 @@
             "TikTokはまず3億ドルを支払い、残る1億ドルは前身企業Musical.lyに対する過去の同意判決を取り消す命令が出た時点で支払うという"
           ],
           "whyItMatters": "司法省は、TikTokが訴訟提起後に所有構造や経営体制、コンプライアンス、プライバシー対応を大きく見直し、若年ユーザー保護や年齢確認、保護者による管理機能を強化してきた点にも触れている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So TikTok is paying $400 million? What was this actually about?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "It settles a 2024 lawsuit from the Justice Department over child privacy law, COPPA.",
+              "duration": 4.858776
+            },
+            {
+              "speaker": "listener",
+              "text": "What did they say TikTok did wrong?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "The DOJ alleged TikTok collected kids' data without telling or getting consent from parents.",
+              "duration": 5.198367
+            },
+            {
+              "speaker": "listener",
+              "text": "And if parents asked for accounts to be deleted?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "The lawsuit says TikTok didn't follow through on those requests.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "listener",
+              "text": "How is the payment structured?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "$300 million comes right away, with another $100 million tied to lifting an older order against Musical.ly, TikTok's predecessor.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "Has TikTok changed anything since then?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "The DOJ notes TikTok has shifted its ownership and management, and added stronger age controls and parental oversight tools.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "So this closes the case for good?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It settles this lawsuit, with the DOJ calling it one of the largest recoveries in a COPPA case.",
+              "duration": 5.276735
+            }
+          ]
         }
       }
     }

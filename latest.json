@@ -101,6 +101,62 @@
               "duration": 5.32898
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "アメリカとカナダの通商交渉が、金曜日に決裂しました。",
+              "duration": 4.872
+            },
+            {
+              "speaker": "narrator",
+              "text": "これを受けてトランプ大統領はカナダへの反発を強めています。",
+              "duration": 4.728
+            },
+            {
+              "speaker": "narrator",
+              "text": "双方は交渉決裂の責任を、互いに相手へ押し付けています。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "カーニー首相は対米貿易が事実上の戦争状態にあると語りました。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏が関税攻勢を強めたことを誤算だったとも述べています。",
+              "duration": 4.944
+            },
+            {
+              "speaker": "narrator",
+              "text": "米通商代表のグリア氏は、カナダの一年におよぶ報復措置への対応だと説明しました。",
+              "duration": 6.96
+            },
+            {
+              "speaker": "narrator",
+              "text": "専門家はこの関税により、一定の雇用喪失が起こり得るとみています。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "ただそれ以上に大きいのは、政治面への影響だという見方が強いようです。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "隣国同士の関係には、新たな緊張が生まれつつあります。",
+              "duration": 4.752
+            },
+            {
+              "speaker": "narrator",
+              "text": "貿易を巡る両国の距離は、しばらく縮まりそうにありません。",
+              "duration": 4.824
+            }
+          ]
         }
       }
     },
@@ -200,6 +256,57 @@
               "speaker": "explainer",
               "text": "Exactly — and it's thought to be the largest vaccination effort ever attempted with wild birds.",
               "duration": 5.276735
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "オーストラリアのビクトリア州で、小さなペンギンたちがワクチン接種を受けています",
+              "duration": 5.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "対象は世界最小の種であるコガタペンギンで、体長は定規一本ほどしかありません",
+              "duration": 6.648
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまでに1000羽を超える個体が、鳥インフルエンザワクチンの初回接種を終えました",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "野生の鳥を相手にした接種計画としては、世界最大級の規模だとされています",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "ここ数晩は約300羽を捕まえ、体重と体長を測ってからマイクロチップを埋め込みました",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのうえでワクチンを接種し、また野生へと放しています",
+              "duration": 4.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "この取り組みが可能なのは、ペンギンが毎晩同じ巣穴に戻る習性を持つからです",
+              "duration": 6.216
+            },
+            {
+              "speaker": "narrator",
+              "text": "フィリップ島とセントキルダでは、合わせて約5000羽が二回の接種を受ける予定です",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "鳥インフルエンザの脅威から、小さな命を守るための静かな作業が続いています",
+              "duration": 6.216
             }
           ]
         }
@@ -303,6 +410,57 @@
               "duration": 2.873469
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "廃棄されたプラスチックが、将来の宇宙食になるかもしれません。",
+              "duration": 4.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "NASAの資金提供で、科学者たちがある技術を開発しました。",
+              "duration": 4.872
+            },
+            {
+              "speaker": "narrator",
+              "text": "プラスチックも食物も、元をたどれば炭素でできています。",
+              "duration": 4.656
+            },
+            {
+              "speaker": "narrator",
+              "text": "その発想から、使い捨て水ボトルに多いPETを原料に選びました。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "分解した分子を、遺伝子操作した酵母に食べさせる仕組みです。",
+              "duration": 4.968
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には、長期宇宙飛行での食料不足という課題があります。",
+              "duration": 5.256
+            },
+            {
+              "speaker": "narrator",
+              "text": "研究チームは、宇宙以外での応用も見込んでいます。",
+              "duration": 4.416
+            },
+            {
+              "speaker": "narrator",
+              "text": "潜水艦や被災地など、地球上の過酷な環境でも役立つ可能性があります。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "プラスチックごみと食料生産、両方の課題を解決する道になるかもしれません。",
+              "duration": 5.952
+            }
+          ]
         }
       }
     },
@@ -404,6 +562,57 @@
               "duration": 4.728163
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ステルスゲームといえば、スパイや暗殺者を演じる作品が定番です。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "ところが今回紹介する一作は、体のほとんどを省いてしまいました。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "プレイヤーが操るのは、無法に暴れ回る一本の腕だけです。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "発端は週末のゲームジャムで作られた、もっと簡素な試作品でした。",
+              "duration": 5.28
+            },
+            {
+              "speaker": "narrator",
+              "text": "テーマは落とし物で、そこから今の形へと育っていきました。",
+              "duration": 4.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "その後もこの作品は、一貫してコメディの方向を追求してきたそうです。",
+              "duration": 5.544
+            },
+            {
+              "speaker": "narrator",
+              "text": "開発チームTootの共同創業者ジャクソンとミリー・ホルテンは、メルボルンの即興・コント劇の界隈で出会っています。",
+              "duration": 8.52
+            },
+            {
+              "speaker": "narrator",
+              "text": "二人が目指したのは、一枚の静止画だけで意味が伝わり、思わず笑えるようなアイデアでした。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "小さな思いつきが、こうして独特な発想のゲームに育っていく過程は、朝から少し心を軽くしてくれます。",
+              "duration": 7.824
+            }
+          ]
         }
       }
     },
@@ -503,6 +712,62 @@
               "speaker": "explainer",
               "text": "It settles this lawsuit, with the DOJ calling it one of the largest recoveries in a COPPA case.",
               "duration": 5.276735
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-24/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "TikTokが、2024年に起こされた訴訟を巡り、司法省と和解しました。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "支払う金額は4億ドル、子どものプライバシー保護法COPPAが争点でした。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "保護者の同意を得ずに子どものデータを集めていたとされています。",
+              "duration": 4.752
+            },
+            {
+              "speaker": "narrator",
+              "text": "削除の要請があっても、アカウントを消していなかったとも指摘されました。",
+              "duration": 5.472
+            },
+            {
+              "speaker": "narrator",
+              "text": "支払いはまず3億ドル、残りの1億ドルは条件付きです。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "前身のMusical.lyに対する過去の命令が取り消された後に支払われます。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "司法省は、TikTokがその後、経営体制や運営方針を見直してきたとも述べています。",
+              "duration": 6.936
+            },
+            {
+              "speaker": "narrator",
+              "text": "若いユーザーを守る仕組みや年齢確認の精度も強化されました。",
+              "duration": 5.04
+            },
+            {
+              "speaker": "narrator",
+              "text": "子どもがネットを使う家庭にとって、安心材料の一つになりそうです。",
+              "duration": 5.304
+            },
+            {
+              "speaker": "narrator",
+              "text": "小さな積み重ねが、安全な利用環境を育てていきます。",
+              "duration": 4.776
             }
           ]
         }

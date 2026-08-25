@@ -23976,6 +23976,353 @@
           ]
         }
       }
+    },
+    "2026-08-25": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-25/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly is the US threatening to do here?",
+              "duration": 3.369796
+            },
+            {
+              "speaker": "explainer",
+              "text": "They're warning any country trading with Iran could face severe sanctions.",
+              "duration": 3.787755
+            },
+            {
+              "speaker": "listener",
+              "text": "Why go this route instead of military action?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "The idea is to achieve economically what military pressure hasn't managed to do.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "Does this target any country in particular?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "China stands out, since it bought an estimated 80% of Iran's shipped oil last year.",
+              "duration": 4.414694
+            },
+            {
+              "speaker": "listener",
+              "text": "Is China likely to just go along with that?",
+              "duration": 2.403265
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not really, it's signalled resistance to cutting ties with Iran.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "listener",
+              "text": "How has Iran responded to this pressure?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Iran says it will retaliate against any country joining the isolation effort.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like a pretty bold move from Washington.",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the treasury secretary even compared it to the D-day landings.",
+              "duration": 3.474286
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-25/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the Lockerbie trial isn't starting this week after all?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. A federal judge postponed it just before jury selection was set to begin.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "Why the delay now, after all these years?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "The judge said new evidence turned up, and the defense needs time to examine it.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what that evidence actually is?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, the order didn't specify. It just cited the case's complexity and the need for the defense to prepare properly.",
+              "duration": 5.668571
+            },
+            {
+              "speaker": "listener",
+              "text": "Remind me who's on trial here.",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Abu Agila Mohammad Mas'ud Kheir Al-Marimi, a former Libyan intelligence official accused of building the bomb.",
+              "duration": 6.4
+            },
+            {
+              "speaker": "listener",
+              "text": "And this was the 1988 Pan Am bombing over Scotland?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Two hundred seventy people died, most of them American. This would be the first U.S. trial in the case.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "So for now, everyone just waits.",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "For now, yes — until the judge sets a new date.",
+              "duration": 2.507755
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-25/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's actually happening on Wednesday?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Anthony Albanese is meeting with the premiers, and datacentres are a big part of the agenda.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "Why are datacentres suddenly such a hot topic?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "They use a huge amount of electricity, and that demand is set to grow fast.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "listener",
+              "text": "How fast are we talking?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "The energy market operator expects datacentre power use to grow sevenfold over the next decade, and possibly tenfold in a high-growth scenario.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds like it could strain the grid.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's part of the concern, and some states, like Queensland and the Northern Territory, aren't happy about how these developments are being approved.",
+              "duration": 6.870204
+            },
+            {
+              "speaker": "listener",
+              "text": "So what's Albanese proposing?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "New national approval laws next year, meant to work alongside state rules rather than replace them.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "And the bigger goal?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Making sure the economic benefits of AI are shared more widely, not just concentrated in a few places.",
+              "duration": 5.668571
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-25/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what exactly is A Pocket Full of Slagford?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's an upcoming game, a retro-styled 3D puzzle adventure set in a strange version of northern England.",
+              "duration": 5.668571
+            },
+            {
+              "speaker": "listener",
+              "text": "Strange how?",
+              "duration": 1.201633
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a near-future world that never escaped the grip of Thatcherism, all told with a surreal, alternative-reality twist.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "And who are we following in this world?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "A young lad from Slagford named Pip Bunting. He ends up with a mysterious relic that lets him cause chaos in reality itself.",
+              "duration": 7.105306
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it meant to be a political statement?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "The creator says not really. He was inspired by Boys from the Blackstuff, that 80s BBC show about Scousers just trying to get by under Thatcher.",
+              "duration": 7.941224
+            },
+            {
+              "speaker": "listener",
+              "text": "So where does the mining fit in?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "He imagined the future where, instead of coal, people are mining something far less dignified out of the ground.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "That does sound like it says something, even if he didn't intend it to.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Quite. Sometimes the strangest premise ends up being the most honest one.",
+              "duration": 3.94449
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-25/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What happened in this village in France?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "A tornado tore through Pomas, a village in south-west France, hurting 39 people and damaging homes.",
+              "duration": 5.564082
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds serious. How strong was it?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Winds reached about 117 kilometres an hour, tearing roofs off houses. Roughly 300 homes were damaged.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Is help on the way for people there?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, more than 120 emergency workers were sent to the area near Carcassonne.",
+              "duration": 4.832653
+            },
+            {
+              "speaker": "listener",
+              "text": "Is anyone still unaccounted for?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "A local official said she wasn't aware of anyone missing, which is some relief.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "And what about basic services, like power?",
+              "duration": 2.45551
+            },
+            {
+              "speaker": "explainer",
+              "text": "About 2,800 homes across ten villages are currently without electricity.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "This all comes after a hard summer for that region, doesn't it?",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does. South-west France already saw one of its worst wildfires since World War Two, with 42,000 hectares burnt.",
+              "duration": 6.870204
+            }
+          ]
+        }
+      }
     }
   }
 }

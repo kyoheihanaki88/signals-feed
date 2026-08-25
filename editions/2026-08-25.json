@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-25",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "US threatens severe sanctions against countries with economic ties to Iran",
+      "summary": "The US has threatened to impose severe sanctions against any country or entity maintaining economic ties with Iran, hoping to achieve with economic measures what military means have so far failed to do.",
+      "keyTakeaways": [
+        "It is unclear, however, how far the Trump administration is prepared to go in confronting China, Iran’s biggest trading partner, which has signalled its resistance to US economic pressure to cut off links with an ally.",
+        "Iran, meanwhile, vowed retaliation against any country that took part in the US-led isolation campaign.",
+        "Asked whether sanctions would be applied to China, which bought an estimated 80% of Iran’s shipped oil last year, he replied: “We want to make clear here today that no one is above the reach of US sanctions."
+      ],
+      "whyItMatters": "Launching what he called Operation Economic Outcast, the US treasury secretary, Scott Bessent, called it an unprecedented campaign and compared it with the D-day Normandy landings, a turning point in the second world war.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/24/us-severe-sanctions-economic-ties-iran",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "International",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米、イラン経済封鎖へ制裁強化を表明",
+          "summary": "米国はイランと経済的関係を持つ国や団体に対し、厳しい制裁を科すと警告した。軍事的手段では果たせなかった目的を、経済的圧力によって達成しようとする狙いがある。",
+          "keyTakeaways": [
+            "イラン最大の貿易相手国である中国にどこまで踏み込むかは不透明で、中国は米国の圧力に抵抗する姿勢を見せている。",
+            "イラン側は、米国主導の孤立化政策に加担する国への報復を表明した。",
+            "昨年イランの原油輸出の約八割を購入したとされる中国への制裁適用を問われ、当局者は「米国の制裁の及ばない者はいないと、今日明確にしておきたい」と述べた。"
+          ],
+          "whyItMatters": "米財務長官スコット・ベセントはこの作戦を「エコノミック・アウトキャスト作戦」と名付け、前例のない取り組みだとして第二次世界大戦の転機となったノルマンディー上陸作戦になぞらえた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "CBS News (U.S.)",
+      "headline": "Judge postpones U.S. trial for man accused in deadly 1988 Lockerbie bombing",
+      "summary": "A federal judge on Monday postponed a trial in the United States for a former Libyan intelligence official charged in the 1988 bombing of Pan Am Flight 103 over Lockerbie, Scotland, citing the discovery of new evidence that defense attorneys want to examine in the nearly 40-year-old case.",
+      "keyTakeaways": [
+        "Jury selection was scheduled to begin Wednesday for his federal trial in Washington, D.C. — the first trial in the U.S. for the Dec.",
+        "U.S. District Judge Dabney Friedrich's order didn't specify the nature of the newly discovered evidence.",
+        "Friedrich's brief order cited the complex nature of the case, the newly discovered evidence and \"the need for the defense to determine how best to defend this case\" as reasons to postpone the trial."
+      ],
+      "whyItMatters": "Abu Agila Mohammad Mas'ud Kheir Al-Marimi is charged in the U.S. with making the bomb that downed the airplane, killing 270 people, most of them Americans.",
+      "originalURL": "https://www.cbsnews.com/news/lockerbie-bombing-suspect-us-trial-postponed-new-evidence/",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ロッカビー事件、米国での裁判が延期に",
+          "summary": "1988年、スコットランド・ロッカビー上空でパンアメリカン航空103便を爆破したとして起訴された元リビア情報機関員について、米連邦判事は月曜、裁判の延期を決めた。理由は新たな証拠が見つかり、弁護側がその内容を精査する必要があるためだという。事件から40年近くが経つ。",
+          "keyTakeaways": [
+            "ワシントンでの連邦裁判は水曜に陪審選任が始まる予定だった",
+            "ダブニー・フリードリヒ判事の命令は新証拠の内容には触れていない",
+            "判事は事件の複雑さと新証拠、弁護側の準備の必要性を延期の理由に挙げた"
+          ],
+          "whyItMatters": "起訴されているアブアギラ・モハンマド・マスード・ケイル・アルマリミ被告は、270人が犠牲になった爆破事件の爆弾製造に関与したとされている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Albanese seeks to quell datacentre disquiet as climate expert warns ‘we’ve got one shot to get the rules right’",
+      "summary": "Anthony Albanese will seek to use Wednesday’s high-stakes talks with premiers to quell growing unhappiness about national controls on datacentre developments, promising new approval laws will complement state rules.",
+      "keyTakeaways": [
+        "The meeting on Wednesday will come after the latest forecast from the Australian Energy Market Operator showing datacentre power use is projected to increase seven-fold over the next decade.",
+        "Datacentre electricity demand was expected to grow from 5 to 34 terawatt hours by 2035-36, the report said, growing from 3% of overall consumption to 13%.",
+        "AEMO said high datacentre growth could see consumption reach 52 TWh – a 10-fold increase over the decade."
+      ],
+      "whyItMatters": "Faced with growing opposition from conservative governments in Queensland and the Northern Territory, Albanese will tell national cabinet he plans a major piece of legislation next year to ensure the economic benefits of AI are shared widely.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/aug/25/albanese-seeks-to-quell-datacentre-disquiet-as-climate-expert-warns-weve-got-one-shot-to-get-the-rules-right",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Software",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "データセンター規制、州との溝埋めへ　アルバニージー氏「今しかない」",
+          "summary": "アンソニー・アルバニージー首相は水曜日、各州首相との重要協議で、データセンター開発に対する連邦規制への不満の高まりを鎮めたい考えだ。新たな認可法は州の規制を補完するものになると説明する見通しである。",
+          "keyTakeaways": [
+            "会議に先立ち、豪エネルギー市場運営機構（AEMO）は今後十年でデータセンターの電力使用量が七倍に膨らむと予測している。",
+            "同機構の報告によれば、データセンターの電力需要は二〇三五、三六年度までに五テラワット時から三十四テラワット時へと拡大し、全体消費に占める割合も三パーセントから十三パーセントへ上昇する見込みだ。",
+            "成長がさらに進めば消費量は五十二テラワット時、十年で十倍に達する可能性もあるという。"
+          ],
+          "whyItMatters": "クイーンズランド州と北部準州の保守系政権からの反発を受け、アルバニージー氏は国家内閣に対し、AIの経済的恩恵を広く行き渡らせるための大規模法案を来年提出する意向を示す見通しである。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "A Pocket Full of Slagford – a retro-futurist take on Thatcher-era northern England",
+      "summary": "S omething is amiss in the dingy town of Slagford, and curious scamp Pip Bunting is the only one who can find out what.",
+      "keyTakeaways": [
+        "A Pocket Full of Slagford is an upcoming retro-styled 3D puzzle adventure game set in a surreal alternative-reality near-future northern England that never escaped the clutches of Thatcherism.",
+        "The story follows the misadventures of a young local lad from the eponymous Slagford after he takes ownership of a mysterious relic that lets him wreak havoc on reality.",
+        "There’s this BBC miniseries from the 80s called Boys from the Blackstuff, about this group of scousers getting up to mischief, set in the Thatcher years, just trying to make ends meet."
+      ],
+      "whyItMatters": "As he puts it: “I was like, what if I set it in the future and, instead of coal, they’re mining shit out of the ground?” He may not be trying to make a political statement about Thatcherism, but some might say he has hit on an apt analogy.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/25/a-pocket-full-of-slagford-patrick-grant-northern-england",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Tornado tears through French village, leaving dozens hurt and homes ravaged",
+      "summary": "A tornado has torn through the village of Pomas in south-west France, injuring 39 people and damaging hundreds of homes.",
+      "keyTakeaways": [
+        "More than 120 emergency workers were deployed to the village south of Carcassonne after winds reaching 117km/h (73mph) tore roofs off houses and damaged an estimated 300 homes on Monday.",
+        "The extreme weather has left about 2,800 homes across 10 villages without electricity, according to officials.",
+        "Local sub-prefect Emmanuelle Plantier-Lemarchand told French radio that she was not aware of anyone missing."
+      ],
+      "whyItMatters": "It comes after Europe's summer of unprecedented heatwaves and wildfires, with France's south-west region among the worst affected with an area of 42,000 hectares burnt in one of the largest forest fires since World War Two.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c0m3npvpgdno?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Deep field",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "仏南西部の村を竜巻が直撃、負傷者多数",
+          "summary": "フランス南西部の村ポマにて竜巻が発生し、39人が負傷、数百軒の住宅が被害を受けた。",
+          "keyTakeaways": [
+            "カルカソンヌ南方の村に120人超の救助隊が出動、時速117キロの暴風が屋根を吹き飛ばし、約300軒の住宅が被害を受けた（月曜日）",
+            "この悪天候で10の村、約2800軒が停電した（当局発表）",
+            "地元の副知事エマニュエル・プランティエ＝ルマルシャン氏はラジオで、行方不明者の情報はないと述べた"
+          ],
+          "whyItMatters": "今回の竜巻は、フランス南西部が第二次世界大戦後最大級の山火事で4万2000ヘクタールを焼失するなど、欧州が記録的な猛暑と山火事に見舞われた夏の後に起きた。"
+        }
+      }
+    }
+  ]
+}

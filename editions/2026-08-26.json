@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-26",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "CBS News (U.S.)",
+      "headline": "Dolly Parton, country music legend, dies at 80 after brief cancer battle",
+      "summary": "Dolly Parton, one of the most groundbreaking and successful musicians in the history of country music, with a hitmaking career that spanned six decades and launched her into TV and movie stardom, died Tuesday after a brief cancer battle.",
+      "keyTakeaways": [
+        "Parton later assured fans by saying that she wasn't sick and was OK.",
+        "At the White House, President Trump called her death \"a true loss for millions of people\" and ordered the American flag lowered across the country starting Tuesday evening.",
+        "Linda Ronstadt, who worked with Parton and Emmylou Harris on 1987's \"Trio\" album, was among the stars mourning Parton."
+      ],
+      "whyItMatters": "Last October, Parton's sister Freida Parton sparked concerns about the star's health when she took to social media asking for prayers for her sister.",
+      "originalURL": "https://www.cbsnews.com/news/dolly-parton-dies-age-80-country-music-star/",
+      "readTime": 9,
+      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The crossing",
+      "audioURL": ""
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Clive Barker’s Hellraiser: Revival – a game so grotesque it scares its own director",
+      "summary": "I f a horror game gives its own director a physical reaction, it’s probably doing something right.",
+      "keyTakeaways": [
+        "Rather than tone the scary images down, he fed them straight into Clive Barker’s Hellraiser: Revival.",
+        "The forthcoming first-person action-horror game drops players into a new story in Barker’s universe.",
+        "Clive Barker himself helped shape the characters, themes and rules of the universe, before staying on as an adviser as the story became a game."
+      ],
+      "whyItMatters": "While researching the images people find hardest to look at, game director Emil Esov discovered he has trypophobia – a fear of clusters of small holes.",
+      "originalURL": "https://www.theguardian.com/games/2026/aug/26/clive-barkers-hellraiser-revival",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The studio",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "『ヘルレイザー:リヴァイヴァル』、監督さえも怯えさせる禍々しさ",
+          "summary": "ホラーゲームが監督自身の体を震わせるなら、それはうまくいっている証だろう。",
+          "keyTakeaways": [
+            "恐ろしい映像を和らげるどころか、そのまま『クライヴ・バーカーのヘルレイザー:リヴァイヴァル』に注ぎ込んだ。",
+            "発売予定の一人称視点アクションホラーは、バーカーの世界観に新たな物語を描く。",
+            "クライヴ・バーカー自身がキャラクターやテーマ、世界のルールづくりに携わり、ゲーム化以降はアドバイザーとして関わり続けた。"
+          ],
+          "whyItMatters": "人が最も直視しづらい映像を調べるうち、監督のエミル・エソフは自分が集合体恐怖症だと気づいた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "At least 14 newborn babies die in fire at Pakistan hospital’s maternity ward",
+      "summary": "At least 14 newborn babies have died in a fire that broke out in the maternity ward at one of Pakistan’s most prominent state hospitals.",
+      "keyTakeaways": [
+        "A statement by the hospital administration confirmed that 14 newborn babies had died in the fire.",
+        "Hospital spokesperson Dr Aneeza Jalil told Dawn newspaper that 15 babies were on the ward at the time and that “one baby was saved by a doctor”.",
+        "The health minister, Mustafa Kamal, said many of the babies had been in incubators or on oxygen, and that the oxygen canisters had exacerbated the fire."
+      ],
+      "whyItMatters": "The blaze began in the early hours of Wednesday and engulfed the ward at Pakistan Institute of Medical Sciences, the biggest state hospital in Islamabad.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/26/newborn-babies-die-fire-pakistan-hospital-maternity-ward",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "パキスタンの病院、新生児室火災で14人死亡",
+          "summary": "パキスタンを代表する国立病院のひとつで、新生児室から出火する火災が発生し、少なくとも新生児14人が死亡した。",
+          "keyTakeaways": [
+            "病院当局の発表により、火災で新生児14人が死亡したことが確認された。",
+            "病院広報のアニーザ・ジャリル医師はダウン紙に対し、当時病棟には15人の赤ちゃんがおり、「医師の手で1人が助け出された」と語った。",
+            "保健相ムスタファ・カマル氏によると、赤ちゃんの多くは保育器や酸素吸入下にあり、酸素ボンベが火の勢いを強めたという。"
+          ],
+          "whyItMatters": "火災は水曜未明に発生し、イスラマバード最大の国立病院、パキスタン医科学研究所の病棟を焼いた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "In China, talking to AI is normal. Now the government fears it might replace human intimacy",
+      "summary": "She had been talking to Wang Ye every day since she created him in January.",
+      "keyTakeaways": [
+        "In China, talking to AI is normal.",
+        "The saga prompted outrage on social media and highlighted the tensions in China between the widespread use of AI and its potential social consequences.",
+        "No country has rolled out AI as comprehensively and as enthusiastically as China; the country’s demographic challenges are forcing the government to turn to technology to solve future labour shortages."
+      ],
+      "whyItMatters": "It has warned companies against offering services that “replace social interaction”.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/26/china-ai-companion-relationships-marriage-birth-rate-concern",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIとの対話が日常の中国、政府が懸念する『親密さの代替』",
+          "summary": "彼女は一月にAI「王野」を作り出して以来、毎日彼と言葉を交わしてきた。",
+          "keyTakeaways": [
+            "中国ではAIとの対話はすでに日常の一部だ。",
+            "この出来事はSNSで反発を呼び、AIの普及とその社会的影響のあいだにある中国社会の緊張を浮き彫りにした。",
+            "AIをここまで包括的かつ積極的に導入した国はない。人口構成の課題が、将来の労働力不足を技術で補おうとする政府の姿勢を後押ししている。"
+          ],
+          "whyItMatters": "政府は「社会的な関わりの代替」となるサービスの提供について、企業に警告を発している。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Sand overextraction weakening riverbanks as concrete demand soars",
+      "summary": "A booming demand for concrete has resulted in sand and gravel being extracted from riverbeds faster than nature can replenish it.",
+      "keyTakeaways": [
+        "In 2024, city-building and infrastructure projects around the world turned 28bn tonnes of sand and gravel into concrete.",
+        "The researchers suggest that satellite imaging and river mapping can be used to better manage sand and gravel mining, helping to minimise negative impacts.",
+        "They found much of the material was being extracted from rivers across Asia and Africa."
+      ],
+      "whyItMatters": "A study published in Reviews of Geophysics shows that the demand for sand and gravel has more than doubled in the last two decades, with overextraction leading to weaker riverbanks, lower groundwater levels, coastal salt intrusion and poorer water quality.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/26/terrawatch-sand-overextraction-riverbanks-concrete-demand",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Research",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "砂利採取の加速、川岸を脅かす",
+          "summary": "コンクリート需要の急増により、川底や川岸から砂利が採取される速度が、自然の補充力を上回っている。",
+          "keyTakeaways": [
+            "2024年、世界各地の都市開発や社会基盤整備は280億トンの砂利をコンクリートへと変えた。",
+            "研究者は、衛星画像や河川地図を活用すれば砂利採取をより適切に管理し、悪影響を抑えられると指摘する。",
+            "採取される砂利の多くは、アジアとアフリカの河川から得られていることが分かった。"
+          ],
+          "whyItMatters": "学術誌「レビューズ・オブ・ジオフィジックス」に掲載された研究によれば、砂利需要はこの二十年で二倍以上に増え、過剰採取が河岸の脆弱化や地下水位の低下、沿岸部への海水侵入、水質悪化を招いている。"
+        }
+      }
+    }
+  ]
+}

@@ -21,7 +21,76 @@
       "readTime": 9,
       "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
       "placeTime": "The crossing",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "I saw the news about Dolly Parton. Is it true?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Reports say she died Tuesday after a brief cancer battle, at 80.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "listener",
+              "text": "That's hard to hear. She seemed so present in everyone's lives.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "explainer",
+              "text": "She was. Six decades in country music, plus TV and film success.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "listener",
+              "text": "Wait, didn't she say something about not being sick recently?",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, she later told fans she wasn't sick and was okay.",
+              "duration": 3.186939
+            },
+            {
+              "speaker": "listener",
+              "text": "So there's some confusion right now about her condition.",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "It does seem that way, with different accounts circulating.",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "listener",
+              "text": "I noticed her sister had asked for prayers back in October.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, Freida Parton raised health concerns for her back then.",
+              "duration": 3.004082
+            },
+            {
+              "speaker": "listener",
+              "text": "And I heard the White House responded too.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "President Trump called it a loss for millions and ordered flags lowered.",
+              "duration": 3.709388
+            }
+          ]
+        }
+      }
     },
     {
       "number": 2,
@@ -52,6 +121,75 @@
             "クライヴ・バーカー自身がキャラクターやテーマ、世界のルールづくりに携わり、ゲーム化以降はアドバイザーとして関わり続けた。"
           ],
           "whyItMatters": "人が最も直視しづらい映像を調べるうち、監督のエミル・エソフは自分が集合体恐怖症だと気づいた。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the director of this horror game actually scares himself with it?",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "explainer",
+              "text": "He does. While researching unsettling images, Emil Esov discovered he has trypophobia — a fear of clusters of small holes.",
+              "duration": 8.724898
+            },
+            {
+              "speaker": "listener",
+              "text": "And instead of softening those images, he used them anyway?",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. Rather than tone them down, he fed them straight into the game, Clive Barker's Hellraiser: Revival.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this connected to the original Hellraiser story, or something new?",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's a new story, but set in Clive Barker's universe. It's a first-person action-horror game.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Was Barker himself involved, or just lending his name?",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "He was quite involved. He helped shape the characters, themes, and rules of the universe.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "Did he stay on once it moved from concept to actual game?",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "He did — he continued on as an adviser as the story became a game.",
+              "duration": 3.892245
+            },
+            {
+              "speaker": "listener",
+              "text": "So the goal really is to unsettle people, not just entertain them.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be the idea — if it can affect its own director, it's likely doing what it set out to do.",
+              "duration": 5.694694
+            }
+          ]
         }
       }
     },
@@ -85,6 +223,75 @@
           ],
           "whyItMatters": "火災は水曜未明に発生し、イスラマバード最大の国立病院、パキスタン医科学研究所の病棟を焼いた。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "This is a hard one to read. What actually happened?",
+              "duration": 2.873469
+            },
+            {
+              "speaker": "explainer",
+              "text": "A fire broke out in the maternity ward at a major state hospital in Islamabad, early Wednesday morning.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "How many babies were affected?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "The hospital says 15 newborns were on the ward at the time. At least 14 died.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "Was anyone able to help them?",
+              "duration": 1.619592
+            },
+            {
+              "speaker": "explainer",
+              "text": "A hospital spokesperson said one baby was saved, pulled out by a doctor.",
+              "duration": 4.075102
+            },
+            {
+              "speaker": "listener",
+              "text": "Do we know what made the fire so severe?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "The health minister said many babies were in incubators or on oxygen, and the oxygen canisters made the fire worse.",
+              "duration": 6.817959
+            },
+            {
+              "speaker": "listener",
+              "text": "Where did this happen exactly?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "At the Pakistan Institute of Medical Sciences, the country's largest state hospital.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "It's just devastating to think about.",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. A family's most hopeful moment turned into unimaginable loss.",
+              "duration": 4.493061
+            }
+          ]
+        }
       }
     },
     {
@@ -117,6 +324,75 @@
           ],
           "whyItMatters": "政府は「社会的な関わりの代替」となるサービスの提供について、企業に警告を発している。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So people in China are talking to AI companions every day, like they're real friends?",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, one woman created an AI she calls Wang Ye back in January and has spoken to him daily since.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "That sounds so normal there, not strange at all?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right, using AI this way is widespread in China, more than almost anywhere else.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "But something happened that got people upset?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, a particular saga sparked outrage online and exposed real tension around AI's growing role.",
+              "duration": 5.511837
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the government's concern exactly?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "They've warned companies not to offer services that replace human social interaction.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this tied to something bigger, like the population itself?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. China's demographic challenges are pushing it to rely on technology to fill future labor shortages.",
+              "duration": 6.086531
+            },
+            {
+              "speaker": "listener",
+              "text": "So they need the technology, but worry about what it replaces.",
+              "duration": 3.160816
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, that's the tension at the heart of it all.",
+              "duration": 2.690612
+            }
+          ]
+        }
       }
     },
     {
@@ -148,6 +424,75 @@
             "採取される砂利の多くは、アジアとアフリカの河川から得られていることが分かった。"
           ],
           "whyItMatters": "学術誌「レビューズ・オブ・ジオフィジックス」に掲載された研究によれば、砂利需要はこの二十年で二倍以上に増え、過剰採取が河岸の脆弱化や地下水位の低下、沿岸部への海水侵入、水質悪化を招いている。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "Sand is running out? That sounds strange, there's so much of it.",
+              "duration": 3.94449
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's more about the right kind of sand. Concrete needs sand and gravel from rivers, not deserts.",
+              "duration": 5.250612
+            },
+            {
+              "speaker": "listener",
+              "text": "And we're using a lot of it?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "In 2024 alone, building and infrastructure projects used about 28 billion tonnes of sand and gravel worldwide.",
+              "duration": 6.112653
+            },
+            {
+              "speaker": "listener",
+              "text": "Where's most of it coming from?",
+              "duration": 1.697959
+            },
+            {
+              "speaker": "explainer",
+              "text": "A lot is being pulled from rivers across Asia and Africa, often faster than nature can replace it.",
+              "duration": 5.146122
+            },
+            {
+              "speaker": "listener",
+              "text": "What happens when it's taken too quickly?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Riverbanks weaken, groundwater drops, and in coastal areas salt can seep into the water supply.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there a way to manage this better?",
+              "duration": 2.272653
+            },
+            {
+              "speaker": "explainer",
+              "text": "Researchers suggest using satellite imaging and river mapping to track extraction and reduce the damage.",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's about watching more closely, not stopping altogether.",
+              "duration": 3.474286
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, understanding where the limits are before rivers pay the price.",
+              "duration": 4.205714
+            }
+          ]
         }
       }
     }

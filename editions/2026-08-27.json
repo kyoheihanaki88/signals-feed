@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-27",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump signs executive order to rename Lake Ontario as Lake America",
+      "summary": "Donald Trump signed an executive order on Thursday directing the federal government to rename Lake Ontario, making it Lake America, amid his escalating trade war with Canada.",
+      "keyTakeaways": [
+        "The order directs federal agencies to adopt the name-change on US maps, documents and databases.",
+        "The move follows a similar action the president took on the first day of his second term in office, when he signed an order renaming the Gulf of Mexico as the “Gulf of America”.",
+        "Propped behind him was a large map of the Great Lakes region, with “Lake America” printed in red lettering above Lake Ontario."
+      ],
+      "whyItMatters": "Trump claimed that American farmers are being charged a 400% tariff; about 97% of US agricultural exports to Canada enter duty-free under the US-Mexico-Canada Agreement, though over-quota eggs, milk and dairy have Canadian tariffs of up to 300%.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/27/trump-renames-lake-ontario-america",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ氏、オンタリオ湖を『レイク・アメリカ』に改称する大統領令に署名",
+          "summary": "ドナルド・トランプ氏は木曜日、オンタリオ湖の名称を『レイク・アメリカ』に変更するよう連邦政府に指示する大統領令に署名した。カナダとの貿易摩擦が激化するなかでの動きだ。",
+          "keyTakeaways": [
+            "大統領令は、連邦機関が地図や文書、データベースでこの新名称を採用するよう求めている。",
+            "今回の措置は、大統領が二期目就任初日にメキシコ湾を『アメリカ湾』と改称する命令に署名した経緯を踏まえたものだ。",
+            "会見の背後には五大湖地域の大きな地図が置かれ、オンタリオ湖の上に赤字で『レイク・アメリカ』と記されていた。"
+          ],
+          "whyItMatters": "トランプ氏は米国の農家が400%の関税を課されていると主張したが、実際には米国農産品の対カナダ輸出の約97%が米国・メキシコ・カナダ協定のもとで無関税であり、割当量を超えた卵や牛乳、乳製品にはカナダ側で最大300%の関税がかかるにすぎない。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "El Niño climate patterns supercharged by burning of fossil fuels, study finds",
+      "summary": "A series of strong El Niño climatic patterns in recent decades, such as the “Godzilla” event currently brewing that is set to warp weather around the world, have been supercharged by the broader overheating of the planet caused by the burning of fossil fuels, a major new study has found.",
+      "keyTakeaways": [
+        "That is bad news for climate hazards and for people, particularly those who are badly impacted and yet have done little to cause climate change.”",
+        "The findings could help provide an answer to one of the more vexing questions in climate science, which has until now been unclear, on whether the climate crisis is significantly changing the strength of El Niño events.",
+        "Such a scenario is set to have profound impacts upon countries already dealing with growing incidences of heatwaves, wildfires and flooding worsened by the climate crisis."
+      ],
+      "whyItMatters": "It’s well understood that El Niño, which typically brings a surge of global heat, further amplifies the escalating climate crisis, with next year almost certain to be the hottest on record globally.",
+      "originalURL": "https://www.theguardian.com/environment/2026/aug/27/el-nino-climate-patterns-fossil-fuels",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "エルニーニョを強めるのは、化石燃料が生む温暖化",
+          "summary": "近年、強力なエルニーニョ現象が相次いでいる。目下発達中で世界の気象を乱すとされる「ゴジラ級」もその一つだ。新たな大規模研究により、こうした現象は化石燃料の燃焼による地球全体の温暖化によって増幅されていることがわかった。",
+          "keyTakeaways": [
+            "気候による被害は深刻化しており、とりわけその原因をほとんど作っていない人々ほど大きな打撃を受けるという。",
+            "気候変動がエルニーニョの強さを実質的に変えているのかどうかは、これまで気候科学における未解決の難問だったが、今回の研究がその手がかりを示した。",
+            "猛暑や山火事、洪水がすでに深刻化している国々にとって、この事態は重大な影響を及ぼす見通しだ。"
+          ],
+          "whyItMatters": "世界的な高温をもたらすエルニーニョが進行中の気候危機をさらに強めることはすでによく知られており、来年は観測史上最も暑い年になることがほぼ確実視されている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Three UK airports hit by cyber-attack with data of 8.7m customers accessed",
+      "summary": "Manchester, London Stansted and East Midlands airports have been hit by a cyber-attack in which hackers accessed the data of about 8.7 million customers.",
+      "keyTakeaways": [
+        "The company said that “at no point has passenger safety or aviation security been compromised” during the incident and operations at the airports were unaffected.",
+        "In an email to customers, London Stansted said: “We would urge you to be particularly cautious of unexpected emails, calls or text messages claiming to be from us.",
+        "The cyber-attack hit the airports during the peak summer travel season."
+      ],
+      "whyItMatters": "A MAG spokesperson said the company had “immediately contained the risk” from the incident and was “working with specialist advisers and taking appropriate steps to protect our customers and systems”.",
+      "originalURL": "https://www.theguardian.com/business/2026/aug/27/uk-airports-operator-cyber-attack-customer-data-accessed",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英国の空港3カ所でサイバー攻撃、顧客データ870万人分に影響",
+          "summary": "英国のマンチェスター、ロンドン・スタンステッド、イーストミッドランズの3空港がサイバー攻撃を受け、約870万人分の顧客データが不正に閲覧された。",
+          "keyTakeaways": [
+            "運営会社は、乗客の安全や航空保安が損なわれたことはなく、空港運営にも影響はなかったとしている。",
+            "スタンステッド空港は顧客宛のメールで、同空港を名乗る不審な連絡には特に注意するよう呼びかけた。",
+            "攻撃が発生したのは夏の旅行シーズン真っ盛りの時期だった。"
+          ],
+          "whyItMatters": "運営会社MAGは、リスクを直ちに抑え込み、専門家の助言を得ながら顧客とシステムの保護に努めていると説明している。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "An $18bn settlement is a drop in the ocean for Meta – but the tide will still come for it | Chris Stokel-Walker",
+      "summary": "N ot many people would count paying $18bn they didn’t expect to when they woke up that morning as a victory.",
+      "keyTakeaways": [
+        "Meta denies wrongdoing, and the amount it plans to pay will be spread over a decade.",
+        "The cash is chump change for Meta, which made around $60bn in profit last year.",
+        "What the decision shows, just months after Meta chose to fight its corner in court, and lost significantly, is how the economics of fighting social media litigation have changed."
+      ],
+      "whyItMatters": "Yet for Meta, the owners of Facebook and Instagram, the agreement with 52 US attorneys general to settle claims that it designed its products to be addictive to children, and misled people about their safety, could be described as a win of sorts.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/27/meta-social-media-settlement-18bn-us-child-safety-big-tech-lawsuits",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Near total lunar eclipse will be seen from North and South America Thursday night",
+      "summary": "A near total lunar eclipse will be visible across large swathes of North and South America on Thursday night with millions of people expected to be able to see one of nature’s marvels.",
+      "keyTakeaways": [
+        "In Thursday night’s event 96% of the moon will be darkened by the Earth’s shadow at its peak moment.",
+        "The eclipse will be one known as a “blood moon”, as the Earth’s shadow will appear to be reddish due to the way sunlight is scattered by the Earth’s atmosphere.",
+        "Earlier this month, millions of people across Europe watched a more dramatic solar eclipse where the moon blocked out the sun, plunging parts of the continent into a daytime darkness."
+      ],
+      "whyItMatters": "Lunar eclipses occur when Earth moves between the sun and the moon and its shadow is cast on to the lunar surface.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/27/lunar-eclipse-north-south-america",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "木曜夜、南北アメリカでほぼ皆既の月食",
+          "summary": "木曜の夜、南北アメリカの広い範囲でほぼ皆既に近い月食が見られる。自然が織りなすこの現象を、何百万人もの人々が目にすると見られている。",
+          "keyTakeaways": [
+            "ピーク時には月の九十六パーセントが地球の影に覆われる。",
+            "地球の大気で散乱した太陽光の影響で影が赤みを帯びることから、いわゆる「ブラッドムーン」と呼ばれる現象になる。",
+            "今月初めには欧州各地で太陽が月に隠される皆既日食が観測され、一部地域は昼間から暗闇に包まれた。"
+          ],
+          "whyItMatters": "月食は、太陽と月の間に地球が入り込み、その影が月面に落ちることで起こる。"
+        }
+      }
+    }
+  ]
+}

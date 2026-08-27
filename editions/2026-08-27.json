@@ -101,6 +101,62 @@
               "duration": 2.115918
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "木曜日、トランプ氏がオンタリオ湖の名称を変更する大統領令に署名しました。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい名前は『レイク・アメリカ』です。",
+              "duration": 3.672
+            },
+            {
+              "speaker": "narrator",
+              "text": "連邦機関には、地図や文書、データベースでこの名称を使うよう求めています。",
+              "duration": 6.24
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景にはカナダとの貿易摩擦の激化があります。",
+              "duration": 4.08
+            },
+            {
+              "speaker": "narrator",
+              "text": "就任初日にメキシコ湾を『アメリカ湾』に改称した動きと同じ流れです。",
+              "duration": 5.736
+            },
+            {
+              "speaker": "narrator",
+              "text": "会見場には五大湖の地図が置かれ、赤字で新名称が記されていました。",
+              "duration": 5.808
+            },
+            {
+              "speaker": "narrator",
+              "text": "トランプ氏は米国の農家が400%の関税を課されていると述べました。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "実際には対カナダ農産品輸出の約97%が無関税で取引されています。",
+              "duration": 7.056
+            },
+            {
+              "speaker": "narrator",
+              "text": "割当を超えた卵や乳製品にだけ、カナダ側で最大300%の関税がかかります。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "地名ひとつにも、政治のいまが映し出されているようです。",
+              "duration": 4.344
+            }
+          ]
         }
       }
     },
@@ -200,6 +256,62 @@
               "speaker": "explainer",
               "text": "That's the expectation — El Niño combined with this warming trend makes it almost certain to be a record year.",
               "duration": 5.799184
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "今、太平洋で強いエルニーニョが育っていて、「ゴジラ級」と呼ばれています。",
+              "duration": 5.856
+            },
+            {
+              "speaker": "narrator",
+              "text": "この現象は世界中の天候を大きく揺さぶるとみられています。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい研究によると、その勢いは化石燃料による地球温暖化で強められているそうです。",
+              "duration": 7.056
+            },
+            {
+              "speaker": "narrator",
+              "text": "これまで気候変動がエルニーニョの強さに影響しているかは、はっきり分かっていませんでした。",
+              "duration": 6.312
+            },
+            {
+              "speaker": "narrator",
+              "text": "今回の研究が、その長年の疑問に一つの答えを示しました。",
+              "duration": 4.992
+            },
+            {
+              "speaker": "narrator",
+              "text": "すでに熱波や山火事、洪水に苦しむ国々にとって、これは重い意味を持ちます。",
+              "duration": 6.456
+            },
+            {
+              "speaker": "narrator",
+              "text": "特に、温暖化の原因をほとんど作っていない人たちほど、大きな打撃を受けるといいます。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "エルニーニョは元々、世界の気温を押し上げる働きがあります。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "来年は観測史上最も暑い年になる可能性がほぼ確実だそうです。",
+              "duration": 5.664
+            },
+            {
+              "speaker": "narrator",
+              "text": "朝の空気は変わらなくても、地球の裏側では大きな変化が進んでいます。",
+              "duration": 5.76
             }
           ]
         }
@@ -303,6 +415,62 @@
               "duration": 3.056327
             }
           ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "イギリスのマンチェスター、ロンドン・スタンステッド、イーストミッドランズの3空港がサイバー攻撃を受けました。",
+              "duration": 7.68
+            },
+            {
+              "speaker": "narrator",
+              "text": "約870万人分の顧客データが不正に閲覧されたということです。",
+              "duration": 5.688
+            },
+            {
+              "speaker": "narrator",
+              "text": "運営会社は、乗客の安全や航空保安には影響がなかったと説明しています。",
+              "duration": 6.624
+            },
+            {
+              "speaker": "narrator",
+              "text": "空港の運営自体も通常どおり続けられていました。",
+              "duration": 4.152
+            },
+            {
+              "speaker": "narrator",
+              "text": "攻撃が起きたのは、夏の旅行シーズンの真っ只中でした。",
+              "duration": 4.608
+            },
+            {
+              "speaker": "narrator",
+              "text": "利用者の多い時期だったため、影響を受けた人の数も大きくなっています。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "運営会社のMAGは、リスクを直ちに抑え込んだとしています。",
+              "duration": 5.184
+            },
+            {
+              "speaker": "narrator",
+              "text": "専門家の助言を受けながら、顧客とシステムの保護を進めているそうです。",
+              "duration": 5.376
+            },
+            {
+              "speaker": "narrator",
+              "text": "スタンステッド空港は利用者に対し、空港を名乗る不審な連絡に注意するよう呼びかけました。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "心当たりのないメールや電話には、いつも以上に注意を払っておきたいところです。",
+              "duration": 5.832
+            }
+          ]
         }
       }
     },
@@ -390,6 +558,62 @@
               "speaker": "explainer",
               "text": "Exactly. It's manageable now, but the broader pressure on Meta isn't going away.",
               "duration": 4.362449
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "Metaが52の米州司法長官との間で、180億ドルの支払いに合意したという話です。",
+              "duration": 7.272
+            },
+            {
+              "speaker": "narrator",
+              "text": "子どもたちを依存させる設計をし、安全性について誤解を与えていたという訴えに関するものです。",
+              "duration": 7.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "Meta側はいまも不正行為を否定していますが、支払いは十年ほどに分けて行うとされています。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "この金額だけを見れば大きく感じますが、Metaは昨年およそ600億ドルの利益を上げています。",
+              "duration": 7.032
+            },
+            {
+              "speaker": "narrator",
+              "text": "つまり同社にとっては、痛みというより整理費用のような規模だと言えます。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "興味深いのは、わずか数か月前まで法廷で争う姿勢を見せていたことです。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "その裁判では大きく敗れていて、今回の和解はそこからの方針転換にも見えます。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "訴訟を続けるより、早めに手を打つ方が得策だという判断が働いたのでしょう。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "こうした計算は、これから他の企業にも広がっていくかもしれません。",
+              "duration": 5.16
+            },
+            {
+              "speaker": "narrator",
+              "text": "静かな朝ですが、テクノロジー企業を取り巻く空気は少しずつ変わりつつあります。",
+              "duration": 6.192
             }
           ]
         }
@@ -491,6 +715,62 @@
               "speaker": "explainer",
               "text": "It is. Millions are expected to see this one.",
               "duration": 2.533878
+            }
+          ]
+        },
+        "ja": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "木曜の夜、南北アメリカの空に大きな天体ショーが訪れます。",
+              "duration": 5.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "月のおよそ九十六パーセントが地球の影に隠れる、ほぼ皆既に近い月食です。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "大気中で屈折した太陽光の影響で、影が赤く染まるため「ブラッドムーン」と呼ばれます。",
+              "duration": 7.104
+            },
+            {
+              "speaker": "narrator",
+              "text": "好条件のため、肉眼でも十分に楽しめる見込みです。",
+              "duration": 4.632
+            },
+            {
+              "speaker": "narrator",
+              "text": "地球が太陽の光を遮る位置に来ると、その影が月面に届きます。",
+              "duration": 5.568
+            },
+            {
+              "speaker": "narrator",
+              "text": "これが月食という現象の仕組みです。",
+              "duration": 3.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "今月初めには欧州で、逆に太陽が月に隠れる皆既日食が起きました。",
+              "duration": 6.072
+            },
+            {
+              "speaker": "narrator",
+              "text": "あの時は昼間なのに、一部地域が暗闇に包まれました。",
+              "duration": 4.824
+            },
+            {
+              "speaker": "narrator",
+              "text": "短い間に、月と太陽それぞれの姿が変わる瞬間を人々は目にしたことになります。",
+              "duration": 6.84
+            },
+            {
+              "speaker": "narrator",
+              "text": "空を見上げるだけで、宇宙の動きを身近に感じられる夜です。",
+              "duration": 5.016
             }
           ]
         }

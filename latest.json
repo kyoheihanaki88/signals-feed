@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -8,141 +8,97 @@
       "importance": 1,
       "lead": true,
       "category": "WORLD",
-      "source": "CBS News (U.S.)",
-      "headline": "Dolly Parton, country music legend, dies at 80 after brief cancer battle",
-      "summary": "Dolly Parton, one of the most groundbreaking and successful musicians in the history of country music, with a hitmaking career that spanned six decades and launched her into TV and movie stardom, died Tuesday after a brief cancer battle.",
+      "source": "The Guardian (World)",
+      "headline": "Trump signs executive order to rename Lake Ontario as Lake America",
+      "summary": "Donald Trump signed an executive order on Thursday directing the federal government to rename Lake Ontario, making it Lake America, amid his escalating trade war with Canada.",
       "keyTakeaways": [
-        "Parton later assured fans by saying that she wasn't sick and was OK.",
-        "At the White House, President Trump called her death \"a true loss for millions of people\" and ordered the American flag lowered across the country starting Tuesday evening.",
-        "Linda Ronstadt, who worked with Parton and Emmylou Harris on 1987's \"Trio\" album, was among the stars mourning Parton."
+        "The order directs federal agencies to adopt the name-change on US maps, documents and databases.",
+        "The move follows a similar action the president took on the first day of his second term in office, when he signed an order renaming the Gulf of Mexico as the “Gulf of America”.",
+        "Propped behind him was a large map of the Great Lakes region, with “Lake America” printed in red lettering above Lake Ontario."
       ],
-      "whyItMatters": "Last October, Parton's sister Freida Parton sparked concerns about the star's health when she took to social media asking for prayers for her sister.",
-      "originalURL": "https://www.cbsnews.com/news/dolly-parton-dies-age-80-country-music-star/",
-      "readTime": 9,
-      "imageURL": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The crossing",
+      "whyItMatters": "Trump claimed that American farmers are being charged a 400% tariff; about 97% of US agricultural exports to Canada enter duty-free under the US-Mexico-Canada Agreement, though over-quota eggs, milk and dairy have Canadian tariffs of up to 300%.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/27/trump-renames-lake-ontario-america",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Soft light",
       "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ氏、オンタリオ湖を『レイク・アメリカ』に改称する大統領令に署名",
+          "summary": "ドナルド・トランプ氏は木曜日、オンタリオ湖の名称を『レイク・アメリカ』に変更するよう連邦政府に指示する大統領令に署名した。カナダとの貿易摩擦が激化するなかでの動きだ。",
+          "keyTakeaways": [
+            "大統領令は、連邦機関が地図や文書、データベースでこの新名称を採用するよう求めている。",
+            "今回の措置は、大統領が二期目就任初日にメキシコ湾を『アメリカ湾』と改称する命令に署名した経緯を踏まえたものだ。",
+            "会見の背後には五大湖地域の大きな地図が置かれ、オンタリオ湖の上に赤字で『レイク・アメリカ』と記されていた。"
+          ],
+          "whyItMatters": "トランプ氏は米国の農家が400%の関税を課されていると主張したが、実際には米国農産品の対カナダ輸出の約97%が米国・メキシコ・カナダ協定のもとで無関税であり、割当量を超えた卵や牛乳、乳製品にはカナダ側で最大300%の関税がかかるにすぎない。"
+        }
+      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "I saw the news about Dolly Parton. Is it true?",
-              "duration": 2.507755
+              "text": "So Lake Ontario has a new name now?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "Reports say she died Tuesday after a brief cancer battle, at 80.",
-              "duration": 3.343673
+              "text": "On US federal maps and documents, yes. Trump signed an executive order renaming it Lake America.",
+              "duration": 5.746939
             },
             {
               "speaker": "listener",
-              "text": "That's hard to hear. She seemed so present in everyone's lives.",
-              "duration": 3.892245
+              "text": "Just like that, by order?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "She was. Six decades in country music, plus TV and film success.",
-              "duration": 3.94449
+              "text": "That's right. It directs federal agencies to update their maps, documents and databases with the new name.",
+              "duration": 5.041633
             },
             {
               "speaker": "listener",
-              "text": "Wait, didn't she say something about not being sick recently?",
-              "duration": 3.160816
+              "text": "Has he done something like this before?",
+              "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, she later told fans she wasn't sick and was okay.",
-              "duration": 3.186939
+              "text": "Yes, on his first day back in office he renamed the Gulf of Mexico the Gulf of America.",
+              "duration": 4.623673
             },
             {
               "speaker": "listener",
-              "text": "So there's some confusion right now about her condition.",
+              "text": "Why do this now, with Lake Ontario?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It comes amid his trade war with Canada. He even signed the order in front of a Great Lakes map with 'Lake America' printed over it.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there something behind the trade dispute itself?",
               "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "It does seem that way, with different accounts circulating.",
-              "duration": 2.951837
+              "text": "He's claimed farmers face a 400% tariff, though most US agricultural exports to Canada actually enter duty-free. Some items, like over-quota eggs and dairy, do face steep Canadian tariffs.",
+              "duration": 10.893061
             },
             {
               "speaker": "listener",
-              "text": "I noticed her sister had asked for prayers back in October.",
-              "duration": 3.343673
+              "text": "So the name change is really tied to that bigger dispute.",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "Right, Freida Parton raised health concerns for her back then.",
-              "duration": 3.004082
-            },
-            {
-              "speaker": "listener",
-              "text": "And I heard the White House responded too.",
-              "duration": 2.220408
-            },
-            {
-              "speaker": "explainer",
-              "text": "President Trump called it a loss for millions and ordered flags lowered.",
-              "duration": 3.709388
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "カントリー音楽の伝説、ドリー・パートンさんが火曜日に亡くなりました。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "80歳で、短い闘病の末のことだったといいます。",
-              "duration": 4.416
-            },
-            {
-              "speaker": "narrator",
-              "text": "六十年にわたり数々のヒット曲を生み出してきた歌手です。",
-              "duration": 4.56
-            },
-            {
-              "speaker": "narrator",
-              "text": "その活躍は音楽だけでなく、テレビや映画の世界にも広がりました。",
-              "duration": 5.4
-            },
-            {
-              "speaker": "narrator",
-              "text": "去年十月、妹のフレイダさんが健康を心配する声を発信していました。",
-              "duration": 6.0
-            },
-            {
-              "speaker": "narrator",
-              "text": "当時パートンさん自身は、病気ではないと周囲に伝えていたそうです。",
-              "duration": 5.112
-            },
-            {
-              "speaker": "narrator",
-              "text": "ホワイトハウスでトランプ大統領は、多くの人にとって大きな損失だと述べました。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "国内の星条旗を、この日の夕方から半旗にするよう指示しました。",
-              "duration": 5.28
-            },
-            {
-              "speaker": "narrator",
-              "text": "かつて「Trio」というアルバムを共にしたリンダ・ロンシュタットさんも、追悼の言葉を寄せています。",
-              "duration": 7.176
-            },
-            {
-              "speaker": "narrator",
-              "text": "長年愛された歌声が、静かに幕を閉じました。",
-              "duration": 4.224
+              "text": "It seems to be part of the same moment, yes.",
+              "duration": 2.115918
             }
           ]
         }
@@ -152,149 +108,98 @@
       "number": 2,
       "importance": 2,
       "lead": false,
-      "category": "TECH",
-      "source": "The Guardian (Technology)",
-      "headline": "Clive Barker’s Hellraiser: Revival – a game so grotesque it scares its own director",
-      "summary": "I f a horror game gives its own director a physical reaction, it’s probably doing something right.",
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "El Niño climate patterns supercharged by burning of fossil fuels, study finds",
+      "summary": "A series of strong El Niño climatic patterns in recent decades, such as the “Godzilla” event currently brewing that is set to warp weather around the world, have been supercharged by the broader overheating of the planet caused by the burning of fossil fuels, a major new study has found.",
       "keyTakeaways": [
-        "Rather than tone the scary images down, he fed them straight into Clive Barker’s Hellraiser: Revival.",
-        "The forthcoming first-person action-horror game drops players into a new story in Barker’s universe.",
-        "Clive Barker himself helped shape the characters, themes and rules of the universe, before staying on as an adviser as the story became a game."
+        "That is bad news for climate hazards and for people, particularly those who are badly impacted and yet have done little to cause climate change.”",
+        "The findings could help provide an answer to one of the more vexing questions in climate science, which has until now been unclear, on whether the climate crisis is significantly changing the strength of El Niño events.",
+        "Such a scenario is set to have profound impacts upon countries already dealing with growing incidences of heatwaves, wildfires and flooding worsened by the climate crisis."
       ],
-      "whyItMatters": "While researching the images people find hardest to look at, game director Emil Esov discovered he has trypophobia – a fear of clusters of small holes.",
-      "originalURL": "https://www.theguardian.com/games/2026/aug/26/clive-barkers-hellraiser-revival",
-      "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The studio",
+      "whyItMatters": "It’s well understood that El Niño, which typically brings a surge of global heat, further amplifies the escalating climate crisis, with next year almost certain to be the hottest on record globally.",
+      "originalURL": "https://www.theguardian.com/environment/2026/aug/27/el-nino-climate-patterns-fossil-fuels",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "『ヘルレイザー:リヴァイヴァル』、監督さえも怯えさせる禍々しさ",
-          "summary": "ホラーゲームが監督自身の体を震わせるなら、それはうまくいっている証だろう。",
+          "headline": "エルニーニョを強めるのは、化石燃料が生む温暖化",
+          "summary": "近年、強力なエルニーニョ現象が相次いでいる。目下発達中で世界の気象を乱すとされる「ゴジラ級」もその一つだ。新たな大規模研究により、こうした現象は化石燃料の燃焼による地球全体の温暖化によって増幅されていることがわかった。",
           "keyTakeaways": [
-            "恐ろしい映像を和らげるどころか、そのまま『クライヴ・バーカーのヘルレイザー:リヴァイヴァル』に注ぎ込んだ。",
-            "発売予定の一人称視点アクションホラーは、バーカーの世界観に新たな物語を描く。",
-            "クライヴ・バーカー自身がキャラクターやテーマ、世界のルールづくりに携わり、ゲーム化以降はアドバイザーとして関わり続けた。"
+            "気候による被害は深刻化しており、とりわけその原因をほとんど作っていない人々ほど大きな打撃を受けるという。",
+            "気候変動がエルニーニョの強さを実質的に変えているのかどうかは、これまで気候科学における未解決の難問だったが、今回の研究がその手がかりを示した。",
+            "猛暑や山火事、洪水がすでに深刻化している国々にとって、この事態は重大な影響を及ぼす見通しだ。"
           ],
-          "whyItMatters": "人が最も直視しづらい映像を調べるうち、監督のエミル・エソフは自分が集合体恐怖症だと気づいた。"
+          "whyItMatters": "世界的な高温をもたらすエルニーニョが進行中の気候危機をさらに強めることはすでによく知られており、来年は観測史上最も暑い年になることがほぼ確実視されている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So the director of this horror game actually scares himself with it?",
-              "duration": 3.761633
+              "text": "So El Niño isn't just a natural cycle anymore?",
+              "duration": 2.76898
             },
             {
               "speaker": "explainer",
-              "text": "He does. While researching unsettling images, Emil Esov discovered he has trypophobia — a fear of clusters of small holes.",
-              "duration": 8.724898
+              "text": "It's still natural, but this study finds it's being supercharged by fossil fuel warming.",
+              "duration": 4.545306
             },
             {
               "speaker": "listener",
-              "text": "And instead of softening those images, he used them anyway?",
-              "duration": 3.526531
+              "text": "Supercharged how, exactly?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. Rather than tone them down, he fed them straight into the game, Clive Barker's Hellraiser: Revival.",
-              "duration": 5.851429
+              "text": "The strong El Niño events of recent decades appear stronger because of the planet's overall overheating.",
+              "duration": 5.093878
             },
             {
               "speaker": "listener",
-              "text": "Is this connected to the original Hellraiser story, or something new?",
-              "duration": 4.179592
+              "text": "Is there one happening right now?",
+              "duration": 1.671837
             },
             {
               "speaker": "explainer",
-              "text": "It's a new story, but set in Clive Barker's universe. It's a first-person action-horror game.",
-              "duration": 5.616327
+              "text": "Yes, researchers describe a major one currently brewing, set to affect weather worldwide.",
+              "duration": 4.963265
             },
             {
               "speaker": "listener",
-              "text": "Was Barker himself involved, or just lending his name?",
-              "duration": 3.108571
+              "text": "Why does this finding matter so much to scientists?",
+              "duration": 2.925714
             },
             {
               "speaker": "explainer",
-              "text": "He was quite involved. He helped shape the characters, themes, and rules of the universe.",
-              "duration": 4.675918
+              "text": "It helps answer a long-unclear question: whether climate change is actually changing how strong El Niño gets.",
+              "duration": 5.982041
             },
             {
               "speaker": "listener",
-              "text": "Did he stay on once it moved from concept to actual game?",
-              "duration": 3.291429
+              "text": "And who ends up dealing with the fallout?",
+              "duration": 1.933061
             },
             {
               "speaker": "explainer",
-              "text": "He did — he continued on as an adviser as the story became a game.",
-              "duration": 3.892245
+              "text": "Countries already facing heatwaves, wildfires, and flooding — often people who've contributed least to causing this.",
+              "duration": 6.452245
             },
             {
               "speaker": "listener",
-              "text": "So the goal really is to unsettle people, not just entertain them.",
-              "duration": 3.94449
+              "text": "So next year could be especially hot.",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "That seems to be the idea — if it can affect its own director, it's likely doing what it set out to do.",
-              "duration": 5.694694
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "新作ホラーゲーム『クライヴ・バーカーのヘルレイザー:リヴァイヴァル』の制作が進んでいます。",
-              "duration": 6.768
-            },
-            {
-              "speaker": "narrator",
-              "text": "監督のエミル・エソフ氏は、自分自身も怖がるほどの映像を作品に取り入れました。",
-              "duration": 6.552
-            },
-            {
-              "speaker": "narrator",
-              "text": "恐怖の映像を調べる過程で、彼は集合体恐怖症だと気づいたそうです。",
-              "duration": 6.024
-            },
-            {
-              "speaker": "narrator",
-              "text": "小さな穴が集まった形を見ると強い不快感を覚える症状です。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "怖さを和らげるのではなく、その感覚をそのままゲームに注ぎ込んだといいます。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "本作は一人称視点のアクションホラーで、バーカーの世界に新たな物語を描きます。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "原作者のクライヴ・バーカー自身も、キャラクターや世界観づくりに関わりました。",
-              "duration": 6.192
-            },
-            {
-              "speaker": "narrator",
-              "text": "映像化が進んだ後もアドバイザーとして参加を続けたそうです。",
-              "duration": 5.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "恐怖の質にまでこだわった作品が、どんな体験を届けるのか楽しみです。",
-              "duration": 5.592
+              "text": "That's the expectation — El Niño combined with this warming trend makes it almost certain to be a record year.",
+              "duration": 5.799184
             }
           ]
         }
@@ -304,154 +209,98 @@
       "number": 3,
       "importance": 3,
       "lead": false,
-      "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "At least 14 newborn babies die in fire at Pakistan hospital’s maternity ward",
-      "summary": "At least 14 newborn babies have died in a fire that broke out in the maternity ward at one of Pakistan’s most prominent state hospitals.",
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Three UK airports hit by cyber-attack with data of 8.7m customers accessed",
+      "summary": "Manchester, London Stansted and East Midlands airports have been hit by a cyber-attack in which hackers accessed the data of about 8.7 million customers.",
       "keyTakeaways": [
-        "A statement by the hospital administration confirmed that 14 newborn babies had died in the fire.",
-        "Hospital spokesperson Dr Aneeza Jalil told Dawn newspaper that 15 babies were on the ward at the time and that “one baby was saved by a doctor”.",
-        "The health minister, Mustafa Kamal, said many of the babies had been in incubators or on oxygen, and that the oxygen canisters had exacerbated the fire."
+        "The company said that “at no point has passenger safety or aviation security been compromised” during the incident and operations at the airports were unaffected.",
+        "In an email to customers, London Stansted said: “We would urge you to be particularly cautious of unexpected emails, calls or text messages claiming to be from us.",
+        "The cyber-attack hit the airports during the peak summer travel season."
       ],
-      "whyItMatters": "The blaze began in the early hours of Wednesday and engulfed the ward at Pakistan Institute of Medical Sciences, the biggest state hospital in Islamabad.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/26/newborn-babies-die-fire-pakistan-hospital-maternity-ward",
-      "readTime": 2,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "whyItMatters": "A MAG spokesperson said the company had “immediately contained the risk” from the incident and was “working with specialist advisers and taking appropriate steps to protect our customers and systems”.",
+      "originalURL": "https://www.theguardian.com/business/2026/aug/27/uk-airports-operator-cyber-attack-customer-data-accessed",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The team",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "パキスタンの病院、新生児室火災で14人死亡",
-          "summary": "パキスタンを代表する国立病院のひとつで、新生児室から出火する火災が発生し、少なくとも新生児14人が死亡した。",
+          "headline": "英国の空港3カ所でサイバー攻撃、顧客データ870万人分に影響",
+          "summary": "英国のマンチェスター、ロンドン・スタンステッド、イーストミッドランズの3空港がサイバー攻撃を受け、約870万人分の顧客データが不正に閲覧された。",
           "keyTakeaways": [
-            "病院当局の発表により、火災で新生児14人が死亡したことが確認された。",
-            "病院広報のアニーザ・ジャリル医師はダウン紙に対し、当時病棟には15人の赤ちゃんがおり、「医師の手で1人が助け出された」と語った。",
-            "保健相ムスタファ・カマル氏によると、赤ちゃんの多くは保育器や酸素吸入下にあり、酸素ボンベが火の勢いを強めたという。"
+            "運営会社は、乗客の安全や航空保安が損なわれたことはなく、空港運営にも影響はなかったとしている。",
+            "スタンステッド空港は顧客宛のメールで、同空港を名乗る不審な連絡には特に注意するよう呼びかけた。",
+            "攻撃が発生したのは夏の旅行シーズン真っ盛りの時期だった。"
           ],
-          "whyItMatters": "火災は水曜未明に発生し、イスラマバード最大の国立病院、パキスタン医科学研究所の病棟を焼いた。"
+          "whyItMatters": "運営会社MAGは、リスクを直ちに抑え込み、専門家の助言を得ながら顧客とシステムの保護に努めていると説明している。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "This is a hard one to read. What actually happened?",
-              "duration": 2.873469
+              "text": "So three UK airports were hit by a cyber-attack?",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "A fire broke out in the maternity ward at a major state hospital in Islamabad, early Wednesday morning.",
-              "duration": 5.32898
+              "text": "Yes, Manchester, London Stansted, and East Midlands. Data from about 8.7 million customers was accessed.",
+              "duration": 6.530612
             },
             {
               "speaker": "listener",
-              "text": "How many babies were affected?",
-              "duration": 1.48898
+              "text": "That's a lot of people. Were any flights affected?",
+              "duration": 2.821224
             },
             {
               "speaker": "explainer",
-              "text": "The hospital says 15 newborns were on the ward at the time. At least 14 died.",
+              "text": "No, the company said operations weren't disrupted, and passenger safety or aviation security wasn't compromised.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "So it was really about data, not the airports themselves.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. And this happened during the busy summer travel season, when a lot of people are flying.",
               "duration": 4.780408
             },
             {
               "speaker": "listener",
-              "text": "Was anyone able to help them?",
-              "duration": 1.619592
+              "text": "What's the company doing about it now?",
+              "duration": 1.750204
             },
             {
               "speaker": "explainer",
-              "text": "A hospital spokesperson said one baby was saved, pulled out by a doctor.",
-              "duration": 4.075102
+              "text": "A MAG spokesperson said they immediately contained the risk and are working with specialist advisers to protect customers and systems.",
+              "duration": 6.922449
             },
             {
               "speaker": "listener",
-              "text": "Do we know what made the fire so severe?",
+              "text": "Did they tell customers anything directly?",
               "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "The health minister said many babies were in incubators or on oxygen, and the oxygen canisters made the fire worse.",
-              "duration": 6.817959
+              "text": "Yes, London Stansted emailed customers urging caution around unexpected emails, calls, or texts claiming to be from them.",
+              "duration": 7.366531
             },
             {
               "speaker": "listener",
-              "text": "Where did this happen exactly?",
-              "duration": 1.671837
+              "text": "So the real risk now is people getting targeted afterward.",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "At the Pakistan Institute of Medical Sciences, the country's largest state hospital.",
-              "duration": 4.205714
-            },
-            {
-              "speaker": "listener",
-              "text": "It's just devastating to think about.",
-              "duration": 2.037551
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is. A family's most hopeful moment turned into unimaginable loss.",
-              "duration": 4.493061
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "パキスタンの首都イスラマバードで、痛ましい火災が起きました。",
-              "duration": 4.536
-            },
-            {
-              "speaker": "narrator",
-              "text": "国内最大級の国立病院、パキスタン医科学研究所の新生児室が炎に包まれました。",
-              "duration": 7.44
-            },
-            {
-              "speaker": "narrator",
-              "text": "出火は水曜日の未明で、少なくとも新生児14人が亡くなりました。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "病棟には当時15人の赤ちゃんがいて、助かったのは1人だけでした。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "病院広報のアニーザ・ジャリル医師によると、その1人は医師が救い出したそうです。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "保健相のムスタファ・カマル氏は、多くの子どもが保育器や酸素吸入下にあったと説明しています。",
-              "duration": 7.2
-            },
-            {
-              "speaker": "narrator",
-              "text": "酸素ボンベに引火し、火の勢いを強めてしまったといいます。",
-              "duration": 4.752
-            },
-            {
-              "speaker": "narrator",
-              "text": "新生児という最も守られるべき命が、医療の現場で失われました。",
-              "duration": 5.616
-            },
-            {
-              "speaker": "narrator",
-              "text": "病院の安全管理のあり方が、これから問われることになりそうです。",
-              "duration": 5.04
-            },
-            {
-              "speaker": "narrator",
-              "text": "静かに手を合わせたくなるような、朝の知らせです。",
-              "duration": 4.128
+              "text": "Exactly, that's why they're asking everyone to stay alert.",
+              "duration": 3.056327
             }
           ]
         }
@@ -463,142 +312,84 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "In China, talking to AI is normal. Now the government fears it might replace human intimacy",
-      "summary": "She had been talking to Wang Ye every day since she created him in January.",
+      "headline": "An $18bn settlement is a drop in the ocean for Meta – but the tide will still come for it | Chris Stokel-Walker",
+      "summary": "N ot many people would count paying $18bn they didn’t expect to when they woke up that morning as a victory.",
       "keyTakeaways": [
-        "In China, talking to AI is normal.",
-        "The saga prompted outrage on social media and highlighted the tensions in China between the widespread use of AI and its potential social consequences.",
-        "No country has rolled out AI as comprehensively and as enthusiastically as China; the country’s demographic challenges are forcing the government to turn to technology to solve future labour shortages."
+        "Meta denies wrongdoing, and the amount it plans to pay will be spread over a decade.",
+        "The cash is chump change for Meta, which made around $60bn in profit last year.",
+        "What the decision shows, just months after Meta chose to fight its corner in court, and lost significantly, is how the economics of fighting social media litigation have changed."
       ],
-      "whyItMatters": "It has warned companies against offering services that “replace social interaction”.",
-      "originalURL": "https://www.theguardian.com/world/2026/aug/26/china-ai-companion-relationships-marriage-birth-rate-concern",
+      "whyItMatters": "Yet for Meta, the owners of Facebook and Instagram, the agreement with 52 US attorneys general to settle claims that it designed its products to be addictive to children, and misled people about their safety, could be described as a win of sorts.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/27/meta-social-media-settlement-18bn-us-child-safety-big-tech-lawsuits",
       "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
-      "localized": {
-        "ja": {
-          "headline": "AIとの対話が日常の中国、政府が懸念する『親密さの代替』",
-          "summary": "彼女は一月にAI「王野」を作り出して以来、毎日彼と言葉を交わしてきた。",
-          "keyTakeaways": [
-            "中国ではAIとの対話はすでに日常の一部だ。",
-            "この出来事はSNSで反発を呼び、AIの普及とその社会的影響のあいだにある中国社会の緊張を浮き彫りにした。",
-            "AIをここまで包括的かつ積極的に導入した国はない。人口構成の課題が、将来の労働力不足を技術で補おうとする政府の姿勢を後押ししている。"
-          ],
-          "whyItMatters": "政府は「社会的な関わりの代替」となるサービスの提供について、企業に警告を発している。"
-        }
-      },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So people in China are talking to AI companions every day, like they're real friends?",
-              "duration": 4.545306
+              "text": "So Meta is paying $18 billion? That sounds huge.",
+              "duration": 3.343673
             },
             {
               "speaker": "explainer",
-              "text": "Yes, one woman created an AI she calls Wang Ye back in January and has spoken to him daily since.",
-              "duration": 6.765714
+              "text": "It is a big number, but it's spread over a decade, and Meta denies any wrongdoing.",
+              "duration": 4.362449
             },
             {
               "speaker": "listener",
-              "text": "That sounds so normal there, not strange at all?",
-              "duration": 2.925714
+              "text": "What was the settlement actually about?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "Right, using AI this way is widespread in China, more than almost anywhere else.",
-              "duration": 4.623673
+              "text": "It resolves claims from 52 US attorneys general that Meta designed products to be addictive to children and misled people about their safety.",
+              "duration": 8.437551
             },
             {
               "speaker": "listener",
-              "text": "But something happened that got people upset?",
+              "text": "If they deny wrongdoing, why settle at all?",
               "duration": 2.507755
             },
             {
               "speaker": "explainer",
-              "text": "Yes, a particular saga sparked outrage online and exposed real tension around AI's growing role.",
-              "duration": 5.511837
+              "text": "Because Meta made around $60bn in profit last year, so this payment is fairly small for them financially.",
+              "duration": 5.694694
             },
             {
               "speaker": "listener",
-              "text": "What's the government's concern exactly?",
-              "duration": 2.037551
+              "text": "Didn't they try fighting this kind of case before?",
+              "duration": 2.586122
             },
             {
               "speaker": "explainer",
-              "text": "They've warned companies not to offer services that replace human social interaction.",
-              "duration": 4.127347
+              "text": "Yes, just months ago Meta fought a similar case in court and lost significantly.",
+              "duration": 4.022857
             },
             {
               "speaker": "listener",
-              "text": "Is this tied to something bigger, like the population itself?",
+              "text": "So settling now looks like a smarter move?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems that way. The economics of fighting these cases have clearly shifted for Meta.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "So this settlement is really just one part of a longer story.",
               "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "It is. China's demographic challenges are pushing it to rely on technology to fill future labor shortages.",
-              "duration": 6.086531
-            },
-            {
-              "speaker": "listener",
-              "text": "So they need the technology, but worry about what it replaces.",
-              "duration": 3.160816
-            },
-            {
-              "speaker": "explainer",
-              "text": "Exactly, that's the tension at the heart of it all.",
-              "duration": 2.690612
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "中国では、AIと言葉を交わすことがもう日常の風景になっています。",
-              "duration": 5.544
-            },
-            {
-              "speaker": "narrator",
-              "text": "ある女性は一月に作り出したAI「王野」と、毎日会話を続けてきました。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "この出来事はSNSで大きな反発を呼びました。",
-              "duration": 4.344
-            },
-            {
-              "speaker": "narrator",
-              "text": "AIがどこまで普及しても構わないのか、その線引きを中国社会に問いかけたのです。",
-              "duration": 6.384
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景には、世界のどの国よりも積極的にAIを取り入れてきた中国の姿があります。",
-              "duration": 6.912
-            },
-            {
-              "speaker": "narrator",
-              "text": "人口構成の変化による将来の労働力不足を、技術の力で埋め合わせようとしているからです。",
-              "duration": 7.104
-            },
-            {
-              "speaker": "narrator",
-              "text": "その一方で政府は、人と人との関わりを代替してしまうサービスに対し、企業へ警告を発しました。",
-              "duration": 7.632
-            },
-            {
-              "speaker": "narrator",
-              "text": "便利さと寂しさの境目を、私たち自身も見つめ直す時期に来ているのかもしれません。",
-              "duration": 6.336
+              "text": "Exactly. It's manageable now, but the broader pressure on Meta isn't going away.",
+              "duration": 4.362449
             }
           ]
         }
@@ -610,147 +401,96 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "The Guardian (Science)",
-      "headline": "Sand overextraction weakening riverbanks as concrete demand soars",
-      "summary": "A booming demand for concrete has resulted in sand and gravel being extracted from riverbeds faster than nature can replenish it.",
+      "headline": "Near total lunar eclipse will be seen from North and South America Thursday night",
+      "summary": "A near total lunar eclipse will be visible across large swathes of North and South America on Thursday night with millions of people expected to be able to see one of nature’s marvels.",
       "keyTakeaways": [
-        "In 2024, city-building and infrastructure projects around the world turned 28bn tonnes of sand and gravel into concrete.",
-        "The researchers suggest that satellite imaging and river mapping can be used to better manage sand and gravel mining, helping to minimise negative impacts.",
-        "They found much of the material was being extracted from rivers across Asia and Africa."
+        "In Thursday night’s event 96% of the moon will be darkened by the Earth’s shadow at its peak moment.",
+        "The eclipse will be one known as a “blood moon”, as the Earth’s shadow will appear to be reddish due to the way sunlight is scattered by the Earth’s atmosphere.",
+        "Earlier this month, millions of people across Europe watched a more dramatic solar eclipse where the moon blocked out the sun, plunging parts of the continent into a daytime darkness."
       ],
-      "whyItMatters": "A study published in Reviews of Geophysics shows that the demand for sand and gravel has more than doubled in the last two decades, with overextraction leading to weaker riverbanks, lower groundwater levels, coastal salt intrusion and poorer water quality.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/26/terrawatch-sand-overextraction-riverbanks-concrete-demand",
+      "whyItMatters": "Lunar eclipses occur when Earth moves between the sun and the moon and its shadow is cast on to the lunar surface.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/27/lunar-eclipse-north-south-america",
       "readTime": 1,
-      "imageURL": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Research",
+      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The academy",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "砂利採取の加速、川岸を脅かす",
-          "summary": "コンクリート需要の急増により、川底や川岸から砂利が採取される速度が、自然の補充力を上回っている。",
+          "headline": "木曜夜、南北アメリカでほぼ皆既の月食",
+          "summary": "木曜の夜、南北アメリカの広い範囲でほぼ皆既に近い月食が見られる。自然が織りなすこの現象を、何百万人もの人々が目にすると見られている。",
           "keyTakeaways": [
-            "2024年、世界各地の都市開発や社会基盤整備は280億トンの砂利をコンクリートへと変えた。",
-            "研究者は、衛星画像や河川地図を活用すれば砂利採取をより適切に管理し、悪影響を抑えられると指摘する。",
-            "採取される砂利の多くは、アジアとアフリカの河川から得られていることが分かった。"
+            "ピーク時には月の九十六パーセントが地球の影に覆われる。",
+            "地球の大気で散乱した太陽光の影響で影が赤みを帯びることから、いわゆる「ブラッドムーン」と呼ばれる現象になる。",
+            "今月初めには欧州各地で太陽が月に隠される皆既日食が観測され、一部地域は昼間から暗闇に包まれた。"
           ],
-          "whyItMatters": "学術誌「レビューズ・オブ・ジオフィジックス」に掲載された研究によれば、砂利需要はこの二十年で二倍以上に増え、過剰採取が河岸の脆弱化や地下水位の低下、沿岸部への海水侵入、水質悪化を招いている。"
+          "whyItMatters": "月食は、太陽と月の間に地球が入り込み、その影が月面に落ちることで起こる。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "Sand is running out? That sounds strange, there's so much of it.",
-              "duration": 3.94449
+              "text": "So what's happening Thursday night?",
+              "duration": 2.089796
             },
             {
               "speaker": "explainer",
-              "text": "It's more about the right kind of sand. Concrete needs sand and gravel from rivers, not deserts.",
-              "duration": 5.250612
+              "text": "A near total lunar eclipse, visible across North and South America.",
+              "duration": 3.709388
             },
             {
               "speaker": "listener",
-              "text": "And we're using a lot of it?",
-              "duration": 1.515102
+              "text": "Near total? How close does it get?",
+              "duration": 2.115918
             },
             {
               "speaker": "explainer",
-              "text": "In 2024 alone, building and infrastructure projects used about 28 billion tonnes of sand and gravel worldwide.",
-              "duration": 6.112653
+              "text": "At its peak, 96% of the moon will be darkened by Earth's shadow.",
+              "duration": 4.127347
             },
             {
               "speaker": "listener",
-              "text": "Where's most of it coming from?",
-              "duration": 1.697959
+              "text": "Why does that happen exactly?",
+              "duration": 1.48898
             },
             {
               "speaker": "explainer",
-              "text": "A lot is being pulled from rivers across Asia and Africa, often faster than nature can replace it.",
-              "duration": 5.146122
+              "text": "Earth moves between the sun and moon, casting its shadow onto the lunar surface.",
+              "duration": 4.675918
             },
             {
               "speaker": "listener",
-              "text": "What happens when it's taken too quickly?",
-              "duration": 2.037551
+              "text": "I've heard people call these 'blood moons.' Why is that?",
+              "duration": 3.056327
             },
             {
               "speaker": "explainer",
-              "text": "Riverbanks weaken, groundwater drops, and in coastal areas salt can seep into the water supply.",
-              "duration": 5.746939
+              "text": "The shadow appears reddish, because of how sunlight scatters through Earth's atmosphere.",
+              "duration": 4.257959
             },
             {
               "speaker": "listener",
-              "text": "Is there a way to manage this better?",
-              "duration": 2.272653
+              "text": "Is this connected to that solar eclipse people saw over Europe?",
+              "duration": 3.709388
             },
             {
               "speaker": "explainer",
-              "text": "Researchers suggest using satellite imaging and river mapping to track extraction and reduce the damage.",
-              "duration": 5.433469
+              "text": "Different event, but related. That one saw the moon block the sun, bringing daytime darkness to parts of the continent.",
+              "duration": 6.086531
             },
             {
               "speaker": "listener",
-              "text": "So it's about watching more closely, not stopping altogether.",
-              "duration": 3.474286
+              "text": "Sounds like a good week for skywatchers.",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "Exactly, understanding where the limits are before rivers pay the price.",
-              "duration": 4.205714
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-26/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "世界各地の川で、砂利が自然のペースを超えて採り尽くされています。",
-              "duration": 5.256
-            },
-            {
-              "speaker": "narrator",
-              "text": "2024年だけで280億トンもの砂利がコンクリートに姿を変えました。",
-              "duration": 6.144
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景にあるのは、都市開発やインフラ整備を支える建設ラッシュです。",
-              "duration": 5.448
-            },
-            {
-              "speaker": "narrator",
-              "text": "砂利需要はこの二十年で二倍以上に膨らんでいます。",
-              "duration": 4.272
-            },
-            {
-              "speaker": "narrator",
-              "text": "採取の多くはアジアとアフリカの河川に集中しているそうです。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "その結果、川岸がもろくなり、地下水位も下がっています。",
-              "duration": 4.752
-            },
-            {
-              "speaker": "narrator",
-              "text": "沿岸では海水が入り込み、水質にも影響が出ています。",
-              "duration": 4.824
-            },
-            {
-              "speaker": "narrator",
-              "text": "研究者は衛星画像や地図を使った管理で被害を減らせると考えています。",
-              "duration": 5.952
-            },
-            {
-              "speaker": "narrator",
-              "text": "私たちが普段目にする建物の裏に、遠い川の変化があるのです。",
-              "duration": 5.352
+              "text": "It is. Millions are expected to see this one.",
+              "duration": 2.533878
             }
           ]
         }

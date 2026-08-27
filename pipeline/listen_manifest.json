@@ -25190,6 +25190,353 @@
           ]
         }
       }
+    },
+    "2026-08-27": {
+      "1": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-27/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Lake Ontario has a new name now?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "On US federal maps and documents, yes. Trump signed an executive order renaming it Lake America.",
+              "duration": 5.746939
+            },
+            {
+              "speaker": "listener",
+              "text": "Just like that, by order?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. It directs federal agencies to update their maps, documents and databases with the new name.",
+              "duration": 5.041633
+            },
+            {
+              "speaker": "listener",
+              "text": "Has he done something like this before?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, on his first day back in office he renamed the Gulf of Mexico the Gulf of America.",
+              "duration": 4.623673
+            },
+            {
+              "speaker": "listener",
+              "text": "Why do this now, with Lake Ontario?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It comes amid his trade war with Canada. He even signed the order in front of a Great Lakes map with 'Lake America' printed over it.",
+              "duration": 6.765714
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there something behind the trade dispute itself?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "He's claimed farmers face a 400% tariff, though most US agricultural exports to Canada actually enter duty-free. Some items, like over-quota eggs and dairy, do face steep Canadian tariffs.",
+              "duration": 10.893061
+            },
+            {
+              "speaker": "listener",
+              "text": "So the name change is really tied to that bigger dispute.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems to be part of the same moment, yes.",
+              "duration": 2.115918
+            }
+          ]
+        }
+      },
+      "2": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-27/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So El Niño isn't just a natural cycle anymore?",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It's still natural, but this study finds it's being supercharged by fossil fuel warming.",
+              "duration": 4.545306
+            },
+            {
+              "speaker": "listener",
+              "text": "Supercharged how, exactly?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "The strong El Niño events of recent decades appear stronger because of the planet's overall overheating.",
+              "duration": 5.093878
+            },
+            {
+              "speaker": "listener",
+              "text": "Is there one happening right now?",
+              "duration": 1.671837
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, researchers describe a major one currently brewing, set to affect weather worldwide.",
+              "duration": 4.963265
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this finding matter so much to scientists?",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "It helps answer a long-unclear question: whether climate change is actually changing how strong El Niño gets.",
+              "duration": 5.982041
+            },
+            {
+              "speaker": "listener",
+              "text": "And who ends up dealing with the fallout?",
+              "duration": 1.933061
+            },
+            {
+              "speaker": "explainer",
+              "text": "Countries already facing heatwaves, wildfires, and flooding — often people who've contributed least to causing this.",
+              "duration": 6.452245
+            },
+            {
+              "speaker": "listener",
+              "text": "So next year could be especially hot.",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the expectation — El Niño combined with this warming trend makes it almost certain to be a record year.",
+              "duration": 5.799184
+            }
+          ]
+        }
+      },
+      "3": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-27/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So three UK airports were hit by a cyber-attack?",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Manchester, London Stansted, and East Midlands. Data from about 8.7 million customers was accessed.",
+              "duration": 6.530612
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of people. Were any flights affected?",
+              "duration": 2.821224
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, the company said operations weren't disrupted, and passenger safety or aviation security wasn't compromised.",
+              "duration": 5.929796
+            },
+            {
+              "speaker": "listener",
+              "text": "So it was really about data, not the airports themselves.",
+              "duration": 3.291429
+            },
+            {
+              "speaker": "explainer",
+              "text": "Right. And this happened during the busy summer travel season, when a lot of people are flying.",
+              "duration": 4.780408
+            },
+            {
+              "speaker": "listener",
+              "text": "What's the company doing about it now?",
+              "duration": 1.750204
+            },
+            {
+              "speaker": "explainer",
+              "text": "A MAG spokesperson said they immediately contained the risk and are working with specialist advisers to protect customers and systems.",
+              "duration": 6.922449
+            },
+            {
+              "speaker": "listener",
+              "text": "Did they tell customers anything directly?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, London Stansted emailed customers urging caution around unexpected emails, calls, or texts claiming to be from them.",
+              "duration": 7.366531
+            },
+            {
+              "speaker": "listener",
+              "text": "So the real risk now is people getting targeted afterward.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly, that's why they're asking everyone to stay alert.",
+              "duration": 3.056327
+            }
+          ]
+        }
+      },
+      "4": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-27/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So Meta is paying $18 billion? That sounds huge.",
+              "duration": 3.343673
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is a big number, but it's spread over a decade, and Meta denies any wrongdoing.",
+              "duration": 4.362449
+            },
+            {
+              "speaker": "listener",
+              "text": "What was the settlement actually about?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "It resolves claims from 52 US attorneys general that Meta designed products to be addictive to children and misled people about their safety.",
+              "duration": 8.437551
+            },
+            {
+              "speaker": "listener",
+              "text": "If they deny wrongdoing, why settle at all?",
+              "duration": 2.507755
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because Meta made around $60bn in profit last year, so this payment is fairly small for them financially.",
+              "duration": 5.694694
+            },
+            {
+              "speaker": "listener",
+              "text": "Didn't they try fighting this kind of case before?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, just months ago Meta fought a similar case in court and lost significantly.",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "listener",
+              "text": "So settling now looks like a smarter move?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "It seems that way. The economics of fighting these cases have clearly shifted for Meta.",
+              "duration": 4.179592
+            },
+            {
+              "speaker": "listener",
+              "text": "So this settlement is really just one part of a longer story.",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Exactly. It's manageable now, but the broader pressure on Meta isn't going away.",
+              "duration": 4.362449
+            }
+          ]
+        }
+      },
+      "5": {
+        "format": "dialogue",
+        "en": {
+          "key": "audio/2026-08-27/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So what's happening Thursday night?",
+              "duration": 2.089796
+            },
+            {
+              "speaker": "explainer",
+              "text": "A near total lunar eclipse, visible across North and South America.",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "listener",
+              "text": "Near total? How close does it get?",
+              "duration": 2.115918
+            },
+            {
+              "speaker": "explainer",
+              "text": "At its peak, 96% of the moon will be darkened by Earth's shadow.",
+              "duration": 4.127347
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does that happen exactly?",
+              "duration": 1.48898
+            },
+            {
+              "speaker": "explainer",
+              "text": "Earth moves between the sun and moon, casting its shadow onto the lunar surface.",
+              "duration": 4.675918
+            },
+            {
+              "speaker": "listener",
+              "text": "I've heard people call these 'blood moons.' Why is that?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "The shadow appears reddish, because of how sunlight scatters through Earth's atmosphere.",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this connected to that solar eclipse people saw over Europe?",
+              "duration": 3.709388
+            },
+            {
+              "speaker": "explainer",
+              "text": "Different event, but related. That one saw the moon block the sun, bringing daytime darkness to parts of the continent.",
+              "duration": 6.086531
+            },
+            {
+              "speaker": "listener",
+              "text": "Sounds like a good week for skywatchers.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Millions are expected to see this one.",
+              "duration": 2.533878
+            }
+          ]
+        }
+      }
     }
   }
 }

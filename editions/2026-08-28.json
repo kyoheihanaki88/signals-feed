@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-28",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "At least 90 Americans missing in Nepal flood among 2,000 unaccounted for",
+      "summary": "At least 90 Americans were still missing on Friday among almost 2,000 people unaccounted for following the catastrophic flash flood along the Nepal-Tibet border on Wednesday.",
+      "keyTakeaways": [
+        "Many of the Americans who are missing were on a pilgrimage to Mount Kailash, a sacred site in Tibet revered by several faiths, including Hinduism and Buddhism.",
+        "Twenty-two Americans returning from a pilgrimage hosted by the Isha Foundation, were among 80 foundation members not yet located, founder and spiritual leader Sadhguru Vasudev said in a statement on Thursday.",
+        "Crespi described the trekkers as “like family”, adding that it was a “lifelong dream to go and be there” in Nepal for many of them."
+      ],
+      "whyItMatters": "With the official death toll creeping towards 600 on Friday and expected to continue rising, there were survivors, victims and missing people from many nationalities.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/28/nepal-flood-missing-americans",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ネパール洪水、不明者2000人超 米国人も90人以上安否不明",
+          "summary": "水曜日にネパールとチベットの国境沿いで発生した大規模な鉄砲水を受け、金曜日時点で少なくとも90人の米国人を含む、およそ2000人の安否が依然として確認されていない。",
+          "keyTakeaways": [
+            "行方不明の米国人の多くは、ヒンドゥー教や仏教など複数の宗教で聖地とされるチベットのカイラス山への巡礼に参加していた。",
+            "イシャ財団創設者で精神指導者のサドゥグル・ヴァスデヴ氏は木曜日の声明で、同財団主催の巡礼から帰る途中だった米国人22人を含む、財団関係者80人の所在がまだ確認できていないと明らかにした。",
+            "クレスピ氏はトレッキング参加者たちを「家族のような存在」と表現し、多くの参加者にとってネパールを訪れることは「一生の夢だった」と語った。"
+          ],
+          "whyItMatters": "金曜日時点で公式死者数は600人に迫り、さらに増加が見込まれる中、犠牲者や行方不明者には多くの国籍の人々が含まれている。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "Al Jazeera",
+      "headline": "President Donald Trump signs order creating US Space Academy",
+      "summary": "United States President Donald Trump has signed an executive order establishing the country’s first-ever Space Academy.",
+      "keyTakeaways": [
+        "On Friday during an event honoring the four-person Artemis II crew at NASA’s Johnson Space Center in Texas, Trump made the unexpected announcement.",
+        "It’s called the US Space Academy,” Trump ‌told the astronauts and NASA employees who gathered to hear him speak.",
+        "Trump likened the space academy to other prestigious US service institutions, like the US Naval Academy in Annapolis, Maryland, and the US Military Academy in West Point, New York."
+      ],
+      "whyItMatters": "Space has been a significant priority during Trump’s two terms in the White House.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/28/president-donald-trump-signs-order-creating-us-space-academy?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "トランプ大統領、米国宇宙士官学校の創設に署名",
+          "summary": "米国のドナルド・トランプ大統領が、米国初となる宇宙士官学校の設立を定めた大統領令に署名した。",
+          "keyTakeaways": [
+            "金曜日、テキサス州にあるNASAジョンソン宇宙センターでアルテミス2号の4人の宇宙飛行士を称える式典が行われ、その場でトランプ氏が予期せぬ発表を行った。",
+            "トランプ氏は集まった宇宙飛行士やNASA職員に向けて「これは米国宇宙士官学校だ」と語った。",
+            "トランプ氏はこの宇宙士官学校を、メリーランド州アナポリスの海軍士官学校やニューヨーク州ウェストポイントの陸軍士官学校といった伝統ある米国の士官教育機関にたとえた。"
+          ],
+          "whyItMatters": "宇宙分野は、トランプ氏の二期にわたる政権で重視され続けてきた領域である。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Nicola Coughlan and Matt Lucas among stars backing campaign against AI voice cloning",
+      "summary": "Nicola Coughlan, Hugh Bonneville and Matt Lucas are among a group of actors backing a campaign against artificial intelligence voice cloning.",
+      "keyTakeaways": [
+        "Bonneville, the star of Paddington and Downton Abbey, said: “My voice is unique, it’s mine, it’s part of my identity.",
+        "My voice is one of my tools.",
+        "The campaign claims that 28% of UK adults report they have been targeted by a voice-cloning scam."
+      ],
+      "whyItMatters": "About 80 people have added their signatures to an open letter to the prime minister, Andy Burnham, and a Gov.uk petition has been launched to ask for everyone in Britain to be given ownership of their voice as part of their statutory rights.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/28/stars-back-campaign-against-ai-voice-cloning-nicola-coughlan-matt-lucas",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AI音声クローンに、俳優たちが異議",
+          "summary": "ニコラ・コクランやヒュー・ボネヴィル、マット・ルーカスら俳優グループが、AIによる音声クローンに反対する運動を後押ししている。",
+          "keyTakeaways": [
+            "ボネヴィルは「自分の声は唯一無二であり、自分自身であり、アイデンティティの一部だ」と語る",
+            "「声は自分の大切な道具のひとつだ」との声も",
+            "英国成人の28パーセントが音声クローン詐欺の標的にされたと回答している"
+          ],
+          "whyItMatters": "首相への公開書簡には約80人が署名し、英国民の声を法的権利として保護するよう求める請願も政府サイトで始まっている。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "No special carve-out for states using fossil fuel to power datacentres, Chris Bowen insists, despite new conditions",
+      "summary": "Chris Bowen insists federal Labor’s new national laws on datacentre power supply will not include carve-outs for Queensland and the Northern Territory, with states that are eager to use coal and gas required to make their case to the national regulator.",
+      "keyTakeaways": [
+        "Finocchiaro said gas from the massive Beetaloo basin project would now be available for datacentre power, while Crisafulli said his government could control the energy mix due to state-owned systems.",
+        "Bowen called that “a very hard thing to do”.",
+        "After the talks in Sydney, Albanese described the decisions taken as allowing flexibility for governments with state-owned power systems."
+      ],
+      "whyItMatters": "Anthony Albanese had gone into the meeting clear that new national rules, expected to be debated in federal parliament next year, would mandate the use of renewable energy, and ensure datacentres did not push up prices for homes and businesses.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/28/no-special-carve-out-for-states-using-fossil-fuel-to-power-datacentres-chris-bowen-insists-despite-new-conditions",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "West Point’s only climate scientist fired after continuing to teach human causes of climate change",
+      "summary": "The only climate scientist teaching at West Point, the US army’s military academy, was fired after he resisted an order to stop teaching about the human causes of the climate emergency, a lawsuit claims.",
+      "keyTakeaways": [
+        "Reeves responded by “storming out” of the meeting after telling Kalkstein that Donald Trump was commander in chief, and set the agenda for West Point, the lawsuit alleged.",
+        "Kalkstein’s lawsuit is the second legal action over the stifling of academic freedoms filed by an educator at West Point.",
+        "Kalkstein’s attorney, Michael Sussman, told the Times that his client was a conservative Republican who believes military students need to know the truth about the causes of the climate crisis as a matter of national security."
+      ],
+      "whyItMatters": "The lawsuit alleges that Kalkstein first became aware his position was under threat in May 2025, when West Point leaders announced plans to reduce civilian staffing levels, while at the same time opening a new humanities center requiring new geography teachers.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/27/west-point-climate-scientist-fired",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "気候変動の真実を教え続け、ウェストポイント唯一の気候学者が解雇",
+          "summary": "米陸軍士官学校ウェストポイントで唯一気候科学を教えていた研究者が、気候危機の人為的要因について教えることをやめるよう命じられ、それに従わなかったために解雇されたと訴訟が主張している。",
+          "keyTakeaways": [
+            "リーブス氏はカルクスタイン氏に対し、指揮権を持つのはトランプ大統領でありウェストポイントの方針を決めるのも彼だと告げ、会議室を出ていったと訴状は主張する。",
+            "カルクスタイン氏の訴訟は、ウェストポイントで学問の自由をめぐり教員が起こした二件目の法的措置となる。",
+            "代理人のマイケル・サスマン弁護士によれば、依頼人は保守的な共和党支持者であり、気候危機の原因についての真実を知ることは国家安全保障上、軍の学生にとって必要だと考えているという。"
+          ],
+          "whyItMatters": "訴状によれば、カルクスタイン氏が自らの立場が脅かされていると初めて気づいたのは二〇二五年五月、ウェストポイントが文民職員の削減方針を発表する一方で、新たな地理教員を必要とする人文科学センターの新設を進めていたときだった。"
+        }
+      }
+    }
+  ]
+}

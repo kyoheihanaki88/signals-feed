@@ -33,6 +33,75 @@
           ],
           "whyItMatters": "金曜日時点で公式死者数は600人に迫り、さらに増加が見込まれる中、犠牲者や行方不明者には多くの国籍の人々が含まれている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-01-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "What's the latest on that flood in Nepal?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "At least 90 Americans are still missing, part of nearly 2,000 unaccounted for after the flash flood on the Nepal-Tibet border on Wednesday.",
+              "duration": 7.706122
+            },
+            {
+              "speaker": "listener",
+              "text": "Why were so many Americans out there?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Many were on a pilgrimage to Mount Kailash, a site sacred to several faiths, including Hinduism and Buddhism.",
+              "duration": 5.851429
+            },
+            {
+              "speaker": "listener",
+              "text": "Was it a large group traveling together?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Twenty-two Americans returning from a pilgrimage hosted by the Isha Foundation were among 80 foundation members not yet located.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anyone spoken about them personally?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "One person, Crespi, described the trekkers as 'like family,' saying it had been a lifelong dream for many to make that trip.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "How serious has this become overall?",
+              "duration": 2.037551
+            },
+            {
+              "speaker": "explainer",
+              "text": "The official death toll is nearing 600 and expected to keep rising, with survivors, victims, and missing people from many nationalities.",
+              "duration": 7.549388
+            },
+            {
+              "speaker": "listener",
+              "text": "It's hard to imagine what families are going through right now.",
+              "duration": 3.108571
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. Search efforts continue as officials try to account for everyone still unreported.",
+              "duration": 5.146122
+            }
+          ]
+        }
       }
     },
     {
@@ -64,6 +133,75 @@
             "トランプ氏はこの宇宙士官学校を、メリーランド州アナポリスの海軍士官学校やニューヨーク州ウェストポイントの陸軍士官学校といった伝統ある米国の士官教育機関にたとえた。"
           ],
           "whyItMatters": "宇宙分野は、トランプ氏の二期にわたる政権で重視され続けてきた領域である。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-02-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So the President just created a Space Academy?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he signed an executive order establishing it — the country's first.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "When did this happen?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Friday, at NASA's Johnson Space Center in Texas, during an event honoring the Artemis II crew.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Did he explain what it's for?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "He told the astronauts and NASA staff there, 'It's called the US Space Academy.'",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it modeled on something existing?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He compared it to institutions like the Naval Academy and West Point.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's meant to be a serious training institution, not just symbolic.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be the idea, given those comparisons.",
+              "duration": 2.76898
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this matter right now?",
+              "duration": 1.515102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Because space has remained a major priority throughout both of Trump's terms.",
+              "duration": 3.84
+            }
+          ]
         }
       }
     },
@@ -97,6 +235,75 @@
           ],
           "whyItMatters": "首相への公開書簡には約80人が署名し、英国民の声を法的権利として保護するよう求める請願も政府サイトで始まっている。"
         }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-03-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So actors are campaigning against AI voice cloning now?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, Nicola Coughlan, Hugh Bonneville and Matt Lucas are among those backing it.",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "listener",
+              "text": "What's their main worry?",
+              "duration": 1.332245
+            },
+            {
+              "speaker": "explainer",
+              "text": "Bonneville put it simply — he said his voice is unique, it's his, part of his identity.",
+              "duration": 5.32898
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this just about actors protecting their work?",
+              "duration": 2.742857
+            },
+            {
+              "speaker": "explainer",
+              "text": "Not only that. The campaign says 28% of UK adults report being targeted by a voice-cloning scam.",
+              "duration": 6.347755
+            },
+            {
+              "speaker": "listener",
+              "text": "That's a lot of ordinary people affected.",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "It is. About 80 people signed an open letter to the prime minister and Andy Burnham over it.",
+              "duration": 5.433469
+            },
+            {
+              "speaker": "listener",
+              "text": "So what are they actually asking for?",
+              "duration": 2.533878
+            },
+            {
+              "speaker": "explainer",
+              "text": "There's a Gov.uk petition asking for everyone in Britain to legally own their own voice, as part of their statutory rights.",
+              "duration": 6.269388
+            },
+            {
+              "speaker": "listener",
+              "text": "Makes sense — your voice really is personal.",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's the heart of it. As Bonneville said, it's one of his tools, and it's his.",
+              "duration": 4.545306
+            }
+          ]
+        }
       }
     },
     {
@@ -117,7 +324,76 @@
       "readTime": 4,
       "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
       "placeTime": "The editor",
-      "audioURL": ""
+      "audioURL": "",
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-04-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So there's a new rule about how datacentres get their power?",
+              "duration": 3.422041
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, national laws are being drawn up, and Chris Bowen says there won't be any special exceptions for Queensland or the Northern Territory.",
+              "duration": 7.131429
+            },
+            {
+              "speaker": "listener",
+              "text": "Those two states wanted to use coal and gas for their datacentres, right?",
+              "duration": 4.205714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right. The Northern Territory's Finocchiaro pointed to gas from the Beetaloo basin project as an option, and Queensland's Crisafulli argued his state can control its own energy mix because the system there is state-owned.",
+              "duration": 12.982857
+            },
+            {
+              "speaker": "listener",
+              "text": "And Bowen's response to that was?",
+              "duration": 1.906939
+            },
+            {
+              "speaker": "explainer",
+              "text": "He called it 'a very hard thing to do' — meaning those states will still need to make their case to the national regulator, not just assume an exemption.",
+              "duration": 8.803265
+            },
+            {
+              "speaker": "listener",
+              "text": "What was Albanese's take after the meeting in Sydney?",
+              "duration": 3.056327
+            },
+            {
+              "speaker": "explainer",
+              "text": "He described the outcome as allowing some flexibility for governments that own their power systems, without abandoning the broader push.",
+              "duration": 6.713469
+            },
+            {
+              "speaker": "listener",
+              "text": "Why does this actually matter for people at home?",
+              "duration": 2.586122
+            },
+            {
+              "speaker": "explainer",
+              "text": "Albanese went in wanting new rules that favour renewable energy and stop datacentres from driving up power prices for households and businesses.",
+              "duration": 8.019592
+            },
+            {
+              "speaker": "listener",
+              "text": "And this will all be debated in parliament?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, that's expected to happen next year.",
+              "duration": 2.115918
+            }
+          ]
+        }
+      }
     },
     {
       "number": 5,
@@ -148,6 +424,75 @@
             "代理人のマイケル・サスマン弁護士によれば、依頼人は保守的な共和党支持者であり、気候危機の原因についての真実を知ることは国家安全保障上、軍の学生にとって必要だと考えているという。"
           ],
           "whyItMatters": "訴状によれば、カルクスタイン氏が自らの立場が脅かされていると初めて気づいたのは二〇二五年五月、ウェストポイントが文民職員の削減方針を発表する一方で、新たな地理教員を必要とする人文科学センターの新設を進めていたときだった。"
+        }
+      },
+      "listen": {
+        "format": "dialogue",
+        "en": {
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-05-dialogue-en.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "listener",
+              "text": "So West Point fired its only climate scientist? What happened exactly?",
+              "duration": 4.022857
+            },
+            {
+              "speaker": "explainer",
+              "text": "A lawsuit says he was let go after refusing an order to stop teaching about the human causes of climate change.",
+              "duration": 5.616327
+            },
+            {
+              "speaker": "listener",
+              "text": "Refusing an order — that sounds tense. Was there a specific moment?",
+              "duration": 4.257959
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, the lawsuit describes him telling a superior, Kalkstein, that Trump was commander in chief and sets the agenda, then leaving the meeting.",
+              "duration": 8.306939
+            },
+            {
+              "speaker": "listener",
+              "text": "Is this the only case like this at West Point?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "No, it's actually the second lawsuit over academic freedom concerns filed by an educator there.",
+              "duration": 4.728163
+            },
+            {
+              "speaker": "listener",
+              "text": "What does his lawyer say about why he pushed back?",
+              "duration": 2.951837
+            },
+            {
+              "speaker": "explainer",
+              "text": "His attorney, Michael Sussman, says he's a conservative Republican who believes cadets need the facts on climate change for national security reasons.",
+              "duration": 7.47102
+            },
+            {
+              "speaker": "listener",
+              "text": "Was there anything happening at West Point around the same time that might connect to this?",
+              "duration": 4.440816
+            },
+            {
+              "speaker": "explainer",
+              "text": "He reportedly learned his job was at risk in May, when the academy announced cuts to civilian staff while also opening a new humanities center needing geography teachers.",
+              "duration": 8.542041
+            },
+            {
+              "speaker": "listener",
+              "text": "So the details are still playing out through the courts.",
+              "duration": 2.925714
+            },
+            {
+              "speaker": "explainer",
+              "text": "That's right — this is now part of the ongoing legal record.",
+              "duration": 3.056327
+            }
+          ]
         }
       }
     }

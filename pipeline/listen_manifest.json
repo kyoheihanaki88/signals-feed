@@ -25886,6 +25886,62 @@
               "duration": 5.146122
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-28/signal-01-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "ネパールとチベットの国境付近で、水曜日に大規模な鉄砲水が発生しました。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "金曜日の時点で、およそ2000人の安否がまだ確認できていません。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "その中には少なくとも90人の米国人が含まれています。",
+              "duration": 4.8
+            },
+            {
+              "speaker": "narrator",
+              "text": "行方不明者の多くは、チベットのカイラス山を目指す巡礼の途中でした。",
+              "duration": 5.592
+            },
+            {
+              "speaker": "narrator",
+              "text": "この山はヒンドゥー教や仏教など、複数の宗教で聖地とされています。",
+              "duration": 5.712
+            },
+            {
+              "speaker": "narrator",
+              "text": "イシャ財団のサドゥグル・ヴァスデヴ氏は、財団関係者80人の所在が不明だと明らかにしました。",
+              "duration": 7.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "そのうち22人は米国人で、巡礼を終えて帰る途中だったといいます。",
+              "duration": 5.784
+            },
+            {
+              "speaker": "narrator",
+              "text": "公式の死者数は600人に迫り、なお増え続けると見られています。",
+              "duration": 5.4
+            },
+            {
+              "speaker": "narrator",
+              "text": "犠牲者にも行方不明者にも、さまざまな国籍の人が含まれています。",
+              "duration": 5.424
+            },
+            {
+              "speaker": "narrator",
+              "text": "遠い山あいで今も続く捜索を、静かに見守りたいと思います。",
+              "duration": 5.112
+            }
+          ]
         }
       },
       "2": {
@@ -25953,6 +26009,52 @@
               "speaker": "explainer",
               "text": "Because space has remained a major priority throughout both of Trump's terms.",
               "duration": 3.84
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-28/signal-02-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "トランプ大統領が、米国宇宙士官学校の創設を定めた大統領令に署名しました。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "発表の舞台は、テキサス州にあるNASAジョンソン宇宙センターです。",
+              "duration": 4.92
+            },
+            {
+              "speaker": "narrator",
+              "text": "アルテミス2号の宇宙飛行士4人を称える式典の場で、突然の発表となりました。",
+              "duration": 6.336
+            },
+            {
+              "speaker": "narrator",
+              "text": "集まった飛行士や職員に、トランプ氏は自らこの構想を語ったといいます。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "彼はこの学校を、海軍士官学校や陸軍士官学校のような伝統ある機関に例えました。",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "宇宙政策は、トランプ氏の二期の政権を通じて力を入れてきた分野です。",
+              "duration": 5.88
+            },
+            {
+              "speaker": "narrator",
+              "text": "新しい教育機関の誕生は、次世代の宇宙人材の育て方を変えていく可能性があります。",
+              "duration": 6.912
+            },
+            {
+              "speaker": "narrator",
+              "text": "今後の詳しい制度設計にも、注目が集まりそうです。",
+              "duration": 4.512
             }
           ]
         }
@@ -26024,6 +26126,62 @@
               "duration": 4.545306
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-28/signal-03-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "俳優のニコラ・コクランやヒュー・ボネヴィル、マット・ルーカスが、ある運動に賛同を示しています。",
+              "duration": 7.56
+            },
+            {
+              "speaker": "narrator",
+              "text": "AIによる声の無断複製に反対する取り組みです。",
+              "duration": 4.152
+            },
+            {
+              "speaker": "narrator",
+              "text": "ボネヴィルは、自分の声が自分だけのものであり、仕事道具でもあると話しています。",
+              "duration": 6.168
+            },
+            {
+              "speaker": "narrator",
+              "text": "声そのものが人の個性を映す部分だという考えです。",
+              "duration": 4.224
+            },
+            {
+              "speaker": "narrator",
+              "text": "主催側によると、英国の成人のおよそ28パーセントが声を悪用した詐欺に遭った経験があるといいます。",
+              "duration": 8.352
+            },
+            {
+              "speaker": "narrator",
+              "text": "首相とアンディ・バーナム氏に宛てた公開書簡には、およそ80人が名前を連ねました。",
+              "duration": 6.888
+            },
+            {
+              "speaker": "narrator",
+              "text": "政府のサイトでも、声を法律で守るよう求める署名活動が始まっています。",
+              "duration": 5.928
+            },
+            {
+              "speaker": "narrator",
+              "text": "技術が進むほど、本人になりすます音声は簡単に作れるようになっています。",
+              "duration": 6.048
+            },
+            {
+              "speaker": "narrator",
+              "text": "声を勝手に使われる不安は、俳優に限らず誰にとっても他人事ではありません。",
+              "duration": 6.144
+            },
+            {
+              "speaker": "narrator",
+              "text": "自分の声をどう守るか、これからの社会の課題になりそうです。",
+              "duration": 4.776
+            }
+          ]
         }
       },
       "4": {
@@ -26093,6 +26251,62 @@
               "duration": 2.115918
             }
           ]
+        },
+        "ja": {
+          "key": "audio/2026-08-28/signal-04-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "データセンター向け電力に関する新しい国のルールが、シドニーでの協議を経て見えてきました。",
+              "duration": 6.72
+            },
+            {
+              "speaker": "narrator",
+              "text": "クリス・ボーエン氏は、クイーンズランド州や北部準州への特別な例外は認めないと述べました。",
+              "duration": 7.344
+            },
+            {
+              "speaker": "narrator",
+              "text": "石炭やガスを使いたい州は、その理由を国の規制当局に説明する必要があります。",
+              "duration": 6.696
+            },
+            {
+              "speaker": "narrator",
+              "text": "北部準州のフィノッキアーロ氏は、巨大なビータルー盆地のガスをデータセンター向けに使えると説明しました。",
+              "duration": 7.44
+            },
+            {
+              "speaker": "narrator",
+              "text": "クイーンズランド州のクリサフーリ氏は、州営の電力網なら電源構成を自ら調整できると主張しました。",
+              "duration": 7.896
+            },
+            {
+              "speaker": "narrator",
+              "text": "これに対しボーエン氏は、それは「とても難しいことだ」と釘を刺しました。",
+              "duration": 5.952
+            },
+            {
+              "speaker": "narrator",
+              "text": "協議後、アルバニージー首相は、州営の電力システムを持つ政府には一定の柔軟性を認めると説明しました。",
+              "duration": 8.448
+            },
+            {
+              "speaker": "narrator",
+              "text": "もともと首相は、再生可能エネルギーの利用を義務づける全国ルールを目指していました。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "データセンターの拡大で家庭や企業の電気代が上がらないようにする狙いもあります。",
+              "duration": 5.976
+            },
+            {
+              "speaker": "narrator",
+              "text": "この新ルールは来年、連邦議会で議論される見通しです。",
+              "duration": 4.656
+            }
+          ]
         }
       },
       "5": {
@@ -26160,6 +26374,62 @@
               "speaker": "explainer",
               "text": "That's right — this is now part of the ongoing legal record.",
               "duration": 3.056327
+            }
+          ]
+        },
+        "ja": {
+          "key": "audio/2026-08-28/signal-05-dialogue-ja.mp3",
+          "gap": 0.0,
+          "captions": [
+            {
+              "speaker": "narrator",
+              "text": "米陸軍士官学校ウェストポイントで、気候科学を教えていた研究者が解雇されました。",
+              "duration": 6.576
+            },
+            {
+              "speaker": "narrator",
+              "text": "気候危機の人為的な原因を教え続けたことが理由だと、本人が起こした訴訟で主張されています。",
+              "duration": 7.128
+            },
+            {
+              "speaker": "narrator",
+              "text": "上司のリーブス氏は、指揮権を持つのはトランプ大統領だと告げたといいます。",
+              "duration": 5.616
+            },
+            {
+              "speaker": "narrator",
+              "text": "そしてウェストポイントの方針を決めるのも自分たちだと述べ、会議室を去ったそうです。",
+              "duration": 6.264
+            },
+            {
+              "speaker": "narrator",
+              "text": "この訴訟は、同校で学問の自由をめぐる二件目の法的措置になります。",
+              "duration": 5.64
+            },
+            {
+              "speaker": "narrator",
+              "text": "代理人のサスマン弁護士によると、依頼人は保守的な共和党支持者だといいます。",
+              "duration": 6.12
+            },
+            {
+              "speaker": "narrator",
+              "text": "それでも気候危機の真実を学生が知ることは、国家安全保障に関わると考えているそうです。",
+              "duration": 6.984
+            },
+            {
+              "speaker": "narrator",
+              "text": "背景には今年五月、文民職員の削減方針が発表されたことがあります。",
+              "duration": 6.192
+            },
+            {
+              "speaker": "narrator",
+              "text": "同じ時期に、新たな地理教員を必要とする人文科学センターの新設も進んでいました。",
+              "duration": 6.528
+            },
+            {
+              "speaker": "narrator",
+              "text": "教育の中身と組織の都合が絡み合う、静かな緊張がそこにはあります。",
+              "duration": 5.808
             }
           ]
         }

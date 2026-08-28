@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "focus": "MIXED",
   "version": 1,
   "signals": [
@@ -9,152 +9,96 @@
       "lead": true,
       "category": "WORLD",
       "source": "The Guardian (World)",
-      "headline": "Trump signs executive order to rename Lake Ontario as Lake America",
-      "summary": "Donald Trump signed an executive order on Thursday directing the federal government to rename Lake Ontario, making it Lake America, amid his escalating trade war with Canada.",
+      "headline": "At least 90 Americans missing in Nepal flood among 2,000 unaccounted for",
+      "summary": "At least 90 Americans were still missing on Friday among almost 2,000 people unaccounted for following the catastrophic flash flood along the Nepal-Tibet border on Wednesday.",
       "keyTakeaways": [
-        "The order directs federal agencies to adopt the name-change on US maps, documents and databases.",
-        "The move follows a similar action the president took on the first day of his second term in office, when he signed an order renaming the Gulf of Mexico as the “Gulf of America”.",
-        "Propped behind him was a large map of the Great Lakes region, with “Lake America” printed in red lettering above Lake Ontario."
+        "Many of the Americans who are missing were on a pilgrimage to Mount Kailash, a sacred site in Tibet revered by several faiths, including Hinduism and Buddhism.",
+        "Twenty-two Americans returning from a pilgrimage hosted by the Isha Foundation, were among 80 foundation members not yet located, founder and spiritual leader Sadhguru Vasudev said in a statement on Thursday.",
+        "Crespi described the trekkers as “like family”, adding that it was a “lifelong dream to go and be there” in Nepal for many of them."
       ],
-      "whyItMatters": "Trump claimed that American farmers are being charged a 400% tariff; about 97% of US agricultural exports to Canada enter duty-free under the US-Mexico-Canada Agreement, though over-quota eggs, milk and dairy have Canadian tariffs of up to 300%.",
-      "originalURL": "https://www.theguardian.com/us-news/2026/aug/27/trump-renames-lake-ontario-america",
+      "whyItMatters": "With the official death toll creeping towards 600 on Friday and expected to continue rising, there were survivors, victims and missing people from many nationalities.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/28/nepal-flood-missing-americans",
       "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Soft light",
+      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "City morning",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "トランプ氏、オンタリオ湖を『レイク・アメリカ』に改称する大統領令に署名",
-          "summary": "ドナルド・トランプ氏は木曜日、オンタリオ湖の名称を『レイク・アメリカ』に変更するよう連邦政府に指示する大統領令に署名した。カナダとの貿易摩擦が激化するなかでの動きだ。",
+          "headline": "ネパール洪水、不明者2000人超 米国人も90人以上安否不明",
+          "summary": "水曜日にネパールとチベットの国境沿いで発生した大規模な鉄砲水を受け、金曜日時点で少なくとも90人の米国人を含む、およそ2000人の安否が依然として確認されていない。",
           "keyTakeaways": [
-            "大統領令は、連邦機関が地図や文書、データベースでこの新名称を採用するよう求めている。",
-            "今回の措置は、大統領が二期目就任初日にメキシコ湾を『アメリカ湾』と改称する命令に署名した経緯を踏まえたものだ。",
-            "会見の背後には五大湖地域の大きな地図が置かれ、オンタリオ湖の上に赤字で『レイク・アメリカ』と記されていた。"
+            "行方不明の米国人の多くは、ヒンドゥー教や仏教など複数の宗教で聖地とされるチベットのカイラス山への巡礼に参加していた。",
+            "イシャ財団創設者で精神指導者のサドゥグル・ヴァスデヴ氏は木曜日の声明で、同財団主催の巡礼から帰る途中だった米国人22人を含む、財団関係者80人の所在がまだ確認できていないと明らかにした。",
+            "クレスピ氏はトレッキング参加者たちを「家族のような存在」と表現し、多くの参加者にとってネパールを訪れることは「一生の夢だった」と語った。"
           ],
-          "whyItMatters": "トランプ氏は米国の農家が400%の関税を課されていると主張したが、実際には米国農産品の対カナダ輸出の約97%が米国・メキシコ・カナダ協定のもとで無関税であり、割当量を超えた卵や牛乳、乳製品にはカナダ側で最大300%の関税がかかるにすぎない。"
+          "whyItMatters": "金曜日時点で公式死者数は600人に迫り、さらに増加が見込まれる中、犠牲者や行方不明者には多くの国籍の人々が含まれている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-01-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-01-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Lake Ontario has a new name now?",
-              "duration": 1.933061
+              "text": "What's the latest on that flood in Nepal?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "On US federal maps and documents, yes. Trump signed an executive order renaming it Lake America.",
-              "duration": 5.746939
+              "text": "At least 90 Americans are still missing, part of nearly 2,000 unaccounted for after the flash flood on the Nepal-Tibet border on Wednesday.",
+              "duration": 7.706122
             },
             {
               "speaker": "listener",
-              "text": "Just like that, by order?",
-              "duration": 1.515102
+              "text": "Why were so many Americans out there?",
+              "duration": 2.168163
             },
             {
               "speaker": "explainer",
-              "text": "That's right. It directs federal agencies to update their maps, documents and databases with the new name.",
-              "duration": 5.041633
+              "text": "Many were on a pilgrimage to Mount Kailash, a site sacred to several faiths, including Hinduism and Buddhism.",
+              "duration": 5.851429
             },
             {
               "speaker": "listener",
-              "text": "Has he done something like this before?",
+              "text": "Was it a large group traveling together?",
+              "duration": 2.168163
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes. Twenty-two Americans returning from a pilgrimage hosted by the Isha Foundation were among 80 foundation members not yet located.",
+              "duration": 8.202449
+            },
+            {
+              "speaker": "listener",
+              "text": "Has anyone spoken about them personally?",
+              "duration": 2.324898
+            },
+            {
+              "speaker": "explainer",
+              "text": "One person, Crespi, described the trekkers as 'like family,' saying it had been a lifelong dream for many to make that trip.",
+              "duration": 7.000816
+            },
+            {
+              "speaker": "listener",
+              "text": "How serious has this become overall?",
               "duration": 2.037551
             },
             {
               "speaker": "explainer",
-              "text": "Yes, on his first day back in office he renamed the Gulf of Mexico the Gulf of America.",
-              "duration": 4.623673
+              "text": "The official death toll is nearing 600 and expected to keep rising, with survivors, victims, and missing people from many nationalities.",
+              "duration": 7.549388
             },
             {
               "speaker": "listener",
-              "text": "Why do this now, with Lake Ontario?",
-              "duration": 2.089796
+              "text": "It's hard to imagine what families are going through right now.",
+              "duration": 3.108571
             },
             {
               "speaker": "explainer",
-              "text": "It comes amid his trade war with Canada. He even signed the order in front of a Great Lakes map with 'Lake America' printed over it.",
-              "duration": 6.765714
-            },
-            {
-              "speaker": "listener",
-              "text": "Is there something behind the trade dispute itself?",
-              "duration": 2.821224
-            },
-            {
-              "speaker": "explainer",
-              "text": "He's claimed farmers face a 400% tariff, though most US agricultural exports to Canada actually enter duty-free. Some items, like over-quota eggs and dairy, do face steep Canadian tariffs.",
-              "duration": 10.893061
-            },
-            {
-              "speaker": "listener",
-              "text": "So the name change is really tied to that bigger dispute.",
-              "duration": 2.925714
-            },
-            {
-              "speaker": "explainer",
-              "text": "It seems to be part of the same moment, yes.",
-              "duration": 2.115918
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-01-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "木曜日、トランプ氏がオンタリオ湖の名称を変更する大統領令に署名しました。",
-              "duration": 6.264
-            },
-            {
-              "speaker": "narrator",
-              "text": "新しい名前は『レイク・アメリカ』です。",
-              "duration": 3.672
-            },
-            {
-              "speaker": "narrator",
-              "text": "連邦機関には、地図や文書、データベースでこの名称を使うよう求めています。",
-              "duration": 6.24
-            },
-            {
-              "speaker": "narrator",
-              "text": "背景にはカナダとの貿易摩擦の激化があります。",
-              "duration": 4.08
-            },
-            {
-              "speaker": "narrator",
-              "text": "就任初日にメキシコ湾を『アメリカ湾』に改称した動きと同じ流れです。",
-              "duration": 5.736
-            },
-            {
-              "speaker": "narrator",
-              "text": "会見場には五大湖の地図が置かれ、赤字で新名称が記されていました。",
-              "duration": 5.808
-            },
-            {
-              "speaker": "narrator",
-              "text": "トランプ氏は米国の農家が400%の関税を課されていると述べました。",
-              "duration": 5.64
-            },
-            {
-              "speaker": "narrator",
-              "text": "実際には対カナダ農産品輸出の約97%が無関税で取引されています。",
-              "duration": 7.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "割当を超えた卵や乳製品にだけ、カナダ側で最大300%の関税がかかります。",
-              "duration": 6.84
-            },
-            {
-              "speaker": "narrator",
-              "text": "地名ひとつにも、政治のいまが映し出されているようです。",
-              "duration": 4.344
+              "text": "It is. Search efforts continue as officials try to account for everyone still unreported.",
+              "duration": 5.146122
             }
           ]
         }
@@ -165,153 +109,97 @@
       "importance": 2,
       "lead": false,
       "category": "WORLD",
-      "source": "The Guardian (World)",
-      "headline": "El Niño climate patterns supercharged by burning of fossil fuels, study finds",
-      "summary": "A series of strong El Niño climatic patterns in recent decades, such as the “Godzilla” event currently brewing that is set to warp weather around the world, have been supercharged by the broader overheating of the planet caused by the burning of fossil fuels, a major new study has found.",
+      "source": "Al Jazeera",
+      "headline": "President Donald Trump signs order creating US Space Academy",
+      "summary": "United States President Donald Trump has signed an executive order establishing the country’s first-ever Space Academy.",
       "keyTakeaways": [
-        "That is bad news for climate hazards and for people, particularly those who are badly impacted and yet have done little to cause climate change.”",
-        "The findings could help provide an answer to one of the more vexing questions in climate science, which has until now been unclear, on whether the climate crisis is significantly changing the strength of El Niño events.",
-        "Such a scenario is set to have profound impacts upon countries already dealing with growing incidences of heatwaves, wildfires and flooding worsened by the climate crisis."
+        "On Friday during an event honoring the four-person Artemis II crew at NASA’s Johnson Space Center in Texas, Trump made the unexpected announcement.",
+        "It’s called the US Space Academy,” Trump ‌told the astronauts and NASA employees who gathered to hear him speak.",
+        "Trump likened the space academy to other prestigious US service institutions, like the US Naval Academy in Annapolis, Maryland, and the US Military Academy in West Point, New York."
       ],
-      "whyItMatters": "It’s well understood that El Niño, which typically brings a surge of global heat, further amplifies the escalating climate crisis, with next year almost certain to be the hottest on record globally.",
-      "originalURL": "https://www.theguardian.com/environment/2026/aug/27/el-nino-climate-patterns-fossil-fuels",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "City morning",
+      "whyItMatters": "Space has been a significant priority during Trump’s two terms in the White House.",
+      "originalURL": "https://www.aljazeera.com/news/2026/8/28/president-donald-trump-signs-order-creating-us-space-academy?traffic_source=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "エルニーニョを強めるのは、化石燃料が生む温暖化",
-          "summary": "近年、強力なエルニーニョ現象が相次いでいる。目下発達中で世界の気象を乱すとされる「ゴジラ級」もその一つだ。新たな大規模研究により、こうした現象は化石燃料の燃焼による地球全体の温暖化によって増幅されていることがわかった。",
+          "headline": "トランプ大統領、米国宇宙士官学校の創設に署名",
+          "summary": "米国のドナルド・トランプ大統領が、米国初となる宇宙士官学校の設立を定めた大統領令に署名した。",
           "keyTakeaways": [
-            "気候による被害は深刻化しており、とりわけその原因をほとんど作っていない人々ほど大きな打撃を受けるという。",
-            "気候変動がエルニーニョの強さを実質的に変えているのかどうかは、これまで気候科学における未解決の難問だったが、今回の研究がその手がかりを示した。",
-            "猛暑や山火事、洪水がすでに深刻化している国々にとって、この事態は重大な影響を及ぼす見通しだ。"
+            "金曜日、テキサス州にあるNASAジョンソン宇宙センターでアルテミス2号の4人の宇宙飛行士を称える式典が行われ、その場でトランプ氏が予期せぬ発表を行った。",
+            "トランプ氏は集まった宇宙飛行士やNASA職員に向けて「これは米国宇宙士官学校だ」と語った。",
+            "トランプ氏はこの宇宙士官学校を、メリーランド州アナポリスの海軍士官学校やニューヨーク州ウェストポイントの陸軍士官学校といった伝統ある米国の士官教育機関にたとえた。"
           ],
-          "whyItMatters": "世界的な高温をもたらすエルニーニョが進行中の気候危機をさらに強めることはすでによく知られており、来年は観測史上最も暑い年になることがほぼ確実視されている。"
+          "whyItMatters": "宇宙分野は、トランプ氏の二期にわたる政権で重視され続けてきた領域である。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-02-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-02-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So El Niño isn't just a natural cycle anymore?",
+              "text": "So the President just created a Space Academy?",
+              "duration": 2.690612
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, he signed an executive order establishing it — the country's first.",
+              "duration": 3.761633
+            },
+            {
+              "speaker": "listener",
+              "text": "When did this happen?",
+              "duration": 1.38449
+            },
+            {
+              "speaker": "explainer",
+              "text": "Friday, at NASA's Johnson Space Center in Texas, during an event honoring the Artemis II crew.",
+              "duration": 5.459592
+            },
+            {
+              "speaker": "listener",
+              "text": "Did he explain what it's for?",
+              "duration": 1.567347
+            },
+            {
+              "speaker": "explainer",
+              "text": "He told the astronauts and NASA staff there, 'It's called the US Space Academy.'",
+              "duration": 4.310204
+            },
+            {
+              "speaker": "listener",
+              "text": "Is it modeled on something existing?",
+              "duration": 2.220408
+            },
+            {
+              "speaker": "explainer",
+              "text": "He compared it to institutions like the Naval Academy and West Point.",
+              "duration": 3.526531
+            },
+            {
+              "speaker": "listener",
+              "text": "So it's meant to be a serious training institution, not just symbolic.",
+              "duration": 3.996735
+            },
+            {
+              "speaker": "explainer",
+              "text": "That seems to be the idea, given those comparisons.",
               "duration": 2.76898
             },
             {
-              "speaker": "explainer",
-              "text": "It's still natural, but this study finds it's being supercharged by fossil fuel warming.",
-              "duration": 4.545306
-            },
-            {
               "speaker": "listener",
-              "text": "Supercharged how, exactly?",
-              "duration": 1.750204
+              "text": "Why does this matter right now?",
+              "duration": 1.515102
             },
             {
               "speaker": "explainer",
-              "text": "The strong El Niño events of recent decades appear stronger because of the planet's overall overheating.",
-              "duration": 5.093878
-            },
-            {
-              "speaker": "listener",
-              "text": "Is there one happening right now?",
-              "duration": 1.671837
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, researchers describe a major one currently brewing, set to affect weather worldwide.",
-              "duration": 4.963265
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does this finding matter so much to scientists?",
-              "duration": 2.925714
-            },
-            {
-              "speaker": "explainer",
-              "text": "It helps answer a long-unclear question: whether climate change is actually changing how strong El Niño gets.",
-              "duration": 5.982041
-            },
-            {
-              "speaker": "listener",
-              "text": "And who ends up dealing with the fallout?",
-              "duration": 1.933061
-            },
-            {
-              "speaker": "explainer",
-              "text": "Countries already facing heatwaves, wildfires, and flooding — often people who've contributed least to causing this.",
-              "duration": 6.452245
-            },
-            {
-              "speaker": "listener",
-              "text": "So next year could be especially hot.",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "That's the expectation — El Niño combined with this warming trend makes it almost certain to be a record year.",
-              "duration": 5.799184
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-02-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "今、太平洋で強いエルニーニョが育っていて、「ゴジラ級」と呼ばれています。",
-              "duration": 5.856
-            },
-            {
-              "speaker": "narrator",
-              "text": "この現象は世界中の天候を大きく揺さぶるとみられています。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "新しい研究によると、その勢いは化石燃料による地球温暖化で強められているそうです。",
-              "duration": 7.056
-            },
-            {
-              "speaker": "narrator",
-              "text": "これまで気候変動がエルニーニョの強さに影響しているかは、はっきり分かっていませんでした。",
-              "duration": 6.312
-            },
-            {
-              "speaker": "narrator",
-              "text": "今回の研究が、その長年の疑問に一つの答えを示しました。",
-              "duration": 4.992
-            },
-            {
-              "speaker": "narrator",
-              "text": "すでに熱波や山火事、洪水に苦しむ国々にとって、これは重い意味を持ちます。",
-              "duration": 6.456
-            },
-            {
-              "speaker": "narrator",
-              "text": "特に、温暖化の原因をほとんど作っていない人たちほど、大きな打撃を受けるといいます。",
-              "duration": 6.624
-            },
-            {
-              "speaker": "narrator",
-              "text": "エルニーニョは元々、世界の気温を押し上げる働きがあります。",
-              "duration": 5.16
-            },
-            {
-              "speaker": "narrator",
-              "text": "来年は観測史上最も暑い年になる可能性がほぼ確実だそうです。",
-              "duration": 5.664
-            },
-            {
-              "speaker": "narrator",
-              "text": "朝の空気は変わらなくても、地球の裏側では大きな変化が進んでいます。",
-              "duration": 5.76
+              "text": "Because space has remained a major priority throughout both of Trump's terms.",
+              "duration": 3.84
             }
           ]
         }
@@ -323,152 +211,96 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "Three UK airports hit by cyber-attack with data of 8.7m customers accessed",
-      "summary": "Manchester, London Stansted and East Midlands airports have been hit by a cyber-attack in which hackers accessed the data of about 8.7 million customers.",
+      "headline": "Nicola Coughlan and Matt Lucas among stars backing campaign against AI voice cloning",
+      "summary": "Nicola Coughlan, Hugh Bonneville and Matt Lucas are among a group of actors backing a campaign against artificial intelligence voice cloning.",
       "keyTakeaways": [
-        "The company said that “at no point has passenger safety or aviation security been compromised” during the incident and operations at the airports were unaffected.",
-        "In an email to customers, London Stansted said: “We would urge you to be particularly cautious of unexpected emails, calls or text messages claiming to be from us.",
-        "The cyber-attack hit the airports during the peak summer travel season."
+        "Bonneville, the star of Paddington and Downton Abbey, said: “My voice is unique, it’s mine, it’s part of my identity.",
+        "My voice is one of my tools.",
+        "The campaign claims that 28% of UK adults report they have been targeted by a voice-cloning scam."
       ],
-      "whyItMatters": "A MAG spokesperson said the company had “immediately contained the risk” from the incident and was “working with specialist advisers and taking appropriate steps to protect our customers and systems”.",
-      "originalURL": "https://www.theguardian.com/business/2026/aug/27/uk-airports-operator-cyber-attack-customer-data-accessed",
+      "whyItMatters": "About 80 people have added their signatures to an open letter to the prime minister, Andy Burnham, and a Gov.uk petition has been launched to ask for everyone in Britain to be given ownership of their voice as part of their statutory rights.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/28/stars-back-campaign-against-ai-voice-cloning-nicola-coughlan-matt-lucas",
       "readTime": 3,
-      "imageURL": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The team",
+      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Workstation",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "英国の空港3カ所でサイバー攻撃、顧客データ870万人分に影響",
-          "summary": "英国のマンチェスター、ロンドン・スタンステッド、イーストミッドランズの3空港がサイバー攻撃を受け、約870万人分の顧客データが不正に閲覧された。",
+          "headline": "AI音声クローンに、俳優たちが異議",
+          "summary": "ニコラ・コクランやヒュー・ボネヴィル、マット・ルーカスら俳優グループが、AIによる音声クローンに反対する運動を後押ししている。",
           "keyTakeaways": [
-            "運営会社は、乗客の安全や航空保安が損なわれたことはなく、空港運営にも影響はなかったとしている。",
-            "スタンステッド空港は顧客宛のメールで、同空港を名乗る不審な連絡には特に注意するよう呼びかけた。",
-            "攻撃が発生したのは夏の旅行シーズン真っ盛りの時期だった。"
+            "ボネヴィルは「自分の声は唯一無二であり、自分自身であり、アイデンティティの一部だ」と語る",
+            "「声は自分の大切な道具のひとつだ」との声も",
+            "英国成人の28パーセントが音声クローン詐欺の標的にされたと回答している"
           ],
-          "whyItMatters": "運営会社MAGは、リスクを直ちに抑え込み、専門家の助言を得ながら顧客とシステムの保護に努めていると説明している。"
+          "whyItMatters": "首相への公開書簡には約80人が署名し、英国民の声を法的権利として保護するよう求める請願も政府サイトで始まっている。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-03-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-03-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So three UK airports were hit by a cyber-attack?",
-              "duration": 3.343673
+              "text": "So actors are campaigning against AI voice cloning now?",
+              "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Yes, Manchester, London Stansted, and East Midlands. Data from about 8.7 million customers was accessed.",
-              "duration": 6.530612
+              "text": "Yes, Nicola Coughlan, Hugh Bonneville and Matt Lucas are among those backing it.",
+              "duration": 4.205714
             },
             {
               "speaker": "listener",
-              "text": "That's a lot of people. Were any flights affected?",
-              "duration": 2.821224
+              "text": "What's their main worry?",
+              "duration": 1.332245
             },
             {
               "speaker": "explainer",
-              "text": "No, the company said operations weren't disrupted, and passenger safety or aviation security wasn't compromised.",
-              "duration": 5.929796
+              "text": "Bonneville put it simply — he said his voice is unique, it's his, part of his identity.",
+              "duration": 5.32898
             },
             {
               "speaker": "listener",
-              "text": "So it was really about data, not the airports themselves.",
-              "duration": 3.291429
+              "text": "Is this just about actors protecting their work?",
+              "duration": 2.742857
             },
             {
               "speaker": "explainer",
-              "text": "Right. And this happened during the busy summer travel season, when a lot of people are flying.",
-              "duration": 4.780408
+              "text": "Not only that. The campaign says 28% of UK adults report being targeted by a voice-cloning scam.",
+              "duration": 6.347755
             },
             {
               "speaker": "listener",
-              "text": "What's the company doing about it now?",
-              "duration": 1.750204
+              "text": "That's a lot of ordinary people affected.",
+              "duration": 2.220408
             },
             {
               "speaker": "explainer",
-              "text": "A MAG spokesperson said they immediately contained the risk and are working with specialist advisers to protect customers and systems.",
-              "duration": 6.922449
+              "text": "It is. About 80 people signed an open letter to the prime minister and Andy Burnham over it.",
+              "duration": 5.433469
             },
             {
               "speaker": "listener",
-              "text": "Did they tell customers anything directly?",
-              "duration": 2.168163
+              "text": "So what are they actually asking for?",
+              "duration": 2.533878
             },
             {
               "speaker": "explainer",
-              "text": "Yes, London Stansted emailed customers urging caution around unexpected emails, calls, or texts claiming to be from them.",
-              "duration": 7.366531
+              "text": "There's a Gov.uk petition asking for everyone in Britain to legally own their own voice, as part of their statutory rights.",
+              "duration": 6.269388
             },
             {
               "speaker": "listener",
-              "text": "So the real risk now is people getting targeted afterward.",
-              "duration": 3.108571
+              "text": "Makes sense — your voice really is personal.",
+              "duration": 2.690612
             },
             {
               "speaker": "explainer",
-              "text": "Exactly, that's why they're asking everyone to stay alert.",
-              "duration": 3.056327
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-03-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "イギリスのマンチェスター、ロンドン・スタンステッド、イーストミッドランズの3空港がサイバー攻撃を受けました。",
-              "duration": 7.68
-            },
-            {
-              "speaker": "narrator",
-              "text": "約870万人分の顧客データが不正に閲覧されたということです。",
-              "duration": 5.688
-            },
-            {
-              "speaker": "narrator",
-              "text": "運営会社は、乗客の安全や航空保安には影響がなかったと説明しています。",
-              "duration": 6.624
-            },
-            {
-              "speaker": "narrator",
-              "text": "空港の運営自体も通常どおり続けられていました。",
-              "duration": 4.152
-            },
-            {
-              "speaker": "narrator",
-              "text": "攻撃が起きたのは、夏の旅行シーズンの真っ只中でした。",
-              "duration": 4.608
-            },
-            {
-              "speaker": "narrator",
-              "text": "利用者の多い時期だったため、影響を受けた人の数も大きくなっています。",
-              "duration": 5.592
-            },
-            {
-              "speaker": "narrator",
-              "text": "運営会社のMAGは、リスクを直ちに抑え込んだとしています。",
-              "duration": 5.184
-            },
-            {
-              "speaker": "narrator",
-              "text": "専門家の助言を受けながら、顧客とシステムの保護を進めているそうです。",
-              "duration": 5.376
-            },
-            {
-              "speaker": "narrator",
-              "text": "スタンステッド空港は利用者に対し、空港を名乗る不審な連絡に注意するよう呼びかけました。",
-              "duration": 6.84
-            },
-            {
-              "speaker": "narrator",
-              "text": "心当たりのないメールや電話には、いつも以上に注意を払っておきたいところです。",
-              "duration": 5.832
+              "text": "That's the heart of it. As Bonneville said, it's one of his tools, and it's his.",
+              "duration": 4.545306
             }
           ]
         }
@@ -480,140 +312,84 @@
       "lead": false,
       "category": "TECH",
       "source": "The Guardian (Technology)",
-      "headline": "An $18bn settlement is a drop in the ocean for Meta – but the tide will still come for it | Chris Stokel-Walker",
-      "summary": "N ot many people would count paying $18bn they didn’t expect to when they woke up that morning as a victory.",
+      "headline": "No special carve-out for states using fossil fuel to power datacentres, Chris Bowen insists, despite new conditions",
+      "summary": "Chris Bowen insists federal Labor’s new national laws on datacentre power supply will not include carve-outs for Queensland and the Northern Territory, with states that are eager to use coal and gas required to make their case to the national regulator.",
       "keyTakeaways": [
-        "Meta denies wrongdoing, and the amount it plans to pay will be spread over a decade.",
-        "The cash is chump change for Meta, which made around $60bn in profit last year.",
-        "What the decision shows, just months after Meta chose to fight its corner in court, and lost significantly, is how the economics of fighting social media litigation have changed."
+        "Finocchiaro said gas from the massive Beetaloo basin project would now be available for datacentre power, while Crisafulli said his government could control the energy mix due to state-owned systems.",
+        "Bowen called that “a very hard thing to do”.",
+        "After the talks in Sydney, Albanese described the decisions taken as allowing flexibility for governments with state-owned power systems."
       ],
-      "whyItMatters": "Yet for Meta, the owners of Facebook and Instagram, the agreement with 52 US attorneys general to settle claims that it designed its products to be addictive to children, and misled people about their safety, could be described as a win of sorts.",
-      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/27/meta-social-media-settlement-18bn-us-child-safety-big-tech-lawsuits",
-      "readTime": 5,
-      "imageURL": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "Workstation",
+      "whyItMatters": "Anthony Albanese had gone into the meeting clear that new national rules, expected to be debated in federal parliament next year, would mandate the use of renewable energy, and ensure datacentres did not push up prices for homes and businesses.",
+      "originalURL": "https://www.theguardian.com/technology/2026/aug/28/no-special-carve-out-for-states-using-fossil-fuel-to-power-datacentres-chris-bowen-insists-despite-new-conditions",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
       "audioURL": "",
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-04-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-04-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So Meta is paying $18 billion? That sounds huge.",
-              "duration": 3.343673
-            },
-            {
-              "speaker": "explainer",
-              "text": "It is a big number, but it's spread over a decade, and Meta denies any wrongdoing.",
-              "duration": 4.362449
-            },
-            {
-              "speaker": "listener",
-              "text": "What was the settlement actually about?",
-              "duration": 2.089796
-            },
-            {
-              "speaker": "explainer",
-              "text": "It resolves claims from 52 US attorneys general that Meta designed products to be addictive to children and misled people about their safety.",
-              "duration": 8.437551
-            },
-            {
-              "speaker": "listener",
-              "text": "If they deny wrongdoing, why settle at all?",
-              "duration": 2.507755
-            },
-            {
-              "speaker": "explainer",
-              "text": "Because Meta made around $60bn in profit last year, so this payment is fairly small for them financially.",
-              "duration": 5.694694
-            },
-            {
-              "speaker": "listener",
-              "text": "Didn't they try fighting this kind of case before?",
-              "duration": 2.586122
-            },
-            {
-              "speaker": "explainer",
-              "text": "Yes, just months ago Meta fought a similar case in court and lost significantly.",
-              "duration": 4.022857
-            },
-            {
-              "speaker": "listener",
-              "text": "So settling now looks like a smarter move?",
-              "duration": 2.324898
-            },
-            {
-              "speaker": "explainer",
-              "text": "It seems that way. The economics of fighting these cases have clearly shifted for Meta.",
-              "duration": 4.179592
-            },
-            {
-              "speaker": "listener",
-              "text": "So this settlement is really just one part of a longer story.",
+              "text": "So there's a new rule about how datacentres get their power?",
               "duration": 3.422041
             },
             {
               "speaker": "explainer",
-              "text": "Exactly. It's manageable now, but the broader pressure on Meta isn't going away.",
-              "duration": 4.362449
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-04-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "Metaが52の米州司法長官との間で、180億ドルの支払いに合意したという話です。",
-              "duration": 7.272
+              "text": "Yes, national laws are being drawn up, and Chris Bowen says there won't be any special exceptions for Queensland or the Northern Territory.",
+              "duration": 7.131429
             },
             {
-              "speaker": "narrator",
-              "text": "子どもたちを依存させる設計をし、安全性について誤解を与えていたという訴えに関するものです。",
-              "duration": 7.224
+              "speaker": "listener",
+              "text": "Those two states wanted to use coal and gas for their datacentres, right?",
+              "duration": 4.205714
             },
             {
-              "speaker": "narrator",
-              "text": "Meta側はいまも不正行為を否定していますが、支払いは十年ほどに分けて行うとされています。",
-              "duration": 6.912
+              "speaker": "explainer",
+              "text": "That's right. The Northern Territory's Finocchiaro pointed to gas from the Beetaloo basin project as an option, and Queensland's Crisafulli argued his state can control its own energy mix because the system there is state-owned.",
+              "duration": 12.982857
             },
             {
-              "speaker": "narrator",
-              "text": "この金額だけを見れば大きく感じますが、Metaは昨年およそ600億ドルの利益を上げています。",
-              "duration": 7.032
+              "speaker": "listener",
+              "text": "And Bowen's response to that was?",
+              "duration": 1.906939
             },
             {
-              "speaker": "narrator",
-              "text": "つまり同社にとっては、痛みというより整理費用のような規模だと言えます。",
-              "duration": 5.616
+              "speaker": "explainer",
+              "text": "He called it 'a very hard thing to do' — meaning those states will still need to make their case to the national regulator, not just assume an exemption.",
+              "duration": 8.803265
             },
             {
-              "speaker": "narrator",
-              "text": "興味深いのは、わずか数か月前まで法廷で争う姿勢を見せていたことです。",
-              "duration": 5.976
+              "speaker": "listener",
+              "text": "What was Albanese's take after the meeting in Sydney?",
+              "duration": 3.056327
             },
             {
-              "speaker": "narrator",
-              "text": "その裁判では大きく敗れていて、今回の和解はそこからの方針転換にも見えます。",
-              "duration": 6.696
+              "speaker": "explainer",
+              "text": "He described the outcome as allowing some flexibility for governments that own their power systems, without abandoning the broader push.",
+              "duration": 6.713469
             },
             {
-              "speaker": "narrator",
-              "text": "訴訟を続けるより、早めに手を打つ方が得策だという判断が働いたのでしょう。",
-              "duration": 6.12
+              "speaker": "listener",
+              "text": "Why does this actually matter for people at home?",
+              "duration": 2.586122
             },
             {
-              "speaker": "narrator",
-              "text": "こうした計算は、これから他の企業にも広がっていくかもしれません。",
-              "duration": 5.16
+              "speaker": "explainer",
+              "text": "Albanese went in wanting new rules that favour renewable energy and stop datacentres from driving up power prices for households and businesses.",
+              "duration": 8.019592
             },
             {
-              "speaker": "narrator",
-              "text": "静かな朝ですが、テクノロジー企業を取り巻く空気は少しずつ変わりつつあります。",
-              "duration": 6.192
+              "speaker": "listener",
+              "text": "And this will all be debated in parliament?",
+              "duration": 2.35102
+            },
+            {
+              "speaker": "explainer",
+              "text": "Yes, that's expected to happen next year.",
+              "duration": 2.115918
             }
           ]
         }
@@ -625,152 +401,96 @@
       "lead": false,
       "category": "SCIENCE",
       "source": "The Guardian (Science)",
-      "headline": "Near total lunar eclipse will be seen from North and South America Thursday night",
-      "summary": "A near total lunar eclipse will be visible across large swathes of North and South America on Thursday night with millions of people expected to be able to see one of nature’s marvels.",
+      "headline": "West Point’s only climate scientist fired after continuing to teach human causes of climate change",
+      "summary": "The only climate scientist teaching at West Point, the US army’s military academy, was fired after he resisted an order to stop teaching about the human causes of the climate emergency, a lawsuit claims.",
       "keyTakeaways": [
-        "In Thursday night’s event 96% of the moon will be darkened by the Earth’s shadow at its peak moment.",
-        "The eclipse will be one known as a “blood moon”, as the Earth’s shadow will appear to be reddish due to the way sunlight is scattered by the Earth’s atmosphere.",
-        "Earlier this month, millions of people across Europe watched a more dramatic solar eclipse where the moon blocked out the sun, plunging parts of the continent into a daytime darkness."
+        "Reeves responded by “storming out” of the meeting after telling Kalkstein that Donald Trump was commander in chief, and set the agenda for West Point, the lawsuit alleged.",
+        "Kalkstein’s lawsuit is the second legal action over the stifling of academic freedoms filed by an educator at West Point.",
+        "Kalkstein’s attorney, Michael Sussman, told the Times that his client was a conservative Republican who believes military students need to know the truth about the causes of the climate crisis as a matter of national security."
       ],
-      "whyItMatters": "Lunar eclipses occur when Earth moves between the sun and the moon and its shadow is cast on to the lunar surface.",
-      "originalURL": "https://www.theguardian.com/science/2026/aug/27/lunar-eclipse-north-south-america",
-      "readTime": 1,
-      "imageURL": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=900&q=80&auto=format&fit=crop",
-      "placeTime": "The academy",
+      "whyItMatters": "The lawsuit alleges that Kalkstein first became aware his position was under threat in May 2025, when West Point leaders announced plans to reduce civilian staffing levels, while at the same time opening a new humanities center requiring new geography teachers.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/27/west-point-climate-scientist-fired",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The lab",
       "audioURL": "",
       "localized": {
         "ja": {
-          "headline": "木曜夜、南北アメリカでほぼ皆既の月食",
-          "summary": "木曜の夜、南北アメリカの広い範囲でほぼ皆既に近い月食が見られる。自然が織りなすこの現象を、何百万人もの人々が目にすると見られている。",
+          "headline": "気候変動の真実を教え続け、ウェストポイント唯一の気候学者が解雇",
+          "summary": "米陸軍士官学校ウェストポイントで唯一気候科学を教えていた研究者が、気候危機の人為的要因について教えることをやめるよう命じられ、それに従わなかったために解雇されたと訴訟が主張している。",
           "keyTakeaways": [
-            "ピーク時には月の九十六パーセントが地球の影に覆われる。",
-            "地球の大気で散乱した太陽光の影響で影が赤みを帯びることから、いわゆる「ブラッドムーン」と呼ばれる現象になる。",
-            "今月初めには欧州各地で太陽が月に隠される皆既日食が観測され、一部地域は昼間から暗闇に包まれた。"
+            "リーブス氏はカルクスタイン氏に対し、指揮権を持つのはトランプ大統領でありウェストポイントの方針を決めるのも彼だと告げ、会議室を出ていったと訴状は主張する。",
+            "カルクスタイン氏の訴訟は、ウェストポイントで学問の自由をめぐり教員が起こした二件目の法的措置となる。",
+            "代理人のマイケル・サスマン弁護士によれば、依頼人は保守的な共和党支持者であり、気候危機の原因についての真実を知ることは国家安全保障上、軍の学生にとって必要だと考えているという。"
           ],
-          "whyItMatters": "月食は、太陽と月の間に地球が入り込み、その影が月面に落ちることで起こる。"
+          "whyItMatters": "訴状によれば、カルクスタイン氏が自らの立場が脅かされていると初めて気づいたのは二〇二五年五月、ウェストポイントが文民職員の削減方針を発表する一方で、新たな地理教員を必要とする人文科学センターの新設を進めていたときだった。"
         }
       },
       "listen": {
         "format": "dialogue",
         "en": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-05-dialogue-en.mp3",
+          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-28/signal-05-dialogue-en.mp3",
           "gap": 0.0,
           "captions": [
             {
               "speaker": "listener",
-              "text": "So what's happening Thursday night?",
-              "duration": 2.089796
+              "text": "So West Point fired its only climate scientist? What happened exactly?",
+              "duration": 4.022857
             },
             {
               "speaker": "explainer",
-              "text": "A near total lunar eclipse, visible across North and South America.",
-              "duration": 3.709388
+              "text": "A lawsuit says he was let go after refusing an order to stop teaching about the human causes of climate change.",
+              "duration": 5.616327
             },
             {
               "speaker": "listener",
-              "text": "Near total? How close does it get?",
-              "duration": 2.115918
-            },
-            {
-              "speaker": "explainer",
-              "text": "At its peak, 96% of the moon will be darkened by Earth's shadow.",
-              "duration": 4.127347
-            },
-            {
-              "speaker": "listener",
-              "text": "Why does that happen exactly?",
-              "duration": 1.48898
-            },
-            {
-              "speaker": "explainer",
-              "text": "Earth moves between the sun and moon, casting its shadow onto the lunar surface.",
-              "duration": 4.675918
-            },
-            {
-              "speaker": "listener",
-              "text": "I've heard people call these 'blood moons.' Why is that?",
-              "duration": 3.056327
-            },
-            {
-              "speaker": "explainer",
-              "text": "The shadow appears reddish, because of how sunlight scatters through Earth's atmosphere.",
+              "text": "Refusing an order — that sounds tense. Was there a specific moment?",
               "duration": 4.257959
             },
             {
-              "speaker": "listener",
-              "text": "Is this connected to that solar eclipse people saw over Europe?",
-              "duration": 3.709388
-            },
-            {
               "speaker": "explainer",
-              "text": "Different event, but related. That one saw the moon block the sun, bringing daytime darkness to parts of the continent.",
-              "duration": 6.086531
+              "text": "Yes, the lawsuit describes him telling a superior, Kalkstein, that Trump was commander in chief and sets the agenda, then leaving the meeting.",
+              "duration": 8.306939
             },
             {
               "speaker": "listener",
-              "text": "Sounds like a good week for skywatchers.",
-              "duration": 2.220408
+              "text": "Is this the only case like this at West Point?",
+              "duration": 2.324898
             },
             {
               "speaker": "explainer",
-              "text": "It is. Millions are expected to see this one.",
-              "duration": 2.533878
-            }
-          ]
-        },
-        "ja": {
-          "audioURL": "https://pub-95a7558772874b48a645ad0c1604d784.r2.dev/audio/2026-08-27/signal-05-dialogue-ja.mp3",
-          "gap": 0.0,
-          "captions": [
-            {
-              "speaker": "narrator",
-              "text": "木曜の夜、南北アメリカの空に大きな天体ショーが訪れます。",
-              "duration": 5.352
+              "text": "No, it's actually the second lawsuit over academic freedom concerns filed by an educator there.",
+              "duration": 4.728163
             },
             {
-              "speaker": "narrator",
-              "text": "月のおよそ九十六パーセントが地球の影に隠れる、ほぼ皆既に近い月食です。",
-              "duration": 6.528
+              "speaker": "listener",
+              "text": "What does his lawyer say about why he pushed back?",
+              "duration": 2.951837
             },
             {
-              "speaker": "narrator",
-              "text": "大気中で屈折した太陽光の影響で、影が赤く染まるため「ブラッドムーン」と呼ばれます。",
-              "duration": 7.104
+              "speaker": "explainer",
+              "text": "His attorney, Michael Sussman, says he's a conservative Republican who believes cadets need the facts on climate change for national security reasons.",
+              "duration": 7.47102
             },
             {
-              "speaker": "narrator",
-              "text": "好条件のため、肉眼でも十分に楽しめる見込みです。",
-              "duration": 4.632
+              "speaker": "listener",
+              "text": "Was there anything happening at West Point around the same time that might connect to this?",
+              "duration": 4.440816
             },
             {
-              "speaker": "narrator",
-              "text": "地球が太陽の光を遮る位置に来ると、その影が月面に届きます。",
-              "duration": 5.568
+              "speaker": "explainer",
+              "text": "He reportedly learned his job was at risk in May, when the academy announced cuts to civilian staff while also opening a new humanities center needing geography teachers.",
+              "duration": 8.542041
             },
             {
-              "speaker": "narrator",
-              "text": "これが月食という現象の仕組みです。",
-              "duration": 3.144
+              "speaker": "listener",
+              "text": "So the details are still playing out through the courts.",
+              "duration": 2.925714
             },
             {
-              "speaker": "narrator",
-              "text": "今月初めには欧州で、逆に太陽が月に隠れる皆既日食が起きました。",
-              "duration": 6.072
-            },
-            {
-              "speaker": "narrator",
-              "text": "あの時は昼間なのに、一部地域が暗闇に包まれました。",
-              "duration": 4.824
-            },
-            {
-              "speaker": "narrator",
-              "text": "短い間に、月と太陽それぞれの姿が変わる瞬間を人々は目にしたことになります。",
-              "duration": 6.84
-            },
-            {
-              "speaker": "narrator",
-              "text": "空を見上げるだけで、宇宙の動きを身近に感じられる夜です。",
-              "duration": 5.016
+              "speaker": "explainer",
+              "text": "That's right — this is now part of the ongoing legal record.",
+              "duration": 3.056327
             }
           ]
         }

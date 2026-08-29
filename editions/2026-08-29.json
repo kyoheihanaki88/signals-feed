@@ -1,0 +1,167 @@
+{
+  "date": "2026-08-29",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Ex-White House teleprompter operator fined $172,000 for Trump speech bets",
+      "summary": "A White House teleprompter operator who left his post amid accusations that he used inside knowledge to make bets on Donald Trump ’s speeches on an online prediction market has been fined $172,000, according to federal regulators.",
+      "keyTakeaways": [
+        "Perez’s White House role gave him access to those speeches before the president delivered them, and he “misappropriated that information” to profit, breaching “his duty of trust and confidence”, the CFTC asserted.",
+        "The CFTC issued its news release about Perez on Friday, about a month after the White House said he no longer had his job there.",
+        "The White House press secretary at the time, Karoline Leavitt, had described the reports of insider trading by Perez as “deeply unfortunate and, frankly, a disgrace”."
+      ],
+      "whyItMatters": "According to the CFTC, from December to February while working as a White House teleprompter operator, Perez made bets on Kalshi tied to words or phrases that Trump might make during his speeches.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/29/former-white-house-teleprompter-operator-fined-kalshi",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "From orbit",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "元大統領演説担当者、内部情報で賭け 罰金172000ドル",
+          "summary": "ホワイトハウスでテレプロンプター操作を担当していた職員が、トランプ大統領の演説内容を予測市場での賭けに利用したとして辞職した問題で、連邦当局が172000ドルの罰金を科したと発表した。",
+          "keyTakeaways": [
+            "職務上、演説内容を事前に知り得た立場を利用し利益を得たとして、CFTCは信頼義務違反を指摘。",
+            "ホワイトハウスが退職を発表した約一か月後、CFTCが発表。",
+            "当時の報道官は、この件を深刻で恥ずべき事態だと述べていた。"
+          ],
+          "whyItMatters": "CFTCによれば、当該職員は昨年12月から今年2月にかけて在職中、トランプ氏の演説で使われる可能性のある言葉を予測市場カルシで賭けの対象にしていたという。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Trump announces new US oil agreement with Venezuela",
+      "summary": "Donald Trump announced Friday a new US oil agreement with Venezuela’s interim president Delcy Rodríguez, saying the US will have “majority” control of 65bn barrels of proven oil reserves.",
+      "keyTakeaways": [
+        "The administration, Trump wrote, has “secured majority U.S. control of more ​than 65 BILLION ‌BARRELS of proven Oil ‌Reserves in Venezuela, at no cost to the ‌American Taxpayer”.",
+        "Trump’s announcement provided few details on the structure of the agreement, the fields or companies involved, or how the US would exercise majority control over the ⁠reserves.",
+        "Venezuela has an estimated 303bn barrels of proven oil reserves, the world’s largest."
+      ],
+      "whyItMatters": "Trump said the agreement would more than double American oil reserves.",
+      "originalURL": "https://www.theguardian.com/us-news/2026/aug/28/trump-venezuela-oil-agreement",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "米、ベネズエラと新たな石油合意",
+          "summary": "トランプ大統領は金曜、ベネズエラのデルシー・ロドリゲス暫定大統領との間で新たな石油合意を発表した。確認埋蔵量650億バレルについて、米国が「過半数」の支配権を持つとしている。",
+          "keyTakeaways": [
+            "トランプ氏は、米国が「米国の納税者に負担をかけることなく」ベネズエラの確認石油埋蔵量650億バレル超の過半数支配権を確保したと表明した。",
+            "合意の枠組みや対象となる油田・企業、米国がどのように過半数支配を行使するかについて、詳細はほとんど示されていない。",
+            "ベネズエラの確認石油埋蔵量は推定3030億バレルで、世界最大とされる。"
+          ],
+          "whyItMatters": "トランプ氏はこの合意により米国の石油埋蔵量が倍増以上になると述べた。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "Strong winds and thunderstorms kick off the bank holiday weekend",
+      "summary": "Areas of heavy rain and showers are expected to sweep across parts of the UK on each day of the weekend, which is a bank holiday for many.",
+      "keyTakeaways": [
+        "Let us start with the good news - for many of us it won't be a complete washout of a weekend.",
+        "South-eastern parts of the UK might get lucky again on bank holiday Monday.",
+        "If bouts of rain wasn't enough, parts of southern England and Wales will be buffeted by strong winds at times too."
+      ],
+      "whyItMatters": "Strong winds and gales may also cause problems for travellers and holidaymakers in southern parts of the UK.",
+      "originalURL": "https://www.bbc.co.uk/weather/articles/c1l6g7gqm37o?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Experiment",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "連休の週末、強風と雷雨に注意",
+          "summary": "英国では多くの人にとって祝日となる今週末、週末を通して各地で強い雨や にわか雨が予想されている。",
+          "keyTakeaways": [
+            "まず良い知らせから。多くの地域では週末がまるごと雨に潰れるわけではない。",
+            "英国南東部は、振替休日の月曜も再び天候に恵まれるかもしれない。",
+            "雨だけでなく、イングランド南部とウェールズの一部では時折強風にも見舞われる見込み。"
+          ],
+          "whyItMatters": "強風や暴風は、英国南部を移動する旅行者や行楽客にも影響を及ぼしかねない。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "I dug through hundreds of Labor Day sales to find real deals on high-quality products that last",
+      "summary": "Labor Day offers one last hurrah for summer, a chance to reset for fall, and if you’re shopping, some choice end-of-season discounts.",
+      "keyTakeaways": [
+        "No matter your plans for the long weekend, we found sales on products to make the most of it while helping you prepare for the colder months ahead.",
+        "Here are 47 of our favorite Labor Day sales, including a food storage system for stashing your leftovers and a blanket to replace your summer linens.",
+        "Le Creuset hardly needs an introduction thanks to its heirloom-level quality that withstands decades of enthusiastic cooking."
+      ],
+      "whyItMatters": "It also earned top marks in testing by the Guardian’s consumer tech editor, Samuel Gibbs, for its high-end design and tracking metrics, making its current 20%-off deal feel extra tempting.",
+      "originalURL": "https://www.theguardian.com/thefilter-us/2026/aug/28/best-labor-day-sales-deals",
+      "readTime": 23,
+      "imageURL": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The editor",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "レイバーデー・セール、掘り出し物を厳選する",
+          "summary": "レイバーデーは夏の名残を惜しみつつ、秋支度を整える節目でもある。買い物をするなら、季節の変わり目ならではの値引きを見逃す手はない。",
+          "keyTakeaways": [
+            "長い週末をどう過ごすにせよ、寒い季節への備えにも役立つセール品を集めた。",
+            "残り物の保存に便利なフードストレージから、夏用リネンに代わる毛布まで、お気に入りのセールを四十七件紹介する。",
+            "ル・クルーゼは、何十年もの使用に耐える名品としてあらためて説明の要はないだろう。"
+          ],
+          "whyItMatters": "ガーディアン紙のコンシューマーテック担当編集者、サミュエル・ギブスによる検証でも高級感のあるデザインと計測性能が高く評価されており、現在の二割引はなおのこと魅力的に映る。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Labour rejects Zack Polanski’s call to ‘slam brakes’ on building AI datacentres",
+      "summary": "Labour has rejected calls to pause construction of major AI infrastructure in Britain after the Green party leader, Zack Polanski, said it was time to “slam the brakes on these energy-guzzling, water-guzzling datacentres”.",
+      "keyTakeaways": [
+        "The government hit back at the opposition party’s proposal of a “moratorium other than [for] local-scale datacentres for the local community”, saying it “would be a disaster for jobs and national security”.",
+        "The Greens’ call for a pause comes amid one of the UK’s worst droughts in years and predictions that datacentres’ electricity use, now standing at about 2.5% of the UK’s supply, will rise fourfold by 2030.",
+        "Datacentres contain the processing chips that power billions of AI prompts every day and Labour has designated them as critical national infrastructure, a decision Polanski called “outrageous”."
+      ],
+      "whyItMatters": "In energy- and water-rich Scotland, the Scottish National party government appears to be “ inching towards a moratorium ” amid voter pressure, while local disputes have erupted from Devon to Buckinghamshire and Cardiff to Fife where residents have raised fears about noise, heat, traffic and the visual impact of datacentres affecting house prices.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/aug/28/labour-green-party-zack-polanski-ai-datacentres",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIデータセンター建設「凍結」論、労働党が拒否",
+          "summary": "英国では大規模AIインフラの建設をめぐり、緑の党党首ザック・ポランスキーが「電力と水を貪るデータセンターに急ブレーキをかける時だ」と訴えた。これに対し労働党は、建設の一時停止を求める声を退けた。",
+          "keyTakeaways": [
+            "政府は、地域住民向けの小規模施設を除くデータセンターの建設凍結案について「雇用と国家安全保障にとって破滅的だ」と反論した。",
+            "凍結論の背景には、英国が近年でも深刻な干ばつに見舞われていることがある。データセンターの電力消費は現在英国全体の約二・五パーセントを占め、二〇三〇年までに四倍に膨らむとの予測もある。",
+            "データセンターには日々何十億件ものAI処理を支える演算チップが収められており、労働党はこれを重要インフラに指定した。ポランスキー氏はこの決定を「言語道断」と批判している。"
+          ],
+          "whyItMatters": "エネルギーと水資源に恵まれるスコットランドでは、有権者の圧力を受けてスコットランド民族党政権が建設凍結に傾きつつあるとされ、デヴォンからバッキンガムシャー、カーディフからファイフまで、騒音や熱、交通量、景観による地価への影響を懸念する住民の反発が各地で広がっている。"
+        }
+      }
+    }
+  ]
+}

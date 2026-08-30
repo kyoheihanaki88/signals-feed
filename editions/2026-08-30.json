@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-30",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Iceland rejects EU accession talks in referendum, reports say",
+      "summary": "Voters in Iceland have ⁠rejected ⁠the government’s proposal ​to hold ⁠accession talks with ⁠the ​European Union after a closely fought campaign that has divided the country.",
+      "keyTakeaways": [
+        "After the final results were released on Sunday morning, the Icelandic government said it would be holding a press conference to “review the results of the referendum” at 1pm local time.",
+        "The result deals a blow to Brussels, which had been keen to welcome a wealthy new member and which had appeared willing to compromise with Iceland on thorny issues to facilitate its accession.",
+        "Nigel Farage, the leader of Reform UK, wrote on the same platform: “Congratulations to Iceland on voting to keep their independence.”"
+      ],
+      "whyItMatters": "She acknowledged that many people in Iceland – particularly from rural areas – had concerns about the impact on agriculture, fisheries and natural resources of joining the EU.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/30/iceland-eu-accession-talks-referendum-result",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The globe",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "アイスランド、EU加盟交渉入りを国民投票で否決",
+          "summary": "アイスランドの有権者は、EUとの加盟交渉入りを求める政府案を国民投票で否決した。国内世論を二分する接戦の末の結果となった。",
+          "keyTakeaways": [
+            "日曜朝に最終結果が発表された後、アイスランド政府は現地時間午後一時に「投票結果を検証する」記者会見を開くと発表した。",
+            "この結果は、豊かな新加盟国を迎え入れようと意欲を見せ、困難な論点でも譲歩する構えを見せていたブリュッセルにとって痛手となる。",
+            "英国改革党のナイジェル・ファラージ党首は同じSNS上で「独立を守る選択をしたアイスランドに祝意を表する」と投稿した。"
+          ],
+          "whyItMatters": "アイスランドでは特に地方を中心に、EU加盟が農業や漁業、天然資源に及ぼす影響を懸念する声が根強くあった。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Researchers find Britain’s 11th-century ‘Conquest Man’ was Scandinavian – but did he land with the Norman army?",
+      "summary": "Researchers find Britain’s 11th-century ‘Conquest Man’ was Scandinavian – but did he land with the Norman army?",
+      "keyTakeaways": [
+        "According to English Heritage’s head curator of collections, Kevin Booth, who has been leading the project, questions remain over whether the man was even a Norman or Saxon.",
+        "The new work – which has not been peer-reviewed – was produced by researchers at Historic England, the Francis Crick Institute, the British Geological Survey, the University of Southampton and the Face Lab at Liverpool John Moores University.",
+        "The results helped the team produce a reconstruction of Conquest Man’s face, suggesting he had thin lips, a receding hairline and a frank gaze."
+      ],
+      "whyItMatters": "Levels of strontium isotopes in his teeth are compatible with someone living in the Barton area, while levels of oxygen isotopes suggest he may have spent time in a colder region during adolescence.",
+      "originalURL": "https://www.theguardian.com/uk-news/2026/aug/30/11th-century-conquest-man-scandinavian-norman-army",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The observatory",
+      "audioURL": ""
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Six dead after ferry carrying nearly 270 capsizes off northern Cyprus",
+      "summary": "At least six people have died after a ferry carrying nearly 270 passengers and crew capsized off the coast of Turkish-occupied northern Cyprus, local media reported.",
+      "keyTakeaways": [
+        "The catamaran-style ferry had been travelling from the port of Kyrenia, also known as Girne, in the breakaway north of divided Cyprus, to the port of Taşucu in Mersin province, Turkey.",
+        "Kyrenia’s mayor, Murat Şenkul, said the ferry belonged to the Filo Denizcilik company and had sunk off Diana beach.",
+        "It started taking in water about 7.5km (4 nautical miles) off the coast, TRT reported."
+      ],
+      "whyItMatters": "Some 237 people have been rescued, with a search still underway for 24, the region’s prime minister, Ünal Üstel, told the state-run TRT news channel on Sunday.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/30/ferry-capsizes-northern-cyprus",
+      "readTime": 1,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "北キプロス沖でフェリー転覆、6人死亡",
+          "summary": "トルコ支配下の北キプロス沖で、乗客乗員およそ270人を乗せたフェリーが転覆し、少なくとも6人が死亡したと地元メディアが伝えた。",
+          "keyTakeaways": [
+            "フェリーはキプロス北部のキレニア（ギルネ）港からトルコ・メルシン県のタシュジュ港へ向かっていた双胴船",
+            "キレニア市長ムラト・シェンクル氏によると、船はフィロ・デニズジリク社所属で、ディアナ・ビーチ沖で沈没",
+            "トルコ国営TRTによれば、沿岸から約7.5キロ（4海里）の地点で浸水が始まった"
+          ],
+          "whyItMatters": "同地域のユナル・ウステル首相は日曜、国営TRTに対し、約237人が救助され、24人の捜索が続いていると述べた。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "The datacenter fight could permanently transform US politics. Which party will seize advantage?",
+      "summary": "He was there about a proposed datacenter, a 550-acre (222-hectare) Google project in this small town of 1,600 people.",
+      "keyTakeaways": [
+        "The datacenter fight could permanently transform US politics.",
+        "Today, three-quarters of Americans oppose local datacenter development, a swing of more than 30 points in just a year.",
+        "More than 500 counties and municipalities have passed datacenter bans or moratoria, while dozens of proposed projects have been killed outright."
+      ],
+      "whyItMatters": "First they tried to write it off as business-as-usual nimbyism: just a few local bans passed here and there, maybe some unknown city councilors losing re-election after signing datacenter deals – not such a big deal.",
+      "originalURL": "https://www.theguardian.com/us-news/ng-interactive/2026/aug/30/data-center-politics-democrats-republicans",
+      "readTime": 13,
+      "imageURL": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Devices",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "データセンター論争、米政治地図を塗り替えるか　主導権はどちらの党に",
+          "summary": "彼がその場に足を運んだのは、人口千六百人ほどの小さな町で持ち上がった、二百二十二ヘクタール規模のグーグルのデータセンター建設計画をめぐってのことだった。",
+          "keyTakeaways": [
+            "データセンター建設をめぐる攻防は、米国の政治地図を長く塗り替えかねない。",
+            "地元でのデータセンター開発に反対する米国民は今や四分の三に達し、この一年で反対は三十ポイント以上も急増した。",
+            "五百を超える郡や自治体が建設禁止や一時停止を可決し、計画段階で頓挫した案件も数十件にのぼる。"
+          ],
+          "whyItMatters": "当初はよくある地域反対運動として片付けられていた——いくつかの自治体が禁止条例を可決し、契約に署名した無名の議員が再選を逃す程度の、大した話ではないとして。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Women in UK arts feel they do not have equal opportunities for roles, says report",
+      "summary": "Women working in the arts believe they do not have equal opportunities for roles, especially as they get older, according to a report saying that the industry is fixated with “young and emerging” talent.",
+      "keyTakeaways": [
+        "More than two-thirds (69%) felt that age negatively affected their career success – a figure that rose to 100% among those working in artistic rather than managerial roles.",
+        "The research said that gender discrimination and ageism were being exacerbated by the use of AI in hiring, which can penalise women for taking career breaks for caring responsibilities, or reinforce historical biases.",
+        "Many performers highlighted the additional pressure on women to look young relative to men."
+      ],
+      "whyItMatters": "Nearly all (95%) women working in the arts thought gender inequality persisted, while three-quarters (75%) reported experiencing unconscious bias or sexism, according to a survey of 76 arts professionals.",
+      "originalURL": "https://www.theguardian.com/money/2026/aug/30/women-uk-arts-no-equal-opportunities-roles-report-sexism-discrimination",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英芸術界、女性への機会格差を報告書が指摘",
+          "summary": "英国の芸術分野で働く女性たちは、役柄を得る機会が男性と平等ではないと感じている。特に年齢を重ねるほどその差を実感するという。ある報告書は、業界全体が「若く新しい」才能への偏重から抜け出せていないと指摘する。",
+          "keyTakeaways": [
+            "年齢が自身のキャリアに悪影響を与えていると感じた人は7割近く（69%）。管理職ではなく演者として働く女性に限れば、その割合は100%に達した。",
+            "AIを採用に用いる動きが性差別や年齢差別を助長しているとの指摘もある。介護などでキャリアを中断した女性を不利に扱ったり、過去の偏見を温存したりする恐れがあるという。",
+            "男性に比べて若く見えることを求められる圧力が強いと、多くの演者が語った。"
+          ],
+          "whyItMatters": "芸術専門職76人を対象にした調査では、ほぼ全員にあたる95%が性別による不平等が今も続いていると答え、75%が無意識の偏見や性差別を経験したと回答している。"
+        }
+      }
+    }
+  ]
+}

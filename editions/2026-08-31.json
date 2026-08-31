@@ -1,0 +1,155 @@
+{
+  "date": "2026-08-31",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "The Guardian (World)",
+      "headline": "Nearly 20 people still missing after ferry capsizes ⁠off northern Cyprus",
+      "summary": "Nearly 20 people are still missing after a ferry capsized ⁠off northern Cyprus, killing at least eight, as divers join search teams scouring deep waters for ⁠any survivors.",
+      "keyTakeaways": [
+        "The double-hulled ⁠ferry ​with 267 people onboard took in water and flipped over on Sunday just off the port city ⁠of Kyrenia, leaving survivors clinging to the upturned hull.",
+        "Of three friends travelling home to see their families, one had been found but the other two were still missing, he added.",
+        "It was unclear ‌if people remained trapped on the vessel, now lying on the seabed at a depth of more ​than 500 metres (1,640ft)."
+      ],
+      "whyItMatters": "Separate accounts said the wide-bodied ​vessel jolted violently before ‌slamming on to ​the sea ​surface, with part of its bow bursting open on impact.",
+      "originalURL": "https://www.theguardian.com/world/2026/aug/31/missing-ferry-capsizes-cyprus",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The map",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "北キプロス沖でフェリー転覆、依然20人近くが行方不明",
+          "summary": "北キプロス沖でフェリーが転覆し、これまでに少なくとも8人が死亡した。依然として20人近くの行方が分かっておらず、潜水チームも加わって深い海域での捜索が続いている。",
+          "keyTakeaways": [
+            "267人を乗せた二重船体のフェリーは日曜日、港町ケリニアの沖合で浸水し転覆、生存者は裏返った船体にしがみついて救助を待った。",
+            "帰省中だった友人3人組のうち、1人は発見されたが残る2人は依然行方不明だという。",
+            "船体は水深500メートル余りの海底に沈んでおり、なお人が閉じ込められているかどうかは分かっていない。"
+          ],
+          "whyItMatters": "複数の証言によれば、船体は激しく揺さぶられたのち海面に叩きつけられ、衝撃で船首の一部が破損したという。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "BBC News (Science & Environment)",
+      "headline": "'A giant leap forward': Nasa launches powerful new space telescope",
+      "summary": "Nasa's powerful next-generation telescope has blasted off into space from its launchpad in Florida, with a mission to explore dark energy, black holes and other mysteries of the Universe.",
+      "keyTakeaways": [
+        "The Nancy Grace Roman telescope will capture vast panoramic views of space, with a field of vision 100 times larger than both the Hubble and James Webb space telescopes, Nasa says.",
+        "The mission begins with a 100-day journey to a vantage point roughly one million miles from Earth, where the telescope will then start charting planets outside our solar system, known as exoplanets.",
+        "The successful launch of the telescope took place on Sunday morning local time from the Kennedy Space Center in Florida."
+      ],
+      "whyItMatters": "The new telescope is similarly expected to revolutionise our understanding of the Universe, including through investigating dark energy.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Night sky",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "新型宇宙望遠鏡、打ち上げ成功 宇宙の謎に挑む",
+          "summary": "NASAの次世代宇宙望遠鏡が、フロリダの発射台から宇宙へと飛び立った。目指すのはダークエネルギーやブラックホールなど、宇宙に残された数々の謎の解明だ。",
+          "keyTakeaways": [
+            "ナンシー・グレース・ローマン望遠鏡は、ハッブルやジェイムズ・ウェッブの百倍にあたる視野を持つとNASAは説明する。",
+            "地球から約百六十万キロ離れた観測地点まで百日かけて移動し、その後は太陽系外惑星の観測を開始する。",
+            "打ち上げは現地時間の日曜朝、フロリダのケネディ宇宙センターから行われ、成功を収めた。"
+          ],
+          "whyItMatters": "ダークエネルギーの解明などを通じ、この望遠鏡は宇宙への理解を大きく塗り替えると期待されている。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "One dead and more than a dozen missing after 'terrifying' flash flood hits Grand Canyon",
+      "summary": "The flood hit Bright Angel Canyon and the Phantom Ranch area on Saturday afternoon, wiping out footbridges and propelling boulders downstream.",
+      "keyTakeaways": [
+        "Baggs said she and her friends had just dropped off their belongings at a cabin in Phantom Ranch - a remote lodge at the bottom of the Grand Canyon - when they decided to venture out to enjoy the nice day.",
+        "Before they knew it, a flood of water was sweeping through the area.",
+        "The recent rains in the Grand Canyon area, and more widely in south-western parts of the US, are due to monsoonal showers."
+      ],
+      "whyItMatters": "The threat of flooding is something that will remain for many more weeks.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/clylkjyez1do?at_medium=RSS&at_campaign=rss",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": ""
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘Scary’: how misinformation and AI hallucinations are infiltrating Australia’s parliament",
+      "summary": "A ustralia’s government inquiry process is supposed to help parliament make better decisions, hearing from experts and constituents alike.",
+      "keyTakeaways": [
+        "In some cases, committee reports have cited submissions in which the majority of sources appear to be AI-generated “hallucinations”, when large language models (LLMs) invent content that looks real but doesn’t actually exist.",
+        "In some instances, Google’s AI summary and ChatGPT will also cite the inquiry submission with the fake reference as a source, creating an ongoing cycle of misinformation.",
+        "The author of the submission, Drilldown Reports, told Guardian Australia it used AI in its research process and had identified the errors in its follow-up submission – but the deadline had passed to have them corrected."
+      ],
+      "whyItMatters": "Haslam, who researches child and family adversity and maltreatment, says the reference was “scary” because it looked so real that someone taking a cursory look could be convinced.",
+      "originalURL": "https://www.theguardian.com/australia-news/2026/sep/01/how-misinformation-ai-hallucinations-infiltrating-australian-parliament",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Keyboard",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "誤情報とAI幻覚、オーストラリア議会に入り込む",
+          "summary": "オーストラリアの議会調査制度は、専門家や市民の声を聞き、より良い政策判断を助けるための仕組みだ。だが近年、その根幹が揺らいでいる。",
+          "keyTakeaways": [
+            "委員会報告書が引用した提出資料の中には、出典の大半がAIの「幻覚」によって作られたものもあった。大規模言語モデルが、実在しない情報をもっともらしく生成していた",
+            "グーグルのAI要約やチャットGPTがその架空の出典を引用し、誤情報がさらに広がる循環が生まれている",
+            "提出者のドリルダウン・リポーツはガーディアン紙に対し、調査過程でAIを使用したと説明。誤りは追加提出で指摘したが、訂正の期限はすでに過ぎていたという"
+          ],
+          "whyItMatters": "子どもと家庭の逆境や虐待を研究するハスラム氏は、その架空の出典があまりに本物らしく、一見しただけでは信じてしまうほどだったことを「恐ろしい」と語る。"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Did you solve it? The fin-tastic fish puzzle",
+      "summary": "A fish is swimming in a tank that is two metres high, one metre across and one metre deep.",
+      "keyTakeaways": [
+        "I’ve been setting a puzzle here on alternate Mondays since 2015.",
+        "Here they are again with the solutions.",
+        "The image below shows one path it swam."
+      ],
+      "whyItMatters": "Earlier today I set you the following puzzles.",
+      "originalURL": "https://www.theguardian.com/science/2026/aug/31/did-you-solve-it-the-fin-tastic-fish-puzzle",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "解けたか、魚と水槽のパズル",
+          "summary": "高さ二メートル、幅一メートル、奥行き一メートルの水槽の中を、一匹の魚が泳いでいる。",
+          "keyTakeaways": [
+            "二〇一五年から隔週月曜にパズルを出題している",
+            "今回もその解答をあわせて紹介する",
+            "下の図は魚が泳いだ経路の一例を示す"
+          ],
+          "whyItMatters": "本日はじめに、次のパズルを出題した。"
+        }
+      }
+    }
+  ]
+}

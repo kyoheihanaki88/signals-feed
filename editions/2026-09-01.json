@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-01",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "CBS News (U.S.)",
+      "headline": "Guilty verdict in 1996 murder of Tupac Shakur",
+      "summary": "A jury has found Duane \"Keffe D\" Davis guilty of orchestrating the 1996 killing of rapper Tupac Shakur in Las Vegas, marking the first conviction in a case that has gripped hip-hop fans for decades.",
+      "keyTakeaways": [
+        "The jury reached its verdict in less than three hours after a weekslong trial.",
+        "Chief Deputy District Attorney Binu Palal told jurors in closing arguments that Davis acquired a gun and \"went hunting\" for Shakur and Death Row Records co-founder Marion \"Suge\" Knight after they beat up Davis' nephew earlier that night.",
+        "Davis' defense attorney, Michael Sanft, challenged jurors to identify evidence outside Davis' own statements that placed him in Las Vegas or inside the Cadillac on the night Shakur was shot."
+      ],
+      "whyItMatters": "Davis, 63, was convicted Monday on a charge of murder with a deadly weapon with the intent to promote, further or assist a criminal gang in Shakur's killing, and could be sentenced to life in prison.",
+      "originalURL": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-verdict-duane-davis/",
+      "readTime": 5,
+      "imageURL": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The terminal",
+      "audioURL": ""
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "SCIENCE",
+      "source": "The Guardian (Science)",
+      "headline": "Space junk punched a new hole in the moon. It’s not ours to abuse | Moriba Jah",
+      "summary": "The space industry treats the sky as a place to dump what it no longer wants.",
+      "keyTakeaways": [
+        "Space junk punched a new hole in the moon.",
+        "O n 5 August, a piece of a derelict SpaceX rocket traveling at 5,400 miles an hour met with the moon and punched a fresh hole into it near Einstein Crater.",
+        "I have spent 20 years tracking the junk humanity leaves behind in space for a living, and I want to tell you plainly what that crater actually is: a receipt."
+      ],
+      "whyItMatters": "Right now, in cislunar space, ownership is winning by default, because nobody with power has bothered to claim the alternative, and power doesn’t reside in controlling outcomes but rather in the ability to make choices.",
+      "originalURL": "https://www.theguardian.com/commentisfree/2026/aug/31/space-junk-moon-hole",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The instrument",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "月に開いた新たな穴、宇宙は誰のものでもない",
+          "summary": "宇宙産業は空を、いらなくなったものを捨てる場所として扱っている。",
+          "keyTakeaways": [
+            "宇宙ごみが月面に新たな穴をあけた。",
+            "八月五日、時速五千四百マイルで飛来した使用済みスペースXロケットの破片が月に衝突し、アインシュタインクレーター付近に新たな穴を残した。",
+            "二十年にわたり人類が宇宙に残すごみを追ってきた筆者は、このクレーターの正体をはっきりと伝えたいという。それは請求書である。"
+          ],
+          "whyItMatters": "月と地球の間の空間では、代わりの道を主張する力を持つ者がいないために所有権がなし崩しに勝利しつつあるが、力とは結果を支配することではなく選択の自由にあるということを、この出来事は静かに示している。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "CBS News (U.S.)",
+      "headline": "Supreme Court continues to allow construction of Trump's White House ballroom",
+      "summary": "Washington — The Supreme Court on Monday continued to allow construction of the new White House ballroom, clearing the way for the massive new structure that President Trump has championed.",
+      "keyTakeaways": [
+        "In a 5-4 decision, the Supreme Court halted lower court rulings that would have temporarily blocked the construction of a new 90,000-square-foot ballroom where the East Wing once stood.",
+        "The high court said in an unsigned opinion that the National Trust for Historic Preservation, which filed a lawsuit to block the project, likely did not have the legal right to sue.",
+        "It did not address the legality of Mr. Trump's East Wing project."
+      ],
+      "whyItMatters": "The majority pointed to sworn declarations from top administration officials, including the director of National Intelligence and heads of the Secret Service, Army and the State Department, who said the ballroom was necessary and had warned that any significant pause in construction would harm the government because of the national security facilities being built underground.",
+      "originalURL": "https://www.cbsnews.com/news/supreme-court-trump-white-house-ballroom-construction/",
+      "readTime": 7,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "ホワイトハウス新棟、建設続行を最高裁が容認",
+          "summary": "ワシントン発。米連邦最高裁は月曜、トランプ大統領が推進してきたホワイトハウスの新しい大宴会場の建設について、続行を認める判断を示した。",
+          "keyTakeaways": [
+            "最高裁は五対四で下級審の判断を退け、旧東棟跡地に建設中の延べ約八千三百平方メートルの宴会場の工事を一時差し止めていた措置を解除した。",
+            "無署名の意見書で最高裁は、建設差し止めを求めて提訴した歴史保存全国信託には、そもそも訴訟を起こす法的資格がなかった可能性が高いと述べた。",
+            "東棟計画そのものの合法性については判断を示していない。"
+          ],
+          "whyItMatters": "多数意見は、国家情報長官やシークレットサービス、陸軍、国務省の各トップら政権高官の宣誓供述を重視し、地下に建設中の安全保障関連施設への影響から工事の大幅な中断は政府に支障をきたすと警告していたことを判断の根拠とした。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "‘I feel like I’m grieving’: staff on the devastating fallout of widespread layoffs at Xbox",
+      "summary": "O n the morning of 6 July, an email went out from Asha Sharma, the chief executive of Xbox, to all of the division’s employees around the world.",
+      "keyTakeaways": [
+        "We were just brought in, told the news and it was like: ‘You guys are going to lose access to your Slack channel.’ So you saw a flurry of goodbye messages before everything was just shut off.”",
+        "Emails, the staff were told, would be turned off a few days later.",
+        "In the US, the Worker Adjustment and Retraining Notification (WARN) act is a federal law that requires companies with 100 or more employees to give its workers 60 days’ notice before major closures or mass staff layoffs."
+      ],
+      "whyItMatters": "Under the headline “ Resetting Xbox ”, it announced the most significant restructuring in the history of Microsoft’s console business: 3,200 staff would be laid off throughout the financial year to 2027, and 1,600 of those roles would be eliminated immediately.",
+      "originalURL": "https://www.theguardian.com/games/2026/sep/01/xbox-layoffs-microsoft",
+      "readTime": 8,
+      "imageURL": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Modern office",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "BBC News (Technology)",
+      "headline": "AI could cause global economic downturn, Andrew Bailey warns G20",
+      "summary": "The governor of the Bank of England has warned G20 finance ministers that artificial intelligence could cause a global economic downturn and pose a significant cyber security risk to financial systems.",
+      "keyTakeaways": [
+        "Bailey told the G20 finance ministers that a combination of highly priced stock markets, increased borrowing by investors, and the growing concentration of money into a small number of major technology companies could amplify any future market correction.",
+        "Bailey has called on those in charge of financial security to develop \"appropriate steps to support safe and responsible model release and deployment on a global basis\".",
+        "Bailey, who was writing in his capacity as chairman of the Financial Stability Board international watchdog (FSB), expressed concern about the \"volatility\" prompted by the effect of energy supply shocks caused by the US-Iran war."
+      ],
+      "whyItMatters": "Andrew Bailey said any collapse of growth in the AI sector could lead to a \"future market correction\" that spreads worldwide.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c99dym3prl1o?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "AIが招く経済失速、英中銀総裁がG20に警鐘",
+          "summary": "イングランド銀行のベイリー総裁がG20財務相会合で、人工知能が世界的な景気後退を引き起こしかねないと警告した。金融システムに対するサイバーセキュリティ上の重大なリスクにもなり得るという。",
+          "keyTakeaways": [
+            "株価の過熱、投資家による借り入れの増加、資金の一部大手テック企業への集中が重なれば、将来の市場調整を増幅しかねないとベイリー氏は指摘した",
+            "金融の安全を担う各国当局に対し、AIモデルの安全で責任ある公開と運用を世界規模で支える方策づくりを求めた",
+            "金融安定理事会（FSB）議長としての立場から、米国とイランの対立に伴うエネルギー供給の混乱がもたらす「不安定さ」にも懸念を示した"
+          ],
+          "whyItMatters": "AI分野の成長が失速すれば、世界に波及する市場調整を招きかねないとベイリー氏は述べた。"
+        }
+      }
+    }
+  ]
+}

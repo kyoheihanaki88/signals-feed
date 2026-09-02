@@ -1,0 +1,155 @@
+{
+  "date": "2026-09-02",
+  "focus": "MIXED",
+  "version": 1,
+  "signals": [
+    {
+      "number": 1,
+      "importance": 1,
+      "lead": true,
+      "category": "WORLD",
+      "source": "BBC News (World)",
+      "headline": "Lizzo 'grateful' after judge dismisses lawsuit against production company",
+      "summary": "US pop star Lizzo has spoken out after the remaining claims in a lawsuit against her production company were thrown out by a US district judge.",
+      "keyTakeaways": [
+        "District judge Fernando L Aenlle-Rocha filed a ruling to dismiss the claims by the stylist on Tuesday, according to court documents.",
+        "In an Instagram post, external, Lizzo said she was \"relieved\" at the outcome and will \"continue to fight\" every claim made against her and her company.",
+        "In his ruling this week, he said the former wardrobe assistant did not identify any conduct by company employees that would demonstrate \"general hostility to women in the workplace\" or \"disparate treatment of men and women\"."
+      ],
+      "whyItMatters": "In 2024, judge Aenlle-Rocha ruled that Daniels could not sue the Grammy winner as an individual, but Big Grrrl Big Touring Inc remained a defendant.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c8xk4rl904vo?at_medium=RSS&at_campaign=rss",
+      "readTime": 2,
+      "imageURL": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The port",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "リゾ、制作会社への訴訟棄却に安堵の声",
+          "summary": "米国のポップスター、リゾの制作会社を相手にした訴訟で、残っていた訴えが米連邦地裁の判事により棄却された。これを受けてリゾが心境を語っている。",
+          "keyTakeaways": [
+            "フェルナンド・L・アエンレ＝ロシャ判事は火曜日、スタイリストによる訴えを棄却する判断を下した。裁判資料による",
+            "リゾはインスタグラムで「安堵している」と述べ、自身と会社に対するあらゆる訴えに「今後も闘い続ける」との姿勢を示した",
+            "今週の判断で判事は、元衣装アシスタントが「職場における女性への一般的な敵意」や「男女の不平等な扱い」を示す会社側の行為を具体的に示せていないと指摘した"
+          ],
+          "whyItMatters": "2024年、アエンレ＝ロシャ判事はダニエルズ氏がグラミー受賞者本人を個人として訴えることはできないとしたが、制作会社ビッグ・グレル・ビッグ・ツーリング社は被告として残っていた。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "importance": 2,
+      "lead": false,
+      "category": "HEALTH",
+      "source": "BBC News (Health)",
+      "headline": "Flu vaccine rollout begins as NHS regroups from 'busiest summer'",
+      "summary": "This winter's flu vaccine has been updated to protect against last year's subclade-K strain, with the first doses being given to schoolchildren and pregnant women.",
+      "keyTakeaways": [
+        "This year's vaccine has had a few tweaks, including one to better match subclade K.",
+        "Schoolchildren and pregnant women can get a free NHS flu vaccine from September onwards.",
+        "More adults are also being offered another vaccine this winter to protect against RSV or Respiratory Syncytial Virus, which attacks the lungs."
+      ],
+      "whyItMatters": "Schoolchildren are being prioritised - and like pregnant women can get the jab from Tuesday - because they can catch and spread flu easily.",
+      "originalURL": "https://www.bbc.co.uk/news/articles/c8d3myrgdd1o?at_medium=RSS&at_campaign=rss",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "At the desk",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "冬に向け、インフルワクチン接種が始動",
+          "summary": "この冬のインフルエンザワクチンは、昨年流行したサブクレードKに対応する形で更新された。まずは子どもと妊婦への接種から始まる。",
+          "keyTakeaways": [
+            "今年のワクチンはサブクレードKに合わせて改良されている。",
+            "学童と妊婦は九月からNHSで無料接種を受けられる。",
+            "この冬は肺を侵すRSウイルス向けの新たなワクチンも、より多くの成人に提供される。"
+          ],
+          "whyItMatters": "学童はインフルエンザにかかりやすく、うつしやすいため、妊婦とともに火曜日から優先的に接種が始まる。"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "importance": 3,
+      "lead": false,
+      "category": "WORLD",
+      "source": "CBS News (U.S.)",
+      "headline": "Tiger Woods to change not guilty plea in Florida DUI case, court records show",
+      "summary": "Tiger Woods plans to change his not guilty plea in a DUI case stemming from a rollover crash in Florida, according to court documents filed Tuesday.",
+      "keyTakeaways": [
+        "Woods pleaded not guilty to driving under the influence in the case in Martin County circuit court, just north of Palm Beach County.",
+        "No additional details about the nature of the plea change were released.",
+        "Woods' attorney, Doug Duncan, and the State Attorney's Office did not immediately respond to emails from The Associated Press requesting additional information."
+      ],
+      "whyItMatters": "He is expected in court Wednesday morning for a plea conference hearing, according to a notice of the hearing posted Tuesday.",
+      "originalURL": "https://www.cbsnews.com/news/tiger-woods-change-dui-plea-florida/",
+      "readTime": 3,
+      "imageURL": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Infrastructure",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "タイガー・ウッズ、飲酒運転事件で答弁変更へ フロリダ州裁判所",
+          "summary": "フロリダ州で起きた横転事故に絡む飲酒運転事件で、タイガー・ウッズが無罪の答弁を変更する方針であることが、火曜に提出された裁判資料で明らかになった。",
+          "keyTakeaways": [
+            "パームビーチ郡北隣のマーティン郡巡回裁判所で、ウッズは飲酒運転の罪について無罪を主張していた。",
+            "答弁変更の内容についての詳細は明らかにされていない。",
+            "ウッズの弁護士ダグ・ダンカン氏と州検事局は、AP通信の問い合わせにすぐには応じなかった。"
+          ],
+          "whyItMatters": "火曜に公示された審理通知によれば、ウッズは水曜午前に答弁協議のため出廷する予定だ。"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "importance": 4,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Wednesday briefing: ​What’s behind the global backlash against datacentres?",
+      "summary": "Ukraine | Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv.",
+      "keyTakeaways": [
+        "This summer, datacentres have become targets of resistance across the world.",
+        "Campaigners argue datacentres drain resources and exacerbate the climate crisis.",
+        "The boom has been immense, and so has the backlash."
+      ],
+      "whyItMatters": "Since the start of this year, the government has allowed datacentres to opt into Nationally Significant Infrastructure Projects (NSIPS), where the secretary of state rather than local councils make planning decisions, enabling developers to bypass local scrutiny.",
+      "originalURL": "https://www.theguardian.com/world/2026/sep/02/wednesday-briefing-whats-behind-the-global-backlash-against-datacentres",
+      "readTime": 10,
+      "imageURL": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "The bench",
+      "audioURL": ""
+    },
+    {
+      "number": 5,
+      "importance": 5,
+      "lead": false,
+      "category": "TECH",
+      "source": "The Guardian (Technology)",
+      "headline": "Architect of UK’s AI strategy joins Anthropic amid conflict of interest warning",
+      "summary": "The architect of the UK government’s AI strategy has joined the US startup Anthropic in a senior role a year after stepping down from his Downing Street post.",
+      "keyTakeaways": [
+        "Clifford is moving to Anthropic as managing director, international affairs, and will lead the company’s engagement with governments outside the US including in the UK, Europe, Asia-Pacific and India.",
+        "Anthropic said Clifford would remain as chair ofAria, the UK’s Advanced Research and Invention Agency, which funds “moonshot” science and tech projects.",
+        "It is understood that Clifford will step back from any matter involving Anthropic at Aria, but Onwurah said the roles clashed and she called on the AI minister, Kanishka Narayan, to intervene."
+      ],
+      "whyItMatters": "His move to the company behind the Claude chatbot has raised concern, with the head of the House of Commons science, innovation and technology committee, Chi Onwurah, warning that his decision to remain as chair of the government-backed Aria funding body represents a “clear conflict of interest”.",
+      "originalURL": "https://www.theguardian.com/technology/2026/sep/02/architect-of-uks-ai-strategy-joins-anthropic",
+      "readTime": 4,
+      "imageURL": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&q=80&auto=format&fit=crop",
+      "placeTime": "Engineering",
+      "audioURL": "",
+      "localized": {
+        "ja": {
+          "headline": "英AI戦略の立案者、アンソロピック入り 利益相反の懸念も",
+          "summary": "英国政府のAI戦略を策定した人物が、ダウニング街での職を退いて一年後、米新興企業アンソロピックの要職に就いた。",
+          "keyTakeaways": [
+            "クリフォード氏はアンソロピックの国際担当マネージングディレクターに就任し、英国、欧州、アジア太平洋、インドなど米国外の政府との窓口を担う。",
+            "同氏は英国の先端研究発明機関エーリア（Aria）の議長職も引き続き務めるとアンソロピックは説明している。",
+            "エーリアでアンソロピックが関わる案件からは身を引くとみられるが、オンウラ議員は両職の兼務を問題視し、AI担当相ナラヤン氏に対応を求めた。"
+          ],
+          "whyItMatters": "下院科学イノベーション技術委員会の委員長オンウラ氏は、政府出資のエーリアの議長職を維持したままの同氏の動きを「明白な利益相反」だと警告している。"
+        }
+      }
+    }
+  ]
+}
